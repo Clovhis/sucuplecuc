@@ -45,18 +45,55 @@
 			"forFansOf": "Fans de Bob Fosse, de los musicales autobiográficos y de las películas donde el show funciona como máscara para una crisis personal.",
 			"notForYouIf": "Buscás una biografía lineal, un musical alegre o un protagonista fácil de admirar. Empieza el espectáculo quiere que veas el costo del aplauso."
 		},
-	"becauseYouLiked": [
-		"michael-2026",
-		"amadeus-1984"
-	],
-	"related": [
-		"crossroads-1986",
-		"senderos-de-gloria-1957",
-		"funes-un-gran-amor-1993",
-		"tango-feroz-la-leyenda-de-tanguito-1993"
-	]
-},
+		"becauseYouLiked": [
+			"michael-2026",
+			"amadeus-1984"
+		],
+		"related": [
+			"crossroads-1986",
+			"senderos-de-gloria-1957",
+			"funes-un-gran-amor-1993",
+			"tango-feroz-la-leyenda-de-tanguito-1993"
+		]
+	},
 	"review": "Bob Fosse arma un autorretrato feroz sobre la adicción al trabajo, al aplauso y a la propia imagen. El montaje salta de la sala de ensayo al quirófano y al escenario, como si la vida solo pudiera ordenarse mediante una coreografía. Roy Scheider carga el narcisismo y el miedo del protagonista con una energía que nunca deja de ser triste. Los números deslumbrantes y los estudios médicos forman la misma rutina: Fosse hace imposible separar el talento del costo que exige.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Roy Scheider",
+			"character": "Joe Gideon",
+			"tmdbMovieId": 16858,
+			"tmdbPersonId": 6355,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Lange",
+			"character": "Angelique",
+			"tmdbMovieId": 16858,
+			"tmdbPersonId": 4431,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ann Reinking",
+			"character": "Kate Jagger",
+			"tmdbMovieId": 16858,
+			"tmdbPersonId": 80928,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leland Palmer",
+			"character": "Audrey Paris",
+			"tmdbMovieId": 16858,
+			"tmdbPersonId": 80927,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cliff Gorman",
+			"character": "Davis Newman",
+			"tmdbMovieId": 16858,
+			"tmdbPersonId": 19183,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

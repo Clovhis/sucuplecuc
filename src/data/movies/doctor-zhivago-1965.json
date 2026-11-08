@@ -81,5 +81,28 @@
     }
   },
   "review": "Lean pone la historia íntima de Yuri y Lara en medio de un país que cambia de forma; el paisaje nevado y las separaciones repetidas hacen sentir el costo del tiempo. Omar Sharif vuelve legible a un protagonista reservado, y Julie Christie entra con una energía que desarma la solemnidad del gran fresco. El romance está rodeado por revoluciones, trenes y desplazamientos, con una puesta en escena de enorme escala que a veces aplasta a sus personajes, aunque sus imágenes sigan creciendo cuando vuelve la música de Maurice Jarre.",
-  "runtimeMinutes": 200
+  "runtimeMinutes": 200,
+  "castCharacters": [
+    {
+      "actor": "Omar Sharif",
+      "character": "Dr. Yuri Zhivago",
+      "tmdbMovieId": 907,
+      "tmdbPersonId": 5004,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Julie Christie",
+      "character": "Lara Antipova",
+      "tmdbMovieId": 907,
+      "tmdbPersonId": 1666,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Geraldine Chaplin",
+      "character": "Tonya Gromeko",
+      "tmdbMovieId": 907,
+      "tmdbPersonId": 400,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

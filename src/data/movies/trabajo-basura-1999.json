@@ -33,27 +33,64 @@
 	},
 	"runtimeMinutes": 89,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Trabajo basura encuentra épica en odiar una oficina; Mike Judge deja que Ron Livingston convierta la apatía de Peter en una pequeña rebelión.",
-		"whatToExpect": "Un programador harto de su empresa deja de respetar reglas absurdas y planea con sus compañeros una venganza contra la rutina.",
-		"pace": "Avanza por reuniones, impresoras, jefes y silencios de cubículo, acumulando frustración hasta que la fantasía de rebelión parece razonable.",
-		"intensity": "La presión es cotidiana y reconocible: una frase del jefe o un formulario pueden tener más peso que una amenaza física.",
-		"practicalContext": "Dura 89 minutos y entra perfecto como comedia de oficina, especialmente si venís de un día de mails, controles y reuniones inútiles.",
-		"forFansOf": "Te va a gustar si disfrutás sátiras laborales, personajes agotados y humor seco sobre la violencia de trabajar por inercia.",
-		"notForYouIf": "No es para vos si buscás una trama criminal compleja, protagonistas ambiciosos o una comedia que se olvide rápido de la oficina."
+		"tenSecondTake": {
+			"verdict": "Trabajo basura encuentra épica en odiar una oficina; Mike Judge deja que Ron Livingston convierta la apatía de Peter en una pequeña rebelión.",
+			"whatToExpect": "Un programador harto de su empresa deja de respetar reglas absurdas y planea con sus compañeros una venganza contra la rutina.",
+			"pace": "Avanza por reuniones, impresoras, jefes y silencios de cubículo, acumulando frustración hasta que la fantasía de rebelión parece razonable.",
+			"intensity": "La presión es cotidiana y reconocible: una frase del jefe o un formulario pueden tener más peso que una amenaza física.",
+			"practicalContext": "Dura 89 minutos y entra perfecto como comedia de oficina, especialmente si venís de un día de mails, controles y reuniones inútiles.",
+			"forFansOf": "Te va a gustar si disfrutás sátiras laborales, personajes agotados y humor seco sobre la violencia de trabajar por inercia.",
+			"notForYouIf": "No es para vos si buscás una trama criminal compleja, protagonistas ambiciosos o una comedia que se olvide rápido de la oficina."
+		},
+		"becauseYouLiked": [
+			"como-ser-john-malkovich-1999",
+			"beavis-y-butt-head-recorren-america-1996"
+		],
+		"related": [
+			"very-important-perros-2000",
+			"adaptation-el-ladron-de-orquideas-2002",
+			"home-alone-1990",
+			"heroes-fuera-de-orbita-1999"
+		]
 	},
-	"becauseYouLiked": [
-		"como-ser-john-malkovich-1999",
-		"beavis-y-butt-head-recorren-america-1996"
-	],
-	"related": [
-		"very-important-perros-2000",
-		"adaptation-el-ladron-de-orquideas-2002",
-		"home-alone-1990",
-		"heroes-fuera-de-orbita-1999"
-	]
-},
 	"review": "Mike Judge entiende la violencia silenciosa de los trabajos que convierten a todos en casilleros de una planilla. Las repeticiones, las reuniones y los objetos de oficina funcionan como chistes porque también describen un sistema real. Ron Livingston mantiene una apatía encantadora, mientras Jennifer Aniston y David Herman le dan aire al encierro. La renuncia de Peter a preocuparse por el trabajo parece una fantasía, hasta que la película muestra cuánto cuesta vivir sin rumbo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Ron Livingston",
+			"character": "Peter",
+			"tmdbMovieId": 1542,
+			"tmdbPersonId": 17402,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Aniston",
+			"character": "Joanna",
+			"tmdbMovieId": 1542,
+			"tmdbPersonId": 4491,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Herman",
+			"character": "Michael Bolton",
+			"tmdbMovieId": 1542,
+			"tmdbPersonId": 52794,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ajay Naidu",
+			"character": "Samir",
+			"tmdbMovieId": 1542,
+			"tmdbPersonId": 1982,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diedrich Bader",
+			"character": "Lawrence",
+			"tmdbMovieId": 1542,
+			"tmdbPersonId": 5727,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

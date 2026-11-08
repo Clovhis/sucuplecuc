@@ -57,5 +57,35 @@
 	},
 	"review": "Patrick Bateman habla de música pop, compra ropa carísima y ensaya su sonrisa mientras Mary Harron lo observa como una pieza más de la maquinaria que pretende satirizar. Christian Bale entiende que el personaje no necesita ser simpático: lo vuelve una máscara perfecta, irritante y cada vez más hueca. La película mezcla humor negro, violencia y una ambigüedad que no siempre cierra con elegancia, pero sí sostiene su lectura sobre el ego masculino y el consumo como identidad. La recepción quedó dividida por su brutalidad; con los años, el filo de la sátira se volvió más evidente que el shock.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Christian Bale",
+			"character": "Patrick Bateman",
+			"tmdbMovieId": 1359,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Justin Theroux",
+			"character": "Timothy Bryce",
+			"tmdbMovieId": 1359,
+			"tmdbPersonId": 15009,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Lucas",
+			"character": "Craig McDermott",
+			"tmdbMovieId": 1359,
+			"tmdbPersonId": 6164,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Donald Kimball",
+			"tmdbMovieId": 1359,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

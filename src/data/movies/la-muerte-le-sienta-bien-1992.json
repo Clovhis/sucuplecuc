@@ -60,5 +60,35 @@
 		]
 	},
 	"runtimeMinutes": 104,
-	"review": "Robert Zemeckis convierte el miedo a envejecer en una comedia deforme, brillante y bastante cruel. Meryl Streep y Goldie Hawn se comen la pantalla como rivales incapaces de soltar el pasado, mientras Bruce Willis encuentra una veta torpe y melancólica que se aleja del héroe de acción. El maquillaje y los efectos tienen una inventiva práctica que todavía se siente tangible, no meramente digital. Hay chistes que cargan demasiado la mano, pero el tono de farsa negra es consistente y la película construye una identidad visual propia. Es camp, incómoda y mucho más filosa de lo que su superficie pop deja ver."
+	"review": "Robert Zemeckis convierte el miedo a envejecer en una comedia deforme, brillante y bastante cruel. Meryl Streep y Goldie Hawn se comen la pantalla como rivales incapaces de soltar el pasado, mientras Bruce Willis encuentra una veta torpe y melancólica que se aleja del héroe de acción. El maquillaje y los efectos tienen una inventiva práctica que todavía se siente tangible, no meramente digital. Hay chistes que cargan demasiado la mano, pero el tono de farsa negra es consistente y la película construye una identidad visual propia. Es camp, incómoda y mucho más filosa de lo que su superficie pop deja ver.",
+	"castCharacters": [
+		{
+			"actor": "Bruce Willis",
+			"character": "Dr. Ernest Menville",
+			"tmdbMovieId": 9374,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Madeline Ashton Menville",
+			"tmdbMovieId": 9374,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Goldie Hawn",
+			"character": "Helen Sharp",
+			"tmdbMovieId": 9374,
+			"tmdbPersonId": 18892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Isabella Rossellini",
+			"character": "Lisle von Rhuman",
+			"tmdbMovieId": 9374,
+			"tmdbPersonId": 6588,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

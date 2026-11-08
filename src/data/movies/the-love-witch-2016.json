@@ -26,15 +26,15 @@
 	"cinepostaScore": 7,
 	"runtimeMinutes": 121,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Love Witch usa el artificio de Anna Biller para pinchar la fantasía de ser adorada, con Samantha Robinson sosteniendo una protagonista tan bella como peligrosa.",
-		"whatToExpect": "Elaine llega buscando un amor perfecto y recurre a hechizos; cada conquista deriva en deseo, decepción y una violencia difícil de maquillar.",
-		"pace": "Avanza con modales de melodrama antiguo, deteniéndose en rituales, conversaciones y decorados antes de dejar que el horror se filtre.",
-		"intensity": "El color brillante convive con sexo, manipulación y muertes; el contraste vuelve inquietante una película que parece jugar a ser liviana.",
-		"practicalContext": "Dura 121 minutos y pide entrar en su estética retro; si buscás terror directo, su deliberada artificialidad puede sentirse distante.",
-		"forFansOf": "Te va a gustar si te interesan sátiras feministas, cine de explotación recreado con precisión y protagonistas que desbordan el papel asignado.",
-		"notForYouIf": "No es para vos si necesitás realismo, sustos frecuentes o romances donde el deseo no venga acompañado de una lectura incómoda."
-	},
+		"tenSecondTake": {
+			"verdict": "The Love Witch usa el artificio de Anna Biller para pinchar la fantasía de ser adorada, con Samantha Robinson sosteniendo una protagonista tan bella como peligrosa.",
+			"whatToExpect": "Elaine llega buscando un amor perfecto y recurre a hechizos; cada conquista deriva en deseo, decepción y una violencia difícil de maquillar.",
+			"pace": "Avanza con modales de melodrama antiguo, deteniéndose en rituales, conversaciones y decorados antes de dejar que el horror se filtre.",
+			"intensity": "El color brillante convive con sexo, manipulación y muertes; el contraste vuelve inquietante una película que parece jugar a ser liviana.",
+			"practicalContext": "Dura 121 minutos y pide entrar en su estética retro; si buscás terror directo, su deliberada artificialidad puede sentirse distante.",
+			"forFansOf": "Te va a gustar si te interesan sátiras feministas, cine de explotación recreado con precisión y protagonistas que desbordan el papel asignado.",
+			"notForYouIf": "No es para vos si necesitás realismo, sustos frecuentes o romances donde el deseo no venga acompañado de una lectura incómoda."
+		},
 		"becauseYouLiked": [
 			"mandy-2018",
 			"midsommar-el-terror-no-espera-la-noche-2019"
@@ -56,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Samantha Robinson",
+			"character": "Elaine",
+			"tmdbMovieId": 374052,
+			"tmdbPersonId": 1216579,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gian Keys",
+			"character": "Griff",
+			"tmdbMovieId": 374052,
+			"tmdbPersonId": 1410624,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

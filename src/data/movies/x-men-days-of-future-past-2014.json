@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Hugh Jackman",
+			"character": "Logan / Wolverine",
+			"tmdbMovieId": 127585,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James McAvoy",
+			"character": "Charles Xavier",
+			"tmdbMovieId": 127585,
+			"tmdbPersonId": 5530,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Fassbender",
+			"character": "Erik Lehnsherr",
+			"tmdbMovieId": 127585,
+			"tmdbPersonId": 17288,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

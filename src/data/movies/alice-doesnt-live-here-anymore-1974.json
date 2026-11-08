@@ -53,5 +53,42 @@
 	},
 	"review": "Martin Scorsese sigue a Alice cuando queda viuda y sale a la ruta con su hijo buscando una vida propia, sin convertir su deseo en un cuento prolijo. Ellen Burstyn sostiene el personaje con bronca, humor y cansancio, mientras Diane Ladd y Kris Kristofferson aportan vínculos que no funcionan como rescate mágico. La dirección baja el volumen de su violencia habitual, pero conserva nervio en cocinas, bares y discusiones. El ritmo es irregular por momentos, aunque esa deriva le queda bien. Vale por un melodrama cotidiano mucho más filoso de lo que parece.",
 	"runtimeMinutes": 112,
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Ellen Burstyn",
+			"character": "Alice Hyatt",
+			"tmdbMovieId": 16153,
+			"tmdbPersonId": 9560,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alfred Lutter",
+			"character": "Tommy",
+			"tmdbMovieId": 16153,
+			"tmdbPersonId": 90170,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kris Kristofferson",
+			"character": "David",
+			"tmdbMovieId": 16153,
+			"tmdbPersonId": 10823,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harvey Keitel",
+			"character": "Ben Eberhardt",
+			"tmdbMovieId": 16153,
+			"tmdbPersonId": 1037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Ladd",
+			"character": "Flo",
+			"tmdbMovieId": 16153,
+			"tmdbPersonId": 6587,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

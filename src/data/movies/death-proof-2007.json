@@ -50,5 +50,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Kurt Russell",
+			"character": "Stuntman Mike",
+			"tmdbMovieId": 1991,
+			"tmdbPersonId": 6856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zoë Bell",
+			"character": "Zoë Bell",
+			"tmdbMovieId": 1991,
+			"tmdbPersonId": 20494,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rosario Dawson",
+			"character": "Abernathy",
+			"tmdbMovieId": 1991,
+			"tmdbPersonId": 5916,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

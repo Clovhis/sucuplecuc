@@ -51,5 +51,28 @@
 		]
 	},
 	"review": "Convertir autitos de juguete en una aventura de espionaje le deja bastante espacio a Sam Hargrave para organizar persecuciones, pero muy poco para construir un mundo propio. John Cena funciona mejor cuando su tamaño y su aire despreocupado chocan con el desconcierto de los amigos; ahí aparece la comedia que sostiene el viaje. Los saltos entre países y las maniobras se llevan casi toda la atención. La nostalgia del reencuentro queda más anunciada que trabajada, y el recorrido repite conflictos demasiado conocidos. Tiene movimiento de sobra; falta que los personajes pesen tanto como los vehículos.",
-	"runtimeMinutes": 126
+	"runtimeMinutes": 126,
+	"castCharacters": [
+		{
+			"actor": "John Cena",
+			"character": "Sean",
+			"tmdbMovieId": 1148365,
+			"tmdbPersonId": 56446,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Biel",
+			"character": "Aimee",
+			"tmdbMovieId": 1148365,
+			"tmdbPersonId": 10860,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Richardson",
+			"character": "Crosby",
+			"tmdbMovieId": 1148365,
+			"tmdbPersonId": 1429453,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

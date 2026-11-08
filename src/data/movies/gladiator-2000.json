@@ -58,5 +58,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Russell Crowe",
+			"character": "Maximus",
+			"tmdbMovieId": 98,
+			"tmdbPersonId": 934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joaquin Phoenix",
+			"character": "Commodus",
+			"tmdbMovieId": 98,
+			"tmdbPersonId": 73421,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Connie Nielsen",
+			"character": "Lucilla",
+			"tmdbMovieId": 98,
+			"tmdbPersonId": 935,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

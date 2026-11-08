@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "CA, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Andrew Garfield",
+			"character": "Spider-Man / Peter Parker",
+			"tmdbMovieId": 102382,
+			"tmdbPersonId": 37625,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Stone",
+			"character": "Gwen Stacy",
+			"tmdbMovieId": 102382,
+			"tmdbPersonId": 54693,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jamie Foxx",
+			"character": "Electro / Max Dillon",
+			"tmdbMovieId": 102382,
+			"tmdbPersonId": 134,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

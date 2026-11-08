@@ -51,5 +51,21 @@
 			"el-planeta-del-tesoro-2002"
 		]
 	},
-	"review": "Atlantis: El imperio perdido se siente como una aventura pulp trasladada a la animación, con mapas, ruinas, vehículos imposibles y un equipo lleno de personalidades. Michael J. Fox y Cree Summer sostienen la curiosidad de Milo y Kida, mientras James Garner aporta autoridad sin apagar el misterio. La película comprime demasiada mitología en poco tiempo, pero su diseño retrofuturista, sus criaturas y su ambición de mundo perdido le dieron una identidad duradera."
+	"review": "Atlantis: El imperio perdido se siente como una aventura pulp trasladada a la animación, con mapas, ruinas, vehículos imposibles y un equipo lleno de personalidades. Michael J. Fox y Cree Summer sostienen la curiosidad de Milo y Kida, mientras James Garner aporta autoridad sin apagar el misterio. La película comprime demasiada mitología en poco tiempo, pero su diseño retrofuturista, sus criaturas y su ambición de mundo perdido le dieron una identidad duradera.",
+	"castCharacters": [
+		{
+			"actor": "Michael J. Fox",
+			"character": "Milo (voice)",
+			"tmdbMovieId": 10865,
+			"tmdbPersonId": 521,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cree Summer",
+			"character": "Princess Kida (voice)",
+			"tmdbMovieId": 10865,
+			"tmdbPersonId": 34985,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

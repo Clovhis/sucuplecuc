@@ -59,5 +59,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sam Worthington",
+			"character": "Jake Sully",
+			"tmdbMovieId": 76600,
+			"tmdbPersonId": 65731,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zoe Saldaña",
+			"character": "Neytiri",
+			"tmdbMovieId": 76600,
+			"tmdbPersonId": 8691,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sigourney Weaver",
+			"character": "Kiri",
+			"tmdbMovieId": 76600,
+			"tmdbPersonId": 10205,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

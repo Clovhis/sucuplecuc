@@ -53,5 +53,28 @@
 	"audienceRating": "+12",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Diana Wynyard",
+			"character": "Jane Marryot",
+			"tmdbMovieId": 56164,
+			"tmdbPersonId": 117499,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Clive Brook",
+			"character": "Robert Marryot",
+			"tmdbMovieId": 56164,
+			"tmdbPersonId": 13340,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Una O'Connor",
+			"character": "Ellen Bridges",
+			"tmdbMovieId": 56164,
+			"tmdbPersonId": 2929,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

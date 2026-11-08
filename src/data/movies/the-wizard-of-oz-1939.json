@@ -28,29 +28,52 @@
     "wins": []
   },
   "runtimeMinutes": 98,
-	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Wizard of Oz todavía convierte el camino amarillo en una invitación; Victor Fleming guía a Judy Garland entre canciones, peligro y una imaginación que no envejeció del todo.",
-		"whatToExpect": "Dorothy llega a Oz por un tornado, reúne amigos con carencias propias y busca al mago que promete devolverla a Kansas.",
-		"pace": "Alterna canciones, encuentros y amenazas con una lógica de cuento, dejando que cada tramo del viaje cambie el color de la aventura.",
-		"intensity": "La bruja y el bosque aportan oscuridad, pero el humor y la música mantienen el miedo dentro de una fábula familiar.",
-		"practicalContext": "Dura 98 minutos y entra como clásico musical de función familiar; el contraste de colores y decorados merece una pantalla atenta.",
-		"forFansOf": "Te va a gustar si disfrutás cuentos de viaje, canciones inolvidables y mundos artesanales donde cada personaje busca algo distinto.",
-		"notForYouIf": "No es para vos si necesitás realismo, efectos modernos o una aventura infantil que esconda sus moralejas."
-	},
-	"becauseYouLiked": [
-		"los-descendientes-viaje-al-mundo-oscuro-2026",
-		"la-ciudad-de-los-ninos-perdidos-1995"
-	],
-	"related": [
-		"pinocho-1940",
-		"fantastic-beasts-and-where-to-find-them-2016",
-		"the-dark-crystal-1982",
-		"una-serie-de-eventos-desafortunados-2004"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "The Wizard of Oz todavía convierte el camino amarillo en una invitación; Victor Fleming guía a Judy Garland entre canciones, peligro y una imaginación que no envejeció del todo.",
+      "whatToExpect": "Dorothy llega a Oz por un tornado, reúne amigos con carencias propias y busca al mago que promete devolverla a Kansas.",
+      "pace": "Alterna canciones, encuentros y amenazas con una lógica de cuento, dejando que cada tramo del viaje cambie el color de la aventura.",
+      "intensity": "La bruja y el bosque aportan oscuridad, pero el humor y la música mantienen el miedo dentro de una fábula familiar.",
+      "practicalContext": "Dura 98 minutos y entra como clásico musical de función familiar; el contraste de colores y decorados merece una pantalla atenta.",
+      "forFansOf": "Te va a gustar si disfrutás cuentos de viaje, canciones inolvidables y mundos artesanales donde cada personaje busca algo distinto.",
+      "notForYouIf": "No es para vos si necesitás realismo, efectos modernos o una aventura infantil que esconda sus moralejas."
+    },
+    "becauseYouLiked": [
+      "los-descendientes-viaje-al-mundo-oscuro-2026",
+      "la-ciudad-de-los-ninos-perdidos-1995"
+    ],
+    "related": [
+      "pinocho-1940",
+      "fantastic-beasts-and-where-to-find-them-2016",
+      "the-dark-crystal-1982",
+      "una-serie-de-eventos-desafortunados-2004"
+    ]
+  },
   "review": "Victor Fleming sigue a Dorothy desde Kansas hasta Oz y convierte un sueño de infancia en un viaje de canciones, amigos improbables y peligros que nunca dejan de ser juguetones. Judy Garland le da corazón y claridad a una protagonista que necesita volver a casa sin que la aventura pierda misterio. La dirección aprovecha el cambio de blanco y negro a color como una puerta a un mundo artesanal y soñado. El ritmo tiene humor, música e imaginación en cada tramo. Vale porque no vive sólo de nostalgia: todavía contagia ganas de seguir el camino amarillo.",
   "audienceRating": "ATP",
   "reviewPublishedAt": "2026-03-13",
-  "synopsis": "Un tornado arrastra a Dorothy desde Kansas hasta la fantástica tierra de Oz. Para volver a casa, emprende un viaje hacia la Ciudad Esmeralda junto a un espantapájaros, un hombre de hojalata y un león temeroso."
+  "synopsis": "Un tornado arrastra a Dorothy desde Kansas hasta la fantástica tierra de Oz. Para volver a casa, emprende un viaje hacia la Ciudad Esmeralda junto a un espantapájaros, un hombre de hojalata y un león temeroso.",
+  "castCharacters": [
+    {
+      "actor": "Judy Garland",
+      "character": "Dorothy",
+      "tmdbMovieId": 630,
+      "tmdbPersonId": 9066,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Frank Morgan",
+      "character": "Oz / Professor Marvel",
+      "tmdbMovieId": 630,
+      "tmdbPersonId": 9067,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Ray Bolger",
+      "character": "Scarecrow / Hunk",
+      "tmdbMovieId": 630,
+      "tmdbPersonId": 9068,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

@@ -51,18 +51,55 @@
 			"forFansOf": "Si te gustan clásicos italianos, sátiras de la fama y personajes que se pierden entre gente.",
 			"notForYouIf": "No es para vos si necesitás un arco narrativo lineal, respuestas espirituales o una película que juzgue a sus personajes desde afuera."
 		},
-	"becauseYouLiked": [
-		"fellini-ocho-y-medio-1963",
-		"the-sugarland-express-1974"
-	],
-	"related": [
-		"el-graduado-1967",
-		"going-my-way-1944",
-		"terms-of-endearment-1983",
-		"hannah-and-her-sisters-1986"
-	]
-},
+		"becauseYouLiked": [
+			"fellini-ocho-y-medio-1963",
+			"the-sugarland-express-1974"
+		],
+		"related": [
+			"el-graduado-1967",
+			"going-my-way-1944",
+			"terms-of-endearment-1983",
+			"hannah-and-her-sisters-1986"
+		]
+	},
 	"review": "Fellini retrata una clase alta hipnotizada por su propia imagen, sin separar la fascinación visual de la tristeza. La estructura episódica permite pasar de la sátira al milagro y de la multitud a la soledad con una libertad exuberante. Marcello Mastroianni encarna al espectador privilegiado que puede entrar a todas partes y, aun así, no encuentra dónde quedarse. Marcello recorre fiestas y calles sin encontrar un lugar propio, y la película convierte ese privilegio en una forma de extravío.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Marcello Mastroianni",
+			"character": "Marcello Rubini",
+			"tmdbMovieId": 439,
+			"tmdbPersonId": 5676,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anita Ekberg",
+			"character": "Sylvia",
+			"tmdbMovieId": 439,
+			"tmdbPersonId": 5961,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anouk Aimée",
+			"character": "Maddalena",
+			"tmdbMovieId": 439,
+			"tmdbPersonId": 5682,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Yvonne Furneaux",
+			"character": "Emma",
+			"tmdbMovieId": 439,
+			"tmdbPersonId": 5962,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Magali Noël",
+			"character": "Fanny",
+			"tmdbMovieId": 439,
+			"tmdbPersonId": 5963,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

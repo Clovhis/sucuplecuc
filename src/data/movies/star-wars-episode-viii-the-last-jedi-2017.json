@@ -52,5 +52,28 @@
 	"synopsis": "Tras la muerte de Han Solo y el avance de la Primera Orden, Rey viaja a Ahch-To para pedirle ayuda a Luke Skywalker. Mientras la Resistencia intenta sobrevivir a la persecución enemiga, cada personaje debe decidir qué legado quiere sostener y cuál está dispuesto a romper.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mark Hamill",
+			"character": "Luke Skywalker / Dobbu Scay (voice)",
+			"tmdbMovieId": 181808,
+			"tmdbPersonId": 2,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carrie Fisher",
+			"character": "Leia Organa",
+			"tmdbMovieId": 181808,
+			"tmdbPersonId": 4,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adam Driver",
+			"character": "Kylo Ren",
+			"tmdbMovieId": 181808,
+			"tmdbPersonId": 1023139,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

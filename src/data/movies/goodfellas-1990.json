@@ -65,5 +65,28 @@
 	"country": "US",
 	"isArgentinian": false,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "James Conway",
+			"tmdbMovieId": 769,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ray Liotta",
+			"character": "Henry Hill",
+			"tmdbMovieId": 769,
+			"tmdbPersonId": 11477,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Pesci",
+			"character": "Tommy DeVito",
+			"tmdbMovieId": 769,
+			"tmdbPersonId": 4517,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -58,5 +58,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Kåre Hedebrant",
+			"character": "Oskar",
+			"tmdbMovieId": 13310,
+			"tmdbPersonId": 74382,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lina Leandersson",
+			"character": "Eli",
+			"tmdbMovieId": 13310,
+			"tmdbPersonId": 74383,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Per Ragnar",
+			"character": "Håkan",
+			"tmdbMovieId": 13310,
+			"tmdbPersonId": 74384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Henrik Dahl",
+			"character": "Erik",
+			"tmdbMovieId": 13310,
+			"tmdbPersonId": 74385,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

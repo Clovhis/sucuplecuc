@@ -54,5 +54,35 @@
 			"el-extrano-2016"
 		]
 	},
-	"review": "Gothika convierte una institución psiquiátrica en un laberinto de pasillos, culpa y apariciones. Mathieu Kassovitz filma la pesadilla con una estética húmeda y opresiva, mientras Halle Berry sostiene el desconcierto de Miranda incluso cuando el guion explica demasiado. No todo el misterio resiste una segunda mirada, pero la película tiene nervio, una atmósfera reconocible y el encanto de un thriller sobrenatural de estudio que se anima a ser bastante turbio."
+	"review": "Gothika convierte una institución psiquiátrica en un laberinto de pasillos, culpa y apariciones. Mathieu Kassovitz filma la pesadilla con una estética húmeda y opresiva, mientras Halle Berry sostiene el desconcierto de Miranda incluso cuando el guion explica demasiado. No todo el misterio resiste una segunda mirada, pero la película tiene nervio, una atmósfera reconocible y el encanto de un thriller sobrenatural de estudio que se anima a ser bastante turbio.",
+	"castCharacters": [
+		{
+			"actor": "Halle Berry",
+			"character": "Miranda Grey",
+			"tmdbMovieId": 4970,
+			"tmdbPersonId": 4587,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Downey Jr.",
+			"character": "Pete Graham",
+			"tmdbMovieId": 4970,
+			"tmdbPersonId": 3223,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Penélope Cruz",
+			"character": "Chloe Sava",
+			"tmdbMovieId": 4970,
+			"tmdbPersonId": 955,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles S. Dutton",
+			"character": "Douglas Grey",
+			"tmdbMovieId": 4970,
+			"tmdbPersonId": 17764,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

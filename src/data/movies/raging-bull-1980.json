@@ -54,5 +54,42 @@
 	},
 	"review": "Toro salvaje retrata la carrera y el derrumbe de Jake LaMotta, un boxeador brillante cuya violencia fuera del ring termina destruyendo cada vínculo cercano. Martin Scorsese filma los combates en blanco y negro como pesadillas físicas, llenas de sudor, flashes y golpes que parecen deformar el espacio. Robert De Niro construye a LaMotta sin pedir simpatía, y Joe Pesci le aporta a Joey una lealtad cada vez más difícil de sostener. Es dura, ruidosa y poco complaciente, pero vale por cómo convierte el deporte en un retrato brutal de los celos y el orgullo.",
 	"runtimeMinutes": 129,
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Jake LaMotta",
+			"tmdbMovieId": 1578,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cathy Moriarty",
+			"character": "Vickie LaMotta",
+			"tmdbMovieId": 1578,
+			"tmdbPersonId": 14702,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Pesci",
+			"character": "Joey LaMotta",
+			"tmdbMovieId": 1578,
+			"tmdbPersonId": 4517,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frank Vincent",
+			"character": "Salvy Batts",
+			"tmdbMovieId": 1578,
+			"tmdbPersonId": 7164,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicholas Colasanto",
+			"character": "Tommy Como",
+			"tmdbMovieId": 1578,
+			"tmdbPersonId": 17651,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

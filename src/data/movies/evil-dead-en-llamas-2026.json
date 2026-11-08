@@ -62,5 +62,28 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Sébastien Vaniček no viene a pedir permiso: enciende la mecha de Evil Dead con prótesis, sangre y una familia que se pudre delante tuyo. La materia física tiene peso y varios ataques están inventados con una crueldad que da gusto si buscabas una función sin sutilezas. Souheila Yacoub le pone desesperación real a Alice, así que el delirio no queda reducido a una demostración de carnicería. La contra es que la película aprieta tanto el mismo botón que termina agotando antes de encontrar una idea nueva. Cuando afloja la solemnidad y se entrega al disparate, revive la maldad juguetona que la saga sabe hacer muy bien."
+	"review": "Sébastien Vaniček no viene a pedir permiso: enciende la mecha de Evil Dead con prótesis, sangre y una familia que se pudre delante tuyo. La materia física tiene peso y varios ataques están inventados con una crueldad que da gusto si buscabas una función sin sutilezas. Souheila Yacoub le pone desesperación real a Alice, así que el delirio no queda reducido a una demostración de carnicería. La contra es que la película aprieta tanto el mismo botón que termina agotando antes de encontrar una idea nueva. Cuando afloja la solemnidad y se entrega al disparate, revive la maldad juguetona que la saga sabe hacer muy bien.",
+	"castCharacters": [
+		{
+			"actor": "Souheila Yacoub",
+			"character": "Alice",
+			"tmdbMovieId": 1212763,
+			"tmdbPersonId": 2037046,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hunter Doohan",
+			"character": "Joseph",
+			"tmdbMovieId": 1212763,
+			"tmdbPersonId": 1911865,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luciane Buchanan",
+			"character": "Thya",
+			"tmdbMovieId": 1212763,
+			"tmdbPersonId": 1399806,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

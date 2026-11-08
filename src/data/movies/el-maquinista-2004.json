@@ -56,5 +56,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Christian Bale",
+			"character": "Trevor Reznik",
+			"tmdbMovieId": 4553,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Jason Leigh",
+			"character": "Stevie",
+			"tmdbMovieId": 4553,
+			"tmdbPersonId": 10431,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aitana Sánchez-Gijón",
+			"character": "Marie",
+			"tmdbMovieId": 4553,
+			"tmdbPersonId": 37946,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Sharian",
+			"character": "Ivan",
+			"tmdbMovieId": 4553,
+			"tmdbPersonId": 36900,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

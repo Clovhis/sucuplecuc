@@ -37,19 +37,42 @@
 			"forFansOf": "Fans de Harry Potter, de las criaturas fantásticas y de las aventuras donde un protagonista tímido resuelve problemas cuidando animales.",
 			"notForYouIf": "Buscás una historia completamente autónoma, acción continua o un tono oscuro. Fantastic Beasts ya mira hacia una saga más grande."
 		},
-	"becauseYouLiked": [
-		"harry-potter-and-the-deathly-hallows-part-2-2011",
-		"harry-potter-and-the-deathly-hallows-part-1-2010"
-	],
-	"related": [
-		"harry-potter-and-the-half-blood-prince-2009",
-		"harry-potter-and-the-order-of-the-phoenix-2007",
-		"the-bfg-2016",
-		"el-caballero-verde-2021"
-	]
-},
+		"becauseYouLiked": [
+			"harry-potter-and-the-deathly-hallows-part-2-2011",
+			"harry-potter-and-the-deathly-hallows-part-1-2010"
+		],
+		"related": [
+			"harry-potter-and-the-half-blood-prince-2009",
+			"harry-potter-and-the-order-of-the-phoenix-2007",
+			"the-bfg-2016",
+			"el-caballero-verde-2021"
+		]
+	},
 	"review": "Fantastic Beasts and Where to Find Them lleva al magizoólogo Newt Scamander por el Nueva York de los años veinte, donde sus criaturas escapadas se cruzan con un conflicto más oscuro. David Yates dirige el paseo con buen pulso y Eddie Redmayne encuentra para Newt una timidez particular que lo diferencia de otros héroes de la saga; las bestias aportan humor y sorpresa sin ser sólo adorno. Cuando la historia prepara futuras entregas pierde un poco de ligereza. Vale por descubrir un rincón nuevo de ese universo y por una aventura más amable que grandilocuente.",
 	"synopsis": "En 1926, el magizoólogo Newt Scamander llega a Nueva York con una valija repleta de criaturas fantásticas. Cuando varios de esos seres se escapan, queda envuelto en un conflicto que amenaza con exponer al mundo mágico.",
 	"audienceRating": "+12",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Eddie Redmayne",
+			"character": "Newt",
+			"tmdbMovieId": 259316,
+			"tmdbPersonId": 37632,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katherine Waterston",
+			"character": "Porpentina 'Tina' Goldstein",
+			"tmdbMovieId": 259316,
+			"tmdbPersonId": 77795,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alison Sudol",
+			"character": "Queenie",
+			"tmdbMovieId": 259316,
+			"tmdbPersonId": 998225,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

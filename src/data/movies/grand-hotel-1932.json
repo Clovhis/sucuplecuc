@@ -59,5 +59,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Greta Garbo",
+			"character": "Grusinskaya",
+			"tmdbMovieId": 33680,
+			"tmdbPersonId": 19549,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Barrymore",
+			"character": "Baron Felix von Gaigern",
+			"tmdbMovieId": 33680,
+			"tmdbPersonId": 29578,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Crawford",
+			"character": "Flämmchen",
+			"tmdbMovieId": 33680,
+			"tmdbPersonId": 31550,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

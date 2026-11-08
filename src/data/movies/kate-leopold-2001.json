@@ -57,5 +57,28 @@
 	"review": "Kate & Leopold encuentra una comedia romántica simpática en el choque entre un duque educado para 1876 y una profesional que vive a las corridas en el Nueva York contemporáneo. Meg Ryan aporta el ritmo de ejecutiva desencantada y Hugh Jackman entiende que Leopold funciona mejor cuando su cortesía parece genuina, no una pose. La fantasía temporal es caprichosa y el conflicto con el exnovio pierde fuerza, pero James Mangold sostiene un tono cálido, con buen pulso para el vestuario y una pareja que hace agradable incluso lo más improbable.",
 	"runtimeMinutes": 118,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Meg Ryan",
+			"character": "Kate McKay",
+			"tmdbMovieId": 11232,
+			"tmdbPersonId": 5344,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Jackman",
+			"character": "Leopold",
+			"tmdbMovieId": 11232,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liev Schreiber",
+			"character": "Stuart Besser",
+			"tmdbMovieId": 11232,
+			"tmdbPersonId": 23626,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

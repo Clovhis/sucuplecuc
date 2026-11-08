@@ -53,5 +53,35 @@
 			"maverick-1994"
 		]
 	},
-	"review": "Silverado entiende el western como una película de amigos, códigos y entradas triunfales, pero no se queda en la postal polvorienta. Lawrence Kasdan arma un relato coral donde cada personaje llega con su propia herida y encuentra una razón concreta para plantarse frente al abuso. Kevin Costner aparece con energía juvenil y un encanto todavía desprolijo, bien acompañado por un elenco que sabe vender rivalidades y camaradería. Hay exceso, humor y melodrama, aunque el pulso aventurero nunca se cae."
+	"review": "Silverado entiende el western como una película de amigos, códigos y entradas triunfales, pero no se queda en la postal polvorienta. Lawrence Kasdan arma un relato coral donde cada personaje llega con su propia herida y encuentra una razón concreta para plantarse frente al abuso. Kevin Costner aparece con energía juvenil y un encanto todavía desprolijo, bien acompañado por un elenco que sabe vender rivalidades y camaradería. Hay exceso, humor y melodrama, aunque el pulso aventurero nunca se cae.",
+	"castCharacters": [
+		{
+			"actor": "Kevin Kline",
+			"character": "Paden",
+			"tmdbMovieId": 11509,
+			"tmdbPersonId": 8945,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scott Glenn",
+			"character": "Emmett",
+			"tmdbMovieId": 11509,
+			"tmdbPersonId": 349,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Glover",
+			"character": "Malachi 'Mal' Johnson",
+			"tmdbMovieId": 11509,
+			"tmdbPersonId": 2047,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Costner",
+			"character": "Jake",
+			"tmdbMovieId": 11509,
+			"tmdbPersonId": 1269,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

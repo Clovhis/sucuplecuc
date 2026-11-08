@@ -2,7 +2,7 @@
 	"slug": "el-coleccionista-de-huesos-1999",
 	"title": "El coleccionista de huesos",
 	"originalTitle": "The Bone Collector",
-  "synopsis": "Una investigadora encuentra el rastro de un asesino que deja pistas para un experto en criminología retirado por una lesión. Desde su casa, él reconstruye las escenas; ella recorre la ciudad y busca descifrar la lógica del criminal antes de que vuelva a actuar.",
+	"synopsis": "Una investigadora encuentra el rastro de un asesino que deja pistas para un experto en criminología retirado por una lesión. Desde su casa, él reconstruye las escenas; ella recorre la ciudad y busca descifrar la lógica del criminal antes de que vuelva a actuar.",
 	"year": 1999,
 	"reviewPublishedAt": "2026-11-06",
 	"audienceRating": "+17",
@@ -55,5 +55,21 @@
 	"releasePlatforms": [
 		"Netflix"
 	],
-	"runtimeMinutes": 118
+	"runtimeMinutes": 118,
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "Lincoln Rhyme",
+			"tmdbMovieId": 9481,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Angelina Jolie",
+			"character": "Amelia Donaghy",
+			"tmdbMovieId": 9481,
+			"tmdbPersonId": 11701,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

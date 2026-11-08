@@ -52,5 +52,28 @@
 			"dias-extranos-1995"
 		]
 	},
-	"review": "Alfonso Cuarón convierte la órbita terrestre en un espacio de belleza y terror físico. Cada giro de Sandra Bullock, cada respiración y cada silencio tiene una consecuencia concreta, mientras Clooney aporta una calma que hace más fuerte la soledad posterior. La película combina espectáculo y supervivencia sin perder de vista el cuerpo humano, su fragilidad y su voluntad de seguir. Pocas veces el 3D y el diseño sonoro estuvieron tan integrados a la narración: no decoran el vacío, lo vuelven una amenaza palpable."
+	"review": "Alfonso Cuarón convierte la órbita terrestre en un espacio de belleza y terror físico. Cada giro de Sandra Bullock, cada respiración y cada silencio tiene una consecuencia concreta, mientras Clooney aporta una calma que hace más fuerte la soledad posterior. La película combina espectáculo y supervivencia sin perder de vista el cuerpo humano, su fragilidad y su voluntad de seguir. Pocas veces el 3D y el diseño sonoro estuvieron tan integrados a la narración: no decoran el vacío, lo vuelven una amenaza palpable.",
+	"castCharacters": [
+		{
+			"actor": "Sandra Bullock",
+			"character": "Ryan Stone",
+			"tmdbMovieId": 49047,
+			"tmdbPersonId": 18277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Clooney",
+			"character": "Matt Kowalski",
+			"tmdbMovieId": 49047,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Harris",
+			"character": "Mission Control (voice)",
+			"tmdbMovieId": 49047,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,28 @@
 		]
 	},
 	"runtimeMinutes": 94,
-	"review": "Una noche de venganza quiere ser un thriller de encargo y termina pareciendo una sucesión de pantallas de carga. Ruby Rose tiene una protagonista con pasado criminal y una hija en peligro, pero la película no le da suficiente material para que esa urgencia se vuelva tensión. Morgan Freeman funciona como presencia seca y manipuladora, aunque su personaje parece estar en otra película; el resto de la trama se mueve entre órdenes, persecuciones y diálogos que explican lo que acabamos de ver. Hay un par de golpes de acción filmados con energía, pero no alcanzan a compensar el montaje mecánico. No la mires por los nombres del afiche: el plan se queda sin combustible demasiado rápido."
+	"review": "Una noche de venganza quiere ser un thriller de encargo y termina pareciendo una sucesión de pantallas de carga. Ruby Rose tiene una protagonista con pasado criminal y una hija en peligro, pero la película no le da suficiente material para que esa urgencia se vuelva tensión. Morgan Freeman funciona como presencia seca y manipuladora, aunque su personaje parece estar en otra película; el resto de la trama se mueve entre órdenes, persecuciones y diálogos que explican lo que acabamos de ver. Hay un par de golpes de acción filmados con energía, pero no alcanzan a compensar el montaje mecánico. No la mires por los nombres del afiche: el plan se queda sin combustible demasiado rápido.",
+	"castCharacters": [
+		{
+			"actor": "Ruby Rose",
+			"character": "Victoria",
+			"tmdbMovieId": 804435,
+			"tmdbPersonId": 1246972,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Morgan Freeman",
+			"character": "Damon",
+			"tmdbMovieId": 804435,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick Muldoon",
+			"character": "Agent Monroe",
+			"tmdbMovieId": 804435,
+			"tmdbPersonId": 41687,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

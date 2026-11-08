@@ -59,5 +59,35 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Septiembre 5 convierte una sala de control en un lugar tan asfixiante como cualquier escenario de acción. Tim Fehlbaum evita la reconstrucción espectacular del atentado y se queda con quienes deben decidir qué mostrar mientras apenas entienden lo que sucede. John Magaro transmite la ansiedad de un productor empujado a ocupar un rol que no pidió, y Peter Sarsgaard suma autoridad sin convertir al veterano en una solución fácil. El dispositivo puede sentirse calculado, pero es justamente esa limitación la que vuelve filosa a la película: cada plano abre una pregunta incómoda sobre mirar, informar y llegar primero."
+	"review": "Septiembre 5 convierte una sala de control en un lugar tan asfixiante como cualquier escenario de acción. Tim Fehlbaum evita la reconstrucción espectacular del atentado y se queda con quienes deben decidir qué mostrar mientras apenas entienden lo que sucede. John Magaro transmite la ansiedad de un productor empujado a ocupar un rol que no pidió, y Peter Sarsgaard suma autoridad sin convertir al veterano en una solución fácil. El dispositivo puede sentirse calculado, pero es justamente esa limitación la que vuelve filosa a la película: cada plano abre una pregunta incómoda sobre mirar, informar y llegar primero.",
+	"castCharacters": [
+		{
+			"actor": "Peter Sarsgaard",
+			"character": "Roone Arledge",
+			"tmdbMovieId": 1211472,
+			"tmdbPersonId": 133,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Magaro",
+			"character": "Geoffrey Mason",
+			"tmdbMovieId": 1211472,
+			"tmdbPersonId": 37154,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Chaplin",
+			"character": "Marvin Bader",
+			"tmdbMovieId": 1211472,
+			"tmdbPersonId": 21343,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonie Benesch",
+			"character": "Marianne Gebhardt",
+			"tmdbMovieId": 1211472,
+			"tmdbPersonId": 119065,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

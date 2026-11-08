@@ -58,5 +58,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "CA, GB, HU, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "'K'",
+			"tmdbMovieId": 335984,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harrison Ford",
+			"character": "Rick Deckard",
+			"tmdbMovieId": 335984,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ana de Armas",
+			"character": "Joi",
+			"tmdbMovieId": 335984,
+			"tmdbPersonId": 224513,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

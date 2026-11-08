@@ -53,5 +53,42 @@
 			"el-clan-de-hierro-2023"
 		]
 	},
-	"review": "La dama de oro encuentra su mejor tono cuando entiende que el cuadro no es sólo una pieza de museo: es una puerta de regreso a una familia desarmada por la persecución. Helen Mirren le presta a Maria Altmann una ironía filosa y una tristeza que aparece sin pedir permiso, mientras Ryan Reynolds funciona como contrapunto más torpe y persistente. El relato judicial avanza con claridad y algún subrayado sentimental, pero el duelo por lo perdido termina teniendo más peso que el trámite legal."
+	"review": "La dama de oro encuentra su mejor tono cuando entiende que el cuadro no es sólo una pieza de museo: es una puerta de regreso a una familia desarmada por la persecución. Helen Mirren le presta a Maria Altmann una ironía filosa y una tristeza que aparece sin pedir permiso, mientras Ryan Reynolds funciona como contrapunto más torpe y persistente. El relato judicial avanza con claridad y algún subrayado sentimental, pero el duelo por lo perdido termina teniendo más peso que el trámite legal.",
+	"castCharacters": [
+		{
+			"actor": "Helen Mirren",
+			"character": "Maria Altmann",
+			"tmdbMovieId": 304357,
+			"tmdbPersonId": 15735,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ryan Reynolds",
+			"character": "Randol Schoenberg",
+			"tmdbMovieId": 304357,
+			"tmdbPersonId": 10859,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tatiana Maslany",
+			"character": "Young Maria Altmann",
+			"tmdbMovieId": 304357,
+			"tmdbPersonId": 61134,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katie Holmes",
+			"character": "Pam Schoenberg",
+			"tmdbMovieId": 304357,
+			"tmdbPersonId": 3897,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonathan Pryce",
+			"character": "Chief Justice Rehnquist",
+			"tmdbMovieId": 304357,
+			"tmdbPersonId": 378,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

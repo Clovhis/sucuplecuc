@@ -53,5 +53,28 @@
 			"el-fugitivo-1993"
 		]
 	},
-	"review": "Walter Hill arma una buddy movie seca y callejera, con Nick Nolte aportando gruñido policial y Eddie Murphy entrando al cine grande con una energía que todavía parece eléctrica. La película entiende que el choque de personalidades es tan importante como la persecución, y por eso sus mejores escenas dejan que el fastidio se transforme en complicidad. Su mezcla de violencia, humor y ritmo de thriller terminó fijando una fórmula que el cine comercial repetiría durante décadas."
+	"review": "Walter Hill arma una buddy movie seca y callejera, con Nick Nolte aportando gruñido policial y Eddie Murphy entrando al cine grande con una energía que todavía parece eléctrica. La película entiende que el choque de personalidades es tan importante como la persecución, y por eso sus mejores escenas dejan que el fastidio se transforme en complicidad. Su mezcla de violencia, humor y ritmo de thriller terminó fijando una fórmula que el cine comercial repetiría durante décadas.",
+	"castCharacters": [
+		{
+			"actor": "Eddie Murphy",
+			"character": "Reggie Hammond",
+			"tmdbMovieId": 150,
+			"tmdbPersonId": 776,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Nolte",
+			"character": "Jack Cates",
+			"tmdbMovieId": 150,
+			"tmdbPersonId": 1733,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Remar",
+			"character": "Albert Ganz",
+			"tmdbMovieId": 150,
+			"tmdbPersonId": 1736,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

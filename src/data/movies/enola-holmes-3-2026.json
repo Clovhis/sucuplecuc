@@ -57,5 +57,42 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Enola Holmes 3 mantiene el encanto veloz de la saga cuando deja que Millie Bobby Brown juegue con el misterio, el romance y esa energia de aventura que nunca se pone demasiado solemne. Malta le da aire nuevo y hay quimica de sobra para que el viaje entre facil.\n\nDonde se queda corta es en el caso: esta vez el enredo tiene menos filo, varios conflictos se subrayan de mas y el combo general se siente un poco mas chico que antes. Aun asi no se pincha del todo. Tiene ritmo, caras queribles y suficientes momentos simpaticos como para pasarla bien, aunque ya no sorprende tanto."
+	"review": "Enola Holmes 3 mantiene el encanto veloz de la saga cuando deja que Millie Bobby Brown juegue con el misterio, el romance y esa energia de aventura que nunca se pone demasiado solemne. Malta le da aire nuevo y hay quimica de sobra para que el viaje entre facil.\n\nDonde se queda corta es en el caso: esta vez el enredo tiene menos filo, varios conflictos se subrayan de mas y el combo general se siente un poco mas chico que antes. Aun asi no se pincha del todo. Tiene ritmo, caras queribles y suficientes momentos simpaticos como para pasarla bien, aunque ya no sorprende tanto.",
+	"castCharacters": [
+		{
+			"actor": "Millie Bobby Brown",
+			"character": "Enola Holmes",
+			"tmdbMovieId": 1202033,
+			"tmdbPersonId": 1356210,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Louis Partridge",
+			"character": "Tewkesbury",
+			"tmdbMovieId": 1202033,
+			"tmdbPersonId": 1558986,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Himesh Patel",
+			"character": "Dr. Watson",
+			"tmdbMovieId": 1202033,
+			"tmdbPersonId": 1227717,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Henry Cavill",
+			"character": "Sherlock Holmes",
+			"tmdbMovieId": 1202033,
+			"tmdbPersonId": 73968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helena Bonham Carter",
+			"character": "Eudoria Holmes",
+			"tmdbMovieId": 1202033,
+			"tmdbPersonId": 1283,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

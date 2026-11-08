@@ -52,5 +52,28 @@
 		]
 	},
 	"review": "Woody Allen convierte la inseguridad de Allan Felix en una comedia de movimientos torpes, fantasías cinéfilas y consejos imposibles. Diane Keaton y Tony Roberts le dan a la pareja amiga una naturalidad que vuelve más incómodo el deseo que aparece en el medio. La película tiene una ligereza de escenario trasladada al cine, con chistes que dependen mucho del ritmo y del encanto de sus actores. Sigue siendo una entrada muy disfrutable al humor romántico de Allen.",
-	"runtimeMinutes": 85
+	"runtimeMinutes": 85,
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Allan Felix",
+			"tmdbMovieId": 11610,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Keaton",
+			"character": "Linda Christie",
+			"tmdbMovieId": 11610,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Roberts",
+			"character": "Dick Christie",
+			"tmdbMovieId": 11610,
+			"tmdbPersonId": 10555,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

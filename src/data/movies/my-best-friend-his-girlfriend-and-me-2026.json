@@ -33,7 +33,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Marco Petry arma My Best Friend, His Girlfriend and Me como una comedia de lealtades incómodas donde el triángulo importa más por los silencios que por la sorpresa; el elenco sostiene un enredo simpático y prudente.",
-			"whatToExpect": "Amistad, novia, celos, cenas tensas y decisiones que obligan a tres personas a redefinir reglas que creían tener claras.",			"pace": "Avanza por malentendidos, conversaciones y cruces cotidianos; mantiene una cadencia liviana aunque algunas decisiones parecen demasiado acomodadas.",			"intensity": "La presión es emocional y social, con vergüenza y miedo a perder un vínculo; no busca convertir el triángulo en un thriller.",			"practicalContext": "La ficha no consigna duración; elegila como comedia de relaciones para una noche relajada, sin esperar un romance definitivo o escándalo mayor.",			"forFansOf": "Para quienes disfrutan enredos de amistad, parejas adultas y películas donde una cena puede poner patas arriba todo el grupo.",			"notForYouIf": "No es para vos si querés decisiones más arriesgadas, humor filoso o una historia amorosa que se anime a romper de verdad sus reglas."
+			"whatToExpect": "Amistad, novia, celos, cenas tensas y decisiones que obligan a tres personas a redefinir reglas que creían tener claras.",
+			"pace": "Avanza por malentendidos, conversaciones y cruces cotidianos; mantiene una cadencia liviana aunque algunas decisiones parecen demasiado acomodadas.",
+			"intensity": "La presión es emocional y social, con vergüenza y miedo a perder un vínculo; no busca convertir el triángulo en un thriller.",
+			"practicalContext": "La ficha no consigna duración; elegila como comedia de relaciones para una noche relajada, sin esperar un romance definitivo o escándalo mayor.",
+			"forFansOf": "Para quienes disfrutan enredos de amistad, parejas adultas y películas donde una cena puede poner patas arriba todo el grupo.",
+			"notForYouIf": "No es para vos si querés decisiones más arriesgadas, humor filoso o una historia amorosa que se anime a romper de verdad sus reglas."
 		},
 		"becauseYouLiked": [
 			"53-domingos-2026",
@@ -49,5 +54,42 @@
 	"review": "Mi mejor amigo, su novia y yo se apoya en un triángulo de afectos bastante reconocible y lo deja avanzar a fuerza de silencios mal administrados. Marco Petry entiende que la comedia nace menos de los gritos que de la incomodidad: una cena, un mensaje o una mirada pueden cambiar el equilibrio de un grupo que creía tener todo hablado.\n\nEl conflicto es más simpático que sorprendente y la película no siempre se anima a sacar consecuencias de sus decisiones, pero el elenco le encuentra un ritmo liviano. Funciona mejor como comedia de vínculos que como romance definitivo, con esa clase de enredo que se mira buscando una salida emocional antes que una gran revelación.",
 	"releasePlatform": "Netflix",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Kostja Ullmann",
+			"character": "Olli",
+			"tmdbMovieId": 1589248,
+			"tmdbPersonId": 5202,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Janina Uhse",
+			"character": "Rebecca",
+			"tmdbMovieId": 1589248,
+			"tmdbPersonId": 1827917,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Kross",
+			"character": "Matze",
+			"tmdbMovieId": 1589248,
+			"tmdbPersonId": 5847,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ferdinand Hofer",
+			"character": "Schmitti",
+			"tmdbMovieId": 1589248,
+			"tmdbPersonId": 1322963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Clara Immel",
+			"character": "Hannah",
+			"tmdbMovieId": 1589248,
+			"tmdbPersonId": 3615390,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

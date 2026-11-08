@@ -69,5 +69,42 @@
 	},
 	"review": "Curtis Hanson arma un rompecabezas policial que nunca confunde complejidad con puro ruido. La gracia está en cómo cada detective mira la ciudad desde un ángulo distinto: la ambición de Exley, la violencia protectora de White y el cinismo mediático de Vincennes van chocando hasta revelar una misma maquinaria de corrupción. Guy Pearce y Russell Crowe sostienen una rivalidad que se vuelve alianza sin perder asperezas, mientras Kim Basinger encuentra humanidad en medio de tanta pose. El guion pide atención, pero devuelve una intriga sólida, filosa y con una atmósfera de policial negro extraordinaria.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Kevin Spacey",
+			"character": "Jack Vincennes",
+			"tmdbMovieId": 2118,
+			"tmdbPersonId": 1979,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Russell Crowe",
+			"character": "Wendell 'Bud' White",
+			"tmdbMovieId": 2118,
+			"tmdbPersonId": 934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Guy Pearce",
+			"character": "Edmund 'Ed' Exley",
+			"tmdbMovieId": 2118,
+			"tmdbPersonId": 529,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kim Basinger",
+			"character": "Lynn Bracken",
+			"tmdbMovieId": 2118,
+			"tmdbPersonId": 326,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Cromwell",
+			"character": "Dudley Smith",
+			"tmdbMovieId": 2118,
+			"tmdbPersonId": 2505,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

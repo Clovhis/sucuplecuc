@@ -64,5 +64,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jamie Foxx",
+			"character": "Django Freeman",
+			"tmdbMovieId": 68718,
+			"tmdbPersonId": 134,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christoph Waltz",
+			"character": "Dr. King Schultz",
+			"tmdbMovieId": 68718,
+			"tmdbPersonId": 27319,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Calvin J. Candie",
+			"tmdbMovieId": 68718,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

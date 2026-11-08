@@ -58,5 +58,35 @@
 			"rango-2011"
 		]
 	},
-	"review": "Shrek, felices para siempre entiende que el final de una saga puede hablar de algo menos épico: el cansancio de no valorar lo que se tiene. El universo alternativo permite recuperar la aventura y la emoción, mientras el Burro de Eddie Murphy vuelve a ser el amigo que no deja que el protagonista se encierre en su mal humor. El desvío temporal devuelve peligro y ternura a una historia que podría haberse limitado a despedirse."
+	"review": "Shrek, felices para siempre entiende que el final de una saga puede hablar de algo menos épico: el cansancio de no valorar lo que se tiene. El universo alternativo permite recuperar la aventura y la emoción, mientras el Burro de Eddie Murphy vuelve a ser el amigo que no deja que el protagonista se encierre en su mal humor. El desvío temporal devuelve peligro y ternura a una historia que podría haberse limitado a despedirse.",
+	"castCharacters": [
+		{
+			"actor": "Mike Myers",
+			"character": "Shrek (voice)",
+			"tmdbMovieId": 10192,
+			"tmdbPersonId": 12073,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eddie Murphy",
+			"character": "Donkey (voice)",
+			"tmdbMovieId": 10192,
+			"tmdbPersonId": 776,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cameron Diaz",
+			"character": "Princess Fiona (voice)",
+			"tmdbMovieId": 10192,
+			"tmdbPersonId": 6941,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Antonio Banderas",
+			"character": "Puss in Boots (voice)",
+			"tmdbMovieId": 10192,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

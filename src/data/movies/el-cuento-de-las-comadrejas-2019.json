@@ -38,18 +38,41 @@
 			"forFansOf": "Fans de las comedias de encierro, de las obras con actores veteranos y de las historias donde la malicia también puede ser una forma de supervivencia.",
 			"notForYouIf": "Buscás naturalismo, ritmo de thriller o personajes bondadosos. Sus protagonistas se ganaron el veneno y la película los deja usarlo."
 		},
-	"becauseYouLiked": [
-		"parque-lezama-2026",
-		"la-odisea-de-los-giles-2019"
-	],
-	"related": [
-		"mi-obra-maestra-2018",
-		"el-ciudadano-ilustre-2016",
-		"el-robo-del-siglo-2020",
-		"el-secreto-de-sus-ojos-2009"
-	]
-},
+		"becauseYouLiked": [
+			"parque-lezama-2026",
+			"la-odisea-de-los-giles-2019"
+		],
+		"related": [
+			"mi-obra-maestra-2018",
+			"el-ciudadano-ilustre-2016",
+			"el-robo-del-siglo-2020",
+			"el-secreto-de-sus-ojos-2009"
+		]
+	},
 	"synopsis": "Mara Ordaz, una vieja estrella del cine, vive aislada en una mansión junto a su esposo, un actor venido a menos, un guionista venenoso y un director fiel a otro tiempo. La llegada de una joven pareja interesada en la propiedad convierte la convivencia en una guerra de egos, trampas y maldades elegantes.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Graciela Borges",
+			"character": "Mara Ordaz",
+			"tmdbMovieId": 574088,
+			"tmdbPersonId": 590943,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Oscar Martínez",
+			"character": "Norberto Imbert",
+			"tmdbMovieId": 574088,
+			"tmdbPersonId": 1457004,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Brandoni",
+			"character": "Pedro De Córdova",
+			"tmdbMovieId": 574088,
+			"tmdbPersonId": 74896,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

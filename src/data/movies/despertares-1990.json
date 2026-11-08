@@ -56,5 +56,35 @@
 		]
 	},
 	"review": "Despertares evita que el milagro médico sea el final de la historia. El despertar de Leonard abre una ventana a la alegría, al deseo y también a la conciencia de todo lo que se perdió, y Robert De Niro convierte cada gesto recuperado en algo frágil, nunca en una simple exhibición de virtuosismo. Robin Williams acompaña desde una timidez muy distinta a sus papeles más expansivos, como si el asombro del médico también necesitara aprender a hablar. Penny Marshall busca la emoción de frente y a veces la música empuja demasiado, pero el conflicto central conserva una honestidad difícil de sacudir. Es una película que duele por lo que devuelve y por lo que, inevitablemente, vuelve a quitar.",
-	"runtimeMinutes": 120
+	"runtimeMinutes": 120,
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Leonard Lowe",
+			"tmdbMovieId": 11005,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robin Williams",
+			"character": "Malcolm Sayer",
+			"tmdbMovieId": 11005,
+			"tmdbPersonId": 2157,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Heard",
+			"character": "Dr. Kaufman",
+			"tmdbMovieId": 11005,
+			"tmdbPersonId": 11512,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Kavner",
+			"character": "Eleanor Costello",
+			"tmdbMovieId": 11005,
+			"tmdbPersonId": 199,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

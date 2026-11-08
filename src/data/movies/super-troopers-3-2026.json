@@ -52,5 +52,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 104,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Jay Chandrasekhar",
+			"character": "Thorny",
+			"tmdbMovieId": 675871,
+			"tmdbPersonId": 52049,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Heffernan",
+			"character": "Farva",
+			"tmdbMovieId": 675871,
+			"tmdbPersonId": 56251,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

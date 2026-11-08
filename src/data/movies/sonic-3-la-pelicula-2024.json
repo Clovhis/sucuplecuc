@@ -38,28 +38,65 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Sonic 3 encuentra un rival con peso en Shadow y deja que la amenaza obligue al equipo a revisar qué significa estar juntos. Jeff Fowler conserva el desparpajo, mientras Keanu Reeves aporta una oscuridad inesperada y Jim Carrey duplica el caos.",
-			"whatToExpect": "Sonic, Tails y Knuckles se enfrentan a una velocidad que no pueden superar solos. Ben Schwartz, Idris Elba y Colleen O'Shaughnessey mantienen la química del grupo; Shadow llega con una herida que excede el simple rol de villano.",
-			"pace": "La acción entra rápido y se distribuye entre carreras, alianzas y revelaciones sin detener demasiado el motor. Algunas escenas humanas bajan la marcha, pero la película sabe volver al movimiento antes de perder el envión.",
-			"intensity": "Tiene más carga emocional que las anteriores, sobre todo cuando Shadow deja de ser un obstáculo y aparece como alguien marcado por la pérdida. La violencia sigue envuelta en aventura, aunque el tono se oscurece.",
-			"practicalContext": "Conviene verla con la lógica de una saga que ya acumuló familia, rivales y referencias, pero no hace falta tomarla como drama solemne. El corazón está en cómo los personajes eligen una alianza aun cuando podrían separarse.",
-			"forFansOf": "Puede gustarte si te divierten las adaptaciones de videojuegos que se permiten crecer, los equipos con poderes distintos y las actuaciones exageradas de Jim Carrey dentro de un mundo de dibujos veloces.",
-			"notForYouIf": "Quizás no sea para vos si querés una aventura más contenida, si las referencias de franquicia te distraen o si preferís un Shadow menos melodramático y una comedia con menos volumen."
-		},
-	"becauseYouLiked": [
-		"amos-del-universo-2026",
-		"fast-and-furious-presents-hobbs-and-shaw-2019"
-	],
-	"related": [
-		"lego-star-wars-the-mandalorian-2026",
-		"back-to-the-future-1985",
-		"terminator-dark-fate-2019",
-		"heroes-fuera-de-orbita-1999"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Sonic 3 encuentra un rival con peso en Shadow y deja que la amenaza obligue al equipo a revisar qué significa estar juntos. Jeff Fowler conserva el desparpajo, mientras Keanu Reeves aporta una oscuridad inesperada y Jim Carrey duplica el caos.",
+      "whatToExpect": "Sonic, Tails y Knuckles se enfrentan a una velocidad que no pueden superar solos. Ben Schwartz, Idris Elba y Colleen O'Shaughnessey mantienen la química del grupo; Shadow llega con una herida que excede el simple rol de villano.",
+      "pace": "La acción entra rápido y se distribuye entre carreras, alianzas y revelaciones sin detener demasiado el motor. Algunas escenas humanas bajan la marcha, pero la película sabe volver al movimiento antes de perder el envión.",
+      "intensity": "Tiene más carga emocional que las anteriores, sobre todo cuando Shadow deja de ser un obstáculo y aparece como alguien marcado por la pérdida. La violencia sigue envuelta en aventura, aunque el tono se oscurece.",
+      "practicalContext": "Conviene verla con la lógica de una saga que ya acumuló familia, rivales y referencias, pero no hace falta tomarla como drama solemne. El corazón está en cómo los personajes eligen una alianza aun cuando podrían separarse.",
+      "forFansOf": "Puede gustarte si te divierten las adaptaciones de videojuegos que se permiten crecer, los equipos con poderes distintos y las actuaciones exageradas de Jim Carrey dentro de un mundo de dibujos veloces.",
+      "notForYouIf": "Quizás no sea para vos si querés una aventura más contenida, si las referencias de franquicia te distraen o si preferís un Shadow menos melodramático y una comedia con menos volumen."
+    },
+    "becauseYouLiked": [
+      "amos-del-universo-2026",
+      "fast-and-furious-presents-hobbs-and-shaw-2019"
+    ],
+    "related": [
+      "lego-star-wars-the-mandalorian-2026",
+      "back-to-the-future-1985",
+      "terminator-dark-fate-2019",
+      "heroes-fuera-de-orbita-1999"
+    ]
+  },
   "review": "La tercera de Sonic entiende que su mejor combustible es el desparpajo y no trata de vender solemnidad donde no la hay. Jeff Fowler mantiene la carrera a toda velocidad, y el ingreso de Shadow suma una amenaza con presencia real en vez de ser apenas otro muñeco para la colección.\n\nJim Carrey se despacha con una doble dosis de exageración que le queda perfecta a este universo; Ben Schwartz, Idris Elba y Colleen O'Shaughnessey conservan una dinámica aceitada. Hay chistes que pasan de largo y la mezcla de animación con humanos sigue siendo rara, pero la acción es clara y el ritmo no se cae.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Jim Carrey",
+      "character": "Ivo Robotnik / Gerald Robotnik",
+      "tmdbMovieId": 939243,
+      "tmdbPersonId": 206,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Ben Schwartz",
+      "character": "Sonic (voice)",
+      "tmdbMovieId": 939243,
+      "tmdbPersonId": 222121,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Keanu Reeves",
+      "character": "Shadow (voice)",
+      "tmdbMovieId": 939243,
+      "tmdbPersonId": 6384,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Idris Elba",
+      "character": "Knuckles (voice)",
+      "tmdbMovieId": 939243,
+      "tmdbPersonId": 17605,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Colleen O'Shaughnessey",
+      "character": "Tails (voice)",
+      "tmdbMovieId": 939243,
+      "tmdbPersonId": 1212864,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

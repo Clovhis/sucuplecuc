@@ -36,29 +36,66 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Un drama medieval que repite un conflicto desde tres miradas para mostrar cómo el poder fabrica versiones. Ridley Scott sostiene la escala, mientras Jodie Comer reordena el centro frente a Matt Damon y Adam Driver.",
-			"whatToExpect": "Jodie Comer, Matt Damon y Adam Driver cuentan el mismo matrimonio y acusación desde perspectivas incompatibles, con Ben Affleck aportando una ligereza peligrosa. El último duelo cruza honor, violencia y relato.",
-			"pace": "Largo y progresivo, con tres capítulos que revisan hechos y cambian la lectura. El ritmo se vuelve más urgente cuando la palabra ya no alcanza y aparece el combate.",
-			"intensity": "Muy alta en violencia sexual, tensión y brutalidad física. La película no usa la época como excusa decorativa: muestra quién puede ser creído.",
-			"practicalContext": "Dura 153 minutos y pide una noche completa con disposición emocional. Es un drama histórico intenso, no una aventura medieval liviana.",
-			"forFansOf": "Fans de Ridley Scott, de los relatos con puntos de vista múltiples y de las historias donde un duelo público encubre una disputa de poder.",
-			"notForYouIf": "Buscás entretenimiento simple, romance amable o escenas de acción constantes. El último duelo usa la batalla para cerrar una discusión más profunda."
-		},
-	"becauseYouLiked": [
-		"en-honor-a-la-verdad-1996",
-		"los-secretos-del-poder-2009"
-	],
-	"related": [
-		"k-19-the-widowmaker-2002",
-		"michael-collins-1996",
-		"la-patagonia-rebelde-1974",
-		"la-semilla-del-fruto-sagrado-2024"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Un drama medieval que repite un conflicto desde tres miradas para mostrar cómo el poder fabrica versiones. Ridley Scott sostiene la escala, mientras Jodie Comer reordena el centro frente a Matt Damon y Adam Driver.",
+      "whatToExpect": "Jodie Comer, Matt Damon y Adam Driver cuentan el mismo matrimonio y acusación desde perspectivas incompatibles, con Ben Affleck aportando una ligereza peligrosa. El último duelo cruza honor, violencia y relato.",
+      "pace": "Largo y progresivo, con tres capítulos que revisan hechos y cambian la lectura. El ritmo se vuelve más urgente cuando la palabra ya no alcanza y aparece el combate.",
+      "intensity": "Muy alta en violencia sexual, tensión y brutalidad física. La película no usa la época como excusa decorativa: muestra quién puede ser creído.",
+      "practicalContext": "Dura 153 minutos y pide una noche completa con disposición emocional. Es un drama histórico intenso, no una aventura medieval liviana.",
+      "forFansOf": "Fans de Ridley Scott, de los relatos con puntos de vista múltiples y de las historias donde un duelo público encubre una disputa de poder.",
+      "notForYouIf": "Buscás entretenimiento simple, romance amable o escenas de acción constantes. El último duelo usa la batalla para cerrar una discusión más profunda."
+    },
+    "becauseYouLiked": [
+      "en-honor-a-la-verdad-1996",
+      "los-secretos-del-poder-2009"
+    ],
+    "related": [
+      "k-19-the-widowmaker-2002",
+      "michael-collins-1996",
+      "la-patagonia-rebelde-1974",
+      "la-semilla-del-fruto-sagrado-2024"
+    ]
+  },
   "review": "Ridley Scott arma una película de época enorme sin usar la Edad Media como fondo de pantalla. Cada vuelta sobre el mismo conflicto cambia lo que creíamos saber y le da a Jodie Comer un lugar central que reordena por completo la violencia, el ego y la impunidad que circulan alrededor suyo.\n\nMatt Damon y Adam Driver se mueven con una mezcla incómoda de orgullo y patetismo; Ben Affleck, en cambio, entra por una vía más desfachatada que aligera sin vaciar el asunto. Dura lo suyo y no todas las transiciones tienen la misma fineza, pero llega al duelo final con una tensión brutal y un peso emocional ganado de verdad.",
   "reviewPublishedAt": "2026-07-24",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Matt Damon",
+      "character": "Sir Jean de Carrouges",
+      "tmdbMovieId": 617653,
+      "tmdbPersonId": 1892,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Adam Driver",
+      "character": "Jacques Le Gris",
+      "tmdbMovieId": 617653,
+      "tmdbPersonId": 1023139,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Jodie Comer",
+      "character": "Marguerite de Carrouges",
+      "tmdbMovieId": 617653,
+      "tmdbPersonId": 1388593,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Ben Affleck",
+      "character": "Pierre d'Alençon",
+      "tmdbMovieId": 617653,
+      "tmdbPersonId": 880,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Harriet Walter",
+      "character": "Nicole de Carrouges",
+      "tmdbMovieId": 617653,
+      "tmdbPersonId": 17477,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

@@ -8,7 +8,11 @@
   "reviewPublishedAt": "2026-07-09",
   "audienceRating": "ATP",
   "category": "Romance",
-  "genres": ["Romance", "Drama", "Música"],
+  "genres": [
+    "Romance",
+    "Drama",
+    "Música"
+  ],
   "country": "FR",
   "isArgentinian": false,
   "poster": "assets/posters/2025/dos-pianos-2025.webp",
@@ -16,33 +20,70 @@
   "trailerYoutubeId": "ZURdw7WFnqM",
   "releasePlatform": "Otras plataformas",
   "director": "Arnaud Desplechin",
-  "mainCast": ["François Civil", "Nadia Tereszkiewicz", "Charlotte Rampling", "Hippolyte Girardot"],
+  "mainCast": [
+    "François Civil",
+    "Nadia Tereszkiewicz",
+    "Charlotte Rampling",
+    "Hippolyte Girardot"
+  ],
   "productionCompany": "Why Not Productions, ARTE France Cinéma, Auvergne-Rhône-Alpes Cinéma",
   "cinepostaScore": 7,
   "runtimeMinutes": 115,
-  "awards": { "wins": [] },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Un melodrama musical sobre volver a tocar, recordar y desordenar un pasado que parecía cerrado. Arnaud Desplechin apuesta al exceso emocional y encuentra su mejor pulso cuando la música dice lo que nadie puede.",
-			"whatToExpect": "François Civil interpreta a un pianista en crisis, rodeado por Nadia Tereszkiewicz y la presencia magnética de Charlotte Rampling. Dos pianos cruza deseo, memoria y ensayo con una puesta inquieta.",
-			"pace": "Avanza por recaídas, conversaciones y momentos de interpretación más que por una intriga definida. El ritmo se vuelve intenso cuando el pasado aparece en el presente.",
-			"intensity": "Media-alta en emoción y deseo, baja en acción. El conflicto aprieta por lo que los personajes callan y por la forma en que una melodía puede abrir una herida.",
-			"practicalContext": "Dura 115 minutos y pide entrar en su tono de melodrama europeo. Es ideal para una noche tranquila, con ganas de escuchar y acompañar a personajes bastante desbordados.",
-			"forFansOf": "Fans de los romances melancólicos, del cine musical sin fórmula y de las historias donde el arte sirve para ordenar recuerdos imposibles de conversar.",
-			"notForYouIf": "Preferís una trama directa, humor constante o una película que controle sus emociones. Dos pianos trabaja desde el arrebato y puede sentirse caprichosa."
-		},
-	"becauseYouLiked": [
-		"moulin-rouge-2001",
-		"gloria-bell-2019"
-	],
-	"related": [
-		"los-miserables-2012",
-		"west-side-story-2021",
-		"la-pianista-2001",
-		"sweet-and-lowdown-1999"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Un melodrama musical sobre volver a tocar, recordar y desordenar un pasado que parecía cerrado. Arnaud Desplechin apuesta al exceso emocional y encuentra su mejor pulso cuando la música dice lo que nadie puede.",
+      "whatToExpect": "François Civil interpreta a un pianista en crisis, rodeado por Nadia Tereszkiewicz y la presencia magnética de Charlotte Rampling. Dos pianos cruza deseo, memoria y ensayo con una puesta inquieta.",
+      "pace": "Avanza por recaídas, conversaciones y momentos de interpretación más que por una intriga definida. El ritmo se vuelve intenso cuando el pasado aparece en el presente.",
+      "intensity": "Media-alta en emoción y deseo, baja en acción. El conflicto aprieta por lo que los personajes callan y por la forma en que una melodía puede abrir una herida.",
+      "practicalContext": "Dura 115 minutos y pide entrar en su tono de melodrama europeo. Es ideal para una noche tranquila, con ganas de escuchar y acompañar a personajes bastante desbordados.",
+      "forFansOf": "Fans de los romances melancólicos, del cine musical sin fórmula y de las historias donde el arte sirve para ordenar recuerdos imposibles de conversar.",
+      "notForYouIf": "Preferís una trama directa, humor constante o una película que controle sus emociones. Dos pianos trabaja desde el arrebato y puede sentirse caprichosa."
+    },
+    "becauseYouLiked": [
+      "moulin-rouge-2001",
+      "gloria-bell-2019"
+    ],
+    "related": [
+      "los-miserables-2012",
+      "west-side-story-2021",
+      "la-pianista-2001",
+      "sweet-and-lowdown-1999"
+    ]
+  },
   "isPremiere": true,
   "premiereLabel": "ESTRENO",
-  "review": "Arnaud Desplechin hace que un regreso a Lyon tenga la electricidad de una recaída: Mathias vuelve a tocar, a recordar y a desordenar todo lo que había dejado cerrado. François Civil sostiene ese personaje quebrado sin buscar simpatía fácil, y Charlotte Rampling entra con una frialdad magnética que le cambia el pulso a cada escena. La música no decora; es el lugar donde el protagonista consigue decir lo que hablando no puede. El melodrama se pone intenso, incluso caprichoso, pero tiene una puesta inquieta y una sensibilidad muy particular para el deseo y la memoria. Si le comprás su exceso emocional, deja varias imágenes dando vueltas bastante después de los créditos."
+  "review": "Arnaud Desplechin hace que un regreso a Lyon tenga la electricidad de una recaída: Mathias vuelve a tocar, a recordar y a desordenar todo lo que había dejado cerrado. François Civil sostiene ese personaje quebrado sin buscar simpatía fácil, y Charlotte Rampling entra con una frialdad magnética que le cambia el pulso a cada escena. La música no decora; es el lugar donde el protagonista consigue decir lo que hablando no puede. El melodrama se pone intenso, incluso caprichoso, pero tiene una puesta inquieta y una sensibilidad muy particular para el deseo y la memoria. Si le comprás su exceso emocional, deja varias imágenes dando vueltas bastante después de los créditos.",
+  "castCharacters": [
+    {
+      "actor": "François Civil",
+      "character": "Mathias",
+      "tmdbMovieId": 1331349,
+      "tmdbPersonId": 78124,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Nadia Tereszkiewicz",
+      "character": "Claude",
+      "tmdbMovieId": 1331349,
+      "tmdbPersonId": 2019443,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Charlotte Rampling",
+      "character": "Elena",
+      "tmdbMovieId": 1331349,
+      "tmdbPersonId": 44079,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Hippolyte Girardot",
+      "character": "Max",
+      "tmdbMovieId": 1331349,
+      "tmdbPersonId": 23388,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

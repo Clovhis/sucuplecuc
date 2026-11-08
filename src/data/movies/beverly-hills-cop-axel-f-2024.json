@@ -46,5 +46,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-28",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Eddie Murphy",
+			"character": "Axel Foley",
+			"tmdbMovieId": 280180,
+			"tmdbPersonId": 776,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joseph Gordon-Levitt",
+			"character": "Detective Bobby Abbott",
+			"tmdbMovieId": 280180,
+			"tmdbPersonId": 24045,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Taylour Paige",
+			"character": "Jane Saunders",
+			"tmdbMovieId": 280180,
+			"tmdbPersonId": 1335818,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -58,5 +58,21 @@
 		"Apple TV"
 	],
 	"country": "FR",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Elizabeth Berkley",
+			"character": "Nomi Malone",
+			"tmdbMovieId": 10802,
+			"tmdbPersonId": 19189,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kyle MacLachlan",
+			"character": "Zack Carey",
+			"tmdbMovieId": 10802,
+			"tmdbPersonId": 6677,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

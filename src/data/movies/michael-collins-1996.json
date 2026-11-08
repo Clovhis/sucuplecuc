@@ -38,7 +38,11 @@
 		"tenSecondTake": {
 			"verdict": "Neil Jordan convierte la independencia irlandesa en una épica de decisiones imposibles; Liam Neeson hace de Michael Collins un líder magnético cuyo éxito también rompe alianzas.",
 			"whatToExpect": "Operaciones clandestinas, negociaciones, guerra urbana y discusiones entre compañeros que ya no saben si seguir peleando o aceptar una paz incompleta.",
-			"pace": "Avanza con energía de aventura política y salta entre estrategia, romance y combate; comprime años de historia sin dejar que el impulso se apague.",			"intensity": "La tensión es militar y moral: cada victoria obliga a elegir qué violencia continuar y qué vínculo sacrificar cuando llega la negociación.",			"practicalContext": "Sus 132 minutos piden una sesión atenta a nombres y cambios políticos; funciona si querés una épica histórica con un centro personal fuerte.",			"forFansOf": "Para quienes disfrutan biografías de revolución, el carisma de Liam Neeson y películas que discuten independencia y lealtad sin simplificar del todo.",			"notForYouIf": "No es para vos si buscás una cronología completa, una guerra sin debates o un romance que tenga más espacio que la política."
+			"pace": "Avanza con energía de aventura política y salta entre estrategia, romance y combate; comprime años de historia sin dejar que el impulso se apague.",
+			"intensity": "La tensión es militar y moral: cada victoria obliga a elegir qué violencia continuar y qué vínculo sacrificar cuando llega la negociación.",
+			"practicalContext": "Sus 132 minutos piden una sesión atenta a nombres y cambios políticos; funciona si querés una épica histórica con un centro personal fuerte.",
+			"forFansOf": "Para quienes disfrutan biografías de revolución, el carisma de Liam Neeson y películas que discuten independencia y lealtad sin simplificar del todo.",
+			"notForYouIf": "No es para vos si buscás una cronología completa, una guerra sin debates o un romance que tenga más espacio que la política."
 		},
 		"becauseYouLiked": [
 			"k-19-the-widowmaker-2002",
@@ -53,5 +57,42 @@
 	},
 	"review": "Neil Jordan arma una épica política que no olvida el costo personal de cada decisión. Liam Neeson le da a Collins una presencia magnética, capaz de convencer en una sala llena y de dejar ver la duda cuando la estrategia empieza a comerse los vínculos. Aidan Quinn y Stephen Rea evitan que el conflicto quede reducido a buenos contra malos, y Alan Rickman aprovecha muy bien sus apariciones. A veces comprime años de historia con apuro, pero su energía y sus discusiones sobre independencia, violencia y lealtad la vuelven absorbente.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Michael Collins",
+			"tmdbMovieId": 1770,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aidan Quinn",
+			"character": "Harry Roland",
+			"tmdbMovieId": 1770,
+			"tmdbPersonId": 18992,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Rea",
+			"character": "Ned Broy",
+			"tmdbMovieId": 1770,
+			"tmdbPersonId": 9029,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Rickman",
+			"character": "Eamon de Valera",
+			"tmdbMovieId": 1770,
+			"tmdbPersonId": 4566,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julia Roberts",
+			"character": "Kitty Kiernan",
+			"tmdbMovieId": 1770,
+			"tmdbPersonId": 1204,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

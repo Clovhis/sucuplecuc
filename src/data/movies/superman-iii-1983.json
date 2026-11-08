@@ -47,5 +47,28 @@
 	"reviewPublishedAt": "2026-03-06",
 	"synopsis": "Un empresario sin escrúpulos recluta a un joven experto en computación para manipular sistemas financieros. Su plan incluye una forma de kryptonita que altera a Superman, obligándolo a enfrentarse a una versión inesperada de sí mismo.",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Christopher Reeve",
+			"character": "Clark Kent / Superman",
+			"tmdbMovieId": 9531,
+			"tmdbPersonId": 20006,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Pryor",
+			"character": "August 'Gus' Gorman",
+			"tmdbMovieId": 9531,
+			"tmdbPersonId": 9309,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jackie Cooper",
+			"character": "Perry White",
+			"tmdbMovieId": 9531,
+			"tmdbPersonId": 55278,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

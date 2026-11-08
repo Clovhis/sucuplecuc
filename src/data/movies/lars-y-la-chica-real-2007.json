@@ -51,5 +51,28 @@
 	},
 	"review": "Lars y la chica real podría haber sido una comedia cruel y se convierte, con paciencia, en una historia de cuidado comunitario. Ryan Gosling interpreta la fragilidad de Lars sin convertirla en una rareza simpática, mientras Emily Mortimer y Paul Schneider sostienen el desconcierto de una familia que aprende a acompañar. Craig Gillespie mantiene un tono cálido, pero no borra el dolor del personaje. Su apuesta improbable funciona porque mira la fantasía como una etapa de duelo, no como un chiste.",
 	"runtimeMinutes": 106,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Lars Lindstrom",
+			"tmdbMovieId": 6615,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Mortimer",
+			"character": "Karin",
+			"tmdbMovieId": 6615,
+			"tmdbPersonId": 1246,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patricia Clarkson",
+			"character": "Dagmar",
+			"tmdbMovieId": 6615,
+			"tmdbPersonId": 1276,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

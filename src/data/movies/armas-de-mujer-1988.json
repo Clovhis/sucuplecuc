@@ -53,5 +53,35 @@
 			"peggy-sue-se-caso-1986"
 		]
 	},
-	"review": "Mike Nichols mezcla comedia romántica, sátira laboral y cuento de ascenso sin tratar a su protagonista como una ingenua que sólo necesita un cambio de ropa. Melanie Griffith le da a Tess una energía desbordada, Harrison Ford aporta encanto y Sigourney Weaver compone una antagonista que entiende perfectamente las reglas del poder. La película tiene un optimismo muy ochentoso y algunos conflictos se resuelven con demasiada comodidad, pero el ritmo, los diálogos y la tensión entre ambición y complicidad siguen funcionando. Es una historia de oficina con suficiente mordida como para no quedar reducida a una fantasía de ascenso."
+	"review": "Mike Nichols mezcla comedia romántica, sátira laboral y cuento de ascenso sin tratar a su protagonista como una ingenua que sólo necesita un cambio de ropa. Melanie Griffith le da a Tess una energía desbordada, Harrison Ford aporta encanto y Sigourney Weaver compone una antagonista que entiende perfectamente las reglas del poder. La película tiene un optimismo muy ochentoso y algunos conflictos se resuelven con demasiada comodidad, pero el ritmo, los diálogos y la tensión entre ambición y complicidad siguen funcionando. Es una historia de oficina con suficiente mordida como para no quedar reducida a una fantasía de ascenso.",
+	"castCharacters": [
+		{
+			"actor": "Melanie Griffith",
+			"character": "Tess McGill",
+			"tmdbMovieId": 3525,
+			"tmdbPersonId": 29369,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harrison Ford",
+			"character": "Jack Trainer",
+			"tmdbMovieId": 3525,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sigourney Weaver",
+			"character": "Katharine Parker",
+			"tmdbMovieId": 3525,
+			"tmdbPersonId": 10205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Cusack",
+			"character": "Cyn",
+			"tmdbMovieId": 3525,
+			"tmdbPersonId": 3234,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

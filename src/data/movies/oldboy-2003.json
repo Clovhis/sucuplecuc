@@ -35,24 +35,52 @@
     ]
   },
   "runtimeMinutes": 120,
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Park Chan-wook convierte la venganza de Choi Min-sik en una máquina de violencia, humor negro y revelación; su elegancia formal hace más insoportable el golpe final.",
-			"whatToExpect": "Quince años de encierro, una búsqueda de identidad, pasillos, martillos y un rival que controla la información como si fuera un arma.",			"pace": "Avanza por pistas y estallidos con una precisión feroz; la investigación nunca pierde impulso porque cada respuesta abre una crueldad nueva.",			"intensity": "Es brutal, gráfica y emocionalmente extrema, con violencia puesta para quebrar al protagonista y al espectador, no sólo para lucir coreografías.",			"practicalContext": "Con 120 minutos, exige una sesión de atención completa; no la elijas si estás buscando un thriller de venganza que cuide sus bordes.",			"forFansOf": "Para quienes disfrutan cine coreano, Park Chan-wook y relatos de venganza donde la puesta puede ser hermosa y repulsiva a la vez.",			"notForYouIf": "No es para vos si te incomodan la violencia gráfica, las revelaciones crueles o una película que no ofrece distancia moral para respirar."
-		},
-	"becauseYouLiked": [
-		"la-doncella-2016",
-		"munich-2005"
-	],
-	"related": [
-		"nunca-estaras-a-salvo-2017",
-		"duel-1971",
-		"the-killer-2023",
-		"el-fuego-de-la-venganza-2004"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Park Chan-wook convierte la venganza de Choi Min-sik en una máquina de violencia, humor negro y revelación; su elegancia formal hace más insoportable el golpe final.",
+      "whatToExpect": "Quince años de encierro, una búsqueda de identidad, pasillos, martillos y un rival que controla la información como si fuera un arma.",
+      "pace": "Avanza por pistas y estallidos con una precisión feroz; la investigación nunca pierde impulso porque cada respuesta abre una crueldad nueva.",
+      "intensity": "Es brutal, gráfica y emocionalmente extrema, con violencia puesta para quebrar al protagonista y al espectador, no sólo para lucir coreografías.",
+      "practicalContext": "Con 120 minutos, exige una sesión de atención completa; no la elijas si estás buscando un thriller de venganza que cuide sus bordes.",
+      "forFansOf": "Para quienes disfrutan cine coreano, Park Chan-wook y relatos de venganza donde la puesta puede ser hermosa y repulsiva a la vez.",
+      "notForYouIf": "No es para vos si te incomodan la violencia gráfica, las revelaciones crueles o una película que no ofrece distancia moral para respirar."
+    },
+    "becauseYouLiked": [
+      "la-doncella-2016",
+      "munich-2005"
+    ],
+    "related": [
+      "nunca-estaras-a-salvo-2017",
+      "duel-1971",
+      "the-killer-2023",
+      "el-fuego-de-la-venganza-2004"
+    ]
+  },
   "review": "Park Chan-wook arranca con un hombre encerrado sin explicación durante años y convierte su búsqueda de venganza en una pesadilla cada vez más cruel. Choi Min-sik hace de Oh Dae-su una mezcla feroz de rabia, torpeza y dolor, mientras Yoo Ji-tae compone un rival que disfruta manejar la información. La dirección combina violencia física, humor negro y encuadres elegantes sin suavizar el golpe de lo que revela. El ritmo avanza como un mecanismo que se cierra y la famosa pelea de pasillo tiene una energía brutal. Su extremo tono puede alejar, pero vale por una puesta que no te deja respirar.",
   "synopsis": "Oh Dae-su es secuestrado y encerrado sin explicación durante quince años. Al recuperar la libertad, recibe pocos días para descubrir quién destruyó su vida y por qué, mientras una búsqueda obsesiva lo acerca a una verdad devastadora.",
   "audienceRating": "+18",
-  "reviewPublishedAt": "2026-03-13"
+  "reviewPublishedAt": "2026-03-13",
+  "castCharacters": [
+    {
+      "actor": "Choi Min-sik",
+      "character": "Oh Dae-su",
+      "tmdbMovieId": 670,
+      "tmdbPersonId": 64880,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Yoo Ji-tae",
+      "character": "Lee Woo-jin",
+      "tmdbMovieId": 670,
+      "tmdbPersonId": 10112,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Kang Hye-jung",
+      "character": "Mi-do",
+      "tmdbMovieId": 670,
+      "tmdbPersonId": 1299317,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

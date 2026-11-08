@@ -61,5 +61,28 @@
 		"Apple TV"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Anthony Perkins",
+			"character": "Norman Bates",
+			"tmdbMovieId": 539,
+			"tmdbPersonId": 7301,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Janet Leigh",
+			"character": "Marion Crane",
+			"tmdbMovieId": 539,
+			"tmdbPersonId": 7302,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vera Miles",
+			"character": "Lila Crane",
+			"tmdbMovieId": 539,
+			"tmdbPersonId": 7303,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

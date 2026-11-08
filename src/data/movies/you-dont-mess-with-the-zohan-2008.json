@@ -60,5 +60,42 @@
 	],
 	"runtimeMinutes": 113,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Zohan Dvir",
+			"tmdbMovieId": 10661,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emmanuelle Chriqui",
+			"character": "Dalia Hakbarah",
+			"tmdbMovieId": 10661,
+			"tmdbPersonId": 59192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Turturro",
+			"character": "Fatoush 'The Phantom' Hakbarah",
+			"tmdbMovieId": 10661,
+			"tmdbPersonId": 1241,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Swardson",
+			"character": "Michael Klayman",
+			"tmdbMovieId": 10661,
+			"tmdbPersonId": 32907,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lainie Kazan",
+			"character": "Gail Klayman",
+			"tmdbMovieId": 10661,
+			"tmdbPersonId": 53647,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

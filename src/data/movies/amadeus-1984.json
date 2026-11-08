@@ -58,5 +58,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "F. Murray Abraham",
+			"character": "Antonio Salieri",
+			"tmdbMovieId": 279,
+			"tmdbPersonId": 1164,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Hulce",
+			"character": "Wolfgang Amadeus Mozart",
+			"tmdbMovieId": 279,
+			"tmdbPersonId": 3999,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elizabeth Berridge",
+			"character": "Constanze Mozart",
+			"tmdbMovieId": 279,
+			"tmdbPersonId": 4000,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

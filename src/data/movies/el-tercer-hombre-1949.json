@@ -44,18 +44,55 @@
 			"forFansOf": "Fans de Carol Reed, de los noirs europeos y de las películas donde una ciudad destruida también funciona como mapa de la traición.",
 			"notForYouIf": "Buscás una acción moderna, un misterio simple o personajes moralmente cómodos. El tercer hombre prefiere la contradicción."
 		},
-	"becauseYouLiked": [
-		"el-sueno-eterno-1946",
-		"pacto-de-sangre-1944"
-	],
-	"related": [
-		"chinatown-1974",
-		"tarde-de-perros-1975",
-		"atrapado-por-su-pasado-1993",
-		"dia-de-entrenamiento-2001"
-	]
-},
+		"becauseYouLiked": [
+			"el-sueno-eterno-1946",
+			"pacto-de-sangre-1944"
+		],
+		"related": [
+			"chinatown-1974",
+			"tarde-de-perros-1975",
+			"atrapado-por-su-pasado-1993",
+			"dia-de-entrenamiento-2001"
+		]
+	},
 	"review": "Carol Reed combina intriga, humor negro y ruinas políticas hasta hacer de la amistad una pregunta incómoda. Las diagonales, las sombras y la cítara de Anton Karas convierten cada alcantarilla y callejón en una trampa visual. Joseph Cotten lleva la mirada del espectador, mientras Orson Welles aparece con el magnetismo de alguien que ya decidió no pedir disculpas. La amistad queda en tensión entre la compasión de Holly y la capacidad de Harry para justificar cualquier daño.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Joseph Cotten",
+			"character": "Holly Martins",
+			"tmdbMovieId": 1092,
+			"tmdbPersonId": 7664,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alida Valli",
+			"character": "Anna Schmidt",
+			"tmdbMovieId": 1092,
+			"tmdbPersonId": 15385,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Trevor Howard",
+			"character": "Major Calloway",
+			"tmdbMovieId": 1092,
+			"tmdbPersonId": 12726,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Orson Welles",
+			"character": "Harry Lime",
+			"tmdbMovieId": 1092,
+			"tmdbPersonId": 40,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Hörbiger",
+			"character": "Karl the Porter",
+			"tmdbMovieId": 1092,
+			"tmdbPersonId": 14120,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -44,18 +44,55 @@
 			"forFansOf": "Puede ser tu película si te atraen la ciencia ficción filosófica, los relatos de memoria y las obras que convierten una premisa fantástica en una discusión sobre duelo, identidad y responsabilidad.",
 			"notForYouIf": "Quizás no sea para vos si necesitás explicaciones cerradas, cortes frecuentes o una misión espacial con objetivos concretos. Su misterio se disfruta más como experiencia que como acertijo a resolver."
 		},
-	"becauseYouLiked": [
-		"stalker-1979",
-		"ex-machina-2014"
-	],
-	"related": [
-		"arrival-2016",
-		"el-dia-de-la-revelacion-2026",
-		"dias-extranos-1995",
-		"looper-2012"
-	]
-},
+		"becauseYouLiked": [
+			"stalker-1979",
+			"ex-machina-2014"
+		],
+		"related": [
+			"arrival-2016",
+			"el-dia-de-la-revelacion-2026",
+			"dias-extranos-1995",
+			"looper-2012"
+		]
+	},
 	"review": "Andrei Tarkovsky usa la ciencia ficción para preguntar si conocer un planeta importa más que aceptar la propia culpa. La película alterna carretera, recuerdos y pasillos húmedos con una paciencia que vuelve material la confusión mental. Natalya Bondarchuk y Donatas Banionis encuentran una intimidad dolorosa dentro de una historia que nunca entrega respuestas simples. La estación materializa la memoria de sus visitantes, hasta que el viaje espacial se parece más a una confrontación íntima.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Natalya Bondarchuk",
+			"character": "Hari",
+			"tmdbMovieId": 593,
+			"tmdbPersonId": 1190211,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Donatas Banionis",
+			"character": "Kris Kelvin",
+			"tmdbMovieId": 593,
+			"tmdbPersonId": 1190206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jüri Järvet",
+			"character": "Dr. Snaut",
+			"tmdbMovieId": 593,
+			"tmdbPersonId": 8474,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vladislav Dvorzhetsky",
+			"character": "Henri Berton",
+			"tmdbMovieId": 593,
+			"tmdbPersonId": 8476,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mykola Hrynko",
+			"character": "Kelvin's Father",
+			"tmdbMovieId": 593,
+			"tmdbPersonId": 1190992,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

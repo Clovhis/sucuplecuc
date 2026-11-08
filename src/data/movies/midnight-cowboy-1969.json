@@ -35,7 +35,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "John Schlesinger deja que Joe Buck y Ratso se encuentren en una Nueva York que no perdona la ingenuidad; Jon Voight y Dustin Hoffman hacen de esa amistad una herida cálida.",
-			"whatToExpect": "Un aspirante a gigoló sin rumbo, un estafador enfermo, habitaciones prestadas y una ciudad que convierte la amistad en la única forma de refugio.",			"pace": "Avanza entre presente, recuerdos y encuentros torpes; la narración es nerviosa, pero las pausas dejan que la relación gane espesor.",			"intensity": "La intensidad es emocional y social: la miseria, el deseo y la enfermedad pesan más que una amenaza puntual o una trama criminal.",			"practicalContext": "Con 108 minutos, es un drama concentrado para una noche de cine urbano; conviene verla con ánimo para una historia triste, no como aventura de ascenso.",			"forFansOf": "Para quienes valoran actuaciones de Voight y Hoffman, amistades improbables y relatos de ciudad donde el fracaso todavía puede producir ternura.",			"notForYouIf": "No es para vos si buscás una Nueva York glamorosa, humor constante o un cierre que recompense a sus personajes con facilidad."
+			"whatToExpect": "Un aspirante a gigoló sin rumbo, un estafador enfermo, habitaciones prestadas y una ciudad que convierte la amistad en la única forma de refugio.",
+			"pace": "Avanza entre presente, recuerdos y encuentros torpes; la narración es nerviosa, pero las pausas dejan que la relación gane espesor.",
+			"intensity": "La intensidad es emocional y social: la miseria, el deseo y la enfermedad pesan más que una amenaza puntual o una trama criminal.",
+			"practicalContext": "Con 108 minutos, es un drama concentrado para una noche de cine urbano; conviene verla con ánimo para una historia triste, no como aventura de ascenso.",
+			"forFansOf": "Para quienes valoran actuaciones de Voight y Hoffman, amistades improbables y relatos de ciudad donde el fracaso todavía puede producir ternura.",
+			"notForYouIf": "No es para vos si buscás una Nueva York glamorosa, humor constante o un cierre que recompense a sus personajes con facilidad."
 		},
 		"becauseYouLiked": [
 			"kramer-vs-kramer-1979",
@@ -52,5 +57,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Dustin Hoffman",
+			"character": "Ratso",
+			"tmdbMovieId": 3116,
+			"tmdbPersonId": 4483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Voight",
+			"character": "Joe Buck",
+			"tmdbMovieId": 3116,
+			"tmdbPersonId": 10127,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sylvia Miles",
+			"character": "Cass",
+			"tmdbMovieId": 3116,
+			"tmdbPersonId": 19335,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

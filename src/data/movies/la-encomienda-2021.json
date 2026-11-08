@@ -8,7 +8,9 @@
 	"reviewPublishedAt": "2026-09-11",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama"],
+	"genres": [
+		"Drama"
+	],
 	"subgenres": [],
 	"country": "AR",
 	"isArgentinian": true,
@@ -17,7 +19,10 @@
 	"trailerYoutubeId": "snx7981jEvk",
 	"releasePlatform": "Flow",
 	"director": "Pablo Giorgelli",
-	"mainCast": ["Ettore D'Alessandro", "Marcelo Subiotto"],
+	"mainCast": [
+		"Ettore D'Alessandro",
+		"Marcelo Subiotto"
+	],
 	"productionCompany": "Giorgelli Film, Rei Cine y Bossa Nova Films",
 	"cinepostaScore": 5,
 	"runtimeMinutes": 102,
@@ -36,8 +41,30 @@
 			"forFansOf": "Si te interesan películas de barcos, dramas de encierro y relatos donde el cansancio mueve la trama.",
 			"notForYouIf": "No es para vos si necesitás acción marítima, explicaciones abundantes o personajes que expresen todo lo que sienten."
 		},
-		"becauseYouLiked": ["siberia-2020"],
-		"related": ["en-la-gama-de-los-grises-2015", "la-luz-incidente-2015", "las-corrientes-2025"]
+		"becauseYouLiked": [
+			"siberia-2020"
+		],
+		"related": [
+			"en-la-gama-de-los-grises-2015",
+			"la-luz-incidente-2015",
+			"las-corrientes-2025"
+		]
 	},
-	"review": "La encomienda encierra a sus personajes en un barco y deja que el espacio reducido haga visible cada tensión. Ettore D'Alessandro, Marcelo Subiotto y Henry Shaq Montero sostienen una convivencia áspera, donde el cansancio y la sospecha pesan tanto como el movimiento del mar. Pablo Giorgelli trabaja con una puesta seca, atento a los silencios y a los cuerpos que ocupan el mismo lugar sin poder acercarse. Es un drama de supervivencia íntimo, contenido y más interesado en la convivencia que en el golpe de efecto."
+	"review": "La encomienda encierra a sus personajes en un barco y deja que el espacio reducido haga visible cada tensión. Ettore D'Alessandro, Marcelo Subiotto y Henry Shaq Montero sostienen una convivencia áspera, donde el cansancio y la sospecha pesan tanto como el movimiento del mar. Pablo Giorgelli trabaja con una puesta seca, atento a los silencios y a los cuerpos que ocupan el mismo lugar sin poder acercarse. Es un drama de supervivencia íntimo, contenido y más interesado en la convivencia que en el golpe de efecto.",
+	"castCharacters": [
+		{
+			"actor": "Ettore D'Alessandro",
+			"character": "Pietro Gnarini",
+			"tmdbMovieId": 895762,
+			"tmdbPersonId": 141206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marcelo Subiotto",
+			"character": "Abreu",
+			"tmdbMovieId": 895762,
+			"tmdbPersonId": 1500062,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

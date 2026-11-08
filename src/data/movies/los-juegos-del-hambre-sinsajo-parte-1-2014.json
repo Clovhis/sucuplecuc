@@ -51,5 +51,21 @@
 		]
 	},
 	"review": "Sinsajo Parte 1 cambia la arena por una sala de edición, y ese desplazamiento es su apuesta más interesante. Katniss debe aprender a actuar como símbolo mientras otros deciden qué imágenes conviene mostrar. Francis Lawrence encuentra tensión en esa fabricación del heroísmo, especialmente cuando Jennifer Lawrence deja ver la distancia entre la persona exhausta y la figura que necesitan vender. La división del último libro se siente en una estructura que demora resoluciones. Aun así, mirar cómo una causa administra sus propias imágenes le da una aspereza que la acción continua habría tapado.",
-	"runtimeMinutes": 123
+	"runtimeMinutes": 123,
+	"castCharacters": [
+		{
+			"actor": "Jennifer Lawrence",
+			"character": "Katniss Everdeen",
+			"tmdbMovieId": 131631,
+			"tmdbPersonId": 72129,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Hutcherson",
+			"character": "Peeta Mellark",
+			"tmdbMovieId": 131631,
+			"tmdbPersonId": 27972,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -39,7 +39,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Joel Schumacher parte de una obsesión potente, pero el misterio del 23 se vuelve acumulación; Jim Carrey se compromete con el descenso aunque la explicación final llega gastada.",
-			"whatToExpect": "Un libro, coincidencias, detective imaginario, familia preocupada y una fijación que convierte la vida cotidiana de Walter en un sistema de señales.",			"pace": "Avanza con pistas y escenas oscuras, sosteniendo curiosidad hasta que el mecanismo explica demasiado y la tensión pierde fuerza.",			"intensity": "La intensidad es psicológica, con paranoia, culpa y dobles; el clima lúgubre funciona mejor que los giros que pretende justificar.",			"practicalContext": "Con 98 minutos, sirve como thriller breve para una noche; entrá por la atmósfera y la actuación de Carrey, no por una solución impecable.",			"forFansOf": "Para quienes disfrutan thrillers de obsesión, Carrey en registro oscuro y relatos donde la lectura empieza a invadir la vida.",			"notForYouIf": "Puede no ser para vos si querés un misterio elegante, una psicología más creíble o un final que no acumule explicaciones."
+			"whatToExpect": "Un libro, coincidencias, detective imaginario, familia preocupada y una fijación que convierte la vida cotidiana de Walter en un sistema de señales.",
+			"pace": "Avanza con pistas y escenas oscuras, sosteniendo curiosidad hasta que el mecanismo explica demasiado y la tensión pierde fuerza.",
+			"intensity": "La intensidad es psicológica, con paranoia, culpa y dobles; el clima lúgubre funciona mejor que los giros que pretende justificar.",
+			"practicalContext": "Con 98 minutos, sirve como thriller breve para una noche; entrá por la atmósfera y la actuación de Carrey, no por una solución impecable.",
+			"forFansOf": "Para quienes disfrutan thrillers de obsesión, Carrey en registro oscuro y relatos donde la lectura empieza a invadir la vida.",
+			"notForYouIf": "Puede no ser para vos si querés un misterio elegante, una psicología más creíble o un final que no acumule explicaciones."
 		},
 		"becauseYouLiked": [
 			"prisioneros-2013",
@@ -52,5 +57,42 @@
 			"primicia-mortal-2014"
 		]
 	},
-	"review": "Número 23: La revelación parte de una obsesión atractiva y la filma con una estética de thriller psicológico bastante lúgubre. Jim Carrey se toma en serio la transformación de Walter, un hombre común que empieza a interpretar cada detalle como una señal, y Virginia Madsen le da un anclaje humano a una historia cada vez más encerrada en su propio mecanismo. Joel Schumacher llena el relato de sombras, dobles y pistas, pero el guion confunde complejidad con acumulación: cuando llega la explicación, la tensión ya se gastó. Tiene una actuación comprometida y una premisa potente, aunque el misterio termina siendo más aparatoso que perturbador."
+	"review": "Número 23: La revelación parte de una obsesión atractiva y la filma con una estética de thriller psicológico bastante lúgubre. Jim Carrey se toma en serio la transformación de Walter, un hombre común que empieza a interpretar cada detalle como una señal, y Virginia Madsen le da un anclaje humano a una historia cada vez más encerrada en su propio mecanismo. Joel Schumacher llena el relato de sombras, dobles y pistas, pero el guion confunde complejidad con acumulación: cuando llega la explicación, la tensión ya se gastó. Tiene una actuación comprometida y una premisa potente, aunque el misterio termina siendo más aparatoso que perturbador.",
+	"castCharacters": [
+		{
+			"actor": "Jim Carrey",
+			"character": "Walter Sparrow / Fingerling",
+			"tmdbMovieId": 3594,
+			"tmdbPersonId": 206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Virginia Madsen",
+			"character": "Agatha Sparrow / Fabrizia",
+			"tmdbMovieId": 3594,
+			"tmdbPersonId": 12519,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Logan Lerman",
+			"character": "Robin Sparrow",
+			"tmdbMovieId": 3594,
+			"tmdbPersonId": 33235,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Huston",
+			"character": "Isaac French / Dr. Miles Phoenix",
+			"tmdbMovieId": 3594,
+			"tmdbPersonId": 6413,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lynn Collins",
+			"character": "Suicide Blonde / Mrs. Dobkins / Young Fingerling's Mother",
+			"tmdbMovieId": 3594,
+			"tmdbPersonId": 21044,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

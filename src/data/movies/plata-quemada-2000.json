@@ -11,7 +11,7 @@
   ],
   "country": "AR",
   "isArgentinian": true,
-	"poster": "assets/posters/2000/plata-quemada-2000.webp",
+  "poster": "assets/posters/2000/plata-quemada-2000.webp",
   "screenshots": [],
   "trailerYoutubeId": "Dyp2d5Fk4I8",
   "releasePlatform": "Otras plataformas",
@@ -38,18 +38,41 @@
       "forFansOf": "Te puede pegar si buscás policiales argentinos de clima turbio, romances fuera de la ley y personajes que confunden lealtad con salida.",
       "notForYouIf": "No es para vos si preferís criminales invencibles, acción permanente o una historia que separe claramente amor, culpa y delito."
     },
-		"becauseYouLiked": [
-		"nueve-reinas-2000",
-		"caballos-salvajes-1995"
-	],
-	"related": [
-		"el-robo-del-siglo-2020",
-		"pepita-la-pistolera-2026",
-		"un-oso-rojo-2002",
-		"el-clan-2015"
-	]
-},
+    "becauseYouLiked": [
+      "nueve-reinas-2000",
+      "caballos-salvajes-1995"
+    ],
+    "related": [
+      "el-robo-del-siglo-2020",
+      "pepita-la-pistolera-2026",
+      "un-oso-rojo-2002",
+      "el-clan-2015"
+    ]
+  },
   "synopsis": "Tras un asalto millonario, dos delincuentes y sus cómplices huyen hacia Uruguay perseguidos por la Policía. Encerrados en un departamento y cada vez más aislados, enfrentan la presión externa y las tensiones dentro de la banda.",
   "audienceRating": "+18",
-  "reviewPublishedAt": "2026-03-07"
+  "reviewPublishedAt": "2026-03-07",
+  "castCharacters": [
+    {
+      "actor": "Leonardo Sbaraglia",
+      "character": "El Nene",
+      "tmdbMovieId": 27092,
+      "tmdbPersonId": 19803,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Eduardo Noriega",
+      "character": "Ángel",
+      "tmdbMovieId": 27092,
+      "tmdbPersonId": 17093,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Pablo Echarri",
+      "character": "El Cuervo",
+      "tmdbMovieId": 27092,
+      "tmdbPersonId": 87016,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

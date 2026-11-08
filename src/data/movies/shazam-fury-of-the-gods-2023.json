@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Zachary Levi",
+			"character": "Shazam",
+			"tmdbMovieId": 594767,
+			"tmdbPersonId": 69899,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Asher Angel",
+			"character": "Billy Batson",
+			"tmdbMovieId": 594767,
+			"tmdbPersonId": 1768966,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Dylan Grazer",
+			"character": "Freddy Freeman",
+			"tmdbMovieId": 594767,
+			"tmdbPersonId": 1774679,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

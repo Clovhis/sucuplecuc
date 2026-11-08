@@ -45,18 +45,55 @@
 			"forFansOf": "Si te gustan aventuras de Wes Anderson, tripulaciones raras y Bill Murray haciendo de cansancio con estilo.",
 			"notForYouIf": "No es para vos si buscás venganza directa, acción marítima realista o una película que explique sus sentimientos."
 		},
-	"becauseYouLiked": [
-		"the-terminal-2004",
-		"the-grand-budapest-hotel-2014"
-	],
-	"related": [
-		"la-joya-de-la-familia-2005",
-		"roofman-un-buen-ladron-2025",
-		"la-invitacion-2026",
-		"mientras-dormias-1995"
-	]
-},
+		"becauseYouLiked": [
+			"the-terminal-2004",
+			"the-grand-budapest-hotel-2014"
+		],
+		"related": [
+			"la-joya-de-la-familia-2005",
+			"roofman-un-buen-ladron-2025",
+			"la-invitacion-2026",
+			"mientras-dormias-1995"
+		]
+	},
 	"review": "Wes Anderson arma una aventura de venganza que en realidad habla de la necesidad de volver a sentirse importante. El barco dividido en secciones, los colores de cómic y la música de Seu Jorge forman un mundo artificial pero emocionalmente preciso. Bill Murray le da cansancio y gracia a Zissou, rodeado por un elenco que entiende el humor detrás de cada pose. Zissou busca venganza, reconocimiento y una familia al mismo tiempo; la aventura deja ver que ninguna misión ordena su vida.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Bill Murray",
+			"character": "Steve Zissou",
+			"tmdbMovieId": 421,
+			"tmdbPersonId": 1532,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Owen Wilson",
+			"character": "Ned Plimpton",
+			"tmdbMovieId": 421,
+			"tmdbPersonId": 887,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Jane Winslett-Richardson",
+			"tmdbMovieId": 421,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anjelica Huston",
+			"character": "Eleanor Zissou",
+			"tmdbMovieId": 421,
+			"tmdbPersonId": 5657,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Klaus Daimler",
+			"tmdbMovieId": 421,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

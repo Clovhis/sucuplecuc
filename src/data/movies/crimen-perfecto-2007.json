@@ -53,5 +53,35 @@
 	},
 	"review": "Crimen perfecto funciona como duelo de presencias antes que como tratado judicial. Anthony Hopkins disfruta la calma venenosa del acusado y Ryan Gosling aporta la velocidad de un fiscal que todavía cree que ganar equivale a tener razón. Gregory Hoblit sostiene la tensión con una puesta clásica, sin apurarse a convertir cada giro en una pirueta. Hay trampas de guion y alguna conveniencia, pero el choque entre ambos actores vuelve entretenida una historia que sabe administrar su información.",
 	"runtimeMinutes": 113,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Ted Crawford",
+			"tmdbMovieId": 6145,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ryan Gosling",
+			"character": "Willy Beachum",
+			"tmdbMovieId": 6145,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Strathairn",
+			"character": "Joe Lobruto",
+			"tmdbMovieId": 6145,
+			"tmdbPersonId": 11064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rosamund Pike",
+			"character": "Nikki Gardner",
+			"tmdbMovieId": 6145,
+			"tmdbPersonId": 10882,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

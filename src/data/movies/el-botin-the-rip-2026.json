@@ -47,5 +47,28 @@
 	"review": "El Botin (The Rip) arranca con un asesinato dentro de una unidad policial y desde ahi se mete en un terreno que le calza bien: lealtades rotas, codicia y tipos que se conocen demasiado como para mentirse tranquilos. Joe Carnahan la empuja con energia de thriller sucio, sin querer volver elegante un mundo que claramente esta podrido.\n\nBen Affleck y Matt Damon juegan bien esa dinamica de camaraderia gastada y sospecha constante, y Teyana Taylor ayuda a que el grupo tenga filo propio. Hay algun exceso de rosca y un par de vueltas que se sienten calculadas, pero la pelicula mantiene el pulso y no se vuelve blanda.\n\nTiene nervio, actores con oficio y una atmosfera espesa que acompaña casi siempre. Si te gustan las policiales tensas y bastante amargas, esta suma.",
 	"reviewPublishedAt": "2026-02-25",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ben Affleck",
+			"character": "Detective Sergeant J.D. Byrne",
+			"tmdbMovieId": 1306368,
+			"tmdbPersonId": 880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Damon",
+			"character": "Lieutenant Dane Dumars",
+			"tmdbMovieId": 1306368,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Teyana Taylor",
+			"character": "Detective Numa Baptistie",
+			"tmdbMovieId": 1306368,
+			"tmdbPersonId": 964679,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

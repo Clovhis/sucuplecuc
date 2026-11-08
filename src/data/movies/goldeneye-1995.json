@@ -56,5 +56,28 @@
 	"releasePlatforms": [
 		"Prime Video"
 	],
-	"runtimeMinutes": 130
+	"runtimeMinutes": 130,
+	"castCharacters": [
+		{
+			"actor": "Pierce Brosnan",
+			"character": "James Bond",
+			"tmdbMovieId": 710,
+			"tmdbPersonId": 517,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Bean",
+			"character": "Alec Trevelyan",
+			"tmdbMovieId": 710,
+			"tmdbPersonId": 48,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Famke Janssen",
+			"character": "Xenia Onatopp",
+			"tmdbMovieId": 710,
+			"tmdbPersonId": 10696,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

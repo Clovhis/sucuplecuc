@@ -36,28 +36,104 @@
 	},
 	"runtimeMinutes": 178,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Lord of the Rings: The Fellowship of the Ring vuelve épica una caminata imposible; Peter Jackson combina mundo, peligro y la vulnerabilidad de Elijah Wood.",
-		"whatToExpect": "Frodo sale de la Comarca con un anillo corruptor y una compañía diversa que deberá cruzar la Tierra Media hasta Mordor.",
-		"pace": "Empieza con calma de leyenda, suma amenazas de a poco y después encadena viajes, ruinas y despedidas sin perder orientación.",
-		"intensity": "La aventura crece desde el miedo íntimo de Frodo hasta combates enormes; cada tramo deja una pérdida o una elección.",
-		"practicalContext": "Con 178 minutos, necesita una tarde despejada y una pantalla que haga justicia a los paisajes, criaturas y batallas.",
-		"forFansOf": "Te va a gustar si disfrutás fantasía de mundo completo, comunidades improbables y aventuras que toman en serio sus mitologías.",
-		"notForYouIf": "Quizás no sea para vos si te cansan las sagas extensas, los nombres propios abundantes o el tono solemne de una leyenda."
+		"tenSecondTake": {
+			"verdict": "The Lord of the Rings: The Fellowship of the Ring vuelve épica una caminata imposible; Peter Jackson combina mundo, peligro y la vulnerabilidad de Elijah Wood.",
+			"whatToExpect": "Frodo sale de la Comarca con un anillo corruptor y una compañía diversa que deberá cruzar la Tierra Media hasta Mordor.",
+			"pace": "Empieza con calma de leyenda, suma amenazas de a poco y después encadena viajes, ruinas y despedidas sin perder orientación.",
+			"intensity": "La aventura crece desde el miedo íntimo de Frodo hasta combates enormes; cada tramo deja una pérdida o una elección.",
+			"practicalContext": "Con 178 minutos, necesita una tarde despejada y una pantalla que haga justicia a los paisajes, criaturas y batallas.",
+			"forFansOf": "Te va a gustar si disfrutás fantasía de mundo completo, comunidades improbables y aventuras que toman en serio sus mitologías.",
+			"notForYouIf": "Quizás no sea para vos si te cansan las sagas extensas, los nombres propios abundantes o el tono solemne de una leyenda."
+		},
+		"becauseYouLiked": [
+			"the-lord-of-the-rings-the-two-towers-2002",
+			"the-lord-of-the-rings-the-return-of-the-king-2003"
+		],
+		"related": [
+			"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
+			"harry-potter-and-the-sorcerers-stone-2001",
+			"harry-potter-and-the-chamber-of-secrets-2002",
+			"harry-potter-and-the-prisoner-of-azkaban-2004"
+		]
 	},
-	"becauseYouLiked": [
-		"the-lord-of-the-rings-the-two-towers-2002",
-		"the-lord-of-the-rings-the-return-of-the-king-2003"
-	],
-	"related": [
-		"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
-		"harry-potter-and-the-sorcerers-stone-2001",
-		"harry-potter-and-the-chamber-of-secrets-2002",
-		"harry-potter-and-the-prisoner-of-azkaban-2004"
-	]
-},
 	"review": "The Lord of the Rings: The Fellowship of the Ring presenta a Frodo, un hobbit que debe llevar un anillo capaz de corromper a cualquiera hasta Mordor, acompañado por una comunidad de razas y lealtades distintas. Peter Jackson construye la Tierra Media con una escala que todavía impresiona, pero no deja que el mundo tape a los personajes y sus despedidas. Elijah Wood sostiene la vulnerabilidad de Frodo, Ian McKellen hace enorme a Gandalf y el resto del grupo encuentra identidad rápido. Sus tres horas se van sin esfuerzo por su épica clara, su peligro constante y un sentido de aventura genuino.",
 	"synopsis": "Todo comienza en la Tierra Media, un continente lejano e increíble, en donde los distintos reinos conviven en paz y armonía, durante la llamada Segunda Edad del Sol. En esa época, los señores de los Elfos, los Enanos y los Hombres reciben Anillos de Poder.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Elijah Wood",
+			"character": "Frodo",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 109,
+			"verifiedAt": "2026-11-08",
+			"displayCharacter": "Frodo Bolsón",
+			"variants": [
+				"Frodo Baggins"
+			]
+		},
+		{
+			"actor": "Ian McKellen",
+			"character": "Gandalf",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 1327,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Viggo Mortensen",
+			"character": "Aragorn",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 110,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Astin",
+			"character": "Sam",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 1328,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Orlando Bloom",
+			"character": "Legolas",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 114,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Bean",
+			"character": "Boromir",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 48,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Galadriel",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liv Tyler",
+			"character": "Arwen",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 882,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugo Weaving",
+			"character": "Elrond",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 1331,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Lee",
+			"character": "Saruman",
+			"tmdbMovieId": 120,
+			"tmdbPersonId": 113,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

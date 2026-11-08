@@ -47,18 +47,48 @@
 			"forFansOf": "Si te gustan neorrealismo italiano, dramas sociales y relatos de padres e hijos caminando juntos.",
 			"notForYouIf": "No es para vos si necesitás moralejas tranquilizadoras, héroes eficaces o un conflicto resuelto por casualidad."
 		},
-	"becauseYouLiked": [
-		"la-voluntad-de-dios-2026",
-		"caballos-salvajes-1995"
-	],
-	"related": [
-		"camino-a-la-perdicion-2002",
-		"thelma-y-louise-1991",
-		"un-mundo-perfecto-1993",
-		"green-book-2018"
-	]
-},
+		"becauseYouLiked": [
+			"la-voluntad-de-dios-2026",
+			"caballos-salvajes-1995"
+		],
+		"related": [
+			"camino-a-la-perdicion-2002",
+			"thelma-y-louise-1991",
+			"un-mundo-perfecto-1993",
+			"green-book-2018"
+		]
+	},
 	"review": "Vittorio De Sica encuentra un drama social devastador en una urgencia mínima: recuperar una herramienta para poder trabajar. Las calles reales, los rostros no profesionales y el recorrido sin atajos morales convierten la ciudad en un personaje que observa la desesperación. Lamberto Maggiorani y Enzo Staiola forman una pareja de padre e hijo cuya caminata dice más que cualquier discurso. La búsqueda de Antonio no conduce a una lección simple, sino a una ciudad que no ofrece salida a la pobreza.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Lamberto Maggiorani",
+			"character": "Antonio",
+			"tmdbMovieId": 5156,
+			"tmdbPersonId": 42416,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Enzo Staiola",
+			"character": "Bruno",
+			"tmdbMovieId": 5156,
+			"tmdbPersonId": 42417,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lianella Carell",
+			"character": "Maria",
+			"tmdbMovieId": 5156,
+			"tmdbPersonId": 42419,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gino Saltamerenda",
+			"character": "Baiocco",
+			"tmdbMovieId": 5156,
+			"tmdbPersonId": 944148,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

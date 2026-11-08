@@ -52,5 +52,28 @@
 	"synopsis": "Mientras se alojan en casa de los Dursley, Harry Potter y Dudley Dursley son atacados por dementores. Harry los repele usando un hechizo Patronus. El Ministerio de Magia detecta a Harry usando magia y lo expulsa de Hogwarts, aunque luego es exonerado.",
 	"audienceRating": "+12",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Radcliffe",
+			"character": "Harry Potter",
+			"tmdbMovieId": 675,
+			"tmdbPersonId": 10980,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Grint",
+			"character": "Ron Weasley",
+			"tmdbMovieId": 675,
+			"tmdbPersonId": 10989,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Watson",
+			"character": "Hermione Granger",
+			"tmdbMovieId": 675,
+			"tmdbPersonId": 10990,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

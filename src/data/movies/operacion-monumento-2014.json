@@ -37,7 +37,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "George Clooney parte de una misión extraordinaria y la convierte en aventura de camaradas: Matt Damon, Cate Blanchett y Bill Murray aportan humanidad a un guion de tono desparejo.",
-			"whatToExpect": "Soldados que buscan obras de arte robadas, museos, líneas de combate y discusiones sobre si una pintura merece el mismo riesgo que una vida.",			"pace": "Alterna aventura, comedia y drama histórico con ritmo irregular; el elenco mantiene interés cuando la tensión de la misión se ablanda.",			"intensity": "La presión es moral y de guerra, aunque el tono suele suavizarla; importa el tiempo que queda para rescatar piezas antes de que desaparezcan.",			"practicalContext": "La ficha no informa duración; funciona para una tarde de aventura histórica si aceptás cambios de tono y un peligro menos áspero.",			"forFansOf": "Para quienes disfrutan repartos corales, historias reales de rescate cultural y Clooney mezclando misión imposible con humor de grupo.",			"notForYouIf": "No es para vos si buscás una película bélica intensa, un drama de arte más reflexivo o una trama con tono totalmente parejo."
+			"whatToExpect": "Soldados que buscan obras de arte robadas, museos, líneas de combate y discusiones sobre si una pintura merece el mismo riesgo que una vida.",
+			"pace": "Alterna aventura, comedia y drama histórico con ritmo irregular; el elenco mantiene interés cuando la tensión de la misión se ablanda.",
+			"intensity": "La presión es moral y de guerra, aunque el tono suele suavizarla; importa el tiempo que queda para rescatar piezas antes de que desaparezcan.",
+			"practicalContext": "La ficha no informa duración; funciona para una tarde de aventura histórica si aceptás cambios de tono y un peligro menos áspero.",
+			"forFansOf": "Para quienes disfrutan repartos corales, historias reales de rescate cultural y Clooney mezclando misión imposible con humor de grupo.",
+			"notForYouIf": "No es para vos si buscás una película bélica intensa, un drama de arte más reflexivo o una trama con tono totalmente parejo."
 		},
 		"becauseYouLiked": [
 			"war-horse-2011",
@@ -50,5 +55,42 @@
 			"the-post-2017"
 		]
 	},
-	"review": "Operación Monumento parte de una historia extraordinaria: soldados que arriesgan la vida para que una pintura o una escultura no desaparezca en la guerra. Clooney la dirige con cariño por el grupo y un reparto enorme, pero el tono oscila entre aventura clásica, drama histórico y comedia de camaradas sin terminar de elegir. Matt Damon, Cate Blanchett y Bill Murray sostienen varios de los mejores momentos, aunque el guion suaviza demasiado los peligros. Tiene un corazón noble y una premisa valiosa; le falta una tensión más pareja."
+	"review": "Operación Monumento parte de una historia extraordinaria: soldados que arriesgan la vida para que una pintura o una escultura no desaparezca en la guerra. Clooney la dirige con cariño por el grupo y un reparto enorme, pero el tono oscila entre aventura clásica, drama histórico y comedia de camaradas sin terminar de elegir. Matt Damon, Cate Blanchett y Bill Murray sostienen varios de los mejores momentos, aunque el guion suaviza demasiado los peligros. Tiene un corazón noble y una premisa valiosa; le falta una tensión más pareja.",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Lt. Frank Stokes",
+			"tmdbMovieId": 152760,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Damon",
+			"character": "Lt. James Granger",
+			"tmdbMovieId": 152760,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Murray",
+			"character": "Sgt. Richard Campbell",
+			"tmdbMovieId": 152760,
+			"tmdbPersonId": 1532,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Claire Simone",
+			"tmdbMovieId": 152760,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Goodman",
+			"character": "Sgt. Walter Garfield",
+			"tmdbMovieId": 152760,
+			"tmdbPersonId": 1230,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

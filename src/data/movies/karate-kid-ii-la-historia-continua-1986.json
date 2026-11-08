@@ -56,5 +56,42 @@
 			"el-cuervo-1994"
 		]
 	},
-	"review": "La segunda parte cambia el gimnasio por Okinawa y aprovecha el viaje para darle a Miyagi una historia que la primera película apenas insinuaba. Pat Morita queda en el centro y es, lejos, lo mejor de la película: su humor se mezcla con culpa, amor y una deuda que nunca terminó de saldar. Daniel funciona como acompañante y aprendiz, aunque el conflicto adolescente es menos fresco y algunas peleas parecen estiradas. Aun así, la relación entre maestro y alumno conserva calidez, y el paisaje abre una etapa distinta sin romper el corazón de la saga."
+	"review": "La segunda parte cambia el gimnasio por Okinawa y aprovecha el viaje para darle a Miyagi una historia que la primera película apenas insinuaba. Pat Morita queda en el centro y es, lejos, lo mejor de la película: su humor se mezcla con culpa, amor y una deuda que nunca terminó de saldar. Daniel funciona como acompañante y aprendiz, aunque el conflicto adolescente es menos fresco y algunas peleas parecen estiradas. Aun así, la relación entre maestro y alumno conserva calidez, y el paisaje abre una etapa distinta sin romper el corazón de la saga.",
+	"castCharacters": [
+		{
+			"actor": "Ralph Macchio",
+			"character": "Daniel",
+			"tmdbMovieId": 8856,
+			"tmdbPersonId": 2877,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pat Morita",
+			"character": "Miyagi",
+			"tmdbMovieId": 8856,
+			"tmdbPersonId": 23915,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tamlyn Tomita",
+			"character": "Kumiko",
+			"tmdbMovieId": 8856,
+			"tmdbPersonId": 3134,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Yuji Okumoto",
+			"character": "Chozen",
+			"tmdbMovieId": 8856,
+			"tmdbPersonId": 56120,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Kamekona",
+			"character": "Sato",
+			"tmdbMovieId": 8856,
+			"tmdbPersonId": 56123,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

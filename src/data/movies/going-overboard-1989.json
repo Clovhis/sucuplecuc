@@ -55,5 +55,42 @@
 	"review": "El debut cinematográfico de Adam Sandler tiene la energía de una película encontrada en el fondo de un cajón de videoclub. La idea del comediante varado en un crucero podría haber dado una sátira delirante, pero la puesta acumula chistes desparejos, personajes que entran y salen sin ritmo y una trama de terroristas completamente pasada de rosca. Vale como documento de origen y como rareza para completistas, no como una buena comedia para recomendar sin advertencias.",
 	"runtimeMinutes": 97,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Schecky Moskowitz",
+			"tmdbMovieId": 19157,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Burt Young",
+			"character": "General Noriega",
+			"tmdbMovieId": 19157,
+			"tmdbPersonId": 4521,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terry Moore",
+			"character": "Mistress",
+			"tmdbMovieId": 19157,
+			"tmdbPersonId": 33716,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Zane",
+			"character": "King Neptune",
+			"tmdbMovieId": 19157,
+			"tmdbPersonId": 1954,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lisa Collins",
+			"character": "Ellen",
+			"tmdbMovieId": 19157,
+			"tmdbPersonId": 936813,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

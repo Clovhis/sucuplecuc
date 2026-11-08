@@ -58,5 +58,42 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "El día D: Bajo presión encuentra tensión en un trabajo que suele quedar detrás de los mapas y las arengas: leer el clima antes de que una operación militar cambie la historia. Andrew Scott sostiene el conflicto desde la concentración y la duda, mientras Brendan Fraser aporta un contrapunto de autoridad menos simple de lo esperado. La película explica bastante y subraya algunos dilemas, pero Anthony Maras consigue que el procedimiento tenga pulso dramático. No busca el espectáculo del desembarco; prefiere mostrar cuánto puede pesar una decisión técnica cuando ya no queda margen para equivocarse."
+	"review": "El día D: Bajo presión encuentra tensión en un trabajo que suele quedar detrás de los mapas y las arengas: leer el clima antes de que una operación militar cambie la historia. Andrew Scott sostiene el conflicto desde la concentración y la duda, mientras Brendan Fraser aporta un contrapunto de autoridad menos simple de lo esperado. La película explica bastante y subraya algunos dilemas, pero Anthony Maras consigue que el procedimiento tenga pulso dramático. No busca el espectáculo del desembarco; prefiere mostrar cuánto puede pesar una decisión técnica cuando ya no queda margen para equivocarse.",
+	"castCharacters": [
+		{
+			"actor": "Andrew Scott",
+			"character": "James Stagg",
+			"tmdbMovieId": 1318413,
+			"tmdbPersonId": 125660,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brendan Fraser",
+			"character": "Dwight ‘Ike’ Eisenhower",
+			"tmdbMovieId": 1318413,
+			"tmdbPersonId": 18269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kerry Condon",
+			"character": "Kay Summersby",
+			"tmdbMovieId": 1318413,
+			"tmdbPersonId": 62105,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Messina",
+			"character": "Irving Krick",
+			"tmdbMovieId": 1318413,
+			"tmdbPersonId": 61659,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Damian Lewis",
+			"character": "Bernard ‘Monty’ Montgomery",
+			"tmdbMovieId": 1318413,
+			"tmdbPersonId": 20186,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

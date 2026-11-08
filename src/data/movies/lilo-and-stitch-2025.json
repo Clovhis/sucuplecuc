@@ -45,5 +45,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Maia Kealoha",
+			"character": "Lilo",
+			"tmdbMovieId": 552524,
+			"tmdbPersonId": 3988423,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sydney Agudong",
+			"character": "Nani",
+			"tmdbMovieId": 552524,
+			"tmdbPersonId": 3025125,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Sanders",
+			"character": "Stitch (voice)",
+			"tmdbMovieId": 552524,
+			"tmdbPersonId": 66193,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

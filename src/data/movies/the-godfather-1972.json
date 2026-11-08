@@ -58,5 +58,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Marlon Brando",
+			"character": "Don Vito Corleone",
+			"tmdbMovieId": 238,
+			"tmdbPersonId": 3084,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Al Pacino",
+			"character": "Michael Corleone",
+			"tmdbMovieId": 238,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Caan",
+			"character": "Sonny Corleone",
+			"tmdbMovieId": 238,
+			"tmdbPersonId": 3085,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

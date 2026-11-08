@@ -53,5 +53,28 @@
 		]
 	},
 	"review": "Alex Proyas filma el futuro de Yo, Robot con superficies pulidas que no alcanzan a borrar el costado de policial: el detective de Will Smith entra a una muerte sospechosa y empieza a desconfiar de las reglas que sostienen la ciudad. La película se despega bastante de Asimov, pero gana cuando Alan Tudyk vuelve a Sonny algo más que una proeza digital. Entre la intriga y el golpe de acción, el tramo final se acelera más de la cuenta.",
-	"catalogAddedAt": "2026-11-06"
+	"catalogAddedAt": "2026-11-06",
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Del Spooner",
+			"tmdbMovieId": 2048,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bridget Moynahan",
+			"character": "Susan Calvin",
+			"tmdbMovieId": 2048,
+			"tmdbPersonId": 18354,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bruce Greenwood",
+			"character": "Lawrence Robertson",
+			"tmdbMovieId": 2048,
+			"tmdbPersonId": 21089,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

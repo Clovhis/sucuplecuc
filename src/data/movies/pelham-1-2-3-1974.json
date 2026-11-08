@@ -51,5 +51,21 @@
 	"isArgentinian": false,
 	"awards": {
 		"wins": []
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "Walter Matthau",
+			"character": "Lieutenant Garber",
+			"tmdbMovieId": 8333,
+			"tmdbPersonId": 6837,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Shaw",
+			"character": "Blue",
+			"tmdbMovieId": 8333,
+			"tmdbPersonId": 8606,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

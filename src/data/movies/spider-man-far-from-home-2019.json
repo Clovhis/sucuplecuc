@@ -36,7 +36,7 @@
 			"forFansOf": "Puede engancharte si te gustan las aventuras adolescentes, los superhéroes viajando y los villanos que convierten la percepción en un arma, con una mezcla de romance y espectáculo.",
 			"notForYouIf": "Quizás no sea para vos si preferís una película de Spider-Man más callejera, si el humor de excursión te distrae o si necesitás que cada duelo tenga un espacio menos apurado."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"captain-marvel-2019",
 			"shazam-2019"
 		],
@@ -51,5 +51,28 @@
 	"reviewPublishedAt": "2026-03-06",
 	"synopsis": "Tras los hechos que sacudieron a los Vengadores, Peter Parker viaja por Europa con sus compañeros de escuela. Sus vacaciones se complican cuando Nick Fury le pide ayuda frente a unos ataques elementales y un misterioso héroe llamado Mysterio.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Holland",
+			"character": "Peter Parker / Spider-Man",
+			"tmdbMovieId": 429617,
+			"tmdbPersonId": 1136406,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Nick Fury",
+			"tmdbMovieId": 429617,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jake Gyllenhaal",
+			"character": "Quentin Beck / Mysterio",
+			"tmdbMovieId": 429617,
+			"tmdbPersonId": 131,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

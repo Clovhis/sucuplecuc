@@ -61,5 +61,42 @@
 	],
 	"runtimeMinutes": 91,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Count Dracula (voice)",
+			"tmdbMovieId": 76492,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Selena Gomez",
+			"character": "Mavis Dracula (voice)",
+			"tmdbMovieId": 76492,
+			"tmdbPersonId": 77948,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Samberg",
+			"character": "Jonathan Loughran (voice)",
+			"tmdbMovieId": 76492,
+			"tmdbPersonId": 62861,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin James",
+			"character": "Frankenstein (voice)",
+			"tmdbMovieId": 76492,
+			"tmdbPersonId": 32895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fran Drescher",
+			"character": "Eunice (voice)",
+			"tmdbMovieId": 76492,
+			"tmdbPersonId": 53122,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -59,5 +59,28 @@
 	"reviewPublishedAt": "2026-03-08",
 	"synopsis": "La policía de Boston infiltra a Billy Costigan en la organización del mafioso Frank Costello, sin saber que Costello tiene a Colin Sullivan dentro de la fuerza. Ambos agentes encubiertos intentan descubrir la identidad del otro antes de ser expuestos.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Billy",
+			"tmdbMovieId": 1422,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Damon",
+			"character": "Colin",
+			"tmdbMovieId": 1422,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Nicholson",
+			"character": "Costello",
+			"tmdbMovieId": 1422,
+			"tmdbPersonId": 514,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

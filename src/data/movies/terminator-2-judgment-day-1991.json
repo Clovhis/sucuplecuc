@@ -59,5 +59,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-09",
 	"synopsis": "Años después del primer ataque, Sarah Connor vive obsesionada con evitar el apocalipsis que se aproxima. Un Terminator reprogramado es enviado para proteger a John, mientras una máquina más avanzada llega desde el futuro para perseguirlo.",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Arnold Schwarzenegger",
+			"character": "The Terminator",
+			"tmdbMovieId": 280,
+			"tmdbPersonId": 1100,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Linda Hamilton",
+			"character": "Sarah Connor",
+			"tmdbMovieId": 280,
+			"tmdbPersonId": 2713,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edward Furlong",
+			"character": "John Connor",
+			"tmdbMovieId": 280,
+			"tmdbPersonId": 820,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

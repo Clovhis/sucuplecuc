@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Indiana Jones",
+			"tmdbMovieId": 217,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Irina Spalko",
+			"tmdbMovieId": 217,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shia LaBeouf",
+			"character": "Mutt Williams",
+			"tmdbMovieId": 217,
+			"tmdbPersonId": 10959,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

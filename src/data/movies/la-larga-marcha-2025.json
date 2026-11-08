@@ -44,18 +44,55 @@
 			"forFansOf": "Si te gustan distopías, competencias brutales y relatos de Stephen King que usan una regla para desnudar un sistema.",
 			"notForYouIf": "No es para vos si buscás acción variada, alivio constante o un comentario político que se quede en segundo plano."
 		},
-	"becauseYouLiked": [
-		"el-dia-de-la-revelacion-2026",
-		"dias-extranos-1995"
-	],
-	"related": [
-		"la-zona-muerta-1983",
-		"the-prestige-2006",
-		"culpable-2021",
-		"looper-2012"
-	]
-},
+		"becauseYouLiked": [
+			"el-dia-de-la-revelacion-2026",
+			"dias-extranos-1995"
+		],
+		"related": [
+			"la-zona-muerta-1983",
+			"the-prestige-2006",
+			"culpable-2021",
+			"looper-2012"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "La larga marcha entiende que el terror no esta solo en la regla asesina, sino en mirar como un grupo de pibes se va quedando sin cuerpo, sin discurso y sin futuro. Francis Lawrence filma la premisa de Stephen King con una sequedad bastante cruel, sin convertir cada muerte en fuegos artificiales.\n\nLo que mas pesa es la espera: saber que la pelicula no puede aflojar porque sus personajes tampoco. Alguna escena subraya el comentario politico mas de lo necesario, pero el pulso funciona y el reparto joven le da humanidad al mecanismo. Es dura, simple y efectiva."
+	"review": "La larga marcha entiende que el terror no esta solo en la regla asesina, sino en mirar como un grupo de pibes se va quedando sin cuerpo, sin discurso y sin futuro. Francis Lawrence filma la premisa de Stephen King con una sequedad bastante cruel, sin convertir cada muerte en fuegos artificiales.\n\nLo que mas pesa es la espera: saber que la pelicula no puede aflojar porque sus personajes tampoco. Alguna escena subraya el comentario politico mas de lo necesario, pero el pulso funciona y el reparto joven le da humanidad al mecanismo. Es dura, simple y efectiva.",
+	"castCharacters": [
+		{
+			"actor": "Cooper Hoffman",
+			"character": "Raymond Garraty #47",
+			"tmdbMovieId": 604079,
+			"tmdbPersonId": 2764542,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Jonsson",
+			"character": "Peter McVries #23",
+			"tmdbMovieId": 604079,
+			"tmdbPersonId": 2761308,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Garrett Wareing",
+			"character": "Billy Stebbins #38",
+			"tmdbMovieId": 604079,
+			"tmdbPersonId": 1446466,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlie Plummer",
+			"character": "Gary Barkovitch #5",
+			"tmdbMovieId": 604079,
+			"tmdbPersonId": 1440574,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Hamill",
+			"character": "The Major",
+			"tmdbMovieId": 604079,
+			"tmdbPersonId": 2,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

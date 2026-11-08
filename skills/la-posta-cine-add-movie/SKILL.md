@@ -185,6 +185,12 @@ If enrichment cannot safely resolve an optional, obscure cast credit, remove tha
 
 If the final label is `Cine`, invoke `la-posta-cine-cartelera-revalidator` before the audit. The theatrical scope is exclusively CABA plus the entire Province of Buenos Aires, including cities outside AMBA. Record an eligible venue, locality/jurisdiction, run date and URL; a national title list or a function only in another province does not qualify. Streaming offers remain Argentina-wide. For any final platform, invoke `la-posta-cine-auditor` with the candidate path and compact evidence ledger.
 
+## Character credits
+
+After the cast and person identities are verified, follow `docs/personajes-reparto.md` to enrich only the changed movies with `npm run enrich:characters -- --changed --license-confirmed --apply`. Run this only after the documented pilot passes and TMDB credentials, attribution and the applicable license are confirmed. Review the checkpoint; leave unresolved credits absent. If the prerequisites are unavailable, report the pending enrichment and do not infer characters. The build incorporates verified credits into the existing search index automatically.
+
+TMDB character credits are persistent catalog data under the express authorization communicated by the CinePosta owner; do not expire or delete them by age. Refresh is optional and targeted: `npm run enrich:characters -- --slug <slug> --refresh --license-confirmed --apply`. Preserve existing credits when the API fails or differs, record discrepancies for review, and use verified sources for any manual correction. Keep the TMDB logo and attribution.
+
 ## Gate
 
 Run the candidate checks; they enforce schema, originality, people, taxonomy, generated route/reaction, carousel eligibility, and forbidden content fields:

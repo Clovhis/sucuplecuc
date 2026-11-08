@@ -55,5 +55,35 @@
 			"mientras-dormias-1995"
 		]
 	},
-	"review": "Amor sin escalas hace de los aeropuertos un paisaje emocional: lugares de tránsito donde el protagonista puede no comprometerse con nada. Clooney sostiene a Ryan con una mezcla justa de encanto, cansancio y negación, mientras Vera Farmiga y Anna Kendrick le devuelven dos versiones posibles de la vida que evita. Jason Reitman no convierte el cambio personal en una receta sencilla y deja que la melancolía aparezca en los detalles. Es una comedia dramática elegante, bastante más triste de lo que promete el equipaje de mano."
+	"review": "Amor sin escalas hace de los aeropuertos un paisaje emocional: lugares de tránsito donde el protagonista puede no comprometerse con nada. Clooney sostiene a Ryan con una mezcla justa de encanto, cansancio y negación, mientras Vera Farmiga y Anna Kendrick le devuelven dos versiones posibles de la vida que evita. Jason Reitman no convierte el cambio personal en una receta sencilla y deja que la melancolía aparezca en los detalles. Es una comedia dramática elegante, bastante más triste de lo que promete el equipaje de mano.",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Ryan Bingham",
+			"tmdbMovieId": 22947,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vera Farmiga",
+			"character": "Alex Goran",
+			"tmdbMovieId": 22947,
+			"tmdbPersonId": 21657,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anna Kendrick",
+			"character": "Natalie Keener",
+			"tmdbMovieId": 22947,
+			"tmdbPersonId": 84223,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Bateman",
+			"character": "Craig Gregory",
+			"tmdbMovieId": 22947,
+			"tmdbPersonId": 23532,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

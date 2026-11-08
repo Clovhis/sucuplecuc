@@ -39,7 +39,10 @@
 			"verdict": "Main Vaapas Aaunga apuesta por el romance como regreso imperfecto: Imtiaz Ali privilegia memoria y distancia, con Vedang Raina y Sharvari sosteniendo una melancolía irregular.",
 			"whatToExpect": "Canciones, saltos temporales, paisajes y dos personas que intentan medir si reencontrarse significa reparar algo o aceptar que ya cambiaron.",
 			"pace": "Avanza por rodeos, recuerdos y reencuentros; el ritmo se estira, pero esa demora forma parte de su mirada nostálgica sobre el amor.",
-			"intensity": "La intensidad es romántica y emocional, con más peso en lo que no se dice que en grandes conflictos externos o escenas de confrontación.",			"practicalContext": "Sus 167 minutos piden una tarde completa y predisposición al melodrama; funciona mejor sin apuro que como consumo rápido de romance.",			"forFansOf": "Para quienes siguen los romances de Imtiaz Ali, disfrutan canciones como parte del relato y no necesitan que una relación avance en línea recta.",			"notForYouIf": "No es para vos si te cansan los saltos temporales, la nostalgia extendida o una película que tarda en decidir qué significa volver."
+			"intensity": "La intensidad es romántica y emocional, con más peso en lo que no se dice que en grandes conflictos externos o escenas de confrontación.",
+			"practicalContext": "Sus 167 minutos piden una tarde completa y predisposición al melodrama; funciona mejor sin apuro que como consumo rápido de romance.",
+			"forFansOf": "Para quienes siguen los romances de Imtiaz Ali, disfrutan canciones como parte del relato y no necesitan que una relación avance en línea recta.",
+			"notForYouIf": "No es para vos si te cansan los saltos temporales, la nostalgia extendida o una película que tarda en decidir qué significa volver."
 		},
 		"becauseYouLiked": [
 			"hitchcock-2012",
@@ -55,5 +58,42 @@
 	"review": "Main Vaapas Aaunga se toma en serio la idea de volver. Imtiaz Ali arma un romance de largo aliento, con canciones, saltos temporales y una mirada nostálgica sobre la identidad que no se conforma con el reencuentro como solución mágica. La película quiere que cada paisaje y cada recuerdo carguen con una parte del vínculo.\n\nLa duración se siente y algunos rodeos podrían haber sido más precisos, pero el elenco consigue que el melodrama no quede vacío. Vedang Raina y Sharvari le dan fragilidad al centro, mientras Naseeruddin Shah y Diljit Dosanjh aportan dos formas distintas de memoria. Es irregular, sí, pero tiene una convicción romántica que hoy no abunda.",
 	"releasePlatform": "Netflix",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Naseeruddin Shah",
+			"character": "Ishar Singh Grewal",
+			"tmdbMovieId": 1431068,
+			"tmdbPersonId": 6497,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vedang Raina",
+			"character": "Young Ishar / 'Keenu'",
+			"tmdbMovieId": 1431068,
+			"tmdbPersonId": 3548776,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sharvari",
+			"character": "Afsana Hasan / 'Jiya'",
+			"tmdbMovieId": 1431068,
+			"tmdbPersonId": 2518564,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diljit Dosanjh",
+			"character": "Nirvair Grewal",
+			"tmdbMovieId": 1431068,
+			"tmdbPersonId": 928221,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rajat Kapoor",
+			"character": "Iqbal Grewal",
+			"tmdbMovieId": 1431068,
+			"tmdbPersonId": 78922,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

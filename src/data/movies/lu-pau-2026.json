@@ -8,8 +8,15 @@
 	"reviewPublishedAt": "2026-08-27",
 	"audienceRating": "+13",
 	"category": "Crimen",
-	"genres": ["Thriller", "Crimen", "Atracos", "Acción"],
-	"subgenres": ["Heist"],
+	"genres": [
+		"Thriller",
+		"Crimen",
+		"Atracos",
+		"Acción"
+	],
+	"subgenres": [
+		"Heist"
+	],
 	"country": "AR",
 	"isArgentinian": true,
 	"poster": "assets/posters/2026/lu-pau-2026.webp",
@@ -17,7 +24,11 @@
 	"trailerYoutubeId": "V2lvxX1YYls",
 	"releasePlatform": "Otras plataformas",
 	"director": "Nicanor Loreti",
-	"mainCast": ["Jazmín Stuart", "Lorena Vega", "Demián Salomón"],
+	"mainCast": [
+		"Jazmín Stuart",
+		"Lorena Vega",
+		"Demián Salomón"
+	],
 	"productionCompany": "Domenica Cine, Inspiria",
 	"cinepostaScore": 8,
 	"runtimeMinutes": 74,
@@ -26,26 +37,42 @@
 	},
 	"editorial": {
 		"tenSecondTake": {
-		"verdict": "Lu & Pau convierte una amistad en plan de fuga: Nicanor Loreti pone a Jazmín Stuart y Lorena Vega a cruzar Misiones con nervio, humor áspero y pocas salidas.",
-		"whatToExpect": "Pau y Lu asaltan tres financieras en un día para conseguir dólares y ayudar a Jessi, pero el viaje obliga a revisar quién le debe lealtad a quién.",
-		"pace": "Va al hueso, encadenando golpes, caminos y discusiones en un trayecto corto que no pierde tiempo en explicaciones.",
-		"intensity": "La urgencia es económica y afectiva; la presión de la cárcel hace que cada decisión de amistad tenga una consecuencia concreta.",
-		"practicalContext": "Mirala como una road movie de atracos compacta, con paisaje misionero y humor de supervivencia más interesado en las protagonistas que en la logística perfecta.",
-		"forFansOf": "Si te gustan fugas argentinas, dúos con química y planes delictivos que se sostienen por cariño.",
-		"notForYouIf": "No es para vos si buscás un policial cerebral, una geografía turística o una amistad sin discusiones."
+			"verdict": "Lu & Pau convierte una amistad en plan de fuga: Nicanor Loreti pone a Jazmín Stuart y Lorena Vega a cruzar Misiones con nervio, humor áspero y pocas salidas.",
+			"whatToExpect": "Pau y Lu asaltan tres financieras en un día para conseguir dólares y ayudar a Jessi, pero el viaje obliga a revisar quién le debe lealtad a quién.",
+			"pace": "Va al hueso, encadenando golpes, caminos y discusiones en un trayecto corto que no pierde tiempo en explicaciones.",
+			"intensity": "La urgencia es económica y afectiva; la presión de la cárcel hace que cada decisión de amistad tenga una consecuencia concreta.",
+			"practicalContext": "Mirala como una road movie de atracos compacta, con paisaje misionero y humor de supervivencia más interesado en las protagonistas que en la logística perfecta.",
+			"forFansOf": "Si te gustan fugas argentinas, dúos con química y planes delictivos que se sostienen por cariño.",
+			"notForYouIf": "No es para vos si buscás un policial cerebral, una geografía turística o una amistad sin discusiones."
 		},
-	"becauseYouLiked": [
-		"el-robo-del-siglo-2020",
-		"nueve-reinas-2000"
-	],
-	"related": [
-		"los-delincuentes-2023",
-		"el-aura-2005",
-		"fast-five-2011",
-		"el-clan-2015"
-	]
-},
+		"becauseYouLiked": [
+			"el-robo-del-siglo-2020",
+			"nueve-reinas-2000"
+		],
+		"related": [
+			"los-delincuentes-2023",
+			"el-aura-2005",
+			"fast-five-2011",
+			"el-clan-2015"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Lu & Pau entra rápido, tira los dados y deja que sus protagonistas carguen con una aventura que podría haberse vuelto mecánica. Jazmín Stuart y Lorena Vega tienen una química eléctrica: una aporta impulso y la otra una ironía que corta la tensión justo a tiempo. Nicanor Loreti aprovecha los caminos misioneros, el auto y la lógica de los golpes para construir una película liviana sin volverla descuidada. El metraje corto ayuda, los desvíos suman personalidad y el corazón aparece donde menos se lo espera: en la defensa obstinada de una amistad."
+	"review": "Lu & Pau entra rápido, tira los dados y deja que sus protagonistas carguen con una aventura que podría haberse vuelto mecánica. Jazmín Stuart y Lorena Vega tienen una química eléctrica: una aporta impulso y la otra una ironía que corta la tensión justo a tiempo. Nicanor Loreti aprovecha los caminos misioneros, el auto y la lógica de los golpes para construir una película liviana sin volverla descuidada. El metraje corto ayuda, los desvíos suman personalidad y el corazón aparece donde menos se lo espera: en la defensa obstinada de una amistad.",
+	"castCharacters": [
+		{
+			"actor": "Jazmín Stuart",
+			"character": "Pau",
+			"tmdbMovieId": 1222036,
+			"tmdbPersonId": 131868,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lorena Vega",
+			"character": "Lu",
+			"tmdbMovieId": 1222036,
+			"tmdbPersonId": 589483,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -34,20 +34,48 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Fabián Bielinsky filma la estafa como idioma porteño: Ricardo Darín y Gastón Pauls se complementan entre picardía y desconfianza, mientras Buenos Aires se vuelve parte del timo.",
-			"whatToExpect": "Un día de engaños, calles, estampillas, vendedores y una sociedad improvisada donde cada ayuda puede ser una oportunidad para estafar.",			"pace": "Avanza con velocidad y precisión, encadenando trucos sin perder tiempo; la película te lleva de una pequeña avivada a una operación mucho mayor.",			"intensity": "La tensión es de desconfianza y necesidad, más verbal que violenta; lo peligroso es no saber quién está jugando con quién.",			"practicalContext": "Con 109 minutos, es una opción excelente para una noche de thriller argentino; mirala sin spoilers y dejá que la calle marque el ritmo.",			"forFansOf": "Para quienes disfrutan cine de estafas, Darín y Pauls en duelo de reflejos, y películas que observan una ciudad a través de sus trampas.",			"notForYouIf": "No es para vos si necesitás acción física constante, personajes transparentes o una historia de crimen que no dependa de conversar y mentir."
+			"whatToExpect": "Un día de engaños, calles, estampillas, vendedores y una sociedad improvisada donde cada ayuda puede ser una oportunidad para estafar.",
+			"pace": "Avanza con velocidad y precisión, encadenando trucos sin perder tiempo; la película te lleva de una pequeña avivada a una operación mucho mayor.",
+			"intensity": "La tensión es de desconfianza y necesidad, más verbal que violenta; lo peligroso es no saber quién está jugando con quién.",
+			"practicalContext": "Con 109 minutos, es una opción excelente para una noche de thriller argentino; mirala sin spoilers y dejá que la calle marque el ritmo.",
+			"forFansOf": "Para quienes disfrutan cine de estafas, Darín y Pauls en duelo de reflejos, y películas que observan una ciudad a través de sus trampas.",
+			"notForYouIf": "No es para vos si necesitás acción física constante, personajes transparentes o una historia de crimen que no dependa de conversar y mentir."
 		},
-	"becauseYouLiked": [
-		"el-aura-2005",
-		"el-robo-del-siglo-2020"
-	],
-	"related": [
-		"lu-pau-2026",
-		"plata-quemada-2000",
-		"los-delincuentes-2023",
-		"plan-oculto-2006"
-	]
-},
+		"becauseYouLiked": [
+			"el-aura-2005",
+			"el-robo-del-siglo-2020"
+		],
+		"related": [
+			"lu-pau-2026",
+			"plata-quemada-2000",
+			"los-delincuentes-2023",
+			"plan-oculto-2006"
+		]
+	},
 	"synopsis": "Marcos, un estafador veterano, cruza por azar a Juan, un principiante con reflejos rápidos para la mentira, y decide asociarse con él durante un día. Lo que empieza como una serie de engaños menores pronto deriva en una operación mucho más grande alrededor de unas valiosas estampillas falsificadas.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Marcos",
+			"tmdbMovieId": 18079,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gastón Pauls",
+			"character": "Juan",
+			"tmdbMovieId": 18079,
+			"tmdbPersonId": 119671,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leticia Brédice",
+			"character": "Valéria",
+			"tmdbMovieId": 18079,
+			"tmdbPersonId": 96918,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

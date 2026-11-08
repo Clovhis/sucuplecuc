@@ -46,18 +46,55 @@
 			"forFansOf": "Si te gustan dramas familiares, decisiones de adolescencia y conflictos de fe tratados con precisión.",
 			"notForYouIf": "No es para vos si buscás respuestas religiosas, un conflicto explosivo o una protagonista definida desde afuera."
 		},
-	"becauseYouLiked": [
-		"marianela-y-el-cadaver-2024",
-		"cielo-de-octubre-1999"
-	],
-	"related": [
-		"lady-bird-2017",
-		"c-mon-c-mon-siempre-adelante-2021",
-		"fue-la-mano-de-dios-2021",
-		"karate-kid-el-momento-de-la-verdad-1984"
-	]
-},
+		"becauseYouLiked": [
+			"marianela-y-el-cadaver-2024",
+			"cielo-de-octubre-1999"
+		],
+		"related": [
+			"lady-bird-2017",
+			"c-mon-c-mon-siempre-adelante-2021",
+			"fue-la-mano-de-dios-2021",
+			"karate-kid-el-momento-de-la-verdad-1984"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "La gran virtud de Alauda Ruiz de Azúa es no apurarse a decidir si la vocación de Ainara es fe, refugio o una mezcla imposible de separar. En vez de bajar línea, encierra a la familia alrededor de esa pregunta y deja que cada conversación revele cariño, miedo, prejuicio y necesidad de control.\n\nBlanca Soroa sostiene el misterio sin volver opaca a la adolescente, mientras Patricia López Arnaiz y Juan Minujín convierten posiciones enfrentadas en personas reconocibles. La puesta parece serena, pero debajo hay una tensión que no afloja y que vuelve filosa hasta una comida familiar. Es un drama preciso, incómodo y profundamente atento a cómo los adultos dicen proteger a una joven cuando en realidad también están defendiendo su propia idea del mundo."
+	"review": "La gran virtud de Alauda Ruiz de Azúa es no apurarse a decidir si la vocación de Ainara es fe, refugio o una mezcla imposible de separar. En vez de bajar línea, encierra a la familia alrededor de esa pregunta y deja que cada conversación revele cariño, miedo, prejuicio y necesidad de control.\n\nBlanca Soroa sostiene el misterio sin volver opaca a la adolescente, mientras Patricia López Arnaiz y Juan Minujín convierten posiciones enfrentadas en personas reconocibles. La puesta parece serena, pero debajo hay una tensión que no afloja y que vuelve filosa hasta una comida familiar. Es un drama preciso, incómodo y profundamente atento a cómo los adultos dicen proteger a una joven cuando en realidad también están defendiendo su propia idea del mundo.",
+	"castCharacters": [
+		{
+			"actor": "Blanca Soroa",
+			"character": "Ainara",
+			"tmdbMovieId": 1443576,
+			"tmdbPersonId": 5284715,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patricia López Arnaiz",
+			"character": "Maite",
+			"tmdbMovieId": 1443576,
+			"tmdbPersonId": 1603600,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juan Minujín",
+			"character": "Pablo",
+			"tmdbMovieId": 1443576,
+			"tmdbPersonId": 140538,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miguel Garcés",
+			"character": "Iñaki",
+			"tmdbMovieId": 1443576,
+			"tmdbPersonId": 2424427,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nagore Aranburu",
+			"character": "Madre Priora",
+			"tmdbMovieId": 1443576,
+			"tmdbPersonId": 1303016,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

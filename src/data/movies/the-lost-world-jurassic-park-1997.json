@@ -27,15 +27,15 @@
 	},
 	"runtimeMinutes": 129,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Lost World: Jurassic Park baja la maravilla y sube la cacería; Steven Spielberg todavía sabe convertir a Jeff Goldblum en brújula para el caos.",
-		"whatToExpect": "Ian Malcolm vuelve a Isla Sorna para observar dinosaurios libres, pero una expedición rival transforma el estudio en una carrera de supervivencia.",
-		"pace": "Arranca con exploración, aprieta en el campamento y después cambia de escenario para encadenar ataques cada vez más ruidosos.",
-		"intensity": "Los dinosaurios vuelven a sentirse imprevisibles en campo abierto; la amenaza pierde misterio cuando la película se entrega al espectáculo.",
-		"practicalContext": "Con 129 minutos, sirve para una aventura de tarde; conviene entrar sabiendo que no busca repetir la sorpresa del primer parque.",
-		"forFansOf": "Te va a gustar si disfrutás criaturas prácticas, expediciones peligrosas y el humor irónico de Jeff Goldblum atravesando una secuela más oscura.",
-		"notForYouIf": "Quizás no sea para vos si esperás la maravilla científica original, personajes muy desarrollados o una trama de dinosaurios sin desvíos."
-	},
+		"tenSecondTake": {
+			"verdict": "The Lost World: Jurassic Park baja la maravilla y sube la cacería; Steven Spielberg todavía sabe convertir a Jeff Goldblum en brújula para el caos.",
+			"whatToExpect": "Ian Malcolm vuelve a Isla Sorna para observar dinosaurios libres, pero una expedición rival transforma el estudio en una carrera de supervivencia.",
+			"pace": "Arranca con exploración, aprieta en el campamento y después cambia de escenario para encadenar ataques cada vez más ruidosos.",
+			"intensity": "Los dinosaurios vuelven a sentirse imprevisibles en campo abierto; la amenaza pierde misterio cuando la película se entrega al espectáculo.",
+			"practicalContext": "Con 129 minutos, sirve para una aventura de tarde; conviene entrar sabiendo que no busca repetir la sorpresa del primer parque.",
+			"forFansOf": "Te va a gustar si disfrutás criaturas prácticas, expediciones peligrosas y el humor irónico de Jeff Goldblum atravesando una secuela más oscura.",
+			"notForYouIf": "Quizás no sea para vos si esperás la maravilla científica original, personajes muy desarrollados o una trama de dinosaurios sin desvíos."
+		},
 		"becauseYouLiked": [
 			"jurassic-park-1993",
 			"a-i-artificial-intelligence-2001"
@@ -51,5 +51,28 @@
 	"synopsis": "Cuatro años después de Jurassic Park, Ian Malcolm viaja a Isla Sorna para documentar dinosaurios en libertad, pero una expedición rival pone en riesgo tanto a los animales como a los visitantes.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jeff Goldblum",
+			"character": "Ian Malcolm",
+			"tmdbMovieId": 330,
+			"tmdbPersonId": 4785,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julianne Moore",
+			"character": "Sarah Harding",
+			"tmdbMovieId": 330,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pete Postlethwaite",
+			"character": "Roland Tembo",
+			"tmdbMovieId": 330,
+			"tmdbPersonId": 4935,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

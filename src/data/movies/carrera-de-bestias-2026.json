@@ -58,5 +58,42 @@
 	},
 	"review": "Carrera de Bestias mete parkour, apuestas y desigualdad en un Río de Janeiro futuro que parece diseñado para una franquicia, pero todavía conserva algo de personalidad. La triple dirección de Fernando Meirelles, Rodrigo Pesavento y Ernesto Solis encuentra imágenes potentes en la ciudad deformada y en la pista donde los cuerpos pobres son el espectáculo de los ricos.\n\nMatheus Abreu lleva bien la urgencia de Mano y Rodrigo Santoro aporta una presencia más ambigua de lo esperado. El problema está en un guion que explica su crítica social como si temiera que alguien no la entendiera. Las escenas de carrera tienen músculo y Anitta suma energía; entre una idea potente y una alegoría demasiado obvia, queda una película entretenida pero irregular.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Matheus Abreu",
+			"character": "Mano",
+			"tmdbMovieId": 1263532,
+			"tmdbPersonId": 1368984,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rodrigo Santoro",
+			"character": "Abu",
+			"tmdbMovieId": 1263532,
+			"tmdbPersonId": 17289,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anitta",
+			"character": "Divina",
+			"tmdbMovieId": 1263532,
+			"tmdbPersonId": 1288731,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Isis Valverde",
+			"character": "Nadine",
+			"tmdbMovieId": 1263532,
+			"tmdbPersonId": 1175795,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Córes",
+			"character": "Coelha",
+			"tmdbMovieId": 1263532,
+			"tmdbPersonId": 1475566,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

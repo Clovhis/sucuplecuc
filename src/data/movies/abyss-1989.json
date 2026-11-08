@@ -45,17 +45,54 @@
 			"notForYouIf": "Necesitás respuestas rápidas, una misión militar lineal o una aventura submarina sin desvío emocional."
 		},
 		"becauseYouLiked": [
-		"contacto-1997",
-		"aliens-1986"
-	],
-	"related": [
-		"coherencia-2013",
-		"gattaca-1997",
-		"estan-vivos-1988",
-		"star-trek-vi-aquel-pais-desconocido-1991"
-	]
-},
+			"contacto-1997",
+			"aliens-1986"
+		],
+		"related": [
+			"coherencia-2013",
+			"gattaca-1997",
+			"estan-vivos-1988",
+			"star-trek-vi-aquel-pais-desconocido-1991"
+		]
+	},
 	"review": "James Cameron usa el rescate como una prueba de confianza entre personas que ya no tienen oxígeno ni margen de error. La presión del agua, los trajes y la escala de las instalaciones convierten la tecnología en suspense físico. Ed Harris y Mary Elizabeth Mastrantonio sostienen una pareja rota que debe aprender a trabajar junta bajo condiciones imposibles. La reconciliación de la pareja ocurre bajo presión real, y Cameron hace que la supervivencia dependa también de volver a confiar.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Ed Harris",
+			"character": "Virgil 'Bud' Brigman",
+			"tmdbMovieId": 2756,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Elizabeth Mastrantonio",
+			"character": "Lindsey Brigman",
+			"tmdbMovieId": 2756,
+			"tmdbPersonId": 1161,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Biehn",
+			"character": "Lieutenant Hiram Coffey",
+			"tmdbMovieId": 2756,
+			"tmdbPersonId": 2712,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leo Burmester",
+			"character": "Catton ‘Catfish’ De Vries",
+			"tmdbMovieId": 2756,
+			"tmdbPersonId": 30151,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Todd Graff",
+			"character": "Alan 'Hippy' Carnes",
+			"tmdbMovieId": 2756,
+			"tmdbPersonId": 18342,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

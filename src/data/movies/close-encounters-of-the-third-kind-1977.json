@@ -66,5 +66,42 @@
 		]
 	},
 	"review": "Steven Spielberg imagina a personas comunes obsesionadas por señales de otro mundo y filma ese contacto desde el asombro antes que desde el miedo. Richard Dreyfuss vuelve creíble la fijación de Roy, mientras François Truffaut aporta una calma científica que equilibra la ansiedad. La dirección trabaja luces, música y escalas enormes para que el misterio crezca de a poco, hasta un final visual que todavía impresiona. El ritmo es pausado y la vida familiar de Roy queda algo esquemática. Vale por una ciencia ficción que confía en la maravilla y no necesita villanos.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Richard Dreyfuss",
+			"character": "Roy Neary",
+			"tmdbMovieId": 840,
+			"tmdbPersonId": 3037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "François Truffaut",
+			"character": "Claude Lacombe",
+			"tmdbMovieId": 840,
+			"tmdbPersonId": 1650,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Teri Garr",
+			"character": "Ronnie Neary",
+			"tmdbMovieId": 840,
+			"tmdbPersonId": 8437,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Melinda Dillon",
+			"character": "Jillian Guiler",
+			"tmdbMovieId": 840,
+			"tmdbPersonId": 4778,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bob Balaban",
+			"character": "David Laughlin",
+			"tmdbMovieId": 840,
+			"tmdbPersonId": 12438,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

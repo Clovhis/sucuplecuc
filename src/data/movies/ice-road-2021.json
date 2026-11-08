@@ -56,5 +56,42 @@
 	},
 	"review": "Ice Road tiene una premisa perfecta para una tarde de catástrofes: camiones pesados, un lago congelado y una misión que no puede esperar. Liam Neeson mantiene la película en marcha con su mezcla habitual de profesionalidad y fastidio, mientras Amber Midthunder le aporta una energía mucho más fresca al equipo. Jonathan Hensleigh sabe sacar tensión de las grietas, los cables y el peso de los vehículos. El guion agrega conspiraciones poco necesarias y explica demasiado, pero la película funciona mejor cuando se limita a mostrar cómo cada metro de hielo puede romperse.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Mike McCann",
+			"tmdbMovieId": 646207,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amber Midthunder",
+			"character": "Tantoo",
+			"tmdbMovieId": 646207,
+			"tmdbPersonId": 1654001,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marcus Thomas",
+			"character": "John 'Gurty' McCann",
+			"tmdbMovieId": 646207,
+			"tmdbPersonId": 55174,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Holt McCallany",
+			"character": "Lampard",
+			"tmdbMovieId": 646207,
+			"tmdbPersonId": 7497,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laurence Fishburne",
+			"character": "Goldenrod",
+			"tmdbMovieId": 646207,
+			"tmdbPersonId": 2975,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

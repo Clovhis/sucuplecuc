@@ -43,18 +43,55 @@
 			"forFansOf": "Fans del cine de paisaje, de las narraciones elípticas y de los dramas donde la imagen, el sonido y los silencios cuentan tanto como los personajes.",
 			"notForYouIf": "Necesitás explicaciones claras, diálogos constantes o conflictos resueltos de manera frontal. Su distancia poética puede sentirse fría si no conectás con ese modo de mirar."
 		},
-	"becauseYouLiked": [
-		"oficial-y-caballero-1982",
-		"la-boda-de-rachel-2008"
-	],
-	"related": [
-		"alice-doesnt-live-here-anymore-1974",
-		"testigo-en-peligro-1985",
-		"la-delgada-linea-roja-1998",
-		"spanglish-2004"
-	]
-},
+		"becauseYouLiked": [
+			"oficial-y-caballero-1982",
+			"la-boda-de-rachel-2008"
+		],
+		"related": [
+			"alice-doesnt-live-here-anymore-1974",
+			"testigo-en-peligro-1985",
+			"la-delgada-linea-roja-1998",
+			"spanglish-2004"
+		]
+	},
 	"review": "Terrence Malick cuenta una tragedia de deseo y clase desde la distancia frágil de una memoria infantil. La luz de la hora mágica, el viento sobre los trigales y la narración en off convierten el paisaje en conciencia. Richard Gere, Brooke Adams y Sam Shepard se mueven dentro de una belleza que nunca tapa la crueldad del destino. La narración infantil no vuelve inocente la historia; apenas le da una distancia frágil desde la que mirar el daño de los adultos.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Richard Gere",
+			"character": "Bill",
+			"tmdbMovieId": 16642,
+			"tmdbPersonId": 1205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brooke Adams",
+			"character": "Abby",
+			"tmdbMovieId": 16642,
+			"tmdbPersonId": 69054,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Shepard",
+			"character": "The Farmer",
+			"tmdbMovieId": 16642,
+			"tmdbPersonId": 9880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Linda Manz",
+			"character": "Linda",
+			"tmdbMovieId": 16642,
+			"tmdbPersonId": 3011,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert J. Wilke",
+			"character": "The Farm Foreman",
+			"tmdbMovieId": 16642,
+			"tmdbPersonId": 2096,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

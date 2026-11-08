@@ -55,5 +55,21 @@
 	"releasePlatforms": [
 		"Disney Plus",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "The Carpenter",
+			"tmdbMovieId": 1286185,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Noah Jupe",
+			"character": "The Boy",
+			"tmdbMovieId": 1286185,
+			"tmdbPersonId": 1590759,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

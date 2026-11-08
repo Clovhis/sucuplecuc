@@ -36,7 +36,7 @@
 			"forFansOf": "Te puede gustar si te van las películas de atracos, el contrabando espacial y las aventuras de Star Wars que priorizan la camaradería, las persecuciones y un héroe todavía en construcción.",
 			"notForYouIf": "Quizás no sea para vos si esperás una reinvención radical del personaje, una villanía memorable o una historia de origen sin guiños que expliquen de dónde salen sus objetos más famosos."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"looper-2012",
 			"star-wars-episode-v-the-empire-strikes-back-1980"
 		],
@@ -51,5 +51,28 @@
 	"synopsis": "El joven Han Solo escapa de su planeta natal y se abre camino entre contrabandistas, criminales y apuestas galácticas. Durante un golpe arriesgado conoce a Chewbacca y Lando Calrissian, y empieza a convertirse en el piloto que comandará el Halcón Milenario.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Alden Ehrenreich",
+			"character": "Han Solo",
+			"tmdbMovieId": 348350,
+			"tmdbPersonId": 71375,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joonas Suotamo",
+			"character": "Chewbacca",
+			"tmdbMovieId": 348350,
+			"tmdbPersonId": 1709041,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Woody Harrelson",
+			"character": "Tobias Beckett",
+			"tmdbMovieId": 348350,
+			"tmdbPersonId": 57755,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

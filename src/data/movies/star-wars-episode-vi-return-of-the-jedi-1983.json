@@ -44,7 +44,7 @@
 			"forFansOf": "Puede gustarte si disfrutás aventuras de cierre, equipos rebeldes y redenciones familiares con una escala grande, un humor algo más infantil y una banda sonora que sabe cuándo empujar.",
 			"notForYouIf": "Quizás no sea para vos si buscás la tensión amarga de El imperio contraataca, un tono uniforme o criaturas cómicas que no alteren el peligro. Endor divide aguas."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"star-wars-episode-vii-the-force-awakens-2015",
 			"e-t-the-extra-terrestrial-1982"
 		],
@@ -59,5 +59,28 @@
 	"synopsis": "Luke intenta rescatar a Han y enfrentar a Darth Vader, mientras la Alianza Rebelde prepara un ataque desesperado contra la nueva Estrella de la Muerte antes de que el Imperio la active.",
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mark Hamill",
+			"character": "Luke Skywalker",
+			"tmdbMovieId": 1892,
+			"tmdbPersonId": 2,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harrison Ford",
+			"character": "Han Solo",
+			"tmdbMovieId": 1892,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carrie Fisher",
+			"character": "Princess Leia",
+			"tmdbMovieId": 1892,
+			"tmdbPersonId": 4,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -50,5 +50,28 @@
     }
   },
   "review": "Ford usa Monument Valley como un territorio que parece no terminar nunca y, aun así, encierra a Ethan en su rencor. John Wayne compone una figura imponente y cada vez más difícil de celebrar: su obsesión queda expuesta detrás de la aventura, sin que la película la convierta en una excusa. El final guarda una ternura incómoda, ganada después de un recorrido áspero. La búsqueda de Debbie junto a Martin Pawley expone el límite moral que Ethan no logra reconocer.",
-  "runtimeMinutes": 119
+  "runtimeMinutes": 119,
+  "castCharacters": [
+    {
+      "actor": "John Wayne",
+      "character": "Ethan Edwards",
+      "tmdbMovieId": 3114,
+      "tmdbPersonId": 4165,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Jeffrey Hunter",
+      "character": "Martin Pawley",
+      "tmdbMovieId": 3114,
+      "tmdbPersonId": 30551,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Natalie Wood",
+      "character": "Debbie Edwards",
+      "tmdbMovieId": 3114,
+      "tmdbPersonId": 2769,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

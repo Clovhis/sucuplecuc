@@ -53,5 +53,21 @@
 	"postCreditsScenes": 0,
 	"releasePlatform": "HBO Max",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Frederick Treves",
+			"tmdbMovieId": 1955,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Hurt",
+			"character": "John Merrick",
+			"tmdbMovieId": 1955,
+			"tmdbPersonId": 5049,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

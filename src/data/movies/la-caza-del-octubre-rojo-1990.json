@@ -2,7 +2,7 @@
 	"slug": "la-caza-del-octubre-rojo-1990",
 	"title": "La caza del Octubre Rojo",
 	"originalTitle": "The Hunt for Red October",
-  "synopsis": "El capitán soviético Ramius lleva su submarino hacia el Atlántico y deja a Washington sin certezas sobre sus intenciones. Mientras las flotas se preparan para responder, el analista Jack Ryan intenta acercarse al Octubre Rojo antes de que la tensión escale.",
+	"synopsis": "El capitán soviético Ramius lleva su submarino hacia el Atlántico y deja a Washington sin certezas sobre sus intenciones. Mientras las flotas se preparan para responder, el analista Jack Ryan intenta acercarse al Octubre Rojo antes de que la tensión escale.",
 	"year": 1990,
 	"reviewPublishedAt": "2026-11-06",
 	"audienceRating": "ATP",
@@ -62,5 +62,21 @@
 	"releasePlatforms": [
 		"Netflix"
 	],
-	"runtimeMinutes": 135
+	"runtimeMinutes": 135,
+	"castCharacters": [
+		{
+			"actor": "Sean Connery",
+			"character": "Capt. 1st Marko Ramius",
+			"tmdbMovieId": 1669,
+			"tmdbPersonId": 738,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alec Baldwin",
+			"character": "Dr. Jack Ryan",
+			"tmdbMovieId": 1669,
+			"tmdbPersonId": 7447,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

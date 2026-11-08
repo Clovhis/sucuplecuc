@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "CN, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Hardy",
+			"character": "Eddie Brock / Venom",
+			"tmdbMovieId": 335983,
+			"tmdbPersonId": 2524,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Williams",
+			"character": "Anne Weying",
+			"tmdbMovieId": 335983,
+			"tmdbPersonId": 1812,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Riz Ahmed",
+			"character": "Carlton Drake / Riot",
+			"tmdbMovieId": 335983,
+			"tmdbPersonId": 53240,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

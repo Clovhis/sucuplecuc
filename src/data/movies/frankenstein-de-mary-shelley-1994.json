@@ -57,5 +57,35 @@
 		]
 	},
 	"review": "Frankenstein de Mary Shelley quiere ser una novela gótica puesta en escena con todos los botones apretados: tormentas, laboratorios, tragedia familiar y una criatura que no deja de mirar a quienes la fabricaron. Robert De Niro evita reducir al monstruo a una amenaza física y le encuentra una herida de abandono que sostiene sus mejores escenas. Kenneth Branagh, en cambio, interpreta a Victor con una intensidad que por momentos desborda el relato y vuelve la película más aparatosa que aterradora. La producción tiene imágenes poderosas y una sensibilidad romántica genuina, aunque la narración se apura para cubrir demasiadas etapas. Es un Frankenstein desigual, vistoso y más interesado en el vínculo entre creador y criatura que en el susto.",
-	"runtimeMinutes": 123
+	"runtimeMinutes": 123,
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "The Creature / Sharp Featured Man",
+			"tmdbMovieId": 3036,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kenneth Branagh",
+			"character": "Victor Frankenstein",
+			"tmdbMovieId": 3036,
+			"tmdbPersonId": 11181,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helena Bonham Carter",
+			"character": "Elizabeth",
+			"tmdbMovieId": 3036,
+			"tmdbPersonId": 1283,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aidan Quinn",
+			"character": "Cap. Robert Walton",
+			"tmdbMovieId": 3036,
+			"tmdbPersonId": 18992,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

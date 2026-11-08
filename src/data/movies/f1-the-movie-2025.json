@@ -53,5 +53,28 @@
 	"review": "F1: The Movie funciona mejor cuando se entrega al vértigo de la pista y deja que el ruido, la velocidad y la presión mecánica hablen por sí solos. Joseph Kosinski sabe filmar máquinas, cuerpos y riesgo con una limpieza que vuelve atractivo incluso lo que podría ser puro spot publicitario. Brad Pitt aporta carisma de veterano cansado, y la dinámica con Damson Idris le da a la película un eje generacional bastante claro. No sobresale por originalidad, porque varias curvas dramáticas son previsibles, pero sí por la eficacia con la que vende la experiencia de estar adentro de ese circo. Cuando se pone demasiado solemne sobre segundas oportunidades, pierde agarre; cuando vuelve al auto, recupera pulso. Es una buena opción para pantalla grande o para mirar con volumen alto, sobre todo si te atraen las películas deportivas que hacen del oficio una cuestión casi física.",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Brad Pitt",
+			"character": "Sonny Hayes",
+			"tmdbMovieId": 911430,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Damson Idris",
+			"character": "Joshua Pearce",
+			"tmdbMovieId": 911430,
+			"tmdbPersonId": 1837297,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Javier Bardem",
+			"character": "Ruben Cervantes",
+			"tmdbMovieId": 911430,
+			"tmdbPersonId": 3810,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -60,5 +60,42 @@
 	],
 	"runtimeMinutes": 90,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Nicky",
+			"tmdbMovieId": 9678,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patricia Arquette",
+			"character": "Valerie Veran",
+			"tmdbMovieId": 9678,
+			"tmdbPersonId": 4687,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harvey Keitel",
+			"character": "Dad",
+			"tmdbMovieId": 9678,
+			"tmdbPersonId": 1037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rhys Ifans",
+			"character": "Adrian",
+			"tmdbMovieId": 9678,
+			"tmdbPersonId": 7026,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lister Jr.",
+			"character": "Cassius",
+			"tmdbMovieId": 9678,
+			"tmdbPersonId": 8396,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

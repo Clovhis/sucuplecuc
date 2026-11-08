@@ -56,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "ES",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Belén Rueda",
+			"character": "Laura",
+			"tmdbMovieId": 6537,
+			"tmdbPersonId": 19907,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fernando Cayo",
+			"character": "Carlos",
+			"tmdbMovieId": 6537,
+			"tmdbPersonId": 51902,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

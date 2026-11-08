@@ -8,7 +8,11 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+13",
   "category": "Ciencia ficcion",
-  "genres": ["Ciencia ficcion", "Terror", "Drama"],
+  "genres": [
+    "Ciencia ficcion",
+    "Terror",
+    "Drama"
+  ],
   "subgenres": [],
   "country": "US",
   "isArgentinian": false,
@@ -17,33 +21,62 @@
   "trailerYoutubeId": "vTIWloXBCww",
   "releasePlatform": "HBO Max",
   "director": "Jack Arnold",
-  "mainCast": ["Grant Williams", "Randy Stuart", "Paul Langton"],
+  "mainCast": [
+    "Grant Williams",
+    "Randy Stuart",
+    "Paul Langton"
+  ],
   "productionCompany": "Universal-International",
   "cinepostaScore": 7,
   "runtimeMinutes": 81,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Una ciencia ficción clásica que convierte una alteración del cuerpo en crisis de identidad y cambio de escala. Jack Arnold filma objetos cotidianos como amenazas enormes, y Grant Williams sostiene el miedo sin exagerarlo.",
-			"whatToExpect": "Grant Williams ve cómo su cuerpo se reduce y su propia casa se vuelve un territorio hostil. El increíble hombre menguante mezcla trucos ópticos, supervivencia doméstica y una pregunta inquietante sobre quién seguimos siendo.",
-			"pace": "Directo y progresivo: exposición, primera pérdida de escala, adaptación y nuevos peligros. La película avanza con claridad, pero deja espacio para que cada cambio pese.",
-			"intensity": "Media-alta en tensión física y melancolía, baja en violencia explícita. El miedo surge de perder autonomía y de que lo familiar deje de protegerte.",
-			"practicalContext": "Dura 81 minutos y es ideal para una sesión breve de ciencia ficción clásica. Funciona muy bien si querés una premisa simple con imaginación visual.",
-			"forFansOf": "Fans de Jack Arnold, de los clásicos de ciencia ficción y de las historias donde la casa cotidiana se transforma en un planeta desconocido.",
-			"notForYouIf": "Buscás efectos modernos, humor constante o una explicación científica exhaustiva. La película trabaja con metáfora y trucos artesanales."
-		},
-	"becauseYouLiked": [
-		"aniquilacion-2018",
-		"bugonia-2025"
-	],
-	"related": [
-		"piscina-infinita-2023",
-		"donnie-darko-2001",
-		"mision-rescate-2015",
-		"gattaca-1997"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Una ciencia ficción clásica que convierte una alteración del cuerpo en crisis de identidad y cambio de escala. Jack Arnold filma objetos cotidianos como amenazas enormes, y Grant Williams sostiene el miedo sin exagerarlo.",
+      "whatToExpect": "Grant Williams ve cómo su cuerpo se reduce y su propia casa se vuelve un territorio hostil. El increíble hombre menguante mezcla trucos ópticos, supervivencia doméstica y una pregunta inquietante sobre quién seguimos siendo.",
+      "pace": "Directo y progresivo: exposición, primera pérdida de escala, adaptación y nuevos peligros. La película avanza con claridad, pero deja espacio para que cada cambio pese.",
+      "intensity": "Media-alta en tensión física y melancolía, baja en violencia explícita. El miedo surge de perder autonomía y de que lo familiar deje de protegerte.",
+      "practicalContext": "Dura 81 minutos y es ideal para una sesión breve de ciencia ficción clásica. Funciona muy bien si querés una premisa simple con imaginación visual.",
+      "forFansOf": "Fans de Jack Arnold, de los clásicos de ciencia ficción y de las historias donde la casa cotidiana se transforma en un planeta desconocido.",
+      "notForYouIf": "Buscás efectos modernos, humor constante o una explicación científica exhaustiva. La película trabaja con metáfora y trucos artesanales."
+    },
+    "becauseYouLiked": [
+      "aniquilacion-2018",
+      "bugonia-2025"
+    ],
+    "related": [
+      "piscina-infinita-2023",
+      "donnie-darko-2001",
+      "mision-rescate-2015",
+      "gattaca-1997"
+    ]
+  },
   "review": "El increíble hombre menguante convierte una variación física en una crisis existencial mucho antes de que la ciencia ficción se vuelva espectáculo de monstruos. Grant Williams sostiene el miedo y la frustración de un hombre que deja de reconocerse en su propia casa, mientras Jack Arnold usa decorados, trucos ópticos y objetos cotidianos para cambiar por completo la escala del peligro. La película tiene una imaginación visual enorme para su época y una melancolía que sigue funcionando cuando el protagonista entiende que su problema no es sólo volver a crecer.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Grant Williams",
+      "character": "Scott Carey",
+      "tmdbMovieId": 31682,
+      "tmdbPersonId": 109406,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Randy Stuart",
+      "character": "Louise Carey",
+      "tmdbMovieId": 31682,
+      "tmdbPersonId": 109407,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Paul Langton",
+      "character": "Charlie Carey",
+      "tmdbMovieId": 31682,
+      "tmdbPersonId": 97145,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

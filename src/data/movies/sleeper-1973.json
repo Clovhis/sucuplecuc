@@ -53,5 +53,35 @@
 		]
 	},
 	"review": "Woody Allen despierta a un hombre común doscientos años en el futuro y usa esa premisa para mezclar ciencia ficción, sátira política y humor físico. Allen interpreta al protagonista con su neurosis habitual, mientras Diane Keaton aporta una energía desordenada que ayuda a que el delirio no se vuelva puro monólogo. La dirección inventa máquinas absurdas y persecuciones con un ritmo liviano, aunque algunos chistes dependen mucho de su época. No busca construir un futuro coherente, sino jugar con sus reglas. Vale por esa tontería inventiva que todavía saca sonrisas sin esfuerzo.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Miles Monroe",
+			"tmdbMovieId": 11561,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Keaton",
+			"character": "Luna Schlosser",
+			"tmdbMovieId": 11561,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Beck",
+			"character": "Erno Windt",
+			"tmdbMovieId": 11561,
+			"tmdbPersonId": 41269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Keefer",
+			"character": "Dr. Tryon",
+			"tmdbMovieId": 11561,
+			"tmdbPersonId": 104630,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

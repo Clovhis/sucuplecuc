@@ -55,5 +55,42 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-16",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Josh Brolin",
+			"character": "Archer",
+			"tmdbMovieId": 1078605,
+			"tmdbPersonId": 16851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julia Garner",
+			"character": "Justine",
+			"tmdbMovieId": 1078605,
+			"tmdbPersonId": 936970,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alden Ehrenreich",
+			"character": "Paul",
+			"tmdbMovieId": 1078605,
+			"tmdbPersonId": 71375,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Austin Abrams",
+			"character": "James",
+			"tmdbMovieId": 1078605,
+			"tmdbPersonId": 148992,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amy Madigan",
+			"character": "Gladys",
+			"tmdbMovieId": 1078605,
+			"tmdbPersonId": 23882,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -58,5 +58,28 @@
 	"releasePlatforms": [
 		"Paramount Plus",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Neve Campbell",
+			"character": "Sidney Evans",
+			"tmdbMovieId": 1159559,
+			"tmdbPersonId": 9206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Courteney Cox",
+			"character": "Gale Weathers",
+			"tmdbMovieId": 1159559,
+			"tmdbPersonId": 14405,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Isabel May",
+			"character": "Tatum Evans",
+			"tmdbMovieId": 1159559,
+			"tmdbPersonId": 1972974,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

@@ -34,15 +34,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Titanes, hicieron historia encuentra emoción en un vestuario que aprende a compartir; Boaz Yakin confía en Denzel Washington sin convertir al entrenador en salvador único.",
-		"whatToExpect": "Un colegio integra alumnos y equipo de fútbol, y dos entrenadores deben transformar un vestuario racista en un grupo capaz de competir.",
-		"pace": "Pasa por entrenamientos, roces y partidos con una progresión clásica, dejando que cada victoria deportiva arrastre un conflicto de afuera.",
-		"intensity": "La presión racial es concreta y el equipo no la resuelve con una sola charla; los abrazos llegan después de mucho empuje.",
-		"practicalContext": "Dura 113 minutos y funciona como drama deportivo de tarde, claro en su mensaje y fácil de seguir aunque no conozcas el fútbol americano.",
-		"forFansOf": "Te va a gustar si disfrutás equipos que se forman a los golpes, historias basadas en hechos y liderazgos que también deben ceder.",
-		"notForYouIf": "Quizás no sea para vos si preferís conflictos ambiguos, deportes sin moraleja o una historia que no ordene sus emociones."
-	},
+		"tenSecondTake": {
+			"verdict": "Titanes, hicieron historia encuentra emoción en un vestuario que aprende a compartir; Boaz Yakin confía en Denzel Washington sin convertir al entrenador en salvador único.",
+			"whatToExpect": "Un colegio integra alumnos y equipo de fútbol, y dos entrenadores deben transformar un vestuario racista en un grupo capaz de competir.",
+			"pace": "Pasa por entrenamientos, roces y partidos con una progresión clásica, dejando que cada victoria deportiva arrastre un conflicto de afuera.",
+			"intensity": "La presión racial es concreta y el equipo no la resuelve con una sola charla; los abrazos llegan después de mucho empuje.",
+			"practicalContext": "Dura 113 minutos y funciona como drama deportivo de tarde, claro en su mensaje y fácil de seguir aunque no conozcas el fútbol americano.",
+			"forFansOf": "Te va a gustar si disfrutás equipos que se forman a los golpes, historias basadas en hechos y liderazgos que también deben ceder.",
+			"notForYouIf": "Quizás no sea para vos si preferís conflictos ambiguos, deportes sin moraleja o una historia que no ordene sus emociones."
+		},
 		"becauseYouLiked": [
 			"ali-2001",
 			"invencible-2006"
@@ -54,5 +54,42 @@
 			"el-clan-de-hierro-2023"
 		]
 	},
-	"review": "Boaz Yakin toma una fórmula deportiva bastante conocida y la vuelve muy difícil de resistir gracias a la química del equipo. Denzel Washington entra con autoridad, pero su entrenador no queda como superhéroe: también tiene que aprender a escuchar y a negociar con un contexto hostil. Las escenas de entrenamiento están filmadas con energía y el partido final no necesita inventar milagros para emocionar. El relato a veces ordena sus conflictos con una prolijidad de manual, aunque el tema racial nunca desaparece debajo de los abrazos. Funciona porque se preocupa por el grupo antes que por el trofeo."
+	"review": "Boaz Yakin toma una fórmula deportiva bastante conocida y la vuelve muy difícil de resistir gracias a la química del equipo. Denzel Washington entra con autoridad, pero su entrenador no queda como superhéroe: también tiene que aprender a escuchar y a negociar con un contexto hostil. Las escenas de entrenamiento están filmadas con energía y el partido final no necesita inventar milagros para emocionar. El relato a veces ordena sus conflictos con una prolijidad de manual, aunque el tema racial nunca desaparece debajo de los abrazos. Funciona porque se preocupa por el grupo antes que por el trofeo.",
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "Coach Herman Boone",
+			"tmdbMovieId": 10637,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Will Patton",
+			"character": "Coach Bill Yoast",
+			"tmdbMovieId": 10637,
+			"tmdbPersonId": 883,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wood Harris",
+			"character": "Julius Campbell",
+			"tmdbMovieId": 10637,
+			"tmdbPersonId": 65829,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ryan Hurst",
+			"character": "Gerry Bertier",
+			"tmdbMovieId": 10637,
+			"tmdbPersonId": 43858,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Donald Faison",
+			"character": "Petey Jones",
+			"tmdbMovieId": 10637,
+			"tmdbPersonId": 49002,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,5 +47,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "DE, GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ioan Gruffudd",
+			"character": "Reed Richards",
+			"tmdbMovieId": 1979,
+			"tmdbPersonId": 65524,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Alba",
+			"character": "Sue Richards",
+			"tmdbMovieId": 1979,
+			"tmdbPersonId": 56731,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Evans",
+			"character": "Johnny Storm",
+			"tmdbMovieId": 1979,
+			"tmdbPersonId": 16828,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

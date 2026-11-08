@@ -35,28 +35,97 @@
 	},
 	"runtimeMinutes": 179,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Lord of the Rings: The Two Towers separa a la comunidad y vuelve más áspero el viaje; Peter Jackson encuentra su gran pulso en Helm.",
-		"whatToExpect": "Frodo y Sam siguen a Gollum hacia Mordor, mientras Aragorn, Legolas y Gimli defienden un reino rodeado por el ejército de Saruman.",
-		"pace": "Sostiene varias líneas narrativas en paralelo, alternando caminatas tensas, política de reinos y una batalla que tarda en cerrarse.",
-		"intensity": "El peligro aumenta por desgaste y asedio; Gollum agrega una fragilidad inquietante a una historia que podría ser sólo militar.",
-		"practicalContext": "Con 179 minutos, pide memoria para las tramas y paciencia para el armado; la recompensa está en una geografía de batalla clarísima.",
-		"forFansOf": "Te va a gustar si disfrutás capítulos intermedios con peso propio, fantasía bélica y personajes divididos por una misma misión.",
-		"notForYouIf": "Quizás no sea para vos si te molestan los relatos que terminan abiertos, los desvíos de viaje o el tono de guerra fantástica."
+		"tenSecondTake": {
+			"verdict": "The Lord of the Rings: The Two Towers separa a la comunidad y vuelve más áspero el viaje; Peter Jackson encuentra su gran pulso en Helm.",
+			"whatToExpect": "Frodo y Sam siguen a Gollum hacia Mordor, mientras Aragorn, Legolas y Gimli defienden un reino rodeado por el ejército de Saruman.",
+			"pace": "Sostiene varias líneas narrativas en paralelo, alternando caminatas tensas, política de reinos y una batalla que tarda en cerrarse.",
+			"intensity": "El peligro aumenta por desgaste y asedio; Gollum agrega una fragilidad inquietante a una historia que podría ser sólo militar.",
+			"practicalContext": "Con 179 minutos, pide memoria para las tramas y paciencia para el armado; la recompensa está en una geografía de batalla clarísima.",
+			"forFansOf": "Te va a gustar si disfrutás capítulos intermedios con peso propio, fantasía bélica y personajes divididos por una misma misión.",
+			"notForYouIf": "Quizás no sea para vos si te molestan los relatos que terminan abiertos, los desvíos de viaje o el tono de guerra fantástica."
+		},
+		"becauseYouLiked": [
+			"the-lord-of-the-rings-the-return-of-the-king-2003",
+			"the-lord-of-the-rings-the-fellowship-of-the-ring-2001"
+		],
+		"related": [
+			"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
+			"harry-potter-and-the-chamber-of-secrets-2002",
+			"harry-potter-and-the-sorcerers-stone-2001",
+			"harry-potter-and-the-prisoner-of-azkaban-2004"
+		]
 	},
-	"becauseYouLiked": [
-		"the-lord-of-the-rings-the-return-of-the-king-2003",
-		"the-lord-of-the-rings-the-fellowship-of-the-ring-2001"
-	],
-	"related": [
-		"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
-		"harry-potter-and-the-chamber-of-secrets-2002",
-		"harry-potter-and-the-sorcerers-stone-2001",
-		"harry-potter-and-the-prisoner-of-azkaban-2004"
-	]
-},
-  "review": "Las dos torres acepta ser el capítulo de transición, pero no se limita a acomodar piezas: separa a la comunidad y vuelve más áspero el viaje de cada grupo. Peter Jackson sostiene tres líneas narrativas con pulso, y la batalla del Abismo de Helm sigue funcionando por geografía, preparación y consecuencias, no sólo por cantidad de orcos. Viggo Mortensen le da a Aragorn una autoridad tranquila, mientras Gollum, con Andy Serkis, incorpora una fragilidad que complica el conflicto de Frodo. Puede sentirse más dispersa que las otras dos, aunque esa expansión le da a la Tierra Media una escala y una oscuridad muy concretas.",
+	"review": "Las dos torres acepta ser el capítulo de transición, pero no se limita a acomodar piezas: separa a la comunidad y vuelve más áspero el viaje de cada grupo. Peter Jackson sostiene tres líneas narrativas con pulso, y la batalla del Abismo de Helm sigue funcionando por geografía, preparación y consecuencias, no sólo por cantidad de orcos. Viggo Mortensen le da a Aragorn una autoridad tranquila, mientras Gollum, con Andy Serkis, incorpora una fragilidad que complica el conflicto de Frodo. Puede sentirse más dispersa que las otras dos, aunque esa expansión le da a la Tierra Media una escala y una oscuridad muy concretas.",
 	"synopsis": "Tras internarse en Emyn Muil, Frodo Bolsón y Sam Gamyi se encuentran con la criatura Gollum, que intenta quitarles el Anillo por la fuerza pero, al verse vencido, promete a los hobbits guiarlos hasta Mordor.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Elijah Wood",
+			"character": "Frodo",
+			"tmdbMovieId": 121,
+			"tmdbPersonId": 109,
+			"verifiedAt": "2026-11-08",
+			"displayCharacter": "Frodo Bolsón",
+			"variants": [
+				"Frodo Baggins"
+			]
+		},
+		{
+			"actor": "Ian McKellen",
+			"character": "Gandalf",
+			"tmdbMovieId": 121,
+			"tmdbPersonId": 1327,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Viggo Mortensen",
+			"character": "Aragorn",
+			"tmdbMovieId": 121,
+			"tmdbPersonId": 110,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Astin",
+			"character": "Sam",
+			"tmdbMovieId": 121,
+			"tmdbPersonId": 1328,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Orlando Bloom",
+			"character": "Legolas",
+			"tmdbMovieId": 121,
+			"tmdbPersonId": 114,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Serkis",
+			"character": "Gollum",
+			"tmdbMovieId": 121,
+			"tmdbPersonId": 1333,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bernard Hill",
+			"character": "Théoden",
+			"tmdbMovieId": 121,
+			"tmdbPersonId": 1369,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miranda Otto",
+			"character": "Éowyn",
+			"tmdbMovieId": 121,
+			"tmdbPersonId": 502,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Karl Urban",
+			"character": "Éomer",
+			"tmdbMovieId": 121,
+			"tmdbPersonId": 1372,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

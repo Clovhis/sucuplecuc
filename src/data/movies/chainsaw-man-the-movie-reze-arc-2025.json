@@ -38,19 +38,42 @@
 			"forFansOf": "Chainsaw Man, el anime de demonios y los romances que se vuelven peligrosos antes de poder definirse.",
 			"notForYouIf": "Buscás una entrada independiente, una historia romántica segura o acción sin zonas de silencio."
 		},
-	"becauseYouLiked": [
-		"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025",
-		"spy-x-family-code-white-2023"
-	],
-	"related": [
-		"bleach-thousand-year-blood-war-the-calamity-2026",
-		"demon-slayer-kimetsu-no-yaiba-the-movie-mugen-train-2020",
-		"perfect-blue-1997",
-		"ghost-in-the-shell-1995"
-	]
-},
+		"becauseYouLiked": [
+			"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025",
+			"spy-x-family-code-white-2023"
+		],
+		"related": [
+			"bleach-thousand-year-blood-war-the-calamity-2026",
+			"demon-slayer-kimetsu-no-yaiba-the-movie-mugen-train-2020",
+			"perfect-blue-1997",
+			"ghost-in-the-shell-1995"
+		]
+	},
 	"synopsis": "Denji sigue trabajando como cazador de demonios bajo las órdenes de Makima cuando conoce a Reze, una chica que parece ofrecerle una vida distinta. La atracción entre ambos pronto queda atravesada por secretos, violencia y una amenaza que vuelve a ponerlo en el centro del conflicto.",
 	"audienceRating": "+16",
-  "review": "El arco de Reze le suma a Chainsaw Man algo que la serie maneja muy bien: una historia de afecto adolescente que nunca deja de sentirse peligrosa. Denji encuentra en ella una cercanía que parece simple, pero la película necesita sostener esa ambigüedad sin convertir cada escena en una explicación de lore. La clave está en que la animación y el montaje dejen respirar los momentos íntimos antes de desatar la violencia, porque el contraste es parte del golpe. Si conserva el humor raro, la melancolía y la brutalidad del material, puede funcionar tanto como romance torcido como espectáculo de acción. No alcanza con acumular explosiones: Reze tiene que importar cuando todo se rompe.",
-	"reviewPublishedAt": "2026-03-04"
+	"review": "El arco de Reze le suma a Chainsaw Man algo que la serie maneja muy bien: una historia de afecto adolescente que nunca deja de sentirse peligrosa. Denji encuentra en ella una cercanía que parece simple, pero la película necesita sostener esa ambigüedad sin convertir cada escena en una explicación de lore. La clave está en que la animación y el montaje dejen respirar los momentos íntimos antes de desatar la violencia, porque el contraste es parte del golpe. Si conserva el humor raro, la melancolía y la brutalidad del material, puede funcionar tanto como romance torcido como espectáculo de acción. No alcanza con acumular explosiones: Reze tiene que importar cuando todo se rompe.",
+	"reviewPublishedAt": "2026-03-04",
+	"castCharacters": [
+		{
+			"actor": "Kikunosuke Toya",
+			"character": "Denji (voice)",
+			"tmdbMovieId": 1218925,
+			"tmdbPersonId": 3651176,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tomori Kusunoki",
+			"character": "Makima (voice)",
+			"tmdbMovieId": 1218925,
+			"tmdbPersonId": 2004086,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fairouz Ai",
+			"character": "Power (voice)",
+			"tmdbMovieId": 1218925,
+			"tmdbPersonId": 2359492,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

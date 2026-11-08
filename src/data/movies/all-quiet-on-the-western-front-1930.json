@@ -59,5 +59,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Louis Wolheim",
+			"character": "Stanislaus 'Kat' Katczinsky",
+			"tmdbMovieId": 143,
+			"tmdbPersonId": 2010,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lew Ayres",
+			"character": "Paul Bäumer",
+			"tmdbMovieId": 143,
+			"tmdbPersonId": 2007,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Wray",
+			"character": "Himmelstoss",
+			"tmdbMovieId": 143,
+			"tmdbPersonId": 2009,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

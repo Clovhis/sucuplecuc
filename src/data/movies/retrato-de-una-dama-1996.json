@@ -55,5 +55,35 @@
 	},
 	"review": "Jane Campion filma la novela de Henry James como un drama de miradas, silencios y decisiones que pesan más cuando parecen elegantes. Nicole Kidman hace de Isabel una mujer curiosa y orgullosa, pero también vulnerable ante quienes saben disfrazar el control de refinamiento. El ritmo se toma su tiempo y la puesta puede sentirse solemne, aunque la película encuentra fuerza en esa incomodidad: cada salón termina siendo un espacio donde la libertad se negocia en voz baja.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Nicole Kidman",
+			"character": "Isabel Archer",
+			"tmdbMovieId": 36758,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Malkovich",
+			"character": "Gilbert Osmond",
+			"tmdbMovieId": 36758,
+			"tmdbPersonId": 6949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Barbara Hershey",
+			"character": "Madame Serena Merle",
+			"tmdbMovieId": 36758,
+			"tmdbPersonId": 10767,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martin Donovan",
+			"character": "Ralph Touchett",
+			"tmdbMovieId": 36758,
+			"tmdbPersonId": 42993,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

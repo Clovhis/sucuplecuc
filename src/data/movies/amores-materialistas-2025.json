@@ -52,5 +52,21 @@
 	},
 	"review": "Song mira el romance desde un oficio que convierte las personas en perfiles comparables: Lucy sabe leer las expectativas de sus clientes, pero no puede aplicar esa claridad a su propia vida. Dakota Johnson transmite la distancia profesional que se va agrietando, mientras Chris Evans y Pedro Pascal representan dos formas distintas de imaginar estabilidad y deseo. La película se resiste a confirmar que la compatibilidad sea un cálculo posible; esa idea le da un filo actual, aunque algunos diálogos explicitan demasiado su tesis. El resultado se inclina más al drama de vínculos que a la comedia romántica convencional.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 117
+	"runtimeMinutes": 117,
+	"castCharacters": [
+		{
+			"actor": "Dakota Johnson",
+			"character": "Lucy",
+			"tmdbMovieId": 1136867,
+			"tmdbPersonId": 118545,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Evans",
+			"character": "John",
+			"tmdbMovieId": 1136867,
+			"tmdbPersonId": 16828,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

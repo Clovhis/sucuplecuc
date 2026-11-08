@@ -41,7 +41,11 @@
 		"tenSecondTake": {
 			"verdict": "Peter Sollett convierte una noche de recitales en una búsqueda sentimental, y Michael Cera con Kat Dennings encuentran química en la timidez, la música y los mensajes cruzados.",
 			"whatToExpect": "Una falsa relación, bares, subtes, recitales y la búsqueda de una banda secreta que funciona como mapa para dos adolescentes todavía desordenados.",
-			"pace": "Se mueve con energía de noche urbana, mezclando desvíos cómicos y conversaciones; la banda sonora empuja el viaje sin reemplazar el vínculo.",			"intensity": "La intensidad es romántica y adolescente, hecha de vergüenza, deseo y miedo a mostrarse; no hay gran peligro fuera de perder la noche.",			"practicalContext": "Con 89 minutos, es una comedia romántica breve para una noche de música; entra mejor si te gustan los recorridos con desvíos y banda sonora protagonista.",			"forFansOf": "Para quienes disfrutan romances adolescentes, música indie y protagonistas tímidos como Cera frente a la energía seca de Dennings.",			"notForYouIf": "Puede no ser para vos si buscás una historia más adulta, un romance sin confusiones o una ciudad menos idealizada por la noche."
+			"pace": "Se mueve con energía de noche urbana, mezclando desvíos cómicos y conversaciones; la banda sonora empuja el viaje sin reemplazar el vínculo.",
+			"intensity": "La intensidad es romántica y adolescente, hecha de vergüenza, deseo y miedo a mostrarse; no hay gran peligro fuera de perder la noche.",
+			"practicalContext": "Con 89 minutos, es una comedia romántica breve para una noche de música; entra mejor si te gustan los recorridos con desvíos y banda sonora protagonista.",
+			"forFansOf": "Para quienes disfrutan romances adolescentes, música indie y protagonistas tímidos como Cera frente a la energía seca de Dennings.",
+			"notForYouIf": "Puede no ser para vos si buscás una historia más adulta, un romance sin confusiones o una ciudad menos idealizada por la noche."
 		},
 		"becauseYouLiked": [
 			"juno-embarazada-por-accidente-2007",
@@ -54,5 +58,42 @@
 			"gloria-bell-2019"
 		]
 	},
-	"review": "La película entiende algo clave de las historias románticas adolescentes: a veces una ciudad entera parece diseñada para que dos personas se encuentren, pero el encuentro no arregla automáticamente lo que traen encima. La noche de Nick y Norah avanza entre bares, subtes y recitales con una banda sonora que no funciona como decoración, sino como idioma compartido. Michael Cera interpreta la timidez sin volverla una pose, y Kat Dennings le responde con una energía más seca y movediza. Hay desvíos de comedia bastante livianos, pero el recorrido central tiene encanto y una melancolía genuina."
+	"review": "La película entiende algo clave de las historias románticas adolescentes: a veces una ciudad entera parece diseñada para que dos personas se encuentren, pero el encuentro no arregla automáticamente lo que traen encima. La noche de Nick y Norah avanza entre bares, subtes y recitales con una banda sonora que no funciona como decoración, sino como idioma compartido. Michael Cera interpreta la timidez sin volverla una pose, y Kat Dennings le responde con una energía más seca y movediza. Hay desvíos de comedia bastante livianos, pero el recorrido central tiene encanto y una melancolía genuina.",
+	"castCharacters": [
+		{
+			"actor": "Michael Cera",
+			"character": "Nick",
+			"tmdbMovieId": 12182,
+			"tmdbPersonId": 39995,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kat Dennings",
+			"character": "Norah",
+			"tmdbMovieId": 12182,
+			"tmdbPersonId": 52852,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Yoo",
+			"character": "Thom",
+			"tmdbMovieId": 12182,
+			"tmdbPersonId": 54247,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rafi Gavron",
+			"character": "Dev",
+			"tmdbMovieId": 12182,
+			"tmdbPersonId": 21660,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ari Graynor",
+			"character": "Caroline",
+			"tmdbMovieId": 12182,
+			"tmdbPersonId": 71552,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

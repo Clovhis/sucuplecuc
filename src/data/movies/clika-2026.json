@@ -54,5 +54,28 @@
 	},
 	"review": "Clika tiene una premisa atractiva: un músico desconocido consigue una puerta de entrada a la industria justo cuando empieza a descubrir el costo de que otros controlen su imagen. Michael Greene le pone energía a los números y deja que Jay Dee cargue con la parte más autobiográfica del relato.\n\nLa película se vuelve menos interesante cuando transforma cada desvío en una lección sobre la fama y el peligro. Eric Roberts y Peter Greene aportan oficio, pero el diálogo no siempre está a la altura de sus caras. Hay una historia de identidad y pertenencia debajo del videoclip largo; por momentos aparece, aunque demasiadas veces queda tapada por clichés de ascenso, traición y caída.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Eric Roberts",
+			"character": "Angelo",
+			"tmdbMovieId": 1450257,
+			"tmdbPersonId": 21315,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Master P",
+			"character": "Bullet",
+			"tmdbMovieId": 1450257,
+			"tmdbPersonId": 3140117,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Greene",
+			"character": "Lieutenant Jones",
+			"tmdbMovieId": 1450257,
+			"tmdbPersonId": 11803,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

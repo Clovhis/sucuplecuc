@@ -30,17 +30,17 @@
 			"forFansOf": "Fans de Diego Lerman, de los dramas escolares y de las películas donde el trabajo cotidiano se vuelve una forma de intervenir en la comunidad.",
 			"notForYouIf": "Buscás una película de aula inspiradora, un thriller criminal o conflictos perfectamente resueltos. El suplente prefiere las dudas."
 		},
-	"becauseYouLiked": [
-		"argentina-1985-2022",
-		"los-colonos-2023"
-	],
-	"related": [
-		"el-patron-radiografia-de-un-crimen-2014",
-		"elefante-blanco-2012",
-		"leonera-2008",
-		"barreda-2026"
-	]
-},
+		"becauseYouLiked": [
+			"argentina-1985-2022",
+			"los-colonos-2023"
+		],
+		"related": [
+			"el-patron-radiografia-de-un-crimen-2014",
+			"elefante-blanco-2012",
+			"leonera-2008",
+			"barreda-2026"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -51,5 +51,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
 	"country": "AR",
-	"isArgentinian": true
+	"isArgentinian": true,
+	"castCharacters": [
+		{
+			"actor": "Juan Minujín",
+			"character": "Lucio",
+			"tmdbMovieId": 886755,
+			"tmdbPersonId": 140538,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bárbara Lennie",
+			"character": "Mariela",
+			"tmdbMovieId": 886755,
+			"tmdbPersonId": 724188,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

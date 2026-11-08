@@ -57,5 +57,28 @@
 		"Netflix",
 		"Prime Video"
 	],
-	"runtimeMinutes": 100
+	"runtimeMinutes": 100,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Robert Neville",
+			"tmdbMovieId": 6479,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alice Braga",
+			"character": "Anna Montez",
+			"tmdbMovieId": 6479,
+			"tmdbPersonId": 8602,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlie Tahan",
+			"character": "Ethan",
+			"tmdbMovieId": 6479,
+			"tmdbPersonId": 49918,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

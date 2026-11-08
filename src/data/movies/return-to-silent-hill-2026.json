@@ -39,18 +39,41 @@
 			"notForYouIf": "No es para vos si necesitás protagonistas complejos, sustos constantes o una adaptación que use el material sin explicarlo de más."
 		},
 		"becauseYouLiked": [
-		"primate-2026",
-		"whistle-2026"
-	],
-	"related": [
-		"exit-8-2025",
-		"lo-que-la-verdad-esconde-2000",
-		"28-years-later-the-bone-temple-2026",
-		"adolescencia-sexo-y-muerte-en-campamento-miasma-2026"
-	]
-},
+			"primate-2026",
+			"whistle-2026"
+		],
+		"related": [
+			"exit-8-2025",
+			"lo-que-la-verdad-esconde-2000",
+			"28-years-later-the-bone-temple-2026",
+			"adolescencia-sexo-y-muerte-en-campamento-miasma-2026"
+		]
+	},
 	"synopsis": "James recibe una carta de su amor perdido y vuelve a Silent Hill para encontrarla, pero el pueblo envuelto en niebla lo enfrenta con criaturas y recuerdos que prefería negar.",
 	"audienceRating": "+13",
 	"review": "Return to Silent Hill apuesta casi todo al reconocimiento: el pueblo, la niebla, los pasillos húmedos y la culpa de James Sunderland como motor del viaje. Christophe Gans sabe componer imágenes pesadas y enfermizas, pero esta vez la atmósfera sola no alcanza para sostener el recorrido.\n\nJeremy Irvine carga con un protagonista que pasa demasiado tiempo entre la confusión y la solemnidad, y la película insiste en explicar su dolor en lugar de volverlo inquietante. Hay criaturas, hay eco del videojuego y hay alguna escena lograda, pero la narración avanza con una rigidez que enfría bastante.\n\nConfunde fidelidad visual con verdadero terror. Para fanáticos muy pacientes puede tener momentos; para el resto, pesa más de lo que asusta.",
-	"reviewPublishedAt": "2026-03-12"
+	"reviewPublishedAt": "2026-03-12",
+	"castCharacters": [
+		{
+			"actor": "Jeremy Irvine",
+			"character": "James Sunderland",
+			"tmdbMovieId": 680493,
+			"tmdbPersonId": 225692,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hannah Emily Anderson",
+			"character": "Mary Crane  / Angela / Maria / Moth Mary",
+			"tmdbMovieId": 680493,
+			"tmdbPersonId": 1685904,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Strange",
+			"character": "Pyramid Head",
+			"tmdbMovieId": 680493,
+			"tmdbPersonId": 1675328,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

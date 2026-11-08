@@ -46,5 +46,28 @@
 	"audienceRating": "+18",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Keanu Reeves",
+			"character": "John Wick",
+			"tmdbMovieId": 245891,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Nyqvist",
+			"character": "Viggo Tarasov",
+			"tmdbMovieId": 245891,
+			"tmdbPersonId": 6283,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Marcus",
+			"tmdbMovieId": 245891,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

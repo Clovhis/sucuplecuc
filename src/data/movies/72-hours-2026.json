@@ -30,29 +30,66 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "72 Hours corre detrás de una idea gastada sobre despedidas y no siempre la alcanza; Tim Story tiene energía, pero Kevin Hart queda atrapado en el piloto automático.",
-			"whatToExpect": "Un ejecutivo perdido en Miami, tres días de decisiones pésimas y una comedia que usa el viaje para chocar generaciones y egos.",
-			"pace": "Se mueve rápido entre excesos, mensajes y cambios de plan, aunque el ritmo no logra convertir cada desvío en un buen chiste.",
-			"intensity": "Ruidosa y grosera, con una presión constante de comedia física más que de emoción o sorpresa.",
-			"practicalContext": "Sus 105 minutos sirven como plan liviano de grupo si bajás la expectativa; no requiere contexto ni demasiada atención.",
-			"forFansOf": "Las despedidas descontroladas, Kevin Hart acelerado y las comedias de viaje que priorizan el quilombo sobre la sutileza.",
-			"notForYouIf": "Buscás personajes femeninos con espacio, humor menos gastado o una historia generacional que no termine en moraleja rápida."
-		},
-		"becauseYouLiked": [
-		"companeras-de-cuarto-2026",
-		"me-has-robado-el-corazon-2025"
-	],
-	"related": [
-		"marianela-y-el-cadaver-2024",
-		"como-ser-john-malkovich-1999",
-		"coyote-vs-acme-2026",
-		"la-invitacion-2026"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "72 Hours corre detrás de una idea gastada sobre despedidas y no siempre la alcanza; Tim Story tiene energía, pero Kevin Hart queda atrapado en el piloto automático.",
+      "whatToExpect": "Un ejecutivo perdido en Miami, tres días de decisiones pésimas y una comedia que usa el viaje para chocar generaciones y egos.",
+      "pace": "Se mueve rápido entre excesos, mensajes y cambios de plan, aunque el ritmo no logra convertir cada desvío en un buen chiste.",
+      "intensity": "Ruidosa y grosera, con una presión constante de comedia física más que de emoción o sorpresa.",
+      "practicalContext": "Sus 105 minutos sirven como plan liviano de grupo si bajás la expectativa; no requiere contexto ni demasiada atención.",
+      "forFansOf": "Las despedidas descontroladas, Kevin Hart acelerado y las comedias de viaje que priorizan el quilombo sobre la sutileza.",
+      "notForYouIf": "Buscás personajes femeninos con espacio, humor menos gastado o una historia generacional que no termine en moraleja rápida."
+    },
+    "becauseYouLiked": [
+      "companeras-de-cuarto-2026",
+      "me-has-robado-el-corazon-2025"
+    ],
+    "related": [
+      "marianela-y-el-cadaver-2024",
+      "como-ser-john-malkovich-1999",
+      "coyote-vs-acme-2026",
+      "la-invitacion-2026"
+    ]
+  },
   "review": "72 Hours se queda mirando demasiado tiempo la sombra de las comedias de despedida de soltero que quiere imitar y no encuentra una vuelta propia. Tim Story mueve a Kevin Hart de un desastre a otro con energía, pero la película confunde velocidad con chiste y casi todos los excesos caen antes de volverse graciosos.\n\nMarcello Hernández y Teyana Taylor tienen presencia, aunque el guion les ofrece poco espacio para cambiar el piloto automático. Hay una idea atendible sobre un tipo grande intentando entender a una generación nueva, pero queda enterrada bajo gags groseros y situaciones que ya nacen gastadas.",
   "reviewPublishedAt": "2026-07-24",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Kevin Hart",
+      "character": "Joe",
+      "tmdbMovieId": 949838,
+      "tmdbPersonId": 55638,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Marcello Hernández",
+      "character": "Nick",
+      "tmdbMovieId": 949838,
+      "tmdbPersonId": 3725495,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Teyana Taylor",
+      "character": "Jennifer",
+      "tmdbMovieId": 949838,
+      "tmdbPersonId": 964679,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Andy Garcia",
+      "character": "Drug Lord",
+      "tmdbMovieId": 949838,
+      "tmdbPersonId": 1271,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Mason Gooding",
+      "character": "Mason",
+      "tmdbMovieId": 949838,
+      "tmdbPersonId": 2174509,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

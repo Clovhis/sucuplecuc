@@ -64,5 +64,35 @@
 	},
 	"review": "Seth Brundle empieza como un científico excéntrico y termina enfrentando una mutación que David Cronenberg filma con una mezcla incómoda de fascinación y tristeza. Jeff Goldblum no se limita a actuar el deterioro físico: deja que el personaje se vuelva más arrogante, más desesperado y finalmente más consciente de lo que está perdiendo. Geena Davis sostiene el costado emocional sin convertirlo en melodrama fácil. El maquillaje es brutal, pero la película no depende sólo del asco; su verdadero golpe está en ver una historia de amor transformarse en un duelo por el cuerpo y la identidad.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jeff Goldblum",
+			"character": "Seth Brundle",
+			"tmdbMovieId": 9426,
+			"tmdbPersonId": 4785,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geena Davis",
+			"character": "Veronica Quaife",
+			"tmdbMovieId": 9426,
+			"tmdbPersonId": 16935,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Getz",
+			"character": "Stathis Borans",
+			"tmdbMovieId": 9426,
+			"tmdbPersonId": 20211,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joy Boushel",
+			"character": "Tawny",
+			"tmdbMovieId": 9426,
+			"tmdbPersonId": 57626,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

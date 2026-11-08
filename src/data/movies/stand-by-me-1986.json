@@ -40,7 +40,7 @@
 			"forFansOf": "Te puede resonar si disfrutás historias de amistad, viajes iniciáticos y relatos de Rob Reiner donde una anécdota pequeña se vuelve memoria de una pérdida y de una etapa irrepetible.",
 			"notForYouIf": "Quizás no sea para vos si buscás una aventura juvenil sin oscuridad, personajes adultos al frente o un final que cierre la herida en lugar de dejarla vibrando."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"boyhood-2014",
 			"lady-bird-2017"
 		],
@@ -57,5 +57,42 @@
 	"subgenres": [
 		"Coming of Age"
 	],
-	"releaseDate": "1986-08-08"
+	"releaseDate": "1986-08-08",
+	"castCharacters": [
+		{
+			"actor": "Wil Wheaton",
+			"character": "Gordie Lachance",
+			"tmdbMovieId": 235,
+			"tmdbPersonId": 3033,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "River Phoenix",
+			"character": "Chris Chambers",
+			"tmdbMovieId": 235,
+			"tmdbPersonId": 741,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Corey Feldman",
+			"character": "Teddy Duchamp",
+			"tmdbMovieId": 235,
+			"tmdbPersonId": 3034,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jerry O'Connell",
+			"character": "Vern Tessio",
+			"tmdbMovieId": 235,
+			"tmdbPersonId": 3035,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kiefer Sutherland",
+			"character": "Ace Merrill",
+			"tmdbMovieId": 235,
+			"tmdbPersonId": 2628,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

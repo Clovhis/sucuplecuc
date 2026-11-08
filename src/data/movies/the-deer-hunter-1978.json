@@ -69,5 +69,35 @@
 	"country": "GB",
 	"isArgentinian": false,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Michael Vronsky",
+			"tmdbMovieId": 11778,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Walken",
+			"character": "Nikanor \"Nick\" Chevotarevich",
+			"tmdbMovieId": 11778,
+			"tmdbPersonId": 4690,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Cazale",
+			"character": "Stan",
+			"tmdbMovieId": 11778,
+			"tmdbPersonId": 3096,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Linda",
+			"tmdbMovieId": 11778,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

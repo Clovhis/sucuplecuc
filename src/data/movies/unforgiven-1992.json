@@ -58,5 +58,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Clint Eastwood",
+			"character": "William Munny",
+			"tmdbMovieId": 33,
+			"tmdbPersonId": 190,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Hackman",
+			"character": "'Little' Bill Daggett",
+			"tmdbMovieId": 33,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Morgan Freeman",
+			"character": "Ned Logan",
+			"tmdbMovieId": 33,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

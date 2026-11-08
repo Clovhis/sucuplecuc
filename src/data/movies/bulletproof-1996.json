@@ -56,5 +56,35 @@
 	"review": "A prueba de balas se apoya en una pareja de opuestos muy noventosa: Sandler juega al delincuente impulsivo y Damon Wayans aporta la reacción seca que ordena el caos. La película tiene persecuciones, traiciones y una química que por momentos supera al guion, aunque la acción se siente intercambiable y la comedia rara vez encuentra una idea propia. Como buddy movie de videoclub, cumple con velocidad y bastante ruido. Su encanto está en esa energía desprolija que nunca pretende ser más sofisticada de lo que es.",
 	"runtimeMinutes": 84,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Archie Moses",
+			"tmdbMovieId": 10723,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Damon Wayans",
+			"character": "Rock Keats / Jack Carter",
+			"tmdbMovieId": 10723,
+			"tmdbPersonId": 22675,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Caan",
+			"character": "Frank Colton",
+			"tmdbMovieId": 10723,
+			"tmdbPersonId": 3085,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Farentino",
+			"character": "Capt. Jensen",
+			"tmdbMovieId": 10723,
+			"tmdbPersonId": 24685,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

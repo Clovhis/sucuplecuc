@@ -8,8 +8,13 @@
 	"reviewPublishedAt": "2026-08-13",
 	"audienceRating": "ATP",
 	"category": "Comedia romantica",
-	"genres": ["Romance", "Comedia"],
-	"subgenres": ["RomCom"],
+	"genres": [
+		"Romance",
+		"Comedia"
+	],
+	"subgenres": [
+		"RomCom"
+	],
 	"country": "AR",
 	"isArgentinian": true,
 	"poster": "assets/posters/2026/yo-narciso-2026.webp",
@@ -17,7 +22,10 @@
 	"trailerYoutubeId": "IjPlE2qmCt4",
 	"releasePlatform": "Otras plataformas",
 	"director": "Adrián Suar",
-	"mainCast": ["Natalia Oreiro", "Adrián Suar"],
+	"mainCast": [
+		"Natalia Oreiro",
+		"Adrián Suar"
+	],
 	"productionCompany": "Buena Vista International",
 	"cinepostaScore": 6,
 	"runtimeMinutes": 95,
@@ -34,18 +42,34 @@
 			"forFansOf": "Va con quienes disfrutan a Natalia Oreiro, romances de identidad cambiante y el registro popular de Adrián Suar.",
 			"notForYouIf": "Puede no ser para vos si esperás una sátira profunda del narcisismo, una relación sin trucos o un humor más filoso."
 		},
-	"becauseYouLiked": [
-		"medianeras-2011",
-		"solo-mio-2026"
-	],
-	"related": [
-		"me-has-robado-el-corazon-2025",
-		"palm-springs-2020",
-		"loco-y-estupido-amor-2011",
-		"amelie-2001"
-	]
-},
+		"becauseYouLiked": [
+			"medianeras-2011",
+			"solo-mio-2026"
+		],
+		"related": [
+			"me-has-robado-el-corazon-2025",
+			"palm-springs-2020",
+			"loco-y-estupido-amor-2011",
+			"amelie-2001"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Yo, Narciso se apoya en una premisa simpática: una socióloga decide estudiar a un cirujano plástico desde una identidad inventada y termina atrapada en su propio experimento. Natalia Oreiro sostiene el juego con una mezcla de inteligencia y comedia física, mientras Adrián Suar entiende que su personaje debe seducir y exasperar al mismo tiempo. El guion encuentra buenos cruces entre romance y observación social, aunque algunas vueltas se sienten calculadas. Es una salida liviana, con química y suficiente picardía para pasarla bien."
+	"review": "Yo, Narciso se apoya en una premisa simpática: una socióloga decide estudiar a un cirujano plástico desde una identidad inventada y termina atrapada en su propio experimento. Natalia Oreiro sostiene el juego con una mezcla de inteligencia y comedia física, mientras Adrián Suar entiende que su personaje debe seducir y exasperar al mismo tiempo. El guion encuentra buenos cruces entre romance y observación social, aunque algunas vueltas se sienten calculadas. Es una salida liviana, con química y suficiente picardía para pasarla bien.",
+	"castCharacters": [
+		{
+			"actor": "Natalia Oreiro",
+			"character": "Rocío Flores",
+			"tmdbMovieId": 1698443,
+			"tmdbPersonId": 64774,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adrián Suar",
+			"character": "Máximo Rey",
+			"tmdbMovieId": 1698443,
+			"tmdbPersonId": 81012,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

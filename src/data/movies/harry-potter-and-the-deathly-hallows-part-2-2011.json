@@ -52,5 +52,28 @@
 	"synopsis": "Después de enterrar a Dobby, Harry Potter le pide al duende Griphook que lo ayude a él, a Ron Weasley y a Hermione Granger a entrar en la bóveda de Bellatrix Lestrange en el banco Gringotts, sospechando que hay un Horrocrux allí. Griphook acepta, a cambio de la Espada de Gryffindor.",
 	"audienceRating": "+12",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Radcliffe",
+			"character": "Harry Potter",
+			"tmdbMovieId": 12445,
+			"tmdbPersonId": 10980,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Watson",
+			"character": "Hermione Granger",
+			"tmdbMovieId": 12445,
+			"tmdbPersonId": 10990,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Grint",
+			"character": "Ron Weasley",
+			"tmdbMovieId": 12445,
+			"tmdbPersonId": 10989,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

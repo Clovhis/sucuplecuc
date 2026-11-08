@@ -53,5 +53,35 @@
 			"el-bueno-el-feo-y-el-malo-1966"
 		]
 	},
-	"review": "Wyatt Earp quiere ser una biografía de frontera y una película de escala monumental al mismo tiempo. El resultado tiene una duración exigente, pero también una atención poco común a los años que convierten a un hombre en una figura pública. Costner interpreta a Earp como alguien que aprende a endurecerse mientras pierde partes de sí mismo, y Dennis Quaid le da a Doc Holliday una energía febril que rompe la solemnidad. El relato es irregular, aunque sus duelos, paisajes y vínculos familiares tienen verdadero peso."
+	"review": "Wyatt Earp quiere ser una biografía de frontera y una película de escala monumental al mismo tiempo. El resultado tiene una duración exigente, pero también una atención poco común a los años que convierten a un hombre en una figura pública. Costner interpreta a Earp como alguien que aprende a endurecerse mientras pierde partes de sí mismo, y Dennis Quaid le da a Doc Holliday una energía febril que rompe la solemnidad. El relato es irregular, aunque sus duelos, paisajes y vínculos familiares tienen verdadero peso.",
+	"castCharacters": [
+		{
+			"actor": "Kevin Costner",
+			"character": "Wyatt Earp",
+			"tmdbMovieId": 12160,
+			"tmdbPersonId": 1269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dennis Quaid",
+			"character": "Doc Holliday",
+			"tmdbMovieId": 12160,
+			"tmdbPersonId": 6065,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Hackman",
+			"character": "Nicholas Earp",
+			"tmdbMovieId": 12160,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Madsen",
+			"character": "Virgil Earp",
+			"tmdbMovieId": 12160,
+			"tmdbPersonId": 147,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

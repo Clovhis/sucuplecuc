@@ -54,5 +54,21 @@
 	"releasePlatforms": [
 		"HBO Max"
 	],
-	"runtimeMinutes": 138
+	"runtimeMinutes": 138,
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "Lt. Daniel Kaffee",
+			"tmdbMovieId": 881,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Demi Moore",
+			"character": "Lt. Cdr. JoAnne Galloway",
+			"tmdbMovieId": 881,
+			"tmdbPersonId": 3416,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

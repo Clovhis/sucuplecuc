@@ -55,5 +55,42 @@
 	},
 	"review": "La película arranca con paciencia y la usa a favor: te mete en la rutina del pabellón para que después cada gesto pese mucho más. Lo que mejor le sale es esa mezcla rara entre drama carcelario, fantasía y humanidad brutal, sin caer en cinismo ni en golpe bajo automático. Hanks sostiene el tono con sobriedad y Michael Clarke Duncan deja una presencia imposible de sacarse de encima. Es larguísima, sí, pero justamente por eso la relación entre los personajes termina pegando de verdad.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Paul Edgecomb",
+			"tmdbMovieId": 497,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Clarke Duncan",
+			"character": "John Coffey",
+			"tmdbMovieId": 497,
+			"tmdbPersonId": 61981,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Morse",
+			"character": "Brutus 'Brutal' Howell",
+			"tmdbMovieId": 497,
+			"tmdbPersonId": 52,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bonnie Hunt",
+			"character": "Jan Edgecomb",
+			"tmdbMovieId": 497,
+			"tmdbPersonId": 5149,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Cromwell",
+			"character": "Warden Hal Moores",
+			"tmdbMovieId": 497,
+			"tmdbPersonId": 2505,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

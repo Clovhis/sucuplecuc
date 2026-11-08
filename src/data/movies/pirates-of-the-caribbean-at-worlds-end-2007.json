@@ -51,5 +51,28 @@
 	"synopsis": "Will, Elizabeth y Barbossa emprenden un peligroso viaje para rescatar a Jack Sparrow de los dominios de Davy Jones. Al regresar, deberán reunir a los señores piratas para enfrentar a la Compañía de las Indias Orientales, decidida a dominar los mares.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Johnny Depp",
+			"character": "Jack Sparrow",
+			"tmdbMovieId": 285,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geoffrey Rush",
+			"character": "Barbossa",
+			"tmdbMovieId": 285,
+			"tmdbPersonId": 118,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Orlando Bloom",
+			"character": "Will Turner",
+			"tmdbMovieId": 285,
+			"tmdbPersonId": 114,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

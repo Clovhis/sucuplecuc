@@ -34,7 +34,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "John Musker hace del océano un personaje y Auliʻi Cravalho le da a Moana una determinación que no necesita príncipe; Dwayne Johnson completa una dupla con encanto y heridas.",
-			"whatToExpect": "Una isla en peligro, una reliquia, un semidiós vanidoso y navegación, canciones y criaturas que convierten el viaje en una prueba de identidad.",			"pace": "Avanza con equilibrio entre canciones, humor, mitología y peligros del mar; el viaje se siente amplio sin perder el vínculo central.",			"intensity": "La aventura tiene peligro y tormentas, pero conserva tono familiar; la emoción sube cuando Moana debe elegir entre obedecer y escuchar su propia voz.",			"practicalContext": "La ficha no informa duración; funciona como película familiar de una sentada, con canciones y paisajes que agradecen una pantalla grande.",			"forFansOf": "Para quienes disfrutan heroínas sin romance obligatorio, mitología oceánica y la química entre Cravalho y Johnson.",			"notForYouIf": "No es para vos si buscás una aventura más oscura, menos musical o una protagonista que abandone rápido las dudas de su comunidad."
+			"whatToExpect": "Una isla en peligro, una reliquia, un semidiós vanidoso y navegación, canciones y criaturas que convierten el viaje en una prueba de identidad.",
+			"pace": "Avanza con equilibrio entre canciones, humor, mitología y peligros del mar; el viaje se siente amplio sin perder el vínculo central.",
+			"intensity": "La aventura tiene peligro y tormentas, pero conserva tono familiar; la emoción sube cuando Moana debe elegir entre obedecer y escuchar su propia voz.",
+			"practicalContext": "La ficha no informa duración; funciona como película familiar de una sentada, con canciones y paisajes que agradecen una pantalla grande.",
+			"forFansOf": "Para quienes disfrutan heroínas sin romance obligatorio, mitología oceánica y la química entre Cravalho y Johnson.",
+			"notForYouIf": "No es para vos si buscás una aventura más oscura, menos musical o una protagonista que abandone rápido las dudas de su comunidad."
 		},
 		"becauseYouLiked": [
 			"hercules-1997",
@@ -47,5 +52,21 @@
 			"la-vida-secreta-de-tus-mascotas-2016"
 		]
 	},
-	"review": "Moana encuentra una aventura de navegación en la que el mar, el viento y las canciones tienen el mismo peso que los personajes. Auli’i Cravalho sostiene una heroína decidida sin convertirla en una máquina de respuestas, y Dwayne Johnson disfruta la vanidad de Maui antes de dejar ver sus heridas. La mitología se cuenta con respeto y espectáculo, mientras la relación con la abuela y la isla evita que el viaje sea sólo una misión épica."
+	"review": "Moana encuentra una aventura de navegación en la que el mar, el viento y las canciones tienen el mismo peso que los personajes. Auli’i Cravalho sostiene una heroína decidida sin convertirla en una máquina de respuestas, y Dwayne Johnson disfruta la vanidad de Maui antes de dejar ver sus heridas. La mitología se cuenta con respeto y espectáculo, mientras la relación con la abuela y la isla evita que el viaje sea sólo una misión épica.",
+	"castCharacters": [
+		{
+			"actor": "Auliʻi Cravalho",
+			"character": "Moana (voice)",
+			"tmdbMovieId": 277834,
+			"tmdbPersonId": 1564846,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dwayne Johnson",
+			"character": "Maui (voice)",
+			"tmdbMovieId": 277834,
+			"tmdbPersonId": 18918,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

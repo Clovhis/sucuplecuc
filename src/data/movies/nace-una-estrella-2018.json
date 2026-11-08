@@ -64,5 +64,28 @@
 		"Prime Video",
 		"HBO Max"
 	],
-	"runtimeMinutes": 136
+	"runtimeMinutes": 136,
+	"castCharacters": [
+		{
+			"actor": "Bradley Cooper",
+			"character": "Jackson Maine",
+			"tmdbMovieId": 332562,
+			"tmdbPersonId": 51329,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lady Gaga",
+			"character": "Ally Campana",
+			"tmdbMovieId": 332562,
+			"tmdbPersonId": 237405,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Elliott",
+			"character": "Bobby Maine",
+			"tmdbMovieId": 332562,
+			"tmdbPersonId": 16431,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

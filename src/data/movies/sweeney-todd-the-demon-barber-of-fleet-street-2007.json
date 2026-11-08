@@ -60,5 +60,42 @@
 	},
 	"runtimeMinutes": 116,
 	"review": "Sweeney Todd sigue a un barbero que vuelve a Londres decidido a vengarse del juez que le robó la vida, y convierte esa obsesión en un musical de sangre y humor negro. Tim Burton filma la ciudad como una pesadilla gris y exagerada, mientras Johnny Depp canta desde la rabia contenida y Helena Bonham Carter disfruta cada desborde de su personaje. Las canciones empujan la tragedia con eficacia, aunque la puesta puede sentirse uniforme para quien no conecte con su estética. Vale por esa cruza de Grand Guignol, melodrama y musical, llevada con un estilo muy definido.",
-	"reviewPublishedAt": "2026-04-27"
+	"reviewPublishedAt": "2026-04-27",
+	"castCharacters": [
+		{
+			"actor": "Johnny Depp",
+			"character": "Sweeney Todd",
+			"tmdbMovieId": 13885,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helena Bonham Carter",
+			"character": "Mrs. Lovett",
+			"tmdbMovieId": 13885,
+			"tmdbPersonId": 1283,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Rickman",
+			"character": "Judge Turpin",
+			"tmdbMovieId": 13885,
+			"tmdbPersonId": 4566,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Timothy Spall",
+			"character": "Beadle",
+			"tmdbMovieId": 13885,
+			"tmdbPersonId": 9191,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sacha Baron Cohen",
+			"character": "Pirelli",
+			"tmdbMovieId": 13885,
+			"tmdbPersonId": 6730,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

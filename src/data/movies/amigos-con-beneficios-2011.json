@@ -53,5 +53,21 @@
 	},
 	"review": "La película sostiene su propuesta en el intercambio entre Kunis y Timberlake: ambos manejan la ironía como una defensa y dejan que el vínculo cambie a través de pequeñas contradicciones. Will Gluck apoya el ritmo en referencias culturales y situaciones exageradas, con un elenco secundario que amplía el mapa de expectativas sobre el amor. El punto de partida —mantener distancia emocional mediante reglas— se vuelve previsible antes de llegar al final, pero la pareja conserva una energía amable y el humor no abandona del todo a sus personajes cuando la comedia se acerca al drama.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 108
+	"runtimeMinutes": 108,
+	"castCharacters": [
+		{
+			"actor": "Mila Kunis",
+			"character": "Jamie Rellis",
+			"tmdbMovieId": 50544,
+			"tmdbPersonId": 18973,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Justin Timberlake",
+			"character": "Dylan Harper",
+			"tmdbMovieId": 50544,
+			"tmdbPersonId": 12111,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

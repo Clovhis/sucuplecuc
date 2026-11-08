@@ -75,7 +75,11 @@
 		"tenSecondTake": {
 			"verdict": "Christopher Nolan hace de Oppenheimer una carrera contra el tiempo y contra la propia conciencia; Cillian Murphy sostiene la culpa mientras el montaje convierte la ciencia en catástrofe.",
 			"whatToExpect": "Laboratorios, guerra, bomba atómica, interrogatorios y una vida política donde cada descubrimiento puede cambiar la historia y destruir una reputación.",
-			"pace": "Es intenso y fragmentado, alternando tiempos y puntos de vista; exige atención, pero el montaje mantiene la sensación de pensamiento acelerado.",			"intensity": "La presión es científica, política y moral, con el sonido y la imagen anunciando una explosión antes de que llegue.",			"practicalContext": "Con 180 minutos, requiere una sesión larga, buen sonido y atención plena; no es una biografía para mirar de fondo.",			"forFansOf": "Para quienes disfrutan a Nolan, dramas históricos de escala y actuaciones de Murphy, Downey Jr. y Blunt en un conflicto de ideas y poder.",			"notForYouIf": "No es para vos si te cansan los diálogos técnicos, la estructura quebrada o una película que privilegia la tensión intelectual sobre la intimidad cotidiana."
+			"pace": "Es intenso y fragmentado, alternando tiempos y puntos de vista; exige atención, pero el montaje mantiene la sensación de pensamiento acelerado.",
+			"intensity": "La presión es científica, política y moral, con el sonido y la imagen anunciando una explosión antes de que llegue.",
+			"practicalContext": "Con 180 minutos, requiere una sesión larga, buen sonido y atención plena; no es una biografía para mirar de fondo.",
+			"forFansOf": "Para quienes disfrutan a Nolan, dramas históricos de escala y actuaciones de Murphy, Downey Jr. y Blunt en un conflicto de ideas y poder.",
+			"notForYouIf": "No es para vos si te cansan los diálogos técnicos, la estructura quebrada o una película que privilegia la tensión intelectual sobre la intimidad cotidiana."
 		},
 		"becauseYouLiked": [
 			"dunkirk-2017",
@@ -92,5 +96,35 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Cillian Murphy",
+			"character": "J. Robert Oppenheimer",
+			"tmdbMovieId": 872585,
+			"tmdbPersonId": 2037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Blunt",
+			"character": "Kitty Oppenheimer",
+			"tmdbMovieId": 872585,
+			"tmdbPersonId": 5081,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Damon",
+			"character": "Leslie Groves",
+			"tmdbMovieId": 872585,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Downey Jr.",
+			"character": "Lewis Strauss",
+			"tmdbMovieId": 872585,
+			"tmdbPersonId": 3223,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

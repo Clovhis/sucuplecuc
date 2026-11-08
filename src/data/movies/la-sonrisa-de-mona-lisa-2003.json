@@ -57,5 +57,42 @@
 			"retrato-de-una-dama-1996"
 		]
 	},
-	"review": "Mike Newell arma un drama de campus elegante, con una Julia Roberts que encuentra en Katherine Watson una profesora convencida de que enseñar también es discutir el destino que otros escribieron. La película tiene buenas preguntas sobre matrimonio, carrera y educación, pero a menudo las resuelve con discursos demasiado ordenados y música que subraya cada emoción. Kirsten Dunst, Julia Stiles, Maggie Gyllenhaal y Ginnifer Goodwin sostienen un conjunto con conflictos distintos, aunque no todos reciben el mismo desarrollo. Funciona como melodrama inspirador; su corrección también es su límite."
+	"review": "Mike Newell arma un drama de campus elegante, con una Julia Roberts que encuentra en Katherine Watson una profesora convencida de que enseñar también es discutir el destino que otros escribieron. La película tiene buenas preguntas sobre matrimonio, carrera y educación, pero a menudo las resuelve con discursos demasiado ordenados y música que subraya cada emoción. Kirsten Dunst, Julia Stiles, Maggie Gyllenhaal y Ginnifer Goodwin sostienen un conjunto con conflictos distintos, aunque no todos reciben el mismo desarrollo. Funciona como melodrama inspirador; su corrección también es su límite.",
+	"castCharacters": [
+		{
+			"actor": "Julia Roberts",
+			"character": "Katherine Ann Watson",
+			"tmdbMovieId": 11820,
+			"tmdbPersonId": 1204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kirsten Dunst",
+			"character": "Betty Warren",
+			"tmdbMovieId": 11820,
+			"tmdbPersonId": 205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julia Stiles",
+			"character": "Joan Brandwyn",
+			"tmdbMovieId": 11820,
+			"tmdbPersonId": 12041,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maggie Gyllenhaal",
+			"character": "Giselle Levy",
+			"tmdbMovieId": 11820,
+			"tmdbPersonId": 1579,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ginnifer Goodwin",
+			"character": "Connie Baker",
+			"tmdbMovieId": 11820,
+			"tmdbPersonId": 417,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

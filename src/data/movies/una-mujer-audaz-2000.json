@@ -61,5 +61,42 @@
 			"invencible-2006"
 		]
 	},
-	"review": "Steven Soderbergh filma una historia de contaminación y abogados sin quitarle el centro a la mujer que sostiene el caso a fuerza de insistencia. Julia Roberts le da a Erin una mezcla muy eficaz de furia, humor y cansancio; su actuación no busca convertirla en una heroína prolija. El relato simplifica algunos procedimientos y acomoda el conflicto para que cada avance tenga una recompensa clara, pero la energía nunca se apaga. Es una película popular, sí, aunque su mejor argumento sigue siendo que el trabajo minucioso también puede cambiar una relación de poder."
+	"review": "Steven Soderbergh filma una historia de contaminación y abogados sin quitarle el centro a la mujer que sostiene el caso a fuerza de insistencia. Julia Roberts le da a Erin una mezcla muy eficaz de furia, humor y cansancio; su actuación no busca convertirla en una heroína prolija. El relato simplifica algunos procedimientos y acomoda el conflicto para que cada avance tenga una recompensa clara, pero la energía nunca se apaga. Es una película popular, sí, aunque su mejor argumento sigue siendo que el trabajo minucioso también puede cambiar una relación de poder.",
+	"castCharacters": [
+		{
+			"actor": "Julia Roberts",
+			"character": "Erin Brockovich",
+			"tmdbMovieId": 462,
+			"tmdbPersonId": 1204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Albert Finney",
+			"character": "Ed Masry",
+			"tmdbMovieId": 462,
+			"tmdbPersonId": 3926,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Eckhart",
+			"character": "George",
+			"tmdbMovieId": 462,
+			"tmdbPersonId": 6383,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marg Helgenberger",
+			"character": "Donna Jensen",
+			"tmdbMovieId": 462,
+			"tmdbPersonId": 19838,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cherry Jones",
+			"character": "Pamela Duncan",
+			"tmdbMovieId": 462,
+			"tmdbPersonId": 1956,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -59,5 +59,56 @@
 	"review": "Happy Gilmore 2 entiende que su mayor rival es el recuerdo de la película original. Sandler recupera la furia de Happy y la cruza con un padre golpeado por la pérdida, mientras el regreso de Shooter, Hal y otros rostros conocidos activa la nostalgia. La secuela tiene golpes de comedia efectivos, cameos y una hija que le da dirección al viaje, aunque su estructura se dispersa cuando intenta repetir cada marca del clásico.",
 	"runtimeMinutes": 118,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Happy Gilmore",
+			"tmdbMovieId": 1263256,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Bowen",
+			"character": "Virginia",
+			"tmdbMovieId": 1263256,
+			"tmdbPersonId": 31171,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher McDonald",
+			"character": "Shooter McGavin",
+			"tmdbMovieId": 1263256,
+			"tmdbPersonId": 4443,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Benny Safdie",
+			"character": "Frank Manatee",
+			"tmdbMovieId": 1263256,
+			"tmdbPersonId": 227564,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Stiller",
+			"character": "Hal L",
+			"tmdbMovieId": 1263256,
+			"tmdbPersonId": 7399,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sadie Sandler",
+			"character": "Charlotte",
+			"tmdbMovieId": 1263256,
+			"tmdbPersonId": 1202534,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sunny Sandler",
+			"character": "Vienna",
+			"tmdbMovieId": 1263256,
+			"tmdbPersonId": 1271681,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

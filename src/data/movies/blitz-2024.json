@@ -55,5 +55,28 @@
 	},
 	"review": "McQueen corre el centro de gravedad desde el frente hacia una ciudad donde cada decisión cotidiana adquiere peso. El viaje de George y la búsqueda de Rita enlazan dos recorridos que se cruzan con una Londres reconstruida en escala humana, entre refugios, trenes y calles expuestas. Saoirse Ronan aporta una preocupación contenida, mientras Elliott Heffernan sostiene la obstinación del chico sin volverla aventura liviana. La puesta bélica impresiona, aunque el relato a veces divide su atención entre demasiadas escenas y personajes.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 120
+	"runtimeMinutes": 120,
+	"castCharacters": [
+		{
+			"actor": "Saoirse Ronan",
+			"character": "Rita",
+			"tmdbMovieId": 896151,
+			"tmdbPersonId": 36592,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harris Dickinson",
+			"character": "Jack",
+			"tmdbMovieId": 896151,
+			"tmdbPersonId": 1716493,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elliott Heffernan",
+			"character": "George",
+			"tmdbMovieId": 896151,
+			"tmdbPersonId": 3818255,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

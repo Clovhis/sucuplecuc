@@ -57,5 +57,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Kwak Do-won",
+			"character": "Jong-goo",
+			"tmdbMovieId": 293670,
+			"tmdbPersonId": 1155298,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hwang Jung-min",
+			"character": "Il-gwang",
+			"tmdbMovieId": 293670,
+			"tmdbPersonId": 68903,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chun Woo-hee",
+			"character": "Moo-myeong",
+			"tmdbMovieId": 293670,
+			"tmdbPersonId": 1263930,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kim Hwan-hee",
+			"character": "Hyo-jin",
+			"tmdbMovieId": 293670,
+			"tmdbPersonId": 1681260,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

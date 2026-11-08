@@ -52,5 +52,35 @@
 		]
 	},
 	"review": "Una noche con David Johansen registra un recital íntimo del cantante y actor, mezclado con anécdotas sobre los New York Dolls, el personaje de Buster Poindexter y una carrera imposible de encasillar. Martin Scorsese no intenta ordenar su vida en una biografía prolija: deja que Johansen cante, charle y contagie una energía medio salvaje. El montaje alterna escenario, archivo y conversación con soltura, mientras la banda acompaña sin convertir todo en nostalgia de museo. Vale como celebración afectuosa de un artista singular y como retrato de una Nueva York que todavía se siente viva.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "David Johansen",
+			"character": "Self / Buster Poindexter",
+			"tmdbMovieId": 1013574,
+			"tmdbPersonId": 57116,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Penny Arcade",
+			"character": "Self",
+			"tmdbMovieId": 1013574,
+			"tmdbPersonId": 399007,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sylvain Sylvain",
+			"character": "Self",
+			"tmdbMovieId": 1013574,
+			"tmdbPersonId": 1156266,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Morrissey",
+			"character": "Self",
+			"tmdbMovieId": 1013574,
+			"tmdbPersonId": 414041,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

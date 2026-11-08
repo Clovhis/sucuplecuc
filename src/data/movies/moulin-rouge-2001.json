@@ -36,7 +36,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Baz Luhrmann vuelve el Moulin Rouge una máquina de canciones, deseo y negocio; Nicole Kidman y Ewan McGregor sostienen el romance cuando el artificio se vuelve emoción.",
-			"whatToExpect": "París bohemio, un poeta, una estrella de cabaret, canciones pop recicladas y un espectáculo donde cada promesa de amor tiene un precio.",			"pace": "Es vertiginosa y musical, con cortes, colores y números que no dejan que el escenario se aquiete; el melodrama sube al mismo ritmo.",			"intensity": "La intensidad es romántica y teatral, cargada de deseo, enfermedad y ambición; el exceso busca conmover, no imitar la vida cotidiana.",			"practicalContext": "Sus 127 minutos piden una noche con ganas de espectáculo y tolerancia al bombardeo visual; verla como musical de artificio es la mejor entrada.",			"forFansOf": "Para quienes disfrutan el estilo de Luhrmann, musicales pop y la química de Kidman con McGregor en modo melodrama desbordado.",			"notForYouIf": "No es para vos si necesitás naturalismo, canciones originales tradicionales o una historia romántica que no grite sus emociones desde el escenario."
+			"whatToExpect": "París bohemio, un poeta, una estrella de cabaret, canciones pop recicladas y un espectáculo donde cada promesa de amor tiene un precio.",
+			"pace": "Es vertiginosa y musical, con cortes, colores y números que no dejan que el escenario se aquiete; el melodrama sube al mismo ritmo.",
+			"intensity": "La intensidad es romántica y teatral, cargada de deseo, enfermedad y ambición; el exceso busca conmover, no imitar la vida cotidiana.",
+			"practicalContext": "Sus 127 minutos piden una noche con ganas de espectáculo y tolerancia al bombardeo visual; verla como musical de artificio es la mejor entrada.",
+			"forFansOf": "Para quienes disfrutan el estilo de Luhrmann, musicales pop y la química de Kidman con McGregor en modo melodrama desbordado.",
+			"notForYouIf": "No es para vos si necesitás naturalismo, canciones originales tradicionales o una historia romántica que no grite sus emociones desde el escenario."
 		},
 		"becauseYouLiked": [
 			"romeo-julieta-de-william-shakespeare-1996",
@@ -51,5 +56,35 @@
 	},
 	"review": "Baz Luhrmann dispara colores, canciones y citas pop a una velocidad que podría ser agotadora, pero encuentra un centro emocional muy claro en la pareja de Nicole Kidman y Ewan McGregor. El Moulin Rouge es una fantasía de escenario y también una máquina de negocios donde cada gesto romántico tiene precio. La película no busca naturalidad: abraza el artificio, la melodía pegadiza y el exceso hasta que el espectáculo se vuelve genuinamente conmovedor.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Nicole Kidman",
+			"character": "Satine",
+			"tmdbMovieId": 824,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ewan McGregor",
+			"character": "Christian",
+			"tmdbMovieId": 824,
+			"tmdbPersonId": 3061,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Leguizamo",
+			"character": "Toulouse-Lautrec",
+			"tmdbMovieId": 824,
+			"tmdbPersonId": 5723,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jim Broadbent",
+			"character": "Harold Zidler",
+			"tmdbMovieId": 824,
+			"tmdbPersonId": 388,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -43,18 +43,55 @@
 			"forFansOf": "Si te gustan Monty Python, sátiras artúricas y comedias que desarman sus propias reglas.",
 			"notForYouIf": "No es para vos si buscás continuidad, realismo histórico o un humor que respete la solemnidad del relato."
 		},
-	"becauseYouLiked": [
-		"la-vida-de-brian-1979",
-		"mentiroso-mentiroso-1997"
-	],
-	"related": [
-		"around-the-world-in-80-days-1956",
-		"what-we-do-in-the-shadows-2014",
-		"swiss-army-man-2016",
-		"marianela-y-el-cadaver-2024"
-	]
-},
+		"becauseYouLiked": [
+			"la-vida-de-brian-1979",
+			"mentiroso-mentiroso-1997"
+		],
+		"related": [
+			"around-the-world-in-80-days-1956",
+			"what-we-do-in-the-shadows-2014",
+			"swiss-army-man-2016",
+			"marianela-y-el-cadaver-2024"
+		]
+	},
 	"review": "Los Monty Python convierten la leyenda artúrica en una máquina de interrupciones contra la autoridad y el buen gusto. La precariedad de los recursos es parte del chiste, y cada corte llega antes de que una escena pueda comportarse con seriedad. Graham Chapman, John Cleese y Eric Idle sostienen una seguidilla de ideas absurdas que todavía tienen ritmo. El corte abrupto es parte de la comedia: Monty Python prefiere abandonar la solemnidad antes de que se vuelva cómoda.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Graham Chapman",
+			"character": "King Arthur / Voice of God / Middle Head / Hiccoughing Guard",
+			"tmdbMovieId": 762,
+			"tmdbPersonId": 10722,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Cleese",
+			"character": "Second Swallow-Savvy Guard / The Black Knight / Peasant 3 / Sir Launcelot the Brave / Taunting French Guard / Tim the Enchanter",
+			"tmdbMovieId": 762,
+			"tmdbPersonId": 8930,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eric Idle",
+			"character": "Dead Collector / Peasant 1 / Sir Robin the Not-Quite-So-Brave-as-Sir Launcelot / First Swamp Castle Guard / Concorde / Roger the Shrubber / Brother Maynard",
+			"tmdbMovieId": 762,
+			"tmdbPersonId": 10713,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terry Gilliam",
+			"character": "Patsy / Green Knight / Old Man from Scene 24 (Bridgekeeper) / Sir Bors / Animator / Gorilla Hand",
+			"tmdbMovieId": 762,
+			"tmdbPersonId": 280,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terry Jones",
+			"character": "Dennis's Mother / Sir Bedevere / Left Head / Prince Herbert / Voice of Cartoon Scribe",
+			"tmdbMovieId": 762,
+			"tmdbPersonId": 10707,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

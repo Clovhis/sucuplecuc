@@ -56,5 +56,42 @@
 		]
 	},
 	"review": "Woody Allen sigue a una pareja universitaria que llega a Manhattan por una entrevista y termina separada por hoteles, cineastas, músicos y una lluvia que parece diseñada para la postal. Timothée Chalamet entiende el tono de joven viejo antes de tiempo, y Elle Fanning le pone una energía más imprevisible a una chica fascinada por ese mundo. La dirección se mueve con comodidad entre bares, departamentos y clubes, aunque el guion repite una fantasía de ciudad bastante anacrónica. El ritmo liviano ayuda a que no pese demasiado. Vale si te entregás a ese capricho romántico; si no, su artificio puede cansar rápido.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Timothée Chalamet",
+			"character": "Gatsby Welles",
+			"tmdbMovieId": 475303,
+			"tmdbPersonId": 1190668,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elle Fanning",
+			"character": "Ashleigh Enright",
+			"tmdbMovieId": 475303,
+			"tmdbPersonId": 18050,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Selena Gomez",
+			"character": "Chan Tyrell",
+			"tmdbMovieId": 475303,
+			"tmdbPersonId": 77948,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jude Law",
+			"character": "Ted Davidoff",
+			"tmdbMovieId": 475303,
+			"tmdbPersonId": 9642,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diego Luna",
+			"character": "Francisco Vega",
+			"tmdbMovieId": 475303,
+			"tmdbPersonId": 8688,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

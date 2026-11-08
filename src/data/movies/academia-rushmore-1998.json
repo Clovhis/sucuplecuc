@@ -12,7 +12,9 @@
 		"Drama",
 		"Coming of age"
 	],
-	"subgenres": ["Coming of Age"],
+	"subgenres": [
+		"Coming of Age"
+	],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1998/academia-rushmore-1998.webp",
@@ -56,5 +58,28 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 93
+	"runtimeMinutes": 93,
+	"castCharacters": [
+		{
+			"actor": "Jason Schwartzman",
+			"character": "Max Fischer",
+			"tmdbMovieId": 11545,
+			"tmdbPersonId": 17881,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Murray",
+			"character": "Herman Blume",
+			"tmdbMovieId": 11545,
+			"tmdbPersonId": 1532,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Olivia Williams",
+			"character": "Rosemary Cross",
+			"tmdbMovieId": 11545,
+			"tmdbPersonId": 11616,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

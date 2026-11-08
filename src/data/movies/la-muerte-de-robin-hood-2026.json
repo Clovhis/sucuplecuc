@@ -60,5 +60,42 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Flow"
+	],
+	"castCharacters": [
+		{
+			"actor": "Hugh Jackman",
+			"character": "Robin Hood",
+			"tmdbMovieId": 1284465,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jodie Comer",
+			"character": "Sister Brigid",
+			"tmdbMovieId": 1284465,
+			"tmdbPersonId": 1388593,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Skarsgård",
+			"character": "Little John",
+			"tmdbMovieId": 1284465,
+			"tmdbPersonId": 137905,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Murray Bartlett",
+			"character": "The Leper",
+			"tmdbMovieId": 1284465,
+			"tmdbPersonId": 152416,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Noah Jupe",
+			"character": "Arthur / Godwyn",
+			"tmdbMovieId": 1284465,
+			"tmdbPersonId": 1590759,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

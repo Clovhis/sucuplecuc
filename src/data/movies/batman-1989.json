@@ -54,5 +54,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Michael Keaton",
+			"character": "Batman / Bruce Wayne",
+			"tmdbMovieId": 268,
+			"tmdbPersonId": 2232,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Nicholson",
+			"character": "Joker / Jack Napier",
+			"tmdbMovieId": 268,
+			"tmdbPersonId": 514,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kim Basinger",
+			"character": "Vicki Vale",
+			"tmdbMovieId": 268,
+			"tmdbPersonId": 326,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

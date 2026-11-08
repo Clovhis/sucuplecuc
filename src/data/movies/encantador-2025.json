@@ -58,5 +58,35 @@
 	"review": "José María Cicala arma un pueblo que parece demasiado quieto para ser inocente y coloca a Tomás en el centro de esa incomodidad. Las muñecas, el trabajo en el videoclub y la relación con su madre abren una puerta a una amenaza que el relato prefiere dejar crecer antes de nombrarla. Rodrigo Noya sostiene el contraste entre encanto y peligro, acompañado por un elenco conocido del cine y la televisión argentinos. La película apunta a un terror psicológico de lectura social y a veces lo subraya, pero mantiene una identidad visual marcada.",
 	"runtimeMinutes": 100,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Rodrigo Noya",
+			"character": "Tomás",
+			"tmdbMovieId": 1193950,
+			"tmdbPersonId": 105734,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Arturo Puig",
+			"character": "Dr. Palacios / Encargado / Cura",
+			"tmdbMovieId": 1193950,
+			"tmdbPersonId": 109359,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mario Alarcón",
+			"character": "Sánchez",
+			"tmdbMovieId": 1193950,
+			"tmdbPersonId": 1016570,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alejo Garcia Pintos",
+			"character": "Inspector Porter",
+			"tmdbMovieId": 1193950,
+			"tmdbPersonId": 1196556,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

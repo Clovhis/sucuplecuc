@@ -55,5 +55,35 @@
 	},
 	"review": "Desde la primera persecución, Ciudad de Dios te mete en un barrio donde la infancia dura poco y la violencia cambia de dueño con una velocidad feroz. Fernando Meirelles arma un relato coral, lleno de cortes secos, música nerviosa y una cámara que nunca se queda quieta por capricho. El elenco, integrado en buena parte por intérpretes sin experiencia previa, sostiene personajes que se sienten concretos y contradictorios. La recepción crítica destacó esa mezcla de vértigo y tragedia, y con razón: la película entretiene mientras muestra cómo un sistema fabrica verdugos y testigos. Es durísima, pero también profundamente humana.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Alexandre Rodrigues",
+			"character": "Buscapé",
+			"tmdbMovieId": 598,
+			"tmdbPersonId": 8595,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leandro Firmino",
+			"character": "Zé Pequeno / Dadinho",
+			"tmdbMovieId": 598,
+			"tmdbPersonId": 8596,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Phellipe Haagensen",
+			"character": "Bené",
+			"tmdbMovieId": 598,
+			"tmdbPersonId": 8597,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Douglas Silva",
+			"character": "Dadinho",
+			"tmdbMovieId": 598,
+			"tmdbPersonId": 8598,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

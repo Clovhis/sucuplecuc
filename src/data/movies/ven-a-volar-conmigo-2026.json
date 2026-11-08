@@ -43,18 +43,41 @@
 			"forFansOf": "Películas de viaje íntimas, debut autoral con tono personal y aventuras donde el asombro cotidiano alcanza para sostener la pantalla.",
 			"notForYouIf": "Esperás conflicto fuerte, giros de guion o una película de aviación con adrenalina y escala espectacular."
 		},
-	"becauseYouLiked": [
-		"how-green-was-my-valley-1941",
-		"ninja-turtles-caos-mutante-2023"
-	],
-	"related": [
-		"hoppers-2026",
-		"toy-story-5-2026",
-		"ella-y-su-hijo-2025",
-		"los-domingos-2025"
-	]
-},
+		"becauseYouLiked": [
+			"how-green-was-my-valley-1941",
+			"ninja-turtles-caos-mutante-2023"
+		],
+		"related": [
+			"hoppers-2026",
+			"toy-story-5-2026",
+			"ella-y-su-hijo-2025",
+			"los-domingos-2025"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Ven a volar conmigo se siente como un proyecto personal antes que como una pelicula de plataforma pensada en laboratorio. John Travolta debuta en la direccion con una historia chiquita, luminosa y muy apoyada en la fascinacion infantil por volar, por mirar el mundo desde arriba y por creer que todavia hay aventura en un viaje familiar.\n\nEse tono puede jugarle en contra si esperas conflicto fuerte: es amable, nostalgica y bastante directa. Pero cuando abraza esa escala intima, encuentra una ternura sincera. No despega altisimo, pero tampoco finge otra cosa."
+	"review": "Ven a volar conmigo se siente como un proyecto personal antes que como una pelicula de plataforma pensada en laboratorio. John Travolta debuta en la direccion con una historia chiquita, luminosa y muy apoyada en la fascinacion infantil por volar, por mirar el mundo desde arriba y por creer que todavia hay aventura en un viaje familiar.\n\nEse tono puede jugarle en contra si esperas conflicto fuerte: es amable, nostalgica y bastante directa. Pero cuando abraza esa escala intima, encuentra una ternura sincera. No despega altisimo, pero tampoco finge otra cosa.",
+	"castCharacters": [
+		{
+			"actor": "Clark Shotwell",
+			"character": "Jeff",
+			"tmdbMovieId": 1662414,
+			"tmdbPersonId": 6112978,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Travolta",
+			"character": "Retiring Captain / Narrator (voice)",
+			"tmdbMovieId": 1662414,
+			"tmdbPersonId": 8891,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ella Bleu Travolta",
+			"character": "Doris / Female Lips Announcer",
+			"tmdbMovieId": 1662414,
+			"tmdbPersonId": 1547772,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

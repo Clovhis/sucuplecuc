@@ -61,5 +61,42 @@
 	],
 	"runtimeMinutes": 107,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Michael Newman",
+			"tmdbMovieId": 9339,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Beckinsale",
+			"character": "Donna Newman",
+			"tmdbMovieId": 9339,
+			"tmdbPersonId": 3967,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Walken",
+			"character": "Morty",
+			"tmdbMovieId": 9339,
+			"tmdbPersonId": 4690,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Hasselhoff",
+			"character": "Ammer",
+			"tmdbMovieId": 9339,
+			"tmdbPersonId": 28238,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Henry Winkler",
+			"character": "Ted",
+			"tmdbMovieId": 9339,
+			"tmdbPersonId": 31903,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

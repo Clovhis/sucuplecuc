@@ -58,5 +58,28 @@
 		"Prime Video",
 		"HBO Max"
 	],
-	"runtimeMinutes": 104
+	"runtimeMinutes": 104,
+	"castCharacters": [
+		{
+			"actor": "Robin Williams",
+			"character": "Alan Parrish",
+			"tmdbMovieId": 8844,
+			"tmdbPersonId": 2157,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kirsten Dunst",
+			"character": "Judy",
+			"tmdbMovieId": 8844,
+			"tmdbPersonId": 205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bonnie Hunt",
+			"character": "Sarah",
+			"tmdbMovieId": 8844,
+			"tmdbPersonId": 5149,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

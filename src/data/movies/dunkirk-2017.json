@@ -62,5 +62,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Fionn Whitehead",
+			"character": "Tommy",
+			"tmdbMovieId": 374720,
+			"tmdbPersonId": 1687041,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Hardy",
+			"character": "Farrier",
+			"tmdbMovieId": 374720,
+			"tmdbPersonId": 2524,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kenneth Branagh",
+			"character": "Commander Bolton",
+			"tmdbMovieId": 374720,
+			"tmdbPersonId": 11181,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

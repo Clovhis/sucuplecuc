@@ -43,15 +43,15 @@
 	"runtimeMinutes": 200,
 	"review": "The Lord of the Rings: The Return of the King lleva a Frodo y Sam al tramo final de su viaje mientras el resto de la Tierra Media resiste el ataque de Sauron. Peter Jackson dirige la épica con una escala enorme, pero no pierde de vista el cansancio de los hobbits ni la tensión entre Aragorn, Gandalf y sus ejércitos; Elijah Wood, Sean Astin y Viggo Mortensen sostienen el peso emocional entre batallas gigantes. El cierre tiene varios falsos finales y puede parecer excesivo, aunque la película se ganó ese tiempo. Vale por una conclusión espectacular que realmente paga lo construido en la trilogía.",
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Lord of the Rings: The Return of the King paga la escala prometida sin soltar el cansancio de Frodo; Peter Jackson y Viggo Mortensen sostienen ese peso.",
-		"whatToExpect": "Frodo y Sam se acercan a Mordor mientras Aragorn reúne a los pueblos libres para el último choque contra Sauron.",
-		"pace": "Corre entre frentes de guerra, pausas de despedida y asedios gigantes; cuando parece terminar, todavía encuentra otra consecuencia.",
-		"intensity": "Las batallas son monumentales, pero el nervio está en cuerpos agotados y decisiones que ya no permiten volver atrás.",
-		"practicalContext": "Sus 200 minutos exigen una sesión larga, aunque el tramo final se toma el tiempo necesario para despedir a la Tierra Media.",
-		"forFansOf": "Te va a gustar si querés fantasía épica con payoff emocional, ejércitos inmensos y personajes que llegan cambiados al cierre.",
-		"notForYouIf": "No es para vos si preferís aventuras compactas, finales secos o una narración que no se detenga a saborear cada despedida."
-	},
+		"tenSecondTake": {
+			"verdict": "The Lord of the Rings: The Return of the King paga la escala prometida sin soltar el cansancio de Frodo; Peter Jackson y Viggo Mortensen sostienen ese peso.",
+			"whatToExpect": "Frodo y Sam se acercan a Mordor mientras Aragorn reúne a los pueblos libres para el último choque contra Sauron.",
+			"pace": "Corre entre frentes de guerra, pausas de despedida y asedios gigantes; cuando parece terminar, todavía encuentra otra consecuencia.",
+			"intensity": "Las batallas son monumentales, pero el nervio está en cuerpos agotados y decisiones que ya no permiten volver atrás.",
+			"practicalContext": "Sus 200 minutos exigen una sesión larga, aunque el tramo final se toma el tiempo necesario para despedir a la Tierra Media.",
+			"forFansOf": "Te va a gustar si querés fantasía épica con payoff emocional, ejércitos inmensos y personajes que llegan cambiados al cierre.",
+			"notForYouIf": "No es para vos si preferís aventuras compactas, finales secos o una narración que no se detenga a saborear cada despedida."
+		},
 		"becauseYouLiked": [
 			"the-lord-of-the-rings-the-two-towers-2002",
 			"the-lord-of-the-rings-the-fellowship-of-the-ring-2001"
@@ -67,5 +67,88 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Elijah Wood",
+			"character": "Frodo",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 109,
+			"verifiedAt": "2026-11-08",
+			"displayCharacter": "Frodo Bolsón",
+			"variants": [
+				"Frodo Baggins"
+			]
+		},
+		{
+			"actor": "Ian McKellen",
+			"character": "Gandalf",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 1327,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Viggo Mortensen",
+			"character": "Aragorn",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 110,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Astin",
+			"character": "Sam",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 1328,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Orlando Bloom",
+			"character": "Legolas",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 114,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Serkis",
+			"character": "Gollum / Smeagol",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 1333,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bernard Hill",
+			"character": "Théoden",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 1369,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miranda Otto",
+			"character": "Éowyn",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 502,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Karl Urban",
+			"character": "Éomer",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 1372,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugo Weaving",
+			"character": "Elrond",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 1331,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liv Tyler",
+			"character": "Arwen",
+			"tmdbMovieId": 122,
+			"tmdbPersonId": 882,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

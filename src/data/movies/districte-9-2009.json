@@ -61,5 +61,35 @@
 	"releasePlatforms": [
 		"HBO Max",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Sharlto Copley",
+			"character": "Wikus van de Merwe",
+			"tmdbMovieId": 17654,
+			"tmdbPersonId": 82191,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Cope",
+			"character": "Christopher Johnson / Grey Bradnam / Trent",
+			"tmdbMovieId": 17654,
+			"tmdbPersonId": 82193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nathalie Boltt",
+			"character": "Sarah Livingstone - Sociologist",
+			"tmdbMovieId": 17654,
+			"tmdbPersonId": 97599,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sylvaine Strike",
+			"character": "Dr Katrina McKenzie",
+			"tmdbMovieId": 17654,
+			"tmdbPersonId": 230818,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

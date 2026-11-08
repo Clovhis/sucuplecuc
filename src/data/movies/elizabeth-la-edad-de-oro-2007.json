@@ -55,5 +55,42 @@
 		]
 	},
 	"runtimeMinutes": 114,
-	"review": "La edad de oro vuelve a la corte de Elizabeth con una escala más grande y un tono más solemne. La amenaza española y la tensión religiosa arman un espectáculo vistoso, mientras Cate Blanchett encuentra en la reina una mezcla interesante de autoridad, celos y cansancio. El romance y las intrigas no siempre tienen el mismo pulso, pero la película funciona cuando convierte la imagen de una soberana invencible en una armadura que pesa."
+	"review": "La edad de oro vuelve a la corte de Elizabeth con una escala más grande y un tono más solemne. La amenaza española y la tensión religiosa arman un espectáculo vistoso, mientras Cate Blanchett encuentra en la reina una mezcla interesante de autoridad, celos y cansancio. El romance y las intrigas no siempre tienen el mismo pulso, pero la película funciona cuando convierte la imagen de una soberana invencible en una armadura que pesa.",
+	"castCharacters": [
+		{
+			"actor": "Cate Blanchett",
+			"character": "Elizabeth I, Queen of England",
+			"tmdbMovieId": 4517,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Clive Owen",
+			"character": "Sir Walter Raleigh",
+			"tmdbMovieId": 4517,
+			"tmdbPersonId": 2296,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geoffrey Rush",
+			"character": "Sir Francis Walsingham",
+			"tmdbMovieId": 4517,
+			"tmdbPersonId": 118,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Abbie Cornish",
+			"character": "Elizabeth Throckmorton",
+			"tmdbMovieId": 4517,
+			"tmdbPersonId": 37260,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samantha Morton",
+			"character": "Mary, Queen of Scots",
+			"tmdbMovieId": 4517,
+			"tmdbPersonId": 2206,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

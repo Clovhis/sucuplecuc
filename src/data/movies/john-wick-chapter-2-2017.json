@@ -46,5 +46,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Keanu Reeves",
+			"character": "John Wick",
+			"tmdbMovieId": 324552,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Common",
+			"character": "Cassian",
+			"tmdbMovieId": 324552,
+			"tmdbPersonId": 4238,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laurence Fishburne",
+			"character": "Bowery King",
+			"tmdbMovieId": 324552,
+			"tmdbPersonId": 2975,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

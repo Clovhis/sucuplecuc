@@ -62,5 +62,42 @@
 		]
 	},
 	"review": "Michael Mann filma la frontera como un lugar de barro, humo y decisiones urgentes, y hace que cada desplazamiento tenga peso físico. Daniel Day-Lewis encuentra en Hawkeye un héroe parco, más atento a la supervivencia que al discurso, mientras Madeleine Stowe sostiene el costado romántico sin volverlo un adorno. La trama histórica simplifica algunos conflictos, pero la puesta en escena, el sonido y la tensión de las persecuciones siguen siendo formidables. Es una aventura grande que entiende que el paisaje también puede ser peligroso.",
-	"runtimeMinutes": 112
+	"runtimeMinutes": 112,
+	"castCharacters": [
+		{
+			"actor": "Daniel Day-Lewis",
+			"character": "Hawkeye",
+			"tmdbMovieId": 9361,
+			"tmdbPersonId": 11856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Madeleine Stowe",
+			"character": "Cora",
+			"tmdbMovieId": 9361,
+			"tmdbPersonId": 289,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Russell Means",
+			"character": "Chingachgook",
+			"tmdbMovieId": 9361,
+			"tmdbPersonId": 3203,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wes Studi",
+			"character": "Magua",
+			"tmdbMovieId": 9361,
+			"tmdbPersonId": 15853,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jodhi May",
+			"character": "Alice",
+			"tmdbMovieId": 9361,
+			"tmdbPersonId": 57449,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

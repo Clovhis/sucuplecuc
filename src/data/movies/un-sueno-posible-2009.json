@@ -63,5 +63,28 @@
 		"Netflix",
 		"HBO Max"
 	],
-	"runtimeMinutes": 128
+	"runtimeMinutes": 128,
+	"castCharacters": [
+		{
+			"actor": "Sandra Bullock",
+			"character": "Leigh Anne Tuohy",
+			"tmdbMovieId": 22881,
+			"tmdbPersonId": 18277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Quinton Aaron",
+			"character": "Michael Oher",
+			"tmdbMovieId": 22881,
+			"tmdbPersonId": 112560,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim McGraw",
+			"character": "Sean Tuohy",
+			"tmdbMovieId": 22881,
+			"tmdbPersonId": 74428,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

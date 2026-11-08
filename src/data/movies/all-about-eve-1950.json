@@ -67,5 +67,42 @@
 	"country": "US",
 	"isArgentinian": false,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Bette Davis",
+			"character": "Margo Channing",
+			"tmdbMovieId": 705,
+			"tmdbPersonId": 3380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anne Baxter",
+			"character": "Eve Harrington",
+			"tmdbMovieId": 705,
+			"tmdbPersonId": 10606,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Sanders",
+			"character": "Addison DeWitt",
+			"tmdbMovieId": 705,
+			"tmdbPersonId": 3361,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Celeste Holm",
+			"character": "Karen Richards",
+			"tmdbMovieId": 705,
+			"tmdbPersonId": 10607,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Merrill",
+			"character": "Bill Sampson",
+			"tmdbMovieId": 705,
+			"tmdbPersonId": 10608,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

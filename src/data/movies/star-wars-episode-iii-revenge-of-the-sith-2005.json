@@ -37,7 +37,7 @@
 			"forFansOf": "Te puede fascinar si disfrutás Star Wars en modo tragedia, duelos de sables y relatos donde una decisión íntima se vuelve catástrofe política, con la dupla de Ewan McGregor y Hayden Christensen al frente.",
 			"notForYouIf": "Quizás no sea para vos si necesitás diálogos naturales, transiciones pausadas o un conflicto sin destino anunciado. Su fuerza visual y su oscuridad vienen acompañadas de un subrayado constante."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"star-wars-episode-vii-the-force-awakens-2015",
 			"e-t-the-extra-terrestrial-1982"
 		],
@@ -52,5 +52,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
 	"synopsis": "La Guerra de los Clones se acerca a su final mientras Obi-Wan y Anakin rescatan al canciller Palpatine. Entre misiones cada vez más peligrosas y tensiones políticas, Anakin empieza a cuestionar su lugar entre los Jedi.",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Hayden Christensen",
+			"character": "Anakin Skywalker / Darth Vader",
+			"tmdbMovieId": 1895,
+			"tmdbPersonId": 17244,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ewan McGregor",
+			"character": "Obi-Wan Kenobi",
+			"tmdbMovieId": 1895,
+			"tmdbPersonId": 3061,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Natalie Portman",
+			"character": "Padmé Amidala",
+			"tmdbMovieId": 1895,
+			"tmdbPersonId": 524,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

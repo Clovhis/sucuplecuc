@@ -73,5 +73,35 @@
 	},
 	"review": "Del Toro pone a una nena frente a un mundo de adultos fascistas y le da a la fantasía una textura tan hermosa como peligrosa. Ivana Baquero sostiene el relato con una mezcla de curiosidad y miedo, mientras Sergi López convierte al capitán Vidal en una presencia insoportable sin necesidad de exagerar. Los monstruos no funcionan como simple decoración: cada uno refleja una forma de obediencia, hambre o crueldad. El contraste entre las pruebas fantásticas de Ofelia y la violencia del capitán vuelve inseparables el mito y la resistencia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Ivana Baquero",
+			"character": "Ofelia",
+			"tmdbMovieId": 1417,
+			"tmdbPersonId": 16970,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sergi López",
+			"character": "Capitán Vidal",
+			"tmdbMovieId": 1417,
+			"tmdbPersonId": 16972,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maribel Verdú",
+			"character": "Mercedes",
+			"tmdbMovieId": 1417,
+			"tmdbPersonId": 16971,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Doug Jones",
+			"character": "Fauno / Pale Man",
+			"tmdbMovieId": 1417,
+			"tmdbPersonId": 17005,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

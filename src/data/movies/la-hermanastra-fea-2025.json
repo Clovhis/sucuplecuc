@@ -55,5 +55,21 @@
 	"catalogAddedAt": "2026-11-03",
 	"runtimeMinutes": 110,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Lea Myren",
+			"character": "Elvira",
+			"tmdbMovieId": 1284120,
+			"tmdbPersonId": 2890913,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ane Dahl Torp",
+			"character": "Rebekka",
+			"tmdbMovieId": 1284120,
+			"tmdbPersonId": 63769,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

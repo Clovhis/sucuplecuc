@@ -61,5 +61,28 @@
 		"Apple TV"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Morgan Freeman",
+			"character": "Somerset",
+			"tmdbMovieId": 807,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Mills",
+			"tmdbMovieId": 807,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gwyneth Paltrow",
+			"character": "Tracy",
+			"tmdbMovieId": 807,
+			"tmdbPersonId": 12052,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

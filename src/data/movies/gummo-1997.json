@@ -54,5 +54,21 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jacob Reynolds",
+			"character": "Solomon",
+			"tmdbMovieId": 18415,
+			"tmdbPersonId": 1038661,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chloë Sevigny",
+			"character": "Dot",
+			"tmdbMovieId": 18415,
+			"tmdbPersonId": 2838,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

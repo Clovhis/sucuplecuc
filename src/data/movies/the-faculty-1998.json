@@ -55,5 +55,28 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jordana Brewster",
+			"character": "Delilah",
+			"tmdbMovieId": 9276,
+			"tmdbPersonId": 22123,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Hartnett",
+			"character": "Zeke",
+			"tmdbMovieId": 9276,
+			"tmdbPersonId": 2299,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elijah Wood",
+			"character": "Casey",
+			"tmdbMovieId": 9276,
+			"tmdbPersonId": 109,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -56,5 +56,35 @@
 	},
 	"review": "Suzy entra a la academia bajo una lluvia que parece tinta y Dario Argento decide que cada rincón tiene que gritar antes que los personajes. El rojo, el azul y el verde no buscan realismo: construyen una pesadilla de cuento, acompañada por una música que empuja la escena como una amenaza física. Jessica Harper le da un centro frágil a una película poblada de gestos extremos, mientras el misterio avanza más por atmósfera que por lógica. Es giallo, brujería y diseño sonoro convertido en terror; la historia puede ser simple, pero la experiencia visual sigue siendo única.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jessica Harper",
+			"character": "Suzy Bannion",
+			"tmdbMovieId": 11906,
+			"tmdbPersonId": 69055,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stefania Casini",
+			"character": "Sara Simms",
+			"tmdbMovieId": 11906,
+			"tmdbPersonId": 34043,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Flavio Bucci",
+			"character": "Daniel",
+			"tmdbMovieId": 11906,
+			"tmdbPersonId": 24608,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Bennett",
+			"character": "Madame Blanc",
+			"tmdbMovieId": 11906,
+			"tmdbPersonId": 7639,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

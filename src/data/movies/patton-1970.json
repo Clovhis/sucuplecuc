@@ -59,5 +59,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "George C. Scott",
+			"character": "General George S. Patton Jr.",
+			"tmdbMovieId": 11202,
+			"tmdbPersonId": 862,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Karl Malden",
+			"character": "General Omar N. Bradley",
+			"tmdbMovieId": 11202,
+			"tmdbPersonId": 9857,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Young",
+			"character": "Captain Chester B. Hansen",
+			"tmdbMovieId": 11202,
+			"tmdbPersonId": 40551,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

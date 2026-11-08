@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ryan Reynolds",
+			"character": "Guy",
+			"tmdbMovieId": 550988,
+			"tmdbPersonId": 10859,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jodie Comer",
+			"character": "Millie Rusk / Molotovgirl",
+			"tmdbMovieId": 550988,
+			"tmdbPersonId": 1388593,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Taika Waititi",
+			"character": "Antwan",
+			"tmdbMovieId": 550988,
+			"tmdbPersonId": 55934,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

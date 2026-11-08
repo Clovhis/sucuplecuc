@@ -56,5 +56,28 @@
 	"review": "Nicolas Winding Refn vuelve a construir el relato desde la atmósfera y el choque entre cuerpos, color y espacio. La ciudad cubierta por la niebla funciona como un lugar concreto y como un estado mental, mientras los dos recorridos de rescate se acercan sin transformarse en una aventura convencional. Sophie Thatcher y Charles Melton cargan con buena parte de esa tensión contenida. El estilo puede resultar absorbente o deliberadamente distante, pero la película sabe que su identidad está en la forma: cada imagen parece más segura que sus explicaciones.",
 	"runtimeMinutes": 110,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Sophie Thatcher",
+			"character": "Elle",
+			"tmdbMovieId": 1469342,
+			"tmdbPersonId": 1981044,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles Melton",
+			"character": "Private K",
+			"tmdbMovieId": 1469342,
+			"tmdbPersonId": 1907002,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Havana Rose Liu",
+			"character": "Dominique",
+			"tmdbMovieId": 1469342,
+			"tmdbPersonId": 2378813,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

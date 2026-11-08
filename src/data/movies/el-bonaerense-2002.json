@@ -37,18 +37,41 @@
 			"forFansOf": "Fans del nuevo cine argentino, de los dramas institucionales y de las películas donde el sistema se explica por gestos, procedimientos y silencios.",
 			"notForYouIf": "Buscás un policial de investigación, héroes claros o escenas de acción. El bonaerense está más interesado en la estructura que en el caso."
 		},
-	"becauseYouLiked": [
-		"el-clan-2015",
-		"carancho-2010"
-	],
-	"related": [
-		"leonera-2008",
-		"elefante-blanco-2012",
-		"un-oso-rojo-2002",
-		"nueve-reinas-2000"
-	]
-},
+		"becauseYouLiked": [
+			"el-clan-2015",
+			"carancho-2010"
+		],
+		"related": [
+			"leonera-2008",
+			"elefante-blanco-2012",
+			"un-oso-rojo-2002",
+			"nueve-reinas-2000"
+		]
+	},
 	"synopsis": "El Bonaerense narra la historia de Enrique Orlando Mendoza, \"el Zapa\", para los amigos, un humilde cerrajero de un pequeño pueblo de la Provincia de Buenos Aires. Se trata de un lugar tranquilo donde el trabajo escasea.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Jorge Román",
+			"character": "Zapa",
+			"tmdbMovieId": 83505,
+			"tmdbPersonId": 52234,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mimí Ardú",
+			"character": "Mabel",
+			"tmdbMovieId": 83505,
+			"tmdbPersonId": 544959,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Darío Levy",
+			"character": "Gallo",
+			"tmdbMovieId": 83505,
+			"tmdbPersonId": 658081,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

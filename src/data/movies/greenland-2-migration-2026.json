@@ -29,28 +29,51 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Greenland 2: Migration tiene una buena pregunta para continuar a John Garrity, pero todavía depende de que Ric Roman Waugh no confunda escala con tensión.",
-		"whatToExpect": "John Garrity y su familia salen del refugio y cruzan una Europa devastada en busca de un lugar donde empezar de nuevo.",
-		"pace": "El viaje promete una marcha de supervivencia, con tramos de desplazamiento y estallidos de peligro más que una persecución continua.",
-		"intensity": "La amenaza nace de un mundo roto y de decisiones familiares; el desastre pesa menos que la incertidumbre del camino.",
-		"practicalContext": "Es una continuación para ver con fresco el clima de la primera: necesita sostener vínculos además de mostrar ruinas.",
-		"forFansOf": "Si te interesan secuelas de catástrofe que expanden el mapa y mantienen a Gerard Butler en modo supervivencia.",
-		"notForYouIf": "Quizás no es para vos si esperás una escalada explosiva sin pausas o una historia cerrada sobre personajes nuevos."
+		"tenSecondTake": {
+			"verdict": "Greenland 2: Migration tiene una buena pregunta para continuar a John Garrity, pero todavía depende de que Ric Roman Waugh no confunda escala con tensión.",
+			"whatToExpect": "John Garrity y su familia salen del refugio y cruzan una Europa devastada en busca de un lugar donde empezar de nuevo.",
+			"pace": "El viaje promete una marcha de supervivencia, con tramos de desplazamiento y estallidos de peligro más que una persecución continua.",
+			"intensity": "La amenaza nace de un mundo roto y de decisiones familiares; el desastre pesa menos que la incertidumbre del camino.",
+			"practicalContext": "Es una continuación para ver con fresco el clima de la primera: necesita sostener vínculos además de mostrar ruinas.",
+			"forFansOf": "Si te interesan secuelas de catástrofe que expanden el mapa y mantienen a Gerard Butler en modo supervivencia.",
+			"notForYouIf": "Quizás no es para vos si esperás una escalada explosiva sin pausas o una historia cerrada sobre personajes nuevos."
+		},
+		"becauseYouLiked": [
+			"shelter-2026",
+			"the-fate-of-the-furious-2017"
+		],
+		"related": [
+			"redada-asesina-the-raid-2011",
+			"amos-del-universo-2026",
+			"fast-and-furious-6-2013",
+			"fast-five-2011"
+		]
 	},
-	"becauseYouLiked": [
-		"shelter-2026",
-		"the-fate-of-the-furious-2017"
-	],
-	"related": [
-		"redada-asesina-the-raid-2011",
-		"amos-del-universo-2026",
-		"fast-and-furious-6-2013",
-		"fast-five-2011"
-	]
-},
 	"synopsis": "Cinco años después del cataclismo, John Garrity y su familia deben abandonar el refugio subterráneo y atravesar una Europa devastada para encontrar un nuevo hogar. El viaje los enfrenta a un mundo todavía inestable y peligroso.",
 	"audienceRating": "+13",
-  "review": "Greenland: Migration parte de una base útil: la primera película funcionaba menos por los meteoritos que por la presión de una familia tratando de sobrevivir mientras todo se venía abajo. Esta continuación necesita expandir ese mundo sin reducirlo a otra cadena de derrumbes, alarmas y sacrificios de manual. Gerard Butler puede volver a darle peso al costado físico y desesperado del protagonista, pero la dirección tendrá que encontrar una amenaza que cambie de verdad la dinámica familiar. El escenario posterior al impacto ofrece espacio para una tensión más seca y menos espectacular. Si aprovecha esa idea, puede justificar el regreso; si sólo agranda la catástrofe, corre el riesgo de repetir lo ya visto.",
-	"reviewPublishedAt": "2026-03-12"
+	"review": "Greenland: Migration parte de una base útil: la primera película funcionaba menos por los meteoritos que por la presión de una familia tratando de sobrevivir mientras todo se venía abajo. Esta continuación necesita expandir ese mundo sin reducirlo a otra cadena de derrumbes, alarmas y sacrificios de manual. Gerard Butler puede volver a darle peso al costado físico y desesperado del protagonista, pero la dirección tendrá que encontrar una amenaza que cambie de verdad la dinámica familiar. El escenario posterior al impacto ofrece espacio para una tensión más seca y menos espectacular. Si aprovecha esa idea, puede justificar el regreso; si sólo agranda la catástrofe, corre el riesgo de repetir lo ya visto.",
+	"reviewPublishedAt": "2026-03-12",
+	"castCharacters": [
+		{
+			"actor": "Gerard Butler",
+			"character": "John Garrity",
+			"tmdbMovieId": 840464,
+			"tmdbPersonId": 17276,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Morena Baccarin",
+			"character": "Allison Garrity",
+			"tmdbMovieId": 840464,
+			"tmdbPersonId": 54882,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Roman Griffin Davis",
+			"character": "Nathan Garrity",
+			"tmdbMovieId": 840464,
+			"tmdbPersonId": 2054851,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

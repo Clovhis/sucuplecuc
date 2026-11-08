@@ -47,5 +47,30 @@
 	"reviewPublishedAt": "2026-02-28",
 	"country": "CA, GB, US",
 	"isArgentinian": false,
-	"genres": ["Musical"]
+	"genres": [
+		"Musical"
+	],
+	"castCharacters": [
+		{
+			"actor": "Timothée Chalamet",
+			"character": "Willy Wonka",
+			"tmdbMovieId": 787699,
+			"tmdbPersonId": 1190668,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Grant",
+			"character": "Oompa Loompa",
+			"tmdbMovieId": 787699,
+			"tmdbPersonId": 3291,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keegan-Michael Key",
+			"character": "Chief of Police",
+			"tmdbMovieId": 787699,
+			"tmdbPersonId": 298410,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

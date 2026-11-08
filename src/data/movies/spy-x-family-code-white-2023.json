@@ -39,18 +39,41 @@
 			"forFansOf": "Puede divertirte si te gustan los animes de espías con humor doméstico, familias improvisadas y acción colorida, especialmente cuando Takuya Eguchi y Saori Hayami juegan a que todo está bajo control.",
 			"notForYouIf": "Quizás no sea para vos si buscás consecuencias permanentes, una operación militar rigurosa o un desarrollo profundo de la trama. Su prioridad es el encanto episódico y el desorden de Anya."
 		},
-	"becauseYouLiked": [
-		"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025",
-		"akira-1988"
-	],
-	"related": [
-		"chainsaw-man-the-movie-reze-arc-2025",
-		"kobayashi-san-chi-no-maid-dragon-samishigariya-no-ryuu-2025",
-		"demon-slayer-kimetsu-no-yaiba-the-movie-mugen-train-2020",
-		"howls-moving-castle-2004"
-	]
-},
+		"becauseYouLiked": [
+			"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025",
+			"akira-1988"
+		],
+		"related": [
+			"chainsaw-man-the-movie-reze-arc-2025",
+			"kobayashi-san-chi-no-maid-dragon-samishigariya-no-ryuu-2025",
+			"demon-slayer-kimetsu-no-yaiba-the-movie-mugen-train-2020",
+			"howls-moving-castle-2004"
+		]
+	},
 	"synopsis": "Loid Forger completa una misión para WISE, pero su encargada, Sylvia Sherwood, le informa que puede ser reemplazado en la Operación Strix a menos que logre un progreso significativo. Al salir, su esposa Yor ve a Loid hablando con su compañera espía Fiona Frost, lo que Yor malinterpreta como un beso.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-04"
+	"reviewPublishedAt": "2026-03-04",
+	"castCharacters": [
+		{
+			"actor": "Takuya Eguchi",
+			"character": "Loid Forger (voice)",
+			"tmdbMovieId": 1062807,
+			"tmdbPersonId": 1248374,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Atsumi Tanezaki",
+			"character": "Anya Forger (voice)",
+			"tmdbMovieId": 1062807,
+			"tmdbPersonId": 1588597,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Saori Hayami",
+			"character": "Yor Forger (voice)",
+			"tmdbMovieId": 1062807,
+			"tmdbPersonId": 221773,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

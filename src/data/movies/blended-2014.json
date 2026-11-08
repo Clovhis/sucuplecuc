@@ -63,5 +63,42 @@
 	],
 	"runtimeMinutes": 117,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Jim",
+			"tmdbMovieId": 232672,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Drew Barrymore",
+			"character": "Lauren",
+			"tmdbMovieId": 232672,
+			"tmdbPersonId": 69597,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Nealon",
+			"character": "Eddy",
+			"tmdbMovieId": 232672,
+			"tmdbPersonId": 58478,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terry Crews",
+			"character": "Nickens",
+			"tmdbMovieId": 232672,
+			"tmdbPersonId": 53256,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wendi McLendon-Covey",
+			"character": "Jen",
+			"tmdbMovieId": 232672,
+			"tmdbPersonId": 63234,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

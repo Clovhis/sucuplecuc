@@ -39,7 +39,11 @@
 		"tenSecondTake": {
 			"verdict": "Garry Marshall convierte el acuerdo entre Julia Roberts y Richard Gere en fantasía pop de química impecable; su mirada sobre dinero y trabajo sexual es mucho menos crítica.",
 			"whatToExpect": "Hotel, empresario, acompañamiento pactado, vestuario, música y una mujer que gana espacio dentro de un cuento de hadas diseñado por otros.",
-			"pace": "Avanza con ritmo de comedia romántica clásica, encadenando cambios de vestuario, cenas y discusiones sin demorar demasiado el deseo de la pareja.",			"intensity": "La tensión es social y sentimental, más de límites y expectativas que de peligro; el conflicto se suaviza cada vez que aparece el encanto.",			"practicalContext": "La ficha no consigna duración; funciona como romance pop de una noche si podés disfrutar la fantasía y discutir sus zonas edulcoradas.",			"forFansOf": "Para quienes vuelven por Julia Roberts, la química con Gere y comedias románticas que construyen una burbuja de hotel, música y transformación.",			"notForYouIf": "No es para vos si necesitás una mirada realista sobre trabajo sexual, una relación sin desequilibrios o una película menos confiada en su cuento de hadas."
+			"pace": "Avanza con ritmo de comedia romántica clásica, encadenando cambios de vestuario, cenas y discusiones sin demorar demasiado el deseo de la pareja.",
+			"intensity": "La tensión es social y sentimental, más de límites y expectativas que de peligro; el conflicto se suaviza cada vez que aparece el encanto.",
+			"practicalContext": "La ficha no consigna duración; funciona como romance pop de una noche si podés disfrutar la fantasía y discutir sus zonas edulcoradas.",
+			"forFansOf": "Para quienes vuelven por Julia Roberts, la química con Gere y comedias románticas que construyen una burbuja de hotel, música y transformación.",
+			"notForYouIf": "No es para vos si necesitás una mirada realista sobre trabajo sexual, una relación sin desequilibrios o una película menos confiada en su cuento de hadas."
 		},
 		"becauseYouLiked": [
 			"loco-y-estupido-amor-2011",
@@ -52,5 +56,42 @@
 			"medianeras-2011"
 		]
 	},
-	"review": "Garry Marshall convierte un cuento de hadas improbable en una comedia romántica de ritmo preciso, sostenida por la química entre Julia Roberts y Richard Gere. La película tiene una mirada bastante edulcorada sobre el dinero y el trabajo sexual, pero sabe construir escenas memorables y dejar que Vivian gane espacio propio dentro del acuerdo. El vestuario, la música y el hotel son parte de una fantasía pop que todavía funciona cuando la pareja discute sus límites. No es sutil, pero sí extraordinariamente eficaz en lo que promete."
+	"review": "Garry Marshall convierte un cuento de hadas improbable en una comedia romántica de ritmo preciso, sostenida por la química entre Julia Roberts y Richard Gere. La película tiene una mirada bastante edulcorada sobre el dinero y el trabajo sexual, pero sabe construir escenas memorables y dejar que Vivian gane espacio propio dentro del acuerdo. El vestuario, la música y el hotel son parte de una fantasía pop que todavía funciona cuando la pareja discute sus límites. No es sutil, pero sí extraordinariamente eficaz en lo que promete.",
+	"castCharacters": [
+		{
+			"actor": "Julia Roberts",
+			"character": "Vivian Ward",
+			"tmdbMovieId": 114,
+			"tmdbPersonId": 1204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Gere",
+			"character": "Edward Lewis",
+			"tmdbMovieId": 114,
+			"tmdbPersonId": 1205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Héctor Elizondo",
+			"character": "The Hotel Manager",
+			"tmdbMovieId": 114,
+			"tmdbPersonId": 1210,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Alexander",
+			"character": "Philip Stuckey",
+			"tmdbMovieId": 114,
+			"tmdbPersonId": 1206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura San Giacomo",
+			"character": "Kit De Luca",
+			"tmdbMovieId": 114,
+			"tmdbPersonId": 1212,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

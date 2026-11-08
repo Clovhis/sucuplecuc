@@ -56,5 +56,28 @@
 	"review": "Días extraños imagina un futuro pegado al fin de siglo y encuentra ahí una mezcla incómoda de paranoia tecnológica, violencia policial y nostalgia por una vida que todavía no se terminó. Kathryn Bigelow filma las grabaciones sensoriales como una trampa: permiten sentirlo todo, pero no entender qué hacer con lo que se siente.\\n\\nRalph Fiennes lleva muy bien a ese vendedor de experiencias que parece vivir siempre un paso atrás de su propia culpa. Juliette Lewis y Angela Bassett le dan al conflicto dos energías opuestas, mientras la ciudad se vuelve un cuerpo nervioso. La película tiene exceso, gritos y una duración discutible, pero su pregunta sobre mirar el dolor ajeno como entretenimiento sigue pegando bastante fuerte.",
 	"releasePlatform": "Disney Plus",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Lenny Nero",
+			"tmdbMovieId": 281,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juliette Lewis",
+			"character": "Faith Justin",
+			"tmdbMovieId": 281,
+			"tmdbPersonId": 3196,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Sizemore",
+			"character": "Max Peltier",
+			"tmdbMovieId": 281,
+			"tmdbPersonId": 3197,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

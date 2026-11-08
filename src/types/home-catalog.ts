@@ -10,6 +10,7 @@ export interface HomeMovieRecord {
 	searchAliases: string;
 	searchDirector: string;
 	searchCast: string;
+	searchCharacters?: { actor: string; character: string; variants?: string[] }[];
 	releaseTimestamp: number;
 	recentPremiere: boolean;
 	score: number | null;

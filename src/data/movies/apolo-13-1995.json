@@ -65,5 +65,42 @@
 			"the-post-2017"
 		]
 	},
-	"review": "Una misión lunar que parecía rutinaria se vuelve un problema de ingeniería, paciencia y nervios, y Ron Howard la filma con una claridad que hace entendible cada decisión sin sacarle tensión. Tom Hanks encuentra en Jim Lovell una serenidad contagiosa, mientras Bill Paxton, Kevin Bacon, Gary Sinise y Ed Harris convierten el rescate en un verdadero trabajo colectivo. La reconstrucción técnica es minuciosa, pero nunca se siente como una clase: el peligro está en el oxígeno, la electricidad y el tiempo que se achica. Algún tramo familiar empuja la emoción de más, aunque pesa poco frente a una narración precisa, física y todavía atrapante."
+	"review": "Una misión lunar que parecía rutinaria se vuelve un problema de ingeniería, paciencia y nervios, y Ron Howard la filma con una claridad que hace entendible cada decisión sin sacarle tensión. Tom Hanks encuentra en Jim Lovell una serenidad contagiosa, mientras Bill Paxton, Kevin Bacon, Gary Sinise y Ed Harris convierten el rescate en un verdadero trabajo colectivo. La reconstrucción técnica es minuciosa, pero nunca se siente como una clase: el peligro está en el oxígeno, la electricidad y el tiempo que se achica. Algún tramo familiar empuja la emoción de más, aunque pesa poco frente a una narración precisa, física y todavía atrapante.",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Jim Lovell",
+			"tmdbMovieId": 568,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Paxton",
+			"character": "Fred Haise",
+			"tmdbMovieId": 568,
+			"tmdbPersonId": 2053,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Bacon",
+			"character": "Jack Swigert",
+			"tmdbMovieId": 568,
+			"tmdbPersonId": 4724,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Sinise",
+			"character": "Ken Mattingly",
+			"tmdbMovieId": 568,
+			"tmdbPersonId": 33,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Harris",
+			"character": "Gene Kranz",
+			"tmdbMovieId": 568,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -37,15 +37,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Score (Un golpe maestro) vive del cruce entre Robert De Niro y Edward Norton; Frank Oz ordena un robo clásico que prefiere método a fuegos artificiales.",
-		"whatToExpect": "Un ladrón veterano entra a una aduana de Montreal con un cómplice joven, mientras un cetro y las dobles intenciones complican el último trabajo.",
-		"pace": "Se toma tiempo para estudiar accesos, negociar confianza y medir al rival; el golpe llega después de una larga preparación.",
-		"intensity": "La tensión nace de quién sabe más, no de la velocidad; cada conversación puede ser otra capa de engaño entre profesionales.",
-		"practicalContext": "Con 124 minutos, pide paciencia para el armado y entrega un thriller de sobremesa más prolijo que vertiginoso.",
-		"forFansOf": "Te va a gustar si disfrutás robos de procedimiento, actores jugando a ocultar cartas y planes que dependen de pequeños detalles.",
-		"notForYouIf": "Quizás no sea para vos si buscás golpes espectaculares, giros incesantes o una película que use a Marlon Brando como algo más que presencia."
-	},
+		"tenSecondTake": {
+			"verdict": "The Score (Un golpe maestro) vive del cruce entre Robert De Niro y Edward Norton; Frank Oz ordena un robo clásico que prefiere método a fuegos artificiales.",
+			"whatToExpect": "Un ladrón veterano entra a una aduana de Montreal con un cómplice joven, mientras un cetro y las dobles intenciones complican el último trabajo.",
+			"pace": "Se toma tiempo para estudiar accesos, negociar confianza y medir al rival; el golpe llega después de una larga preparación.",
+			"intensity": "La tensión nace de quién sabe más, no de la velocidad; cada conversación puede ser otra capa de engaño entre profesionales.",
+			"practicalContext": "Con 124 minutos, pide paciencia para el armado y entrega un thriller de sobremesa más prolijo que vertiginoso.",
+			"forFansOf": "Te va a gustar si disfrutás robos de procedimiento, actores jugando a ocultar cartas y planes que dependen de pequeños detalles.",
+			"notForYouIf": "Quizás no sea para vos si buscás golpes espectaculares, giros incesantes o una película que use a Marlon Brando como algo más que presencia."
+		},
 		"becauseYouLiked": [
 			"el-aura-2005",
 			"plan-oculto-2006"
@@ -58,5 +58,28 @@
 		]
 	},
 	"review": "The Score arma su atracción alrededor de tres generaciones de actores que entienden el placer de no mostrar todas las cartas. De Niro interpreta a Nick como un profesional que quiere cerrar su carrera sin ruido, Edward Norton juega la ambición detrás de una máscara y Marlon Brando aparece con la autoridad de alguien que ya vio este truco demasiadas veces. El golpe está contado con claridad y paciencia, aunque la película tarda en encontrar una tensión que iguale el magnetismo del elenco. Cuando deja que los personajes negocien, sospechen y se prueben entre sí, funciona mejor que cuando fuerza la sorpresa. Es un thriller de robo clásico, prolijo y agradable, más interesado en el método que en la pirotecnia.",
-	"runtimeMinutes": 124
+	"runtimeMinutes": 124,
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Nick Wells",
+			"tmdbMovieId": 11371,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edward Norton",
+			"character": "Jack Teller",
+			"tmdbMovieId": 11371,
+			"tmdbPersonId": 819,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marlon Brando",
+			"character": "Max",
+			"tmdbMovieId": 11371,
+			"tmdbPersonId": 3084,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

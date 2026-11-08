@@ -56,5 +56,28 @@
 		]
 	},
 	"review": "Confesiones verdaderas avanza como un policial que prefiere el humo de los pasillos al estallido de una persecución. El vínculo entre los hermanos Spellacy sostiene una película donde la fe, el poder y la lealtad familiar se pisan todo el tiempo, sin que nadie pueda salir limpio. De Niro juega la rigidez del sacerdote como una armadura que empieza a resquebrajarse, mientras Robert Duvall aporta una sequedad detectivesca que vuelve creíble cada silencio compartido. El ritmo es deliberadamente sobrio y puede parecer distante, pero esa frialdad encaja con un mundo acostumbrado a esconder sus culpas detrás de instituciones respetables. Un drama criminal adulto, áspero y todavía muy bien actuado.",
-	"runtimeMinutes": 108
+	"runtimeMinutes": 108,
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Father Des Spellacy",
+			"tmdbMovieId": 32077,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Duvall",
+			"character": "Det. Tom Spellacy",
+			"tmdbMovieId": 32077,
+			"tmdbPersonId": 3087,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles Durning",
+			"character": "Jack Amsterdam",
+			"tmdbMovieId": 32077,
+			"tmdbPersonId": 1466,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

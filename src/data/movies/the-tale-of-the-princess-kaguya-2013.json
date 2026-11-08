@@ -30,28 +30,51 @@
 	},
 	"runtimeMinutes": 137,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Tale of the Princess Kaguya dibuja la belleza como una forma de encierro; Isao Takahata encuentra en Atsuko Takahata una voz llena de vida y tristeza.",
-		"whatToExpect": "Una niña nacida de un bambú crece con rapidez, es llevada a la corte y descubre que ser princesa significa perder decisiones propias.",
-		"pace": "Se mueve con observación y pausas, acelera cuando Kaguya corre o recuerda su origen y vuelve a la calma antes de cada pérdida.",
-		"intensity": "La emoción nace del choque entre naturaleza y etiqueta; el dolor aparece cuando una vida libre empieza a ser decorada por otros.",
-		"practicalContext": "Con 137 minutos, pide una tarde tranquila y atención al trazo; es una película de animación contemplativa, no una aventura de palacio.",
-		"forFansOf": "Te va a gustar si disfrutás cuentos folklóricos, animación artesanal y protagonistas que se rebelan contra una felicidad diseñada desde afuera.",
-		"notForYouIf": "Quizás no sea para vos si necesitás cortes rápidos, una moraleja cerrada o una fantasía que premie obedecer las reglas del reino."
+		"tenSecondTake": {
+			"verdict": "The Tale of the Princess Kaguya dibuja la belleza como una forma de encierro; Isao Takahata encuentra en Atsuko Takahata una voz llena de vida y tristeza.",
+			"whatToExpect": "Una niña nacida de un bambú crece con rapidez, es llevada a la corte y descubre que ser princesa significa perder decisiones propias.",
+			"pace": "Se mueve con observación y pausas, acelera cuando Kaguya corre o recuerda su origen y vuelve a la calma antes de cada pérdida.",
+			"intensity": "La emoción nace del choque entre naturaleza y etiqueta; el dolor aparece cuando una vida libre empieza a ser decorada por otros.",
+			"practicalContext": "Con 137 minutos, pide una tarde tranquila y atención al trazo; es una película de animación contemplativa, no una aventura de palacio.",
+			"forFansOf": "Te va a gustar si disfrutás cuentos folklóricos, animación artesanal y protagonistas que se rebelan contra una felicidad diseñada desde afuera.",
+			"notForYouIf": "Quizás no sea para vos si necesitás cortes rápidos, una moraleja cerrada o una fantasía que premie obedecer las reglas del reino."
+		},
+		"becauseYouLiked": [
+			"wolf-children-2012",
+			"grave-of-the-fireflies-1988"
+		],
+		"related": [
+			"the-boy-and-the-heron-2023",
+			"your-name-2016",
+			"spirited-away-2001",
+			"kobayashi-san-chi-no-maid-dragon-samishigariya-no-ryuu-2025"
+		]
 	},
-	"becauseYouLiked": [
-		"wolf-children-2012",
-		"grave-of-the-fireflies-1988"
-	],
-	"related": [
-		"the-boy-and-the-heron-2023",
-		"your-name-2016",
-		"spirited-away-2001",
-		"kobayashi-san-chi-no-maid-dragon-samishigariya-no-ryuu-2025"
-	]
-},
 	"review": "The Tale of the Princess Kaguya adapta un cuento japonés sobre una niña encontrada en un tallo de bambú cuya vida cambia cuando su padre decide convertirla en princesa. Isao Takahata dirige con una sensibilidad extraordinaria y una animación que parece dibujada al vuelo, pero nunca es caprichosa: el trazo se acelera o se rompe según lo que ella siente. Aki Asakura le da una voz vital a Kaguya, y el relato cuestiona con dolor las expectativas que la encierran. El ritmo es pausado y su tristeza no busca alivio rápido. Vale por su belleza y por una emoción que se queda mucho después del final.",
 	"synopsis": "La historia comienza cuando una pareja de ancianos campesinos encuentran a una niña diminuta dentro de una planta de bambú y deciden adoptarla como su hija. Convertida rápidamente en una hermosa mujer, es pretendida por muchos hombres, incluido el emperador.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Atsuko Takahata",
+			"character": "Lady Sagami (voice)",
+			"tmdbMovieId": 149871,
+			"tmdbPersonId": 90570,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Takaya Kamikawa",
+			"character": "Prince Ishitsukuri (voice)",
+			"tmdbMovieId": 149871,
+			"tmdbPersonId": 1248335,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nobuko Miyamoto",
+			"character": "Ōna / Narrator (voice)",
+			"tmdbMovieId": 149871,
+			"tmdbPersonId": 70627,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

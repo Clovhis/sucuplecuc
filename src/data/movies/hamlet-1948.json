@@ -53,5 +53,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Laurence Olivier",
+			"character": "Hamlet - Prince of Denmark / Voice of Ghost",
+			"tmdbMovieId": 23383,
+			"tmdbPersonId": 3359,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jean Simmons",
+			"character": "Ophelia",
+			"tmdbMovieId": 23383,
+			"tmdbPersonId": 14500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Basil Sydney",
+			"character": "Claudius - The King",
+			"tmdbMovieId": 23383,
+			"tmdbPersonId": 50998,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

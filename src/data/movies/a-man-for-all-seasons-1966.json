@@ -58,5 +58,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Paul Scofield",
+			"character": "Thomas More",
+			"tmdbMovieId": 874,
+			"tmdbPersonId": 13324,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wendy Hiller",
+			"character": "Alice More",
+			"tmdbMovieId": 874,
+			"tmdbPersonId": 13325,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leo McKern",
+			"character": "Thomas Cromwell",
+			"tmdbMovieId": 874,
+			"tmdbPersonId": 7192,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

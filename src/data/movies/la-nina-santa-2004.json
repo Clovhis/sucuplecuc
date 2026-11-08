@@ -33,17 +33,17 @@
 			"forFansOf": "Si te interesan cine argentino de clima, adolescencias ambiguas y Lucrecia Martel escuchando los espacios.",
 			"notForYouIf": "No es para vos si buscás una trama explícita, personajes que digan todo o un conflicto resuelto por grandes escenas."
 		},
-	"becauseYouLiked": [
-		"la-cienaga-2001",
-		"trenque-lauquen-2022"
-	],
-	"related": [
-		"los-sonambulos-2019",
-		"luna-de-avellaneda-2004",
-		"la-noche-de-12-anos-2018",
-		"el-hijo-de-la-novia-2001"
-	]
-},
+		"becauseYouLiked": [
+			"la-cienaga-2001",
+			"trenque-lauquen-2022"
+		],
+		"related": [
+			"los-sonambulos-2019",
+			"luna-de-avellaneda-2004",
+			"la-noche-de-12-anos-2018",
+			"el-hijo-de-la-novia-2001"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -54,5 +54,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "AR",
-	"isArgentinian": true
+	"isArgentinian": true,
+	"castCharacters": [
+		{
+			"actor": "María Alché",
+			"character": "Amalia",
+			"tmdbMovieId": 44413,
+			"tmdbPersonId": 130752,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mercedes Morán",
+			"character": "Helena",
+			"tmdbMovieId": 44413,
+			"tmdbPersonId": 18499,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

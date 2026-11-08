@@ -56,5 +56,35 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Enfrentados: Marfil mezcla secuestro, guardaespaldas y romance con una confianza muy clara en el atractivo de su dupla. Ester Expósito y Hugo Diego García cargan con una historia que salta de Nueva York a España entre amenazas, secretos familiares y miradas de manual, mientras Óscar Pedraza mantiene el movimiento y la tensión sin complicar demasiado la trama. El problema es que los giros están puestos para empujar la próxima entrega y varios personajes quedan reducidos a piezas del misterio. Funciona como melodrama juvenil de plataforma: veloz, vistoso y más interesado en la química que en la sutileza."
+	"review": "Enfrentados: Marfil mezcla secuestro, guardaespaldas y romance con una confianza muy clara en el atractivo de su dupla. Ester Expósito y Hugo Diego García cargan con una historia que salta de Nueva York a España entre amenazas, secretos familiares y miradas de manual, mientras Óscar Pedraza mantiene el movimiento y la tensión sin complicar demasiado la trama. El problema es que los giros están puestos para empujar la próxima entrega y varios personajes quedan reducidos a piezas del misterio. Funciona como melodrama juvenil de plataforma: veloz, vistoso y más interesado en la química que en la sutileza.",
+	"castCharacters": [
+		{
+			"actor": "Ester Expósito",
+			"character": "Marfil",
+			"tmdbMovieId": 1440098,
+			"tmdbPersonId": 2025252,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugo Diego García",
+			"character": "Sebastian",
+			"tmdbMovieId": 1440098,
+			"tmdbPersonId": 1720509,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pablo Molinero",
+			"character": "Alejandro Cortés",
+			"tmdbMovieId": 1440098,
+			"tmdbPersonId": 1209572,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eric Masip",
+			"character": "Iván",
+			"tmdbMovieId": 1440098,
+			"tmdbPersonId": 2587055,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

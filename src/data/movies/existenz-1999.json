@@ -57,5 +57,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jude Law",
+			"character": "Ted Pikul",
+			"tmdbMovieId": 1946,
+			"tmdbPersonId": 9642,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Jason Leigh",
+			"character": "Allegra Geller",
+			"tmdbMovieId": 1946,
+			"tmdbPersonId": 10431,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian Holm",
+			"character": "Kiri Vinokur",
+			"tmdbMovieId": 1946,
+			"tmdbPersonId": 65,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Gas",
+			"tmdbMovieId": 1946,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

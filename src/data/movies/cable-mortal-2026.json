@@ -19,7 +19,10 @@
 	"screenshots": [],
 	"trailerYoutubeId": "M9tHmu0wNHM",
 	"releasePlatform": "Apple TV",
-	"releasePlatforms": ["Apple TV","Flow"],
+	"releasePlatforms": [
+		"Apple TV",
+		"Flow"
+	],
 	"director": "Howard J. Ford",
 	"mainCast": [
 		"MyAnna Buring",
@@ -52,5 +55,28 @@
 	},
 	"review": "Un cable sobre un vacío enorme ya plantea un problema que se entiende sin demasiadas palabras. Howard J. Ford aprovecha esa claridad física: dónde apoyar el cuerpo, cuánto falta para alcanzar un extremo y qué puede pasar con un movimiento equivocado. MyAnna Buring le da un punto humano a una persecución que necesita de ese miedo concreto para no perderse entre explicaciones.\n\nLa conspiración farmacéutica agrega más ruido que espesor. Cada vez que el argumento vuelve a justificar lo que sus personajes saben o persiguen, se aleja de la situación que mejor funciona. Joseph Millson acompaña un elenco exigido por decisiones poco convincentes, y el suspenso paga ese costo. La altura conserva fuerza porque obliga a imaginar el propio cuerpo ahí arriba; el resto del mecanismo resulta mucho más fácil de mirar desde afuera.",
 	"runtimeMinutes": 88,
-	"isPremiere": true
+	"isPremiere": true,
+	"castCharacters": [
+		{
+			"actor": "MyAnna Buring",
+			"character": "Amy Watson",
+			"tmdbMovieId": 1482547,
+			"tmdbPersonId": 57578,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joseph Millson",
+			"character": "Evan",
+			"tmdbMovieId": 1482547,
+			"tmdbPersonId": 1190069,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Saffron Burrows",
+			"character": "Donaldson",
+			"tmdbMovieId": 1482547,
+			"tmdbPersonId": 9825,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

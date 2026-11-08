@@ -52,5 +52,21 @@
 	"catalogAddedAt": "2026-10-30",
 	"runtimeMinutes": 122,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Laia Costa",
+			"character": "Carla Mencía",
+			"tmdbMovieId": 1571955,
+			"tmdbPersonId": 1425019,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Zahera",
+			"character": "Ernesto",
+			"tmdbMovieId": 1571955,
+			"tmdbPersonId": 28511,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

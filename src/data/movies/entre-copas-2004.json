@@ -63,5 +63,28 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 127
+	"runtimeMinutes": 127,
+	"castCharacters": [
+		{
+			"actor": "Paul Giamatti",
+			"character": "Miles",
+			"tmdbMovieId": 9675,
+			"tmdbPersonId": 13242,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Thomas Haden Church",
+			"character": "Jack",
+			"tmdbMovieId": 9675,
+			"tmdbPersonId": 19159,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Virginia Madsen",
+			"character": "Maya",
+			"tmdbMovieId": 9675,
+			"tmdbPersonId": 12519,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

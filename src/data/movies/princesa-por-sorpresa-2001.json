@@ -13,7 +13,9 @@
 		"Familia",
 		"Coming of age"
 	],
-	"subgenres": ["Coming of Age"],
+	"subgenres": [
+		"Coming of Age"
+	],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2001/princesa-por-sorpresa-2001.webp",
@@ -58,5 +60,28 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 115
+	"runtimeMinutes": 115,
+	"castCharacters": [
+		{
+			"actor": "Anne Hathaway",
+			"character": "Mia Thermopolis",
+			"tmdbMovieId": 9880,
+			"tmdbPersonId": 1813,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Andrews",
+			"character": "Queen Clarisse Renaldi",
+			"tmdbMovieId": 9880,
+			"tmdbPersonId": 5823,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Heather Matarazzo",
+			"character": "Lilly Moscovitz",
+			"tmdbMovieId": 9880,
+			"tmdbPersonId": 33656,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -37,7 +37,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Elia Kazan convierte los muelles en una prisión moral y Marlon Brando hace de Terry un hombre torpe que aprende a hablar cuando el silencio ya no alcanza.",
-			"whatToExpect": "Corrupción sindical, estibadores, extorsión, romance y un testimonio que obliga a elegir entre la lealtad al grupo y la responsabilidad individual.",			"pace": "Avanza con drama contenido y escenas de trabajo, dejando que la decisión se acumule; la violencia aparece como amenaza constante más que como espectáculo.",			"intensity": "La tensión es física, laboral y moral, concentrada en miradas y en el miedo a quedar aislado del muelle y de los propios compañeros.",			"practicalContext": "Con 108 minutos, es una sesión compacta de drama clásico; mirala con atención al cuerpo de Brando y a los espacios que lo aprietan.",			"forFansOf": "Para quienes disfrutan a Brando, dramas de corrupción y actuaciones que vuelven un dilema moral una pelea de cuerpo entero.",			"notForYouIf": "Puede no ser para vos si buscás una película políticamente cómoda, acción constante o un protagonista que sepa desde el inicio qué debe hacer."
+			"whatToExpect": "Corrupción sindical, estibadores, extorsión, romance y un testimonio que obliga a elegir entre la lealtad al grupo y la responsabilidad individual.",
+			"pace": "Avanza con drama contenido y escenas de trabajo, dejando que la decisión se acumule; la violencia aparece como amenaza constante más que como espectáculo.",
+			"intensity": "La tensión es física, laboral y moral, concentrada en miradas y en el miedo a quedar aislado del muelle y de los propios compañeros.",
+			"practicalContext": "Con 108 minutos, es una sesión compacta de drama clásico; mirala con atención al cuerpo de Brando y a los espacios que lo aprietan.",
+			"forFansOf": "Para quienes disfrutan a Brando, dramas de corrupción y actuaciones que vuelven un dilema moral una pelea de cuerpo entero.",
+			"notForYouIf": "Puede no ser para vos si buscás una película políticamente cómoda, acción constante o un protagonista que sepa desde el inicio qué debe hacer."
 		},
 		"becauseYouLiked": [
 			"in-the-heat-of-the-night-1967",
@@ -54,5 +59,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Marlon Brando",
+			"character": "Terry Malloy",
+			"tmdbMovieId": 654,
+			"tmdbPersonId": 3084,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eva Marie Saint",
+			"character": "Edie Doyle",
+			"tmdbMovieId": 654,
+			"tmdbPersonId": 2639,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Karl Malden",
+			"character": "Father Barry",
+			"tmdbMovieId": 654,
+			"tmdbPersonId": 9857,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

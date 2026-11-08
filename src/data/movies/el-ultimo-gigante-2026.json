@@ -40,17 +40,47 @@
 			"forFansOf": "Fans de Oscar Martínez, de los dramas de reencuentro y de las películas donde una conversación pendiente organiza toda la trama.",
 			"notForYouIf": "Buscás sutileza, humor o conflictos que no expliquen su emoción. El último gigante dice bastante de lo que siente."
 		},
-	"becauseYouLiked": [
-		"barreda-2026",
-		"risa-y-la-cabina-del-viento-2025"
-	],
-	"related": [
-		"los-sonambulos-2019",
-		"leonera-2008",
-		"la-nina-santa-2004",
-		"kamchatka-2002"
-	]
-},
+		"becauseYouLiked": [
+			"barreda-2026",
+			"risa-y-la-cabina-del-viento-2025"
+		],
+		"related": [
+			"los-sonambulos-2019",
+			"leonera-2008",
+			"la-nina-santa-2004",
+			"kamchatka-2002"
+		]
+	},
 	"review": "El último gigante juega una carta muy argentina: drama familiar, cuentas viejas y un actor enorme ocupando el centro de la escena. Marcos Carnevale la lleva por un carril bastante clásico, confiando en el peso del reencuentro entre un hijo herido y un padre que vuelve demasiado tarde.\n\nOscar Martínez sostiene lo mejor con una mezcla de carisma y desgaste que vuelve creíble a un tipo difícil de perdonar. Matías Mayer acompaña bien, aunque el guion a veces empuja demasiado la emoción y subraya lo que ya estaba latiendo en silencio. Tiene momentos sinceros; le falta, eso sí, un poco más de sutileza para que el golpe termine de asentarse.",
-	"reviewPublishedAt": "2026-04-17"
+	"reviewPublishedAt": "2026-04-17",
+	"castCharacters": [
+		{
+			"actor": "Oscar Martínez",
+			"character": "Julián",
+			"tmdbMovieId": 1487320,
+			"tmdbPersonId": 1457004,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Inés Estévez",
+			"character": "Leticia",
+			"tmdbMovieId": 1487320,
+			"tmdbPersonId": 932926,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Luque",
+			"character": "Bebe",
+			"tmdbMovieId": 1487320,
+			"tmdbPersonId": 103431,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Silvia Kutika",
+			"character": "Andrea",
+			"tmdbMovieId": 1487320,
+			"tmdbPersonId": 933618,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

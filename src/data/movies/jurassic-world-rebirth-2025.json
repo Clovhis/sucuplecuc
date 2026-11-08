@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-26",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Zora Bennett",
+			"tmdbMovieId": 1234821,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mahershala Ali",
+			"character": "Duncan Kincaid",
+			"tmdbMovieId": 1234821,
+			"tmdbPersonId": 932967,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonathan Bailey",
+			"character": "Dr. Henry Loomis",
+			"tmdbMovieId": 1234821,
+			"tmdbPersonId": 80860,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

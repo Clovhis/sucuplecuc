@@ -52,5 +52,42 @@
 		]
 	},
 	"review": "Otra mujer encierra a una filósofa prestigiosa en un departamento prestado, donde escucha por accidente las sesiones de terapia de una desconocida y empieza a revisar su propia frialdad. Woody Allen baja el volumen de sus chistes y trabaja con silencios, interiores grises y recuerdos que van resquebrajando la imagen de control. Gena Rowlands sostiene cada plano con una dureza que deja ver la culpa debajo, acompañada por un elenco preciso. Es austera y algo programática, pero vale si te interesa un Allen serio, incómodo y sin coartadas simpáticas.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Gena Rowlands",
+			"character": "Marion",
+			"tmdbMovieId": 22478,
+			"tmdbPersonId": 4800,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mia Farrow",
+			"character": "Hope",
+			"tmdbMovieId": 22478,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian Holm",
+			"character": "Ken",
+			"tmdbMovieId": 22478,
+			"tmdbPersonId": 65,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Blythe Danner",
+			"character": "Lydia",
+			"tmdbMovieId": 22478,
+			"tmdbPersonId": 10401,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Hackman",
+			"character": "Larry",
+			"tmdbMovieId": 22478,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

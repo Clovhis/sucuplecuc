@@ -21,15 +21,15 @@
 	"cinepostaScore": 7,
 	"runtimeMinutes": 138,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Master se sostiene en la fricción entre Joaquin Phoenix y Philip Seymour Hoffman; Paul Thomas Anderson deja que el vínculo quede sin explicación cómoda.",
-		"whatToExpect": "Freddie, veterano perdido entre alcohol y violencia, encuentra estructura en Lancaster Dodd y termina atrapado en una dependencia mutua.",
-		"pace": "Avanza por encuentros, viajes y rituales de grupo, con pausas largas que dejan que las miradas hagan el trabajo.",
-		"intensity": "La tensión es psicológica y corporal: Freddie explota, Dodd controla y ninguno de los dos puede admitir cuánto necesita al otro.",
-		"practicalContext": "Con 138 minutos, pide paciencia y atención a los gestos; no ofrece una tesis ordenada sobre la fe ni una trama de ascenso tradicional.",
-		"forFansOf": "Te va a gustar si disfrutás dramas ambiguos, actuaciones físicas y cine de autor que prefiere sugerir una respuesta antes que explicarla.",
-		"notForYouIf": "Quizás no sea para vos si necesitás protagonistas queribles, conflictos resueltos o una narración que marque con claridad quién tiene razón."
-	},
+		"tenSecondTake": {
+			"verdict": "The Master se sostiene en la fricción entre Joaquin Phoenix y Philip Seymour Hoffman; Paul Thomas Anderson deja que el vínculo quede sin explicación cómoda.",
+			"whatToExpect": "Freddie, veterano perdido entre alcohol y violencia, encuentra estructura en Lancaster Dodd y termina atrapado en una dependencia mutua.",
+			"pace": "Avanza por encuentros, viajes y rituales de grupo, con pausas largas que dejan que las miradas hagan el trabajo.",
+			"intensity": "La tensión es psicológica y corporal: Freddie explota, Dodd controla y ninguno de los dos puede admitir cuánto necesita al otro.",
+			"practicalContext": "Con 138 minutos, pide paciencia y atención a los gestos; no ofrece una tesis ordenada sobre la fe ni una trama de ascenso tradicional.",
+			"forFansOf": "Te va a gustar si disfrutás dramas ambiguos, actuaciones físicas y cine de autor que prefiere sugerir una respuesta antes que explicarla.",
+			"notForYouIf": "Quizás no sea para vos si necesitás protagonistas queribles, conflictos resueltos o una narración que marque con claridad quién tiene razón."
+		},
 		"becauseYouLiked": [
 			"pozos-de-ambicion-2007",
 			"punch-drunk-love-2002"
@@ -51,5 +51,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Joaquin Phoenix",
+			"character": "Freddie Quell",
+			"tmdbMovieId": 68722,
+			"tmdbPersonId": 73421,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Philip Seymour Hoffman",
+			"character": "Lancaster Dodd",
+			"tmdbMovieId": 68722,
+			"tmdbPersonId": 1233,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

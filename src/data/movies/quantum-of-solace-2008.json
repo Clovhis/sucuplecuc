@@ -46,5 +46,28 @@
 	"audienceRating": "+12",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Craig",
+			"character": "James Bond",
+			"tmdbMovieId": 10764,
+			"tmdbPersonId": 8784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Olga Kurylenko",
+			"character": "Camille",
+			"tmdbMovieId": 10764,
+			"tmdbPersonId": 18182,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mathieu Amalric",
+			"character": "Dominic Greene",
+			"tmdbMovieId": 10764,
+			"tmdbPersonId": 8789,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

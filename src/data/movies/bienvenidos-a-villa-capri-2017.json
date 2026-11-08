@@ -54,5 +54,42 @@
 		]
 	},
 	"runtimeMinutes": 93,
-	"review": "Bienvenidos a Villa Capri junta a Morgan Freeman y Tommy Lee Jones en un lugar que debería ser una máquina de chistes: un complejo de retiro donde todos ocultan algo. La película tiene un reparto con oficio y un par de escenas en las que la rivalidad entre ambos encuentra ritmo, pero Ron Shelton nunca consigue que el tono decida si quiere ser comedia liviana, policial o despedida crepuscular. Rene Russo queda atrapada en una trama romántica sin demasiado vuelo y el misterio avanza por inercia. Los nombres alcanzan para una sobremesa, no para recomendarla como descubrimiento. No la mires esperando una nueva gran dupla."
+	"review": "Bienvenidos a Villa Capri junta a Morgan Freeman y Tommy Lee Jones en un lugar que debería ser una máquina de chistes: un complejo de retiro donde todos ocultan algo. La película tiene un reparto con oficio y un par de escenas en las que la rivalidad entre ambos encuentra ritmo, pero Ron Shelton nunca consigue que el tono decida si quiere ser comedia liviana, policial o despedida crepuscular. Rene Russo queda atrapada en una trama romántica sin demasiado vuelo y el misterio avanza por inercia. Los nombres alcanzan para una sobremesa, no para recomendarla como descubrimiento. No la mires esperando una nueva gran dupla.",
+	"castCharacters": [
+		{
+			"actor": "Morgan Freeman",
+			"character": "Duke",
+			"tmdbMovieId": 398177,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "Leo",
+			"tmdbMovieId": 398177,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rene Russo",
+			"character": "Suzie",
+			"tmdbMovieId": 398177,
+			"tmdbPersonId": 14343,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Glenne Headly",
+			"character": "Margarite",
+			"tmdbMovieId": 398177,
+			"tmdbPersonId": 21104,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Pantoliano",
+			"character": "Joey",
+			"tmdbMovieId": 398177,
+			"tmdbPersonId": 532,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

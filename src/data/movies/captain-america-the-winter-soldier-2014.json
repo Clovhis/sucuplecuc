@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chris Evans",
+			"character": "Steve Rogers / Captain America",
+			"tmdbMovieId": 100402,
+			"tmdbPersonId": 16828,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Natasha Romanoff / Black Widow",
+			"tmdbMovieId": 100402,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sebastian Stan",
+			"character": "Bucky Barnes / Winter Soldier",
+			"tmdbMovieId": 100402,
+			"tmdbPersonId": 60898,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

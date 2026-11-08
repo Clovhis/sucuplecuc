@@ -56,5 +56,28 @@
 		]
 	},
 	"review": "Enamorarse trabaja con una idea sencilla y la deja respirar: dos adultos descubren que todavía pueden sorprenderse, justo cuando su vida parece organizada para que nada cambie. De Niro y Meryl Streep juegan el romance desde la incomodidad, los silencios y la culpa, sin convertirlo en una fantasía adolescente. La película tiene una pulcritud ochentosa que por momentos la vuelve demasiado prolija, pero encuentra verdad en los encuentros breves y en la dificultad de elegir entre el deseo y las responsabilidades. No busca grandes giros; su apuesta es observar cómo una emoción puede alterar una rutina completa. Es un drama romántico sereno, más interesado en las consecuencias que en la conquista.",
-	"runtimeMinutes": 106
+	"runtimeMinutes": 106,
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Frank Raftis",
+			"tmdbMovieId": 52744,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Molly Gilmore",
+			"tmdbMovieId": 52744,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harvey Keitel",
+			"character": "Ed Lasky",
+			"tmdbMovieId": 52744,
+			"tmdbPersonId": 1037,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

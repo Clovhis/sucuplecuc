@@ -51,5 +51,28 @@
 	},
 	"review": "Una cumbre puede entrar en los libros de récords y, al mismo tiempo, dejar una historia que nadie quiere contar. Amir Bar-Lev trabaja sobre esa distancia: alrededor del K2 conviven la experiencia de quienes conocen la montaña, los clientes que pagan por subir y la urgencia de convertir la aventura en una imagen. Ahí está lo más incómodo del documental, en cómo una misma expedición puede significar trabajo, prestigio o una promesa imposible.\n\nLa presencia de Nirmal Purja y de la familia Sadpara ayuda a poner nombres donde otros relatos pondrían solamente hazañas. Las imágenes de altura impresionan, pero el peso queda en las decisiones y en quién carga con sus consecuencias. La cantidad de voces exige atención; la película gana cuando esa complejidad impide reducir una tragedia a un único villano o a una postal heroica.",
 	"runtimeMinutes": 98,
-	"isPremiere": true
+	"isPremiere": true,
+	"castCharacters": [
+		{
+			"actor": "Nirmal Purja",
+			"character": "Self - Team Leader",
+			"tmdbMovieId": 1596303,
+			"tmdbPersonId": 3324540,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Muhammad Ali Sadpara",
+			"character": "Self - Mountain Guide",
+			"tmdbMovieId": 1596303,
+			"tmdbPersonId": 3872342,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sajid Sadpara",
+			"character": "Self - Mountain Guide",
+			"tmdbMovieId": 1596303,
+			"tmdbPersonId": 5989207,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

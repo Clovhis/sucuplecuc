@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chris Pratt",
+			"character": "Owen Grady",
+			"tmdbMovieId": 507086,
+			"tmdbPersonId": 73457,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bryce Dallas Howard",
+			"character": "Claire Dearing",
+			"tmdbMovieId": 507086,
+			"tmdbPersonId": 18997,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Ellie Sattler",
+			"tmdbMovieId": 507086,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

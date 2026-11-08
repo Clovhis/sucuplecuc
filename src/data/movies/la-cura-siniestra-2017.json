@@ -56,5 +56,28 @@
 	"review": "La cura siniestra tiene una virtud bastante concreta: entiende que un spa perfecto puede ser más amenazante que una casa abandonada. Gore Verbinski llena los pasillos de simetrías, agua turbia y cuerpos que parecen obedecer reglas que nadie se anima a explicar.\\n\\nEl problema es que la película se enamora de su propia decoración y estira una premisa de pesadilla hasta que cada secreto llega con música de revelación. Mia Goth aporta una presencia inquietante en un reparto que trabaja bien el tono de cuento enfermo, pero el exceso de metraje le saca filo a la paranoia. Cuando se deja llevar por la imagen, funciona; cuando empieza a explicar el mecanismo, pierde parte del veneno.",
 	"releasePlatform": "Prime Video",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Mia Goth",
+			"character": "Hannah",
+			"tmdbMovieId": 340837,
+			"tmdbPersonId": 1137824,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dane DeHaan",
+			"character": "Lockhart",
+			"tmdbMovieId": 340837,
+			"tmdbPersonId": 122889,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Isaacs",
+			"character": "Volmer",
+			"tmdbMovieId": 340837,
+			"tmdbPersonId": 11355,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

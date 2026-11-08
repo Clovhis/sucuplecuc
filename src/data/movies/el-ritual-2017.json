@@ -56,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "CA",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Rafe Spall",
+			"character": "Luke",
+			"tmdbMovieId": 433808,
+			"tmdbPersonId": 28847,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Arsher Ali",
+			"character": "Phil",
+			"tmdbMovieId": 433808,
+			"tmdbPersonId": 814200,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

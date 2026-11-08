@@ -54,5 +54,35 @@
 		]
 	},
 	"runtimeMinutes": 116,
-	"review": "Hollywood: Departamento de homicidios quiere ser una buddy movie policial, una sátira del entretenimiento y una postal de Los Ángeles al mismo tiempo. Harrison Ford aporta cansancio y oficio, mientras Josh Hartnett intenta convertir la ingenuidad del compañero en un motor cómico, pero el guion no encuentra el ritmo que necesita para unir esos tonos. Hay escenas simpáticas y una mirada curiosa sobre los trabajos paralelos de los policías, aunque la investigación avanza a los tumbos y la película se llena de desvíos. La pareja tiene química suficiente para una aventura mejor escrita que esta."
+	"review": "Hollywood: Departamento de homicidios quiere ser una buddy movie policial, una sátira del entretenimiento y una postal de Los Ángeles al mismo tiempo. Harrison Ford aporta cansancio y oficio, mientras Josh Hartnett intenta convertir la ingenuidad del compañero en un motor cómico, pero el guion no encuentra el ritmo que necesita para unir esos tonos. Hay escenas simpáticas y una mirada curiosa sobre los trabajos paralelos de los policías, aunque la investigación avanza a los tumbos y la película se llena de desvíos. La pareja tiene química suficiente para una aventura mejor escrita que esta.",
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Sgt. Joe Gavilan",
+			"tmdbMovieId": 11375,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Hartnett",
+			"character": "Det. K.C. Calden",
+			"tmdbMovieId": 11375,
+			"tmdbPersonId": 2299,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lena Olin",
+			"character": "Ruby",
+			"tmdbMovieId": 11375,
+			"tmdbPersonId": 5313,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bruce Greenwood",
+			"character": "Lt. Bennie Macko",
+			"tmdbMovieId": 11375,
+			"tmdbPersonId": 21089,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

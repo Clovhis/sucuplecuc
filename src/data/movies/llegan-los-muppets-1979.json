@@ -51,5 +51,21 @@
 	},
 	"review": "James Frawley entiende que el salto de los Muppets al cine pide ampliar el mundo sin perder el chiste de que los muñecos conviven con personas que aceptan cualquier rareza. Kermit lleva la película con una mezcla de pudor y ambición; cada nuevo compañero suma una manera distinta de mirar el viaje. La música de Paul Williams y la cadena de cameos hacen que el camino parezca una celebración del espectáculo, aunque su núcleo sea más tranquilo: un grupo de artistas que apuesta a que puede hacer feliz a alguien.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 95
+	"runtimeMinutes": 95,
+	"castCharacters": [
+		{
+			"actor": "Jim Henson",
+			"character": "Kermit the Frog / Rowlf / Dr. Teeth / Waldorf / Doc Hopper's Men / Link Hogthrob / Swedish Chef (voice)",
+			"tmdbMovieId": 11176,
+			"tmdbPersonId": 55983,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frank Oz",
+			"character": "Miss Piggy / Fozzie Bear / Animal / Sam the Eagle / Doc Hopper's Men / Marvin Suggs / Swedish Chef (hands) / Motorcycle Guy (voice)",
+			"tmdbMovieId": 11176,
+			"tmdbPersonId": 7908,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

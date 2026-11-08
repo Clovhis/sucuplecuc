@@ -55,5 +55,35 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Susanne Bier recupera a las Owens sin tratar el paso del tiempo como un truco nostálgico: el centro está en dos hermanas que todavía discuten, se cuidan y conocen el precio de guardar secretos. Nicole Kidman y Sandra Bullock sostienen esa química con una soltura encantadora, mientras Joey King le aporta al clan una energía menos domesticada. La película mezcla hechizos, duelo familiar y humor con un pulso cálido; por momentos acumula más subtramas de las que necesita, pero sabe volver a la intimidad que hace que esta familia importe."
+	"review": "Susanne Bier recupera a las Owens sin tratar el paso del tiempo como un truco nostálgico: el centro está en dos hermanas que todavía discuten, se cuidan y conocen el precio de guardar secretos. Nicole Kidman y Sandra Bullock sostienen esa química con una soltura encantadora, mientras Joey King le aporta al clan una energía menos domesticada. La película mezcla hechizos, duelo familiar y humor con un pulso cálido; por momentos acumula más subtramas de las que necesita, pero sabe volver a la intimidad que hace que esta familia importe.",
+	"castCharacters": [
+		{
+			"actor": "Nicole Kidman",
+			"character": "Gillian Owens",
+			"tmdbMovieId": 1302904,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sandra Bullock",
+			"character": "Sally Owens",
+			"tmdbMovieId": 1302904,
+			"tmdbPersonId": 18277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joey King",
+			"character": "Kylie",
+			"tmdbMovieId": 1302904,
+			"tmdbPersonId": 125025,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lee Pace",
+			"character": "Ian Wright",
+			"tmdbMovieId": 1302904,
+			"tmdbPersonId": 72095,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

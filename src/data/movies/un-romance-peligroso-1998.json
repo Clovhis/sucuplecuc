@@ -56,5 +56,35 @@
 		]
 	},
 	"runtimeMinutes": 123,
-	"review": "Steven Soderbergh encuentra un tono seductor donde el policial, el romance y la comedia de robos se pasan la posta sin romper el ritmo. Clooney y Jennifer Lopez juegan a medirse con una química que no necesita subrayados, mientras la narración salta en el tiempo para convertir cada reencuentro en una apuesta nueva. Tiene estilo, diálogos filosos y una liviandad controlada que la mantiene vigente. Es una de esas películas de género que saben ser cancheras sin volverse huecas."
+	"review": "Steven Soderbergh encuentra un tono seductor donde el policial, el romance y la comedia de robos se pasan la posta sin romper el ritmo. Clooney y Jennifer Lopez juegan a medirse con una química que no necesita subrayados, mientras la narración salta en el tiempo para convertir cada reencuentro en una apuesta nueva. Tiene estilo, diálogos filosos y una liviandad controlada que la mantiene vigente. Es una de esas películas de género que saben ser cancheras sin volverse huecas.",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Jack Foley",
+			"tmdbMovieId": 1389,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Lopez",
+			"character": "Karen Sisco",
+			"tmdbMovieId": 1389,
+			"tmdbPersonId": 16866,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ving Rhames",
+			"character": "Buddy Bragg",
+			"tmdbMovieId": 1389,
+			"tmdbPersonId": 10182,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Cheadle",
+			"character": "Maurice 'Snoopy' Miller",
+			"tmdbMovieId": 1389,
+			"tmdbPersonId": 1896,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -34,7 +34,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Woody Allen pone una misma situación entre drama y comedia, y Radha Mitchell sostiene mejor la bifurcación que el mecanismo: la idea es ingeniosa, la ejecución despareja.",
-			"whatToExpect": "Una cena de escritores, dos versiones de Melinda, romances cruzados y Manhattan como escenario para comparar cuánto cambia una vida según el tono.",			"pace": "Alterna los relatos con fluidez variable; el juego formal mantiene curiosidad, aunque algunas transiciones se sienten más mecánicas que dramáticas.",			"intensity": "La carga es emocional y verbal, con tragedias y enredos que compiten por el mismo personaje; los conflictos nunca buscan violencia ni suspenso.",			"practicalContext": "Con 99 minutos, es una película de experimento narrativo para una noche tranquila; funciona mejor si te interesa la comparación más que el romance.",			"forFansOf": "Para quienes disfrutan las comedias de Allen, los relatos paralelos y debates sobre si una vida se vuelve tragedia o chiste al contarla.",			"notForYouIf": "No es para vos si querés que las dos historias tengan igual potencia, personajes menos arquetípicos o una película que no muestre tanto su mecanismo."
+			"whatToExpect": "Una cena de escritores, dos versiones de Melinda, romances cruzados y Manhattan como escenario para comparar cuánto cambia una vida según el tono.",
+			"pace": "Alterna los relatos con fluidez variable; el juego formal mantiene curiosidad, aunque algunas transiciones se sienten más mecánicas que dramáticas.",
+			"intensity": "La carga es emocional y verbal, con tragedias y enredos que compiten por el mismo personaje; los conflictos nunca buscan violencia ni suspenso.",
+			"practicalContext": "Con 99 minutos, es una película de experimento narrativo para una noche tranquila; funciona mejor si te interesa la comparación más que el romance.",
+			"forFansOf": "Para quienes disfrutan las comedias de Allen, los relatos paralelos y debates sobre si una vida se vuelve tragedia o chiste al contarla.",
+			"notForYouIf": "No es para vos si querés que las dos historias tengan igual potencia, personajes menos arquetípicos o una película que no muestre tanto su mecanismo."
 		},
 		"becauseYouLiked": [
 			"crimes-and-misdemeanors-1989",
@@ -48,5 +53,42 @@
 		]
 	},
 	"review": "Melinda and Melinda cuenta una misma situación desde dos versiones, una trágica y otra cómica, para preguntar cuánto cambia una vida según el tono con que se la mira. Woody Allen dirige el experimento con curiosidad, aunque el mecanismo se nota demasiado y las dos historias nunca encuentran el mismo peso; Radha Mitchell conecta mejor con el costado vulnerable, mientras Will Ferrell aporta una energía neurótica que levanta la parte cómica. El ritmo alternado tiene momentos ingeniosos y otros bastante previsibles. Vale por la idea y por algunos diálogos, no porque resuelva por completo su propio juego formal.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Chiwetel Ejiofor",
+			"character": "Ellis Moonsong",
+			"tmdbMovieId": 9688,
+			"tmdbPersonId": 5294,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Will Ferrell",
+			"character": "Hobie",
+			"tmdbMovieId": 9688,
+			"tmdbPersonId": 23659,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonny Lee Miller",
+			"character": "Lee",
+			"tmdbMovieId": 9688,
+			"tmdbPersonId": 9012,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Radha Mitchell",
+			"character": "Melinda Robicheaux",
+			"tmdbMovieId": 9688,
+			"tmdbPersonId": 8329,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amanda Peet",
+			"character": "Susan",
+			"tmdbMovieId": 9688,
+			"tmdbPersonId": 2956,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

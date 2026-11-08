@@ -38,18 +38,41 @@
 			"notForYouIf": "Quizás no sea para vos si necesitás villanos con presencia, coreografías distintivas o una heroína que cambie realmente durante la misión."
 		},
 		"becauseYouLiked": [
-		"fast-and-furious-6-2013",
-		"fast-five-2011"
-	],
-	"related": [
-		"apex-2026",
-		"mayday-2026",
-		"rio-de-sangre-2026",
-		"machete-2010"
-	]
-},
+			"fast-and-furious-6-2013",
+			"fast-five-2011"
+		],
+		"related": [
+			"apex-2026",
+			"mayday-2026",
+			"rio-de-sangre-2026",
+			"machete-2010"
+		]
+	},
 	"synopsis": "Nikki, una exsoldado que dejó atrás su vida violenta para criar a su hija Chloe, se ve obligada a volver a pelear cuando el peligro le cae encima otra vez.",
 	"audienceRating": "+16",
 	"review": "Protector quiere jugar la carta de la heroína curtida que vuelve a la violencia por una causa íntima, pero casi nunca encuentra una forma propia de hacerlo. Adrian Grunberg filma todo con oficio básico, aunque la película avanza como si estuviera armada con piezas prestadas de otras de venganza y rescate.\n\nMilla Jovovich le pone oficio y cara de cansancio, pero no alcanza para tapar diálogos duros, villanos poco memorables y escenas de acción sin demasiada identidad. Matthew Modine suma presencia, aunque el material no le da mucho para hacer.\n\nVive de una premisa conocida y no la levanta en ningún momento. Solo puede servirte si estás muy corto de opciones y te alcanza con una de tiros en piloto automático.",
-	"reviewPublishedAt": "2026-03-12"
+	"reviewPublishedAt": "2026-03-12",
+	"castCharacters": [
+		{
+			"actor": "Milla Jovovich",
+			"character": "Nikki Halstead",
+			"tmdbMovieId": 1383731,
+			"tmdbPersonId": 63,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matthew Modine",
+			"character": "Colonel Joseph Lavelle",
+			"tmdbMovieId": 1383731,
+			"tmdbPersonId": 8654,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "D. B. Sweeney",
+			"character": "Captain Michaels",
+			"tmdbMovieId": 1383731,
+			"tmdbPersonId": 61962,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

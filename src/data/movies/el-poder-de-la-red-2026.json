@@ -52,5 +52,28 @@
 		]
 	},
 	"review": "Aaron Sorkin vuelve al mundo de Facebook desde el lugar de quienes intentan abrirle una grieta. El poder de la red gana cuando convierte los documentos y las conversaciones entre Frances Haugen y Jeff Horwitz en una negociación sobre cuánto arriesgar y a quién creerle. Mikey Madison y Jeremy Allen White le dan dudas concretas a una historia que podría quedar aplastada por su importancia pública; Jeremy Strong aporta una frialdad empresarial bastante incómoda. El problema aparece cuando el guion explica su denuncia con una insistencia que les quita aire a esas contradicciones. La investigación sostiene el interés, aunque la película confía demasiado en que una frase certera alcance para iluminar una maquinaria tan grande.",
-	"runtimeMinutes": 112
+	"runtimeMinutes": 112,
+	"castCharacters": [
+		{
+			"actor": "Mikey Madison",
+			"character": "Frances Haugen",
+			"tmdbMovieId": 1281331,
+			"tmdbPersonId": 1640439,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeremy Allen White",
+			"character": "Jeff Horwitz",
+			"tmdbMovieId": 1281331,
+			"tmdbPersonId": 206905,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeremy Strong",
+			"character": "Mark Zuckerberg",
+			"tmdbMovieId": 1281331,
+			"tmdbPersonId": 239271,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

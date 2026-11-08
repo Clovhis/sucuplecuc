@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Natasha Romanoff / Black Widow",
+			"tmdbMovieId": 497698,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Florence Pugh",
+			"character": "Yelena Belova",
+			"tmdbMovieId": 497698,
+			"tmdbPersonId": 1373737,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Harbour",
+			"character": "Alexei",
+			"tmdbMovieId": 497698,
+			"tmdbPersonId": 35029,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -67,5 +67,42 @@
 			"el-agente-secreto-2025"
 		]
 	},
-	"review": "Oliver Stone convierte una investigación judicial en una película de paranoia expansiva, llena de documentos, cortes bruscos y versiones que se pisan entre sí. Kevin Costner sostiene el centro con una obstinación contenida, mientras el elenco alrededor suyo vuelve tangible la confusión de Garrison. El montaje puede resultar avasallante y la película no siempre distingue hipótesis de certeza, pero esa incomodidad forma parte de su impulso. Es un thriller político ambicioso, discutible y todavía magnético."
+	"review": "Oliver Stone convierte una investigación judicial en una película de paranoia expansiva, llena de documentos, cortes bruscos y versiones que se pisan entre sí. Kevin Costner sostiene el centro con una obstinación contenida, mientras el elenco alrededor suyo vuelve tangible la confusión de Garrison. El montaje puede resultar avasallante y la película no siempre distingue hipótesis de certeza, pero esa incomodidad forma parte de su impulso. Es un thriller político ambicioso, discutible y todavía magnético.",
+	"castCharacters": [
+		{
+			"actor": "Kevin Costner",
+			"character": "Jim Garrison",
+			"tmdbMovieId": 820,
+			"tmdbPersonId": 1269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "Clay Shaw",
+			"tmdbMovieId": 820,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Oldman",
+			"character": "Lee Harvey Oswald",
+			"tmdbMovieId": 820,
+			"tmdbPersonId": 64,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Bacon",
+			"character": "Willie O'Keefe",
+			"tmdbMovieId": 820,
+			"tmdbPersonId": 4724,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Pesci",
+			"character": "David Ferrie",
+			"tmdbMovieId": 820,
+			"tmdbPersonId": 4517,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

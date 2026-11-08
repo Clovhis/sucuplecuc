@@ -56,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
 	"country": "BE",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Siiri Solalinna",
+			"character": "Tinja",
+			"tmdbMovieId": 517302,
+			"tmdbPersonId": 2335631,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sophia Heikkilä",
+			"character": "Mother",
+			"tmdbMovieId": 517302,
+			"tmdbPersonId": 2294255,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -39,19 +39,42 @@
 			"forFansOf": "Puede interesarte si disfrutás mundos de fantasía con dragones, viajes de herederos y animación japonesa de tono sombrío, incluso cuando la adaptación no termina de desarrollar todo lo que propone.",
 			"notForYouIf": "Quizás no sea para vos si necesitás una aventura compacta, protagonistas muy expresivos o reglas de universo fáciles de seguir. Su belleza visual no siempre ordena la sobrecarga narrativa."
 		},
-	"becauseYouLiked": [
-		"howls-moving-castle-2004",
-		"spirited-away-2001"
-	],
-	"related": [
-		"princess-mononoke-1997",
-		"castle-in-the-sky-1986",
-		"nausicaa-of-the-valley-of-the-wind-1984",
-		"suzume-2022"
-	]
-},
+		"becauseYouLiked": [
+			"howls-moving-castle-2004",
+			"spirited-away-2001"
+		],
+		"related": [
+			"princess-mononoke-1997",
+			"castle-in-the-sky-1986",
+			"nausicaa-of-the-valley-of-the-wind-1984",
+			"suzume-2022"
+		]
+	},
 	"review": "Tales from Earthsea lleva a un príncipe que huyó de su reino a cruzarse con un mago mientras una oscuridad altera el equilibrio del mundo. Gorō Miyazaki arma paisajes y criaturas con una belleza indudable, y hay escenas que transmiten bien la melancolía de la fantasía; el problema es que la adaptación acumula conceptos, personajes y conflictos sin darles el tiempo necesario. El ritmo avanza trabado y el protagonista queda demasiado opaco para sostener la aventura. Se puede ver por su diseño y por algunos momentos de atmósfera, pero no alcanza la profundidad emocional de las mejores películas del estudio.",
 	"synopsis": "Algo extraño y tenebroso se cierne sobre el reino de Terramar. Lo último es la visita de dragones provenientes de tierras lejanas, lo que produce un gran riesgo ya que el mundo de los dragones y el de los humanos no debe tocarse.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Bunta Sugawara",
+			"character": "Haitaka (voice)",
+			"tmdbMovieId": 37933,
+			"tmdbPersonId": 119243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Junichi Okada",
+			"character": "Arren (voice)",
+			"tmdbMovieId": 37933,
+			"tmdbPersonId": 119241,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aoi Teshima",
+			"character": "Theru (voice)",
+			"tmdbMovieId": 37933,
+			"tmdbPersonId": 119242,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

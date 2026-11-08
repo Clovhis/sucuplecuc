@@ -55,5 +55,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Brandon Lee",
+			"character": "Eric",
+			"tmdbMovieId": 9495,
+			"tmdbPersonId": 57700,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rochelle Davis",
+			"character": "Sarah",
+			"tmdbMovieId": 9495,
+			"tmdbPersonId": 57701,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ernie Hudson",
+			"character": "Albrecht",
+			"tmdbMovieId": 9495,
+			"tmdbPersonId": 8874,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Wincott",
+			"character": "Top Dollar",
+			"tmdbMovieId": 9495,
+			"tmdbPersonId": 7486,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

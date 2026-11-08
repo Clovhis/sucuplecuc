@@ -53,5 +53,42 @@
 			"fast-and-furious-6-2013"
 		]
 	},
-	"review": "Pierre Morel arma un thriller de acción internacional que funciona mejor cuando deja que el cuerpo de Sean Penn cuente la historia. El actor aparece como un especialista veterano, agotado y todavía peligroso, en una trama de conspiraciones, traiciones y empresas opacas. Javier Bardem encuentra un villano extravagante y Mark Rylance aporta gravedad, pero el guion acumula giros previsibles. Las escenas físicas tienen buen pulso y la película ofrece un entretenimiento sólido, aunque difícilmente deja una impresión duradera."
+	"review": "Pierre Morel arma un thriller de acción internacional que funciona mejor cuando deja que el cuerpo de Sean Penn cuente la historia. El actor aparece como un especialista veterano, agotado y todavía peligroso, en una trama de conspiraciones, traiciones y empresas opacas. Javier Bardem encuentra un villano extravagante y Mark Rylance aporta gravedad, pero el guion acumula giros previsibles. Las escenas físicas tienen buen pulso y la película ofrece un entretenimiento sólido, aunque difícilmente deja una impresión duradera.",
+	"castCharacters": [
+		{
+			"actor": "Sean Penn",
+			"character": "Jim Terrier",
+			"tmdbMovieId": 266396,
+			"tmdbPersonId": 2228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Javier Bardem",
+			"character": "Felix Marti",
+			"tmdbMovieId": 266396,
+			"tmdbPersonId": 3810,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Idris Elba",
+			"character": "Barnes",
+			"tmdbMovieId": 266396,
+			"tmdbPersonId": 17605,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ray Winstone",
+			"character": "Stanley  Edgerton",
+			"tmdbMovieId": 266396,
+			"tmdbPersonId": 5538,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Rylance",
+			"character": "Terrance Cox",
+			"tmdbMovieId": 266396,
+			"tmdbPersonId": 40900,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

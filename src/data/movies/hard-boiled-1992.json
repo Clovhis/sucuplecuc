@@ -45,17 +45,54 @@
 			"notForYouIf": "No es para vos si buscás realismo táctico, violencia discreta o un thriller de investigación pausado."
 		},
 		"becauseYouLiked": [
-		"armas-invencibles-police-story-1985",
-		"the-fast-and-the-furious-2001"
-	],
-	"related": [
-		"ong-bak-el-guerrero-muay-thai-2003",
-		"jungla-de-cristal-1988",
-		"fast-five-2011",
-		"kill-bill-vol-1-2003"
-	]
-},
+			"armas-invencibles-police-story-1985",
+			"the-fast-and-the-furious-2001"
+		],
+		"related": [
+			"ong-bak-el-guerrero-muay-thai-2003",
+			"jungla-de-cristal-1988",
+			"fast-five-2011",
+			"kill-bill-vol-1-2003"
+		]
+	},
 	"review": "John Woo lleva el policial de Hong Kong hacia una ópera de balas, camaradería y sacrificio. Los planos largos, las armas dobles y los desplazamientos por hospitales y depósitos hacen de la acción una coreografía legible. Chow Yun-fat y Tony Leung Chiu-wai sostienen el corazón emocional de un espectáculo que nunca pide perdón por su exceso. La espectacularidad de los tiroteos no desplaza el vínculo entre los dos policías, que termina siendo el centro del sacrificio.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Chow Yun-Fat",
+			"character": "Insp. 'Tequila' Yuen",
+			"tmdbMovieId": 11782,
+			"tmdbPersonId": 1619,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Leung Chiu-wai",
+			"character": "Alan",
+			"tmdbMovieId": 11782,
+			"tmdbPersonId": 1337,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Wong Chau-Sang",
+			"character": "Johnny Wong",
+			"tmdbMovieId": 11782,
+			"tmdbPersonId": 66717,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Teresa Mo Shun-Kwan",
+			"character": "Teresa Chang",
+			"tmdbMovieId": 11782,
+			"tmdbPersonId": 70590,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Philip Chan Yan-Kin",
+			"character": "Supt. Pang",
+			"tmdbMovieId": 11782,
+			"tmdbPersonId": 70591,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -45,18 +45,55 @@
 			"forFansOf": "Fans de Jean-Pierre Melville, del cine negro europeo y de los personajes que parecen sobrevivir gracias a un código que nadie más entiende.",
 			"notForYouIf": "Buscás diálogos constantes, persecuciones o una psicología explicada. El silencio de un hombre prefiere el gesto, el vacío y la precisión."
 		},
-	"becauseYouLiked": [
-		"cassandra-s-dream-2007",
-		"acusados-1988"
-	],
-	"related": [
-		"un-dia-de-furia-1993",
-		"el-cliente-1994",
-		"la-negociacion-2025",
-		"barreda-2026"
-	]
-},
+		"becauseYouLiked": [
+			"cassandra-s-dream-2007",
+			"acusados-1988"
+		],
+		"related": [
+			"un-dia-de-furia-1993",
+			"el-cliente-1994",
+			"la-negociacion-2025",
+			"barreda-2026"
+		]
+	},
 	"review": "Jean-Pierre Melville reduce el policial a gestos, rituales y espacios vacíos hasta convertir la soledad en una coreografía. La paleta fría, el departamento desnudo y los desplazamientos calculados construyen una elegancia que nunca necesita explicar demasiado. Alain Delon trabaja con el mínimo gesto y vuelve al personaje una silueta atrapada por sus propias reglas. La disciplina de Jef Costello protege su trabajo, pero también lo deja sin un vínculo que no esté regido por reglas.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Alain Delon",
+			"character": "Jef Costello",
+			"tmdbMovieId": 5511,
+			"tmdbPersonId": 15135,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "François Périer",
+			"character": "Superintendant",
+			"tmdbMovieId": 5511,
+			"tmdbPersonId": 27440,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nathalie Delon",
+			"character": "Jane Lagrange",
+			"tmdbMovieId": 5511,
+			"tmdbPersonId": 43814,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cathy Rosier",
+			"character": "Valérie",
+			"tmdbMovieId": 5511,
+			"tmdbPersonId": 43815,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michel Boisrond",
+			"character": "Wiener",
+			"tmdbMovieId": 5511,
+			"tmdbPersonId": 35216,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

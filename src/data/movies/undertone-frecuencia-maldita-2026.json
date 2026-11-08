@@ -58,5 +58,35 @@
 	"premiereLabel": "",
 	"reviewPublishedAt": "2026-07-18",
 	"country": "CA, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Nina Kiri",
+			"character": "Evy",
+			"tmdbMovieId": 1480387,
+			"tmdbPersonId": 1603514,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adam DiMarco",
+			"character": "Justin (voice)",
+			"tmdbMovieId": 1480387,
+			"tmdbPersonId": 936932,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keana Bastidas",
+			"character": "Jessa (voice)",
+			"tmdbMovieId": 1480387,
+			"tmdbPersonId": 2137834,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michèle Duquet",
+			"character": "Mama",
+			"tmdbMovieId": 1480387,
+			"tmdbPersonId": 1239352,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

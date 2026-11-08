@@ -33,15 +33,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Ridiculous 6 dispara chistes sin revisar demasiado el blanco; Frank Coraci deja a Adam Sandler atrapado en un western que confunde exceso con idea.",
-		"whatToExpect": "Un forajido criado por indígenas reúne a sus cinco medio hermanos para rescatar al padre y cruzar un Oeste lleno de traiciones.",
-		"pace": "Acumula sketches, paisajes y desvíos durante mucho tiempo, sin encontrar una escalada que justifique el viaje de la banda.",
-		"intensity": "La violencia funciona como remate y el tono se vuelve ruidoso; la película busca provocar antes que construir peligro o emoción.",
-		"practicalContext": "Dura 119 minutos y se hace larga para una parodia que podría haber sido mucho más breve; requiere tolerancia a chistes insistentes.",
-		"forFansOf": "Te puede interesar si disfrutás comedias de elenco grande, westerns deformados y el humor de Adam Sandler en modo más bruto.",
-		"notForYouIf": "No es para vos si esperás sátira cuidadosa, personajes con desarrollo o una aventura que sepa cuándo dejar de insistir."
-	},
+		"tenSecondTake": {
+			"verdict": "The Ridiculous 6 dispara chistes sin revisar demasiado el blanco; Frank Coraci deja a Adam Sandler atrapado en un western que confunde exceso con idea.",
+			"whatToExpect": "Un forajido criado por indígenas reúne a sus cinco medio hermanos para rescatar al padre y cruzar un Oeste lleno de traiciones.",
+			"pace": "Acumula sketches, paisajes y desvíos durante mucho tiempo, sin encontrar una escalada que justifique el viaje de la banda.",
+			"intensity": "La violencia funciona como remate y el tono se vuelve ruidoso; la película busca provocar antes que construir peligro o emoción.",
+			"practicalContext": "Dura 119 minutos y se hace larga para una parodia que podría haber sido mucho más breve; requiere tolerancia a chistes insistentes.",
+			"forFansOf": "Te puede interesar si disfrutás comedias de elenco grande, westerns deformados y el humor de Adam Sandler en modo más bruto.",
+			"notForYouIf": "No es para vos si esperás sátira cuidadosa, personajes con desarrollo o una aventura que sepa cuándo dejar de insistir."
+		},
 		"becauseYouLiked": [
 			"the-wedding-singer-1998",
 			"maverick-1994"
@@ -56,5 +56,42 @@
 	"review": "The Ridiculous 6 quiere ser una parodia western de elenco grande y queda atrapada entre el sketch, la violencia gratuita y una colección de chistes que no revisa sus propios blancos. Sandler y Terry Crews tienen momentos de juego físico, pero el relato se estira mucho más allá de su idea inicial. La escala de Netflix permite paisajes y extras, no una mejor escritura. La película confunde irreverencia con licencia para no pensar el remate.",
 	"runtimeMinutes": 119,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Tommy",
+			"tmdbMovieId": 347969,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terry Crews",
+			"character": "Chico",
+			"tmdbMovieId": 347969,
+			"tmdbPersonId": 53256,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jorge Garcia",
+			"character": "Herm",
+			"tmdbMovieId": 347969,
+			"tmdbPersonId": 1215525,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Taylor Lautner",
+			"character": "Lil Pete",
+			"tmdbMovieId": 347969,
+			"tmdbPersonId": 84214,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rob Schneider",
+			"character": "Ramon",
+			"tmdbMovieId": 347969,
+			"tmdbPersonId": 60949,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

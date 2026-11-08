@@ -54,5 +54,21 @@
 	},
 	"review": "La inmersión apuesta todo a una situación física sencilla y la exprime con paciencia: dos hermanas, una pared de roca y un reloj de oxígeno que avanza sin negociar. Louisa Krause y Sophie Lowe le dan una tensión reconocible a una relación marcada por la competencia y la culpa, aunque el guion a veces explica lo que el encierro ya había contado mejor. Maximilian Erlenwein aprovecha el azul oscuro, la respiración y los ruidos del equipo para construir claustrofobia bajo el agua.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Louisa Krause",
+			"character": "May",
+			"tmdbMovieId": 1109534,
+			"tmdbPersonId": 131871,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sophie Lowe",
+			"character": "Drew",
+			"tmdbMovieId": 1109534,
+			"tmdbPersonId": 103994,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

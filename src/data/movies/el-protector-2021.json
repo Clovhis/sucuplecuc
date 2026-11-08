@@ -60,5 +60,42 @@
 	},
 	"review": "El protector quiere mezclar western fronterizo, drama de duelo y thriller de ruta, pero ninguno de esos registros llega a tener demasiado desarrollo. Liam Neeson pone oficio y cansancio en Jim Hanson, aunque el guion le da frases y decisiones que parecen recicladas de varias películas anteriores. Teresa Ruiz y Juan Pablo Raba logran que el conflicto tenga algo de tensión cuando comparten escena, pero los personajes quedan dibujados con poca profundidad. La ruta y los paisajes están bien aprovechados; el problema es que la acción nunca encuentra una idea propia para salir del piloto automático.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Jim",
+			"tmdbMovieId": 634528,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katheryn Winnick",
+			"character": "Sarah",
+			"tmdbMovieId": 634528,
+			"tmdbPersonId": 26723,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Teresa Ruiz",
+			"character": "Rosa",
+			"tmdbMovieId": 634528,
+			"tmdbPersonId": 589722,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juan Pablo Raba",
+			"character": "Maurico",
+			"tmdbMovieId": 634528,
+			"tmdbPersonId": 937009,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dylan Kenin",
+			"character": "Randall",
+			"tmdbMovieId": 634528,
+			"tmdbPersonId": 85419,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

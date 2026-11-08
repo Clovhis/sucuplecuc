@@ -50,18 +50,48 @@
 			"forFansOf": "Si te gustan comedias dramáticas adultas, romances contradictorios y Renate Reinsve sosteniendo una vida en movimiento.",
 			"notForYouIf": "No es para vos si buscás decisiones ejemplares, una historia romántica ordenada o una moraleja generacional."
 		},
-	"becauseYouLiked": [
-		"buena-suerte-leo-grande-2022",
-		"gloria-bell-2019"
-	],
-	"related": [
-		"poor-things-2023",
-		"suenos-de-oslo-2024",
-		"juno-embarazada-por-accidente-2007",
-		"valor-sentimental-2025"
-	]
-},
+		"becauseYouLiked": [
+			"buena-suerte-leo-grande-2022",
+			"gloria-bell-2019"
+		],
+		"related": [
+			"poor-things-2023",
+			"suenos-de-oslo-2024",
+			"juno-embarazada-por-accidente-2007",
+			"valor-sentimental-2025"
+		]
+	},
 	"review": "Joachim Trier retrata la indecisión adulta sin castigar a su protagonista por no tener una vida ordenada. Los capítulos, las interrupciones fantásticas y los cambios de ritmo traducen la ansiedad de querer vivir varias vidas. Renate Reinsve encuentra humor, egoísmo y sensibilidad en Julie, una persona contradictoria antes que una etiqueta generacional. Julie cambia de idea y de rumbo sin que la película la reduzca a capricho; crecer también puede ser admitir la contradicción.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Renate Reinsve",
+			"character": "Julie",
+			"tmdbMovieId": 660120,
+			"tmdbPersonId": 1576786,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anders Danielsen Lie",
+			"character": "Aksel",
+			"tmdbMovieId": 660120,
+			"tmdbPersonId": 71610,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Herbert Nordrum",
+			"character": "Eivind",
+			"tmdbMovieId": 660120,
+			"tmdbPersonId": 1083266,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hans Olav Brenner",
+			"character": "Ole Magnus",
+			"tmdbMovieId": 660120,
+			"tmdbPersonId": 574243,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -61,5 +61,42 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Flow"
+	],
+	"castCharacters": [
+		{
+			"actor": "Emily Blunt",
+			"character": "Margaret Fairchild",
+			"tmdbMovieId": 1275779,
+			"tmdbPersonId": 5081,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh O'Connor",
+			"character": "Dr. Daniel Kellner",
+			"tmdbMovieId": 1275779,
+			"tmdbPersonId": 1206334,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Colin Firth",
+			"character": "Noah Scanlon",
+			"tmdbMovieId": 1275779,
+			"tmdbPersonId": 5472,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eve Hewson",
+			"character": "Jane Blakenship",
+			"tmdbMovieId": 1275779,
+			"tmdbPersonId": 933271,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Colman Domingo",
+			"character": "Hugo Wakefield",
+			"tmdbMovieId": 1275779,
+			"tmdbPersonId": 91671,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

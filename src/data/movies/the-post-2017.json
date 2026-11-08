@@ -34,15 +34,15 @@
 	},
 	"runtimeMinutes": 116,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Los archivos del Pentágono convierte papeles y teléfonos en tensión real; Steven Spielberg confía en Meryl Streep y Tom Hanks para cargar la decisión.",
-		"whatToExpect": "Katharine Graham y Ben Bradlee deben decidir si The Washington Post publica documentos de Vietnam mientras el gobierno amenaza al diario.",
-		"pace": "Avanza con reuniones, imprentas y llamadas urgentes, acelerando el trabajo periodístico hasta que una decisión editorial se vuelve riesgo personal.",
-		"intensity": "La presión viene de perder el periódico, la libertad o la confianza interna; no hay tiros, pero cada página puede detonar una crisis.",
-		"practicalContext": "Con 116 minutos, ofrece un drama histórico directo y accesible; ayuda entrar con ganas de seguir conversaciones y no de esperar acción física.",
-		"forFansOf": "Te va a gustar si disfrutás periodismo, dilemas institucionales y cine clásico de Steven Spielberg con actuaciones al frente.",
-		"notForYouIf": "Quizás no sea para vos si preferís ambigüedad política, ritmo de thriller criminal o una historia de prensa menos didáctica."
-	},
+		"tenSecondTake": {
+			"verdict": "Los archivos del Pentágono convierte papeles y teléfonos en tensión real; Steven Spielberg confía en Meryl Streep y Tom Hanks para cargar la decisión.",
+			"whatToExpect": "Katharine Graham y Ben Bradlee deben decidir si The Washington Post publica documentos de Vietnam mientras el gobierno amenaza al diario.",
+			"pace": "Avanza con reuniones, imprentas y llamadas urgentes, acelerando el trabajo periodístico hasta que una decisión editorial se vuelve riesgo personal.",
+			"intensity": "La presión viene de perder el periódico, la libertad o la confianza interna; no hay tiros, pero cada página puede detonar una crisis.",
+			"practicalContext": "Con 116 minutos, ofrece un drama histórico directo y accesible; ayuda entrar con ganas de seguir conversaciones y no de esperar acción física.",
+			"forFansOf": "Te va a gustar si disfrutás periodismo, dilemas institucionales y cine clásico de Steven Spielberg con actuaciones al frente.",
+			"notForYouIf": "Quizás no sea para vos si preferís ambigüedad política, ritmo de thriller criminal o una historia de prensa menos didáctica."
+		},
 		"becauseYouLiked": [
 			"bridge-of-spies-2015",
 			"lincoln-2012"
@@ -55,5 +55,42 @@
 		]
 	},
 	"review": "Steven Spielberg sigue a Katharine Graham y Ben Bradlee cuando The Washington Post debe decidir si publica documentos secretos sobre Vietnam, y vuelve urgente una historia de teléfonos y papeles. Meryl Streep encuentra la inseguridad y la decisión de Graham sin volverla una santa, mientras Tom Hanks le da a Bradlee el empuje profesional necesario. La dirección acelera las discusiones de oficina con una claridad clásica y un ritmo que no necesita inventar persecuciones. A veces subraya demasiado la relevancia democrática de lo que cuenta, pero el conflicto está muy bien armado. Vale por sus actuaciones y por mostrar el costo de publicar.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Meryl Streep",
+			"character": "Kay Graham",
+			"tmdbMovieId": 446354,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Hanks",
+			"character": "Ben Bradlee",
+			"tmdbMovieId": 446354,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sarah Paulson",
+			"character": "Tony Bradlee",
+			"tmdbMovieId": 446354,
+			"tmdbPersonId": 34490,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bob Odenkirk",
+			"character": "Ben Bagdikian",
+			"tmdbMovieId": 446354,
+			"tmdbPersonId": 59410,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tracy Letts",
+			"character": "Fritz Beebe",
+			"tmdbMovieId": 446354,
+			"tmdbPersonId": 72638,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -31,7 +31,7 @@
 			"forFansOf": "Te puede servir si te divierten los Looney Tunes, los partidos fantásticos y las aventuras de familia que atraviesan mundos digitales llenos de cameos y criaturas conocidas.",
 			"notForYouIf": "Quizás no sea para vos si te agota la referencia constante, buscás una comedia con chistes para adultos o querés que el vínculo entre LeBron y su hijo tenga más espacio que el catálogo."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"encanto-2021",
 			"los-mitchell-contra-las-maquinas-2021"
 		],
@@ -46,5 +46,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "LeBron James",
+			"character": "LeBron James",
+			"tmdbMovieId": 379686,
+			"tmdbPersonId": 107379,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Cheadle",
+			"character": "Al G. Rhythm",
+			"tmdbMovieId": 379686,
+			"tmdbPersonId": 1896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cedric Joe",
+			"character": "Dominic 'Dom' James",
+			"tmdbMovieId": 379686,
+			"tmdbPersonId": 2998402,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -58,5 +58,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Morgan Freeman",
+			"character": "Hoke Colburn",
+			"tmdbMovieId": 403,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Tandy",
+			"character": "Daisy Werthan",
+			"tmdbMovieId": 403,
+			"tmdbPersonId": 5698,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dan Aykroyd",
+			"character": "Boolie Werthan",
+			"tmdbMovieId": 403,
+			"tmdbPersonId": 707,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

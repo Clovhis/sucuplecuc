@@ -40,18 +40,41 @@
 			"forFansOf": "Si te interesa cine argentino de atmósfera, familias fracturadas y una puesta que escucha tanto como mira.",
 			"notForYouIf": "No es para vos si necesitás una historia explicada, personajes simpáticos o un ritmo de acontecimientos visibles."
 		},
-	"becauseYouLiked": [
-		"la-nina-santa-2004",
-		"kamchatka-2002"
-	],
-	"related": [
-		"zama-2017",
-		"barreda-2026",
-		"risa-y-la-cabina-del-viento-2025",
-		"el-hijo-de-la-novia-2001"
-	]
-},
+		"becauseYouLiked": [
+			"la-nina-santa-2004",
+			"kamchatka-2002"
+		],
+		"related": [
+			"zama-2017",
+			"barreda-2026",
+			"risa-y-la-cabina-del-viento-2025",
+			"el-hijo-de-la-novia-2001"
+		]
+	},
 	"synopsis": "Para escapar del calor, Mecha, una mujer de mediana edad, pasa los veranos en su decadente finca rural, La Mandrágora, con su marido, Gregorio, y sus hijos. Junto a una piscina, Mecha y Gregorio toman el sol y beben vino.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Mercedes Morán",
+			"character": "Tali",
+			"tmdbMovieId": 58429,
+			"tmdbPersonId": 18499,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Graciela Borges",
+			"character": "Mecha",
+			"tmdbMovieId": 58429,
+			"tmdbPersonId": 590943,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martín Adjemián",
+			"character": "Gregorio",
+			"tmdbMovieId": 58429,
+			"tmdbPersonId": 122696,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

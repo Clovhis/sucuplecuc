@@ -47,5 +47,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Lea Thompson",
+			"character": "Beverly Switzler",
+			"tmdbMovieId": 10658,
+			"tmdbPersonId": 1063,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeffrey Jones",
+			"character": "Dr. Walter Jenning",
+			"tmdbMovieId": 10658,
+			"tmdbPersonId": 4004,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Robbins",
+			"character": "Phil Blumburtt",
+			"tmdbMovieId": 10658,
+			"tmdbPersonId": 504,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

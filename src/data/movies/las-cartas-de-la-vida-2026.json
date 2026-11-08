@@ -52,5 +52,28 @@
 		]
 	},
 	"review": "Tyler Perry encuentra una forma sencilla de acercar dos espacios que no pueden compartir una escena: las cartas. La voz de Anika y la de Carousel construyen una intimidad que necesita tiempo, y el intercambio permite escuchar a personajes acostumbrados a que otros decidan por ellos. Naomi Baker y Jay Reeves sostienen ese comienzo mejor que los momentos donde el guion explica qué debemos sentir. El relato acumula obstáculos y subraya sus ideas de redención, a veces demasiado. Cuando vuelve a lo cotidiano de escribir y esperar una respuesta, el drama recupera una cercanía más convincente.",
-	"runtimeMinutes": 112
+	"runtimeMinutes": 112,
+	"castCharacters": [
+		{
+			"actor": "Jay Reeves",
+			"character": "Carousel",
+			"tmdbMovieId": 1458857,
+			"tmdbPersonId": 2101957,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tamberla Perry",
+			"character": "Cathy",
+			"tmdbMovieId": 1458857,
+			"tmdbPersonId": 1652527,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Karen Obilom",
+			"character": "Trina",
+			"tmdbMovieId": 1458857,
+			"tmdbPersonId": 1848253,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

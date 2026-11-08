@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "John Travolta",
+			"character": "Jack Terry",
+			"tmdbMovieId": 11644,
+			"tmdbPersonId": 8891,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nancy Allen",
+			"character": "Sally Badina",
+			"tmdbMovieId": 11644,
+			"tmdbPersonId": 44038,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

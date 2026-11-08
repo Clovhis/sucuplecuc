@@ -54,5 +54,49 @@
 	},
 	"runtimeMinutes": 115,
 	"review": "Charlie and the Chocolate Factory lleva a un chico pobre a recorrer la fábrica de un confitero brillante y emocionalmente congelado. Tim Burton abraza lo plástico, lo oscuro y el humor cruel de Roald Dahl, con sets que parecen juguetes averiados; Johnny Depp hace de Wonka una figura incómoda a propósito y Freddie Highmore aporta la bondad necesaria sin empalagar. Algunos números de los Oompa Loompas se repiten, pero el ritmo mantiene la curiosidad. Vale cuando se entrega a su rareza visual, no si buscás la calidez de la versión anterior.",
-	"reviewPublishedAt": "2026-04-27"
+	"reviewPublishedAt": "2026-04-27",
+	"castCharacters": [
+		{
+			"actor": "Johnny Depp",
+			"character": "Willy Wonka",
+			"tmdbMovieId": 118,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Freddie Highmore",
+			"character": "Charlie Bucket",
+			"tmdbMovieId": 118,
+			"tmdbPersonId": 1281,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Kelly",
+			"character": "Grandpa Joe",
+			"tmdbMovieId": 118,
+			"tmdbPersonId": 1282,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helena Bonham Carter",
+			"character": "Mrs. Bucket",
+			"tmdbMovieId": 118,
+			"tmdbPersonId": 1283,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Noah Taylor",
+			"character": "Mr. Bucket",
+			"tmdbMovieId": 118,
+			"tmdbPersonId": 1284,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Missi Pyle",
+			"character": "Mrs. Beauregarde",
+			"tmdbMovieId": 118,
+			"tmdbPersonId": 1294,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

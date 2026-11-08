@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Paul Rudd",
+			"character": "Scott Lang / Ant-Man",
+			"tmdbMovieId": 102899,
+			"tmdbPersonId": 22226,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Evangeline Lilly",
+			"character": "Hope van Dyne",
+			"tmdbMovieId": 102899,
+			"tmdbPersonId": 19034,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Corey Stoll",
+			"character": "Darren Cross / Yellowjacket",
+			"tmdbMovieId": 102899,
+			"tmdbPersonId": 74541,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

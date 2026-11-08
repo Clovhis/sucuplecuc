@@ -8,7 +8,10 @@
 	"reviewPublishedAt": "2026-08-14",
 	"audienceRating": "+18",
 	"category": "Drama",
-	"genres": ["Drama", "Musical"],
+	"genres": [
+		"Drama",
+		"Musical"
+	],
 	"subgenres": [],
 	"country": "AR",
 	"isArgentinian": true,
@@ -16,11 +19,19 @@
 	"screenshots": [],
 	"trailerYoutubeId": "cMreYWRzH5M",
 	"director": "Raúl de la Torre",
-	"mainCast": ["Graciela Borges", "Gian María Volonté", "Pepe Soriano", "Moria Casán", "Andrea Del Boca"],
+	"mainCast": [
+		"Graciela Borges",
+		"Gian María Volonté",
+		"Pepe Soriano",
+		"Moria Casán",
+		"Andrea Del Boca"
+	],
 	"productionCompany": "Raúl de la Torre Producciones",
 	"cinepostaScore": 7,
 	"runtimeMinutes": 110,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Funes, un gran amor se deja llevar por la música de un salón donde el deseo y los recuerdos cambian de pareja todo el tiempo. Raúl de la Torre encuentra una atmósfera propia; Graciela Borges y Gian María Volonté sostienen una melancolía que vale más que la intriga.",
@@ -31,17 +42,54 @@
 			"forFansOf": "Fans de Graciela Borges, del tango cinematográfico y de los melodramas argentinos donde la música funciona como una forma de revelar lo que los personajes callan.",
 			"notForYouIf": "Buscás una trama compacta, diálogos naturalistas o un misterio que cierre cada cabo. Funes, un gran amor se demora en sus estampas y en sus ecos."
 		},
-	"becauseYouLiked": [
-		"tango-feroz-la-leyenda-de-tanguito-1993",
-		"la-cienaga-2001"
-	],
-	"related": [
-		"la-patagonia-rebelde-1974",
-		"risa-y-la-cabina-del-viento-2025",
-		"un-lugar-en-el-mundo-1992",
-		"caballos-salvajes-1995"
-	]
-},
+		"becauseYouLiked": [
+			"tango-feroz-la-leyenda-de-tanguito-1993",
+			"la-cienaga-2001"
+		],
+		"related": [
+			"la-patagonia-rebelde-1974",
+			"risa-y-la-cabina-del-viento-2025",
+			"un-lugar-en-el-mundo-1992",
+			"caballos-salvajes-1995"
+		]
+	},
 	"review": "Funes, un gran amor se mueve como una memoria de tango: entra por la música, se demora en los cuerpos y deja que el pasado aparezca de costado. Raúl de la Torre construye un salón donde conviven deseo, timba, trabajo y melancolía, con una atmósfera que vale más que cualquier explicación rápida.\n\nGraciela Borges le da a Funes una mezcla de misterio y cansancio, y Gian María Volonté aporta una gravedad que evita que todo quede en postal de época. Moria Casán, como Felisa, suma una presencia intensa dentro de un elenco enorme. La narración puede volverse morosa, pero la película tiene una personalidad musical y dramática difícil de confundir.",
-	"releasePlatform": "Otras plataformas"
+	"releasePlatform": "Otras plataformas",
+	"castCharacters": [
+		{
+			"actor": "Graciela Borges",
+			"character": "Azucena Funes/Tena",
+			"tmdbMovieId": 446161,
+			"tmdbPersonId": 590943,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gian María Volonté",
+			"character": "El tano Bérgami",
+			"tmdbMovieId": 446161,
+			"tmdbPersonId": 14276,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pepe Soriano",
+			"character": "Herminio",
+			"tmdbMovieId": 446161,
+			"tmdbPersonId": 236739,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Moria Casán",
+			"character": "Felisa",
+			"tmdbMovieId": 446161,
+			"tmdbPersonId": 992962,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andrea Del Boca",
+			"character": "Beatriz Núñez",
+			"tmdbMovieId": 446161,
+			"tmdbPersonId": 99112,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -55,5 +55,42 @@
 			"jennifer-s-body-2009"
 		]
 	},
-	"review": "Superbad tiene una energía de despedida que todavía funciona porque debajo de los chistes hay una amistad a punto de cambiar. Seth empuja todo hacia el desastre, Evan intenta que la noche no lastime a nadie y Fogell aparece con una identidad absurda que termina robándose la película. Michael Cera le encuentra una ternura incómoda al pibe que no sabe cómo decir lo que siente, mientras Jonah Hill convierte la inseguridad en una máquina de hacer quilombo. Es una comedia desprolija, filosa y sorprendentemente honesta sobre crecer sin estar listo."
+	"review": "Superbad tiene una energía de despedida que todavía funciona porque debajo de los chistes hay una amistad a punto de cambiar. Seth empuja todo hacia el desastre, Evan intenta que la noche no lastime a nadie y Fogell aparece con una identidad absurda que termina robándose la película. Michael Cera le encuentra una ternura incómoda al pibe que no sabe cómo decir lo que siente, mientras Jonah Hill convierte la inseguridad en una máquina de hacer quilombo. Es una comedia desprolija, filosa y sorprendentemente honesta sobre crecer sin estar listo.",
+	"castCharacters": [
+		{
+			"actor": "Jonah Hill",
+			"character": "Seth",
+			"tmdbMovieId": 8363,
+			"tmdbPersonId": 21007,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Cera",
+			"character": "Evan",
+			"tmdbMovieId": 8363,
+			"tmdbPersonId": 39995,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Mintz-Plasse",
+			"character": "Fogell",
+			"tmdbMovieId": 8363,
+			"tmdbPersonId": 54691,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Hader",
+			"character": "Officer Slater",
+			"tmdbMovieId": 8363,
+			"tmdbPersonId": 19278,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Seth Rogen",
+			"character": "Officer Michaels",
+			"tmdbMovieId": 8363,
+			"tmdbPersonId": 19274,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

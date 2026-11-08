@@ -50,5 +50,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "AU, DE, GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Keanu Reeves",
+			"character": "John Constantine",
+			"tmdbMovieId": 561,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel Weisz",
+			"character": "Angela Dodson / Isabel Dodson",
+			"tmdbMovieId": 561,
+			"tmdbPersonId": 3293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shia LaBeouf",
+			"character": "Chas Kramer",
+			"tmdbMovieId": 561,
+			"tmdbPersonId": 10959,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

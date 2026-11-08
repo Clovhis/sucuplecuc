@@ -54,5 +54,35 @@
 			"harry-potter-and-the-deathly-hallows-part-1-2010"
 		]
 	},
-	"review": "Este Pinocho apuesta por una versión amable y luminosa del cuento, con Robert Zemeckis mezclando decorados digitales, canciones y una nostalgia muy consciente por la animación clásica. Tom Hanks encuentra una ternura sencilla en Geppetto y Cynthia Erivo le presta presencia a una Hada Azul que funciona mejor cuando acompaña que cuando explica. El viaje conserva escenas reconocibles y algunos diseños simpáticos, aunque la textura digital vuelve demasiado prolijo un mundo que debería tener algo de peligro. Es una adaptación correcta, familiar y de corazón grande, pero sin la rareza de sus mejores antecedentes."
+	"review": "Este Pinocho apuesta por una versión amable y luminosa del cuento, con Robert Zemeckis mezclando decorados digitales, canciones y una nostalgia muy consciente por la animación clásica. Tom Hanks encuentra una ternura sencilla en Geppetto y Cynthia Erivo le presta presencia a una Hada Azul que funciona mejor cuando acompaña que cuando explica. El viaje conserva escenas reconocibles y algunos diseños simpáticos, aunque la textura digital vuelve demasiado prolijo un mundo que debería tener algo de peligro. Es una adaptación correcta, familiar y de corazón grande, pero sin la rareza de sus mejores antecedentes.",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Geppetto",
+			"tmdbMovieId": 532639,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joseph Gordon-Levitt",
+			"character": "Jiminy Cricket (voice)",
+			"tmdbMovieId": 532639,
+			"tmdbPersonId": 24045,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cynthia Erivo",
+			"character": "Blue Fairy",
+			"tmdbMovieId": 532639,
+			"tmdbPersonId": 1765068,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luke Evans",
+			"character": "Coachman",
+			"tmdbMovieId": 532639,
+			"tmdbPersonId": 114019,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

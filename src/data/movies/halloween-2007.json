@@ -55,5 +55,28 @@
 	"subgenres": [
 		"Slasher"
 	],
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Malcolm McDowell",
+			"character": "Dr. Samuel Loomis",
+			"tmdbMovieId": 2082,
+			"tmdbPersonId": 56890,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sheri Moon Zombie",
+			"character": "Deborah Myers",
+			"tmdbMovieId": 2082,
+			"tmdbPersonId": 21319,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tyler Mane",
+			"character": "Michael Myers",
+			"tmdbMovieId": 2082,
+			"tmdbPersonId": 9832,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

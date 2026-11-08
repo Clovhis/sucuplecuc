@@ -59,5 +59,28 @@
 	"reviewPublishedAt": "2026-03-08",
 	"synopsis": "Dos detectives de Nueva York siguen la pista de una importante operación de heroína procedente de Francia. La investigación los lleva a un traficante escurridizo y a una persecución obsesiva que desborda los métodos habituales de la policía.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Gene Hackman",
+			"character": "Jimmy \"Popeye\" Doyle",
+			"tmdbMovieId": 1051,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Roy Scheider",
+			"character": "Buddy Russo",
+			"tmdbMovieId": 1051,
+			"tmdbPersonId": 6355,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fernando Rey",
+			"character": "Alain Charnier",
+			"tmdbMovieId": 1051,
+			"tmdbPersonId": 14821,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

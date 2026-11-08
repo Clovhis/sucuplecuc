@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Robert Downey Jr.",
+			"character": "Tony Stark / Iron Man",
+			"tmdbMovieId": 299536,
+			"tmdbPersonId": 3223,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Hemsworth",
+			"character": "Thor",
+			"tmdbMovieId": 299536,
+			"tmdbPersonId": 74568,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Ruffalo",
+			"character": "Bruce Banner / Hulk",
+			"tmdbMovieId": 299536,
+			"tmdbPersonId": 103,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

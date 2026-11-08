@@ -59,5 +59,21 @@
 		"HBO Max"
 	],
 	"country": "CA",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Dev Patel",
+			"character": "Gawain",
+			"tmdbMovieId": 559907,
+			"tmdbPersonId": 76788,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alicia Vikander",
+			"character": "Lady / Essel",
+			"tmdbMovieId": 559907,
+			"tmdbPersonId": 227454,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

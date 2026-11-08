@@ -75,5 +75,35 @@
     }
   },
   "review": "Kazan deja que el departamento de Nueva Orleans se vuelva un campo de fuerzas: Blanche llega con una versión cuidadosamente arreglada de sí misma y Stanley no tarda en probar cuánto resiste. Vivien Leigh trabaja cada gesto como una defensa, mientras Marlon Brando le da a Stanley una presencia física que altera la escena incluso cuando está quieto. La cámara y el sonido empujan el drama hacia un encierro casi expresionista. La tensión familiar nunca se resuelve en una simple pelea de buenos y malos.",
-  "runtimeMinutes": 125
+  "runtimeMinutes": 125,
+  "castCharacters": [
+    {
+      "actor": "Vivien Leigh",
+      "character": "Blanche DuBois",
+      "tmdbMovieId": 702,
+      "tmdbPersonId": 10538,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Marlon Brando",
+      "character": "Stanley Kowalski",
+      "tmdbMovieId": 702,
+      "tmdbPersonId": 3084,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Kim Hunter",
+      "character": "Stella Kowalski",
+      "tmdbMovieId": 702,
+      "tmdbPersonId": 10539,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Karl Malden",
+      "character": "Harold Mitchell",
+      "tmdbMovieId": 702,
+      "tmdbPersonId": 9857,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

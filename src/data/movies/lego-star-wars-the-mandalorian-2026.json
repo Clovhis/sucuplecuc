@@ -58,5 +58,28 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "LEGO Star Wars: The Mandalorian sabe qué tipo de fiesta quiere armar: toma la aventura de Mando y Grogu, la pasa por una licuadora de piezas, tropiezos y chistes visuales, y no pretende que el homenaje sea solemne. Chris Buckley mantiene el relato en movimiento y la animación encuentra gracia en desarmar momentos reconocibles para volverlos juguete. La duración breve le juega a favor, aunque también deja algunas ideas apenas esbozadas y un conflicto que funciona más como excusa que como motor. La energía del elenco de voces y el cariño por el universo alcanzan para que el especial sea un buen plan familiar, especialmente si te divierte ver una saga conocida con otra textura."
+	"review": "LEGO Star Wars: The Mandalorian sabe qué tipo de fiesta quiere armar: toma la aventura de Mando y Grogu, la pasa por una licuadora de piezas, tropiezos y chistes visuales, y no pretende que el homenaje sea solemne. Chris Buckley mantiene el relato en movimiento y la animación encuentra gracia en desarmar momentos reconocibles para volverlos juguete. La duración breve le juega a favor, aunque también deja algunas ideas apenas esbozadas y un conflicto que funciona más como excusa que como motor. La energía del elenco de voces y el cariño por el universo alcanzan para que el especial sea un buen plan familiar, especialmente si te divierte ver una saga conocida con otra textura.",
+	"castCharacters": [
+		{
+			"actor": "Gavin Hammon",
+			"character": "The Mandalorian (voice)",
+			"tmdbMovieId": 1731694,
+			"tmdbPersonId": 1820441,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amy Sedaris",
+			"character": "Peli Motto (voice)",
+			"tmdbMovieId": 1731694,
+			"tmdbPersonId": 12110,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Burr",
+			"character": "Migs Mayfield (voice)",
+			"tmdbMovieId": 1731694,
+			"tmdbPersonId": 109708,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -1,0 +1,21 @@
+# Personajes del reparto
+
+El dato opcional `castCharacters` vive en cada ficha. `actor` debe coincidir exactamente con `mainCast`; `character` conserva el texto acreditado, `tmdbMovieId` y `tmdbPersonId` permiten rastrear película y persona, `verifiedAt` registra la fecha argentina de consulta y `displayCharacter` y `variants` sólo admiten nombres localizados y variantes con fuentes verificadas en el informe. No se generan traducciones ni aliases por inferencia. Si falta evidencia, se omite el crédito. El visitante nunca consulta la API.
+
+## Condiciones antes de usar TMDB
+
+La [API de TMDB](https://developer.themoviedb.org/docs/faq) es gratuita para uso no comercial con atribución; el uso comercial necesita licencia. CinePosta confirmó el uso no comercial y muestra el logotipo oficial y aviso en Fuentes y datos. El [límite](https://developer.themoviedb.org/docs/rate-limiting) puede cambiar: el script limita globalmente a 10 solicitudes por segundo, usa ocho trabajadores y reintenta 429/5xx. TMDB no garantiza [traducciones de personajes](https://developer.themoviedb.org/docs/languages). Watchmode cobra créditos y su [plan gratuito](https://api.watchmode.com/pricing) limita la retención; no se usa para almacenamiento permanente sin revisar el contrato.
+
+## Ejecución y mantenimiento
+
+Definir `TMDB_API_KEY` en `.env.local` o en el entorno local, nunca en archivos versionados. Primero ejecutar un piloto acotado con `npm run enrich:characters -- --pilot --license-confirmed` y auditar manualmente las coincidencias, cobertura, pendientes y términos. La muestra distribuye 50 títulos por año y ordena por categoría dentro de cada año. El comando es de lectura sobre fichas por defecto; `--apply` escribe sólo créditos verificados. Sólo escalar si el piloto y licencia son satisfactorios. La caché y el checkpoint están en `reports/character-enrichment/` (ignorados por Git); revisar y borrar esos archivos según la licencia aplicable. La caché de respuestas se vuelve a consultar a los 90 días y `--retry-pending` la omite. El checkpoint registra IDs de película, datos y motivos pendientes. No se reemplazan personajes existentes.
+
+**Autorización y persistencia:** el titular de CinePosta comunicó en esta conversación el 8 de noviembre de 2026 que TMDB autorizó expresamente el almacenamiento y uso permanente de los datos de personajes obtenidos de su API, para este sitio no comercial. Esta referencia deja constancia del permiso comunicado; su documentación privada no se incorpora al repositorio. Los créditos no vencen ni se ocultan o eliminan por su antigüedad. `verifiedAt` y los IDs de TMDB son metadatos de procedencia. Se mantienen el logo y el aviso de atribución en Fuentes y datos.
+
+La actualización es opcional e incremental: `npm run enrich:characters -- --slug <slug> --refresh --license-confirmed --apply` vuelve a consultar sólo esa película; `--changed --refresh` acota la consulta a las fichas cambiadas. El proceso conserva los créditos ya guardados si la API falla o si los nuevos datos difieren, y registra las discrepancias para revisión. Corregir manualmente sólo con identidad y fuentes verificadas. La caducidad de la caché de respuestas HTTP controla cuándo volver a consultar la API, no elimina ni oculta créditos del catálogo.
+
+El piloto de DEV fue consultado el 2026-11-08 (fecha de Argentina): 50 películas, 43 con coincidencias automáticas, 7 pendientes y 152 créditos guardados.
+
+En cada incorporación semanal, una vez completos reparto y personas verificadas, ejecutar `npm run enrich:characters -- --changed --license-confirmed --apply`; selecciona únicamente fichas nuevas o modificadas frente a `origin/main`. También se puede usar `--slug <slug>`. Revisar el checkpoint y ejecutar las validaciones normales antes de publicar. Sin clave o licencia, omitir el enriquecimiento y mantener los créditos pendientes; la ficha y el buscador siguen funcionando.
+
+La identificación exige título y año exactos, resultado único, director y al menos dos actores con IMDb coincidente entre `people.json` y los IDs externos de TMDB. Casos sin esas pruebas quedan pendientes, aunque podrían ser válidos. El proceso guarda roles tal como figuran en la fuente, incluidos varios roles separados por `/`. Las búsquedas paginadas, coincidencias de identidad inciertas y datos ausentes no se publican.

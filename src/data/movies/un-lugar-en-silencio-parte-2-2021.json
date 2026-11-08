@@ -31,8 +31,15 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["a-quiet-place-day-one-2024", "dejame-entrar-2008"],
-		"related": ["the-descent-2005", "alien-1979", "jaws-1975"],
+		"becauseYouLiked": [
+			"a-quiet-place-day-one-2024",
+			"dejame-entrar-2008"
+		],
+		"related": [
+			"the-descent-2005",
+			"alien-1979",
+			"jaws-1975"
+		],
 		"tenSecondTake": {
 			"verdict": "Emily Blunt y Cillian Murphy sostienen el miedo como una tarea familiar; la expansión del mundo conserva su regla sonora.",
 			"whatToExpect": "Los Abbott fuera del refugio, señales visuales y una convivencia que exige leer cada pausa.",
@@ -49,5 +56,21 @@
 		"Netflix",
 		"Paramount Plus"
 	],
-	"runtimeMinutes": 97
+	"runtimeMinutes": 97,
+	"castCharacters": [
+		{
+			"actor": "Emily Blunt",
+			"character": "Evelyn Abbott",
+			"tmdbMovieId": 520763,
+			"tmdbPersonId": 5081,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cillian Murphy",
+			"character": "Emmett",
+			"tmdbMovieId": 520763,
+			"tmdbPersonId": 2037,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

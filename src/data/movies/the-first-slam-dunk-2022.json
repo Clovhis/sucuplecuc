@@ -29,29 +29,45 @@
     "wins": []
   },
   "runtimeMinutes": 124,
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "The First Slam Dunk convierte un partido en la forma que encuentra Ryota para procesar una pérdida. Takehiko Inoue filma el básquet con espacio y tensión reales, mientras Shūgo Nakamura sostiene un protagonista que juega para avanzar aunque el pasado vuelva en cada pausa.",
-			"whatToExpect": "Shohoku enfrenta el partido más exigente mientras la historia de Ryota y su familia aparece entre jugadas. Jun Kasama y Shin'ichirō Kamio completan un equipo donde cada defensa, pase y rebote tiene un peso personal.",
-			"pace": "Avanza con el partido como columna vertebral y recuerdos que se abren en los momentos de presión. La animación permite sentir el tiempo de una posesión; el ritmo crece cuando el marcador obliga a cambiar la estrategia.",
-			"intensity": "La intensidad es deportiva y emocional, con cansancio, duelo y una remontada que se juega también fuera de la cancha. Los golpes y el ruido importan porque el equipo aprende a sostenerse.",
-			"practicalContext": "No hace falta conocer el manga para seguir el partido, aunque el vínculo con Shohoku suma contexto. Mirala atendiendo a la posición de los jugadores y a cómo el pasado de Ryota cambia su forma de defender.",
-			"forFansOf": "Puede fascinarte si disfrutás anime deportivo, básquet y relatos donde una competencia se vuelve una manera de atravesar la familia y el duelo.",
-			"notForYouIf": "Quizás no sea para vos si buscás acción sin recuerdos, una trama completamente lineal o una película que explique cada personaje antes de ponerlo a jugar."
-		},
-	"becauseYouLiked": [
-		"umamusume-pretty-derby-2024",
-		"suzume-2022"
-	],
-	"related": [
-		"belle-2021",
-		"the-boy-and-the-heron-2023",
-		"haikyu-the-dumpster-battle-2024",
-		"look-back-2024"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "The First Slam Dunk convierte un partido en la forma que encuentra Ryota para procesar una pérdida. Takehiko Inoue filma el básquet con espacio y tensión reales, mientras Shūgo Nakamura sostiene un protagonista que juega para avanzar aunque el pasado vuelva en cada pausa.",
+      "whatToExpect": "Shohoku enfrenta el partido más exigente mientras la historia de Ryota y su familia aparece entre jugadas. Jun Kasama y Shin'ichirō Kamio completan un equipo donde cada defensa, pase y rebote tiene un peso personal.",
+      "pace": "Avanza con el partido como columna vertebral y recuerdos que se abren en los momentos de presión. La animación permite sentir el tiempo de una posesión; el ritmo crece cuando el marcador obliga a cambiar la estrategia.",
+      "intensity": "La intensidad es deportiva y emocional, con cansancio, duelo y una remontada que se juega también fuera de la cancha. Los golpes y el ruido importan porque el equipo aprende a sostenerse.",
+      "practicalContext": "No hace falta conocer el manga para seguir el partido, aunque el vínculo con Shohoku suma contexto. Mirala atendiendo a la posición de los jugadores y a cómo el pasado de Ryota cambia su forma de defender.",
+      "forFansOf": "Puede fascinarte si disfrutás anime deportivo, básquet y relatos donde una competencia se vuelve una manera de atravesar la familia y el duelo.",
+      "notForYouIf": "Quizás no sea para vos si buscás acción sin recuerdos, una trama completamente lineal o una película que explique cada personaje antes de ponerlo a jugar."
+    },
+    "becauseYouLiked": [
+      "umamusume-pretty-derby-2024",
+      "suzume-2022"
+    ],
+    "related": [
+      "belle-2021",
+      "the-boy-and-the-heron-2023",
+      "haikyu-the-dumpster-battle-2024",
+      "look-back-2024"
+    ]
+  },
   "review": "The First Slam Dunk usa el partido decisivo como motor, pero encuentra su peso en Ryota y en la manera en que el duelo familiar atraviesa cada jugada. Takehiko Inoue anima el básquet con una claridad espacial formidable: se entiende dónde está la pelota, quién llega tarde y por qué una defensa cambia el ánimo del equipo. El salto entre el presente y los recuerdos puede enfriar un poco el envión, aunque las actuaciones de voz sostienen la emoción sin subrayarla. Es una película deportiva vibrante incluso para quien no conoce el manga, porque convierte una remontada en algo físico y personal.",
   "audienceRating": "ATP",
   "reviewPublishedAt": "2026-03-09",
-  "synopsis": "Ryota Miyagi, base del equipo Shohoku, se prepara para el partido más exigente de su carrera. Mientras el encuentro avanza, la película reconstruye su historia familiar y el camino que lo llevó a encontrar refugio en el básquet."
+  "synopsis": "Ryota Miyagi, base del equipo Shohoku, se prepara para el partido más exigente de su carrera. Mientras el encuentro avanza, la película reconstruye su historia familiar y el camino que lo llevó a encontrar refugio en el básquet.",
+  "castCharacters": [
+    {
+      "actor": "Shūgo Nakamura",
+      "character": "Ryota Miyagi (voice)",
+      "tmdbMovieId": 783675,
+      "tmdbPersonId": 2369258,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Jun Kasama",
+      "character": "Hisashi Mitsui (voice)",
+      "tmdbMovieId": 783675,
+      "tmdbPersonId": 1971814,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

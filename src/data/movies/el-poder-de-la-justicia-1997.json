@@ -53,5 +53,42 @@
 			"cassandra-s-dream-2007"
 		]
 	},
-	"review": "Coppola filma el mundo legal como una maquinaria que mastica a los recién llegados, y Damon le pone a Rudy una mezcla muy efectiva de idealismo y desesperación. La película tiene el pulso de un thriller, pero su mejor músculo está en el drama de los personajes que no pueden darse el lujo de perder. Danny DeVito roba escenas sin desarmar el tono. No es sutil en cada subrayado, pero sostiene la bronca hasta el final."
+	"review": "Coppola filma el mundo legal como una maquinaria que mastica a los recién llegados, y Damon le pone a Rudy una mezcla muy efectiva de idealismo y desesperación. La película tiene el pulso de un thriller, pero su mejor músculo está en el drama de los personajes que no pueden darse el lujo de perder. Danny DeVito roba escenas sin desarmar el tono. No es sutil en cada subrayado, pero sostiene la bronca hasta el final.",
+	"castCharacters": [
+		{
+			"actor": "Matt Damon",
+			"character": "Rudy Baylor",
+			"tmdbMovieId": 11975,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claire Danes",
+			"character": "Kelly Riker",
+			"tmdbMovieId": 11975,
+			"tmdbPersonId": 6194,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny DeVito",
+			"character": "Deck Shifflet",
+			"tmdbMovieId": 11975,
+			"tmdbPersonId": 518,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Voight",
+			"character": "Leo F. Drummond",
+			"tmdbMovieId": 11975,
+			"tmdbPersonId": 10127,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mickey Rourke",
+			"character": "Bruiser Stone",
+			"tmdbMovieId": 11975,
+			"tmdbPersonId": 2295,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

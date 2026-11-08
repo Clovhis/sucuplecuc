@@ -51,5 +51,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Lupita Nyong'o",
+			"character": "Samira",
+			"tmdbMovieId": 762441,
+			"tmdbPersonId": 1267329,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joseph Quinn",
+			"character": "Eric",
+			"tmdbMovieId": 762441,
+			"tmdbPersonId": 1597365,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alex Wolff",
+			"character": "Reuben",
+			"tmdbMovieId": 762441,
+			"tmdbPersonId": 934281,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

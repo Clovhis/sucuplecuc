@@ -57,5 +57,28 @@
 		]
 	},
 	"runtimeMinutes": 109,
-	"review": "John Singleton abre con una muerte que importa y deja que la furia de los hermanos sostenga el motor del relato. Wahlberg tiene la presencia necesaria para Bobby, pero Tyrese Gibson y André 3000 ayudan a que el grupo no se convierta en una sola voz enfurecida. La trama policial se simplifica demasiado cuando necesita llegar al tiroteo, y algunos malos parecen dibujados con marcador negro. Igual, el ritmo, Detroit y la relación fraternal le dan un cuerpo más áspero que al thriller de venganza promedio."
+	"review": "John Singleton abre con una muerte que importa y deja que la furia de los hermanos sostenga el motor del relato. Wahlberg tiene la presencia necesaria para Bobby, pero Tyrese Gibson y André 3000 ayudan a que el grupo no se convierta en una sola voz enfurecida. La trama policial se simplifica demasiado cuando necesita llegar al tiroteo, y algunos malos parecen dibujados con marcador negro. Igual, el ritmo, Detroit y la relación fraternal le dan un cuerpo más áspero que al thriller de venganza promedio.",
+	"castCharacters": [
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Bobby Mercer",
+			"tmdbMovieId": 8292,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tyrese Gibson",
+			"character": "Angel Mercer",
+			"tmdbMovieId": 8292,
+			"tmdbPersonId": 8169,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terrence Howard",
+			"character": "Lt. Green",
+			"tmdbMovieId": 8292,
+			"tmdbPersonId": 18288,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

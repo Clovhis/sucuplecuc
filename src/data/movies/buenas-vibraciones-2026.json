@@ -52,5 +52,21 @@
 		]
 	},
 	"review": "El mejor chiste de Buenas vibraciones es la confianza de Tom en que un problema íntimo puede arreglarse como un aparato. François Cluzet sostiene esa torpeza sin convertir al marido en un villano, y Alexandra Lamy le da a Fanny una impaciencia que hace falta para que el asunto no quede reducido a la genialidad del inventor. Reem Kherici encuentra complicidad en la pareja, aunque la repetición de pruebas y percances termina achicando una pregunta más rica sobre el deseo y la escucha. Los personajes tienen una calidez que ayuda; el recorrido, bastante previsible, se anima menos que su punto de partida.",
-	"runtimeMinutes": 89
+	"runtimeMinutes": 89,
+	"castCharacters": [
+		{
+			"actor": "Alexandra Lamy",
+			"character": "Fanny",
+			"tmdbMovieId": 1516724,
+			"tmdbPersonId": 113617,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "François Cluzet",
+			"character": "Thomas",
+			"tmdbMovieId": 1516724,
+			"tmdbPersonId": 33161,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

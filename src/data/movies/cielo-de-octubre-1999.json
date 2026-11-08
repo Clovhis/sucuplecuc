@@ -53,5 +53,35 @@
 			"lady-bird-2017"
 		]
 	},
-	"review": "Cielo de octubre tiene una nobleza que podría haberla vuelto empalagosa, pero Joe Johnston la sostiene con ritmo, humor y atención al trabajo manual. Jake Gyllenhaal transmite la obstinación de Homer sin convertirlo en un santo, mientras Chris Cooper le pone dureza y ternura a un padre que no sabe acompañar el cambio. Es una historia de crecimiento clásica, aunque conserva suficiente nervio para que cada intento fallido importe y para que el triunfo no parezca regalado."
+	"review": "Cielo de octubre tiene una nobleza que podría haberla vuelto empalagosa, pero Joe Johnston la sostiene con ritmo, humor y atención al trabajo manual. Jake Gyllenhaal transmite la obstinación de Homer sin convertirlo en un santo, mientras Chris Cooper le pone dureza y ternura a un padre que no sabe acompañar el cambio. Es una historia de crecimiento clásica, aunque conserva suficiente nervio para que cada intento fallido importe y para que el triunfo no parezca regalado.",
+	"castCharacters": [
+		{
+			"actor": "Jake Gyllenhaal",
+			"character": "Homer Hickam",
+			"tmdbMovieId": 13466,
+			"tmdbPersonId": 131,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Cooper",
+			"character": "John Hickam",
+			"tmdbMovieId": 13466,
+			"tmdbPersonId": 2955,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Miss Riley",
+			"tmdbMovieId": 13466,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Owen",
+			"character": "Quentin Wilson",
+			"tmdbMovieId": 13466,
+			"tmdbPersonId": 26999,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

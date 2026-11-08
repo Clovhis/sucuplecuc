@@ -51,5 +51,28 @@
 			"tootsie-1982"
 		]
 	},
-	"review": "Danny DeVito convierte una separación de bienes en una comedia negra de precisión física. Michael Douglas y Kathleen Turner juegan a Oliver y Barbara como dos personas que alguna vez se quisieron, pero que ya sólo saben competir: cada gesto doméstico se vuelve una declaración de guerra y cada objeto de la casa, un trofeo. DeVito se reserva al abogado que narra el desastre y sostiene un ritmo que crece desde la incomodidad hasta la crueldad caricaturesca. La película puede ser brutal con sus personajes, pero no los reduce a un chiste: detrás del duelo por la casa queda la incapacidad de aceptar que una vida compartida terminó."
+	"review": "Danny DeVito convierte una separación de bienes en una comedia negra de precisión física. Michael Douglas y Kathleen Turner juegan a Oliver y Barbara como dos personas que alguna vez se quisieron, pero que ya sólo saben competir: cada gesto doméstico se vuelve una declaración de guerra y cada objeto de la casa, un trofeo. DeVito se reserva al abogado que narra el desastre y sostiene un ritmo que crece desde la incomodidad hasta la crueldad caricaturesca. La película puede ser brutal con sus personajes, pero no los reduce a un chiste: detrás del duelo por la casa queda la incapacidad de aceptar que una vida compartida terminó.",
+	"castCharacters": [
+		{
+			"actor": "Michael Douglas",
+			"character": "Oliver Rose",
+			"tmdbMovieId": 249,
+			"tmdbPersonId": 3392,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kathleen Turner",
+			"character": "Barbara Rose",
+			"tmdbMovieId": 249,
+			"tmdbPersonId": 3391,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny DeVito",
+			"character": "Gavin D'Amato",
+			"tmdbMovieId": 249,
+			"tmdbPersonId": 518,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

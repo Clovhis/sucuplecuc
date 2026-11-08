@@ -56,5 +56,21 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Josh Duhamel",
+			"character": "Shaw",
+			"tmdbMovieId": 1409853,
+			"tmdbPersonId": 19536,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dylan Sprouse",
+			"character": "AJ",
+			"tmdbMovieId": 1409853,
+			"tmdbPersonId": 95686,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

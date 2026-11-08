@@ -8,7 +8,10 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+13",
   "category": "Drama",
-  "genres": ["Drama", "Historia"],
+  "genres": [
+    "Drama",
+    "Historia"
+  ],
   "subgenres": [],
   "country": "IE, BE, US",
   "isArgentinian": false,
@@ -17,33 +20,70 @@
   "trailerYoutubeId": "FGfHVWS-nz0",
   "releasePlatform": "Prime Video",
   "director": "Tim Mielants",
-  "mainCast": ["Cillian Murphy", "Emily Watson", "Michelle Fairley", "Eileen Walsh"],
+  "mainCast": [
+    "Cillian Murphy",
+    "Emily Watson",
+    "Michelle Fairley",
+    "Eileen Walsh"
+  ],
   "productionCompany": "Big Things Films, Screen Ireland, BBC Film",
   "cinepostaScore": 7,
   "runtimeMinutes": 99,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Cosas pequeñas como estas convierte un secreto institucional en decisión moral y Tim Mielants deja que Cillian Murphy sostenga la incomodidad sin discursos heroicos.",
-			"whatToExpect": "Irlanda en 1985, un comerciante de carbón y una institución religiosa que obliga a elegir entre silencio y riesgo.",
-			"pace": "Lento y concentrado, avanza por rutinas, miradas y una revelación que cambia el sentido del pueblo.",
-			"intensity": "Alta en peso moral y tensión contenida, sin necesitar escenas explícitas.",
-			"practicalContext": "Sus 99 minutos piden atención a gestos y silencios; no es un drama histórico de exposición abundante.",
-			"forFansOf": "Los relatos de conciencia, Cillian Murphy en registro mínimo y el cine que vuelve político un gesto doméstico.",
-			"notForYouIf": "Buscás un thriller de investigación, una denuncia explicada o una resolución que alivie rápido la incomodidad."
-		},
-	"becauseYouLiked": [
-		"war-horse-2011",
-		"los-chicos-de-la-nickel-2024"
-	],
-	"related": [
-		"aun-estoy-aqui-2024",
-		"la-semilla-del-fruto-sagrado-2024",
-		"sarahs-oil-el-oro-negro-2025",
-		"argentina-1985-2022"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Cosas pequeñas como estas convierte un secreto institucional en decisión moral y Tim Mielants deja que Cillian Murphy sostenga la incomodidad sin discursos heroicos.",
+      "whatToExpect": "Irlanda en 1985, un comerciante de carbón y una institución religiosa que obliga a elegir entre silencio y riesgo.",
+      "pace": "Lento y concentrado, avanza por rutinas, miradas y una revelación que cambia el sentido del pueblo.",
+      "intensity": "Alta en peso moral y tensión contenida, sin necesitar escenas explícitas.",
+      "practicalContext": "Sus 99 minutos piden atención a gestos y silencios; no es un drama histórico de exposición abundante.",
+      "forFansOf": "Los relatos de conciencia, Cillian Murphy en registro mínimo y el cine que vuelve político un gesto doméstico.",
+      "notForYouIf": "Buscás un thriller de investigación, una denuncia explicada o una resolución que alivie rápido la incomodidad."
+    },
+    "becauseYouLiked": [
+      "war-horse-2011",
+      "los-chicos-de-la-nickel-2024"
+    ],
+    "related": [
+      "aun-estoy-aqui-2024",
+      "la-semilla-del-fruto-sagrado-2024",
+      "sarahs-oil-el-oro-negro-2025",
+      "argentina-1985-2022"
+    ]
+  },
   "review": "Cosas pequeñas como estas trabaja con una escala íntima para hablar de una institución enorme y de un silencio que alcanza a todo un pueblo. Cillian Murphy compone a Bill Furlong con gestos mínimos: una pausa demasiado larga, una mirada que vuelve sobre un recuerdo y la incomodidad de quien ya no puede fingir que no vio. Tim Mielants no necesita golpes bajos; deja que el frío, el trabajo y las rutinas hagan visible el peso moral del conflicto. Emily Watson es inquietante incluso cuando casi no levanta la voz.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Cillian Murphy",
+      "character": "Bill Furlong",
+      "tmdbMovieId": 1102493,
+      "tmdbPersonId": 2037,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Emily Watson",
+      "character": "Sister Mary",
+      "tmdbMovieId": 1102493,
+      "tmdbPersonId": 1639,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Michelle Fairley",
+      "character": "Mrs. Wilson",
+      "tmdbMovieId": 1102493,
+      "tmdbPersonId": 20057,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Eileen Walsh",
+      "character": "Eileen Furlong",
+      "tmdbMovieId": 1102493,
+      "tmdbPersonId": 53999,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

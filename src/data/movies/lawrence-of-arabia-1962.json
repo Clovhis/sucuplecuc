@@ -76,5 +76,42 @@
 		"Apple TV"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Peter O'Toole",
+			"character": "T.E. Lawrence",
+			"tmdbMovieId": 947,
+			"tmdbPersonId": 11390,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alec Guinness",
+			"character": "Prince Feisal",
+			"tmdbMovieId": 947,
+			"tmdbPersonId": 12248,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Omar Sharif",
+			"character": "Sherif Ali",
+			"tmdbMovieId": 947,
+			"tmdbPersonId": 5004,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Quinn",
+			"character": "Auda abu Tayi",
+			"tmdbMovieId": 947,
+			"tmdbPersonId": 5401,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Hawkins",
+			"character": "General Edmund Allenby",
+			"tmdbMovieId": 947,
+			"tmdbPersonId": 10018,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

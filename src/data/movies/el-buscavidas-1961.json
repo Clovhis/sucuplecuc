@@ -63,5 +63,21 @@
 				"year": 1962
 			}
 		]
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "Paul Newman",
+			"character": "Eddie Felson",
+			"tmdbMovieId": 990,
+			"tmdbPersonId": 3636,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jackie Gleason",
+			"character": "Minnesota Fats",
+			"tmdbMovieId": 990,
+			"tmdbPersonId": 14882,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,28 @@
 	},
 	"review": "Buster Keaton arma una comedia de persecución donde el tren no es decorado: es compañero, obstáculo y motor de cada chiste. La precisión física de sus gags sorprende porque todo parece peligroso sin perder claridad ni elegancia. Johnnie no habla casi nunca, pero su obstinación se entiende en cada maniobra. La aventura tiene una energía limpia y una ternura inesperada, con una escala visual enorme para su época. Es cine mudo de acción que todavía se mueve con una velocidad envidiable.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Buster Keaton",
+			"character": "Johnnie Gray",
+			"tmdbMovieId": 961,
+			"tmdbPersonId": 8635,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Glen Cavender",
+			"character": "Captain Anderson",
+			"tmdbMovieId": 961,
+			"tmdbPersonId": 14419,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frederick Vroom",
+			"character": "A Southern General",
+			"tmdbMovieId": 961,
+			"tmdbPersonId": 14421,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

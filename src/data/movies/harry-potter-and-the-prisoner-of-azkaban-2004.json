@@ -52,5 +52,28 @@
 	"synopsis": "Narra el tercer año de Harry en Hogwarts y su búsqueda para descubrir la verdad sobre su pasado, incluida la conexión que Sirius Black, prisionero recientemente escapado de Azkaban, tiene con Harry y sus padres fallecidos.",
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Radcliffe",
+			"character": "Harry Potter",
+			"tmdbMovieId": 673,
+			"tmdbPersonId": 10980,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Grint",
+			"character": "Ron Weasley",
+			"tmdbMovieId": 673,
+			"tmdbPersonId": 10989,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Watson",
+			"character": "Hermione Granger",
+			"tmdbMovieId": 673,
+			"tmdbPersonId": 10990,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

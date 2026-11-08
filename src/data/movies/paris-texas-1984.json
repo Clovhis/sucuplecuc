@@ -61,5 +61,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "DE",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Harry Dean Stanton",
+			"character": "Travis",
+			"tmdbMovieId": 655,
+			"tmdbPersonId": 5048,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nastassja Kinski",
+			"character": "Jane",
+			"tmdbMovieId": 655,
+			"tmdbPersonId": 2630,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -61,5 +61,42 @@
 		]
 	},
 	"review": "Los intocables de Eliot Ness sigue al agente que arma un pequeño grupo incorruptible para enfrentar el imperio de Al Capone durante la Prohibición. Brian De Palma la filma a lo grande, con escaleras, estaciones y rostros enormes que convierten la lucha contra el crimen en espectáculo operático. Kevin Costner sostiene la rectitud de Ness, Sean Connery le pone humanidad al mentor y Robert De Niro disfruta el exceso de Capone. No es sutil ni quiere serlo: va de frente, con tensión seca y escenas que quedaron tatuadas en el género.",
-	"reviewPublishedAt": "2026-04-05"
+	"reviewPublishedAt": "2026-04-05",
+	"castCharacters": [
+		{
+			"actor": "Kevin Costner",
+			"character": "Eliot Ness",
+			"tmdbMovieId": 117,
+			"tmdbPersonId": 1269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Connery",
+			"character": "Jim Malone",
+			"tmdbMovieId": 117,
+			"tmdbPersonId": 738,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "Al Capone",
+			"tmdbMovieId": 117,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Garcia",
+			"character": "George Stone",
+			"tmdbMovieId": 117,
+			"tmdbPersonId": 1271,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles Martin Smith",
+			"character": "Oscar Wallace",
+			"tmdbMovieId": 117,
+			"tmdbPersonId": 1270,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

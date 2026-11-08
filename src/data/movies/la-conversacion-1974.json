@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Gene Hackman",
+			"character": "Harry Caul",
+			"tmdbMovieId": 592,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Cazale",
+			"character": "Stan",
+			"tmdbMovieId": 592,
+			"tmdbPersonId": 3096,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -58,5 +58,35 @@
 		]
 	},
 	"review": "Volar por los aires es un thriller de los noventa que se toma muy en serio sus explosiones y su duelo de especialistas. Jeff Bridges le da peso al experto que intenta reconstruir su vida mientras Tommy Lee Jones disfruta cada gesto de villano metódico. La película tiene oficio, escenarios potentes y una tensión que funciona cuando se concentra en el trabajo con explosivos. También acumula coincidencias, diálogos grandilocuentes y una venganza demasiado ordenada. Es un entretenimiento de acción sólido, aunque lejos de ser una joya escondida.",
-	"runtimeMinutes": 121
+	"runtimeMinutes": 121,
+	"castCharacters": [
+		{
+			"actor": "Jeff Bridges",
+			"character": "James \"Jimmy\" Dove",
+			"tmdbMovieId": 178,
+			"tmdbPersonId": 1229,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "Ryan Gaerity",
+			"tmdbMovieId": 178,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lloyd Bridges",
+			"character": "Max O'Bannon",
+			"tmdbMovieId": 178,
+			"tmdbPersonId": 2177,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Forest Whitaker",
+			"character": "Anthony Franklin",
+			"tmdbMovieId": 178,
+			"tmdbPersonId": 2178,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

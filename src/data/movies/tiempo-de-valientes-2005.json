@@ -29,27 +29,50 @@
 	"runtimeMinutes": 112,
 	"review": "Tiempo de valientes arranca como comedia de pareja despareja y termina siendo una de las buddy movies más afiladas que dio el cine argentino. Damián Szifron maneja el gag, la acción y el absurdo con una seguridad tremenda, pero además entiende que la película necesita una química muy particular entre un policía roto y un psicólogo obligado a acompañarlo. Diego Peretti y Luis Luque hacen una dupla impecable, siempre al borde del caos y del afecto involuntario. Es rapidísima, muy graciosa y encima está calibrada con un oficio que todavía se disfruta mucho.",
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Tiempo de valientes mezcla investigación y amistad con una precisión muy argentina; Damián Szifron deja que Diego Peretti y Luis Luque choquen hasta encontrar ritmo.",
-		"whatToExpect": "Un policía suspendido y su psicólogo terminan metidos en un caso criminal, obligados a cooperar mientras cada uno lidia con su propia crisis.",
-		"pace": "Corre entre pistas, persecuciones y discusiones, con chistes que nacen de la urgencia y no frenan la trama.",
-		"intensity": "La acción tiene peligro, pero la tensión se vuelve comedia cuando la dupla improvisa y convierte el miedo en una estrategia absurda.",
-		"practicalContext": "Dura 112 minutos y funciona como plan de comedia policial, con ritmo alto y una química que se disfruta incluso sin conocer el género.",
-		"forFansOf": "Te va a gustar si disfrutás buddy movies, humor rioplatense y personajes que se vuelven equipo a fuerza de discutir.",
-		"notForYouIf": "No es para vos si preferís policiales solemnes, humor más seco o una dupla que resuelva todo sin hacer un desastre."
+		"tenSecondTake": {
+			"verdict": "Tiempo de valientes mezcla investigación y amistad con una precisión muy argentina; Damián Szifron deja que Diego Peretti y Luis Luque choquen hasta encontrar ritmo.",
+			"whatToExpect": "Un policía suspendido y su psicólogo terminan metidos en un caso criminal, obligados a cooperar mientras cada uno lidia con su propia crisis.",
+			"pace": "Corre entre pistas, persecuciones y discusiones, con chistes que nacen de la urgencia y no frenan la trama.",
+			"intensity": "La acción tiene peligro, pero la tensión se vuelve comedia cuando la dupla improvisa y convierte el miedo en una estrategia absurda.",
+			"practicalContext": "Dura 112 minutos y funciona como plan de comedia policial, con ritmo alto y una química que se disfruta incluso sin conocer el género.",
+			"forFansOf": "Te va a gustar si disfrutás buddy movies, humor rioplatense y personajes que se vuelven equipo a fuerza de discutir.",
+			"notForYouIf": "No es para vos si preferís policiales solemnes, humor más seco o una dupla que resuelva todo sin hacer un desastre."
+		},
+		"becauseYouLiked": [
+			"el-robo-del-siglo-2020",
+			"los-justos-2024"
+		],
+		"related": [
+			"los-otros-dos-2010",
+			"la-odisea-de-los-giles-2019",
+			"relatos-salvajes-2014",
+			"lu-pau-2026"
+		]
 	},
-	"becauseYouLiked": [
-		"el-robo-del-siglo-2020",
-		"los-justos-2024"
-	],
-	"related": [
-		"los-otros-dos-2010",
-		"la-odisea-de-los-giles-2019",
-		"relatos-salvajes-2014",
-		"lu-pau-2026"
-	]
-},
 	"synopsis": "Un policía suspendido por una crisis nerviosa recibe como terapeuta a un psicólogo que termina metido en una investigación criminal. La dupla improbable se ve obligada a resolver el caso mientras aprende a convivir.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Diego Peretti",
+			"character": "Mariano Silverstein",
+			"tmdbMovieId": 78237,
+			"tmdbPersonId": 96429,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Luque",
+			"character": "Alfredo Díaz",
+			"tmdbMovieId": 78237,
+			"tmdbPersonId": 103431,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Oscar Ferreiro",
+			"character": "Levonian",
+			"tmdbMovieId": 78237,
+			"tmdbPersonId": 591423,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -55,5 +55,35 @@
 		]
 	},
 	"review": "Woody Allen presenta a Virgil Starkwell como un ladrón incapaz a través de entrevistas falsas, fotos policiales y gags que convierten cada crimen en papelón. Allen actor aprovecha la torpeza del personaje sin querer hacerlo querible a la fuerza, y el formato documental le permite saltar de un desastre a otro con libertad. La dirección es primeriza y algunos chistes tienen menos precisión que en sus películas posteriores, pero la energía desprolija juega a favor. El ritmo nunca deja quieto el remate. Vale por ver cómo su humor ya encontraba una voz propia.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Virgil Starkwell",
+			"tmdbMovieId": 11485,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Janet Margolin",
+			"character": "Louise",
+			"tmdbMovieId": 11485,
+			"tmdbPersonId": 10558,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marcel Hillaire",
+			"character": "Fritz",
+			"tmdbMovieId": 11485,
+			"tmdbPersonId": 50835,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jacquelyn Hyde",
+			"character": "Miss Blair",
+			"tmdbMovieId": 11485,
+			"tmdbPersonId": 69570,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

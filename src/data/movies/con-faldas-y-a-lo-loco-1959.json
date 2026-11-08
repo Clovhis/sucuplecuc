@@ -57,5 +57,35 @@
 	"subgenres": [
 		"RomCom"
 	],
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tony Curtis",
+			"character": "Joe (Josephine)",
+			"tmdbMovieId": 239,
+			"tmdbPersonId": 3150,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Lemmon",
+			"character": "Jerry (Daphne)",
+			"tmdbMovieId": 239,
+			"tmdbPersonId": 3151,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marilyn Monroe",
+			"character": "Sugar Kane Kowalczyk",
+			"tmdbMovieId": 239,
+			"tmdbPersonId": 3149,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Raft",
+			"character": "Spats Colombo",
+			"tmdbMovieId": 239,
+			"tmdbPersonId": 3152,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

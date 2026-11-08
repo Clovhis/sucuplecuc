@@ -53,5 +53,28 @@
 	"subgenres": [
 		"Slasher"
 	],
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Busta Rhymes",
+			"character": "Freddie Harris",
+			"tmdbMovieId": 11442,
+			"tmdbPersonId": 6485,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bianca Kajlich",
+			"character": "Sara Moyer",
+			"tmdbMovieId": 11442,
+			"tmdbPersonId": 69616,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Thomas Ian Nicholas",
+			"character": "Bill",
+			"tmdbMovieId": 11442,
+			"tmdbPersonId": 21403,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

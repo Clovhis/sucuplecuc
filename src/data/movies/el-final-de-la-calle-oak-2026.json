@@ -56,5 +56,35 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "El final de la calle Oak encuentra una idea de alto impacto y la usa para hablar de algo bastante más chico: una familia que sólo puede sobrevivir si deja de funcionar como piezas aisladas. David Robert Mitchell filma el desconcierto con una mezcla atractiva de aventura, amenaza y humor doméstico. La película no siempre equilibra sus cambios de tono, pero la escala del barrio arrancado de su lugar tiene imágenes memorables y un pulso de matiné extraña que se disfruta en pantalla grande."
+	"review": "El final de la calle Oak encuentra una idea de alto impacto y la usa para hablar de algo bastante más chico: una familia que sólo puede sobrevivir si deja de funcionar como piezas aisladas. David Robert Mitchell filma el desconcierto con una mezcla atractiva de aventura, amenaza y humor doméstico. La película no siempre equilibra sus cambios de tono, pero la escala del barrio arrancado de su lugar tiene imágenes memorables y un pulso de matiné extraña que se disfruta en pantalla grande.",
+	"castCharacters": [
+		{
+			"actor": "Anne Hathaway",
+			"character": "Denise Platt",
+			"tmdbMovieId": 1101383,
+			"tmdbPersonId": 1813,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ewan McGregor",
+			"character": "Greg Platt",
+			"tmdbMovieId": 1101383,
+			"tmdbPersonId": 3061,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maisy Stella",
+			"character": "Audrey Platt",
+			"tmdbMovieId": 1101383,
+			"tmdbPersonId": 1104567,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christian Convery",
+			"character": "Brian Platt",
+			"tmdbMovieId": 1101383,
+			"tmdbPersonId": 1721268,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

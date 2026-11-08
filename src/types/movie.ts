@@ -42,6 +42,19 @@ export interface MovieEditorial {
 	tenSecondTake?: MovieTenSecondTake;
 }
 
+/** Crédito verificado contra la fuente; las variantes requieren evidencia independiente. */
+export interface MovieCastCharacter {
+	actor: string;
+	character: string;
+	/** Nombre localizado de exhibición, sólo con fuente verificada. */
+	displayCharacter?: string;
+	tmdbMovieId: number;
+	tmdbPersonId: number;
+	/** Fecha real de consulta de TMDB en Argentina (YYYY-MM-DD). */
+	verifiedAt: string;
+	variants?: string[];
+}
+
 export interface Movie {
 	slug: string;
 	title: string;
@@ -71,6 +84,7 @@ export interface Movie {
 	releasePlatforms?: string[];
 	director: string;
 	mainCast: string[];
+	castCharacters?: MovieCastCharacter[];
 	productionCompany: string;
 	/** Canonical Cine Posta editorial rating. Omit only while a movie remains unranked. */
 	cinepostaScore?: CinePostaScore | null;

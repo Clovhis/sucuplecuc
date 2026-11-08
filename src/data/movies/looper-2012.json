@@ -54,5 +54,35 @@
 		]
 	},
 	"runtimeMinutes": 119,
-	"review": "Looper usa el viaje temporal como una herramienta dramática y no como un rompecabezas para presumir. Rian Johnson construye un mundo criminal reconocible, con reglas suficientes para sostener la tensión y zonas de ambigüedad que enriquecen el conflicto. Joseph Gordon-Levitt trabaja la máscara física de Bruce Willis sin reducir al personaje a una imitación, y Willis aporta una dureza cansada que vuelve personal cada decisión. Emily Blunt termina de desplazar la película hacia el terreno de la responsabilidad y la crianza. Algunas explicaciones podrían ser más limpias, pero el pulso visual, el diseño del futuro y la discusión sobre la violencia la hacen perdurable."
+	"review": "Looper usa el viaje temporal como una herramienta dramática y no como un rompecabezas para presumir. Rian Johnson construye un mundo criminal reconocible, con reglas suficientes para sostener la tensión y zonas de ambigüedad que enriquecen el conflicto. Joseph Gordon-Levitt trabaja la máscara física de Bruce Willis sin reducir al personaje a una imitación, y Willis aporta una dureza cansada que vuelve personal cada decisión. Emily Blunt termina de desplazar la película hacia el terreno de la responsabilidad y la crianza. Algunas explicaciones podrían ser más limpias, pero el pulso visual, el diseño del futuro y la discusión sobre la violencia la hacen perdurable.",
+	"castCharacters": [
+		{
+			"actor": "Bruce Willis",
+			"character": "Old Joe",
+			"tmdbMovieId": 59967,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joseph Gordon-Levitt",
+			"character": "Joe",
+			"tmdbMovieId": 59967,
+			"tmdbPersonId": 24045,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Blunt",
+			"character": "Sara",
+			"tmdbMovieId": 59967,
+			"tmdbPersonId": 5081,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Daniels",
+			"character": "Abe",
+			"tmdbMovieId": 59967,
+			"tmdbPersonId": 8447,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -60,5 +60,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Dana Andrews",
+			"character": "Fred Derry",
+			"tmdbMovieId": 887,
+			"tmdbPersonId": 13578,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fredric March",
+			"character": "Al Stephenson",
+			"tmdbMovieId": 887,
+			"tmdbPersonId": 13576,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harold Russell",
+			"character": "Homer Parrish",
+			"tmdbMovieId": 887,
+			"tmdbPersonId": 13580,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

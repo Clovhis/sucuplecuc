@@ -24,7 +24,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Jordan Peele convierte un objeto en el cielo en una pregunta sobre mirar y ser mirado; Daniel Kaluuya y Keke Palmer sostienen un terror extraño que no busca cerrar todas sus ideas.",
-			"whatToExpect": "Rancho, espectáculo, animales, trauma, una presencia aérea y dos hermanos decididos a obtener la imagen que podría salvar su negocio.",			"pace": "Se toma tiempo para observar el paisaje y sembrar historias laterales; cuando la amenaza aparece, el silencio se vuelve parte del espectáculo.",			"intensity": "La inquietud es atmosférica y física, con apariciones grandes y momentos de trauma; importa tanto el deseo de filmar como la criatura.",			"practicalContext": "Con 130 minutos, necesita pantalla y sonido para que el cielo vacío trabaje; es una mala elección para verla distraído o esperando sustos constantes.",			"forFansOf": "Para quienes disfrutan a Peele, ciencia ficción con subtexto y actuaciones de Kaluuya y Palmer que se complementan por contraste.",			"notForYouIf": "No es para vos si buscás respuestas cerradas, sustos cada pocos minutos o un monstruo que exista sólo para la trama principal."
+			"whatToExpect": "Rancho, espectáculo, animales, trauma, una presencia aérea y dos hermanos decididos a obtener la imagen que podría salvar su negocio.",
+			"pace": "Se toma tiempo para observar el paisaje y sembrar historias laterales; cuando la amenaza aparece, el silencio se vuelve parte del espectáculo.",
+			"intensity": "La inquietud es atmosférica y física, con apariciones grandes y momentos de trauma; importa tanto el deseo de filmar como la criatura.",
+			"practicalContext": "Con 130 minutos, necesita pantalla y sonido para que el cielo vacío trabaje; es una mala elección para verla distraído o esperando sustos constantes.",
+			"forFansOf": "Para quienes disfrutan a Peele, ciencia ficción con subtexto y actuaciones de Kaluuya y Palmer que se complementan por contraste.",
+			"notForYouIf": "No es para vos si buscás respuestas cerradas, sustos cada pocos minutos o un monstruo que exista sólo para la trama principal."
 		},
 		"becauseYouLiked": [
 			"get-out-2017",
@@ -41,5 +46,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "CA, JP, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Kaluuya",
+			"character": "OJ Haywood",
+			"tmdbMovieId": 762504,
+			"tmdbPersonId": 206919,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keke Palmer",
+			"character": "Emerald Haywood",
+			"tmdbMovieId": 762504,
+			"tmdbPersonId": 74688,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brandon Perea",
+			"character": "Angel Torres",
+			"tmdbMovieId": 762504,
+			"tmdbPersonId": 1602972,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

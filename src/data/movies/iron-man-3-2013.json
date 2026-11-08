@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Robert Downey Jr.",
+			"character": "Tony Stark",
+			"tmdbMovieId": 68721,
+			"tmdbPersonId": 3223,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gwyneth Paltrow",
+			"character": "Pepper Potts",
+			"tmdbMovieId": 68721,
+			"tmdbPersonId": 12052,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Cheadle",
+			"character": "Colonel James Rhodes",
+			"tmdbMovieId": 68721,
+			"tmdbPersonId": 1896,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

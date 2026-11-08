@@ -46,5 +46,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sylvester Stallone",
+			"character": "Robert \"Rocky\" Balboa",
+			"tmdbMovieId": 1374,
+			"tmdbPersonId": 16483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dolph Lundgren",
+			"character": "Ivan Drago",
+			"tmdbMovieId": 1374,
+			"tmdbPersonId": 16644,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carl Weathers",
+			"character": "Apollo Creed",
+			"tmdbMovieId": 1374,
+			"tmdbPersonId": 1101,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

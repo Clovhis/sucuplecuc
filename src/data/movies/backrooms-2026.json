@@ -65,5 +65,42 @@
 	"releasePlatforms": [
 		"Disney Plus",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Chiwetel Ejiofor",
+			"character": "Clark",
+			"tmdbMovieId": 1083381,
+			"tmdbPersonId": 5294,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Renate Reinsve",
+			"character": "Mary",
+			"tmdbMovieId": 1083381,
+			"tmdbPersonId": 1576786,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Duplass",
+			"character": "Phil",
+			"tmdbMovieId": 1083381,
+			"tmdbPersonId": 45407,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Finn Bennett",
+			"character": "Bobby",
+			"tmdbMovieId": 1083381,
+			"tmdbPersonId": 1512452,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lukita Maxwell",
+			"character": "Kat",
+			"tmdbMovieId": 1083381,
+			"tmdbPersonId": 1709431,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

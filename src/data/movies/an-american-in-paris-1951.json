@@ -60,5 +60,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Gene Kelly",
+			"character": "Jerry Mulligan",
+			"tmdbMovieId": 2769,
+			"tmdbPersonId": 13294,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leslie Caron",
+			"character": "Lise Bouvier",
+			"tmdbMovieId": 2769,
+			"tmdbPersonId": 5320,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Oscar Levant",
+			"character": "Adam Cook",
+			"tmdbMovieId": 2769,
+			"tmdbPersonId": 27966,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

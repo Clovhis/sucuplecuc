@@ -51,5 +51,28 @@
 		]
 	},
 	"review": "Woody Allen sigue a Danny Rose, representante de artistas de segunda línea, cuando intenta salvar el recital de un cantante y queda enredado con una mujer ligada a la mafia. Allen actor le da al personaje una honestidad torpe que vuelve entrañables sus papelones, y Mia Farrow juega muy bien contra esa inocencia. La dirección en blanco y negro mira clubes, camarines y perdedores con ternura sin idealizarlos. El ritmo es liviano, aunque el misterio se resuelve fácil. Vale por sus chistes bajitos y una melancolía que pega más de lo esperado.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Danny Rose",
+			"tmdbMovieId": 12762,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mia Farrow",
+			"character": "Tina Vitale",
+			"tmdbMovieId": 12762,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Apollo Forte",
+			"character": "Lou Canova",
+			"tmdbMovieId": 12762,
+			"tmdbPersonId": 73591,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,18 +54,55 @@
 			"forFansOf": "Si te interesan dramas psicológicos extremos, cine de Michael Haneke y personajes que convierten intimidad en poder.",
 			"notForYouIf": "No es para vos si buscás erotismo amable, una protagonista fácil de acompañar o límites morales explicados."
 		},
-	"becauseYouLiked": [
-		"la-nina-santa-2004",
-		"la-cinta-blanca-2009"
-	],
-	"related": [
-		"climax-2018",
-		"ojos-bien-cerrados-1999",
-		"pearl-2022",
-		"requiem-por-un-sueno-2000"
-	]
-},
+		"becauseYouLiked": [
+			"la-nina-santa-2004",
+			"la-cinta-blanca-2009"
+		],
+		"related": [
+			"climax-2018",
+			"ojos-bien-cerrados-1999",
+			"pearl-2022",
+			"requiem-por-un-sueno-2000"
+		]
+	},
 	"review": "Michael Haneke observa la intimidad como un campo de poder donde el deseo nunca aparece separado de la violencia. Los ensayos, los departamentos y los gestos retenidos producen una tensión clínica, más perturbadora por lo que no muestra. Isabelle Huppert ofrece una actuación de precisión feroz, con Benoît Magimel como contrapunto de una relación imposible. La distancia entre control y deseo se quiebra de manera brutal, y Haneke no permite que el espectador mire esa intimidad con comodidad.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Isabelle Huppert",
+			"character": "Erika Kohut",
+			"tmdbMovieId": 1791,
+			"tmdbPersonId": 17882,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Annie Girardot",
+			"character": "Erika's Mother",
+			"tmdbMovieId": 1791,
+			"tmdbPersonId": 6014,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Benoît Magimel",
+			"character": "Walter Klemmer",
+			"tmdbMovieId": 1791,
+			"tmdbPersonId": 5442,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Susanne Lothar",
+			"character": "Mme Schober",
+			"tmdbMovieId": 1791,
+			"tmdbPersonId": 19123,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Udo Samel",
+			"character": "Dr. George Blonskij",
+			"tmdbMovieId": 1791,
+			"tmdbPersonId": 6264,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

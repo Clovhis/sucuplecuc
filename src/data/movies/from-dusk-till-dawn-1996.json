@@ -45,18 +45,48 @@
 			"forFansOf": "Fans de George Clooney, de Robert Rodriguez y de las películas que mezclan crimen fronterizo con monstruos sin pedir permiso ni coherencia realista.",
 			"notForYouIf": "Querés un tono estable, terror atmosférico o una trama que desarrolle a cada personaje. From Dusk Till Dawn vive de romper su propia promesa."
 		},
-	"becauseYouLiked": [
-		"planet-terror-2007",
-		"la-matanza-de-texas-1974"
-	],
-	"related": [
-		"censor-2021",
-		"halloween-2018",
-		"scream-1996",
-		"tetsuo-the-iron-man-1989"
-	]
-},
+		"becauseYouLiked": [
+			"planet-terror-2007",
+			"la-matanza-de-texas-1974"
+		],
+		"related": [
+			"censor-2021",
+			"halloween-2018",
+			"scream-1996",
+			"tetsuo-the-iron-man-1989"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": "",
-	"review": "From Dusk Till Dawn arranca como thriller criminal mugriento y de pronto pega un volantazo salvaje hacia el terror mas desquiciado sin pedir permiso. Esa mezcla podria ser un desastre, pero Rodriguez la lleva con una energia tan canchera que el descontrol se vuelve parte del encanto. Clooney entra con presencia de estrella, Tarantino mete veneno y cuando aparece el bar la pelicula se entrega al exceso con una felicidad contagiosa. Es pulp puro, bien hecho y sin verguenza."
+	"review": "From Dusk Till Dawn arranca como thriller criminal mugriento y de pronto pega un volantazo salvaje hacia el terror mas desquiciado sin pedir permiso. Esa mezcla podria ser un desastre, pero Rodriguez la lleva con una energia tan canchera que el descontrol se vuelve parte del encanto. Clooney entra con presencia de estrella, Tarantino mete veneno y cuando aparece el bar la pelicula se entrega al exceso con una felicidad contagiosa. Es pulp puro, bien hecho y sin verguenza.",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Seth Gecko",
+			"tmdbMovieId": 755,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Quentin Tarantino",
+			"character": "Richard Gecko",
+			"tmdbMovieId": 755,
+			"tmdbPersonId": 138,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harvey Keitel",
+			"character": "Jacob Fuller",
+			"tmdbMovieId": 755,
+			"tmdbPersonId": 1037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juliette Lewis",
+			"character": "Kate Fuller",
+			"tmdbMovieId": 755,
+			"tmdbPersonId": 3196,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

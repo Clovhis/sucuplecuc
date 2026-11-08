@@ -56,5 +56,42 @@
 			"bridge-of-spies-2015"
 		]
 	},
-	"review": "Más que una película de batalla, esta es una investigación sobre versiones que se contradicen y heridas que nadie quiere mirar de frente. Denzel Washington lleva la culpa del personaje con una sobriedad que evita el melodrama fácil, mientras Meg Ryan aprovecha los recuerdos fragmentados para construir una figura menos obvia de lo que parece. Edward Zwick ordena bien las reconstrucciones y les saca tensión aun cuando el misterio no resulta imposible de anticipar. La conclusión puede sentirse algo prolija, pero el recorrido tiene humanidad y una mirada crítica sobre el heroísmo militar."
+	"review": "Más que una película de batalla, esta es una investigación sobre versiones que se contradicen y heridas que nadie quiere mirar de frente. Denzel Washington lleva la culpa del personaje con una sobriedad que evita el melodrama fácil, mientras Meg Ryan aprovecha los recuerdos fragmentados para construir una figura menos obvia de lo que parece. Edward Zwick ordena bien las reconstrucciones y les saca tensión aun cuando el misterio no resulta imposible de anticipar. La conclusión puede sentirse algo prolija, pero el recorrido tiene humanidad y una mirada crítica sobre el heroísmo militar.",
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "Lieutenant Colonel Nathaniel Serling",
+			"tmdbMovieId": 10684,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meg Ryan",
+			"character": "Captain Karen Emma Walden",
+			"tmdbMovieId": 10684,
+			"tmdbPersonId": 5344,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lou Diamond Phillips",
+			"character": "Staff Sergeant John Monfriez",
+			"tmdbMovieId": 10684,
+			"tmdbPersonId": 38560,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Moriarty",
+			"character": "Brigadier General Hershberg",
+			"tmdbMovieId": 10684,
+			"tmdbPersonId": 21030,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Damon",
+			"character": "Ilario",
+			"tmdbMovieId": 10684,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

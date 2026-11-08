@@ -56,5 +56,21 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Oliver Reed",
+			"character": "Dr. Hal Raglan",
+			"tmdbMovieId": 28942,
+			"tmdbPersonId": 936,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Art Hindle",
+			"character": "Frank Carveth",
+			"tmdbMovieId": 28942,
+			"tmdbPersonId": 41256,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

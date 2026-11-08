@@ -23,13 +23,13 @@
 	},
 	"editorial": {
 		"tenSecondTake": {
-		"verdict": "Love Lies Bleeding convierte el deseo en combustible peligroso: Rose Glass hace que Kristen Stewart y Katy O’Brian se abracen mientras el crimen les come el pueblo.",
-		"whatToExpect": "Lou y una fisicoculturista de paso se meten en una espiral de esteroides, violencia y familias capaces de convertir el romance en arma.",
-		"pace": "Empieza íntima y sudada, después crece hacia golpes, fugas y decisiones cada vez más desmesuradas sin soltar el pulso sensorial.",
-		"intensity": "La pasión y la brutalidad avanzan juntas; cada intento de protegerse abre una puerta a una violencia más grande.",
-		"practicalContext": "Mirala por el neón, el cuerpo y la pesadilla de pueblo chico, aceptando que el tramo final abandona cualquier realismo prolijo.",
-		"forFansOf": "Si te gustan romances criminales, thrillers físicos y cine de género que se anima a volverse excesivo.",
-		"notForYouIf": "No es para vos si buscás una historia romántica amable, violencia contenida o personajes que tomen decisiones razonables."
+			"verdict": "Love Lies Bleeding convierte el deseo en combustible peligroso: Rose Glass hace que Kristen Stewart y Katy O’Brian se abracen mientras el crimen les come el pueblo.",
+			"whatToExpect": "Lou y una fisicoculturista de paso se meten en una espiral de esteroides, violencia y familias capaces de convertir el romance en arma.",
+			"pace": "Empieza íntima y sudada, después crece hacia golpes, fugas y decisiones cada vez más desmesuradas sin soltar el pulso sensorial.",
+			"intensity": "La pasión y la brutalidad avanzan juntas; cada intento de protegerse abre una puerta a una violencia más grande.",
+			"practicalContext": "Mirala por el neón, el cuerpo y la pesadilla de pueblo chico, aceptando que el tramo final abandona cualquier realismo prolijo.",
+			"forFansOf": "Si te gustan romances criminales, thrillers físicos y cine de género que se anima a volverse excesivo.",
+			"notForYouIf": "No es para vos si buscás una historia romántica amable, violencia contenida o personajes que tomen decisiones razonables."
 		},
 		"becauseYouLiked": [
 			"la-habitacion-del-panico-2002",
@@ -46,5 +46,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-04",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Kristen Stewart",
+			"character": "Lou",
+			"tmdbMovieId": 948549,
+			"tmdbPersonId": 37917,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katy O'Brian",
+			"character": "Jackie",
+			"tmdbMovieId": 948549,
+			"tmdbPersonId": 2252989,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Harris",
+			"character": "Lou Sr.",
+			"tmdbMovieId": 948549,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

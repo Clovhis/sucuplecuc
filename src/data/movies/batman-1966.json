@@ -46,5 +46,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Adam West",
+			"character": "Batman (Bruce Wayne)",
+			"tmdbMovieId": 2661,
+			"tmdbPersonId": 26847,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Burt Ward",
+			"character": "Robin (Dick Grayson)",
+			"tmdbMovieId": 2661,
+			"tmdbPersonId": 35192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lee Meriwether",
+			"character": "The Catwoman (Kitka)",
+			"tmdbMovieId": 2661,
+			"tmdbPersonId": 16108,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

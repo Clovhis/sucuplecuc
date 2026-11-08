@@ -36,7 +36,11 @@
 		"tenSecondTake": {
 			"verdict": "Mundo acuático tiene escala de desastre y una imaginación anfibia más interesante que su fama: Kevin Costner y Dennis Hopper sostienen una aventura despareja, pero extrañamente singular.",
 			"whatToExpect": "Océanos sin tierra, un navegante solitario, una niña con un mapa y piratas que convierten cada plataforma flotante en territorio de disputa.",
-			"pace": "Alterna exploración, persecuciones y explicaciones de mundo; el tamaño de la producción a veces frena la aventura, pero el universo mantiene curiosidad.",			"intensity": "La intensidad es de supervivencia y espectáculo, con choques acuáticos y violencia de aventura; la rareza del mundo pesa más que el realismo.",			"practicalContext": "La ficha no informa duración; elegila como curiosidad posapocalíptica de gran escala y no como acción compacta o perfecta.",			"forFansOf": "Para quienes disfrutan futuros inundados, diseños de producción exagerados y a Costner en un registro seco frente al exceso de Hopper.",			"notForYouIf": "Puede frustrarte si buscás una trama ajustada, personajes muy profundos o una aventura que no se detenga a justificar cada regla del mundo."
+			"pace": "Alterna exploración, persecuciones y explicaciones de mundo; el tamaño de la producción a veces frena la aventura, pero el universo mantiene curiosidad.",
+			"intensity": "La intensidad es de supervivencia y espectáculo, con choques acuáticos y violencia de aventura; la rareza del mundo pesa más que el realismo.",
+			"practicalContext": "La ficha no informa duración; elegila como curiosidad posapocalíptica de gran escala y no como acción compacta o perfecta.",
+			"forFansOf": "Para quienes disfrutan futuros inundados, diseños de producción exagerados y a Costner en un registro seco frente al exceso de Hopper.",
+			"notForYouIf": "Puede frustrarte si buscás una trama ajustada, personajes muy profundos o una aventura que no se detenga a justificar cada regla del mundo."
 		},
 		"becauseYouLiked": [
 			"a-i-artificial-intelligence-2001",
@@ -49,5 +53,35 @@
 			"star-wars-episode-v-the-empire-strikes-back-1980"
 		]
 	},
-	"review": "Mundo acuático carga con una fama de desastre que no explica del todo lo que hay en pantalla. Es una aventura carísima y despareja, sí, pero también inventa un mundo anfibio con reglas visuales claras, persecuciones acuáticas memorables y una criatura protagonista más interesante que su fama de malhumorado. Costner juega a la austeridad mientras Dennis Hopper abraza el exceso. El guion acumula explicaciones y la escala se come parte de la emoción, aunque su rareza posapocalíptica terminó construyendo un pequeño culto."
+	"review": "Mundo acuático carga con una fama de desastre que no explica del todo lo que hay en pantalla. Es una aventura carísima y despareja, sí, pero también inventa un mundo anfibio con reglas visuales claras, persecuciones acuáticas memorables y una criatura protagonista más interesante que su fama de malhumorado. Costner juega a la austeridad mientras Dennis Hopper abraza el exceso. El guion acumula explicaciones y la escala se come parte de la emoción, aunque su rareza posapocalíptica terminó construyendo un pequeño culto.",
+	"castCharacters": [
+		{
+			"actor": "Kevin Costner",
+			"character": "Mariner",
+			"tmdbMovieId": 9804,
+			"tmdbPersonId": 1269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dennis Hopper",
+			"character": "Deacon",
+			"tmdbMovieId": 9804,
+			"tmdbPersonId": 2778,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeanne Tripplehorn",
+			"character": "Helen",
+			"tmdbMovieId": 9804,
+			"tmdbPersonId": 10478,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tina Majorino",
+			"character": "Enola",
+			"tmdbMovieId": 9804,
+			"tmdbPersonId": 53930,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "James McAvoy",
+			"character": "Professor Charles Xavier",
+			"tmdbMovieId": 246655,
+			"tmdbPersonId": 5530,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Fassbender",
+			"character": "Erik Lehnsherr / Magneto",
+			"tmdbMovieId": 246655,
+			"tmdbPersonId": 17288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Lawrence",
+			"character": "Raven / Mystique",
+			"tmdbMovieId": 246655,
+			"tmdbPersonId": 72129,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

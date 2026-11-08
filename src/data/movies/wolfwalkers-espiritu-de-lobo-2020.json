@@ -46,18 +46,34 @@
 			"forFansOf": "Va con quienes disfrutan folclore irlandés, animación dibujada con identidad y relatos de amistad contra la autoridad.",
 			"notForYouIf": "No es para quien busque una fantasía digital uniforme, villanos completamente simples o acción sin pausas contemplativas."
 		},
-	"becauseYouLiked": [
-		"la-cancion-del-mar-2014",
-		"jujutsu-kaisen-0-2021"
-	],
-	"related": [
-		"el-secreto-de-kells-2009",
-		"minions-monstruos-2026",
-		"swapped-2026",
-		"toy-story-5-2026"
-	]
-},
+		"becauseYouLiked": [
+			"la-cancion-del-mar-2014",
+			"jujutsu-kaisen-0-2021"
+		],
+		"related": [
+			"el-secreto-de-kells-2009",
+			"minions-monstruos-2026",
+			"swapped-2026",
+			"toy-story-5-2026"
+		]
+	},
 	"review": "Tomm Moore enfrenta la obediencia colonial y la defensa del bosque desde una amistad que cambia la mirada de la protagonista. El dibujo distingue la geometría del pueblo de las líneas libres del bosque, y convierte la forma en relato. La película tiene aventura, humor y una emoción franca que no necesita bajar el volumen para llegar. La amistad de Robyn y Mebh convierte el choque colonial en una decisión personal sobre a quién escuchar y qué proteger.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Sean Bean",
+			"character": "Robyn's Father, Bill Goodfellowe (voice)",
+			"tmdbMovieId": 441130,
+			"tmdbPersonId": 48,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Simon McBurney",
+			"character": "Lord Protector (voice)",
+			"tmdbMovieId": 441130,
+			"tmdbPersonId": 16358,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,35 @@
 			"ex-machina-2014"
 		]
 	},
-	"review": "Una mirada en la oscuridad adapta a Philip K. Dick con una animación rotoscópica que vuelve inestable cada gesto y cada pared. Keanu Reeves encarna a Bob Arctor desde la confusión, y Robert Downey Jr., Woody Harrelson y Winona Ryder forman un grupo que oscila entre la amistad y la paranoia. Richard Linklater no busca explicar el mundo: deja que el espectador lo atraviese, con humor raro, tristeza y una sensación persistente de estar perdiendo el hilo. El pulso narrativo sostiene sus mejores decisiones."
+	"review": "Una mirada en la oscuridad adapta a Philip K. Dick con una animación rotoscópica que vuelve inestable cada gesto y cada pared. Keanu Reeves encarna a Bob Arctor desde la confusión, y Robert Downey Jr., Woody Harrelson y Winona Ryder forman un grupo que oscila entre la amistad y la paranoia. Richard Linklater no busca explicar el mundo: deja que el espectador lo atraviese, con humor raro, tristeza y una sensación persistente de estar perdiendo el hilo. El pulso narrativo sostiene sus mejores decisiones.",
+	"castCharacters": [
+		{
+			"actor": "Keanu Reeves",
+			"character": "Bob Arctor",
+			"tmdbMovieId": 3509,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Downey Jr.",
+			"character": "James Barris",
+			"tmdbMovieId": 3509,
+			"tmdbPersonId": 3223,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Woody Harrelson",
+			"character": "Ernie Luckman",
+			"tmdbMovieId": 3509,
+			"tmdbPersonId": 57755,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Winona Ryder",
+			"character": "Donna Hawthorne",
+			"tmdbMovieId": 3509,
+			"tmdbPersonId": 1920,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

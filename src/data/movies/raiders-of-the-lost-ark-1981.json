@@ -52,5 +52,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Indiana Jones",
+			"tmdbMovieId": 85,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Karen Allen",
+			"character": "Marion Ravenwood",
+			"tmdbMovieId": 85,
+			"tmdbPersonId": 650,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Freeman",
+			"character": "Dr. René Belloq",
+			"tmdbMovieId": 85,
+			"tmdbPersonId": 652,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

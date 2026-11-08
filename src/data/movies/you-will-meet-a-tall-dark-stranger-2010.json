@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "Woody Allen cruza parejas y familias que se inventan nuevas vidas para no mirar de frente la vejez, el fracaso o el deseo que no se cumple. Anthony Hopkins se divierte con un hombre que quiere volver a ser joven, mientras Naomi Watts y Josh Brolin sostienen una trama más amarga de frustraciones profesionales y afectivas. La dirección mantiene un tono de comedia seca, aunque no todas las historias tienen el mismo filo. El ritmo es liviano y cruel. Vale por su mala leche al observar cómo los personajes se mienten para seguir adelante.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Antonio Banderas",
+			"character": "Greg",
+			"tmdbMovieId": 38031,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Brolin",
+			"character": "Roy",
+			"tmdbMovieId": 38031,
+			"tmdbPersonId": 16851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Alfie",
+			"tmdbMovieId": 38031,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gemma Jones",
+			"character": "Helena Shepridge",
+			"tmdbMovieId": 38031,
+			"tmdbPersonId": 9138,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Freida Pinto",
+			"character": "Dia",
+			"tmdbMovieId": 38031,
+			"tmdbPersonId": 76792,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

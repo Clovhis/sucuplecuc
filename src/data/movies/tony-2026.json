@@ -55,5 +55,28 @@
 	"catalogAddedAt": "2026-10-27",
 	"runtimeMinutes": 106,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Dominic Sessa",
+			"character": "Anthony 'Tony' Bourdain",
+			"tmdbMovieId": 1329016,
+			"tmdbPersonId": 3918497,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Antonio Banderas",
+			"character": "'Chef' José Vatel",
+			"tmdbMovieId": 1329016,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emilia Jones",
+			"character": "Nancy Putkoski",
+			"tmdbMovieId": 1329016,
+			"tmdbPersonId": 1331023,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

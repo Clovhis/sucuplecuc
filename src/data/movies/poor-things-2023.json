@@ -70,5 +70,35 @@
 	"country": "GB",
 	"isArgentinian": false,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Emma Stone",
+			"character": "Bella Baxter",
+			"tmdbMovieId": 792307,
+			"tmdbPersonId": 54693,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Ruffalo",
+			"character": "Duncan Wedderburn",
+			"tmdbMovieId": 792307,
+			"tmdbPersonId": 103,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Godwin Baxter",
+			"tmdbMovieId": 792307,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Abbott",
+			"character": "Alfie Blessington",
+			"tmdbMovieId": 792307,
+			"tmdbPersonId": 984629,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

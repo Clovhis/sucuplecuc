@@ -55,5 +55,42 @@
 		]
 	},
 	"review": "Todos dicen I Love You sigue a una familia neoyorquina atravesada por separaciones, enamoramientos y discusiones políticas, con cada crisis convertida en canción. Woody Allen no busca voces perfectas: el chiste está en ver a sus personajes neuróticos cantar estándares con entusiasmo desigual y bastante ternura. El reparto entra en ese juego con soltura, y Goldie Hawn tiene una escena aérea que resume el tono ligero de la película. Es un musical deliberadamente torpe y episódico, pero funciona si te dejás llevar por su romanticismo ridículo y encantador.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Alan Alda",
+			"character": "Bob Dandridge",
+			"tmdbMovieId": 9716,
+			"tmdbPersonId": 21278,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Woody Allen",
+			"character": "Joe Berlin",
+			"tmdbMovieId": 9716,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Drew Barrymore",
+			"character": "Skylar Dandridge",
+			"tmdbMovieId": 9716,
+			"tmdbPersonId": 69597,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lukas Haas",
+			"character": "Scott Dandridge",
+			"tmdbMovieId": 9716,
+			"tmdbPersonId": 526,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Goldie Hawn",
+			"character": "Steffi Dandridge",
+			"tmdbMovieId": 9716,
+			"tmdbPersonId": 18892,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -68,5 +68,42 @@
 		"Apple TV"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Keir Dullea",
+			"character": "Dr. David Bowman",
+			"tmdbMovieId": 62,
+			"tmdbPersonId": 245,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Lockwood",
+			"character": "Dr. Frank Poole",
+			"tmdbMovieId": 62,
+			"tmdbPersonId": 246,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Sylvester",
+			"character": "Dr. Heywood Floyd",
+			"tmdbMovieId": 62,
+			"tmdbPersonId": 247,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Douglas Rain",
+			"character": "HAL 9000 (voice)",
+			"tmdbMovieId": 62,
+			"tmdbPersonId": 253,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daniel Richter",
+			"character": "Moonwatcher",
+			"tmdbMovieId": 62,
+			"tmdbPersonId": 248,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

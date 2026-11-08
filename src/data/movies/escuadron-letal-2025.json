@@ -55,5 +55,28 @@
 	"review": "Escuadrón letal junta a un rastreador veterano, una unidad policial y una banda de ladrones demasiado cómoda moviéndose por Hong Kong. Larry Yang filma la persecución con una energía limpia, apoyada en callejones, techos y una ciudad que parece diseñada para que alguien escape justo cuando el plan estaba funcionando.\\n\\nJackie Chan aporta el peso de la experiencia sin convertir cada escena en una visita a su museo personal. La película tarda en acomodar sus piezas y el conflicto policial se vuelve previsible, pero cuando arranca la cacería aparecen buenas coreografías y una química simpática entre generaciones. Es un policial de acción largo, prolijo y más eficaz cuando corre que cuando explica.",
 	"releasePlatform": "Apple TV",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Jackie Chan",
+			"character": "Wong Tak Chung",
+			"tmdbMovieId": 1419406,
+			"tmdbPersonId": 18897,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zhang Zifeng",
+			"character": "He Qiuguo",
+			"tmdbMovieId": 1419406,
+			"tmdbPersonId": 1173805,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Leung Ka-fai",
+			"character": "Fu Longsheng",
+			"tmdbMovieId": 1419406,
+			"tmdbPersonId": 56861,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

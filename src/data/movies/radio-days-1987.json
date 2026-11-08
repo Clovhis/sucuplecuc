@@ -53,5 +53,42 @@
 		]
 	},
 	"review": "Días de radio no busca una trama cerrada: junta recuerdos de una infancia atravesada por programas, voces y fantasías que llenaban una casa de barrio. Woody Allen dirige con un tono cálido, pero no edulcorado; cada viñeta tiene un chiste, una rareza o una pequeña melancolía propia. Mia Farrow y Dianne Wiest aparecen con la soltura de una familia que ya existía antes de que empezara la película. El ritmo episódico puede sentirse disperso, aunque esa dispersión es parte de su encanto. Vale si te gustan las películas que reconstruyen una época desde los detalles y no desde el museo.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Mia Farrow",
+			"character": "Sally White",
+			"tmdbMovieId": 30890,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dianne Wiest",
+			"character": "Aunt Bea",
+			"tmdbMovieId": 30890,
+			"tmdbPersonId": 1902,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Kavner",
+			"character": "Mother",
+			"tmdbMovieId": 30890,
+			"tmdbPersonId": 199,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Tucker",
+			"character": "Father",
+			"tmdbMovieId": 30890,
+			"tmdbPersonId": 56695,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wallace Shawn",
+			"character": "Masked Avenger",
+			"tmdbMovieId": 30890,
+			"tmdbPersonId": 12900,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

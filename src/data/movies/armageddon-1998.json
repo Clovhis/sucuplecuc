@@ -57,5 +57,28 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 151
+	"runtimeMinutes": 151,
+	"castCharacters": [
+		{
+			"actor": "Bruce Willis",
+			"character": "Harry S. Stamper",
+			"tmdbMovieId": 95,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Affleck",
+			"character": "A.J. Frost",
+			"tmdbMovieId": 95,
+			"tmdbPersonId": 880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liv Tyler",
+			"character": "Grace Stamper",
+			"tmdbMovieId": 95,
+			"tmdbPersonId": 882,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

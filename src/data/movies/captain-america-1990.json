@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Matt Salinger",
+			"character": "Steve Rogers / Captain America",
+			"tmdbMovieId": 13995,
+			"tmdbPersonId": 76234,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ronny Cox",
+			"character": "Tom Kimball",
+			"tmdbMovieId": 13995,
+			"tmdbPersonId": 780,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ned Beatty",
+			"character": "Sam Kolawetz",
+			"tmdbMovieId": 13995,
+			"tmdbPersonId": 13726,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Zachary Levi",
+			"character": "Shazam",
+			"tmdbMovieId": 287947,
+			"tmdbPersonId": 69899,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Strong",
+			"character": "Dr. Sivana",
+			"tmdbMovieId": 287947,
+			"tmdbPersonId": 2983,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Asher Angel",
+			"character": "Billy Batson",
+			"tmdbMovieId": 287947,
+			"tmdbPersonId": 1768966,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

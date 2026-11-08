@@ -58,5 +58,28 @@
 	},
 	"review": "El Huésped Oculto toma la estructura de un rompecabezas judicial y la traslada a una habitación donde cada frase puede ser una trampa. Danial Rifki administra bien la cuenta regresiva y consigue que la conversación entre Reza Rahadian y Mawar Eva De Jongh tenga más tensión que varias de las revelaciones que llegan después.\n\nEl problema es conocido: la película quiere superar al espectador con tantos giros que algunos terminan pareciendo movimientos de guion, no descubrimientos. Aun así, el elenco sostiene la pulseada y el ritmo evita que la adaptación indonesia se vuelva una simple copia. No es una revolución del thriller, pero cumple con el placer culpable de dudar de todos.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Reza Rahadian",
+			"character": "Reza",
+			"tmdbMovieId": 1058588,
+			"tmdbPersonId": 121996,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Arifin Putra",
+			"character": "Yoshi",
+			"tmdbMovieId": 1058588,
+			"tmdbPersonId": 1290939,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Putri Ayudya",
+			"character": "Salma",
+			"tmdbMovieId": 1058588,
+			"tmdbPersonId": 1454161,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

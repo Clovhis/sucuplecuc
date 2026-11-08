@@ -55,5 +55,42 @@
 		]
 	},
 	"runtimeMinutes": 117,
-	"review": "Juego de patriotas entiende muy bien qué clase de estrella necesitaba su Jack Ryan: Harrison Ford transmite autoridad sin convertir al personaje en un superhéroe invulnerable. La primera mitad apuesta por la tensión política y el procedimiento, mientras la segunda acelera hacia una persecución familiar más convencional. Phillip Noyce filma los ataques con claridad y le da peso a la lógica de inteligencia, aunque algunos villanos quedan dibujados con trazos gruesos. Como thriller de comienzos de los noventa funciona por su ritmo, por la presencia de Ford y por la sensación de que el peligro puede llegar hasta la puerta de casa."
+	"review": "Juego de patriotas entiende muy bien qué clase de estrella necesitaba su Jack Ryan: Harrison Ford transmite autoridad sin convertir al personaje en un superhéroe invulnerable. La primera mitad apuesta por la tensión política y el procedimiento, mientras la segunda acelera hacia una persecución familiar más convencional. Phillip Noyce filma los ataques con claridad y le da peso a la lógica de inteligencia, aunque algunos villanos quedan dibujados con trazos gruesos. Como thriller de comienzos de los noventa funciona por su ritmo, por la presencia de Ford y por la sensación de que el peligro puede llegar hasta la puerta de casa.",
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Jack Ryan",
+			"tmdbMovieId": 9869,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anne Archer",
+			"character": "Dr. Caroline \"Cathy\" Ryan",
+			"tmdbMovieId": 9869,
+			"tmdbPersonId": 10427,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick Bergin",
+			"character": "Kevin O'Donnell",
+			"tmdbMovieId": 9869,
+			"tmdbPersonId": 29459,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Bean",
+			"character": "Sean Miller",
+			"tmdbMovieId": 9869,
+			"tmdbPersonId": 48,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Earl Jones",
+			"character": "Adm. James Greer",
+			"tmdbMovieId": 9869,
+			"tmdbPersonId": 15152,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

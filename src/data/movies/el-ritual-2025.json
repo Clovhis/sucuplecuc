@@ -58,5 +58,21 @@
 		"Prime Video"
 	],
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Kim Byong-chul",
+			"character": "Young-beom",
+			"tmdbMovieId": 1447032,
+			"tmdbPersonId": 79577,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Song Ji-hyo",
+			"character": "Seon-hee",
+			"tmdbMovieId": 1447032,
+			"tmdbPersonId": 85174,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -75,5 +75,42 @@
 		"HBO Max"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Michelle Yeoh",
+			"character": "Evelyn Wang",
+			"tmdbMovieId": 545611,
+			"tmdbPersonId": 1620,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephanie Hsu",
+			"character": "Joy Wang / Jobu Tupaki",
+			"tmdbMovieId": 545611,
+			"tmdbPersonId": 1381186,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ke Huy Quan",
+			"character": "Waymond Wang",
+			"tmdbMovieId": 545611,
+			"tmdbPersonId": 690,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Hong",
+			"character": "Gong Gong",
+			"tmdbMovieId": 545611,
+			"tmdbPersonId": 20904,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jamie Lee Curtis",
+			"character": "Deirdre Beaubeirdre",
+			"tmdbMovieId": 545611,
+			"tmdbPersonId": 8944,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

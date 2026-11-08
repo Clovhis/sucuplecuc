@@ -53,5 +53,35 @@
 		]
 	},
 	"review": "El club de las Primeras Esposas entiende que una comedia de revancha necesita química antes que discursos. Diane Keaton, Goldie Hawn y Bette Midler juegan con tres formas distintas de humillación y las convierten en una alianza con ritmo propio. El guion subraya sus consignas y algunos remates quedaron fechados, pero la película mantiene una satisfacción muy concreta: ver a mujeres que dejaron de pedir permiso y se organizan para devolver el golpe.",
-	"runtimeMinutes": 102
+	"runtimeMinutes": 102,
+	"castCharacters": [
+		{
+			"actor": "Diane Keaton",
+			"character": "Annie MacDuggan Paradis",
+			"tmdbMovieId": 2925,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Goldie Hawn",
+			"character": "Elise Elliot Atchison",
+			"tmdbMovieId": 2925,
+			"tmdbPersonId": 18892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bette Midler",
+			"character": "Brenda Morelli Cushman",
+			"tmdbMovieId": 2925,
+			"tmdbPersonId": 73931,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maggie Smith",
+			"character": "Gunilla Garson Goldberg",
+			"tmdbMovieId": 2925,
+			"tmdbPersonId": 10978,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

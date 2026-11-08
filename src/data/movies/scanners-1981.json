@@ -57,5 +57,21 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Stephen Lack",
+			"character": "Cameron Vale",
+			"tmdbMovieId": 9538,
+			"tmdbPersonId": 57880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Ironside",
+			"character": "Darryl Revok",
+			"tmdbMovieId": 9538,
+			"tmdbPersonId": 11086,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

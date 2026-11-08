@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "CA, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Eric Bana",
+			"character": "Bruce Banner",
+			"tmdbMovieId": 1927,
+			"tmdbPersonId": 8783,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Connelly",
+			"character": "Betty Ross",
+			"tmdbMovieId": 1927,
+			"tmdbPersonId": 6161,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Elliott",
+			"character": "Ross",
+			"tmdbMovieId": 1927,
+			"tmdbPersonId": 16431,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

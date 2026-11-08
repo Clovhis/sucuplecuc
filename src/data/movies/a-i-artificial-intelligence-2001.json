@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "Steven Spielberg imagina a David, un niño robot programado para amar, y convierte esa promesa tierna en una historia de abandono bastante cruel. Haley Joel Osment sostiene el personaje sin hacerlo empalagoso, y Jude Law le aporta un brillo extraño a un mundo donde hasta el afecto tiene precio. La dirección pasa del cuento familiar a la pesadilla futurista con imágenes enormes y una tristeza muy fría. El tramo final divide porque estira la emoción hacia un lugar casi de fábula, pero también vuelve inolvidable su ambición. Vale por esa mezcla incómoda de ternura, tecnología y angustia existencial.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Haley Joel Osment",
+			"character": "David",
+			"tmdbMovieId": 644,
+			"tmdbPersonId": 9640,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jude Law",
+			"character": "Gigolo Joe",
+			"tmdbMovieId": 644,
+			"tmdbPersonId": 9642,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frances O'Connor",
+			"character": "Monica Swinton",
+			"tmdbMovieId": 644,
+			"tmdbPersonId": 1518,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Robards",
+			"character": "Henry Swinton",
+			"tmdbMovieId": 644,
+			"tmdbPersonId": 8213,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jake Thomas",
+			"character": "Martin Swinton",
+			"tmdbMovieId": 644,
+			"tmdbPersonId": 9641,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

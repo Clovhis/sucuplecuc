@@ -50,5 +50,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Owen Teague",
+			"character": "Noa",
+			"tmdbMovieId": 653346,
+			"tmdbPersonId": 1586047,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Freya Allan",
+			"character": "Nova / Mae",
+			"tmdbMovieId": 653346,
+			"tmdbPersonId": 2146942,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Durand",
+			"character": "Proximus Caesar",
+			"tmdbMovieId": 653346,
+			"tmdbPersonId": 79072,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

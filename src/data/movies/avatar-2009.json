@@ -38,19 +38,42 @@
 			"forFansOf": "La ciencia ficción de mundos completos, el espectáculo digital y las epopeyas donde la naturaleza también es protagonista.",
 			"notForYouIf": "Necesitás una trama imprevisible, personajes ambiguos o una película que no dependa tanto de su diseño visual."
 		},
-	"becauseYouLiked": [
-		"terminator-2-judgment-day-1991",
-		"the-terminator-1984"
-	],
-	"related": [
-		"looper-2012",
-		"star-wars-episode-iii-revenge-of-the-sith-2005",
-		"star-wars-episode-vii-the-force-awakens-2015",
-		"rogue-one-a-star-wars-story-2016"
-	]
-},
+		"becauseYouLiked": [
+			"terminator-2-judgment-day-1991",
+			"the-terminator-1984"
+		],
+		"related": [
+			"looper-2012",
+			"star-wars-episode-iii-revenge-of-the-sith-2005",
+			"star-wars-episode-vii-the-force-awakens-2015",
+			"rogue-one-a-star-wars-story-2016"
+		]
+	},
 	"review": "Avatar sigue a Jake Sully, un ex marine que usa un cuerpo Na'vi para infiltrarse en Pandora y termina dividido entre la empresa que lo envió y el pueblo que aprende a conocer. James Cameron construye ese mundo con una claridad visual tremenda: cada criatura, paisaje y movimiento tiene peso, aunque el relato vaya por caminos bastante conocidos. Sam Worthington funciona como punto de entrada y Zoe Saldaña le da emoción y carácter a Neytiri. El libreto es simple, pero como experiencia de escala, color y aventura todavía pasa por arriba a buena parte del cine de estudio.",
-  "synopsis": "El exmarine Jake Sully controla un cuerpo na'vi para infiltrarse en Pandora y facilitar la extracción de un mineral. Su vínculo con el pueblo local lo obliga a elegir de qué lado pelear.",
+	"synopsis": "El exmarine Jake Sully controla un cuerpo na'vi para infiltrarse en Pandora y facilitar la extracción de un mineral. Su vínculo con el pueblo local lo obliga a elegir de qué lado pelear.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Sam Worthington",
+			"character": "Jake Sully",
+			"tmdbMovieId": 19995,
+			"tmdbPersonId": 65731,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zoe Saldaña",
+			"character": "Neytiri",
+			"tmdbMovieId": 19995,
+			"tmdbPersonId": 8691,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Lang",
+			"character": "Colonel Miles Quaritch",
+			"tmdbMovieId": 19995,
+			"tmdbPersonId": 32747,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

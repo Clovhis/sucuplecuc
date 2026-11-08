@@ -52,5 +52,35 @@
 			"blue-jasmine-2013"
 		]
 	},
-	"review": "Caballero de copas cuenta la crisis de Rick a través de fragmentos, voces y movimientos que parecen buscar una emoción antes que una explicación. Christian Bale funciona como centro silencioso de una película donde los demás personajes aparecen como estaciones de un viaje interior, y Cate Blanchett, Natalie Portman y Antonio Banderas aportan presencias muy distintas. Terrence Malick filma Los Ángeles como un sueño de lujo vacío, con imágenes bellas y una narración que se resiste a ordenar sus piezas. Puede fascinar o expulsar, pero su forma es coherente con el personaje perdido que retrata."
+	"review": "Caballero de copas cuenta la crisis de Rick a través de fragmentos, voces y movimientos que parecen buscar una emoción antes que una explicación. Christian Bale funciona como centro silencioso de una película donde los demás personajes aparecen como estaciones de un viaje interior, y Cate Blanchett, Natalie Portman y Antonio Banderas aportan presencias muy distintas. Terrence Malick filma Los Ángeles como un sueño de lujo vacío, con imágenes bellas y una narración que se resiste a ordenar sus piezas. Puede fascinar o expulsar, pero su forma es coherente con el personaje perdido que retrata.",
+	"castCharacters": [
+		{
+			"actor": "Christian Bale",
+			"character": "Rick",
+			"tmdbMovieId": 86835,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Nancy",
+			"tmdbMovieId": 86835,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Natalie Portman",
+			"character": "Elizabeth",
+			"tmdbMovieId": 86835,
+			"tmdbPersonId": 524,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Antonio Banderas",
+			"character": "Tonio",
+			"tmdbMovieId": 86835,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

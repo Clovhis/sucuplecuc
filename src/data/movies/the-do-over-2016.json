@@ -56,5 +56,42 @@
 	"review": "The Do-Over junta a Sandler y David Spade en una comedia de identidad falsa que avanza con la lógica del escape permanente. La pareja tiene timing y una amistad gastada que se entiende enseguida, mientras Paula Patton y Kathryn Hahn sostienen el costado más aventurero. El guion acumula cadáveres, villanos y giros sin mucha elegancia, aunque la película sabe qué tipo de diversión quiere dar: acción de catálogo con amigos que se insultan todo el tiempo.",
 	"runtimeMinutes": 108,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Max Kessler",
+			"tmdbMovieId": 389053,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Spade",
+			"character": "Charlie",
+			"tmdbMovieId": 389053,
+			"tmdbPersonId": 60950,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paula Patton",
+			"character": "Heather",
+			"tmdbMovieId": 389053,
+			"tmdbPersonId": 52851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kathryn Hahn",
+			"character": "Becca",
+			"tmdbMovieId": 389053,
+			"tmdbPersonId": 17696,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Swardson",
+			"character": "Bob",
+			"tmdbMovieId": 389053,
+			"tmdbPersonId": 32907,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

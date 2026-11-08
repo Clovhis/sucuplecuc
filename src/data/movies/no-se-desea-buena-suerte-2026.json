@@ -39,7 +39,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Julia Hart encuentra un drama juvenil cálido cuando Sunny Sandler prepara un musical mientras su familia atraviesa una crisis; Melanie Lynskey evita que la enfermedad sea sólo moraleja.",
-			"whatToExpect": "Ensayos, escuela, miedo familiar, una función y una adolescente que intenta sostener la alegría sin negar lo que está pasando en su casa.",			"pace": "Avanza entre escenas de teatro y conversaciones domésticas con ritmo amable; subraya las conclusiones, pero deja respirar algunas emociones.",			"intensity": "La carga es afectiva y familiar, con tristeza y miedo equilibrados por música y humor; no busca golpear desde el melodrama extremo.",			"practicalContext": "Con 95 minutos, funciona para una tarde familiar con chicos más grandes; preparate para una historia de crecimiento sentimental y bastante calculada.",			"forFansOf": "Para quienes disfrutan musicales escolares, dramas de familia y la calidez de Melanie Lynskey en papeles de cuidado.",			"notForYouIf": "Puede no ser para vos si te molestan las moralejas dulces, las crisis resueltas con música o una película que cuida mucho sus bordes."
+			"whatToExpect": "Ensayos, escuela, miedo familiar, una función y una adolescente que intenta sostener la alegría sin negar lo que está pasando en su casa.",
+			"pace": "Avanza entre escenas de teatro y conversaciones domésticas con ritmo amable; subraya las conclusiones, pero deja respirar algunas emociones.",
+			"intensity": "La carga es afectiva y familiar, con tristeza y miedo equilibrados por música y humor; no busca golpear desde el melodrama extremo.",
+			"practicalContext": "Con 95 minutos, funciona para una tarde familiar con chicos más grandes; preparate para una historia de crecimiento sentimental y bastante calculada.",
+			"forFansOf": "Para quienes disfrutan musicales escolares, dramas de familia y la calidez de Melanie Lynskey en papeles de cuidado.",
+			"notForYouIf": "Puede no ser para vos si te molestan las moralejas dulces, las crisis resueltas con música o una película que cuida mucho sus bordes."
 		},
 		"becauseYouLiked": [
 			"fue-la-mano-de-dios-2021",
@@ -55,5 +60,42 @@
 	"review": "No se desea buena suerte conoce el manual de la comedia de crecimiento y lo usa con bastante honestidad. Julia Hart pone el foco en una chica que quiere subirse al escenario mientras la casa se llena de preocupaciones, y la película encuentra su mejor tono cuando permite que la emoción aparezca sin disfrazarla de chiste.\n\nSunny Sandler tiene una presencia amable y Melanie Lynskey le da espesor a una madre que no queda reducida a la enfermedad. El guion subraya algunas moralejas y acomoda los conflictos con una dulzura bastante calculada, pero la música y el elenco consiguen que este relato de teatro escolar tenga un corazón más firme que su fórmula.",
 	"releasePlatform": "Netflix",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Sunny Sandler",
+			"character": "Sophie Birenbaum",
+			"tmdbMovieId": 1504358,
+			"tmdbPersonId": 1271681,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Melanie Lynskey",
+			"character": "Elizabeth Birenbaum",
+			"tmdbMovieId": 1504358,
+			"tmdbPersonId": 15091,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Max Greenfield",
+			"character": "Ted Birenbaum",
+			"tmdbMovieId": 1504358,
+			"tmdbPersonId": 1213603,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephanie Beatriz",
+			"character": "Ms. Parker",
+			"tmdbMovieId": 1504358,
+			"tmdbPersonId": 968367,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bebe Neuwirth",
+			"character": "Linda",
+			"tmdbMovieId": 1504358,
+			"tmdbPersonId": 10739,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

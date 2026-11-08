@@ -35,19 +35,22 @@
 			"verdict": "Pascal Laugier hace de Mártires una experiencia de horror que muta de venganza a interrogación metafísica; Morjana Alaoui y Mylène Jampanoï sostienen el costo físico sin alivio fácil.",
 			"whatToExpect": "Cautiverio, revancha, violencia extrema y una secta que intenta darle sentido trascendente al sufrimiento, con cambios de registro que buscan desestabilizar.",
 			"pace": "Empieza como thriller de persecución y se repliega hacia un tramo de tortura sostenida; el ritmo no busca comodidad ni una salida rápida.",
-			"intensity": "Es brutal, angustiante y explícita; la película usa el dolor para incomodar, no para ofrecer la descarga entretenida de un slasher convencional.",			"practicalContext": "Sus 99 minutos alcanzan de sobra para una sesión exigente; elegila sólo si estás dispuesto a una experiencia de terror físico y filosófico.",			"forFansOf": "Para espectadores de horror extremo que valoran una idea detrás de la crueldad y actuaciones corporales tan comprometidas como las de Alaoui y Jampanoï.",			"notForYouIf": "No te va a gustar si buscás gore divertido, sustos dosificados o una película que cuide al espectador de imágenes y preguntas desagradables."
+			"intensity": "Es brutal, angustiante y explícita; la película usa el dolor para incomodar, no para ofrecer la descarga entretenida de un slasher convencional.",
+			"practicalContext": "Sus 99 minutos alcanzan de sobra para una sesión exigente; elegila sólo si estás dispuesto a una experiencia de terror físico y filosófico.",
+			"forFansOf": "Para espectadores de horror extremo que valoran una idea detrás de la crueldad y actuaciones corporales tan comprometidas como las de Alaoui y Jampanoï.",
+			"notForYouIf": "No te va a gustar si buscás gore divertido, sustos dosificados o una película que cuide al espectador de imágenes y preguntas desagradables."
 		},
 		"becauseYouLiked": [
-		"saw-2004",
-		"saw-x-2023"
-	],
-	"related": [
-		"ichi-the-killer-2001",
-		"terrifier-2-2022",
-		"terrifier-3-2024",
-		"tu-madre-se-ha-comido-a-mi-perro-1992"
-	]
-},
+			"saw-2004",
+			"saw-x-2023"
+		],
+		"related": [
+			"ichi-the-killer-2001",
+			"terrifier-2-2022",
+			"terrifier-3-2024",
+			"tu-madre-se-ha-comido-a-mi-perro-1992"
+		]
+	},
 	"review": "Mártires empieza como un relato de venganza brutal y cambia de forma varias veces hasta llegar a un lugar mucho más incómodo. Laugier dirige la violencia sin buscar una descarga simpática: cada escena suma agotamiento, miedo y una pregunta desagradable sobre el dolor y la trascendencia. Morjana Alaoui y Mylène Jampanoï sostienen esa intensidad con cuerpos y miradas más que con grandes discursos. El tramo final puede sentirse cruel hasta la provocación, y no es una película para medir tolerancia como si fuera un deporte. Pero detrás del golpe hay una idea y un clima que explican por qué sigue siendo tan discutida.",
 	"synopsis": "Una mujer marcada por un cautiverio brutal vuelve sobre el pasado para ajustar cuentas, pero esa búsqueda abre una espiral todavía más oscura para ella y para su única amiga.",
 	"audienceRating": "+18",
@@ -57,5 +60,42 @@
 		"Gore",
 		"Psicológico"
 	],
-	"reviewPublishedAt": "2026-05-26"
+	"reviewPublishedAt": "2026-05-26",
+	"castCharacters": [
+		{
+			"actor": "Morjana Alaoui",
+			"character": "Anna Assaoui",
+			"tmdbMovieId": 9539,
+			"tmdbPersonId": 59612,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mylène Jampanoï",
+			"character": "Lucie Jurin",
+			"tmdbMovieId": 9539,
+			"tmdbPersonId": 20197,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine Bégin",
+			"character": "Mademoiselle",
+			"tmdbMovieId": 9539,
+			"tmdbPersonId": 59614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Toupin",
+			"character": "Father",
+			"tmdbMovieId": 9539,
+			"tmdbPersonId": 59615,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patricia Tulasne",
+			"character": "Mother",
+			"tmdbMovieId": 9539,
+			"tmdbPersonId": 59616,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

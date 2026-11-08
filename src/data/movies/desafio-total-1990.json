@@ -55,5 +55,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Arnold Schwarzenegger",
+			"character": "Quaid",
+			"tmdbMovieId": 861,
+			"tmdbPersonId": 1100,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel Ticotin",
+			"character": "Melina",
+			"tmdbMovieId": 861,
+			"tmdbPersonId": 10768,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sharon Stone",
+			"character": "Lori",
+			"tmdbMovieId": 861,
+			"tmdbPersonId": 4430,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Ironside",
+			"character": "Richter",
+			"tmdbMovieId": 861,
+			"tmdbPersonId": 11086,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

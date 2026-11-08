@@ -57,5 +57,42 @@
 	"review": "Ocho noches de locura es una anomalía dentro de la filmografía de Sandler: una película animada navideña con identidad judía, canciones festivas y un protagonista que carga una tristeza bastante más pesada que sus chistes. La animación es limitada, pero el recuerdo, la culpa y la amistad con Whitey le dan una base sincera. Cuando el humor se vuelve demasiado ruidoso pierde fuerza; cuando deja cantar a la melancolía, aparece una película más interesante.",
 	"runtimeMinutes": 76,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Davey / Whitey / Eleanore / Deer (voice)",
+			"tmdbMovieId": 13376,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jackie Sandler",
+			"character": "Jennifer (voice)",
+			"tmdbMovieId": 13376,
+			"tmdbPersonId": 60959,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Nealon",
+			"character": "Mayor (voice)",
+			"tmdbMovieId": 13376,
+			"tmdbPersonId": 58478,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Austin Stout",
+			"character": "Benjamin (voice)",
+			"tmdbMovieId": 13376,
+			"tmdbPersonId": 88736,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rob Schneider",
+			"character": "Chinese Waiter / Narrator (voice)",
+			"tmdbMovieId": 13376,
+			"tmdbPersonId": 60949,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

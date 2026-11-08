@@ -54,5 +54,28 @@
 	"review": "Muñeco diabólico 2 deja de explicar el origen y se concentra en perseguir a Andy con una eficacia bien mecánica. John Lafia aprovecha la idea del juguete asesino para armar suspenso en casas, escuelas y depósitos, mientras Chucky gana presencia como villano bocón y cruel. Alex Vincent carga con un protagonista más vulnerable que heroico, algo que ayuda a que la amenaza conserve peso. No sorprende demasiado y repite estructura, pero el final en la fábrica compensa con imaginación y violencia de juguetería.",
 	"synopsis": "Tras los hechos de la primera película, Andy vive con una familia de acogida mientras su madre permanece internada. Chucky regresa y lo persigue decidido a apoderarse de su cuerpo antes de que sea demasiado tarde.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Alex Vincent",
+			"character": "Andy Barclay",
+			"tmdbMovieId": 11186,
+			"tmdbPersonId": 65683,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Dourif",
+			"character": "Chucky (voice)",
+			"tmdbMovieId": 11186,
+			"tmdbPersonId": 1370,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christine Elise",
+			"character": "Kyle",
+			"tmdbMovieId": 11186,
+			"tmdbPersonId": 39113,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

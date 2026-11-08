@@ -39,8 +39,15 @@
 		]
 	},
 	"editorial": {
-		"becauseYouLiked": ["lady-bird-2017", "brooklyn-2015"],
-		"related": ["barbie-2023", "carol-2015", "hugo-2011"],
+		"becauseYouLiked": [
+			"lady-bird-2017",
+			"brooklyn-2015"
+		],
+		"related": [
+			"barbie-2023",
+			"carol-2015",
+			"hugo-2011"
+		],
 		"tenSecondTake": {
 			"verdict": "Saoirse Ronan y Florence Pugh ponen en primer plano los proyectos de vida de Jo y Amy March, con deseos que chocan y se transforman.",
 			"whatToExpect": "Hermanas que crecen, discuten y se acompañan mientras Jo busca publicar sus historias.",
@@ -56,5 +63,28 @@
 	"releasePlatforms": [
 		"Netflix"
 	],
-	"runtimeMinutes": 135
+	"runtimeMinutes": 135,
+	"castCharacters": [
+		{
+			"actor": "Saoirse Ronan",
+			"character": "Jo March",
+			"tmdbMovieId": 331482,
+			"tmdbPersonId": 36592,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Watson",
+			"character": "Meg March",
+			"tmdbMovieId": 331482,
+			"tmdbPersonId": 10990,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Florence Pugh",
+			"character": "Amy March",
+			"tmdbMovieId": 331482,
+			"tmdbPersonId": 1373737,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

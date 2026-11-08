@@ -40,7 +40,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Jeff Rowe convierte Ninja Turtles: Caos mutante y a sus Tortugas en adolescentes dibujados al margen de una carpeta; la familia importa tanto como la pelea y el caos visual tiene corazón.",
-			"whatToExpect": "Alcantarillas, hermanos mutantes, una periodista, villanos mutantes y una ciudad que obliga a las Tortugas a decidir cómo quieren ser vistas.",			"pace": "Es veloz y juguetona, con animación de trazos y persecuciones que no pierden el hilo; el relato frena lo justo para escuchar a los hermanos.",			"intensity": "La acción es colorida y cómica, pero la tensión emocional está en el miedo al rechazo y en la discusión sobre salir al mundo.",			"practicalContext": "Con 100 minutos, funciona como aventura familiar energética; una pantalla grande favorece su textura dibujada y su banda sonora.",			"forFansOf": "Para fans de las Tortugas, animación expresiva y películas de hermanos que combinan chistes, peleas y ternura sin separarlos.",			"notForYouIf": "No es para vos si buscás una adaptación solemne, un villano complejo o un diseño limpio y pulido sin manchas ni tachones."
+			"whatToExpect": "Alcantarillas, hermanos mutantes, una periodista, villanos mutantes y una ciudad que obliga a las Tortugas a decidir cómo quieren ser vistas.",
+			"pace": "Es veloz y juguetona, con animación de trazos y persecuciones que no pierden el hilo; el relato frena lo justo para escuchar a los hermanos.",
+			"intensity": "La acción es colorida y cómica, pero la tensión emocional está en el miedo al rechazo y en la discusión sobre salir al mundo.",
+			"practicalContext": "Con 100 minutos, funciona como aventura familiar energética; una pantalla grande favorece su textura dibujada y su banda sonora.",
+			"forFansOf": "Para fans de las Tortugas, animación expresiva y películas de hermanos que combinan chistes, peleas y ternura sin separarlos.",
+			"notForYouIf": "No es para vos si buscás una adaptación solemne, un villano complejo o un diseño limpio y pulido sin manchas ni tachones."
 		},
 		"becauseYouLiked": [
 			"lego-star-wars-the-mandalorian-2026",
@@ -53,5 +58,49 @@
 			"red-2022"
 		]
 	},
-	"review": "Ninja Turtles: Caos mutante recupera la sensación de dibujar personajes en el margen de una carpeta y la convierte en una aventura con muchísimo movimiento. La animación parece hecha de trazos, manchas y tachones, pero cada decisión visual ayuda a transmitir la ansiedad de cuatro hermanos que quieren salir al mundo.\n\nEl guion entiende que el corazón de la historia está en la familia, no solo en la pelea contra el villano. Hay chistes, persecuciones y una banda sonora que empuja todo hacia adelante sin borrar la ternura."
+	"review": "Ninja Turtles: Caos mutante recupera la sensación de dibujar personajes en el margen de una carpeta y la convierte en una aventura con muchísimo movimiento. La animación parece hecha de trazos, manchas y tachones, pero cada decisión visual ayuda a transmitir la ansiedad de cuatro hermanos que quieren salir al mundo.\n\nEl guion entiende que el corazón de la historia está en la familia, no solo en la pelea contra el villano. Hay chistes, persecuciones y una banda sonora que empuja todo hacia adelante sin borrar la ternura.",
+	"castCharacters": [
+		{
+			"actor": "Micah Abbey",
+			"character": "Donatello (voice)",
+			"tmdbMovieId": 614930,
+			"tmdbPersonId": 2343267,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shamon Brown Jr.",
+			"character": "Michelangelo (voice)",
+			"tmdbMovieId": 614930,
+			"tmdbPersonId": 3127719,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicolas Cantu",
+			"character": "Leonardo (voice)",
+			"tmdbMovieId": 614930,
+			"tmdbPersonId": 1696351,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brady Noon",
+			"character": "Raphael (voice)",
+			"tmdbMovieId": 614930,
+			"tmdbPersonId": 2239159,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ayo Edebiri",
+			"character": "April O'Neil (voice)",
+			"tmdbMovieId": 614930,
+			"tmdbPersonId": 2195140,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Cena",
+			"character": "Rocksteady (voice)",
+			"tmdbMovieId": 614930,
+			"tmdbPersonId": 56446,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

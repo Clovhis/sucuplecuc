@@ -53,5 +53,35 @@
 			"husbands-and-wives-1992"
 		]
 	},
-	"review": "Mike Nichols encuentra un registro cálido para una historia que podría haber quedado atrapada en la manipulación lacrimógena, y Harrison Ford se anima a construir a Henry desde el desconcierto y el humor físico. La transformación del personaje es clara y tiene momentos genuinamente conmovedores, aunque el guion ordena demasiado prolijamente su aprendizaje y su redención. Funciona mejor cuando observa pequeños gestos domésticos que cuando explica la moraleja: ahí la película logra que el cambio se sienta vivido, no simplemente decretado."
+	"review": "Mike Nichols encuentra un registro cálido para una historia que podría haber quedado atrapada en la manipulación lacrimógena, y Harrison Ford se anima a construir a Henry desde el desconcierto y el humor físico. La transformación del personaje es clara y tiene momentos genuinamente conmovedores, aunque el guion ordena demasiado prolijamente su aprendizaje y su redención. Funciona mejor cuando observa pequeños gestos domésticos que cuando explica la moraleja: ahí la película logra que el cambio se sienta vivido, no simplemente decretado.",
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Henry Turner",
+			"tmdbMovieId": 11364,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Annette Bening",
+			"character": "Sarah Turner",
+			"tmdbMovieId": 11364,
+			"tmdbPersonId": 516,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Nunn",
+			"character": "Bradley, Physical Therapist",
+			"tmdbMovieId": 11364,
+			"tmdbPersonId": 5502,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Rebhorn",
+			"character": "Dr. Sultan",
+			"tmdbMovieId": 11364,
+			"tmdbPersonId": 8986,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

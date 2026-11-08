@@ -52,5 +52,35 @@
 		]
 	},
 	"review": "Woody Allen ubica un melodrama de celos y frustraciones bajo las luces de Coney Island, donde una camarera cansada ve aparecer una oportunidad de fuga que complica todo. Kate Winslet se entrega por completo a Ginny, con cambios de humor y desesperación que por momentos son lo mejor de la película; Juno Temple y Justin Timberlake completan un triángulo menos parejo. La dirección ilumina la feria con una belleza casi irreal, pero el guion alterna escenas muy potentes con diálogos demasiado declamados. El tono no siempre encuentra equilibrio. Vale sobre todo por Winslet y por su atmósfera, no por la sutileza del conjunto.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Jim Belushi",
+			"character": "Humpty",
+			"tmdbMovieId": 429189,
+			"tmdbPersonId": 26485,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juno Temple",
+			"character": "Carolina",
+			"tmdbMovieId": 429189,
+			"tmdbPersonId": 36594,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Justin Timberlake",
+			"character": "Mickey Rubin",
+			"tmdbMovieId": 429189,
+			"tmdbPersonId": 12111,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Winslet",
+			"character": "Ginny",
+			"tmdbMovieId": 429189,
+			"tmdbPersonId": 204,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

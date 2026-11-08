@@ -8,7 +8,12 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "ATP",
   "category": "Comedia",
-  "genres": ["Comedia", "Drama", "Fantasia", "Familia"],
+  "genres": [
+    "Comedia",
+    "Drama",
+    "Fantasia",
+    "Familia"
+  ],
   "subgenres": [],
   "country": "AU, US",
   "isArgentinian": false,
@@ -16,35 +21,75 @@
   "screenshots": [],
   "trailerYoutubeId": "XTXupTzPOKU",
   "releasePlatform": "Netflix",
-  "releasePlatforms": ["Netflix", "Disney Plus"],
+  "releasePlatforms": [
+    "Netflix",
+    "Disney Plus"
+  ],
   "director": "Chris Noonan",
-  "mainCast": ["Christine Cavanaugh", "Miriam Margolyes", "Danny Mann", "Hugo Weaving"],
+  "mainCast": [
+    "Christine Cavanaugh",
+    "Miriam Margolyes",
+    "Danny Mann",
+    "Hugo Weaving"
+  ],
   "productionCompany": "Kennedy Miller Productions, Universal Pictures",
   "cinepostaScore": 7,
   "runtimeMinutes": 91,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Babe, el cerdito valiente convierte una granja jerárquica en un cuento sobre aprender otra tarea y Chris Noonan equilibra ternura con verdadera melancolía.",
-			"whatToExpect": "Un cerdito huérfano, una perra pastora que le enseña y animales que deben aceptar que el valor no viene dado por la especie.",
-			"pace": "Sereno y episódico, con pequeñas pruebas que construyen el cambio de Babe en lugar de apurarlo.",
-			"intensity": "Suave para la familia, aunque incluye rechazo, peligro y una tristeza que no se esconde debajo del peluche.",
-			"practicalContext": "Sus 91 minutos sirven para una función compartida; los adultos encontrarán más aspereza en la granja de la que promete la imagen.",
-			"forFansOf": "Los cuentos rurales, los animales con personalidad y las películas familiares que respetan la inteligencia de sus espectadores.",
-			"notForYouIf": "Querés humor estridente, una aventura acelerada o una historia de animales sin momentos agridulces."
-		},
-	"becauseYouLiked": [
-		"marianela-y-el-cadaver-2024",
-		"around-the-world-in-80-days-1956"
-	],
-	"related": [
-		"como-ser-john-malkovich-1999",
-		"peggy-sue-se-caso-1986",
-		"swiss-army-man-2016",
-		"el-hombre-de-los-suenos-2023"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Babe, el cerdito valiente convierte una granja jerárquica en un cuento sobre aprender otra tarea y Chris Noonan equilibra ternura con verdadera melancolía.",
+      "whatToExpect": "Un cerdito huérfano, una perra pastora que le enseña y animales que deben aceptar que el valor no viene dado por la especie.",
+      "pace": "Sereno y episódico, con pequeñas pruebas que construyen el cambio de Babe en lugar de apurarlo.",
+      "intensity": "Suave para la familia, aunque incluye rechazo, peligro y una tristeza que no se esconde debajo del peluche.",
+      "practicalContext": "Sus 91 minutos sirven para una función compartida; los adultos encontrarán más aspereza en la granja de la que promete la imagen.",
+      "forFansOf": "Los cuentos rurales, los animales con personalidad y las películas familiares que respetan la inteligencia de sus espectadores.",
+      "notForYouIf": "Querés humor estridente, una aventura acelerada o una historia de animales sin momentos agridulces."
+    },
+    "becauseYouLiked": [
+      "marianela-y-el-cadaver-2024",
+      "around-the-world-in-80-days-1956"
+    ],
+    "related": [
+      "como-ser-john-malkovich-1999",
+      "peggy-sue-se-caso-1986",
+      "swiss-army-man-2016",
+      "el-hombre-de-los-suenos-2023"
+    ]
+  },
   "review": "Babe, el cerdito valiente funciona porque trata su cuento rural con una seriedad visual que no le quita ternura. La granja tiene jerarquías, prejuicios y reglas muy concretas, y el pequeño protagonista las enfrenta con una mezcla de curiosidad y perseverancia que nunca se siente ingenua. Chris Noonan combina animatronics, animales entrenados y voces con una precisión todavía encantadora, mientras la narración encuentra emoción sin apretar el botón del sentimentalismo.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Christine Cavanaugh",
+      "character": "Babe (voice)",
+      "tmdbMovieId": 9598,
+      "tmdbPersonId": 58136,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Miriam Margolyes",
+      "character": "Fly (voice)",
+      "tmdbMovieId": 9598,
+      "tmdbPersonId": 6199,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Danny Mann",
+      "character": "Ferdinand (voice)",
+      "tmdbMovieId": 9598,
+      "tmdbPersonId": 52699,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Hugo Weaving",
+      "character": "Rex (voice)",
+      "tmdbMovieId": 9598,
+      "tmdbPersonId": 1331,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

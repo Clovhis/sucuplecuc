@@ -33,8 +33,15 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["the-departed-2006", "donnie-brasco-1997"],
-		"related": ["fargo-secuestro-voluntario-1996", "no-country-for-old-men-2007", "huerfanos-de-brooklyn-2019"],
+		"becauseYouLiked": [
+			"the-departed-2006",
+			"donnie-brasco-1997"
+		],
+		"related": [
+			"fargo-secuestro-voluntario-1996",
+			"no-country-for-old-men-2007",
+			"huerfanos-de-brooklyn-2019"
+		],
 		"tenSecondTake": {
 			"verdict": "Ben Affleck y Rebecca Hall miden el costo íntimo de escapar de Charlestown mientras Jeremy Renner mantiene la tensión del barrio.",
 			"whatToExpect": "Golpes armados, vigilancia policial y una relación que vuelve personal el último trabajo.",
@@ -50,5 +57,28 @@
 	"releasePlatforms": [
 		"HBO Max"
 	],
-	"runtimeMinutes": 124
+	"runtimeMinutes": 124,
+	"castCharacters": [
+		{
+			"actor": "Ben Affleck",
+			"character": "Doug MacRay",
+			"tmdbMovieId": 23168,
+			"tmdbPersonId": 880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rebecca Hall",
+			"character": "Claire Keesey",
+			"tmdbMovieId": 23168,
+			"tmdbPersonId": 15556,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeremy Renner",
+			"character": "James \"Jem\" Coughlin",
+			"tmdbMovieId": 23168,
+			"tmdbPersonId": 17604,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

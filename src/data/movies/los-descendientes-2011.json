@@ -62,5 +62,28 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 115
+	"runtimeMinutes": 115,
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Matt King",
+			"tmdbMovieId": 65057,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shailene Woodley",
+			"character": "Alexandra King",
+			"tmdbMovieId": 65057,
+			"tmdbPersonId": 94185,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amara Miller",
+			"character": "Scottie King",
+			"tmdbMovieId": 65057,
+			"tmdbPersonId": 933002,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

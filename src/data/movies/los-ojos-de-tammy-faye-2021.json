@@ -64,5 +64,21 @@
 	},
 	"review": "La película se acerca a Tammy Faye a través del artificio: maquillaje, sonrisa, canto y una cámara de televisión que vuelve cada gesto parte de su personaje público. Jessica Chastain sostiene el exceso sin convertirlo en caricatura; Andrew Garfield acompaña el ascenso de Jim Bakker con un encanto que deja ver cómo la ambición se desplaza hacia la imagen. Michael Showalter ordena el derrumbe entre escándalo y melodrama, aunque la empatía por Tammy a veces suaviza la complejidad de su entorno. El resultado es una biografía de fuerte diseño visual que encuentra su tensión más interesante en la diferencia entre la fe íntima y el espectáculo.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 126
+	"runtimeMinutes": 126,
+	"castCharacters": [
+		{
+			"actor": "Jessica Chastain",
+			"character": "Tammy Faye Bakker",
+			"tmdbMovieId": 601470,
+			"tmdbPersonId": 83002,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andrew Garfield",
+			"character": "Jim Bakker",
+			"tmdbMovieId": 601470,
+			"tmdbPersonId": 37625,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

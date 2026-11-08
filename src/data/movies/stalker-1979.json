@@ -41,21 +41,38 @@
 			"whatToExpect": "Un guía conduce a un escritor y un profesor por una Zona que parece cambiar de reglas. Anatoliy Solonitsyn y Alisa Freyndlikh completan un triángulo de dudas donde la promesa de la habitación funciona como amenaza íntima.",
 			"pace": "Avanza con lentitud deliberada, dejando que los desplazamientos, los ruidos y las conversaciones acumulen tensión. La Zona no se atraviesa como un mapa: cada pausa y cada giro obliga a reconsiderar el camino.",
 			"intensity": "La intensidad es espiritual y psicológica. No abundan los peligros visibles, pero el miedo a descubrir una verdad sobre uno mismo pesa más que cualquier criatura o mecanismo de seguridad.",
-			"practicalContext": "Dale tiempo y no busques un manual de la Zona. La película cambia de textura entre la ciudad, el túnel y la vegetación, y ese tránsito importa tanto como las discusiones sobre fe y conocimiento.",			"forFansOf": "Puede fascinarte si te atraen la ciencia ficción filosófica, los viajes iniciáticos y el cine de Tarkovsky cuando transforma una premisa fantástica en un examen moral.",
+			"practicalContext": "Dale tiempo y no busques un manual de la Zona. La película cambia de textura entre la ciudad, el túnel y la vegetación, y ese tránsito importa tanto como las discusiones sobre fe y conocimiento.",
+			"forFansOf": "Puede fascinarte si te atraen la ciencia ficción filosófica, los viajes iniciáticos y el cine de Tarkovsky cuando transforma una premisa fantástica en un examen moral.",
 			"notForYouIf": "Quizás no sea para vos si necesitás acción, respuestas sobre el funcionamiento del lugar o personajes que expresen enseguida qué quieren. Su misterio se sostiene en la espera y la duda."
 		},
-	"becauseYouLiked": [
-		"solaris-1972",
-		"under-the-skin-2013"
-	],
-	"related": [
-		"ex-machina-2014",
-		"donnie-darko-2001",
-		"luna-2009",
-		"coherencia-2013"
-	]
-},
+		"becauseYouLiked": [
+			"solaris-1972",
+			"under-the-skin-2013"
+		],
+		"related": [
+			"ex-machina-2014",
+			"donnie-darko-2001",
+			"luna-2009",
+			"coherencia-2013"
+		]
+	},
 	"review": "Tarkovsky convierte un viaje fantástico en una discusión sobre fe, conocimiento y la responsabilidad de saber qué se quiere. La transición entre paisajes industriales y la vegetación de la Zona construye un cambio de materia, ritmo y percepción. Aleksandr Kaydanovskiy, Anatoliy Solonitsyn y Alisa Freyndlikh sostienen un triángulo de dudas que vale tanto como el destino. Ninguno de los viajeros llega a la habitación con un deseo tan claro como para confiarle el futuro.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Aleksandr Kaydanovskiy",
+			"character": "Stalker",
+			"tmdbMovieId": 1398,
+			"tmdbPersonId": 28078,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mykola Hrynko",
+			"character": "Professor",
+			"tmdbMovieId": 1398,
+			"tmdbPersonId": 1190992,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

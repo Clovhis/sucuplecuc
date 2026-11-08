@@ -62,5 +62,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Dustin Hoffman",
+			"character": "Ben Braddock",
+			"tmdbMovieId": 37247,
+			"tmdbPersonId": 4483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anne Bancroft",
+			"character": "Mrs. Robinson",
+			"tmdbMovieId": 37247,
+			"tmdbPersonId": 10774,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

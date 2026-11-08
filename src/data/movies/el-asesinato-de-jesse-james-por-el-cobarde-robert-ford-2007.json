@@ -56,5 +56,21 @@
 		"Apple TV"
 	],
 	"country": "CA",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Brad Pitt",
+			"character": "Jesse James",
+			"tmdbMovieId": 4512,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Casey Affleck",
+			"character": "Robert Ford",
+			"tmdbMovieId": 4512,
+			"tmdbPersonId": 1893,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

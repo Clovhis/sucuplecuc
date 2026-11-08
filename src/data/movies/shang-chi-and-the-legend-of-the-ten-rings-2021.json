@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Simu Liu",
+			"character": "Shaun / Shang-Chi",
+			"tmdbMovieId": 566525,
+			"tmdbPersonId": 1489211,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Awkwafina",
+			"character": "Katy",
+			"tmdbMovieId": 566525,
+			"tmdbPersonId": 1625558,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Leung Chiu-wai",
+			"character": "Xu Wenwu",
+			"tmdbMovieId": 566525,
+			"tmdbPersonId": 1337,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

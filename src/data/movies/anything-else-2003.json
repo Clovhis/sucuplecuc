@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "Anything Else sigue a un joven escritor que se engancha con una mujer imprevisible y busca consejo en un comediante neurótico que parece más problema que ayuda. Woody Allen dirige una comedia de relaciones con la misma verborrea de siempre, pero Jason Biggs no termina de tener el peso para cargar el centro; en cambio, Allen y Danny DeVito encuentran los mejores remates cuando el asunto se vuelve absurdo. El ritmo tiene escenas filosas, aunque la pareja principal se estanca en discusiones repetidas. Zafa por algunos diálogos y por el elenco, pero está lejos de sus comedias más afiladas.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "David Dobel",
+			"tmdbMovieId": 10739,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Biggs",
+			"character": "Jerry Falk",
+			"tmdbMovieId": 10739,
+			"tmdbPersonId": 21593,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stockard Channing",
+			"character": "Paula Chase",
+			"tmdbMovieId": 10739,
+			"tmdbPersonId": 8893,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny DeVito",
+			"character": "Harvey Wexler",
+			"tmdbMovieId": 10739,
+			"tmdbPersonId": 518,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christina Ricci",
+			"character": "Amanda Chase",
+			"tmdbMovieId": 10739,
+			"tmdbPersonId": 6886,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

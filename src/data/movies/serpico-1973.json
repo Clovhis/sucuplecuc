@@ -55,5 +55,21 @@
 	"isArgentinian": false,
 	"awards": {
 		"wins": []
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "Al Pacino",
+			"character": "Officer Frank Serpico",
+			"tmdbMovieId": 9040,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Randolph",
+			"character": "Sidney Green",
+			"tmdbMovieId": 9040,
+			"tmdbPersonId": 18649,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

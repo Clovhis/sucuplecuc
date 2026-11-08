@@ -40,7 +40,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Gus Van Sant evita santificar a John Callahan y Joaquin Phoenix sostiene su bronca, humor y dependencia; la recuperación aparece como trabajo compartido, no como milagro.",
-			"whatToExpect": "Accidente, rehabilitación, dibujos irreverentes, alcohol, un padrino y vínculos que permiten recuperar autonomía sin borrar las contradicciones.",			"pace": "Salta entre tiempos y recuerdos, con una narración que privilegia asociaciones; algunos subrayados frenan, pero las actuaciones mantienen el movimiento emocional.",			"intensity": "La intensidad es incómoda y afectiva, hecha de discapacidad, culpa y deseo de control; el humor convive con la bronca sin neutralizarla.",			"practicalContext": "Con 115 minutos, funciona como drama biográfico para una noche atenta; no es una historia de superación limpia ni una comedia sobre la discapacidad.",			"forFansOf": "Para quienes disfrutan Phoenix, biopics imperfectos y películas que encuentran dignidad en el trabajo de reconstruirse con ayuda ajena.",			"notForYouIf": "No te va a gustar si buscás una moraleja inspiradora, una cronología ordenada o una historia que vuelva simpático al protagonista todo el tiempo."
+			"whatToExpect": "Accidente, rehabilitación, dibujos irreverentes, alcohol, un padrino y vínculos que permiten recuperar autonomía sin borrar las contradicciones.",
+			"pace": "Salta entre tiempos y recuerdos, con una narración que privilegia asociaciones; algunos subrayados frenan, pero las actuaciones mantienen el movimiento emocional.",
+			"intensity": "La intensidad es incómoda y afectiva, hecha de discapacidad, culpa y deseo de control; el humor convive con la bronca sin neutralizarla.",
+			"practicalContext": "Con 115 minutos, funciona como drama biográfico para una noche atenta; no es una historia de superación limpia ni una comedia sobre la discapacidad.",
+			"forFansOf": "Para quienes disfrutan Phoenix, biopics imperfectos y películas que encuentran dignidad en el trabajo de reconstruirse con ayuda ajena.",
+			"notForYouIf": "No te va a gustar si buscás una moraleja inspiradora, una cronología ordenada o una historia que vuelva simpático al protagonista todo el tiempo."
 		},
 		"becauseYouLiked": [
 			"todo-por-un-sueno-1995",
@@ -53,5 +58,42 @@
 			"el-juego-de-la-fortuna-2011"
 		]
 	},
-	"review": "Gus Van Sant evita convertir la discapacidad de Callahan en una lección inspiracional de manual y deja que el humor incómodo conviva con la bronca. Phoenix interpreta a John con una mezcla de resentimiento, inteligencia y deseo de pertenecer que no se vuelve simpática por obligación. Jonah Hill encuentra un registro cálido sin borrar las contradicciones del padrino, y Jack Black aprovecha un papel breve pero decisivo. La estructura salta entre tiempos y a veces subraya demasiado su mensaje, aunque conserva una mirada generosa sobre la recuperación: nadie se salva solo ni de una vez."
+	"review": "Gus Van Sant evita convertir la discapacidad de Callahan en una lección inspiracional de manual y deja que el humor incómodo conviva con la bronca. Phoenix interpreta a John con una mezcla de resentimiento, inteligencia y deseo de pertenecer que no se vuelve simpática por obligación. Jonah Hill encuentra un registro cálido sin borrar las contradicciones del padrino, y Jack Black aprovecha un papel breve pero decisivo. La estructura salta entre tiempos y a veces subraya demasiado su mensaje, aunque conserva una mirada generosa sobre la recuperación: nadie se salva solo ni de una vez.",
+	"castCharacters": [
+		{
+			"actor": "Joaquin Phoenix",
+			"character": "John Callahan",
+			"tmdbMovieId": 443009,
+			"tmdbPersonId": 73421,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonah Hill",
+			"character": "Donny",
+			"tmdbMovieId": 443009,
+			"tmdbPersonId": 21007,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rooney Mara",
+			"character": "Annu",
+			"tmdbMovieId": 443009,
+			"tmdbPersonId": 108916,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Black",
+			"character": "Dexter",
+			"tmdbMovieId": 443009,
+			"tmdbPersonId": 70851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Udo Kier",
+			"character": "Hans",
+			"tmdbMovieId": 443009,
+			"tmdbPersonId": 1646,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

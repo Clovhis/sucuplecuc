@@ -54,5 +54,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Deadshot",
+			"tmdbMovieId": 297761,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jared Leto",
+			"character": "The Joker",
+			"tmdbMovieId": 297761,
+			"tmdbPersonId": 7499,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margot Robbie",
+			"character": "Harley Quinn",
+			"tmdbMovieId": 297761,
+			"tmdbPersonId": 234352,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

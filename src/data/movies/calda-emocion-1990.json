@@ -8,7 +8,10 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Drama", "Romance"],
+	"genres": [
+		"Drama",
+		"Romance"
+	],
 	"subgenres": [],
 	"country": "US",
 	"isArgentinian": false,
@@ -17,7 +20,11 @@
 	"trailerYoutubeId": "5_8UxCfC_Jg",
 	"releasePlatform": "Otras plataformas",
 	"director": "Luis Mandoki",
-	"mainCast": ["Susan Sarandon", "James Spader", "Jason Alexander"],
+	"mainCast": [
+		"Susan Sarandon",
+		"James Spader",
+		"Jason Alexander"
+	],
 	"productionCompany": "Universal Pictures",
 	"cinepostaScore": 5,
 	"runtimeMinutes": 103,
@@ -34,18 +41,41 @@
 			"forFansOf": "Los romances adultos, Susan Sarandon en personajes frontales y las historias que ponen clase y edad dentro del deseo.",
 			"notForYouIf": "Buscás romance liviano, un conflicto sin prejuicios o una película que no explique su emoción."
 		},
-	"becauseYouLiked": [
-		"corazon-salvaje-1990",
-		"los-amigos-de-peter-1992"
-	],
-	"related": [
-		"husbands-and-wives-1992",
-		"el-cielo-sobre-berlin-1987",
-		"the-age-of-innocence-1993",
-		"lo-que-queda-del-dia-1993"
-	]
-},
+		"becauseYouLiked": [
+			"corazon-salvaje-1990",
+			"los-amigos-de-peter-1992"
+		],
+		"related": [
+			"husbands-and-wives-1992",
+			"el-cielo-sobre-berlin-1987",
+			"the-age-of-innocence-1993",
+			"lo-que-queda-del-dia-1993"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": "",
-	"review": "Calda emoción se mete en una relación que parece sencilla hasta que aparecen la diferencia de edad, la clase social y el duelo. Luis Mandoki filma los encuentros con una intimidad directa, sin disfrazar la incomodidad de los personajes ni convertir a la pareja en una lección. Susan Sarandon sostiene a una mujer frontal, herida y llena de humor, mientras James Spader transmite la fragilidad de alguien que todavía vive de acuerdo con expectativas ajenas. El drama a veces subraya demasiado sus conflictos, pero encuentra fuerza cuando deja hablar a los silencios y las contradicciones."
+	"review": "Calda emoción se mete en una relación que parece sencilla hasta que aparecen la diferencia de edad, la clase social y el duelo. Luis Mandoki filma los encuentros con una intimidad directa, sin disfrazar la incomodidad de los personajes ni convertir a la pareja en una lección. Susan Sarandon sostiene a una mujer frontal, herida y llena de humor, mientras James Spader transmite la fragilidad de alguien que todavía vive de acuerdo con expectativas ajenas. El drama a veces subraya demasiado sus conflictos, pero encuentra fuerza cuando deja hablar a los silencios y las contradicciones.",
+	"castCharacters": [
+		{
+			"actor": "Susan Sarandon",
+			"character": "Nora Baker",
+			"tmdbMovieId": 41003,
+			"tmdbPersonId": 4038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Spader",
+			"character": "Max Baron",
+			"tmdbMovieId": 41003,
+			"tmdbPersonId": 13548,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Alexander",
+			"character": "Neil",
+			"tmdbMovieId": 41003,
+			"tmdbPersonId": 1206,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

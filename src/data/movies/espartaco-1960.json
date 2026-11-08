@@ -54,5 +54,21 @@
       "notForYouIf": "Preferís relatos breves o una acción que no se detenga en las negociaciones."
     }
   },
-  "review": "La escala de Kubrick no aplasta a los personajes: las formaciones y los campamentos se abren paso entre decisiones sobre libertad, lealtad y poder. Douglas sostiene a Espartaco como líder sin volverlo una estatua, y Olivier compone a Craso con una frialdad que convierte la política en amenaza. El relato avanza hacia batallas masivas, pero su imagen más persistente es la de personas que intentan conservar un nombre propio dentro de un sistema que las trata como propiedad."
+  "review": "La escala de Kubrick no aplasta a los personajes: las formaciones y los campamentos se abren paso entre decisiones sobre libertad, lealtad y poder. Douglas sostiene a Espartaco como líder sin volverlo una estatua, y Olivier compone a Craso con una frialdad que convierte la política en amenaza. El relato avanza hacia batallas masivas, pero su imagen más persistente es la de personas que intentan conservar un nombre propio dentro de un sistema que las trata como propiedad.",
+  "castCharacters": [
+    {
+      "actor": "Kirk Douglas",
+      "character": "Spartacus",
+      "tmdbMovieId": 967,
+      "tmdbPersonId": 2090,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Laurence Olivier",
+      "character": "Marcus Licinius Crassus",
+      "tmdbMovieId": 967,
+      "tmdbPersonId": 3359,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

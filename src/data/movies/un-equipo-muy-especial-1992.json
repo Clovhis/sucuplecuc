@@ -53,5 +53,28 @@
 			"spanglish-2004"
 		]
 	},
-	"review": "Penny Marshall convierte una historia de béisbol en una película sobre el trabajo, la rivalidad y el lugar que se abre cuando las reglas cambian. Geena Davis le da a Dottie una autoridad cálida, mientras Tom Hanks encuentra en Jimmy una mezcla incómoda de cinismo y ternura. El equipo funciona como conjunto, con humor y competencia sin perder de vista el contexto de guerra que empuja la liga a existir. Es una comedia deportiva de ritmo clásico, con personajes que siguen jugando aun cuando el espectáculo pretende decidir por ellas."
+	"review": "Penny Marshall convierte una historia de béisbol en una película sobre el trabajo, la rivalidad y el lugar que se abre cuando las reglas cambian. Geena Davis le da a Dottie una autoridad cálida, mientras Tom Hanks encuentra en Jimmy una mezcla incómoda de cinismo y ternura. El equipo funciona como conjunto, con humor y competencia sin perder de vista el contexto de guerra que empuja la liga a existir. Es una comedia deportiva de ritmo clásico, con personajes que siguen jugando aun cuando el espectáculo pretende decidir por ellas.",
+	"castCharacters": [
+		{
+			"actor": "Geena Davis",
+			"character": "Dottie Hinson (C)",
+			"tmdbMovieId": 11287,
+			"tmdbPersonId": 16935,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Hanks",
+			"character": "Jimmy Dugan",
+			"tmdbMovieId": 11287,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Madonna",
+			"character": "Mae Mordabito (CF)",
+			"tmdbMovieId": 11287,
+			"tmdbPersonId": 3125,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

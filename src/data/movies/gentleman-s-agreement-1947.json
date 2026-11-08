@@ -58,5 +58,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Gregory Peck",
+			"character": "Philip Schuyler Green",
+			"tmdbMovieId": 33667,
+			"tmdbPersonId": 8487,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dorothy McGuire",
+			"character": "Kathy Lacy",
+			"tmdbMovieId": 33667,
+			"tmdbPersonId": 24815,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Garfield",
+			"character": "Dave Goldman",
+			"tmdbMovieId": 33667,
+			"tmdbPersonId": 81970,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

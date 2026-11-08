@@ -39,18 +39,48 @@
 			"notForYouIf": "Preferís chistes físicos, una trama de acción o familias cinematográficas que no se parezcan a la tuya."
 		},
 		"becauseYouLiked": [
-		"truman-2015",
-		"aida-y-vuelta-2026"
-	],
-	"related": [
-		"parasite-2019",
-		"las-buenas-intenciones-2019",
-		"la-joya-de-la-familia-2005",
-		"mexico-86-2026"
-	]
-},
-  "synopsis": "Tres hermanos se reúnen cada domingo para decidir cómo cuidar a su padre mayor, pero las discusiones destapan rencores viejos, alianzas inesperadas y cuentas familiares que nadie quería saldar.",
+			"truman-2015",
+			"aida-y-vuelta-2026"
+		],
+		"related": [
+			"parasite-2019",
+			"las-buenas-intenciones-2019",
+			"la-joya-de-la-familia-2005",
+			"mexico-86-2026"
+		]
+	},
+	"synopsis": "Tres hermanos se reúnen cada domingo para decidir cómo cuidar a su padre mayor, pero las discusiones destapan rencores viejos, alianzas inesperadas y cuentas familiares que nadie quería saldar.",
 	"audienceRating": "+13",
 	"review": "53 domingos arranca desde un conflicto familiar reconocible y lo exprime con bastante gracia. Cesc Gay arma una película chica, de palabras filosas y nervios acumulados, donde importa menos la decisión final que todo lo que se va pudriendo mientras los hermanos discuten.\n\nJavier Cámara, Carmen Machi y Javier Gutiérrez manejan muy bien ese equilibrio entre fastidio, cariño y mezquindad que vuelve creíble cualquier sobremesa complicada. Puede tocar notas ya conocidas sobre adultos agotados, pero el elenco y el pulso del diálogo hacen que nunca se vuelva rutinaria.",
-	"reviewPublishedAt": "2026-04-08"
+	"reviewPublishedAt": "2026-04-08",
+	"castCharacters": [
+		{
+			"actor": "Javier Cámara",
+			"character": "Julián",
+			"tmdbMovieId": 1276704,
+			"tmdbPersonId": 1610,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carmen Machi",
+			"character": "Natalia",
+			"tmdbMovieId": 1276704,
+			"tmdbPersonId": 102222,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Javier Gutiérrez",
+			"character": "Víctor",
+			"tmdbMovieId": 1276704,
+			"tmdbPersonId": 19024,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alexandra Jiménez",
+			"character": "Carol",
+			"tmdbMovieId": 1276704,
+			"tmdbPersonId": 114460,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

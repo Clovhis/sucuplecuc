@@ -55,5 +55,42 @@
 		]
 	},
 	"runtimeMinutes": 115,
-	"review": "El coleccionista de amantes arranca con una premisa oscura y sabe que el caso se vuelve personal apenas aparece la sobrina de Alex Cross. Morgan Freeman lleva la investigación con una calma que contrasta bien con la desesperación de Ashley Judd, y Gary Fleder arma una atmósfera de thriller noventoso, húmeda y bastante incómoda. El problema es que el misterio pierde fuerza cuando necesita explicar demasiado y el cierre acomoda varias piezas con apuro. Aun así, el duelo entre intuición policial y supervivencia mantiene la atención, y la dupla protagonista tiene peso suficiente para atravesar los baches. Zafa como policial de clima fuerte y ejecución irregular."
+	"review": "El coleccionista de amantes arranca con una premisa oscura y sabe que el caso se vuelve personal apenas aparece la sobrina de Alex Cross. Morgan Freeman lleva la investigación con una calma que contrasta bien con la desesperación de Ashley Judd, y Gary Fleder arma una atmósfera de thriller noventoso, húmeda y bastante incómoda. El problema es que el misterio pierde fuerza cuando necesita explicar demasiado y el cierre acomoda varias piezas con apuro. Aun así, el duelo entre intuición policial y supervivencia mantiene la atención, y la dupla protagonista tiene peso suficiente para atravesar los baches. Zafa como policial de clima fuerte y ejecución irregular.",
+	"castCharacters": [
+		{
+			"actor": "Morgan Freeman",
+			"character": "Det. Alex Cross",
+			"tmdbMovieId": 9437,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ashley Judd",
+			"character": "Dr. Kate McTiernan",
+			"tmdbMovieId": 9437,
+			"tmdbPersonId": 15852,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cary Elwes",
+			"character": "Det. Nick Ruskin",
+			"tmdbMovieId": 9437,
+			"tmdbPersonId": 2130,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alex McArthur",
+			"character": "Det. Davey Sikes",
+			"tmdbMovieId": 9437,
+			"tmdbPersonId": 58293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Goldwyn",
+			"character": "Dr. Will Rudolph",
+			"tmdbMovieId": 9437,
+			"tmdbPersonId": 3417,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -60,5 +60,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Bing Crosby",
+			"character": "Father Chuck O'Malley",
+			"tmdbMovieId": 17661,
+			"tmdbPersonId": 24937,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Barry Fitzgerald",
+			"character": "Father Fitzgibbon",
+			"tmdbMovieId": 17661,
+			"tmdbPersonId": 13820,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frank McHugh",
+			"character": "Father Timothy O'Dowd",
+			"tmdbMovieId": 17661,
+			"tmdbPersonId": 74875,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

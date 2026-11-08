@@ -39,17 +39,40 @@
 			"notForYouIf": "Quizás no sea para vos si la nostalgia barrial o los debates largos te resultan pesados y preferís un conflicto más corto y menos discursivo."
 		},
 		"becauseYouLiked": [
-		"el-hijo-de-la-novia-2001",
-		"el-secreto-de-sus-ojos-2009"
-	],
-	"related": [
-		"parque-lezama-2026",
-		"la-nina-santa-2004",
-		"truman-2015",
-		"el-cuento-de-las-comadrejas-2019"
-	]
-},
+			"el-hijo-de-la-novia-2001",
+			"el-secreto-de-sus-ojos-2009"
+		],
+		"related": [
+			"parque-lezama-2026",
+			"la-nina-santa-2004",
+			"truman-2015",
+			"el-cuento-de-las-comadrejas-2019"
+		]
+	},
 	"synopsis": "Luna de Avellaneda es un emblemático club de barrio que ha vivido en el pasado una época de esplendor y que en la actualidad se encuentra inmerso en una crisis que pone en peligro su existencia.",
 	"audienceRating": "+14",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Román Maldonado",
+			"tmdbMovieId": 57977,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mercedes Morán",
+			"character": "Graciela",
+			"tmdbMovieId": 57977,
+			"tmdbPersonId": 18499,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eduardo Blanco",
+			"character": "Amadeo Grimberg",
+			"tmdbMovieId": 57977,
+			"tmdbPersonId": 132449,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

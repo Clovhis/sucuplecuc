@@ -6,7 +6,12 @@
   "releaseDate": "2026-07-17",
   "reviewPublishedAt": "2026-07-23",
   "category": "Musical",
-  "genres": ["Musical", "Fantasía", "Aventura", "Familiar"],
+  "genres": [
+    "Musical",
+    "Fantasía",
+    "Aventura",
+    "Familiar"
+  ],
   "country": "US",
   "isArgentinian": false,
   "poster": "assets/posters/2026/los-descendientes-viaje-al-mundo-oscuro-2026.webp",
@@ -14,37 +19,59 @@
   "trailerYoutubeId": "0Gg7x3xBqBU",
   "releasePlatform": "Disney Plus",
   "director": "Kimmy Gatewood",
-  "mainCast": ["Kylie Cantrall", "Malia Baker", "Liamani Segura", "Brendon Tremblay", "Kiara Romero"],
+  "mainCast": [
+    "Kylie Cantrall",
+    "Malia Baker",
+    "Liamani Segura",
+    "Brendon Tremblay",
+    "Kiara Romero"
+  ],
   "productionCompany": "Disney Branded Television",
   "cinepostaScore": 8,
   "runtimeMinutes": 98,
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Los Descendientes: viaje al mundo oscuro encuentra energía en Wonderland: Kimmy Gatewood deja que Kylie Cantrall y Malia Baker sostengan una aventura de canciones, magia y amistad.",
-			"whatToExpect": "Red y Chloe buscan a la Reina de Corazones después de que el Sombrerero Maddox la secuestra y pone en riesgo el reino.",
-			"pace": "Avanza con canciones, cambios de escenario y aliados nuevos en una marcha más afinada que la entrega anterior.",
-			"intensity": "El peligro es fantástico y adolescente; las cuentas pendientes importan tanto como derrotar al villano.",
-			"practicalContext": "Mirala si ya venís con la franquicia y querés un plan musical colorido, aceptando varios personajes apurados.",
-			"forFansOf": "Si te gustan sagas juveniles, mundos de cuento y dúos protagonistas con química.",
-			"notForYouIf": "No es para vos si buscás una fantasía autónoma, un villano complejo o una trama sin canciones."
-		},
-	"becauseYouLiked": [
-		"minions-monstruos-2026",
-		"toy-story-5-2026"
-	],
-	"related": [
-		"the-wizard-of-oz-1939",
-		"swapped-2026",
-		"el-gato-con-botas-2011",
-		"the-bfg-2016"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Los Descendientes: viaje al mundo oscuro encuentra energía en Wonderland: Kimmy Gatewood deja que Kylie Cantrall y Malia Baker sostengan una aventura de canciones, magia y amistad.",
+      "whatToExpect": "Red y Chloe buscan a la Reina de Corazones después de que el Sombrerero Maddox la secuestra y pone en riesgo el reino.",
+      "pace": "Avanza con canciones, cambios de escenario y aliados nuevos en una marcha más afinada que la entrega anterior.",
+      "intensity": "El peligro es fantástico y adolescente; las cuentas pendientes importan tanto como derrotar al villano.",
+      "practicalContext": "Mirala si ya venís con la franquicia y querés un plan musical colorido, aceptando varios personajes apurados.",
+      "forFansOf": "Si te gustan sagas juveniles, mundos de cuento y dúos protagonistas con química.",
+      "notForYouIf": "No es para vos si buscás una fantasía autónoma, un villano complejo o una trama sin canciones."
+    },
+    "becauseYouLiked": [
+      "minions-monstruos-2026",
+      "toy-story-5-2026"
+    ],
+    "related": [
+      "the-wizard-of-oz-1939",
+      "swapped-2026",
+      "el-gato-con-botas-2011",
+      "the-bfg-2016"
+    ]
+  },
   "isPremiere": true,
   "premiereLabel": "ESTRENO",
   "synopsis": "Red y Chloe creían haber arreglado el pasado, pero el Sombrerero Maddox secuestra a la Reina de Corazones y pone a Wonderland en riesgo. Para recuperarla, las dos amigas se unen a Pink, Luis, Hazel y Max en una aventura con canciones, magia y cuentas pendientes.",
   "audienceRating": "ATP",
-  "review": "Los Descendientes: viaje al mundo oscuro entiende mejor que la entrega anterior que una secuela de esta saga necesita energía, humor y canciones que hagan avanzar la historia. Kimmy Gatewood aprovecha el delirio visual de Wonderland sin perder de vista a Red y Chloe, que siguen siendo un dúo con química y conflicto propio. Kylie Cantrall y Malia Baker sostienen ese corazón adolescente mientras el elenco nuevo entra al juego sin sentirse de relleno.\n\nNo todo tiene el mismo peso: la cantidad de personajes vuelve algunos pasajes demasiado apurados y el guion resuelve ciertos giros con una facilidad muy de cuento de hadas. Pero la puesta musical tiene color, el villano suma una amenaza concreta y la película recupera una alegría contagiosa. Para una tarde familiar o para quien viene siguiendo la franquicia, es una secuela más afinada que sabe a qué público quiere invitar."
+  "review": "Los Descendientes: viaje al mundo oscuro entiende mejor que la entrega anterior que una secuela de esta saga necesita energía, humor y canciones que hagan avanzar la historia. Kimmy Gatewood aprovecha el delirio visual de Wonderland sin perder de vista a Red y Chloe, que siguen siendo un dúo con química y conflicto propio. Kylie Cantrall y Malia Baker sostienen ese corazón adolescente mientras el elenco nuevo entra al juego sin sentirse de relleno.\n\nNo todo tiene el mismo peso: la cantidad de personajes vuelve algunos pasajes demasiado apurados y el guion resuelve ciertos giros con una facilidad muy de cuento de hadas. Pero la puesta musical tiene color, el villano suma una amenaza concreta y la película recupera una alegría contagiosa. Para una tarde familiar o para quien viene siguiendo la franquicia, es una secuela más afinada que sabe a qué público quiere invitar.",
+  "castCharacters": [
+    {
+      "actor": "Kylie Cantrall",
+      "character": "Red",
+      "tmdbMovieId": 1318621,
+      "tmdbPersonId": 2309874,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Malia Baker",
+      "character": "Chloe",
+      "tmdbMovieId": 1318621,
+      "tmdbPersonId": 2630461,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

@@ -53,5 +53,42 @@
 		]
 	},
 	"review": "Steven Spielberg toma una discusión mínima entre un conductor y un camión sin rostro y la estira hasta volverla una pesadilla mecánica. Dennis Weaver sostiene la paranoia de un hombre común que no puede entender por qué lo persiguen, y esa falta de explicación suma tensión. La dirección filma ruta, chapa y distancia con una precisión que hace sentir el peligro antes de verlo. El ritmo es implacable y el conflicto no busca metáforas demasiado complejas. Vale por comprobar cuánto suspenso puede salir de una premisa tan simple.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Dennis Weaver",
+			"character": "David Mann",
+			"tmdbMovieId": 839,
+			"tmdbPersonId": 12422,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jacqueline Scott",
+			"character": "Mrs. Mann",
+			"tmdbMovieId": 839,
+			"tmdbPersonId": 40186,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eddie Firestone",
+			"character": "Cafe Owner",
+			"tmdbMovieId": 839,
+			"tmdbPersonId": 12423,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lou Frizzell",
+			"character": "Bus Driver (expanded cut only)",
+			"tmdbMovieId": 839,
+			"tmdbPersonId": 160969,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Dynarski",
+			"character": "Man in Cafe",
+			"tmdbMovieId": 839,
+			"tmdbPersonId": 12424,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

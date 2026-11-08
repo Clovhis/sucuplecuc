@@ -46,5 +46,28 @@
 	"reviewPublishedAt": "2026-02-28",
 	"synopsis": "Dos francotiradores de élite reciben la orden de vigilar, desde torres opuestas, un desfiladero aislado y prohibido. La distancia no impide que establezcan un vínculo mientras una amenaza oculta en las profundidades pone a prueba su misión.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Miles Teller",
+			"character": "Levi",
+			"tmdbMovieId": 950396,
+			"tmdbPersonId": 996701,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anya Taylor-Joy",
+			"character": "Drasa",
+			"tmdbMovieId": 950396,
+			"tmdbPersonId": 1397778,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sigourney Weaver",
+			"character": "Bartholomew",
+			"tmdbMovieId": 950396,
+			"tmdbPersonId": 10205,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

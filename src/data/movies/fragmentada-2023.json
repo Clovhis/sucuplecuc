@@ -8,7 +8,12 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+16",
   "category": "Thriller",
-  "genres": ["Thriller", "Crimen", "Drama", "Misterio"],
+  "genres": [
+    "Thriller",
+    "Crimen",
+    "Drama",
+    "Misterio"
+  ],
   "subgenres": [],
   "country": "AR, UY",
   "isArgentinian": true,
@@ -17,33 +22,55 @@
   "trailerYoutubeId": "oJQDBGF2hhE",
   "releasePlatform": "Apple TV",
   "director": "Facundo Escudero Salinas",
-  "mainCast": ["Jazmín Stuart", "César Bordón", "Beatriz Spelzini"],
+  "mainCast": [
+    "Jazmín Stuart",
+    "César Bordón",
+    "Beatriz Spelzini"
+  ],
   "productionCompany": "Pensilvania Films, U Films",
   "cinepostaScore": 5,
   "runtimeMinutes": 103,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Fragmentada arma un policial patagónico donde investigar un crimen significa volver a entrar en una comunidad llena de deudas. Facundo Escudero Salinas aprovecha el aislamiento y Jazmín Stuart sostiene una protagonista que no puede cuidar a su madre sin mirar el asesinato de frente.",
-			"whatToExpect": "Jazmín Stuart vuelve a un pueblo remoto y queda atrapada entre el cuidado familiar y una pesquisa que toca a César Bordón y Beatriz Spelzini. Fragmentada despliega secretos, paisajes fríos y versiones enfrentadas.",
-			"pace": "Avanza con paciencia de investigación, dejando que cada conversación cambie el mapa de sospechosos. Facundo Escudero Salinas reserva los empujes de tensión para cuando el paisaje deja de parecer refugio.",
-			"intensity": "Media-alta en suspenso y presión emocional, con violencia puntual. La amenaza se siente en los silencios del pueblo y en la posibilidad de que la protagonista quede sola contra todos.",
-			"practicalContext": "Dura 103 minutos y rinde como thriller de clima para una noche tranquila, cuando tengas ganas de seguir pistas sin pedirle al misterio una velocidad de blockbuster.",
-			"forFansOf": "Fans de Jazmín Stuart, del policial de pueblo chico y de las historias criminales que usan el paisaje como parte del secreto.",
-			"notForYouIf": "Preferís acción continua, detectives omniscientes o un misterio sin rodeos familiares. Fragmentada necesita que toleres silencios y explicaciones dosificadas."
-		},
-	"becauseYouLiked": [
-		"los-caminantes-de-la-calle-2026",
-		"el-aura-2005"
-	],
-	"related": [
-		"barreda-2026",
-		"lu-pau-2026",
-		"el-robo-del-siglo-2020",
-		"pepita-la-pistolera-2026"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Fragmentada arma un policial patagónico donde investigar un crimen significa volver a entrar en una comunidad llena de deudas. Facundo Escudero Salinas aprovecha el aislamiento y Jazmín Stuart sostiene una protagonista que no puede cuidar a su madre sin mirar el asesinato de frente.",
+      "whatToExpect": "Jazmín Stuart vuelve a un pueblo remoto y queda atrapada entre el cuidado familiar y una pesquisa que toca a César Bordón y Beatriz Spelzini. Fragmentada despliega secretos, paisajes fríos y versiones enfrentadas.",
+      "pace": "Avanza con paciencia de investigación, dejando que cada conversación cambie el mapa de sospechosos. Facundo Escudero Salinas reserva los empujes de tensión para cuando el paisaje deja de parecer refugio.",
+      "intensity": "Media-alta en suspenso y presión emocional, con violencia puntual. La amenaza se siente en los silencios del pueblo y en la posibilidad de que la protagonista quede sola contra todos.",
+      "practicalContext": "Dura 103 minutos y rinde como thriller de clima para una noche tranquila, cuando tengas ganas de seguir pistas sin pedirle al misterio una velocidad de blockbuster.",
+      "forFansOf": "Fans de Jazmín Stuart, del policial de pueblo chico y de las historias criminales que usan el paisaje como parte del secreto.",
+      "notForYouIf": "Preferís acción continua, detectives omniscientes o un misterio sin rodeos familiares. Fragmentada necesita que toleres silencios y explicaciones dosificadas."
+    },
+    "becauseYouLiked": [
+      "los-caminantes-de-la-calle-2026",
+      "el-aura-2005"
+    ],
+    "related": [
+      "barreda-2026",
+      "lu-pau-2026",
+      "el-robo-del-siglo-2020",
+      "pepita-la-pistolera-2026"
+    ]
+  },
   "review": "Fragmentada se apoya en un policial patagónico de pueblo chico, donde cada vínculo guarda una versión distinta de lo ocurrido. Jazmín Stuart sostiene a una protagonista que vuelve por obligación y termina investigando porque ya no puede mirar para otro lado; César Bordón y Beatriz Spelzini le dan peso a una red de silencios que la película va abriendo con paciencia. Facundo Escudero Salinas aprovecha los paisajes y el aislamiento, aunque algunas explicaciones llegan demasiado ordenadas.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Jazmín Stuart",
+      "character": "Irina",
+      "tmdbMovieId": 890338,
+      "tmdbPersonId": 131868,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "César Bordón",
+      "character": "Fruzzetti",
+      "tmdbMovieId": 890338,
+      "tmdbPersonId": 116362,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

@@ -36,18 +36,34 @@
       "forFansOf": "Te puede interesar si disfrutás cine político indirecto, actuaciones contenidas y películas que convierten la cortesía en amenaza.",
       "notForYouIf": "No es para vos si necesitás explicaciones directas, ritmo rápido o una denuncia histórica que nombre todo en voz alta."
     },
-		"becauseYouLiked": [
-		"el-profugo-2020",
-		"relatos-salvajes-2014"
-	],
-	"related": [
-		"los-caminantes-de-la-calle-2026",
-		"el-secreto-de-sus-ojos-2009",
-		"el-aura-2005",
-		"los-bobos-2026"
-	]
-},
+    "becauseYouLiked": [
+      "el-profugo-2020",
+      "relatos-salvajes-2014"
+    ],
+    "related": [
+      "los-caminantes-de-la-calle-2026",
+      "el-secreto-de-sus-ojos-2009",
+      "el-aura-2005",
+      "los-bobos-2026"
+    ]
+  },
   "synopsis": "En la Argentina de los años setenta, un abogado de provincia queda involucrado en un incidente violento tras una discusión en un restaurante. El hecho desencadena una red de silencios, amenazas y culpas que comienza a cercarlo.",
   "audienceRating": "+13",
-  "reviewPublishedAt": "2026-03-07"
+  "reviewPublishedAt": "2026-03-07",
+  "castCharacters": [
+    {
+      "actor": "Darío Grandinetti",
+      "character": "Claudio",
+      "tmdbMovieId": 539685,
+      "tmdbPersonId": 3618,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Alfredo Castro",
+      "character": "Detective Sinclair",
+      "tmdbMovieId": 539685,
+      "tmdbPersonId": 225011,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

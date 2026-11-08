@@ -56,5 +56,28 @@
 	"synopsis": "Un parque de dinosaurios funciona con éxito en la isla Nublar hasta que sus responsables crean una especie híbrida para atraer visitantes. Cuando el animal escapa, una encargada del parque y un entrenador de velociraptores deben proteger a miles de personas.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chris Pratt",
+			"character": "Owen",
+			"tmdbMovieId": 135397,
+			"tmdbPersonId": 73457,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bryce Dallas Howard",
+			"character": "Claire",
+			"tmdbMovieId": 135397,
+			"tmdbPersonId": 18997,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Irrfan Khan",
+			"character": "Masrani",
+			"tmdbMovieId": 135397,
+			"tmdbPersonId": 76793,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

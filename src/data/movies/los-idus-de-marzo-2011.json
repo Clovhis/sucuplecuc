@@ -53,5 +53,35 @@
 	},
 	"review": "Los idus de marzo entiende la política como una máquina de fabricar idealistas cansados. George Clooney arma un thriller sobrio y deja que el elenco convierta cada conversación en una negociación: Gosling empieza creyendo en las reglas y termina aprendiendo cuánto cuestan, mientras Hoffman y Giamatti juegan el partido desde extremos opuestos. La película explica algunas maniobras más de la cuenta, pero su retrato de la ambición y la información como armas sigue siendo filoso.",
 	"runtimeMinutes": 101,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Stephen Meyers",
+			"tmdbMovieId": 10316,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Clooney",
+			"character": "Mike Morris",
+			"tmdbMovieId": 10316,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Philip Seymour Hoffman",
+			"character": "Paul Zara",
+			"tmdbMovieId": 10316,
+			"tmdbPersonId": 1233,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Giamatti",
+			"character": "Tom Duffy",
+			"tmdbMovieId": 10316,
+			"tmdbPersonId": 13242,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

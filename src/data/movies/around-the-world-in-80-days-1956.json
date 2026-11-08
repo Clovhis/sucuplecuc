@@ -59,5 +59,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "David Niven",
+			"character": "Phileas Fogg",
+			"tmdbMovieId": 2897,
+			"tmdbPersonId": 14261,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cantinflas",
+			"character": "Passepartout",
+			"tmdbMovieId": 2897,
+			"tmdbPersonId": 29518,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shirley MacLaine",
+			"character": "Princess Aouda",
+			"tmdbMovieId": 2897,
+			"tmdbPersonId": 4090,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

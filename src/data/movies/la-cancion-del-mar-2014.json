@@ -45,18 +45,34 @@
 			"forFansOf": "Si te gustan mitos celtas, animación dibujada con identidad y aventuras familiares melancólicas.",
 			"notForYouIf": "No es para vos si necesitás chistes continuos, acción frenética o una trama que explique cada símbolo."
 		},
-	"becauseYouLiked": [
-		"wolfwalkers-espiritu-de-lobo-2020",
-		"el-secreto-de-kells-2009"
-	],
-	"related": [
-		"toy-story-5-2026",
-		"el-gato-con-botas-2011",
-		"shrek-2-2004",
-		"minions-monstruos-2026"
-	]
-},
+		"becauseYouLiked": [
+			"wolfwalkers-espiritu-de-lobo-2020",
+			"el-secreto-de-kells-2009"
+		],
+		"related": [
+			"toy-story-5-2026",
+			"el-gato-con-botas-2011",
+			"shrek-2-2004",
+			"minions-monstruos-2026"
+		]
+	},
 	"review": "Tomm Moore convierte el duelo familiar en un viaje por mitos irlandeses donde cantar también es recordar. Las formas circulares, los azules y la música construyen un mundo de leyenda con una identidad visual muy propia. La película trabaja la tristeza con suavidad, sin negar que crecer también implica aprender a despedirse. La aventura de Ben y Saoirse convierte el duelo en una travesía compartida, donde escuchar también significa aceptar la pérdida.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Brendan Gleeson",
+			"character": "Conor / Mac Lir (voice)",
+			"tmdbMovieId": 110416,
+			"tmdbPersonId": 2039,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fionnula Flanagan",
+			"character": "Granny / Macha (voice)",
+			"tmdbMovieId": 110416,
+			"tmdbPersonId": 58068,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

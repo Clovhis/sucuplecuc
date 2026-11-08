@@ -55,5 +55,28 @@
 	"review": "Jason Goes to Hell intenta reinventar a su asesino como una entidad que salta de cuerpo en cuerpo, una ocurrencia que cambia tanto las reglas que durante buena parte de la película parece otra franquicia. Adam Marcus filma con energía y las muertes tienen el gore exagerado que busca el público, pero la mitología nueva se explica a los empujones y deja poco espacio para Jason. John D. LeMay cumple como héroe improvisado, aunque el misterio nunca termina de enganchar. El guiño final es divertido; el camino para llegar hasta ahí, bastante desprolijo.",
 	"synopsis": "Después de que un operativo destruye el cuerpo de Jason, una fuerza maldita comienza a saltar entre los habitantes de Crystal Lake. Un cazador de la familia Voorhees deberá encontrar el modo de detenerlo antes de que renazca.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Kane Hodder",
+			"character": "Jason Voorhees",
+			"tmdbMovieId": 10285,
+			"tmdbPersonId": 62596,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John D. LeMay",
+			"character": "Steven Freeman",
+			"tmdbMovieId": 10285,
+			"tmdbPersonId": 64741,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kari Keegan",
+			"character": "Jessica Kimble",
+			"tmdbMovieId": 10285,
+			"tmdbPersonId": 64742,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US, GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jude Hill",
+			"character": "Buddy",
+			"tmdbMovieId": 777270,
+			"tmdbPersonId": 3232669,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lewis McAskie",
+			"character": "Will",
+			"tmdbMovieId": 777270,
+			"tmdbPersonId": 3065081,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Caitríona Balfe",
+			"character": "Ma",
+			"tmdbMovieId": 777270,
+			"tmdbPersonId": 147056,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

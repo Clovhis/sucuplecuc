@@ -53,5 +53,35 @@
 		]
 	},
 	"review": "Máxima velocidad arranca con una idea de una sola línea y la trata como un reloj: cada parada del colectivo suma un problema que la edición tiene que resolver antes de que la tensión afloje. Keanu Reeves lleva el pulso serio y Sandra Bullock aporta una humanidad torpe que evita que el viaje quede en pura mecánica; Dennis Hopper empuja la amenaza con una calma desagradable. Jan de Bont entiende que el espectáculo aquí es sostener el movimiento, no acumular explosiones.",
-	"catalogAddedAt": "2026-11-06"
+	"catalogAddedAt": "2026-11-06",
+	"castCharacters": [
+		{
+			"actor": "Keanu Reeves",
+			"character": "Jack Traven",
+			"tmdbMovieId": 1637,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sandra Bullock",
+			"character": "Annie",
+			"tmdbMovieId": 1637,
+			"tmdbPersonId": 18277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dennis Hopper",
+			"character": "Howard Payne",
+			"tmdbMovieId": 1637,
+			"tmdbPersonId": 2778,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Daniels",
+			"character": "Harry",
+			"tmdbMovieId": 1637,
+			"tmdbPersonId": 8447,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -55,5 +55,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Cillian Murphy",
+			"character": "Jim",
+			"tmdbMovieId": 170,
+			"tmdbPersonId": 2037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Naomie Harris",
+			"character": "Selena",
+			"tmdbMovieId": 170,
+			"tmdbPersonId": 2038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Eccleston",
+			"character": "Major Henry West",
+			"tmdbMovieId": 170,
+			"tmdbPersonId": 2040,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brendan Gleeson",
+			"character": "Frank",
+			"tmdbMovieId": 170,
+			"tmdbPersonId": 2039,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

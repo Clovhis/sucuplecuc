@@ -36,18 +36,41 @@
 			"forFansOf": "Fans del policial pop, de las biografías criminales no convencionales y de los personajes encantadores que resultan peligrosos apenas se apaga la música.",
 			"notForYouIf": "Esperás una reconstrucción histórica rigurosa, un héroe con arco redentor o un thriller policial clásico. Luis Ortega elige la fascinación antes que la explicación."
 		},
-	"becauseYouLiked": [
-		"el-jockey-2024",
-		"el-robo-del-siglo-2020"
-	],
-	"related": [
-		"pepita-la-pistolera-2026",
-		"nueve-reinas-2000",
-		"plata-quemada-2000",
-		"barreda-2026"
-	]
-},
+		"becauseYouLiked": [
+			"el-jockey-2024",
+			"el-robo-del-siglo-2020"
+		],
+		"related": [
+			"pepita-la-pistolera-2026",
+			"nueve-reinas-2000",
+			"plata-quemada-2000",
+			"barreda-2026"
+		]
+	},
 	"synopsis": "Carlos es un adolescente de rostro angelical de diecisiete años a quien nadie puede resistir. Obtiene todo lo que quiere. En la escuela secundaria conoce a Ramón y juntos forman un dúo peligrosamente encantador.",
 	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Lorenzo Ferro",
+			"character": "Carlitos",
+			"tmdbMovieId": 507505,
+			"tmdbPersonId": 1985225,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chino Darín",
+			"character": "Ramón",
+			"tmdbMovieId": 507505,
+			"tmdbPersonId": 1308586,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mercedes Morán",
+			"character": "Ana María",
+			"tmdbMovieId": 507505,
+			"tmdbPersonId": 18499,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

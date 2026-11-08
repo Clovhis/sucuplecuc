@@ -37,27 +37,64 @@
 	},
 	"runtimeMinutes": 130,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Thelma y Louise transforma una escapada en una discusión sobre libertad; Ridley Scott deja que Susan Sarandon y Geena Davis conviertan la amistad en motor y destino.",
-		"whatToExpect": "Dos amigas salen de viaje, una situación violenta las obliga a huir y cada kilómetro les quita una opción de volver a la vida anterior.",
-		"pace": "Avanza como road movie, suma encuentros y controles policiales y deja que el paisaje se vuelva más abierto mientras el futuro se cierra.",
-		"intensity": "La violencia cambia la relación con el mundo; la bronca, el miedo y la solidaridad pesan tanto como la persecución.",
-		"practicalContext": "Con 130 minutos, pide una sesión atenta a las decisiones de las protagonistas; no es una aventura de ruta despreocupada.",
-		"forFansOf": "Te va a gustar si disfrutás road movies, amistades que se transforman y dramas criminales con una mirada clara sobre el poder.",
-		"notForYouIf": "No es para vos si buscás una escapada liviana, policías como héroes o un final que tranquilice sobre las consecuencias."
+		"tenSecondTake": {
+			"verdict": "Thelma y Louise transforma una escapada en una discusión sobre libertad; Ridley Scott deja que Susan Sarandon y Geena Davis conviertan la amistad en motor y destino.",
+			"whatToExpect": "Dos amigas salen de viaje, una situación violenta las obliga a huir y cada kilómetro les quita una opción de volver a la vida anterior.",
+			"pace": "Avanza como road movie, suma encuentros y controles policiales y deja que el paisaje se vuelva más abierto mientras el futuro se cierra.",
+			"intensity": "La violencia cambia la relación con el mundo; la bronca, el miedo y la solidaridad pesan tanto como la persecución.",
+			"practicalContext": "Con 130 minutos, pide una sesión atenta a las decisiones de las protagonistas; no es una aventura de ruta despreocupada.",
+			"forFansOf": "Te va a gustar si disfrutás road movies, amistades que se transforman y dramas criminales con una mirada clara sobre el poder.",
+			"notForYouIf": "No es para vos si buscás una escapada liviana, policías como héroes o un final que tranquilice sobre las consecuencias."
+		},
+		"becauseYouLiked": [
+			"un-mundo-perfecto-1993",
+			"caballos-salvajes-1995"
+		],
+		"related": [
+			"camino-a-la-perdicion-2002",
+			"la-voluntad-de-dios-2026",
+			"ladron-de-bicicletas-1948",
+			"gladiator-2000"
+		]
 	},
-	"becauseYouLiked": [
-		"un-mundo-perfecto-1993",
-		"caballos-salvajes-1995"
-	],
-	"related": [
-		"camino-a-la-perdicion-2002",
-		"la-voluntad-de-dios-2026",
-		"ladron-de-bicicletas-1948",
-		"gladiator-2000"
-	]
-},
 	"review": "Ridley Scott convierte una road movie en una discusión sobre violencia, amistad y la posibilidad de dejar de obedecer. Los paisajes del sudoeste y el auto en movimiento sostienen una transformación que el guion deja avanzar sin moralina. Susan Sarandon y Geena Davis construyen una complicidad tan concreta que cada decisión final se siente compartida. La ruta les ofrece una libertad breve, construida a partir de decisiones que ninguna de las dos puede tomar por la otra.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Susan Sarandon",
+			"character": "Louise",
+			"tmdbMovieId": 1541,
+			"tmdbPersonId": 4038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geena Davis",
+			"character": "Thelma",
+			"tmdbMovieId": 1541,
+			"tmdbPersonId": 16935,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harvey Keitel",
+			"character": "Hal",
+			"tmdbMovieId": 1541,
+			"tmdbPersonId": 1037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Madsen",
+			"character": "Jimmy",
+			"tmdbMovieId": 1541,
+			"tmdbPersonId": 147,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher McDonald",
+			"character": "Darryl",
+			"tmdbMovieId": 1541,
+			"tmdbPersonId": 4443,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

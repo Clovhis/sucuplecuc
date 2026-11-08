@@ -44,18 +44,55 @@
 			"forFansOf": "Las comedias existenciales, Charlie Kaufman y las fantasías que convierten una oficina en una trampa mental.",
 			"notForYouIf": "Querés una moraleja clara, personajes queribles o un relato fantástico que respete una lógica cómoda."
 		},
-	"becauseYouLiked": [
-		"adaptation-el-ladron-de-orquideas-2002",
-		"peggy-sue-se-caso-1986"
-	],
-	"related": [
-		"mentiroso-mentiroso-1997",
-		"la-mascara-1994",
-		"babe-el-cerdito-valiente-1995",
-		"marianela-y-el-cadaver-2024"
-	]
-},
+		"becauseYouLiked": [
+			"adaptation-el-ladron-de-orquideas-2002",
+			"peggy-sue-se-caso-1986"
+		],
+		"related": [
+			"mentiroso-mentiroso-1997",
+			"la-mascara-1994",
+			"babe-el-cerdito-valiente-1995",
+			"marianela-y-el-cadaver-2024"
+		]
+	},
 	"review": "Spike Jonze usa una premisa absurda para hablar de deseo, identidad y la fantasía de vivir la vida de otro. El espacio de la oficina, los títeres y el portal funcionan con una lógica cómica que nunca deja de ser inquietante. John Cusack, Cameron Diaz y John Malkovich se entregan a una comedia física y existencial con una precisión rarísima. El acceso a la cabeza de otro empieza como una fantasía y termina revelando cuánto deseo hay detrás de la fascinación por controlar.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "John Cusack",
+			"character": "Craig Schwartz",
+			"tmdbMovieId": 492,
+			"tmdbPersonId": 3036,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cameron Diaz",
+			"character": "Lotte Schwartz",
+			"tmdbMovieId": 492,
+			"tmdbPersonId": 6941,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Malkovich",
+			"character": "John Horatio Malkovich",
+			"tmdbMovieId": 492,
+			"tmdbPersonId": 6949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine Keener",
+			"character": "Maxine Lund",
+			"tmdbMovieId": 492,
+			"tmdbPersonId": 2229,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Orson Bean",
+			"character": "Dr. Lester",
+			"tmdbMovieId": 492,
+			"tmdbPersonId": 863,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,35 @@
 		]
 	},
 	"runtimeMinutes": 116,
-	"review": "Red 2 conserva el elenco y la idea de que la edad no cancela la capacidad de acción, pero reemplaza parte de la sorpresa por una sucesión de locaciones y persecuciones. Bruce Willis sigue funcionando como centro tranquilo, mientras Helen Mirren y John Malkovich se adueñan de los desvíos más divertidos. Dean Parisot mantiene un tono de aventura ligera, aunque el argumento sobre el arma secreta no tiene demasiada densidad y el romance queda algo apurado. La película se disfruta por la química del grupo, el gusto por los gadgets y el placer de ver a estos personajes moverse como si el retiro fuera apenas una pausa."
+	"review": "Red 2 conserva el elenco y la idea de que la edad no cancela la capacidad de acción, pero reemplaza parte de la sorpresa por una sucesión de locaciones y persecuciones. Bruce Willis sigue funcionando como centro tranquilo, mientras Helen Mirren y John Malkovich se adueñan de los desvíos más divertidos. Dean Parisot mantiene un tono de aventura ligera, aunque el argumento sobre el arma secreta no tiene demasiada densidad y el romance queda algo apurado. La película se disfruta por la química del grupo, el gusto por los gadgets y el placer de ver a estos personajes moverse como si el retiro fuera apenas una pausa.",
+	"castCharacters": [
+		{
+			"actor": "Bruce Willis",
+			"character": "Frank Moses",
+			"tmdbMovieId": 146216,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helen Mirren",
+			"character": "Victoria",
+			"tmdbMovieId": 146216,
+			"tmdbPersonId": 15735,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Malkovich",
+			"character": "Marvin Boggs",
+			"tmdbMovieId": 146216,
+			"tmdbPersonId": 6949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary-Louise Parker",
+			"character": "Sarah Ross",
+			"tmdbMovieId": 146216,
+			"tmdbPersonId": 18248,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

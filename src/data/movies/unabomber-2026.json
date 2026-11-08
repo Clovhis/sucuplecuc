@@ -54,5 +54,35 @@
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
 	"runtimeMinutes": 100,
-	"review": "Unabomber quiere coser dos películas: el duelo de control entre el estudiante de Jacob Tremblay y el profesor de Russell Crowe, y una pesquisa del FBI conducida por Shailene Woodley. Esa alternancia le da un motor claro, pero el montaje salta entre décadas sin hacer que cada hallazgo cambie de verdad la lectura anterior. Crowe disfruta la autoridad incómoda de Murray y Tremblay arma a Ted desde la rigidez antes que desde la imitación; entre ambos hay escenas tensas que prometen una película más inquietante. El problema es que el guion usa el experimento de Harvard como explicación demasiado prolija para una violencia que exige más dudas y contexto. Janus Metz mantiene el pulso, aunque la intriga se achica cuando la investigación debería abrir la discusión."
+	"review": "Unabomber quiere coser dos películas: el duelo de control entre el estudiante de Jacob Tremblay y el profesor de Russell Crowe, y una pesquisa del FBI conducida por Shailene Woodley. Esa alternancia le da un motor claro, pero el montaje salta entre décadas sin hacer que cada hallazgo cambie de verdad la lectura anterior. Crowe disfruta la autoridad incómoda de Murray y Tremblay arma a Ted desde la rigidez antes que desde la imitación; entre ambos hay escenas tensas que prometen una película más inquietante. El problema es que el guion usa el experimento de Harvard como explicación demasiado prolija para una violencia que exige más dudas y contexto. Janus Metz mantiene el pulso, aunque la intriga se achica cuando la investigación debería abrir la discusión.",
+	"castCharacters": [
+		{
+			"actor": "Russell Crowe",
+			"character": "Henry Murray",
+			"tmdbMovieId": 1492640,
+			"tmdbPersonId": 934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jacob Tremblay",
+			"character": "Ted Kaczynski",
+			"tmdbMovieId": 1492640,
+			"tmdbPersonId": 1277188,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Annabelle Wallis",
+			"character": "Christiana Morgan",
+			"tmdbMovieId": 1492640,
+			"tmdbPersonId": 82809,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shailene Woodley",
+			"character": "Joanne Miller",
+			"tmdbMovieId": 1492640,
+			"tmdbPersonId": 94185,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

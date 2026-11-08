@@ -54,5 +54,21 @@
 	"releasePlatforms": [
 		"HBO Max"
 	],
-	"runtimeMinutes": 117
+	"runtimeMinutes": 117,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Chris Gardner",
+			"tmdbMovieId": 1402,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jaden Smith",
+			"character": "Christopher",
+			"tmdbMovieId": 1402,
+			"tmdbPersonId": 120724,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

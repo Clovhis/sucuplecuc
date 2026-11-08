@@ -57,5 +57,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "BE",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "Red Miller",
+			"tmdbMovieId": 460885,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andrea Riseborough",
+			"character": "Mandy Bloom",
+			"tmdbMovieId": 460885,
+			"tmdbPersonId": 127558,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

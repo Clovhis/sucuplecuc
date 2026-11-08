@@ -51,5 +51,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Pam Grier",
+			"character": "Jackie Brown",
+			"tmdbMovieId": 184,
+			"tmdbPersonId": 2230,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Ordell Robbie",
+			"tmdbMovieId": 184,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "Louis Gara",
+			"tmdbMovieId": 184,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

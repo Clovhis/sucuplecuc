@@ -34,15 +34,15 @@
 	},
 	"runtimeMinutes": 106,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Todo por un sueño convierte la ambición televisiva en comedia negra; Gus Van Sant deja que Nicole Kidman sonría mientras todo alrededor se pudre.",
-		"whatToExpect": "Suzanne quiere ser una celebridad, manipula a un adolescente y empieza a ver su matrimonio como el obstáculo que hay que quitar.",
-		"pace": "Avanza con entrevistas, planes y consecuencias cada vez más incómodas, usando el falso documental para dejar que la protagonista se venda sola.",
-		"intensity": "La violencia llega envuelta en modales prolijos; lo inquietante es ver cómo la ambición transforma a los demás en herramientas.",
-		"practicalContext": "Con 106 minutos, ofrece una comedia criminal compacta y oscura, mejor si tenés ganas de una sátira sin protagonistas inocentes.",
-		"forFansOf": "Te va a gustar si disfrutás narradores poco confiables, ambición televisiva y actuaciones que hacen simpático algo profundamente desagradable.",
-		"notForYouIf": "Quizás no sea para vos si buscás una redención, un romance cálido o una crítica de medios que no se ensucie."
-	},
+		"tenSecondTake": {
+			"verdict": "Todo por un sueño convierte la ambición televisiva en comedia negra; Gus Van Sant deja que Nicole Kidman sonría mientras todo alrededor se pudre.",
+			"whatToExpect": "Suzanne quiere ser una celebridad, manipula a un adolescente y empieza a ver su matrimonio como el obstáculo que hay que quitar.",
+			"pace": "Avanza con entrevistas, planes y consecuencias cada vez más incómodas, usando el falso documental para dejar que la protagonista se venda sola.",
+			"intensity": "La violencia llega envuelta en modales prolijos; lo inquietante es ver cómo la ambición transforma a los demás en herramientas.",
+			"practicalContext": "Con 106 minutos, ofrece una comedia criminal compacta y oscura, mejor si tenés ganas de una sátira sin protagonistas inocentes.",
+			"forFansOf": "Te va a gustar si disfrutás narradores poco confiables, ambición televisiva y actuaciones que hacen simpático algo profundamente desagradable.",
+			"notForYouIf": "Quizás no sea para vos si buscás una redención, un romance cálido o una crítica de medios que no se ensucie."
+		},
 		"becauseYouLiked": [
 			"after-hours-1985",
 			"the-king-of-comedy-1982"
@@ -56,5 +56,35 @@
 	},
 	"review": "Gus Van Sant convierte la obsesión por aparecer en pantalla en una comedia negra de modales prolijos y corazón podrido. Nicole Kidman construye a Suzanne con una sonrisa que nunca termina de ser amable, y el falso documental deja que su personaje se venda a sí mismo mientras el desastre crece. Matt Dillon sostiene la vida doméstica que ella quiere borrar; Joaquin Phoenix y Casey Affleck aportan la mezcla de fascinación y torpeza que vuelve creíble la manipulación.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Nicole Kidman",
+			"character": "Suzanne Stone",
+			"tmdbMovieId": 577,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Dillon",
+			"character": "Larry Maretto",
+			"tmdbMovieId": 577,
+			"tmdbPersonId": 2876,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joaquin Phoenix",
+			"character": "Jimmy Emmett",
+			"tmdbMovieId": 577,
+			"tmdbPersonId": 73421,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Casey Affleck",
+			"character": "Russel Hines",
+			"tmdbMovieId": 577,
+			"tmdbPersonId": 1893,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,28 @@
 			"el-caballero-verde-2021"
 		]
 	},
-	"review": "El tren de las 3:10 toma un western clásico y lo convierte en un duelo moral con nervio contemporáneo. Russell Crowe disfruta la ambigüedad de Ben Wade, un criminal capaz de ser encantador y brutal en la misma escena, mientras Christian Bale carga con el cansancio de un hombre que necesita demostrar algo en su propia casa. James Mangold filma la espera con tensión y reserva la violencia para momentos que realmente mueven a los personajes. Es un remake con músculo y una relación central muy bien trabajada."
+	"review": "El tren de las 3:10 toma un western clásico y lo convierte en un duelo moral con nervio contemporáneo. Russell Crowe disfruta la ambigüedad de Ben Wade, un criminal capaz de ser encantador y brutal en la misma escena, mientras Christian Bale carga con el cansancio de un hombre que necesita demostrar algo en su propia casa. James Mangold filma la espera con tensión y reserva la violencia para momentos que realmente mueven a los personajes. Es un remake con músculo y una relación central muy bien trabajada.",
+	"castCharacters": [
+		{
+			"actor": "Russell Crowe",
+			"character": "Ben Wade",
+			"tmdbMovieId": 5176,
+			"tmdbPersonId": 934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christian Bale",
+			"character": "Dan Evans",
+			"tmdbMovieId": 5176,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Foster",
+			"character": "Charlie Prince",
+			"tmdbMovieId": 5176,
+			"tmdbPersonId": 11107,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

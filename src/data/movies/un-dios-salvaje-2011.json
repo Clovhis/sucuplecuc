@@ -52,5 +52,35 @@
 			"rebobine-por-favor-2008"
 		]
 	},
-	"review": "Roman Polanski encierra a cuatro adultos en un living y deja que la cortesía se vaya descascarando con cada copa. Jodie Foster y Kate Winslet juegan el choque de clases y temperamentos con una precisión venenosa, mientras Christoph Waltz y John C. Reilly encuentran otras formas de esquivar la responsabilidad. La puesta casi teatral limita el aire, pero también permite disfrutar del ritmo de una discusión que se vuelve cada vez más absurda y sincera."
+	"review": "Roman Polanski encierra a cuatro adultos en un living y deja que la cortesía se vaya descascarando con cada copa. Jodie Foster y Kate Winslet juegan el choque de clases y temperamentos con una precisión venenosa, mientras Christoph Waltz y John C. Reilly encuentran otras formas de esquivar la responsabilidad. La puesta casi teatral limita el aire, pero también permite disfrutar del ritmo de una discusión que se vuelve cada vez más absurda y sincera.",
+	"castCharacters": [
+		{
+			"actor": "Jodie Foster",
+			"character": "Penelope Longstreet",
+			"tmdbMovieId": 72113,
+			"tmdbPersonId": 1038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Winslet",
+			"character": "Nancy Cowan",
+			"tmdbMovieId": 72113,
+			"tmdbPersonId": 204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christoph Waltz",
+			"character": "Alan Cowan",
+			"tmdbMovieId": 72113,
+			"tmdbPersonId": 27319,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John C. Reilly",
+			"character": "Michael Longstreet",
+			"tmdbMovieId": 72113,
+			"tmdbPersonId": 4764,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

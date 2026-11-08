@@ -44,18 +44,55 @@
 			"forFansOf": "Fans de Ingmar Bergman, de los primeros planos y de las películas donde un vínculo íntimo se convierte en un laboratorio de identidad.",
 			"notForYouIf": "Buscás una trama lineal, humor o explicaciones psicológicas claras. El pecado compartido trabaja desde la ruptura y el silencio."
 		},
-	"becauseYouLiked": [
-		"el-septimo-sello-1957",
-		"el-silencio-de-un-hombre-1967"
-	],
-	"related": [
-		"la-patagonia-rebelde-1974",
-		"masacre-ven-y-mira-1985",
-		"la-noche-de-los-lapices-1986",
-		"barton-fink-1991"
-	]
-},
+		"becauseYouLiked": [
+			"el-septimo-sello-1957",
+			"el-silencio-de-un-hombre-1967"
+		],
+		"related": [
+			"la-patagonia-rebelde-1974",
+			"masacre-ven-y-mira-1985",
+			"la-noche-de-los-lapices-1986",
+			"barton-fink-1991"
+		]
+	},
 	"review": "Ingmar Bergman lleva el duelo por la identidad al terreno de la intimidad, donde mirar al otro también puede ser una forma de invadirlo. Los primeros planos, las rupturas de la película y el diseño sonoro convierten la pantalla en una superficie inestable. Bibi Andersson y Liv Ullmann sostienen un duelo de presencias que no depende de grandes movimientos para resultar hipnótico. Su forma fragmentada no resuelve quién domina a quién: mantiene la pregunta abierta mientras las dos mujeres intercambian rasgos y silencios.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Bibi Andersson",
+			"character": "Alma",
+			"tmdbMovieId": 797,
+			"tmdbPersonId": 6657,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liv Ullmann",
+			"character": "Elisabet Vogler",
+			"tmdbMovieId": 797,
+			"tmdbPersonId": 11916,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margaretha Krook",
+			"character": "The Doctor",
+			"tmdbMovieId": 797,
+			"tmdbPersonId": 11917,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gunnar Björnstrand",
+			"character": "Herr Vogler",
+			"tmdbMovieId": 797,
+			"tmdbPersonId": 6649,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jörgen Lindström",
+			"character": "Elisabet's Son (uncredited)",
+			"tmdbMovieId": 797,
+			"tmdbPersonId": 11918,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

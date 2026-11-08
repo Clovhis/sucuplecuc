@@ -36,21 +36,48 @@
 		"tenSecondTake": {
 			"verdict": "Juan Taratuto filma el encuentro entre Gael García Bernal y Natalia Oreiro desde el cansancio adulto; el resort es una postal que se agrieta cuando aparece el deseo.",
 			"whatToExpect": "Crisis corporativa, matrimonios agotados, copas frente al mar y una conexión inesperada que obliga a dos personas a revisar la vida que armaron.",
-			"pace": "Avanza con conversaciones y roces antes que con peripecias; el ritmo es calmo y encuentra sus mejores momentos cuando deja de vender el romance.",			"intensity": "La tensión es afectiva y un poco incómoda: la atracción no llega limpia, viene mezclada con cansancio, mentira y necesidad.",			"practicalContext": "Con 90 minutos, es una opción compacta para una noche de romance adulto; funciona mejor si te interesan las contradicciones más que el cuento de resort.",			"forFansOf": "Para quienes disfrutan a García Bernal y Oreiro en un vínculo imperfecto, con humor seco y segundas oportunidades sin inocencia.",			"notForYouIf": "No es para vos si buscás una comedia romántica luminosa, personajes adorables o un conflicto que se resuelva con una declaración en la playa."
+			"pace": "Avanza con conversaciones y roces antes que con peripecias; el ritmo es calmo y encuentra sus mejores momentos cuando deja de vender el romance.",
+			"intensity": "La tensión es afectiva y un poco incómoda: la atracción no llega limpia, viene mezclada con cansancio, mentira y necesidad.",
+			"practicalContext": "Con 90 minutos, es una opción compacta para una noche de romance adulto; funciona mejor si te interesan las contradicciones más que el cuento de resort.",
+			"forFansOf": "Para quienes disfrutan a García Bernal y Oreiro en un vínculo imperfecto, con humor seco y segundas oportunidades sin inocencia.",
+			"notForYouIf": "No es para vos si buscás una comedia romántica luminosa, personajes adorables o un conflicto que se resuelva con una declaración en la playa."
 		},
-	"becauseYouLiked": [
-		"medianeras-2011",
-		"la-casaca-de-dios-2026"
-	],
-	"related": [
-		"luna-de-avellaneda-2004",
-		"el-hijo-de-la-novia-2001",
-		"camila-1984",
-		"cin3-fili4-2026"
-	]
-},
+		"becauseYouLiked": [
+			"medianeras-2011",
+			"la-casaca-de-dios-2026"
+		],
+		"related": [
+			"luna-de-avellaneda-2004",
+			"el-hijo-de-la-novia-2001",
+			"camila-1984",
+			"cin3-fili4-2026"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
 	"review": "Nada entre los dos va por un registro bastante más seco de lo que su premisa de resort y encuentro inesperado podría hacer pensar. Juan Taratuto filma el cansancio de dos adultos corridos por el trabajo, la rutina y el matrimonio antes que la fantasía de romance de brochure, y en esa incomodidad aparece lo mejor de la película.\n\nGael García Bernal y Natalia Oreiro le encuentran el tono justo a personajes que se atraen, se mienten y se usan un poco todo el tiempo, sin quedar ni adorables ni miserables. A veces esa frialdad la deja al borde de apagarse, pero cuando engancha pega como una historia de segundas oportunidades que ya viene sabiendo que no hay nada inocente en volver a ilusionarse.",
-	"reviewPublishedAt": "2026-05-21"
+	"reviewPublishedAt": "2026-05-21",
+	"castCharacters": [
+		{
+			"actor": "Natalia Oreiro",
+			"character": "Mechi",
+			"tmdbMovieId": 1632812,
+			"tmdbPersonId": 64774,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peto Menahem",
+			"character": "Kato",
+			"tmdbMovieId": 1632812,
+			"tmdbPersonId": 103433,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonardo Daniel",
+			"character": "José Maria",
+			"tmdbMovieId": 1632812,
+			"tmdbPersonId": 1044077,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -52,5 +52,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-09",
 	"synopsis": "Años después de alterar el destino, Sarah Connor vuelve a la lucha cuando una joven mexicana es perseguida por un Terminator casi indestructible. Para protegerla, se une a una soldado mejorada llegada desde un futuro amenazante.",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Linda Hamilton",
+			"character": "Sarah Connor",
+			"tmdbMovieId": 290859,
+			"tmdbPersonId": 2713,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Arnold Schwarzenegger",
+			"character": "T-800 / Carl",
+			"tmdbMovieId": 290859,
+			"tmdbPersonId": 1100,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mackenzie Davis",
+			"character": "Grace",
+			"tmdbMovieId": 290859,
+			"tmdbPersonId": 1110405,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

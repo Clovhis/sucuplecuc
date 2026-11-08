@@ -54,5 +54,42 @@
 			"poor-things-2023"
 		]
 	},
-	"review": "La reunión de Los amigos de Peter parece una comedia de reencuentro hasta que la nostalgia empieza a cobrar intereses. El elenco juega en equipo, con Emma Thompson aportando una mezcla muy precisa de ironía y cansancio, y Kenneth Branagh sosteniendo el centro emocional sin convertirlo en sermón. Hay chistes que funcionan mejor que otros y una estructura algo prolija, pero la película entiende que una amistad adulta también se mide por lo que ya no se puede recuperar. Cálida, melancólica y más filosa de lo que aparenta."
+	"review": "La reunión de Los amigos de Peter parece una comedia de reencuentro hasta que la nostalgia empieza a cobrar intereses. El elenco juega en equipo, con Emma Thompson aportando una mezcla muy precisa de ironía y cansancio, y Kenneth Branagh sosteniendo el centro emocional sin convertirlo en sermón. Hay chistes que funcionan mejor que otros y una estructura algo prolija, pero la película entiende que una amistad adulta también se mide por lo que ya no se puede recuperar. Cálida, melancólica y más filosa de lo que aparenta.",
+	"castCharacters": [
+		{
+			"actor": "Emma Thompson",
+			"character": "Maggie Chester",
+			"tmdbMovieId": 11790,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kenneth Branagh",
+			"character": "Andrew Benson",
+			"tmdbMovieId": 11790,
+			"tmdbPersonId": 11181,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Fry",
+			"character": "Peter Morton",
+			"tmdbMovieId": 11790,
+			"tmdbPersonId": 11275,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Laurie",
+			"character": "Roger Charleston",
+			"tmdbMovieId": 11790,
+			"tmdbPersonId": 41419,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Imelda Staunton",
+			"character": "Mary Charleston",
+			"tmdbMovieId": 11790,
+			"tmdbPersonId": 11356,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

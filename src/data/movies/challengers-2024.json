@@ -51,5 +51,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mike Faist",
+			"character": "Art Donaldson",
+			"tmdbMovieId": 937287,
+			"tmdbPersonId": 1423520,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh O'Connor",
+			"character": "Patrick Zweig",
+			"tmdbMovieId": 937287,
+			"tmdbPersonId": 1206334,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zendaya",
+			"character": "Tashi Donaldson",
+			"tmdbMovieId": 937287,
+			"tmdbPersonId": 505710,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

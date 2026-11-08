@@ -59,5 +59,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Clara Bow",
+			"character": "Mary Preston",
+			"tmdbMovieId": 28966,
+			"tmdbPersonId": 102499,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles 'Buddy' Rogers",
+			"character": "Jack Powell",
+			"tmdbMovieId": 28966,
+			"tmdbPersonId": 102500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Arlen",
+			"character": "David Armstrong",
+			"tmdbMovieId": 28966,
+			"tmdbPersonId": 29760,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

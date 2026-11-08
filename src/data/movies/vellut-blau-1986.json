@@ -58,5 +58,35 @@
 	"releasePlatform": "Apple TV",
 	"country": "US",
 	"releaseDate": "1986-10-23",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Isabella Rossellini",
+			"character": "Dorothy Vallens",
+			"tmdbMovieId": 793,
+			"tmdbPersonId": 6588,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kyle MacLachlan",
+			"character": "Jeffrey Beaumont",
+			"tmdbMovieId": 793,
+			"tmdbPersonId": 6677,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dennis Hopper",
+			"character": "Frank Booth",
+			"tmdbMovieId": 793,
+			"tmdbPersonId": 2778,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Sandy Williams",
+			"tmdbMovieId": 793,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

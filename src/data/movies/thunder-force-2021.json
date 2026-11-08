@@ -22,15 +22,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Thunder Force tiene una dupla simpática en Melissa McCarthy y Octavia Spencer, pero Ben Falcone deja la acción funcionando como trámite.",
-		"whatToExpect": "Dos amigas distanciadas se reencuentran con poderes y forman un equipo para enfrentar villanos en una ciudad que ya se acostumbró al caos.",
-		"pace": "Avanza por chistes, uniformes y peleas breves, con desvíos que alargan la espera entre una buena ocurrencia y la siguiente.",
-		"intensity": "El peligro está siempre amortiguado; la película prefiere la torpeza de sus heroínas antes que la tensión de una misión.",
-		"practicalContext": "Dura 105 minutos y sirve como comedia de superhéroes de fondo liviano, sin exigir demasiada atención a su mundo.",
-		"forFansOf": "Te puede interesar si disfrutás amistades adultas, humor físico y a Jason Bateman haciendo de villano con extraña simpatía.",
-		"notForYouIf": "No es para vos si buscás coreografías memorables, una sátira superheroica filosa o una historia que aproveche de verdad a su dúo."
-	},
+		"tenSecondTake": {
+			"verdict": "Thunder Force tiene una dupla simpática en Melissa McCarthy y Octavia Spencer, pero Ben Falcone deja la acción funcionando como trámite.",
+			"whatToExpect": "Dos amigas distanciadas se reencuentran con poderes y forman un equipo para enfrentar villanos en una ciudad que ya se acostumbró al caos.",
+			"pace": "Avanza por chistes, uniformes y peleas breves, con desvíos que alargan la espera entre una buena ocurrencia y la siguiente.",
+			"intensity": "El peligro está siempre amortiguado; la película prefiere la torpeza de sus heroínas antes que la tensión de una misión.",
+			"practicalContext": "Dura 105 minutos y sirve como comedia de superhéroes de fondo liviano, sin exigir demasiada atención a su mundo.",
+			"forFansOf": "Te puede interesar si disfrutás amistades adultas, humor físico y a Jason Bateman haciendo de villano con extraña simpatía.",
+			"notForYouIf": "No es para vos si buscás coreografías memorables, una sátira superheroica filosa o una historia que aproveche de verdad a su dúo."
+		},
 		"becauseYouLiked": [
 			"carry-on-2024",
 			"godzilla-vs-kong-2021"
@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Melissa McCarthy",
+			"character": "Lydia Berman",
+			"tmdbMovieId": 615678,
+			"tmdbPersonId": 55536,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Octavia Spencer",
+			"character": "Emily Stanton",
+			"tmdbMovieId": 615678,
+			"tmdbPersonId": 6944,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Bateman",
+			"character": "The Crab",
+			"tmdbMovieId": 615678,
+			"tmdbPersonId": 23532,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

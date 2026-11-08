@@ -43,18 +43,41 @@
 			"notForYouIf": "No es para vos si preferís fantasía solemne, humor sin referencias pop o una historia de princesa que respete el molde."
 		},
 		"becauseYouLiked": [
-		"minions-monstruos-2026",
-		"toy-story-5-2026"
-	],
-	"related": [
-		"el-gato-con-botas-2011",
-		"swapped-2026",
-		"monsters-inc-2001",
-		"finding-nemo-2003"
-	]
-},
+			"minions-monstruos-2026",
+			"toy-story-5-2026"
+		],
+		"related": [
+			"el-gato-con-botas-2011",
+			"swapped-2026",
+			"monsters-inc-2001",
+			"finding-nemo-2003"
+		]
+	},
 	"review": "Shrek sigue a un ogro que acepta rescatar a la princesa Fiona para recuperar la tranquilidad de su pantano, acompañado por un burro que no sabe quedarse callado. Andrew Adamson y Vicky Jenson agarran el cuento de hadas y lo mezclan con cinismo, referencias pop y una ternura que aparece cuando menos se la espera. Mike Myers, Eddie Murphy y Cameron Diaz forman un trío con química real, mientras Lord Farquaad permite que la sátira no pierda mala leche. Algunos chistes del momento se sienten fechados, pero la película conserva un ritmo y una personalidad que explican su impacto.",
-  "synopsis": "Shrek ve su pantano invadido por criaturas de cuentos desterradas por Lord Farquaad y acepta rescatar a la princesa Fiona para recuperarlo, acompañado por un burro que no se calla nunca.",
+	"synopsis": "Shrek ve su pantano invadido por criaturas de cuentos desterradas por Lord Farquaad y acepta rescatar a la princesa Fiona para recuperarlo, acompañado por un burro que no se calla nunca.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Mike Myers",
+			"character": "Shrek / Blind Mouse (voice)",
+			"tmdbMovieId": 808,
+			"tmdbPersonId": 12073,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eddie Murphy",
+			"character": "Donkey (voice)",
+			"tmdbMovieId": 808,
+			"tmdbPersonId": 776,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cameron Diaz",
+			"character": "Princess Fiona (voice)",
+			"tmdbMovieId": 808,
+			"tmdbPersonId": 6941,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

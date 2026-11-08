@@ -46,17 +46,33 @@
 			"notForYouIf": "Querés animación familiar, una historia romántica tranquilizadora o respuestas claras sobre la percepción."
 		},
 		"becauseYouLiked": [
-		"la-doncella-2016",
-		"the-meyerowitz-stories-2017"
-	],
-	"related": [
-		"funny-people-2009",
-		"kung-fu-panda-2-2011",
-		"up-2009",
-		"kung-fu-panda-2008"
-	]
-},
+			"la-doncella-2016",
+			"the-meyerowitz-stories-2017"
+		],
+		"related": [
+			"funny-people-2009",
+			"kung-fu-panda-2-2011",
+			"up-2009",
+			"kung-fu-panda-2008"
+		]
+	},
 	"review": "Charlie Kaufman y Duke Johnson convierten una noche de hotel en una comedia amarga sobre aislamiento y deseo de singularidad. La animación de marionetas registra imperfecciones mínimas y las usa para que lo artificial resulte íntimo. David Thewlis, Jennifer Jason Leigh y Tom Noonan sostienen una rareza adulta que no busca caer simpática. La voz idéntica que oye Michael vuelve literal su aislamiento, hasta que una pequeña diferencia alcanza para alterar toda su percepción.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "David Thewlis",
+			"character": "Michael Stone (voice)",
+			"tmdbMovieId": 291270,
+			"tmdbPersonId": 11207,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Jason Leigh",
+			"character": "Lisa Hesselman (voice)",
+			"tmdbMovieId": 291270,
+			"tmdbPersonId": 10431,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

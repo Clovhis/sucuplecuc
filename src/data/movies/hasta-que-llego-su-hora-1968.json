@@ -56,5 +56,42 @@
 	"review": "Un silbido corta el aire antes de que aparezca el primer personaje y Sergio Leone deja claro que acá el tiempo también dispara. La película transforma la llegada del tren y la construcción de una estación en una épica sobre el fin de una época. Charles Bronson trabaja desde el silencio, Henry Fonda aprovecha su imagen de héroe para componer una maldad helada y Claudia Cardinale sostiene el centro emocional del relato. El ritmo es deliberadamente solemne, con escenas que podrían parecer eternas si no estuvieran llenas de tensión visual. Es un western crepuscular, enorme y de una belleza casi operística.",
 	"isPremiere": false,
 	"premiereLabel": "",
-	"releaseDate": "1968-12-21"
+	"releaseDate": "1968-12-21",
+	"castCharacters": [
+		{
+			"actor": "Claudia Cardinale",
+			"character": "Jill",
+			"tmdbMovieId": 335,
+			"tmdbPersonId": 4959,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Henry Fonda",
+			"character": "Frank",
+			"tmdbMovieId": 335,
+			"tmdbPersonId": 4958,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Robards",
+			"character": "'Cheyenne'",
+			"tmdbMovieId": 335,
+			"tmdbPersonId": 4765,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles Bronson",
+			"character": "'Harmonica'",
+			"tmdbMovieId": 335,
+			"tmdbPersonId": 4960,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gabriele Ferzetti",
+			"character": "Morton",
+			"tmdbMovieId": 335,
+			"tmdbPersonId": 4961,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -55,5 +55,35 @@
 	},
 	"review": "Zelig inventa a Leonard Zelig, un hombre que adopta el aspecto y las opiniones de quien tenga enfrente, y lo presenta como si hubiera sido una celebridad olvidada de los años veinte. Woody Allen mezcla falsos noticieros, fotos trucadas y entrevistas con una naturalidad que hace funcionar el chiste y también su costado triste. Mia Farrow le da un ancla emocional al relato, mientras la voz documental mantiene un ritmo ágil. Es breve, muy ingeniosa y más inquietante de lo que parece: una sátira filosa sobre la necesidad de encajar.",
 	"reviewPublishedAt": "2026-04-29",
-	"synopsis": "Un falso documental reconstruye la vida de Leonard Zelig, un hombre capaz de adoptar la apariencia y las ideas de quienes lo rodean. Su extraño talento lo convierte en una celebridad de los años veinte y despierta interés médico y público."
+	"synopsis": "Un falso documental reconstruye la vida de Leonard Zelig, un hombre capaz de adoptar la apariencia y las ideas de quienes lo rodean. Su extraño talento lo convierte en una celebridad de los años veinte y despierta interés médico y público.",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Leonard Zelig",
+			"tmdbMovieId": 11030,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mia Farrow",
+			"character": "Dr. Eudora Nesbitt Fletcher",
+			"tmdbMovieId": 11030,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick Horgan",
+			"character": "The Narrator (voice)",
+			"tmdbMovieId": 11030,
+			"tmdbPersonId": 28027,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Louise Wilson",
+			"character": "Sister Ruth",
+			"tmdbMovieId": 11030,
+			"tmdbPersonId": 115767,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

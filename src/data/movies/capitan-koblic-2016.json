@@ -44,18 +44,41 @@
 			"forFansOf": "Los westerns de pueblo chico, Ricardo Darín en modo contenido y el cine argentino sobre memoria y culpa.",
 			"notForYouIf": "Querés acción continua, una intriga policial compleja o un protagonista completamente ajeno a la violencia que arrastra."
 		},
-	"becauseYouLiked": [
-		"la-noche-de-los-lapices-1986",
-		"el-aura-2005"
-	],
-	"related": [
-		"argentina-1985-2022",
-		"barreda-2026",
-		"pepita-la-pistolera-2026",
-		"nueve-reinas-2000"
-	]
-},
+		"becauseYouLiked": [
+			"la-noche-de-los-lapices-1986",
+			"el-aura-2005"
+		],
+		"related": [
+			"argentina-1985-2022",
+			"barreda-2026",
+			"pepita-la-pistolera-2026",
+			"nueve-reinas-2000"
+		]
+	},
 	"review": "Sebastián Borensztein cruza el policial rural con la memoria de la dictadura y deja que la culpa viaje por caminos polvorientos. El western de pueblo chico está construido con planos abiertos, miradas largas y una violencia que amenaza con aparecer en cualquier esquina. Ricardo Darín y Oscar Martínez se enfrentan con una tensión contenida que sostiene incluso los pasajes más previsibles. La huida no borra lo ocurrido: el paisaje abierto acentúa la imposibilidad de escapar de una decisión tomada durante la dictadura.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Tomás Kóblic",
+			"tmdbMovieId": 391617,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Oscar Martínez",
+			"character": "Velarde",
+			"tmdbMovieId": 391617,
+			"tmdbPersonId": 1457004,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Inma Cuesta",
+			"character": "Nancy",
+			"tmdbMovieId": 391617,
+			"tmdbPersonId": 224728,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -45,5 +45,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Joaquin Phoenix",
+			"character": "Napoleon Bonaparte",
+			"tmdbMovieId": 753342,
+			"tmdbPersonId": 73421,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vanessa Kirby",
+			"character": "Josephine Bonaparte",
+			"tmdbMovieId": 753342,
+			"tmdbPersonId": 556356,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tahar Rahim",
+			"character": "Paul Barras",
+			"tmdbMovieId": 753342,
+			"tmdbPersonId": 81051,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

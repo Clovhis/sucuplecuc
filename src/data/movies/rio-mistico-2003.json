@@ -67,5 +67,42 @@
 			"mean-streets-1973"
 		]
 	},
-	"review": "Clint Eastwood filma el crimen como una corriente subterránea que arrastra décadas de dolor. Sean Penn y Tim Robbins trabajan desde lugares opuestos, pero ninguno queda reducido a una explicación simple; Kevin Bacon sostiene la investigación con una calma que contrasta con la violencia íntima de las familias. El tono es sombrío y el relato no ofrece alivio fácil, aunque su estructura clásica puede sentirse demasiado calculada. El resultado sigue siendo un drama criminal de actuaciones enormes y una atmósfera asfixiante."
+	"review": "Clint Eastwood filma el crimen como una corriente subterránea que arrastra décadas de dolor. Sean Penn y Tim Robbins trabajan desde lugares opuestos, pero ninguno queda reducido a una explicación simple; Kevin Bacon sostiene la investigación con una calma que contrasta con la violencia íntima de las familias. El tono es sombrío y el relato no ofrece alivio fácil, aunque su estructura clásica puede sentirse demasiado calculada. El resultado sigue siendo un drama criminal de actuaciones enormes y una atmósfera asfixiante.",
+	"castCharacters": [
+		{
+			"actor": "Sean Penn",
+			"character": "Jimmy Markum",
+			"tmdbMovieId": 322,
+			"tmdbPersonId": 2228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Robbins",
+			"character": "Dave Boyle",
+			"tmdbMovieId": 322,
+			"tmdbPersonId": 504,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Bacon",
+			"character": "Sean Devine",
+			"tmdbMovieId": 322,
+			"tmdbPersonId": 4724,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Linney",
+			"character": "Annabeth Markum",
+			"tmdbMovieId": 322,
+			"tmdbPersonId": 350,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marcia Gay Harden",
+			"character": "Celeste Boyle",
+			"tmdbMovieId": 322,
+			"tmdbPersonId": 4726,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

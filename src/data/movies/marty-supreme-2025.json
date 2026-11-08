@@ -35,7 +35,11 @@
 		"tenSecondTake": {
 			"verdict": "Josh Safdie filma a Marty Mauser como una máquina de ambición: Timothée Chalamet es magnético y agotador en una épica de ping-pong, ego, negocios y fuga permanente.",
 			"whatToExpect": "Torneos, apuestas, negocios turbios y una Nueva York de los cincuenta donde el ping-pong funciona como ring para un protagonista que no sabe frenar.",
-			"pace": "Corre detrás de Marty con cambios bruscos y discusiones que parecen partidos; los 150 minutos se sienten porque la película no baja casi nunca la apuesta.",			"intensity": "La energía es competitiva y verbal, cargada de ego, plata y provocación; el deporte importa tanto como la necesidad de ser visto.",			"practicalContext": "Sus 150 minutos piden una sesión sin interrupciones y tolerancia a un protagonista exasperante; no es una película deportiva prolija ni relajada.",			"forFansOf": "Para quienes disfrutan la velocidad de los Safdie, personajes magnéticos y relatos deportivos donde el talento se mezcla con estafa, deseo y autodestrucción.",			"notForYouIf": "No es para vos si preferís héroes simpáticos, partidos explicados con calma o una historia que se detenga a ordenar las consecuencias."
+			"pace": "Corre detrás de Marty con cambios bruscos y discusiones que parecen partidos; los 150 minutos se sienten porque la película no baja casi nunca la apuesta.",
+			"intensity": "La energía es competitiva y verbal, cargada de ego, plata y provocación; el deporte importa tanto como la necesidad de ser visto.",
+			"practicalContext": "Sus 150 minutos piden una sesión sin interrupciones y tolerancia a un protagonista exasperante; no es una película deportiva prolija ni relajada.",
+			"forFansOf": "Para quienes disfrutan la velocidad de los Safdie, personajes magnéticos y relatos deportivos donde el talento se mezcla con estafa, deseo y autodestrucción.",
+			"notForYouIf": "No es para vos si preferís héroes simpáticos, partidos explicados con calma o una historia que se detenga a ordenar las consecuencias."
 		},
 		"becauseYouLiked": [
 			"la-maquina-the-smashing-machine-2025",
@@ -52,5 +56,35 @@
 	"premiereLabel": "ESTRENO",
 	"audienceRating": "+13",
 	"review": "Marty Supreme es nerviosa, grandota y bastante insoportable en el mejor sentido: te deja pegado a un tipo que confunde talento con destino y carisma con permiso para arrasar todo. Josh Safdie no filma el ping-pong como postal deportiva prolija, sino como una guerra de ego, plata, chamuyo y hambre de reconocimiento.\n\nTimothée Chalamet aguanta muy bien a Marty como alguien magnético, gracioso y agotador a la vez. Lo mejor es que la película nunca se baja a biopic solemne: hay época, delirio competitivo y una puesta que corre detrás del protagonista sin alcanzarlo del todo. Vive acelerada y con los codos afuera, pero justamente ahí encuentra pulso propio y una mala leche bastante atractiva.",
-	"reviewPublishedAt": "2026-05-09"
+	"reviewPublishedAt": "2026-05-09",
+	"castCharacters": [
+		{
+			"actor": "Timothée Chalamet",
+			"character": "Marty Mauser",
+			"tmdbMovieId": 1317288,
+			"tmdbPersonId": 1190668,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gwyneth Paltrow",
+			"character": "Kay Stone",
+			"tmdbMovieId": 1317288,
+			"tmdbPersonId": 12052,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Odessa A'zion",
+			"character": "Rachel Mizler",
+			"tmdbMovieId": 1317288,
+			"tmdbPersonId": 1972166,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin O'Leary",
+			"character": "Milton Rockwell",
+			"tmdbMovieId": 1317288,
+			"tmdbPersonId": 1240877,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

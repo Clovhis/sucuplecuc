@@ -53,5 +53,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Richard Williams",
+			"tmdbMovieId": 614917,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aunjanue Ellis-Taylor",
+			"character": "Oracene 'Brandy' Price",
+			"tmdbMovieId": 614917,
+			"tmdbPersonId": 53923,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Bernthal",
+			"character": "Rick Macci",
+			"tmdbMovieId": 614917,
+			"tmdbPersonId": 19498,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -37,7 +37,11 @@
 		"tenSecondTake": {
 			"verdict": "Spike Lee filma a Malcolm como una vida en transformación, y Denzel Washington sostiene las contradicciones, la oratoria y la soledad sin convertirlo en monumento.",
 			"whatToExpect": "Ascenso, cárcel, conversión, militancia y disputas de liderazgo, contados con una puesta musical y política que abraza el tamaño clásico del biopic.",
-			"pace": "Es una crónica extensa que pasa por etapas y cambios de ideas; avanza con energía, aunque algunos episodios quedan comprimidos por la escala.",			"intensity": "La intensidad nace del racismo estructural, la vigilancia y el conflicto interno: el espectáculo siempre está atravesado por el precio de reinventarse.",			"practicalContext": "Sus 202 minutos piden una sesión larga y concentrada; reservála para cuando tengas tiempo de acompañar la evolución completa del protagonista.",			"forFansOf": "Para quienes buscan biografías políticas con actuaciones centrales enormes, cine de Spike Lee y personajes que no caben en una sola etiqueta.",			"notForYouIf": "No te va a servir si querés una biografía compacta, neutral o sin discursos: esta película discute a Malcolm con toda su energía y su énfasis."
+			"pace": "Es una crónica extensa que pasa por etapas y cambios de ideas; avanza con energía, aunque algunos episodios quedan comprimidos por la escala.",
+			"intensity": "La intensidad nace del racismo estructural, la vigilancia y el conflicto interno: el espectáculo siempre está atravesado por el precio de reinventarse.",
+			"practicalContext": "Sus 202 minutos piden una sesión larga y concentrada; reservála para cuando tengas tiempo de acompañar la evolución completa del protagonista.",
+			"forFansOf": "Para quienes buscan biografías políticas con actuaciones centrales enormes, cine de Spike Lee y personajes que no caben en una sola etiqueta.",
+			"notForYouIf": "No te va a servir si querés una biografía compacta, neutral o sin discursos: esta película discute a Malcolm con toda su energía y su énfasis."
 		},
 		"becauseYouLiked": [
 			"una-mujer-audaz-2000",
@@ -50,5 +54,42 @@
 			"invencible-2006"
 		]
 	},
-	"review": "Spike Lee filma una vida enorme sin reducirla a una estampita de bronce. La película se permite contradicciones, cambios de postura y momentos de espectáculo porque entiende que Malcolm también fue un hombre que se estaba reinventando delante de todos. Denzel Washington sostiene más de tres horas con una interpretación eléctrica, precisa en el humor, la bronca y la vulnerabilidad que aparece cuando el personaje queda solo. Hay pasajes que empujan el énfasis propio del biopic clásico, pero la energía visual de Lee y la mirada política evitan que se vuelva museo."
+	"review": "Spike Lee filma una vida enorme sin reducirla a una estampita de bronce. La película se permite contradicciones, cambios de postura y momentos de espectáculo porque entiende que Malcolm también fue un hombre que se estaba reinventando delante de todos. Denzel Washington sostiene más de tres horas con una interpretación eléctrica, precisa en el humor, la bronca y la vulnerabilidad que aparece cuando el personaje queda solo. Hay pasajes que empujan el énfasis propio del biopic clásico, pero la energía visual de Lee y la mirada política evitan que se vuelva museo.",
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "Malcolm X",
+			"tmdbMovieId": 1883,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Angela Bassett",
+			"character": "Betty Shabazz",
+			"tmdbMovieId": 1883,
+			"tmdbPersonId": 9780,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Albert Hall",
+			"character": "Baines",
+			"tmdbMovieId": 1883,
+			"tmdbPersonId": 8354,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Al Freeman Jr.",
+			"character": "Elijah Muhammad",
+			"tmdbMovieId": 1883,
+			"tmdbPersonId": 19739,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Delroy Lindo",
+			"character": "West Indian Archie",
+			"tmdbMovieId": 1883,
+			"tmdbPersonId": 18792,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -58,5 +58,21 @@
 	"releasePlatforms": [
 		"MUBI",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Hannah Einbinder",
+			"character": "Kris",
+			"tmdbMovieId": 1240889,
+			"tmdbPersonId": 2559506,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gillian Anderson",
+			"character": "Billy",
+			"tmdbMovieId": 1240889,
+			"tmdbPersonId": 12214,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

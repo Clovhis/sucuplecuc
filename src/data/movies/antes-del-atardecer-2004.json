@@ -55,5 +55,21 @@
 	"releasePlatforms": [
 		"HBO Max"
 	],
-	"runtimeMinutes": 80
+	"runtimeMinutes": 80,
+	"castCharacters": [
+		{
+			"actor": "Ethan Hawke",
+			"character": "Jesse",
+			"tmdbMovieId": 80,
+			"tmdbPersonId": 569,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Delpy",
+			"character": "Céline",
+			"tmdbMovieId": 80,
+			"tmdbPersonId": 1146,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -52,5 +52,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jennifer Aniston",
+			"character": "Annie Hughes (voice)",
+			"tmdbMovieId": 10386,
+			"tmdbPersonId": 4491,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harry Connick Jr.",
+			"character": "Dean McCoppin (voice)",
+			"tmdbMovieId": 10386,
+			"tmdbPersonId": 18688,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

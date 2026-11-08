@@ -54,5 +54,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "DK",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mads Mikkelsen",
+			"character": "Lucas",
+			"tmdbMovieId": 103663,
+			"tmdbPersonId": 1019,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Thomas Bo Larsen",
+			"character": "Theo",
+			"tmdbMovieId": 103663,
+			"tmdbPersonId": 4457,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

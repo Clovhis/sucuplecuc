@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "DE",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Bernard-Pierre Donnadieu",
+			"character": "Raymond Lemorne",
+			"tmdbMovieId": 8740,
+			"tmdbPersonId": 38500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Bervoets",
+			"character": "Rex Hofman",
+			"tmdbMovieId": 8740,
+			"tmdbPersonId": 1913732,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

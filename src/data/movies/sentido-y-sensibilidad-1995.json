@@ -60,5 +60,42 @@
 			"junior-1994"
 		]
 	},
-	"review": "Ang Lee encuentra el equilibrio justo entre la ironía social de Austen y el pulso sentimental de sus dos hermanas. Emma Thompson escribe y actúa a Elinor con una inteligencia que no necesita endurecerse, mientras Kate Winslet le pone electricidad a una Marianne impulsiva. El vestuario y los paisajes son hermosos, pero la película no se queda en la postal: cada gesto revela cuánto cuesta elegir dentro de una sociedad que administra el deseo. Clásico cálido, preciso y todavía muy vivo."
+	"review": "Ang Lee encuentra el equilibrio justo entre la ironía social de Austen y el pulso sentimental de sus dos hermanas. Emma Thompson escribe y actúa a Elinor con una inteligencia que no necesita endurecerse, mientras Kate Winslet le pone electricidad a una Marianne impulsiva. El vestuario y los paisajes son hermosos, pero la película no se queda en la postal: cada gesto revela cuánto cuesta elegir dentro de una sociedad que administra el deseo. Clásico cálido, preciso y todavía muy vivo.",
+	"castCharacters": [
+		{
+			"actor": "Emma Thompson",
+			"character": "Elinor Dashwood",
+			"tmdbMovieId": 4584,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Winslet",
+			"character": "Marianne Dashwood",
+			"tmdbMovieId": 4584,
+			"tmdbPersonId": 204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Rickman",
+			"character": "Colonel Christopher Brandon",
+			"tmdbMovieId": 4584,
+			"tmdbPersonId": 4566,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Grant",
+			"character": "Edward Ferrars",
+			"tmdbMovieId": 4584,
+			"tmdbPersonId": 3291,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gemma Jones",
+			"character": "Mrs. Dashwood",
+			"tmdbMovieId": 4584,
+			"tmdbPersonId": 9138,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

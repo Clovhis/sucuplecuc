@@ -53,5 +53,35 @@
 			"mucho-ruido-y-pocas-nueces-1993"
 		]
 	},
-	"review": "Filadelfia fue una película importante porque llevó la discriminación por VIH al centro del cine comercial sin convertirla en un simple decorado sentimental. Jonathan Demme filma el juicio con una claridad clásica y reserva sus golpes más fuertes para los gestos cotidianos: una mirada que se aparta, una puerta que se cierra, un colega que decide no saber. Tom Hanks construye a Andrew desde la dignidad y el desgaste, mientras Denzel Washington deja que el cambio de su personaje ocurra a la vista. El alegato es directo y a veces subraya demasiado, pero su humanidad sigue intacta."
+	"review": "Filadelfia fue una película importante porque llevó la discriminación por VIH al centro del cine comercial sin convertirla en un simple decorado sentimental. Jonathan Demme filma el juicio con una claridad clásica y reserva sus golpes más fuertes para los gestos cotidianos: una mirada que se aparta, una puerta que se cierra, un colega que decide no saber. Tom Hanks construye a Andrew desde la dignidad y el desgaste, mientras Denzel Washington deja que el cambio de su personaje ocurra a la vista. El alegato es directo y a veces subraya demasiado, pero su humanidad sigue intacta.",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Andrew Beckett",
+			"tmdbMovieId": 9800,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Denzel Washington",
+			"character": "Joe Miller",
+			"tmdbMovieId": 9800,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Steenburgen",
+			"character": "Belinda Conine",
+			"tmdbMovieId": 9800,
+			"tmdbPersonId": 2453,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Antonio Banderas",
+			"character": "Miguel Alvarez",
+			"tmdbMovieId": 9800,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -52,5 +52,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 95,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Shelby Allison Brown",
+			"character": "Noel",
+			"tmdbMovieId": 1550233,
+			"tmdbPersonId": 5703664,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Callie Bussell",
+			"character": "Callie",
+			"tmdbMovieId": 1550233,
+			"tmdbPersonId": 1437114,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

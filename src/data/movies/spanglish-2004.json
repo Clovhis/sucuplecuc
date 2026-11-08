@@ -43,7 +43,7 @@
 			"forFansOf": "Puede gustarte si te interesan comedias dramáticas sobre crianza, migración y vínculos de trabajo, con actuaciones contenidas de Adam Sandler y Paz Vega en registros menos obvios.",
 			"notForYouIf": "Quizás no sea para vos si te molestan los finales muy explicativos, la mirada paternalista sobre la familia o una película larga que convierte cada conflicto cultural en una lección sentimental."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"terms-of-endearment-1983",
 			"el-hijo-de-la-novia-2001"
 		],
@@ -61,5 +61,42 @@
 	],
 	"runtimeMinutes": 130,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "John Clasky",
+			"tmdbMovieId": 2539,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Téa Leoni",
+			"character": "Deborah Clasky",
+			"tmdbMovieId": 2539,
+			"tmdbPersonId": 4939,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paz Vega",
+			"character": "Flor Moreno",
+			"tmdbMovieId": 2539,
+			"tmdbPersonId": 3627,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cloris Leachman",
+			"character": "Evelyn Wright",
+			"tmdbMovieId": 2539,
+			"tmdbPersonId": 9599,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shelbie Bruce",
+			"character": "Christina",
+			"tmdbMovieId": 2539,
+			"tmdbPersonId": 25907,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

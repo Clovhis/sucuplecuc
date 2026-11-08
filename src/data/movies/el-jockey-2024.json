@@ -33,18 +33,41 @@
 			"forFansOf": "Fans de Luis Ortega, de los policiales deformes y de las películas donde la identidad se vuelve un disfraz que ya no se puede sacar.",
 			"notForYouIf": "Buscás una trama criminal convencional, ritmo parejo o respuestas claras. El Jockey se disfruta más por su frecuencia que por su lógica."
 		},
-	"becauseYouLiked": [
-		"el-angel-2018",
-		"los-delincuentes-2023"
-	],
-	"related": [
-		"lu-pau-2026",
-		"pepita-la-pistolera-2026",
-		"el-clan-2015",
-		"carancho-2010"
-	]
-},
+		"becauseYouLiked": [
+			"el-angel-2018",
+			"los-delincuentes-2023"
+		],
+		"related": [
+			"lu-pau-2026",
+			"pepita-la-pistolera-2026",
+			"el-clan-2015",
+			"carancho-2010"
+		]
+	},
 	"synopsis": "Remo Manfredini es un jockey legendario, pero su comportamiento autodestructivo empieza a eclipsar su talento y a comprometer su relación con Abril. En medio de apuestas, accidentes y deudas, su caída lo empuja hacia una deriva cada vez más extraña, donde la identidad y el deseo empiezan a correrse de lugar.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-02-28"
+	"reviewPublishedAt": "2026-02-28",
+	"castCharacters": [
+		{
+			"actor": "Nahuel Pérez Biscayart",
+			"character": "Remo Manfredini",
+			"tmdbMovieId": 1104937,
+			"tmdbPersonId": 66957,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Úrsula Corberó",
+			"character": "Abril",
+			"tmdbMovieId": 1104937,
+			"tmdbPersonId": 1042728,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daniel Giménez Cacho",
+			"character": "Sirena",
+			"tmdbMovieId": 1104937,
+			"tmdbPersonId": 1603,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

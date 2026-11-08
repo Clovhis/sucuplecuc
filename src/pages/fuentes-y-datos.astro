@@ -49,6 +49,17 @@ const structuredData = createSimplePageStructuredData(SOURCES_AND_DATA_PATH, pag
 			</article>
 
 			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
+				<h2>Créditos de TMDB</h2>
+				<p>Los personajes del reparto se contrastan con The Movie Database (TMDB).</p>
+				{/* Official unmodified logo from https://www.themoviedb.org/about/logos-attribution */}
+				<a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" aria-label="Visitar The Movie Database (TMDB)">
+					<img src={`${import.meta.env.BASE_URL}assets/brand/tmdb.svg`} alt="TMDB" width="120" style="width: 120px; max-width: 100%; height: auto;" loading="lazy" />
+				</a>
+				<p lang="en">This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+				<p>Este producto usa la API de TMDB, pero no está avalado ni certificado por TMDB.</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
 				<h2>Disponibilidad de plataformas</h2>
 				<p>
 					La disponibilidad puede cambiar por país, fecha, ventana comercial o acuerdos entre servicios. Por eso

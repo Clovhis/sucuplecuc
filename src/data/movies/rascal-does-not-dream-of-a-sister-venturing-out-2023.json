@@ -39,17 +39,40 @@
 			"notForYouIf": "No es para vos si querés acción, una puerta de entrada autónoma o una película que explique desde cero el mundo de Sakuta."
 		},
 		"becauseYouLiked": [
-		"the-girl-who-leapt-through-time-2006",
-		"a-silent-voice-2016"
-	],
-	"related": [
-		"your-name-2016",
-		"wolf-children-2012",
-		"haikyu-the-dumpster-battle-2024",
-		"the-boy-and-the-heron-2023"
-	]
-},
+			"the-girl-who-leapt-through-time-2006",
+			"a-silent-voice-2016"
+		],
+		"related": [
+			"your-name-2016",
+			"wolf-children-2012",
+			"haikyu-the-dumpster-battle-2024",
+			"the-boy-and-the-heron-2023"
+		]
+	},
 	"synopsis": "Sakuta intenta ayudar a Kaede a recuperar la confianza después de años de encierro, justo cuando su hermana decide enfrentarse al mundo exterior. El proceso reabre heridas familiares y obliga a ambos a crecer.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-04"
+	"reviewPublishedAt": "2026-03-04",
+	"castCharacters": [
+		{
+			"actor": "Kaito Ishikawa",
+			"character": "Sakuta Azusagawa (voice)",
+			"tmdbMovieId": 1056803,
+			"tmdbPersonId": 1324666,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Asami Seto",
+			"character": "Mai Sakurajima (voice)",
+			"tmdbMovieId": 1056803,
+			"tmdbPersonId": 1254672,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Yurika Kubo",
+			"character": "Kaede Azusagawa (voice)",
+			"tmdbMovieId": 1056803,
+			"tmdbPersonId": 1288294,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

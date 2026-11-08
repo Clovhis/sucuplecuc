@@ -59,5 +59,21 @@
 		"Apple TV"
 	],
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Alexander Skarsgård",
+			"character": "Amleth",
+			"tmdbMovieId": 639933,
+			"tmdbPersonId": 28846,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicole Kidman",
+			"character": "Queen Gudrún",
+			"tmdbMovieId": 639933,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

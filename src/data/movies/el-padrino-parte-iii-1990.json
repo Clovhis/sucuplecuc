@@ -53,5 +53,35 @@
 		]
 	},
 	"runtimeMinutes": 162,
-	"review": "La tercera parte carga con una comparación imposible, pero su problema no es la falta de ideas sino el desequilibrio entre ellas. Michael ya no quiere conquistar nada: quiere limpiar su nombre, y Pacino vuelve visible esa mezcla de cansancio, culpa y control. La historia financiera tiene momentos espesos, mientras Andy Garcia inyecta una energía peligrosa que desacomoda el relato. No alcanza la precisión de las anteriores, aunque su mirada sobre la vejez de Michael y el precio de la legitimidad tiene auténtica potencia."
+	"review": "La tercera parte carga con una comparación imposible, pero su problema no es la falta de ideas sino el desequilibrio entre ellas. Michael ya no quiere conquistar nada: quiere limpiar su nombre, y Pacino vuelve visible esa mezcla de cansancio, culpa y control. La historia financiera tiene momentos espesos, mientras Andy Garcia inyecta una energía peligrosa que desacomoda el relato. No alcanza la precisión de las anteriores, aunque su mirada sobre la vejez de Michael y el precio de la legitimidad tiene auténtica potencia.",
+	"castCharacters": [
+		{
+			"actor": "Al Pacino",
+			"character": "Michael Corleone",
+			"tmdbMovieId": 242,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Keaton",
+			"character": "Kay Adams",
+			"tmdbMovieId": 242,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Garcia",
+			"character": "Vincent Mancini",
+			"tmdbMovieId": 242,
+			"tmdbPersonId": 1271,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Talia Shire",
+			"character": "Connie Corleone Rizzi",
+			"tmdbMovieId": 242,
+			"tmdbPersonId": 3094,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

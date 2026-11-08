@@ -53,5 +53,35 @@
 			"el-talento-de-mr-ripley-1999"
 		]
 	},
-	"review": "Jodie Foster arma un thriller de televisión en vivo con una premisa eficaz: un conductor que vende certezas financieras queda obligado a responder por el desastre que ayudó a promocionar. Clooney y Julia Roberts trabajan bien la urgencia de dos profesionales que deben coordinarse mientras todo se transmite, y Jack O’Connell le da una tensión física entendible al rehén. La película subraya algunas conclusiones y no siempre aprovecha la complejidad del mercado, pero sostiene el suspenso y deja una incomodidad útil sobre la responsabilidad pública."
+	"review": "Jodie Foster arma un thriller de televisión en vivo con una premisa eficaz: un conductor que vende certezas financieras queda obligado a responder por el desastre que ayudó a promocionar. Clooney y Julia Roberts trabajan bien la urgencia de dos profesionales que deben coordinarse mientras todo se transmite, y Jack O’Connell le da una tensión física entendible al rehén. La película subraya algunas conclusiones y no siempre aprovecha la complejidad del mercado, pero sostiene el suspenso y deja una incomodidad útil sobre la responsabilidad pública.",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Lee Gates",
+			"tmdbMovieId": 303858,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julia Roberts",
+			"character": "Patty Fenn",
+			"tmdbMovieId": 303858,
+			"tmdbPersonId": 1204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack O'Connell",
+			"character": "Kyle Budwell",
+			"tmdbMovieId": 303858,
+			"tmdbPersonId": 85065,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dominic West",
+			"character": "Walt Camby",
+			"tmdbMovieId": 303858,
+			"tmdbPersonId": 17287,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

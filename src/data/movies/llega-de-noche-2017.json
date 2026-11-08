@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Joel Edgerton",
+			"character": "Paul",
+			"tmdbMovieId": 418078,
+			"tmdbPersonId": 33192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Abbott",
+			"character": "Will",
+			"tmdbMovieId": 418078,
+			"tmdbPersonId": 984629,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

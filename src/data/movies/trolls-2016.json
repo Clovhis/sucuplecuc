@@ -36,15 +36,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Trolls apuesta todo al color y a la canción; Mike Mitchell deja que Anna Kendrick y Justin Timberlake equilibren optimismo y malhumor en una aventura sencilla.",
-		"whatToExpect": "Poppy sale a rescatar a sus amigos cuando los bergens invaden la aldea y necesita convencer al solitario Branch de acompañarla.",
-		"pace": "Va de número musical a persecución con una energía constante, dejando que los cambios de ánimo entren por canciones y texturas.",
-		"intensity": "El peligro es suave y el mundo es mullido; incluso los momentos oscuros buscan recuperar el entusiasmo antes que asustar.",
-		"practicalContext": "La ficha no informa duración; funciona como animación familiar de entrada rápida, especialmente si te bancás un volumen alto de pop.",
-		"forFansOf": "Te va a gustar si disfrutás color, canciones pegadizas y parejas de personajes donde la alegría necesita aprender a escuchar.",
-		"notForYouIf": "Quizás no sea para vos si preferís una historia menos musical, humor más seco o una animación que no subraye su mensaje."
-	},
+		"tenSecondTake": {
+			"verdict": "Trolls apuesta todo al color y a la canción; Mike Mitchell deja que Anna Kendrick y Justin Timberlake equilibren optimismo y malhumor en una aventura sencilla.",
+			"whatToExpect": "Poppy sale a rescatar a sus amigos cuando los bergens invaden la aldea y necesita convencer al solitario Branch de acompañarla.",
+			"pace": "Va de número musical a persecución con una energía constante, dejando que los cambios de ánimo entren por canciones y texturas.",
+			"intensity": "El peligro es suave y el mundo es mullido; incluso los momentos oscuros buscan recuperar el entusiasmo antes que asustar.",
+			"practicalContext": "La ficha no informa duración; funciona como animación familiar de entrada rápida, especialmente si te bancás un volumen alto de pop.",
+			"forFansOf": "Te va a gustar si disfrutás color, canciones pegadizas y parejas de personajes donde la alegría necesita aprender a escuchar.",
+			"notForYouIf": "Quizás no sea para vos si preferís una historia menos musical, humor más seco o una animación que no subraye su mensaje."
+		},
 		"becauseYouLiked": [
 			"la-gran-aventura-lego-2-2019",
 			"paranorman-2012"
@@ -56,5 +56,21 @@
 			"buscando-a-dory-2016"
 		]
 	},
-	"review": "Trolls es una película de colores fosforescentes, canciones pop y una idea sencilla sobre la felicidad que no depende de que todo salga perfecto. Anna Kendrick y Justin Timberlake le dan química a Poppy y Branch, aunque el contraste entre ambos está marcado desde el primer minuto. La animación de texturas, pelos y papel crea un mundo agradablemente táctil; la historia es liviana, pero el número musical de Branch muestra que también sabe bajar un cambio."
+	"review": "Trolls es una película de colores fosforescentes, canciones pop y una idea sencilla sobre la felicidad que no depende de que todo salga perfecto. Anna Kendrick y Justin Timberlake le dan química a Poppy y Branch, aunque el contraste entre ambos está marcado desde el primer minuto. La animación de texturas, pelos y papel crea un mundo agradablemente táctil; la historia es liviana, pero el número musical de Branch muestra que también sabe bajar un cambio.",
+	"castCharacters": [
+		{
+			"actor": "Anna Kendrick",
+			"character": "Poppy (voice)",
+			"tmdbMovieId": 136799,
+			"tmdbPersonId": 84223,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Justin Timberlake",
+			"character": "Branch (voice)",
+			"tmdbMovieId": 136799,
+			"tmdbPersonId": 12111,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

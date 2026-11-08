@@ -60,5 +60,42 @@
 	],
 	"runtimeMinutes": 93,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Sonny",
+			"tmdbMovieId": 9032,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cole Sprouse",
+			"character": "Julian",
+			"tmdbMovieId": 9032,
+			"tmdbPersonId": 56730,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dylan Sprouse",
+			"character": "Julian",
+			"tmdbMovieId": 9032,
+			"tmdbPersonId": 95686,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joey Lauren Adams",
+			"character": "Layla",
+			"tmdbMovieId": 9032,
+			"tmdbPersonId": 16484,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Mostel",
+			"character": "Mr. Brooks",
+			"tmdbMovieId": 9032,
+			"tmdbPersonId": 33489,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

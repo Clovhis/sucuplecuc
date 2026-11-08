@@ -53,5 +53,28 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Simon Pegg",
+			"character": "Shaun",
+			"tmdbMovieId": 747,
+			"tmdbPersonId": 11108,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Frost",
+			"character": "Ed",
+			"tmdbMovieId": 747,
+			"tmdbPersonId": 11109,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Nighy",
+			"character": "Phillip",
+			"tmdbMovieId": 747,
+			"tmdbPersonId": 2440,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

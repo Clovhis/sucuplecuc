@@ -34,27 +34,64 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Transformers: El despertar de las bestias ordena el ruido con Steven Caple Jr.; Anthony Ramos y Dominique Fishback sostienen una aventura más clara que novedosa.",
-		"whatToExpect": "Noah y Elena corren detrás de una llave mientras Autobots, Maximals y Terrorcons convierten Nueva York de los noventa en zona de guerra.",
-		"pace": "Va de búsqueda a persecución y después a choque de robots, con poca pausa fuera de las secuencias de escala grande.",
-		"intensity": "El metal retorcido y los ejércitos mecánicos tienen fuerza visual, aunque el destino de la Tierra pesa menos que el espectáculo.",
-		"practicalContext": "Dura 127 minutos y funciona como acción de franquicia de entrada fácil, mejor si no le pedís misterio al conflicto.",
-		"forFansOf": "Te va a gustar si disfrutás robots gigantes, equipos de criaturas nuevas y películas que priorizan claridad por sobre sorpresa.",
-		"notForYouIf": "No es para vos si buscás personajes profundos, una mitología prolija o peleas que tengan consecuencias más allá del ruido."
+		"tenSecondTake": {
+			"verdict": "Transformers: El despertar de las bestias ordena el ruido con Steven Caple Jr.; Anthony Ramos y Dominique Fishback sostienen una aventura más clara que novedosa.",
+			"whatToExpect": "Noah y Elena corren detrás de una llave mientras Autobots, Maximals y Terrorcons convierten Nueva York de los noventa en zona de guerra.",
+			"pace": "Va de búsqueda a persecución y después a choque de robots, con poca pausa fuera de las secuencias de escala grande.",
+			"intensity": "El metal retorcido y los ejércitos mecánicos tienen fuerza visual, aunque el destino de la Tierra pesa menos que el espectáculo.",
+			"practicalContext": "Dura 127 minutos y funciona como acción de franquicia de entrada fácil, mejor si no le pedís misterio al conflicto.",
+			"forFansOf": "Te va a gustar si disfrutás robots gigantes, equipos de criaturas nuevas y películas que priorizan claridad por sobre sorpresa.",
+			"notForYouIf": "No es para vos si buscás personajes profundos, una mitología prolija o peleas que tengan consecuencias más allá del ruido."
+		},
+		"becauseYouLiked": [
+			"sonic-3-la-pelicula-2024",
+			"amos-del-universo-2026"
+		],
+		"related": [
+			"sonic-la-pelicula-2020",
+			"sonic-2-la-pelicula-2022",
+			"terminator-dark-fate-2019",
+			"terminator-3-rise-of-the-machines-2003"
+		]
 	},
-	"becauseYouLiked": [
-		"sonic-3-la-pelicula-2024",
-		"amos-del-universo-2026"
-	],
-	"related": [
-		"sonic-la-pelicula-2020",
-		"sonic-2-la-pelicula-2022",
-		"terminator-dark-fate-2019",
-		"terminator-3-rise-of-the-machines-2003"
-	]
-},
 	"review": "Steven Caple Jr. cambia un poco el aire de la saga al darle a Noah y Elena un lugar más claro dentro del quilombo mecánico. Anthony Ramos y Dominique Fishback hacen que el costado humano tenga algo de peso, y la llegada de los Maximals aporta color y siluetas nuevas a unas peleas que ya venían bastante gastadas.\n\nCuando los robots chocan, la película sabe entregar escala y metal retorcido sin perder por completo quién está de cada lado. El relato junta demasiadas piezas conocidas y no genera demasiado suspenso fuera de las secuencias grandes, pero resulta más ordenada y amigable que varias de sus antecesoras.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Anthony Ramos",
+			"character": "Noah Diaz",
+			"tmdbMovieId": 667538,
+			"tmdbPersonId": 1560244,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dominique Fishback",
+			"character": "Elena Wallace",
+			"tmdbMovieId": 667538,
+			"tmdbPersonId": 1676520,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Cullen",
+			"character": "Optimus Prime (voice)",
+			"tmdbMovieId": 667538,
+			"tmdbPersonId": 19540,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ron Perlman",
+			"character": "Optimus Primal (voice)",
+			"tmdbMovieId": 667538,
+			"tmdbPersonId": 2372,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Dinklage",
+			"character": "Scourge (voice)",
+			"tmdbMovieId": 667538,
+			"tmdbPersonId": 22970,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -57,5 +57,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Peter Weller",
+			"character": "Bill Lee",
+			"tmdbMovieId": 2742,
+			"tmdbPersonId": 27811,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judy Davis",
+			"character": "Joan Frost",
+			"tmdbMovieId": 2742,
+			"tmdbPersonId": 351,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian Holm",
+			"character": "Tom Frost",
+			"tmdbMovieId": 2742,
+			"tmdbPersonId": 65,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julian Sands",
+			"character": "Yves Cloquet",
+			"tmdbMovieId": 2742,
+			"tmdbPersonId": 6104,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

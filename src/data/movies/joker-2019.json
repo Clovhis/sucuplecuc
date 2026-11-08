@@ -59,5 +59,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Joaquin Phoenix",
+			"character": "Arthur Fleck",
+			"tmdbMovieId": 475557,
+			"tmdbPersonId": 73421,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "Murray Franklin",
+			"tmdbMovieId": 475557,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zazie Beetz",
+			"character": "Sophie Dumond",
+			"tmdbMovieId": 475557,
+			"tmdbPersonId": 1545693,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

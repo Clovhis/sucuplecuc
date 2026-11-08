@@ -35,15 +35,15 @@
 	},
 	"runtimeMinutes": 81,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Toy Story convirtió los juguetes digitales en personajes con miedo a quedar afuera; John Lasseter deja que Tom Hanks y Tim Allen hagan crecer la rivalidad hasta volverla amistad.",
-		"whatToExpect": "Woody pierde su lugar cuando llega Buzz, y una pelea de orgullo los obliga a cruzar un mundo enorme desde la altura de un juguete.",
-		"pace": "Arranca con rutina de cuarto, acelera por una serie de accidentes y nunca deja que la aventura tape el vínculo entre los dos.",
-		"intensity": "El peligro es familiar y físico: quedar perdido, ser reemplazado o terminar roto pesa tanto como cualquier persecución.",
-		"practicalContext": "Dura 81 minutos y funciona como aventura familiar compacta; la animación muestra su época, pero el ritmo sigue entrando de una.",
-		"forFansOf": "Te va a gustar si disfrutás humor de personajes, mundos vistos desde abajo y películas que usan una premisa fantástica para hablar de celos.",
-		"notForYouIf": "Quizás no sea para vos si buscás una animación visualmente actual, conflictos más oscuros o una historia que no dependa del encanto."
-	},
+		"tenSecondTake": {
+			"verdict": "Toy Story convirtió los juguetes digitales en personajes con miedo a quedar afuera; John Lasseter deja que Tom Hanks y Tim Allen hagan crecer la rivalidad hasta volverla amistad.",
+			"whatToExpect": "Woody pierde su lugar cuando llega Buzz, y una pelea de orgullo los obliga a cruzar un mundo enorme desde la altura de un juguete.",
+			"pace": "Arranca con rutina de cuarto, acelera por una serie de accidentes y nunca deja que la aventura tape el vínculo entre los dos.",
+			"intensity": "El peligro es familiar y físico: quedar perdido, ser reemplazado o terminar roto pesa tanto como cualquier persecución.",
+			"practicalContext": "Dura 81 minutos y funciona como aventura familiar compacta; la animación muestra su época, pero el ritmo sigue entrando de una.",
+			"forFansOf": "Te va a gustar si disfrutás humor de personajes, mundos vistos desde abajo y películas que usan una premisa fantástica para hablar de celos.",
+			"notForYouIf": "Quizás no sea para vos si buscás una animación visualmente actual, conflictos más oscuros o una historia que no dependa del encanto."
+		},
 		"becauseYouLiked": [
 			"lego-star-wars-the-mandalorian-2026",
 			"ninja-turtles-caos-mutante-2023"
@@ -59,5 +59,28 @@
 	"synopsis": "Un grupo de juguetes sensibles, que fingen estar sin vida cuando hay humanos cerca, se están preparando para mudarse a una nueva casa con su joven dueño Andy Davis, su hermana pequeña Molly y su madre soltera, la Sra. Davis.",
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-10",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Woody (voice)",
+			"tmdbMovieId": 862,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Allen",
+			"character": "Buzz Lightyear (voice)",
+			"tmdbMovieId": 862,
+			"tmdbPersonId": 12898,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Rickles",
+			"character": "Mr. Potato Head (voice)",
+			"tmdbMovieId": 862,
+			"tmdbPersonId": 7167,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

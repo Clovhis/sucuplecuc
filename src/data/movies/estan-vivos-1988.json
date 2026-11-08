@@ -55,5 +55,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Roddy Piper",
+			"character": "John Nada",
+			"tmdbMovieId": 8337,
+			"tmdbPersonId": 44240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keith David",
+			"character": "Frank Armitage",
+			"tmdbMovieId": 8337,
+			"tmdbPersonId": 65827,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meg Foster",
+			"character": "Holly Thompsen",
+			"tmdbMovieId": 8337,
+			"tmdbPersonId": 41229,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Buck Flower",
+			"character": "Drifter",
+			"tmdbMovieId": 8337,
+			"tmdbPersonId": 54564,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -8,7 +8,11 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+13",
   "category": "Accion",
-  "genres": ["Accion", "Crimen", "Thriller"],
+  "genres": [
+    "Accion",
+    "Crimen",
+    "Thriller"
+  ],
   "subgenres": [],
   "country": "US",
   "isArgentinian": false,
@@ -17,33 +21,54 @@
   "trailerYoutubeId": "BsvD806qNM8",
   "releasePlatform": "HBO Max",
   "director": "Peter Yates",
-  "mainCast": ["Steve McQueen", "Don Gordon"],
+  "mainCast": [
+    "Steve McQueen",
+    "Don Gordon"
+  ],
   "productionCompany": "Warner Bros.-Seven Arts, Solar Productions",
   "cinepostaScore": 7,
   "runtimeMinutes": 113,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Bullitt hace del silencio una herramienta policial y Peter Yates deja que Steve McQueen recorra San Francisco hasta que la persecución explota con claridad brutal.",
-			"whatToExpect": "Un detective protegiendo un testigo muerto, una estructura política que quiere cerrar el caso y una ciudad convertida en pista.",
-			"pace": "Calmo y observador, con investigación por gestos que desemboca en una persecución de autos todavía extraordinaria.",
-			"intensity": "Media, sube de golpe en los enfrentamientos y evita la violencia permanente.",
-			"practicalContext": "Sus 113 minutos funcionan si tenés paciencia para el procedimiento y el clima; no es un policial de explicaciones constantes.",
-			"forFansOf": "Steve McQueen, el thriller criminal clásico y las persecuciones filmadas sin montaje frenético.",
-			"notForYouIf": "Necesitás acción desde el inicio, un detective verborrágico o una trama que marque todas sus pistas."
-		},
-	"becauseYouLiked": [
-		"redada-asesina-2-2014",
-		"furious-7-2015"
-	],
-	"related": [
-		"jungla-de-cristal-1988",
-		"the-fast-and-the-furious-2001",
-		"fast-five-2011",
-		"el-ultimatum-de-bourne-2007"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Bullitt hace del silencio una herramienta policial y Peter Yates deja que Steve McQueen recorra San Francisco hasta que la persecución explota con claridad brutal.",
+      "whatToExpect": "Un detective protegiendo un testigo muerto, una estructura política que quiere cerrar el caso y una ciudad convertida en pista.",
+      "pace": "Calmo y observador, con investigación por gestos que desemboca en una persecución de autos todavía extraordinaria.",
+      "intensity": "Media, sube de golpe en los enfrentamientos y evita la violencia permanente.",
+      "practicalContext": "Sus 113 minutos funcionan si tenés paciencia para el procedimiento y el clima; no es un policial de explicaciones constantes.",
+      "forFansOf": "Steve McQueen, el thriller criminal clásico y las persecuciones filmadas sin montaje frenético.",
+      "notForYouIf": "Necesitás acción desde el inicio, un detective verborrágico o una trama que marque todas sus pistas."
+    },
+    "becauseYouLiked": [
+      "redada-asesina-2-2014",
+      "furious-7-2015"
+    ],
+    "related": [
+      "jungla-de-cristal-1988",
+      "the-fast-and-the-furious-2001",
+      "fast-five-2011",
+      "el-ultimatum-de-bourne-2007"
+    ]
+  },
   "review": "Bullitt todavía tiene una manera muy particular de moverse: parece tranquila hasta que una mirada, un motor o una esquina cambian la temperatura de la escena. Steve McQueen construye a un policía lacónico que trabaja mejor lejos de los discursos, y Peter Yates deja que San Francisco sea parte del conflicto, sobre todo en una persecución automovilística que sigue siendo un modelo de claridad y peligro. La investigación es clásica, pero la puesta evita subrayar cada explicación y confía en los silencios.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Steve McQueen",
+      "character": "Lt. Frank Bullitt",
+      "tmdbMovieId": 916,
+      "tmdbPersonId": 13565,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Don Gordon",
+      "character": "Lt. Delgetti",
+      "tmdbMovieId": 916,
+      "tmdbPersonId": 14062,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

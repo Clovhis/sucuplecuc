@@ -58,5 +58,35 @@
 	},
 	"audienceRating": "+17",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Robert Redford",
+			"character": "Dr. Stephen Malley",
+			"tmdbMovieId": 4515,
+			"tmdbPersonId": 4135,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Janine Roth",
+			"tmdbMovieId": 4515,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Cruise",
+			"character": "Senator Jasper Irving",
+			"tmdbMovieId": 4515,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andrew Garfield",
+			"character": "Todd Hayes",
+			"tmdbMovieId": 4515,
+			"tmdbPersonId": 37625,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

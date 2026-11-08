@@ -35,15 +35,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Tin Cup usa el golf para hablar del miedo a arriesgar; Ron Shelton deja que Kevin Costner haga simpático a un campeón que se sabotea.",
-		"whatToExpect": "Roy enseña en un campo de Texas, se cruza con una psicóloga y decide jugar el torneo que puede demostrarle algo a su antiguo rival.",
-		"pace": "Se mueve entre práctica, romance y torneos, reservando el gran pulso para cada golpe que Roy podría jugar con inteligencia o orgullo.",
-		"intensity": "El peligro es emocional y deportivo; una pelota en el agua puede doler más que un rival porque expone la propia excusa.",
-		"practicalContext": "La ficha no informa duración; funciona como comedia romántica deportiva, sin exigir conocer golf para entender el riesgo de cada decisión.",
-		"forFansOf": "Te va a gustar si disfrutás underdogs, química adulta y películas donde el talento importa menos que animarse a fallar.",
-		"notForYouIf": "Quizás no sea para vos si necesitás deporte realista, romance áspero o un protagonista que aprenda sin tropezar tanto."
-	},
+		"tenSecondTake": {
+			"verdict": "Tin Cup usa el golf para hablar del miedo a arriesgar; Ron Shelton deja que Kevin Costner haga simpático a un campeón que se sabotea.",
+			"whatToExpect": "Roy enseña en un campo de Texas, se cruza con una psicóloga y decide jugar el torneo que puede demostrarle algo a su antiguo rival.",
+			"pace": "Se mueve entre práctica, romance y torneos, reservando el gran pulso para cada golpe que Roy podría jugar con inteligencia o orgullo.",
+			"intensity": "El peligro es emocional y deportivo; una pelota en el agua puede doler más que un rival porque expone la propia excusa.",
+			"practicalContext": "La ficha no informa duración; funciona como comedia romántica deportiva, sin exigir conocer golf para entender el riesgo de cada decisión.",
+			"forFansOf": "Te va a gustar si disfrutás underdogs, química adulta y películas donde el talento importa menos que animarse a fallar.",
+			"notForYouIf": "Quizás no sea para vos si necesitás deporte realista, romance áspero o un protagonista que aprenda sin tropezar tanto."
+		},
 		"becauseYouLiked": [
 			"los-bufalos-de-durham-1988",
 			"the-apartment-1960"
@@ -55,5 +55,35 @@
 			"amelie-2001"
 		]
 	},
-	"review": "Tin Cup conoce la comodidad de la comedia deportiva, pero la juega con suficiente malicia como para que Roy no parezca un campeón escondido esperando una oportunidad. Costner le da una mezcla simpática de talento, autosabotaje y orgullo sureño, mientras Rene Russo mantiene la historia romántica lejos del piloto automático. El golf funciona como una excusa para hablar de miedo y de la necesidad de arriesgarse cuando ya no queda nada que demostrar. No es profunda, pero tiene ritmo, química y un final ganado a fuerza de insistir."
+	"review": "Tin Cup conoce la comodidad de la comedia deportiva, pero la juega con suficiente malicia como para que Roy no parezca un campeón escondido esperando una oportunidad. Costner le da una mezcla simpática de talento, autosabotaje y orgullo sureño, mientras Rene Russo mantiene la historia romántica lejos del piloto automático. El golf funciona como una excusa para hablar de miedo y de la necesidad de arriesgarse cuando ya no queda nada que demostrar. No es profunda, pero tiene ritmo, química y un final ganado a fuerza de insistir.",
+	"castCharacters": [
+		{
+			"actor": "Kevin Costner",
+			"character": "Roy 'Tin Cup' McAvoy",
+			"tmdbMovieId": 10478,
+			"tmdbPersonId": 1269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rene Russo",
+			"character": "Dr. Molly Griswold",
+			"tmdbMovieId": 10478,
+			"tmdbPersonId": 14343,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Johnson",
+			"character": "David Simms",
+			"tmdbMovieId": 10478,
+			"tmdbPersonId": 25129,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cheech Marin",
+			"character": "Romeo Posar",
+			"tmdbMovieId": 10478,
+			"tmdbPersonId": 11159,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

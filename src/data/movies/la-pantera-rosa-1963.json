@@ -51,5 +51,21 @@
 	"isArgentinian": false,
 	"awards": {
 		"wins": []
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "Peter Sellers",
+			"character": "Insp. Jacques Clouseau",
+			"tmdbMovieId": 936,
+			"tmdbPersonId": 12446,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Niven",
+			"character": "Sir Charles Lytton",
+			"tmdbMovieId": 936,
+			"tmdbPersonId": 14261,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

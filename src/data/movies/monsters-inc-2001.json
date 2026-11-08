@@ -32,21 +32,48 @@
 		"tenSecondTake": {
 			"verdict": "Pete Docter convierte una fábrica de gritos en una historia de cuidado: John Goodman y Billy Crystal sostienen humor, mundo y una amistad que aprende a proteger a Boo.",
 			"whatToExpect": "Puertas que conectan habitaciones, monstruos empleados, una nena escondida y una conspiración empresarial que cambia la idea de quién debería dar miedo.",
-			"pace": "Es ágil y muy visual, pero deja pausas suficientes para que Sulley y Boo construyan confianza; la aventura nunca pierde su centro afectivo.",			"intensity": "La amenaza es familiar y cómica, con persecuciones y sustos suaves; el peligro real está en una empresa dispuesta a sacrificar a quien no entiende.",			"practicalContext": "Con 92 minutos, es una película ideal para una tarde en familia; funciona tanto por los gags como por el detalle de Monstropolis.",			"forFansOf": "Para quienes disfrutan animación de mundos inventivos, amistades improbables y a Goodman-Crystal en una dupla de trabajadores con química.",			"notForYouIf": "Puede quedarte demasiado amable si buscás monstruos realmente terroríficos, humor más ácido o una aventura que se despegue del corazón familiar."
+			"pace": "Es ágil y muy visual, pero deja pausas suficientes para que Sulley y Boo construyan confianza; la aventura nunca pierde su centro afectivo.",
+			"intensity": "La amenaza es familiar y cómica, con persecuciones y sustos suaves; el peligro real está en una empresa dispuesta a sacrificar a quien no entiende.",
+			"practicalContext": "Con 92 minutos, es una película ideal para una tarde en familia; funciona tanto por los gags como por el detalle de Monstropolis.",
+			"forFansOf": "Para quienes disfrutan animación de mundos inventivos, amistades improbables y a Goodman-Crystal en una dupla de trabajadores con química.",
+			"notForYouIf": "Puede quedarte demasiado amable si buscás monstruos realmente terroríficos, humor más ácido o una aventura que se despegue del corazón familiar."
 		},
-	"becauseYouLiked": [
-		"ratatouille-2007",
-		"intensa-mente-2015"
-	],
-	"related": [
-		"soul-2020",
-		"toy-story-2-1999",
-		"hoppers-2026",
-		"toy-story-1995"
-	]
-},
+		"becauseYouLiked": [
+			"ratatouille-2007",
+			"intensa-mente-2015"
+		],
+		"related": [
+			"soul-2020",
+			"toy-story-2-1999",
+			"hoppers-2026",
+			"toy-story-1995"
+		]
+	},
 	"review": "En una ciudad de monstruos que obtiene energía de los gritos infantiles, dos trabajadores descubren que una nena se coló en su fábrica y deben devolverla a casa. Pete Docter dirige esa premisa perfecta con humor visual y un mundo lleno de detalles, pero el corazón aparece cuando Sulley debe cuidar a Boo; John Goodman le da una ternura enorme y Billy Crystal equilibra con chistes rápidos. El ritmo es muy ágil y la aventura entiende cuándo frenar para que la relación importe. Vale por una animación divertida que convierte el miedo en amistad sin perder inventiva.",
 	"synopsis": "Sulley y Mike trabajan asustando chicos para alimentar Monstropolis, hasta que una nena humana cruza la puerta equivocada. El caos los obliga a esconderla y a descubrir que la empresa oculta algo bastante más oscuro.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "John Goodman",
+			"character": "Sullivan (voice)",
+			"tmdbMovieId": 585,
+			"tmdbPersonId": 1230,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Crystal",
+			"character": "Mike (voice)",
+			"tmdbMovieId": 585,
+			"tmdbPersonId": 7904,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Gibbs",
+			"character": "Boo (voice)",
+			"tmdbMovieId": 585,
+			"tmdbPersonId": 7905,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

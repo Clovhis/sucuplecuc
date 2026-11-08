@@ -60,5 +60,42 @@
 	},
 	"review": "Robert Lorenz baja varios cambios frente a la etapa más industrial de Liam Neeson y ese ritmo le sienta muy bien a la película. El pueblo irlandés no es un decorado para tiros: primero se vuelve un espacio de silencios, rutinas y secretos, y por eso la amenaza pesa cuando llega. Neeson trabaja a Finbar desde la culpa y la contención, con Kerry Condon y Ciarán Hinds como presencias que enriquecen cada intercambio. La historia no inventa un policial nuevo, pero su mirada paciente, sus paisajes y su violencia breve le dan una gravedad muy efectiva.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Finbar Murphy",
+			"tmdbMovieId": 1027073,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kerry Condon",
+			"character": "Doireann McCann",
+			"tmdbMovieId": 1027073,
+			"tmdbPersonId": 62105,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ciarán Hinds",
+			"character": "Vincent O'Shea",
+			"tmdbMovieId": 1027073,
+			"tmdbPersonId": 8785,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Gleeson",
+			"character": "Kevin Lynch",
+			"tmdbMovieId": 1027073,
+			"tmdbPersonId": 489467,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Colm Meaney",
+			"character": "Robert McQue",
+			"tmdbMovieId": 1027073,
+			"tmdbPersonId": 17782,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

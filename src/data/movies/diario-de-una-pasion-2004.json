@@ -53,5 +53,42 @@
 	},
 	"review": "Diario de una pasión abraza el melodrama sin pedir disculpas: cartas, lluvia, reencuentros y una memoria que se vuelve el último territorio compartido. Nick Cassavetes alterna dos tiempos con una eficacia clásica y deja que Gosling y McAdams construyan una pareja de química evidente, aunque el guion empuja algunas lágrimas con demasiada fuerza. Su mejor idea está en el vínculo entre la historia contada y la historia vivida. Es sentimental, sí, pero sabe por qué funciona.",
 	"runtimeMinutes": 123,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Noah Calhoun",
+			"tmdbMovieId": 11036,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel McAdams",
+			"character": "Allie Hamilton",
+			"tmdbMovieId": 11036,
+			"tmdbPersonId": 53714,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Garner",
+			"character": "Older Noah 'Duke'",
+			"tmdbMovieId": 11036,
+			"tmdbPersonId": 16896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gena Rowlands",
+			"character": "Older Allie",
+			"tmdbMovieId": 11036,
+			"tmdbPersonId": 4800,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Marsden",
+			"character": "Lon Hammond",
+			"tmdbMovieId": 11036,
+			"tmdbPersonId": 11006,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,42 @@
 			"vertigo-1958"
 		]
 	},
-	"review": "El código Da Vinci corre detrás de acertijos religiosos con la seriedad de una revelación y la velocidad de una búsqueda del tesoro. Ron Howard sostiene el movimiento entre museos, iglesias y archivos con oficio, mientras Tom Hanks y Audrey Tautou evitan exagerar un material que ya viene cargadísimo; Ian McKellen, en cambio, se divierte justo donde hace falta. La explicación constante y algunas vueltas imposibles vuelven pesada una película larguísima, pero el clima, la música y el recorrido visual mantienen la curiosidad. No resiste demasiado cuando se revisa la lógica, aunque durante buena parte del viaje consigue que uno quiera conocer la próxima clave."
+	"review": "El código Da Vinci corre detrás de acertijos religiosos con la seriedad de una revelación y la velocidad de una búsqueda del tesoro. Ron Howard sostiene el movimiento entre museos, iglesias y archivos con oficio, mientras Tom Hanks y Audrey Tautou evitan exagerar un material que ya viene cargadísimo; Ian McKellen, en cambio, se divierte justo donde hace falta. La explicación constante y algunas vueltas imposibles vuelven pesada una película larguísima, pero el clima, la música y el recorrido visual mantienen la curiosidad. No resiste demasiado cuando se revisa la lógica, aunque durante buena parte del viaje consigue que uno quiera conocer la próxima clave.",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Robert Langdon",
+			"tmdbMovieId": 591,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Audrey Tautou",
+			"character": "Sophie Neveu",
+			"tmdbMovieId": 591,
+			"tmdbPersonId": 2405,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian McKellen",
+			"character": "Sir Leigh Teabing",
+			"tmdbMovieId": 591,
+			"tmdbPersonId": 1327,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jean Reno",
+			"character": "Captain Bezu Fache",
+			"tmdbMovieId": 591,
+			"tmdbPersonId": 1003,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Bettany",
+			"character": "Silas",
+			"tmdbMovieId": 591,
+			"tmdbPersonId": 6162,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

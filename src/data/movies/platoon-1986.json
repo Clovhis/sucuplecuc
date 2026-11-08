@@ -70,5 +70,35 @@
 	"country": "GB",
 	"isArgentinian": false,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Charlie Sheen",
+			"character": "Chris Taylor",
+			"tmdbMovieId": 792,
+			"tmdbPersonId": 6952,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Sergeant Elias Grodin",
+			"tmdbMovieId": 792,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Berenger",
+			"character": "Sergeant Robert 'Bob' Barnes",
+			"tmdbMovieId": 792,
+			"tmdbPersonId": 13022,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Forest Whitaker",
+			"character": "Big Harold",
+			"tmdbMovieId": 792,
+			"tmdbPersonId": 2178,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

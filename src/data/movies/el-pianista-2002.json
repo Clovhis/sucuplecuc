@@ -81,5 +81,35 @@
 	},
 	"review": "Władysław Szpilman no es presentado como un héroe de guerra sino como un músico que intenta seguir vivo, y esa elección vuelve más devastador cada silencio. Roman Polanski filma el gueto y sus ruinas sin convertir el sufrimiento en espectáculo, mientras Adrien Brody deja que el cuerpo cuente el hambre, el miedo y el aislamiento. La película tiene una distancia fría que a veces duele, pero también evita fabricar consuelo barato. La actuación ganó el centro de la conversación crítica y es fácil entenderlo: la mirada perdida de Brody sostiene una historia histórica enorme desde una escala íntima.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adrien Brody",
+			"character": "Władysław 'Władek' Szpilman",
+			"tmdbMovieId": 423,
+			"tmdbPersonId": 3490,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Thomas Kretschmann",
+			"character": "Captain Wilm Hosenfeld",
+			"tmdbMovieId": 423,
+			"tmdbPersonId": 3491,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frank Finlay",
+			"character": "Father",
+			"tmdbMovieId": 423,
+			"tmdbPersonId": 6637,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emilia Fox",
+			"character": "Dorota",
+			"tmdbMovieId": 423,
+			"tmdbPersonId": 6639,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

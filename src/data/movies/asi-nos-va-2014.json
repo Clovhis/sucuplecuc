@@ -53,5 +53,28 @@
 		]
 	},
 	"review": "Así nos va sabe que Oren es un personaje difícil de querer y deja que Michael Douglas lo sostenga desde la sequedad antes de abrirle una hendija. Diane Keaton funciona como Leah sin convertirla en una simple terapeuta romántica: su presencia trae música, humor y una vida propia. La película ordena cada giro con demasiada prolijidad, pero el dúo tiene timing y una ternura cansada que alcanza para que el cierre no resulte descartable.",
-	"runtimeMinutes": 94
+	"runtimeMinutes": 94,
+	"castCharacters": [
+		{
+			"actor": "Michael Douglas",
+			"character": "Oren Little",
+			"tmdbMovieId": 253235,
+			"tmdbPersonId": 3392,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Keaton",
+			"character": "Leah",
+			"tmdbMovieId": 253235,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sterling Jerins",
+			"character": "Sarah",
+			"tmdbMovieId": 253235,
+			"tmdbPersonId": 1186840,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,28 @@
 	"review": "Cumbres borrascosas se mete con un material que no funciona si Heathcliff y Catherine quedan como una pareja intensa de postal: su romance es cruel, obsesivo y capaz de arruinar a cualquiera alrededor. Emerald Fennell apuesta por una puesta voluptuosa, de colores cargados y emociones al límite, que encuentra imágenes potentes aunque por momentos parece más pendiente de la provocación que de los matices. Margot Robbie y Jacob Elordi tienen presencia y hacen creíble la atracción enfermiza entre los personajes. La adaptación simplifica algunos pasajes y no siempre sostiene el tono gótico, pero vale por animarse a tratar la novela como un melodrama salvaje en lugar de un romance prolijo.",
 	"reviewPublishedAt": "2026-02-25",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Margot Robbie",
+			"character": "Cathy",
+			"tmdbMovieId": 1316092,
+			"tmdbPersonId": 234352,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jacob Elordi",
+			"character": "Heathcliff",
+			"tmdbMovieId": 1316092,
+			"tmdbPersonId": 2034418,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hong Chau",
+			"character": "Nelly",
+			"tmdbMovieId": 1316092,
+			"tmdbPersonId": 1360317,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

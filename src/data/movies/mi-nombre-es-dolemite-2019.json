@@ -52,5 +52,21 @@
 	},
 	"review": "La película encuentra su mejor impulso en la decisión de Rudy Ray Moore de dejar de esperar una oportunidad y producirla con la gente que lo rodea. Eddie Murphy le da a Moore una mezcla de intuición comercial y vulnerabilidad, mientras Wesley Snipes juega con la distancia entre el director D’Urville Martin y el personaje que debe interpretar. Los detalles del rodaje convierten el relato en una celebración del ingenio, aunque algunas figuras secundarias pasan demasiado rápido y la energía del protagonista ocupa casi todo el encuadre. Es una comedia biográfica de ritmo ágil, más interesada en el nacimiento de una obra que en cerrar una vida.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 118
+	"runtimeMinutes": 118,
+	"castCharacters": [
+		{
+			"actor": "Eddie Murphy",
+			"character": "Rudy Ray Moore",
+			"tmdbMovieId": 528888,
+			"tmdbPersonId": 776,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wesley Snipes",
+			"character": "D’Urville Martin",
+			"tmdbMovieId": 528888,
+			"tmdbPersonId": 10814,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

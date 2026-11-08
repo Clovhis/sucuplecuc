@@ -49,5 +49,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-04",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Naomi Scott",
+			"character": "Skye Riley",
+			"tmdbMovieId": 1100782,
+			"tmdbPersonId": 240724,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rosemarie DeWitt",
+			"character": "Elizabeth Riley",
+			"tmdbMovieId": 1100782,
+			"tmdbPersonId": 14892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lukas Gage",
+			"character": "Lewis",
+			"tmdbMovieId": 1100782,
+			"tmdbPersonId": 1371509,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

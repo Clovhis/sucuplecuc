@@ -53,5 +53,35 @@
 			"buena-suerte-leo-grande-2022"
 		]
 	},
-	"review": "Junior es una comedia de premisa imposible que abraza su propia pavada con bastante honestidad. Arnold Schwarzenegger pone el cuerpo al chiste, Danny DeVito acelera el caos y Emma Thompson funciona como el contrapunto científico y romántico que le da una dirección a la historia. La película se pasa de simpática y sus efectos son de otra época, pero el elenco entiende que la ternura también es parte del gag. Un disparate amable, ideal para una noche sin pretensiones."
+	"review": "Junior es una comedia de premisa imposible que abraza su propia pavada con bastante honestidad. Arnold Schwarzenegger pone el cuerpo al chiste, Danny DeVito acelera el caos y Emma Thompson funciona como el contrapunto científico y romántico que le da una dirección a la historia. La película se pasa de simpática y sus efectos son de otra época, pero el elenco entiende que la ternura también es parte del gag. Un disparate amable, ideal para una noche sin pretensiones.",
+	"castCharacters": [
+		{
+			"actor": "Emma Thompson",
+			"character": "Dr. Diana Reddin",
+			"tmdbMovieId": 6280,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Arnold Schwarzenegger",
+			"character": "Dr. Alex Hesse",
+			"tmdbMovieId": 6280,
+			"tmdbPersonId": 1100,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny DeVito",
+			"character": "Dr. Larry Arbogast",
+			"tmdbMovieId": 6280,
+			"tmdbPersonId": 518,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frank Langella",
+			"character": "Noah Banes",
+			"tmdbMovieId": 6280,
+			"tmdbPersonId": 8924,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

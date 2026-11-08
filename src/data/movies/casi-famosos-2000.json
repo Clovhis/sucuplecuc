@@ -62,5 +62,28 @@
 	},
 	"review": "Cameron Crowe mira el rock desde la emoción de quien todavía cree que una canción puede ordenar la vida. Patrick Fugit funciona como observador, pero Kate Hudson, Billy Crudup y Frances McDormand hacen que el viaje tenga conflictos propios, no sólo nostalgia musical. El relato acierta al mostrar camaradería, ego y soledad dentro del mismo micro. Hay idealización, sí, aunque también una honestidad simpática sobre crecer y descubrir que tus ídolos son personas. La película tiene pulso, canciones memorables y una ternura que no necesita volverse cínica.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Billy Crudup",
+			"character": "Russell Hammond",
+			"tmdbMovieId": 786,
+			"tmdbPersonId": 8289,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frances McDormand",
+			"character": "Elaine Miller",
+			"tmdbMovieId": 786,
+			"tmdbPersonId": 3910,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Hudson",
+			"character": "Penny Lane",
+			"tmdbMovieId": 786,
+			"tmdbPersonId": 11661,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

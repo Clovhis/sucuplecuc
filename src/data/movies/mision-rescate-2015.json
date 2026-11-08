@@ -35,7 +35,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Misión rescate convierte la supervivencia de Matt Damon en una lista de problemas concretos y divertidos; Ridley Scott arma una aventura colectiva donde la ciencia también tiene suspenso.",
-			"whatToExpect": "Marte, cultivos improvisados, comunicación rota, cálculos y un rescate internacional que alterna el aislamiento de Watney con el trabajo de todo un equipo.",			"pace": "Avanza por obstáculos y soluciones con ritmo muy parejo; el humor de Damon airea la tensión sin sacarle importancia a cada error.",			"intensity": "La presión es de supervivencia, no de terror: el oxígeno, la comida y el tiempo funcionan como enemigos claros y constantemente medibles.",			"practicalContext": "La ficha no trae duración; es ideal para una sesión de aventura de ciencia ficción, especialmente si disfrutás ver cómo un plan se arma pieza por pieza.",			"forFansOf": "Para quienes disfrutan ciencia aplicada al cine, héroes ingeniosos y películas de rescate donde Jessica Chastain y el elenco hacen que el esfuerzo sea colectivo.",			"notForYouIf": "No es para vos si preferís un Marte oscuro, una historia más pesimista o acción continua en lugar de problemas técnicos y humor."
+			"whatToExpect": "Marte, cultivos improvisados, comunicación rota, cálculos y un rescate internacional que alterna el aislamiento de Watney con el trabajo de todo un equipo.",
+			"pace": "Avanza por obstáculos y soluciones con ritmo muy parejo; el humor de Damon airea la tensión sin sacarle importancia a cada error.",
+			"intensity": "La presión es de supervivencia, no de terror: el oxígeno, la comida y el tiempo funcionan como enemigos claros y constantemente medibles.",
+			"practicalContext": "La ficha no trae duración; es ideal para una sesión de aventura de ciencia ficción, especialmente si disfrutás ver cómo un plan se arma pieza por pieza.",
+			"forFansOf": "Para quienes disfrutan ciencia aplicada al cine, héroes ingeniosos y películas de rescate donde Jessica Chastain y el elenco hacen que el esfuerzo sea colectivo.",
+			"notForYouIf": "No es para vos si preferís un Marte oscuro, una historia más pesimista o acción continua en lugar de problemas técnicos y humor."
 		},
 		"becauseYouLiked": [
 			"looper-2012",
@@ -48,5 +53,42 @@
 			"rogue-one-a-star-wars-story-2016"
 		]
 	},
-	"review": "El gran acierto de Misión rescate es que convierte la supervivencia en una cadena de problemas concretos, sin perder de vista la emoción. Damon lleva casi solo el peso de la pantalla y hace que la inteligencia práctica de Watney sea carisma, no una clase de ingeniería. Scott filma Marte con escala y claridad, mientras el elenco terrestre transforma el rescate en una tarea colectiva. Tiene optimismo de manual, sí, pero lo vuelve contagioso sin caer en la pavada."
+	"review": "El gran acierto de Misión rescate es que convierte la supervivencia en una cadena de problemas concretos, sin perder de vista la emoción. Damon lleva casi solo el peso de la pantalla y hace que la inteligencia práctica de Watney sea carisma, no una clase de ingeniería. Scott filma Marte con escala y claridad, mientras el elenco terrestre transforma el rescate en una tarea colectiva. Tiene optimismo de manual, sí, pero lo vuelve contagioso sin caer en la pavada.",
+	"castCharacters": [
+		{
+			"actor": "Matt Damon",
+			"character": "Mark Watney",
+			"tmdbMovieId": 286217,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Chastain",
+			"character": "Melissa Lewis",
+			"tmdbMovieId": 286217,
+			"tmdbPersonId": 83002,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chiwetel Ejiofor",
+			"character": "Vincent Kapoor",
+			"tmdbMovieId": 286217,
+			"tmdbPersonId": 5294,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Daniels",
+			"character": "Theodore \"Teddy\" Sanders",
+			"tmdbMovieId": 286217,
+			"tmdbPersonId": 8447,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Mara",
+			"character": "Beth Johanssen",
+			"tmdbMovieId": 286217,
+			"tmdbPersonId": 51072,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

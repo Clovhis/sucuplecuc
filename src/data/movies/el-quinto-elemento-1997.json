@@ -55,5 +55,35 @@
 	},
 	"review": "Korben Dallas maneja un taxi volador, se cruza con una heroína de pelo naranja y termina cargando el destino del universo sin haberlo pedido. Luc Besson arma una ciencia ficción de colores saturados, criaturas raras y diseños imposibles, más cerca de la historieta que del realismo espacial. Bruce Willis pone cansancio al héroe, Milla Jovovich encuentra una energía física enorme y Gary Oldman disfruta un villano que parece salido de una ópera pop. La película fue dividida por su humor y su exceso, pero justamente ese exceso la volvió reconocible: no se parece demasiado a ninguna otra superproducción.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Bruce Willis",
+			"character": "Korben Dallas",
+			"tmdbMovieId": 18,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Milla Jovovich",
+			"character": "Leeloo",
+			"tmdbMovieId": 18,
+			"tmdbPersonId": 63,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Oldman",
+			"character": "Zorg",
+			"tmdbMovieId": 18,
+			"tmdbPersonId": 64,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian Holm",
+			"character": "Cornelius",
+			"tmdbMovieId": 18,
+			"tmdbPersonId": 65,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

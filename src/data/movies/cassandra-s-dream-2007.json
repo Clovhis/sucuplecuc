@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "Woody Allen sigue a dos hermanos londinenses que ven en un encargo familiar la salida a sus problemas de plata, sin calcular cómo les va a deformar la vida. Ewan McGregor lleva la ambición como una máscara cada vez más tensa, mientras Colin Farrell hace visible la culpa antes de poder nombrarla. La dirección deja que la tragedia avance despacio, entre discusiones domésticas y silencios que se vuelven pesados. El tono es sombrío y casi sin alivio, algo que puede hacerla menos seductora que sus comedias. Vale por las actuaciones y por esa mirada seca sobre lo que una decisión puede pudrir.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Hayley Atwell",
+			"character": "Angela",
+			"tmdbMovieId": 4787,
+			"tmdbPersonId": 39459,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Colin Farrell",
+			"character": "Terry Blaine",
+			"tmdbMovieId": 4787,
+			"tmdbPersonId": 72466,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sally Hawkins",
+			"character": "Kate",
+			"tmdbMovieId": 4787,
+			"tmdbPersonId": 39658,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ewan McGregor",
+			"character": "Ian Blaine",
+			"tmdbMovieId": 4787,
+			"tmdbPersonId": 3061,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Wilkinson",
+			"character": "Howard",
+			"tmdbMovieId": 4787,
+			"tmdbPersonId": 207,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

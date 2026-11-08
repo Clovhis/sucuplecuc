@@ -41,20 +41,55 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Pablo Trapero encuentra épica en un hombre sin épica: Luis Margani convierte la pérdida de trabajo y el cansancio de Rulo en una ternura seca, concreta y muy argentina.",
-			"whatToExpect": "Grúas, empleos precarios, viajes, un hijo adolescente y una ciudad gris donde recomponer la vida significa aceptar trabajos que no alcanzan.",			"pace": "Avanza con observación paciente y humor seco; las esperas y los traslados tienen tanto peso como los momentos en que Rulo intenta empezar de nuevo.",			"intensity": "La presión es económica y cotidiana, sin grandes villanos; cada oportunidad laboral trae una mezcla de esperanza y desgaste.",			"practicalContext": "Con 90 minutos, es un drama compacto para una noche tranquila; mirala con atención a los silencios y a la naturalidad de Margani.",			"forFansOf": "Para quienes disfrutan el Nuevo Cine Argentino, personajes comunes y relatos de precariedad que encuentran humor sin disfrazar la dificultad.",			"notForYouIf": "No es para vos si necesitás giros dramáticos, diálogos explicativos o una historia de superación donde el esfuerzo garantice una salida."
+			"whatToExpect": "Grúas, empleos precarios, viajes, un hijo adolescente y una ciudad gris donde recomponer la vida significa aceptar trabajos que no alcanzan.",
+			"pace": "Avanza con observación paciente y humor seco; las esperas y los traslados tienen tanto peso como los momentos en que Rulo intenta empezar de nuevo.",
+			"intensity": "La presión es económica y cotidiana, sin grandes villanos; cada oportunidad laboral trae una mezcla de esperanza y desgaste.",
+			"practicalContext": "Con 90 minutos, es un drama compacto para una noche tranquila; mirala con atención a los silencios y a la naturalidad de Margani.",
+			"forFansOf": "Para quienes disfrutan el Nuevo Cine Argentino, personajes comunes y relatos de precariedad que encuentran humor sin disfrazar la dificultad.",
+			"notForYouIf": "No es para vos si necesitás giros dramáticos, diálogos explicativos o una historia de superación donde el esfuerzo garantice una salida."
 		},
-	"becauseYouLiked": [
-		"caballos-salvajes-1995",
-		"un-lugar-en-el-mundo-1992"
-	],
-	"related": [
-		"leonera-2008",
-		"elefante-blanco-2012",
-		"el-hijo-de-la-novia-2001",
-		"luna-de-avellaneda-2004"
-	]
-},
+		"becauseYouLiked": [
+			"caballos-salvajes-1995",
+			"un-lugar-en-el-mundo-1992"
+		],
+		"related": [
+			"leonera-2008",
+			"elefante-blanco-2012",
+			"el-hijo-de-la-novia-2001",
+			"luna-de-avellaneda-2004"
+		]
+	},
 	"review": "Pablo Trapero encuentra épica en un hombre común que no tiene discursos heroicos, apenas la necesidad de seguir pagando las cuentas. La puesta mezcla observación documental y humor seco, con una ciudad gris que pesa tanto como el cansancio del protagonista. Luis Margani ofrece una actuación de enorme naturalidad y convierte cada torpeza, espera y viaje en una forma de ternura. Rulo busca trabajo sin perder del todo el humor, y esa perseverancia discreta sostiene el retrato de una vida precaria.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Luis Margani",
+			"character": "Rulo",
+			"tmdbMovieId": 101338,
+			"tmdbPersonId": 990725,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daniel Valenzuela",
+			"character": "Torres",
+			"tmdbMovieId": 101338,
+			"tmdbPersonId": 52235,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adriana Aizemberg",
+			"character": "Adriana",
+			"tmdbMovieId": 101338,
+			"tmdbPersonId": 584336,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Graciana Chironi",
+			"character": "Rulo's mother",
+			"tmdbMovieId": 101338,
+			"tmdbPersonId": 1041487,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

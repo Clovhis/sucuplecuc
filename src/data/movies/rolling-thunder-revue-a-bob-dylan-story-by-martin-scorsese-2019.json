@@ -52,5 +52,35 @@
 		]
 	},
 	"review": "Rolling Thunder Revue no es un documental tradicional sobre la gira de Bob Dylan: Martin Scorsese mezcla material de época, entrevistas reales y personajes inventados hasta que la memoria queda tan movediza como las canciones. Esa trampa está en el centro de la propuesta, no escondida debajo de una biografía prolija. Dylan, Joan Baez, Joni Mitchell y el resto aparecen como parte de una caravana artística que parece inventarse a sí misma mientras avanza. La dirección encuentra una energía eléctrica en los conciertos y deja respirar las contradicciones de su protagonista. Puede irritar a quien quiera fechas claras y datos ordenados, porque acá importa más la leyenda que el expediente. Como retrato de un momento cultural y de una estrella imposible de fijar, es juguetón, intenso y muy vivo.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Bob Dylan",
+			"character": "Self",
+			"tmdbMovieId": 574638,
+			"tmdbPersonId": 1487,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Allen Ginsberg",
+			"character": "The Oracle of Delphi",
+			"tmdbMovieId": 574638,
+			"tmdbPersonId": 110589,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patti Smith",
+			"character": "The Punk Poet",
+			"tmdbMovieId": 574638,
+			"tmdbPersonId": 56200,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scarlet Rivera",
+			"character": "The Queen of Swords",
+			"tmdbMovieId": 574638,
+			"tmdbPersonId": 2335057,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

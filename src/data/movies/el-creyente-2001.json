@@ -52,5 +52,35 @@
 	},
 	"review": "El creyente es una película incómoda que no usa el extremismo como simple villanía de manual. Henry Bean hace que el conflicto intelectual de Danny sea tan inquietante como su violencia, y Ryan Gosling sostiene el papel con una intensidad todavía áspera, sin buscar simpatía fácil. El relato a veces subraya sus tesis, pero su clima de rabia y contradicción permanece. Es un debut de alto riesgo, imperfecto y mucho más perturbador que prolijo.",
 	"runtimeMinutes": 98,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Danny Balint",
+			"tmdbMovieId": 4012,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Summer Phoenix",
+			"character": "Carla Moebius",
+			"tmdbMovieId": 4012,
+			"tmdbPersonId": 34543,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Zane",
+			"character": "Curtis Zampf",
+			"tmdbMovieId": 4012,
+			"tmdbPersonId": 1954,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Garret Dillahunt",
+			"character": "Billings",
+			"tmdbMovieId": 4012,
+			"tmdbPersonId": 39520,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

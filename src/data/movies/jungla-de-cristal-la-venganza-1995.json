@@ -54,5 +54,35 @@
 		]
 	},
 	"review": "La tercera Jungla entiende que repetir una fórmula no alcanza: pone a McClane a correr por una Nueva York que funciona como tablero, con acertijos, tráfico y una amenaza de escala enorme. Bruce Willis conserva el cansancio canchero del personaje, pero Samuel L. Jackson le da una contraparte nerviosa y entrañable que oxigena cada intercambio. Jeremy Irons sobreactúa con intención y John McTiernan filma la persecución con una claridad que todavía se disfruta. Es larga, sí, pero sabe convertir el exceso en entretenimiento de primera.",
-	"runtimeMinutes": 128
+	"runtimeMinutes": 128,
+	"castCharacters": [
+		{
+			"actor": "Bruce Willis",
+			"character": "John McClane",
+			"tmdbMovieId": 1572,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeremy Irons",
+			"character": "Simon",
+			"tmdbMovieId": 1572,
+			"tmdbPersonId": 16940,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Zeus Carver",
+			"tmdbMovieId": 1572,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Graham Greene",
+			"character": "Joe Lambert",
+			"tmdbMovieId": 1572,
+			"tmdbPersonId": 6804,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

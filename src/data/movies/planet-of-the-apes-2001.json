@@ -52,5 +52,42 @@
 	},
 	"runtimeMinutes": 120,
 	"review": "Tim Burton manda a un astronauta a un planeta gobernado por simios y arma una aventura de persecuciones, rebelión y maquillaje que tiene más músculo visual que ideas claras. Mark Wahlberg queda algo apagado como protagonista, mientras Tim Roth y Helena Bonham Carter encuentran más personalidad detrás de las prótesis. La dirección ofrece escala, vestuarios y algunas imágenes potentes, pero el relato no logra la mordida política del clásico. El ritmo avanza sin aburrir, aunque el final confuso no ayuda. Vale por curiosidad visual; la comparación con la original le pesa mucho.",
-	"reviewPublishedAt": "2026-04-27"
+	"reviewPublishedAt": "2026-04-27",
+	"castCharacters": [
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Captain Leo Davidson",
+			"tmdbMovieId": 869,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Roth",
+			"character": "Thade",
+			"tmdbMovieId": 869,
+			"tmdbPersonId": 3129,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helena Bonham Carter",
+			"character": "Ari",
+			"tmdbMovieId": 869,
+			"tmdbPersonId": 1283,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Clarke Duncan",
+			"character": "Attar",
+			"tmdbMovieId": 869,
+			"tmdbPersonId": 61981,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kris Kristofferson",
+			"character": "Karubi",
+			"tmdbMovieId": 869,
+			"tmdbPersonId": 10823,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

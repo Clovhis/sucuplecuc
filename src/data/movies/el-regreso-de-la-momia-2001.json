@@ -56,5 +56,21 @@
 		"Netflix",
 		"HBO Max"
 	],
-	"runtimeMinutes": 130
+	"runtimeMinutes": 130,
+	"castCharacters": [
+		{
+			"actor": "Brendan Fraser",
+			"character": "Rick O'Connell",
+			"tmdbMovieId": 1734,
+			"tmdbPersonId": 18269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel Weisz",
+			"character": "Evelyn O'Connell / Nefertiri",
+			"tmdbMovieId": 1734,
+			"tmdbPersonId": 3293,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

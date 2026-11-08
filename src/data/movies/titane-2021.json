@@ -45,27 +45,43 @@
 	},
 	"runtimeMinutes": 108,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Titane mezcla metal, sangre y una ternura inesperada; Julia Ducournau deja que Agathe Rousselle y Vincent Lindon reinventen qué puede ser una familia.",
-		"whatToExpect": "Una joven perseguida por crímenes adopta otra identidad y encuentra refugio en un bombero mientras su cuerpo empieza a cambiar.",
-		"pace": "Arranca agresiva, abre un espacio de quietud y después combina embarazo, danza y violencia con una lógica que sólo acepta el exceso.",
-		"intensity": "El horror es corporal y emocional; cada transformación incomoda, pero el vínculo familiar ofrece una calma rara dentro de la mutación.",
-		"practicalContext": "Dura 108 minutos y pide estómago para imágenes gráficas; entra mejor como experiencia de body horror que como thriller convencional.",
-		"forFansOf": "Te va a gustar si disfrutás cine extremo, identidades inestables y películas que encuentran ternura justo donde el cuerpo se vuelve amenaza.",
-		"notForYouIf": "No es para vos si necesitás una trama explicada, violencia moderada o una película que respete límites físicos reconocibles."
+		"tenSecondTake": {
+			"verdict": "Titane mezcla metal, sangre y una ternura inesperada; Julia Ducournau deja que Agathe Rousselle y Vincent Lindon reinventen qué puede ser una familia.",
+			"whatToExpect": "Una joven perseguida por crímenes adopta otra identidad y encuentra refugio en un bombero mientras su cuerpo empieza a cambiar.",
+			"pace": "Arranca agresiva, abre un espacio de quietud y después combina embarazo, danza y violencia con una lógica que sólo acepta el exceso.",
+			"intensity": "El horror es corporal y emocional; cada transformación incomoda, pero el vínculo familiar ofrece una calma rara dentro de la mutación.",
+			"practicalContext": "Dura 108 minutos y pide estómago para imágenes gráficas; entra mejor como experiencia de body horror que como thriller convencional.",
+			"forFansOf": "Te va a gustar si disfrutás cine extremo, identidades inestables y películas que encuentran ternura justo donde el cuerpo se vuelve amenaza.",
+			"notForYouIf": "No es para vos si necesitás una trama explicada, violencia moderada o una película que respete límites físicos reconocibles."
+		},
+		"becauseYouLiked": [
+			"scanners-1981",
+			"engendro-2026"
+		],
+		"related": [
+			"la-cosa-el-enigma-de-otro-mundo-1982",
+			"cabeza-borradora-1977",
+			"inseparables-1988",
+			"the-substance-2024"
+		]
 	},
-	"becauseYouLiked": [
-		"scanners-1981",
-		"engendro-2026"
-	],
-	"related": [
-		"la-cosa-el-enigma-de-otro-mundo-1982",
-		"cabeza-borradora-1977",
-		"inseparables-1988",
-		"the-substance-2024"
-	]
-},
 	"review": "Julia Ducournau lleva el body horror hacia una historia de identidad, familia elegida y cuerpos que se niegan a obedecer. El metal, la danza, la sangre y los cambios físicos se integran en una puesta agresiva pero muy controlada. Agathe Rousselle y Vincent Lindon construyen un vínculo extraño con una ternura que aparece justo donde la película parece más extrema. La paternidad elegida abre un espacio de cuidado inesperado, sin borrar las heridas ni las transformaciones que llevaron hasta ahí.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Vincent Lindon",
+			"character": "Vincent",
+			"tmdbMovieId": 630240,
+			"tmdbPersonId": 5443,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Garance Marillier",
+			"character": "Justine",
+			"tmdbMovieId": 630240,
+			"tmdbPersonId": 1144473,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

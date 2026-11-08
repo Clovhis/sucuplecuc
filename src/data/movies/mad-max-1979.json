@@ -49,5 +49,28 @@
 	"audienceRating": "+18",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "AU",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mel Gibson",
+			"character": "Max Rockatansky",
+			"tmdbMovieId": 9659,
+			"tmdbPersonId": 2461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joanne Samuel",
+			"character": "Jessie Rockatansky",
+			"tmdbMovieId": 9659,
+			"tmdbPersonId": 58401,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Keays-Byrne",
+			"character": "Toecutter",
+			"tmdbMovieId": 9659,
+			"tmdbPersonId": 26060,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

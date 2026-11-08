@@ -49,5 +49,28 @@
       "notForYouIf": "Preferís romances de gestos grandilocuentes o una trama que dependa de giros constantes."
     }
   },
-  "review": "Cukor arma una comedia donde cada personaje llega convencido de conocer a Tracy y termina obligado a revisar esa seguridad. Hepburn le da una precisión cortante a sus respuestas, mientras Grant y Stewart cambian la temperatura de la escena sin disputarle el centro. La fiesta y la boda funcionan como marcos para hablar de orgullo, clase y afecto; los diálogos son rápidos, pero dejan que la vergüenza y la ternura aparezcan entre una réplica y la siguiente."
+  "review": "Cukor arma una comedia donde cada personaje llega convencido de conocer a Tracy y termina obligado a revisar esa seguridad. Hepburn le da una precisión cortante a sus respuestas, mientras Grant y Stewart cambian la temperatura de la escena sin disputarle el centro. La fiesta y la boda funcionan como marcos para hablar de orgullo, clase y afecto; los diálogos son rápidos, pero dejan que la vergüenza y la ternura aparezcan entre una réplica y la siguiente.",
+  "castCharacters": [
+    {
+      "actor": "Cary Grant",
+      "character": "C.K. Dexter Haven",
+      "tmdbMovieId": 981,
+      "tmdbPersonId": 2638,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Katharine Hepburn",
+      "character": "Tracy Lord",
+      "tmdbMovieId": 981,
+      "tmdbPersonId": 6598,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "James Stewart",
+      "character": "Macaulay 'Mike' Connor",
+      "tmdbMovieId": 981,
+      "tmdbPersonId": 854,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

@@ -43,18 +43,55 @@
 			"forFansOf": "Te puede fascinar si disfrutás ciencia ficción de misión, horror cósmico y equipos que discuten el sacrificio, con una puesta de Danny Boyle que usa la luz como espacio y arma.",
 			"notForYouIf": "Quizás no sea para vos si buscás una explicación científica cerrada, personajes con tiempo para desarrollar todos sus arcos o un tono que no pase de la contemplación al terror."
 		},
-	"becauseYouLiked": [
-		"dias-extranos-1995",
-		"looper-2012"
-	],
-	"related": [
-		"ex-machina-2014",
-		"arrival-2016",
-		"cube-1997",
-		"el-dia-de-la-revelacion-2026"
-	]
-},
+		"becauseYouLiked": [
+			"dias-extranos-1995",
+			"looper-2012"
+		],
+		"related": [
+			"ex-machina-2014",
+			"arrival-2016",
+			"cube-1997",
+			"el-dia-de-la-revelacion-2026"
+		]
+	},
 	"review": "Danny Boyle combina ciencia ficción de misión con horror psicológico y pregunta cuánto puede sacrificar una tripulación por la especie. La luz cegadora, los trajes y el sonido construyen una nave donde el calor y el vacío parecen tener voluntad. Cillian Murphy, Rose Byrne y Chris Evans sostienen un conflicto de supervivencia que escala sin perder humanidad. La misión de reencender el Sol convierte el heroísmo en una elección concreta entre la tripulación y toda la humanidad.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Cillian Murphy",
+			"character": "Capa",
+			"tmdbMovieId": 1272,
+			"tmdbPersonId": 2037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rose Byrne",
+			"character": "Cassie",
+			"tmdbMovieId": 1272,
+			"tmdbPersonId": 9827,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Evans",
+			"character": "Mace",
+			"tmdbMovieId": 1272,
+			"tmdbPersonId": 16828,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Yeoh",
+			"character": "Corazon",
+			"tmdbMovieId": 1272,
+			"tmdbPersonId": 1620,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cliff Curtis",
+			"character": "Searle",
+			"tmdbMovieId": 1272,
+			"tmdbPersonId": 7248,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

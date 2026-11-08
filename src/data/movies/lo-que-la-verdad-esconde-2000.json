@@ -57,5 +57,35 @@
 		]
 	},
 	"runtimeMinutes": 130,
-	"review": "Lo que la verdad esconde aprovecha la casa perfecta como un escenario de sospecha y deja que el matrimonio se vaya volviendo irreconocible habitación por habitación. Robert Zemeckis filma el agua, los reflejos y los silencios con un control clásico, sin apurarse a mostrar aquello que la protagonista cree ver. Michelle Pfeiffer carga con la angustia y Harrison Ford obtiene un papel interesante precisamente porque su imagen confiable se vuelve una máscara inquietante. El último tramo explica demasiado y acomoda las piezas con cierta comodidad, pero el clima permanece firme y la tensión doméstica sigue funcionando."
+	"review": "Lo que la verdad esconde aprovecha la casa perfecta como un escenario de sospecha y deja que el matrimonio se vaya volviendo irreconocible habitación por habitación. Robert Zemeckis filma el agua, los reflejos y los silencios con un control clásico, sin apurarse a mostrar aquello que la protagonista cree ver. Michelle Pfeiffer carga con la angustia y Harrison Ford obtiene un papel interesante precisamente porque su imagen confiable se vuelve una máscara inquietante. El último tramo explica demasiado y acomoda las piezas con cierta comodidad, pero el clima permanece firme y la tensión doméstica sigue funcionando.",
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Norman Spencer",
+			"tmdbMovieId": 2655,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Pfeiffer",
+			"character": "Claire Spencer",
+			"tmdbMovieId": 2655,
+			"tmdbPersonId": 1160,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diana Scarwid",
+			"character": "Jody",
+			"tmdbMovieId": 2655,
+			"tmdbPersonId": 2958,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Remar",
+			"character": "Warren Feur",
+			"tmdbMovieId": 2655,
+			"tmdbPersonId": 1736,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

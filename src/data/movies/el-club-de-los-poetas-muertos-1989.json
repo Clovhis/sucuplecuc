@@ -12,7 +12,9 @@
 		"Drama",
 		"Coming of age"
 	],
-	"subgenres": ["Coming of Age"],
+	"subgenres": [
+		"Coming of Age"
+	],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1989/el-club-de-los-poetas-muertos-1989.webp",
@@ -62,5 +64,21 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 128
+	"runtimeMinutes": 128,
+	"castCharacters": [
+		{
+			"actor": "Robin Williams",
+			"character": "John Keating",
+			"tmdbMovieId": 207,
+			"tmdbPersonId": 2157,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ethan Hawke",
+			"character": "Todd Anderson",
+			"tmdbMovieId": 207,
+			"tmdbPersonId": 569,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

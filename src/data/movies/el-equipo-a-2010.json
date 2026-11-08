@@ -56,5 +56,42 @@
 	},
 	"review": "Joe Carnahan entiende que El equipo A necesita velocidad, camaradería y una idea de acción más absurda que la anterior. Liam Neeson pone el centro de gravedad como Hannibal, Bradley Cooper convierte a Face en un vendedor encantador y Sharlto Copley se roba varias escenas con una energía completamente fuera de escala. El problema es que el montaje quiere demostrar tanto que a veces borra la geografía de los golpes. Aun así, la química del grupo y el humor de aventura sostienen una adaptación que nunca pretende ser más seria de lo necesario.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Hannibal",
+			"tmdbMovieId": 34544,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bradley Cooper",
+			"character": "Face",
+			"tmdbMovieId": 34544,
+			"tmdbPersonId": 51329,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Biel",
+			"character": "Charisa Sosa",
+			"tmdbMovieId": 34544,
+			"tmdbPersonId": 10860,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Quinton \"Rampage\" Jackson",
+			"character": "B.A. Baracus",
+			"tmdbMovieId": 34544,
+			"tmdbPersonId": 78811,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sharlto Copley",
+			"character": "Murdock",
+			"tmdbMovieId": 34544,
+			"tmdbPersonId": 82191,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

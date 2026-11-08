@@ -38,20 +38,61 @@
 		"tenSecondTake": {
 			"verdict": "Office Romance tiene a Jennifer Lopez y Brett Goldstein con presencia suficiente para sostener el pasillo, pero Ol Parker no afila del todo ni la guerra laboral ni el romance.",
 			"whatToExpect": "Romance secreto, oficina, rumores, bochornos y dos adictos al trabajo intentando no convertir cada sentimiento en otro pendiente del calendario.",
-			"pace": "Avanza por escenas sueltas y cruces de comedia; encuentra timing cuando deja de explicar y observa la torpeza de dos adultos enamorándose.",			"intensity": "La presión es laboral y sentimental, de baja escala; importa el riesgo de quedar expuesto en la oficina más que una amenaza externa.",			"practicalContext": "La ficha no consigna duración; funciona como rom-com de plataforma para una noche liviana, sin exigirle una sátira profunda del trabajo.",			"forFansOf": "Para quienes disfrutan a Lopez, Goldstein y romances de oficina donde la incomodidad de una reunión puede tener más peso que un gran gesto.",			"notForYouIf": "No es para vos si buscás un guion muy filoso, conflictos laborales complejos o una comedia que salga del molde de plataforma."
+			"pace": "Avanza por escenas sueltas y cruces de comedia; encuentra timing cuando deja de explicar y observa la torpeza de dos adultos enamorándose.",
+			"intensity": "La presión es laboral y sentimental, de baja escala; importa el riesgo de quedar expuesto en la oficina más que una amenaza externa.",
+			"practicalContext": "La ficha no consigna duración; funciona como rom-com de plataforma para una noche liviana, sin exigirle una sátira profunda del trabajo.",
+			"forFansOf": "Para quienes disfrutan a Lopez, Goldstein y romances de oficina donde la incomodidad de una reunión puede tener más peso que un gran gesto.",
+			"notForYouIf": "No es para vos si buscás un guion muy filoso, conflictos laborales complejos o una comedia que salga del molde de plataforma."
 		},
-	"becauseYouLiked": [
-		"solo-mio-2026",
-		"me-has-robado-el-corazon-2025"
-	],
-	"related": [
-		"palm-springs-2020",
-		"el-plan-de-maggie-2016",
-		"loco-y-estupido-amor-2011",
-		"medianeras-2011"
-	]
-},
+		"becauseYouLiked": [
+			"solo-mio-2026",
+			"me-has-robado-el-corazon-2025"
+		],
+		"related": [
+			"palm-springs-2020",
+			"el-plan-de-maggie-2016",
+			"loco-y-estupido-amor-2011",
+			"medianeras-2011"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Office Romance quiere vender picardia de oficina, star power y comedia de enredos, pero le cuesta bastante encontrar un ritmo que no parezca armado a base de escenas sueltas. Jennifer Lopez y Brett Goldstein tienen la clase de presencia que hace mirar igual, sobre todo cuando la pelicula deja de explicar el chiste y se anima a jugar con la torpeza sentimental de dos adultos grandes haciendo cualquiera.\n\nEl problema es que Ol Parker no termina de afilar el conflicto laboral ni el romantico. Hay momentos que caen simpaticos, un par de cruces con timing y poco mas. No molesta, pero tampoco despega: queda como rom-com de plataforma para poner una noche sin exigirle demasiado."
+	"review": "Office Romance quiere vender picardia de oficina, star power y comedia de enredos, pero le cuesta bastante encontrar un ritmo que no parezca armado a base de escenas sueltas. Jennifer Lopez y Brett Goldstein tienen la clase de presencia que hace mirar igual, sobre todo cuando la pelicula deja de explicar el chiste y se anima a jugar con la torpeza sentimental de dos adultos grandes haciendo cualquiera.\n\nEl problema es que Ol Parker no termina de afilar el conflicto laboral ni el romantico. Hay momentos que caen simpaticos, un par de cruces con timing y poco mas. No molesta, pero tampoco despega: queda como rom-com de plataforma para poner una noche sin exigirle demasiado.",
+	"castCharacters": [
+		{
+			"actor": "Jennifer Lopez",
+			"character": "Jackie Cruz",
+			"tmdbMovieId": 1358005,
+			"tmdbPersonId": 16866,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brett Goldstein",
+			"character": "Daniel Blanchflower",
+			"tmdbMovieId": 1358005,
+			"tmdbPersonId": 21422,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Betty Gilpin",
+			"character": "Sydney Bloom",
+			"tmdbMovieId": 1358005,
+			"tmdbPersonId": 92572,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bradley Whitford",
+			"character": "Peter Vance",
+			"tmdbMovieId": 1358005,
+			"tmdbPersonId": 11367,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amy Sedaris",
+			"character": "Julie Schatz",
+			"tmdbMovieId": 1358005,
+			"tmdbPersonId": 12110,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

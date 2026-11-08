@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "AU",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Guy Pearce",
+			"character": "Charlie Burns",
+			"tmdbMovieId": 16608,
+			"tmdbPersonId": 529,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ray Winstone",
+			"character": "Captain Morris Stanley",
+			"tmdbMovieId": 16608,
+			"tmdbPersonId": 5538,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

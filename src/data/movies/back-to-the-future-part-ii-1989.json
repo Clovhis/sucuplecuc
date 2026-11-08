@@ -56,5 +56,28 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Disney Plus"
+	],
+	"castCharacters": [
+		{
+			"actor": "Michael J. Fox",
+			"character": "Marty McFly / Marty McFly Junior / Marlene McFly",
+			"tmdbMovieId": 165,
+			"tmdbPersonId": 521,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Lloyd",
+			"character": "Doctor Emmett Brown",
+			"tmdbMovieId": 165,
+			"tmdbPersonId": 1062,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lea Thompson",
+			"character": "Lorraine",
+			"tmdbMovieId": 165,
+			"tmdbPersonId": 1063,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

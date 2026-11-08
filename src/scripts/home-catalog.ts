@@ -301,6 +301,7 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[], mo
 	let activeStatusIndex = 0;
 	let activeSuggestionIndex = -1;
 	let currentSuggestions: SearchSuggestionEntry[] = [];
+	let renderedSuggestionQuery = '';
 	let suggestionsDismissed = false;
 
 	const getChipValues = (chips: HTMLButtonElement[], dataKey: ChipDataKey): Set<string> =>
@@ -759,7 +760,24 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[], mo
 			}
 		}
 		const elements = entries
-			.map((entry) => ensureCardElement(entry))
+			.map((entry) => {
+				const card = ensureCardElement(entry);
+				if (!card) return card;
+				const matches = queryResult?.characterMatches.get(entry.slug) ?? [];
+				let detail = card.querySelector<HTMLElement>('[data-character-match]');
+				if (matches.length) {
+					if (!detail) {
+						detail = document.createElement('p');
+						detail.className = 'movie-card__year';
+						detail.dataset.characterMatch = '';
+						card.querySelector('.movie-card__header')?.after(detail);
+					}
+					detail.textContent = matches.map(({ actor, character }) => `${character} · ${actor}`).join(' / ');
+				} else detail?.remove();
+				const link = card.querySelector('a');
+				if (link) link.setAttribute('aria-label', `Ver detalle de ${entry.title}${matches.length ? `. ${matches.map(({ actor, character }) => `${character}, interpretado por ${actor}`).join('. ')}` : ''}`);
+				return card;
+			})
 			.filter((element): element is HTMLElement => element instanceof HTMLElement);
 
 		for (const element of elements) {
@@ -890,11 +908,12 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[], mo
 			else if (suggestions.length < 6) suggestions.push(entry);
 			if (suggestions.length > 6) suggestions.pop();
 		}
-		if (currentSuggestions.length === suggestions.length && suggestions.every((entry, index) => entry === currentSuggestions[index])) {
+		if (renderedSuggestionQuery === query && currentSuggestions.length === suggestions.length && suggestions.every((entry, index) => entry === currentSuggestions[index])) {
 			suggestionsBox.hidden = false;
 			return;
 		}
 
+		renderedSuggestionQuery = query;
 		currentSuggestions = suggestions;
 		activeSuggestionIndex = -1;
 		suggestionsCopy.textContent = `${matchingEntries.length} coincidencia${
@@ -940,6 +959,12 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[], mo
 				cast.className = 'movie-search__suggestion-cast';
 				cast.textContent = entry.cast;
 				body.append(cast);
+			}
+			if (entry.entryType === 'movie') {
+				const credits = queryResult?.characterMatches.get(entry.slug) ?? [];
+				for (const credit of credits) {
+					body.append(Object.assign(document.createElement('span'), { className: 'movie-search__suggestion-meta', textContent: `${credit.character} · ${credit.actor}` }));
+				}
 			}
 			if (entry.entryType === 'movie' && queryResult?.parsed.text) {
 				const text = normalize(queryResult.parsed.text);

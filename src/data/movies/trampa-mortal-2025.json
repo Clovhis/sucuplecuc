@@ -60,5 +60,21 @@
 		"Prime Video"
 	],
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Marshall Williams",
+			"character": "Scott Williams",
+			"tmdbMovieId": 1338972,
+			"tmdbPersonId": 1376711,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alex Essoe",
+			"character": "Ashley Williams",
+			"tmdbMovieId": 1338972,
+			"tmdbPersonId": 210454,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

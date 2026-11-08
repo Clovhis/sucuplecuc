@@ -56,5 +56,35 @@
 	"subgenres": [
 		"Slasher"
 	],
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Heather Langenkamp",
+			"character": "Nancy Thompson",
+			"tmdbMovieId": 10072,
+			"tmdbPersonId": 5141,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laurence Fishburne",
+			"character": "Max",
+			"tmdbMovieId": 10072,
+			"tmdbPersonId": 2975,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Craig Wasson",
+			"character": "Neil Gordon",
+			"tmdbMovieId": 10072,
+			"tmdbPersonId": 62893,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Englund",
+			"character": "Freddy Krueger",
+			"tmdbMovieId": 10072,
+			"tmdbPersonId": 5139,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -49,5 +49,21 @@
       "notForYouIf": "Necesitás diálogo hablado o una comedia que evite la tristeza y el hambre."
     }
   },
-  "review": "Chaplin convierte el hambre y el frío en materia física para la comedia: la cabaña que se inclina, la comida imposible y el baile de los pancitos nacen de una situación desesperada antes de volverse imagen inolvidable. El vagabundo mantiene su dignidad aun cuando el cuerpo lo traiciona, y Mack Swain le da a la supervivencia un contrapunto de fuerza y torpeza. La ternura llega sin separar el deseo de las condiciones materiales que lo rodean."
+  "review": "Chaplin convierte el hambre y el frío en materia física para la comedia: la cabaña que se inclina, la comida imposible y el baile de los pancitos nacen de una situación desesperada antes de volverse imagen inolvidable. El vagabundo mantiene su dignidad aun cuando el cuerpo lo traiciona, y Mack Swain le da a la supervivencia un contrapunto de fuerza y torpeza. La ternura llega sin separar el deseo de las condiciones materiales que lo rodean.",
+  "castCharacters": [
+    {
+      "actor": "Charlie Chaplin",
+      "character": "The Lone Prospector",
+      "tmdbMovieId": 962,
+      "tmdbPersonId": 13848,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Mack Swain",
+      "character": "Big Jim",
+      "tmdbMovieId": 962,
+      "tmdbPersonId": 14435,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

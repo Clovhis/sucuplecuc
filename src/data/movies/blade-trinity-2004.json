@@ -47,5 +47,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Wesley Snipes",
+			"character": "Blade",
+			"tmdbMovieId": 36648,
+			"tmdbPersonId": 10814,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kris Kristofferson",
+			"character": "Whistler",
+			"tmdbMovieId": 36648,
+			"tmdbPersonId": 10823,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Biel",
+			"character": "Abigail Whistler",
+			"tmdbMovieId": 36648,
+			"tmdbPersonId": 10860,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

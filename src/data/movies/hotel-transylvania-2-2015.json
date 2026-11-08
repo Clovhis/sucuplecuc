@@ -61,5 +61,42 @@
 	],
 	"runtimeMinutes": 89,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Dracula (voice)",
+			"tmdbMovieId": 159824,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Selena Gomez",
+			"character": "Mavis Dracula (voice)",
+			"tmdbMovieId": 159824,
+			"tmdbPersonId": 77948,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Samberg",
+			"character": "Johnny Loughran (voice)",
+			"tmdbMovieId": 159824,
+			"tmdbPersonId": 62861,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin James",
+			"character": "Frankenstein (voice)",
+			"tmdbMovieId": 159824,
+			"tmdbPersonId": 32895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve Buscemi",
+			"character": "Wayne (voice)",
+			"tmdbMovieId": 159824,
+			"tmdbPersonId": 884,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

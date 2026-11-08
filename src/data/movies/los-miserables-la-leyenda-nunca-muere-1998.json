@@ -57,5 +57,42 @@
 	},
 	"review": "Bille August reduce la novela de Victor Hugo a un drama de persecución y redención bastante prolijo, quizá demasiado para el desborde emocional que promete el material. Liam Neeson encuentra la culpa y la ternura de Valjean sin declamar, mientras Geoffrey Rush construye a Javert desde una rigidez que se vuelve personal. Uma Thurman y Claire Danes le dan peso a la línea más dolorosa del relato. La adaptación deja episodios y contradicciones en el camino, pero funciona cuando se concentra en el choque entre una ley inflexible y la posibilidad de cambiar.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Jean Valjean",
+			"tmdbMovieId": 4415,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geoffrey Rush",
+			"character": "Javert",
+			"tmdbMovieId": 4415,
+			"tmdbPersonId": 118,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Uma Thurman",
+			"character": "Fantine",
+			"tmdbMovieId": 4415,
+			"tmdbPersonId": 139,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claire Danes",
+			"character": "Cosette",
+			"tmdbMovieId": 4415,
+			"tmdbPersonId": 6194,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hans Matheson",
+			"character": "Marius Pontmercy",
+			"tmdbMovieId": 4415,
+			"tmdbPersonId": 37168,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

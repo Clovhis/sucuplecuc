@@ -53,5 +53,42 @@
 			"la-vida-es-bella-1997"
 		]
 	},
-	"review": "El castor se anima a contar la depresión como una comedia de objeto extraño y después deja que el chiste se vuelva incómodo. Mel Gibson encuentra una fragilidad áspera en Walter, mientras Jodie Foster filma la familia desde la paciencia agotada de quien quiere ayudar sin saber cómo. La alegoría no siempre tiene la misma fuerza y algunas vueltas son demasiado prolijas, pero queda una película imperfecta y honesta sobre la dependencia, el lenguaje y la posibilidad de pedir ayuda."
+	"review": "El castor se anima a contar la depresión como una comedia de objeto extraño y después deja que el chiste se vuelva incómodo. Mel Gibson encuentra una fragilidad áspera en Walter, mientras Jodie Foster filma la familia desde la paciencia agotada de quien quiere ayudar sin saber cómo. La alegoría no siempre tiene la misma fuerza y algunas vueltas son demasiado prolijas, pero queda una película imperfecta y honesta sobre la dependencia, el lenguaje y la posibilidad de pedir ayuda.",
+	"castCharacters": [
+		{
+			"actor": "Mel Gibson",
+			"character": "Walter Black",
+			"tmdbMovieId": 50780,
+			"tmdbPersonId": 2461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jodie Foster",
+			"character": "Meredith Black",
+			"tmdbMovieId": 50780,
+			"tmdbPersonId": 1038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anton Yelchin",
+			"character": "Porter Black",
+			"tmdbMovieId": 50780,
+			"tmdbPersonId": 21028,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Lawrence",
+			"character": "Norah",
+			"tmdbMovieId": 50780,
+			"tmdbPersonId": 72129,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cherry Jones",
+			"character": "Vice President",
+			"tmdbMovieId": 50780,
+			"tmdbPersonId": 1956,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

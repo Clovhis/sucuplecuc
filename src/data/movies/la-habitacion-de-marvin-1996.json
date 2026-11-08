@@ -52,5 +52,35 @@
 		]
 	},
 	"review": "La habitación de Marvin no busca una reconciliación prolija: deja que el resentimiento, el miedo y la obligación se sienten a la misma mesa. Diane Keaton interpreta a Bessie con una quietud que dice tanto como los estallidos de Meryl Streep, y el elenco evita convertir la enfermedad en simple golpe bajo. Es un drama contenido, áspero en sus discusiones y muy atento a las formas concretas en que una familia aprende a sostenerse.",
-	"runtimeMinutes": 98
+	"runtimeMinutes": 98,
+	"castCharacters": [
+		{
+			"actor": "Diane Keaton",
+			"character": "Bessie Wakefield",
+			"tmdbMovieId": 9819,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Lee Wakefield Lacker",
+			"tmdbMovieId": 9819,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "Wallace \"Wally\" Carter",
+			"tmdbMovieId": 9819,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Hank Lacker",
+			"tmdbMovieId": 9819,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

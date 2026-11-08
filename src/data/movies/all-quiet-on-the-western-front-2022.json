@@ -75,5 +75,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "DE",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Felix Kammerer",
+			"character": "Paul Bäumer",
+			"tmdbMovieId": 49046,
+			"tmdbPersonId": 3631223,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Albrecht Schuch",
+			"character": "Stanislaus 'Kat' Katczinsky",
+			"tmdbMovieId": 49046,
+			"tmdbPersonId": 1111158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Hilmer",
+			"character": "Albert Kropp",
+			"tmdbMovieId": 49046,
+			"tmdbPersonId": 1820948,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

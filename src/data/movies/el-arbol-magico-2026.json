@@ -54,5 +54,28 @@
 	"runtimeMinutes": 110,
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Ben Gregor no intenta convertir a Enid Blyton en una fantasía cínica: apuesta por decorados táctiles, criaturas rarísimas y un tono de cuento que deja respirar el asombro. Andrew Garfield y Claire Foy le dan a la familia una fragilidad reconocible, aunque los pasajes adultos pesan menos que los mundos que descubren los chicos. Algunos conflictos se resuelven con demasiada prolijidad, pero la película encuentra imágenes cálidas y una imaginación concreta que la separan de la aventura familiar hecha sólo con ruido digital."
+	"review": "Ben Gregor no intenta convertir a Enid Blyton en una fantasía cínica: apuesta por decorados táctiles, criaturas rarísimas y un tono de cuento que deja respirar el asombro. Andrew Garfield y Claire Foy le dan a la familia una fragilidad reconocible, aunque los pasajes adultos pesan menos que los mundos que descubren los chicos. Algunos conflictos se resuelven con demasiada prolijidad, pero la película encuentra imágenes cálidas y una imaginación concreta que la separan de la aventura familiar hecha sólo con ruido digital.",
+	"castCharacters": [
+		{
+			"actor": "Andrew Garfield",
+			"character": "Tim Thompson",
+			"tmdbMovieId": 1140521,
+			"tmdbPersonId": 37625,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claire Foy",
+			"character": "Polly Thompson",
+			"tmdbMovieId": 1140521,
+			"tmdbPersonId": 120932,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rebecca Ferguson",
+			"character": "Dame Snap",
+			"tmdbMovieId": 1140521,
+			"tmdbPersonId": 933238,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

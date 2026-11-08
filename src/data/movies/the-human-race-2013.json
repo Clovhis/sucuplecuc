@@ -8,7 +8,12 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+18",
   "category": "Terror",
-  "genres": ["Terror", "Ciencia ficcion", "Accion", "Thriller"],
+  "genres": [
+    "Terror",
+    "Ciencia ficcion",
+    "Accion",
+    "Thriller"
+  ],
   "subgenres": [],
   "country": "US",
   "isArgentinian": false,
@@ -17,33 +22,54 @@
   "trailerYoutubeId": "tygxQRkIfds",
   "releasePlatform": "Otras plataformas",
   "director": "Paul Hough",
-  "mainCast": ["Paul McCarthy-Boyington", "Eddie McGee"],
+  "mainCast": [
+    "Paul McCarthy-Boyington",
+    "Eddie McGee"
+  ],
   "productionCompany": "The Asylum",
   "cinepostaScore": 1,
   "runtimeMinutes": 87,
-  "awards": {"wins": []},
-	"editorial": {
-	"tenSecondTake": {
-		"verdict": "La idea de correr hasta que el cuerpo falle arranca feroz, pero The Human Race y Paul Hough no convierten sus reglas en suspenso sostenido.",
-		"whatToExpect": "Vas a ver desconocidos encerrados en un circuito, alianzas que duran poco y una explicación que llega cuando la carrera ya perdió impulso.",
-		"pace": "Sale disparada, intercala pausas de desconcierto y después repite la misma persecución con menos sorpresa.",
-		"intensity": "La amenaza física es constante: cuerpos exhaustos, castigos inmediatos y una violencia seca que busca shock más que terror imaginativo.",
-		"practicalContext": "Con 87 minutos, entra como programa breve de medianoche; su duración no alcanza a disimular que el misterio queda subdesarrollado.",
-		"forFansOf": "Puede interesarte si disfrutás competencias mortales, reglas crueles y producciones de género que se bancan una premisa despareja.",
-		"notForYouIf": "Quizás no sea para vos si necesitás personajes trabajados, lógica interna firme o un cierre que justifique tanta carrera."
-	},
-	"becauseYouLiked": [
-		"titane-2021",
-		"28-years-later-the-bone-temple-2026"
-	],
-	"related": [
-		"la-zona-muerta-1983",
-		"scanners-1981",
-		"a-quiet-place-day-one-2024",
-		"venganza-nunca-subestimes-a-una-mujer-2017"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "La idea de correr hasta que el cuerpo falle arranca feroz, pero The Human Race y Paul Hough no convierten sus reglas en suspenso sostenido.",
+      "whatToExpect": "Vas a ver desconocidos encerrados en un circuito, alianzas que duran poco y una explicación que llega cuando la carrera ya perdió impulso.",
+      "pace": "Sale disparada, intercala pausas de desconcierto y después repite la misma persecución con menos sorpresa.",
+      "intensity": "La amenaza física es constante: cuerpos exhaustos, castigos inmediatos y una violencia seca que busca shock más que terror imaginativo.",
+      "practicalContext": "Con 87 minutos, entra como programa breve de medianoche; su duración no alcanza a disimular que el misterio queda subdesarrollado.",
+      "forFansOf": "Puede interesarte si disfrutás competencias mortales, reglas crueles y producciones de género que se bancan una premisa despareja.",
+      "notForYouIf": "Quizás no sea para vos si necesitás personajes trabajados, lógica interna firme o un cierre que justifique tanta carrera."
+    },
+    "becauseYouLiked": [
+      "titane-2021",
+      "28-years-later-the-bone-temple-2026"
+    ],
+    "related": [
+      "la-zona-muerta-1983",
+      "scanners-1981",
+      "a-quiet-place-day-one-2024",
+      "venganza-nunca-subestimes-a-una-mujer-2017"
+    ]
+  },
   "review": "The Human Race toma una premisa de carrera mortal y la estira hasta que la idea queda sin aire. Hay una energía de película de medianoche en los primeros minutos, algunas decisiones físicas que prometen un juego cruel y un reparto que intenta sostener la urgencia, pero el guion acumula reglas sin convertirlas en tensión dramática. La puesta de Paul Hough es funcional y la violencia busca impacto antes que imaginación; cuando aparecen las explicaciones, el misterio pierde todavía más fuerza.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Paul McCarthy-Boyington",
+      "character": "Justin",
+      "tmdbMovieId": 185267,
+      "tmdbPersonId": 95748,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Eddie McGee",
+      "character": "Eddie",
+      "tmdbMovieId": 185267,
+      "tmdbPersonId": 205745,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

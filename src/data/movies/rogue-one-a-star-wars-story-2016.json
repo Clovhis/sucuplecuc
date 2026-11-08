@@ -51,5 +51,28 @@
 	"synopsis": "Ambientada una semana antes de Una nueva esperanza, la trama sigue a un grupo de rebeldes que se unen para robar planos de la Estrella de la Muerte, el arma definitiva del Imperio Galáctico.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Felicity Jones",
+			"character": "Jyn Erso",
+			"tmdbMovieId": 330459,
+			"tmdbPersonId": 72855,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diego Luna",
+			"character": "Cassian Andor",
+			"tmdbMovieId": 330459,
+			"tmdbPersonId": 8688,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Tudyk",
+			"character": "K-2SO",
+			"tmdbMovieId": 330459,
+			"tmdbPersonId": 21088,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

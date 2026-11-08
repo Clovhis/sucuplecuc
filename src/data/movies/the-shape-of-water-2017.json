@@ -35,15 +35,15 @@
 	"runtimeMinutes": 123,
 	"review": "La forma del agua convierte el vínculo entre una empleada de limpieza muda y una criatura anfibia cautiva en un cuento de amor contra la crueldad de la Guerra Fría. Guillermo del Toro dirige con una imaginación táctil: pasillos verdosos, agua que invade todo y monstruos tratados con más humanidad que los uniformados. Sally Hawkins sostiene la película sin diálogo y Michael Shannon disfruta la rigidez del villano sin disimularla. El romanticismo puede parecer excesivo, pero vale si te entregás a su fábula política, sensual y deliberadamente desbordada.",
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Shape of Water abraza el cuento de hadas sin pedir disculpas; Guillermo del Toro encuentra en Sally Hawkins una heroína que comunica con todo el cuerpo.",
-		"whatToExpect": "Elisa descubre a una criatura anfibia cautiva y arma con sus aliados un plan de fuga contra un laboratorio y sus uniformes.",
-		"pace": "Avanza entre rutinas de limpieza, silencios íntimos y una conspiración que va tomando forma hasta lanzarse al rescate.",
-		"intensity": "La ternura convive con violencia de Guerra Fría, deseo y crueldad institucional; la fantasía nunca funciona como simple decoración.",
-		"practicalContext": "Dura 123 minutos y rinde mejor si aceptás su tono sensual y fabuloso, lejos de un romance realista o un monstruo de terror puro.",
-		"forFansOf": "Te va a gustar si disfrutás fábulas adultas, romances improbables y mundos de Guillermo del Toro donde los marginales tienen la mirada más humana.",
-		"notForYouIf": "No es para vos si te incomoda el melodrama, necesitás realismo estricto o preferís que la fantasía no se vuelva abiertamente política."
-	},
+		"tenSecondTake": {
+			"verdict": "The Shape of Water abraza el cuento de hadas sin pedir disculpas; Guillermo del Toro encuentra en Sally Hawkins una heroína que comunica con todo el cuerpo.",
+			"whatToExpect": "Elisa descubre a una criatura anfibia cautiva y arma con sus aliados un plan de fuga contra un laboratorio y sus uniformes.",
+			"pace": "Avanza entre rutinas de limpieza, silencios íntimos y una conspiración que va tomando forma hasta lanzarse al rescate.",
+			"intensity": "La ternura convive con violencia de Guerra Fría, deseo y crueldad institucional; la fantasía nunca funciona como simple decoración.",
+			"practicalContext": "Dura 123 minutos y rinde mejor si aceptás su tono sensual y fabuloso, lejos de un romance realista o un monstruo de terror puro.",
+			"forFansOf": "Te va a gustar si disfrutás fábulas adultas, romances improbables y mundos de Guillermo del Toro donde los marginales tienen la mirada más humana.",
+			"notForYouIf": "No es para vos si te incomoda el melodrama, necesitás realismo estricto o preferís que la fantasía no se vuelva abiertamente política."
+		},
 		"becauseYouLiked": [
 			"desconocidos-2023",
 			"el-curioso-caso-de-benjamin-button-2008"
@@ -59,5 +59,28 @@
 	"reviewPublishedAt": "2026-03-08",
 	"synopsis": "En el Baltimore de 1962, Elisa trabaja como limpiadora en un laboratorio gubernamental secreto. Allí conoce a una criatura anfibia mantenida en cautiverio y establece con ella una conexión que desafía el miedo y las reglas del lugar.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sally Hawkins",
+			"character": "Elisa Esposito",
+			"tmdbMovieId": 399055,
+			"tmdbPersonId": 39658,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Shannon",
+			"character": "Richard Strickland",
+			"tmdbMovieId": 399055,
+			"tmdbPersonId": 335,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Jenkins",
+			"character": "Giles",
+			"tmdbMovieId": 399055,
+			"tmdbPersonId": 28633,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

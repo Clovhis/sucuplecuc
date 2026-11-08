@@ -59,5 +59,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Betty Hutton",
+			"character": "Holly",
+			"tmdbMovieId": 27191,
+			"tmdbPersonId": 97182,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cornel Wilde",
+			"character": "The Great Sebastian",
+			"tmdbMovieId": 27191,
+			"tmdbPersonId": 35320,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlton Heston",
+			"character": "Brad Braden",
+			"tmdbMovieId": 27191,
+			"tmdbPersonId": 10017,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

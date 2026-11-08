@@ -54,5 +54,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Letitia Wright",
+			"character": "Shuri",
+			"tmdbMovieId": 505642,
+			"tmdbPersonId": 1083010,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lupita Nyong'o",
+			"character": "Nakia",
+			"tmdbMovieId": 505642,
+			"tmdbPersonId": 1267329,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danai Gurira",
+			"character": "Okoye",
+			"tmdbMovieId": 505642,
+			"tmdbPersonId": 82104,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

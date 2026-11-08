@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "LaKeith Stanfield",
+			"character": "Cassius Green",
+			"tmdbMovieId": 424781,
+			"tmdbPersonId": 1200864,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tessa Thompson",
+			"character": "Detroit",
+			"tmdbMovieId": 424781,
+			"tmdbPersonId": 62561,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

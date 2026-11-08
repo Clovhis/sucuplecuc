@@ -39,21 +39,44 @@
 			"notForYouIf": "No es para vos si buscás personajes, tensión sostenida o la mirada incómoda de Eli Roth."
 		},
 		"becauseYouLiked": [
-		"saw-2004",
-		"saw-x-2023"
-	],
-	"related": [
-		"martires-2008",
-		"terrifier-2-2022",
-		"terrifier-3-2024",
-		"ichi-the-killer-2001"
-	]
-},
-  "review": "Hostel: Parte III traslada el negocio de la tortura a Las Vegas, una decisión que podría haber aprovechado el lujo falso y la lógica de espectáculo de la ciudad. En cambio, Scott Spiegel entrega una secuela chata, con estética de televisión y personajes que parecen existir solo para llegar al próximo cuarto de castigo. Las trampas tienen algo de sangre, pero poca imaginación, y el misterio se resuelve sin tensión. El elenco no logra darle vida a los diálogos. Es una continuación que usa el nombre de la saga sin recuperar su incomodidad ni su mugre.",
+			"saw-2004",
+			"saw-x-2023"
+		],
+		"related": [
+			"martires-2008",
+			"terrifier-2-2022",
+			"terrifier-3-2024",
+			"ichi-the-killer-2001"
+		]
+	},
+	"review": "Hostel: Parte III traslada el negocio de la tortura a Las Vegas, una decisión que podría haber aprovechado el lujo falso y la lógica de espectáculo de la ciudad. En cambio, Scott Spiegel entrega una secuela chata, con estética de televisión y personajes que parecen existir solo para llegar al próximo cuarto de castigo. Las trampas tienen algo de sangre, pero poca imaginación, y el misterio se resuelve sin tensión. El elenco no logra darle vida a los diálogos. Es una continuación que usa el nombre de la saga sin recuperar su incomodidad ni su mugre.",
 	"synopsis": "Un grupo de amigos viaja a Las Vegas para una despedida de soltero y queda atrapado en una versión más exhibicionista del negocio de tortura de Elite Hunting.",
 	"audienceRating": "+18",
 	"subgenres": [
 		"Gore"
 	],
-	"reviewPublishedAt": "2026-05-23"
+	"reviewPublishedAt": "2026-05-23",
+	"castCharacters": [
+		{
+			"actor": "Kip Pardue",
+			"character": "Carter McMullen",
+			"tmdbMovieId": 71670,
+			"tmdbPersonId": 65561,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brian Hallisay",
+			"character": "Scott",
+			"tmdbMovieId": 71670,
+			"tmdbPersonId": 207396,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Hensley",
+			"character": "Justin",
+			"tmdbMovieId": 71670,
+			"tmdbPersonId": 74427,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

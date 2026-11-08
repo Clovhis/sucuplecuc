@@ -51,5 +51,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ethan Herisse",
+			"character": "Elwood",
+			"tmdbMovieId": 1028196,
+			"tmdbPersonId": 2104685,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brandon Wilson",
+			"character": "Turner",
+			"tmdbMovieId": 1028196,
+			"tmdbPersonId": 1674009,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

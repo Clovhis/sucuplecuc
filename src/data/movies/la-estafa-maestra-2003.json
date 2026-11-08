@@ -60,5 +60,42 @@
 		]
 	},
 	"runtimeMinutes": 110,
-	"review": "F. Gary Gray entiende que un buen golpe necesita caras reconocibles, reglas simples y una sucesión de obstáculos que se expliquen mientras la película acelera. Wahlberg funciona como eje sereno, Charlize Theron le da precisión a Stella y Edward Norton disfruta cada gesto de traición. Los Mini Cooper recorriendo Los Ángeles todavía sostienen una persecución muy juguetona, sin esconder que todo depende de coincidencias cómodas. No busca reinventar el género: entrega un plan claro, un equipo con química y dos horas que pasan rápido."
+	"review": "F. Gary Gray entiende que un buen golpe necesita caras reconocibles, reglas simples y una sucesión de obstáculos que se expliquen mientras la película acelera. Wahlberg funciona como eje sereno, Charlize Theron le da precisión a Stella y Edward Norton disfruta cada gesto de traición. Los Mini Cooper recorriendo Los Ángeles todavía sostienen una persecución muy juguetona, sin esconder que todo depende de coincidencias cómodas. No busca reinventar el género: entrega un plan claro, un equipo con química y dos horas que pasan rápido.",
+	"castCharacters": [
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Charlie Croker",
+			"tmdbMovieId": 9654,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlize Theron",
+			"character": "Stella Bridger",
+			"tmdbMovieId": 9654,
+			"tmdbPersonId": 6885,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edward Norton",
+			"character": "Steve",
+			"tmdbMovieId": 9654,
+			"tmdbPersonId": 819,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Seth Green",
+			"character": "Lyle",
+			"tmdbMovieId": 9654,
+			"tmdbPersonId": 13922,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Statham",
+			"character": "Handsome Rob",
+			"tmdbMovieId": 9654,
+			"tmdbPersonId": 976,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

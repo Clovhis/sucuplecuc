@@ -43,18 +43,34 @@
 			"forFansOf": "Puede entusiasmarte si seguís The Amazing Digital Circus, disfrutás animación web con humor oscuro y querés compartir un desenlace en pantalla grande junto a otros seguidores.",
 			"notForYouIf": "Quizás no sea para vos si buscás una aventura autoconclusiva, personajes presentados desde cero o una resolución completa de cada misterio en una sola función."
 		},
-	"becauseYouLiked": [
-		"minions-monstruos-2026",
-		"swapped-2026"
-	],
-	"related": [
-		"toy-story-5-2026",
-		"el-gato-con-botas-2011",
-		"el-pequeno-ninja-el-origen-2026",
-		"how-to-train-your-dragon-the-hidden-world-2019"
-	]
-},
+		"becauseYouLiked": [
+			"minions-monstruos-2026",
+			"swapped-2026"
+		],
+		"related": [
+			"toy-story-5-2026",
+			"el-gato-con-botas-2011",
+			"el-pequeno-ninja-el-origen-2026",
+			"how-to-train-your-dragon-the-hidden-world-2019"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Ver los dos episodios finales en una sala potencia el color, el ruido y la ansiedad que siempre definieron al circo digital. Para quienes siguieron la serie, el formato de evento convierte el cierre en una experiencia compartida y le da otra escala al espectáculo.\n\nComo película aislada es difícil que funcione: llega cargada de relaciones, reglas y misterios previos. Cumple como despedida para su público, pero no es una puerta de entrada para curiosos."
+	"review": "Ver los dos episodios finales en una sala potencia el color, el ruido y la ansiedad que siempre definieron al circo digital. Para quienes siguieron la serie, el formato de evento convierte el cierre en una experiencia compartida y le da otra escala al espectáculo.\n\nComo película aislada es difícil que funcione: llega cargada de relaciones, reglas y misterios previos. Cumple como despedida para su público, pero no es una puerta de entrada para curiosos.",
+	"castCharacters": [
+		{
+			"actor": "Lizzie Freeman",
+			"character": "Pomni (voice)",
+			"tmdbMovieId": 1667198,
+			"tmdbPersonId": 3687095,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Kovach",
+			"character": "Jax (voice)",
+			"tmdbMovieId": 1667198,
+			"tmdbPersonId": 2443112,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -55,5 +55,35 @@
 			"solo-mio-2026"
 		]
 	},
-	"review": "Julia Roberts y George Clooney conocen el mecanismo de la comedia de ex: se interrumpen, se provocan y dejan que la química haga el trabajo pesado. Ol Parker filma Bali como una postal de vacaciones y arma una aventura liviana alrededor de dos padres decididos a sabotear la boda de su hija. El guion repite la pelea hasta que el romance vuelve a resultar inevitable, pero el elenco sostiene el encanto incluso cuando la trama se vuelve previsible. Es una escapada agradable, más apoyada en el carisma que en la sorpresa."
+	"review": "Julia Roberts y George Clooney conocen el mecanismo de la comedia de ex: se interrumpen, se provocan y dejan que la química haga el trabajo pesado. Ol Parker filma Bali como una postal de vacaciones y arma una aventura liviana alrededor de dos padres decididos a sabotear la boda de su hija. El guion repite la pelea hasta que el romance vuelve a resultar inevitable, pero el elenco sostiene el encanto incluso cuando la trama se vuelve previsible. Es una escapada agradable, más apoyada en el carisma que en la sorpresa.",
+	"castCharacters": [
+		{
+			"actor": "Julia Roberts",
+			"character": "Georgia Cotton",
+			"tmdbMovieId": 800939,
+			"tmdbPersonId": 1204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Clooney",
+			"character": "David Cotton",
+			"tmdbMovieId": 800939,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kaitlyn Dever",
+			"character": "Lily Cotton",
+			"tmdbMovieId": 800939,
+			"tmdbPersonId": 481337,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billie Lourd",
+			"character": "Wren Butler",
+			"tmdbMovieId": 800939,
+			"tmdbPersonId": 1399531,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

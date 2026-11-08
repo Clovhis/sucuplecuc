@@ -59,5 +59,35 @@
 	},
 	"review": "Tony Montana entra a Miami con una ambición que no entra en ningún living y Brian De Palma filma ese ascenso como una fiebre de colores, cocaína y violencia. Al Pacino trabaja al personaje desde el exceso, pero también deja ver el miedo que hay debajo del grito; Michelle Pfeiffer y Mary Elizabeth Mastrantonio funcionan como contrapesos a ese mundo de hombres que se creen invencibles. La película fue discutida por su brutalidad, aunque el tiempo terminó reconociendo su energía visual y su influencia cultural. Es larga, desbordada y bastante misógina, pero tiene una potencia de saga criminal que todavía pega.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Al Pacino",
+			"character": "Tony Montana",
+			"tmdbMovieId": 111,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steven Bauer",
+			"character": "Manny Ray",
+			"tmdbMovieId": 111,
+			"tmdbPersonId": 1159,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Pfeiffer",
+			"character": "Elvira",
+			"tmdbMovieId": 111,
+			"tmdbPersonId": 1160,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Elizabeth Mastrantonio",
+			"character": "Gina",
+			"tmdbMovieId": 111,
+			"tmdbPersonId": 1161,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

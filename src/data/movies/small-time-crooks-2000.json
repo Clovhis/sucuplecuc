@@ -53,5 +53,42 @@
 		]
 	},
 	"review": "Granujas de medio pelo sigue a una banda de delincuentes torpes que abre una pastelería como fachada para cavar un túnel hacia un banco, sólo para descubrir que el negocio legal da más plata. Woody Allen dirige la estafa como una comedia de ascenso social, con personajes que quieren volverse refinados sin saber qué hacer con una copa de vino. Tracey Ullman tiene un arco muy divertido como esposa transformada en dama de sociedad, y Hugh Grant suma una elegancia falsa ideal para el remate. Es liviana, pero su sentido del ridículo está muy bien afinado.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Ray",
+			"tmdbMovieId": 10569,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Darrow",
+			"character": "Tommy",
+			"tmdbMovieId": 10569,
+			"tmdbPersonId": 11482,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Grant",
+			"character": "David",
+			"tmdbMovieId": 10569,
+			"tmdbPersonId": 3291,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Grizzard",
+			"character": "George Blint",
+			"tmdbMovieId": 10569,
+			"tmdbPersonId": 72056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Lovitz",
+			"character": "Benny",
+			"tmdbMovieId": 10569,
+			"tmdbPersonId": 16165,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

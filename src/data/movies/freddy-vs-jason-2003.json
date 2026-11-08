@@ -53,5 +53,28 @@
 	"subgenres": [
 		"Slasher"
 	],
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Robert Englund",
+			"character": "Freddy Krueger",
+			"tmdbMovieId": 6466,
+			"tmdbPersonId": 5139,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ken Kirzinger",
+			"character": "Jason Voorhees",
+			"tmdbMovieId": 6466,
+			"tmdbPersonId": 50094,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Monica Keena",
+			"character": "Lori Campbell",
+			"tmdbMovieId": 6466,
+			"tmdbPersonId": 18315,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

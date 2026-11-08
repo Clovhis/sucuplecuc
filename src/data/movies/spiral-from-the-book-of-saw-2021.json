@@ -38,22 +38,45 @@
 			"forFansOf": "Te puede interesar si te gustan los policiales oscuros, las trampas de Saw y las historias de instituciones que se protegen a sí mismas, incluso cuando el guion no profundiza todas sus consecuencias.",
 			"notForYouIf": "Quizás no sea para vos si buscás enigmas realmente imprevisibles, una conexión más orgánica con Jigsaw o un tratamiento menos explícito de la violencia como espectáculo."
 		},
-	"becauseYouLiked": [
-		"saw-x-2023",
-		"saw-2004"
-	],
-	"related": [
-		"ichi-the-killer-2001",
-		"martires-2008",
-		"terrifier-2-2022",
-		"terrifier-3-2024"
-	]
-},
-  "review": "Spiral quiere cruzar el mecanismo de Saw con un policial sobre abusos dentro de la fuerza, una idea que tenía margen para ser realmente venenosa. Chris Rock le pone nervio al detective protagonista y Samuel L. Jackson se divierte con su presencia, pero el guion no termina de unir el drama policial con las trampas. Darren Lynn Bousman filma con energía y conserva algunos golpes desagradables, aunque anticipa demasiado el juego. Funciona por ráfagas, no como una reinvención de la saga.",
-  "synopsis": "El detective Zeke Banks investiga asesinatos de policías corruptos cometidos con trampas al estilo Jigsaw, mientras el caso expone la violencia y los encubrimientos dentro de su propia fuerza.",
+		"becauseYouLiked": [
+			"saw-x-2023",
+			"saw-2004"
+		],
+		"related": [
+			"ichi-the-killer-2001",
+			"martires-2008",
+			"terrifier-2-2022",
+			"terrifier-3-2024"
+		]
+	},
+	"review": "Spiral quiere cruzar el mecanismo de Saw con un policial sobre abusos dentro de la fuerza, una idea que tenía margen para ser realmente venenosa. Chris Rock le pone nervio al detective protagonista y Samuel L. Jackson se divierte con su presencia, pero el guion no termina de unir el drama policial con las trampas. Darren Lynn Bousman filma con energía y conserva algunos golpes desagradables, aunque anticipa demasiado el juego. Funciona por ráfagas, no como una reinvención de la saga.",
+	"synopsis": "El detective Zeke Banks investiga asesinatos de policías corruptos cometidos con trampas al estilo Jigsaw, mientras el caso expone la violencia y los encubrimientos dentro de su propia fuerza.",
 	"audienceRating": "+18",
 	"subgenres": [
 		"Gore"
 	],
-	"reviewPublishedAt": "2026-05-23"
+	"reviewPublishedAt": "2026-05-23",
+	"castCharacters": [
+		{
+			"actor": "Chris Rock",
+			"character": "Zeke Banks",
+			"tmdbMovieId": 602734,
+			"tmdbPersonId": 2632,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Max Minghella",
+			"character": "William Schenk",
+			"tmdbMovieId": 602734,
+			"tmdbPersonId": 2978,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Marcus Banks",
+			"tmdbMovieId": 602734,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

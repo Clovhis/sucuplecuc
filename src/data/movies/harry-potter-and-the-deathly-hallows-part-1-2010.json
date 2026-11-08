@@ -52,5 +52,28 @@
 	"synopsis": "En Malfoy Manor, Severus Snape se reúne con Lord Voldemort y sus mortífagos. Informa que la Orden del Fénix trasladará a Harry Potter, que ya no está bajo el hechizo protector de su madre, a un lugar seguro.",
 	"audienceRating": "+12",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Radcliffe",
+			"character": "Harry Potter",
+			"tmdbMovieId": 12444,
+			"tmdbPersonId": 10980,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Watson",
+			"character": "Hermione Granger",
+			"tmdbMovieId": 12444,
+			"tmdbPersonId": 10990,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Grint",
+			"character": "Ron Weasley",
+			"tmdbMovieId": 12444,
+			"tmdbPersonId": 10989,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,35 @@
 			"armas-invencibles-police-story-1985"
 		]
 	},
-	"review": "La gracia de Cómo conquistar Hollywood está en que Chili Palmer nunca necesita levantar la voz para dominar una escena. Travolta encuentra un registro seco y canchero que le queda perfecto, y Barry Sonnenfeld arma una comedia criminal donde cada conversación parece una negociación y cada película dentro de la película es un chiste privado. Gene Hackman, Rene Russo y Danny DeVito completan un reparto filoso. Es liviana, elegante y mucho más inteligente de lo que aparenta."
+	"review": "La gracia de Cómo conquistar Hollywood está en que Chili Palmer nunca necesita levantar la voz para dominar una escena. Travolta encuentra un registro seco y canchero que le queda perfecto, y Barry Sonnenfeld arma una comedia criminal donde cada conversación parece una negociación y cada película dentro de la película es un chiste privado. Gene Hackman, Rene Russo y Danny DeVito completan un reparto filoso. Es liviana, elegante y mucho más inteligente de lo que aparenta.",
+	"castCharacters": [
+		{
+			"actor": "John Travolta",
+			"character": "Chili Palmer",
+			"tmdbMovieId": 8012,
+			"tmdbPersonId": 8891,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Hackman",
+			"character": "Harry Zimm",
+			"tmdbMovieId": 8012,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rene Russo",
+			"character": "Karen Flores",
+			"tmdbMovieId": 8012,
+			"tmdbPersonId": 14343,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny DeVito",
+			"character": "Martin Weir",
+			"tmdbMovieId": 8012,
+			"tmdbPersonId": 518,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

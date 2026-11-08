@@ -44,18 +44,55 @@
 			"forFansOf": "El humor negro de los Coen, las películas sobre escritores y los hoteles que se vuelven estados mentales.",
 			"notForYouIf": "Querés una sátira lineal, respuestas cerradas o un protagonista creativo pero simpático desde el primer minuto."
 		},
-	"becauseYouLiked": [
-		"muerte-entre-las-flores-1990",
-		"el-juego-de-hollywood-1992"
-	],
-	"related": [
-		"donde-estas-hermano-2000",
-		"burning-2018",
-		"rosebush-pruning-2026",
-		"el-hombre-de-al-lado-2009"
-	]
-},
+		"becauseYouLiked": [
+			"muerte-entre-las-flores-1990",
+			"el-juego-de-hollywood-1992"
+		],
+		"related": [
+			"donde-estas-hermano-2000",
+			"burning-2018",
+			"rosebush-pruning-2026",
+			"el-hombre-de-al-lado-2009"
+		]
+	},
 	"review": "Joel y Ethan Coen se ríen del artista que quiere hablar por el pueblo mientras no puede escuchar a nadie cerca. El empapelado, los pasillos y el calor del hotel convierten el bloqueo creativo en un espacio que parece enfermo. John Turturro hace de Barton una mezcla incómoda de idealismo, vanidad y miedo, con John Goodman como fuerza impredecible. A medida que el hotel se vuelve más opresivo, el bloqueo de Barton deja de parecer una dificultad de oficio y toma forma de pesadilla.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "John Turturro",
+			"character": "Barton Fink",
+			"tmdbMovieId": 290,
+			"tmdbPersonId": 1241,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Goodman",
+			"character": "Charlie Meadows",
+			"tmdbMovieId": 290,
+			"tmdbPersonId": 1230,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judy Davis",
+			"character": "Audrey Taylor",
+			"tmdbMovieId": 290,
+			"tmdbPersonId": 351,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Lerner",
+			"character": "Jack Lipnick",
+			"tmdbMovieId": 290,
+			"tmdbPersonId": 4250,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Mahoney",
+			"character": "W.P. Mayhew",
+			"tmdbMovieId": 290,
+			"tmdbPersonId": 4251,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

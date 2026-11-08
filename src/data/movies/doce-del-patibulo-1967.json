@@ -58,5 +58,21 @@
 				"year": 1968
 			}
 		]
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "Lee Marvin",
+			"character": "Maj. John Reisman",
+			"tmdbMovieId": 1654,
+			"tmdbPersonId": 18391,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ernest Borgnine",
+			"character": "Maj. Gen. Worden",
+			"tmdbMovieId": 1654,
+			"tmdbPersonId": 7502,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

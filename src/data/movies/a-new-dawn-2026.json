@@ -39,18 +39,41 @@
 			"notForYouIf": "Necesitás acción inmediata, explicaciones de ciencia ficción o una película que subraye cada emoción."
 		},
 		"becauseYouLiked": [
-		"the-girl-who-leapt-through-time-2006",
-		"la-princesa-kaguya-del-cosmos-2026"
-	],
-	"related": [
-		"belle-2021",
-		"paprika-2006",
-		"ghost-in-the-shell-1995",
-		"akira-1988"
-	]
-},
+			"the-girl-who-leapt-through-time-2006",
+			"la-princesa-kaguya-del-cosmos-2026"
+		],
+		"related": [
+			"belle-2021",
+			"paprika-2006",
+			"ghost-in-the-shell-1995",
+			"akira-1988"
+		]
+	},
 	"synopsis": "Narra el reencuentro de dos amigos de la infancia en una vieja fábrica de fuegos artificiales amenazada por la demolición, mientras intentan revivir una explosión legendaria al final del verano.",
 	"audienceRating": "ATP",
 	"review": "A New Dawn parte de un reencuentro en una fábrica de fuegos artificiales amenazada por la demolición y lo usa para hablar de memoria, trabajo y amistades que no quedaron intactas. Yoshitoshi Shinomiya privilegia los espacios, la luz y la espera antes que el golpe dramático fácil, una decisión que le da una atmósfera muy particular. Las voces acompañan un relato de sensibilidad contenida y el diseño visual logra que el proyecto de la explosión final tenga peso emocional. El ritmo puede parecer demasiado calmo si se busca acción, pero la película recompensa a quien entre en su melancolía.",
-	"reviewPublishedAt": "2026-03-04"
+	"reviewPublishedAt": "2026-03-04",
+	"castCharacters": [
+		{
+			"actor": "Riku Hagiwara",
+			"character": "Keitaro Obinata (voice)",
+			"tmdbMovieId": 1279865,
+			"tmdbPersonId": 1668193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kotone Furukawa",
+			"character": "Kaoru Shikimori (voice)",
+			"tmdbMovieId": 1279865,
+			"tmdbPersonId": 2187869,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miyu Irino",
+			"character": "Sentaro Obinata (voice)",
+			"tmdbMovieId": 1279865,
+			"tmdbPersonId": 19588,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

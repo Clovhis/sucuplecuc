@@ -56,5 +56,42 @@
 		]
 	},
 	"review": "Jim Sheridan vuelve al conflicto irlandés desde un gimnasio pequeño, donde cada entrenamiento intenta abrir una zona de convivencia en una ciudad todavía partida. Daniel Day-Lewis le da a Danny una mezcla convincente de disciplina, cansancio y deseo de no repetir la vida anterior. Emily Watson y Brian Cox sostienen las heridas familiares, mientras el guion evita convertir la reconciliación en una solución instantánea. El relato avanza con cierta previsibilidad, pero su tono sobrio y su apuesta por el trabajo cotidiano le dan una dignidad persistente.",
-	"runtimeMinutes": 114
+	"runtimeMinutes": 114,
+	"castCharacters": [
+		{
+			"actor": "Daniel Day-Lewis",
+			"character": "Danny Flynn",
+			"tmdbMovieId": 16992,
+			"tmdbPersonId": 11856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Watson",
+			"character": "Maggie Hamill",
+			"tmdbMovieId": 16992,
+			"tmdbPersonId": 1639,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brian Cox",
+			"character": "Joe Hamill",
+			"tmdbMovieId": 16992,
+			"tmdbPersonId": 1248,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ken Stott",
+			"character": "Ike Weir",
+			"tmdbMovieId": 16992,
+			"tmdbPersonId": 25136,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gerard McSorley",
+			"character": "Harry",
+			"tmdbMovieId": 16992,
+			"tmdbPersonId": 43131,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

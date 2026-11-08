@@ -33,15 +33,15 @@
 	},
 	"runtimeMinutes": 180,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "El lobo de Wall Street vuelve la estafa un carnaval tóxico; Martin Scorsese deja que Leonardo DiCaprio seduzca y repugne dentro del mismo plano.",
-		"whatToExpect": "Jordan Belfort levanta una firma de ventas agresivas, se hunde en drogas y excesos y atrae a investigadores que siguen el dinero.",
-		"pace": "Corre durante casi todo el metraje, encadenando fiestas, discursos, fraudes y desastres hasta que el vértigo empieza a cansar.",
-		"intensity": "El exceso es el lenguaje: sexo, drogas y plata aparecen como espectáculo antes de revelar la violencia que sostiene esa riqueza.",
-		"practicalContext": "Con 180 minutos, exige una sesión larga y tolerancia al agotamiento; es mejor verla concentrado que consumirla como fondo.",
-		"forFansOf": "Te va a gustar si disfrutás sátiras de ambición, narradores carismáticos y el Scorsese que filma la corrupción con energía obscena.",
-		"notForYouIf": "No es para vos si te molestan los excesos prolongados, necesitás una condena moral clara o preferís biografías menos celebratorias."
-	},
+		"tenSecondTake": {
+			"verdict": "El lobo de Wall Street vuelve la estafa un carnaval tóxico; Martin Scorsese deja que Leonardo DiCaprio seduzca y repugne dentro del mismo plano.",
+			"whatToExpect": "Jordan Belfort levanta una firma de ventas agresivas, se hunde en drogas y excesos y atrae a investigadores que siguen el dinero.",
+			"pace": "Corre durante casi todo el metraje, encadenando fiestas, discursos, fraudes y desastres hasta que el vértigo empieza a cansar.",
+			"intensity": "El exceso es el lenguaje: sexo, drogas y plata aparecen como espectáculo antes de revelar la violencia que sostiene esa riqueza.",
+			"practicalContext": "Con 180 minutos, exige una sesión larga y tolerancia al agotamiento; es mejor verla concentrado que consumirla como fondo.",
+			"forFansOf": "Te va a gustar si disfrutás sátiras de ambición, narradores carismáticos y el Scorsese que filma la corrupción con energía obscena.",
+			"notForYouIf": "No es para vos si te molestan los excesos prolongados, necesitás una condena moral clara o preferís biografías menos celebratorias."
+		},
 		"becauseYouLiked": [
 			"after-hours-1985",
 			"the-king-of-comedy-1982"
@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "El lobo de Wall Street sigue el ascenso de Jordan Belfort, un corredor de bolsa que convierte una oficina llena de vendedores desesperados en una máquina de estafas, drogas y excesos. Martin Scorsese filma ese mundo con una energía obscena y seductora: la película quiere que el vértigo atraiga antes de mostrar la podredumbre. Leonardo DiCaprio sostiene el delirio con un carisma repulsivo, y Jonah Hill encuentra un registro grotesco perfecto como socio. Es larguísima y por momentos agotadora a propósito, pero pocas veces el director mostró el dinero sucio con tanta alegría tóxica.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Jordan Belfort",
+			"tmdbMovieId": 106646,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonah Hill",
+			"character": "Donnie Azoff",
+			"tmdbMovieId": 106646,
+			"tmdbPersonId": 21007,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margot Robbie",
+			"character": "Naomi Lapaglia",
+			"tmdbMovieId": 106646,
+			"tmdbPersonId": 234352,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matthew McConaughey",
+			"character": "Mark Hanna",
+			"tmdbMovieId": 106646,
+			"tmdbPersonId": 10297,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kyle Chandler",
+			"character": "Agent Patrick Denham",
+			"tmdbMovieId": 106646,
+			"tmdbPersonId": 3497,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

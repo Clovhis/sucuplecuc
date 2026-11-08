@@ -55,5 +55,28 @@
 	"synopsis": "Ambientada 27 años después de los acontecimientos de la primera película, la historia se centra en el Club de los Perdedores y sus relaciones mientras se reúnen para destruirlo de una vez por todas.",
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-14",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jessica Chastain",
+			"character": "Beverly Marsh",
+			"tmdbMovieId": 474350,
+			"tmdbPersonId": 83002,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James McAvoy",
+			"character": "Bill Denbrough",
+			"tmdbMovieId": 474350,
+			"tmdbPersonId": 5530,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Hader",
+			"character": "Richie Tozier",
+			"tmdbMovieId": 474350,
+			"tmdbPersonId": 19278,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -48,5 +48,21 @@
       "notForYouIf": "No te gustan los cambios repentinos de lógica o los números musicales dentro de una comedia."
     }
   },
-  "review": "La película hace del barco un mecanismo de compresión: cada cabina queda demasiado llena, cada contrato es una oportunidad para otra trampa y la lógica de la ópera termina invadida por los Marx. Groucho sostiene la escena con el lenguaje; Chico y Harpo abren rutas físicas que no necesitan explicación. El espectáculo final ordena por un momento el caos, pero el humor funciona mejor cuando el escenario deja de pertenecer a quienes creen controlarlo."
+  "review": "La película hace del barco un mecanismo de compresión: cada cabina queda demasiado llena, cada contrato es una oportunidad para otra trampa y la lógica de la ópera termina invadida por los Marx. Groucho sostiene la escena con el lenguaje; Chico y Harpo abren rutas físicas que no necesitan explicación. El espectáculo final ordena por un momento el caos, pero el humor funciona mejor cuando el escenario deja de pertenecer a quienes creen controlarlo.",
+  "castCharacters": [
+    {
+      "actor": "Groucho Marx",
+      "character": "Otis B. Driftwood",
+      "tmdbMovieId": 37719,
+      "tmdbPersonId": 10798,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Chico Marx",
+      "character": "Fiorello",
+      "tmdbMovieId": 37719,
+      "tmdbPersonId": 10799,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

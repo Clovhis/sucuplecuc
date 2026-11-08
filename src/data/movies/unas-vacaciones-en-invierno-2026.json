@@ -53,5 +53,21 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Lesley Manville",
+			"character": "Stella",
+			"tmdbMovieId": 1125701,
+			"tmdbPersonId": 72305,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ciarán Hinds",
+			"character": "Gerry",
+			"tmdbMovieId": 1125701,
+			"tmdbPersonId": 8785,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

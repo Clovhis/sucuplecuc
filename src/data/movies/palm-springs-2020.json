@@ -57,5 +57,28 @@
 	"review": "Palm Springs toma el bucle temporal y lo baja de la épica a la resaca: la eternidad ocurre en una boda, con la misma música, los mismos invitados y demasiadas oportunidades para tomar malas decisiones. Max Barbakow encuentra un tono ágil que deja entrar el absurdo sin olvidar que repetir el día también puede ser una forma de no hacerse cargo.\\n\\nJ. K. Simmons le agrega una veta de melancolía a una comedia que podría vivir sólo de su premisa. El romance avanza a los tumbos, pero justamente ahí está su gracia: los personajes no se vuelven mejores por magia, sino porque el tiempo repetido les saca varias excusas. Es liviana, rara y bastante más cálida de lo que su mecanismo de ciencia ficción promete.",
 	"releasePlatform": "Disney Plus",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Andy Samberg",
+			"character": "Nyles",
+			"tmdbMovieId": 587792,
+			"tmdbPersonId": 62861,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cristin Milioti",
+			"character": "Sarah",
+			"tmdbMovieId": 587792,
+			"tmdbPersonId": 204392,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "J. K. Simmons",
+			"character": "Roy",
+			"tmdbMovieId": 587792,
+			"tmdbPersonId": 18999,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

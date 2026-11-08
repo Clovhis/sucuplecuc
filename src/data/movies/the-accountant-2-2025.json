@@ -46,5 +46,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-04",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ben Affleck",
+			"character": "Christian Wolff",
+			"tmdbMovieId": 870028,
+			"tmdbPersonId": 880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Bernthal",
+			"character": "Braxton",
+			"tmdbMovieId": 870028,
+			"tmdbPersonId": 19498,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cynthia Addai-Robinson",
+			"character": "Marybeth Medina",
+			"tmdbMovieId": 870028,
+			"tmdbPersonId": 182272,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

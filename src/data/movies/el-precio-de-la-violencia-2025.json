@@ -53,5 +53,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 91,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Austin North",
+			"character": "Chris Davis",
+			"tmdbMovieId": 1560664,
+			"tmdbPersonId": 1449393,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Holt McCallany",
+			"character": "Ray Davis",
+			"tmdbMovieId": 1560664,
+			"tmdbPersonId": 7497,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,21 @@
 	"catalogAddedAt": "2026-11-03",
 	"runtimeMinutes": 139,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Lee Byung-hun",
+			"character": "Man-su",
+			"tmdbMovieId": 639988,
+			"tmdbPersonId": 25002,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Son Ye-jin",
+			"character": "Mi-ri",
+			"tmdbMovieId": 639988,
+			"tmdbPersonId": 86889,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

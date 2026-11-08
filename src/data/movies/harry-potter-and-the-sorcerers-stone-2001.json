@@ -55,5 +55,35 @@
 	"synopsis": "Huérfano cuando era un bebé, Harry Potter es confiado a sus únicos parientes vivos, la familia Dursley, por el profesor Albus Dumbledore, la profesora Minerva McGonagall y el guardián de llaves Rubeus Hagrid del Colegio Hogwarts de Magia y Hechicería.",
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-08-27",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Radcliffe",
+			"character": "Harry Potter",
+			"tmdbMovieId": 671,
+			"tmdbPersonId": 10980,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Watson",
+			"character": "Hermione Granger",
+			"tmdbMovieId": 671,
+			"tmdbPersonId": 10990,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Grint",
+			"character": "Ron Weasley",
+			"tmdbMovieId": 671,
+			"tmdbPersonId": 10989,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Rickman",
+			"character": "Severus Snape",
+			"tmdbMovieId": 671,
+			"tmdbPersonId": 4566,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

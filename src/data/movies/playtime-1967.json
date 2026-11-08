@@ -47,5 +47,21 @@
     }
   },
   "review": "Tati convierte la ciudad moderna en un mecanismo visual que los personajes recorren sin comprenderlo del todo. Monsieur Hulot no monopoliza la película: cada rincón del encuadre ofrece una escena paralela, un gesto que se pierde o una confusión que continúa después de que la cámara se aleja. Los sonidos de oficina y de restaurante compiten con los diálogos hasta volverlos una pieza más del paisaje. La comedia no se basa en un villano ni en una moraleja, sino en mirar con paciencia cómo la gente inventa maneras de habitar espacios demasiado parecidos.",
-  "runtimeMinutes": 124
+  "runtimeMinutes": 124,
+  "castCharacters": [
+    {
+      "actor": "Jacques Tati",
+      "character": "Monsieur Hulot",
+      "tmdbMovieId": 10227,
+      "tmdbPersonId": 5763,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Georges Montant",
+      "character": "Mr. Giffard",
+      "tmdbMovieId": 10227,
+      "tmdbPersonId": 580216,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

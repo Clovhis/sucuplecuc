@@ -56,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Niamh Algar",
+			"character": "Enid Baines",
+			"tmdbMovieId": 663866,
+			"tmdbPersonId": 1362813,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Smiley",
+			"character": "Doug Smart",
+			"tmdbMovieId": 663866,
+			"tmdbPersonId": 17078,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

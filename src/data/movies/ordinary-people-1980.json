@@ -36,7 +36,11 @@
 		"tenSecondTake": {
 			"verdict": "Robert Redford observa una familia después de la muerte y el intento de suicidio de Conrad; Judd Hirsch y Donald Sutherland acompañan, mientras Mary Tyler Moore hiela la casa.",
 			"whatToExpect": "Duelo, terapia, culpa, fachada social y una familia incapaz de hablar de lo que ocurrió sin convertir el silencio en otra herida.",
-			"pace": "Avanza con calma clínica y deja que las sesiones, comidas y pausas acumulen presión; la película confía en que un gesto puede decir más que una pelea.",			"intensity": "La intensidad es emocional y doméstica, sostenida por la frialdad materna y la fragilidad de Conrad, no por giros externos.",			"practicalContext": "Con 124 minutos, pide una noche tranquila y sensibilidad para un drama de duelo sin soluciones rápidas.",			"forFansOf": "Para quienes disfrutan actuaciones contenidas, familias con secretos y películas que tratan la terapia como espacio dramático real.",			"notForYouIf": "No es para vos si buscás ritmo veloz, explicaciones psicológicas simples o un drama que vuelva simpáticos a todos sus protagonistas."
+			"pace": "Avanza con calma clínica y deja que las sesiones, comidas y pausas acumulen presión; la película confía en que un gesto puede decir más que una pelea.",
+			"intensity": "La intensidad es emocional y doméstica, sostenida por la frialdad materna y la fragilidad de Conrad, no por giros externos.",
+			"practicalContext": "Con 124 minutos, pide una noche tranquila y sensibilidad para un drama de duelo sin soluciones rápidas.",
+			"forFansOf": "Para quienes disfrutan actuaciones contenidas, familias con secretos y películas que tratan la terapia como espacio dramático real.",
+			"notForYouIf": "No es para vos si buscás ritmo veloz, explicaciones psicológicas simples o un drama que vuelva simpáticos a todos sus protagonistas."
 		},
 		"becauseYouLiked": [
 			"terms-of-endearment-1983",
@@ -53,5 +57,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Donald Sutherland",
+			"character": "Calvin Jarrett",
+			"tmdbMovieId": 16619,
+			"tmdbPersonId": 55636,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Tyler Moore",
+			"character": "Beth Jarrett",
+			"tmdbMovieId": 16619,
+			"tmdbPersonId": 21277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judd Hirsch",
+			"character": "Dr. Berger",
+			"tmdbMovieId": 16619,
+			"tmdbPersonId": 6167,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

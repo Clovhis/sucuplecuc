@@ -52,5 +52,28 @@
 	"synopsis": "La película está ambientada en un futuro distópico de Los Ángeles de 2019, en el que humanos sintéticos conocidos como replicantes son biodiseñados por la poderosa Tyrell Corporation para trabajar en colonias espaciales.",
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-10",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Deckard",
+			"tmdbMovieId": 78,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rutger Hauer",
+			"character": "Batty",
+			"tmdbMovieId": 78,
+			"tmdbPersonId": 585,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Young",
+			"character": "Rachael",
+			"tmdbMovieId": 78,
+			"tmdbPersonId": 586,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

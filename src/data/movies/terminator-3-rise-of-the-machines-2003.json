@@ -52,5 +52,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-09",
 	"synopsis": "John Connor vive oculto tras haber evitado el Juicio Final, pero una nueva máquina asesina llega del futuro para eliminarlo. Para sobrevivir, deberá confiar otra vez en un Terminator y enfrentar la amenaza de una guerra inminente.",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Arnold Schwarzenegger",
+			"character": "The Terminator",
+			"tmdbMovieId": 296,
+			"tmdbPersonId": 1100,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Stahl",
+			"character": "John Connor",
+			"tmdbMovieId": 296,
+			"tmdbPersonId": 6408,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claire Danes",
+			"character": "Kate Brewster",
+			"tmdbMovieId": 296,
+			"tmdbPersonId": 6194,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

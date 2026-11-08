@@ -49,5 +49,28 @@
     }
   },
   "review": "Godard filma el desmoronamiento de una pareja en espacios donde el trabajo, el dinero y el deseo se mezclan sin poder separarse. Michel Piccoli compone a Paul como alguien que intenta explicar sus decisiones después de haberlas tomado, mientras Brigitte Bardot sostiene una distancia que la cámara no convierte en mero misterio. La presencia de Fritz Lang dentro del rodaje abre una segunda conversación sobre quién decide qué puede ser el cine. Capri luce como un escenario hermoso, pero la forma de habitarlo revela una relación que perdió el idioma común.",
-  "runtimeMinutes": 102
+  "runtimeMinutes": 102,
+  "castCharacters": [
+    {
+      "actor": "Brigitte Bardot",
+      "character": "Camille Javal",
+      "tmdbMovieId": 266,
+      "tmdbPersonId": 3783,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Michel Piccoli",
+      "character": "Paul Javal",
+      "tmdbMovieId": 266,
+      "tmdbPersonId": 3784,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Jack Palance",
+      "character": "Jeremy Prokosch",
+      "tmdbMovieId": 266,
+      "tmdbPersonId": 3785,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

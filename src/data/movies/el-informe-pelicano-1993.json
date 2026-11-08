@@ -55,5 +55,42 @@
 			"el-sendero-de-la-traicion-1988"
 		]
 	},
-	"review": "Alan J. Pakula aprovecha la maquinaria de John Grisham para hacer un thriller de paranoia elegante y muy terrenal. Julia Roberts corre, investiga y se equivoca con una energía que evita que Darby quede como simple pieza del rompecabezas; Denzel Washington le aporta oficio y una calma que contrasta con el peligro creciente. La película tarda en poner todas las cartas sobre la mesa, pero esa demora es parte de su gracia: cada oficina, llamada y conversación parece esconder una trampa. No reinventa el género judicial, aunque maneja la tensión con una seguridad envidiable."
+	"review": "Alan J. Pakula aprovecha la maquinaria de John Grisham para hacer un thriller de paranoia elegante y muy terrenal. Julia Roberts corre, investiga y se equivoca con una energía que evita que Darby quede como simple pieza del rompecabezas; Denzel Washington le aporta oficio y una calma que contrasta con el peligro creciente. La película tarda en poner todas las cartas sobre la mesa, pero esa demora es parte de su gracia: cada oficina, llamada y conversación parece esconder una trampa. No reinventa el género judicial, aunque maneja la tensión con una seguridad envidiable.",
+	"castCharacters": [
+		{
+			"actor": "Julia Roberts",
+			"character": "Darby Shaw",
+			"tmdbMovieId": 9944,
+			"tmdbPersonId": 1204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Denzel Washington",
+			"character": "Gray Grantham",
+			"tmdbMovieId": 9944,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Shepard",
+			"character": "Thomas Callahan",
+			"tmdbMovieId": 9944,
+			"tmdbPersonId": 9880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Heard",
+			"character": "Gavin Vereek",
+			"tmdbMovieId": 9944,
+			"tmdbPersonId": 11512,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Goldwyn",
+			"character": "Fletcher Coal",
+			"tmdbMovieId": 9944,
+			"tmdbPersonId": 3417,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -52,5 +52,28 @@
 			"barbie-2023"
 		]
 	},
-	"review": "El padre de los inventos arma una comedia de caída y redención alrededor de un personaje que confundió el éxito con el afecto. Kevin Spacey sostiene la arrogancia y el desconcierto del protagonista, mientras Camilla Belle aporta el vínculo que la historia necesita para no quedarse en una sucesión de gags. Trent Cooper mantiene un tono amable y previsible, con algunos momentos genuinos cuando la película observa la vergüenza de volver a empezar. Es liviana, pero tiene un centro emocional bastante claro."
+	"review": "El padre de los inventos arma una comedia de caída y redención alrededor de un personaje que confundió el éxito con el afecto. Kevin Spacey sostiene la arrogancia y el desconcierto del protagonista, mientras Camilla Belle aporta el vínculo que la historia necesita para no quedarse en una sucesión de gags. Trent Cooper mantiene un tono amable y previsible, con algunos momentos genuinos cuando la película observa la vergüenza de volver a empezar. Es liviana, pero tiene un centro emocional bastante claro.",
+	"castCharacters": [
+		{
+			"actor": "Kevin Spacey",
+			"character": "Robert Axle",
+			"tmdbMovieId": 35221,
+			"tmdbPersonId": 1979,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Camilla Belle",
+			"character": "Claire Axle",
+			"tmdbMovieId": 35221,
+			"tmdbPersonId": 38670,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Heather Graham",
+			"character": "Phoebe",
+			"tmdbMovieId": 35221,
+			"tmdbPersonId": 69122,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

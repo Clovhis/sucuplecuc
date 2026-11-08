@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Indiana Jones",
+			"tmdbMovieId": 335977,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Phoebe Waller-Bridge",
+			"character": "Helena",
+			"tmdbMovieId": 335977,
+			"tmdbPersonId": 1023483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Antonio Banderas",
+			"character": "Renaldo",
+			"tmdbMovieId": 335977,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

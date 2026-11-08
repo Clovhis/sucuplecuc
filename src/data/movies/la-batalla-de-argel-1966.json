@@ -45,18 +45,41 @@
 			"forFansOf": "Si te interesan cine político, relatos de ocupación y puestas con nervio documental.",
 			"notForYouIf": "No es para vos si buscás una guerra simplificada, una resolución individual o distancia frente a la violencia."
 		},
-	"becauseYouLiked": [
-		"senderos-de-gloria-1957",
-		"patton-1970"
-	],
-	"related": [
-		"michael-collins-1996",
-		"k-19-the-widowmaker-2002",
-		"apocalypse-now-1979",
-		"empire-of-the-sun-1987"
-	]
-},
+		"becauseYouLiked": [
+			"senderos-de-gloria-1957",
+			"patton-1970"
+		],
+		"related": [
+			"michael-collins-1996",
+			"k-19-the-widowmaker-2002",
+			"apocalypse-now-1979",
+			"empire-of-the-sun-1987"
+		]
+	},
 	"review": "Gillo Pontecorvo filma una insurrección como conflicto de ocupación y no como aventura individual de un héroe. La cámara nerviosa, los rostros anónimos y el montaje de operaciones producen una sensación documental sin borrar la construcción dramática. Su mirada es política y tensa, pero también sabe mostrar cómo la violencia reorganiza una ciudad entera. La mirada alterna entre insurgentes y fuerzas coloniales sin fingir equivalencia moral, pero deja ver cómo cada acción alimenta otra.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Brahim Hadjadj",
+			"character": "Ali La Pointe",
+			"tmdbMovieId": 17295,
+			"tmdbPersonId": 140996,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mohamed Ben Kassen",
+			"character": "Petit Omar",
+			"tmdbMovieId": 17295,
+			"tmdbPersonId": 1077248,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Yacef Saâdi",
+			"character": "El-Hadi Jaffar",
+			"tmdbMovieId": 17295,
+			"tmdbPersonId": 557864,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,42 @@
 			"la-habitacion-del-panico-2002"
 		]
 	},
-	"review": "Minghella convierte el Mediterráneo en una vidriera hermosa donde todo puede quebrarse. Damon se anima a hacer de Ripley un protagonista incómodo: busca pertenecer, pero también disfruta demasiado del disfraz. Law le da a Dickie una mezcla de magnetismo y crueldad que explica la obsesión sin justificarla. El lujo, el jazz y los silencios construyen una tensión elegante, sostenida por un elenco que entiende que cada gesto puede ser una mentira."
+	"review": "Minghella convierte el Mediterráneo en una vidriera hermosa donde todo puede quebrarse. Damon se anima a hacer de Ripley un protagonista incómodo: busca pertenecer, pero también disfruta demasiado del disfraz. Law le da a Dickie una mezcla de magnetismo y crueldad que explica la obsesión sin justificarla. El lujo, el jazz y los silencios construyen una tensión elegante, sostenida por un elenco que entiende que cada gesto puede ser una mentira.",
+	"castCharacters": [
+		{
+			"actor": "Matt Damon",
+			"character": "Tom Ripley",
+			"tmdbMovieId": 1213,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jude Law",
+			"character": "Dickie Greenleaf",
+			"tmdbMovieId": 1213,
+			"tmdbPersonId": 9642,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gwyneth Paltrow",
+			"character": "Marge Sherwood",
+			"tmdbMovieId": 1213,
+			"tmdbPersonId": 12052,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Meredith Logue",
+			"tmdbMovieId": 1213,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Philip Seymour Hoffman",
+			"character": "Freddie Miles",
+			"tmdbMovieId": 1213,
+			"tmdbPersonId": 1233,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

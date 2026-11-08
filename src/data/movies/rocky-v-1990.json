@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sylvester Stallone",
+			"character": "Robert 'Rocky' Balboa",
+			"tmdbMovieId": 1375,
+			"tmdbPersonId": 16483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Talia Shire",
+			"character": "Adrianna 'Adrian' Balboa",
+			"tmdbMovieId": 1375,
+			"tmdbPersonId": 3094,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Morrison",
+			"character": "Tommy 'Machine' Gunn",
+			"tmdbMovieId": 1375,
+			"tmdbPersonId": 16661,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

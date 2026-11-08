@@ -60,5 +60,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Natalie Wood",
+			"character": "Maria",
+			"tmdbMovieId": 1725,
+			"tmdbPersonId": 2769,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Beymer",
+			"character": "Tony",
+			"tmdbMovieId": 1725,
+			"tmdbPersonId": 6679,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Russ Tamblyn",
+			"character": "Riff",
+			"tmdbMovieId": 1725,
+			"tmdbPersonId": 6725,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

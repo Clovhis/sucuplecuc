@@ -55,5 +55,21 @@
 		"Netflix"
 	],
 	"country": "DE",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Koji Yakusho",
+			"character": "Hirayama",
+			"tmdbMovieId": 976893,
+			"tmdbPersonId": 18056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aoi Yamada",
+			"character": "Aya",
+			"tmdbMovieId": 976893,
+			"tmdbPersonId": 3086230,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ellen Burstyn",
+			"character": "Sara Goldfarb",
+			"tmdbMovieId": 641,
+			"tmdbPersonId": 9560,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jared Leto",
+			"character": "Harry Goldfarb",
+			"tmdbMovieId": 641,
+			"tmdbPersonId": 7499,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

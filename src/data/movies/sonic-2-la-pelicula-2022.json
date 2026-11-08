@@ -44,7 +44,7 @@
 			"forFansOf": "Te puede enganchar si disfrutás Sonic, las adaptaciones de videojuegos con humor físico y las aventuras de equipo que combinan actores reales, criaturas digitales y villanos pasados de rosca.",
 			"notForYouIf": "Quizás no sea para vos si te agota el humor acelerado, las subtramas humanas que interrumpen la acción o una historia que prefiere sumar personajes antes que profundizar demasiado en ellos."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"amos-del-universo-2026",
 			"terminator-dark-fate-2019"
 		],
@@ -55,5 +55,42 @@
 			"terminator-2-judgment-day-1991"
 		]
 	},
-	"review": "Sonic 2: La película amplía el mundo sin perder el tono de aventura familiar que hacía funcionar a la primera. Tails y Knuckles suman dinámicas distintas, y la rivalidad entre los héroes permite que la acción tenga más variedad que la persecución inicial. Jim Carrey se divierte con un Robotnik más excéntrico, aunque su arco se acerca demasiado al ruido y deja poco espacio para las escenas de James Marsden y Tika Sumpter. Jeff Fowler sostiene el ritmo con carreras, ruinas y peleas coloridas; la duración se siente en el tramo medio, pero el cariño por el videojuego y el buen uso del elenco mantienen la película en pie."
+	"review": "Sonic 2: La película amplía el mundo sin perder el tono de aventura familiar que hacía funcionar a la primera. Tails y Knuckles suman dinámicas distintas, y la rivalidad entre los héroes permite que la acción tenga más variedad que la persecución inicial. Jim Carrey se divierte con un Robotnik más excéntrico, aunque su arco se acerca demasiado al ruido y deja poco espacio para las escenas de James Marsden y Tika Sumpter. Jeff Fowler sostiene el ritmo con carreras, ruinas y peleas coloridas; la duración se siente en el tramo medio, pero el cariño por el videojuego y el buen uso del elenco mantienen la película en pie.",
+	"castCharacters": [
+		{
+			"actor": "Jim Carrey",
+			"character": "Dr. Robotnik",
+			"tmdbMovieId": 675353,
+			"tmdbPersonId": 206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Schwartz",
+			"character": "Sonic (voice)",
+			"tmdbMovieId": 675353,
+			"tmdbPersonId": 222121,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Marsden",
+			"character": "Tom Wachowski",
+			"tmdbMovieId": 675353,
+			"tmdbPersonId": 11006,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tika Sumpter",
+			"character": "Maddie Wachowski",
+			"tmdbMovieId": 675353,
+			"tmdbPersonId": 110742,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Idris Elba",
+			"character": "Knuckles (voice)",
+			"tmdbMovieId": 675353,
+			"tmdbPersonId": 17605,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

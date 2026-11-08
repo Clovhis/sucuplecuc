@@ -74,5 +74,42 @@
 	"country": "US",
 	"isArgentinian": false,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Kevin Spacey",
+			"character": "Lester Burnham",
+			"tmdbMovieId": 14,
+			"tmdbPersonId": 1979,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Annette Bening",
+			"character": "Carolyn Burnham",
+			"tmdbMovieId": 14,
+			"tmdbPersonId": 516,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Thora Birch",
+			"character": "Jane Burnham",
+			"tmdbMovieId": 14,
+			"tmdbPersonId": 2155,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wes Bentley",
+			"character": "Ricky Fitts",
+			"tmdbMovieId": 14,
+			"tmdbPersonId": 8210,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mena Suvari",
+			"character": "Angela Hayes",
+			"tmdbMovieId": 14,
+			"tmdbPersonId": 8211,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,5 +47,35 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-02-26",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jesse Eisenberg",
+			"character": "J. Daniel Atlas",
+			"tmdbMovieId": 425274,
+			"tmdbPersonId": 44735,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Woody Harrelson",
+			"character": "Merritt McKinney",
+			"tmdbMovieId": 425274,
+			"tmdbPersonId": 57755,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dave Franco",
+			"character": "Jack Wilder",
+			"tmdbMovieId": 425274,
+			"tmdbPersonId": 54697,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Isla Fisher",
+			"character": "Henley Reeves",
+			"tmdbMovieId": 425274,
+			"tmdbPersonId": 52848,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

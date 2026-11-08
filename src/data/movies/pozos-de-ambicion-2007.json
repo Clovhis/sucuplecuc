@@ -72,5 +72,42 @@
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
 	"review": "Pozos de ambición es una película seca, enorme y bastante enfermiza sobre codicia, ego y poder. Paul Thomas Anderson la filma como una marcha lenta hacia la podredumbre, y Daniel Day-Lewis la empuja con una presencia tan monstruosa que cuesta sacarle los ojos de encima. Lo mejor es que no busca caer simpática ni darte alivio: te deja incómodo y aun así no podés mirar para otro lado. Cuando el cine de autor juega en esta escala, salen estas bestias.",
-	"subgenres": []
+	"subgenres": [],
+	"castCharacters": [
+		{
+			"actor": "Daniel Day-Lewis",
+			"character": "Daniel Plainview",
+			"tmdbMovieId": 7345,
+			"tmdbPersonId": 11856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Dano",
+			"character": "Paul Sunday / Eli Sunday",
+			"tmdbMovieId": 7345,
+			"tmdbPersonId": 17142,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin J. O'Connor",
+			"character": "Henry",
+			"tmdbMovieId": 7345,
+			"tmdbPersonId": 18916,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ciarán Hinds",
+			"character": "Fletcher Hamilton",
+			"tmdbMovieId": 7345,
+			"tmdbPersonId": 8785,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dillon Freasier",
+			"character": "H.W. Plainview",
+			"tmdbMovieId": 7345,
+			"tmdbPersonId": 52564,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

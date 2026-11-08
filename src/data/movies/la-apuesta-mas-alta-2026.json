@@ -53,5 +53,28 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "La apuesta más alta se encierra en un hotel para jugar al misterio de cuarto cerrado con naipes, culpas y personajes que nunca terminan de mostrar la mano. Tony Dean Smith no disimula la modestia de la producción, pero sabe sacar tensión de las miradas cruzadas y del espacio cada vez más asfixiante. Seth Green y Kevin Dillon le dan oficio a un grupo que funciona mejor cuando discute que cuando explica demasiado. Los golpes de efecto son bastante previsibles y el costado más sórdido queda subrayado, aunque el mecanismo alcanza para una noche de suspenso sin grandes pretensiones."
+	"review": "La apuesta más alta se encierra en un hotel para jugar al misterio de cuarto cerrado con naipes, culpas y personajes que nunca terminan de mostrar la mano. Tony Dean Smith no disimula la modestia de la producción, pero sabe sacar tensión de las miradas cruzadas y del espacio cada vez más asfixiante. Seth Green y Kevin Dillon le dan oficio a un grupo que funciona mejor cuando discute que cuando explica demasiado. Los golpes de efecto son bastante previsibles y el costado más sórdido queda subrayado, aunque el mecanismo alcanza para una noche de suspenso sin grandes pretensiones.",
+	"castCharacters": [
+		{
+			"actor": "Seth Green",
+			"character": "Samuel Nicholas",
+			"tmdbMovieId": 1444249,
+			"tmdbPersonId": 13922,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Dillon",
+			"character": "Detective Michael Quinn",
+			"tmdbMovieId": 1444249,
+			"tmdbPersonId": 6863,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlie Weber",
+			"character": "Billy Gray",
+			"tmdbMovieId": 1444249,
+			"tmdbPersonId": 147404,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

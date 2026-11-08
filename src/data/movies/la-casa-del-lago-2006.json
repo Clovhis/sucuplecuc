@@ -58,5 +58,28 @@
 	"review": "La casa del lago apuesta todo a la espera: dos personas separadas por dos años intentan construir intimidad con cartas y una casilla de correo imposible. Bullock y Reeves conservan la química de Máxima velocidad, pero el guion estira la paradoja hasta que la emoción empieza a depender de aceptar demasiadas coincidencias. Tiene una atmósfera otoñal atractiva y una idea romántica potente; el problema es que la lógica temporal no siempre acompaña el sentimiento.",
 	"releasePlatforms": [
 		"HBO Max"
+	],
+	"castCharacters": [
+		{
+			"actor": "Sandra Bullock",
+			"character": "Dr. Kate Forster",
+			"tmdbMovieId": 2044,
+			"tmdbPersonId": 18277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keanu Reeves",
+			"character": "Alex Wyler",
+			"tmdbMovieId": 2044,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Plummer",
+			"character": "Simon Wyler",
+			"tmdbMovieId": 2044,
+			"tmdbPersonId": 290,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

@@ -47,5 +47,21 @@
     }
   },
   "review": "Varda divide la espera en capítulos y acompaña a Cléo desde la superstición hacia una atención más abierta a quienes la rodean. Corinne Marchand cambia el tono sin anunciar un giro: lo que al principio parece pose va cediendo ante la incertidumbre. París no es una postal; cada parada revela otra forma de mirar y de ser mirada. El paseo con el soldado Antoine transforma el trayecto parisino de Cléo en un presente que ya no atraviesa sola.",
-  "runtimeMinutes": 90
+  "runtimeMinutes": 90,
+  "castCharacters": [
+    {
+      "actor": "Corinne Marchand",
+      "character": "Florence 'Cléo' Victoire",
+      "tmdbMovieId": 499,
+      "tmdbPersonId": 7565,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Antoine Bourseiller",
+      "character": "Antoine",
+      "tmdbMovieId": 499,
+      "tmdbPersonId": 7566,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

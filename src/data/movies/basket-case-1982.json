@@ -56,5 +56,21 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Kevin Van Hentenryck",
+			"character": "Duane Bradley",
+			"tmdbMovieId": 27813,
+			"tmdbPersonId": 99025,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Beverly Bonner",
+			"character": "Casey",
+			"tmdbMovieId": 27813,
+			"tmdbPersonId": 99040,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -63,5 +63,42 @@
 	"releasePlatforms": [
 		"HBO Max",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Kurt Russell",
+			"character": "MacReady",
+			"tmdbMovieId": 1091,
+			"tmdbPersonId": 6856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wilford Brimley",
+			"character": "Blair",
+			"tmdbMovieId": 1091,
+			"tmdbPersonId": 11065,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "T.K. Carter",
+			"character": "Nauls",
+			"tmdbMovieId": 1091,
+			"tmdbPersonId": 15411,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Clennon",
+			"character": "Palmer",
+			"tmdbMovieId": 1091,
+			"tmdbPersonId": 15412,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keith David",
+			"character": "Childs",
+			"tmdbMovieId": 1091,
+			"tmdbPersonId": 65827,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

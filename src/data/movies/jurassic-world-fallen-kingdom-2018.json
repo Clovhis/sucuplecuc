@@ -52,5 +52,28 @@
 	"synopsis": "Un volcán amenaza con borrar a los dinosaurios que quedaron en Isla Nublar y Claire convence a Owen de volver por Blue. El rescate pronto revela una subasta clandestina y un experimento genético que lleva el peligro a una mansión.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chris Pratt",
+			"character": "Owen Grady",
+			"tmdbMovieId": 351286,
+			"tmdbPersonId": 73457,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bryce Dallas Howard",
+			"character": "Claire Dearing",
+			"tmdbMovieId": 351286,
+			"tmdbPersonId": 18997,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rafe Spall",
+			"character": "Eli Mills",
+			"tmdbMovieId": 351286,
+			"tmdbPersonId": 28847,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

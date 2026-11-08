@@ -61,5 +61,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Laurence Fishburne",
+			"character": "Miller",
+			"tmdbMovieId": 8413,
+			"tmdbPersonId": 2975,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Neill",
+			"character": "Weir",
+			"tmdbMovieId": 8413,
+			"tmdbPersonId": 4783,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kathleen Quinlan",
+			"character": "Peters",
+			"tmdbMovieId": 8413,
+			"tmdbPersonId": 8183,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joely Richardson",
+			"character": "Starck",
+			"tmdbMovieId": 8413,
+			"tmdbPersonId": 20810,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

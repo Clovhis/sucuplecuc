@@ -37,7 +37,11 @@
 		"tenSecondTake": {
 			"verdict": "Richard Donner convierte un torneo de póquer en un western de estafas y Mel Gibson con Jodie Foster juegan cada escena como si escondieran una carta mejor.",
 			"whatToExpect": "Viajes, duelos, trampas, caballos y una partida millonaria, con Bret Maverick y Annabelle cambiando de alianza cada vez que parece que entendiste el plan.",
-			"pace": "Se mueve con ligereza de aventura episódica; encadena timos y revelaciones sin detenerse demasiado en la lógica, porque el encanto está en la ejecución.",			"intensity": "La tensión es juguetona y de riesgo moderado: importa más quién engaña a quién que la violencia de los duelos o la amenaza criminal.",			"practicalContext": "La ficha no informa duración; es una opción cómoda para una tarde de western cómico, especialmente si querés una película que no se tome solemne.",			"forFansOf": "Para quienes disfrutan el carisma de Gibson, la picardía de Foster y los westerns que prefieren un buen truco a una épica pesada.",			"notForYouIf": "Puede no ser para vos si buscás un póquer realista, una trama sin trampas narrativas o un western más áspero y menos familiar."
+			"pace": "Se mueve con ligereza de aventura episódica; encadena timos y revelaciones sin detenerse demasiado en la lógica, porque el encanto está en la ejecución.",
+			"intensity": "La tensión es juguetona y de riesgo moderado: importa más quién engaña a quién que la violencia de los duelos o la amenaza criminal.",
+			"practicalContext": "La ficha no informa duración; es una opción cómoda para una tarde de western cómico, especialmente si querés una película que no se tome solemne.",
+			"forFansOf": "Para quienes disfrutan el carisma de Gibson, la picardía de Foster y los westerns que prefieren un buen truco a una épica pesada.",
+			"notForYouIf": "Puede no ser para vos si buscás un póquer realista, una trama sin trampas narrativas o un western más áspero y menos familiar."
 		},
 		"becauseYouLiked": [
 			"heroes-fuera-de-orbita-1999",
@@ -50,5 +54,42 @@
 			"thelma-la-venganza-nunca-ha-sido-tan-dulce-2024"
 		]
 	},
-	"review": "Richard Donner entiende que un western de póquer tiene que moverse con la ligereza de una buena trampa. Mel Gibson aporta el encanto canchero de un jugador que siempre parece estar improvisando, mientras Jodie Foster disfruta a Annabelle como una fuerza de caos, picardía y vestidos imposibles. La película no pretende reinventar el género: lo pasea por un parque de diversiones de timos, caballos y remates, y justamente ahí encuentra su gracia."
+	"review": "Richard Donner entiende que un western de póquer tiene que moverse con la ligereza de una buena trampa. Mel Gibson aporta el encanto canchero de un jugador que siempre parece estar improvisando, mientras Jodie Foster disfruta a Annabelle como una fuerza de caos, picardía y vestidos imposibles. La película no pretende reinventar el género: lo pasea por un parque de diversiones de timos, caballos y remates, y justamente ahí encuentra su gracia.",
+	"castCharacters": [
+		{
+			"actor": "Mel Gibson",
+			"character": "Bret Maverick",
+			"tmdbMovieId": 9359,
+			"tmdbPersonId": 2461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jodie Foster",
+			"character": "Annabelle Bransford",
+			"tmdbMovieId": 9359,
+			"tmdbPersonId": 1038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Garner",
+			"character": "Marshal Zane Cooper",
+			"tmdbMovieId": 9359,
+			"tmdbPersonId": 16896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Graham Greene",
+			"character": "Joseph",
+			"tmdbMovieId": 9359,
+			"tmdbPersonId": 6804,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alfred Molina",
+			"character": "Angel",
+			"tmdbMovieId": 9359,
+			"tmdbPersonId": 658,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

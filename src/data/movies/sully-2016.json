@@ -51,5 +51,35 @@
 			"apolo-13-1995"
 		]
 	},
-	"review": "El aterrizaje en el Hudson dura apenas unos minutos, pero Clint Eastwood lo reconstruye desde varios ángulos hasta convertirlo en una experiencia física y en una pregunta sobre la experiencia profesional. Tom Hanks hace de la calma una actuación completa: duda en privado, mide cada palabra y nunca busca la pose heroica; Aaron Eckhart le aporta humor y compañerismo sin distraer del conflicto. La película inventa antagonismo en la investigación y deja a Laura Linney atrapada en llamadas demasiado funcionales, así que fuera del avión pierde espesor. Cuando vuelve al procedimiento, al sonido y a las decisiones tomadas en segundos, recupera una tensión formidable."
+	"review": "El aterrizaje en el Hudson dura apenas unos minutos, pero Clint Eastwood lo reconstruye desde varios ángulos hasta convertirlo en una experiencia física y en una pregunta sobre la experiencia profesional. Tom Hanks hace de la calma una actuación completa: duda en privado, mide cada palabra y nunca busca la pose heroica; Aaron Eckhart le aporta humor y compañerismo sin distraer del conflicto. La película inventa antagonismo en la investigación y deja a Laura Linney atrapada en llamadas demasiado funcionales, así que fuera del avión pierde espesor. Cuando vuelve al procedimiento, al sonido y a las decisiones tomadas en segundos, recupera una tensión formidable.",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Chesley 'Sully' Sullenberger",
+			"tmdbMovieId": 363676,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Eckhart",
+			"character": "Jeff Skiles",
+			"tmdbMovieId": 363676,
+			"tmdbPersonId": 6383,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Linney",
+			"character": "Lorrie Sullenberger",
+			"tmdbMovieId": 363676,
+			"tmdbPersonId": 350,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anna Gunn",
+			"character": "Elizabeth Davis",
+			"tmdbMovieId": 363676,
+			"tmdbPersonId": 134531,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

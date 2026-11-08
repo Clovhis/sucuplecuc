@@ -81,5 +81,42 @@
 	"review": "The Grand Budapest Hotel parece una caja de bombones diseñada al milímetro, pero Wes Anderson usa esa belleza para contar la desaparición de un mundo entero. La trama policial y la fuga tienen un ritmo juguetón, mientras los cambios de formato y las maquetas sostienen la sensación de fábula contada desde lejos. Ralph Fiennes está formidable como Gustave: preciso, snob, romántico y capaz de soltar un insulto sin perder elegancia. Tony Revolori acompaña con una calma justa. Por momentos el artificio puede dejar afuera, pero debajo de la comedia hay una melancolía amarga que evita que sea sólo una postal linda.",
 	"isPremiere": false,
 	"premiereLabel": "",
-	"reviewPublishedAt": "2026-04-26"
+	"reviewPublishedAt": "2026-04-26",
+	"castCharacters": [
+		{
+			"actor": "Ralph Fiennes",
+			"character": "M. Gustave",
+			"tmdbMovieId": 120467,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Revolori",
+			"character": "Zero",
+			"tmdbMovieId": 120467,
+			"tmdbPersonId": 1291350,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "F. Murray Abraham",
+			"character": "Mr. Moustafa",
+			"tmdbMovieId": 120467,
+			"tmdbPersonId": 1164,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mathieu Amalric",
+			"character": "Serge X.",
+			"tmdbMovieId": 120467,
+			"tmdbPersonId": 8789,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Saoirse Ronan",
+			"character": "Agatha",
+			"tmdbMovieId": 120467,
+			"tmdbPersonId": 36592,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

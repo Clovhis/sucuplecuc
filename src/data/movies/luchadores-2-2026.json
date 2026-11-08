@@ -58,5 +58,42 @@
 	},
 	"review": "Luchadores 2 cambia el ring por la discusión doméstica y entiende que una pelea de pareja puede tener más vueltas que cualquier torneo. La idea de un hombre que se ocupa de la casa mientras su esposa persigue una carrera tiene una energía simpática, sobre todo cuando la película se ríe de las reglas sociales que pretende defender.\n\nVishnu Vishal y Aishwarya Lekshmi tienen química, pero el guion subraya cada conflicto hasta dejarlo sin aire. El humor físico entra bien y la duración permite algunos desvíos curiosos, aunque el tono progresista se vuelve bastante declamatorio. Es una comedia con corazón y varios golpes efectivos, pero también con sermones que podrían haber quedado afuera.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Vishnu Vishal",
+			"character": "Veera",
+			"tmdbMovieId": 1509599,
+			"tmdbPersonId": 584250,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aishwarya Lekshmi",
+			"character": "Keerthi",
+			"tmdbMovieId": 1509599,
+			"tmdbPersonId": 1861484,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Karunas",
+			"character": "'Mama' Ratnam",
+			"tmdbMovieId": 1509599,
+			"tmdbPersonId": 120949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Munishkanth",
+			"character": "'Chithappa' Ganesan",
+			"tmdbMovieId": 1509599,
+			"tmdbPersonId": 1336122,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kaali Venkat",
+			"character": "'Sattam' Sattanathan",
+			"tmdbMovieId": 1509599,
+			"tmdbPersonId": 1306567,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

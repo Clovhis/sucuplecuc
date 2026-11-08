@@ -61,5 +61,42 @@
 			"barreda-2026"
 		]
 	},
-	"review": "David Lynch convierte la fuga de Sailor y Lula en una road movie que funciona con lógica de sueño, melodrama y pesadilla criminal al mismo tiempo. Nicolas Cage abraza el exceso con una seguridad que hace creíble tanto el romanticismo como la violencia, mientras Laura Dern sostiene el corazón vulnerable de la pareja. Willem Dafoe entra en escena para deformar todavía más el paisaje y Diane Ladd dispara la energía desde el otro lado de la familia. Puede resultar despareja, pero su mezcla de Elvis, fuego y fatalidad tiene una personalidad que no se parece a nada."
+	"review": "David Lynch convierte la fuga de Sailor y Lula en una road movie que funciona con lógica de sueño, melodrama y pesadilla criminal al mismo tiempo. Nicolas Cage abraza el exceso con una seguridad que hace creíble tanto el romanticismo como la violencia, mientras Laura Dern sostiene el corazón vulnerable de la pareja. Willem Dafoe entra en escena para deformar todavía más el paisaje y Diane Ladd dispara la energía desde el otro lado de la familia. Puede resultar despareja, pero su mezcla de Elvis, fuego y fatalidad tiene una personalidad que no se parece a nada.",
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "Sailor",
+			"tmdbMovieId": 483,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Lula",
+			"tmdbMovieId": 483,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Bobby Peru",
+			"tmdbMovieId": 483,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Ladd",
+			"character": "Marietta Fortune",
+			"tmdbMovieId": 483,
+			"tmdbPersonId": 6587,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harry Dean Stanton",
+			"character": "Johnnie Farragut",
+			"tmdbMovieId": 483,
+			"tmdbPersonId": 5048,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

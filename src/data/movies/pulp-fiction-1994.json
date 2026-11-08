@@ -64,5 +64,28 @@
 	"audienceRating": "+18",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "John Travolta",
+			"character": "Vincent Vega",
+			"tmdbMovieId": 680,
+			"tmdbPersonId": 8891,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Jules Winnfield",
+			"tmdbMovieId": 680,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Uma Thurman",
+			"character": "Mia Wallace",
+			"tmdbMovieId": 680,
+			"tmdbPersonId": 139,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

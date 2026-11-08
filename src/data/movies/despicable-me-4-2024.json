@@ -46,5 +46,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-05",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Steve Carell",
+			"character": "Gru (voice)",
+			"tmdbMovieId": 519182,
+			"tmdbPersonId": 4495,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kristen Wiig",
+			"character": "Lucy (voice)",
+			"tmdbMovieId": 519182,
+			"tmdbPersonId": 41091,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Will Ferrell",
+			"character": "Maxime (voice)",
+			"tmdbMovieId": 519182,
+			"tmdbPersonId": 23659,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

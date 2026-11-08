@@ -44,17 +44,33 @@
 			"notForYouIf": "Quizás no sea para vos si necesitás explicaciones ordenadas, emociones subrayadas o un viaje temporal que respete una sola línea."
 		},
 		"becauseYouLiked": [
-		"gravedad-2013",
-		"memoria-2021"
-	],
-	"related": [
-		"contacto-1997",
-		"gattaca-1997",
-		"el-dia-de-la-revelacion-2026",
-		"the-prestige-2006"
-	]
-},
+			"gravedad-2013",
+			"memoria-2021"
+		],
+		"related": [
+			"contacto-1997",
+			"gattaca-1997",
+			"el-dia-de-la-revelacion-2026",
+			"the-prestige-2006"
+		]
+	},
 	"review": "Shane Carruth convierte la ciencia ficción en una experiencia de trabajo, paranoia y amistad que se desgasta con cada cálculo. La jerga, los espacios pequeños y la narración fragmentada obligan a mirar de nuevo las escenas desde otra línea temporal. Carruth y David Sullivan actúan con una sequedad coherente con personajes que prefieren controlar fórmulas antes que hablar de miedo. La amistad se desgasta a medida que el experimento se llena de versiones, secretos y cálculos que nadie puede controlar del todo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Shane Carruth",
+			"character": "Aaron",
+			"tmdbMovieId": 14337,
+			"tmdbPersonId": 76624,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Sullivan",
+			"character": "Abe",
+			"tmdbMovieId": 14337,
+			"tmdbPersonId": 76625,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

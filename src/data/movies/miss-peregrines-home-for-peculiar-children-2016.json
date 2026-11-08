@@ -34,7 +34,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Tim Burton encuentra un hogar perfecto para su gótico infantil, con Eva Green y Asa Butterfield sosteniendo la aventura; la fantasía visual supera a una trama cargada de reglas.",
-			"whatToExpect": "Un orfanato en bucle temporal, chicos con poderes extraños, monstruos invisibles y una isla donde la protección también puede volverse encierro.",			"pace": "Alterna descubrimientos, explicaciones y persecuciones; mantiene movimiento, aunque el relato acumula nombres y reglas que dispersan el foco.",			"intensity": "La amenaza es de pesadilla infantil, con criaturas inquietantes y peligro moderado; el clima gótico importa más que la violencia.",			"practicalContext": "Con 127 minutos, conviene verla como aventura fantástica visual y no exigirle una mitología perfectamente ordenada.",			"forFansOf": "Para quienes disfrutan a Burton, casas góticas, poderes raros y una galería de personajes juveniles que parecen salidos de un cuento torcido.",			"notForYouIf": "Puede no ser para vos si buscás profundidad emocional, reglas simples o una aventura que desarrolle todas sus criaturas con el mismo cuidado."
+			"whatToExpect": "Un orfanato en bucle temporal, chicos con poderes extraños, monstruos invisibles y una isla donde la protección también puede volverse encierro.",
+			"pace": "Alterna descubrimientos, explicaciones y persecuciones; mantiene movimiento, aunque el relato acumula nombres y reglas que dispersan el foco.",
+			"intensity": "La amenaza es de pesadilla infantil, con criaturas inquietantes y peligro moderado; el clima gótico importa más que la violencia.",
+			"practicalContext": "Con 127 minutos, conviene verla como aventura fantástica visual y no exigirle una mitología perfectamente ordenada.",
+			"forFansOf": "Para quienes disfrutan a Burton, casas góticas, poderes raros y una galería de personajes juveniles que parecen salidos de un cuento torcido.",
+			"notForYouIf": "Puede no ser para vos si buscás profundidad emocional, reglas simples o una aventura que desarrolle todas sus criaturas con el mismo cuidado."
 		},
 		"becauseYouLiked": [
 			"charlie-and-the-chocolate-factory-2005",
@@ -49,5 +54,56 @@
 	},
 	"runtimeMinutes": 127,
 	"review": "Miss Peregrine's Home for Peculiar Children sigue a Jake, un adolescente que descubre una casa donde chicos con habilidades extrañas viven atrapados en un bucle temporal para protegerse de criaturas que los cazan. Tim Burton encuentra un mundo que le queda pintado: habitaciones góticas, poderes raros y monstruos con textura de pesadilla infantil. Eva Green le da firmeza y calidez a Miss Peregrine, aunque la narración acumula reglas y villanos hasta perder foco. Funciona mejor como experiencia visual que como aventura redonda, pero su imaginación evita que se caiga del todo.",
-	"reviewPublishedAt": "2026-04-27"
+	"reviewPublishedAt": "2026-04-27",
+	"castCharacters": [
+		{
+			"actor": "Eva Green",
+			"character": "Miss Peregrine",
+			"tmdbMovieId": 283366,
+			"tmdbPersonId": 10912,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Asa Butterfield",
+			"character": "Jacob",
+			"tmdbMovieId": 283366,
+			"tmdbPersonId": 77996,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris O'Dowd",
+			"character": "Frank",
+			"tmdbMovieId": 283366,
+			"tmdbPersonId": 40477,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Allison Janney",
+			"character": "Dr. Golan",
+			"tmdbMovieId": 283366,
+			"tmdbPersonId": 19,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Everett",
+			"character": "Ornithologist",
+			"tmdbMovieId": 283366,
+			"tmdbPersonId": 4757,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terence Stamp",
+			"character": "Abraham Portman",
+			"tmdbMovieId": 283366,
+			"tmdbPersonId": 28641,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Barron",
+			"tmdbMovieId": 283366,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

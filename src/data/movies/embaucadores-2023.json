@@ -57,5 +57,35 @@
 	},
 	"review": "Benjamin Caron arma un rompecabezas de estafas con departamentos elegantes, identidades cambiantes y una ciudad donde todos parecen estar vendiendo algo. La película disfruta sus giros y encuentra una energía liviana en la competencia entre tramposos, mientras Julianne Moore y Sebastian Stan le dan al duelo central una mezcla de cálculo y deseo. No todas las sorpresas tienen el mismo peso y el mecanismo se nota antes de tiempo, pero el reparto sostiene el entretenimiento y el diseño visual le pone brillo a una historia que sabe que está jugando con las convenciones del thriller de lujo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Julianne Moore",
+			"character": "Madeline Phillips",
+			"tmdbMovieId": 717980,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sebastian Stan",
+			"character": "Max",
+			"tmdbMovieId": 717980,
+			"tmdbPersonId": 60898,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Justice Smith",
+			"character": "Tom",
+			"tmdbMovieId": 717980,
+			"tmdbPersonId": 1029934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Lithgow",
+			"character": "Richard Hobbes",
+			"tmdbMovieId": 717980,
+			"tmdbPersonId": 12074,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

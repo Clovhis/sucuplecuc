@@ -8,7 +8,12 @@
 	"reviewPublishedAt": "2026-08-27",
 	"audienceRating": "ATP",
 	"category": "Comedia",
-	"genres": ["Animación", "Comedia", "Aventura", "Familiar"],
+	"genres": [
+		"Animación",
+		"Comedia",
+		"Aventura",
+		"Familiar"
+	],
 	"subgenres": [],
 	"country": "US",
 	"isArgentinian": false,
@@ -21,7 +26,13 @@
 		"Prime Video"
 	],
 	"director": "Dave Green",
-	"mainCast": ["Will Forte", "John Cena", "Lana Condor", "Tone Bell", "Luis Guzmán"],
+	"mainCast": [
+		"Will Forte",
+		"John Cena",
+		"Lana Condor",
+		"Tone Bell",
+		"Luis Guzmán"
+	],
 	"productionCompany": "Warner Bros. Pictures, Alcon Entertainment",
 	"cinepostaScore": 8,
 	"runtimeMinutes": 110,
@@ -38,18 +49,55 @@
 			"forFansOf": "Los gags de persecución, John Cena en modo caricatura y las películas que tratan una marca como villano.",
 			"notForYouIf": "Querés una historia adulta, humor sutil o un Coyote convertido en héroe solemne."
 		},
-	"becauseYouLiked": [
-		"toy-story-5-2026",
-		"ninja-turtles-caos-mutante-2023"
-	],
-	"related": [
-		"hoppers-2026",
-		"minions-monstruos-2026",
-		"lego-star-wars-the-mandalorian-2026",
-		"swapped-2026"
-	]
-},
+		"becauseYouLiked": [
+			"toy-story-5-2026",
+			"ninja-turtles-caos-mutante-2023"
+		],
+		"related": [
+			"hoppers-2026",
+			"minions-monstruos-2026",
+			"lego-star-wars-the-mandalorian-2026",
+			"swapped-2026"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Coyote vs. Acme entiende que el encanto de los Looney Tunes está en la precisión del gag y arma alrededor de esa idea una aventura sorprendentemente cálida. Will Forte funciona como el abogado que descubre una causa, mientras John Cena se divierte con la energía de un rival demasiado seguro de sí mismo. La mezcla de animación y acción real tiene buen ritmo, los secundarios saben cuándo entrar y el absurdo no tapa el corazón del relato. Hay chistes desparejos, pero el conjunto recupera una vitalidad que el personaje merecía en pantalla grande."
+	"review": "Coyote vs. Acme entiende que el encanto de los Looney Tunes está en la precisión del gag y arma alrededor de esa idea una aventura sorprendentemente cálida. Will Forte funciona como el abogado que descubre una causa, mientras John Cena se divierte con la energía de un rival demasiado seguro de sí mismo. La mezcla de animación y acción real tiene buen ritmo, los secundarios saben cuándo entrar y el absurdo no tapa el corazón del relato. Hay chistes desparejos, pero el conjunto recupera una vitalidad que el personaje merecía en pantalla grande.",
+	"castCharacters": [
+		{
+			"actor": "Will Forte",
+			"character": "Kevin Avery",
+			"tmdbMovieId": 1204680,
+			"tmdbPersonId": 62831,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Cena",
+			"character": "Buddy Crane",
+			"tmdbMovieId": 1204680,
+			"tmdbPersonId": 56446,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lana Condor",
+			"character": "Paige Avery",
+			"tmdbMovieId": 1204680,
+			"tmdbPersonId": 1452046,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tone Bell",
+			"character": "Sal Maltese",
+			"tmdbMovieId": 1204680,
+			"tmdbPersonId": 1120700,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Guzmán",
+			"character": "Judge Troppogrosso",
+			"tmdbMovieId": 1204680,
+			"tmdbPersonId": 40481,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

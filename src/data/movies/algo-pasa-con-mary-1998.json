@@ -57,5 +57,35 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 119
+	"runtimeMinutes": 119,
+	"castCharacters": [
+		{
+			"actor": "Ben Stiller",
+			"character": "Ted Stroehmann",
+			"tmdbMovieId": 544,
+			"tmdbPersonId": 7399,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cameron Diaz",
+			"character": "Mary Jensen",
+			"tmdbMovieId": 544,
+			"tmdbPersonId": 6941,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Dillon",
+			"character": "Pat Healy",
+			"tmdbMovieId": 544,
+			"tmdbPersonId": 2876,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Elliott",
+			"character": "Dom Woganowski",
+			"tmdbMovieId": 544,
+			"tmdbPersonId": 1534,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

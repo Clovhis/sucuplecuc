@@ -67,5 +67,49 @@
 	},
 	"runtimeMinutes": 127,
 	"review": "Ed Wood retrata al director de películas baratas que persigue su sueño en Hollywood pese a rodajes caóticos, poca plata y un talento muy discutible. Tim Burton elige mirarlo con ternura en vez de burlarse del desastre, y convierte su obstinación en una defensa del impulso de hacer cine aunque salga mal. Johnny Depp encuentra entusiasmo sin ironía en Wood, mientras Martin Landau le da a Bela Lugosi una mezcla de orgullo, dolor y humor inolvidable. Es una biografía muy estilizada, pero su afecto por los perdedores creativos la vuelve especial.",
-	"reviewPublishedAt": "2026-04-27"
+	"reviewPublishedAt": "2026-04-27",
+	"castCharacters": [
+		{
+			"actor": "Johnny Depp",
+			"character": "Ed Wood",
+			"tmdbMovieId": 522,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martin Landau",
+			"character": "Bela Lugosi",
+			"tmdbMovieId": 522,
+			"tmdbPersonId": 2641,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sarah Jessica Parker",
+			"character": "Dolores Fuller",
+			"tmdbMovieId": 522,
+			"tmdbPersonId": 520,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patricia Arquette",
+			"character": "Kathy O'Hara",
+			"tmdbMovieId": 522,
+			"tmdbPersonId": 4687,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeffrey Jones",
+			"character": "Criswell",
+			"tmdbMovieId": 522,
+			"tmdbPersonId": 4004,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Murray",
+			"character": "Bunny Breckinridge",
+			"tmdbMovieId": 522,
+			"tmdbPersonId": 1532,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

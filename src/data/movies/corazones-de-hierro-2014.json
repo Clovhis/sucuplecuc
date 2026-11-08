@@ -57,5 +57,42 @@
 	},
 	"review": "El interior del tanque es su mejor idea: un espacio mugriento y sofocante donde cinco soldados sobreviven tanto al enemigo como a sus propios límites. David Ayer filma los combates con claridad brutal y aprovecha el peso real de la máquina; Brad Pitt lidera con autoridad cansada, acompañado por un elenco que vuelve creíble la convivencia forzada. El guion carga demasiado las tintas en ciertos ritos de iniciación y el cierre empuja el heroísmo más de lo necesario. Aun así, cuando se queda junto a la tripulación y muestra la guerra como desgaste cotidiano, la película golpea con fuerza.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Brad Pitt",
+			"character": "Don 'Wardaddy' Collier",
+			"tmdbMovieId": 228150,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shia LaBeouf",
+			"character": "Boyd 'Bible' Swan",
+			"tmdbMovieId": 228150,
+			"tmdbPersonId": 10959,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Logan Lerman",
+			"character": "Norman Ellison",
+			"tmdbMovieId": 228150,
+			"tmdbPersonId": 33235,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Peña",
+			"character": "Trini 'Gordo' Garcia",
+			"tmdbMovieId": 228150,
+			"tmdbPersonId": 454,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Bernthal",
+			"character": "Grady 'Coon-Ass' Travis",
+			"tmdbMovieId": 228150,
+			"tmdbPersonId": 19498,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

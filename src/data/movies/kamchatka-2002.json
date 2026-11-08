@@ -43,18 +43,55 @@
 			"forFansOf": "Si te interesan dramas argentinos de memoria, familias bajo presión y actuaciones contenidas de Ricardo Darín y Cecilia Roth.",
 			"notForYouIf": "No es para vos si necesitás respuestas directas, escenas de acción o una infancia filmada sin tristeza."
 		},
-	"becauseYouLiked": [
-		"caballos-salvajes-1995",
-		"el-hijo-de-la-novia-2001"
-	],
-	"related": [
-		"la-historia-oficial-1985",
-		"tango-feroz-la-leyenda-de-tanguito-1993",
-		"la-cienaga-2001",
-		"un-lugar-en-el-mundo-1992"
-	]
-},
+		"becauseYouLiked": [
+			"caballos-salvajes-1995",
+			"el-hijo-de-la-novia-2001"
+		],
+		"related": [
+			"la-historia-oficial-1985",
+			"tango-feroz-la-leyenda-de-tanguito-1993",
+			"la-cienaga-2001",
+			"un-lugar-en-el-mundo-1992"
+		]
+	},
 	"review": "La película cuenta el terrorismo de Estado desde la percepción incompleta de un chico que entiende más por los silencios que por las palabras. Marcelo Piñeyro combina memoria, aventura doméstica y amenaza política sin convertir la infancia en una simple coartada emotiva. Ricardo Darín y Cecilia Roth trabajan la intimidad familiar con una mezcla de miedo, amor y urgencia que todavía conmueve. El escondite de Harry funciona como juego y defensa, una manera infantil de entender un peligro que los grandes apenas pueden explicar.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Dad",
+			"tmdbMovieId": 28710,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cecilia Roth",
+			"character": "Mother",
+			"tmdbMovieId": 28710,
+			"tmdbPersonId": 953,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Héctor Alterio",
+			"character": "Grandfather",
+			"tmdbMovieId": 28710,
+			"tmdbPersonId": 59136,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fernanda Mistral",
+			"character": "Grandmother",
+			"tmdbMovieId": 28710,
+			"tmdbPersonId": 101689,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tomás Fonzi",
+			"character": "Lucas",
+			"tmdbMovieId": 28710,
+			"tmdbPersonId": 101690,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -56,5 +56,42 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Julian Schnabel se manda una película enorme, de esas que mezclan mafia, poesía medieval y delirio autoral sin pedir permiso. Oscar Isaac carga con el doble juego de Nick Tosches y Dante, y la alternancia entre el policial neoyorquino y la historia antigua tiene imágenes que quedan pegadas.\n\nEl problema es que tanta ambición también la vuelve despareja. Algunas escenas parecen encontradas y otras se estiran hasta que la intensidad se diluye; el elenco gigante aporta presencia, pero no siempre tiene espacio para pesar de verdad. Igual, para quien disfrute los thrillers literarios, excesivos y medio febriles, hay bastante para rescatar."
+	"review": "Julian Schnabel se manda una película enorme, de esas que mezclan mafia, poesía medieval y delirio autoral sin pedir permiso. Oscar Isaac carga con el doble juego de Nick Tosches y Dante, y la alternancia entre el policial neoyorquino y la historia antigua tiene imágenes que quedan pegadas.\n\nEl problema es que tanta ambición también la vuelve despareja. Algunas escenas parecen encontradas y otras se estiran hasta que la intensidad se diluye; el elenco gigante aporta presencia, pero no siempre tiene espacio para pesar de verdad. Igual, para quien disfrute los thrillers literarios, excesivos y medio febriles, hay bastante para rescatar.",
+	"castCharacters": [
+		{
+			"actor": "Oscar Isaac",
+			"character": "Nick / Dante",
+			"tmdbMovieId": 1020047,
+			"tmdbPersonId": 25072,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gal Gadot",
+			"character": "Giulietta / Gemma",
+			"tmdbMovieId": 1020047,
+			"tmdbPersonId": 90633,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gerard Butler",
+			"character": "Louie / Pope Bonifacio",
+			"tmdbMovieId": 1020047,
+			"tmdbPersonId": 17276,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Malkovich",
+			"character": "Joe Black",
+			"tmdbMovieId": 1020047,
+			"tmdbPersonId": 6949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Momoa",
+			"character": "Rosario",
+			"tmdbMovieId": 1020047,
+			"tmdbPersonId": 117642,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -15,7 +15,7 @@
 	],
 	"country": "US",
 	"isArgentinian": false,
-  "poster": "assets/posters/1988/jungla-de-cristal-1988.webp",
+	"poster": "assets/posters/1988/jungla-de-cristal-1988.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "gYWvwkXreaI",
 	"releasePlatform": "Disney Plus",
@@ -43,18 +43,55 @@
 			"forFansOf": "Si te gustan thrillers de encierro, héroes agotados y acción filmada con claridad.",
 			"notForYouIf": "No es para vos si buscás un protagonista invencible, efectos digitales o una película sin humor."
 		},
-	"becauseYouLiked": [
-		"the-fast-and-the-furious-2001",
-		"armas-invencibles-police-story-1985"
-	],
-	"related": [
-		"bullitt-1968",
-		"fast-five-2011",
-		"furious-7-2015",
-		"looper-2012"
-	]
-},
+		"becauseYouLiked": [
+			"the-fast-and-the-furious-2001",
+			"armas-invencibles-police-story-1985"
+		],
+		"related": [
+			"bullitt-1968",
+			"fast-five-2011",
+			"furious-7-2015",
+			"looper-2012"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": "",
-	"review": "Duro de matar arranca como un thriller de encierro y termina marcando medio manual del cine de acción moderno. Lo que todavía la hace gigante no es solo cuánto aguanta McClane, sino cómo John McTiernan ordena el espacio para que cada disparo y cada subida de tensión se entiendan perfecto. Bruce Willis le da un costado humano y cansado que la vuelve más filosa que el héroe invencible de cartón. Si hoy sigue siendo referencia es porque casi todo lo que vino después le robó algo."
+	"review": "Duro de matar arranca como un thriller de encierro y termina marcando medio manual del cine de acción moderno. Lo que todavía la hace gigante no es solo cuánto aguanta McClane, sino cómo John McTiernan ordena el espacio para que cada disparo y cada subida de tensión se entiendan perfecto. Bruce Willis le da un costado humano y cansado que la vuelve más filosa que el héroe invencible de cartón. Si hoy sigue siendo referencia es porque casi todo lo que vino después le robó algo.",
+	"castCharacters": [
+		{
+			"actor": "Bruce Willis",
+			"character": "John McClane",
+			"tmdbMovieId": 562,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Rickman",
+			"character": "Hans Gruber",
+			"tmdbMovieId": 562,
+			"tmdbPersonId": 4566,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bonnie Bedelia",
+			"character": "Holly Gennaro McClane",
+			"tmdbMovieId": 562,
+			"tmdbPersonId": 7673,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Reginald VelJohnson",
+			"character": "Al Powell",
+			"tmdbMovieId": 562,
+			"tmdbPersonId": 7672,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Atherton",
+			"character": "Richard Thornburg",
+			"tmdbMovieId": 562,
+			"tmdbPersonId": 7676,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -59,5 +59,42 @@
 	},
 	"review": "Cuatro jóvenes paran en el lugar equivocado y Tobe Hooper filma el desastre como si fuera un documental encontrado en una ruta demasiado caliente. La violencia se sugiere tanto como se muestra, y esa decisión hace que la motosierra pese más que una montaña de efectos. Marilyn Burns atraviesa el infierno con una mezcla de agotamiento y puro instinto, mientras Gunnar Hansen convierte a Leatherface en una figura aterradora y patética a la vez. La película puede sentirse caótica y sucia, pero justamente ahí vive su potencia: parece un accidente que nunca termina de ocurrir del todo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Marilyn Burns",
+			"character": "Sally",
+			"tmdbMovieId": 30497,
+			"tmdbPersonId": 27798,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul A. Partain",
+			"character": "Franklin",
+			"tmdbMovieId": 30497,
+			"tmdbPersonId": 122455,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edwin Neal",
+			"character": "Hitchhiker",
+			"tmdbMovieId": 30497,
+			"tmdbPersonId": 27803,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jim Siedow",
+			"character": "Old Man",
+			"tmdbMovieId": 30497,
+			"tmdbPersonId": 104014,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gunnar Hansen",
+			"character": "Leatherface",
+			"tmdbMovieId": 30497,
+			"tmdbPersonId": 27804,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

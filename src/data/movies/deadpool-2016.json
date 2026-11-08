@@ -47,5 +47,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ryan Reynolds",
+			"character": "Wade / Deadpool",
+			"tmdbMovieId": 293660,
+			"tmdbPersonId": 10859,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Morena Baccarin",
+			"character": "Vanessa",
+			"tmdbMovieId": 293660,
+			"tmdbPersonId": 54882,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Skrein",
+			"character": "Ajax",
+			"tmdbMovieId": 293660,
+			"tmdbPersonId": 1047649,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

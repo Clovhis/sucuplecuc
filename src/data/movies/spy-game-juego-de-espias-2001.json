@@ -55,5 +55,21 @@
 	"releasePlatforms": [
 		"Prime Video"
 	],
-	"runtimeMinutes": 126
+	"runtimeMinutes": 126,
+	"castCharacters": [
+		{
+			"actor": "Robert Redford",
+			"character": "Nathan Muir",
+			"tmdbMovieId": 1535,
+			"tmdbPersonId": 4135,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Tom Bishop",
+			"tmdbMovieId": 1535,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -57,5 +57,28 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 106
+	"runtimeMinutes": 106,
+	"castCharacters": [
+		{
+			"actor": "Bruce Willis",
+			"character": "David Dunn",
+			"tmdbMovieId": 9741,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Elijah Price",
+			"tmdbMovieId": 9741,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robin Wright",
+			"character": "Audrey Dunn",
+			"tmdbMovieId": 9741,
+			"tmdbPersonId": 32,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

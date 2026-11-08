@@ -63,5 +63,49 @@
 	},
 	"runtimeMinutes": 92,
 	"review": "Beetlejuice sigue a un matrimonio muerto que intenta espantar a la familia que compra su casa, pero termina recurriendo a un bioexorcista mucho más problemático que los vivos. Tim Burton la filma como si estuviera hecha con cables pelados: maquetas, maquillaje y reglas del más allá que cambian a cada rato con una energía rara y veloz. Michael Keaton entra poco, pero se adueña de cada escena con un descontrol perfectamente medido. La historia se desarma un poco en el final, aunque su fiesta macabra y sus ideas visuales siguen levantando cualquier momento torcido.",
-	"reviewPublishedAt": "2026-04-27"
+	"reviewPublishedAt": "2026-04-27",
+	"castCharacters": [
+		{
+			"actor": "Alec Baldwin",
+			"character": "Adam",
+			"tmdbMovieId": 4011,
+			"tmdbPersonId": 7447,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geena Davis",
+			"character": "Barbara",
+			"tmdbMovieId": 4011,
+			"tmdbPersonId": 16935,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeffrey Jones",
+			"character": "Charles",
+			"tmdbMovieId": 4011,
+			"tmdbPersonId": 4004,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine O'Hara",
+			"character": "Delia",
+			"tmdbMovieId": 4011,
+			"tmdbPersonId": 11514,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Winona Ryder",
+			"character": "Lydia",
+			"tmdbMovieId": 4011,
+			"tmdbPersonId": 1920,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Keaton",
+			"character": "Betelgeuse",
+			"tmdbMovieId": 4011,
+			"tmdbPersonId": 2232,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

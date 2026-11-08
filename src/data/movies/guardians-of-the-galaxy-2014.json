@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chris Pratt",
+			"character": "Peter Quill",
+			"tmdbMovieId": 118340,
+			"tmdbPersonId": 73457,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zoe Saldaña",
+			"character": "Gamora",
+			"tmdbMovieId": 118340,
+			"tmdbPersonId": 8691,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dave Bautista",
+			"character": "Drax",
+			"tmdbMovieId": 118340,
+			"tmdbPersonId": 543530,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

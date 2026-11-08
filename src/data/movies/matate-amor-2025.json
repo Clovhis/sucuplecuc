@@ -53,5 +53,28 @@
 	"catalogAddedAt": "2026-11-03",
 	"runtimeMinutes": 119,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jennifer Lawrence",
+			"character": "Grace",
+			"tmdbMovieId": 1033148,
+			"tmdbPersonId": 72129,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Pattinson",
+			"character": "Jackson",
+			"tmdbMovieId": 1033148,
+			"tmdbPersonId": 11288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sissy Spacek",
+			"character": "Pam",
+			"tmdbMovieId": 1033148,
+			"tmdbPersonId": 5606,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

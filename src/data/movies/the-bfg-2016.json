@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "Mi amigo el gigante sigue a Sophie, una huérfana que es llevada al País de los Gigantes y descubre que su secuestrador es un gigante amable que atrapa sueños. Steven Spielberg filma ese mundo con una delicadeza visual enorme, pero el relato avanza con tanta suavidad que por momentos se queda sin empuje. Mark Rylance convierte al gigante en una criatura entrañable sin necesidad de gestos grandilocuentes, y Ruby Barnhill sostiene bien la curiosidad de Sophie. No tiene la fuerza de los mejores cuentos del director, aunque el vínculo central posee una dulzura genuina.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Mark Rylance",
+			"character": "The BFG",
+			"tmdbMovieId": 267935,
+			"tmdbPersonId": 40900,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ruby Barnhill",
+			"character": "Sophie",
+			"tmdbMovieId": 267935,
+			"tmdbPersonId": 1425420,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rebecca Hall",
+			"character": "Mary",
+			"tmdbMovieId": 267935,
+			"tmdbPersonId": 15556,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jemaine Clement",
+			"character": "Fleshlumpeater",
+			"tmdbMovieId": 267935,
+			"tmdbPersonId": 55936,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Hader",
+			"character": "Bloodbottler",
+			"tmdbMovieId": 267935,
+			"tmdbPersonId": 19278,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

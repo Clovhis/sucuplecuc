@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Michael B. Jordan",
+			"character": "Adonis Creed",
+			"tmdbMovieId": 677179,
+			"tmdbPersonId": 135651,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tessa Thompson",
+			"character": "Bianca Creed",
+			"tmdbMovieId": 677179,
+			"tmdbPersonId": 62561,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonathan Majors",
+			"character": "Damian 'Dame' Anderson",
+			"tmdbMovieId": 677179,
+			"tmdbPersonId": 1674162,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -46,5 +46,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Keanu Reeves",
+			"character": "John Wick",
+			"tmdbMovieId": 603692,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laurence Fishburne",
+			"character": "Bowery King",
+			"tmdbMovieId": 603692,
+			"tmdbPersonId": 2975,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Georgiou",
+			"character": "The Elder",
+			"tmdbMovieId": 603692,
+			"tmdbPersonId": 570010,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

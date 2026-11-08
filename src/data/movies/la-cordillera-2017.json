@@ -37,18 +37,41 @@
 			"forFansOf": "Si te gustan thrillers políticos, escenarios cerrados y Ricardo Darín en modo cálculo permanente.",
 			"notForYouIf": "No es para vos si buscás acción abierta, respuestas geopolíticas exhaustivas o un final que explique cada símbolo."
 		},
-	"becauseYouLiked": [
-		"el-aura-2005",
-		"argentina-1985-2022"
-	],
-	"related": [
-		"relatos-salvajes-2014",
-		"barreda-2026",
-		"truman-2015",
-		"las-siamesas-2020"
-	]
-},
+		"becauseYouLiked": [
+			"el-aura-2005",
+			"argentina-1985-2022"
+		],
+		"related": [
+			"relatos-salvajes-2014",
+			"barreda-2026",
+			"truman-2015",
+			"las-siamesas-2020"
+		]
+	},
 	"synopsis": "Mientras se abre una cumbre de naciones latinoamericanas en una estación de esquí en Chile, todas las miradas están puestas en Hernán Blanco, el nuevo presidente de Argentina.",
 	"audienceRating": "+12",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Hernán Blanco",
+			"tmdbMovieId": 440374,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Érica Rivas",
+			"character": "Lusia Cordero",
+			"tmdbMovieId": 440374,
+			"tmdbPersonId": 141455,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dolores Fonzi",
+			"character": "Marina Blanco",
+			"tmdbMovieId": 440374,
+			"tmdbPersonId": 74909,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

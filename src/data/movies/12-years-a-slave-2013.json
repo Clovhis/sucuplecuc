@@ -62,5 +62,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chiwetel Ejiofor",
+			"character": "Solomon Northup",
+			"tmdbMovieId": 76203,
+			"tmdbPersonId": 5294,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Fassbender",
+			"character": "Edwin Epps",
+			"tmdbMovieId": 76203,
+			"tmdbPersonId": 17288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lupita Nyong'o",
+			"character": "Patsey",
+			"tmdbMovieId": 76203,
+			"tmdbPersonId": 1267329,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

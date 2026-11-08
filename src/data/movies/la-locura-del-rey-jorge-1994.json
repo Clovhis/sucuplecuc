@@ -53,5 +53,35 @@
 			"boogie-nights-1997"
 		]
 	},
-	"review": "La película convierte una crisis de salud mental en un drama de poder, pero nunca pierde de vista el costo íntimo de la corona. Nigel Hawthorne le da al rey una mezcla incómoda de autoridad, miedo y ternura; Helen Mirren, en cambio, arma una reina Charlotte que no es decoración cortesana sino una mujer negociando cuánto puede proteger a su marido. Nicholas Hytner conserva el pulso teatral sin encerrar la puesta, y el humor negro oxigena una historia cada vez más dolorosa."
+	"review": "La película convierte una crisis de salud mental en un drama de poder, pero nunca pierde de vista el costo íntimo de la corona. Nigel Hawthorne le da al rey una mezcla incómoda de autoridad, miedo y ternura; Helen Mirren, en cambio, arma una reina Charlotte que no es decoración cortesana sino una mujer negociando cuánto puede proteger a su marido. Nicholas Hytner conserva el pulso teatral sin encerrar la puesta, y el humor negro oxigena una historia cada vez más dolorosa.",
+	"castCharacters": [
+		{
+			"actor": "Nigel Hawthorne",
+			"character": "George III",
+			"tmdbMovieId": 11318,
+			"tmdbPersonId": 15788,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helen Mirren",
+			"character": "Queen Charlotte",
+			"tmdbMovieId": 11318,
+			"tmdbPersonId": 15735,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian Holm",
+			"character": "Willis",
+			"tmdbMovieId": 11318,
+			"tmdbPersonId": 65,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Everett",
+			"character": "Prince of Wales",
+			"tmdbMovieId": 11318,
+			"tmdbPersonId": 4757,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

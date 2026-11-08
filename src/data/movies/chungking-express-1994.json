@@ -45,18 +45,48 @@
 			"forFansOf": "El romance urbano, Wong Kar-Wai y las películas que convierten una ciudad inquieta en estado de ánimo.",
 			"notForYouIf": "Necesitás parejas estables, explicaciones completas o un policial que ocupe más espacio que el deseo."
 		},
-	"becauseYouLiked": [
-		"deseando-amar-2000",
-		"roofman-un-buen-ladron-2025"
-	],
-	"related": [
-		"vicky-cristina-barcelona-2008",
-		"manhattan-1979",
-		"mujer-bonita-1990",
-		"loco-y-estupido-amor-2011"
-	]
-},
+		"becauseYouLiked": [
+			"deseando-amar-2000",
+			"roofman-un-buen-ladron-2025"
+		],
+		"related": [
+			"vicky-cristina-barcelona-2008",
+			"manhattan-1979",
+			"mujer-bonita-1990",
+			"loco-y-estupido-amor-2011"
+		]
+	},
 	"review": "Wong Kar-wai arma dos romances sobre la velocidad con que una ciudad produce encuentros y despedidas. Las repeticiones, las canciones y la cámara acelerada vuelven el deseo una experiencia de tiempo desacomodado. Brigitte Lin, Takeshi Kaneshiro, Tony Leung y Faye Wong sostienen personajes que esconden la tristeza detrás de gestos mínimos. Las dos historias comparten la ciudad, pero cada una encuentra su propio ritmo para hablar de la soledad sin volverla solemne.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Takeshi Kaneshiro",
+			"character": "He Zhiwu / Cop 223",
+			"tmdbMovieId": 11104,
+			"tmdbPersonId": 43661,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Leung Chiu-wai",
+			"character": "Cop 663",
+			"tmdbMovieId": 11104,
+			"tmdbPersonId": 1337,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Faye Wong",
+			"character": "Faye",
+			"tmdbMovieId": 11104,
+			"tmdbPersonId": 12671,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Valerie Chow",
+			"character": "Air Hostess",
+			"tmdbMovieId": 11104,
+			"tmdbPersonId": 119875,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

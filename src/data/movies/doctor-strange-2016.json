@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Benedict Cumberbatch",
+			"character": "Dr. Stephen Strange",
+			"tmdbMovieId": 284052,
+			"tmdbPersonId": 71580,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chiwetel Ejiofor",
+			"character": "Mordo",
+			"tmdbMovieId": 284052,
+			"tmdbPersonId": 5294,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel McAdams",
+			"character": "Dr. Christine Palmer",
+			"tmdbMovieId": 284052,
+			"tmdbPersonId": 53714,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

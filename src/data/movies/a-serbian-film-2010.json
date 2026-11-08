@@ -41,17 +41,17 @@
 			"notForYouIf": "Necesitás personajes, metáforas claras o una experiencia de horror que no confunda crueldad con profundidad."
 		},
 		"becauseYouLiked": [
-		"martires-2008",
-		"la-matanza-de-texas-1974"
-	],
-	"related": [
-		"saw-2004",
-		"saw-x-2023",
-		"tu-madre-se-ha-comido-a-mi-perro-1992",
-		"planet-terror-2007"
-	]
-},
-  "review": "A Serbian Film arranca como una pesadilla de explotación y usa a un actor retirado para empujar al espectador hacia situaciones cada vez más extremas. Srđan Spasojević construye un clima sucio, opresivo y deliberadamente desagradable; Srđan Todorović sostiene el desconcierto del protagonista con suficiente convicción. El problema es que la película confía casi exclusivamente en escalar el shock y reduce a sus personajes a herramientas de esa provocación. La posible lectura sobre violencia, poder y degradación queda enterrada bajo decisiones que buscan impresionar antes que desarrollar una idea. Puede resultar insoportable incluso para público curtido en terror extremo. No la recomendaría: su crueldad termina pesando más que cualquier cosa que quiera decir.",
+			"martires-2008",
+			"la-matanza-de-texas-1974"
+		],
+		"related": [
+			"saw-2004",
+			"saw-x-2023",
+			"tu-madre-se-ha-comido-a-mi-perro-1992",
+			"planet-terror-2007"
+		]
+	},
+	"review": "A Serbian Film arranca como una pesadilla de explotación y usa a un actor retirado para empujar al espectador hacia situaciones cada vez más extremas. Srđan Spasojević construye un clima sucio, opresivo y deliberadamente desagradable; Srđan Todorović sostiene el desconcierto del protagonista con suficiente convicción. El problema es que la película confía casi exclusivamente en escalar el shock y reduce a sus personajes a herramientas de esa provocación. La posible lectura sobre violencia, poder y degradación queda enterrada bajo decisiones que buscan impresionar antes que desarrollar una idea. Puede resultar insoportable incluso para público curtido en terror extremo. No la recomendaría: su crueldad termina pesando más que cualquier cosa que quiera decir.",
 	"synopsis": "Un actor porno retirado acepta un trabajo supuestamente artístico para salvar a su familia, sin saber que está entrando en una pesadilla diseñada para empujarlo cada vez más al límite.",
 	"audienceRating": "+18",
 	"isPremiere": false,
@@ -61,5 +61,35 @@
 		"Psicológico",
 		"Exploitation"
 	],
-	"reviewPublishedAt": "2026-05-26"
+	"reviewPublishedAt": "2026-05-26",
+	"castCharacters": [
+		{
+			"actor": "Sergej Trifunović",
+			"character": "Vukmir",
+			"tmdbMovieId": 73861,
+			"tmdbPersonId": 66027,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jelena Gavrilović",
+			"character": "Marija",
+			"tmdbMovieId": 73861,
+			"tmdbPersonId": 574658,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Slobodan Beštić",
+			"character": "Marko",
+			"tmdbMovieId": 73861,
+			"tmdbPersonId": 1049995,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katarina Žutić",
+			"character": "Lejla",
+			"tmdbMovieId": 73861,
+			"tmdbPersonId": 111065,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

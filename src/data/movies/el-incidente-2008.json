@@ -53,5 +53,28 @@
 		]
 	},
 	"runtimeMinutes": 91,
-	"review": "M. Night Shyamalan parte de una imagen inquietante y consigue algunos momentos de paranoia genuina en rutas desiertas y casas donde nadie quiere abrir la puerta. Después la película se desordena: Wahlberg y Zooey Deschanel quedan atrapados en diálogos rígidos, y la explicación final no logra sostener el misterio que prometía. Dura poco y tiene una rareza que puede divertir a quien le tenga paciencia, pero el tono oscila tanto que la tensión se evapora justo cuando debería crecer."
+	"review": "M. Night Shyamalan parte de una imagen inquietante y consigue algunos momentos de paranoia genuina en rutas desiertas y casas donde nadie quiere abrir la puerta. Después la película se desordena: Wahlberg y Zooey Deschanel quedan atrapados en diálogos rígidos, y la explicación final no logra sostener el misterio que prometía. Dura poco y tiene una rareza que puede divertir a quien le tenga paciencia, pero el tono oscila tanto que la tensión se evapora justo cuando debería crecer.",
+	"castCharacters": [
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Elliot Moore",
+			"tmdbMovieId": 8645,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zooey Deschanel",
+			"character": "Alma Moore",
+			"tmdbMovieId": 8645,
+			"tmdbPersonId": 11664,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Leguizamo",
+			"character": "Julian",
+			"tmdbMovieId": 8645,
+			"tmdbPersonId": 5723,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

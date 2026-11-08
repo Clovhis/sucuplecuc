@@ -50,5 +50,28 @@
     }
   },
   "review": "Godard sigue a Ferdinand y Marianne como si el viaje pudiera inventar otra forma de vivir, pero cada intento de escapar queda atravesado por la violencia y por los relatos que ambos se cuentan. Belmondo y Karina discuten, actúan y se interrumpen con una libertad que el montaje acompaña mediante cortes bruscos, colores intensos y desvíos literarios. La película puede parecer ligera de una escena a otra, aunque su humor no borra la distancia entre los dos protagonistas. Lo que empieza como fuga romántica se va rompiendo en imágenes que no buscan una continuidad cómoda.",
-  "runtimeMinutes": 110
+  "runtimeMinutes": 110,
+  "castCharacters": [
+    {
+      "actor": "Jean-Paul Belmondo",
+      "character": "Ferdinand Griffon, 'Pierrot'",
+      "tmdbMovieId": 2786,
+      "tmdbPersonId": 3829,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Anna Karina",
+      "character": "Marianne Renoir",
+      "tmdbMovieId": 2786,
+      "tmdbPersonId": 18197,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Dirk Sanders",
+      "character": "Fred (uncredited)",
+      "tmdbMovieId": 2786,
+      "tmdbPersonId": 20420,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

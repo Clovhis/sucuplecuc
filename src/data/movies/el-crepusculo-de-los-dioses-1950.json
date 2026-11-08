@@ -49,18 +49,55 @@
 			"forFansOf": "Fans de Billy Wilder, de los relatos sobre Hollywood y de los personajes que se aferran a una imagen hasta convertirla en una prisión.",
 			"notForYouIf": "Buscás ritmo moderno, héroes fáciles o una sátira suave. Su humor es oscuro y su elegancia no tapa la crueldad."
 		},
-	"becauseYouLiked": [
-		"the-lost-weekend-1945",
-		"grupo-salvaje-1969"
-	],
-	"related": [
-		"network-un-mundo-implacable-1976",
-		"the-bridge-on-the-river-kwai-1957",
-		"the-apartment-1960",
-		"pacto-de-sangre-1944"
-	]
-},
+		"becauseYouLiked": [
+			"the-lost-weekend-1945",
+			"grupo-salvaje-1969"
+		],
+		"related": [
+			"network-un-mundo-implacable-1976",
+			"the-bridge-on-the-river-kwai-1957",
+			"the-apartment-1960",
+			"pacto-de-sangre-1944"
+		]
+	},
 	"review": "Billy Wilder mira Hollywood como una fábrica de sueños que también sabe devorar a quienes deja atrás. La voz en off, la mansión detenida en el tiempo y el humor venenoso forman una maquinaria narrativa tan elegante como cruel. Gloria Swanson convierte la exageración de Norma Desmond en una tragedia auténtica, con William Holden como testigo y cómplice. La mansión conserva la gloria como una escenografía cerrada, y Norma parece la última estrella que todavía puede habitarla.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "William Holden",
+			"character": "Joe Gillis",
+			"tmdbMovieId": 599,
+			"tmdbPersonId": 8252,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gloria Swanson",
+			"character": "Norma Desmond",
+			"tmdbMovieId": 599,
+			"tmdbPersonId": 8629,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Erich von Stroheim",
+			"character": "Max von Mayerling",
+			"tmdbMovieId": 599,
+			"tmdbPersonId": 8630,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nancy Olson",
+			"character": "Betty Schaefer",
+			"tmdbMovieId": 599,
+			"tmdbPersonId": 8631,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fred Clark",
+			"character": "Sheldrake",
+			"tmdbMovieId": 599,
+			"tmdbPersonId": 8632,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

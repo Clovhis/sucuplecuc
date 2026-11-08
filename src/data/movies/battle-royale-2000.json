@@ -57,5 +57,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Tatsuya Fujiwara",
+			"character": "Shuya Nanahara (Boy #15)",
+			"tmdbMovieId": 3176,
+			"tmdbPersonId": 31078,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aki Maeda",
+			"character": "Noriko Nakagawa (Girl #15)",
+			"tmdbMovieId": 3176,
+			"tmdbPersonId": 31079,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Takeshi Kitano",
+			"character": "Kitano",
+			"tmdbMovieId": 3176,
+			"tmdbPersonId": 3317,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chiaki Kuriyama",
+			"character": "Takako Chigusa (Girl #13)",
+			"tmdbMovieId": 3176,
+			"tmdbPersonId": 2538,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

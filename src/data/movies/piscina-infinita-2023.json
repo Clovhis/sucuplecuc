@@ -56,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "CA",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Alexander Skarsgård",
+			"character": "James Foster",
+			"tmdbMovieId": 667216,
+			"tmdbPersonId": 28846,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mia Goth",
+			"character": "Gabi Bauer",
+			"tmdbMovieId": 667216,
+			"tmdbPersonId": 1137824,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

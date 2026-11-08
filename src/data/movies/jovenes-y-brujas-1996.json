@@ -57,5 +57,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Robin Tunney",
+			"character": "Sarah",
+			"tmdbMovieId": 9100,
+			"tmdbPersonId": 17346,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fairuza Balk",
+			"character": "Nancy",
+			"tmdbMovieId": 9100,
+			"tmdbPersonId": 826,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Neve Campbell",
+			"character": "Bonnie",
+			"tmdbMovieId": 9100,
+			"tmdbPersonId": 9206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel True",
+			"character": "Rochelle",
+			"tmdbMovieId": 9100,
+			"tmdbPersonId": 19222,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

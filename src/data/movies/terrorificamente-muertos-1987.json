@@ -58,5 +58,21 @@
 	},
 	"review": "El mismo bosque vuelve a ser una trampa, pero Sam Raimi cambia el terror sucio del primer capítulo por una comedia física desatada. Bruce Campbell descubre que Ash puede ser un héroe, un payaso y un pobre tipo al mismo tiempo, y cada parte de su cuerpo recibe una broma nueva. Los efectos prácticos tienen una elasticidad delirante: una cabeza que habla, una mano que se independiza y una casa que parece reírse del protagonista. La crítica la terminó abrazando por esa mezcla de horror y slapstick; sigue siendo una máquina de ritmo, sangre y carcajadas nerviosas.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Bruce Campbell",
+			"character": "Ash",
+			"tmdbMovieId": 765,
+			"tmdbPersonId": 11357,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kassie DePaiva",
+			"character": "Bobby Joe",
+			"tmdbMovieId": 765,
+			"tmdbPersonId": 11751,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

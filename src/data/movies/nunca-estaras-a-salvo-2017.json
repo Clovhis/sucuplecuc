@@ -53,7 +53,11 @@
 		"tenSecondTake": {
 			"verdict": "Lynne Ramsay cuenta la violencia como fragmentos de memoria y sonido; Joaquin Phoenix hace de Joe una fuerza brutal que apenas conserva un lugar para la ternura.",
 			"whatToExpect": "Rescates, secuestros, recuerdos, martillo, ciudad y una misión que mezcla poder político con un pasado que nunca deja de volver.",
-			"pace": "Es breve y cortada, con elipsis que aparecen antes de explicar la acción; avanza por impactos más que por escenas completas.",			"intensity": "La violencia es seca y perturbadora, pero el trauma importa tanto como el golpe; la película prefiere sugerir la herida antes que narrarla.",			"practicalContext": "Con 89 minutos, es una experiencia concentrada para una noche de thriller psicológico; no conviene verla distraído ni esperando una trama convencional.",			"forFansOf": "Para quienes disfrutan a Ramsay, Phoenix y cine criminal que trabaja el sonido, la elipsis y el cuerpo quebrado.",			"notForYouIf": "No es para vos si necesitás acción explicada, continuidad lineal o una película de rescate que recompense la violencia con justicia clara."
+			"pace": "Es breve y cortada, con elipsis que aparecen antes de explicar la acción; avanza por impactos más que por escenas completas.",
+			"intensity": "La violencia es seca y perturbadora, pero el trauma importa tanto como el golpe; la película prefiere sugerir la herida antes que narrarla.",
+			"practicalContext": "Con 89 minutos, es una experiencia concentrada para una noche de thriller psicológico; no conviene verla distraído ni esperando una trama convencional.",
+			"forFansOf": "Para quienes disfrutan a Ramsay, Phoenix y cine criminal que trabaja el sonido, la elipsis y el cuerpo quebrado.",
+			"notForYouIf": "No es para vos si necesitás acción explicada, continuidad lineal o una película de rescate que recompense la violencia con justicia clara."
 		},
 		"becauseYouLiked": [
 			"prisioneros-2013",
@@ -66,5 +70,35 @@
 			"primicia-mortal-2014"
 		]
 	},
-	"review": "Lynne Ramsay cuenta este descenso criminal como una serie de impactos, recuerdos y sonidos que llegan antes que la explicación. Phoenix hace de Joe un hombre enorme y quebrado, alguien capaz de una violencia brutal y, al mismo tiempo, de una ternura que apenas se permite mostrar. La película corta la acción en el momento menos esperado y convierte la elipsis en una forma de trauma. Su duración breve no la vuelve ligera: es seca, perturbadora y muy precisa en la manera de sugerir que el pasado nunca desaparece, sólo cambia de habitación."
+	"review": "Lynne Ramsay cuenta este descenso criminal como una serie de impactos, recuerdos y sonidos que llegan antes que la explicación. Phoenix hace de Joe un hombre enorme y quebrado, alguien capaz de una violencia brutal y, al mismo tiempo, de una ternura que apenas se permite mostrar. La película corta la acción en el momento menos esperado y convierte la elipsis en una forma de trauma. Su duración breve no la vuelve ligera: es seca, perturbadora y muy precisa en la manera de sugerir que el pasado nunca desaparece, sólo cambia de habitación.",
+	"castCharacters": [
+		{
+			"actor": "Joaquin Phoenix",
+			"character": "Joe",
+			"tmdbMovieId": 398181,
+			"tmdbPersonId": 73421,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judith Roberts",
+			"character": "Joe's Mother",
+			"tmdbMovieId": 398181,
+			"tmdbPersonId": 14797,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Doman",
+			"character": "John McCleary",
+			"tmdbMovieId": 398181,
+			"tmdbPersonId": 4735,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alessandro Nivola",
+			"character": "Governor Williams",
+			"tmdbMovieId": 398181,
+			"tmdbPersonId": 4941,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

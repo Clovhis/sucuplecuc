@@ -54,5 +54,35 @@
 		]
 	},
 	"review": "Riesgo en el aire reúne a Cage, Cusack y Malkovich en una película que entiende su propia exageración. Simon West encadena la fuga, el choque de personalidades y los aterrizajes imposibles con el pulso de una historieta de acción; el contraste de Cage como exsoldado que quiere volver a casa le da un centro afectivo a tanto metal y humo. Steve Buscemi se queda con uno de sus desvíos más memorables, sin convertirlo en otro villano de manual.",
-	"catalogAddedAt": "2026-11-06"
+	"catalogAddedAt": "2026-11-06",
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "Cameron Poe",
+			"tmdbMovieId": 1701,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Cusack",
+			"character": "Agent Vince Larkin",
+			"tmdbMovieId": 1701,
+			"tmdbPersonId": 3036,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Malkovich",
+			"character": "Cyrus \"The Virus\" Grissom",
+			"tmdbMovieId": 1701,
+			"tmdbPersonId": 6949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ving Rhames",
+			"character": "Nathan \"Diamond Dog\" Jones",
+			"tmdbMovieId": 1701,
+			"tmdbPersonId": 10182,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

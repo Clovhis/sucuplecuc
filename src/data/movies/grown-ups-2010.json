@@ -61,5 +61,49 @@
 	],
 	"runtimeMinutes": 102,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Lenny Feder",
+			"tmdbMovieId": 38365,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin James",
+			"character": "Eric Lamonsoff",
+			"tmdbMovieId": 38365,
+			"tmdbPersonId": 32895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Rock",
+			"character": "Kurt McKenzie",
+			"tmdbMovieId": 38365,
+			"tmdbPersonId": 2632,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Spade",
+			"character": "Marcus Higgins",
+			"tmdbMovieId": 38365,
+			"tmdbPersonId": 60950,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rob Schneider",
+			"character": "Rob Hilliard",
+			"tmdbMovieId": 38365,
+			"tmdbPersonId": 60949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sunny Sandler",
+			"character": "Tardio's Daughter",
+			"tmdbMovieId": 38365,
+			"tmdbPersonId": 1271681,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

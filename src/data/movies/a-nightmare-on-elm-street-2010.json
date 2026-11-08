@@ -55,5 +55,28 @@
 	"review": "Pesadilla en Elm Street: El origen intenta volver más realista a Freddy Krueger, pero en el camino pierde bastante de la imaginación sucia que hacía tan incómoda a la saga. Samuel Bayer filma con un acabado oscuro y prolijo, aunque los sueños rara vez encuentran una imagen que quede pegada en la cabeza. Jackie Earle Haley busca una voz más áspera para el asesino, pero el maquillaje y el guion le sacan misterio en vez de sumarle presencia. Rooney Mara transmite bien el desconcierto de Nancy, aun cuando los personajes secundarios quedan muy desdibujados. Tiene algún momento tenso y una producción correcta, pero como remake se siente demasiado explicada y poco soñada.",
 	"synopsis": "Un grupo de adolescentes de Springwood empieza a morir mientras duerme, acosado por Freddy Krueger, una figura quemada que invade sus pesadillas. Al investigar el vínculo entre sus familias y ese asesino, descubren una verdad que los dejó marcados desde antes de nacer.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Rooney Mara",
+			"character": "Nancy Holbrook",
+			"tmdbMovieId": 23437,
+			"tmdbPersonId": 108916,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kyle Gallner",
+			"character": "Quentin Smith",
+			"tmdbMovieId": 23437,
+			"tmdbPersonId": 59219,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jackie Earle Haley",
+			"character": "Freddy Krueger",
+			"tmdbMovieId": 23437,
+			"tmdbPersonId": 17183,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

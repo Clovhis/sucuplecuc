@@ -44,18 +44,55 @@
 			"forFansOf": "El noir futurista, los mundos imposibles y las películas donde la ciudad es una máquina de identidad.",
 			"notForYouIf": "Buscás ciencia ficción realista, respuestas rápidas o personajes que no tengan que descubrir quiénes son."
 		},
-	"becauseYouLiked": [
-		"contacto-1997",
-		"cube-1997"
-	],
-	"related": [
-		"the-matrix-1999",
-		"la-zona-muerta-1983",
-		"existenz-1999",
-		"gattaca-1997"
-	]
-},
+		"becauseYouLiked": [
+			"contacto-1997",
+			"cube-1997"
+		],
+		"related": [
+			"the-matrix-1999",
+			"la-zona-muerta-1983",
+			"existenz-1999",
+			"gattaca-1997"
+		]
+	},
 	"review": "Alex Proyas arma un noir de ciencia ficción sobre la identidad como algo que otros pueden editar. La escenografía expresionista, la lluvia y la ciudad imposible producen un mundo de sombras con reglas propias. Rufus Sewell mantiene el desconcierto en el centro, acompañado por William Hurt y Kiefer Sutherland. La identidad cambia con la ciudad, y Proyas aprovecha ese mundo imposible para que cada revelación modifique también lo que significa ser uno mismo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Rufus Sewell",
+			"character": "John Murdoch",
+			"tmdbMovieId": 2666,
+			"tmdbPersonId": 17328,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Hurt",
+			"character": "Inspector Frank Bumstead",
+			"tmdbMovieId": 2666,
+			"tmdbPersonId": 227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kiefer Sutherland",
+			"character": "Dr. Daniel P. Schreber",
+			"tmdbMovieId": 2666,
+			"tmdbPersonId": 2628,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Connelly",
+			"character": "Emma Murdoch",
+			"tmdbMovieId": 2666,
+			"tmdbPersonId": 6161,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard O'Brien",
+			"character": "Mr. Hand",
+			"tmdbMovieId": 2666,
+			"tmdbPersonId": 13474,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

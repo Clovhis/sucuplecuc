@@ -58,5 +58,42 @@
 		"Paramount Plus"
 	],
 	"runtimeMinutes": 94,
-	"releaseDate": "1993-12-23"
+	"releaseDate": "1993-12-23",
+	"castCharacters": [
+		{
+			"actor": "Raúl Juliá",
+			"character": "Gomez Addams",
+			"tmdbMovieId": 2758,
+			"tmdbPersonId": 27888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anjelica Huston",
+			"character": "Morticia Addams",
+			"tmdbMovieId": 2758,
+			"tmdbPersonId": 5657,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Lloyd",
+			"character": "Uncle Fester",
+			"tmdbMovieId": 2758,
+			"tmdbPersonId": 1062,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christina Ricci",
+			"character": "Wednesday Addams",
+			"tmdbMovieId": 2758,
+			"tmdbPersonId": 6886,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Cusack",
+			"character": "Debbie Jellinsky",
+			"tmdbMovieId": 2758,
+			"tmdbPersonId": 3234,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -40,19 +40,42 @@
 			"forFansOf": "Puede gustarte si disfrutás el anime de Makoto Shinkai, los viajes de reparación y las historias donde una aventura fantástica sirve para hablar de duelo, memoria y comunidad.",
 			"notForYouIf": "Quizás no sea para vos si te molestan las explicaciones insistentes, los cambios bruscos de tono o una película que prefiere emocionar con paisajes y música antes que con realismo."
 		},
-	"becauseYouLiked": [
-		"your-name-2016",
-		"the-boy-and-the-heron-2023"
-	],
-	"related": [
-		"princess-mononoke-1997",
-		"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025",
-		"howls-moving-castle-2004",
-		"spirited-away-2001"
-	]
-},
+		"becauseYouLiked": [
+			"your-name-2016",
+			"the-boy-and-the-heron-2023"
+		],
+		"related": [
+			"princess-mononoke-1997",
+			"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025",
+			"howls-moving-castle-2004",
+			"spirited-away-2001"
+		]
+	},
 	"review": "Makoto Shinkai sigue a Suzume cuando abre sin querer puertas que liberan una amenaza ligada a desastres del pasado, y convierte el viaje en una búsqueda de memoria y reparación. Nanoka Hara le da impulso y vulnerabilidad a la protagonista, mientras el extraño compañero transformado en silla empuja el costado más lúdico. La dirección mezcla paisajes brillantes, catástrofe y emoción con un ritmo siempre en movimiento. Algunas explicaciones y giros sentimentales se sienten insistentes. Vale por su fuerza visual y por una sensibilidad que conecta el duelo personal con heridas colectivas.",
 	"synopsis": "Suzume, una adolescente japonesa, conoce a Souta, un joven que busca puertas capaces de liberar desastres. Cuando una de esas puertas se abre, ambos recorren el país para cerrarlas y evitar terremotos, mientras una presencia sobrenatural transforma a Souta en una silla de tres patas.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Nanoka Hara",
+			"character": "Suzume Iwato (voice)",
+			"tmdbMovieId": 916224,
+			"tmdbPersonId": 1564419,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hokuto Matsumura",
+			"character": "Souta Munakata (voice)",
+			"tmdbMovieId": 916224,
+			"tmdbPersonId": 1256882,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eri Fukatsu",
+			"character": "Tamaki Iwato (voice)",
+			"tmdbMovieId": 916224,
+			"tmdbPersonId": 110058,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

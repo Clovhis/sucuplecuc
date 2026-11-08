@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "MX, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Xolo Mariduena",
+			"character": "Jaime Reyes / Blue Beetle",
+			"tmdbMovieId": 565770,
+			"tmdbPersonId": 1185997,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bruna Marquezine",
+			"character": "Jenny Kord",
+			"tmdbMovieId": 565770,
+			"tmdbPersonId": 1622590,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Susan Sarandon",
+			"character": "Victoria Kord",
+			"tmdbMovieId": 565770,
+			"tmdbPersonId": 4038,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

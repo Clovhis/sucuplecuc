@@ -59,5 +59,42 @@
 	},
 	"review": "Clint Eastwood interpreta a Walt con una dureza que al principio parece puro prejuicio y después revela cansancio, culpa y miedo al cambio. El auto del título representa su orgullo, pero el vínculo con Thao y Sue abre una zona menos cómoda para el personaje. La película usa humor seco y discusiones frontales, sin convertir el aprendizaje en una transformación mágica. Hay momentos subrayados y un tono moral muy clásico, aunque la historia funciona cuando deja que Walt escuche. Es un drama directo sobre legado, violencia y la posibilidad de corregir algo tarde.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Clint Eastwood",
+			"character": "Walt Kowalski",
+			"tmdbMovieId": 13223,
+			"tmdbPersonId": 190,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Carley",
+			"character": "Father Janovich",
+			"tmdbMovieId": 13223,
+			"tmdbPersonId": 74308,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bee Vang",
+			"character": "Thao",
+			"tmdbMovieId": 13223,
+			"tmdbPersonId": 74309,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ahney Her",
+			"character": "Sue",
+			"tmdbMovieId": 13223,
+			"tmdbPersonId": 74312,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brian Haley",
+			"character": "Mitch Kowalski",
+			"tmdbMovieId": 13223,
+			"tmdbPersonId": 10138,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

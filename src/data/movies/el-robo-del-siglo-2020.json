@@ -48,18 +48,55 @@
 			"forFansOf": "Fans de las películas de golpes, de las comedias criminales locales y de las bandas donde la improvisación vale tanto como el plan.",
 			"notForYouIf": "Buscás realismo policial estricto, un tono oscuro o una trama sin chistes. El robo del siglo quiere divertir aun cuando el riesgo aprieta."
 		},
-	"becauseYouLiked": [
-		"lu-pau-2026",
-		"nueve-reinas-2000"
-	],
-	"related": [
-		"el-aura-2005",
-		"tiempo-de-valientes-2005",
-		"los-delincuentes-2023",
-		"el-clan-2015"
-	]
-},
+		"becauseYouLiked": [
+			"lu-pau-2026",
+			"nueve-reinas-2000"
+		],
+		"related": [
+			"el-aura-2005",
+			"tiempo-de-valientes-2005",
+			"los-delincuentes-2023",
+			"el-clan-2015"
+		]
+	},
 	"review": "Ariel Winograd entiende que la gracia está tanto en el plan como en la negociación permanente entre egos, miedo y oportunismo. El relato usa el ritmo del golpe clásico, pero se apoya en el habla argentina y en una galería de personajes con códigos cambiantes. Guillermo Francella y Diego Peretti juegan la dupla con química suficiente para que el espectáculo no tape la tensión del encierro. La camaradería del golpe es tan frágil como el plan: cada socio calcula cuánto arriesga y cuánto puede llevarse.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Guillermo Francella",
+			"character": "Mario Vitette",
+			"tmdbMovieId": 609242,
+			"tmdbPersonId": 93650,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diego Peretti",
+			"character": "Fernando Araujo",
+			"tmdbMovieId": 609242,
+			"tmdbPersonId": 96429,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Luque",
+			"character": "Miguel Sileo",
+			"tmdbMovieId": 609242,
+			"tmdbPersonId": 103431,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pablo Rago",
+			"character": "\"El Marciano\"",
+			"tmdbMovieId": 609242,
+			"tmdbPersonId": 93648,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rafael Ferro",
+			"character": "Alberto de la Torre \"Beto\"",
+			"tmdbMovieId": 609242,
+			"tmdbPersonId": 113627,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

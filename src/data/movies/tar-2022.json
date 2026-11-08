@@ -45,5 +45,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "DE, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Cate Blanchett",
+			"character": "Lydia Tár",
+			"tmdbMovieId": 817758,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Noémie Merlant",
+			"character": "Francesca Lentini",
+			"tmdbMovieId": 817758,
+			"tmdbPersonId": 1385600,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nina Hoss",
+			"character": "Sharon Goodnow",
+			"tmdbMovieId": 817758,
+			"tmdbPersonId": 681,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

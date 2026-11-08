@@ -32,20 +32,48 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Tensai Okamura arma una aventura compacta para fans de My Hero Academia: Deku y su clase tienen color y energía, pero el relato presupone demasiadas horas de serie.",
-			"whatToExpect": "Dark Might, poderes, clase de héroes, batallas en equipo y una amenaza que juega con la imagen de All Might.",			"pace": "Va rápido de combate en combate y corta entre personajes con eficacia; la exposición es mínima porque espera que ya conozcas las relaciones.",			"intensity": "La acción es explosiva y de anime, con peligro alto pero tono de aventura; el fan service pesa tanto como la amenaza.",			"practicalContext": "Con 110 minutos, funciona como salida para seguidores de la serie; no es la mejor puerta de entrada si nunca viste My Hero Academia.",			"forFansOf": "Para quienes vuelven por Deku, All Might y las voces de Daiki Yamashita y Nobuhiko Okamoto, con ganas de una misión cerrada.",			"notForYouIf": "No te va a servir si necesitás contexto, desarrollo independiente o una película que no dependa de reconocer a cada héroe y rival."
+			"whatToExpect": "Dark Might, poderes, clase de héroes, batallas en equipo y una amenaza que juega con la imagen de All Might.",
+			"pace": "Va rápido de combate en combate y corta entre personajes con eficacia; la exposición es mínima porque espera que ya conozcas las relaciones.",
+			"intensity": "La acción es explosiva y de anime, con peligro alto pero tono de aventura; el fan service pesa tanto como la amenaza.",
+			"practicalContext": "Con 110 minutos, funciona como salida para seguidores de la serie; no es la mejor puerta de entrada si nunca viste My Hero Academia.",
+			"forFansOf": "Para quienes vuelven por Deku, All Might y las voces de Daiki Yamashita y Nobuhiko Okamoto, con ganas de una misión cerrada.",
+			"notForYouIf": "No te va a servir si necesitás contexto, desarrollo independiente o una película que no dependa de reconocer a cada héroe y rival."
 		},
-	"becauseYouLiked": [
-		"spy-x-family-code-white-2023",
-		"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025"
-	],
-	"related": [
-		"chainsaw-man-the-movie-reze-arc-2025",
-		"suzume-2022",
-		"bleach-thousand-year-blood-war-the-calamity-2026",
-		"demon-slayer-kimetsu-no-yaiba-the-movie-mugen-train-2020"
-	]
-},
+		"becauseYouLiked": [
+			"spy-x-family-code-white-2023",
+			"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025"
+		],
+		"related": [
+			"chainsaw-man-the-movie-reze-arc-2025",
+			"suzume-2022",
+			"bleach-thousand-year-blood-war-the-calamity-2026",
+			"demon-slayer-kimetsu-no-yaiba-the-movie-mugen-train-2020"
+		]
+	},
 	"synopsis": "Arco traidor del manga y durante la séptima temporada del programa, la película sigue a Izuku Midoriya mientras se enfrenta a Dark Might, un malvado imitador del tan admirado héroe de Izuku, All Might.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-04"
+	"reviewPublishedAt": "2026-03-04",
+	"castCharacters": [
+		{
+			"actor": "Daiki Yamashita",
+			"character": "Izuku Midoriya (voice)",
+			"tmdbMovieId": 1159311,
+			"tmdbPersonId": 1325962,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nobuhiko Okamoto",
+			"character": "Katsuki Bakugo (voice)",
+			"tmdbMovieId": 1159311,
+			"tmdbPersonId": 1245094,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Yuki Kaji",
+			"character": "Shoto Todoroki (voice)",
+			"tmdbMovieId": 1159311,
+			"tmdbPersonId": 149894,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

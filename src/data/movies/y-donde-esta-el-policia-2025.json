@@ -53,5 +53,42 @@
 		]
 	},
 	"review": "¿Y dónde está el policía? vuelve a poner a un detective incompetente en medio de una conspiración ridícula, con la misión de recuperar el disparate físico y los juegos de palabras de la saga. Akiva Schaffer dirige sin vergüenza al absurdo y Liam Neeson se presta al papelón con una seriedad que vuelve más efectivos varios gags; Pamela Anderson también entiende el tono y suma complicidad. No todos los chistes tienen el mismo golpe y algunas referencias modernas se sienten obligadas, pero el ritmo busca remate tras remate. Vale si querés una comedia tonta, veloz y consciente de su propia estupidez.",
-	"reviewPublishedAt": "2026-04-05"
+	"reviewPublishedAt": "2026-04-05",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Frank Drebin Jr.",
+			"tmdbMovieId": 1035259,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pamela Anderson",
+			"character": "Beth Davenport",
+			"tmdbMovieId": 1035259,
+			"tmdbPersonId": 6736,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Walter Hauser",
+			"character": "Ed Hocken Jr.",
+			"tmdbMovieId": 1035259,
+			"tmdbPersonId": 1294982,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Huston",
+			"character": "Richard Cane",
+			"tmdbMovieId": 1035259,
+			"tmdbPersonId": 6413,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "CCH Pounder",
+			"character": "Chief Davis",
+			"tmdbMovieId": 1035259,
+			"tmdbPersonId": 30485,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

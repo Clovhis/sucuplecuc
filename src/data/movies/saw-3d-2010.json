@@ -39,21 +39,44 @@
 			"notForYouIf": "Quizás no sea para vos si necesitás elegancia visual, lógica narrativa limpia o una despedida que priorice emoción sobre shock."
 		},
 		"becauseYouLiked": [
-		"saw-x-2023",
-		"saw-2004"
-	],
-	"related": [
-		"martires-2008",
-		"terrifier-2-2022",
-		"terrifier-3-2024",
-		"ichi-the-killer-2001"
-	]
-},
+			"saw-x-2023",
+			"saw-2004"
+		],
+		"related": [
+			"martires-2008",
+			"terrifier-2-2022",
+			"terrifier-3-2024",
+			"ichi-the-killer-2001"
+		]
+	},
 	"review": "Saw 3D se propone cerrar la historia de Jigsaw como si estuviera tirando todos los restos al mismo tiempo. Kevin Greutert mantiene el movimiento y entrega algunas trampas con el sadismo mecánico que espera el público, pero el 3D vuelve la sangre digital demasiado artificial y los efectos distraen más de lo que golpean. Cary Elwes aporta una conexión útil con el origen, aunque el guion fuerza revelaciones y venganzas para atar una continuidad ya muy cargada. Tiene ritmo de feria y no se queda quieta, pero como final se siente ansiosa, desprolija y menos contundente de lo que prometía.",
 	"synopsis": "Bobby Dagen se hizo famoso contando una supuesta experiencia con Jigsaw, pero su mentira tiene consecuencias. Una nueva ronda de trampas lo obliga a atravesar pruebas reales si quiere salvar a las personas que usó para construir su relato.",
 	"audienceRating": "+18",
 	"subgenres": [
 		"Gore"
 	],
-	"reviewPublishedAt": "2026-05-23"
+	"reviewPublishedAt": "2026-05-23",
+	"castCharacters": [
+		{
+			"actor": "Tobin Bell",
+			"character": "Jigsaw / John",
+			"tmdbMovieId": 41439,
+			"tmdbPersonId": 2144,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Costas Mandylor",
+			"character": "Hoffman",
+			"tmdbMovieId": 41439,
+			"tmdbPersonId": 36055,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Betsy Russell",
+			"character": "Jill",
+			"tmdbMovieId": 41439,
+			"tmdbPersonId": 22434,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

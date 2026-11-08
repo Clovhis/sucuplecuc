@@ -53,5 +53,21 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Stephen Garlick",
+			"character": "Jen (voice)",
+			"tmdbMovieId": 11639,
+			"tmdbPersonId": 202729,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frank Oz",
+			"character": "Aughra, a Keeper of Secrets / Chamberlain",
+			"tmdbMovieId": 11639,
+			"tmdbPersonId": 7908,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

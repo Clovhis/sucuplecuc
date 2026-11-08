@@ -54,5 +54,35 @@
 			"american-gangster-2007"
 		]
 	},
-	"review": "Enemigos públicos filma a los gánsteres de la Gran Depresión como celebridades perseguidas por un Estado que también está aprendiendo a vender una imagen. Johnny Depp construye a Dillinger desde el descaro y la velocidad, mientras Christian Bale vuelve a Purvis una figura rígida, cada vez más atrapada por la lógica de la cacería. Michael Mann privilegia la textura digital y los espacios abiertos, con tiroteos secos y una tensión muy física. La película pierde algo de pulso cuando explica su contexto, pero la atmósfera y el duelo central sostienen el viaje."
+	"review": "Enemigos públicos filma a los gánsteres de la Gran Depresión como celebridades perseguidas por un Estado que también está aprendiendo a vender una imagen. Johnny Depp construye a Dillinger desde el descaro y la velocidad, mientras Christian Bale vuelve a Purvis una figura rígida, cada vez más atrapada por la lógica de la cacería. Michael Mann privilegia la textura digital y los espacios abiertos, con tiroteos secos y una tensión muy física. La película pierde algo de pulso cuando explica su contexto, pero la atmósfera y el duelo central sostienen el viaje.",
+	"castCharacters": [
+		{
+			"actor": "Johnny Depp",
+			"character": "John Dillinger",
+			"tmdbMovieId": 11322,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christian Bale",
+			"character": "Melvin Purvis",
+			"tmdbMovieId": 11322,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marion Cotillard",
+			"character": "Billie Frechette",
+			"tmdbMovieId": 11322,
+			"tmdbPersonId": 8293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Crudup",
+			"character": "J. Edgar Hoover",
+			"tmdbMovieId": 11322,
+			"tmdbPersonId": 8289,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

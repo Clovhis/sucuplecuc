@@ -52,5 +52,28 @@
 	"review": "La nueva pesadilla de Wes Craven entiende que Freddy ya es una figura famosa y usa esa condición para contar una historia donde la ficción empieza a invadir a quienes la hicieron. Wes Craven dirige con una idea meta que todavía tiene filo: Heather Langenkamp interpreta una versión de sí misma, agotada de que el personaje la persiga dentro y fuera del set. El nuevo Freddy es menos bromista y más amenazante, una decisión que devuelve algo de miedo a la saga. No todo el juego entre realidad y película tiene la misma fuerza, pero el clima se sostiene y la propuesta se siente genuinamente distinta. Es una secuela inteligente que mira a su propio monstruo sin tratarlo como una mascota.",
 	"synopsis": "Heather Langenkamp descubre que Freddy Krueger dejó de ser apenas un personaje de ficción y amenaza a su hijo en el mundo real, mientras Wes Craven intenta entender qué lo trajo de vuelta.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Heather Langenkamp",
+			"character": "Heather Langenkamp / Nancy Thompson",
+			"tmdbMovieId": 11596,
+			"tmdbPersonId": 5141,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Englund",
+			"character": "Robert Englund / Freddy Krueger",
+			"tmdbMovieId": 11596,
+			"tmdbPersonId": 5139,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miko Hughes",
+			"character": "Dylan Porter",
+			"tmdbMovieId": 11596,
+			"tmdbPersonId": 8186,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

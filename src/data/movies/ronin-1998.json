@@ -60,5 +60,35 @@
 		]
 	},
 	"review": "Ronin sabe que un thriller de mercenarios vive o muere por la confianza que logra construir en sus procedimientos. El maletín es apenas la excusa para observar cómo se mueven estos profesionales, cómo prueban una puerta, leen una calle o deciden si una alianza todavía sirve. De Niro le da a Sam una calma alerta que funciona como centro del grupo, y Jean Reno aporta una humanidad seca que evita que todo sea pose. Las persecuciones tienen peso, peligro y geografía; no parecen una colección de cortes rápidos sino problemas que alguien debe resolver a toda velocidad. La intriga puede volverse deliberadamente opaca, pero la película compensa con oficio, tensión y una elegancia física que no necesita explicarse.",
-	"runtimeMinutes": 122
+	"runtimeMinutes": 122,
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Sam",
+			"tmdbMovieId": 8195,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jean Reno",
+			"character": "Vincent",
+			"tmdbMovieId": 8195,
+			"tmdbPersonId": 1003,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Natascha McElhone",
+			"character": "Deirdre",
+			"tmdbMovieId": 8195,
+			"tmdbPersonId": 11317,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stellan Skarsgård",
+			"character": "Gregor",
+			"tmdbMovieId": 8195,
+			"tmdbPersonId": 1640,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

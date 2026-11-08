@@ -35,15 +35,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "La mejor de mis bodas encuentra ternura en el papelón; Frank Coraci deja que Adam Sandler y Drew Barrymore hagan creíble una canción fuera de tiempo.",
-		"whatToExpect": "Robbie canta en fiestas hasta que su propia boda fracasa, y una amistad con Julia lo obliga a elegir entre agradar y sincerarse.",
-		"pace": "Se mueve entre casamientos ridículos, canciones ochentosas y encuentros con Julia, con una comedia que acelera cuando el romance se anima.",
-		"intensity": "El conflicto es emocional y amable: hay humillación, celos y miedo a quedar solo, pero el humor abre la puerta a tiempo.",
-		"practicalContext": "Dura 97 minutos y funciona como romance de sofá, con una banda sonora muy presente y una estructura fácil de seguir.",
-		"forFansOf": "Te va a gustar si disfrutás comedias románticas musicales, química sencilla y el Adam Sandler que puede ser tierno sin abandonar el ridículo.",
-		"notForYouIf": "Quizás no sea para vos si buscás romance áspero, humor más ácido o una historia que se aleje de la fórmula de los noventa."
-	},
+		"tenSecondTake": {
+			"verdict": "La mejor de mis bodas encuentra ternura en el papelón; Frank Coraci deja que Adam Sandler y Drew Barrymore hagan creíble una canción fuera de tiempo.",
+			"whatToExpect": "Robbie canta en fiestas hasta que su propia boda fracasa, y una amistad con Julia lo obliga a elegir entre agradar y sincerarse.",
+			"pace": "Se mueve entre casamientos ridículos, canciones ochentosas y encuentros con Julia, con una comedia que acelera cuando el romance se anima.",
+			"intensity": "El conflicto es emocional y amable: hay humillación, celos y miedo a quedar solo, pero el humor abre la puerta a tiempo.",
+			"practicalContext": "Dura 97 minutos y funciona como romance de sofá, con una banda sonora muy presente y una estructura fácil de seguir.",
+			"forFansOf": "Te va a gustar si disfrutás comedias románticas musicales, química sencilla y el Adam Sandler que puede ser tierno sin abandonar el ridículo.",
+			"notForYouIf": "Quizás no sea para vos si buscás romance áspero, humor más ácido o una historia que se aleje de la fórmula de los noventa."
+		},
 		"becauseYouLiked": [
 			"50-first-dates-2004",
 			"tin-cup-1996"
@@ -58,5 +58,42 @@
 	"review": "La mejor de mis bodas es una de las películas que mejor equilibra la ternura y el descontrol de Sandler. El repertorio de canciones, los peinados de los ochenta y la galería de fiestas ridículas sostienen una comedia romántica que nunca se burla de la vulnerabilidad de Robbie. Drew Barrymore funciona como una compañera luminosa, y la historia avanza con una convicción sencilla: a veces hace falta dejar de tocar para el público y escuchar la propia canción.",
 	"runtimeMinutes": 97,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Robbie Hart",
+			"tmdbMovieId": 11003,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Drew Barrymore",
+			"character": "Julia Sullivan",
+			"tmdbMovieId": 11003,
+			"tmdbPersonId": 69597,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christine Taylor",
+			"character": "Holly Sullivan",
+			"tmdbMovieId": 11003,
+			"tmdbPersonId": 15286,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Allen Covert",
+			"character": "Sammy",
+			"tmdbMovieId": 11003,
+			"tmdbPersonId": 20818,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matthew Glave",
+			"character": "Glenn Gulia",
+			"tmdbMovieId": 11003,
+			"tmdbPersonId": 1219226,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

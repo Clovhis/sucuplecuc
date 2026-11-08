@@ -56,5 +56,35 @@
 		]
 	},
 	"runtimeMinutes": 127,
-	"review": "La Sabrina de Sydney Pollack es una actualización elegante y bastante consciente de su propio encanto. Julia Ormond sostiene la transformación de una joven idealista a una mujer que decide por sí misma, mientras Harrison Ford juega contra su habitual dureza para componer a un magnate torpe frente a los sentimientos. Greg Kinnear completa el triángulo con una simpatía que evita que la película dependa de un solo galán. La duración se siente en algunos rodeos y el romance avanza con una prolijidad muy de estudio, pero la fotografía, el reparto y la calidez de la puesta le dan una gracia persistente."
+	"review": "La Sabrina de Sydney Pollack es una actualización elegante y bastante consciente de su propio encanto. Julia Ormond sostiene la transformación de una joven idealista a una mujer que decide por sí misma, mientras Harrison Ford juega contra su habitual dureza para componer a un magnate torpe frente a los sentimientos. Greg Kinnear completa el triángulo con una simpatía que evita que la película dependa de un solo galán. La duración se siente en algunos rodeos y el romance avanza con una prolijidad muy de estudio, pero la fotografía, el reparto y la calidez de la puesta le dan una gracia persistente.",
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Linus Larrabee",
+			"tmdbMovieId": 11860,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julia Ormond",
+			"character": "Sabrina Fairchild",
+			"tmdbMovieId": 11860,
+			"tmdbPersonId": 15887,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Greg Kinnear",
+			"character": "David Larrabee",
+			"tmdbMovieId": 11860,
+			"tmdbPersonId": 17141,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nancy Marchand",
+			"character": "Maude Larrabee",
+			"tmdbMovieId": 11860,
+			"tmdbPersonId": 12957,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

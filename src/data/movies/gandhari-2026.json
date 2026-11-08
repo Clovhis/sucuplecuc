@@ -56,5 +56,28 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Gandhari arranca con una idea potente: obligar a Bani a atravesar un mundo hostil cuando su percepción ya está quebrada. Taapsee Pannu sostiene esa urgencia física y emocional, y Makhija encuentra algunos pasajes ásperos que le dan cuerpo a la búsqueda. El problema aparece cuando la película confunde intensidad con acumulación: suma revelaciones, golpes de efecto y villanos sin dejar que el dolor respire. Queda un thriller nervioso, con una protagonista muy firme, pero bastante menos filoso de lo que promete su premisa."
+	"review": "Gandhari arranca con una idea potente: obligar a Bani a atravesar un mundo hostil cuando su percepción ya está quebrada. Taapsee Pannu sostiene esa urgencia física y emocional, y Makhija encuentra algunos pasajes ásperos que le dan cuerpo a la búsqueda. El problema aparece cuando la película confunde intensidad con acumulación: suma revelaciones, golpes de efecto y villanos sin dejar que el dolor respire. Queda un thriller nervioso, con una protagonista muy firme, pero bastante menos filoso de lo que promete su premisa.",
+	"castCharacters": [
+		{
+			"actor": "Taapsee Pannu",
+			"character": "Bani Sikdar",
+			"tmdbMovieId": 1355228,
+			"tmdbPersonId": 550167,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ishwak Singh",
+			"character": "Gokul Sikdar",
+			"tmdbMovieId": 1355228,
+			"tmdbPersonId": 1424750,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mita Vashisht",
+			"character": "Jhunu Amba",
+			"tmdbMovieId": 1355228,
+			"tmdbPersonId": 1140663,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

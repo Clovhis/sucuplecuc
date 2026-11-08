@@ -83,5 +83,21 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mikey Madison",
+			"character": "Ani",
+			"tmdbMovieId": 1064213,
+			"tmdbPersonId": 1640439,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lindsey Normington",
+			"character": "Diamond",
+			"tmdbMovieId": 1064213,
+			"tmdbPersonId": 2353434,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

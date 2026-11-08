@@ -49,5 +49,21 @@
     }
   },
   "review": "Ophüls hace girar la historia junto con los aros: cada cambio de dueño altera lo que los personajes pueden decir sin perder la compostura. Danielle Darrieux sostiene la ligereza inicial de Louise y deja que la repetición de los bailes revele cuánto se estrecha su margen de elección. Charles Boyer y Vittorio De Sica completan un triángulo donde la elegancia social sirve tanto para seducir como para ocultar. La cámara fluida no adorna el melodrama desde afuera; sigue los círculos de un deseo que se vuelve cada vez más difícil de disimular.",
-  "runtimeMinutes": 105
+  "runtimeMinutes": 105,
+  "castCharacters": [
+    {
+      "actor": "Charles Boyer",
+      "character": "Général André de...",
+      "tmdbMovieId": 27030,
+      "tmdbPersonId": 29519,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Vittorio De Sica",
+      "character": "Baron Fabrizio Donati",
+      "tmdbMovieId": 27030,
+      "tmdbPersonId": 12329,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

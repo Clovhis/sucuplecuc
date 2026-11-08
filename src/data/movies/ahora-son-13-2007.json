@@ -56,5 +56,42 @@
 			"el-robo-del-siglo-2020"
 		]
 	},
-	"review": "Ahora son 13 vuelve a Las Vegas y recupera algo del espíritu de la primera entrega: un golpe con reglas claras, una rivalidad concreta y un equipo disfrutando el oficio. Al Pacino funciona como adversario de lujo, mientras Clooney, Pitt y Damon se reparten el juego con soltura. Soderbergh no abandona el brillo ni los montajes de planificación, pero tampoco pretende que cada truco sea una revolución. Es la más redonda de las secuelas, una despedida entretenida para una banda que ya conoce demasiado bien su propia fórmula."
+	"review": "Ahora son 13 vuelve a Las Vegas y recupera algo del espíritu de la primera entrega: un golpe con reglas claras, una rivalidad concreta y un equipo disfrutando el oficio. Al Pacino funciona como adversario de lujo, mientras Clooney, Pitt y Damon se reparten el juego con soltura. Soderbergh no abandona el brillo ni los montajes de planificación, pero tampoco pretende que cada truco sea una revolución. Es la más redonda de las secuelas, una despedida entretenida para una banda que ya conoce demasiado bien su propia fórmula.",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Danny Ocean",
+			"tmdbMovieId": 298,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Rusty Ryan",
+			"tmdbMovieId": 298,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Damon",
+			"character": "Linus Caldwell",
+			"tmdbMovieId": 298,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Al Pacino",
+			"character": "Willy Bank",
+			"tmdbMovieId": 298,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ellen Barkin",
+			"character": "Abigail Sponder",
+			"tmdbMovieId": 298,
+			"tmdbPersonId": 6913,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

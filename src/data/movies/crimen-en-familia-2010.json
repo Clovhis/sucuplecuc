@@ -53,5 +53,35 @@
 	},
 	"review": "Crimen en familia mira un caso real desde la distancia fría de una reconstrucción. Andrew Jarecki se interesa por el poder, el dinero y la imposibilidad de cerrar una desaparición, aunque el relato se vuelve más convencional cuando intenta explicar a sus protagonistas. Gosling compone a David como una presencia cada vez más opaca y Kirsten Dunst sostiene la tragedia de Katie con una vulnerabilidad que no pide compasión. El resultado es desigual, pero su atmósfera de amenaza doméstica funciona.",
 	"runtimeMinutes": 101,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "David Marks",
+			"tmdbMovieId": 46503,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kirsten Dunst",
+			"character": "Katie Marks",
+			"tmdbMovieId": 46503,
+			"tmdbPersonId": 205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Philip Baker Hall",
+			"character": "Malvern Bump",
+			"tmdbMovieId": 46503,
+			"tmdbPersonId": 4492,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Offerman",
+			"character": "Jim McCarthy",
+			"tmdbMovieId": 46503,
+			"tmdbPersonId": 17039,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

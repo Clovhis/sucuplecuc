@@ -50,5 +50,28 @@
     }
   },
   "review": "Rivette arma la película como un juego entre dos mujeres que no separa del todo la amistad, la actuación y la invención. Juliet Berto y Dominique Labourier prueban cambios de identidad con una energía que vuelve entretenida incluso la duración extensa. La casa del melodrama funciona como una regla que las protagonistas pueden explorar y alterar, mientras la repetición les permite mirar lo que al principio parecía cerrado. En vez de apurar una explicación fantástica, la película se queda con la complicidad que aparece cuando dos amigas deciden compartir un mundo propio.",
-  "runtimeMinutes": 193
+  "runtimeMinutes": 193,
+  "castCharacters": [
+    {
+      "actor": "Juliet Berto",
+      "character": "Céline",
+      "tmdbMovieId": 27019,
+      "tmdbPersonId": 18228,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Dominique Labourier",
+      "character": "Julie",
+      "tmdbMovieId": 27019,
+      "tmdbPersonId": 24541,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Bulle Ogier",
+      "character": "Camille",
+      "tmdbMovieId": 27019,
+      "tmdbPersonId": 38341,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

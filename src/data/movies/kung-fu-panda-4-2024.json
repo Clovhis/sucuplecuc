@@ -46,5 +46,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-05",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jack Black",
+			"character": "Po (voice)",
+			"tmdbMovieId": 1011985,
+			"tmdbPersonId": 70851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Awkwafina",
+			"character": "Zhen (voice)",
+			"tmdbMovieId": 1011985,
+			"tmdbPersonId": 1625558,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Viola Davis",
+			"character": "The Chameleon (voice)",
+			"tmdbMovieId": 1011985,
+			"tmdbPersonId": 19492,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

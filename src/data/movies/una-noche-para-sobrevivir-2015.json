@@ -60,5 +60,42 @@
 	},
 	"review": "Una noche para sobrevivir tiene el esqueleto de una persecución urbana y la inteligencia de darle un desgaste emocional a cada disparo. Liam Neeson no interpreta a Jimmy como un padre recién descubierto, sino como alguien que sabe que llega tarde a reparar lo que rompió. Joel Kinnaman y Ed Harris aprovechan esa tensión familiar y criminal sin pedirle a la historia más explicaciones de las necesarias. Jaume Collet-Serra acelera muy bien el primer tramo, aunque el medio se vuelva algo repetitivo. Igual conserva una energía nocturna y una melancolía que la hacen mejor que el promedio.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Jimmy Conlon",
+			"tmdbMovieId": 241554,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joel Kinnaman",
+			"character": "Mike Conlon",
+			"tmdbMovieId": 241554,
+			"tmdbPersonId": 92404,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Harris",
+			"character": "Shawn Maguire",
+			"tmdbMovieId": 241554,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vincent D'Onofrio",
+			"character": "Detective Harding",
+			"tmdbMovieId": 241554,
+			"tmdbPersonId": 7132,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Genesis Rodriguez",
+			"character": "Gabriela Conlon",
+			"tmdbMovieId": 241554,
+			"tmdbPersonId": 589162,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

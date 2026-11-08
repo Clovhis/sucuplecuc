@@ -55,5 +55,42 @@
 		]
 	},
 	"review": "Philip Kaufman convierte la novela de Milan Kundera en un drama de deseo, política y decisiones que nunca terminan de cerrarse. Daniel Day-Lewis juega a la distancia como Tomás, pero la película encuentra su pulso cuando Juliette Binoche y Lena Olin encarnan dos formas opuestas de mirar el amor. La Primavera de Praga no funciona como decorado histórico: entra en los cuerpos, en los silencios y en las mudanzas. Es extensa, sensual y deliberadamente ambigua, con una melancolía que se queda después de los títulos.",
-	"runtimeMinutes": 171
+	"runtimeMinutes": 171,
+	"castCharacters": [
+		{
+			"actor": "Daniel Day-Lewis",
+			"character": "Tomas",
+			"tmdbMovieId": 10644,
+			"tmdbPersonId": 11856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juliette Binoche",
+			"character": "Tereza",
+			"tmdbMovieId": 10644,
+			"tmdbPersonId": 1137,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lena Olin",
+			"character": "Sabina",
+			"tmdbMovieId": 10644,
+			"tmdbPersonId": 5313,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Derek de Lint",
+			"character": "Franz",
+			"tmdbMovieId": 10644,
+			"tmdbPersonId": 9128,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stellan Skarsgård",
+			"character": "The Engineer",
+			"tmdbMovieId": 10644,
+			"tmdbPersonId": 1640,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -51,5 +51,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Malin Åkerman",
+			"character": "Laurie Jupiter / Silk Spectre II",
+			"tmdbMovieId": 13183,
+			"tmdbPersonId": 50463,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick Wilson",
+			"character": "Dan Dreiberg / Nite Owl II",
+			"tmdbMovieId": 13183,
+			"tmdbPersonId": 17178,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Crudup",
+			"character": "Jon Osterman / Dr. Manhattan",
+			"tmdbMovieId": 13183,
+			"tmdbPersonId": 8289,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

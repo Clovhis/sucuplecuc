@@ -45,18 +45,41 @@
 			"forFansOf": "Si te gustan dramas argentinos de familia, recuerdos de infancia y personajes queribles que también fallan.",
 			"notForYouIf": "No es para vos si necesitás una separación explicada desde los adultos, un tono parejo o un padre idealizado."
 		},
-	"becauseYouLiked": [
-		"medianeras-2011",
-		"el-cuento-de-las-comadrejas-2019"
-	],
-	"related": [
-		"la-odisea-de-los-giles-2019",
-		"el-abrazo-partido-2004",
-		"mi-obra-maestra-2018",
-		"el-ciudadano-ilustre-2016"
-	]
-},
+		"becauseYouLiked": [
+			"medianeras-2011",
+			"el-cuento-de-las-comadrejas-2019"
+		],
+		"related": [
+			"la-odisea-de-los-giles-2019",
+			"el-abrazo-partido-2004",
+			"mi-obra-maestra-2018",
+			"el-ciudadano-ilustre-2016"
+		]
+	},
 	"review": "Ana García Blaya observa la separación desde la memoria infantil, con cariño por los personajes y poca paciencia para las idealizaciones. Los materiales caseros, las canciones y los cambios de tono construyen una textura de recuerdo que se siente vivida, no impostada. El elenco infantil sostiene la película con una mezcla de humor, enojo y lucidez que vuelve entrañable su desorden afectivo. Amanda mira el desorden de sus padres con una lucidez incómoda, sin convertir la memoria familiar en una defensa de nadie.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Javier Drolas",
+			"character": "Gustavo",
+			"tmdbMovieId": 621739,
+			"tmdbPersonId": 562363,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juan Minujín",
+			"character": "Guillermo",
+			"tmdbMovieId": 621739,
+			"tmdbPersonId": 140538,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sebastián Arzeno",
+			"character": "Néstor",
+			"tmdbMovieId": 621739,
+			"tmdbPersonId": 2406318,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

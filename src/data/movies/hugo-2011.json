@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "Hugo sigue a un chico huérfano que vive escondido en una estación de París y trata de reparar un autómata ligado a un viejo cineasta olvidado. Martin Scorsese dirige el cuento con una delicadeza poco habitual en su filmografía y usa el 3D para dar profundidad a relojes, pasillos y trenes, no sólo para lucirse. Asa Butterfield y Chloë Grace Moretz tienen la curiosidad justa, mientras Ben Kingsley le da emoción al homenaje al cine pionero. El inicio es algo lento, pero el descubrimiento paga. Vale por una aventura familiar con verdadero amor por las imágenes.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Asa Butterfield",
+			"character": "Hugo Cabret",
+			"tmdbMovieId": 44826,
+			"tmdbPersonId": 77996,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Kingsley",
+			"character": "Georges Méliès",
+			"tmdbMovieId": 44826,
+			"tmdbPersonId": 2282,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chloë Grace Moretz",
+			"character": "Isabelle",
+			"tmdbMovieId": 44826,
+			"tmdbPersonId": 56734,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sacha Baron Cohen",
+			"character": "Station Inspector",
+			"tmdbMovieId": 44826,
+			"tmdbPersonId": 6730,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ray Winstone",
+			"character": "Uncle Claude",
+			"tmdbMovieId": 44826,
+			"tmdbPersonId": 5538,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

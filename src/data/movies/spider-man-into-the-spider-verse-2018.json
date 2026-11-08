@@ -38,7 +38,7 @@
 			"forFansOf": "Puede fascinarte si te gustan los cómics, la animación con personalidad radical y las historias de origen donde la familia, la música y la inseguridad importan tanto como las telarañas.",
 			"notForYouIf": "Quizás no sea para vos si preferís una estética realista, una sola versión de Spider-Man o una película de superhéroes que no mezcle chiste, duelo y experimentación visual en cada secuencia."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"coco-2017",
 			"encanto-2021"
 		],
@@ -53,5 +53,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Shameik Moore",
+			"character": "Miles Morales (voice)",
+			"tmdbMovieId": 324857,
+			"tmdbPersonId": 587506,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jake Johnson",
+			"character": "Peter B. Parker (voice)",
+			"tmdbMovieId": 324857,
+			"tmdbPersonId": 543505,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hailee Steinfeld",
+			"character": "Gwen Stacy (voice)",
+			"tmdbMovieId": 324857,
+			"tmdbPersonId": 130640,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

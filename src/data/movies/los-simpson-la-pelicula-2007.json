@@ -32,13 +32,13 @@
 	},
 	"editorial": {
 		"tenSecondTake": {
-		"verdict": "Los Simpson: La película agranda la culpa de Homero sin perder el mordisco: David Silverman pone a Dan Castellaneta y Julie Kavner frente a una Springfield bajo cúpula.",
-		"whatToExpect": "Homero contamina el lago y obliga a su familia a escapar mientras el gobierno encierra la ciudad; el desastre vuelve doméstico un problema enorme.",
-		"pace": "Arranca como episodio desbordado y escala hacia persecuciones, Alaska y catástrofe, sin dejar que la familia pierda el eje.",
-		"intensity": "La amenaza ambiental aprieta, pero el verdadero conflicto es que Homero debe reconocer el daño antes de que no quede hogar al que volver.",
-		"practicalContext": "Funciona mejor si ya conocés el ritmo de la serie y querés verlo con escala de cine, aunque el chiste no abandona su raíz televisiva.",
-		"forFansOf": "Si te gustan familias disfuncionales, sátira política y humor que se anima a romper una ciudad entera.",
-		"notForYouIf": "No es para vos si buscás una aventura animada sentimental, un desastre realista o una película que baje la velocidad del gag."
+			"verdict": "Los Simpson: La película agranda la culpa de Homero sin perder el mordisco: David Silverman pone a Dan Castellaneta y Julie Kavner frente a una Springfield bajo cúpula.",
+			"whatToExpect": "Homero contamina el lago y obliga a su familia a escapar mientras el gobierno encierra la ciudad; el desastre vuelve doméstico un problema enorme.",
+			"pace": "Arranca como episodio desbordado y escala hacia persecuciones, Alaska y catástrofe, sin dejar que la familia pierda el eje.",
+			"intensity": "La amenaza ambiental aprieta, pero el verdadero conflicto es que Homero debe reconocer el daño antes de que no quede hogar al que volver.",
+			"practicalContext": "Funciona mejor si ya conocés el ritmo de la serie y querés verlo con escala de cine, aunque el chiste no abandona su raíz televisiva.",
+			"forFansOf": "Si te gustan familias disfuncionales, sátira política y humor que se anima a romper una ciudad entera.",
+			"notForYouIf": "No es para vos si buscás una aventura animada sentimental, un desastre realista o una película que baje la velocidad del gag."
 		},
 		"becauseYouLiked": [
 			"tarzan-1999",
@@ -51,5 +51,21 @@
 			"la-era-de-hielo-3-el-origen-de-los-dinosaurios-2009"
 		]
 	},
-	"review": "Los Simpson: La película amplía el chiste televisivo sin perder la dinámica de la familia ni el gusto por incomodar a Springfield. Dan Castellaneta, Nancy Cartwright y Julie Kavner sostienen voces que ya tienen una precisión cómica enorme, y la pantalla grande permite que la cúpula, Alaska y la persecución tengan escala. El argumento se apoya en una culpa muy homérica, pero la película funciona cuando convierte ese defecto en una oportunidad de reparar."
+	"review": "Los Simpson: La película amplía el chiste televisivo sin perder la dinámica de la familia ni el gusto por incomodar a Springfield. Dan Castellaneta, Nancy Cartwright y Julie Kavner sostienen voces que ya tienen una precisión cómica enorme, y la pantalla grande permite que la cúpula, Alaska y la persecución tengan escala. El argumento se apoya en una culpa muy homérica, pero la película funciona cuando convierte ese defecto en una oportunidad de reparar.",
+	"castCharacters": [
+		{
+			"actor": "Dan Castellaneta",
+			"character": "Homer Simpson / Itchy / Barney / Abe Simpson / Stage Manager / Krusty the Clown / Mayor Quimby / Mayor's Aide / Multi-Eyed Squirrel / Panicky Man / Sideshow Mel / Mr. Teeny / EPA Official / Kissing Cop / Bear / Boy on Phone / NSA Worker / Officer / Santa's Little Helper / Squeaky-Voiced Teen (voice)",
+			"tmdbMovieId": 35,
+			"tmdbPersonId": 198,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Kavner",
+			"character": "Marge Simpson / Selma Bouvier / Patty Bouvier (voice)",
+			"tmdbMovieId": 35,
+			"tmdbPersonId": 199,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

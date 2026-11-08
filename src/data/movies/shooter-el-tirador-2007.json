@@ -58,5 +58,42 @@
 		]
 	},
 	"runtimeMinutes": 124,
-	"review": "Antoine Fuqua convierte a Swagger en una máquina de resolver problemas imposibles y Wahlberg le da peso físico sin transformarlo en una estatua de una sola expresión. La película encadena fusiles, rutas de escape y conspiraciones con oficio, especialmente cuando deja que el héroe improvise con lo que tiene alrededor. El libreto acumula patriotas corruptos y revelaciones que ya vienen anunciadas desde lejos, pero la acción es clara y no se toma demasiado en serio su propia grandilocuencia."
+	"review": "Antoine Fuqua convierte a Swagger en una máquina de resolver problemas imposibles y Wahlberg le da peso físico sin transformarlo en una estatua de una sola expresión. La película encadena fusiles, rutas de escape y conspiraciones con oficio, especialmente cuando deja que el héroe improvise con lo que tiene alrededor. El libreto acumula patriotas corruptos y revelaciones que ya vienen anunciadas desde lejos, pero la acción es clara y no se toma demasiado en serio su propia grandilocuencia.",
+	"castCharacters": [
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Bob Lee Swagger",
+			"tmdbMovieId": 7485,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Peña",
+			"character": "Nick Memphis",
+			"tmdbMovieId": 7485,
+			"tmdbPersonId": 454,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Glover",
+			"character": "Colonel Isaac Johnson",
+			"tmdbMovieId": 7485,
+			"tmdbPersonId": 2047,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Mara",
+			"character": "Sarah Fenn",
+			"tmdbMovieId": 7485,
+			"tmdbPersonId": 51072,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elias Koteas",
+			"character": "Jack Payne",
+			"tmdbMovieId": 7485,
+			"tmdbPersonId": 13550,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

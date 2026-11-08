@@ -57,5 +57,42 @@
 	},
 	"review": "Ridley Scott filma el regreso de Lecter como una pesadilla barroca, llena de mármol, ópera y violencia quirúrgica. Anthony Hopkins disfruta cada gesto del personaje, pero la película se vuelve más interesante cuando Julianne Moore convierte a Clarice en una agente cansada que ya no puede separar el caso de sus propios fantasmas. Hay excesos de tono, subrayados y una crueldad que busca escandalizar, aunque el duelo intelectual mantiene una tensión elegante. Es una secuela irregular, pero visualmente poderosa y con una identidad propia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Dr. Hannibal Lecter",
+			"tmdbMovieId": 9740,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julianne Moore",
+			"character": "Clarice M. Starling",
+			"tmdbMovieId": 9740,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Oldman",
+			"character": "Mason Verger",
+			"tmdbMovieId": 9740,
+			"tmdbPersonId": 64,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ray Liotta",
+			"character": "Paul Krendler",
+			"tmdbMovieId": 9740,
+			"tmdbPersonId": 11477,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Giancarlo Giannini",
+			"character": "Insp. Renaldo Pazzi",
+			"tmdbMovieId": 9740,
+			"tmdbPersonId": 3753,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -56,5 +56,28 @@
 	"releasePlatforms": [
 		"Netflix",
 		"Paramount Plus"
+	],
+	"castCharacters": [
+		{
+			"actor": "Johnny Sequoyah",
+			"character": "Lucy",
+			"tmdbMovieId": 1315303,
+			"tmdbPersonId": 1295282,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Alexander",
+			"character": "Hannah",
+			"tmdbMovieId": 1315303,
+			"tmdbPersonId": 2600509,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Troy Kotsur",
+			"character": "Adam",
+			"tmdbMovieId": 1315303,
+			"tmdbPersonId": 1571661,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

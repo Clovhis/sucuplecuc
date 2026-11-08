@@ -33,15 +33,15 @@
 	},
 	"runtimeMinutes": 92,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Toy Story 2 amplía el mundo sin perder la tristeza de ser reemplazable; John Lasseter vuelve a juntar a Tom Hanks y Tim Allen alrededor de una decisión difícil.",
-		"whatToExpect": "Woody es robado por un coleccionista, descubre un pasado de televisión y debe elegir entre una vitrina perfecta o volver con Andy.",
-		"pace": "Se mueve entre rescate, museo y recuerdos, alternando persecuciones con pausas emocionales que hacen crecer a Jessie y al propio Woody.",
-		"intensity": "La amenaza no es sólo perderse: también es quedarse congelado en una versión de uno mismo que ya no puede volver atrás.",
-		"practicalContext": "Dura 92 minutos y entra como secuela familiar con más melancolía que la primera, ideal para ver con atención a sus canciones y silencios.",
-		"forFansOf": "Te va a gustar si disfrutás juguetes con memoria, aventuras de rescate y películas infantiles que se animan a hablar del abandono.",
-		"notForYouIf": "No es para vos si querés una comedia sin pausa, una animación que no sentimentalice o una historia sin dilemas de pertenencia."
-	},
+		"tenSecondTake": {
+			"verdict": "Toy Story 2 amplía el mundo sin perder la tristeza de ser reemplazable; John Lasseter vuelve a juntar a Tom Hanks y Tim Allen alrededor de una decisión difícil.",
+			"whatToExpect": "Woody es robado por un coleccionista, descubre un pasado de televisión y debe elegir entre una vitrina perfecta o volver con Andy.",
+			"pace": "Se mueve entre rescate, museo y recuerdos, alternando persecuciones con pausas emocionales que hacen crecer a Jessie y al propio Woody.",
+			"intensity": "La amenaza no es sólo perderse: también es quedarse congelado en una versión de uno mismo que ya no puede volver atrás.",
+			"practicalContext": "Dura 92 minutos y entra como secuela familiar con más melancolía que la primera, ideal para ver con atención a sus canciones y silencios.",
+			"forFansOf": "Te va a gustar si disfrutás juguetes con memoria, aventuras de rescate y películas infantiles que se animan a hablar del abandono.",
+			"notForYouIf": "No es para vos si querés una comedia sin pausa, una animación que no sentimentalice o una historia sin dilemas de pertenencia."
+		},
 		"becauseYouLiked": [
 			"lego-star-wars-the-mandalorian-2026",
 			"bichos-una-aventura-en-miniatura-1998"
@@ -55,5 +55,42 @@
 	},
 	"review": "Podría haber sido una secuela apurada y, en cambio, entiende algo muy preciso sobre el apego y el miedo a quedar viejo para quien te quiso. Por eso funciona tan bien incluso de grande: debajo del color, los chistes y la aventura hay una tristeza concreta que nunca se vuelve empalagosa. Jessie entra con todo, Woody gana capas nuevas y Pixar expande el mundo sin repetir la fórmula. Es de esas continuaciones raras que no estiran una marca: la mejoran.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Woody (voice)",
+			"tmdbMovieId": 863,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Allen",
+			"character": "Buzz Lightyear (voice)",
+			"tmdbMovieId": 863,
+			"tmdbPersonId": 12898,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Cusack",
+			"character": "Jessie (voice)",
+			"tmdbMovieId": 863,
+			"tmdbPersonId": 3234,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kelsey Grammer",
+			"character": "Prospector (voice)",
+			"tmdbMovieId": 863,
+			"tmdbPersonId": 7090,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Rickles",
+			"character": "Mr. Potato Head (voice)",
+			"tmdbMovieId": 863,
+			"tmdbPersonId": 7167,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

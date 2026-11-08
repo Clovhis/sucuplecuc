@@ -61,5 +61,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Dom Cobb",
+			"tmdbMovieId": 27205,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joseph Gordon-Levitt",
+			"character": "Arthur",
+			"tmdbMovieId": 27205,
+			"tmdbPersonId": 24045,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marion Cotillard",
+			"character": "Mal Cobb",
+			"tmdbMovieId": 27205,
+			"tmdbPersonId": 8293,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

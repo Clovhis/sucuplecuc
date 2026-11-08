@@ -37,31 +37,61 @@
       }
     ]
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Boyhood usa el paso real del tiempo para mirar cómo una vida se arma con mudanzas y charlas, y Richard Linklater deja que la emoción aparezca sin empujarla.",
-			"whatToExpect": "Mason creciendo frente a la cámara, una familia que cambia de forma y los pequeños acontecimientos que terminan pesando más que los hitos.",
-			"pace": "Sereno y acumulativo, con saltos suaves que hacen sentir que los años pasan sin pedir permiso.",
-			"intensity": "Baja en acción, alta en reconocimiento emocional; el conflicto está en cómo cada persona cambia.",
-			"practicalContext": "Sus 165 minutos requieren paciencia y disponibilidad para lo cotidiano; no es una trama de grandes giros.",
-			"forFansOf": "Los relatos de crecimiento, el naturalismo de Linklater y las películas que encuentran drama en una conversación.",
-			"notForYouIf": "Necesitás un argumento urgente, un protagonista con objetivo claro o una biografía resumida en momentos decisivos."
-		},
-	"becauseYouLiked": [
-		"lady-bird-2017",
-		"fue-la-mano-de-dios-2021"
-	],
-	"related": [
-		"stand-by-me-1986",
-		"los-domingos-2025",
-		"c-mon-c-mon-siempre-adelante-2021",
-		"juno-embarazada-por-accidente-2007"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Boyhood usa el paso real del tiempo para mirar cómo una vida se arma con mudanzas y charlas, y Richard Linklater deja que la emoción aparezca sin empujarla.",
+      "whatToExpect": "Mason creciendo frente a la cámara, una familia que cambia de forma y los pequeños acontecimientos que terminan pesando más que los hitos.",
+      "pace": "Sereno y acumulativo, con saltos suaves que hacen sentir que los años pasan sin pedir permiso.",
+      "intensity": "Baja en acción, alta en reconocimiento emocional; el conflicto está en cómo cada persona cambia.",
+      "practicalContext": "Sus 165 minutos requieren paciencia y disponibilidad para lo cotidiano; no es una trama de grandes giros.",
+      "forFansOf": "Los relatos de crecimiento, el naturalismo de Linklater y las películas que encuentran drama en una conversación.",
+      "notForYouIf": "Necesitás un argumento urgente, un protagonista con objetivo claro o una biografía resumida en momentos decisivos."
+    },
+    "becauseYouLiked": [
+      "lady-bird-2017",
+      "fue-la-mano-de-dios-2021"
+    ],
+    "related": [
+      "stand-by-me-1986",
+      "los-domingos-2025",
+      "c-mon-c-mon-siempre-adelante-2021",
+      "juno-embarazada-por-accidente-2007"
+    ]
+  },
   "isPremiere": false,
   "premiereLabel": "",
   "review": "Lo extraordinario de Boyhood no es el truco del rodaje a lo largo de doce años, sino que Linklater usa ese tiempo para mirar lo cotidiano sin subrayarlo. Las mudanzas, los silencios y las charlas con padres que intentan ordenar su propio desastre se acumulan hasta que la vida del pibe se vuelve la nuestra. Arquette y Hawke sostienen el costado emocional con una naturalidad tremenda, y cuando termina queda esa sensacion rara de haber vivido algo en vez de simplemente haber visto una pelicula.",
   "subgenres": [
     "Coming of Age"
+  ],
+  "castCharacters": [
+    {
+      "actor": "Ellar Coltrane",
+      "character": "Mason",
+      "tmdbMovieId": 85350,
+      "tmdbPersonId": 931944,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Patricia Arquette",
+      "character": "Mom",
+      "tmdbMovieId": 85350,
+      "tmdbPersonId": 4687,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Ethan Hawke",
+      "character": "Dad",
+      "tmdbMovieId": 85350,
+      "tmdbPersonId": 569,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Lorelei Linklater",
+      "character": "Samantha",
+      "tmdbMovieId": 85350,
+      "tmdbPersonId": 1327009,
+      "verifiedAt": "2026-11-08"
+    }
   ]
 }

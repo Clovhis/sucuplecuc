@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mark Rylance",
+			"character": "Leonard Burling",
+			"tmdbMovieId": 799876,
+			"tmdbPersonId": 40900,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zoey Deutch",
+			"character": "Mable Shaun",
+			"tmdbMovieId": 799876,
+			"tmdbPersonId": 1059597,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

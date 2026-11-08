@@ -57,5 +57,21 @@
 		"Prime Video",
 		"HBO Max"
 	],
-	"runtimeMinutes": 109
+	"runtimeMinutes": 109,
+	"castCharacters": [
+		{
+			"actor": "Mel Gibson",
+			"character": "Martin Riggs",
+			"tmdbMovieId": 941,
+			"tmdbPersonId": 2461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Glover",
+			"character": "Roger Murtaugh",
+			"tmdbMovieId": 941,
+			"tmdbPersonId": 2047,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

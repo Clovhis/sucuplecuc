@@ -54,5 +54,35 @@
 		]
 	},
 	"runtimeMinutes": 125,
-	"review": "Hart's War usa el juicio militar como una caja de presión dentro de un campo de prisioneros, y ahí encuentra su mejor tensión. Colin Farrell lleva la mirada del joven abogado que aprende a desconfiar de las órdenes, mientras Bruce Willis construye un coronel que administra el poder con una mezcla de cálculo y cansancio. La película quiere ser drama de guerra, thriller judicial y relato de camaradería al mismo tiempo; esa ambición a veces la vuelve subrayada, pero también le da un pulso narrativo firme. Las actuaciones sostienen los cambios de tono y el conflicto racial evita que el procedimiento sea solamente decorativo."
+	"review": "Hart's War usa el juicio militar como una caja de presión dentro de un campo de prisioneros, y ahí encuentra su mejor tensión. Colin Farrell lleva la mirada del joven abogado que aprende a desconfiar de las órdenes, mientras Bruce Willis construye un coronel que administra el poder con una mezcla de cálculo y cansancio. La película quiere ser drama de guerra, thriller judicial y relato de camaradería al mismo tiempo; esa ambición a veces la vuelve subrayada, pero también le da un pulso narrativo firme. Las actuaciones sostienen los cambios de tono y el conflicto racial evita que el procedimiento sea solamente decorativo.",
+	"castCharacters": [
+		{
+			"actor": "Bruce Willis",
+			"character": "Col. William A. McNamara",
+			"tmdbMovieId": 10592,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Colin Farrell",
+			"character": "Lt. Thomas W. Hart",
+			"tmdbMovieId": 10592,
+			"tmdbPersonId": 72466,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terrence Howard",
+			"character": "Lt. Lincoln A. Scott",
+			"tmdbMovieId": 10592,
+			"tmdbPersonId": 18288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cole Hauser",
+			"character": "Staff Sgt. Vic W. Bedford",
+			"tmdbMovieId": 10592,
+			"tmdbPersonId": 6614,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

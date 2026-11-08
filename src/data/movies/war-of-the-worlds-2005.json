@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "War of the Worlds sigue a un padre separado que intenta llevar a sus hijos a salvo cuando una invasión extraterrestre transforma los suburbios en un campo de pánico. Steven Spielberg no pierde tiempo en explicar el fenómeno y dirige el desastre desde el punto de vista de gente que apenas entiende qué está viendo; Tom Cruise transmite bien la desesperación de un tipo poco preparado para cuidar a nadie. Las máquinas y los ataques tienen imágenes muy potentes, aunque el final resuelve demasiado rápido y el personaje de Dakota Fanning puede resultar agotador. Vale por su tensión y por una ciencia ficción vivida como pesadilla familiar.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "Ray",
+			"tmdbMovieId": 74,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dakota Fanning",
+			"character": "Rachel",
+			"tmdbMovieId": 74,
+			"tmdbPersonId": 501,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Justin Chatwin",
+			"character": "Robbie",
+			"tmdbMovieId": 74,
+			"tmdbPersonId": 503,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miranda Otto",
+			"character": "Mary Ann",
+			"tmdbMovieId": 74,
+			"tmdbPersonId": 502,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Robbins",
+			"character": "Harlan Ogilvy",
+			"tmdbMovieId": 74,
+			"tmdbPersonId": 504,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

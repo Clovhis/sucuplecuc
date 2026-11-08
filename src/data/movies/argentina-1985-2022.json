@@ -4,7 +4,11 @@
 	"originalTitle": "Argentina, 1985",
 	"year": 2022,
 	"category": "Drama",
-	"genres": ["Drama", "Historia", "Crimen"],
+	"genres": [
+		"Drama",
+		"Historia",
+		"Crimen"
+	],
 	"country": "AR",
 	"isArgentinian": true,
 	"poster": "assets/posters/2022/argentina-1985-2022.webp",
@@ -35,17 +39,40 @@
 			"notForYouIf": "Buscás neutralidad fría, acción de tribunal o una película que no tome posición frente a la impunidad."
 		},
 		"becauseYouLiked": [
-		"los-colonos-2023",
-		"barreda-2026"
-	],
-	"related": [
-		"elefante-blanco-2012",
-		"caballos-salvajes-1995",
-		"la-noche-de-los-lapices-1986",
-		"el-suplente-2022"
-	]
-},
+			"los-colonos-2023",
+			"barreda-2026"
+		],
+		"related": [
+			"elefante-blanco-2012",
+			"caballos-salvajes-1995",
+			"la-noche-de-los-lapices-1986",
+			"el-suplente-2022"
+		]
+	},
 	"synopsis": "La película sigue el juicio de 1985 a la dictadura militar que gobernó Argentina, durante el cual la tortura, los asesinatos extrajudiciales y las desapariciones forzadas fueron un hecho sistemático.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-02-28"
+	"reviewPublishedAt": "2026-02-28",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Julio Strassera",
+			"tmdbMovieId": 714888,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Lanzani",
+			"character": "Luis Moreno Ocampo",
+			"tmdbMovieId": 714888,
+			"tmdbPersonId": 1246181,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alejandra Flechner",
+			"character": "Silvia",
+			"tmdbMovieId": 714888,
+			"tmdbPersonId": 239252,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

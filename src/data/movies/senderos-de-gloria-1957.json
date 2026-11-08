@@ -47,17 +47,54 @@
 			"notForYouIf": "No es para vos si querés camaradería militar, héroes claros o una película de guerra que termine celebrando la cadena de mando."
 		},
 		"becauseYouLiked": [
-		"la-chaqueta-metalica-1987",
-		"telefono-rojo-volamos-hacia-moscu-1964"
-	],
-	"related": [
-		"la-batalla-de-argel-1966",
-		"michael-collins-1996",
-		"k-19-the-widowmaker-2002",
-		"patton-1970"
-	]
-},
+			"la-chaqueta-metalica-1987",
+			"telefono-rojo-volamos-hacia-moscu-1964"
+		],
+		"related": [
+			"la-batalla-de-argel-1966",
+			"michael-collins-1996",
+			"k-19-the-widowmaker-2002",
+			"patton-1970"
+		]
+	},
 	"review": "Stanley Kubrick desmonta la retórica del honor militar y muestra cómo la jerarquía protege su prestigio con cuerpos ajenos. Las trincheras se recorren con una precisión geométrica que contrasta con el caos del combate y la teatralidad del tribunal. Kirk Douglas sostiene la indignación del relato sin volverla declamación, y la película conserva una furia política muy clara. La condena de los soldados revela que la jerarquía cuida su reputación con el mismo rigor con que exige obediencia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Kirk Douglas",
+			"character": "Col. Dax",
+			"tmdbMovieId": 975,
+			"tmdbPersonId": 2090,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ralph Meeker",
+			"character": "Cpl. Philippe Paris",
+			"tmdbMovieId": 975,
+			"tmdbPersonId": 14562,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adolphe Menjou",
+			"character": "Gen. George Broulard",
+			"tmdbMovieId": 975,
+			"tmdbPersonId": 14563,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Macready",
+			"character": "Gen. Paul Mireau",
+			"tmdbMovieId": 975,
+			"tmdbPersonId": 14564,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wayne Morris",
+			"character": "Lt. Roget/Singing man",
+			"tmdbMovieId": 975,
+			"tmdbPersonId": 14565,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

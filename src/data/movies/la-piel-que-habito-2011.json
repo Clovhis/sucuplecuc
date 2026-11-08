@@ -56,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
 	"country": "ES",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Antonio Banderas",
+			"character": "Dr. Robert Ledgard",
+			"tmdbMovieId": 63311,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elena Anaya",
+			"character": "Vera Cruz / Gal",
+			"tmdbMovieId": 63311,
+			"tmdbPersonId": 3623,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

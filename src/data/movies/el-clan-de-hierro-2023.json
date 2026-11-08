@@ -52,5 +52,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Zac Efron",
+			"character": "Kevin Von Erich",
+			"tmdbMovieId": 850165,
+			"tmdbPersonId": 29222,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeremy Allen White",
+			"character": "Kerry Von Erich",
+			"tmdbMovieId": 850165,
+			"tmdbPersonId": 206905,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

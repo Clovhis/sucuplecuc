@@ -50,5 +50,21 @@
 	"isArgentinian": false,
 	"awards": {
 		"wins": []
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "James Brolin",
+			"character": "George Lutz",
+			"tmdbMovieId": 11449,
+			"tmdbPersonId": 9274,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margot Kidder",
+			"character": "Kathy Lutz",
+			"tmdbMovieId": 11449,
+			"tmdbPersonId": 20011,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

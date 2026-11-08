@@ -209,11 +209,15 @@ function uniqueCredits(values: string[]): string[] {
 	return output;
 }
 
-export function getMoviePeopleGroups(movie: Pick<Movie, 'director' | 'mainCast'>): MoviePeopleGroups {
+export function getMoviePeopleGroups(movie: Pick<Movie, 'director' | 'mainCast' | 'castCharacters'>): MoviePeopleGroups {
 	const directors = uniqueCredits(splitCreditNames(movie.director)).map((name) => buildMoviePersonCredit(name));
+	const activeCredits = movie.castCharacters ?? [];
 	const cast = uniqueCredits(
 		(movie.mainCast ?? []).flatMap((entry) => splitCreditNames(String(entry || ''))),
-	).map((name) => buildMoviePersonCredit(name));
+	).map((name) => {
+		const credit = activeCredits.find((entry) => entry.actor === name);
+		return { ...buildMoviePersonCredit(name), character: credit?.displayCharacter ?? credit?.character };
+	});
 
 	return {
 		directors,

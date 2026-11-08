@@ -30,7 +30,11 @@
 		"tenSecondTake": {
 			"verdict": "J.J. Abrams hace que la vida privada de Ethan sea el punto débil de la misión; Philip Seymour Hoffman amenaza con calma y Tom Cruise vuelve personal cada rescate.",
 			"whatToExpect": "Un agente retirado a medias, una prometida en peligro, un traficante de armas y operaciones rápidas que convierten el espionaje en defensa de la intimidad.",
-			"pace": "Tiene pulso veloz y estructura de rescate, con algunas explicaciones que quedan en segundo plano; el relato no permite que Ethan se acomode.",			"intensity": "La tensión es emocional y física: el villano conoce el punto débil del héroe y la amenaza funciona porque puede llegar hasta su casa.",			"practicalContext": "Sus 126 minutos rinden como thriller de acción directo; funciona incluso si no recordás los capítulos anteriores y querés ver cómo se reinventa Ethan.",			"forFansOf": "Para quienes disfrutan la química de Cruise con Philip Seymour Hoffman, la etapa más emocional de la saga y rescates con ritmo televisivo.",			"notForYouIf": "Puede dejarte frío si esperás una conspiración más compleja, un villano de acción o un misterio central tan importante como el vínculo familiar."
+			"pace": "Tiene pulso veloz y estructura de rescate, con algunas explicaciones que quedan en segundo plano; el relato no permite que Ethan se acomode.",
+			"intensity": "La tensión es emocional y física: el villano conoce el punto débil del héroe y la amenaza funciona porque puede llegar hasta su casa.",
+			"practicalContext": "Sus 126 minutos rinden como thriller de acción directo; funciona incluso si no recordás los capítulos anteriores y querés ver cómo se reinventa Ethan.",
+			"forFansOf": "Para quienes disfrutan la química de Cruise con Philip Seymour Hoffman, la etapa más emocional de la saga y rescates con ritmo televisivo.",
+			"notForYouIf": "Puede dejarte frío si esperás una conspiración más compleja, un villano de acción o un misterio central tan importante como el vínculo familiar."
 		},
 		"becauseYouLiked": [
 			"terminator-dark-fate-2019",
@@ -47,5 +51,28 @@
 	"synopsis": "Ethan Hunt intenta alejarse de las misiones para construir una vida tranquila, pero un traficante de armas amenaza a su prometida. Para salvarla, deberá volver al campo y recuperar un objeto de valor desconocido.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "Ethan Hunt",
+			"tmdbMovieId": 956,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Philip Seymour Hoffman",
+			"character": "Owen Davian",
+			"tmdbMovieId": 956,
+			"tmdbPersonId": 1233,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ving Rhames",
+			"character": "Luther",
+			"tmdbMovieId": 956,
+			"tmdbPersonId": 10182,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

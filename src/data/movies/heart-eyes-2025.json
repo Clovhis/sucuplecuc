@@ -50,5 +50,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-04",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Olivia Holt",
+			"character": "Ally McCabe",
+			"tmdbMovieId": 1302916,
+			"tmdbPersonId": 542870,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mason Gooding",
+			"character": "Jay Simmonds",
+			"tmdbMovieId": 1302916,
+			"tmdbPersonId": 2174509,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gigi Zumbado",
+			"character": "Monica",
+			"tmdbMovieId": 1302916,
+			"tmdbPersonId": 1542878,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

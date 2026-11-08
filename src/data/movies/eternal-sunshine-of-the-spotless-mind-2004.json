@@ -70,5 +70,42 @@
 	"releasePlatforms": [
 		"HBO Max",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Jim Carrey",
+			"character": "Joel Barish",
+			"tmdbMovieId": 38,
+			"tmdbPersonId": 206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Winslet",
+			"character": "Clementine Kruczynski",
+			"tmdbMovieId": 38,
+			"tmdbPersonId": 204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kirsten Dunst",
+			"character": "Mary",
+			"tmdbMovieId": 38,
+			"tmdbPersonId": 205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Ruffalo",
+			"character": "Stan",
+			"tmdbMovieId": 38,
+			"tmdbPersonId": 103,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elijah Wood",
+			"character": "Patrick",
+			"tmdbMovieId": 38,
+			"tmdbPersonId": 109,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

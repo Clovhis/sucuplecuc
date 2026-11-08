@@ -13,7 +13,9 @@
 		"Drama",
 		"Romance"
 	],
-	"subgenres": ["RomCom"],
+	"subgenres": [
+		"RomCom"
+	],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2009/500-dias-con-ella-2009.webp",
@@ -31,8 +33,15 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["la-la-land-2016", "amelie-2001"],
-		"related": ["love-actually-2003", "blue-valentine-2010", "amor-y-otras-drogas-2010"],
+		"becauseYouLiked": [
+			"la-la-land-2016",
+			"amelie-2001"
+		],
+		"related": [
+			"love-actually-2003",
+			"blue-valentine-2010",
+			"amor-y-otras-drogas-2010"
+		],
 		"tenSecondTake": {
 			"verdict": "Joseph Gordon-Levitt y Zooey Deschanel sostienen una comedia que desarma la idealización de Tom sin volver culpable a Summer.",
 			"whatToExpect": "Recuerdos fuera de orden, música pop, expectativas incompatibles y dos versiones de un mismo vínculo.",
@@ -45,5 +54,21 @@
 	},
 	"review": "Marc Webb usa el montaje fragmentado para separar lo que Tom recuerda de lo que realmente ocurrió. El recurso le da energía a una comedia romántica que también pone en duda la versión idealizada del enamorado; Gordon-Levitt y Deschanel sostienen el tono con una cercanía que evita el gesto cínico. El estilo de videoclip puede sentirse muy de su época, aunque la estructura mantiene viva una historia de desencuentro. La voz en off acompaña el juego, pero la película también deja espacio para discutirlo.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 95
+	"runtimeMinutes": 95,
+	"castCharacters": [
+		{
+			"actor": "Joseph Gordon-Levitt",
+			"character": "Tom",
+			"tmdbMovieId": 19913,
+			"tmdbPersonId": 24045,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zooey Deschanel",
+			"character": "Summer",
+			"tmdbMovieId": 19913,
+			"tmdbPersonId": 11664,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

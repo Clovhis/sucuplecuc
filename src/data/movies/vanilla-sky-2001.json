@@ -55,5 +55,28 @@
 	"review": "Vanilla Sky apuesta todo a la confusión y deja que el espectador arme el mapa mientras David pierde el control de su imagen. Crowe combina melodrama, ciencia ficción y fantasía romántica hasta rozar la saturación, pero también consigue que la decoración pop esconda una historia sobre culpa y autoengaño. Cruise se anima a quedar desagradable y frágil; esa decisión sostiene una película imperfecta, ambiciosa y más incómoda de lo que su envoltorio sugiere.",
 	"runtimeMinutes": 136,
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "David Aames",
+			"tmdbMovieId": 1903,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Penélope Cruz",
+			"character": "Sofia Serrano",
+			"tmdbMovieId": 1903,
+			"tmdbPersonId": 955,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cameron Diaz",
+			"character": "Julie Gianni",
+			"tmdbMovieId": 1903,
+			"tmdbPersonId": 6941,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

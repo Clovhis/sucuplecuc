@@ -54,5 +54,35 @@
 			"decision-de-partir-2022"
 		]
 	},
-	"review": "La película convierte una parada polvorienta en un tablero de deseo, culpa y cálculo. Jack Nicholson y Jessica Lange sostienen una tensión física que nunca queda reducida al escándalo: cada mirada modifica el equilibrio entre dos personas que creen poder controlar las consecuencias. Bob Rafelson filma el calor, el hambre y la espera con una aspereza muy concreta, mientras la fatalidad se instala sin necesidad de subrayados. Es un noir sensual, incómodo y todavía filoso."
+	"review": "La película convierte una parada polvorienta en un tablero de deseo, culpa y cálculo. Jack Nicholson y Jessica Lange sostienen una tensión física que nunca queda reducida al escándalo: cada mirada modifica el equilibrio entre dos personas que creen poder controlar las consecuencias. Bob Rafelson filma el calor, el hambre y la espera con una aspereza muy concreta, mientras la fatalidad se instala sin necesidad de subrayados. Es un noir sensual, incómodo y todavía filoso.",
+	"castCharacters": [
+		{
+			"actor": "Jack Nicholson",
+			"character": "Frank Chambers",
+			"tmdbMovieId": 11027,
+			"tmdbPersonId": 514,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Lange",
+			"character": "Cora Papadakis",
+			"tmdbMovieId": 11027,
+			"tmdbPersonId": 4431,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Lerner",
+			"character": "Mr. Katz",
+			"tmdbMovieId": 11027,
+			"tmdbPersonId": 4250,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anjelica Huston",
+			"character": "Madge",
+			"tmdbMovieId": 11027,
+			"tmdbPersonId": 5657,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

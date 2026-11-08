@@ -56,5 +56,21 @@
 	"releasePlatforms": [
 		"Netflix",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Sara Waisglass",
+			"character": "Ellie Pearse",
+			"tmdbMovieId": 1480025,
+			"tmdbPersonId": 1305494,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chase Hudson",
+			"character": "Nate Reed",
+			"tmdbMovieId": 1480025,
+			"tmdbPersonId": 2863584,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

@@ -62,5 +62,28 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 146
+	"runtimeMinutes": 146,
+	"castCharacters": [
+		{
+			"actor": "Viola Davis",
+			"character": "Aibileen Clark",
+			"tmdbMovieId": 50014,
+			"tmdbPersonId": 19492,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Octavia Spencer",
+			"character": "Minny Jackson",
+			"tmdbMovieId": 50014,
+			"tmdbPersonId": 6944,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Stone",
+			"character": "Skeeter Phelan",
+			"tmdbMovieId": 50014,
+			"tmdbPersonId": 54693,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

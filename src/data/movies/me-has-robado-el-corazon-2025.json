@@ -26,23 +26,51 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Chus Gutiérrez arma un romance de fuga amable donde Óscar Casas y Ana Jara hacen creíble la complicidad; el viaje funciona mejor que el misterio del robo.",
-			"whatToExpect": "Un asalto, una app de citas, un viaje improvisado de Madrid a Galicia y dos desconocidos obligados a negociar confianza entre enredos previsibles.",			"pace": "Avanza por peripecias de ruta y discusiones cortas; tiene un bache cuando estira el delito, pero recupera ritmo al concentrarse en la pareja.",			"intensity": "El peligro es liviano y la emoción romántica manda; los problemas del robo operan como excusa para que los personajes abandonen sus defensas.",			"practicalContext": "La ficha no consigna duración; elegila como comedia romántica de viaje para una noche sin ganas de seguir un thriller exigente.",			"forFansOf": "Para quienes disfrutan rom-coms de desconocidos, paisajes de carretera y protagonistas jóvenes que encuentran química en medio de una mentira.",			"notForYouIf": "Quizás no sea para vos si necesitás suspenso criminal, giros novedosos o una relación que se desarrolle sin apoyarse en malentendidos."
+			"whatToExpect": "Un asalto, una app de citas, un viaje improvisado de Madrid a Galicia y dos desconocidos obligados a negociar confianza entre enredos previsibles.",
+			"pace": "Avanza por peripecias de ruta y discusiones cortas; tiene un bache cuando estira el delito, pero recupera ritmo al concentrarse en la pareja.",
+			"intensity": "El peligro es liviano y la emoción romántica manda; los problemas del robo operan como excusa para que los personajes abandonen sus defensas.",
+			"practicalContext": "La ficha no consigna duración; elegila como comedia romántica de viaje para una noche sin ganas de seguir un thriller exigente.",
+			"forFansOf": "Para quienes disfrutan rom-coms de desconocidos, paisajes de carretera y protagonistas jóvenes que encuentran química en medio de una mentira.",
+			"notForYouIf": "Quizás no sea para vos si necesitás suspenso criminal, giros novedosos o una relación que se desarrolle sin apoyarse en malentendidos."
 		},
 		"becauseYouLiked": [
-		"solo-mio-2026",
-		"loco-y-estupido-amor-2011"
-	],
-	"related": [
-		"medianeras-2011",
-		"palm-springs-2020",
-		"amelie-2001",
-		"los-bufalos-de-durham-1988"
-	]
-},
+			"solo-mio-2026",
+			"loco-y-estupido-amor-2011"
+		],
+		"related": [
+			"medianeras-2011",
+			"palm-springs-2020",
+			"amelie-2001",
+			"los-bufalos-de-durham-1988"
+		]
+	},
 	"synopsis": "Después de robar un banco, el joven ingeniero Eric engaña a su aplicación de citas para que Vera se convierta en su conductora en su vuelo de Madrid a Galicia.",
 	"audienceRating": "+16",
 	"subgenres": [
 		"RomCom"
 	],
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"castCharacters": [
+		{
+			"actor": "Óscar Casas",
+			"character": "Eric/Nacho",
+			"tmdbMovieId": 1544991,
+			"tmdbPersonId": 51943,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Zahera",
+			"character": "Trigo",
+			"tmdbMovieId": 1544991,
+			"tmdbPersonId": 28511,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ana Milán",
+			"character": "Eva",
+			"tmdbMovieId": 1544991,
+			"tmdbPersonId": 1111245,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

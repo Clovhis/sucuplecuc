@@ -33,28 +33,58 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Aída y vuelta usa el reencuentro para preguntar qué queda de un humor televisivo; Paco León combina cariño, meta ficción y una Carmen Machi que no necesita presentación.",
-			"whatToExpect": "El elenco volviendo al set, personajes y actores chocando entre sí y una serie popular revisando su propia herencia.",
-			"pace": "Con 98 minutos alterna escenas de rodaje, discusiones y guiños al público sin abandonar demasiado el hilo.",
-			"intensity": "Cálida y algo desordenada, con más tensión de oficio y nostalgia que conflicto dramático.",
-			"practicalContext": "Es una opción directa para quien conoce la serie; sin ese afecto previo, algunos chistes van a pasar más rápido.",
-			"forFansOf": "Los reencuentros de elencos, la comedia meta y Paco León cuando mira el espectáculo desde adentro.",
-			"notForYouIf": "Buscás una comedia autónoma, humor completamente nuevo o una crítica a la televisión sin abrazo nostálgico."
-		},
-		"becauseYouLiked": [
-		"53-domingos-2026",
-		"torrente-presidente-2026"
-	],
-	"related": [
-		"las-ovejas-detectives-2026",
-		"companeras-de-cuarto-2026",
-		"coyote-vs-acme-2026",
-		"la-casaca-de-dios-2026"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Aída y vuelta usa el reencuentro para preguntar qué queda de un humor televisivo; Paco León combina cariño, meta ficción y una Carmen Machi que no necesita presentación.",
+      "whatToExpect": "El elenco volviendo al set, personajes y actores chocando entre sí y una serie popular revisando su propia herencia.",
+      "pace": "Con 98 minutos alterna escenas de rodaje, discusiones y guiños al público sin abandonar demasiado el hilo.",
+      "intensity": "Cálida y algo desordenada, con más tensión de oficio y nostalgia que conflicto dramático.",
+      "practicalContext": "Es una opción directa para quien conoce la serie; sin ese afecto previo, algunos chistes van a pasar más rápido.",
+      "forFansOf": "Los reencuentros de elencos, la comedia meta y Paco León cuando mira el espectáculo desde adentro.",
+      "notForYouIf": "Buscás una comedia autónoma, humor completamente nuevo o una crítica a la televisión sin abrazo nostálgico."
+    },
+    "becauseYouLiked": [
+      "53-domingos-2026",
+      "torrente-presidente-2026"
+    ],
+    "related": [
+      "las-ovejas-detectives-2026",
+      "companeras-de-cuarto-2026",
+      "coyote-vs-acme-2026",
+      "la-casaca-de-dios-2026"
+    ]
+  },
   "isPremiere": true,
   "premiereLabel": "ESTRENO",
-  "review": "Aída y vuelta podria haber sido puro reencuentro nostalgico, pero Paco Leon la corre hacia algo mas vivo: una pelicula sobre volver, actuar que se vuelve, y discutir si el humor que antes arrasaba todavia respira igual. Esa capa meta le da gracia y tambien una melancolia bastante honesta.\n\nEl elenco entra con una quimica que no se fabrica de un dia para el otro. Hay chistes que dependen mucho del cariño previo por la serie, pero la pelicula no se queda quieta en el fan service. Tiene desorden, si, pero tambien pulso popular y afecto real por esos personajes."
+  "review": "Aída y vuelta podria haber sido puro reencuentro nostalgico, pero Paco Leon la corre hacia algo mas vivo: una pelicula sobre volver, actuar que se vuelve, y discutir si el humor que antes arrasaba todavia respira igual. Esa capa meta le da gracia y tambien una melancolia bastante honesta.\n\nEl elenco entra con una quimica que no se fabrica de un dia para el otro. Hay chistes que dependen mucho del cariño previo por la serie, pero la pelicula no se queda quieta en el fan service. Tiene desorden, si, pero tambien pulso popular y afecto real por esos personajes.",
+  "castCharacters": [
+    {
+      "actor": "Carmen Machi",
+      "character": "Carmen Machi/Aída",
+      "tmdbMovieId": 1370123,
+      "tmdbPersonId": 102222,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Paco León",
+      "character": "Paco Léon/Luisma",
+      "tmdbMovieId": 1370123,
+      "tmdbPersonId": 224870,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Miren Ibarguren",
+      "character": "Miren Ibarguren/Soraya",
+      "tmdbMovieId": 1370123,
+      "tmdbPersonId": 560247,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Eduardo Casanova",
+      "character": "Eduardo Casanova/Fidel",
+      "tmdbMovieId": 1370123,
+      "tmdbPersonId": 931271,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

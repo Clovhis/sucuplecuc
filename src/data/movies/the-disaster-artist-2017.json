@@ -55,5 +55,42 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "James Franco",
+			"character": "Tommy / 'Johnny'",
+			"tmdbMovieId": 371638,
+			"tmdbPersonId": 17051,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dave Franco",
+			"character": "Greg / 'Mark'",
+			"tmdbMovieId": 371638,
+			"tmdbPersonId": 54697,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Seth Rogen",
+			"character": "Sandy",
+			"tmdbMovieId": 371638,
+			"tmdbPersonId": 19274,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alison Brie",
+			"character": "Amber",
+			"tmdbMovieId": 371638,
+			"tmdbPersonId": 88029,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ari Graynor",
+			"character": "Juliette / 'Lisa'",
+			"tmdbMovieId": 371638,
+			"tmdbPersonId": 71552,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

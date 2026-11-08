@@ -47,5 +47,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Hugh Jackman",
+			"character": "Logan / X-24",
+			"tmdbMovieId": 263115,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick Stewart",
+			"character": "Charles",
+			"tmdbMovieId": 263115,
+			"tmdbPersonId": 2387,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard E. Grant",
+			"character": "Dr. Rice",
+			"tmdbMovieId": 263115,
+			"tmdbPersonId": 20766,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

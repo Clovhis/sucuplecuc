@@ -53,5 +53,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Emma Stone",
+			"character": "Estella / Cruella",
+			"tmdbMovieId": 337404,
+			"tmdbPersonId": 54693,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Thompson",
+			"character": "The Baroness",
+			"tmdbMovieId": 337404,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joel Fry",
+			"character": "Jasper",
+			"tmdbMovieId": 337404,
+			"tmdbPersonId": 54811,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

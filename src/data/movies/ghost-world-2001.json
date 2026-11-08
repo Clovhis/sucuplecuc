@@ -56,5 +56,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Thora Birch",
+			"character": "Enid",
+			"tmdbMovieId": 1548,
+			"tmdbPersonId": 2155,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Rebecca",
+			"tmdbMovieId": 1548,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve Buscemi",
+			"character": "Seymour",
+			"tmdbMovieId": 1548,
+			"tmdbPersonId": 884,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Renfro",
+			"character": "Josh",
+			"tmdbMovieId": 1548,
+			"tmdbPersonId": 51214,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

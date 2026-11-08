@@ -59,5 +59,28 @@
 	"synopsis": "Elliott encuentra a un extraterrestre perdido y lo esconde en su casa mientras intenta ayudarlo a volver con los suyos. La amistad entre los dos crece justo cuando el gobierno empieza a acercarse demasiado.",
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-10",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Henry Thomas",
+			"character": "Elliott",
+			"tmdbMovieId": 601,
+			"tmdbPersonId": 9976,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Drew Barrymore",
+			"character": "Gertie",
+			"tmdbMovieId": 601,
+			"tmdbPersonId": 69597,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dee Wallace",
+			"character": "Mary",
+			"tmdbMovieId": 601,
+			"tmdbPersonId": 62001,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

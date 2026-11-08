@@ -33,15 +33,15 @@
 	},
 	"runtimeMinutes": 128,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "La terminal convierte una espera absurda en comedia humana; Steven Spielberg encuentra en Tom Hanks la ternura justa para que Viktor no parezca una caricatura.",
-		"whatToExpect": "Viktor queda atrapado en un aeropuerto cuando su pasaporte deja de servir y aprende a sobrevivir entre reglas, trabajos y vínculos inesperados.",
-		"pace": "Avanza con pequeñas tareas y encuentros, alternando humor cotidiano con un romance que demora más de lo que la película puede sostener.",
-		"intensity": "El conflicto es burocrático y emocional: nadie dispara, pero cada trámite puede devolver a Viktor al mismo limbo.",
-		"practicalContext": "Con 128 minutos, funciona como drama amable de aeropuerto; conviene verla por sus gestos de comunidad y no por una intriga de frontera rigurosa.",
-		"forFansOf": "Te va a gustar si disfrutás comedias de supervivencia, protagonistas desubicados y el Tom Hanks que hace calidez sin ponerse solemne.",
-		"notForYouIf": "Quizás no sea para vos si buscás una sátira política filosa, un romance central potente o un ritmo que no repita su fórmula."
-	},
+		"tenSecondTake": {
+			"verdict": "La terminal convierte una espera absurda en comedia humana; Steven Spielberg encuentra en Tom Hanks la ternura justa para que Viktor no parezca una caricatura.",
+			"whatToExpect": "Viktor queda atrapado en un aeropuerto cuando su pasaporte deja de servir y aprende a sobrevivir entre reglas, trabajos y vínculos inesperados.",
+			"pace": "Avanza con pequeñas tareas y encuentros, alternando humor cotidiano con un romance que demora más de lo que la película puede sostener.",
+			"intensity": "El conflicto es burocrático y emocional: nadie dispara, pero cada trámite puede devolver a Viktor al mismo limbo.",
+			"practicalContext": "Con 128 minutos, funciona como drama amable de aeropuerto; conviene verla por sus gestos de comunidad y no por una intriga de frontera rigurosa.",
+			"forFansOf": "Te va a gustar si disfrutás comedias de supervivencia, protagonistas desubicados y el Tom Hanks que hace calidez sin ponerse solemne.",
+			"notForYouIf": "Quizás no sea para vos si buscás una sátira política filosa, un romance central potente o un ritmo que no repita su fórmula."
+		},
 		"becauseYouLiked": [
 			"50-first-dates-2004",
 			"peggy-sue-se-caso-1986"
@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "The Terminal deja a Viktor Navorski varado en un aeropuerto neoyorquino cuando un cambio político vuelve inútiles sus documentos, y convierte esa espera absurda en una comedia de supervivencia cotidiana. Steven Spielberg dirige con una ternura de otra época y encuentra gracia en cómo el protagonista aprende el idioma, el trabajo y las reglas del lugar; Tom Hanks sostiene el personaje sin volverlo una caricatura, y Stanley Tucci le da una oposición seca y divertida. El romance es lo más flojo y el final simplifica demasiado. Vale por los pequeños gestos y por una película amable que sabe hacer del encierro un espacio humano.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Viktor Navorski",
+			"tmdbMovieId": 594,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine Zeta-Jones",
+			"character": "Amelia Warren",
+			"tmdbMovieId": 594,
+			"tmdbPersonId": 1922,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stanley Tucci",
+			"character": "Frank Dixon",
+			"tmdbMovieId": 594,
+			"tmdbPersonId": 2283,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chi McBride",
+			"character": "Mulroy",
+			"tmdbMovieId": 594,
+			"tmdbPersonId": 8687,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diego Luna",
+			"character": "Enrique Cruz",
+			"tmdbMovieId": 594,
+			"tmdbPersonId": 8688,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

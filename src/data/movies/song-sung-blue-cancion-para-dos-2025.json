@@ -45,7 +45,7 @@
 			"forFansOf": "Puede gustarte si disfrutás melodramas musicales, historias de artistas tardíos y duplas actorales que cantan con convicción, aun cuando el relato prefiera la emoción frontal al matiz.",
 			"notForYouIf": "Quizás no sea para vos si te pesa el subrayado sentimental, si buscás una biografía más sobria o si preferís que una canción sugiera una pérdida en lugar de explicarla con una nueva desgracia."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"los-miserables-2012",
 			"la-la-land-2016"
 		],
@@ -56,5 +56,42 @@
 			"everyone-says-i-love-you-1996"
 		]
 	},
-	"review": "Song Sung Blue - Canción para dos tiene una premisa capaz de levantar cualquier sobremesa: dos personas golpeadas por la vida encuentran una forma de volver a cantar juntas. La pareja protagonista transmite afecto y desgaste, y los números musicales funcionan cuando dejan ver el esfuerzo detrás de la sonrisa.\n\nEl problema aparece cuando el drama aprieta el acelerador y transforma cada tropiezo en una señal de tragedia. El tono melodramático puede resultar entrañable o demasiado calculado según la paciencia de quien mire. IRREGULAR: hay calidez, buenas canciones y actuaciones entregadas, pero la película no siempre sabe cuándo dejar de empujar la emoción."
+	"review": "Song Sung Blue - Canción para dos tiene una premisa capaz de levantar cualquier sobremesa: dos personas golpeadas por la vida encuentran una forma de volver a cantar juntas. La pareja protagonista transmite afecto y desgaste, y los números musicales funcionan cuando dejan ver el esfuerzo detrás de la sonrisa.\n\nEl problema aparece cuando el drama aprieta el acelerador y transforma cada tropiezo en una señal de tragedia. El tono melodramático puede resultar entrañable o demasiado calculado según la paciencia de quien mire. IRREGULAR: hay calidez, buenas canciones y actuaciones entregadas, pero la película no siempre sabe cuándo dejar de empujar la emoción.",
+	"castCharacters": [
+		{
+			"actor": "Hugh Jackman",
+			"character": "Mike Sardina",
+			"tmdbMovieId": 1371185,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Hudson",
+			"character": "Claire Sardina",
+			"tmdbMovieId": 1371185,
+			"tmdbPersonId": 11661,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Imperioli",
+			"character": "Mark Shurilla",
+			"tmdbMovieId": 1371185,
+			"tmdbPersonId": 11486,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fisher Stevens",
+			"character": "Dr. Dave Watson",
+			"tmdbMovieId": 1371185,
+			"tmdbPersonId": 26473,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jim Belushi",
+			"character": "Tom D'Amato",
+			"tmdbMovieId": 1371185,
+			"tmdbPersonId": 26485,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

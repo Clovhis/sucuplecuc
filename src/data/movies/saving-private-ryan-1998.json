@@ -59,5 +59,28 @@
 	"synopsis": "Ambientada en 1944 en Normandía, Francia, durante la Segunda Guerra Mundial, sigue a un grupo de soldados, liderados por el Capitán John Miller, en una misión para localizar al soldado James Francis Ryan y llevarlo a casa sano y salvo después de que sus tres hermanos murieron en combate.",
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-10",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Captain Miller",
+			"tmdbMovieId": 857,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Damon",
+			"character": "Private Ryan",
+			"tmdbMovieId": 857,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Sizemore",
+			"character": "Sergeant Horvath",
+			"tmdbMovieId": 857,
+			"tmdbPersonId": 3197,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

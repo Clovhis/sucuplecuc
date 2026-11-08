@@ -53,5 +53,42 @@
 		]
 	},
 	"review": "Celebrity sigue a un periodista recién separado que se mete en el circo de los famosos de Nueva York mientras su ex esposa encuentra una vida mucho más firme lejos de él. Woody Allen filma en blanco y negro y convierte cada encuentro en una pequeña humillación, con una galería de estrellas que alimenta la sátira del prestigio. Kenneth Branagh imita el fraseo del director con resultados discutibles, pero Judy Davis tiene un recorrido mucho más vivo. Es despareja y bastante cínica, aunque sus mejores escenas todavía muerden.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Hank Azaria",
+			"character": "David",
+			"tmdbMovieId": 9466,
+			"tmdbPersonId": 5587,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kenneth Branagh",
+			"character": "Lee Simon",
+			"tmdbMovieId": 9466,
+			"tmdbPersonId": 11181,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judy Davis",
+			"character": "Robin Simon",
+			"tmdbMovieId": 9466,
+			"tmdbPersonId": 351,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Brandon",
+			"tmdbMovieId": 9466,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Melanie Griffith",
+			"character": "Nicole Oliver",
+			"tmdbMovieId": 9466,
+			"tmdbPersonId": 29369,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

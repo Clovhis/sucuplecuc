@@ -56,5 +56,42 @@
 			"tres-reyes-1999"
 		]
 	},
-	"review": "Tony Scott mete al espectador en un tubo de acero donde cada ruido parece una cuenta regresiva. La premisa es simple y funciona justamente porque Denzel Washington y Gene Hackman convierten una discusión técnica en un choque feroz de liderazgo, ego y responsabilidad. El montaje, la música y los pasillos estrechos sostienen una tensión casi física sin necesitar demasiada acción afuera del submarino. Algunas frases tienen el subrayado grandilocuente típico de la época, pero el duelo central está tan bien calibrado que el pulso no se cae."
+	"review": "Tony Scott mete al espectador en un tubo de acero donde cada ruido parece una cuenta regresiva. La premisa es simple y funciona justamente porque Denzel Washington y Gene Hackman convierten una discusión técnica en un choque feroz de liderazgo, ego y responsabilidad. El montaje, la música y los pasillos estrechos sostienen una tensión casi física sin necesitar demasiada acción afuera del submarino. Algunas frases tienen el subrayado grandilocuente típico de la época, pero el duelo central está tan bien calibrado que el pulso no se cae.",
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "Lt. Commander Ronald \"Ron\" Hunter",
+			"tmdbMovieId": 8963,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Hackman",
+			"character": "Captain Franklin \"Frank\" Ramsey",
+			"tmdbMovieId": 8963,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Craven",
+			"character": "Lt. Roy Zimmer",
+			"tmdbMovieId": 8963,
+			"tmdbPersonId": 13525,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Dzundza",
+			"character": "Chief of the Boat Cob",
+			"tmdbMovieId": 8963,
+			"tmdbPersonId": 10477,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Viggo Mortensen",
+			"character": "Lt. Peter 'Weps' Ince",
+			"tmdbMovieId": 8963,
+			"tmdbPersonId": 110,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

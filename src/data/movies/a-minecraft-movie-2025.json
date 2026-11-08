@@ -46,5 +46,21 @@
 	"review": "A Minecraft Movie tiene el problema clásico de varias adaptaciones de marca: reconoce los bloques, los chistes visuales y la iconografía, pero tarda bastante en encontrar una película adentro. Para quien ama el juego, hay guiños y criaturas suficientes como para señalar la pantalla; para quien entra buscando aventura con peso propio, la experiencia se vuelve más ruidosa que divertida. Jack Black y Jason Momoa intentan levantar el tono desde la energía, pero muchas escenas parecen armadas para pasar de una referencia a la siguiente antes de que algo respire. La película confunde familiaridad con gracia, y cuando una adaptación depende tanto de que ya traigas cariño desde afuera el relato queda flaco. Puede servir como plan infantil o de curiosidad familiar, pero si esperás una comedia de aventuras con timing, sorpresa y personajes memorables, conviene bajar mucho la expectativa.",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jason Momoa",
+			"character": "Garrett",
+			"tmdbMovieId": 950387,
+			"tmdbPersonId": 117642,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Black",
+			"character": "Steve",
+			"tmdbMovieId": 950387,
+			"tmdbPersonId": 70851,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,35 @@
 		]
 	},
 	"review": "Cleaner trabaja mejor cuando se concentra en el oficio de Tom Cutler: baldes, guantes y protocolos para borrar una violencia que otros prefieren no mirar. El misterio policial es bastante convencional, pero Samuel L. Jackson le da al protagonista una dignidad cansada que sostiene la película cuando el guion pisa terreno conocido. Ed Harris aporta una amenaza seca y Eva Mendes una presencia más humana que ornamental. No reinventa el thriller, aunque encuentra un pulso prolijo y una suciedad moral interesante en su premisa.",
-	"runtimeMinutes": 88
+	"runtimeMinutes": 88,
+	"castCharacters": [
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Tom Cutler",
+			"tmdbMovieId": 13252,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Harris",
+			"character": "Eddie Lorenzo",
+			"tmdbMovieId": 13252,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eva Mendes",
+			"character": "Ann Norcut",
+			"tmdbMovieId": 13252,
+			"tmdbPersonId": 8170,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keke Palmer",
+			"character": "Rose Cutler",
+			"tmdbMovieId": 13252,
+			"tmdbPersonId": 74688,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

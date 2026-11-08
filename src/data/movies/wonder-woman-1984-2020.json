@@ -51,5 +51,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Gal Gadot",
+			"character": "Diana Prince",
+			"tmdbMovieId": 464052,
+			"tmdbPersonId": 90633,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Pine",
+			"character": "Steve Trevor",
+			"tmdbMovieId": 464052,
+			"tmdbPersonId": 62064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kristen Wiig",
+			"character": "Barbara Minerva",
+			"tmdbMovieId": 464052,
+			"tmdbPersonId": 41091,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

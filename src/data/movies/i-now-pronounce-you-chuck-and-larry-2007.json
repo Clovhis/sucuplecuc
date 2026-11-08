@@ -55,5 +55,42 @@
 	"review": "Yo los declaro marido y Larry quiere ser una comedia de amistad con un costado de denuncia y termina atrapada en sus propios chistes. Sandler y Kevin James tienen un ritmo de pareja reconocible, pero el guion usa la identidad gay como disfraz, amenaza y remate antes de recordar que pretende defender derechos. Hay secundarios capaces de levantar escenas, aunque la buena intención nunca alcanza para compensar una mirada bastante vieja.",
 	"runtimeMinutes": 115,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Chuck Levine",
+			"tmdbMovieId": 3563,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin James",
+			"character": "Larry Valentine",
+			"tmdbMovieId": 3563,
+			"tmdbPersonId": 32895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Biel",
+			"character": "Alex McDonough",
+			"tmdbMovieId": 3563,
+			"tmdbPersonId": 10860,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dan Aykroyd",
+			"character": "Captain Tucker",
+			"tmdbMovieId": 3563,
+			"tmdbPersonId": 707,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ving Rhames",
+			"character": "Duncan",
+			"tmdbMovieId": 3563,
+			"tmdbPersonId": 10182,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

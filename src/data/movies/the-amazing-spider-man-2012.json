@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Andrew Garfield",
+			"character": "Spider-Man / Peter Parker",
+			"tmdbMovieId": 1930,
+			"tmdbPersonId": 37625,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Stone",
+			"character": "Gwen Stacy",
+			"tmdbMovieId": 1930,
+			"tmdbPersonId": 54693,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rhys Ifans",
+			"character": "The Lizard / Dr. Curt Connors",
+			"tmdbMovieId": 1930,
+			"tmdbPersonId": 7026,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

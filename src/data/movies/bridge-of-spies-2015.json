@@ -62,5 +62,42 @@
 		]
 	},
 	"review": "Bridge of Spies sigue a un abogado de seguros que debe defender a un espía soviético y luego negociar un intercambio en plena Guerra Fría. Steven Spielberg dirige el thriller con calma y precisión, interesado en los procedimientos y en la dignidad de alguien que hace su trabajo aunque todos lo rechacen; Tom Hanks sostiene esa rectitud sin grandilocuencia y Mark Rylance compone al espía con una ironía mínima y perfecta. El ritmo es pausado y algunas escenas explican de más, pero la tensión nunca se pierde. Vale por dos actuaciones medidas y un espionaje construido desde la negociación, no la pirotecnia.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "James B. Donovan",
+			"tmdbMovieId": 296098,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Rylance",
+			"character": "Rudolf Abel",
+			"tmdbMovieId": 296098,
+			"tmdbPersonId": 40900,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amy Ryan",
+			"character": "Mary Donovan",
+			"tmdbMovieId": 296098,
+			"tmdbPersonId": 39388,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Alda",
+			"character": "Thomas Watters Jr.",
+			"tmdbMovieId": 296098,
+			"tmdbPersonId": 21278,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sebastian Koch",
+			"character": "Wolfgang Vogel",
+			"tmdbMovieId": 296098,
+			"tmdbPersonId": 8197,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

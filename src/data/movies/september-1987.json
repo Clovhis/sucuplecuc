@@ -52,5 +52,42 @@
 		]
 	},
 	"review": "Septiembre encierra a seis personajes en una casa de campo y deja que sus deseos mal acomodados salgan en conversaciones cada vez más incómodas. Woody Allen dirige sin distracciones, con una puesta teatral que concentra la atención en los silencios, las miradas y la información que cada uno retiene. Mia Farrow sostiene una fragilidad cansada, mientras Dianne Wiest y Sam Waterston encuentran buenos cambios de tono dentro de un elenco que habla mucho pero no siempre logra escucharse. El ritmo es deliberadamente pausado y la cámara casi no libera el aire. No es una película amable, pero su tristeza sin grandes explosiones tiene una honestidad poco común.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Denholm Elliott",
+			"character": "Howard",
+			"tmdbMovieId": 22477,
+			"tmdbPersonId": 656,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mia Farrow",
+			"character": "Lane",
+			"tmdbMovieId": 22477,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elaine Stritch",
+			"character": "Diane Frasier",
+			"tmdbMovieId": 22477,
+			"tmdbPersonId": 36802,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Warden",
+			"character": "Lloyd",
+			"tmdbMovieId": 22477,
+			"tmdbPersonId": 5251,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Waterston",
+			"character": "Peter",
+			"tmdbMovieId": 22477,
+			"tmdbPersonId": 8975,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

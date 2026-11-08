@@ -8,7 +8,9 @@
 	"reviewPublishedAt": "2026-05-28",
 	"audienceRating": "+17",
 	"category": "Accion",
-	"subgenres": ["Heist"],
+	"subgenres": [
+		"Heist"
+	],
 	"genres": [
 		"Accion",
 		"Crimen",
@@ -45,18 +47,55 @@
 			"forFansOf": "Para quienes disfrutan atracos contra reloj, ciudades evacuadas y acción de David Mackenzie con una apuesta concreta.",
 			"notForYouIf": "Puede parecerte liviana si esperás personajes complejos, una crítica social amplia o un thriller que cambie de escala."
 		},
-	"becauseYouLiked": [
-		"fast-five-2011",
-		"la-estafa-maestra-2003"
-	],
-	"related": [
-		"ronin-1998",
-		"el-robo-del-siglo-2020",
-		"lu-pau-2026",
-		"la-gran-estafa-2001"
-	]
-},
+		"becauseYouLiked": [
+			"fast-five-2011",
+			"la-estafa-maestra-2003"
+		],
+		"related": [
+			"ronin-1998",
+			"el-robo-del-siglo-2020",
+			"lu-pau-2026",
+			"la-gran-estafa-2001"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Zona de riesgo arma un buen juguete de tension: una bomba vieja, una ciudad evacuada y chorros que se meten justo donde nadie deberia estar. Mackenzie no la infla mas de la cuenta y eso le juega a favor: va al punto, con oficio y ritmo de thriller de atraco.\n\nNo tiene una personalidad enorme, pero el elenco le suma presencia y la premisa alcanza para sostener la urgencia. Es de esas peliculas que rinden mejor cuando no prometen revolucionar nada y se dedican a hacer bien el laburo."
+	"review": "Zona de riesgo arma un buen juguete de tension: una bomba vieja, una ciudad evacuada y chorros que se meten justo donde nadie deberia estar. Mackenzie no la infla mas de la cuenta y eso le juega a favor: va al punto, con oficio y ritmo de thriller de atraco.\n\nNo tiene una personalidad enorme, pero el elenco le suma presencia y la premisa alcanza para sostener la urgencia. Es de esas peliculas que rinden mejor cuando no prometen revolucionar nada y se dedican a hacer bien el laburo.",
+	"castCharacters": [
+		{
+			"actor": "Aaron Taylor-Johnson",
+			"character": "Will",
+			"tmdbMovieId": 1242265,
+			"tmdbPersonId": 27428,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Theo James",
+			"character": "Karalis",
+			"tmdbMovieId": 1242265,
+			"tmdbPersonId": 587020,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Worthington",
+			"character": "X",
+			"tmdbMovieId": 1242265,
+			"tmdbPersonId": 65731,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gugu Mbatha-Raw",
+			"character": "Zuzana",
+			"tmdbMovieId": 1242265,
+			"tmdbPersonId": 1216606,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Honor Swinton Byrne",
+			"character": "Clareese",
+			"tmdbMovieId": 1242265,
+			"tmdbPersonId": 2038688,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -38,7 +38,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "F. W. Murnau convierte a Orlok en una silueta que parece una enfermedad; Max Schreck sostiene un terror de formas y sombras que no necesita explicarse para seguir inquietando.",
-			"whatToExpect": "Castillo, viaje a Transilvania, peste, pueblo amenazado y un vampiro que se mueve como una presencia fuera de la escala humana.",			"pace": "Tiene un ritmo mudo y ritual, con desplazamientos lentos y cortes que dejan que la figura de Orlok invada el espacio.",			"intensity": "La intensidad es visual y atmosférica, no de sustos rápidos; las sombras, las manos y la peste producen una incomodidad persistente.",			"practicalContext": "Con 94 minutos, funciona como sesión breve de terror clásico; elegí una versión con acompañamiento sonoro cuidado y mirala sin interrupciones.",			"forFansOf": "Para quienes disfrutan expresionismo, vampiros fundacionales y películas que construyen miedo con silueta, arquitectura y movimiento.",			"notForYouIf": "No es para vos si necesitás diálogos ágiles, sobresaltos modernos o un monstruo explicado psicológicamente en lugar de una figura pura de pesadilla."
+			"whatToExpect": "Castillo, viaje a Transilvania, peste, pueblo amenazado y un vampiro que se mueve como una presencia fuera de la escala humana.",
+			"pace": "Tiene un ritmo mudo y ritual, con desplazamientos lentos y cortes que dejan que la figura de Orlok invada el espacio.",
+			"intensity": "La intensidad es visual y atmosférica, no de sustos rápidos; las sombras, las manos y la peste producen una incomodidad persistente.",
+			"practicalContext": "Con 94 minutos, funciona como sesión breve de terror clásico; elegí una versión con acompañamiento sonoro cuidado y mirala sin interrupciones.",
+			"forFansOf": "Para quienes disfrutan expresionismo, vampiros fundacionales y películas que construyen miedo con silueta, arquitectura y movimiento.",
+			"notForYouIf": "No es para vos si necesitás diálogos ágiles, sobresaltos modernos o un monstruo explicado psicológicamente en lugar de una figura pura de pesadilla."
 		},
 		"becauseYouLiked": [
 			"mandy-2018",
@@ -53,5 +58,42 @@
 	},
 	"review": "F. W. Murnau convierte la historia del vampiro en una pesadilla de sombras filosas, siluetas estiradas y espacios que parecen respirar. Max Schreck no necesita grandes gestos: su Orlok avanza como una enfermedad que ya tomó la pantalla. El ritmo silencioso exige otra atención, pero la puesta no envejeció porque trabaja con formas, no con sustos de moda. Hay algo profundamente incómodo en cada aparición, y esa incomodidad explica por qué el film sigue siendo una piedra fundamental del terror.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Max Schreck",
+			"character": "Count Orlok",
+			"tmdbMovieId": 653,
+			"tmdbPersonId": 9839,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gustav von Wangenheim",
+			"character": "Hutter",
+			"tmdbMovieId": 653,
+			"tmdbPersonId": 9840,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Greta Schröder",
+			"character": "Ellen",
+			"tmdbMovieId": 653,
+			"tmdbPersonId": 9841,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Georg H. Schnell",
+			"character": "Harding",
+			"tmdbMovieId": 653,
+			"tmdbPersonId": 9843,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ruth Landshoff",
+			"character": "Ruth",
+			"tmdbMovieId": 653,
+			"tmdbPersonId": 9844,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

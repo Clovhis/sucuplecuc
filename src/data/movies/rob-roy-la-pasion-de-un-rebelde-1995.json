@@ -57,5 +57,42 @@
 	},
 	"review": "Rob Roy no depende sólo de los paisajes y los kilts: Michael Caton-Jones hace que el conflicto por una deuda se vuelva una herida de clase, honor y familia. Liam Neeson interpreta al héroe sin convertirlo en estatua, con una mezcla muy terrenal de paciencia, furia y cansancio. Jessica Lange sostiene el costado doméstico con carácter, mientras Tim Roth disfruta cada gesto venenoso de su rival. Tiene romance, barro y aventura histórica, pero también una pelea final filmada con una precisión física que sigue dejando sin aire.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Robert Roy MacGregor",
+			"tmdbMovieId": 11780,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Lange",
+			"character": "Mary MacGregor",
+			"tmdbMovieId": 11780,
+			"tmdbPersonId": 4431,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Hurt",
+			"character": "John Graham",
+			"tmdbMovieId": 11780,
+			"tmdbPersonId": 5049,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Roth",
+			"character": "Archibald Cunningham",
+			"tmdbMovieId": 11780,
+			"tmdbPersonId": 3129,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eric Stoltz",
+			"character": "Alan MacDonald",
+			"tmdbMovieId": 11780,
+			"tmdbPersonId": 7036,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

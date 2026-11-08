@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "Johnny Blaze / Ghost Rider",
+			"tmdbMovieId": 1250,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eva Mendes",
+			"character": "Roxanne Simpson",
+			"tmdbMovieId": 1250,
+			"tmdbPersonId": 8170,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wes Bentley",
+			"character": "Blackheart / Black King",
+			"tmdbMovieId": 1250,
+			"tmdbPersonId": 8210,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

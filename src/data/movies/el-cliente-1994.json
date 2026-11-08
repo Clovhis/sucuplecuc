@@ -8,7 +8,11 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Thriller", "Drama", "Crimen"],
+	"genres": [
+		"Thriller",
+		"Drama",
+		"Crimen"
+	],
 	"subgenres": [],
 	"country": "US",
 	"isArgentinian": false,
@@ -17,7 +21,12 @@
 	"trailerYoutubeId": "A6Ru1zDsws0",
 	"releasePlatform": "Netflix",
 	"director": "Joel Schumacher",
-	"mainCast": ["Susan Sarandon", "Tommy Lee Jones", "Brad Renfro", "Mary-Louise Parker"],
+	"mainCast": [
+		"Susan Sarandon",
+		"Tommy Lee Jones",
+		"Brad Renfro",
+		"Mary-Louise Parker"
+	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 7,
 	"runtimeMinutes": 119,
@@ -34,18 +43,48 @@
 			"forFansOf": "Fans de los thrillers judiciales, de los protagonistas jóvenes en peligro y de las historias donde una alianza improbable desafía instituciones enormes.",
 			"notForYouIf": "Buscás realismo legal estricto, zonas grises menos explicadas o una trama sin soluciones convencionales. Su oficio es clásico y bastante directo."
 		},
-	"becauseYouLiked": [
-		"un-dia-de-furia-1993",
-		"tiempo-de-matar-1996"
-	],
-	"related": [
-		"el-falsario-2026",
-		"el-juego-de-hollywood-1992",
-		"cassandra-s-dream-2007",
-		"el-silencio-de-un-hombre-1967"
-	]
-},
+		"becauseYouLiked": [
+			"un-dia-de-furia-1993",
+			"tiempo-de-matar-1996"
+		],
+		"related": [
+			"el-falsario-2026",
+			"el-juego-de-hollywood-1992",
+			"cassandra-s-dream-2007",
+			"el-silencio-de-un-hombre-1967"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": "",
-	"review": "El cliente es un thriller legal que sabe que el miedo de su protagonista no viene sólo de la mafia, sino también de los adultos que dicen querer ayudarlo. Joel Schumacher mantiene el pulso de la persecución y deja que Susan Sarandon construya una abogada con calle, empatía y una obstinación que no necesita discursos heroicos. Tommy Lee Jones aporta una autoridad más áspera, y Brad Renfro carga con naturalidad el peso de un chico obligado a negociar con instituciones enormes. La película simplifica algunos conflictos, pero su mezcla de tensión y defensa del vínculo entre ambos sigue funcionando."
+	"review": "El cliente es un thriller legal que sabe que el miedo de su protagonista no viene sólo de la mafia, sino también de los adultos que dicen querer ayudarlo. Joel Schumacher mantiene el pulso de la persecución y deja que Susan Sarandon construya una abogada con calle, empatía y una obstinación que no necesita discursos heroicos. Tommy Lee Jones aporta una autoridad más áspera, y Brad Renfro carga con naturalidad el peso de un chico obligado a negociar con instituciones enormes. La película simplifica algunos conflictos, pero su mezcla de tensión y defensa del vínculo entre ambos sigue funcionando.",
+	"castCharacters": [
+		{
+			"actor": "Susan Sarandon",
+			"character": "Reggie Love",
+			"tmdbMovieId": 10731,
+			"tmdbPersonId": 4038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "Roy Foltrigg",
+			"tmdbMovieId": 10731,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Renfro",
+			"character": "Mark Sway",
+			"tmdbMovieId": 10731,
+			"tmdbPersonId": 51214,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary-Louise Parker",
+			"character": "Dianne Sway",
+			"tmdbMovieId": 10731,
+			"tmdbPersonId": 18248,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

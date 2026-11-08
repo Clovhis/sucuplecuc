@@ -57,5 +57,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Catriona MacColl",
+			"character": "Liza Merril",
+			"tmdbMovieId": 19204,
+			"tmdbPersonId": 101330,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Warbeck",
+			"character": "John McCabe",
+			"tmdbMovieId": 19204,
+			"tmdbPersonId": 5570,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cinzia Monreale",
+			"character": "Emily",
+			"tmdbMovieId": 19204,
+			"tmdbPersonId": 31780,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Antoine Saint-John",
+			"character": "Schweick",
+			"tmdbMovieId": 19204,
+			"tmdbPersonId": 5568,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

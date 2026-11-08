@@ -42,7 +42,11 @@
 		"tenSecondTake": {
 			"verdict": "Woody Allen mezcla tragedia griega y comedia de Manhattan, pero Mira Sorvino se queda con la película: su energía convierte una premisa de rescate en algo sorprendentemente vital.",
 			"whatToExpect": "Adopción, búsqueda de una madre biológica, un coro teatral y una prostituta que obliga a un matrimonio a revisar sus fantasías de salvación.",
-			"pace": "Se mueve rápido entre escenas urbanas y comentarios del coro; el mecanismo teatral le da ritmo, aunque el final ordena demasiado las piezas.",			"intensity": "La presión es moral y afectiva, con humor sobre deseo, clase y prejuicio; el tono nunca se vuelve un drama de consecuencias realistas.",			"practicalContext": "Con 95 minutos, funciona como comedia de ideas para una noche breve; elegila por Sorvino y el juego formal, no por una historia sentimental convencional.",			"forFansOf": "Para quienes disfrutan al Allen más teatral, las comedias mitológicas y actrices como Mira Sorvino trabajando a toda velocidad.",			"notForYouIf": "Puede no ser para vos si te incomoda el humor del autor, el coro que comenta todo o una resolución demasiado prolija para su planteo."
+			"pace": "Se mueve rápido entre escenas urbanas y comentarios del coro; el mecanismo teatral le da ritmo, aunque el final ordena demasiado las piezas.",
+			"intensity": "La presión es moral y afectiva, con humor sobre deseo, clase y prejuicio; el tono nunca se vuelve un drama de consecuencias realistas.",
+			"practicalContext": "Con 95 minutos, funciona como comedia de ideas para una noche breve; elegila por Sorvino y el juego formal, no por una historia sentimental convencional.",
+			"forFansOf": "Para quienes disfrutan al Allen más teatral, las comedias mitológicas y actrices como Mira Sorvino trabajando a toda velocidad.",
+			"notForYouIf": "Puede no ser para vos si te incomoda el humor del autor, el coro que comenta todo o una resolución demasiado prolija para su planteo."
 		},
 		"becauseYouLiked": [
 			"a-midsummer-night-s-sex-comedy-1982",
@@ -56,5 +60,42 @@
 		]
 	},
 	"review": "Poderosa Afrodita sigue a un periodista que, después de adoptar un bebé brillante, se obsesiona con conocer a su madre biológica y descubre a una trabajadora sexual con una vida caótica. Woody Allen cruza esa búsqueda con un coro griego que comenta todo desde un anfiteatro, una idea desfachatada que funciona por el contraste. Mira Sorvino se roba la película con una energía verbal y física enorme, mientras el director aprovecha su propia neurosis habitual. El final es demasiado prolijo, pero la mezcla de tragedia antigua y comedia neoyorquina mantiene una gracia muy particular.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Lenny",
+			"tmdbMovieId": 11448,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mira Sorvino",
+			"character": "Linda Ash",
+			"tmdbMovieId": 11448,
+			"tmdbPersonId": 23931,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helena Bonham Carter",
+			"character": "Amanda",
+			"tmdbMovieId": 11448,
+			"tmdbPersonId": 1283,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Rapaport",
+			"character": "Kevin",
+			"tmdbMovieId": 11448,
+			"tmdbPersonId": 4688,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "F. Murray Abraham",
+			"character": "Chorleiter",
+			"tmdbMovieId": 11448,
+			"tmdbPersonId": 1164,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

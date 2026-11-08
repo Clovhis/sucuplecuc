@@ -8,7 +8,11 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+16",
 	"category": "Terror",
-	"genres": ["Terror", "Drama", "Fantasía"],
+	"genres": [
+		"Terror",
+		"Drama",
+		"Fantasía"
+	],
 	"subgenres": [],
 	"country": "GB",
 	"isArgentinian": false,
@@ -17,7 +21,12 @@
 	"trailerYoutubeId": "7a6YFwC2zKA",
 	"releasePlatform": "Otras plataformas",
 	"director": "Tony Scott",
-	"mainCast": ["Susan Sarandon", "Catherine Deneuve", "David Bowie", "Cliff DeYoung"],
+	"mainCast": [
+		"Susan Sarandon",
+		"Catherine Deneuve",
+		"David Bowie",
+		"Cliff DeYoung"
+	],
 	"productionCompany": "Metro-Goldwyn-Mayer",
 	"cinepostaScore": 8,
 	"runtimeMinutes": 97,
@@ -34,18 +43,41 @@
 			"forFansOf": "Fans del vampirismo elegante, de Tony Scott, del post-punk y de las películas donde el monstruo funciona también como una relación tóxica.",
 			"notForYouIf": "Esperás sustos frecuentes, mitología explicada o una narración de acción. El ansia quiere que mires y escuches antes de que entiendas todo."
 		},
-	"becauseYouLiked": [
-		"la-zona-muerta-1983",
-		"el-faro-2019"
-	],
-	"related": [
-		"juegos-inocentes-2021",
-		"ego-2022",
-		"house-1977",
-		"wes-craven-s-new-nightmare-1994"
-	]
-},
+		"becauseYouLiked": [
+			"la-zona-muerta-1983",
+			"el-faro-2019"
+		],
+		"related": [
+			"juegos-inocentes-2021",
+			"ego-2022",
+			"house-1977",
+			"wes-craven-s-new-nightmare-1994"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": "",
-	"review": "El ansia convierte el vampirismo en una historia de deseo, desgaste y dependencia. Tony Scott filma la noche con una elegancia de videoclip que todavía conserva una extraña sensualidad, y la música de Bauhaus le da una identidad inmediata. Catherine Deneuve y David Bowie sostienen una pareja hecha de hábitos y miedo, mientras Susan Sarandon entra en ese mundo desde la curiosidad científica y lo vuelve más vulnerable. La trama no siempre tiene la misma fuerza que sus imágenes, pero su atmósfera, su erotismo oscuro y su melancolía la transformaron en una pieza de culto. Ideal para una noche de terror estilizado."
+	"review": "El ansia convierte el vampirismo en una historia de deseo, desgaste y dependencia. Tony Scott filma la noche con una elegancia de videoclip que todavía conserva una extraña sensualidad, y la música de Bauhaus le da una identidad inmediata. Catherine Deneuve y David Bowie sostienen una pareja hecha de hábitos y miedo, mientras Susan Sarandon entra en ese mundo desde la curiosidad científica y lo vuelve más vulnerable. La trama no siempre tiene la misma fuerza que sus imágenes, pero su atmósfera, su erotismo oscuro y su melancolía la transformaron en una pieza de culto. Ideal para una noche de terror estilizado.",
+	"castCharacters": [
+		{
+			"actor": "Susan Sarandon",
+			"character": "Sarah Roberts",
+			"tmdbMovieId": 11654,
+			"tmdbPersonId": 4038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Bowie",
+			"character": "John Blaylock",
+			"tmdbMovieId": 11654,
+			"tmdbPersonId": 7487,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cliff DeYoung",
+			"character": "Tom Haver",
+			"tmdbMovieId": 11654,
+			"tmdbPersonId": 44301,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

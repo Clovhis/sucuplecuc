@@ -52,5 +52,21 @@
 	"catalogAddedAt": "2026-11-03",
 	"runtimeMinutes": 81,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Alma Pöysti",
+			"character": "Ansa",
+			"tmdbMovieId": 986280,
+			"tmdbPersonId": 1364782,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jussi Vatanen",
+			"character": "Holappa",
+			"tmdbMovieId": 986280,
+			"tmdbPersonId": 226030,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -51,5 +51,21 @@
 	"isArgentinian": false,
 	"awards": {
 		"wins": []
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "Charlton Heston",
+			"character": "Ramon Miguel Vargas",
+			"tmdbMovieId": 1480,
+			"tmdbPersonId": 10017,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Janet Leigh",
+			"character": "Susan 'Susie' Vargas",
+			"tmdbMovieId": 1480,
+			"tmdbPersonId": 7302,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

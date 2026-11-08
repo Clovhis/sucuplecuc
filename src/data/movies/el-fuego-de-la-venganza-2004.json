@@ -59,5 +59,42 @@
 			"fast-five-2011"
 		]
 	},
-	"review": "Tony Scott filma Ciudad de México como una pesadilla caliente, acelerada y llena de texturas, y esa exageración le calza perfecto a una historia de culpa y venganza. El vínculo entre Creasy y Pita tiene la paciencia necesaria para que Denzel Washington no sea sólo una máquina de castigar; Dakota Fanning le encuentra humor y fragilidad a la nena sin volverla un adorno. La segunda mitad se entrega de lleno al exceso visual y moral, con montajes que pueden cansar, pero la convicción emocional de la dupla central hace que la furia se sienta ganada."
+	"review": "Tony Scott filma Ciudad de México como una pesadilla caliente, acelerada y llena de texturas, y esa exageración le calza perfecto a una historia de culpa y venganza. El vínculo entre Creasy y Pita tiene la paciencia necesaria para que Denzel Washington no sea sólo una máquina de castigar; Dakota Fanning le encuentra humor y fragilidad a la nena sin volverla un adorno. La segunda mitad se entrega de lleno al exceso visual y moral, con montajes que pueden cansar, pero la convicción emocional de la dupla central hace que la furia se sienta ganada.",
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "John W. Creasy",
+			"tmdbMovieId": 9509,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dakota Fanning",
+			"character": "Lupita Ramos",
+			"tmdbMovieId": 9509,
+			"tmdbPersonId": 501,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Walken",
+			"character": "Paul Rayburn",
+			"tmdbMovieId": 9509,
+			"tmdbPersonId": 4690,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Radha Mitchell",
+			"character": "Lisa Ramos",
+			"tmdbMovieId": 9509,
+			"tmdbPersonId": 8329,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marc Anthony",
+			"character": "Samuel Ramos",
+			"tmdbMovieId": 9509,
+			"tmdbPersonId": 47775,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

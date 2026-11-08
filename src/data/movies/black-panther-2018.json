@@ -66,5 +66,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chadwick Boseman",
+			"character": "T'Challa / Black Panther",
+			"tmdbMovieId": 284054,
+			"tmdbPersonId": 172069,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael B. Jordan",
+			"character": "Erik Killmonger",
+			"tmdbMovieId": 284054,
+			"tmdbPersonId": 135651,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lupita Nyong'o",
+			"character": "Nakia",
+			"tmdbMovieId": 284054,
+			"tmdbPersonId": 1267329,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

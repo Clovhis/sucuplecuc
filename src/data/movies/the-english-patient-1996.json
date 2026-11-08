@@ -64,5 +64,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Almásy",
+			"tmdbMovieId": 409,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juliette Binoche",
+			"character": "Hana",
+			"tmdbMovieId": 409,
+			"tmdbPersonId": 1137,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "David Caravaggio",
+			"tmdbMovieId": 409,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

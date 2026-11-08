@@ -46,5 +46,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Kirsten Dunst",
+			"character": "Lee",
+			"tmdbMovieId": 929590,
+			"tmdbPersonId": 205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wagner Moura",
+			"character": "Joel",
+			"tmdbMovieId": 929590,
+			"tmdbPersonId": 52583,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cailee Spaeny",
+			"character": "Jessie",
+			"tmdbMovieId": 929590,
+			"tmdbPersonId": 1683343,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

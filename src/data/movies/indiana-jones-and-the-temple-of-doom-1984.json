@@ -52,5 +52,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Indiana Jones",
+			"tmdbMovieId": 87,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Capshaw",
+			"character": "Willie Scott",
+			"tmdbMovieId": 87,
+			"tmdbPersonId": 689,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ke Huy Quan",
+			"character": "Short Round",
+			"tmdbMovieId": 87,
+			"tmdbPersonId": 690,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -56,5 +56,35 @@
 	},
 	"review": "Amélie convierte París en un tablero de coincidencias, objetos perdidos y secretos mínimos, y Audrey Tautou le pone una mezcla irresistible de pudor, picardía y melancolía. Jean-Pierre Jeunet llena cada plano de color y movimiento, pero la película no se queda en la decoración: debajo de la fantasía hay una chica que se esconde detrás de ayudar a los demás. El romance con Nino tarda en arrancar y a veces el narrador subraya demasiado la magia, aunque el encanto visual y el humor seco mantienen la experiencia viva. Es una comedia romántica con corazón, rareza y una identidad muy propia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Audrey Tautou",
+			"character": "Amélie Poulain",
+			"tmdbMovieId": 194,
+			"tmdbPersonId": 2405,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mathieu Kassovitz",
+			"character": "Nino Quincampoix",
+			"tmdbMovieId": 194,
+			"tmdbPersonId": 2406,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rufus",
+			"character": "Raphaël Poulain",
+			"tmdbMovieId": 194,
+			"tmdbPersonId": 2407,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Serge Merlin",
+			"character": "Raymond Dufayel",
+			"tmdbMovieId": 194,
+			"tmdbPersonId": 2410,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

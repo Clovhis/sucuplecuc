@@ -8,7 +8,12 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+13",
   "category": "Aventura",
-  "genres": ["Aventura", "Fantasia", "Comedia", "Accion"],
+  "genres": [
+    "Aventura",
+    "Fantasia",
+    "Comedia",
+    "Accion"
+  ],
   "subgenres": [],
   "country": "US, JP",
   "isArgentinian": false,
@@ -17,11 +22,18 @@
   "trailerYoutubeId": "XzCj0lGfveU",
   "releasePlatform": "HBO Max",
   "director": "Rob Letterman",
-  "mainCast": ["Ryan Reynolds", "Justice Smith", "Kathryn Newton", "Bill Nighy"],
+  "mainCast": [
+    "Ryan Reynolds",
+    "Justice Smith",
+    "Kathryn Newton",
+    "Bill Nighy"
+  ],
   "productionCompany": "Legendary Pictures, The Pokémon Company, Warner Bros. Pictures",
   "cinepostaScore": 5,
   "runtimeMinutes": 104,
-  "awards": {"wins": []},
+  "awards": {
+    "wins": []
+  },
   "editorial": {
     "tenSecondTake": {
       "verdict": "Pokémon: Detective Pikachu entiende que Rob Letterman necesita una ciudad habitable, y la voz de Ryan Reynolds le da un policial con encanto propio.",
@@ -32,18 +44,48 @@
       "forFansOf": "Te va a gustar si querés una adaptación accesible, criaturas integradas a una ciudad y un misterio liviano con voz de detective cansado.",
       "notForYouIf": "No es para vos si buscás una investigación oscura, reglas complejas del universo Pokémon o una película que abandone el tono familiar."
     },
-		"becauseYouLiked": [
-		"hook-1991",
-		"harry-potter-and-the-deathly-hallows-part-1-2010"
-	],
-	"related": [
-		"harry-potter-and-the-sorcerers-stone-2001",
-		"harry-potter-and-the-deathly-hallows-part-2-2011",
-		"harry-potter-and-the-half-blood-prince-2009",
-		"harry-potter-and-the-order-of-the-phoenix-2007"
-	]
-},
+    "becauseYouLiked": [
+      "hook-1991",
+      "harry-potter-and-the-deathly-hallows-part-1-2010"
+    ],
+    "related": [
+      "harry-potter-and-the-sorcerers-stone-2001",
+      "harry-potter-and-the-deathly-hallows-part-2-2011",
+      "harry-potter-and-the-half-blood-prince-2009",
+      "harry-potter-and-the-order-of-the-phoenix-2007"
+    ]
+  },
   "review": "Pokémon: Detective Pikachu entiende que la gracia no está sólo en reconocer criaturas, sino en ponerlas a vivir dentro de una ciudad con problemas propios. Ryan Reynolds encuentra un registro de policial cansado y chiste permanente para la voz de Pikachu, mientras Justice Smith le da al misterio una cuota de vulnerabilidad que evita que todo sea una colección de guiños. Rob Letterman arma un mundo digital lleno de texturas y criaturas reconocibles, aunque el caso central se acomoda demasiado a la aventura familiar.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Ryan Reynolds",
+      "character": "Detective Pikachu (voice)",
+      "tmdbMovieId": 447404,
+      "tmdbPersonId": 10859,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Justice Smith",
+      "character": "Tim Goodman",
+      "tmdbMovieId": 447404,
+      "tmdbPersonId": 1029934,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Kathryn Newton",
+      "character": "Lucy Stevens",
+      "tmdbMovieId": 447404,
+      "tmdbPersonId": 221192,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Bill Nighy",
+      "character": "Howard Clifford",
+      "tmdbMovieId": 447404,
+      "tmdbPersonId": 2440,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

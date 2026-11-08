@@ -54,5 +54,28 @@
 	"review": "H20 recupera a Laurie Strode veinte años después y entiende que el mejor material de la secuela está en mostrar las marcas que dejó Michael Myers. Jamie Lee Curtis sostiene ese costado traumático con firmeza, mientras Steve Miner dirige un slasher noventoso ágil y más prolijo que inquietante. El elenco joven cumple, aunque la película depende demasiado de fórmulas ya conocidas y algunos detalles visuales envejecieron mal. No alcanza la tensión del original, pero es un regreso digno que le devuelve peso a Laurie.",
 	"synopsis": "Veinte años después de escapar de Michael Myers, Laurie Strode vive con otra identidad y dirige un internado en California. Cuando el asesino descubre dónde está, Laurie deberá dejar de huir para proteger a su hijo y a sus alumnos.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Jamie Lee Curtis",
+			"character": "Laurie Strode / Keri Tate",
+			"tmdbMovieId": 11675,
+			"tmdbPersonId": 8944,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Hartnett",
+			"character": "John",
+			"tmdbMovieId": 11675,
+			"tmdbPersonId": 2299,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adam Arkin",
+			"character": "Will Brennan",
+			"tmdbMovieId": 11675,
+			"tmdbPersonId": 55257,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

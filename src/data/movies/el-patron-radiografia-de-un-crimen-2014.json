@@ -43,18 +43,55 @@
 			"forFansOf": "Fans del cine argentino, de los dramas judiciales y de las historias que observan la explotación como estructura cotidiana, no como accidente individual.",
 			"notForYouIf": "Buscás entretenimiento liviano, villanos de manual o una resolución tranquilizadora. El patrón deja una incomodidad deliberada."
 		},
-	"becauseYouLiked": [
-		"barreda-2026",
-		"caballos-salvajes-1995"
-	],
-	"related": [
-		"elefante-blanco-2012",
-		"leonera-2008",
-		"el-suplente-2022",
-		"argentina-1985-2022"
-	]
-},
+		"becauseYouLiked": [
+			"barreda-2026",
+			"caballos-salvajes-1995"
+		],
+		"related": [
+			"elefante-blanco-2012",
+			"leonera-2008",
+			"el-suplente-2022",
+			"argentina-1985-2022"
+		]
+	},
 	"review": "Sebastián Schindel expone la explotación sin convertir a sus víctimas en figuras decorativas ni a sus victimarios en monstruos fáciles. La narración alterna el presente judicial con el pasado de sometimiento, y el contraste vuelve visible cómo se fabrica una tragedia. Joaquín Furriel cambia de registro con una entrega física notable, acompañado por la incomodidad seca de Luis Ziembrowski. El juicio no ofrece una reparación sencilla; obliga a mirar de frente cómo la necesidad puede convertirse en una herramienta de sometimiento.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Joaquín Furriel",
+			"character": "Hermógenes Saldivar",
+			"tmdbMovieId": 314572,
+			"tmdbPersonId": 1077146,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Ziembrowski",
+			"character": "Don Latuada",
+			"tmdbMovieId": 314572,
+			"tmdbPersonId": 1028444,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Guillermo Pfening",
+			"character": "Marcelo Di Giovanni",
+			"tmdbMovieId": 314572,
+			"tmdbPersonId": 81155,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mónica Lairana",
+			"character": "Gladys",
+			"tmdbMovieId": 314572,
+			"tmdbPersonId": 1172385,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Germán de Silva",
+			"character": "Armando",
+			"tmdbMovieId": 314572,
+			"tmdbPersonId": 50928,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

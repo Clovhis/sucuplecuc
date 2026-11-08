@@ -28,28 +28,51 @@
   },
   "runtimeMinutes": 99,
   "review": "Betibú tiene buena atmósfera de policial periodístico y un trío central que la empuja incluso cuando el misterio se estira de más. Miguel Cohan sabe construir clima y darle densidad al barrio cerrado, a la investigación y a ese cruce entre periodismo, literatura y crimen donde todos tienen algo para ocultar. Mercedes Morán entra con presencia total y Daniel Fanego siempre suma espesor. No es del todo redonda, pero tiene oficio, un noir local bastante disfrutable y un elenco que la sostiene cuando el caso pide más de lo que realmente entrega.",
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Betibú arma un policial periodístico con atmósfera y Mercedes Morán, y Miguel Cohan la sostiene aun cuando el misterio se estira más de lo que puede pagar.",
-			"whatToExpect": "Un asesinato en un barrio cerrado, una novelista retirada y dos periodistas siguiendo secretos que no caben en la primera noticia.",
-			"pace": "Sereno y de investigación, alterna entrevistas, pistas y discusiones sobre cómo contar un crimen.",
-			"intensity": "Media, con tensión de sospecha y un clima noir local más fuerte que la acción.",
-			"practicalContext": "Sus 99 minutos pasan mejor si te interesan el periodismo y los personajes; el cierre no está a la altura de toda la intriga.",
-			"forFansOf": "Los policiales argentinos, los diarios como escenario y las investigaciones guiadas por periodistas antes que detectives.",
-			"notForYouIf": "Buscás un thriller de ritmo alto, giros impecables o una resolución que supere a su atmósfera."
-		},
-	"becauseYouLiked": [
-		"los-caminantes-de-la-calle-2026",
-		"el-aura-2005"
-	],
-	"related": [
-		"barreda-2026",
-		"plata-quemada-2000",
-		"el-robo-del-siglo-2020",
-		"pepita-la-pistolera-2026"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Betibú arma un policial periodístico con atmósfera y Mercedes Morán, y Miguel Cohan la sostiene aun cuando el misterio se estira más de lo que puede pagar.",
+      "whatToExpect": "Un asesinato en un barrio cerrado, una novelista retirada y dos periodistas siguiendo secretos que no caben en la primera noticia.",
+      "pace": "Sereno y de investigación, alterna entrevistas, pistas y discusiones sobre cómo contar un crimen.",
+      "intensity": "Media, con tensión de sospecha y un clima noir local más fuerte que la acción.",
+      "practicalContext": "Sus 99 minutos pasan mejor si te interesan el periodismo y los personajes; el cierre no está a la altura de toda la intriga.",
+      "forFansOf": "Los policiales argentinos, los diarios como escenario y las investigaciones guiadas por periodistas antes que detectives.",
+      "notForYouIf": "Buscás un thriller de ritmo alto, giros impecables o una resolución que supere a su atmósfera."
+    },
+    "becauseYouLiked": [
+      "los-caminantes-de-la-calle-2026",
+      "el-aura-2005"
+    ],
+    "related": [
+      "barreda-2026",
+      "plata-quemada-2000",
+      "el-robo-del-siglo-2020",
+      "pepita-la-pistolera-2026"
+    ]
+  },
   "synopsis": "El asesinato de un empresario en un barrio privado lleva a Betibú, una novelista policial retirada, a investigar para un diario. Junto a dos periodistas, empieza a seguir pistas que conectan el caso con secretos enterrados y una trama más amplia.",
   "audienceRating": "+12",
-  "reviewPublishedAt": "2026-03-07"
+  "reviewPublishedAt": "2026-03-07",
+  "castCharacters": [
+    {
+      "actor": "Mercedes Morán",
+      "character": "Nurit Iscar",
+      "tmdbMovieId": 262492,
+      "tmdbPersonId": 18499,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Daniel Fanego",
+      "character": "Jaime Brena",
+      "tmdbMovieId": 262492,
+      "tmdbPersonId": 140541,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Alberto Ammann",
+      "character": "Mariano Saravia",
+      "tmdbMovieId": 262492,
+      "tmdbPersonId": 110424,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

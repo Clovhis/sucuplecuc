@@ -53,5 +53,42 @@
 			"el-ultimatum-de-bourne-2007"
 		]
 	},
-	"review": "Todo arranca con una negligencia mínima y Tony Scott la convierte en una pesadilla de noventa y ocho minutos. La película no pretende ser más complicada que un tren sin freno, y esa claridad es su fuerza: corta entre cabinas, vías, despachos y pueblos sin perder nunca la geografía del problema. Denzel Washington y Chris Pine hacen creíble una dupla de trabajadores que apenas se conoce pero tiene que confiar a ciegas. El montaje digital se nota en algunos momentos, aunque la velocidad, el sonido metálico y la sencillez del objetivo la mantienen arriba hasta el final."
+	"review": "Todo arranca con una negligencia mínima y Tony Scott la convierte en una pesadilla de noventa y ocho minutos. La película no pretende ser más complicada que un tren sin freno, y esa claridad es su fuerza: corta entre cabinas, vías, despachos y pueblos sin perder nunca la geografía del problema. Denzel Washington y Chris Pine hacen creíble una dupla de trabajadores que apenas se conoce pero tiene que confiar a ciegas. El montaje digital se nota en algunos momentos, aunque la velocidad, el sonido metálico y la sencillez del objetivo la mantienen arriba hasta el final.",
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "Frank Barnes",
+			"tmdbMovieId": 44048,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Pine",
+			"character": "Will Colson",
+			"tmdbMovieId": 44048,
+			"tmdbPersonId": 62064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rosario Dawson",
+			"character": "Connie Hooper",
+			"tmdbMovieId": 44048,
+			"tmdbPersonId": 5916,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Dunn",
+			"character": "Oscar Galvin, VP of Operations",
+			"tmdbMovieId": 44048,
+			"tmdbPersonId": 14721,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Corrigan",
+			"character": "Inspector Scott Werner",
+			"tmdbMovieId": 44048,
+			"tmdbPersonId": 18472,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

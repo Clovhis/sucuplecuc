@@ -63,5 +63,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Forrest Gump",
+			"tmdbMovieId": 13,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robin Wright",
+			"character": "Jenny Curran",
+			"tmdbMovieId": 13,
+			"tmdbPersonId": 32,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Sinise",
+			"character": "Lieutenant Dan Taylor",
+			"tmdbMovieId": 13,
+			"tmdbPersonId": 33,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

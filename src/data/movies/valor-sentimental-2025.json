@@ -41,18 +41,48 @@
 			"forFansOf": "Cine de familias fracturadas, actuaciones contenidas y películas que piensan la memoria a través del propio acto de filmar.",
 			"notForYouIf": "Buscás conflictos veloces, reconciliaciones claras o una historia que explique sin ambigüedad quién lastimó a quién."
 		},
-	"becauseYouLiked": [
-		"la-peor-persona-del-mundo-2021",
-		"rosebush-pruning-2026"
-	],
-	"related": [
-		"ella-y-su-hijo-2025",
-		"hamnet-2025",
-		"los-domingos-2025",
-		"padre-madre-hermana-hermano-2025"
-	]
-},
+		"becauseYouLiked": [
+			"la-peor-persona-del-mundo-2021",
+			"rosebush-pruning-2026"
+		],
+		"related": [
+			"ella-y-su-hijo-2025",
+			"hamnet-2025",
+			"los-domingos-2025",
+			"padre-madre-hermana-hermano-2025"
+		]
+	},
 	"synopsis": "La trama gira en torno a la relación fracturada entre un director aclamado y sus dos hijas distanciadas, que se complica aún más cuando decide hacer una película personal sobre la historia familiar.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-02-26"
+	"reviewPublishedAt": "2026-02-26",
+	"castCharacters": [
+		{
+			"actor": "Renate Reinsve",
+			"character": "Nora Borg",
+			"tmdbMovieId": 1124566,
+			"tmdbPersonId": 1576786,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stellan Skarsgård",
+			"character": "Gustav Borg",
+			"tmdbMovieId": 1124566,
+			"tmdbPersonId": 1640,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Inga Ibsdotter Lilleaas",
+			"character": "Agnes Borg Pettersen",
+			"tmdbMovieId": 1124566,
+			"tmdbPersonId": 1421850,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elle Fanning",
+			"character": "Rachel Kemp",
+			"tmdbMovieId": 1124566,
+			"tmdbPersonId": 18050,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

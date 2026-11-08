@@ -55,5 +55,42 @@
 		]
 	},
 	"review": "Hook imagina a un Peter Pan adulto, convertido en abogado serio y distante, que debe regresar al País de Nunca Jamás cuando Garfio secuestra a sus hijos. Steven Spielberg llena la aventura de decorados gigantes, piratas teatrales y nostalgia, aunque el conjunto se estira demasiado antes de encontrar su emoción. Robin Williams le pone corazón al adulto que vuelve a jugar, mientras Dustin Hoffman disfruta cada gesto del villano. Entre el exceso hay momentos hermosos, sobre todo cuando habla de paternidad y memoria; no es pareja, pero su imaginería todavía garpa.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Dustin Hoffman",
+			"character": "Captain Hook",
+			"tmdbMovieId": 879,
+			"tmdbPersonId": 4483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robin Williams",
+			"character": "Peter Banning / Peter Pan",
+			"tmdbMovieId": 879,
+			"tmdbPersonId": 2157,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julia Roberts",
+			"character": "Tinkerbell",
+			"tmdbMovieId": 879,
+			"tmdbPersonId": 1204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bob Hoskins",
+			"character": "Smee",
+			"tmdbMovieId": 879,
+			"tmdbPersonId": 382,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maggie Smith",
+			"character": "Granny Wendy",
+			"tmdbMovieId": 879,
+			"tmdbPersonId": 10978,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

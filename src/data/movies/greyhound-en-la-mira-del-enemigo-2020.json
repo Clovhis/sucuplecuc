@@ -56,5 +56,28 @@
 	"releasePlatforms": [
 		"Apple TV"
 	],
-	"runtimeMinutes": 91
+	"runtimeMinutes": 91,
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Commander Krause",
+			"tmdbMovieId": 516486,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Graham",
+			"character": "Charlie Cole",
+			"tmdbMovieId": 516486,
+			"tmdbPersonId": 1115,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elisabeth Shue",
+			"character": "Evelyn",
+			"tmdbMovieId": 516486,
+			"tmdbPersonId": 1951,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

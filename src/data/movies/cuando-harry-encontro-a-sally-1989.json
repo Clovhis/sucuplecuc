@@ -13,7 +13,9 @@
 		"Romance",
 		"Comedia"
 	],
-	"subgenres": ["RomCom"],
+	"subgenres": [
+		"RomCom"
+	],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1989/cuando-harry-encontro-a-sally-1989.webp",
@@ -57,5 +59,28 @@
 	"releasePlatforms": [
 		"Prime Video"
 	],
-	"runtimeMinutes": 96
+	"runtimeMinutes": 96,
+	"castCharacters": [
+		{
+			"actor": "Billy Crystal",
+			"character": "Harry Burns",
+			"tmdbMovieId": 639,
+			"tmdbPersonId": 7904,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meg Ryan",
+			"character": "Sally Albright",
+			"tmdbMovieId": 639,
+			"tmdbPersonId": 5344,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carrie Fisher",
+			"character": "Marie",
+			"tmdbMovieId": 639,
+			"tmdbPersonId": 4,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

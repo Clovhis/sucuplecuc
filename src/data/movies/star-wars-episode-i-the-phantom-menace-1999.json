@@ -37,7 +37,7 @@
 			"forFansOf": "Te puede gustar si disfrutás la construcción de mundos de Star Wars, carreras imposibles y órdenes Jedi, especialmente cuando George Lucas deja que la imagen y el movimiento reemplacen al diálogo político.",
 			"notForYouIf": "Quizás no sea para vos si te cansan las precuelas verbosas, el humor infantil o los personajes digitales demasiado ruidosos. La espectacularidad convive con una narración que no siempre encuentra tono."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"e-t-the-extra-terrestrial-1982",
 			"a-i-artificial-intelligence-2001"
 		],
@@ -52,5 +52,28 @@
 	"synopsis": "Dos jedis reciben la misión de proteger a la reina Amidala cuando Naboo queda bajo amenaza de la Federación de Comercio. En el camino descubren a Anakin Skywalker, un niño esclavo con una conexión extraordinaria con la Fuerza.",
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Qui-Gon Jinn",
+			"tmdbMovieId": 1893,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ewan McGregor",
+			"character": "Obi-Wan Kenobi",
+			"tmdbMovieId": 1893,
+			"tmdbPersonId": 3061,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Natalie Portman",
+			"character": "Padmé Amidala",
+			"tmdbMovieId": 1893,
+			"tmdbPersonId": 524,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

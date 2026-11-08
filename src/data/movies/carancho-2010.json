@@ -42,18 +42,41 @@
 			"forFansOf": "El cine de Pablo Trapero, los thrillers argentinos y los romances que nacen dentro de un mundo moralmente podrido.",
 			"notForYouIf": "Buscás un policial de entretenimiento, personajes que conserven inocencia o un final reparador."
 		},
-	"becauseYouLiked": [
-		"el-clan-2015",
-		"nueve-reinas-2000"
-	],
-	"related": [
-		"elefante-blanco-2012",
-		"el-bonaerense-2002",
-		"un-oso-rojo-2002",
-		"leonera-2008"
-	]
-},
+		"becauseYouLiked": [
+			"el-clan-2015",
+			"nueve-reinas-2000"
+		],
+		"related": [
+			"elefante-blanco-2012",
+			"el-bonaerense-2002",
+			"un-oso-rojo-2002",
+			"leonera-2008"
+		]
+	},
 	"synopsis": "Sosa es un abogado recientemente expulsado del colegio de abogados que trabaja como cazador de ambulancias —conocido como \"carancho\" en Argentina—, recorriendo las salas de emergencia de los hospitales públicos y las comisarías en busca de potenciales clientes para su apenas legal despacho de abogados.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Sosa",
+			"tmdbMovieId": 47261,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martina Gusmán",
+			"character": "Luján",
+			"tmdbMovieId": 47261,
+			"tmdbPersonId": 84667,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carlos Weber",
+			"character": "Perro",
+			"tmdbMovieId": 47261,
+			"tmdbPersonId": 970399,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -33,23 +33,65 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Gabriel Ripstein usa la candidatura mundialista para mirar la rosca política: Diego Luna convierte a Martín de la Torre en un operador carismático, desesperado y bastante turbio.",
-			"whatToExpect": "Negociaciones, promesas, burocracia, campaña contra reloj y el Mundial como espectáculo que tapa y revela al mismo tiempo las ambiciones del poder.",			"pace": "Se mueve con nervio de comedia política, alternando reuniones y maniobras; puede aflojar cuando explica contexto, pero recupera velocidad en la trastienda.",			"intensity": "La tensión es institucional y personal: la presión por conseguir el evento vuelve cada favor una apuesta y cada gesto de unidad una puesta en escena.",			"practicalContext": "La ficha no consigna duración; elegila con curiosidad por la política deportiva y disposición a seguir una sátira más amarga que festiva.",			"forFansOf": "Para quienes disfrutan a Diego Luna, historias de poder detrás de los grandes eventos y comedias que dejan una cuota de veneno histórico.",			"notForYouIf": "No es para vos si querés una película deportiva de partidos, una biografía ordenada o un contexto histórico explicado sin zonas elípticas."
-		},
-	"becauseYouLiked": [
-		"la-cortina-de-humo-1997",
-		"la-invitacion-2026"
-	],
-	"related": [
-		"el-triangulo-de-la-tristeza-2022",
-		"perdona-que-te-moleste-2018",
-		"la-guerra-de-charlie-wilson-2007",
-		"happy-gilmore-1996"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Gabriel Ripstein usa la candidatura mundialista para mirar la rosca política: Diego Luna convierte a Martín de la Torre en un operador carismático, desesperado y bastante turbio.",
+      "whatToExpect": "Negociaciones, promesas, burocracia, campaña contra reloj y el Mundial como espectáculo que tapa y revela al mismo tiempo las ambiciones del poder.",
+      "pace": "Se mueve con nervio de comedia política, alternando reuniones y maniobras; puede aflojar cuando explica contexto, pero recupera velocidad en la trastienda.",
+      "intensity": "La tensión es institucional y personal: la presión por conseguir el evento vuelve cada favor una apuesta y cada gesto de unidad una puesta en escena.",
+      "practicalContext": "La ficha no consigna duración; elegila con curiosidad por la política deportiva y disposición a seguir una sátira más amarga que festiva.",
+      "forFansOf": "Para quienes disfrutan a Diego Luna, historias de poder detrás de los grandes eventos y comedias que dejan una cuota de veneno histórico.",
+      "notForYouIf": "No es para vos si querés una película deportiva de partidos, una biografía ordenada o un contexto histórico explicado sin zonas elípticas."
+    },
+    "becauseYouLiked": [
+      "la-cortina-de-humo-1997",
+      "la-invitacion-2026"
+    ],
+    "related": [
+      "el-triangulo-de-la-tristeza-2022",
+      "perdona-que-te-moleste-2018",
+      "la-guerra-de-charlie-wilson-2007",
+      "happy-gilmore-1996"
+    ]
+  },
   "isPremiere": true,
   "premiereLabel": "ESTRENO",
-  "review": "México 86 entra por el lado del Mundial, pero lo que realmente le interesa es el barro previo: la viveza politica, el acomodo, la necesidad de vender un relato de unidad mientras todo alrededor cruje. Gabriel Ripstein encuentra un tono medio canchero, medio amargo, y Diego Luna la empuja con esa mezcla de carisma y desesperacion que vuelve creible a un tipo capaz de prometer cualquier cosa con tal de llegar.\n\nNo siempre equilibra igual de bien la sátira con el trasfondo historico, y hay tramos donde la pelicula te pide saber mas de contexto del que termina dramatizando. Igual, cuando aprieta en la trastienda del poder y deja ver el costo del show, pega. Es una comedia politica con nervio, algo de veneno y bastante mas cabeza que la media de estreno de plataforma."
+  "review": "México 86 entra por el lado del Mundial, pero lo que realmente le interesa es el barro previo: la viveza politica, el acomodo, la necesidad de vender un relato de unidad mientras todo alrededor cruje. Gabriel Ripstein encuentra un tono medio canchero, medio amargo, y Diego Luna la empuja con esa mezcla de carisma y desesperacion que vuelve creible a un tipo capaz de prometer cualquier cosa con tal de llegar.\n\nNo siempre equilibra igual de bien la sátira con el trasfondo historico, y hay tramos donde la pelicula te pide saber mas de contexto del que termina dramatizando. Igual, cuando aprieta en la trastienda del poder y deja ver el costo del show, pega. Es una comedia politica con nervio, algo de veneno y bastante mas cabeza que la media de estreno de plataforma.",
+  "castCharacters": [
+    {
+      "actor": "Diego Luna",
+      "character": "Martín de la Torre",
+      "tmdbMovieId": 1530510,
+      "tmdbPersonId": 8688,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Daniel Giménez Cacho",
+      "character": "Emilio Azcárraga",
+      "tmdbMovieId": 1530510,
+      "tmdbPersonId": 1603,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Karla Souza",
+      "character": "Susana Gómez Mont",
+      "tmdbMovieId": 1530510,
+      "tmdbPersonId": 144275,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Álvaro Guerrero",
+      "character": "Guillermo Cañedo",
+      "tmdbMovieId": 1530510,
+      "tmdbPersonId": 262,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Memo Villegas",
+      "character": "Hugo Sánchez",
+      "tmdbMovieId": 1530510,
+      "tmdbPersonId": 1317100,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

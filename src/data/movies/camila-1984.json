@@ -37,18 +37,41 @@
 			"forFansOf": "El cine argentino de época, los romances trágicos y María Luisa Bemberg mirando cuerpos bajo control.",
 			"notForYouIf": "Querés una película liviana, una historia de amor separada de la política o un final reparador."
 		},
-	"becauseYouLiked": [
-		"caballos-salvajes-1995",
-		"medianeras-2011"
-	],
-	"related": [
-		"tango-feroz-la-leyenda-de-tanguito-1993",
-		"el-hijo-de-la-novia-2001",
-		"la-historia-oficial-1985",
-		"la-patagonia-rebelde-1974"
-	]
-},
+		"becauseYouLiked": [
+			"caballos-salvajes-1995",
+			"medianeras-2011"
+		],
+		"related": [
+			"tango-feroz-la-leyenda-de-tanguito-1993",
+			"el-hijo-de-la-novia-2001",
+			"la-historia-oficial-1985",
+			"la-patagonia-rebelde-1974"
+		]
+	},
 	"synopsis": "En la Buenos Aires de Juan Manuel de Rosas, la joven aristócrata Camila O'Gorman se enamora del sacerdote Ladislao Gutiérrez. Su relación prohibida los obliga a huir y los enfrenta al poder político y religioso de la época.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Susú Pecoraro",
+			"character": "Camila O'Gorman",
+			"tmdbMovieId": 42085,
+			"tmdbPersonId": 567545,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Imanol Arias",
+			"character": "Ladislao Gutiérrez",
+			"tmdbMovieId": 42085,
+			"tmdbPersonId": 36281,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Héctor Alterio",
+			"character": "Adolfo O'Gorman",
+			"tmdbMovieId": 42085,
+			"tmdbPersonId": 59136,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

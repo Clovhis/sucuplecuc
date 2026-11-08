@@ -39,7 +39,7 @@
 			"forFansOf": "Puede ser tu película si te gustan los superhéroes con problemas ordinarios, los villanos trágicos y la puesta de Sam Raimi, capaz de pasar del slapstick a la épica en un mismo movimiento.",
 			"notForYouIf": "Quizás no sea para vos si preferís superhéroes cínicos, tramas de multiverso o romances sin melodrama. Su sinceridad emocional y sus diálogos enfáticos son parte inseparable del paquete."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"doctor-strange-in-the-multiverse-of-madness-2022",
 			"batman-begins-2005"
 		],
@@ -54,5 +54,28 @@
 	"reviewPublishedAt": "2026-03-06",
 	"synopsis": "Dos años después de convertirse en Spider-Man, Peter Parker intenta sostener una vida común mientras sus responsabilidades lo superan. Cuando el brillante Otto Octavius se transforma en una amenaza, deberá recuperar la confianza necesaria para proteger a Nueva York.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tobey Maguire",
+			"character": "Spider-Man / Peter Parker",
+			"tmdbMovieId": 558,
+			"tmdbPersonId": 2219,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kirsten Dunst",
+			"character": "Mary Jane Watson",
+			"tmdbMovieId": 558,
+			"tmdbPersonId": 205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Franco",
+			"character": "Harry Osborn",
+			"tmdbMovieId": 558,
+			"tmdbPersonId": 17051,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

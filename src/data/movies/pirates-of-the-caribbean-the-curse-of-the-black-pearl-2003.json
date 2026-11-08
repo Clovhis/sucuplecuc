@@ -51,5 +51,28 @@
 	"synopsis": "El pirata Jack Sparrow y el herrero Will Turner persiguen a la tripulación maldita del Perla Negra para rescatar a Elizabeth Swann antes de que un tesoro robado complete su condena.",
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Johnny Depp",
+			"character": "Jack Sparrow",
+			"tmdbMovieId": 22,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Orlando Bloom",
+			"character": "Will Turner",
+			"tmdbMovieId": 22,
+			"tmdbPersonId": 114,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keira Knightley",
+			"character": "Elizabeth Swann",
+			"tmdbMovieId": 22,
+			"tmdbPersonId": 116,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,21 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Jarvis Cocker",
+			"character": "Self",
+			"tmdbMovieId": 1715598,
+			"tmdbPersonId": 107170,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Candida Doyle",
+			"character": "Self",
+			"tmdbMovieId": 1715598,
+			"tmdbPersonId": 1539228,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

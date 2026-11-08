@@ -39,17 +39,40 @@
 			"notForYouIf": "Quizás no sea para vos si te incomoda la crueldad cómica, la venganza sin freno o una película que se ríe de todos."
 		},
 		"becauseYouLiked": [
-		"el-aura-2005",
-		"el-secreto-de-sus-ojos-2009"
-	],
-	"related": [
-		"el-profugo-2020",
-		"los-bobos-2026",
-		"el-cuento-de-las-comadrejas-2019",
-		"el-hombre-de-al-lado-2009"
-	]
-},
+			"el-aura-2005",
+			"el-secreto-de-sus-ojos-2009"
+		],
+		"related": [
+			"el-profugo-2020",
+			"los-bobos-2026",
+			"el-cuento-de-las-comadrejas-2019",
+			"el-hombre-de-al-lado-2009"
+		]
+	},
 	"synopsis": "Una broma en la ruta, un accidente, un restaurante y otros conflictos cotidianos empujan a personas comunes más allá del límite. Las seis historias convierten la humillación, la desigualdad y la venganza en explosiones de violencia que mezclan humor negro con una bronca muy reconocible.",
 	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Simón Fisher (segment \"Bombita\")",
+			"tmdbMovieId": 265195,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonardo Sbaraglia",
+			"character": "Diego (segment \"El más fuerte\")",
+			"tmdbMovieId": 265195,
+			"tmdbPersonId": 19803,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Érica Rivas",
+			"character": "Romina (segment \"Hasta que la muerte nos separe\")",
+			"tmdbMovieId": 265195,
+			"tmdbPersonId": 141455,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

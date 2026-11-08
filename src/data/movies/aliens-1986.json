@@ -61,5 +61,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sigourney Weaver",
+			"character": "Ripley",
+			"tmdbMovieId": 679,
+			"tmdbPersonId": 10205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Biehn",
+			"character": "Corporal Hicks",
+			"tmdbMovieId": 679,
+			"tmdbPersonId": 2712,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carrie Henn",
+			"character": "Newt",
+			"tmdbMovieId": 679,
+			"tmdbPersonId": 10206,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -46,18 +46,41 @@
 			"forFansOf": "Fans del cine europeo extraño, del humor macabro y de los relatos donde el autoritarismo se filtra por la familia, el trabajo y los buenos modales.",
 			"notForYouIf": "Buscás un monstruo visible, ritmo rápido o una trama confortable. El incinerador de cadáveres trabaja desde la obsesión y el malestar."
 		},
-	"becauseYouLiked": [
-		"the-silence-of-the-lambs-1991",
-		"cabeza-borradora-1977"
-	],
-	"related": [
-		"bugonia-2025",
-		"la-posesion-1981",
-		"la-escalera-de-jacob-1990",
-		"inseparables-1988"
-	]
-},
+		"becauseYouLiked": [
+			"the-silence-of-the-lambs-1991",
+			"cabeza-borradora-1977"
+		],
+		"related": [
+			"bugonia-2025",
+			"la-posesion-1981",
+			"la-escalera-de-jacob-1990",
+			"inseparables-1988"
+		]
+	},
 	"review": "Juraj Herz retrata la banalidad del fanatismo desde la cabeza de un hombre que confunde orden con salvación. Los primeros planos, los espejos y la voz interior vuelven el trabajo cotidiano una pesadilla de lógica torcida. Rudolf Hrušínský compone una amabilidad tan pulida que cada palabra revela algo más siniestro. La cortesía del protagonista hace más inquietante su ascenso: el fanatismo se instala en hábitos corrientes antes de volverse política.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Rudolf Hrušínský",
+			"character": "Karel Kopfrkingl",
+			"tmdbMovieId": 18352,
+			"tmdbPersonId": 73557,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vlasta Chramostová",
+			"character": "Lakmé / Dagmar",
+			"tmdbMovieId": 18352,
+			"tmdbPersonId": 327724,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ilja Prachař",
+			"character": "Walter Reinke",
+			"tmdbMovieId": 18352,
+			"tmdbPersonId": 137078,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

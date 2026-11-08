@@ -52,5 +52,21 @@
 			"tarzan-1999"
 		]
 	},
-	"review": "A Goofy Movie funciona porque la comedia de Disney se cruza con una incomodidad muy reconocible: querer a un padre y al mismo tiempo necesitar distancia. Bill Farmer y Jason Marsden le dan ritmo a una relación que se expresa con tropiezos, canciones y silencios incómodos. El viaje tiene paradas disparatadas y una banda sonora noventosa, pero el centro no se pierde. Cuando Goofy y Max finalmente se escuchan, la película gana una honestidad inesperada."
+	"review": "A Goofy Movie funciona porque la comedia de Disney se cruza con una incomodidad muy reconocible: querer a un padre y al mismo tiempo necesitar distancia. Bill Farmer y Jason Marsden le dan ritmo a una relación que se expresa con tropiezos, canciones y silencios incómodos. El viaje tiene paradas disparatadas y una banda sonora noventosa, pero el centro no se pierde. Cuando Goofy y Max finalmente se escuchan, la película gana una honestidad inesperada.",
+	"castCharacters": [
+		{
+			"actor": "Bill Farmer",
+			"character": "Goofy (voice)",
+			"tmdbMovieId": 15789,
+			"tmdbPersonId": 84213,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Marsden",
+			"character": "Max (voice)",
+			"tmdbMovieId": 15789,
+			"tmdbPersonId": 61983,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

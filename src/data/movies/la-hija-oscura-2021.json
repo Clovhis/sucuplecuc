@@ -13,7 +13,9 @@
 		"Independiente",
 		"Psicológico"
 	],
-	"subgenres": ["Psicológico"],
+	"subgenres": [
+		"Psicológico"
+	],
 	"country": "US, GR, GB, IL",
 	"isArgentinian": false,
 	"poster": "assets/posters/2021/la-hija-oscura-2021.webp",
@@ -32,8 +34,15 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["aftersun-2022", "blue-valentine-2010"],
-		"related": ["tar-2022", "carol-2015", "la-pianista-2001"],
+		"becauseYouLiked": [
+			"aftersun-2022",
+			"blue-valentine-2010"
+		],
+		"related": [
+			"tar-2022",
+			"carol-2015",
+			"la-pianista-2001"
+		],
 		"tenSecondTake": {
 			"verdict": "Olivia Colman y Jessie Buckley encarnan a Leda en edades distintas, sin cerrar las contradicciones de su maternidad.",
 			"whatToExpect": "Una playa tranquila, una familia ruidosa y recuerdos que emergen con cada pequeño gesto.",
@@ -49,5 +58,28 @@
 	"releasePlatforms": [
 		"Netflix"
 	],
-	"runtimeMinutes": 122
+	"runtimeMinutes": 122,
+	"castCharacters": [
+		{
+			"actor": "Olivia Colman",
+			"character": "Leda Caruso",
+			"tmdbMovieId": 554230,
+			"tmdbPersonId": 39187,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessie Buckley",
+			"character": "Young Leda Caruso",
+			"tmdbMovieId": 554230,
+			"tmdbPersonId": 1498158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dakota Johnson",
+			"character": "Nina",
+			"tmdbMovieId": 554230,
+			"tmdbPersonId": 118545,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

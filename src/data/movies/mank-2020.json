@@ -63,5 +63,28 @@
 	"releasePlatforms": [
 		"Netflix"
 	],
-	"runtimeMinutes": 131
+	"runtimeMinutes": 131,
+	"castCharacters": [
+		{
+			"actor": "Gary Oldman",
+			"character": "Herman Mankiewicz",
+			"tmdbMovieId": 614560,
+			"tmdbPersonId": 64,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amanda Seyfried",
+			"character": "Marion Davies",
+			"tmdbMovieId": 614560,
+			"tmdbPersonId": 71070,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lily Collins",
+			"character": "Rita Alexander",
+			"tmdbMovieId": 614560,
+			"tmdbPersonId": 112561,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

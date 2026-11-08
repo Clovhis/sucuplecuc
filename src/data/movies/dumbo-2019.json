@@ -52,5 +52,42 @@
 	},
 	"runtimeMinutes": 112,
 	"review": "Tim Burton agrega una familia de circo y empresarios a la historia de Dumbo, y termina estirando una fábula muy simple hasta volverla bastante administrativa. Colin Farrell y los chicos sostienen el afecto por el elefante, mientras Michael Keaton juega al villano del espectáculo con energía suficiente. La dirección tiene buen oficio visual en las carpas, las luces y el vuelo, pero la maravilla aparece menos de lo esperado. El ritmo se llena de trama secundaria. Vale por algunos pasajes de Burton, no porque mejore la sencillez de la original.",
-	"reviewPublishedAt": "2026-04-27"
+	"reviewPublishedAt": "2026-04-27",
+	"castCharacters": [
+		{
+			"actor": "Colin Farrell",
+			"character": "Holt Farrier",
+			"tmdbMovieId": 329996,
+			"tmdbPersonId": 72466,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Keaton",
+			"character": "V. A. Vandevere",
+			"tmdbMovieId": 329996,
+			"tmdbPersonId": 2232,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny DeVito",
+			"character": "Maximilian \"Max\" Medici",
+			"tmdbMovieId": 329996,
+			"tmdbPersonId": 518,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eva Green",
+			"character": "Colette Marchant",
+			"tmdbMovieId": 329996,
+			"tmdbPersonId": 10912,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Arkin",
+			"character": "J. Griffin Remington",
+			"tmdbMovieId": 329996,
+			"tmdbPersonId": 1903,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

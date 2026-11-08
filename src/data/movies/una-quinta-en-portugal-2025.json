@@ -48,5 +48,21 @@
 		}
 	},
 	"review": "Manolo Solo hace del desconcierto de Fernando algo que se puede leer aun cuando el personaje decide callar. La quinta ofrece tierra, tareas y compañía, pero también un escenario donde inventarse una biografía que resulta más fácil de llevar. Avelina Prat se detiene en los encuentros cotidianos y deja que María de Medeiros le dé espesor a esa bienvenida: cada persona trae una historia que nunca se conoce del todo. Los giros pueden sentirse demasiado acomodados para abrir nuevas posibilidades; funciona mejor cuando una conversación o un trabajo de jardinería explican por qué alguien necesita quedarse.",
-	"runtimeMinutes": 114
+	"runtimeMinutes": 114,
+	"castCharacters": [
+		{
+			"actor": "Manolo Solo",
+			"character": "Fernando",
+			"tmdbMovieId": 1440171,
+			"tmdbPersonId": 592709,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maria de Medeiros",
+			"character": "Amalia",
+			"tmdbMovieId": 1440171,
+			"tmdbPersonId": 2319,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

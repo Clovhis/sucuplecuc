@@ -59,5 +59,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Alvy Singer",
+			"tmdbMovieId": 703,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Keaton",
+			"character": "Annie Hall",
+			"tmdbMovieId": 703,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Roberts",
+			"character": "Rob",
+			"tmdbMovieId": 703,
+			"tmdbPersonId": 10555,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

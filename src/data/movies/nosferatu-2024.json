@@ -27,7 +27,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Robert Eggers vuelve a Nosferatu un cuerpo de peste, deseo y agotamiento; Lily-Rose Depp y Bill Skarsgård sostienen un gótico espeso que prefiere incomodar antes que asustar con trucos.",
-			"whatToExpect": "Castillos, ratas, sombras, hipnosis y un vínculo psíquico que transforma la soledad de Ellen en puerta para una presencia antigua.",			"pace": "Avanza con solemnidad y acumula clima antes de soltar sus apariciones; la película confía en la espera y en la textura de cada habitación.",			"intensity": "La intensidad es sensual, enfermiza y sostenida, con terror corporal y atmósfera de peste más que sustos repentinos.",			"practicalContext": "La ficha no informa duración; elegila para una noche de horror gótico, con tiempo para dejar que la película se vuelva pesada a propósito.",			"forFansOf": "Para quienes disfrutan a Eggers, vampiros de época y actuaciones que trabajan el deseo como algo peligroso y difícil de separar del miedo.",			"notForYouIf": "No es para vos si buscás sustos frecuentes, humor o una adaptación ligera que no se detenga en enfermedad, ritual y cuerpo."
+			"whatToExpect": "Castillos, ratas, sombras, hipnosis y un vínculo psíquico que transforma la soledad de Ellen en puerta para una presencia antigua.",
+			"pace": "Avanza con solemnidad y acumula clima antes de soltar sus apariciones; la película confía en la espera y en la textura de cada habitación.",
+			"intensity": "La intensidad es sensual, enfermiza y sostenida, con terror corporal y atmósfera de peste más que sustos repentinos.",
+			"practicalContext": "La ficha no informa duración; elegila para una noche de horror gótico, con tiempo para dejar que la película se vuelva pesada a propósito.",
+			"forFansOf": "Para quienes disfrutan a Eggers, vampiros de época y actuaciones que trabajan el deseo como algo peligroso y difícil de separar del miedo.",
+			"notForYouIf": "No es para vos si buscás sustos frecuentes, humor o una adaptación ligera que no se detenga en enfermedad, ritual y cuerpo."
 		},
 		"becauseYouLiked": [
 			"el-faro-2019",
@@ -44,5 +49,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Lily-Rose Depp",
+			"character": "Ellen Hutter",
+			"tmdbMovieId": 426063,
+			"tmdbPersonId": 1459885,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicholas Hoult",
+			"character": "Thomas Hutter",
+			"tmdbMovieId": 426063,
+			"tmdbPersonId": 3292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Skarsgård",
+			"character": "Count Orlok",
+			"tmdbMovieId": 426063,
+			"tmdbPersonId": 137905,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

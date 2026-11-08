@@ -75,5 +75,35 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-26",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Michael B. Jordan",
+			"character": "Smoke / Stack",
+			"tmdbMovieId": 1233413,
+			"tmdbPersonId": 135651,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hailee Steinfeld",
+			"character": "Mary",
+			"tmdbMovieId": 1233413,
+			"tmdbPersonId": 130640,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miles Caton",
+			"character": "Sammie Moore",
+			"tmdbMovieId": 1233413,
+			"tmdbPersonId": 4688032,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack O'Connell",
+			"character": "Remmick",
+			"tmdbMovieId": 1233413,
+			"tmdbPersonId": 85065,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

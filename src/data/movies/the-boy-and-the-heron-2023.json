@@ -39,18 +39,41 @@
 			"forFansOf": "Puede fascinarte si te gustan las películas de Hayao Miyazaki, las fábulas sobre duelo y la animación que salta de lo cotidiano a lo imposible sin perder una emoción humana.",
 			"notForYouIf": "Quizás no sea para vos si necesitás reglas claras, objetivos concretos o un final que ordene todos los símbolos. Su potencia depende de quedar un rato dentro de la confusión."
 		},
-	"becauseYouLiked": [
-		"spirited-away-2001",
-		"princess-mononoke-1997"
-	],
-	"related": [
-		"howls-moving-castle-2004",
-		"castle-in-the-sky-1986",
-		"nausicaa-of-the-valley-of-the-wind-1984",
-		"my-neighbor-totoro-1988"
-	]
-},
+		"becauseYouLiked": [
+			"spirited-away-2001",
+			"princess-mononoke-1997"
+		],
+		"related": [
+			"howls-moving-castle-2004",
+			"castle-in-the-sky-1986",
+			"nausicaa-of-the-valley-of-the-wind-1984",
+			"my-neighbor-totoro-1988"
+		]
+	},
 	"synopsis": "Tras la muerte de su madre, Mahito se muda al campo con su padre y queda atraído por una garza que lo guía hacia un mundo extraño. Allí emprende un viaje entre duelo, fantasía y descubrimiento personal.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-04"
+	"reviewPublishedAt": "2026-03-04",
+	"castCharacters": [
+		{
+			"actor": "Soma Santoki",
+			"character": "Mahito Maki (voice)",
+			"tmdbMovieId": 508883,
+			"tmdbPersonId": 2234011,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Masaki Suda",
+			"character": "Gray Heron (voice)",
+			"tmdbMovieId": 508883,
+			"tmdbPersonId": 585211,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ko Shibasaki",
+			"character": "Kiriko (voice)",
+			"tmdbMovieId": 508883,
+			"tmdbPersonId": 58593,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

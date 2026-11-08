@@ -54,5 +54,21 @@
 	"releasePlatforms": [
 		"Apple TV"
 	],
-	"runtimeMinutes": 115
+	"runtimeMinutes": 115,
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Finch",
+			"tmdbMovieId": 522402,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Caleb Landry Jones",
+			"character": "Jeff (voice)",
+			"tmdbMovieId": 522402,
+			"tmdbPersonId": 572541,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

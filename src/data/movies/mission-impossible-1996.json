@@ -29,7 +29,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Brian De Palma hace de Mission: Impossible una conspiración fría y paranoica; Tom Cruise todavía es un agente vulnerable, y la infiltración de Langley sigue siendo el gran golpe.",
-			"whatToExpect": "Identidades dudosas, una lista de agentes, traiciones y espacios vigilados, con Ethan Hunt armando un equipo fuera del respaldo oficial.",			"pace": "Se toma tiempo para sembrar sospechas y después aprieta en las infiltraciones; es más cerebral y menos acrobática que las secuelas.",			"intensity": "La intensidad nace de no saber quién quedó vivo ni quién trabaja para quién; la acción es precisa, pero la paranoia manda.",			"practicalContext": "Sus 111 minutos rinden como thriller de espías concentrado; verla cerca de otras entregas ayuda a apreciar su tono más oscuro y menos espectacular.",			"forFansOf": "Para quienes disfrutan el suspenso de De Palma, los juegos de identidad y un Cruise que gana por reflejos antes que por invulnerabilidad.",			"notForYouIf": "No es para vos si buscás la velocidad de Fallout, grandes explosiones cada diez minutos o una trama que explique pronto sus secretos."
+			"whatToExpect": "Identidades dudosas, una lista de agentes, traiciones y espacios vigilados, con Ethan Hunt armando un equipo fuera del respaldo oficial.",
+			"pace": "Se toma tiempo para sembrar sospechas y después aprieta en las infiltraciones; es más cerebral y menos acrobática que las secuelas.",
+			"intensity": "La intensidad nace de no saber quién quedó vivo ni quién trabaja para quién; la acción es precisa, pero la paranoia manda.",
+			"practicalContext": "Sus 111 minutos rinden como thriller de espías concentrado; verla cerca de otras entregas ayuda a apreciar su tono más oscuro y menos espectacular.",
+			"forFansOf": "Para quienes disfrutan el suspenso de De Palma, los juegos de identidad y un Cruise que gana por reflejos antes que por invulnerabilidad.",
+			"notForYouIf": "No es para vos si buscás la velocidad de Fallout, grandes explosiones cada diez minutos o una trama que explique pronto sus secretos."
 		},
 		"becauseYouLiked": [
 			"the-terminator-1984",
@@ -46,5 +51,28 @@
 	"synopsis": "Después de terminar una misión en Kiev, el agente del FMI Jim Phelps y su último equipo son enviados a Praga para impedir que el agente rebelde Alexander Golitsyn robe la lista NOC (encubrimiento no oficial) de la CIA, que revela las identidades de todos sus agentes encubiertos en Europa.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "Ethan Hunt",
+			"tmdbMovieId": 954,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Voight",
+			"character": "Jim Phelps",
+			"tmdbMovieId": 954,
+			"tmdbPersonId": 10127,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emmanuelle Béart",
+			"character": "Claire",
+			"tmdbMovieId": 954,
+			"tmdbPersonId": 4885,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

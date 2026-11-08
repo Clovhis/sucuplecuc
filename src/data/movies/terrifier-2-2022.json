@@ -38,17 +38,17 @@
 			"forFansOf": "Puede ser un festín si disfrutás terror independiente, villanos de payaso y maquillaje práctico llevado al límite, con una final girl que se gana cada tramo a fuerza de resistencia.",
 			"notForYouIf": "Quizás no sea para vos si necesitás una trama compacta, violencia sugerida o un tono de terror que no insista con el shock. Acá el exceso es la propuesta y también el problema."
 		},
-	"becauseYouLiked": [
-		"saw-x-2023",
-		"tu-madre-se-ha-comido-a-mi-perro-1992"
-	],
-	"related": [
-		"saw-2004",
-		"la-matanza-de-texas-1974",
-		"evil-dead-en-llamas-2026",
-		"martires-2008"
-	]
-},
+		"becauseYouLiked": [
+			"saw-x-2023",
+			"tu-madre-se-ha-comido-a-mi-perro-1992"
+		],
+		"related": [
+			"saw-2004",
+			"la-matanza-de-texas-1974",
+			"evil-dead-en-llamas-2026",
+			"martires-2008"
+		]
+	},
 	"review": "Terrifier 2 toma la promesa mínima de un slasher y la estira hasta convertirla en un festival de efectos prácticos, maquillaje y maldad de payaso. Damien Leone no sabe recortar: dura una eternidad, abre tramas sobrenaturales medio torpes y repite el chiste de llevar cada mutilación un poco más lejos. Sin embargo, la película tiene una identidad que muchas franquicias grandes envidiarían. David Howard Thornton hace de Art un mimo cruel y gracioso sin decir una palabra, mientras Lauren LaVera sostiene el asunto como una final girl con presencia real. El ritmo se cae en el medio, pero los momentos fuertes están construidos con oficio artesanal. No es para cualquiera; para el fan del splatter, es un banquete excesivo.",
 	"synopsis": "Art the Clown regresa después de una masacre y persigue a una adolescente y a su hermano durante Halloween, mientras la violencia toma un tono cada vez más sobrenatural.",
 	"audienceRating": "+18",
@@ -56,5 +56,28 @@
 		"Gore",
 		"Slasher"
 	],
-	"reviewPublishedAt": "2026-05-23"
+	"reviewPublishedAt": "2026-05-23",
+	"castCharacters": [
+		{
+			"actor": "Lauren LaVera",
+			"character": "Sienna Shaw",
+			"tmdbMovieId": 663712,
+			"tmdbPersonId": 1882502,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elliott Fullam",
+			"character": "Jonathan Shaw",
+			"tmdbMovieId": 663712,
+			"tmdbPersonId": 2787720,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Howard Thornton",
+			"character": "Art the Clown",
+			"tmdbMovieId": 663712,
+			"tmdbPersonId": 1880016,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

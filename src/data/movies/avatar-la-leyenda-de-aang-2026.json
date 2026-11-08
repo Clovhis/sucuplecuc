@@ -21,7 +21,10 @@
 	"screenshots": [],
 	"trailerYoutubeId": "7b20GRFZBFE",
 	"releasePlatform": "Paramount Plus",
-	"releasePlatforms": ["Paramount Plus","Apple TV"],
+	"releasePlatforms": [
+		"Paramount Plus",
+		"Apple TV"
+	],
 	"director": "Lauren Montgomery",
 	"mainCast": [
 		"Eric Nam",
@@ -58,5 +61,35 @@
 	},
 	"review": "Avatar: La leyenda de Aang tiene la difícil tarea de volver a presentar un mundo que ya vive en la memoria de varias generaciones. Lauren Montgomery apuesta por el movimiento, los paisajes amplios y una aventura de iniciación que entiende que el encanto de Aang nace tanto de su humor como de su responsabilidad.\n\nLa animación luce mejor en los combates elementales que en los momentos de exposición, donde la película se apura para explicar demasiadas reglas. Las voces de Eric Nam y Dave Bautista ayudan a diferenciar la energía de los personajes, pero el relato se siente más como un prólogo que como una experiencia completa. Tiene color y cariño; todavía le falta una historia que esté a la misma altura.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Eric Nam",
+			"character": "Aang (voice)",
+			"tmdbMovieId": 980431,
+			"tmdbPersonId": 1610783,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dave Bautista",
+			"character": "Tagah (voice)",
+			"tmdbMovieId": 980431,
+			"tmdbPersonId": 543530,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Matten",
+			"character": "Katara (voice)",
+			"tmdbMovieId": 980431,
+			"tmdbPersonId": 1703912,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steven Yeun",
+			"character": "Zuko (voice)",
+			"tmdbMovieId": 980431,
+			"tmdbPersonId": 215055,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

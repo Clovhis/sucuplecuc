@@ -79,5 +79,42 @@
 	},
 	"review": "David Fincher arma un melodrama enorme con una precisión técnica que a veces se siente más admirable que cercana. El envejecimiento invertido está resuelto con una fluidez extraordinaria y Brad Pitt sostiene bien a un hombre condenado a llegar siempre a destiempo, aunque la narración episódica alarga algunos encuentros más de la cuenta. Cate Blanchett y Taraji P. Henson aportan la calidez que el dispositivo necesita. Cuando deja de mostrar su truco y se concentra en la imposibilidad de compartir el mismo momento con quien uno ama, encuentra su parte más triste y genuina.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Brad Pitt",
+			"character": "Benjamin Button",
+			"tmdbMovieId": 4922,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Daisy Fuller",
+			"tmdbMovieId": 4922,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Taraji P. Henson",
+			"character": "Queenie",
+			"tmdbMovieId": 4922,
+			"tmdbPersonId": 40036,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julia Ormond",
+			"character": "Caroline Fuller",
+			"tmdbMovieId": 4922,
+			"tmdbPersonId": 15887,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tilda Swinton",
+			"character": "Elizabeth Abbott",
+			"tmdbMovieId": 4922,
+			"tmdbPersonId": 3063,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

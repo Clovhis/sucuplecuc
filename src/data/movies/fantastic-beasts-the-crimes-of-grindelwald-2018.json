@@ -37,19 +37,42 @@
 			"forFansOf": "Fans de Harry Potter, de Jude Law como Dumbledore y de las sagas que expanden genealogías, rivalidades y secretos.",
 			"notForYouIf": "Buscás una historia cerrada, un elenco acotado o una película que no dependa de la próxima. The Crimes of Grindelwald prepara más de lo que resuelve."
 		},
-	"becauseYouLiked": [
-		"charlie-and-the-chocolate-factory-2005",
-		"harry-potter-and-the-deathly-hallows-part-2-2011"
-	],
-	"related": [
-		"harry-potter-and-the-deathly-hallows-part-1-2010",
-		"harry-potter-and-the-half-blood-prince-2009",
-		"harry-potter-and-the-order-of-the-phoenix-2007",
-		"una-serie-de-eventos-desafortunados-2004"
-	]
-},
+		"becauseYouLiked": [
+			"charlie-and-the-chocolate-factory-2005",
+			"harry-potter-and-the-deathly-hallows-part-2-2011"
+		],
+		"related": [
+			"harry-potter-and-the-deathly-hallows-part-1-2010",
+			"harry-potter-and-the-half-blood-prince-2009",
+			"harry-potter-and-the-order-of-the-phoenix-2007",
+			"una-serie-de-eventos-desafortunados-2004"
+		]
+	},
 	"review": "David Yates lleva a Newt a París para seguir la pista de Credence y de Grindelwald, pero la aventura se dispersa entre personajes, pistas y promesas para futuras entregas. Eddie Redmayne conserva la amabilidad rara de Newt, y Jude Law encuentra un Dumbledore más cálido que misterioso. La dirección ofrece criaturas y escenarios vistosos, aunque rara vez logra que las subtramas tengan el mismo peso. El ritmo se enreda y el final privilegia preparar otra película. Vale para seguidores del mundo mágico; para el resto, su exceso de información puede cansar.",
 	"synopsis": "Ambientada en 1927, sigue a Newt Scamander y Albus Dumbledore mientras intentan derrotar al mago oscuro Gellert Grindelwald mientras enfrentan nuevas amenazas en un mundo mágico más dividido.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Eddie Redmayne",
+			"character": "Newt Scamander",
+			"tmdbMovieId": 338952,
+			"tmdbPersonId": 37632,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jude Law",
+			"character": "Albus Dumbledore",
+			"tmdbMovieId": 338952,
+			"tmdbPersonId": 9642,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Johnny Depp",
+			"character": "Grindelwald",
+			"tmdbMovieId": 338952,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

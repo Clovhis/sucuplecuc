@@ -53,5 +53,42 @@
 		]
 	},
 	"review": "Casino sigue a Sam Rothstein, un experto en apuestas enviado por la mafia a administrar un casino de Las Vegas, mientras su matrimonio y su sociedad con un amigo violento se van pudriendo. Martin Scorsese filma la ciudad como una orgía de codicia, luces y paranoia, donde cada narración en off empuja a la siguiente caída. Robert De Niro trabaja la obsesión con frialdad, Joe Pesci explota como una amenaza imprevisible y Sharon Stone le da a Ginger una fuerza desesperada. Es larga y excesiva, pero su ritmo y su veneno nunca aflojan.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Sam 'Ace' Rothstein",
+			"tmdbMovieId": 524,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sharon Stone",
+			"character": "Ginger McKenna",
+			"tmdbMovieId": 524,
+			"tmdbPersonId": 4430,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Pesci",
+			"character": "Nicky Santoro",
+			"tmdbMovieId": 524,
+			"tmdbPersonId": 4517,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Woods",
+			"character": "Lester Diamond",
+			"tmdbMovieId": 524,
+			"tmdbPersonId": 4512,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Rickles",
+			"character": "Billy Sherbert",
+			"tmdbMovieId": 524,
+			"tmdbPersonId": 7167,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

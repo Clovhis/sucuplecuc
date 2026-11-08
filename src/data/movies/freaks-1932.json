@@ -54,5 +54,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Wallace Ford",
+			"character": "Phroso",
+			"tmdbMovieId": 136,
+			"tmdbPersonId": 35849,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leila Hyams",
+			"character": "Venus",
+			"tmdbMovieId": 136,
+			"tmdbPersonId": 1507,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Olga Baclanova",
+			"character": "Cleopatra",
+			"tmdbMovieId": 136,
+			"tmdbPersonId": 1508,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Henry Victor",
+			"character": "Hercules",
+			"tmdbMovieId": 136,
+			"tmdbPersonId": 1510,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

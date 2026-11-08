@@ -51,5 +51,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 125,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Ingrid Guimarães",
+			"character": "Clara",
+			"tmdbMovieId": 1257147,
+			"tmdbPersonId": 228028,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mônica Martelli",
+			"character": "Julia",
+			"tmdbMovieId": 1257147,
+			"tmdbPersonId": 562161,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

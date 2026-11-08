@@ -46,5 +46,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-05",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Mike Lowrey",
+			"tmdbMovieId": 573435,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martin Lawrence",
+			"character": "Marcus Burnett",
+			"tmdbMovieId": 573435,
+			"tmdbPersonId": 78029,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vanessa Hudgens",
+			"character": "Kelly",
+			"tmdbMovieId": 573435,
+			"tmdbPersonId": 67599,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

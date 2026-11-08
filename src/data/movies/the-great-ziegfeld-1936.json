@@ -60,5 +60,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "William Powell",
+			"character": "Florenz 'Flo' Ziegfeld Jr.",
+			"tmdbMovieId": 43277,
+			"tmdbPersonId": 32428,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Myrna Loy",
+			"character": "Billie Burke",
+			"tmdbMovieId": 43277,
+			"tmdbPersonId": 13577,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luise Rainer",
+			"character": "Anna Held",
+			"tmdbMovieId": 43277,
+			"tmdbPersonId": 125482,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

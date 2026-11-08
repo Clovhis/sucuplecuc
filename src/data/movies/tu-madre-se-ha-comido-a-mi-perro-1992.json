@@ -30,26 +30,26 @@
 	},
 	"runtimeMinutes": 104,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Tu madre se ha comido a mi perro lleva el gore al dibujo animado; Peter Jackson dirige a Timothy Balme y Diana Peñalver con una alegría tan artesanal como sangrienta.",
-		"whatToExpect": "Una mordida desata una plaga zombi en el barrio, y un joven tímido debe cuidar una historia de amor mientras su madre convierte todo en carnicería.",
-		"pace": "Empieza con comedia incómoda, acumula criaturas y termina acelerando hasta que cada objeto del escenario puede transformarse en arma.",
-		"intensity": "La sangre es abundante y exagerada, pero la precisión física convierte la crueldad en coreografía antes que en tortura realista.",
-		"practicalContext": "Dura 104 minutos y pide estómago para el splatter; funciona mejor como función de culto que como terror serio.",
-		"forFansOf": "Te va a gustar si disfrutás zombis, gore inventivo y películas que abrazan su mal gusto con imaginación y ritmo.",
-		"notForYouIf": "No es para vos si te afecta la sangre, preferís horror atmosférico o necesitás que una historia de amor tenga tono normal."
+		"tenSecondTake": {
+			"verdict": "Tu madre se ha comido a mi perro lleva el gore al dibujo animado; Peter Jackson dirige a Timothy Balme y Diana Peñalver con una alegría tan artesanal como sangrienta.",
+			"whatToExpect": "Una mordida desata una plaga zombi en el barrio, y un joven tímido debe cuidar una historia de amor mientras su madre convierte todo en carnicería.",
+			"pace": "Empieza con comedia incómoda, acumula criaturas y termina acelerando hasta que cada objeto del escenario puede transformarse en arma.",
+			"intensity": "La sangre es abundante y exagerada, pero la precisión física convierte la crueldad en coreografía antes que en tortura realista.",
+			"practicalContext": "Dura 104 minutos y pide estómago para el splatter; funciona mejor como función de culto que como terror serio.",
+			"forFansOf": "Te va a gustar si disfrutás zombis, gore inventivo y películas que abrazan su mal gusto con imaginación y ritmo.",
+			"notForYouIf": "No es para vos si te afecta la sangre, preferís horror atmosférico o necesitás que una historia de amor tenga tono normal."
+		},
+		"becauseYouLiked": [
+			"terrifier-2-2022",
+			"terrifier-3-2024"
+		],
+		"related": [
+			"ichi-the-killer-2001",
+			"saw-2004",
+			"martires-2008",
+			"saw-x-2023"
+		]
 	},
-	"becauseYouLiked": [
-		"terrifier-2-2022",
-		"terrifier-3-2024"
-	],
-	"related": [
-		"ichi-the-killer-2001",
-		"saw-2004",
-		"martires-2008",
-		"saw-x-2023"
-	]
-},
 	"review": "Tu madre se ha comido a mi perro lleva el gore a una escala de cartoon y Peter Jackson dirige el exceso con una alegría artesanal contagiosa. La historia de amor es apenas el hilo que permite encadenar invasiones, zombis y litros de sangre, pero la película no pretende esconderlo. Timothy Balme sostiene el caos con una seriedad graciosa y Diana Peñalver acompaña un romance tan absurdo como tierno. El ritmo tarda un poco en encender, aunque cuando llega al tramo final convierte cada mutilación en coreografía física. Es una bestialidad deliberada, pero también inventiva, precisa y mucho más divertida que cruel.",
 	"synopsis": "La mordida de una criatura imposible convierte a la madre de un joven tímido en el origen de una plaga zombie que transforma su barrio en una carnicería desatada.",
 	"audienceRating": "+18",
@@ -58,5 +58,35 @@
 	"subgenres": [
 		"Gore"
 	],
-	"reviewPublishedAt": "2026-05-26"
+	"reviewPublishedAt": "2026-05-26",
+	"castCharacters": [
+		{
+			"actor": "Timothy Balme",
+			"character": "Lionel",
+			"tmdbMovieId": 763,
+			"tmdbPersonId": 11332,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diana Peñalver",
+			"character": "Paquita",
+			"tmdbMovieId": 763,
+			"tmdbPersonId": 11333,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elizabeth Moody",
+			"character": "Mum",
+			"tmdbMovieId": 763,
+			"tmdbPersonId": 11334,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian Watkin",
+			"character": "Uncle Les",
+			"tmdbMovieId": 763,
+			"tmdbPersonId": 11335,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

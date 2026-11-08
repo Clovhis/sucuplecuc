@@ -59,5 +59,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "William Holden",
+			"character": "Cmdr. Shears",
+			"tmdbMovieId": 826,
+			"tmdbPersonId": 8252,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alec Guinness",
+			"character": "Col. Nicholson",
+			"tmdbMovieId": 826,
+			"tmdbPersonId": 12248,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Hawkins",
+			"character": "Maj. Warden",
+			"tmdbMovieId": 826,
+			"tmdbPersonId": 10018,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

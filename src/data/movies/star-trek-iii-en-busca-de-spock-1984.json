@@ -47,7 +47,7 @@
 			"forFansOf": "Puede gustarte si te atrae Star Trek cuando pone la amistad por delante de la estrategia, las misiones de rescate con peso emocional y la química entre Shatner, Kelley y Doohan.",
 			"notForYouIf": "Quizás no sea para vos si querés una aventura espacial llena de descubrimientos, un villano central o efectos modernos. Esta entrega apuesta más al vínculo de la tripulación que al asombro cósmico."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"star-trek-vi-aquel-pais-desconocido-1991"
 		],
 		"related": [
@@ -56,5 +56,28 @@
 			"star-trek-v-la-ultima-frontera-1989"
 		]
 	},
-	"review": "Star Trek III entiende que una aventura espacial también puede ser una historia sobre duelo y amistad. Leonard Nimoy dirige con una calma que deja respirar a los personajes, y William Shatner encuentra en Kirk una mezcla poco habitual de dolor, obstinación y culpa. La película no tiene la sorpresa de su antecesora, pero trabaja bien la idea de que la lealtad puede empujar a un grupo a romper todas las reglas. Sus efectos son de época y su corazón sigue intacto."
+	"review": "Star Trek III entiende que una aventura espacial también puede ser una historia sobre duelo y amistad. Leonard Nimoy dirige con una calma que deja respirar a los personajes, y William Shatner encuentra en Kirk una mezcla poco habitual de dolor, obstinación y culpa. La película no tiene la sorpresa de su antecesora, pero trabaja bien la idea de que la lealtad puede empujar a un grupo a romper todas las reglas. Sus efectos son de época y su corazón sigue intacto.",
+	"castCharacters": [
+		{
+			"actor": "William Shatner",
+			"character": "Admiral James T. Kirk",
+			"tmdbMovieId": 157,
+			"tmdbPersonId": 1748,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "DeForest Kelley",
+			"character": "Dr. Leonard 'Bones' McCoy",
+			"tmdbMovieId": 157,
+			"tmdbPersonId": 1750,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Doohan",
+			"character": "Captain Montgomery 'Scotty' Scott",
+			"tmdbMovieId": 157,
+			"tmdbPersonId": 1751,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

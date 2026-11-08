@@ -61,5 +61,28 @@
 	},
 	"review": "Stanley Kubrick filma la violencia de Alex con una belleza formal que obliga a discutir qué significa mirar. Malcolm McDowell combina encanto, crueldad y teatralidad, y la música clásica vuelve extrañas escenas que podrían presentarse como simples golpes. La segunda mitad cambia el foco: ya no importa sólo lo que Alex hace, sino lo que una institución está dispuesta a hacerle para corregirlo. El film puede ser provocador hasta el límite, pero su diseño visual, su ritmo y su pregunta política siguen intactos. No busca caer simpático; busca dejar una marca.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Malcolm McDowell",
+			"character": "Alex",
+			"tmdbMovieId": 185,
+			"tmdbPersonId": 56890,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick Magee",
+			"character": "Mr. Alexander",
+			"tmdbMovieId": 185,
+			"tmdbPersonId": 2264,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carl Duering",
+			"character": "Dr. Brodsky",
+			"tmdbMovieId": 185,
+			"tmdbPersonId": 2272,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

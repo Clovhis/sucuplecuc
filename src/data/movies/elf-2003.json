@@ -59,5 +59,35 @@
 		"Prime Video",
 		"Disney Plus"
 	],
-	"runtimeMinutes": 97
+	"runtimeMinutes": 97,
+	"castCharacters": [
+		{
+			"actor": "Will Ferrell",
+			"character": "Buddy",
+			"tmdbMovieId": 10719,
+			"tmdbPersonId": 23659,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Caan",
+			"character": "Walter",
+			"tmdbMovieId": 10719,
+			"tmdbPersonId": 3085,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zooey Deschanel",
+			"character": "Jovie",
+			"tmdbMovieId": 10719,
+			"tmdbPersonId": 11664,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Steenburgen",
+			"character": "Emily",
+			"tmdbMovieId": 10719,
+			"tmdbPersonId": 2453,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

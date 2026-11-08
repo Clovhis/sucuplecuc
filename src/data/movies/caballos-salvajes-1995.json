@@ -41,18 +41,41 @@
 			"forFansOf": "Las road movies argentinas, las amistades improbables y los relatos de revancha con un fondo de crisis.",
 			"notForYouIf": "Buscás realismo seco, una trama más contenida o personajes que no hablen desde sus ideales."
 		},
-	"becauseYouLiked": [
-		"tango-feroz-la-leyenda-de-tanguito-1993",
-		"plata-quemada-2000"
-	],
-	"related": [
-		"kamchatka-2002",
-		"la-noche-de-los-lapices-1986",
-		"un-lugar-en-el-mundo-1992",
-		"mundo-grua-1999"
-	]
-},
+		"becauseYouLiked": [
+			"tango-feroz-la-leyenda-de-tanguito-1993",
+			"plata-quemada-2000"
+		],
+		"related": [
+			"kamchatka-2002",
+			"la-noche-de-los-lapices-1986",
+			"un-lugar-en-el-mundo-1992",
+			"mundo-grua-1999"
+		]
+	},
 	"synopsis": "José, un viejo anarquista al que una financiera le robó sus ahorros, entra armado a reclamar lo que considera suyo y termina escapando con Pedro, un joven empleado sorprendido por la situación. Juntos se lanzan a una fuga que mezcla revancha, educación política tardía y amistad improvisada.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Héctor Alterio",
+			"character": "José",
+			"tmdbMovieId": 32208,
+			"tmdbPersonId": 59136,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonardo Sbaraglia",
+			"character": "Pedro",
+			"tmdbMovieId": 32208,
+			"tmdbPersonId": 19803,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cecilia Dopazo",
+			"character": "Ana",
+			"tmdbMovieId": 32208,
+			"tmdbPersonId": 109003,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

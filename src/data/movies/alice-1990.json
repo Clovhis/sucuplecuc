@@ -54,5 +54,42 @@
 		]
 	},
 	"review": "Alice sigue a una mujer acomodada de Manhattan que, entre dolores físicos y una vida afectiva apagada, encuentra a un médico chino capaz de alterar su percepción. Woody Allen mezcla comedia burguesa, fantasía y una crisis sentimental sin dejar que la premisa mágica se vuelva puro decorado. Mia Farrow le da fragilidad y curiosidad a un personaje que podría resultar insufrible, y el tono liviano ayuda a que la culpa no aplaste todo. No es de las más filosas del director, pero tiene encanto y una mirada honesta sobre reinventarse tarde.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Alec Baldwin",
+			"character": "Ed",
+			"tmdbMovieId": 8217,
+			"tmdbPersonId": 7447,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Blythe Danner",
+			"character": "Dorothy",
+			"tmdbMovieId": 8217,
+			"tmdbPersonId": 10401,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judy Davis",
+			"character": "Vicky",
+			"tmdbMovieId": 8217,
+			"tmdbPersonId": 351,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mia Farrow",
+			"character": "Alice Tate",
+			"tmdbMovieId": 8217,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Hurt",
+			"character": "Doug Tate",
+			"tmdbMovieId": 8217,
+			"tmdbPersonId": 227,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

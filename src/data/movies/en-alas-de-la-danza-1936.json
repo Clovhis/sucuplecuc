@@ -49,5 +49,21 @@
       "notForYouIf": "No conectás con romances convencionales o preferís musicales con una trama más dramática."
     }
   },
-  "review": "La historia romántica ofrece una estructura sencilla para que Astaire y Rogers conviertan cada obstáculo en movimiento. Él baila con una ligereza que parece improvisada, aunque está construida con una precisión extraordinaria; ella responde sin quedar como acompañamiento, y los números cambian el ánimo de la relación. La película encuentra su centro cuando deja que el baile sea conversación: los cuerpos discuten, se corrigen y vuelven a probar una forma de estar juntos."
+  "review": "La historia romántica ofrece una estructura sencilla para que Astaire y Rogers conviertan cada obstáculo en movimiento. Él baila con una ligereza que parece improvisada, aunque está construida con una precisión extraordinaria; ella responde sin quedar como acompañamiento, y los números cambian el ánimo de la relación. La película encuentra su centro cuando deja que el baile sea conversación: los cuerpos discuten, se corrigen y vuelven a probar una forma de estar juntos.",
+  "castCharacters": [
+    {
+      "actor": "Fred Astaire",
+      "character": "Lucky Garnett",
+      "tmdbMovieId": 20325,
+      "tmdbPersonId": 30181,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Ginger Rogers",
+      "character": "Penny Carrol",
+      "tmdbMovieId": 20325,
+      "tmdbPersonId": 30003,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

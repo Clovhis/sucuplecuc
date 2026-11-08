@@ -33,19 +33,49 @@
 			"forFansOf": "Los thrillers de bosque, las desapariciones familiares y las historias donde el paisaje se vuelve enemigo.",
 			"notForYouIf": "Querés un misterio puro, acción constante o personajes que no tengan heridas previas al peligro."
 		},
-	"becauseYouLiked": [
-		"shelter-2026",
-		"40-acres-2024"
-	],
-	"related": [
-		"drop-2025",
-		"the-housemaid-2025",
-		"love-lies-bleeding-2024",
-		"el-botin-the-rip-2026"
-	]
-},
+		"becauseYouLiked": [
+			"shelter-2026",
+			"40-acres-2024"
+		],
+		"related": [
+			"drop-2025",
+			"the-housemaid-2025",
+			"love-lies-bleeding-2024",
+			"el-botin-the-rip-2026"
+		]
+	},
 	"synopsis": "Mara, la viuda, viaja a una casa de verano familiar con su hija Lide, su hermana Elena, su cuñado Luis y su sobrino. Lide desaparece en el bosque, mientras que la aparición de un enorme incendio forestal complica las cosas.",
 	"audienceRating": "+12",
 	"review": "Cortafuego tiene una combinación prometedora: duelo familiar, desaparición en el bosque y un incendio que convierte todo en territorio hostil. El entorno ya carga media película.\n\nLo valioso acá no pasa sólo por el suspenso de encontrar a alguien, sino por cómo la presión del fuego desordena vínculos que ya venían tensos. Si consigue que el paisaje apriete y que la familia se lastime de forma creíble, puede levantar mucho.\n\nRECOMENDADA si apuesta más al ahogo emocional que al truco. Tiene una base mejor que la de un thriller genérico.",
-	"reviewPublishedAt": "2026-02-26"
+	"reviewPublishedAt": "2026-02-26",
+	"castCharacters": [
+		{
+			"actor": "Belén Cuesta",
+			"character": "Mara",
+			"tmdbMovieId": 1428862,
+			"tmdbPersonId": 1423493,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Enric Auquer",
+			"character": "Santiago",
+			"tmdbMovieId": 1428862,
+			"tmdbPersonId": 1436707,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joaquín Furriel",
+			"character": "Luis",
+			"tmdbMovieId": 1428862,
+			"tmdbPersonId": 1077146,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diana Gómez",
+			"character": "Elena",
+			"tmdbMovieId": 1428862,
+			"tmdbPersonId": 131085,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

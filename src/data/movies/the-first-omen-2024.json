@@ -49,5 +49,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-04",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Nell Tiger Free",
+			"character": "Margaret",
+			"tmdbMovieId": 437342,
+			"tmdbPersonId": 1472584,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ralph Ineson",
+			"character": "Father Brennan",
+			"tmdbMovieId": 437342,
+			"tmdbPersonId": 202032,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sonia Braga",
+			"character": "Sister Silva",
+			"tmdbMovieId": 437342,
+			"tmdbPersonId": 27396,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

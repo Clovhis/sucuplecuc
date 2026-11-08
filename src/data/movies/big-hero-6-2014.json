@@ -53,5 +53,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Scott Adsit",
+			"character": "Baymax (voice)",
+			"tmdbMovieId": 177572,
+			"tmdbPersonId": 66580,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ryan Potter",
+			"character": "Hiro Hamada (voice)",
+			"tmdbMovieId": 177572,
+			"tmdbPersonId": 515510,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daniel Henney",
+			"character": "Tadashi Hamada (voice)",
+			"tmdbMovieId": 177572,
+			"tmdbPersonId": 82093,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -81,5 +81,28 @@
 		]
 	},
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Paul Newman",
+			"character": "Butch Cassidy",
+			"tmdbMovieId": 642,
+			"tmdbPersonId": 3636,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Redford",
+			"character": "The Sundance Kid",
+			"tmdbMovieId": 642,
+			"tmdbPersonId": 4135,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katharine Ross",
+			"character": "Etta Place",
+			"tmdbMovieId": 642,
+			"tmdbPersonId": 9594,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

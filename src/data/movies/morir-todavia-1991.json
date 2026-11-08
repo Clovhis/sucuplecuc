@@ -35,7 +35,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Kenneth Branagh arma un policial romántico de niebla e identidades, con Emma Thompson sosteniendo la vulnerabilidad; los giros tienen encanto gótico aunque no todos sorprenden.",
-			"whatToExpect": "Pesadillas, amnesia, asesinatos de otra época y una investigación que cruza romance, reencarnación y melodrama clásico.",			"pace": "Se deja llevar por la atmósfera y acumula revelaciones con cadencia de misterio antiguo; algunos rodeos pesan, pero la intriga conserva elegancia.",			"intensity": "La tensión es gótica y emocional, más de secretos y destinos cruzados que de violencia; el pasado invade el presente como una pesadilla.",			"practicalContext": "La ficha no informa duración; elegila para una noche de suspenso romántico de otra época, con ganas de niebla y dramatismo.",			"forFansOf": "Para quienes disfrutan a Branagh, Emma Thompson y los misterios de identidades con perfume de melodrama clásico.",			"notForYouIf": "No es para vos si necesitás una resolución realista, giros imprevisibles o un thriller que abandone pronto su puesta gótica."
+			"whatToExpect": "Pesadillas, amnesia, asesinatos de otra época y una investigación que cruza romance, reencarnación y melodrama clásico.",
+			"pace": "Se deja llevar por la atmósfera y acumula revelaciones con cadencia de misterio antiguo; algunos rodeos pesan, pero la intriga conserva elegancia.",
+			"intensity": "La tensión es gótica y emocional, más de secretos y destinos cruzados que de violencia; el pasado invade el presente como una pesadilla.",
+			"practicalContext": "La ficha no informa duración; elegila para una noche de suspenso romántico de otra época, con ganas de niebla y dramatismo.",
+			"forFansOf": "Para quienes disfrutan a Branagh, Emma Thompson y los misterios de identidades con perfume de melodrama clásico.",
+			"notForYouIf": "No es para vos si necesitás una resolución realista, giros imprevisibles o un thriller que abandone pronto su puesta gótica."
 		},
 		"becauseYouLiked": [
 			"los-amigos-de-peter-1992",
@@ -48,5 +53,35 @@
 			"la-mancha-humana-2003"
 		]
 	},
-	"review": "Kenneth Branagh arma un policial romántico que se deja llevar por la atmósfera: niebla, pesadillas y una investigación que parece doblarse sobre sí misma. Emma Thompson sostiene el misterio con una mezcla de fragilidad y carácter, mientras el juego de identidades le da a la película un pulso de melodrama clásico. La trama acumula giros y no todos envejecieron igual, pero el tono gótico y la dupla central todavía tienen encanto. Es una rareza noventosa ideal para cuando querés suspenso con perfume de otra época."
+	"review": "Kenneth Branagh arma un policial romántico que se deja llevar por la atmósfera: niebla, pesadillas y una investigación que parece doblarse sobre sí misma. Emma Thompson sostiene el misterio con una mezcla de fragilidad y carácter, mientras el juego de identidades le da a la película un pulso de melodrama clásico. La trama acumula giros y no todos envejecieron igual, pero el tono gótico y la dupla central todavía tienen encanto. Es una rareza noventosa ideal para cuando querés suspenso con perfume de otra época.",
+	"castCharacters": [
+		{
+			"actor": "Emma Thompson",
+			"character": "Grace / Margaret Strauss",
+			"tmdbMovieId": 11498,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kenneth Branagh",
+			"character": "Roman Strauss / Mike Church",
+			"tmdbMovieId": 11498,
+			"tmdbPersonId": 11181,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Derek Jacobi",
+			"character": "Franklyn Madson",
+			"tmdbMovieId": 11498,
+			"tmdbPersonId": 937,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Garcia",
+			"character": "Gray Baker",
+			"tmdbMovieId": 11498,
+			"tmdbPersonId": 1271,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

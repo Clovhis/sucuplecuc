@@ -58,5 +58,42 @@
 	"subgenres": [
 		"Coming of Age"
 	],
-	"releaseDate": "1985-02-15"
+	"releaseDate": "1985-02-15",
+	"castCharacters": [
+		{
+			"actor": "Emilio Estevez",
+			"character": "Andrew Clark",
+			"tmdbMovieId": 2108,
+			"tmdbPersonId": 2880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judd Nelson",
+			"character": "John Bender",
+			"tmdbMovieId": 2108,
+			"tmdbPersonId": 21624,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Molly Ringwald",
+			"character": "Claire Standish",
+			"tmdbMovieId": 2108,
+			"tmdbPersonId": 21625,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Michael Hall",
+			"character": "Brian Johnson",
+			"tmdbMovieId": 2108,
+			"tmdbPersonId": 1904,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ally Sheedy",
+			"character": "Allison Reynolds",
+			"tmdbMovieId": 2108,
+			"tmdbPersonId": 12851,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

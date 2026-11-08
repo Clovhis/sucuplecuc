@@ -59,5 +59,35 @@
 	},
 	"review": "Ruben Östlund divide la película en capítulos y deja que cada espacio cambie quién tiene el poder. Harris Dickinson y Charlbi Dean empiezan desde una pareja que negocia imagen y dinero, mientras Dolly de Leon termina ocupando un lugar inesperado dentro de la supervivencia. El humor es incómodo, físico y bastante cruel; la sátira no perdona a los ricos, pero tampoco idealiza a quienes esperan reemplazarlos. Algunas escenas se estiran más de la cuenta, aunque el juego de jerarquías mantiene una energía corrosiva hasta el final.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Harris Dickinson",
+			"character": "Carl",
+			"tmdbMovieId": 497828,
+			"tmdbPersonId": 1716493,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlbi Dean",
+			"character": "Yaya",
+			"tmdbMovieId": 497828,
+			"tmdbPersonId": 1187068,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dolly de Leon",
+			"character": "Abigail",
+			"tmdbMovieId": 497828,
+			"tmdbPersonId": 1513304,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Woody Harrelson",
+			"character": "The Captain",
+			"tmdbMovieId": 497828,
+			"tmdbPersonId": 57755,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

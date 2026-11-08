@@ -52,5 +52,42 @@
 			"la-pianista-2001"
 		]
 	},
-	"review": "Yo soy Sam busca un drama judicial desde un lugar abiertamente sentimental y confía en que el vínculo entre padre e hija sostenga cada golpe emocional. Sean Penn carga con una interpretación intensa, mientras Michelle Pfeiffer encuentra matices interesantes en Rita, una abogada brillante que usa la distancia como defensa personal. La película acierta cuando observa la red de amigos que rodea a Sam y cuando deja que Lucy tenga deseos propios; pierde fuerza cuando subraya lo que ya quedó claro o reduce la discusión sobre discapacidad a una lección de sensibilidad. Es imperfecta, pero tiene una calidez difícil de negar."
+	"review": "Yo soy Sam busca un drama judicial desde un lugar abiertamente sentimental y confía en que el vínculo entre padre e hija sostenga cada golpe emocional. Sean Penn carga con una interpretación intensa, mientras Michelle Pfeiffer encuentra matices interesantes en Rita, una abogada brillante que usa la distancia como defensa personal. La película acierta cuando observa la red de amigos que rodea a Sam y cuando deja que Lucy tenga deseos propios; pierde fuerza cuando subraya lo que ya quedó claro o reduce la discusión sobre discapacidad a una lección de sensibilidad. Es imperfecta, pero tiene una calidez difícil de negar.",
+	"castCharacters": [
+		{
+			"actor": "Sean Penn",
+			"character": "Sam Dawson",
+			"tmdbMovieId": 10950,
+			"tmdbPersonId": 2228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Pfeiffer",
+			"character": "Rita Harrison Williams",
+			"tmdbMovieId": 10950,
+			"tmdbPersonId": 1160,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dakota Fanning",
+			"character": "Lucy Diamond Dawson",
+			"tmdbMovieId": 10950,
+			"tmdbPersonId": 501,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dianne Wiest",
+			"character": "Annie Cassell",
+			"tmdbMovieId": 10950,
+			"tmdbPersonId": 1902,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Schiff",
+			"character": "Mr. Turner",
+			"tmdbMovieId": 10950,
+			"tmdbPersonId": 31028,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

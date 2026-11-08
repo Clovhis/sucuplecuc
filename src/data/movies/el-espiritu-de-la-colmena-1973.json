@@ -49,5 +49,28 @@
     }
   },
   "review": "Erice filma la infancia de Ana sin convertirla en una explicación de la España de posguerra. Las habitaciones vacías, el campo y el rostro atento de Ana Torrent registran un mundo donde los mayores hablan poco y las niñas deben completar lo que no se dice. La película de Frankenstein que Ana ve en el cine no queda reducida a una referencia: abre una pregunta sobre el miedo, la diferencia y la posibilidad de reconocer a alguien escondido. Su misterio nace de una mirada infantil que encuentra señales en cada rincón.",
-  "runtimeMinutes": 98
+  "runtimeMinutes": 98,
+  "castCharacters": [
+    {
+      "actor": "Ana Torrent",
+      "character": "Ana",
+      "tmdbMovieId": 4495,
+      "tmdbPersonId": 24976,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Fernando Fernán Gómez",
+      "character": "Fernando",
+      "tmdbMovieId": 4495,
+      "tmdbPersonId": 965,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Teresa Gimpera",
+      "character": "Teresa",
+      "tmdbMovieId": 4495,
+      "tmdbPersonId": 37839,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

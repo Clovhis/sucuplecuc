@@ -43,18 +43,55 @@
 			"forFansOf": "Fans de los biopics de oficio, de los dramas institucionales y de las historias donde arte, política y ambición se chocan en una mesa.",
 			"notForYouIf": "Buscás grandes escenas de obra, emoción explosiva o una biografía llena de giros. El gran arco prefiere observar la negociación."
 		},
-	"becauseYouLiked": [
-		"ali-2001",
-		"una-mujer-audaz-2000"
-	],
-	"related": [
-		"malcolm-x-1992",
-		"christy-el-combate-de-su-vida-2025",
-		"la-maquina-the-smashing-machine-2025",
-		"michael-2026"
-	]
-},
+		"becauseYouLiked": [
+			"ali-2001",
+			"una-mujer-audaz-2000"
+		],
+		"related": [
+			"malcolm-x-1992",
+			"christy-el-combate-de-su-vida-2025",
+			"la-maquina-the-smashing-machine-2025",
+			"michael-2026"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "El gran arco encuentra drama donde podria haber solo clase de arquitectura: un tipo con una idea enorme, politicos que la quieren domesticar y una obra que se vuelve campo de batalla. No siempre es fina en el modo de ordenar tanta rosca institucional, pero tiene nervio.\n\nLo que mas la levanta es el elenco, sobre todo cuando la pelicula deja ver el choque entre idealismo y maquinaria estatal sin convertir a nadie en santo. Para quien banque biopics europeos de poder, arte y frustracion, entra mucho mejor de lo que su premisa amenaza."
+	"review": "El gran arco encuentra drama donde podria haber solo clase de arquitectura: un tipo con una idea enorme, politicos que la quieren domesticar y una obra que se vuelve campo de batalla. No siempre es fina en el modo de ordenar tanta rosca institucional, pero tiene nervio.\n\nLo que mas la levanta es el elenco, sobre todo cuando la pelicula deja ver el choque entre idealismo y maquinaria estatal sin convertir a nadie en santo. Para quien banque biopics europeos de poder, arte y frustracion, entra mucho mejor de lo que su premisa amenaza.",
+	"castCharacters": [
+		{
+			"actor": "Claes Bang",
+			"character": "Johan Otto von Spreckelsen",
+			"tmdbMovieId": 1290424,
+			"tmdbPersonId": 150802,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sidse Babett Knudsen",
+			"character": "Liv von Spreckelsen",
+			"tmdbMovieId": 1290424,
+			"tmdbPersonId": 32683,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Xavier Dolan",
+			"character": "Jean-Louis Subilon",
+			"tmdbMovieId": 1290424,
+			"tmdbPersonId": 143593,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Swann Arlaud",
+			"character": "Paul Andreu",
+			"tmdbMovieId": 1290424,
+			"tmdbPersonId": 145120,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michel Fau",
+			"character": "François Mitterrand",
+			"tmdbMovieId": 1290424,
+			"tmdbPersonId": 4395,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

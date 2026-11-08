@@ -57,5 +57,35 @@
 		]
 	},
 	"review": "La misión pone la belleza de la selva y la violencia de la colonización en el mismo plano, sin permitir que una tape a la otra. Robert De Niro construye a Mendoza como un hombre que no puede borrar su pasado y sólo encuentra una salida en el servicio a otros, mientras Jeremy Irons le da al conflicto una dimensión espiritual menos combativa. La puesta de Roland Joffé es monumental, pero la película funciona mejor cuando baja la escala y se concentra en los gestos de una comunidad amenazada. Hay subrayados y solemnidad de sobra, aunque la música, la fotografía y el choque entre fe y poder le dan una potencia que todavía se siente. Un drama histórico grande, imperfecto y conmovedor.",
-	"runtimeMinutes": 125
+	"runtimeMinutes": 125,
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Rodrigo Mendoza",
+			"tmdbMovieId": 11416,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeremy Irons",
+			"character": "Father Gabriel",
+			"tmdbMovieId": 11416,
+			"tmdbPersonId": 16940,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liam Neeson",
+			"character": "Father John Fielding",
+			"tmdbMovieId": 11416,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aidan Quinn",
+			"character": "Felipe Mendoza",
+			"tmdbMovieId": 11416,
+			"tmdbPersonId": 18992,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Michael B. Jordan",
+			"character": "Adonis Johnson",
+			"tmdbMovieId": 312221,
+			"tmdbPersonId": 135651,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sylvester Stallone",
+			"character": "Rocky Balboa",
+			"tmdbMovieId": 312221,
+			"tmdbPersonId": 16483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tessa Thompson",
+			"character": "Bianca",
+			"tmdbMovieId": 312221,
+			"tmdbPersonId": 62561,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

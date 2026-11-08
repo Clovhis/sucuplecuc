@@ -56,5 +56,28 @@
 	"releasePlatforms": [
 		"Disney Plus",
 		"HBO Max"
+	],
+	"castCharacters": [
+		{
+			"actor": "Michael J. Fox",
+			"character": "Marty McFly / Seamus McFly",
+			"tmdbMovieId": 196,
+			"tmdbPersonId": 521,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Lloyd",
+			"character": "Doctor Emmett Brown",
+			"tmdbMovieId": 196,
+			"tmdbPersonId": 1062,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Steenburgen",
+			"character": "Clara Clayton",
+			"tmdbMovieId": 196,
+			"tmdbPersonId": 2453,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

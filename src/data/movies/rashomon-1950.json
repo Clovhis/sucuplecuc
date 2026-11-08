@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "JP",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Toshirō Mifune",
+			"character": "Tajômaru",
+			"tmdbMovieId": 548,
+			"tmdbPersonId": 7450,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Machiko Kyō",
+			"character": "Masako",
+			"tmdbMovieId": 548,
+			"tmdbPersonId": 7451,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

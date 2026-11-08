@@ -59,5 +59,28 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Ben Kingsley",
+			"character": "Rich",
+			"tmdbMovieId": 1127384,
+			"tmdbPersonId": 2282,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Eckhart",
+			"character": "Ben",
+			"tmdbMovieId": 1127384,
+			"tmdbPersonId": 6383,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Angus Sampson",
+			"character": "Dan",
+			"tmdbMovieId": 1127384,
+			"tmdbPersonId": 59117,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

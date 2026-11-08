@@ -37,7 +37,7 @@
 			"forFansOf": "Te puede divertir si te gustan los regresos de franquicia, los grupos de héroes que se forman en movimiento y las aventuras espaciales con humor, nostalgia y personajes nuevos.",
 			"notForYouIf": "Quizás no sea para vos si buscás una mitología realmente arriesgada, un villano menos indeciso o una secuela que no repita la arquitectura del viaje original."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"star-wars-episode-vi-return-of-the-jedi-1983",
 			"star-wars-episode-v-the-empire-strikes-back-1980"
 		],
@@ -52,5 +52,28 @@
 	"synopsis": "Treinta años después de la Batalla de Endor, la Primera Orden se ha levantado del caído Imperio Galáctico y busca poner fin a la Nueva República. La Resistencia liderada por la General Leia Organa se opone a la Primera Orden. Leia también busca a su hermano gemelo perdido Luke Skywalker.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Han Solo",
+			"tmdbMovieId": 140607,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Hamill",
+			"character": "Luke Skywalker",
+			"tmdbMovieId": 140607,
+			"tmdbPersonId": 2,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carrie Fisher",
+			"character": "Princess Leia",
+			"tmdbMovieId": 140607,
+			"tmdbPersonId": 4,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

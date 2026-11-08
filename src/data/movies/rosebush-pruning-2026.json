@@ -35,16 +35,16 @@
 	"awards": {
 		"wins": []
 	},
-  "editorial": {
-    "tenSecondTake": {
-      "verdict": "Rosebush Pruning convierte el lujo familiar en una casa de crueldad, con Karim Aïnouz dejando que Callum Turner y Riley Keough respiren resentimiento.",
-      "whatToExpect": "Una familia millonaria intenta mantener la apariencia mientras herencia, deseo y rivalidad vuelven cada conversación un pequeño ataque.",
-      "pace": "Avanza por cenas, silencios y estallidos, alternando sátira social con thriller psicológico sin apurarse a ordenar quién tiene razón.",
-      "intensity": "Es venenosa y contenida, con violencia emocional, lujo como decorado y una sensación de destrucción que crece detrás de la cortesía.",
-      "practicalContext": "Dura 99 minutos y funciona mejor si entrás dispuesto a un drama familiar incómodo, no a una historia de millonarios con soluciones.",
-      "forFansOf": "Te puede interesar si disfrutás familias ricas en descomposición, humor negro y películas donde una casa perfecta se vuelve laboratorio de poder.",
-      "notForYouIf": "Quizás no sea para vos si necesitás personajes empáticos, una trama lineal o un conflicto que no priorice el clima sobre la explicación."
-    },
+	"editorial": {
+		"tenSecondTake": {
+			"verdict": "Rosebush Pruning convierte el lujo familiar en una casa de crueldad, con Karim Aïnouz dejando que Callum Turner y Riley Keough respiren resentimiento.",
+			"whatToExpect": "Una familia millonaria intenta mantener la apariencia mientras herencia, deseo y rivalidad vuelven cada conversación un pequeño ataque.",
+			"pace": "Avanza por cenas, silencios y estallidos, alternando sátira social con thriller psicológico sin apurarse a ordenar quién tiene razón.",
+			"intensity": "Es venenosa y contenida, con violencia emocional, lujo como decorado y una sensación de destrucción que crece detrás de la cortesía.",
+			"practicalContext": "Dura 99 minutos y funciona mejor si entrás dispuesto a un drama familiar incómodo, no a una historia de millonarios con soluciones.",
+			"forFansOf": "Te puede interesar si disfrutás familias ricas en descomposición, humor negro y películas donde una casa perfecta se vuelve laboratorio de poder.",
+			"notForYouIf": "Quizás no sea para vos si necesitás personajes empáticos, una trama lineal o un conflicto que no priorice el clima sobre la explicación."
+		},
 		"becauseYouLiked": [
 			"burning-2018",
 			"lady-bird-2017"
@@ -56,5 +56,49 @@
 			"barreda-2026"
 		]
 	},
-	"review": "Rosebush Pruning mira a una familia rica como quien mira una casa llena de habitaciones que nadie quiere abrir. La superficie es hermosa, pero cada conversación deja escapar una rivalidad vieja, una dependencia o una forma de violencia que el dinero solo consiguió decorar.\n\nLa película se mueve entre la sátira y el thriller psicológico con una elegancia venenosa. No todo el exceso termina de integrarse y algunas decisiones parecen diseñadas para incomodar antes que para profundizar, pero el clima es poderoso y el elenco sostiene la podredumbre con precisión. MUY BUENA para quienes disfrutan dramas familiares donde el lujo nunca alcanza para tapar el desastre."
+	"review": "Rosebush Pruning mira a una familia rica como quien mira una casa llena de habitaciones que nadie quiere abrir. La superficie es hermosa, pero cada conversación deja escapar una rivalidad vieja, una dependencia o una forma de violencia que el dinero solo consiguió decorar.\n\nLa película se mueve entre la sátira y el thriller psicológico con una elegancia venenosa. No todo el exceso termina de integrarse y algunas decisiones parecen diseñadas para incomodar antes que para profundizar, pero el clima es poderoso y el elenco sostiene la podredumbre con precisión. MUY BUENA para quienes disfrutan dramas familiares donde el lujo nunca alcanza para tapar el desastre.",
+	"castCharacters": [
+		{
+			"actor": "Callum Turner",
+			"character": "Ed",
+			"tmdbMovieId": 1130948,
+			"tmdbPersonId": 1371041,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Riley Keough",
+			"character": "Anna",
+			"tmdbMovieId": 1130948,
+			"tmdbPersonId": 98522,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jamie Bell",
+			"character": "Jack",
+			"tmdbMovieId": 1130948,
+			"tmdbPersonId": 478,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lukas Gage",
+			"character": "Robert",
+			"tmdbMovieId": 1130948,
+			"tmdbPersonId": 1371509,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tracy Letts",
+			"character": "Father",
+			"tmdbMovieId": 1130948,
+			"tmdbPersonId": 72638,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elle Fanning",
+			"character": "Martha",
+			"tmdbMovieId": 1130948,
+			"tmdbPersonId": 18050,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

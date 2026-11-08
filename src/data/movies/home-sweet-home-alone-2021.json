@@ -46,5 +46,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ellie Kemper",
+			"character": "Pam McKenzie",
+			"tmdbMovieId": 654974,
+			"tmdbPersonId": 475512,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rob Delaney",
+			"character": "Jeff McKenzie",
+			"tmdbMovieId": 654974,
+			"tmdbPersonId": 1091324,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Archie Yates",
+			"character": "Max Mercer",
+			"tmdbMovieId": 654974,
+			"tmdbPersonId": 2089892,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

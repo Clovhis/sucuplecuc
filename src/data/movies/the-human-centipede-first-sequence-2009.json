@@ -42,19 +42,35 @@
 			"forFansOf": "Puede interesarte si disfrutás body horror, villanos de laboratorio y películas que construyen una premisa repulsiva a partir de reglas frías y espacios cerrados.",
 			"notForYouIf": "Quizás no sea para vos si necesitás humor, alivio o una violencia fácil de apartar. Su apuesta es incomodar con una idea y dejarla crecer en tu imaginación."
 		},
-	"becauseYouLiked": [
-		"re-animator-1985",
-		"martires-2008"
-	],
-	"related": [
-		"saw-2004",
-		"ichi-the-killer-2001",
-		"terrifier-2-2022",
-		"saw-x-2023"
-	]
-},
+		"becauseYouLiked": [
+			"re-animator-1985",
+			"martires-2008"
+		],
+		"related": [
+			"saw-2004",
+			"ichi-the-killer-2001",
+			"terrifier-2-2022",
+			"saw-x-2023"
+		]
+	},
 	"review": "The Human Centipede (First Sequence) tiene una premisa tan desagradable que la película depende de cómo administra la espera alrededor de ella. Tom Six filma la casa y el sótano con frialdad clínica, y Dieter Laser compone un villano excesivo, entre médico siniestro y caricatura de laboratorio. El problema es que los personajes no tienen mucho espesor y la puesta a veces queda rígida, como si la idea hubiera llegado antes que la película. Aun así, no necesita mostrar demasiado para incomodar: entiende que la sugestión y la anticipación son más eficaces que el detalle. Vale sólo para quien quiera horror de provocación.",
-  "synopsis": "Dos turistas estadounidenses y un joven japonés quedan varados cerca de una casa aislada, donde un cirujano retirado los secuestra para concretar su experimento más monstruoso: unirlos en serie.",
+	"synopsis": "Dos turistas estadounidenses y un joven japonés quedan varados cerca de una casa aislada, donde un cirujano retirado los secuestra para concretar su experimento más monstruoso: unirlos en serie.",
 	"audienceRating": "+18",
-	"reviewPublishedAt": "2026-05-23"
+	"reviewPublishedAt": "2026-05-23",
+	"castCharacters": [
+		{
+			"actor": "Dieter Laser",
+			"character": "Dr. Heiter",
+			"tmdbMovieId": 37169,
+			"tmdbPersonId": 23721,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ashlynn Yennie",
+			"character": "Jenny",
+			"tmdbMovieId": 37169,
+			"tmdbPersonId": 121575,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -49,5 +49,28 @@
 	"audienceRating": "+15",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "AU",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mel Gibson",
+			"character": "Max Rockatansky",
+			"tmdbMovieId": 9355,
+			"tmdbPersonId": 2461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tina Turner",
+			"character": "Aunty Entity",
+			"tmdbMovieId": 9355,
+			"tmdbPersonId": 1459,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bruce Spence",
+			"character": "Jedediah the Pilot",
+			"tmdbMovieId": 9355,
+			"tmdbPersonId": 27752,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

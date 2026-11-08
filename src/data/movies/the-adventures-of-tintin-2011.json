@@ -55,5 +55,42 @@
 		]
 	},
 	"review": "The Adventures of Tintin sigue al joven reportero tras un mapa escondido en una maqueta de barco, una búsqueda que lo lleva a cruzarse con contrabandistas y un capitán alcohólico. Steven Spielberg usa la captura de movimiento para encadenar persecuciones, caídas y descubrimientos con una soltura extraordinaria; Jamie Bell le da curiosidad a Tintín y Andy Serkis encuentra el humor triste del capitán Haddock. La historia es simple y los villanos tienen poco espesor, pero el movimiento nunca se vuelve confuso. Vale como aventura animada pura, inventiva y muy bien coreografiada.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Jamie Bell",
+			"character": "Tintin (voice)",
+			"tmdbMovieId": 17578,
+			"tmdbPersonId": 478,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Serkis",
+			"character": "Captain Haddock / Sir Francis Haddock (voice)",
+			"tmdbMovieId": 17578,
+			"tmdbPersonId": 1333,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daniel Craig",
+			"character": "Sakharine / Red Rackham (voice)",
+			"tmdbMovieId": 17578,
+			"tmdbPersonId": 8784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Frost",
+			"character": "Thomson (voice)",
+			"tmdbMovieId": 17578,
+			"tmdbPersonId": 11109,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Simon Pegg",
+			"character": "Thompson (voice)",
+			"tmdbMovieId": 17578,
+			"tmdbPersonId": 11108,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

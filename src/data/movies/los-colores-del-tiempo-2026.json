@@ -55,5 +55,42 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Los colores del tiempo tiene esa clase de encanto desprejuiciado que hoy aparece cada vez menos: una película grande, sentimental y juguetona que se anima a mezclar herencia familiar, arte y fantasía sin pedir perdón por ser cálida. Cédric Klapisch la mueve con soltura y encuentra imágenes y ritmos que le dan vida propia.\n\nPuede ponerse enfática con sus referencias y subrayar de más alguna idea, pero casi siempre lo compensa con imaginación, sensibilidad y un elenco muy afinado. Cuando una película sale tan convencida de su mundo, es fácil entrar."
+	"review": "Los colores del tiempo tiene esa clase de encanto desprejuiciado que hoy aparece cada vez menos: una película grande, sentimental y juguetona que se anima a mezclar herencia familiar, arte y fantasía sin pedir perdón por ser cálida. Cédric Klapisch la mueve con soltura y encuentra imágenes y ritmos que le dan vida propia.\n\nPuede ponerse enfática con sus referencias y subrayar de más alguna idea, pero casi siempre lo compensa con imaginación, sensibilidad y un elenco muy afinado. Cuando una película sale tan convencida de su mundo, es fácil entrar.",
+	"castCharacters": [
+		{
+			"actor": "Vincent Macaigne",
+			"character": "Guy",
+			"tmdbMovieId": 1235304,
+			"tmdbPersonId": 992623,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julia Piaton",
+			"character": "Céline",
+			"tmdbMovieId": 1235304,
+			"tmdbPersonId": 1074716,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Suzanne Lindon",
+			"character": "Adèle Meunier born Vermillard",
+			"tmdbMovieId": 1235304,
+			"tmdbPersonId": 2664731,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Kircher",
+			"character": "Anatole",
+			"tmdbMovieId": 1235304,
+			"tmdbPersonId": 2674840,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cécile de France",
+			"character": "Calixte de La Ferrière",
+			"tmdbMovieId": 1235304,
+			"tmdbPersonId": 17522,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

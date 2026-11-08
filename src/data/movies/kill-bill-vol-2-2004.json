@@ -51,5 +51,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Uma Thurman",
+			"character": "Beatrix Kiddo / The Bride / 'Black Mamba' / Mommy",
+			"tmdbMovieId": 393,
+			"tmdbPersonId": 139,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Carradine",
+			"character": "Bill 'Snake Charmer'",
+			"tmdbMovieId": 393,
+			"tmdbPersonId": 141,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daryl Hannah",
+			"character": "Elle Driver 'California Mountain Snake'",
+			"tmdbMovieId": 393,
+			"tmdbPersonId": 589,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

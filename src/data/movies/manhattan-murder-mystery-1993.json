@@ -52,5 +52,35 @@
 		]
 	},
 	"review": "Woody Allen cruza una investigación de vecinos con la rutina desgastada de un matrimonio neoyorquino, y encuentra humor en que el misterio sea una excusa para volver a hablarse. Diane Keaton es el motor: su curiosidad, su miedo y su entusiasmo hacen que cada sospecha tenga gracia; Allen acompaña con neurosis conocidas sin comerse la película. La dirección mantiene un ritmo liviano y aprovecha departamentos, ascensores y calles como un tablero pequeño donde todo puede ser pista. El caso policial no sorprende demasiado y algunas obsesiones del autor son repetidas, pero la química de la pareja vuelve muy disfrutable el recorrido.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Alan Alda",
+			"character": "Ted",
+			"tmdbMovieId": 10440,
+			"tmdbPersonId": 21278,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Woody Allen",
+			"character": "Larry Lipton",
+			"tmdbMovieId": 10440,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anjelica Huston",
+			"character": "Marcia Fox",
+			"tmdbMovieId": 10440,
+			"tmdbPersonId": 5657,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Keaton",
+			"character": "Carol Lipton",
+			"tmdbMovieId": 10440,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

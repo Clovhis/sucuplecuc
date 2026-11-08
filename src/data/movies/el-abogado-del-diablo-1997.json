@@ -56,5 +56,28 @@
 		]
 	},
 	"review": "Taylor Hackford convierte el ascenso de un abogado en una pesadilla donde el lujo funciona como una trampa: cada departamento impecable y cada favor del estudio le cobran algo a Kevin Lomax. Keanu Reeves sostiene bien esa mezcla de vanidad e ingenuidad, mientras Al Pacino disfruta cada pausa antes de largar otra provocación. Charlize Theron aporta una angustia que vuelve incómodo lo que para los hombres parece una fiesta. La película estira demasiado algunas explicaciones y el remate tiene más subrayado que misterio, pero su mezcla de tentación, paranoia y exceso conserva una fuerza bárbara. Pacino se come el decorado y, acá, buena parte de la gracia está en dejarlo.",
-	"runtimeMinutes": 144
+	"runtimeMinutes": 144,
+	"castCharacters": [
+		{
+			"actor": "Keanu Reeves",
+			"character": "Kevin Lomax",
+			"tmdbMovieId": 1813,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Al Pacino",
+			"character": "John Milton",
+			"tmdbMovieId": 1813,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlize Theron",
+			"character": "Mary Ann Lomax",
+			"tmdbMovieId": 1813,
+			"tmdbPersonId": 6885,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

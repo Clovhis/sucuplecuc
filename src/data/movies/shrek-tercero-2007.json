@@ -61,5 +61,35 @@
 			"toy-story-1995"
 		]
 	},
-	"review": "Shrek tercero conserva el humor de la saga y suma un viaje de mayoría de edad para Arturo, pero se nota que el ogro ya no está descubriendo un mundo sino defendiendo una fórmula que empieza a repetirse. Mike Myers, Eddie Murphy y Cameron Diaz mantienen una química segura, y el Gato con Botas sigue siendo un gran acelerador de escenas. La historia de las princesas rebeldes ofrece algunos de los mejores chistes, aunque el conflicto principal tarda en encontrar una emoción propia."
+	"review": "Shrek tercero conserva el humor de la saga y suma un viaje de mayoría de edad para Arturo, pero se nota que el ogro ya no está descubriendo un mundo sino defendiendo una fórmula que empieza a repetirse. Mike Myers, Eddie Murphy y Cameron Diaz mantienen una química segura, y el Gato con Botas sigue siendo un gran acelerador de escenas. La historia de las princesas rebeldes ofrece algunos de los mejores chistes, aunque el conflicto principal tarda en encontrar una emoción propia.",
+	"castCharacters": [
+		{
+			"actor": "Mike Myers",
+			"character": "Shrek (voice)",
+			"tmdbMovieId": 810,
+			"tmdbPersonId": 12073,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eddie Murphy",
+			"character": "Donkey (voice)",
+			"tmdbMovieId": 810,
+			"tmdbPersonId": 776,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cameron Diaz",
+			"character": "Princess Fiona (voice)",
+			"tmdbMovieId": 810,
+			"tmdbPersonId": 6941,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Antonio Banderas",
+			"character": "Puss in Boots (voice)",
+			"tmdbMovieId": 810,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

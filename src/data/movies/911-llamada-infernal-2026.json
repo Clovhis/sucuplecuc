@@ -52,5 +52,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 75,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Jaime M. Callica",
+			"character": "Officer Jackson",
+			"tmdbMovieId": 1510745,
+			"tmdbPersonId": 1476624,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Rogerson",
+			"character": "Officer Bryce",
+			"tmdbMovieId": 1510745,
+			"tmdbPersonId": 169747,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

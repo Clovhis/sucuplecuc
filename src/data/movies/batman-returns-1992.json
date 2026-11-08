@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Michael Keaton",
+			"character": "Batman / Bruce Wayne",
+			"tmdbMovieId": 364,
+			"tmdbPersonId": 2232,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny DeVito",
+			"character": "Penguin",
+			"tmdbMovieId": 364,
+			"tmdbPersonId": 518,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Pfeiffer",
+			"character": "Catwoman / Selina",
+			"tmdbMovieId": 364,
+			"tmdbPersonId": 1160,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

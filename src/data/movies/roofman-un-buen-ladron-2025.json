@@ -44,18 +44,55 @@
       "forFansOf": "Te puede interesar si disfrutás historias de fugitivos imperfectos, humor triste y personajes que actúan una vida porque no saben sostener la propia.",
       "notForYouIf": "Quizás no sea para vos si necesitás un thriller veloz, una moraleja limpia o un protagonista al que puedas absolver sin discutir."
     },
-		"becauseYouLiked": [
-		"los-justos-2024",
-		"escandalo-americano-2013"
-	],
-	"related": [
-		"y-donde-esta-el-policia-2025",
-		"chicago-2002",
-		"la-invitacion-2026",
-		"agarralo-como-puedas-1988"
-	]
-},
+    "becauseYouLiked": [
+      "los-justos-2024",
+      "escandalo-americano-2013"
+    ],
+    "related": [
+      "y-donde-esta-el-policia-2025",
+      "chicago-2002",
+      "la-invitacion-2026",
+      "agarralo-como-puedas-1988"
+    ]
+  },
   "isPremiere": true,
   "premiereLabel": "ESTRENO",
-  "review": "Roofman tiene una premisa tan absurda que podria irse al chiste facil, pero Derek Cianfrance le encuentra un corazon medio triste: un tipo que se esconde, roba y actua una vida normal porque no sabe como quedarse en ninguna parte. Channing Tatum entra muy bien en esa mezcla de encanto, torpeza y fuga permanente.\n\nLa pelicula funciona cuando deja que el delito conviva con una ternura incomoda, sin absolver del todo al personaje. Puede sentirse larga en algun tramo, pero tiene humanidad, rareza y una melancolia que la separa de la comedia criminal automatica."
+  "review": "Roofman tiene una premisa tan absurda que podria irse al chiste facil, pero Derek Cianfrance le encuentra un corazon medio triste: un tipo que se esconde, roba y actua una vida normal porque no sabe como quedarse en ninguna parte. Channing Tatum entra muy bien en esa mezcla de encanto, torpeza y fuga permanente.\n\nLa pelicula funciona cuando deja que el delito conviva con una ternura incomoda, sin absolver del todo al personaje. Puede sentirse larga en algun tramo, pero tiene humanidad, rareza y una melancolia que la separa de la comedia criminal automatica.",
+  "castCharacters": [
+    {
+      "actor": "Channing Tatum",
+      "character": "Jeffrey Manchester",
+      "tmdbMovieId": 1242419,
+      "tmdbPersonId": 38673,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Kirsten Dunst",
+      "character": "Leigh Wainscott",
+      "tmdbMovieId": 1242419,
+      "tmdbPersonId": 205,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Peter Dinklage",
+      "character": "Mitch",
+      "tmdbMovieId": 1242419,
+      "tmdbPersonId": 22970,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "LaKeith Stanfield",
+      "character": "Steve",
+      "tmdbMovieId": 1242419,
+      "tmdbPersonId": 1200864,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Juno Temple",
+      "character": "Michelle",
+      "tmdbMovieId": 1242419,
+      "tmdbPersonId": 36594,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

@@ -47,18 +47,55 @@
 			"forFansOf": "Si te interesan relatos de luchas obreras, cine argentino histórico y elencos con Héctor Alterio y Luis Brandoni.",
 			"notForYouIf": "No es para vos si buscás una aventura liviana, un héroe individual o una historia que suavice la represión."
 		},
-	"becauseYouLiked": [
-		"la-noche-de-los-lapices-1986",
-		"los-colonos-2023"
-	],
-	"related": [
-		"la-historia-oficial-1985",
-		"barreda-2026",
-		"la-noche-de-12-anos-2018",
-		"caballos-salvajes-1995"
-	]
-},
+		"becauseYouLiked": [
+			"la-noche-de-los-lapices-1986",
+			"los-colonos-2023"
+		],
+		"related": [
+			"la-historia-oficial-1985",
+			"barreda-2026",
+			"la-noche-de-12-anos-2018",
+			"caballos-salvajes-1995"
+		]
+	},
 	"review": "La película transforma una página de la historia argentina en un conflicto moral que todavía tiene olor a pólvora y campo abierto. Héctor Olivera trabaja con una narración clásica, seca y frontal, y deja que la tensión crezca desde los silencios entre soldados, dirigentes y peones. Héctor Alterio, Luis Brandoni y Federico Luppi le ponen rostros contradictorios a una tragedia colectiva que no necesita subrayados para golpear. El conflicto entre peones y militares se narra sin atajos heroicos, como una tragedia colectiva que el poder quiso borrar.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Héctor Alterio",
+			"character": "Lieutenant Colonel Zavala",
+			"tmdbMovieId": 64978,
+			"tmdbPersonId": 59136,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Brandoni",
+			"character": "Antonio Soto",
+			"tmdbMovieId": 64978,
+			"tmdbPersonId": 74896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Federico Luppi",
+			"character": "José 'Facón Grande' Font",
+			"tmdbMovieId": 64978,
+			"tmdbPersonId": 17094,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pepe Soriano",
+			"character": "Schultz the German",
+			"tmdbMovieId": 64978,
+			"tmdbPersonId": 236739,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Héctor Pellegrini",
+			"character": "Captain Arzeno",
+			"tmdbMovieId": 64978,
+			"tmdbPersonId": 1184479,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

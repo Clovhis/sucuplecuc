@@ -61,5 +61,42 @@
 	},
 	"review": "Kathryn Bigelow entiende que el verdadero tamaño de esta historia está en el metal cerrado, el sudor y las órdenes que llegan tarde. La tensión no sale de una amenaza abstracta, sino de ver a una tripulación resolver problemas imposibles con herramientas mínimas y tiempo en contra. Harrison Ford y Liam Neeson plantean su rivalidad como una discusión de mando antes que una competencia de gestos, y Peter Sarsgaard aporta fragilidad al conjunto. Es larga y algo solemne, pero cuando se encierra en el submarino se vuelve un thriller de supervivencia formidable.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Alexei Vostrikov",
+			"tmdbMovieId": 8665,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liam Neeson",
+			"character": "Mikhail Polenin",
+			"tmdbMovieId": 8665,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Sarsgaard",
+			"character": "Vadim Radtchinko",
+			"tmdbMovieId": 8665,
+			"tmdbPersonId": 133,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joss Ackland",
+			"character": "Marshal Zelentsov",
+			"tmdbMovieId": 8665,
+			"tmdbPersonId": 14324,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Shrapnel",
+			"character": "Admiral Bratyeev",
+			"tmdbMovieId": 8665,
+			"tmdbPersonId": 940,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

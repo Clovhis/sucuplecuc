@@ -52,5 +52,21 @@
 			"toy-story-1995"
 		]
 	},
-	"review": "La bella y la bestia combina una estructura de cuento con una puesta de musical clásico y un sentido del movimiento extraordinario. Paige O’Hara y Robby Benson construyen una relación que avanza por gestos, discusiones y pequeñas decisiones, no sólo por destino. La sala de baile, el ataque de los lobos y la transformación final muestran una animación ambiciosa, pero el verdadero triunfo está en cómo los objetos del castillo expresan la vida que sus dueños perdieron."
+	"review": "La bella y la bestia combina una estructura de cuento con una puesta de musical clásico y un sentido del movimiento extraordinario. Paige O’Hara y Robby Benson construyen una relación que avanza por gestos, discusiones y pequeñas decisiones, no sólo por destino. La sala de baile, el ataque de los lobos y la transformación final muestran una animación ambiciosa, pero el verdadero triunfo está en cómo los objetos del castillo expresan la vida que sus dueños perdieron.",
+	"castCharacters": [
+		{
+			"actor": "Robby Benson",
+			"character": "Beast (voice)",
+			"tmdbMovieId": 10020,
+			"tmdbPersonId": 15048,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Angela Lansbury",
+			"character": "Mrs. Potts (voice)",
+			"tmdbMovieId": 10020,
+			"tmdbPersonId": 14730,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

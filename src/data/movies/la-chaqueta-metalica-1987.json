@@ -60,5 +60,42 @@
 	},
 	"review": "Kubrick divide la película en dos movimientos y deja que la fractura sea parte de la denuncia. El entrenamiento transforma la humillación en método, con R. Lee Ermey ocupando cada silencio como una amenaza, mientras Vincent D'Onofrio vuelve visible el costo de esa violencia administrada. En Vietnam, el humor negro no alivia: muestra cómo los soldados se aferran a una pose para no mirar el desastre. Matthew Modine funciona como testigo de un sistema que fabrica obediencia y después la arroja al barro. Es fría, precisa y deliberadamente incómoda; no busca una épica tranquilizadora.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Matthew Modine",
+			"character": "Pvt. Joker",
+			"tmdbMovieId": 600,
+			"tmdbPersonId": 8654,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adam Baldwin",
+			"character": "Animal Mother",
+			"tmdbMovieId": 600,
+			"tmdbPersonId": 2059,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vincent D'Onofrio",
+			"character": "Pvt. Pyle",
+			"tmdbMovieId": 600,
+			"tmdbPersonId": 7132,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "R. Lee Ermey",
+			"character": "Gny. Sgt. Hartman",
+			"tmdbMovieId": 600,
+			"tmdbPersonId": 8655,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dorian Harewood",
+			"character": "Eightball",
+			"tmdbMovieId": 600,
+			"tmdbPersonId": 8656,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

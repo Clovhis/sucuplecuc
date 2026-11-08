@@ -53,5 +53,35 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-08-24",
 	"runtimeMinutes": 97,
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Howard Inlet",
+			"tmdbMovieId": 345920,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edward Norton",
+			"character": "Whit Yardsham",
+			"tmdbMovieId": 345920,
+			"tmdbPersonId": 819,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Winslet",
+			"character": "Claire Wilson",
+			"tmdbMovieId": 345920,
+			"tmdbPersonId": 204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helen Mirren",
+			"character": "Brigitte",
+			"tmdbMovieId": 345920,
+			"tmdbPersonId": 15735,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

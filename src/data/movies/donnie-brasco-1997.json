@@ -53,5 +53,35 @@
 		]
 	},
 	"runtimeMinutes": 127,
-	"review": "El centro de Donnie Brasco no es la infiltración sino la amistad improbable que nace dentro de ella. Pacino interpreta a Lefty como un hombre cansado de esperar una promoción, alguien que conoce las reglas del mundo criminal pero todavía necesita que otro lo mire con respeto. Depp trabaja desde la escucha y el cálculo, y esa diferencia hace que cada escena compartida tenga doble lectura. Mike Newell evita la épica mafiosa: lo que queda es una tragedia laboral, familiar y afectiva."
+	"review": "El centro de Donnie Brasco no es la infiltración sino la amistad improbable que nace dentro de ella. Pacino interpreta a Lefty como un hombre cansado de esperar una promoción, alguien que conoce las reglas del mundo criminal pero todavía necesita que otro lo mire con respeto. Depp trabaja desde la escucha y el cálculo, y esa diferencia hace que cada escena compartida tenga doble lectura. Mike Newell evita la épica mafiosa: lo que queda es una tragedia laboral, familiar y afectiva.",
+	"castCharacters": [
+		{
+			"actor": "Al Pacino",
+			"character": "Benjamin 'Lefty' Ruggiero",
+			"tmdbMovieId": 9366,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Johnny Depp",
+			"character": "Donnie Brasco / Joseph D. 'Joe' Pistone",
+			"tmdbMovieId": 9366,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Madsen",
+			"character": "Dominick 'Sonny Black' Napolitano",
+			"tmdbMovieId": 9366,
+			"tmdbPersonId": 147,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anne Heche",
+			"character": "Maggie Pistone",
+			"tmdbMovieId": 9366,
+			"tmdbPersonId": 8256,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

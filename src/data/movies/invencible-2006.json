@@ -55,5 +55,42 @@
 		]
 	},
 	"runtimeMinutes": 105,
-	"review": "La película sabe que el final deportivo se adivina, así que apuesta a mostrar el costo previo: trabajos mal pagos, una casa vacía y un tipo grande que insiste cuando todos lo miran raro. Wahlberg evita la sobreactuación y Greg Kinnear le da a Dick Vermeil un entusiasmo contagioso. A veces el guion es demasiado prolijo y la música subraya la épica con insistencia, pero el contexto de Filadelfia y la honestidad del protagonista vuelven muy fácil acompañarlo."
+	"review": "La película sabe que el final deportivo se adivina, así que apuesta a mostrar el costo previo: trabajos mal pagos, una casa vacía y un tipo grande que insiste cuando todos lo miran raro. Wahlberg evita la sobreactuación y Greg Kinnear le da a Dick Vermeil un entusiasmo contagioso. A veces el guion es demasiado prolijo y la música subraya la épica con insistencia, pero el contexto de Filadelfia y la honestidad del protagonista vuelven muy fácil acompañarlo.",
+	"castCharacters": [
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Vince Papale",
+			"tmdbMovieId": 11652,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Greg Kinnear",
+			"character": "Dick Vermeil",
+			"tmdbMovieId": 11652,
+			"tmdbPersonId": 17141,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elizabeth Banks",
+			"character": "Janet Cantrell",
+			"tmdbMovieId": 11652,
+			"tmdbPersonId": 9281,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Conway",
+			"character": "Frank Papale",
+			"tmdbMovieId": 11652,
+			"tmdbPersonId": 27116,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Rispoli",
+			"character": "Max Cantrell",
+			"tmdbMovieId": 11652,
+			"tmdbPersonId": 18313,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

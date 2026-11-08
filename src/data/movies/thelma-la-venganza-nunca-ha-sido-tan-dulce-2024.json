@@ -31,29 +31,66 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Thelma: La venganza nunca ha sido tan dulce convierte una estafa en aventura de dignidad; Josh Margolin deja que June Squibb tenga bronca, humor y volante propio.",
-		"whatToExpect": "Después de perder plata por una llamada falsa, Thelma sale a recuperarla con un scooter y un aliado que no la trata como frágil.",
-		"pace": "Se mueve por barrios, pistas y encuentros breves, con una acción pequeña que gana fuerza cuando la misión deja de ser sólo recuperar dinero.",
-		"intensity": "El peligro es moderado, pero la emoción pega en cada límite que Thelma decide cruzar para que su familia vuelva a verla como adulta.",
-		"practicalContext": "Dura 98 minutos y funciona como comedia de acción cálida, ideal para una tarde sin buscar una revancha violenta.",
-		"forFansOf": "Te va a gustar si disfrutás protagonistas mayores con iniciativa, humor amable y aventuras que combaten la condescendencia.",
-		"notForYouIf": "Quizás no sea para vos si buscás golpes duros, cinismo sostenido o una película que convierta la edad en un chiste."
-	},
-	"becauseYouLiked": [
-		"los-otros-dos-2010",
-		"tiempo-de-valientes-2005"
-	],
-	"related": [
-		"roofman-un-buen-ladron-2025",
-		"hit-man-2024",
-		"everything-everywhere-all-at-once-2022",
-		"el-gran-lebowski-1998"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Thelma: La venganza nunca ha sido tan dulce convierte una estafa en aventura de dignidad; Josh Margolin deja que June Squibb tenga bronca, humor y volante propio.",
+      "whatToExpect": "Después de perder plata por una llamada falsa, Thelma sale a recuperarla con un scooter y un aliado que no la trata como frágil.",
+      "pace": "Se mueve por barrios, pistas y encuentros breves, con una acción pequeña que gana fuerza cuando la misión deja de ser sólo recuperar dinero.",
+      "intensity": "El peligro es moderado, pero la emoción pega en cada límite que Thelma decide cruzar para que su familia vuelva a verla como adulta.",
+      "practicalContext": "Dura 98 minutos y funciona como comedia de acción cálida, ideal para una tarde sin buscar una revancha violenta.",
+      "forFansOf": "Te va a gustar si disfrutás protagonistas mayores con iniciativa, humor amable y aventuras que combaten la condescendencia.",
+      "notForYouIf": "Quizás no sea para vos si buscás golpes duros, cinismo sostenido o una película que convierta la edad en un chiste."
+    },
+    "becauseYouLiked": [
+      "los-otros-dos-2010",
+      "tiempo-de-valientes-2005"
+    ],
+    "related": [
+      "roofman-un-buen-ladron-2025",
+      "hit-man-2024",
+      "everything-everywhere-all-at-once-2022",
+      "el-gran-lebowski-1998"
+    ]
+  },
   "review": "Josh Margolin encuentra una forma muy graciosa de filmar la bronca de que te traten como si ya no pudieras decidir nada. El truco no es poner a June Squibb a hacer de abuela excéntrica: la deja ser terca, orgullosa, un poco imprudente y muy viva, mientras el scooter convierte la búsqueda en una mini aventura de acción.\n\nFred Hechinger acompaña sin comerse la película y Richard Roundtree le da a su última aparición una calma hermosa. Hay chistes que funcionan por contraste más que por estruendo, y esa suavidad le sienta bárbaro: termina siendo una comedia cálida, con nervio y sin condescendencia.",
   "reviewPublishedAt": "2026-07-24",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "June Squibb",
+      "character": "Thelma",
+      "tmdbMovieId": 1051891,
+      "tmdbPersonId": 35515,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Fred Hechinger",
+      "character": "Daniel",
+      "tmdbMovieId": 1051891,
+      "tmdbPersonId": 2099497,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Richard Roundtree",
+      "character": "Ben",
+      "tmdbMovieId": 1051891,
+      "tmdbPersonId": 6487,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Parker Posey",
+      "character": "Gail",
+      "tmdbMovieId": 1051891,
+      "tmdbPersonId": 7489,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Clark Gregg",
+      "character": "Alan",
+      "tmdbMovieId": 1051891,
+      "tmdbPersonId": 9048,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

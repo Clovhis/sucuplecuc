@@ -41,17 +41,40 @@
 			"forFansOf": "Para quienes disfrutan documentales de ruta, conversaciones honestas y el humor de Will Ferrell cuando baja la caricatura.",
 			"notForYouIf": "Puede quedarte corto si buscás una investigación política amplia, conflicto dramático constante o una comedia con remates cada minuto."
 		},
-	"becauseYouLiked": [
-		"frida-2024",
-		"jim-henson-idea-man-2024"
-	],
-	"related": [
-		"music-by-john-williams-2024",
-		"super-man-the-christopher-reeve-story-2024",
-		"chris-y-martina-el-set-decisivo-2026",
-		"el-escandalo-de-trustor-desde-dentro-2026"
+		"becauseYouLiked": [
+			"frida-2024",
+			"jim-henson-idea-man-2024"
+		],
+		"related": [
+			"music-by-john-williams-2024",
+			"super-man-the-christopher-reeve-story-2024",
+			"chris-y-martina-el-set-decisivo-2026",
+			"el-escandalo-de-trustor-desde-dentro-2026"
+		]
+	},
+	"review": "Will y Harper sigue un viaje en ruta que Will Ferrell organiza para reencontrarse con Harper Steele después de su transición, pero nunca trata esa premisa como una lección empaquetada. Josh Greenbaum deja lugar para las charlas incómodas, los chistes malos, los silencios y la tensión que aparece cuando el viaje se cruza con miradas ajenas. Ferrell se muestra atento sin ocupar todo el cuadro; Harper tiene el humor y la lucidez necesarios para que su experiencia no quede reducida a un mensaje. El documental se estira un poco en algunas paradas, aunque ese tiempo ayuda a que la amistad respire. Vale por una cercanía genuina que evita tanto el sermón como el golpe bajo.",
+	"reviewPublishedAt": "2026-04-06",
+	"castCharacters": [
+		{
+			"actor": "Will Ferrell",
+			"character": "Self",
+			"tmdbMovieId": 1214506,
+			"tmdbPersonId": 23659,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harper Steele",
+			"character": "Self",
+			"tmdbMovieId": 1214506,
+			"tmdbPersonId": 1215937,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kristen Wiig",
+			"character": "Self",
+			"tmdbMovieId": 1214506,
+			"tmdbPersonId": 41091,
+			"verifiedAt": "2026-11-08"
+		}
 	]
-},
-  "review": "Will y Harper sigue un viaje en ruta que Will Ferrell organiza para reencontrarse con Harper Steele después de su transición, pero nunca trata esa premisa como una lección empaquetada. Josh Greenbaum deja lugar para las charlas incómodas, los chistes malos, los silencios y la tensión que aparece cuando el viaje se cruza con miradas ajenas. Ferrell se muestra atento sin ocupar todo el cuadro; Harper tiene el humor y la lucidez necesarios para que su experiencia no quede reducida a un mensaje. El documental se estira un poco en algunas paradas, aunque ese tiempo ayuda a que la amistad respire. Vale por una cercanía genuina que evita tanto el sermón como el golpe bajo.",
-	"reviewPublishedAt": "2026-04-06"
 }

@@ -54,5 +54,21 @@
 	},
 	"review": "Anderson presenta el imperio de Korda como una maquinaria de contratos, mapas y maniobras que se desplaza al ritmo de una aventura por capítulos. Benicio del Toro mantiene una gravedad extraña en el centro de una puesta que trata hasta los intentos de asesinato como piezas de una farsa controlada; Michael Cera aporta el desconcierto que permite mirar ese mundo desde afuera. La relación con Liesl ordena el relato, aunque la cantidad de personajes y desvíos puede volverlo más disperso que misterioso. La precisión visual compensa parte de esa deriva y vuelve reconocible cada espacio.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 100
+	"runtimeMinutes": 100,
+	"castCharacters": [
+		{
+			"actor": "Benicio del Toro",
+			"character": "Zsa-zsa Korda",
+			"tmdbMovieId": 1137350,
+			"tmdbPersonId": 1121,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Cera",
+			"character": "Bjorn Lund",
+			"tmdbMovieId": 1137350,
+			"tmdbPersonId": 39995,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

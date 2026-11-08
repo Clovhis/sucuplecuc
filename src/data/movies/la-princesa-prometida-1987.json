@@ -57,5 +57,42 @@
 	},
 	"review": "Rob Reiner entiende que una aventura romántica puede ser luminosa sin volverse boba. La historia avanza con una velocidad envidiable: cuando parece que toca un duelo, aparece una discusión; cuando llega el peligro, alguien lo desarma con una ocurrencia. Cary Elwes y Robin Wright sostienen el corazón de la película, mientras Mandy Patinkin convierte la venganza en una emoción legible y Christopher Guest aprovecha cada gesto de villano. Tiene espadas, gigantes y romance, pero su verdadero truco está en tratar al público como cómplice de un cuento que conoce de memoria y todavía puede sorprenderlo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Cary Elwes",
+			"character": "Westley",
+			"tmdbMovieId": 2493,
+			"tmdbPersonId": 2130,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robin Wright",
+			"character": "The Princess Bride",
+			"tmdbMovieId": 2493,
+			"tmdbPersonId": 32,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mandy Patinkin",
+			"character": "Inigo Montoya",
+			"tmdbMovieId": 2493,
+			"tmdbPersonId": 25503,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Sarandon",
+			"character": "Prince Humperdinck",
+			"tmdbMovieId": 2493,
+			"tmdbPersonId": 14541,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Guest",
+			"character": "Count Rugen",
+			"tmdbMovieId": 2493,
+			"tmdbPersonId": 13524,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

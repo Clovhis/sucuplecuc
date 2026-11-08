@@ -47,5 +47,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "CA, DE, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ray Stevenson",
+			"character": "Frank Castle / The Punisher",
+			"tmdbMovieId": 13056,
+			"tmdbPersonId": 56614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dominic West",
+			"character": "Billy 'The Beaut' Russoti / Jigsaw",
+			"tmdbMovieId": 13056,
+			"tmdbPersonId": 17287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Benz",
+			"character": "Angela Donatelli",
+			"tmdbMovieId": 13056,
+			"tmdbPersonId": 35551,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

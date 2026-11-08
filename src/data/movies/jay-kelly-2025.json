@@ -55,5 +55,42 @@
 			"el-hombre-de-los-suenos-2023"
 		]
 	},
-	"review": "Noah Baumbach usa el viaje de una estrella de cine como una comedia de observación sobre el ego, el trabajo y el miedo a quedar fuera de cuadro. George Clooney puede hacer visible el cansancio detrás del encanto, mientras Adam Sandler encuentra una vulnerabilidad distinta como el representante que conoce todas sus versiones. El reparto alrededor suma capas sin tapar la relación central. Es una película adulta, más interesada en las conversaciones y los silencios que en el golpe de efecto, y ahí encuentra su mejor tono."
+	"review": "Noah Baumbach usa el viaje de una estrella de cine como una comedia de observación sobre el ego, el trabajo y el miedo a quedar fuera de cuadro. George Clooney puede hacer visible el cansancio detrás del encanto, mientras Adam Sandler encuentra una vulnerabilidad distinta como el representante que conoce todas sus versiones. El reparto alrededor suma capas sin tapar la relación central. Es una película adulta, más interesada en las conversaciones y los silencios que en el golpe de efecto, y ahí encuentra su mejor tono.",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Jay Kelly",
+			"tmdbMovieId": 1069905,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adam Sandler",
+			"character": "Ron Sukenick",
+			"tmdbMovieId": 1069905,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Liz",
+			"tmdbMovieId": 1069905,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Crudup",
+			"character": "Timothy",
+			"tmdbMovieId": 1069905,
+			"tmdbPersonId": 8289,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Riley Keough",
+			"character": "Jessica Kelly",
+			"tmdbMovieId": 1069905,
+			"tmdbPersonId": 98522,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

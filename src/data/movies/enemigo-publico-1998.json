@@ -2,7 +2,7 @@
 	"slug": "enemigo-publico-1998",
 	"title": "Enemigo público",
 	"originalTitle": "Enemy of the State",
-  "synopsis": "Un abogado recibe una grabación del asesinato de un congresista y queda bajo vigilancia de una agencia federal. Incapaz de confiar en las instituciones, recurre a un especialista en información clandestina para limpiar su nombre.",
+	"synopsis": "Un abogado recibe una grabación del asesinato de un congresista y queda bajo vigilancia de una agencia federal. Incapaz de confiar en las instituciones, recurre a un especialista en información clandestina para limpiar su nombre.",
 	"year": 1998,
 	"reviewPublishedAt": "2026-11-06",
 	"audienceRating": "+17",
@@ -56,5 +56,21 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 132
+	"runtimeMinutes": 132,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Robert Clayton Dean",
+			"tmdbMovieId": 9798,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Hackman",
+			"character": "Brill",
+			"tmdbMovieId": 9798,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

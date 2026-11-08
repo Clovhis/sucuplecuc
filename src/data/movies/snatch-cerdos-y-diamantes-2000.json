@@ -59,5 +59,21 @@
 		"Apple TV"
 	],
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jason Statham",
+			"character": "Turkish",
+			"tmdbMovieId": 107,
+			"tmdbPersonId": 976,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Ford",
+			"character": "Brick Top",
+			"tmdbMovieId": 107,
+			"tmdbPersonId": 1116,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -36,29 +36,52 @@
     ]
   },
   "runtimeMinutes": 125,
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Spirited Away convierte una mudanza y un susto infantil en un mundo donde crecer significa aprender reglas sin dejar de mirar con curiosidad. Hayao Miyazaki combina extrañeza y ternura, y Chihiro encuentra en la voz de Ryūnosuke Kamiki un contrapunto sereno.",
-			"whatToExpect": "Chihiro queda atrapada en una casa de baños después de que sus padres cambian de forma. Yasuko Sawaguchi y Yō Ōizumi forman parte de un coro de espíritus imprevisibles, mientras la chica aprende a trabajar, recordar y elegir a quién ayudar.",
-			"pace": "Avanza por descubrimientos y tareas más que por una misión recta. Cada pasillo abre otra regla o criatura, pero Miyazaki sabe detenerse en un tren, una comida o un gesto para que el asombro tenga tiempo de asentarse.",
-			"intensity": "La intensidad nace del desamparo y de no entender el mundo adulto. Hay transformaciones inquietantes, hambre y amenazas, aunque la película también ofrece refugios, humor y una calma que permite que Chihiro crezca sin endurecerse.",
-			"practicalContext": "No intentes catalogar cada espíritu ni exigir una explicación para todo. La casa de baños funciona como un ecosistema de trabajo, deuda y cuidado; seguir cómo Chihiro se ubica allí importa más que resolver su geografía.",
-			"forFansOf": "Puede encantarte si te gustan las fábulas de Hayao Miyazaki, los mundos de fantasía con reglas propias y las historias infantiles que toman en serio el miedo, la responsabilidad y la imaginación.",
-			"notForYouIf": "Quizás no sea para vos si necesitás una aventura con objetivos explícitos, criaturas clasificables o un arco de villano tradicional. Su lógica cambia de forma y pide confiar en la experiencia."
-		},
-	"becauseYouLiked": [
-		"the-boy-and-the-heron-2023",
-		"howls-moving-castle-2004"
-	],
-	"related": [
-		"princess-mononoke-1997",
-		"castle-in-the-sky-1986",
-		"nausicaa-of-the-valley-of-the-wind-1984",
-		"my-neighbor-totoro-1988"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Spirited Away convierte una mudanza y un susto infantil en un mundo donde crecer significa aprender reglas sin dejar de mirar con curiosidad. Hayao Miyazaki combina extrañeza y ternura, y Chihiro encuentra en la voz de Ryūnosuke Kamiki un contrapunto sereno.",
+      "whatToExpect": "Chihiro queda atrapada en una casa de baños después de que sus padres cambian de forma. Yasuko Sawaguchi y Yō Ōizumi forman parte de un coro de espíritus imprevisibles, mientras la chica aprende a trabajar, recordar y elegir a quién ayudar.",
+      "pace": "Avanza por descubrimientos y tareas más que por una misión recta. Cada pasillo abre otra regla o criatura, pero Miyazaki sabe detenerse en un tren, una comida o un gesto para que el asombro tenga tiempo de asentarse.",
+      "intensity": "La intensidad nace del desamparo y de no entender el mundo adulto. Hay transformaciones inquietantes, hambre y amenazas, aunque la película también ofrece refugios, humor y una calma que permite que Chihiro crezca sin endurecerse.",
+      "practicalContext": "No intentes catalogar cada espíritu ni exigir una explicación para todo. La casa de baños funciona como un ecosistema de trabajo, deuda y cuidado; seguir cómo Chihiro se ubica allí importa más que resolver su geografía.",
+      "forFansOf": "Puede encantarte si te gustan las fábulas de Hayao Miyazaki, los mundos de fantasía con reglas propias y las historias infantiles que toman en serio el miedo, la responsabilidad y la imaginación.",
+      "notForYouIf": "Quizás no sea para vos si necesitás una aventura con objetivos explícitos, criaturas clasificables o un arco de villano tradicional. Su lógica cambia de forma y pide confiar en la experiencia."
+    },
+    "becauseYouLiked": [
+      "the-boy-and-the-heron-2023",
+      "howls-moving-castle-2004"
+    ],
+    "related": [
+      "princess-mononoke-1997",
+      "castle-in-the-sky-1986",
+      "nausicaa-of-the-valley-of-the-wind-1984",
+      "my-neighbor-totoro-1988"
+    ]
+  },
   "review": "Spirited Away sigue a Chihiro cuando sus padres se transforman y ella debe trabajar en una casa de baños habitada por espíritus para rescatarlos. Hayao Miyazaki construye un mundo que parece no terminar nunca, lleno de criaturas extrañas, reglas cambiantes y detalles que invitan a mirar dos veces; Rumi Hiiragi le da a Chihiro una valentía que crece sin volverse heroína perfecta. El ritmo se deja llevar por el descubrimiento, no por una misión lineal. Vale por su inventiva, su corazón y una fábula que trata a los chicos como espectadores inteligentes.",
   "audienceRating": "ATP",
   "reviewPublishedAt": "2026-03-09",
-  "synopsis": "Durante una mudanza, Chihiro y sus padres se internan en un extraño pueblo abandonado. Cuando queda atrapada en un mundo de espíritus, la chica deberá trabajar en una casa de baños y encontrar el modo de recuperar a su familia."
+  "synopsis": "Durante una mudanza, Chihiro y sus padres se internan en un extraño pueblo abandonado. Cuando queda atrapada en un mundo de espíritus, la chica deberá trabajar en una casa de baños y encontrar el modo de recuperar a su familia.",
+  "castCharacters": [
+    {
+      "actor": "Ryūnosuke Kamiki",
+      "character": "Boh (voice)",
+      "tmdbMovieId": 129,
+      "tmdbPersonId": 225730,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Yō Ōizumi",
+      "character": "Bandai Frog (voice)",
+      "tmdbMovieId": 129,
+      "tmdbPersonId": 40450,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Yasuko Sawaguchi",
+      "character": "Mother (voice)",
+      "tmdbMovieId": 129,
+      "tmdbPersonId": 19591,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

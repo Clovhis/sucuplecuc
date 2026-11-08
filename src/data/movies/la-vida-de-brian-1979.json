@@ -42,18 +42,55 @@
 			"forFansOf": "Si te gustan comedias satíricas, humor británico y Monty Python riéndose de la obediencia.",
 			"notForYouIf": "No es para vos si necesitás una historia respetuosa con la religión, un tono parejo o chistes sin absurdo."
 		},
-	"becauseYouLiked": [
-		"los-caballeros-de-la-mesa-cuadrada-y-sus-locos-seguidores-1975",
-		"stardust-memories-1980"
-	],
-	"related": [
-		"annie-hall-1977",
-		"a-midsummer-night-s-sex-comedy-1982",
-		"the-king-of-comedy-1982",
-		"tootsie-1982"
-	]
-},
+		"becauseYouLiked": [
+			"los-caballeros-de-la-mesa-cuadrada-y-sus-locos-seguidores-1975",
+			"stardust-memories-1980"
+		],
+		"related": [
+			"annie-hall-1977",
+			"a-midsummer-night-s-sex-comedy-1982",
+			"the-king-of-comedy-1982",
+			"tootsie-1982"
+		]
+	},
 	"review": "Terry Jones usa la sátira bíblica para pinchar el fanatismo, la obediencia y la necesidad de seguir líderes. Los coros, las multitudes y los cambios de identidad sostienen un humor que puede ser disparatado y preciso en la misma escena. La película funciona porque se burla de todos los bandos sin perder el cariño por sus personajes torpes. Brian no necesita ser un elegido para provocar el caos; el humor apunta a quienes necesitan que alguien lo sea.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Graham Chapman",
+			"character": "Wise Man #2 / Brian Cohen / Biggus Dickus",
+			"tmdbMovieId": 583,
+			"tmdbPersonId": 10722,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Cleese",
+			"character": "Wise Man #1 / Reg / Jewish Official / First Centurion / Deadly Dirk / Arthur",
+			"tmdbMovieId": 583,
+			"tmdbPersonId": 8930,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terry Gilliam",
+			"character": "Man Even Further Forward / Revolutionary / Jailer / Blood and Thunder Prophet / Frank / Audience Member / Crucifee",
+			"tmdbMovieId": 583,
+			"tmdbPersonId": 280,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eric Idle",
+			"character": "Mr. Cheeky / Stan 'Loretta' / Harry the Haggler / Culprit Woman / Warris / Intensely Dull Youth / Jailer's Assistant / Otto / Lead Singer Crucifee",
+			"tmdbMovieId": 583,
+			"tmdbPersonId": 10713,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terry Jones",
+			"character": "Mandy Cohen / Colin / Simon the Holy Man / Bob Hoskins / Saintly Passer-by / Alarmed Crucifixion Assistant",
+			"tmdbMovieId": 583,
+			"tmdbPersonId": 10707,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

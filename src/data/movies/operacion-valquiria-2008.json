@@ -32,7 +32,11 @@
 		"tenSecondTake": {
 			"verdict": "Bryan Singer convierte la conspiración de Stauffenberg en un reloj de órdenes y retrasos; Tom Cruise sostiene el plan, aunque la película simplifica sus bordes históricos.",
 			"whatToExpect": "Bomba, oficinas, códigos, cadena de mando y oficiales intentando tomar el gobierno alemán antes de que el régimen pueda reaccionar.",
-			"pace": "Avanza con precisión de cuenta regresiva, encadenando instrucciones y cambios de plan; la burocracia se vuelve el principal obstáculo.",			"intensity": "La tensión es estratégica y física, con el fracaso siempre cerca; importa más si el plan se ejecuta que la acción de batalla.",			"practicalContext": "Con 121 minutos, es una sesión accesible de thriller histórico; funciona si priorizás el suspenso del operativo por encima del contexto completo.",			"forFansOf": "Para quienes disfrutan conspiraciones de guerra, Tom Cruise en registro rígido y relatos donde un retraso puede costar miles de vidas.",			"notForYouIf": "No es para vos si necesitás una reconstrucción exhaustiva, villanos complejos o una película que no convierta la historia en mecanismo de suspenso."
+			"pace": "Avanza con precisión de cuenta regresiva, encadenando instrucciones y cambios de plan; la burocracia se vuelve el principal obstáculo.",
+			"intensity": "La tensión es estratégica y física, con el fracaso siempre cerca; importa más si el plan se ejecuta que la acción de batalla.",
+			"practicalContext": "Con 121 minutos, es una sesión accesible de thriller histórico; funciona si priorizás el suspenso del operativo por encima del contexto completo.",
+			"forFansOf": "Para quienes disfrutan conspiraciones de guerra, Tom Cruise en registro rígido y relatos donde un retraso puede costar miles de vidas.",
+			"notForYouIf": "No es para vos si necesitás una reconstrucción exhaustiva, villanos complejos o una película que no convierta la historia en mecanismo de suspenso."
 		},
 		"becauseYouLiked": [
 			"k-19-the-widowmaker-2002",
@@ -48,5 +52,28 @@
 	"review": "Operación Valquiria funciona mejor como reloj de suspenso que como reconstrucción política completa. Singer ordena la conspiración dentro de la Segunda Guerra Mundial y Cruise sostiene la rigidez de Stauffenberg sin volverlo una estrella de acción. Simplifica algunos matices históricos, pero la cuenta regresiva, los cambios de órdenes y el elenco británico mantienen el interés hasta un desenlace cuyo peso está en el fracaso del plan. La tensión nace de ver cómo una burocracia entera puede sabotear incluso una operación preparada con cuidado.",
 	"runtimeMinutes": 121,
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "Claus Schenk Graf von Stauffenberg",
+			"tmdbMovieId": 2253,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kenneth Branagh",
+			"character": "Henning von Tresckow",
+			"tmdbMovieId": 2253,
+			"tmdbPersonId": 11181,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Nighy",
+			"character": "Friedrich Olbricht",
+			"tmdbMovieId": 2253,
+			"tmdbPersonId": 2440,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

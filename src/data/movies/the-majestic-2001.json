@@ -34,15 +34,15 @@
 	},
 	"runtimeMinutes": 153,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Majestic se entrega al melodrama cinéfilo con Frank Darabont y un Jim Carrey sorprendentemente cálido, aunque subraya cada emoción.",
-		"whatToExpect": "Un guionista amnésico aparece en un pueblo que lo toma por un desaparecido y encuentra identidad, comunidad y un cine por recuperar.",
-		"pace": "Empieza con intriga, se acomoda en la vida del pueblo y reserva el conflicto político para una segunda mitad más declarativa.",
-		"intensity": "La tensión pasa por memoria, persecución ideológica y la defensa de una sala; el sentimiento pesa más que la sorpresa.",
-		"practicalContext": "Con 153 minutos, es una elección larga y sentimental, ideal si tenés ganas de una película que abrace su costado clásico.",
-		"forFansOf": "Te va a gustar si disfrutás homenajes al cine, comunidades que se organizan y a Jim Carrey trabajando sin el piloto automático de la comedia.",
-		"notForYouIf": "Quizás no sea para vos si te molestan los discursos subrayados, los finales emotivos o las historias que confían demasiado en la nostalgia."
-	},
+		"tenSecondTake": {
+			"verdict": "The Majestic se entrega al melodrama cinéfilo con Frank Darabont y un Jim Carrey sorprendentemente cálido, aunque subraya cada emoción.",
+			"whatToExpect": "Un guionista amnésico aparece en un pueblo que lo toma por un desaparecido y encuentra identidad, comunidad y un cine por recuperar.",
+			"pace": "Empieza con intriga, se acomoda en la vida del pueblo y reserva el conflicto político para una segunda mitad más declarativa.",
+			"intensity": "La tensión pasa por memoria, persecución ideológica y la defensa de una sala; el sentimiento pesa más que la sorpresa.",
+			"practicalContext": "Con 153 minutos, es una elección larga y sentimental, ideal si tenés ganas de una película que abrace su costado clásico.",
+			"forFansOf": "Te va a gustar si disfrutás homenajes al cine, comunidades que se organizan y a Jim Carrey trabajando sin el piloto automático de la comedia.",
+			"notForYouIf": "Quizás no sea para vos si te molestan los discursos subrayados, los finales emotivos o las historias que confían demasiado en la nostalgia."
+		},
 		"becauseYouLiked": [
 			"el-ano-que-vivimos-peligrosamente-1982",
 			"la-insoportable-levedad-del-ser-1988"
@@ -54,5 +54,42 @@
 			"k-19-the-widowmaker-2002"
 		]
 	},
-	"review": "The Majestic es una carta de amor al cine clásico y también una película que no teme ser sentimental. Frank Darabont convierte la amnesia de Peter en una puerta hacia una comunidad marcada por la guerra y por la persecución política, mientras el viejo cine funciona como espacio de memoria compartida. Jim Carrey baja el volumen y encuentra una calidez convincente, acompañado por Martin Landau y James Whitmore, que le dan peso a la historia. El metraje es largo y la trama subraya sus emociones con insistencia, pero la defensa de la imaginación como forma de resistencia tiene una honestidad difícil de rechazar."
+	"review": "The Majestic es una carta de amor al cine clásico y también una película que no teme ser sentimental. Frank Darabont convierte la amnesia de Peter en una puerta hacia una comunidad marcada por la guerra y por la persecución política, mientras el viejo cine funciona como espacio de memoria compartida. Jim Carrey baja el volumen y encuentra una calidez convincente, acompañado por Martin Landau y James Whitmore, que le dan peso a la historia. El metraje es largo y la trama subraya sus emociones con insistencia, pero la defensa de la imaginación como forma de resistencia tiene una honestidad difícil de rechazar.",
+	"castCharacters": [
+		{
+			"actor": "Jim Carrey",
+			"character": "Peter Appleton",
+			"tmdbMovieId": 11086,
+			"tmdbPersonId": 206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martin Landau",
+			"character": "Harry Trimble",
+			"tmdbMovieId": 11086,
+			"tmdbPersonId": 2641,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laurie Holden",
+			"character": "Adele Stanton",
+			"tmdbMovieId": 11086,
+			"tmdbPersonId": 8332,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Whitmore",
+			"character": "Stan Keller",
+			"tmdbMovieId": 11086,
+			"tmdbPersonId": 6577,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hal Holbrook",
+			"character": "Congressman Doyle",
+			"tmdbMovieId": 11086,
+			"tmdbPersonId": 11066,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

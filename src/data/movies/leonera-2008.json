@@ -27,28 +27,51 @@
   },
   "runtimeMinutes": 113,
   "review": "Leonera toma un material propenso al golpe bajo y lo vuelve más incómodo porque nunca mendiga compasión. Pablo Trapero filma la cárcel femenina como un sistema de reglas, cuerpos y supervivencia cotidiana, mientras Martina Gusmán sostiene casi todo con una mezcla muy precisa de desconcierto, dureza y cansancio. Lo mejor de la película está en cómo cruza maternidad, encierro y deseo sin ordenar moralmente a nadie. Es áspera, sí, pero también muy lúcida sobre lo que hace el encierro con los vínculos.",
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Leonera convierte la maternidad en convivencia vigilada: Pablo Trapero deja que Martina Gusmán atraviese la cárcel sin pedirle al espectador compasión fácil.",
-			"whatToExpect": "Julia es detenida embarazada y debe criar a su hijo en una prisión para madres mientras intenta entender el crimen que la llevó allí.",
-			"pace": "Avanza entre rutinas, visitas y decisiones judiciales con un ritmo seco que deja que el encierro cambie los vínculos.",
-			"intensity": "La presión es física y afectiva; cada cuidado ocurre dentro de reglas que no fueron hechas para proteger a nadie.",
-			"practicalContext": "Mirala por la actuación de Martina Gusmán y por la vida cotidiana del penal, no como un misterio carcelario convencional.",
-			"forFansOf": "Si te interesan dramas de prisión, maternidades bajo presión y cine argentino que evita ordenar moralmente a sus personajes.",
-			"notForYouIf": "No es para vos si buscás redención rápida, una cárcel de acción o un relato que suavice el encierro."
-		},
-	"becauseYouLiked": [
-		"elefante-blanco-2012",
-		"el-clan-2015"
-	],
-	"related": [
-		"carancho-2010",
-		"el-bonaerense-2002",
-		"barreda-2026",
-		"mundo-grua-1999"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Leonera convierte la maternidad en convivencia vigilada: Pablo Trapero deja que Martina Gusmán atraviese la cárcel sin pedirle al espectador compasión fácil.",
+      "whatToExpect": "Julia es detenida embarazada y debe criar a su hijo en una prisión para madres mientras intenta entender el crimen que la llevó allí.",
+      "pace": "Avanza entre rutinas, visitas y decisiones judiciales con un ritmo seco que deja que el encierro cambie los vínculos.",
+      "intensity": "La presión es física y afectiva; cada cuidado ocurre dentro de reglas que no fueron hechas para proteger a nadie.",
+      "practicalContext": "Mirala por la actuación de Martina Gusmán y por la vida cotidiana del penal, no como un misterio carcelario convencional.",
+      "forFansOf": "Si te interesan dramas de prisión, maternidades bajo presión y cine argentino que evita ordenar moralmente a sus personajes.",
+      "notForYouIf": "No es para vos si buscás redención rápida, una cárcel de acción o un relato que suavice el encierro."
+    },
+    "becauseYouLiked": [
+      "elefante-blanco-2012",
+      "el-clan-2015"
+    ],
+    "related": [
+      "carancho-2010",
+      "el-bonaerense-2002",
+      "barreda-2026",
+      "mundo-grua-1999"
+    ]
+  },
   "synopsis": "Julia despierta junto a un cadáver y queda detenida mientras está embarazada. En una prisión para madres, intenta criar a su hijo y entender qué ocurrió, mientras su familia y la justicia disputan el futuro de ambos.",
   "audienceRating": "+13",
-  "reviewPublishedAt": "2026-03-07"
+  "reviewPublishedAt": "2026-03-07",
+  "castCharacters": [
+    {
+      "actor": "Martina Gusmán",
+      "character": "Julia",
+      "tmdbMovieId": 8900,
+      "tmdbPersonId": 84667,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Elli Medeiros",
+      "character": "Sofia",
+      "tmdbMovieId": 8900,
+      "tmdbPersonId": 84668,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Rodrigo Santoro",
+      "character": "Ramiro",
+      "tmdbMovieId": 8900,
+      "tmdbPersonId": 17289,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

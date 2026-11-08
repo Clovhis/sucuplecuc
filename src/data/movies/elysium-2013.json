@@ -53,5 +53,42 @@
 			"v-de-vendetta-2005"
 		]
 	},
-	"review": "Blomkamp imagina una desigualdad tan explícita que casi parece una historieta, y esa frontalidad es a la vez la virtud y el límite de Elysium. El diseño del mundo tiene ideas visuales potentes, sobre todo cuando contrasta la estación limpia con la Tierra agotada. Damon funciona muy bien como héroe de acción vulnerable, mientras Copley disfruta el exceso. El discurso político no siempre encuentra matices, pero la película entrega acción, ritmo y una pregunta incómoda sobre quién merece ser curado."
+	"review": "Blomkamp imagina una desigualdad tan explícita que casi parece una historieta, y esa frontalidad es a la vez la virtud y el límite de Elysium. El diseño del mundo tiene ideas visuales potentes, sobre todo cuando contrasta la estación limpia con la Tierra agotada. Damon funciona muy bien como héroe de acción vulnerable, mientras Copley disfruta el exceso. El discurso político no siempre encuentra matices, pero la película entrega acción, ritmo y una pregunta incómoda sobre quién merece ser curado.",
+	"castCharacters": [
+		{
+			"actor": "Matt Damon",
+			"character": "Max",
+			"tmdbMovieId": 68724,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jodie Foster",
+			"character": "Delacourt",
+			"tmdbMovieId": 68724,
+			"tmdbPersonId": 1038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sharlto Copley",
+			"character": "Kruger",
+			"tmdbMovieId": 68724,
+			"tmdbPersonId": 82191,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alice Braga",
+			"character": "Frey",
+			"tmdbMovieId": 68724,
+			"tmdbPersonId": 8602,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diego Luna",
+			"character": "Julio",
+			"tmdbMovieId": 68724,
+			"tmdbPersonId": 8688,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

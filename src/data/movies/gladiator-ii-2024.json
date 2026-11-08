@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Paul Mescal",
+			"character": "Lucius",
+			"tmdbMovieId": 558449,
+			"tmdbPersonId": 2326151,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Denzel Washington",
+			"character": "Macrinus",
+			"tmdbMovieId": 558449,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pedro Pascal",
+			"character": "General Acacius",
+			"tmdbMovieId": 558449,
+			"tmdbPersonId": 1253360,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

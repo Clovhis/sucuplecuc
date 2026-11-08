@@ -57,5 +57,42 @@
 	},
 	"review": "La mancha humana convierte un secreto personal en una pregunta sobre el país, el deseo y la forma en que una vida puede quedar atrapada en una mentira útil. Anthony Hopkins interpreta a Coleman Silk con una rigidez que se va resquebrajando en cada conversación, mientras Nicole Kidman aporta una vulnerabilidad áspera y Ed Harris encarna una amenaza que no necesita exagerarse. Robert Benton cuenta la historia con un tono clásico, atento a los silencios y a la culpa, aunque algunas revelaciones pierden fuerza por su explicación demasiado directa. El drama permanece por la incomodidad de sus personajes.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Coleman Silk",
+			"tmdbMovieId": 10922,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicole Kidman",
+			"character": "Faunia Farley",
+			"tmdbMovieId": 10922,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Harris",
+			"character": "Lester Farley",
+			"tmdbMovieId": 10922,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Sinise",
+			"character": "Nathan Zuckerman",
+			"tmdbMovieId": 10922,
+			"tmdbPersonId": 33,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wentworth Miller",
+			"character": "Young Coleman Silk",
+			"tmdbMovieId": 10922,
+			"tmdbPersonId": 3972,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

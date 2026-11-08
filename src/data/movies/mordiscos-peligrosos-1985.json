@@ -36,7 +36,11 @@
 		"tenSecondTake": {
 			"verdict": "Howard Storm mezcla vampiros, romance adolescente y Jim Carrey en sus comienzos, pero la condesa de Lauren Hutton queda atrapada en una comedia de superficie y gags previsibles.",
 			"whatToExpect": "Una condesa que busca juventud, un adolescente confundido y una noche pop de los ochenta donde el terror sirve principalmente para armar enredos.",
-			"pace": "Avanza a los tumbos entre romance, chistes y apariciones sobrenaturales; el ritmo mejora cuando Carrey puede hacer física la confusión.",			"intensity": "El terror es liviano y juguetón, sin verdadera amenaza; importa más el tono de comedia vampírica que el miedo o la sangre.",			"practicalContext": "Sus 94 minutos funcionan como curiosidad retro para una tarde de humor ochentoso, especialmente si querés ver una etapa temprana de Carrey.",			"forFansOf": "Para quienes disfrutan comedias de vampiros adolescentes, música pop de época y rastrear los primeros gestos de Jim Carrey.",			"notForYouIf": "Puede no ser para vos si buscás un clásico de terror, una villana realmente amenazante o una comedia con gags menos gastados."
+			"pace": "Avanza a los tumbos entre romance, chistes y apariciones sobrenaturales; el ritmo mejora cuando Carrey puede hacer física la confusión.",
+			"intensity": "El terror es liviano y juguetón, sin verdadera amenaza; importa más el tono de comedia vampírica que el miedo o la sangre.",
+			"practicalContext": "Sus 94 minutos funcionan como curiosidad retro para una tarde de humor ochentoso, especialmente si querés ver una etapa temprana de Carrey.",
+			"forFansOf": "Para quienes disfrutan comedias de vampiros adolescentes, música pop de época y rastrear los primeros gestos de Jim Carrey.",
+			"notForYouIf": "Puede no ser para vos si buscás un clásico de terror, una villana realmente amenazante o una comedia con gags menos gastados."
 		},
 		"becauseYouLiked": [
 			"las-brujas-de-eastwick-1987",
@@ -49,5 +53,35 @@
 			"terrorificamente-muertos-1987"
 		]
 	},
-	"review": "Mordiscos peligrosos es una comedia vampírica de los ochenta que mezcla romance adolescente, música pop y una condesa decidida a recuperar su juventud. La película tiene una idea simpática y el encanto de su época, pero la puesta se queda en la superficie: los chistes son previsibles, el tono cambia sin demasiada gracia y la historia tarda en encontrar un ritmo propio. Jim Carrey todavía aparece en una versión temprana de su energía física, rodeado por un elenco que sostiene algunos gags pero no logra salvar el conjunto. Funciona como curiosidad de sus comienzos, no como una gran película de vampiros."
+	"review": "Mordiscos peligrosos es una comedia vampírica de los ochenta que mezcla romance adolescente, música pop y una condesa decidida a recuperar su juventud. La película tiene una idea simpática y el encanto de su época, pero la puesta se queda en la superficie: los chistes son previsibles, el tono cambia sin demasiada gracia y la historia tarda en encontrar un ritmo propio. Jim Carrey todavía aparece en una versión temprana de su energía física, rodeado por un elenco que sostiene algunos gags pero no logra salvar el conjunto. Funciona como curiosidad de sus comienzos, no como una gran película de vampiros.",
+	"castCharacters": [
+		{
+			"actor": "Lauren Hutton",
+			"character": "Countess",
+			"tmdbMovieId": 19064,
+			"tmdbPersonId": 27964,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jim Carrey",
+			"character": "Mark Kendall",
+			"tmdbMovieId": 19064,
+			"tmdbPersonId": 206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Karen Kopins",
+			"character": "Robin Pierce",
+			"tmdbMovieId": 19064,
+			"tmdbPersonId": 145747,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cleavon Little",
+			"character": "Sebastian",
+			"tmdbMovieId": 19064,
+			"tmdbPersonId": 68091,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -62,5 +62,35 @@
 		"Prime Video"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Edward Norton",
+			"character": "Narrator",
+			"tmdbMovieId": 550,
+			"tmdbPersonId": 819,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Tyler Durden",
+			"tmdbMovieId": 550,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helena Bonham Carter",
+			"character": "Marla Singer",
+			"tmdbMovieId": 550,
+			"tmdbPersonId": 1283,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jared Leto",
+			"character": "Angel Face",
+			"tmdbMovieId": 550,
+			"tmdbPersonId": 7499,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

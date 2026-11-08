@@ -89,6 +89,7 @@ export interface PersonSearchEntry {
 
 export interface MoviePersonCredit extends PersonRecord {
 	creditedName: string;
+	character?: string;
 	initials: string;
 	profilePath?: string;
 }

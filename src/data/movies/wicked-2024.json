@@ -60,5 +60,30 @@
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
 	"isArgentinian": false,
-	"genres": ["Musical"]
+	"genres": [
+		"Musical"
+	],
+	"castCharacters": [
+		{
+			"actor": "Cynthia Erivo",
+			"character": "Elphaba",
+			"tmdbMovieId": 402431,
+			"tmdbPersonId": 1765068,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ariana Grande",
+			"character": "Galinda / Glinda",
+			"tmdbMovieId": 402431,
+			"tmdbPersonId": 226001,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Goldblum",
+			"character": "The Wonderful Wizard of Oz",
+			"tmdbMovieId": 402431,
+			"tmdbPersonId": 4785,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

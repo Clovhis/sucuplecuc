@@ -53,5 +53,42 @@
 		]
 	},
 	"review": "Stardust Memories sigue a un cineasta rodeado de fanáticos, periodistas y recuerdos mientras intenta entender por qué ya no puede filmar con la misma libertad. Woody Allen se mira a sí mismo con una mezcla de vanidad, fastidio y miedo a ser malinterpretado, y dirige en blanco y negro con referencias que por momentos pesan más que la historia. Charlotte Rampling aporta una distancia elegante y Jessica Harper una calidez que baja el cinismo del protagonista. El tono puede resultar irritante porque nunca deja de hablar de su ego. Vale por sus momentos de confesión amarga, no por una mirada particularmente generosa.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Sandy Bates",
+			"tmdbMovieId": 11337,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlotte Rampling",
+			"character": "Dorrie",
+			"tmdbMovieId": 11337,
+			"tmdbPersonId": 44079,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Harper",
+			"character": "Daisy",
+			"tmdbMovieId": 11337,
+			"tmdbPersonId": 69055,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marie-Christine Barrault",
+			"character": "Isobel",
+			"tmdbMovieId": 11337,
+			"tmdbPersonId": 24393,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Roberts",
+			"character": "Tony",
+			"tmdbMovieId": 11337,
+			"tmdbPersonId": 10555,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -51,5 +51,28 @@
     }
   },
   "review": "Renoir deja que la cámara cruce salones, pasillos y espacios de servicio, y la puesta en escena vuelve visible el trato desigual que la conversación intenta disimular. La fiesta parece liviana hasta que la cacería altera el tono y rompe la cortesía. Su humor funciona porque nadie queda por completo afuera de la sátira. Los invitados de la finca y los criados comparten la misma función en un mecanismo social que se delata durante la cacería.",
-  "runtimeMinutes": 110
+  "runtimeMinutes": 110,
+  "castCharacters": [
+    {
+      "actor": "Jean Renoir",
+      "character": "Octave",
+      "tmdbMovieId": 776,
+      "tmdbPersonId": 11528,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Marcel Dalio",
+      "character": "Robert de la Cheyniest",
+      "tmdbMovieId": 776,
+      "tmdbPersonId": 4121,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Nora Gregor",
+      "character": "Christine de la Cheyniest",
+      "tmdbMovieId": 776,
+      "tmdbPersonId": 11534,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

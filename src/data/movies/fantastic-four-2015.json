@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Miles Teller",
+			"character": "Reed Richards",
+			"tmdbMovieId": 166424,
+			"tmdbPersonId": 996701,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael B. Jordan",
+			"character": "Johnny Storm",
+			"tmdbMovieId": 166424,
+			"tmdbPersonId": 135651,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Mara",
+			"character": "Sue Storm",
+			"tmdbMovieId": 166424,
+			"tmdbPersonId": 51072,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

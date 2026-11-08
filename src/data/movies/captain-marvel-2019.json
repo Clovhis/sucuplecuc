@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Brie Larson",
+			"character": "Carol Danvers / Vers / Captain Marvel",
+			"tmdbMovieId": 299537,
+			"tmdbPersonId": 60073,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Nick Fury",
+			"tmdbMovieId": 299537,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Mendelsohn",
+			"character": "Talos / Keller",
+			"tmdbMovieId": 299537,
+			"tmdbPersonId": 77335,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,42 @@
 		]
 	},
 	"runtimeMinutes": 101,
-	"review": "Mike Nichols convierte el detrás de escena de Hollywood en una comedia sobre el trabajo, la abstinencia y una madre que no sabe querer sin ocupar todo el plano. Meryl Streep le da a Suzanne una fragilidad muy concreta, lejos de la estrella autosuficiente, y Shirley MacLaine juega la vanidad de Doris con una energía que no oculta su miedo. El guion de Carrie Fisher tiene frases filosas y una ternura que aparece cuando los personajes dejan de actuar. No siempre equilibra el sarcasmo con el drama, pero el duelo entre esas dos actrices es el corazón de la película."
+	"review": "Mike Nichols convierte el detrás de escena de Hollywood en una comedia sobre el trabajo, la abstinencia y una madre que no sabe querer sin ocupar todo el plano. Meryl Streep le da a Suzanne una fragilidad muy concreta, lejos de la estrella autosuficiente, y Shirley MacLaine juega la vanidad de Doris con una energía que no oculta su miedo. El guion de Carrie Fisher tiene frases filosas y una ternura que aparece cuando los personajes dejan de actuar. No siempre equilibra el sarcasmo con el drama, pero el duelo entre esas dos actrices es el corazón de la película.",
+	"castCharacters": [
+		{
+			"actor": "Meryl Streep",
+			"character": "Suzanne Vale",
+			"tmdbMovieId": 22414,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shirley MacLaine",
+			"character": "Doris Mann",
+			"tmdbMovieId": 22414,
+			"tmdbPersonId": 4090,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dennis Quaid",
+			"character": "Jack Faulkner",
+			"tmdbMovieId": 22414,
+			"tmdbPersonId": 6065,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Hackman",
+			"character": "Lowell Kolchek",
+			"tmdbMovieId": 22414,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Dreyfuss",
+			"character": "Dr. Frankenthal",
+			"tmdbMovieId": 22414,
+			"tmdbPersonId": 3037,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

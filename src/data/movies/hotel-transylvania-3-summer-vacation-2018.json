@@ -57,5 +57,42 @@
 	"review": "La tercera entrega lleva el hotel al mar y convierte el crucero en una pista de baile monstruosa. Drácula vuelve a quedar al frente, ahora con una historia de enamoramiento que permite a Sandler jugar la timidez y el entusiasmo. Tartakovsky llena cada número musical de movimiento y color, aunque la amenaza central es bastante más simple que el diseño visual. Como cierre de vacaciones, mantiene la velocidad y el espíritu familiar de la saga.",
 	"runtimeMinutes": 97,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Dracula (voice)",
+			"tmdbMovieId": 400155,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kathryn Hahn",
+			"character": "Ericka (voice)",
+			"tmdbMovieId": 400155,
+			"tmdbPersonId": 17696,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Selena Gomez",
+			"character": "Mavis (voice)",
+			"tmdbMovieId": 400155,
+			"tmdbPersonId": 77948,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jim Gaffigan",
+			"character": "Van Helsing (voice)",
+			"tmdbMovieId": 400155,
+			"tmdbPersonId": 84407,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Samberg",
+			"character": "Jonathan (voice)",
+			"tmdbMovieId": 400155,
+			"tmdbPersonId": 62861,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

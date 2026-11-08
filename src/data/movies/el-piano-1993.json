@@ -73,5 +73,28 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "AU",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Holly Hunter",
+			"character": "Ada McGrath",
+			"tmdbMovieId": 713,
+			"tmdbPersonId": 18686,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harvey Keitel",
+			"character": "George Baines",
+			"tmdbMovieId": 713,
+			"tmdbPersonId": 1037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anna Paquin",
+			"character": "Flora McGrath",
+			"tmdbMovieId": 713,
+			"tmdbPersonId": 10690,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

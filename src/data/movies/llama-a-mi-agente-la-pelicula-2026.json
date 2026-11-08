@@ -55,5 +55,35 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "¡Llama a mi agente!: La película entiende que una agencia de talentos también puede ser una familia disfuncional: cuando el rodaje se complica, cada excompañero vuelve con sus propias cuentas pendientes. Camille Cottin conserva el nervio de Andréa y el elenco aprovecha el choque entre egos, afectos y urgencias de producción. La película juega con la industria y con sus famosas invitadas sin perder el hilo emocional. Hay una sensación de reencuentro que a veces pesa demasiado, pero el humor de oficina y la química del grupo alcanzan para sostenerla."
+	"review": "¡Llama a mi agente!: La película entiende que una agencia de talentos también puede ser una familia disfuncional: cuando el rodaje se complica, cada excompañero vuelve con sus propias cuentas pendientes. Camille Cottin conserva el nervio de Andréa y el elenco aprovecha el choque entre egos, afectos y urgencias de producción. La película juega con la industria y con sus famosas invitadas sin perder el hilo emocional. Hay una sensación de reencuentro que a veces pesa demasiado, pero el humor de oficina y la química del grupo alcanzan para sostenerla.",
+	"castCharacters": [
+		{
+			"actor": "Camille Cottin",
+			"character": "Andréa Martel",
+			"tmdbMovieId": 1365884,
+			"tmdbPersonId": 1348474,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laure Calamy",
+			"character": "Noémie Leclerc",
+			"tmdbMovieId": 1365884,
+			"tmdbPersonId": 983929,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Thibault de Montalembert",
+			"character": "Mathias Barneville",
+			"tmdbMovieId": 1365884,
+			"tmdbPersonId": 19361,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Grégory Montel",
+			"character": "Gabriel Sarda",
+			"tmdbMovieId": 1365884,
+			"tmdbPersonId": 1423713,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -44,18 +44,55 @@
 			"forFansOf": "Fans de Kurt Russell, de John Carpenter y de las aventuras sobrenaturales que pueden pasar de un camión a un templo sin perder el chiste.",
 			"notForYouIf": "Buscás mitología consistente, héroes seguros o una película de acción seria. Golpe en la pequeña China convierte la confusión en su motor."
 		},
-	"becauseYouLiked": [
-		"ip-man-2008",
-		"scott-pilgrim-contra-el-mundo-2010"
-	],
-	"related": [
-		"1997-rescate-en-nueva-york-1981",
-		"amos-del-universo-2026",
-		"hook-1991",
-		"el-cuervo-1994"
-	]
-},
+		"becauseYouLiked": [
+			"ip-man-2008",
+			"scott-pilgrim-contra-el-mundo-2010"
+		],
+		"related": [
+			"1997-rescate-en-nueva-york-1981",
+			"amos-del-universo-2026",
+			"hook-1991",
+			"el-cuervo-1994"
+		]
+	},
 	"review": "John Carpenter juega con la fantasía de aventura desde el punto de vista de un héroe que no tiene idea de lo que pasa. El neón, las criaturas y la mezcla de artes marciales con comedia crean un exceso muy consciente de sí mismo. Kurt Russell hace de Jack Burton un fanfarrón querible cuya confianza sobrevive incluso cuando no sirve para nada. Jack cree ser el protagonista de la aventura hasta que la película lo convierte en testigo desorientado de algo mucho más grande.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Kurt Russell",
+			"character": "Jack Burton",
+			"tmdbMovieId": 6978,
+			"tmdbPersonId": 6856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kim Cattrall",
+			"character": "Gracie Law",
+			"tmdbMovieId": 6978,
+			"tmdbPersonId": 2109,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dennis Dun",
+			"character": "Wang Chi",
+			"tmdbMovieId": 6978,
+			"tmdbPersonId": 11392,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Hong",
+			"character": "David Lo Pan",
+			"tmdbMovieId": 6978,
+			"tmdbPersonId": 20904,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Victor Wong",
+			"character": "Egg Shen",
+			"tmdbMovieId": 6978,
+			"tmdbPersonId": 11395,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

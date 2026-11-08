@@ -53,5 +53,35 @@
 		]
 	},
 	"runtimeMinutes": 113,
-	"review": "Arthur 2 arranca con una buena idea para pinchar al personaje: el heredero que hacía de la irresponsabilidad un estilo de vida ahora tiene que pagar las cuentas. Dudley Moore conserva el encanto de desastre y Liza Minnelli sostiene a Linda con bastante más dignidad que el guion, pero la película convierte cada obstáculo en una repetición del chiste anterior. Hay química y algunos golpes de comedia física, aunque la secuela se siente satisfecha con volver a una casa que ya había quedado mejor ordenada en la primera parte."
+	"review": "Arthur 2 arranca con una buena idea para pinchar al personaje: el heredero que hacía de la irresponsabilidad un estilo de vida ahora tiene que pagar las cuentas. Dudley Moore conserva el encanto de desastre y Liza Minnelli sostiene a Linda con bastante más dignidad que el guion, pero la película convierte cada obstáculo en una repetición del chiste anterior. Hay química y algunos golpes de comedia física, aunque la secuela se siente satisfecha con volver a una casa que ya había quedado mejor ordenada en la primera parte.",
+	"castCharacters": [
+		{
+			"actor": "Dudley Moore",
+			"character": "Arthur Bach",
+			"tmdbMovieId": 26044,
+			"tmdbPersonId": 56819,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liza Minnelli",
+			"character": "Linda Marolla Bach",
+			"tmdbMovieId": 26044,
+			"tmdbPersonId": 66776,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Gielgud",
+			"character": "Hobson",
+			"tmdbMovieId": 26044,
+			"tmdbPersonId": 11857,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geraldine Fitzgerald",
+			"character": "Martha Bach",
+			"tmdbMovieId": 26044,
+			"tmdbPersonId": 30226,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

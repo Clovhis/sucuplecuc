@@ -8,7 +8,11 @@
 	"reviewPublishedAt": "2026-08-27",
 	"audienceRating": "+17",
 	"category": "Ciencia ficción",
-	"genres": ["Ciencia ficción", "Thriller", "Aventura"],
+	"genres": [
+		"Ciencia ficción",
+		"Thriller",
+		"Aventura"
+	],
 	"subgenres": [],
 	"country": "US",
 	"isArgentinian": false,
@@ -17,7 +21,13 @@
 	"trailerYoutubeId": "WY4u65OCwfY",
 	"releasePlatform": "Otras plataformas",
 	"director": "Ridley Scott",
-	"mainCast": ["Jacob Elordi", "Margaret Qualley", "Josh Brolin", "Guy Pearce", "Allison Janney"],
+	"mainCast": [
+		"Jacob Elordi",
+		"Margaret Qualley",
+		"Josh Brolin",
+		"Guy Pearce",
+		"Allison Janney"
+	],
 	"productionCompany": "Scott Free Productions, 20th Century Studios",
 	"cinepostaScore": 5,
 	"runtimeMinutes": 118,
@@ -34,18 +44,55 @@
 			"forFansOf": "Si te gustan futuros devastados, dúos desconfiados y relatos donde la esperanza se construye con una señal.",
 			"notForYouIf": "No es para vos si necesitás respuestas rápidas, discursos menos subrayados o un protagonista que confíe con facilidad."
 		},
-	"becauseYouLiked": [
-		"el-final-de-la-calle-oak-2026",
-		"mision-rescate-2015"
-	],
-	"related": [
-		"looper-2012",
-		"el-dia-de-la-revelacion-2026",
-		"buena-suerte-diviertete-no-mueras-2026",
-		"project-hail-mary-2026"
-	]
-},
+		"becauseYouLiked": [
+			"el-final-de-la-calle-oak-2026",
+			"mision-rescate-2015"
+		],
+		"related": [
+			"looper-2012",
+			"el-dia-de-la-revelacion-2026",
+			"buena-suerte-diviertete-no-mueras-2026",
+			"project-hail-mary-2026"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "La guerra de los últimos encuentra una veta interesante en el choque entre la solidaridad y la paranoia, pero la subraya demasiado. Jacob Elordi sostiene la fragilidad de Hig y Josh Brolin le da peso áspero a un compañero que parece vivir siempre a la defensiva. El mundo devastado tiene imágenes fuertes y el vínculo con el perro aporta una emoción concreta. Cuando la película se detiene en ese refugio y en las decisiones de sus sobrevivientes, respira; cuando convierte cada dilema en discurso, pierde parte del misterio y del filo que prometía."
+	"review": "La guerra de los últimos encuentra una veta interesante en el choque entre la solidaridad y la paranoia, pero la subraya demasiado. Jacob Elordi sostiene la fragilidad de Hig y Josh Brolin le da peso áspero a un compañero que parece vivir siempre a la defensiva. El mundo devastado tiene imágenes fuertes y el vínculo con el perro aporta una emoción concreta. Cuando la película se detiene en ese refugio y en las decisiones de sus sobrevivientes, respira; cuando convierte cada dilema en discurso, pierde parte del misterio y del filo que prometía.",
+	"castCharacters": [
+		{
+			"actor": "Jacob Elordi",
+			"character": "Hig",
+			"tmdbMovieId": 1384216,
+			"tmdbPersonId": 2034418,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margaret Qualley",
+			"character": "Cima",
+			"tmdbMovieId": 1384216,
+			"tmdbPersonId": 1392137,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Brolin",
+			"character": "Bangley",
+			"tmdbMovieId": 1384216,
+			"tmdbPersonId": 16851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Guy Pearce",
+			"character": "Pops",
+			"tmdbMovieId": 1384216,
+			"tmdbPersonId": 529,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Allison Janney",
+			"character": "Darlene",
+			"tmdbMovieId": 1384216,
+			"tmdbPersonId": 19,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

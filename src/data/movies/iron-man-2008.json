@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Robert Downey Jr.",
+			"character": "Tony Stark",
+			"tmdbMovieId": 1726,
+			"tmdbPersonId": 3223,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terrence Howard",
+			"character": "Rhodey",
+			"tmdbMovieId": 1726,
+			"tmdbPersonId": 18288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Bridges",
+			"character": "Obadiah Stane",
+			"tmdbMovieId": 1726,
+			"tmdbPersonId": 1229,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

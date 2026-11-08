@@ -53,5 +53,42 @@
 		]
 	},
 	"review": "Woody Allen reúne a tres parejas en una casa de campo para que el verano saque a la superficie celos, fantasías y neurosis que venían bien guardadas. La dirección arma un picnic elegante, con música, inventos absurdos y diálogos que avanzan entre el coqueteo y la incomodidad. Mia Farrow, José Ferrer y el propio Allen encuentran gracia en personajes que hablan demasiado para no decir lo importante. El ritmo es liviano y el tono juguetón, aunque algunas vueltas de la comedia quedan más decorativas que filosas. No es una de sus imprescindibles, pero vale por su encanto de enredo sensual y despreocupado.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Andrew",
+			"tmdbMovieId": 8288,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mia Farrow",
+			"character": "Ariel",
+			"tmdbMovieId": 8288,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "José Ferrer",
+			"character": "Leopold",
+			"tmdbMovieId": 8288,
+			"tmdbPersonId": 12515,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Hagerty",
+			"character": "Dulcy",
+			"tmdbMovieId": 8288,
+			"tmdbPersonId": 14415,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Roberts",
+			"character": "Maxwell",
+			"tmdbMovieId": 8288,
+			"tmdbPersonId": 10555,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

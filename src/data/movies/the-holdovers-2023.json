@@ -67,5 +67,42 @@
 		"Apple TV"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Paul Giamatti",
+			"character": "Paul Hunham",
+			"tmdbMovieId": 840430,
+			"tmdbPersonId": 13242,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dominic Sessa",
+			"character": "Angus Tully",
+			"tmdbMovieId": 840430,
+			"tmdbPersonId": 3918497,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Da'Vine Joy Randolph",
+			"character": "Mary Lamb",
+			"tmdbMovieId": 840430,
+			"tmdbPersonId": 1180099,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carrie Preston",
+			"character": "Miss Lydia Crane",
+			"tmdbMovieId": 840430,
+			"tmdbPersonId": 7465,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brady Hepner",
+			"character": "Teddy Kountze",
+			"tmdbMovieId": 840430,
+			"tmdbPersonId": 3013234,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

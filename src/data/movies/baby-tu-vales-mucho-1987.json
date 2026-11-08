@@ -58,5 +58,35 @@
 		]
 	},
 	"review": "La gracia de Baby Boom está en no tratar la maternidad como una penitencia ni la ambición como un defecto que haya que curar. Diane Keaton sostiene cada cambio de J. C. con una mezcla muy precisa de ansiedad, orgullo y ternura, mientras Sam Shepard evita que el romance se vuelva una recompensa automática. La película abraza algunas soluciones de cuento, pero su mirada sobre el trabajo y el cuidado sigue teniendo una energía encantadora.",
-	"runtimeMinutes": 110
+	"runtimeMinutes": 110,
+	"castCharacters": [
+		{
+			"actor": "Diane Keaton",
+			"character": "J.C. Wiatt",
+			"tmdbMovieId": 11215,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Shepard",
+			"character": "Dr. Jeff Cooper",
+			"tmdbMovieId": 11215,
+			"tmdbPersonId": 9880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harold Ramis",
+			"character": "Steven Buchner",
+			"tmdbMovieId": 11215,
+			"tmdbPersonId": 1524,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Spader",
+			"character": "Ken Arrenberg",
+			"tmdbMovieId": 11215,
+			"tmdbPersonId": 13548,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

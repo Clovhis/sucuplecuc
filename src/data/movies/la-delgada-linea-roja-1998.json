@@ -45,18 +45,55 @@
 			"forFansOf": "Si te gustan películas bélicas contemplativas, cine de Terrence Malick y narraciones que escuchan el miedo interior.",
 			"notForYouIf": "No es para vos si buscás estrategia clara, héroes centrales o una película de guerra que acelere de principio a fin."
 		},
-	"becauseYouLiked": [
-		"k-19-the-widowmaker-2002",
-		"michael-collins-1996"
-	],
-	"related": [
-		"el-pianista-2002",
-		"schindler-s-list-1993",
-		"tiempos-de-gloria-1989",
-		"masacre-ven-y-mira-1985"
-	]
-},
+		"becauseYouLiked": [
+			"k-19-the-widowmaker-2002",
+			"michael-collins-1996"
+		],
+		"related": [
+			"el-pianista-2002",
+			"schindler-s-list-1993",
+			"tiempos-de-gloria-1989",
+			"masacre-ven-y-mira-1985"
+		]
+	},
 	"review": "Terrence Malick contrapone la violencia humana con una naturaleza que no funciona como consuelo, sino como testigo indiferente. La narración coral, el viento y los cortes entre combate y paisaje generan una experiencia contemplativa dentro del género bélico. Jim Caviezel, Nick Nolte y Sean Penn sostienen miradas distintas sobre el miedo, la fe y la supervivencia. La naturaleza sigue su curso mientras los soldados pelean, y esa indiferencia vuelve todavía más difícil encontrar sentido en la guerra.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jim Caviezel",
+			"character": "Pvt. Robert Witt",
+			"tmdbMovieId": 8741,
+			"tmdbPersonId": 8767,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Nolte",
+			"character": "Lt. Col. Gordon Tall",
+			"tmdbMovieId": 8741,
+			"tmdbPersonId": 1733,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Penn",
+			"character": "1st Sgt. Edward Welsh",
+			"tmdbMovieId": 8741,
+			"tmdbPersonId": 2228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Chaplin",
+			"character": "Pvt. Jack Bell",
+			"tmdbMovieId": 8741,
+			"tmdbPersonId": 21343,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elias Koteas",
+			"character": "Capt. James Staros",
+			"tmdbMovieId": 8741,
+			"tmdbPersonId": 13550,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

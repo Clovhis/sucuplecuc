@@ -42,18 +42,55 @@
 			"forFansOf": "Kevin Smith, las películas de una sola locación y las amistades que se burlan para no hablar en serio.",
 			"notForYouIf": "Buscás una historia movida, personajes maduros o conversaciones que no repasen la inmadurez masculina."
 		},
-	"becauseYouLiked": [
-		"maverick-1994",
-		"tonto-y-retonto-1994"
-	],
-	"related": [
-		"como-ser-john-malkovich-1999",
-		"very-important-perros-2000",
-		"adaptation-el-ladron-de-orquideas-2002",
-		"aterriza-como-puedas-1980"
-	]
-},
+		"becauseYouLiked": [
+			"maverick-1994",
+			"tonto-y-retonto-1994"
+		],
+		"related": [
+			"como-ser-john-malkovich-1999",
+			"very-important-perros-2000",
+			"adaptation-el-ladron-de-orquideas-2002",
+			"aterriza-como-puedas-1980"
+		]
+	},
 	"review": "Kevin Smith convierte un turno miserable en una conversación generacional sobre trabajo, culpa y la fantasía de hacer otra cosa. El blanco y negro, el local único y los diálogos largos hacen del presupuesto limitado una identidad. Brian O'Halloran y Jeff Anderson sostienen una amistad cansada, divertida y bastante más tierna de lo que quieren admitir. La conversación ligera nunca tapa el estancamiento: los dos amigos hacen reír justo porque saben que el día siguiente será igual.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Brian O'Halloran",
+			"character": "Dante",
+			"tmdbMovieId": 2292,
+			"tmdbPersonId": 23629,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Anderson",
+			"character": "Randal",
+			"tmdbMovieId": 2292,
+			"tmdbPersonId": 23630,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marilyn Ghigliotti",
+			"character": "Veronica",
+			"tmdbMovieId": 2292,
+			"tmdbPersonId": 23631,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lisa Spoonauer",
+			"character": "Caitlin",
+			"tmdbMovieId": 2292,
+			"tmdbPersonId": 23632,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Mewes",
+			"character": "Jay",
+			"tmdbMovieId": 2292,
+			"tmdbPersonId": 19302,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

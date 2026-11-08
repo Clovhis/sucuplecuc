@@ -45,5 +45,21 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "CA, CN, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jackie Chan",
+			"character": "Mr. Han",
+			"tmdbMovieId": 1011477,
+			"tmdbPersonId": 18897,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joshua Jackson",
+			"character": "Victor Lipani",
+			"tmdbMovieId": 1011477,
+			"tmdbPersonId": 11866,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

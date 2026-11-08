@@ -64,5 +64,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Al Pacino",
+			"character": "Don Michael Corleone",
+			"tmdbMovieId": 240,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Duvall",
+			"character": "Tom Hagen",
+			"tmdbMovieId": 240,
+			"tmdbPersonId": 3087,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Keaton",
+			"character": "Kay Corleone",
+			"tmdbMovieId": 240,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

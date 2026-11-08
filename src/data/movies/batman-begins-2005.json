@@ -52,5 +52,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Christian Bale",
+			"character": "Bruce Wayne / Batman",
+			"tmdbMovieId": 272,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Caine",
+			"character": "Alfred",
+			"tmdbMovieId": 272,
+			"tmdbPersonId": 3895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liam Neeson",
+			"character": "Ducard",
+			"tmdbMovieId": 272,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

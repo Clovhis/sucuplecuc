@@ -20,7 +20,10 @@
   "screenshots": [],
   "trailerYoutubeId": "-4ZVFspRn3M",
   "releasePlatform": "Apple TV",
-  "releasePlatforms": ["Apple TV", "Prime Video"],
+  "releasePlatforms": [
+    "Apple TV",
+    "Prime Video"
+  ],
   "director": "Andrew Bernstein",
   "mainCast": [
     "John Krasinski",
@@ -35,28 +38,65 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Jack Ryan de Tom Clancy: Guerra Encubierta se mueve como capítulo grande de serie: John Krasinski aporta oficio, pero Andrew Bernstein no le da identidad propia.",
-			"whatToExpect": "Jack abandona el escritorio para seguir una operación que une dinero, política y una amenaza contra Estados Unidos.",
-			"pace": "Avanza por pistas financieras, reuniones y escenas de acción con el impulso regular de una temporada.",
-			"intensity": "El peligro es geopolítico, aunque los personajes rara vez tienen tiempo para dejar una marca.",
-			"practicalContext": "Funciona mejor si venís de la serie y querés continuidad, no como película de espionaje independiente.",
-			"forFansOf": "Si seguís a John Krasinski como Jack Ryan y disfrutás thrillers de conspiración televisiva.",
-			"notForYouIf": "No es para vos si buscás una aventura cerrada, villanos memorables o un estilo más arriesgado."
-		},
-		"becauseYouLiked": [
-		"rio-de-sangre-2026",
-		"drive-2011"
-	],
-	"related": [
-		"apex-2026",
-		"mayday-2026",
-		"zona-de-riesgo-2025",
-		"el-fuego-de-la-venganza-2004"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Jack Ryan de Tom Clancy: Guerra Encubierta se mueve como capítulo grande de serie: John Krasinski aporta oficio, pero Andrew Bernstein no le da identidad propia.",
+      "whatToExpect": "Jack abandona el escritorio para seguir una operación que une dinero, política y una amenaza contra Estados Unidos.",
+      "pace": "Avanza por pistas financieras, reuniones y escenas de acción con el impulso regular de una temporada.",
+      "intensity": "El peligro es geopolítico, aunque los personajes rara vez tienen tiempo para dejar una marca.",
+      "practicalContext": "Funciona mejor si venís de la serie y querés continuidad, no como película de espionaje independiente.",
+      "forFansOf": "Si seguís a John Krasinski como Jack Ryan y disfrutás thrillers de conspiración televisiva.",
+      "notForYouIf": "No es para vos si buscás una aventura cerrada, villanos memorables o un estilo más arriesgado."
+    },
+    "becauseYouLiked": [
+      "rio-de-sangre-2026",
+      "drive-2011"
+    ],
+    "related": [
+      "apex-2026",
+      "mayday-2026",
+      "zona-de-riesgo-2025",
+      "el-fuego-de-la-venganza-2004"
+    ]
+  },
   "isPremiere": true,
   "premiereLabel": "ESTRENO",
-  "review": "Guerra Encubierta funciona mejor cuando acepta que es una extension musculosa de la serie y no una reinvencion del espionaje. John Krasinski vuelve comodo al personaje, Wendell Pierce suma oficio y las escenas de accion tienen la prolijidad esperable de Prime Video.\n\nTambien se le nota el limite: muchas vueltas suenan a episodio largo, con villanos y conspiraciones que pasan mas rapido de lo que pesan. Para quienes vienen de la serie cumple sin hacer papelon; para quien busque una pelicula de accion con identidad propia, queda bastante justa."
+  "review": "Guerra Encubierta funciona mejor cuando acepta que es una extension musculosa de la serie y no una reinvencion del espionaje. John Krasinski vuelve comodo al personaje, Wendell Pierce suma oficio y las escenas de accion tienen la prolijidad esperable de Prime Video.\n\nTambien se le nota el limite: muchas vueltas suenan a episodio largo, con villanos y conspiraciones que pasan mas rapido de lo que pesan. Para quienes vienen de la serie cumple sin hacer papelon; para quien busque una pelicula de accion con identidad propia, queda bastante justa.",
+  "castCharacters": [
+    {
+      "actor": "John Krasinski",
+      "character": "Jack Ryan",
+      "tmdbMovieId": 1380291,
+      "tmdbPersonId": 17697,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Wendell Pierce",
+      "character": "James Greer",
+      "tmdbMovieId": 1380291,
+      "tmdbPersonId": 17859,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Michael Kelly",
+      "character": "Mike November",
+      "tmdbMovieId": 1380291,
+      "tmdbPersonId": 50217,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Sienna Miller",
+      "character": "Emma Marlow",
+      "tmdbMovieId": 1380291,
+      "tmdbPersonId": 23459,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Betty Gabriel",
+      "character": "Elizabeth Wright",
+      "tmdbMovieId": 1380291,
+      "tmdbPersonId": 1660452,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

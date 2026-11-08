@@ -69,5 +69,28 @@
     }
   },
   "review": "Huston toma la búsqueda de oro como un laboratorio de desconfianza: cuanto más valioso parece el hallazgo, más se deforman las conversaciones entre los tres buscadores. Bogart rompe su imagen de aventurero invulnerable con una actuación nerviosa, mientras Walter Huston sostiene la película desde la experiencia y el humor seco. La aventura cambia de escala cuando el grupo deja de discutir el terreno y empieza a medirse entre sí. Es un relato de codicia sin moraleja fácil.",
-  "runtimeMinutes": 126
+  "runtimeMinutes": 126,
+  "castCharacters": [
+    {
+      "actor": "Humphrey Bogart",
+      "character": "Fred C. Dobbs",
+      "tmdbMovieId": 3090,
+      "tmdbPersonId": 4110,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Walter Huston",
+      "character": "Howard",
+      "tmdbMovieId": 3090,
+      "tmdbPersonId": 19020,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Tim Holt",
+      "character": "Bob Curtin",
+      "tmdbMovieId": 3090,
+      "tmdbPersonId": 14517,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

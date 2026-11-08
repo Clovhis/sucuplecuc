@@ -50,5 +50,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jason Momoa",
+			"character": "Arthur",
+			"tmdbMovieId": 572802,
+			"tmdbPersonId": 117642,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick Wilson",
+			"character": "Orm",
+			"tmdbMovieId": 572802,
+			"tmdbPersonId": 17178,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Yahya Abdul-Mateen II",
+			"character": "Black Manta",
+			"tmdbMovieId": 572802,
+			"tmdbPersonId": 1639847,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,18 +47,55 @@
 			"forFansOf": "David Lynch, el noir surrealista y las películas donde la identidad se vuelve un espacio peligroso.",
 			"notForYouIf": "Necesitás una trama lineal, respuestas únicas o un protagonista que sepa qué le está pasando."
 		},
-	"becauseYouLiked": [
-		"cabeza-borradora-1977",
-		"la-escalera-de-jacob-1990"
-	],
-	"related": [
-		"the-silence-of-the-lambs-1991",
-		"santa-sangre-1989",
-		"llega-de-noche-2017",
-		"inseparables-1988"
-	]
-},
+		"becauseYouLiked": [
+			"cabeza-borradora-1977",
+			"la-escalera-de-jacob-1990"
+		],
+		"related": [
+			"the-silence-of-the-lambs-1991",
+			"santa-sangre-1989",
+			"llega-de-noche-2017",
+			"inseparables-1988"
+		]
+	},
 	"review": "David Lynch cuenta los celos y la culpa como una fuga de identidad en la que ninguna explicación termina de cerrar. El sonido industrial, los interiores negros y las carreteras nocturnas crean una atmósfera que importa tanto como la trama. Bill Pullman y Patricia Arquette actúan como si los personajes fueran versiones inestables de sí mismos. Lynch no ofrece una llave única para el relato; su montaje convierte la culpa en una forma de perderse dentro de uno mismo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Patricia Arquette",
+			"character": "Renee Madison / Alice Wakefield",
+			"tmdbMovieId": 638,
+			"tmdbPersonId": 4687,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Pullman",
+			"character": "Fred Madison",
+			"tmdbMovieId": 638,
+			"tmdbPersonId": 8984,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Balthazar Getty",
+			"character": "Pete Dayton",
+			"tmdbMovieId": 638,
+			"tmdbPersonId": 9296,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Blake",
+			"character": "Mystery Man",
+			"tmdbMovieId": 638,
+			"tmdbPersonId": 9287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Loggia",
+			"character": "Mr. Eddy / Dick Laurent",
+			"tmdbMovieId": 638,
+			"tmdbPersonId": 1162,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

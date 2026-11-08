@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jesse Plemons",
+			"character": "Jake",
+			"tmdbMovieId": 500840,
+			"tmdbPersonId": 88124,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessie Buckley",
+			"character": "Young Woman",
+			"tmdbMovieId": 500840,
+			"tmdbPersonId": 1498158,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

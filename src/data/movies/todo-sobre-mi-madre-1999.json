@@ -69,5 +69,28 @@
 		]
 	},
 	"review": "Pedro Almodóvar convierte la búsqueda de un padre ausente en una película sobre las mujeres que se vuelven sostén cuando la vida pega un giro seco. Cecilia Roth no declama el duelo: lo lleva en la mirada y en la decisión de volver a empezar, mientras Marisa Paredes y Penélope Cruz abren registros distintos dentro de una trama que se mueve entre la sordidez y la ternura. La puesta vuelve Madrid, Barcelona y el teatro parte de la memoria de Manuela, y la cinefilia se integra al corazón del relato. El melodrama tiene un pulso intenso, pero también una claridad emocional que deja espacio para la contradicción y el humor.",
-	"catalogAddedAt": "2026-11-06"
+	"catalogAddedAt": "2026-11-06",
+	"castCharacters": [
+		{
+			"actor": "Cecilia Roth",
+			"character": "Manuela",
+			"tmdbMovieId": 99,
+			"tmdbPersonId": 953,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marisa Paredes",
+			"character": "Huma Rojo",
+			"tmdbMovieId": 99,
+			"tmdbPersonId": 954,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Penélope Cruz",
+			"character": "Rosa",
+			"tmdbMovieId": 99,
+			"tmdbPersonId": 955,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -28,27 +28,50 @@
 	"runtimeMinutes": 93,
 	"review": "Un cuento chino parece una película mínima, pero está armada con una sensibilidad muy fina para el duelo, la rutina y los encuentros improbables. Sebastián Borensztein entiende que la gracia no está en exagerar el choque cultural, sino en ver cómo dos soledades muy distintas empiezan a correrse apenas un poco. Ricardo Darín trabaja desde la rigidez y el malhumor, sin hacerse simpático de entrada, y eso le da más valor a cada pequeño cambio. Termina siendo cálida sin volverse empalagosa.",
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Un cuento chino es una comedia porteña pequeña y muy precisa: Sebastián Borensztein hace que Darín reciba a Jun de a milímetros, y ahí está toda la gracia.",
-		"whatToExpect": "Dos hombres aislados, un idioma que no alcanza y una convivencia incómoda que evita la lección fácil.",
-		"pace": "Va al hueso: en 93 minutos deja que los silencios y los gestos hagan el trabajo.",
-		"intensity": "Baja de volumen, pero no liviana: debajo del humor hay duelo y una soledad bastante reconocible.",
-		"practicalContext": "Ideal para una noche tranquila; es breve, ATP y pide mirar las reacciones antes que esperar grandes golpes de efecto.",
-		"forFansOf": "Las comedias argentinas de personajes, el Darín menos canchero y las historias donde la ternura se gana.",
-		"notForYouIf": "Buscás carcajadas constantes, romance o un choque cultural convertido en chiste grueso."
+		"tenSecondTake": {
+			"verdict": "Un cuento chino es una comedia porteña pequeña y muy precisa: Sebastián Borensztein hace que Darín reciba a Jun de a milímetros, y ahí está toda la gracia.",
+			"whatToExpect": "Dos hombres aislados, un idioma que no alcanza y una convivencia incómoda que evita la lección fácil.",
+			"pace": "Va al hueso: en 93 minutos deja que los silencios y los gestos hagan el trabajo.",
+			"intensity": "Baja de volumen, pero no liviana: debajo del humor hay duelo y una soledad bastante reconocible.",
+			"practicalContext": "Ideal para una noche tranquila; es breve, ATP y pide mirar las reacciones antes que esperar grandes golpes de efecto.",
+			"forFansOf": "Las comedias argentinas de personajes, el Darín menos canchero y las historias donde la ternura se gana.",
+			"notForYouIf": "Buscás carcajadas constantes, romance o un choque cultural convertido en chiste grueso."
+		},
+		"becauseYouLiked": [
+			"la-odisea-de-los-giles-2019",
+			"los-justos-2024"
+		],
+		"related": [
+			"medianeras-2011",
+			"el-ciudadano-ilustre-2016",
+			"mi-obra-maestra-2018",
+			"el-abrazo-partido-2004"
+		]
 	},
-	"becauseYouLiked": [
-		"la-odisea-de-los-giles-2019",
-		"los-justos-2024"
-	],
-	"related": [
-		"medianeras-2011",
-		"el-ciudadano-ilustre-2016",
-		"mi-obra-maestra-2018",
-		"el-abrazo-partido-2004"
-	]
-},
 	"synopsis": "Roberto, un ferretero porteño encerrado en su rutina y en su malhumor, se cruza por azar con Jun, un inmigrante chino recién llegado a Buenos Aires tras una tragedia absurda. Lo que empieza como un problema doméstico termina abriendo una historia de duelo, hospitalidad y afectos inesperados.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Roberto",
+			"tmdbMovieId": 67884,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ignacio Huang",
+			"character": "Jun",
+			"tmdbMovieId": 67884,
+			"tmdbPersonId": 549601,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Muriel Santa Ana",
+			"character": "Mari",
+			"tmdbMovieId": 67884,
+			"tmdbPersonId": 549598,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

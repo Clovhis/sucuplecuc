@@ -37,7 +37,11 @@
 		"tenSecondTake": {
 			"verdict": "Steven Spielberg filma la venganza posterior a Múnich como una misión que desgasta la conciencia: Eric Bana sostiene un thriller oscuro donde ninguna muerte cierra la herida.",
 			"whatToExpect": "Operaciones clandestinas, objetivos dispersos, discusiones dentro del grupo y una cadena de asesinatos que vuelve cada victoria más difícil de justificar.",
-			"pace": "Avanza por misiones y pausas de duda; el metraje largo deja que la repetición de la violencia transforme el suspenso en agotamiento moral.",			"intensity": "La intensidad es física y psicológica, con explosiones y vigilancia, pero el verdadero peligro está en qué le hace la misión a Avner.",			"practicalContext": "Sus 164 minutos requieren una sesión concentrada y ánimo para un drama bélico incómodo; no es una aventura de espías de recompensa fácil.",			"forFansOf": "Para quienes disfrutan a Spielberg en registro sombrío, thrillers políticos y relatos de venganza que cuestionan sus propias justificaciones.",			"notForYouIf": "No te va a gustar si buscás héroes seguros, acción sin consecuencias o una película histórica que separe con comodidad justicia y revancha."
+			"pace": "Avanza por misiones y pausas de duda; el metraje largo deja que la repetición de la violencia transforme el suspenso en agotamiento moral.",
+			"intensity": "La intensidad es física y psicológica, con explosiones y vigilancia, pero el verdadero peligro está en qué le hace la misión a Avner.",
+			"practicalContext": "Sus 164 minutos requieren una sesión concentrada y ánimo para un drama bélico incómodo; no es una aventura de espías de recompensa fácil.",
+			"forFansOf": "Para quienes disfrutan a Spielberg en registro sombrío, thrillers políticos y relatos de venganza que cuestionan sus propias justificaciones.",
+			"notForYouIf": "No te va a gustar si buscás héroes seguros, acción sin consecuencias o una película histórica que separe con comodidad justicia y revancha."
 		},
 		"becauseYouLiked": [
 			"duel-1971",
@@ -51,5 +55,42 @@
 		]
 	},
 	"review": "Steven Spielberg sigue a un grupo israelí encargado de matar a responsables del atentado de Múnich y rechaza convertir la venganza en una fantasía limpia. Eric Bana trabaja la culpa y el desgaste de Avner sin grandes discursos, mientras el elenco secundario hace creíble que cada operación deje una herida distinta. La dirección construye tensión con una precisión seca y no deja que los dilemas morales se resuelvan fácil. El ritmo es largo y oscuro, deliberadamente incómodo. Vale porque pregunta qué queda de uno después de obedecer una misión que parecía necesaria.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Eric Bana",
+			"character": "Avner",
+			"tmdbMovieId": 612,
+			"tmdbPersonId": 8783,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daniel Craig",
+			"character": "Steve",
+			"tmdbMovieId": 612,
+			"tmdbPersonId": 8784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ciarán Hinds",
+			"character": "Carl",
+			"tmdbMovieId": 612,
+			"tmdbPersonId": 8785,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mathieu Kassovitz",
+			"character": "Robert",
+			"tmdbMovieId": 612,
+			"tmdbPersonId": 2406,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hanns Zischler",
+			"character": "Hans",
+			"tmdbMovieId": 612,
+			"tmdbPersonId": 169,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -2,10 +2,10 @@ import type { HomeMovieRecord } from '../types/home-catalog';
 
 // Versioned transport only. The application still uses named records; repeated
 // cards and field names do not need to cross the network for every movie.
-const fields = ['slug', 'title', 'year', 'searchable', 'normalizedOriginalTitle', 'searchAliases', 'searchDirector', 'searchCast', 'releaseTimestamp', 'recentPremiere', 'score', 'url', 'posterUrl', 'meta', 'cast', 'platforms', 'genres', 'subgenres', 'primaryGenre'] as const;
-type WireValue = string | string[] | number | boolean | null;
+const fields = ['slug', 'title', 'year', 'searchable', 'normalizedOriginalTitle', 'searchAliases', 'searchDirector', 'searchCast', 'searchCharacters', 'releaseTimestamp', 'recentPremiere', 'score', 'url', 'posterUrl', 'meta', 'cast', 'platforms', 'genres', 'subgenres', 'primaryGenre'] as const;
+type WireValue = string | string[] | HomeMovieRecord['searchCharacters'] | number | boolean | null;
 export interface HomeSearchPayload {
-	version: 2;
+	version: 2 | 3;
 	cards: HomeMovieRecord['card'][];
 	movies: WireValue[][];
 }
@@ -20,15 +20,16 @@ export function encodeHomeSearchIndex(records: HomeMovieRecord[]): HomeSearchPay
 		if (cardId === undefined) { cardId = cards.length; cards.push(record.card); cardIds.set(key, cardId); }
 		return [...fields.map((field) => record[field]), cardId];
 	});
-	return { version: 2, cards, movies };
+	return { version: 3, cards, movies };
 }
 
 export function decodeHomeSearchIndex(payload: unknown): HomeMovieRecord[] {
 	// Read the first MVP format too: useful for saved snapshots and rolling caches.
 	if (Array.isArray(payload)) return payload as HomeMovieRecord[];
 	const data = payload as HomeSearchPayload;
-	if (data?.version !== 2 || !Array.isArray(data.cards) || !Array.isArray(data.movies)) throw new Error('Unsupported search index');
-	return data.movies.map((row) => {
+	if (![2, 3].includes(data?.version) || !Array.isArray(data.cards) || !Array.isArray(data.movies)) throw new Error('Unsupported search index');
+	return data.movies.map((sourceRow) => {
+		const row = data.version === 2 && Array.isArray(sourceRow) ? [...sourceRow.slice(0, 8), [], ...sourceRow.slice(8)] : sourceRow;
 		if (!Array.isArray(row) || row.length !== fields.length + 1) throw new Error('Invalid search index row');
 		const record = Object.fromEntries(fields.map((field, i) => [field, row[i]])) as unknown as HomeMovieRecord;
 		const cardId = row[fields.length];

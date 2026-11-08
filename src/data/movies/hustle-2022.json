@@ -56,5 +56,35 @@
 	"review": "Garra entiende que una película deportiva necesita trabajo antes que milagros. Sandler interpreta a Stanley Sugerman como un entrenador cansado que conoce el juego pero perdió el permiso para elegir, y Juancho Hernangómez le da a Bo una mezcla creíble de potencia y miedo. Los partidos están filmados con energía, pero el vínculo entre los dos es lo que sostiene el relato. La fórmula es conocida; la convicción del reparto la vuelve contagiosa.",
 	"runtimeMinutes": 117,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Stanley Sugerman",
+			"tmdbMovieId": 705861,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Queen Latifah",
+			"character": "Teresa Sugerman",
+			"tmdbMovieId": 705861,
+			"tmdbPersonId": 15758,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juancho Hernangómez",
+			"character": "Bo Cruz",
+			"tmdbMovieId": 705861,
+			"tmdbPersonId": 2822959,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Foster",
+			"character": "Vince Merrick",
+			"tmdbMovieId": 705861,
+			"tmdbPersonId": 11107,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

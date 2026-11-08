@@ -47,5 +47,28 @@
 	"audienceRating": "+9",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Helen Slater",
+			"character": "Supergirl / Linda Lee",
+			"tmdbMovieId": 9651,
+			"tmdbPersonId": 33488,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Faye Dunaway",
+			"character": "Selena",
+			"tmdbMovieId": 9651,
+			"tmdbPersonId": 6450,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter O'Toole",
+			"character": "Zaltar",
+			"tmdbMovieId": 9651,
+			"tmdbPersonId": 11390,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

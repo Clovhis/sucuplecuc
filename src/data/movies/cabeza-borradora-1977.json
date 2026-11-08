@@ -58,5 +58,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jack Nance",
+			"character": "Henry Spencer",
+			"tmdbMovieId": 985,
+			"tmdbPersonId": 6718,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlotte Stewart",
+			"character": "Mary X",
+			"tmdbMovieId": 985,
+			"tmdbPersonId": 14794,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Allen Joseph",
+			"character": "Mr. X",
+			"tmdbMovieId": 985,
+			"tmdbPersonId": 14795,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeanne Bates",
+			"character": "Mrs. X",
+			"tmdbMovieId": 985,
+			"tmdbPersonId": 14796,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

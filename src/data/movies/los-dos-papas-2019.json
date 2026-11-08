@@ -56,5 +56,35 @@
 	},
 	"review": "Los dos Papas convierte una discusión institucional en una película de actores, y la decisión le sienta bien. Jonathan Pryce le da a Bergoglio una energía frontal, hecha de humor y convicción, mientras Anthony Hopkins construye a Benedicto desde la reserva, la música y la incomodidad de quien sabe que el poder también pesa. Fernando Meirelles rodea el diálogo con flashbacks y momentos de ligereza que a veces simplifican demasiado la historia, pero el encuentro central tiene ritmo, humanidad y una química que no depende de caricaturas religiosas.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jonathan Pryce",
+			"character": "Jorge Bergoglio / Pope Francis",
+			"tmdbMovieId": 551332,
+			"tmdbPersonId": 378,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Joseph Ratzinger / Pope Benedict XVI",
+			"tmdbMovieId": 551332,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juan Minujín",
+			"character": "Young Jorge Bergoglio",
+			"tmdbMovieId": 551332,
+			"tmdbPersonId": 140538,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Gnecco",
+			"character": "Cardinal Hummes",
+			"tmdbMovieId": 551332,
+			"tmdbPersonId": 127248,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

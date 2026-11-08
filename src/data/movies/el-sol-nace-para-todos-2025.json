@@ -57,5 +57,21 @@
 		"Prime Video"
 	],
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Xin Zhilei",
+			"character": "Zeng Meiyun",
+			"tmdbMovieId": 1329673,
+			"tmdbPersonId": 1569934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zhang Songwen",
+			"character": "Wu Baoshu",
+			"tmdbMovieId": 1329673,
+			"tmdbPersonId": 1086250,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

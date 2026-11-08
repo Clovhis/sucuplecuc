@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ryan Reynolds",
+			"character": "Hal Jordan / Green Lantern",
+			"tmdbMovieId": 44912,
+			"tmdbPersonId": 10859,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Blake Lively",
+			"character": "Carol Ferris",
+			"tmdbMovieId": 44912,
+			"tmdbPersonId": 59175,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Sarsgaard",
+			"character": "Hector Hammond",
+			"tmdbMovieId": 44912,
+			"tmdbPersonId": 133,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

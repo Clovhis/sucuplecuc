@@ -40,19 +40,56 @@
 			"forFansOf": "Fans de Fast & Furious, de Jason Momoa en modo villano excéntrico y de las películas que confunden la gravedad con una sugerencia.",
 			"notForYouIf": "Buscás una trama completa, física realista o un cierre. Fast X está diseñada para continuar."
 		},
-	"becauseYouLiked": [
-		"fast-and-furious-6-2013",
-		"the-fate-of-the-furious-2017"
-	],
-	"related": [
-		"furious-7-2015",
-		"fast-five-2011",
-		"redada-asesina-the-raid-2011",
-		"the-fast-and-the-furious-2001"
-	]
-},
+		"becauseYouLiked": [
+			"fast-and-furious-6-2013",
+			"the-fate-of-the-furious-2017"
+		],
+		"related": [
+			"furious-7-2015",
+			"fast-five-2011",
+			"redada-asesina-the-raid-2011",
+			"the-fast-and-the-furious-2001"
+		]
+	},
 	"review": "A esta altura la saga ya es una caricatura de sí misma y Fast X decide abrazarlo sin pudor. La crítica habló de una película ridícula pero bastante autoconsciente, y ese es su mejor truco: Momoa aparece desatado, el tono juega con el absurdo y el fan service empuja fuerte. También está infladísima y varias cosas quedan colgando para la próxima. Si ya estás arriba de este tren imposible, el viaje entra mejor que a cualquiera que llegue de cero.",
 	"synopsis": "Dom y su familia quedan bajo ataque cuando reaparece un enemigo conectado con el golpe de Río que busca destruir todo lo que él construyó. La amenaza obliga al equipo a dividirse y correr por medio planeta para intentar mantenerse unido.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-04-23"
+	"reviewPublishedAt": "2026-04-23",
+	"castCharacters": [
+		{
+			"actor": "Vin Diesel",
+			"character": "Dominic Toretto",
+			"tmdbMovieId": 385687,
+			"tmdbPersonId": 12835,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Rodriguez",
+			"character": "Letty",
+			"tmdbMovieId": 385687,
+			"tmdbPersonId": 17647,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Momoa",
+			"character": "Dante",
+			"tmdbMovieId": 385687,
+			"tmdbPersonId": 117642,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tyrese Gibson",
+			"character": "Roman",
+			"tmdbMovieId": 385687,
+			"tmdbPersonId": 8169,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Cena",
+			"character": "Jakob",
+			"tmdbMovieId": 385687,
+			"tmdbPersonId": 56446,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

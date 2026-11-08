@@ -46,20 +46,57 @@
 			"notForYouIf": "No es para vos si evitás violencia animal, gore explícito o películas que confunden denuncia con provocación."
 		},
 		"becauseYouLiked": [
-		"tu-madre-se-ha-comido-a-mi-perro-1992",
-		"ichi-the-killer-2001"
-	],
-	"related": [
-		"saw-2004",
-		"planet-terror-2007",
-		"martires-2008",
-		"terrifier-2-2022"
-	]
-},
+			"tu-madre-se-ha-comido-a-mi-perro-1992",
+			"ichi-the-killer-2001"
+		],
+		"related": [
+			"saw-2004",
+			"planet-terror-2007",
+			"martires-2008",
+			"terrifier-2-2022"
+		]
+	},
 	"review": "Holocausto caníbal quiere denunciar el morbo de ciertos documentales y programas sensacionalistas, pero lo hace mediante una explotación que termina contradiciendo su propio discurso. Ruggero Deodato usa el material encontrado, los cambios de formato y la mirada del equipo de filmación para generar una incomodidad que anticipó recursos después muy usados. También hay violencia extrema, incluyendo maltrato animal real, que no se puede separar de la experiencia ni justificar como simple provocación. El elenco cumple dentro de una puesta áspera y el clima es eficaz, pero su valor histórico no alcanza para recomendarla livianamente. Es una obra polémica y difícil, no una diversión de terror.",
 	"synopsis": "Un profesor viaja al Amazonas para reconstruir la desaparición de un equipo documentalista y vuelve con unas filmaciones que revelan una violencia todavía más perturbadora de la que se imaginaba.",
 	"audienceRating": "+18",
 	"isPremiere": false,
 	"premiereLabel": "",
-	"reviewPublishedAt": "2026-05-26"
+	"reviewPublishedAt": "2026-05-26",
+	"castCharacters": [
+		{
+			"actor": "Robert Kerman",
+			"character": "Professor Harold Monroe",
+			"tmdbMovieId": 8689,
+			"tmdbPersonId": 55648,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Francesca Ciardi",
+			"character": "Faye Daniels",
+			"tmdbMovieId": 8689,
+			"tmdbPersonId": 55652,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Perry Pirkanen",
+			"character": "Jack Anders",
+			"tmdbMovieId": 8689,
+			"tmdbPersonId": 55649,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luca Barbareschi",
+			"character": "Mark Tomaso",
+			"tmdbMovieId": 8689,
+			"tmdbPersonId": 55650,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carl Gabriel Yorke",
+			"character": "Alan Yates",
+			"tmdbMovieId": 8689,
+			"tmdbPersonId": 55653,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

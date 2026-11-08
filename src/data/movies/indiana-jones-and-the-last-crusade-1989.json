@@ -52,5 +52,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Indiana Jones",
+			"tmdbMovieId": 89,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Connery",
+			"character": "Professor Henry Jones",
+			"tmdbMovieId": 89,
+			"tmdbPersonId": 738,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alison Doody",
+			"character": "Elsa",
+			"tmdbMovieId": 89,
+			"tmdbPersonId": 739,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

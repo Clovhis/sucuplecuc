@@ -53,5 +53,28 @@
     }
   },
   "review": "Frank Capra mira la bondad de George Bailey sin volverla ingenua: entiende que cuidar a los demás también puede sentirse como una deuda que nunca termina. James Stewart sostiene esa mezcla de generosidad, bronca y cansancio; Donna Reed le da a Mary una presencia que excede el papel de sostén familiar. El giro fantástico ordena el relato, pero lo que permanece es el retrato de un pueblo que se conoce demasiado bien. El tono sentimental está al frente, y la convicción de Stewart lo mantiene vivo.",
-  "runtimeMinutes": 130
+  "runtimeMinutes": 130,
+  "castCharacters": [
+    {
+      "actor": "James Stewart",
+      "character": "George Bailey",
+      "tmdbMovieId": 1585,
+      "tmdbPersonId": 854,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Donna Reed",
+      "character": "Mary Hatch",
+      "tmdbMovieId": 1585,
+      "tmdbPersonId": 17752,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Lionel Barrymore",
+      "character": "Mr. Potter",
+      "tmdbMovieId": 1585,
+      "tmdbPersonId": 17753,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

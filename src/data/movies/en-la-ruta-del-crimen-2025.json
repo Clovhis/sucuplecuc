@@ -53,5 +53,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 83,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Aaron Eckhart",
+			"character": "Frank Bennett",
+			"tmdbMovieId": 1293162,
+			"tmdbPersonId": 6383,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Devon Sawa",
+			"character": "Jones",
+			"tmdbMovieId": 1293162,
+			"tmdbPersonId": 50398,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -44,18 +44,55 @@
 			"forFansOf": "Si te gustan comedias de roles invertidos, sátiras laborales y Sacha Baron Cohen en modo torpe.",
 			"notForYouIf": "No es para vos si buscás humor venenoso, consecuencias incómodas o una inversión que no se subraye."
 		},
-	"becauseYouLiked": [
-		"la-invitacion-2026",
-		"la-mascara-1994"
-	],
-	"related": [
-		"peggy-sue-se-caso-1986",
-		"eternity-2026",
-		"solo-mio-2026",
-		"mentiroso-mentiroso-1997"
-	]
-},
+		"becauseYouLiked": [
+			"la-invitacion-2026",
+			"la-mascara-1994"
+		],
+		"related": [
+			"peggy-sue-se-caso-1986",
+			"eternity-2026",
+			"solo-mio-2026",
+			"mentiroso-mentiroso-1997"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Las damas primero tiene elenco para morder bastante mas fuerte, pero se queda explicando la gracia como si estuviera convencida de haber descubierto una bomba satirica. La inversion de roles da para incomodar, reirse y afilar el comentario, pero aca muchas escenas llegan tarde y con el chiste subrayado.\n\nSacha Baron Cohen y Rosamund Pike levantan algun cruce, sobre todo cuando la pelicula deja de sermonear y se permite jugar. El problema es que eso pasa poco. Termina siendo una comedia con tema grande, ejecucion tibia y menos veneno del que prometia."
+	"review": "Las damas primero tiene elenco para morder bastante mas fuerte, pero se queda explicando la gracia como si estuviera convencida de haber descubierto una bomba satirica. La inversion de roles da para incomodar, reirse y afilar el comentario, pero aca muchas escenas llegan tarde y con el chiste subrayado.\n\nSacha Baron Cohen y Rosamund Pike levantan algun cruce, sobre todo cuando la pelicula deja de sermonear y se permite jugar. El problema es que eso pasa poco. Termina siendo una comedia con tema grande, ejecucion tibia y menos veneno del que prometia.",
+	"castCharacters": [
+		{
+			"actor": "Sacha Baron Cohen",
+			"character": "Damien Sachs",
+			"tmdbMovieId": 1368881,
+			"tmdbPersonId": 6730,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rosamund Pike",
+			"character": "Alex Fox",
+			"tmdbMovieId": 1368881,
+			"tmdbPersonId": 10882,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Davis",
+			"character": "Chris Black",
+			"tmdbMovieId": 1368881,
+			"tmdbPersonId": 1464254,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Mortimer",
+			"character": "Sunny Black",
+			"tmdbMovieId": 1368881,
+			"tmdbPersonId": 1246,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles Dance",
+			"character": "Fred Powell",
+			"tmdbMovieId": 1368881,
+			"tmdbPersonId": 4391,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

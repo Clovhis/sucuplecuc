@@ -8,7 +8,10 @@
 	"reviewPublishedAt": "2026-09-11",
 	"audienceRating": "+13",
 	"category": "Comedia negra",
-	"genres": ["Comedia", "Suspenso"],
+	"genres": [
+		"Comedia",
+		"Suspenso"
+	],
 	"subgenres": [],
 	"country": "AR",
 	"isArgentinian": true,
@@ -17,7 +20,11 @@
 	"trailerYoutubeId": "dMArEWBJlPg",
 	"releasePlatform": "Flow",
 	"director": "Néstor Montalbano",
-	"mainCast": ["Diego Capusotto", "Carola Reyna", "Alejandra Flechner"],
+	"mainCast": [
+		"Diego Capusotto",
+		"Carola Reyna",
+		"Alejandra Flechner"
+	],
 	"productionCompany": "Aleph Cine",
 	"cinepostaScore": 5,
 	"runtimeMinutes": 95,
@@ -36,8 +43,37 @@
 			"forFansOf": "Si te gustan operetas criollas, disfraces, policiales de campo y Diego Capusotto en modo elástico.",
 			"notForYouIf": "No es para vos si buscás realismo, un misterio de reglas firmes o una comedia que baje el volumen."
 		},
-		"becauseYouLiked": ["pistolero-2019"],
-		"related": ["fargo-secuestro-voluntario-1996", "las-corrientes-2025", "el-club-2015"]
+		"becauseYouLiked": [
+			"pistolero-2019"
+		],
+		"related": [
+			"fargo-secuestro-voluntario-1996",
+			"las-corrientes-2025",
+			"el-club-2015"
+		]
 	},
-	"review": "Las corredoras se mete en un campo argentino de opereta y lo llena de dobles, disfraces y pequeñas conspiraciones. Diego Capusotto juega con la elasticidad de sus personajes, mientras Carola Reyna y Alejandra Flechner sostienen el corazón de una historia que mezcla trámite burocrático, melodrama y policial. Néstor Montalbano filma con cariño por el cine de género y una voluntad deliberada de exagerar los gestos. La trama podría podar alguna vuelta, pero la invención visual y el humor raro le dan una identidad propia."
+	"review": "Las corredoras se mete en un campo argentino de opereta y lo llena de dobles, disfraces y pequeñas conspiraciones. Diego Capusotto juega con la elasticidad de sus personajes, mientras Carola Reyna y Alejandra Flechner sostienen el corazón de una historia que mezcla trámite burocrático, melodrama y policial. Néstor Montalbano filma con cariño por el cine de género y una voluntad deliberada de exagerar los gestos. La trama podría podar alguna vuelta, pero la invención visual y el humor raro le dan una identidad propia.",
+	"castCharacters": [
+		{
+			"actor": "Diego Capusotto",
+			"character": "Alejandra / Gonzalo / \"Mirko\"",
+			"tmdbMovieId": 1249454,
+			"tmdbPersonId": 1001045,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carola Reyna",
+			"character": "Mabel Rosello",
+			"tmdbMovieId": 1249454,
+			"tmdbPersonId": 1482609,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alejandra Flechner",
+			"character": "Teresa",
+			"tmdbMovieId": 1249454,
+			"tmdbPersonId": 239252,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

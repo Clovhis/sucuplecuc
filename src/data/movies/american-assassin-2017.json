@@ -8,7 +8,11 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+16",
   "category": "Accion",
-  "genres": ["Accion", "Thriller", "Crimen"],
+  "genres": [
+    "Accion",
+    "Thriller",
+    "Crimen"
+  ],
   "subgenres": [],
   "country": "US",
   "isArgentinian": false,
@@ -17,33 +21,70 @@
   "trailerYoutubeId": "R-oBx9Pr69s",
   "releasePlatform": "Netflix",
   "director": "Michael Cuesta",
-  "mainCast": ["Dylan O'Brien", "Michael Keaton", "Taylor Kitsch", "Sanaa Lathan"],
+  "mainCast": [
+    "Dylan O'Brien",
+    "Michael Keaton",
+    "Taylor Kitsch",
+    "Sanaa Lathan"
+  ],
   "productionCompany": "CBS Films, Lionsgate, eOne Films",
   "cinepostaScore": 5,
   "runtimeMinutes": 112,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "American Assassin arma a su agente desde la pérdida y la bronca; Michael Cuesta filma peleas con dureza aunque Dylan O'Brien termina dentro de un thriller bastante conocido.",
-			"whatToExpect": "Un joven reclutado por la CIA, un instructor de Michael Keaton y una amenaza nuclear que empuja la venganza hacia el oficio.",
-			"pace": "Sus 112 minutos avanzan por entrenamiento, infiltración y golpes con pocas pausas para mirar debajo del procedimiento.",
-			"intensity": "Alta y física, con tensión de espías más ligada al cuerpo que a la estrategia geopolítica.",
-			"practicalContext": "Funciona como noche de acción directa; no hace falta contexto de saga, pero sí tolerancia a villanos de manual.",
-			"forFansOf": "Los thrillers de reclutas, Michael Keaton como mentor áspero y las peleas filmadas sin demasiado glamour.",
-			"notForYouIf": "Buscás política compleja, un héroe menos impulsivo o una operación que se resuelva con inteligencia antes que explosiones."
-		},
-		"becauseYouLiked": [
-		"furious-7-2015",
-		"fast-and-furious-6-2013"
-	],
-	"related": [
-		"fast-five-2011",
-		"una-noche-para-sobrevivir-2015",
-		"redada-asesina-2-2014",
-		"the-fast-and-the-furious-2001"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "American Assassin arma a su agente desde la pérdida y la bronca; Michael Cuesta filma peleas con dureza aunque Dylan O'Brien termina dentro de un thriller bastante conocido.",
+      "whatToExpect": "Un joven reclutado por la CIA, un instructor de Michael Keaton y una amenaza nuclear que empuja la venganza hacia el oficio.",
+      "pace": "Sus 112 minutos avanzan por entrenamiento, infiltración y golpes con pocas pausas para mirar debajo del procedimiento.",
+      "intensity": "Alta y física, con tensión de espías más ligada al cuerpo que a la estrategia geopolítica.",
+      "practicalContext": "Funciona como noche de acción directa; no hace falta contexto de saga, pero sí tolerancia a villanos de manual.",
+      "forFansOf": "Los thrillers de reclutas, Michael Keaton como mentor áspero y las peleas filmadas sin demasiado glamour.",
+      "notForYouIf": "Buscás política compleja, un héroe menos impulsivo o una operación que se resuelva con inteligencia antes que explosiones."
+    },
+    "becauseYouLiked": [
+      "furious-7-2015",
+      "fast-and-furious-6-2013"
+    ],
+    "related": [
+      "fast-five-2011",
+      "una-noche-para-sobrevivir-2015",
+      "redada-asesina-2-2014",
+      "the-fast-and-the-furious-2001"
+    ]
+  },
   "review": "American Assassin arma su héroe desde la bronca y la pérdida, y durante un rato esa energía le da una urgencia distinta al típico recluta de operaciones especiales. Dylan O’Brien funciona como un agente todavía demasiado impulsivo, mientras Michael Keaton disfruta el rol del instructor que conoce todos los costos del oficio. Michael Cuesta filma las peleas con dureza y mantiene el movimiento, aunque el argumento cae en villanos de manual y decisiones geopolíticas sin demasiada elaboración.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Dylan O'Brien",
+      "character": "Mitch Rapp",
+      "tmdbMovieId": 415842,
+      "tmdbPersonId": 527393,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Michael Keaton",
+      "character": "Stan Hurley",
+      "tmdbMovieId": 415842,
+      "tmdbPersonId": 2232,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Taylor Kitsch",
+      "character": "'Ghost'",
+      "tmdbMovieId": 415842,
+      "tmdbPersonId": 60900,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Sanaa Lathan",
+      "character": "Irene Kennedy",
+      "tmdbMovieId": 415842,
+      "tmdbPersonId": 5411,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

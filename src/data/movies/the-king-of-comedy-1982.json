@@ -33,15 +33,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "El rey de la comedia es una sátira venenosa donde Martin Scorsese convierte la ambición de Robert De Niro en una amenaza incómoda.",
-		"whatToExpect": "Rupert Pupkin persigue un lugar en televisión, confunde insistencia con talento y arrastra a Jerry Lewis a una fantasía cada vez más peligrosa.",
-		"pace": "Se mueve entre conversaciones incómodas, fantasías perfectamente presentadas y escaladas de insistencia que van cerrando la trampa.",
-		"intensity": "No necesita violencia constante: la vergüenza, la obsesión y la posibilidad de que Pupkin consiga lo que quiere cargan cada escena.",
-		"practicalContext": "Con 109 minutos, es una comedia negra compacta para mirar con atención a los gestos y no sólo esperar el remate.",
-		"forFansOf": "Te va a gustar si te atraen sátiras de fama, protagonistas desagradables y el Scorsese que filma la humillación sin subrayarla.",
-		"notForYouIf": "Quizás no sea para vos si necesitás héroes simpáticos, chistes cálidos o una celebración limpia del sueño televisivo."
-	},
+		"tenSecondTake": {
+			"verdict": "El rey de la comedia es una sátira venenosa donde Martin Scorsese convierte la ambición de Robert De Niro en una amenaza incómoda.",
+			"whatToExpect": "Rupert Pupkin persigue un lugar en televisión, confunde insistencia con talento y arrastra a Jerry Lewis a una fantasía cada vez más peligrosa.",
+			"pace": "Se mueve entre conversaciones incómodas, fantasías perfectamente presentadas y escaladas de insistencia que van cerrando la trampa.",
+			"intensity": "No necesita violencia constante: la vergüenza, la obsesión y la posibilidad de que Pupkin consiga lo que quiere cargan cada escena.",
+			"practicalContext": "Con 109 minutos, es una comedia negra compacta para mirar con atención a los gestos y no sólo esperar el remate.",
+			"forFansOf": "Te va a gustar si te atraen sátiras de fama, protagonistas desagradables y el Scorsese que filma la humillación sin subrayarla.",
+			"notForYouIf": "Quizás no sea para vos si necesitás héroes simpáticos, chistes cálidos o una celebración limpia del sueño televisivo."
+		},
 		"becauseYouLiked": [
 			"after-hours-1985",
 			"cape-fear-1991"
@@ -55,5 +55,42 @@
 	},
 	"review": "El rey de la comedia sigue a Rupert Pupkin, un aspirante a humorista convencido de que merece un lugar en la televisión, aunque su ídolo y el mundo entero lo ignoren. Martin Scorsese filma sus fantasías con la misma normalidad que la realidad, de modo que la vergüenza llega antes de que uno sepa dónde está parado. Robert De Niro construye a Pupkin como un tipo patético, tenaz e inquietante, frente a un Jerry Lewis perfecto como estrella cansada. Es una comedia venenosa sobre fama y humillación que cada año parece más actual.",
 	"runtimeMinutes": 109,
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Rupert Pupkin",
+			"tmdbMovieId": 262,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jerry Lewis",
+			"character": "Jerry Langford",
+			"tmdbMovieId": 262,
+			"tmdbPersonId": 3663,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diahnne Abbott",
+			"character": "Rita",
+			"tmdbMovieId": 262,
+			"tmdbPersonId": 1041,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sandra Bernhard",
+			"character": "Masha",
+			"tmdbMovieId": 262,
+			"tmdbPersonId": 3664,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shelley Hack",
+			"character": "Cathy Long",
+			"tmdbMovieId": 262,
+			"tmdbPersonId": 3665,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -55,5 +55,35 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-08-24",
 	"runtimeMinutes": 112,
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Paul",
+			"tmdbMovieId": 23210,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stockard Channing",
+			"character": "Ouisa",
+			"tmdbMovieId": 23210,
+			"tmdbPersonId": 8893,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Donald Sutherland",
+			"character": "Flan",
+			"tmdbMovieId": 23210,
+			"tmdbPersonId": 55636,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian McKellen",
+			"character": "Geoffrey",
+			"tmdbMovieId": 23210,
+			"tmdbPersonId": 1327,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

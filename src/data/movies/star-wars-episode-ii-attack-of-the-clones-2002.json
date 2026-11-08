@@ -37,7 +37,7 @@
 			"forFansOf": "Puede interesarte si te atraen las investigaciones Jedi, los mundos alienígenas y las películas de Star Wars que muestran cómo una guerra se arma antes de que alguien la declare.",
 			"notForYouIf": "Quizás no sea para vos si buscás romance naturalista, diálogos sutiles o una película que distribuya su tiempo de forma pareja. El espectáculo y la rigidez conviven todo el viaje."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"star-wars-episode-vii-the-force-awakens-2015",
 			"e-t-the-extra-terrestrial-1982"
 		],
@@ -52,5 +52,28 @@
 	"synopsis": "Diez años después de Naboo, Obi-Wan investiga un atentado contra Padmé mientras Anakin queda a cargo de protegerla; entre ambos crece un romance que complica el destino de la galaxia.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Hayden Christensen",
+			"character": "Anakin Skywalker",
+			"tmdbMovieId": 1894,
+			"tmdbPersonId": 17244,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ewan McGregor",
+			"character": "Obi-Wan Kenobi",
+			"tmdbMovieId": 1894,
+			"tmdbPersonId": 3061,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Natalie Portman",
+			"character": "Padmé Amidala",
+			"tmdbMovieId": 1894,
+			"tmdbPersonId": 524,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

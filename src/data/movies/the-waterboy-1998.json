@@ -33,15 +33,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "El aguador convierte la timidez de Adam Sandler en fuerza de cuento deportivo; Frank Coraci lo rodea de una Kathy Bates que entiende el exceso.",
-		"whatToExpect": "Bobby empieza llevando agua y descubre que su furia contenida puede cambiar a un equipo universitario que viene perdiendo todo.",
-		"pace": "Alterna entrenamientos, partidos y sermones maternos con una estructura de ascenso deportivo que no guarda demasiadas sorpresas.",
-		"intensity": "Los golpes son absurdos y la presión se resuelve como chiste; la película busca más entusiasmo de underdog que peligro.",
-		"practicalContext": "Dura 90 minutos y entra como comedia deportiva liviana, especialmente si te divierte el Sandler de personajes torpes y voces raras.",
-		"forFansOf": "Te va a gustar si disfrutás equipos improbables, madres desmedidas y películas que convierten una inseguridad en superpoder.",
-		"notForYouIf": "No es para vos si buscás deporte realista, humor sutil o una evolución de personaje menos apoyada en la exageración."
-	},
+		"tenSecondTake": {
+			"verdict": "El aguador convierte la timidez de Adam Sandler en fuerza de cuento deportivo; Frank Coraci lo rodea de una Kathy Bates que entiende el exceso.",
+			"whatToExpect": "Bobby empieza llevando agua y descubre que su furia contenida puede cambiar a un equipo universitario que viene perdiendo todo.",
+			"pace": "Alterna entrenamientos, partidos y sermones maternos con una estructura de ascenso deportivo que no guarda demasiadas sorpresas.",
+			"intensity": "Los golpes son absurdos y la presión se resuelve como chiste; la película busca más entusiasmo de underdog que peligro.",
+			"practicalContext": "Dura 90 minutos y entra como comedia deportiva liviana, especialmente si te divierte el Sandler de personajes torpes y voces raras.",
+			"forFansOf": "Te va a gustar si disfrutás equipos improbables, madres desmedidas y películas que convierten una inseguridad en superpoder.",
+			"notForYouIf": "No es para vos si buscás deporte realista, humor sutil o una evolución de personaje menos apoyada en la exageración."
+		},
 		"becauseYouLiked": [
 			"the-wedding-singer-1998",
 			"happy-gilmore-1996"
@@ -56,5 +56,42 @@
 	"review": "El aguador lleva el personaje de Sandler al terreno del cuento deportivo y lo rodea de una Kathy Bates que entiende perfectamente la potencia cómica de una madre exagerada. La película funciona cuando convierte la timidez de Bobby en una fuerza física absurda y cuando Henry Winkler baja el volumen para acompañarlo. También repite fórmulas hasta el cansancio, pero su entusiasmo de underdog y su estética de fábula la vuelven una entrada querible del Sandler clásico.",
 	"runtimeMinutes": 90,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Bobby Boucher",
+			"tmdbMovieId": 10663,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kathy Bates",
+			"character": "Mama Boucher",
+			"tmdbMovieId": 10663,
+			"tmdbPersonId": 8534,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Henry Winkler",
+			"character": "Coach Klein",
+			"tmdbMovieId": 10663,
+			"tmdbPersonId": 31903,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fairuza Balk",
+			"character": "Vicki Vallencourt",
+			"tmdbMovieId": 10663,
+			"tmdbPersonId": 826,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jerry Reed",
+			"character": "Red Beaulieu",
+			"tmdbMovieId": 10663,
+			"tmdbPersonId": 67764,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

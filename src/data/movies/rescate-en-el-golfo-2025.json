@@ -53,5 +53,21 @@
 	"catalogAddedAt": "2026-10-27",
 	"runtimeMinutes": 119,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Zachary Levi",
+			"character": "Nick Schuyler",
+			"tmdbMovieId": 339849,
+			"tmdbPersonId": 69899,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Duhamel",
+			"character": "Timothy Close",
+			"tmdbMovieId": 339849,
+			"tmdbPersonId": 19536,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -57,5 +57,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Dustin Hoffman",
+			"character": "Ted Kramer",
+			"tmdbMovieId": 12102,
+			"tmdbPersonId": 4483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Joanna Kramer",
+			"tmdbMovieId": 12102,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jane Alexander",
+			"character": "Margaret Phelps",
+			"tmdbMovieId": 12102,
+			"tmdbPersonId": 13724,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

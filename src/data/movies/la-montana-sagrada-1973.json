@@ -41,18 +41,34 @@
 			"forFansOf": "Si te gustan cine de culto, sátiras místicas y Alejandro Jodorowsky trabajando a contramano de la lógica.",
 			"notForYouIf": "No es para vos si necesitás una historia transparente, humor moderado o una película que explique sus imágenes."
 		},
-	"becauseYouLiked": [
-		"la-vida-de-chuck-2025",
-		"el-mejor-1984"
-	],
-	"related": [
-		"macbeth-2021",
-		"el-cielo-sobre-berlin-1987",
-		"el-septimo-sello-1957",
-		"la-milla-verde-1999"
-	]
-},
+		"becauseYouLiked": [
+			"la-vida-de-chuck-2025",
+			"el-mejor-1984"
+		],
+		"related": [
+			"macbeth-2021",
+			"el-cielo-sobre-berlin-1987",
+			"el-septimo-sello-1957",
+			"la-milla-verde-1999"
+		]
+	},
 	"review": "Jodorowsky convierte la búsqueda espiritual en una sátira feroz de la riqueza, la religión y el espectáculo. La puesta trabaja con tableaux, colores y símbolos de una abundancia que puede fascinar o expulsar según el ánimo. No todas sus provocaciones envejecieron igual, pero su imaginación visual sigue siendo imposible de confundir. La peregrinación ridiculiza la promesa de iluminación y, al hacerlo, expone cuánto espectáculo necesita la autoridad para sostenerse en pantalla.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Alejandro Jodorowsky",
+			"character": "The Alchemist",
+			"tmdbMovieId": 8327,
+			"tmdbPersonId": 55119,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juan Ferrara",
+			"character": "Fon",
+			"tmdbMovieId": 8327,
+			"tmdbPersonId": 55125,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

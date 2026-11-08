@@ -37,7 +37,11 @@
 		"tenSecondTake": {
 			"verdict": "Jaume Collet-Serra convierte un avión en tablero de sospechas y Liam Neeson hace de Bill Marks un héroe cansado, mientras el misterio se vuelve más disparatado al explicarse.",
 			"whatToExpect": "Mensajes anónimos, pasajeros sospechosos, un vuelo transatlántico y una cuenta regresiva que obliga a investigar sin poder abandonar el espacio cerrado.",
-			"pace": "Mantiene un ritmo firme de pistas, interrogatorios y alarmas; administra bien el encierro hasta que las explicaciones finales le restan credibilidad.",			"intensity": "La tensión es claustrofóbica y de reloj, con la amenaza escondida entre cientos de pasajeros; el peligro físico aparece por ráfagas.",			"practicalContext": "Con 106 minutos, es un thriller ideal para una noche de suspenso de avión; entra mejor si aceptás un cierre más exagerado que el comienzo.",			"forFansOf": "Para quienes disfrutan a Neeson en modo agente agotado, misterios de espacio cerrado y películas que convierten un transporte en trampa.",			"notForYouIf": "No es para vos si necesitás una conspiración realista, un final sobrio o una investigación donde cada pasajero no parezca sospechoso por contrato."
+			"pace": "Mantiene un ritmo firme de pistas, interrogatorios y alarmas; administra bien el encierro hasta que las explicaciones finales le restan credibilidad.",
+			"intensity": "La tensión es claustrofóbica y de reloj, con la amenaza escondida entre cientos de pasajeros; el peligro físico aparece por ráfagas.",
+			"practicalContext": "Con 106 minutos, es un thriller ideal para una noche de suspenso de avión; entra mejor si aceptás un cierre más exagerado que el comienzo.",
+			"forFansOf": "Para quienes disfrutan a Neeson en modo agente agotado, misterios de espacio cerrado y películas que convierten un transporte en trampa.",
+			"notForYouIf": "No es para vos si necesitás una conspiración realista, un final sobrio o una investigación donde cada pasajero no parezca sospechoso por contrato."
 		},
 		"becauseYouLiked": [
 			"una-noche-para-sobrevivir-2015",
@@ -52,5 +56,42 @@
 	},
 	"review": "Jaume Collet-Serra aprovecha un avión lleno como si fuera un tablero cerrado: cada asiento puede guardar una pista, una mentira o un próximo problema. Liam Neeson hace funcionar a Bill Marks porque no lo presenta como una máquina de resolver todo; está cansado, duda y tiene que recuperar la confianza de quienes lo rodean. Julianne Moore suma una presencia inquieta que mantiene viva la sospecha. El misterio se vuelve bastante disparatado cuando explica sus cartas, pero el recorrido administra bien el encierro y el reloj en contra.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Bill Marks",
+			"tmdbMovieId": 225574,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julianne Moore",
+			"character": "Jen Summers",
+			"tmdbMovieId": 225574,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scoot McNairy",
+			"character": "Tom Bowen",
+			"tmdbMovieId": 225574,
+			"tmdbPersonId": 59233,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Dockery",
+			"character": "Nancy",
+			"tmdbMovieId": 225574,
+			"tmdbPersonId": 70904,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nate Parker",
+			"character": "Zack White",
+			"tmdbMovieId": 225574,
+			"tmdbPersonId": 77277,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

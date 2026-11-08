@@ -57,5 +57,42 @@
 	},
 	"review": "Wolfgang Petersen construye una fantasía que combina criaturas luminosas con una tristeza inesperada. Barret Oliver hace de Atreyu un héroe joven y vulnerable, mientras el libro que lee Bastian funciona como objeto mágico y como llamado a participar. Los efectos tienen el encanto de una época anterior al retoque digital: se ven las texturas, los disfraces y la materia de cada criatura. Esa imperfección la vuelve cálida. El film habla del poder de imaginar sin esconder que también da miedo perder aquello que uno ama.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Noah Hathaway",
+			"character": "Atreyu",
+			"tmdbMovieId": 34584,
+			"tmdbPersonId": 29509,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Barret Oliver",
+			"character": "Bastian",
+			"tmdbMovieId": 34584,
+			"tmdbPersonId": 29508,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tami Stronach",
+			"character": "The Childlike Empress",
+			"tmdbMovieId": 34584,
+			"tmdbPersonId": 124442,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Oppenheimer",
+			"character": "Rockbiter / Falkor / G'mork / Narrator (voice)",
+			"tmdbMovieId": 34584,
+			"tmdbPersonId": 24320,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sydney Bromley",
+			"character": "Engywook",
+			"tmdbMovieId": 34584,
+			"tmdbPersonId": 12693,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

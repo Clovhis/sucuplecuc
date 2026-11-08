@@ -47,5 +47,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Robert Pattinson",
+			"character": "Bruce Wayne / The Batman",
+			"tmdbMovieId": 414906,
+			"tmdbPersonId": 11288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zoë Kravitz",
+			"character": "Selina Kyle",
+			"tmdbMovieId": 414906,
+			"tmdbPersonId": 37153,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeffrey Wright",
+			"character": "Lt. James Gordon",
+			"tmdbMovieId": 414906,
+			"tmdbPersonId": 2954,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

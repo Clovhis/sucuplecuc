@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Hugh Jackman",
+			"character": "Logan / Wolverine",
+			"tmdbMovieId": 2080,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liev Schreiber",
+			"character": "Victor Creed",
+			"tmdbMovieId": 2080,
+			"tmdbPersonId": 23626,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Huston",
+			"character": "Stryker",
+			"tmdbMovieId": 2080,
+			"tmdbPersonId": 6413,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -44,18 +44,41 @@
 			"forFansOf": "Puede fascinarte si te gustan found footage, terror de sugestión y películas que usan un espacio vacío para convertir la desconfianza entre amigos en el verdadero monstruo.",
 			"notForYouIf": "Quizás no sea para vos si necesitás producción prolija, sustos visibles o una resolución que confirme exactamente qué pasó. La película apuesta a dejar el bosque en tu cabeza."
 		},
-	"becauseYouLiked": [
-		"audition-1999",
-		"paranormal-activity-2007"
-	],
-	"related": [
-		"carretera-perdida-1997",
-		"la-bruja-2015",
-		"el-circulo-1998",
-		"lo-que-la-verdad-esconde-2000"
-	]
-},
+		"becauseYouLiked": [
+			"audition-1999",
+			"paranormal-activity-2007"
+		],
+		"related": [
+			"carretera-perdida-1997",
+			"la-bruja-2015",
+			"el-circulo-1998",
+			"lo-que-la-verdad-esconde-2000"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": "",
-	"review": "The Blair Witch Project cambio el terror con casi nada: bosque, oscuridad, discusiones y una camara que nunca te da el alivio de entender que esta pasando. Lo que mejor hace no es asustar de golpe sino desgastar, volver insoportable la idea de perder orientacion, sueño y confianza al mismo tiempo. Puede parecer minima si la miras esperando pirotecnia, pero como ejercicio de sugestion todavia tiene una mala vibra dificil de igualar."
+	"review": "The Blair Witch Project cambio el terror con casi nada: bosque, oscuridad, discusiones y una camara que nunca te da el alivio de entender que esta pasando. Lo que mejor hace no es asustar de golpe sino desgastar, volver insoportable la idea de perder orientacion, sueño y confianza al mismo tiempo. Puede parecer minima si la miras esperando pirotecnia, pero como ejercicio de sugestion todavia tiene una mala vibra dificil de igualar.",
+	"castCharacters": [
+		{
+			"actor": "Heather Donahue",
+			"character": "Heather Donahue",
+			"tmdbMovieId": 2667,
+			"tmdbPersonId": 26851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael C. Williams",
+			"character": "Michael Williams",
+			"tmdbMovieId": 2667,
+			"tmdbPersonId": 26853,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joshua Leonard",
+			"character": "Joshua Leonard",
+			"tmdbMovieId": 2667,
+			"tmdbPersonId": 26852,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

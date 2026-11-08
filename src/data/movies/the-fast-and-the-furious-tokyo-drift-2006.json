@@ -41,19 +41,56 @@
 			"forFansOf": "Puede gustarte si te atraen carreras urbanas, aprendizajes deportivos y películas de franquicia que encuentran color propio en una ciudad, una técnica y un personaje secundario.",
 			"notForYouIf": "Quizás no sea para vos si necesitás una trama más elaborada, actuaciones parejas o la familia de la saga al frente. Su encanto depende del drift y de su vibra nocturna."
 		},
-	"becauseYouLiked": [
-		"fast-five-2011",
-		"el-fuego-de-la-venganza-2004"
-	],
-	"related": [
-		"una-noche-para-sobrevivir-2015",
-		"el-ultimatum-de-bourne-2007",
-		"la-supremacia-de-bourne-2004",
-		"bullitt-1968"
-	]
-},
+		"becauseYouLiked": [
+			"fast-five-2011",
+			"el-fuego-de-la-venganza-2004"
+		],
+		"related": [
+			"una-noche-para-sobrevivir-2015",
+			"el-ultimatum-de-bourne-2007",
+			"la-supremacia-de-bourne-2004",
+			"bullitt-1968"
+		]
+	},
 	"review": "Acá la saga se fue de costado y, para bien o para mal, encontró una personalidad propia. Varias reseñas remarcaron que las corridas y el drift son un espectáculo, aunque el relato y varias actuaciones se quedan bastante cortos, y es una lectura justa. Han, Tokio y la vibra nocturna le dan un color distinto dentro de la franquicia. Termina gustando más por atmósfera y mitología que por cómo está escrita.",
 	"synopsis": "Después de meterse en problemas por correr en la calle, Sean Boswell es enviado a Tokio para vivir con su padre. Ahí descubre el mundo del drift, se cruza con Han y termina envuelto en una rivalidad que lo obliga a aprender otro código para sobrevivir.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-04-23"
+	"reviewPublishedAt": "2026-04-23",
+	"castCharacters": [
+		{
+			"actor": "Lucas Black",
+			"character": "Sean Boswell",
+			"tmdbMovieId": 9615,
+			"tmdbPersonId": 155,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sung Kang",
+			"character": "Han Lue",
+			"tmdbMovieId": 9615,
+			"tmdbPersonId": 61697,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nathalie Kelley",
+			"character": "Neela",
+			"tmdbMovieId": 9615,
+			"tmdbPersonId": 116277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brian Tee",
+			"character": "D.K.",
+			"tmdbMovieId": 9615,
+			"tmdbPersonId": 116278,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shad Moss",
+			"character": "Twinkie",
+			"tmdbMovieId": 9615,
+			"tmdbPersonId": 58197,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

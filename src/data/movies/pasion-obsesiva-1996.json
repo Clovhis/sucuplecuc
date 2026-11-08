@@ -54,5 +54,42 @@
 		}
 	},
 	"runtimeMinutes": 93,
-	"review": "James Foley encuentra tensión en las pequeñas invasiones de David antes de que la historia explote; por eso el costado romántico de la primera mitad resulta más inquietante que sus golpes de efecto. Wahlberg compone un villano de encanto físico y furia imprevisible, mientras Reese Witherspoon logra que Nicole no quede reducida a víctima. El guion subraya algunas cosas y el desenlace se pasa de rosca, pero conserva una vibra noventosa bastante eficaz para una noche de thriller adolescente."
+	"review": "James Foley encuentra tensión en las pequeñas invasiones de David antes de que la historia explote; por eso el costado romántico de la primera mitad resulta más inquietante que sus golpes de efecto. Wahlberg compone un villano de encanto físico y furia imprevisible, mientras Reese Witherspoon logra que Nicole no quede reducida a víctima. El guion subraya algunas cosas y el desenlace se pasa de rosca, pero conserva una vibra noventosa bastante eficaz para una noche de thriller adolescente.",
+	"castCharacters": [
+		{
+			"actor": "Mark Wahlberg",
+			"character": "David McCall",
+			"tmdbMovieId": 10543,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Reese Witherspoon",
+			"character": "Nicole Walker",
+			"tmdbMovieId": 10543,
+			"tmdbPersonId": 368,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William L. Petersen",
+			"character": "Steve Walker",
+			"tmdbMovieId": 10543,
+			"tmdbPersonId": 52267,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alyssa Milano",
+			"character": "Margo Masse",
+			"tmdbMovieId": 10543,
+			"tmdbPersonId": 24967,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amy Brenneman",
+			"character": "Laura Walker",
+			"tmdbMovieId": 10543,
+			"tmdbPersonId": 15851,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

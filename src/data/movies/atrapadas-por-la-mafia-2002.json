@@ -52,5 +52,28 @@
 			"el-club-2015"
 		]
 	},
-	"review": "Atrapadas por la mafia tiene un trío central con suficiente energía para sostener un relato que a veces parece hecho de retazos. Mira Sorvino le da firmeza a la protagonista, Mariah Carey aporta una vulnerabilidad inesperada y Melora Walters encuentra el humor más áspero del grupo. David Anspaugh filma el restaurante como un lugar de trabajo y de amenaza, aunque la trama criminal no siempre acompaña la potencia de las actrices. Es una película irregular, pero con una camaradería que deja huella."
+	"review": "Atrapadas por la mafia tiene un trío central con suficiente energía para sostener un relato que a veces parece hecho de retazos. Mira Sorvino le da firmeza a la protagonista, Mariah Carey aporta una vulnerabilidad inesperada y Melora Walters encuentra el humor más áspero del grupo. David Anspaugh filma el restaurante como un lugar de trabajo y de amenaza, aunque la trama criminal no siempre acompaña la potencia de las actrices. Es una película irregular, pero con una camaradería que deja huella.",
+	"castCharacters": [
+		{
+			"actor": "Mira Sorvino",
+			"character": "Meg Kennedy",
+			"tmdbMovieId": 41209,
+			"tmdbPersonId": 23931,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mariah Carey",
+			"character": "Raychel",
+			"tmdbMovieId": 41209,
+			"tmdbPersonId": 66586,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Melora Walters",
+			"character": "Kate",
+			"tmdbMovieId": 41209,
+			"tmdbPersonId": 4766,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,35 @@
 			"la-cortina-de-humo-1997"
 		]
 	},
-	"review": "Ámsterdam tiene una idea atractiva sobre amistad, guerra y conspiraciones políticas, pero la película la cuenta con una confianza que no siempre se transforma en claridad. Christian Bale, Margot Robbie y John David Washington encuentran química como trío, y el diseño de época sostiene una sensación de fábula extravagante. David O. Russell acumula personajes, giros y discursos hasta que el misterio pierde peso. Hay escenas encantadoras y actuaciones con mucha energía, pero el conjunto queda atrapado entre la comedia absurda, el drama histórico y una denuncia que llega demasiado tarde."
+	"review": "Ámsterdam tiene una idea atractiva sobre amistad, guerra y conspiraciones políticas, pero la película la cuenta con una confianza que no siempre se transforma en claridad. Christian Bale, Margot Robbie y John David Washington encuentran química como trío, y el diseño de época sostiene una sensación de fábula extravagante. David O. Russell acumula personajes, giros y discursos hasta que el misterio pierde peso. Hay escenas encantadoras y actuaciones con mucha energía, pero el conjunto queda atrapado entre la comedia absurda, el drama histórico y una denuncia que llega demasiado tarde.",
+	"castCharacters": [
+		{
+			"actor": "Christian Bale",
+			"character": "Burt Berendsen",
+			"tmdbMovieId": 664469,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margot Robbie",
+			"character": "Valerie Voze",
+			"tmdbMovieId": 664469,
+			"tmdbPersonId": 234352,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John David Washington",
+			"character": "Harold Woodman",
+			"tmdbMovieId": 664469,
+			"tmdbPersonId": 1117313,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "General Gil Dillenbeck",
+			"tmdbMovieId": 664469,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

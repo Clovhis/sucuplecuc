@@ -49,5 +49,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Dwayne Johnson",
+			"character": "John Hartley",
+			"tmdbMovieId": 512195,
+			"tmdbPersonId": 18918,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ryan Reynolds",
+			"character": "Nolan Booth",
+			"tmdbMovieId": 512195,
+			"tmdbPersonId": 10859,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gal Gadot",
+			"character": "Sarah Black / The Bishop",
+			"tmdbMovieId": 512195,
+			"tmdbPersonId": 90633,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

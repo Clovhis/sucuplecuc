@@ -52,5 +52,35 @@
 		]
 	},
 	"runtimeMinutes": 100,
-	"review": "El texto de David Mamet convierte una oficina de ventas en una arena donde todos hablan como si estuvieran negociando su propia existencia. Pacino entra como Richard Roma, un vendedor que entiende el deseo ajeno y lo usa con una precisión casi musical. La película no necesita explicar demasiado: las llamadas, los cafés y las amenazas dejan claro qué produce una cultura laboral basada en la humillación. El elenco es formidable y la puesta seca de James Foley permite que cada silencio pese tanto como cada frase brillante."
+	"review": "El texto de David Mamet convierte una oficina de ventas en una arena donde todos hablan como si estuvieran negociando su propia existencia. Pacino entra como Richard Roma, un vendedor que entiende el deseo ajeno y lo usa con una precisión casi musical. La película no necesita explicar demasiado: las llamadas, los cafés y las amenazas dejan claro qué produce una cultura laboral basada en la humillación. El elenco es formidable y la puesta seca de James Foley permite que cada silencio pese tanto como cada frase brillante.",
+	"castCharacters": [
+		{
+			"actor": "Al Pacino",
+			"character": "Ricky Roma",
+			"tmdbMovieId": 9504,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Lemmon",
+			"character": "Shelley Levene",
+			"tmdbMovieId": 9504,
+			"tmdbPersonId": 3151,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alec Baldwin",
+			"character": "Blake",
+			"tmdbMovieId": 9504,
+			"tmdbPersonId": 7447,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Harris",
+			"character": "Dave Moss",
+			"tmdbMovieId": 9504,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

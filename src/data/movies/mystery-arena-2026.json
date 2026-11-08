@@ -35,7 +35,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Yukihiko Tsutsumi convierte un concurso televisivo en trampa de mansión; Toshiaki Karasawa y Mana Ashida sostienen el juego cuando las reglas pesan más que la psicología.",
-			"whatToExpect": "Recompensa millonaria, asesinato imposible, tormenta, participantes encerrados y pistas diseñadas para que el espectáculo se vuelva investigación.",			"pace": "Avanza por reglas, interrogatorios y revelaciones con ritmo de partida; disfruta más del mecanismo que de construir personajes complejos.",			"intensity": "La tensión es de encierro y sospecha, con una amenaza que se vuelve espectáculo; la violencia queda detrás del acertijo y sus reglas.",			"practicalContext": "Con 117 minutos, sirve para una noche de misterio con ganas de jugar a descubrir pistas; no esperes una psicología tan trabajada como el dispositivo.",			"forFansOf": "Para quienes disfrutan whodunits de grupo, concursos retorcidos y elencos japoneses que sostienen una caja cerrada con energía.",			"notForYouIf": "Puede no ser para vos si necesitás un crimen realista, personajes muy profundos o pistas que no parezcan colocadas por producción televisiva."
+			"whatToExpect": "Recompensa millonaria, asesinato imposible, tormenta, participantes encerrados y pistas diseñadas para que el espectáculo se vuelva investigación.",
+			"pace": "Avanza por reglas, interrogatorios y revelaciones con ritmo de partida; disfruta más del mecanismo que de construir personajes complejos.",
+			"intensity": "La tensión es de encierro y sospecha, con una amenaza que se vuelve espectáculo; la violencia queda detrás del acertijo y sus reglas.",
+			"practicalContext": "Con 117 minutos, sirve para una noche de misterio con ganas de jugar a descubrir pistas; no esperes una psicología tan trabajada como el dispositivo.",
+			"forFansOf": "Para quienes disfrutan whodunits de grupo, concursos retorcidos y elencos japoneses que sostienen una caja cerrada con energía.",
+			"notForYouIf": "Puede no ser para vos si necesitás un crimen realista, personajes muy profundos o pistas que no parezcan colocadas por producción televisiva."
 		},
 		"becauseYouLiked": [
 			"the-plague-2025",
@@ -51,5 +56,42 @@
 	"review": "MYSTERY ARENA convierte la lógica de un concurso televisivo en una caja cerrada con bastante potencial. Yukihiko Tsutsumi arranca desde una premisa simple y la llena de reglas, sospechosos y pistas que se cruzan en una mansión aislada, con la recompensa millonaria como combustible para que nadie pueda mirar el caso desde afuera.\n\nLa película disfruta más del mecanismo que de la psicología y algunas explicaciones llegan con la sutileza de una tarjeta de programa, pero el reparto sostiene el juego. Mana Ashida y Toshiaki Karasawa le dan gravedad a una historia que sabe cuándo acelerar. Si el misterio no siempre sorprende, la puesta consigue que la partida siga siendo entretenida.",
 	"releasePlatform": "Prime Video",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Toshiaki Karasawa",
+			"character": "Momotaro Kabayama",
+			"tmdbMovieId": 1647153,
+			"tmdbPersonId": 81350,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mana Ashida",
+			"character": "Ichiko",
+			"tmdbMovieId": 1647153,
+			"tmdbPersonId": 559416,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Toko Miura",
+			"character": "Sango",
+			"tmdbMovieId": 1647153,
+			"tmdbPersonId": 1509659,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nobuyuki Suzuki",
+			"character": "Gamble",
+			"tmdbMovieId": 1647153,
+			"tmdbPersonId": 1202404,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Reina Triendl",
+			"character": "Reika Monteleone",
+			"tmdbMovieId": 1647153,
+			"tmdbPersonId": 1257289,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

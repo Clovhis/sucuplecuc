@@ -99,9 +99,12 @@ test('un título conocido no coincide por accidente con otra palabra o una etiqu
 });
 
 test('decodifica sin perder campos y rechaza formatos o referencias inválidas', async () => {
-	const source = [{ ...records[0], normalizedMeta: '1980 · terror · hbo max jack nicholson', releaseTimestamp: 0, recentPremiere: false, url: '/peliculas/shining/', posterUrl: '/assets/posters/1980/shining.webp', meta: '1980 · Terror · HBO Max', cast: 'Jack Nicholson', card: { verdictLabel: 'Obra maestra', verdictClass: 'badge--recomendada', genreLabels: ['Terror'], audienceRating: '+16', cult: true, platformLabels: ['HBO Max'] } }];
+	const source = [{ ...records[0], searchCharacters: [], normalizedMeta: '1980 · terror · hbo max jack nicholson', releaseTimestamp: 0, recentPremiere: false, url: '/peliculas/shining/', posterUrl: '/assets/posters/1980/shining.webp', meta: '1980 · Terror · HBO Max', cast: 'Jack Nicholson', card: { verdictLabel: 'Obra maestra', verdictClass: 'badge--recomendada', genreLabels: ['Terror'], audienceRating: '+16', cult: true, platformLabels: ['HBO Max'] } }];
 	assert.deepEqual(decodeHomeSearchIndex(encodeHomeSearchIndex(source)), source);
-	assert.throws(() => decodeHomeSearchIndex({ version: 3, movies: [], cards: [] }));
+	const old = encodeHomeSearchIndex(source);
+	old.version = 2; old.movies = old.movies.map((row) => [...row.slice(0, 8), ...row.slice(9)]);
+	assert.deepEqual(decodeHomeSearchIndex(old), source);
+	assert.throws(() => decodeHomeSearchIndex({ version: 99, movies: [], cards: [] }));
 	const invalid = encodeHomeSearchIndex(source.slice(0, 1));
 	invalid.movies[0][invalid.movies[0].length - 1] = 9999;
 	assert.throws(() => decodeHomeSearchIndex(invalid));
@@ -136,4 +139,21 @@ test('cada alias adicional conserva película, año y URL de su evidencia', asyn
 			assert.ok(['AR','ES','US'].includes(title.region));
 		}
 	}
+});
+
+
+test('personajes exactos y variantes verificadas respetan filtros y no amplían por aproximación', async () => {
+ const source = [
+  movie('pirates', 'Piratas', 2003, '', 'Johnny Depp', ['aventura'], ['disney plus'], 8, { searchCharacters: [{ actor: 'Johnny Depp', character: 'Captain Jack Sparrow / Personaje Ficticio', variants: ['Jack Sparrow'] }] }),
+  movie('other', 'Otro filme', 2004, '', 'Actor', ['drama'], ['netflix'], 6, { searchable: 'jack sparrow es mencionado' }),
+ ];
+ const engine = await createMovieSearch(source);
+ const result = engine.search('películas con Jack Sparrow en Disney+');
+ assert.deepEqual([...result.ranks.keys()], ['pirates']);
+ assert.deepEqual(result.characterMatches.get('pirates'), [{ actor: 'Johnny Depp', character: 'Captain Jack Sparrow / Personaje Ficticio' }]);
+ assert.deepEqual([...engine.search('Jack Sparrow en Netflix').ranks.keys()], []);
+ assert.deepEqual([...engine.search('Jack Sparrow').ranks.keys()], ['pirates']);
+ assert.equal(engine.search('Jack Sparro').characterMatches.size, 0);
+ assert.deepEqual([...engine.search('Captain Jack Sparrow').characterMatches.keys()], ['pirates']);
+ assert.deepEqual([...engine.search('Personaje Ficticio').characterMatches.keys()], ['pirates']);
 });

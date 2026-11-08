@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chris Evans",
+			"character": "Captain America / Steve Rogers",
+			"tmdbMovieId": 1771,
+			"tmdbPersonId": 16828,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "Colonel Chester Phillips",
+			"tmdbMovieId": 1771,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugo Weaving",
+			"character": "Johann Schmidt / Red Skull",
+			"tmdbMovieId": 1771,
+			"tmdbPersonId": 1331,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

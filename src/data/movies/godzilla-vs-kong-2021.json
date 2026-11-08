@@ -50,5 +50,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Alexander Skarsgård",
+			"character": "Nathan Lind",
+			"tmdbMovieId": 399566,
+			"tmdbPersonId": 28846,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Millie Bobby Brown",
+			"character": "Madison Russell",
+			"tmdbMovieId": 399566,
+			"tmdbPersonId": 1356210,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rebecca Hall",
+			"character": "Ilene Andrews",
+			"tmdbMovieId": 399566,
+			"tmdbPersonId": 15556,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

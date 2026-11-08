@@ -56,5 +56,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "James Spader",
+			"character": "James Ballard",
+			"tmdbMovieId": 884,
+			"tmdbPersonId": 13548,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Holly Hunter",
+			"character": "Helen Remington",
+			"tmdbMovieId": 884,
+			"tmdbPersonId": 18686,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elias Koteas",
+			"character": "Vaughan",
+			"tmdbMovieId": 884,
+			"tmdbPersonId": 13550,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Deborah Kara Unger",
+			"character": "Catherine Ballard",
+			"tmdbMovieId": 884,
+			"tmdbPersonId": 13549,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

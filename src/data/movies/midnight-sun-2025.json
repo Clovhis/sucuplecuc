@@ -53,5 +53,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 108,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Jung Zi-so",
+			"character": "Lee Mi-sol",
+			"tmdbMovieId": 1000520,
+			"tmdbPersonId": 1418762,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cha Hak-yeon",
+			"character": "Kim Min-jun",
+			"tmdbMovieId": 1000520,
+			"tmdbPersonId": 1512481,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

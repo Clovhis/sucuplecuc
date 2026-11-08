@@ -55,5 +55,35 @@
 	"review": "Ese es mi hijo intenta volver graciosa una relación que nace de un abandono y se apoya demasiado en la provocación. Sandler juega a Donny como un desastre humano con momentos de ternura, mientras Andy Samberg sostiene la incomodidad del hijo que nunca pudo elegir a su familia. La película puede encontrar una escena honesta entre tanta exageración, pero no construye suficiente cuidado para que el vínculo llegue a importar. Su apuesta por el humor bruto tapa una comedia familiar que necesitaba bastante más sensibilidad.",
 	"runtimeMinutes": 116,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Donny Berger",
+			"tmdbMovieId": 87428,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Samberg",
+			"character": "Todd Peterson",
+			"tmdbMovieId": 87428,
+			"tmdbPersonId": 62861,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leighton Meester",
+			"character": "Jamie Martin",
+			"tmdbMovieId": 87428,
+			"tmdbPersonId": 85825,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vanilla Ice",
+			"character": "Vanilla Ice",
+			"tmdbMovieId": 87428,
+			"tmdbPersonId": 17338,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -8,7 +8,11 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+16",
   "category": "Accion",
-  "genres": ["Accion", "Drama", "Thriller"],
+  "genres": [
+    "Accion",
+    "Drama",
+    "Thriller"
+  ],
   "subgenres": [],
   "country": "US",
   "isArgentinian": false,
@@ -17,33 +21,70 @@
   "trailerYoutubeId": "hJ-xSyL2d9s",
   "releasePlatform": "Netflix",
   "director": "Andrew Davis",
-  "mainCast": ["Arnold Schwarzenegger", "Francesca Neri", "Elias Koteas", "Cliff Curtis"],
+  "mainCast": [
+    "Arnold Schwarzenegger",
+    "Francesca Neri",
+    "Elias Koteas",
+    "Cliff Curtis"
+  ],
   "productionCompany": "Warner Bros. Pictures, Bel Air Entertainment, Kopelson Entertainment",
   "cinepostaScore": 5,
   "runtimeMinutes": 108,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Daño colateral busca darle duelo a Arnold Schwarzenegger y Andrew Davis sostiene el arranque, pero la geopolítica de manual le quita filo a la venganza.",
-			"whatToExpect": "Un bombero que pierde a su familia, una red internacional y un viaje donde el héroe debe cruzar límites propios.",
-			"pace": "Rápido y de misión, avanza por persecuciones, descubrimientos y discursos que simplifican el conflicto.",
-			"intensity": "Alta en acción y dolor, con violencia de blockbuster más que de drama íntimo.",
-			"practicalContext": "Sus 108 minutos funcionan como acción post-2000; conviene verla por el impulso y no por la complejidad política.",
-			"forFansOf": "Arnold en modo padre vengador, los thrillers de terrorismo y las películas de recorrido internacional.",
-			"notForYouIf": "Buscás una mirada política precisa, villanos con matices o un héroe cuya transformación sea menos automática."
-		},
-	"becauseYouLiked": [
-		"el-fuego-de-la-venganza-2004",
-		"fast-five-2011"
-	],
-	"related": [
-		"fast-and-furious-6-2013",
-		"furious-7-2015",
-		"the-fate-of-the-furious-2017",
-		"el-fugitivo-1993"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Daño colateral busca darle duelo a Arnold Schwarzenegger y Andrew Davis sostiene el arranque, pero la geopolítica de manual le quita filo a la venganza.",
+      "whatToExpect": "Un bombero que pierde a su familia, una red internacional y un viaje donde el héroe debe cruzar límites propios.",
+      "pace": "Rápido y de misión, avanza por persecuciones, descubrimientos y discursos que simplifican el conflicto.",
+      "intensity": "Alta en acción y dolor, con violencia de blockbuster más que de drama íntimo.",
+      "practicalContext": "Sus 108 minutos funcionan como acción post-2000; conviene verla por el impulso y no por la complejidad política.",
+      "forFansOf": "Arnold en modo padre vengador, los thrillers de terrorismo y las películas de recorrido internacional.",
+      "notForYouIf": "Buscás una mirada política precisa, villanos con matices o un héroe cuya transformación sea menos automática."
+    },
+    "becauseYouLiked": [
+      "el-fuego-de-la-venganza-2004",
+      "fast-five-2011"
+    ],
+    "related": [
+      "fast-and-furious-6-2013",
+      "furious-7-2015",
+      "the-fate-of-the-furious-2017",
+      "el-fugitivo-1993"
+    ]
+  },
   "review": "Daño colateral pertenece a esa etapa en la que el cine de acción de Arnold Schwarzenegger intentaba darle una herida personal a su músculo de héroe. El arranque tiene fuerza y la búsqueda de un padre que perdió todo empuja la trama con una urgencia clara, pero el guion cae pronto en villanos esquemáticos, discursos demasiado prolijos y una geopolítica de manual. Andrew Davis filma el recorrido con oficio, y Elias Koteas aporta una energía más interesante que la que el material le permite.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Arnold Schwarzenegger",
+      "character": "Gordy Brewer",
+      "tmdbMovieId": 9884,
+      "tmdbPersonId": 1100,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Francesca Neri",
+      "character": "Selena Perrini",
+      "tmdbMovieId": 9884,
+      "tmdbPersonId": 3809,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Elias Koteas",
+      "character": "Peter Brandt",
+      "tmdbMovieId": 9884,
+      "tmdbPersonId": 13550,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Cliff Curtis",
+      "character": "Claudio Perrini",
+      "tmdbMovieId": 9884,
+      "tmdbPersonId": 7248,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

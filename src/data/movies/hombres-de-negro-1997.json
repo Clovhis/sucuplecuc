@@ -58,5 +58,35 @@
 	"releasePlatforms": [
 		"HBO Max"
 	],
-	"runtimeMinutes": 98
+	"runtimeMinutes": 98,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Jay",
+			"tmdbMovieId": 607,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "Kay",
+			"tmdbMovieId": 607,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Linda Fiorentino",
+			"character": "Laurel",
+			"tmdbMovieId": 607,
+			"tmdbPersonId": 9625,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vincent D'Onofrio",
+			"character": "Edgar",
+			"tmdbMovieId": 607,
+			"tmdbPersonId": 7132,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

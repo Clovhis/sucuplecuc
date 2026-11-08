@@ -55,5 +55,28 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "La Patrulla Canina vuelve con una aventura que entiende bien el público al que apunta: dinosaurios, rescates imposibles y un villano que explica sus planes con la sutileza de una sirena. La animación privilegia la claridad y el movimiento, y la isla ofrece suficientes colores y criaturas para que la pantalla grande tenga sentido. No busca reinventar la fórmula, pero administra el ritmo, suma un compañero simpático y deja una moraleja ambiental sin ponerse pesada. Para chicos funciona; para grandes, es una misión de acompañamiento bastante amable."
+	"review": "La Patrulla Canina vuelve con una aventura que entiende bien el público al que apunta: dinosaurios, rescates imposibles y un villano que explica sus planes con la sutileza de una sirena. La animación privilegia la claridad y el movimiento, y la isla ofrece suficientes colores y criaturas para que la pantalla grande tenga sentido. No busca reinventar la fórmula, pero administra el ritmo, suma un compañero simpático y deja una moraleja ambiental sin ponerse pesada. Para chicos funciona; para grandes, es una misión de acompañamiento bastante amable.",
+	"castCharacters": [
+		{
+			"actor": "Mckenna Grace",
+			"character": "Skye (voice)",
+			"tmdbMovieId": 1185806,
+			"tmdbPersonId": 1172108,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terry Crews",
+			"character": "Alistair Stonewall (voice)",
+			"tmdbMovieId": 1185806,
+			"tmdbPersonId": 53256,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jameela Jamil",
+			"character": "Heidi Pothesis (voice)",
+			"tmdbMovieId": 1185806,
+			"tmdbPersonId": 1624816,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

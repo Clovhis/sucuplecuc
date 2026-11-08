@@ -59,5 +59,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Charles King",
+			"character": "Eddie Kearns",
+			"tmdbMovieId": 65203,
+			"tmdbPersonId": 1516030,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anita Page",
+			"character": "Queenie Mahoney",
+			"tmdbMovieId": 65203,
+			"tmdbPersonId": 98012,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bessie Love",
+			"character": "Harriet 'Hank' Mahoney",
+			"tmdbMovieId": 65203,
+			"tmdbPersonId": 29258,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

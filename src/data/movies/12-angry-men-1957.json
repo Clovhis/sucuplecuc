@@ -55,5 +55,42 @@
 	"review": "Sidney Lumet encierra a doce hombres en una sala sofocante y convierte una discusión de jurado en una máquina de suspenso moral. La cámara se acerca de a poco, el calor crece y cada voto obliga a revisar prejuicios que parecían inofensivos. Henry Fonda no juega al salvador perfecto: su jurado duda, escucha y exige precisión; Lee J. Cobb le responde con una furia que revela mucho más que el caso. Es cine directo y sin adornos, pero la dirección de actores y el guion hacen que cada cambio de opinión importe.",
 	"isPremiere": false,
 	"premiereLabel": "",
-	"reviewPublishedAt": "2026-04-26"
+	"reviewPublishedAt": "2026-04-26",
+	"castCharacters": [
+		{
+			"actor": "Henry Fonda",
+			"character": "Juror 8",
+			"tmdbMovieId": 389,
+			"tmdbPersonId": 4958,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lee J. Cobb",
+			"character": "Juror 3",
+			"tmdbMovieId": 389,
+			"tmdbPersonId": 5248,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Begley",
+			"character": "Juror 10",
+			"tmdbMovieId": 389,
+			"tmdbPersonId": 39816,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "E. G. Marshall",
+			"character": "Juror 4",
+			"tmdbMovieId": 389,
+			"tmdbPersonId": 5249,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Warden",
+			"character": "Juror 7",
+			"tmdbMovieId": 389,
+			"tmdbPersonId": 5251,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

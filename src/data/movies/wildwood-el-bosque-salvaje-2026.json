@@ -52,5 +52,28 @@
 	},
 	"review": "La aventura de Prue tiene algo de libro que se desborda: cada criatura y cada rincón del bosque parecen guardar otra historia. Travis Knight aprovecha la animación cuadro a cuadro para darle peso a ese mundo, incluso cuando el recorrido se vuelve oscuro y la violencia corta el encanto. El rescate del hermano mantiene una emoción reconocible en medio de tanta mitología. La cantidad de personajes y conflictos le pide paciencia al relato, que por momentos acumula más de lo que puede desarrollar. Su mayor fuerza está en esa naturaleza que nunca termina de volverse cómoda: dan ganas de explorarla y, a la vez, de encontrar la salida.",
 	"catalogAddedAt": "2026-10-29",
-	"runtimeMinutes": 132
+	"runtimeMinutes": 132,
+	"castCharacters": [
+		{
+			"actor": "Peyton Elizabeth Lee",
+			"character": "Prue McKeel (voice)",
+			"tmdbMovieId": 791523,
+			"tmdbPersonId": 1768964,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jacob Tremblay",
+			"character": "Curtis Mehlberg (voice)",
+			"tmdbMovieId": 791523,
+			"tmdbPersonId": 1277188,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carey Mulligan",
+			"character": "Alexandra (voice)",
+			"tmdbMovieId": 791523,
+			"tmdbPersonId": 36662,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

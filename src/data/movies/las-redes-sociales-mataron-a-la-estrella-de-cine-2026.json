@@ -48,5 +48,21 @@
 		]
 	},
 	"review": "Kjersti Flaa parte de una pregunta pertinente: qué queda del misterio de una estrella cuando su presencia se actualiza todos los días en una pantalla. Las conversaciones con actores, entre ellos John Boyega y Ben Affleck, dejan ver el cruce entre promoción, trabajo y pérdida de intimidad. La variedad de voces ayuda, pero el formato breve favorece el comentario llamativo por encima de una discusión que conecte todas las piezas. El documental funciona como un registro de inquietudes de la industria; le cuesta convertirlas en una explicación que vaya más allá de la nostalgia por otra manera de ser famoso.",
-	"runtimeMinutes": 50
+	"runtimeMinutes": 50,
+	"castCharacters": [
+		{
+			"actor": "John Boyega",
+			"character": "John Boyega",
+			"tmdbMovieId": 1775802,
+			"tmdbPersonId": 236695,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Affleck",
+			"character": "Ben Affleck",
+			"tmdbMovieId": 1775802,
+			"tmdbPersonId": 880,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

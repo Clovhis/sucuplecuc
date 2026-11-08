@@ -58,5 +58,35 @@
 	"review": "El último gran golpe se apoya en una premisa de crimen nocturno y en un elenco que cruza generaciones de actores con perfiles muy distintos. Russell Crowe le da peso al centro de la historia, mientras los robos y los cambios de alianza mantienen la trama en movimiento. La película avanza con pulso de thriller comercial y una dosis de humor seco, aunque por momentos acumula personajes y planes antes de que todos tengan el mismo interés. Cuando el conflicto se concentra en quién controla la noche, encuentra su mejor energía.",
 	"runtimeMinutes": 111,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Russell Crowe",
+			"character": "Manco Kapak",
+			"tmdbMovieId": 1279493,
+			"tmdbPersonId": 934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nina Dobrev",
+			"character": "Carrie",
+			"tmdbMovieId": 1279493,
+			"tmdbPersonId": 19961,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Paul",
+			"character": "Jeff",
+			"tmdbMovieId": 1279493,
+			"tmdbPersonId": 84497,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luke Evans",
+			"character": "Joe Carver",
+			"tmdbMovieId": 1279493,
+			"tmdbPersonId": 114019,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

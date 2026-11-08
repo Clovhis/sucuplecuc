@@ -44,17 +44,47 @@
 			"notForYouIf": "Quizás no sea para vos si necesitás sutileza política, antagonistas complejos o una película que no explique de frente su denuncia."
 		},
 		"becauseYouLiked": [
-		"apex-2026",
-		"marea-roja-1995"
-	],
-	"related": [
-		"drive-2011",
-		"el-ultimatum-de-bourne-2007",
-		"el-demoledor-1993",
-		"the-warriors-los-amos-de-la-noche-1979"
-	]
-},
+			"apex-2026",
+			"marea-roja-1995"
+		],
+		"related": [
+			"drive-2011",
+			"el-ultimatum-de-bourne-2007",
+			"el-demoledor-1993",
+			"the-warriors-los-amos-de-la-noche-1979"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Río de sangre mezcla acción, drama social y selva hostil con más ambición de la que suele tener este tipo de estreno directo a plataforma. Cuando deja de explicar y se concentra en el cuerpo de la persecución, la película gana mucho: barro, calor, tiros, agua pesada y una sensación constante de que nadie está entrando en un territorio del que se pueda salir limpio.\n\nGiovanna Antonelli empuja bien la película desde un registro seco, sin hacerse la heroína invencible, y el contexto de minería ilegal le da un peso extra que la distingue del thriller de rescate genérico. El guion a veces ordena todo con mano un poco gruesa, pero la tensión aguanta y varias secuencias tienen nervio real. No es sutil, aunque sí efectiva."
+	"review": "Río de sangre mezcla acción, drama social y selva hostil con más ambición de la que suele tener este tipo de estreno directo a plataforma. Cuando deja de explicar y se concentra en el cuerpo de la persecución, la película gana mucho: barro, calor, tiros, agua pesada y una sensación constante de que nadie está entrando en un territorio del que se pueda salir limpio.\n\nGiovanna Antonelli empuja bien la película desde un registro seco, sin hacerse la heroína invencible, y el contexto de minería ilegal le da un peso extra que la distingue del thriller de rescate genérico. El guion a veces ordena todo con mano un poco gruesa, pero la tensión aguanta y varias secuencias tienen nervio real. No es sutil, aunque sí efectiva.",
+	"castCharacters": [
+		{
+			"actor": "Giovanna Antonelli",
+			"character": "Patrícia Trindade",
+			"tmdbMovieId": 1352384,
+			"tmdbPersonId": 130044,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alice Wegmann",
+			"character": "Luiza",
+			"tmdbMovieId": 1352384,
+			"tmdbPersonId": 1371607,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Felipe Simas",
+			"character": "Baleado",
+			"tmdbMovieId": 1352384,
+			"tmdbPersonId": 1373439,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Antonio Calloni",
+			"character": "Polaco",
+			"tmdbMovieId": 1352384,
+			"tmdbPersonId": 130636,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

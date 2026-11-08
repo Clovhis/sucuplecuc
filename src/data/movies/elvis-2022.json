@@ -50,5 +50,28 @@
 	"audienceRating": "+15",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "AU, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Austin Butler",
+			"character": "Elvis Presley",
+			"tmdbMovieId": 614934,
+			"tmdbPersonId": 86654,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Hanks",
+			"character": "Colonel Tom Parker",
+			"tmdbMovieId": 614934,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Olivia DeJonge",
+			"character": "Priscilla",
+			"tmdbMovieId": 614934,
+			"tmdbPersonId": 1385063,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

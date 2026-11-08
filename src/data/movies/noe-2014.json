@@ -36,7 +36,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Darren Aronofsky vuelve Noé una fantasía oscura sobre obediencia y responsabilidad; Russell Crowe sostiene la dureza, aunque las criaturas y el tono no siempre conviven.",
-			"whatToExpect": "Visiones, arca, diluvio, familia, gigantes y una naturaleza que exige decidir qué significa salvar la vida después del desastre.",			"pace": "Avanza entre preparación, amenaza y dilemas familiares; el ritmo se resiente cuando el relato explica demasiado su universo, pero la apuesta visual mantiene curiosidad.",			"intensity": "La intensidad es épica y moral, con violencia y supervivencia; el conflicto más fuerte está en la interpretación de una misión que nadie discute igual.",			"practicalContext": "La ficha no informa duración; es una aventura bíblica de tono particular para ver con disposición a una lectura fantástica y no literal.",			"forFansOf": "Para quienes disfrutan a Aronofsky, fantasía religiosa oscura y películas que discuten la obediencia desde la culpa familiar.",			"notForYouIf": "No es para vos si querés una adaptación fiel y serena, efectos impecables o un relato que no mezcle mito, horror y aventura."
+			"whatToExpect": "Visiones, arca, diluvio, familia, gigantes y una naturaleza que exige decidir qué significa salvar la vida después del desastre.",
+			"pace": "Avanza entre preparación, amenaza y dilemas familiares; el ritmo se resiente cuando el relato explica demasiado su universo, pero la apuesta visual mantiene curiosidad.",
+			"intensity": "La intensidad es épica y moral, con violencia y supervivencia; el conflicto más fuerte está en la interpretación de una misión que nadie discute igual.",
+			"practicalContext": "La ficha no informa duración; es una aventura bíblica de tono particular para ver con disposición a una lectura fantástica y no literal.",
+			"forFansOf": "Para quienes disfrutan a Aronofsky, fantasía religiosa oscura y películas que discuten la obediencia desde la culpa familiar.",
+			"notForYouIf": "No es para vos si querés una adaptación fiel y serena, efectos impecables o un relato que no mezcle mito, horror y aventura."
 		},
 		"becauseYouLiked": [
 			"el-hombre-del-norte-2022",
@@ -49,5 +54,42 @@
 			"big-fish-2003"
 		]
 	},
-	"review": "Darren Aronofsky toma un relato bíblico y lo lleva hacia la fantasía oscura, con una naturaleza que parece juzgar a sus propios habitantes. Russell Crowe interpreta a un Noé endurecido por la supervivencia, rodeado de una familia que no acepta sin más sus decisiones. El diseño y la escala tienen fuerza, y la película se anima a discutir la misión desde la culpa y la responsabilidad. El tono solemne y algunas criaturas digitales hacen que el resultado se sienta tan fascinante como desparejo, pero la apuesta visual evita que sea una ilustración religiosa de manual."
+	"review": "Darren Aronofsky toma un relato bíblico y lo lleva hacia la fantasía oscura, con una naturaleza que parece juzgar a sus propios habitantes. Russell Crowe interpreta a un Noé endurecido por la supervivencia, rodeado de una familia que no acepta sin más sus decisiones. El diseño y la escala tienen fuerza, y la película se anima a discutir la misión desde la culpa y la responsabilidad. El tono solemne y algunas criaturas digitales hacen que el resultado se sienta tan fascinante como desparejo, pero la apuesta visual evita que sea una ilustración religiosa de manual.",
+	"castCharacters": [
+		{
+			"actor": "Russell Crowe",
+			"character": "Noah",
+			"tmdbMovieId": 86834,
+			"tmdbPersonId": 934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Connelly",
+			"character": "Naameh",
+			"tmdbMovieId": 86834,
+			"tmdbPersonId": 6161,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Watson",
+			"character": "Ila",
+			"tmdbMovieId": 86834,
+			"tmdbPersonId": 10990,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Methuselah",
+			"tmdbMovieId": 86834,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Logan Lerman",
+			"character": "Ham",
+			"tmdbMovieId": 86834,
+			"tmdbPersonId": 33235,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

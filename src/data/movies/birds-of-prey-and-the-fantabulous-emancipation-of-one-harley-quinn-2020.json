@@ -47,5 +47,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Margot Robbie",
+			"character": "Harley Quinn",
+			"tmdbMovieId": 495764,
+			"tmdbPersonId": 234352,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rosie Perez",
+			"character": "Renee Montoya",
+			"tmdbMovieId": 495764,
+			"tmdbPersonId": 4810,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Elizabeth Winstead",
+			"character": "Helena Bertinelli / Huntress",
+			"tmdbMovieId": 495764,
+			"tmdbPersonId": 17628,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

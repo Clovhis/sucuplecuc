@@ -53,5 +53,28 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jack Black",
+			"character": "Jerry",
+			"tmdbMovieId": 4953,
+			"tmdbPersonId": 70851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Glover",
+			"character": "Mr. Fletcher",
+			"tmdbMovieId": 4953,
+			"tmdbPersonId": 2047,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mia Farrow",
+			"character": "Ms. Kimberley",
+			"tmdbMovieId": 4953,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

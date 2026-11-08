@@ -56,5 +56,42 @@
 	},
 	"review": "Michael Mann convierte una cacería policial en un duelo de profesionales que se reconocen incluso cuando están a punto de destruirse. Al Pacino y Robert De Niro trabajan desde registros opuestos, pero la película les da una intimidad inesperada en esa conversación que parece un descanso y en realidad funciona como declaración de principios. La ciudad nocturna, los vidrios, el ruido de las armas y la precisión de cada golpe construyen una tensión física enorme. Es larga, sí, pero cada desvío sobre la lealtad, el laburo y la soledad agranda el choque central en vez de distraerlo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Al Pacino",
+			"character": "Lt. Vincent Hanna",
+			"tmdbMovieId": 949,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "Neil McCauley",
+			"tmdbMovieId": 949,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Val Kilmer",
+			"character": "Chris Shiherlis",
+			"tmdbMovieId": 949,
+			"tmdbPersonId": 5576,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Voight",
+			"character": "Nate",
+			"tmdbMovieId": 949,
+			"tmdbPersonId": 10127,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Sizemore",
+			"character": "Michael Cheritto",
+			"tmdbMovieId": 949,
+			"tmdbPersonId": 3197,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

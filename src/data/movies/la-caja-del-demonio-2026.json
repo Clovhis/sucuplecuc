@@ -50,5 +50,21 @@
 	},
 	"review": "Carla Gugino le da a Ellen una preocupación concreta que ayuda a entrar en una historia cargada de sospechas. El problema de La caja del demonio aparece cuando la incertidumbre sobre Winthrop empieza a acumular explicaciones y amenazas sin que la convivencia gane la misma profundidad. Daniel Stamm trabaja la desconfianza doméstica con oficio, pero los sobresaltos y las reglas sobrenaturales terminan compitiendo por la atención. Queda una protagonista capaz de sostener la inquietud incluso cuando el guion se enreda: el deseo de cuidar a alguien resulta más convincente que el mecanismo que pretende volverlo aterrador.",
 	"catalogAddedAt": "2026-10-29",
-	"runtimeMinutes": 105
+	"runtimeMinutes": 105,
+	"castCharacters": [
+		{
+			"actor": "Carla Gugino",
+			"character": "Ellen Hershbergen",
+			"tmdbMovieId": 1500890,
+			"tmdbPersonId": 17832,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lou Taylor Pucci",
+			"character": "Winthrop Benson",
+			"tmdbMovieId": 1500890,
+			"tmdbPersonId": 17441,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

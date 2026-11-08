@@ -55,5 +55,21 @@
 	"review": "David Ayer corre el foco hacia la alianza entre James y Odin y encuentra ahí el pulso de esta supervivencia. Brad Pitt sostiene el cansancio del personaje sin inflarlo de heroísmo, mientras el paisaje hace que cada avance parezca costar algo. La película tiene secuencias de acción claras y un vínculo que se entiende rápido, aunque varios obstáculos responden a un esquema familiar del género. Su mejor tramo aparece cuando deja que la relación entre el hombre y el perro marque el ritmo, sin explicar de más lo que ya dicen sus gestos.",
 	"runtimeMinutes": 101,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Brad Pitt",
+			"character": "James Belmont",
+			"tmdbMovieId": 1263337,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "J. K. Simmons",
+			"character": "Watkins",
+			"tmdbMovieId": 1263337,
+			"tmdbPersonId": 18999,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

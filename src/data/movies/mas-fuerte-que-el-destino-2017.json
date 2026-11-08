@@ -35,7 +35,11 @@
 		"tenSecondTake": {
 			"verdict": "David Gordon Green evita santificar a Jeff Bauman: Jake Gyllenhaal muestra la rabia y Tatiana Maslany la frustración de acompañar una recuperación que no cabe en un eslogan.",
 			"whatToExpect": "Hospitales, prótesis, familia, exposición pública y una pareja que tiene que aprender a vivir con una recuperación real, lejos de la imagen del héroe.",
-			"pace": "Avanza de manera sobria, apoyándose en escenas familiares y sesiones de rehabilitación más que en grandes montajes de superación.",			"intensity": "La intensidad es emocional y áspera: el cuerpo cambia, el entorno celebra y Jeff no siempre puede acompañar la versión inspiradora que otros necesitan.",			"practicalContext": "La ficha no consigna duración; mirala con tiempo para un drama biográfico de tono contenido, sin esperar un triunfo deportivo tradicional.",			"forFansOf": "Para quienes valoran biopics de recuperación con actuaciones incómodas, especialmente el trabajo de Gyllenhaal y Maslany sobre el costo de ser símbolo.",			"notForYouIf": "No es para vos si buscás una historia de superación limpia, música triunfal o personajes que acepten rápido el papel que la prensa les asigna."
+			"pace": "Avanza de manera sobria, apoyándose en escenas familiares y sesiones de rehabilitación más que en grandes montajes de superación.",
+			"intensity": "La intensidad es emocional y áspera: el cuerpo cambia, el entorno celebra y Jeff no siempre puede acompañar la versión inspiradora que otros necesitan.",
+			"practicalContext": "La ficha no consigna duración; mirala con tiempo para un drama biográfico de tono contenido, sin esperar un triunfo deportivo tradicional.",
+			"forFansOf": "Para quienes valoran biopics de recuperación con actuaciones incómodas, especialmente el trabajo de Gyllenhaal y Maslany sobre el costo de ser símbolo.",
+			"notForYouIf": "No es para vos si buscás una historia de superación limpia, música triunfal o personajes que acepten rápido el papel que la prensa les asigna."
 		},
 		"becauseYouLiked": [
 			"the-fighter-2010",
@@ -48,5 +52,35 @@
 			"big-eyes-2014"
 		]
 	},
-	"review": "Más fuerte que el destino evita convertir a Jeff Bauman en una estampita de superación y ahí encuentra su mejor tono. Gyllenhaal muestra el ego, la rabia y la dependencia de un hombre que no sabe qué hacer con la admiración pública, mientras Tatiana Maslany le da a Erin una frustración tan legítima como incómoda. Green dirige sin grandes golpes de efecto y deja que las escenas familiares respiren. El relato es convencional, pero la actuación central le da una verdad áspera."
+	"review": "Más fuerte que el destino evita convertir a Jeff Bauman en una estampita de superación y ahí encuentra su mejor tono. Gyllenhaal muestra el ego, la rabia y la dependencia de un hombre que no sabe qué hacer con la admiración pública, mientras Tatiana Maslany le da a Erin una frustración tan legítima como incómoda. Green dirige sin grandes golpes de efecto y deja que las escenas familiares respiren. El relato es convencional, pero la actuación central le da una verdad áspera.",
+	"castCharacters": [
+		{
+			"actor": "Jake Gyllenhaal",
+			"character": "Jeff Bauman",
+			"tmdbMovieId": 395993,
+			"tmdbPersonId": 131,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tatiana Maslany",
+			"character": "Erin Hurley",
+			"tmdbMovieId": 395993,
+			"tmdbPersonId": 61134,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miranda Richardson",
+			"character": "Patty Bauman",
+			"tmdbMovieId": 395993,
+			"tmdbPersonId": 8436,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Clancy Brown",
+			"character": "Jeff Bauman Sr",
+			"tmdbMovieId": 395993,
+			"tmdbPersonId": 6574,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

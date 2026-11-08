@@ -64,5 +64,28 @@
 		]
 	},
 	"review": "En Volver, la cocina de Raimunda no es un refugio quieto: es el lugar donde el barrio entero se mezcla con el duelo, el trabajo y los secretos que nadie puede cargar sola. Penélope Cruz empuja cada escena con una energía práctica, mientras Carmen Maura vuelve inquietante lo familiar sin convertir la película en un relato de fantasmas convencional; Lola Dueñas aporta el contrapunto más reservado. Pedro Almodóvar alterna el color popular de Madrid con el silencio de La Mancha y hace que el humor aparezca cuando la situación parecía cerrarse. El tono puede rozar la exuberancia, pero ese pulso coral le da a la película una calidez propia.",
-	"catalogAddedAt": "2026-11-06"
+	"catalogAddedAt": "2026-11-06",
+	"castCharacters": [
+		{
+			"actor": "Penélope Cruz",
+			"character": "Raimunda",
+			"tmdbMovieId": 219,
+			"tmdbPersonId": 955,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Carmen Maura",
+			"character": "Irene",
+			"tmdbMovieId": 219,
+			"tmdbPersonId": 2744,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lola Dueñas",
+			"character": "Sole",
+			"tmdbMovieId": 219,
+			"tmdbPersonId": 2759,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

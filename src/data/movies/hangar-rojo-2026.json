@@ -50,5 +50,28 @@
 		}
 	},
 	"review": "Una orden administrativa cambia el significado de un edificio entero. Hangar rojo sigue a Jorge Silva mientras la escuela donde trabaja se convierte en parte de la maquinaria represiva, y Nicolás Zárate le da cuerpo a un hombre que calcula el costo de cada gesto. El blanco y negro acompaña una puesta concentrada en recorridos, umbrales y conversaciones donde el rango importa más que la verdad. Sallato sostiene el miedo desde esa proximidad, aunque el marco histórico exige atención a nombres y jerarquías. La pregunta que queda clavada es concreta: qué puede hacer alguien que reconoce el horror dentro de la institución a la que pertenece.",
-	"runtimeMinutes": 82
+	"runtimeMinutes": 82,
+	"castCharacters": [
+		{
+			"actor": "Nicolás Zárate",
+			"character": "Jorge Silva",
+			"tmdbMovieId": 1563588,
+			"tmdbPersonId": 2110671,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Boris Quercia",
+			"character": "Colonel Soler",
+			"tmdbMovieId": 1563588,
+			"tmdbPersonId": 590990,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marcial Tagle",
+			"character": "Colonel Jahn",
+			"tmdbMovieId": 1563588,
+			"tmdbPersonId": 590883,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

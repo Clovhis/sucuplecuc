@@ -42,23 +42,54 @@
 		"tenSecondTake": {
 			"verdict": "Ip Man convierte la disciplina en resistencia: Wilson Yip deja que Donnie Yen pelee con calma mientras la ocupación aprieta.",
 			"whatToExpect": "Un maestro de Wing Chun intenta mantenerse al margen hasta que la invasión le exige tomar posición.",
-			"pace": "Alterna escenas domésticas con combates breves y precisos, cada uno cargado de orgullo y amenaza.",			"intensity": "La violencia es física y política; el cuerpo de Ip Man se vuelve respuesta frente a la humillación.",
+			"pace": "Alterna escenas domésticas con combates breves y precisos, cada uno cargado de orgullo y amenaza.",
+			"intensity": "La violencia es física y política; el cuerpo de Ip Man se vuelve respuesta frente a la humillación.",
 			"practicalContext": "Mirala por la claridad de las coreografías y la serenidad de Donnie Yen, no por su rigor histórico.",
 			"forFansOf": "Si te gustan biografías marciales, artes de combate y héroes de disciplina silenciosa.",
 			"notForYouIf": "No es para vos si buscás realismo histórico, una trama menos patriótica o peleas sin repetición."
 		},
 		"becauseYouLiked": [
-		"tres-reyes-1999",
-		"hero-2002"
-	],
-	"related": [
-		"scott-pilgrim-contra-el-mundo-2010",
-		"golpe-en-la-pequena-china-1986",
-		"war-horse-2011",
-		"el-unico-superviviente-2013"
-	]
-},
+			"tres-reyes-1999",
+			"hero-2002"
+		],
+		"related": [
+			"scott-pilgrim-contra-el-mundo-2010",
+			"golpe-en-la-pequena-china-1986",
+			"war-horse-2011",
+			"el-unico-superviviente-2013"
+		]
+	},
 	"review": "Wilson Yip construye una biografía marcial que entiende el combate como disciplina, orgullo y respuesta política. Las coreografías priorizan el equilibrio y la velocidad, y cada duelo comunica algo sobre la posición social de quien pelea. Donnie Yen aporta una serenidad magnética, incluso cuando la película se vuelve abiertamente patriótica. El contraste entre su contención y la ocupación japonesa le da a los combates un peso que excede el lucimiento físico.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Donnie Yen",
+			"character": "Yip Man",
+			"tmdbMovieId": 14756,
+			"tmdbPersonId": 1341,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Simon Yam",
+			"character": "Zhou Qing Quan",
+			"tmdbMovieId": 14756,
+			"tmdbPersonId": 20519,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hiroyuki Ikeuchi",
+			"character": "General Miura",
+			"tmdbMovieId": 14756,
+			"tmdbPersonId": 234641,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gordon Lam Ka-Tung",
+			"character": "Captain Li Zhao",
+			"tmdbMovieId": 14756,
+			"tmdbPersonId": 83820,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

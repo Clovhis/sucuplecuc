@@ -52,5 +52,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
 	"country": "CA",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "John David Washington",
+			"character": "Joshua",
+			"tmdbMovieId": 670292,
+			"tmdbPersonId": 1117313,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Madeleine Yuna Voyles",
+			"character": "Alphie",
+			"tmdbMovieId": 670292,
+			"tmdbPersonId": 4068148,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

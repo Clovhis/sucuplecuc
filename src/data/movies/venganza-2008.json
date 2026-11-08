@@ -55,5 +55,42 @@
 	},
 	"review": "Venganza agarró una premisa de rescate bastante elemental y la convirtió en un mecanismo de acción seco, veloz y muy fácil de seguir. Pierre Morel no pierde tiempo en adornos: cada llamada, persecución y golpe empuja a Bryan un poco más cerca de su objetivo. Liam Neeson es la pieza decisiva porque juega la amenaza con una calma profesional, no con musculatura de cómic. Hay decisiones de guion toscas y una mirada algo punitiva sobre el mundo que retrata, pero como thriller de noventa minutos tiene una eficacia difícil de discutir.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Bryan Mills",
+			"tmdbMovieId": 8681,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maggie Grace",
+			"character": "Kim Mills",
+			"tmdbMovieId": 8681,
+			"tmdbPersonId": 11825,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Famke Janssen",
+			"character": "Lenore St. John",
+			"tmdbMovieId": 8681,
+			"tmdbPersonId": 10696,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Olivier Rabourdin",
+			"character": "Jean-Claude Pitrel",
+			"tmdbMovieId": 8681,
+			"tmdbPersonId": 49278,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katie Cassidy",
+			"character": "Amanda",
+			"tmdbMovieId": 8681,
+			"tmdbPersonId": 55775,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -39,7 +39,11 @@
 		"tenSecondTake": {
 			"verdict": "William Wyler mira la Segunda Guerra Mundial desde la resistencia doméstica de Greer Garson; Mrs. Miniver idealiza el frente civil, pero encuentra tensión en sus detalles familiares.",
 			"whatToExpect": "Bombardeos, evacuaciones, despedidas y una familia inglesa que intenta sostener rutina y dignidad mientras la guerra entra en la casa.",
-			"pace": "Avanza por episodios cotidianos antes de escalar; una visita nocturna o una ceremonia pueden cargar tanta tensión como una batalla.",			"intensity": "La emoción es contenida y patriótica, con peligro que llega a través de la espera y la ausencia más que de la acción militar.",			"practicalContext": "Con 134 minutos, pide tiempo para un drama clásico de guerra visto desde el hogar; su idealización histórica forma parte de lo que conviene discutir.",			"forFansOf": "Para quienes disfrutan cine clásico, actuaciones de Greer Garson y relatos bélicos que encuentran heroísmo en cuidar la vida diaria.",			"notForYouIf": "Puede no ser para vos si preferís una mirada antibélica, menos sentimental o combates mostrados directamente en lugar de familia y comunidad."
+			"pace": "Avanza por episodios cotidianos antes de escalar; una visita nocturna o una ceremonia pueden cargar tanta tensión como una batalla.",
+			"intensity": "La emoción es contenida y patriótica, con peligro que llega a través de la espera y la ausencia más que de la acción militar.",
+			"practicalContext": "Con 134 minutos, pide tiempo para un drama clásico de guerra visto desde el hogar; su idealización histórica forma parte de lo que conviene discutir.",
+			"forFansOf": "Para quienes disfrutan cine clásico, actuaciones de Greer Garson y relatos bélicos que encuentran heroísmo en cuidar la vida diaria.",
+			"notForYouIf": "Puede no ser para vos si preferís una mirada antibélica, menos sentimental o combates mostrados directamente en lugar de familia y comunidad."
 		},
 		"becauseYouLiked": [
 			"the-best-years-of-our-lives-1946",
@@ -56,5 +60,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Greer Garson",
+			"character": "Mrs. Miniver",
+			"tmdbMovieId": 27367,
+			"tmdbPersonId": 93805,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Walter Pidgeon",
+			"character": "Clem Miniver",
+			"tmdbMovieId": 27367,
+			"tmdbPersonId": 12308,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Teresa Wright",
+			"character": "Carol Beldon",
+			"tmdbMovieId": 27367,
+			"tmdbPersonId": 7663,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

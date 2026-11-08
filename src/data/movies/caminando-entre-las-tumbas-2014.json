@@ -57,5 +57,42 @@
 	},
 	"review": "Scott Frank recupera el tono del policial duro sin disfrazarlo de nostalgia prolija. Nueva York aparece llena de estaciones vacías, sótanos y calles en las que nadie parece llegar a tiempo, un clima ideal para el detective agotado de Liam Neeson. La película se toma en serio la oscuridad del caso y deja que la investigación avance por observación, no sólo por golpes. Dan Stevens, David Harbour y los antagonistas suman presencias fuertes alrededor de Scudder. Es áspera y a veces demasiado calculada, pero tiene personalidad y un pulso de novela negra poco común.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Matthew Scudder",
+			"tmdbMovieId": 169917,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dan Stevens",
+			"character": "Kenny Kristo",
+			"tmdbMovieId": 169917,
+			"tmdbPersonId": 221018,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Harbour",
+			"character": "Ray",
+			"tmdbMovieId": 169917,
+			"tmdbPersonId": 35029,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Boyd Holbrook",
+			"character": "Peter Kristo",
+			"tmdbMovieId": 169917,
+			"tmdbPersonId": 467645,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ólafur Darri Ólafsson",
+			"character": "Jonas Loogan",
+			"tmdbMovieId": 169917,
+			"tmdbPersonId": 110902,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -14,7 +14,9 @@
 		"Romance",
 		"Coming of age"
 	],
-	"subgenres": ["Coming of Age"],
+	"subgenres": [
+		"Coming of Age"
+	],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1995/ni-idea-1995.webp",
@@ -53,5 +55,28 @@
 		]
 	},
 	"review": "Amy Heckerling convierte Emma, de Jane Austen, en una comedia de Beverly Hills que entiende a Cher sin absolverla. Alicia Silverstone carga con la seguridad y la ingenuidad del personaje; Brittany Murphy y Stacey Dash arman el contrapeso que vuelve al grupo algo más que una vidriera de moda. La puesta, de colores limpios y cortes ágiles, usa los cambios de look como pequeñas decisiones de puesta en escena. A más de tres décadas, la sátira funciona porque también sabe cuidar el afecto entre sus personajes.",
-	"catalogAddedAt": "2026-11-06"
+	"catalogAddedAt": "2026-11-06",
+	"castCharacters": [
+		{
+			"actor": "Alicia Silverstone",
+			"character": "Cher",
+			"tmdbMovieId": 9603,
+			"tmdbPersonId": 5588,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brittany Murphy",
+			"character": "Tai",
+			"tmdbMovieId": 9603,
+			"tmdbPersonId": 328,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Rudd",
+			"character": "Josh",
+			"tmdbMovieId": 9603,
+			"tmdbPersonId": 22226,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -50,5 +50,21 @@
 	"isArgentinian": false,
 	"awards": {
 		"wins": []
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "James Stewart",
+			"character": "Paul Biegler",
+			"tmdbMovieId": 93,
+			"tmdbPersonId": 854,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lee Remick",
+			"character": "Laura Manion",
+			"tmdbMovieId": 93,
+			"tmdbPersonId": 855,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

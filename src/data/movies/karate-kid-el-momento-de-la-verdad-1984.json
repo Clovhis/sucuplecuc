@@ -58,5 +58,42 @@
 			"el-hombre-del-norte-2022"
 		]
 	},
-	"review": "Karate Kid no necesita adornarse para explicar por qué quedó grabada: cuenta una historia simple de mudanza, acoso y aprendizaje, pero entiende que el verdadero entrenamiento ocurre cuando Daniel deja de reaccionar a cada provocación. Ralph Macchio sostiene al protagonista con una mezcla de bronca y vulnerabilidad que todavía resulta cercana. Pat Morita, por su parte, transforma al señor Miyagi en algo más complejo que un maestro simpático: tiene humor, dolor y una manera paciente de ordenar el mundo. El montaje del entrenamiento, el torneo y la idea de que la disciplina también puede ser cariño siguen funcionando de maravilla."
+	"review": "Karate Kid no necesita adornarse para explicar por qué quedó grabada: cuenta una historia simple de mudanza, acoso y aprendizaje, pero entiende que el verdadero entrenamiento ocurre cuando Daniel deja de reaccionar a cada provocación. Ralph Macchio sostiene al protagonista con una mezcla de bronca y vulnerabilidad que todavía resulta cercana. Pat Morita, por su parte, transforma al señor Miyagi en algo más complejo que un maestro simpático: tiene humor, dolor y una manera paciente de ordenar el mundo. El montaje del entrenamiento, el torneo y la idea de que la disciplina también puede ser cariño siguen funcionando de maravilla.",
+	"castCharacters": [
+		{
+			"actor": "Ralph Macchio",
+			"character": "Daniel",
+			"tmdbMovieId": 1885,
+			"tmdbPersonId": 2877,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pat Morita",
+			"character": "Miyagi",
+			"tmdbMovieId": 1885,
+			"tmdbPersonId": 23915,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elisabeth Shue",
+			"character": "Ali",
+			"tmdbMovieId": 1885,
+			"tmdbPersonId": 1951,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Zabka",
+			"character": "Johnny",
+			"tmdbMovieId": 1885,
+			"tmdbPersonId": 56124,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martin Kove",
+			"character": "Kreese",
+			"tmdbMovieId": 1885,
+			"tmdbPersonId": 56117,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

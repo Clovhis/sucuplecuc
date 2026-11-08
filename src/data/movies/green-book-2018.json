@@ -62,5 +62,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Viggo Mortensen",
+			"character": "Tony Lip",
+			"tmdbMovieId": 490132,
+			"tmdbPersonId": 110,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mahershala Ali",
+			"character": "Dr. Don Shirley",
+			"tmdbMovieId": 490132,
+			"tmdbPersonId": 932967,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Linda Cardellini",
+			"character": "Dolores",
+			"tmdbMovieId": 490132,
+			"tmdbPersonId": 1817,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

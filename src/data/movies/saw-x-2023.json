@@ -39,21 +39,37 @@
 			"notForYouIf": "Quizás no sea para vos si te incomodan el gore, la manipulación moral o una película que intenta humanizar al torturador."
 		},
 		"becauseYouLiked": [
-		"saw-2004",
-		"martires-2008"
-	],
-	"related": [
-		"terrifier-2-2022",
-		"terrifier-3-2024",
-		"ichi-the-killer-2001",
-		"tu-madre-se-ha-comido-a-mi-perro-1992"
-	]
-},
+			"saw-2004",
+			"martires-2008"
+		],
+		"related": [
+			"terrifier-2-2022",
+			"terrifier-3-2024",
+			"ichi-the-killer-2001",
+			"tu-madre-se-ha-comido-a-mi-perro-1992"
+		]
+	},
 	"review": "Saw X vuelve a poner a John Kramer en el centro y esa decisión le devuelve un conflicto concreto a una saga que venía muy dispersa. Kevin Greutert se toma tiempo para mostrar la estafa que lo golpea antes de activar las trampas, por eso la venganza tiene una lógica emocional aunque siga siendo brutal. Tobin Bell carga la película con serenidad y fragilidad, mientras Shawnee Smith recupera la energía filosa de Amanda. El gore está ahí, detallado y artesanal, pero no funciona solo como catálogo. Tiene algunos atajos de guion, aunque es una de las secuelas más enfocadas.",
 	"synopsis": "John Kramer viaja a México para someterse a un tratamiento que promete curar su cáncer, pero descubre que todo era una estafa montada sobre pacientes desesperados. Con Amanda a su lado, prepara un castigo meticuloso para quienes lucraron con su última esperanza.",
 	"audienceRating": "+18",
 	"subgenres": [
 		"Gore"
 	],
-	"reviewPublishedAt": "2026-05-23"
+	"reviewPublishedAt": "2026-05-23",
+	"castCharacters": [
+		{
+			"actor": "Tobin Bell",
+			"character": "John Kramer",
+			"tmdbMovieId": 951491,
+			"tmdbPersonId": 2144,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shawnee Smith",
+			"character": "Amanda Young",
+			"tmdbMovieId": 951491,
+			"tmdbPersonId": 2138,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

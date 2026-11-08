@@ -7197,6 +7197,14 @@ img {
 	min-width: 0;
 }
 
+.movie-detail__person-character {
+	margin: 0;
+	font-size: 0.8rem;
+	line-height: 1.35;
+	color: #d1d9e6;
+	overflow-wrap: anywhere;
+}
+
 .movie-detail__person-badge-row {
 	display: flex;
 	align-items: center;

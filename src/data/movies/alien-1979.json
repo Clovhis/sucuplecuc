@@ -69,5 +69,42 @@
 	],
 	"isArgentinian": false,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Tom Skerritt",
+			"character": "Dallas",
+			"tmdbMovieId": 348,
+			"tmdbPersonId": 4139,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sigourney Weaver",
+			"character": "Ripley",
+			"tmdbMovieId": 348,
+			"tmdbPersonId": 10205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Veronica Cartwright",
+			"character": "Lambert",
+			"tmdbMovieId": 348,
+			"tmdbPersonId": 5047,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harry Dean Stanton",
+			"character": "Brett",
+			"tmdbMovieId": 348,
+			"tmdbPersonId": 5048,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Hurt",
+			"character": "Kane",
+			"tmdbMovieId": 348,
+			"tmdbPersonId": 5049,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

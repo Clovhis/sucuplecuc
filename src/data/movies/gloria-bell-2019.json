@@ -58,5 +58,42 @@
 	},
 	"review": "Sebastián Lelio filma a Gloria en movimiento: baila, trabaja, llama a sus hijos y vuelve a probar suerte aunque ya conoce el costo de entusiasmarse. Julianne Moore le da una vitalidad enorme sin ocultar el cansancio de una mujer que aprendió a sostenerse sola, y John Turturro convierte a Arnold en un compañero encantador hasta que sus propias inseguridades empiezan a ocupar toda la escena. El relato tiene humor, deseo y melancolía, pero sobre todo respeta la edad y la autonomía de su protagonista.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Julianne Moore",
+			"character": "Gloria Bell",
+			"tmdbMovieId": 491473,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Turturro",
+			"character": "Arnold",
+			"tmdbMovieId": 491473,
+			"tmdbPersonId": 1241,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Cera",
+			"character": "Peter",
+			"tmdbMovieId": 491473,
+			"tmdbPersonId": 39995,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Caren Pistorius",
+			"character": "Anne",
+			"tmdbMovieId": 491473,
+			"tmdbPersonId": 1046903,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Garrett",
+			"character": "Dustin Mason",
+			"tmdbMovieId": 491473,
+			"tmdbPersonId": 18,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

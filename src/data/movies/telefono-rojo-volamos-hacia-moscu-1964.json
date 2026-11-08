@@ -53,5 +53,28 @@
 	"country": "GB",
 	"releaseDate": "1964-01-29",
 	"subgenres": [],
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Peter Sellers",
+			"character": "Group Capt. Lionel Mandrake / President Merkin Muffley / Dr. Strangelove",
+			"tmdbMovieId": 935,
+			"tmdbPersonId": 12446,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George C. Scott",
+			"character": "General 'Buck' Turgidson",
+			"tmdbMovieId": 935,
+			"tmdbPersonId": 862,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keenan Wynn",
+			"character": "Colonel Bat Guano",
+			"tmdbMovieId": 935,
+			"tmdbPersonId": 4966,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

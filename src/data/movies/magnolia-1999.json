@@ -58,5 +58,35 @@
 	},
 	"review": "Paul Thomas Anderson arma un mosaico emocional que se mueve entre la rabia, el arrepentimiento y una necesidad casi desesperada de ser perdonado. Tom Cruise, Julianne Moore, Philip Seymour Hoffman y William H. Macy forman un elenco que trabaja como una banda, con cada personaje cargando una música propia. El relato puede ser excesivo y no todos los desvíos tienen la misma fuerza, pero la cámara nunca pierde la compasión por sus criaturas. La película se anima a ser melodramática sin pedir disculpas y encuentra humanidad en quienes ya no saben cómo volver atrás.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "Frank T.J. Mackey",
+			"tmdbMovieId": 334,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Philip Seymour Hoffman",
+			"character": "Phil Parma",
+			"tmdbMovieId": 334,
+			"tmdbPersonId": 1233,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julianne Moore",
+			"character": "Linda Partridge",
+			"tmdbMovieId": 334,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William H. Macy",
+			"character": "Quiz Kid Donnie Smith",
+			"tmdbMovieId": 334,
+			"tmdbPersonId": 3905,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

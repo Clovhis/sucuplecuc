@@ -50,5 +50,28 @@
 	"reviewPublishedAt": "2026-03-04",
 	"synopsis": "Adam Clay lleva una vida tranquila como apicultor hasta que una vecina es víctima de una estafa devastadora. Al buscar responsables, revela habilidades y conexiones que lo empujan a una cruzada contra una red mucho más poderosa.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jason Statham",
+			"character": "Adam Clay",
+			"tmdbMovieId": 866398,
+			"tmdbPersonId": 976,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emmy Raver-Lampman",
+			"character": "Agent Verona Parker",
+			"tmdbMovieId": 866398,
+			"tmdbPersonId": 2026050,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Hutcherson",
+			"character": "Derek Danforth",
+			"tmdbMovieId": 866398,
+			"tmdbPersonId": 27972,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

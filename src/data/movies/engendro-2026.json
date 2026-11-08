@@ -8,8 +8,14 @@
 	"reviewPublishedAt": "2026-08-06",
 	"audienceRating": "+17",
 	"category": "Terror",
-	"genres": ["Terror", "Thriller", "Drama"],
-	"subgenres": ["Body Horror"],
+	"genres": [
+		"Terror",
+		"Thriller",
+		"Drama"
+	],
+	"subgenres": [
+		"Body Horror"
+	],
 	"country": "FI",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/engendro-2026.webp",
@@ -17,7 +23,13 @@
 	"trailerYoutubeId": "gelyoVzunGw",
 	"releasePlatform": "Otras plataformas",
 	"director": "Hanna Bergholm",
-	"mainCast": ["Seidi Haarla", "Rupert Grint", "Pamela Tola", "Pirkko Saisio", "Rebecca Lacey"],
+	"mainCast": [
+		"Seidi Haarla",
+		"Rupert Grint",
+		"Pamela Tola",
+		"Pirkko Saisio",
+		"Rebecca Lacey"
+	],
 	"productionCompany": "Elokuvayhtiö Komeetta Oy, Filmai LT, Getaway Films, Bluelight Nightborn Limited",
 	"cinepostaScore": 7,
 	"runtimeMinutes": 92,
@@ -34,18 +46,55 @@
 			"forFansOf": "Fans de Hanna Bergholm, del body horror y de las películas donde el monstruo nace de un vínculo que debería proteger.",
 			"notForYouIf": "Buscás una mitología explicada, sustos tradicionales o una historia liviana. Engendro apuesta a incomodar y dejar textura."
 		},
-	"becauseYouLiked": [
-		"inseparables-1988",
-		"ego-2022"
-	],
-	"related": [
-		"titane-2021",
-		"la-piel-que-habito-2011",
-		"cabeza-borradora-1977",
-		"scanners-1981"
-	]
-},
+		"becauseYouLiked": [
+			"inseparables-1988",
+			"ego-2022"
+		],
+		"related": [
+			"titane-2021",
+			"la-piel-que-habito-2011",
+			"cabeza-borradora-1977",
+			"scanners-1981"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Engendro entiende que el horror corporal funciona mejor cuando el monstruo no aparece como una amenaza ajena, sino como la forma visible de una intimidad que se desarma. Hanna Bergholm trabaja con texturas incómodas, silencios domésticos y una criatura de diseño inquietante para tensar la idea de maternidad, pertenencia y cuidado. Seidi Haarla sostiene el centro emocional con una fragilidad que nunca queda reducida al grito, y Rupert Grint evita que el conflicto se vuelva una sola nota. Hay golpes de efecto desparejos, pero la película conserva una atmósfera espesa y una imaginación propia."
+	"review": "Engendro entiende que el horror corporal funciona mejor cuando el monstruo no aparece como una amenaza ajena, sino como la forma visible de una intimidad que se desarma. Hanna Bergholm trabaja con texturas incómodas, silencios domésticos y una criatura de diseño inquietante para tensar la idea de maternidad, pertenencia y cuidado. Seidi Haarla sostiene el centro emocional con una fragilidad que nunca queda reducida al grito, y Rupert Grint evita que el conflicto se vuelva una sola nota. Hay golpes de efecto desparejos, pero la película conserva una atmósfera espesa y una imaginación propia.",
+	"castCharacters": [
+		{
+			"actor": "Seidi Haarla",
+			"character": "Saga",
+			"tmdbMovieId": 964849,
+			"tmdbPersonId": 2420419,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Grint",
+			"character": "Jon",
+			"tmdbMovieId": 964849,
+			"tmdbPersonId": 10989,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pamela Tola",
+			"character": "Taru",
+			"tmdbMovieId": 964849,
+			"tmdbPersonId": 147733,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pirkko Saisio",
+			"character": "Saga's Mother",
+			"tmdbMovieId": 964849,
+			"tmdbPersonId": 1200385,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rebecca Lacey",
+			"character": "Jon's Mother",
+			"tmdbMovieId": 964849,
+			"tmdbPersonId": 1219229,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

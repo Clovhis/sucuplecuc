@@ -53,5 +53,28 @@
 	"review": "AVATAR: FUEGO Y CENIZAS vuelve a demostrar que James Cameron sigue siendo un animal para construir mundos, escalas y secuencias gigantescas que se entienden perfecto. Pandora otra vez impresiona, cambia de color, de temperatura y de amenaza, y hay momentos donde la película se sostiene solo con el placer de mirar.\n\nEl problema es que la historia no siempre acompaña esa potencia visual. El duelo de la familia Sully tiene peso al principio, pero la película se alarga y varias escenas parecen pensadas más para preparar futuras entregas que para darle forma a esta. Sam Worthington y Zoe Saldana cumplen, aunque el centro emocional queda algo diluido.\n\nEl espectáculo sigue siendo enorme, pero esta vez la narración no empuja igual. Vale por el mundo y por Cameron; cuesta más defenderla por lo que cuenta.",
 	"reviewPublishedAt": "2026-02-25",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sam Worthington",
+			"character": "Jake",
+			"tmdbMovieId": 83533,
+			"tmdbPersonId": 65731,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zoe Saldaña",
+			"character": "Neytiri",
+			"tmdbMovieId": 83533,
+			"tmdbPersonId": 8691,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sigourney Weaver",
+			"character": "Kiri",
+			"tmdbMovieId": 83533,
+			"tmdbPersonId": 10205,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

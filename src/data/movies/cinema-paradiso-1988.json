@@ -61,5 +61,35 @@
 	},
 	"review": "El chico que limpia la sala, el proyeccionista que conoce todos los secretos y una pantalla que parece contener el mundo forman el corazón de Cinema Paradiso. Giuseppe Tornatore trabaja con una nostalgia frontal, pero Philippe Noiret y Salvatore Cascio le dan a esa nostalgia una relación concreta, hecha de consejos, peleas y cariño mal expresado. La música empuja bastante las emociones y el montaje puede subrayar lo que ya entendimos, aunque la película conoce el poder de una imagen compartida. Su homenaje al cine no habla sólo de películas: habla de lo que una comunidad arma alrededor de ellas.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Philippe Noiret",
+			"character": "Alfredo",
+			"tmdbMovieId": 11216,
+			"tmdbPersonId": 24366,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jacques Perrin",
+			"character": "Salvatore 'Totò' Di Vita (adult)",
+			"tmdbMovieId": 11216,
+			"tmdbPersonId": 20030,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Salvatore Cascio",
+			"character": "Salvatore 'Totò' Di Vita (child)",
+			"tmdbMovieId": 11216,
+			"tmdbPersonId": 68635,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marco Leonardi",
+			"character": "Salvatore 'Totò' Di Vita (teen)",
+			"tmdbMovieId": 11216,
+			"tmdbPersonId": 27643,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

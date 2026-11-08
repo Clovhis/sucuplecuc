@@ -57,5 +57,28 @@
 		"HBO Max"
 	],
 	"runtimeMinutes": 128,
-	"releaseDate": "1993-07-22"
+	"releaseDate": "1993-07-22",
+	"castCharacters": [
+		{
+			"actor": "Clint Eastwood",
+			"character": "Frank Horrigan",
+			"tmdbMovieId": 9386,
+			"tmdbPersonId": 190,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Malkovich",
+			"character": "Mitch Leary",
+			"tmdbMovieId": 9386,
+			"tmdbPersonId": 6949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rene Russo",
+			"character": "Lilly Raines",
+			"tmdbMovieId": 9386,
+			"tmdbPersonId": 14343,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

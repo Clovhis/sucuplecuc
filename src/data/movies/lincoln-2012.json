@@ -67,5 +67,42 @@
 		]
 	},
 	"review": "Steven Spielberg concentra la película en las semanas en que Lincoln busca conseguir votos para aprobar la Decimotercera Enmienda, y logra que una discusión parlamentaria tenga tensión de thriller. Daniel Day-Lewis evita el bronce: habla bajo, cuenta anécdotas y deja ver a un presidente agotado que calcula cada movimiento. Sally Field y Tommy Lee Jones suman fuerza a los conflictos familiares y legislativos. El guion de Tony Kushner es muy verbal y a veces denso, pero sabe mostrar que una decisión histórica también se cocina entre favores, miedo y negociación.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Daniel Day-Lewis",
+			"character": "Abraham Lincoln",
+			"tmdbMovieId": 72976,
+			"tmdbPersonId": 11856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sally Field",
+			"character": "Mary Todd Lincoln",
+			"tmdbMovieId": 72976,
+			"tmdbPersonId": 35,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Strathairn",
+			"character": "William Seward",
+			"tmdbMovieId": 72976,
+			"tmdbPersonId": 11064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joseph Gordon-Levitt",
+			"character": "Robert Lincoln",
+			"tmdbMovieId": 72976,
+			"tmdbPersonId": 24045,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Spader",
+			"character": "W.N. Bilbo",
+			"tmdbMovieId": 72976,
+			"tmdbPersonId": 13548,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

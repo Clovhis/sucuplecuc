@@ -38,6 +38,7 @@ export function createHomeMovieRecord(movie: Movie): HomeMovieRecord {
 		searchAliases: normalizeSearchText(aliases.join(' | ')),
 		searchDirector: normalizeSearchText(movie.director),
 		searchCast: normalizeSearchText(movie.mainCast.join(' | ')),
+		searchCharacters: (movie.castCharacters ?? []).map(({ actor, character, displayCharacter, variants }) => ({ actor, character: displayCharacter ?? character, variants: displayCharacter ? [character, ...(variants ?? [])] : variants })),
 		releaseTimestamp: getMovieSortTimestamp(movie),
 		recentPremiere: isRecentPremiere(movie),
 		score: movie.cinepostaScore ?? null,

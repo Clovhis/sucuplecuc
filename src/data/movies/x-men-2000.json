@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "CA, GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Patrick Stewart",
+			"character": "Xavier",
+			"tmdbMovieId": 36657,
+			"tmdbPersonId": 2387,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Jackman",
+			"character": "Logan / Wolverine",
+			"tmdbMovieId": 36657,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian McKellen",
+			"character": "Magneto",
+			"tmdbMovieId": 36657,
+			"tmdbPersonId": 1327,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

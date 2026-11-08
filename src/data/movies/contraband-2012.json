@@ -57,5 +57,28 @@
 		]
 	},
 	"runtimeMinutes": 109,
-	"review": "Baltasar Kormákur arranca con un objetivo sencillo y después agrega problemas a bordo de un barco que parece no terminar nunca. Wahlberg sabe llevar este tipo de héroe práctico, más preocupado por resolver una deuda que por parecer invencible, y Ben Foster suma complicidad áspera. El suspenso se apoya en demasiadas casualidades y los villanos no tienen mucha profundidad, pero la película administra bien el reloj y los cambios de plan. Funciona como un policial de escape compacto, sin prometer mucho más."
+	"review": "Baltasar Kormákur arranca con un objetivo sencillo y después agrega problemas a bordo de un barco que parece no terminar nunca. Wahlberg sabe llevar este tipo de héroe práctico, más preocupado por resolver una deuda que por parecer invencible, y Ben Foster suma complicidad áspera. El suspenso se apoya en demasiadas casualidades y los villanos no tienen mucha profundidad, pero la película administra bien el reloj y los cambios de plan. Funciona como un policial de escape compacto, sin prometer mucho más.",
+	"castCharacters": [
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Chris Farraday",
+			"tmdbMovieId": 77866,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Beckinsale",
+			"character": "Kate Farraday",
+			"tmdbMovieId": 77866,
+			"tmdbPersonId": 3967,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Foster",
+			"character": "Sebastian Abney",
+			"tmdbMovieId": 77866,
+			"tmdbPersonId": 11107,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

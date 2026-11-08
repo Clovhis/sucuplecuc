@@ -72,5 +72,28 @@
 		"Apple TV"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Ellen Burstyn",
+			"character": "Chris MacNeil",
+			"tmdbMovieId": 9552,
+			"tmdbPersonId": 9560,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Max von Sydow",
+			"character": "Father Lankester Merrin",
+			"tmdbMovieId": 9552,
+			"tmdbPersonId": 2201,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lee J. Cobb",
+			"character": "Lt. Bill Kinderman",
+			"tmdbMovieId": 9552,
+			"tmdbPersonId": 5248,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

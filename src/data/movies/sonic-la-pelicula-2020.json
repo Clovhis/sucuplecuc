@@ -45,7 +45,7 @@
 			"forFansOf": "Te puede divertir si te gustan las adaptaciones de videojuegos con corazón, las películas de ruta y los villanos caricaturescos, especialmente cuando Jim Carrey tiene espacio para improvisar gestos y movimientos.",
 			"notForYouIf": "Quizás no sea para vos si la fórmula de origen te resulta previsible, si los chistes referenciales te desconectan o si esperás una aventura más oscura y menos preocupada por caerle bien a toda la familia."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"terminator-3-rise-of-the-machines-2003",
 			"terminator-dark-fate-2019"
 		],
@@ -56,5 +56,42 @@
 			"back-to-the-future-part-iii-1990"
 		]
 	},
-	"review": "Sonic: La película sobrevivió a una producción difícil porque entendió que la velocidad del personaje necesitaba un vínculo emocional sencillo. Jeff Fowler arma una aventura de ruta amable, con James Marsden como un adulto que quiere salir de su pueblo y Ben Schwartz poniendo voz a un Sonic ansioso por tener amigos. Jim Carrey recupera el placer del villano caricaturesco con un Robotnik de gestos enormes y energía de dibujito. La historia sigue una fórmula conocida y algunos chistes se estiran demasiado, pero la película cuida a sus personajes, tiene buen ritmo y convierte una adaptación de videojuego en una experiencia genuinamente entretenida."
+	"review": "Sonic: La película sobrevivió a una producción difícil porque entendió que la velocidad del personaje necesitaba un vínculo emocional sencillo. Jeff Fowler arma una aventura de ruta amable, con James Marsden como un adulto que quiere salir de su pueblo y Ben Schwartz poniendo voz a un Sonic ansioso por tener amigos. Jim Carrey recupera el placer del villano caricaturesco con un Robotnik de gestos enormes y energía de dibujito. La historia sigue una fórmula conocida y algunos chistes se estiran demasiado, pero la película cuida a sus personajes, tiene buen ritmo y convierte una adaptación de videojuego en una experiencia genuinamente entretenida.",
+	"castCharacters": [
+		{
+			"actor": "Jim Carrey",
+			"character": "Dr. Robotnik",
+			"tmdbMovieId": 454626,
+			"tmdbPersonId": 206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Schwartz",
+			"character": "Sonic (voice)",
+			"tmdbMovieId": 454626,
+			"tmdbPersonId": 222121,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Marsden",
+			"character": "Tom Wachowski",
+			"tmdbMovieId": 454626,
+			"tmdbPersonId": 11006,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tika Sumpter",
+			"character": "Maddie Wachowski",
+			"tmdbMovieId": 454626,
+			"tmdbPersonId": 110742,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Natasha Rothwell",
+			"character": "Rachel",
+			"tmdbMovieId": 454626,
+			"tmdbPersonId": 1546282,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

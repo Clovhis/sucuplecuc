@@ -53,5 +53,28 @@
 			"depredador-1987"
 		]
 	},
-	"review": "Stephen Sommers entiende que una aventura de momias necesita arena, peligro y un poco de descaro, y arma un parque de diversiones que todavía se mueve con ritmo. Brendan Fraser le pone humanidad al héroe sin convertirlo en un payaso, mientras Rachel Weisz sostiene la parte curiosa y valiente del relato. Los efectos tienen el encanto de su época y la película abraza el exceso con una honestidad que la vuelve más simpática que solemne."
+	"review": "Stephen Sommers entiende que una aventura de momias necesita arena, peligro y un poco de descaro, y arma un parque de diversiones que todavía se mueve con ritmo. Brendan Fraser le pone humanidad al héroe sin convertirlo en un payaso, mientras Rachel Weisz sostiene la parte curiosa y valiente del relato. Los efectos tienen el encanto de su época y la película abraza el exceso con una honestidad que la vuelve más simpática que solemne.",
+	"castCharacters": [
+		{
+			"actor": "Brendan Fraser",
+			"character": "Rick O'Connell",
+			"tmdbMovieId": 564,
+			"tmdbPersonId": 18269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel Weisz",
+			"character": "Evelyn Carnahan",
+			"tmdbMovieId": 564,
+			"tmdbPersonId": 3293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Hannah",
+			"character": "Jonathan Carnahan",
+			"tmdbMovieId": 564,
+			"tmdbPersonId": 10727,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,28 @@
 			"battle-royale-2000"
 		]
 	},
-	"review": "El demoledor es una cápsula noventera que mezcla distopía, acción y chistes de choque con una alegría bastante bruta. Stallone funciona como policía fuera de época, Snipes se divierte con un villano de videojuego y Bullock encuentra el tono justo para que la película no se tome demasiado en serio. La sátira sobre un futuro higienizado es irregular, pero las persecuciones, las frases absurdas y el diseño de ese 2032 todavía tienen encanto de culto."
+	"review": "El demoledor es una cápsula noventera que mezcla distopía, acción y chistes de choque con una alegría bastante bruta. Stallone funciona como policía fuera de época, Snipes se divierte con un villano de videojuego y Bullock encuentra el tono justo para que la película no se tome demasiado en serio. La sátira sobre un futuro higienizado es irregular, pero las persecuciones, las frases absurdas y el diseño de ese 2032 todavía tienen encanto de culto.",
+	"castCharacters": [
+		{
+			"actor": "Sylvester Stallone",
+			"character": "John Spartan",
+			"tmdbMovieId": 9739,
+			"tmdbPersonId": 16483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wesley Snipes",
+			"character": "Simon Phoenix",
+			"tmdbMovieId": 9739,
+			"tmdbPersonId": 10814,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sandra Bullock",
+			"character": "Lt. Lenina Huxley",
+			"tmdbMovieId": 9739,
+			"tmdbPersonId": 18277,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -27,29 +27,45 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Iron Lung hace del submarino un ataúd en movimiento: Mark Fischbach encierra el miedo entre ruidos, mapas y oscuridad.",
-			"whatToExpect": "Un condenado explora un océano de sangre desde una cápsula rudimentaria mientras la humanidad ya desapareció.",
-			"pace": "Avanza con instrucciones, ruidos y decisiones mínimas; cada demora vuelve más pesado el espacio cerrado.",
-			"intensity": "El terror nace de no poder mirar afuera y de sospechar que la misión oculta algo peor.",
-			"practicalContext": "Mirala con sonido y paciencia: el clima depende de escuchar lo que no se ve.",
-			"forFansOf": "Si te atraen horrores claustrofóbicos, ciencia ficción áspera y Mark Fischbach sosteniendo casi todo.",
-			"notForYouIf": "No es para vos si necesitás monstruos visibles, acción constante o explicaciones completas del desastre."
-		},
-		"becauseYouLiked": [
-		"la-zona-muerta-1983",
-		"colony-zona-cero-2026"
-	],
-	"related": [
-		"tetsuo-the-iron-man-1989",
-		"scanners-1981",
-		"the-brood-1979",
-		"28-years-later-the-bone-temple-2026"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Iron Lung hace del submarino un ataúd en movimiento: Mark Fischbach encierra el miedo entre ruidos, mapas y oscuridad.",
+      "whatToExpect": "Un condenado explora un océano de sangre desde una cápsula rudimentaria mientras la humanidad ya desapareció.",
+      "pace": "Avanza con instrucciones, ruidos y decisiones mínimas; cada demora vuelve más pesado el espacio cerrado.",
+      "intensity": "El terror nace de no poder mirar afuera y de sospechar que la misión oculta algo peor.",
+      "practicalContext": "Mirala con sonido y paciencia: el clima depende de escuchar lo que no se ve.",
+      "forFansOf": "Si te atraen horrores claustrofóbicos, ciencia ficción áspera y Mark Fischbach sosteniendo casi todo.",
+      "notForYouIf": "No es para vos si necesitás monstruos visibles, acción constante o explicaciones completas del desastre."
+    },
+    "becauseYouLiked": [
+      "la-zona-muerta-1983",
+      "colony-zona-cero-2026"
+    ],
+    "related": [
+      "tetsuo-the-iron-man-1989",
+      "scanners-1981",
+      "the-brood-1979",
+      "28-years-later-the-bone-temple-2026"
+    ]
+  },
   "synopsis": "Tras la desaparición de la humanidad y de las estrellas, un condenado es enviado a explorar un océano de sangre en una luna desierta. Encerrado en un submarino rudimentario, avanza a ciegas en busca de recursos y de alguna explicación para el desastre.",
   "audienceRating": "+16",
   "review": "Iron Lung saca mucho jugo de una premisa mínima: un condenado encerrado en un submarino improvisado, obligado a avanzar sin poder mirar el lugar que lo rodea. La dirección hace del tablero, los ruidos metálicos y la voz del protagonista herramientas de suspenso; la falta de espacio no es un límite, es el terror. Markiplier carga casi solo con la película y encuentra una mezcla efectiva de bronca, miedo y agotamiento. El mundo exterior queda apenas sugerido, una decisión acertada aunque algunas explicaciones cortan el clima. Si buscás terror claustrofóbico y áspero, funciona mejor en su silencio que cuando intenta ampliar el misterio.",
-  "reviewPublishedAt": "2026-03-05"
+  "reviewPublishedAt": "2026-03-05",
+  "castCharacters": [
+    {
+      "actor": "Caroline Kaplan",
+      "character": "Ava",
+      "tmdbMovieId": 1116201,
+      "tmdbPersonId": 2602912,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Troy Baker",
+      "character": "David",
+      "tmdbMovieId": 1116201,
+      "tmdbPersonId": 963818,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

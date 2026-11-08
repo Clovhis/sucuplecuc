@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Michael Keaton",
+			"character": "Beetlejuice",
+			"tmdbMovieId": 917496,
+			"tmdbPersonId": 2232,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Winona Ryder",
+			"character": "Lydia",
+			"tmdbMovieId": 917496,
+			"tmdbPersonId": 1920,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine O'Hara",
+			"character": "Delia",
+			"tmdbMovieId": 917496,
+			"tmdbPersonId": 11514,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

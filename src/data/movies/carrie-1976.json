@@ -54,5 +54,21 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Sissy Spacek",
+			"character": "Carrie",
+			"tmdbMovieId": 7340,
+			"tmdbPersonId": 5606,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Piper Laurie",
+			"character": "Margaret White",
+			"tmdbMovieId": 7340,
+			"tmdbPersonId": 6721,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

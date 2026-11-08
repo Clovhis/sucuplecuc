@@ -42,18 +42,41 @@
 			"forFansOf": "Fans de Jodorowsky, del cine de culto y de los westerns que transforman el duelo en ritual, alucinación y crítica del poder.",
 			"notForYouIf": "Buscás una trama clara, personajes realistas o una lectura única. El Topo funciona mejor como viaje simbólico."
 		},
-	"becauseYouLiked": [
-		"grupo-salvaje-1969",
-		"la-patagonia-rebelde-1974"
-	],
-	"related": [
-		"valor-de-ley-2010",
-		"dances-with-wolves-1990",
-		"django-unchained-2012",
-		"los-colonos-2023"
-	]
-},
+		"becauseYouLiked": [
+			"grupo-salvaje-1969",
+			"la-patagonia-rebelde-1974"
+		],
+		"related": [
+			"valor-de-ley-2010",
+			"dances-with-wolves-1990",
+			"django-unchained-2012",
+			"los-colonos-2023"
+		]
+	},
 	"review": "Alejandro Jodorowsky construye un western místico que usa el exceso para desarmar la idea de héroe. Los encuadres rituales, los cuerpos y los animales componen un imaginario provocador que funciona por asociación más que por explicación. Es una experiencia irregular y deliberadamente desafiante, ideal para entrar sin exigirle una lectura única. El viaje del pistolero se parece menos a una conquista que a una sucesión de pruebas que terminan por vaciar su idea de superioridad.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Alejandro Jodorowsky",
+			"character": "El Topo",
+			"tmdbMovieId": 13041,
+			"tmdbPersonId": 55119,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brontis Jodorowsky",
+			"character": "Son of El Topo",
+			"tmdbMovieId": 13041,
+			"tmdbPersonId": 85148,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Silva",
+			"character": "The Colonel",
+			"tmdbMovieId": 13041,
+			"tmdbPersonId": 236273,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -38,19 +38,42 @@
 			"forFansOf": "La ciencia ficción postapocalíptica, Andy Serkis y las historias donde la guerra empieza por miedo.",
 			"notForYouIf": "Querés una aventura liviana, villanos simples o acción separada de la discusión sobre convivencia."
 		},
-	"becauseYouLiked": [
-		"battle-royale-2000",
-		"sonic-3-la-pelicula-2024"
-	],
-	"related": [
-		"amos-del-universo-2026",
-		"terminator-dark-fate-2019",
-		"deja-vu-2006",
-		"sonic-la-pelicula-2020"
-	]
-},
+		"becauseYouLiked": [
+			"battle-royale-2000",
+			"sonic-3-la-pelicula-2024"
+		],
+		"related": [
+			"amos-del-universo-2026",
+			"terminator-dark-fate-2019",
+			"deja-vu-2006",
+			"sonic-la-pelicula-2020"
+		]
+	},
 	"review": "Matt Reeves enfrenta a una comunidad de simios con un grupo de humanos que necesita recursos, y convierte la convivencia posible en una tragedia de miedos y ambición. Andy Serkis hace de Caesar una figura compleja, protectora y cansada, mientras Toby Kebbell le da a Koba una amenaza que no es puro mal. La dirección usa captura de movimiento y paisajes arrasados para sostener un conflicto claro y áspero. El ritmo construye tensión antes de las batallas. Vale porque Caesar termina siendo más humano que varios humanos.",
-  "synopsis": "Diez años después de una pandemia que devastó a la humanidad, una comunidad de simios liderada por César se cruza con supervivientes de San Francisco. La búsqueda de una central hidroeléctrica abre una oportunidad de convivencia, pero la desconfianza amenaza con desatar una guerra.",
+	"synopsis": "Diez años después de una pandemia que devastó a la humanidad, una comunidad de simios liderada por César se cruza con supervivientes de San Francisco. La búsqueda de una central hidroeléctrica abre una oportunidad de convivencia, pero la desconfianza amenaza con desatar una guerra.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Andy Serkis",
+			"character": "Caesar",
+			"tmdbMovieId": 119450,
+			"tmdbPersonId": 1333,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Oldman",
+			"character": "Dreyfus",
+			"tmdbMovieId": 119450,
+			"tmdbPersonId": 64,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Clarke",
+			"character": "Malcolm",
+			"tmdbMovieId": 119450,
+			"tmdbPersonId": 76512,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

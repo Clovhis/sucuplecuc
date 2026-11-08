@@ -50,5 +50,21 @@
 	},
 	"review": "Georgia Oakley encuentra una razón para volver a Austen en la intimidad entre las hermanas Dashwood. Daisy Edgar-Jones y Esmé Creed-Miles sostienen dos maneras de protegerse de un mundo donde casarse también significa conseguir un lugar para vivir. Los paisajes y los bailes tienen atractivo, pero el vínculo entre ellas evita que la película se reduzca a una sucesión de pretendientes elegantes. Algunas decisiones hacen demasiado explícita su lectura contemporánea y el ritmo pierde soltura entre compromisos y desencuentros. Aun así, la diferencia entre lo que Elinor calla y lo que Marianne expresa mantiene viva la tensión emocional.",
 	"catalogAddedAt": "2026-10-29",
-	"runtimeMinutes": 132
+	"runtimeMinutes": 132,
+	"castCharacters": [
+		{
+			"actor": "Daisy Edgar-Jones",
+			"character": "Elinor Dashwood",
+			"tmdbMovieId": 1503762,
+			"tmdbPersonId": 2230991,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Esmé Creed-Miles",
+			"character": "Marianne Dashwood",
+			"tmdbMovieId": 1503762,
+			"tmdbPersonId": 79510,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

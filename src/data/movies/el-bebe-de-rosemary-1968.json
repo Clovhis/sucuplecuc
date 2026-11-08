@@ -59,5 +59,42 @@
 	},
 	"review": "Roman Polanski construye el terror desde la cortesía, la decoración y la duda. Mia Farrow hace que Rosemary parezca frágil sin volverla pasiva, y cada sonrisa de los vecinos tiene una segunda lectura. El departamento se achica a medida que crece el aislamiento, mientras la cámara observa puertas, pasillos y conversaciones que no terminan de cerrar. La película no necesita mostrar todo para resultar insoportable; le alcanza con dejar a la protagonista preguntándose si la están cuidando o vigilando. Su malestar nace de no poder confiar en nadie.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Mia Farrow",
+			"character": "Rosemary Woodhouse",
+			"tmdbMovieId": 805,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Cassavetes",
+			"character": "Guy Woodhouse",
+			"tmdbMovieId": 805,
+			"tmdbPersonId": 11147,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ruth Gordon",
+			"character": "Minnie Castevet",
+			"tmdbMovieId": 805,
+			"tmdbPersonId": 4970,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sidney Blackmer",
+			"character": "Roman Castevet",
+			"tmdbMovieId": 805,
+			"tmdbPersonId": 12022,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maurice Evans",
+			"character": "Hutch",
+			"tmdbMovieId": 805,
+			"tmdbPersonId": 12023,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

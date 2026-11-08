@@ -66,5 +66,35 @@
 		]
 	},
 	"runtimeMinutes": 116,
-	"review": "David O. Russell no romantiza del todo a esta familia: la filma como una mezcla agotadora de cariño, competencia y gente que cree saber qué le conviene a Micky. Wahlberg sostiene al boxeador con una calma que contrasta perfecto con el torbellino de Christian Bale, y Amy Adams evita que Charlene sea sólo una figura salvadora. Las peleas importan porque antes vimos el desgaste de entrenar, negociar y volver a casa. Sale del ring con una emoción ganada, no impuesta."
+	"review": "David O. Russell no romantiza del todo a esta familia: la filma como una mezcla agotadora de cariño, competencia y gente que cree saber qué le conviene a Micky. Wahlberg sostiene al boxeador con una calma que contrasta perfecto con el torbellino de Christian Bale, y Amy Adams evita que Charlene sea sólo una figura salvadora. Las peleas importan porque antes vimos el desgaste de entrenar, negociar y volver a casa. Sale del ring con una emoción ganada, no impuesta.",
+	"castCharacters": [
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Micky Ward",
+			"tmdbMovieId": 45317,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christian Bale",
+			"character": "Dicky Eklund",
+			"tmdbMovieId": 45317,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amy Adams",
+			"character": "Charlene Fleming",
+			"tmdbMovieId": 45317,
+			"tmdbPersonId": 9273,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Melissa Leo",
+			"character": "Alice Ward",
+			"tmdbMovieId": 45317,
+			"tmdbPersonId": 6832,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

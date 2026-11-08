@@ -63,5 +63,28 @@
 	"releasePlatforms": [
 		"HBO Max"
 	],
-	"runtimeMinutes": 158
+	"runtimeMinutes": 158,
+	"castCharacters": [
+		{
+			"actor": "Daniel Craig",
+			"character": "Mikael Blomkvist",
+			"tmdbMovieId": 65754,
+			"tmdbPersonId": 8784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rooney Mara",
+			"character": "Lisbeth Salander",
+			"tmdbMovieId": 65754,
+			"tmdbPersonId": 108916,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Plummer",
+			"character": "Henrik Vanger",
+			"tmdbMovieId": 65754,
+			"tmdbPersonId": 290,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

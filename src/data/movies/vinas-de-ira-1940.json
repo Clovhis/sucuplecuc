@@ -56,5 +56,28 @@
     }
   },
   "review": "Ford no filma la ruta hacia California como una búsqueda de prosperidad, sino como una expulsión que sigue a una familia de escena en escena. Henry Fonda concentra la rabia de Tom Joad, y Jane Darwell le da a Ma una fuerza práctica que impide que el dolor se vuelva pura derrota. Los paisajes abiertos contrastan con campamentos y trabajos precarios, donde el hambre cambia la forma de mirar al otro. La película es política de manera frontal; su emoción aparece cuando esa denuncia pasa por los vínculos concretos de los Joad.",
-  "runtimeMinutes": 129
+  "runtimeMinutes": 129,
+  "castCharacters": [
+    {
+      "actor": "Henry Fonda",
+      "character": "Tom Joad",
+      "tmdbMovieId": 596,
+      "tmdbPersonId": 4958,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Jane Darwell",
+      "character": "Ma Joad",
+      "tmdbMovieId": 596,
+      "tmdbPersonId": 8515,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "John Carradine",
+      "character": "Casy",
+      "tmdbMovieId": 596,
+      "tmdbPersonId": 8516,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

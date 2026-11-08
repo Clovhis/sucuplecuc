@@ -44,17 +44,54 @@
 			"notForYouIf": "No es para vos si necesitás narrativa, humor limpio o una sorpresa que no dependa del golpe."
 		},
 		"becauseYouLiked": [
-		"solo-mio-2026",
-		"companeras-de-cuarto-2026"
-	],
-	"related": [
-		"coyote-vs-acme-2026",
-		"la-invitacion-2026",
-		"letras-robadas-2026",
-		"torrente-presidente-2026"
-	]
-},
+			"solo-mio-2026",
+			"companeras-de-cuarto-2026"
+		],
+		"related": [
+			"coyote-vs-acme-2026",
+			"la-invitacion-2026",
+			"letras-robadas-2026",
+			"torrente-presidente-2026"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Jackass: La última y nos vamos no viene a reinventar nada: vende una despedida ruidosa, llena de golpes, asco y camaradería geriátrica. Cuando el grupo entra en sintonía, sigue teniendo esa capacidad medio inexplicable de hacerte reír y sufrir al mismo tiempo.\n\nLa contra es que se nota más como celebración y compilado musculoso que como película con verdadera sorpresa. Si te sigue funcionando ver a Knoxville, Steve-O y compañía destrozarse por deporte, cumple; si ya llegaste saturado, la nostalgia no alcanza."
+	"review": "Jackass: La última y nos vamos no viene a reinventar nada: vende una despedida ruidosa, llena de golpes, asco y camaradería geriátrica. Cuando el grupo entra en sintonía, sigue teniendo esa capacidad medio inexplicable de hacerte reír y sufrir al mismo tiempo.\n\nLa contra es que se nota más como celebración y compilado musculoso que como película con verdadera sorpresa. Si te sigue funcionando ver a Knoxville, Steve-O y compañía destrozarse por deporte, cumple; si ya llegaste saturado, la nostalgia no alcanza.",
+	"castCharacters": [
+		{
+			"actor": "Johnny Knoxville",
+			"character": "Self",
+			"tmdbMovieId": 1612018,
+			"tmdbPersonId": 9656,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve-O",
+			"character": "Self",
+			"tmdbMovieId": 1612018,
+			"tmdbPersonId": 56585,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Pontius",
+			"character": "Self",
+			"tmdbMovieId": 1612018,
+			"tmdbPersonId": 56586,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ehren McGhehey",
+			"character": "Self",
+			"tmdbMovieId": 1612018,
+			"tmdbPersonId": 220241,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dave England",
+			"character": "Self",
+			"tmdbMovieId": 1612018,
+			"tmdbPersonId": 86627,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

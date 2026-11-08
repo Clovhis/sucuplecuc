@@ -59,5 +59,28 @@
 	},
 	"review": "Mark Mylod convierte la alta cocina en una ceremonia de poder, culpa y resentimiento. Ralph Fiennes hace del chef una figura hipnótica que mezcla precisión, desprecio y una teatralidad peligrosa; Anya Taylor-Joy observa el ritual con una desconfianza que se vuelve nuestra guía. La película disfruta de sus platos, sus uniformes y sus sorpresas, aunque algunas explicaciones llegan demasiado subrayadas. Cuando el humor negro se cruza con el horror, encuentra una crítica bastante clara a quienes consumen experiencias sin mirar a la gente que las produce.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Anya Taylor-Joy",
+			"character": "Margot",
+			"tmdbMovieId": 593643,
+			"tmdbPersonId": 1397778,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Chef Slowik",
+			"tmdbMovieId": 593643,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicholas Hoult",
+			"character": "Tyler",
+			"tmdbMovieId": 593643,
+			"tmdbPersonId": 3292,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

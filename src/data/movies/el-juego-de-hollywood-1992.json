@@ -45,18 +45,55 @@
 			"forFansOf": "Fans de Robert Altman, de las películas sobre Hollywood y de los relatos donde el poder se ejerce con cortesía, llamadas y sonrisas.",
 			"notForYouIf": "Buscás una intriga directa, personajes inocentes o una visión romántica del cine. El juego de Hollywood disfruta pinchar el globo."
 		},
-	"becauseYouLiked": [
-		"burning-2018",
-		"la-noche-de-los-lapices-1986"
-	],
-	"related": [
-		"cassandra-s-dream-2007",
-		"el-cliente-1994",
-		"muerte-entre-las-flores-1990",
-		"elephant-2003"
-	]
-},
+		"becauseYouLiked": [
+			"burning-2018",
+			"la-noche-de-los-lapices-1986"
+		],
+		"related": [
+			"cassandra-s-dream-2007",
+			"el-cliente-1994",
+			"muerte-entre-las-flores-1990",
+			"elephant-2003"
+		]
+	},
 	"review": "Robert Altman mira la industria como un ecosistema de sonrisas educadas, paranoia y decisiones tomadas por teléfono. Los planos largos y los cameos convierten el fondo de Hollywood en una corriente constante de distracciones y poder. Tim Robbins encarna a un hombre que confunde sobrevivir con tener razón, y la película no le regala una absolución. La sátira se afila cuando la industria convierte incluso una amenaza de muerte en otra oportunidad para cuidar las apariencias.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Tim Robbins",
+			"character": "Griffin Mill",
+			"tmdbMovieId": 10403,
+			"tmdbPersonId": 504,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Greta Scacchi",
+			"character": "June Gudmundsdottir",
+			"tmdbMovieId": 10403,
+			"tmdbPersonId": 21245,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fred Ward",
+			"character": "Walter Stuckel",
+			"tmdbMovieId": 10403,
+			"tmdbPersonId": 10430,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Whoopi Goldberg",
+			"character": "Detective Avery",
+			"tmdbMovieId": 10403,
+			"tmdbPersonId": 2395,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Gallagher",
+			"character": "Larry Levy",
+			"tmdbMovieId": 10403,
+			"tmdbPersonId": 8212,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

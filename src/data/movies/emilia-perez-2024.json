@@ -91,5 +91,37 @@
 	"reviewPublishedAt": "2026-03-05",
 	"country": "FR",
 	"isArgentinian": false,
-	"genres": ["Musical"]
+	"genres": [
+		"Musical"
+	],
+	"castCharacters": [
+		{
+			"actor": "Zoe Saldaña",
+			"character": "Rita",
+			"tmdbMovieId": 974950,
+			"tmdbPersonId": 8691,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Karla Sofía Gascón",
+			"character": "Emilia / Manitas",
+			"tmdbMovieId": 974950,
+			"tmdbPersonId": 1505938,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Selena Gomez",
+			"character": "Jessi",
+			"tmdbMovieId": 974950,
+			"tmdbPersonId": 77948,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adriana Paz",
+			"character": "Epifanía",
+			"tmdbMovieId": 974950,
+			"tmdbPersonId": 983710,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

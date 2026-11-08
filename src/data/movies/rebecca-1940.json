@@ -59,5 +59,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Laurence Olivier",
+			"character": "Maxim de Winter",
+			"tmdbMovieId": 223,
+			"tmdbPersonId": 3359,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Fontaine",
+			"character": "Mrs. de Winter",
+			"tmdbMovieId": 223,
+			"tmdbPersonId": 3360,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Sanders",
+			"character": "Jack Favell",
+			"tmdbMovieId": 223,
+			"tmdbPersonId": 3361,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -64,5 +64,42 @@
 	},
 	"review": "Yorgos Lanthimos convierte el palacio en una pista de competencia donde el cariño también puede ser una moneda. Olivia Colman hace de Ana una reina caprichosa, frágil y dolorosamente humana; Rachel Weisz y Emma Stone se enfrentan con inteligencia, deseo y cálculo. Los lentes deformantes y los pasillos amplios vuelven extraño cada movimiento, mientras los bailes y los conejos agregan una melancolía inesperada. La película es mordaz, sensual y muy divertida cuando quiere. Debajo de la sátira hay una pregunta triste: qué queda del amor cuando todo vínculo depende de conservar poder.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Emma Stone",
+			"character": "Abigail",
+			"tmdbMovieId": 375262,
+			"tmdbPersonId": 54693,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Olivia Colman",
+			"character": "Queen Anne",
+			"tmdbMovieId": 375262,
+			"tmdbPersonId": 39187,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel Weisz",
+			"character": "Lady Sarah",
+			"tmdbMovieId": 375262,
+			"tmdbPersonId": 3293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicholas Hoult",
+			"character": "Harley",
+			"tmdbMovieId": 375262,
+			"tmdbPersonId": 3292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Alwyn",
+			"character": "Masham",
+			"tmdbMovieId": 375262,
+			"tmdbPersonId": 1496392,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

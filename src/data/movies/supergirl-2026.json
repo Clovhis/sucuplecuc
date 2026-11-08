@@ -50,18 +50,55 @@
 			"forFansOf": "Te puede interesar si disfrutás heroínas con zonas oscuras, viajes espaciales de revancha y relanzamientos de cómic que buscan una voz propia dentro del espectáculo.",
 			"notForYouIf": "Quizás no sea para vos si necesitás una trama sin desvíos de CGI, si esperás una Supergirl más luminosa o si los cruces de franquicia te sacan del vínculo central."
 		},
-	"becauseYouLiked": [
-		"spider-man-brand-new-day-2026",
-		"batman-begins-2005"
-	],
-	"related": [
-		"aquaman-2018",
-		"the-punisher-one-last-kill-2026",
-		"superman-2025",
-		"thunderbolts-2025"
-	]
-},
+		"becauseYouLiked": [
+			"spider-man-brand-new-day-2026",
+			"batman-begins-2005"
+		],
+		"related": [
+			"aquaman-2018",
+			"the-punisher-one-last-kill-2026",
+			"superman-2025",
+			"thunderbolts-2025"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Supergirl encuentra algo de aire propio cuando deja de correr detrás del molde grandilocuente de siempre y se concentra en Kara como personaje. Milly Alcock sostiene casi todo con una mezcla de dureza, cansancio y carisma que le da espesor a una heroína que podría haber quedado en piloto automático.\n\nEl problema es que, cada vez que la película parece ir hacia algo más filoso o más raro, vuelve a caer en el combo de CGI, exposición y franquicia acomodada. No es el relanzamiento más sólido del mundo, pero tiene momentos y una protagonista que invita a seguir viendo qué hacen con ella."
+	"review": "Supergirl encuentra algo de aire propio cuando deja de correr detrás del molde grandilocuente de siempre y se concentra en Kara como personaje. Milly Alcock sostiene casi todo con una mezcla de dureza, cansancio y carisma que le da espesor a una heroína que podría haber quedado en piloto automático.\n\nEl problema es que, cada vez que la película parece ir hacia algo más filoso o más raro, vuelve a caer en el combo de CGI, exposición y franquicia acomodada. No es el relanzamiento más sólido del mundo, pero tiene momentos y una protagonista que invita a seguir viendo qué hacen con ella.",
+	"castCharacters": [
+		{
+			"actor": "Milly Alcock",
+			"character": "Supergirl",
+			"tmdbMovieId": 1081003,
+			"tmdbPersonId": 2046128,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eve Ridley",
+			"character": "Ruthye",
+			"tmdbMovieId": 1081003,
+			"tmdbPersonId": 4186628,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matthias Schoenaerts",
+			"character": "Krem",
+			"tmdbMovieId": 1081003,
+			"tmdbPersonId": 73381,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Momoa",
+			"character": "Lobo",
+			"tmdbMovieId": 1081003,
+			"tmdbPersonId": 117642,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Beecham",
+			"character": "Alura In-Ze",
+			"tmdbMovieId": 1081003,
+			"tmdbPersonId": 130414,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

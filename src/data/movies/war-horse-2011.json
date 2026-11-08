@@ -56,5 +56,42 @@
 		]
 	},
 	"review": "War Horse sigue a Joey, un caballo separado de su joven dueño inglés al comenzar la Primera Guerra Mundial, y recorre distintos frentes y dueños hasta que sus caminos pueden volver a cruzarse. Steven Spielberg abraza el melodrama bélico clásico con una convicción total, usando campos, atardeceres y música para empujar cada emoción. Jeremy Irvine sostiene la parte más simple del relato, mientras el animal conecta episodios muy distintos sin perder presencia. Algunas escenas están hechas para estrujarte y se nota, pero muchas funcionan porque la película no se avergüenza de su corazón enorme.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Jeremy Irvine",
+			"character": "Albert Narracott",
+			"tmdbMovieId": 57212,
+			"tmdbPersonId": 225692,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Mullan",
+			"character": "Ted Narracott",
+			"tmdbMovieId": 57212,
+			"tmdbPersonId": 3064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Watson",
+			"character": "Rose Narracott",
+			"tmdbMovieId": 57212,
+			"tmdbPersonId": 1639,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Niels Arestrup",
+			"character": "Grandfather",
+			"tmdbMovieId": 57212,
+			"tmdbPersonId": 17498,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Thewlis",
+			"character": "Lyons",
+			"tmdbMovieId": 57212,
+			"tmdbPersonId": 11207,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

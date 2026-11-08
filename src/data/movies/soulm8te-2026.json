@@ -54,5 +54,28 @@
 	},
 	"review": "El problema de esta pareja empieza bastante antes de que la androide se vuelva peligrosa. David Rysdahl interpreta a un hombre que pretende acomodar a otra presencia dentro del lugar que dejó su esposa, y Kate Dolan usa ese deseo para incomodar una fantasía de compañía hecha a medida. Lily Sullivan tiene que sostener la tensión entre obediencia, seducción y amenaza: la idea funciona mejor cuando esas tres cosas todavía son difíciles de separar.\n\nDespués, el argumento se apoya demasiado en instrucciones y cambios de conducta para explicar sus sobresaltos. Hay una diferencia interesante entre conseguir compañía y querer manejarla, pero no siempre se desarrolla con la misma precisión que el peligro físico. El terror doméstico deja momentos inquietantes; el recorrido pierde filo cuando transforma esa relación torcida en una sucesión de problemas que el software parece resolver o provocar según convenga.",
 	"runtimeMinutes": 100,
-	"isPremiere": true
+	"isPremiere": true,
+	"castCharacters": [
+		{
+			"actor": "Lily Sullivan",
+			"character": "Sara / Lydia",
+			"tmdbMovieId": 1307118,
+			"tmdbPersonId": 1186659,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Rysdahl",
+			"character": "David",
+			"tmdbMovieId": 1307118,
+			"tmdbPersonId": 1541178,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claudia Doumit",
+			"character": "Aubrey",
+			"tmdbMovieId": 1307118,
+			"tmdbPersonId": 1443420,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

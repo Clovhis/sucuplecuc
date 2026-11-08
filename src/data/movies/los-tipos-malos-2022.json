@@ -32,13 +32,13 @@
 	},
 	"editorial": {
 		"tenSecondTake": {
-		"verdict": "Los tipos malos usa el atraco para discutir las etiquetas: Pierre Perifel hace que Sam Rockwell y Marc Maron sostengan una banda que quiere dejar de ser villana.",
-		"whatToExpect": "El señor Lobo reúne animales ladrones para robar una estatuilla, pero el golpe los empuja a probar si una reputación puede cambiar.",
-		"pace": "Corre con persecuciones legibles, música y chistes de equipo; cada plan sale torcido justo lo suficiente para que la aventura respire.",
-		"intensity": "El conflicto es liviano pero concreto: la banda debe elegir entre la fama delictiva y el riesgo de mostrarse vulnerable.",
-		"practicalContext": "Mirala por su diseño angular y su ritmo de película de robos; la moraleja es visible, pero la puesta la lleva con estilo.",
-		"forFansOf": "Si te gustan animales con oficio criminal, segundas oportunidades y animación con energía de afiche.",
-		"notForYouIf": "No es para vos si buscás una intriga adulta, una conversión moral sutil o una acción que no se detenga por un chiste."
+			"verdict": "Los tipos malos usa el atraco para discutir las etiquetas: Pierre Perifel hace que Sam Rockwell y Marc Maron sostengan una banda que quiere dejar de ser villana.",
+			"whatToExpect": "El señor Lobo reúne animales ladrones para robar una estatuilla, pero el golpe los empuja a probar si una reputación puede cambiar.",
+			"pace": "Corre con persecuciones legibles, música y chistes de equipo; cada plan sale torcido justo lo suficiente para que la aventura respire.",
+			"intensity": "El conflicto es liviano pero concreto: la banda debe elegir entre la fama delictiva y el riesgo de mostrarse vulnerable.",
+			"practicalContext": "Mirala por su diseño angular y su ritmo de película de robos; la moraleja es visible, pero la puesta la lleva con estilo.",
+			"forFansOf": "Si te gustan animales con oficio criminal, segundas oportunidades y animación con energía de afiche.",
+			"notForYouIf": "No es para vos si buscás una intriga adulta, una conversión moral sutil o una acción que no se detenga por un chiste."
 		},
 		"becauseYouLiked": [
 			"los-tipos-malos-2-2025",
@@ -51,5 +51,21 @@
 			"mundo-extrano-2022"
 		]
 	},
-	"review": "Los tipos malos toma la dinámica de una película de atracos y la vuelve una comedia ágil sobre etiquetas y segundas oportunidades. Sam Rockwell le da seducción y cansancio al líder, mientras Marc Maron, Awkwafina y Anthony Ramos hacen que la banda tenga fricciones reales. El diseño mezcla líneas angulares con colores de póster y las persecuciones se entienden siempre. La moraleja está a la vista, pero el ritmo, el humor y la música la llevan con estilo."
+	"review": "Los tipos malos toma la dinámica de una película de atracos y la vuelve una comedia ágil sobre etiquetas y segundas oportunidades. Sam Rockwell le da seducción y cansancio al líder, mientras Marc Maron, Awkwafina y Anthony Ramos hacen que la banda tenga fricciones reales. El diseño mezcla líneas angulares con colores de póster y las persecuciones se entienden siempre. La moraleja está a la vista, pero el ritmo, el humor y la música la llevan con estilo.",
+	"castCharacters": [
+		{
+			"actor": "Sam Rockwell",
+			"character": "Wolf (voice)",
+			"tmdbMovieId": 629542,
+			"tmdbPersonId": 6807,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marc Maron",
+			"character": "Snake (voice)",
+			"tmdbMovieId": 629542,
+			"tmdbPersonId": 1231717,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,28 @@
 	"subgenres": [
 		"Slasher"
 	],
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Neve Campbell",
+			"character": "Sidney Prescott",
+			"tmdbMovieId": 4233,
+			"tmdbPersonId": 9206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Arquette",
+			"character": "Dewey Riley",
+			"tmdbMovieId": 4233,
+			"tmdbPersonId": 15234,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Courteney Cox",
+			"character": "Gale Weathers",
+			"tmdbMovieId": 4233,
+			"tmdbPersonId": 14405,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

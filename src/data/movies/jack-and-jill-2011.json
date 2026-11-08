@@ -55,5 +55,35 @@
 	"review": "Jack y Jill convierte un recurso de caracterización en toda la película y después intenta tapar el vacío con cameos. Sandler interpreta dos extremos sin encontrar una diferencia dramática que sostenga el conflicto, mientras Al Pacino queda atrapado en una trama sobre sí mismo que sólo funciona como clip aislado. El montaje repite gestos, ruidos y reacciones hasta agotar cualquier paciencia. Es una comedia de alto presupuesto con muy pocas ideas.",
 	"runtimeMinutes": 93,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Jack / Jill",
+			"tmdbMovieId": 71880,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Al Pacino",
+			"character": "Al Pacino",
+			"tmdbMovieId": 71880,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katie Holmes",
+			"character": "Erin",
+			"tmdbMovieId": 71880,
+			"tmdbPersonId": 3897,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Spade",
+			"character": "Monica",
+			"tmdbMovieId": 71880,
+			"tmdbPersonId": 60950,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -60,5 +60,42 @@
 	},
 	"review": "El primer hombre en la Luna evita convertir a Neil Armstrong en una estatua y encuentra su drama en lo que el astronauta no puede decir. Damien Chazelle filma los despegues con una violencia física que hace temblar la pantalla, pero reserva el centro para el duelo, el matrimonio y la culpa. Ryan Gosling trabaja desde la contención y Claire Foy le da a Janet una fuerza que no necesita discursos grandilocuentes. Es épica por escala y profundamente íntima por mirada.",
 	"runtimeMinutes": 141,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Neil Armstrong",
+			"tmdbMovieId": 369972,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claire Foy",
+			"character": "Janet Shearon",
+			"tmdbMovieId": 369972,
+			"tmdbPersonId": 120932,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Clarke",
+			"character": "Ed White",
+			"tmdbMovieId": 369972,
+			"tmdbPersonId": 76512,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kyle Chandler",
+			"character": "Deke Slayton",
+			"tmdbMovieId": 369972,
+			"tmdbPersonId": 3497,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Corey Stoll",
+			"character": "Buzz Aldrin",
+			"tmdbMovieId": 369972,
+			"tmdbPersonId": 74541,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

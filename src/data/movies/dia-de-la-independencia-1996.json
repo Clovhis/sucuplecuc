@@ -65,5 +65,35 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 145
+	"runtimeMinutes": 145,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Capt. Steven Hiller",
+			"tmdbMovieId": 602,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Pullman",
+			"character": "President Thomas J. Whitmore",
+			"tmdbMovieId": 602,
+			"tmdbPersonId": 8984,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Goldblum",
+			"character": "David Levinson",
+			"tmdbMovieId": 602,
+			"tmdbPersonId": 4785,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary McDonnell",
+			"character": "Marilyn Whitmore",
+			"tmdbMovieId": 602,
+			"tmdbPersonId": 1581,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

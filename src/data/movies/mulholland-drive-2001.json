@@ -27,7 +27,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "David Lynch hace de Hollywood un sueño roto, y Naomi Watts con Laura Harring sostienen un laberinto donde la emoción importa más que encontrar una solución única.",
-			"whatToExpect": "Amnesia, audiciones, clubes, mafias, dobles y escenas que parecen pertenecer a varias vidas, con Los Ángeles convertido en una máquina de deseo.",			"pace": "Avanza con calma hipnótica y deja que los episodios se conecten por atmósfera; el último tramo reordena sensaciones más que entregar respuestas.",			"intensity": "La intensidad es psicológica y onírica: el terror entra por el sonido, la actuación y la pérdida de control, no por una amenaza explicada.",			"practicalContext": "Sus 147 minutos requieren una sesión sin interrupciones y disposición a no resolver todo; anotá menos y dejá que el clima haga su trabajo.",			"forFansOf": "Para quienes disfrutan Lynch, cine dentro del cine y thrillers que tratan la identidad como una fantasía cargada de deseo y culpa.",			"notForYouIf": "No es para vos si necesitás una cronología clara, un misterio con solución oficial o una película que separe sueño y vigilia sin ambigüedad."
+			"whatToExpect": "Amnesia, audiciones, clubes, mafias, dobles y escenas que parecen pertenecer a varias vidas, con Los Ángeles convertido en una máquina de deseo.",
+			"pace": "Avanza con calma hipnótica y deja que los episodios se conecten por atmósfera; el último tramo reordena sensaciones más que entregar respuestas.",
+			"intensity": "La intensidad es psicológica y onírica: el terror entra por el sonido, la actuación y la pérdida de control, no por una amenaza explicada.",
+			"practicalContext": "Sus 147 minutos requieren una sesión sin interrupciones y disposición a no resolver todo; anotá menos y dejá que el clima haga su trabajo.",
+			"forFansOf": "Para quienes disfrutan Lynch, cine dentro del cine y thrillers que tratan la identidad como una fantasía cargada de deseo y culpa.",
+			"notForYouIf": "No es para vos si necesitás una cronología clara, un misterio con solución oficial o una película que separe sueño y vigilia sin ambigüedad."
 		},
 		"becauseYouLiked": [
 			"vellut-blau-1986",
@@ -57,5 +62,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "FR",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Naomi Watts",
+			"character": "Betty Elms / Diane Selwyn",
+			"tmdbMovieId": 1018,
+			"tmdbPersonId": 3489,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Harring",
+			"character": "Rita / Camilla Rhodes",
+			"tmdbMovieId": 1018,
+			"tmdbPersonId": 15007,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,28 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Stephen Chow",
+			"character": "Sing",
+			"tmdbMovieId": 9470,
+			"tmdbPersonId": 57607,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Yuen Qiu",
+			"character": "Landlady",
+			"tmdbMovieId": 9470,
+			"tmdbPersonId": 119426,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Yuen Wah",
+			"character": "Landlord",
+			"tmdbMovieId": 9470,
+			"tmdbPersonId": 57609,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

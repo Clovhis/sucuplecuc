@@ -8,7 +8,11 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+13",
   "category": "Comedia",
-  "genres": ["Comedia", "Drama", "Musical"],
+  "genres": [
+    "Comedia",
+    "Drama",
+    "Musical"
+  ],
   "subgenres": [],
   "country": "US",
   "isArgentinian": false,
@@ -17,33 +21,62 @@
   "trailerYoutubeId": "W4Scv600tc4",
   "releasePlatform": "HBO Max",
   "director": "Jonathan Demme",
-  "mainCast": ["Meryl Streep", "Kevin Kline", "Sebastian Stan"],
+  "mainCast": [
+    "Meryl Streep",
+    "Kevin Kline",
+    "Sebastian Stan"
+  ],
   "productionCompany": "The Weinstein Company, Lenox House Films, MXN Entertainment",
   "cinepostaScore": 5,
   "runtimeMinutes": 100,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Ricki encuentra en Jonathan Demme un drama musical que no absuelve a Meryl Streep: volver a casa también significa escuchar el daño causado.",
-			"whatToExpect": "Una guitarrista regresa por una crisis familiar y enfrenta a Kevin Kline, Sebastian Stan y una hija que no puede arreglarse con una canción.",
-			"pace": "Avanza entre bares, ensayos y conversaciones domésticas, alternando energía de escenario con silencios que dejan a Ricki sin pose.",
-			"intensity": "Es cálida pero incómoda, con humor, música y un conflicto familiar que insiste en que amar no borra las ausencias.",
-			"practicalContext": "Dura 100 minutos y entra como drama de familia con canciones; conviene no esperar un musical ni una reconciliación sin costos.",
-			"forFansOf": "Te puede llegar si disfrutás actuaciones de estrellas, vínculos rotos y personajes que intentan reparar tarde sin volverse santos.",
-			"notForYouIf": "Quizás no sea para vos si buscás una redención limpia, rock de concierto o un conflicto que no ordene sus emociones antes del final."
-		},
-		"becauseYouLiked": [
-		"batman-1966",
-		"captain-america-the-winter-soldier-2014"
-	],
-	"related": [
-		"ant-man-2015",
-		"guardians-of-the-galaxy-2014",
-		"guardians-of-the-galaxy-vol-2-2017",
-		"avengers-infinity-war-2018"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Ricki encuentra en Jonathan Demme un drama musical que no absuelve a Meryl Streep: volver a casa también significa escuchar el daño causado.",
+      "whatToExpect": "Una guitarrista regresa por una crisis familiar y enfrenta a Kevin Kline, Sebastian Stan y una hija que no puede arreglarse con una canción.",
+      "pace": "Avanza entre bares, ensayos y conversaciones domésticas, alternando energía de escenario con silencios que dejan a Ricki sin pose.",
+      "intensity": "Es cálida pero incómoda, con humor, música y un conflicto familiar que insiste en que amar no borra las ausencias.",
+      "practicalContext": "Dura 100 minutos y entra como drama de familia con canciones; conviene no esperar un musical ni una reconciliación sin costos.",
+      "forFansOf": "Te puede llegar si disfrutás actuaciones de estrellas, vínculos rotos y personajes que intentan reparar tarde sin volverse santos.",
+      "notForYouIf": "Quizás no sea para vos si buscás una redención limpia, rock de concierto o un conflicto que no ordene sus emociones antes del final."
+    },
+    "becauseYouLiked": [
+      "batman-1966",
+      "captain-america-the-winter-soldier-2014"
+    ],
+    "related": [
+      "ant-man-2015",
+      "guardians-of-the-galaxy-2014",
+      "guardians-of-the-galaxy-vol-2-2017",
+      "avengers-infinity-war-2018"
+    ]
+  },
   "review": "Ricki quiere contar una historia de familia rota sin convertir a su protagonista en una madre secreta esperando una absolución. Meryl Streep se divierte con una mujer que toca en bares, usa ropa imposible y prefiere el volumen alto antes que admitir que se equivocó; al mismo tiempo, Mamie Gummer le devuelve una herida que la película no puede resolver con una canción. Jonathan Demme sostiene la mezcla con calidez y Kevin Kline aporta una calma necesaria, aunque el guion ordena demasiado el caos antes del final.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Meryl Streep",
+      "character": "Ricki Rendazzo",
+      "tmdbMovieId": 275601,
+      "tmdbPersonId": 5064,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Kevin Kline",
+      "character": "Pete Brummel",
+      "tmdbMovieId": 275601,
+      "tmdbPersonId": 8945,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Sebastian Stan",
+      "character": "Joshua Brummel",
+      "tmdbMovieId": 275601,
+      "tmdbPersonId": 60898,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

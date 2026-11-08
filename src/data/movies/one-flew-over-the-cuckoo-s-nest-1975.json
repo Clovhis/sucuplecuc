@@ -35,7 +35,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Miloš Forman filma el pabellón como una batalla por dignidad: Jack Nicholson desordena la institución y Louise Fletcher responde con una calma más aterradora que un grito.",
-			"whatToExpect": "Hospital psiquiátrico, juegos, terapia, rebeldía y un grupo de internos que empieza a imaginar libertad mientras una autoridad decide cuánto pueden tener.",			"pace": "Avanza con calma de observación y deja que los vínculos crezcan antes de cerrar las puertas; el ritmo se vuelve inevitable cuando llega el costo.",			"intensity": "La tensión es institucional y emocional, con humor que convive con crueldad; cada pequeño acto de autonomía amenaza el orden del pabellón.",			"practicalContext": "Con 133 minutos, pide una sesión seria y atención a los secundarios; no la elijas buscando una rebelión simple con villanos sin matices.",			"forFansOf": "Para quienes disfrutan Nicholson, dramas de poder y películas donde una institución aparentemente cuidadora se vuelve una máquina de control.",			"notForYouIf": "Puede no ser para vos si necesitás un final reconfortante, un protagonista moralmente puro o una película que convierta la locura en diagnóstico fácil."
+			"whatToExpect": "Hospital psiquiátrico, juegos, terapia, rebeldía y un grupo de internos que empieza a imaginar libertad mientras una autoridad decide cuánto pueden tener.",
+			"pace": "Avanza con calma de observación y deja que los vínculos crezcan antes de cerrar las puertas; el ritmo se vuelve inevitable cuando llega el costo.",
+			"intensity": "La tensión es institucional y emocional, con humor que convive con crueldad; cada pequeño acto de autonomía amenaza el orden del pabellón.",
+			"practicalContext": "Con 133 minutos, pide una sesión seria y atención a los secundarios; no la elijas buscando una rebelión simple con villanos sin matices.",
+			"forFansOf": "Para quienes disfrutan Nicholson, dramas de poder y películas donde una institución aparentemente cuidadora se vuelve una máquina de control.",
+			"notForYouIf": "Puede no ser para vos si necesitás un final reconfortante, un protagonista moralmente puro o una película que convierta la locura en diagnóstico fácil."
 		},
 		"becauseYouLiked": [
 			"amadeus-1984",
@@ -52,5 +57,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jack Nicholson",
+			"character": "Randle Patrick McMurphy",
+			"tmdbMovieId": 510,
+			"tmdbPersonId": 514,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Dourif",
+			"character": "Billy Bibbit",
+			"tmdbMovieId": 510,
+			"tmdbPersonId": 1370,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Louise Fletcher",
+			"character": "Nurse Mildred Ratched",
+			"tmdbMovieId": 510,
+			"tmdbPersonId": 7071,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

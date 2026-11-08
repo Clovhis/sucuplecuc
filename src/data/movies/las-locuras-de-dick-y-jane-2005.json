@@ -53,5 +53,42 @@
 			"tiempo-de-valientes-2005"
 		]
 	},
-	"review": "Las locuras de Dick y Jane quiere ser una sátira de las empresas que destruyen empleos mientras sus ejecutivos se quedan con todo, pero la película nunca decide cuánto quiere morder. Jim Carrey y Téa Leoni tienen química y algunas escenas de desesperación doméstica son divertidas, aunque la cadena de robos se vuelve repetitiva muy rápido. Alec Baldwin interpreta al villano corporativo como una caricatura sin demasiadas capas y el guion resuelve el conflicto con una fantasía de justicia demasiado prolija. Tiene un tema vigente y un par de buenas observaciones sobre la apariencia de prosperidad, pero el resultado es una comedia liviana que se olvida enseguida."
+	"review": "Las locuras de Dick y Jane quiere ser una sátira de las empresas que destruyen empleos mientras sus ejecutivos se quedan con todo, pero la película nunca decide cuánto quiere morder. Jim Carrey y Téa Leoni tienen química y algunas escenas de desesperación doméstica son divertidas, aunque la cadena de robos se vuelve repetitiva muy rápido. Alec Baldwin interpreta al villano corporativo como una caricatura sin demasiadas capas y el guion resuelve el conflicto con una fantasía de justicia demasiado prolija. Tiene un tema vigente y un par de buenas observaciones sobre la apariencia de prosperidad, pero el resultado es una comedia liviana que se olvida enseguida.",
+	"castCharacters": [
+		{
+			"actor": "Jim Carrey",
+			"character": "Dick Harper",
+			"tmdbMovieId": 7552,
+			"tmdbPersonId": 206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Téa Leoni",
+			"character": "Jane Harper",
+			"tmdbMovieId": 7552,
+			"tmdbPersonId": 4939,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alec Baldwin",
+			"character": "Jack McCallister",
+			"tmdbMovieId": 7552,
+			"tmdbPersonId": 7447,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Jenkins",
+			"character": "Frank Bascombe",
+			"tmdbMovieId": 7552,
+			"tmdbPersonId": 28633,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Michael Higgins",
+			"character": "Garth",
+			"tmdbMovieId": 7552,
+			"tmdbPersonId": 8265,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

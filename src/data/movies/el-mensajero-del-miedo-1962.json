@@ -50,5 +50,21 @@
 	"isArgentinian": false,
 	"awards": {
 		"wins": []
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "Frank Sinatra",
+			"character": "Capt./Maj. Bennett Marco",
+			"tmdbMovieId": 982,
+			"tmdbPersonId": 4347,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laurence Harvey",
+			"character": "Raymond Shaw",
+			"tmdbMovieId": 982,
+			"tmdbPersonId": 14729,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

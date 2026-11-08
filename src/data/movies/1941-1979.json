@@ -55,5 +55,42 @@
 		]
 	},
 	"review": "1941 imagina el pánico de Los Ángeles después de Pearl Harbor como una comedia bélica donde militares, vecinos y civiles entran en paranoia por una invasión improbable. Steven Spielberg dirige con una escala enorme y una puesta llena de explosiones, persecuciones y figuras cruzándose, pero el volumen de los gags rara vez encuentra el timing que necesita. John Belushi y Dan Aykroyd tienen momentos inspirados, aunque el elenco multitudinario termina dispersando el foco. Es delirante y técnicamente impresionante, pero también agotadora. Vale por la ambición de su caos, no porque todos sus chistes sobrevivan al estruendo.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Dan Aykroyd",
+			"character": "Sgt. Frank Tree",
+			"tmdbMovieId": 11519,
+			"tmdbPersonId": 707,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ned Beatty",
+			"character": "Ward Douglas",
+			"tmdbMovieId": 11519,
+			"tmdbPersonId": 13726,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Belushi",
+			"character": "Capt. Wild Bill Kelso",
+			"tmdbMovieId": 11519,
+			"tmdbPersonId": 7171,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lorraine Gary",
+			"character": "Joan Douglas",
+			"tmdbMovieId": 11519,
+			"tmdbPersonId": 8607,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Murray Hamilton",
+			"character": "Claude Crumn",
+			"tmdbMovieId": 11519,
+			"tmdbPersonId": 8608,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

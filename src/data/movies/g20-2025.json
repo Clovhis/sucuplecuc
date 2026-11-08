@@ -46,5 +46,28 @@
 	"review": "G20 encierra a la presidenta Danielle Sutton en una cumbre tomada por terroristas y apuesta a que Viola Davis pueda convertir una premisa de acción genérica en algo con peso. Patricia Riggen mantiene la historia en movimiento, con asaltos y escapes que se entienden aunque rara vez sorprenden. Davis tiene la autoridad necesaria para vender tanto la negociación como el golpe físico, y Anthony Anderson aporta una dinámica familiar que evita que todo sea uniforme. El guion simplifica demasiado la geopolítica y los villanos responden a un manual conocido, pero la película no se toma tan en serio como para hundirse en eso. Es un thriller correcto para una noche de sillón, sin mucha memoria después.",
 	"reviewPublishedAt": "2026-02-28",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Viola Davis",
+			"character": "President Danielle Sutton",
+			"tmdbMovieId": 1045938,
+			"tmdbPersonId": 19492,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Anderson",
+			"character": "Derek Sutton",
+			"tmdbMovieId": 1045938,
+			"tmdbPersonId": 18471,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marsai Martin",
+			"character": "Serena Sutton",
+			"tmdbMovieId": 1045938,
+			"tmdbPersonId": 1407498,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -46,19 +46,42 @@
 			"forFansOf": "Fans de Kristen Bell, de los musicales animados y de las películas donde el gesto decisivo no es un beso sino una forma de cuidar.",
 			"notForYouIf": "Buscás una fantasía oscura, una trama imprevisible o secundarios con el mismo desarrollo que las protagonistas. Frozen apuesta a la canción y la emoción directa."
 		},
-	"becauseYouLiked": [
-		"tarzan-1999",
-		"how-to-train-your-dragon-2-2014"
-	],
-	"related": [
-		"how-to-train-your-dragon-2010",
-		"el-libro-de-la-vida-2014",
-		"el-gato-con-botas-2011",
-		"how-to-train-your-dragon-the-hidden-world-2019"
-	]
-},
+		"becauseYouLiked": [
+			"tarzan-1999",
+			"how-to-train-your-dragon-2-2014"
+		],
+		"related": [
+			"how-to-train-your-dragon-2010",
+			"el-libro-de-la-vida-2014",
+			"el-gato-con-botas-2011",
+			"how-to-train-your-dragon-the-hidden-world-2019"
+		]
+	},
 	"review": "Chris Buck y Jennifer Lee convierten el miedo de Elsa a lastimar a los demás en una aventura de hermanas que evita resolver todo con el romance de manual. Kristen Bell y Idina Menzel sostienen un vínculo con humor, distancia y emoción, mientras las canciones ordenan lo que los personajes no se animan a decir. La animación tiene nieve, castillos y color, pero la dirección no pierde el foco en Anna y Elsa. El ritmo es ágil y algunos secundarios son más funcionales que memorables. Vale porque ejecuta una fórmula conocida con sensibilidad y canciones que se quedan.",
 	"synopsis": "Tras desatar sin querer un invierno eterno, Elsa huye y deja a Arendelle en crisis. Su hermana Anna sale a buscarla junto a un vendedor, un reno y un muneco de nieve para intentar salvar el reino.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Kristen Bell",
+			"character": "Anna (voice)",
+			"tmdbMovieId": 109445,
+			"tmdbPersonId": 40462,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Idina Menzel",
+			"character": "Elsa (voice)",
+			"tmdbMovieId": 109445,
+			"tmdbPersonId": 19394,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Gad",
+			"character": "Olaf (voice)",
+			"tmdbMovieId": 109445,
+			"tmdbPersonId": 54415,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

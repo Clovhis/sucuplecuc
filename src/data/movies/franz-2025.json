@@ -8,7 +8,11 @@
 	"reviewPublishedAt": "2026-08-06",
 	"audienceRating": "ATP",
 	"category": "Drama",
-	"genres": ["Drama", "Biográfica", "Historia"],
+	"genres": [
+		"Drama",
+		"Biográfica",
+		"Historia"
+	],
 	"subgenres": [],
 	"country": "CZ",
 	"isArgentinian": false,
@@ -17,7 +21,13 @@
 	"trailerYoutubeId": "nbhRjQ4nJJA",
 	"releasePlatform": "Otras plataformas",
 	"director": "Agnieszka Holland",
-	"mainCast": ["Idan Weiss", "Peter Kurth", "Jenovéfa Boková", "Katharina Stark", "Sebastian Schwarz"],
+	"mainCast": [
+		"Idan Weiss",
+		"Peter Kurth",
+		"Jenovéfa Boková",
+		"Katharina Stark",
+		"Sebastian Schwarz"
+	],
 	"productionCompany": "Marlene Film Production, Metro Films, X Filme Creative Pool",
 	"cinepostaScore": 5,
 	"runtimeMinutes": 127,
@@ -34,18 +44,55 @@
 			"forFansOf": "Fans de Agnieszka Holland, de las biografías literarias y de las películas que miran al escritor detrás del nombre convertido en adjetivo.",
 			"notForYouIf": "Buscás una narración vertiginosa, citas célebres o una explicación escolar de Kafka. Franz prefiere la contradicción y el detalle cotidiano."
 		},
-	"becauseYouLiked": [
-		"michael-2026",
-		"sarahs-oil-el-oro-negro-2025"
-	],
-	"related": [
-		"belfast-2021",
-		"ali-2001",
-		"the-fighter-2010",
-		"aun-estoy-aqui-2024"
-	]
-},
+		"becauseYouLiked": [
+			"michael-2026",
+			"sarahs-oil-el-oro-negro-2025"
+		],
+		"related": [
+			"belfast-2021",
+			"ali-2001",
+			"the-fighter-2010",
+			"aun-estoy-aqui-2024"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Franz se acerca a Kafka como una figura de carne y contradicciones antes que como una estatua literaria. Idan Weiss encuentra un modo contenido de expresar la incomodidad del escritor frente a la familia, el amor y su propio cuerpo, mientras Agnieszka Holland arma un fresco histórico que conecta la vida privada con la violencia que avanza alrededor. El recorrido es elegante y por momentos demasiado explicativo; algunas escenas parecen ilustrar una biografía ya conocida en lugar de descubrirla. Aun así, la película tiene una sensibilidad visual firme y un protagonista capaz de volver concreto el peso de escribir."
+	"review": "Franz se acerca a Kafka como una figura de carne y contradicciones antes que como una estatua literaria. Idan Weiss encuentra un modo contenido de expresar la incomodidad del escritor frente a la familia, el amor y su propio cuerpo, mientras Agnieszka Holland arma un fresco histórico que conecta la vida privada con la violencia que avanza alrededor. El recorrido es elegante y por momentos demasiado explicativo; algunas escenas parecen ilustrar una biografía ya conocida en lugar de descubrirla. Aun así, la película tiene una sensibilidad visual firme y un protagonista capaz de volver concreto el peso de escribir.",
+	"castCharacters": [
+		{
+			"actor": "Idan Weiss",
+			"character": "Franz Kafka",
+			"tmdbMovieId": 1157322,
+			"tmdbPersonId": 4537244,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Kurth",
+			"character": "Hermann Kafka",
+			"tmdbMovieId": 1157322,
+			"tmdbPersonId": 15486,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jenovéfa Boková",
+			"character": "Milena Jesenska",
+			"tmdbMovieId": 1157322,
+			"tmdbPersonId": 231149,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katharina Stark",
+			"character": "Ottla Kafka",
+			"tmdbMovieId": 1157322,
+			"tmdbPersonId": 1682097,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sebastian Schwarz",
+			"character": "Max Brod",
+			"tmdbMovieId": 1157322,
+			"tmdbPersonId": 133262,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

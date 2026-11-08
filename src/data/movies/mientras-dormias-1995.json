@@ -38,7 +38,11 @@
 		"tenSecondTake": {
 			"verdict": "Mientras dormías funciona por la calidez de Sandra Bullock y Bill Pullman, aunque su confusión inicial hoy chirría; el elenco familiar convierte el engaño en un refugio romántico.",
 			"whatToExpect": "Una identidad equivocada, un coma, una familia navideña y una mujer que debe decidir si la vida que inventaron para ella puede convertirse en verdadera.",
-			"pace": "Avanza con ritmo amable de comedia de fiestas, alternando enredos y escenas familiares; el romance se apoya más en la convivencia que en la sorpresa.",			"intensity": "La tensión es sentimental y de baja escala: pesa la culpa de Lucy y la posibilidad de perder una familia antes que un peligro físico.",			"practicalContext": "Con 103 minutos, es una opción cómoda para una tarde de romance navideño; entra mejor si aceptás una premisa moralmente incómoda pero de tono cálido.",			"forFansOf": "Para quienes disfrutan a Bullock en comedias románticas, familias de película y romances que crecen entre cenas, hospitales y malentendidos.",			"notForYouIf": "No te va a convencer si necesitás una relación basada en transparencia desde el comienzo o si el sentimentalismo festivo te resulta demasiado dulce."
+			"pace": "Avanza con ritmo amable de comedia de fiestas, alternando enredos y escenas familiares; el romance se apoya más en la convivencia que en la sorpresa.",
+			"intensity": "La tensión es sentimental y de baja escala: pesa la culpa de Lucy y la posibilidad de perder una familia antes que un peligro físico.",
+			"practicalContext": "Con 103 minutos, es una opción cómoda para una tarde de romance navideño; entra mejor si aceptás una premisa moralmente incómoda pero de tono cálido.",
+			"forFansOf": "Para quienes disfrutan a Bullock en comedias románticas, familias de película y romances que crecen entre cenas, hospitales y malentendidos.",
+			"notForYouIf": "No te va a convencer si necesitás una relación basada en transparencia desde el comienzo o si el sentimentalismo festivo te resulta demasiado dulce."
 		},
 		"becauseYouLiked": [
 			"loco-y-estupido-amor-2011",
@@ -54,5 +58,28 @@
 	"review": "Mientras dormías entiende que una comedia romántica necesita algo más que una pareja simpática: necesita un mundo al que dé gusto volver. Bullock sostiene a Lucy con una mezcla precisa de torpeza y calidez, mientras Pullman aporta una melancolía tranquila que evita que Jack sea apenas el premio final. La confusión central hoy se ve más incómoda, pero el elenco familiar y el ritmo navideño siguen haciendo que la película abrace sin empalagar.",
 	"releasePlatforms": [
 		"Disney Plus"
+	],
+	"castCharacters": [
+		{
+			"actor": "Sandra Bullock",
+			"character": "Lucy Eleanor Moderatz",
+			"tmdbMovieId": 2064,
+			"tmdbPersonId": 18277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Pullman",
+			"character": "Jack Callaghan",
+			"tmdbMovieId": 2064,
+			"tmdbPersonId": 8984,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Gallagher",
+			"character": "Peter Callaghan",
+			"tmdbMovieId": 2064,
+			"tmdbPersonId": 8212,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

@@ -44,18 +44,48 @@
 			"forFansOf": "Christopher Guest, falsos documentales y personajes que se toman demasiado en serio una pasión perfectamente reconocible.",
 			"notForYouIf": "Buscás chistes rápidos, un protagonista central o una competencia cuyo resultado cambie la vida de alguien."
 		},
-	"becauseYouLiked": [
-		"this-is-spinal-tap-1984",
-		"what-we-do-in-the-shadows-2014"
-	],
-	"related": [
-		"zelig-1983",
-		"take-the-money-and-run-1969",
-		"deconstructing-harry-1997",
-		"como-ser-john-malkovich-1999"
-	]
-},
+		"becauseYouLiked": [
+			"this-is-spinal-tap-1984",
+			"what-we-do-in-the-shadows-2014"
+		],
+		"related": [
+			"zelig-1983",
+			"take-the-money-and-run-1969",
+			"deconstructing-harry-1997",
+			"como-ser-john-malkovich-1999"
+		]
+	},
 	"review": "Christopher Guest observa la obsesión de clase media con un cariño satírico que nunca necesita burlarse desde afuera. La improvisación y las entrevistas falsas producen personajes específicos, llenos de hábitos y frases que parecen encontradas. El elenco coral, con Jennifer Coolidge y John Michael Higgins al frente, convierte cada competencia en una pequeña tragedia. Los competidores se toman en serio sus miniaturas, y esa entrega convierte la burla en un retrato afectuoso de la obsesión.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Bob Balaban",
+			"character": "Dr. Theodore W. Millbank, III",
+			"tmdbMovieId": 13785,
+			"tmdbPersonId": 12438,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Coolidge",
+			"character": "Sherri Ann Cabot",
+			"tmdbMovieId": 13785,
+			"tmdbPersonId": 38334,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Guest",
+			"character": "Harlan Pepper",
+			"tmdbMovieId": 13785,
+			"tmdbPersonId": 13524,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Michael Higgins",
+			"character": "Scott Donlan",
+			"tmdbMovieId": 13785,
+			"tmdbPersonId": 8265,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

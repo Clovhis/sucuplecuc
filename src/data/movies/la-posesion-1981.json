@@ -46,18 +46,55 @@
 			"forFansOf": "Si te gustan terror de pareja, cine corporal y actuaciones que empujan una emoción hasta el borde.",
 			"notForYouIf": "No es para vos si buscás horror contenido, diálogos naturalistas o una ruptura filmada con calma."
 		},
-	"becauseYouLiked": [
-		"cabeza-borradora-1977",
-		"inseparables-1988"
-	],
-	"related": [
-		"scanners-1981",
-		"the-brood-1979",
-		"la-piel-que-habito-2011",
-		"alien-1979"
-	]
-},
+		"becauseYouLiked": [
+			"cabeza-borradora-1977",
+			"inseparables-1988"
+		],
+		"related": [
+			"scanners-1981",
+			"the-brood-1979",
+			"la-piel-que-habito-2011",
+			"alien-1979"
+		]
+	},
 	"review": "Andrzej Żuławski convierte la ruptura de pareja en un apocalipsis físico donde el cuerpo dice lo que el lenguaje no puede. La cámara nerviosa, los gritos y el espacio dividido entre dos Berlines hacen que cada discusión parezca una convulsión. Isabelle Adjani se entrega a una actuación extrema, mientras Sam Neill intenta sostener un personaje que pierde toda certeza. La separación se vuelve un espectáculo corporal extremo, pero el derrumbe de la pareja sigue siendo reconocible en cada discusión.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Isabelle Adjani",
+			"character": "Anna / Helen",
+			"tmdbMovieId": 21484,
+			"tmdbPersonId": 6553,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Neill",
+			"character": "Mark",
+			"tmdbMovieId": 21484,
+			"tmdbPersonId": 4783,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margit Carstensen",
+			"character": "Margit Gluckmeister",
+			"tmdbMovieId": 21484,
+			"tmdbPersonId": 20017,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Heinz Bennent",
+			"character": "Heinrich",
+			"tmdbMovieId": 21484,
+			"tmdbPersonId": 10263,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Johanna Hofer",
+			"character": "Heinrich's Mother",
+			"tmdbMovieId": 21484,
+			"tmdbPersonId": 94324,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

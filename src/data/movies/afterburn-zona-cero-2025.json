@@ -8,7 +8,12 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+16",
   "category": "Accion",
-  "genres": ["Accion", "Ciencia ficcion", "Comedia", "Aventura"],
+  "genres": [
+    "Accion",
+    "Ciencia ficcion",
+    "Comedia",
+    "Aventura"
+  ],
   "subgenres": [],
   "country": "US, FR",
   "isArgentinian": false,
@@ -17,33 +22,70 @@
   "trailerYoutubeId": "6oASFmb8PB0",
   "releasePlatform": "Prime Video",
   "director": "J.J. Perry",
-  "mainCast": ["Dave Bautista", "Olga Kurylenko", "Kristofer Hivju", "Samuel L. Jackson"],
+  "mainCast": [
+    "Dave Bautista",
+    "Olga Kurylenko",
+    "Kristofer Hivju",
+    "Samuel L. Jackson"
+  ],
   "productionCompany": "Yale Entertainment, Patriot Pictures",
   "cinepostaScore": 4,
   "runtimeMinutes": 105,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Cazadores del fin del mundo tiene una aventura de ruinas lista para el músculo de Dave Bautista, pero J.J. Perry no termina de sacarla del catálogo de referencias.",
-			"whatToExpect": "Un exsoldado atravesando Europa devastada, una reliquia tecnológica y una alianza incómoda con mercenarios que no paran de discutir.",
-			"pace": "Sus 105 minutos van directo de una pelea a otra, con pausas cortas para recordar qué objeto hay que recuperar.",
-			"intensity": "Física y liviana, más cercana al cómic de acción que a una distopía verdaderamente opresiva.",
-			"practicalContext": "Sirve para una noche de acción sin demasiadas exigencias; elegila si el viaje y los golpes importan más que la lógica.",
-			"forFansOf": "Las misiones posapocalípticas, Dave Bautista en modo tanque y los equipos que se arman a regañadientes.",
-			"notForYouIf": "Querés worldbuilding, humor menos repetido o una reliquia que signifique algo más que el próximo objetivo."
-		},
-		"becauseYouLiked": [
-		"sonic-3-la-pelicula-2024",
-		"sonic-2-la-pelicula-2022"
-	],
-	"related": [
-		"sonic-la-pelicula-2020",
-		"amos-del-universo-2026",
-		"lego-star-wars-the-mandalorian-2026",
-		"back-to-the-future-part-ii-1989"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Cazadores del fin del mundo tiene una aventura de ruinas lista para el músculo de Dave Bautista, pero J.J. Perry no termina de sacarla del catálogo de referencias.",
+      "whatToExpect": "Un exsoldado atravesando Europa devastada, una reliquia tecnológica y una alianza incómoda con mercenarios que no paran de discutir.",
+      "pace": "Sus 105 minutos van directo de una pelea a otra, con pausas cortas para recordar qué objeto hay que recuperar.",
+      "intensity": "Física y liviana, más cercana al cómic de acción que a una distopía verdaderamente opresiva.",
+      "practicalContext": "Sirve para una noche de acción sin demasiadas exigencias; elegila si el viaje y los golpes importan más que la lógica.",
+      "forFansOf": "Las misiones posapocalípticas, Dave Bautista en modo tanque y los equipos que se arman a regañadientes.",
+      "notForYouIf": "Querés worldbuilding, humor menos repetido o una reliquia que signifique algo más que el próximo objetivo."
+    },
+    "becauseYouLiked": [
+      "sonic-3-la-pelicula-2024",
+      "sonic-2-la-pelicula-2022"
+    ],
+    "related": [
+      "sonic-la-pelicula-2020",
+      "amos-del-universo-2026",
+      "lego-star-wars-the-mandalorian-2026",
+      "back-to-the-future-part-ii-1989"
+    ]
+  },
   "review": "Afterburn: Zona cero tiene una premisa de aventura posapocalíptica lista para una historieta: el sol arrasa la tecnología, las ruinas esconden tesoros y Dave Bautista debe cruzar un mundo hostil con una compañera que no le deja hacer todo a los golpes. Hay entusiasmo físico y algunos escenarios aprovechables, pero J.J. Perry no encuentra una identidad visual que supere el catálogo de referencias. Samuel L. Jackson aparece con una energía desperdiciada y el humor se vuelve repetitivo.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Dave Bautista",
+      "character": "Jake",
+      "tmdbMovieId": 507244,
+      "tmdbPersonId": 543530,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Olga Kurylenko",
+      "character": "Drea",
+      "tmdbMovieId": 507244,
+      "tmdbPersonId": 18182,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Kristofer Hivju",
+      "character": "General Volkov",
+      "tmdbMovieId": 507244,
+      "tmdbPersonId": 571418,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Samuel L. Jackson",
+      "character": "Valentine",
+      "tmdbMovieId": 507244,
+      "tmdbPersonId": 2231,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

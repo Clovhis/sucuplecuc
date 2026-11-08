@@ -65,5 +65,35 @@
 	},
 	"review": "Convierte una estafa financiera gigantesca en una película rápida, furiosa y sorprendentemente clara. Lo más interesante es que explica un sistema podrido sin hablarte desde arriba: usa ironía, bronca y un montaje nervioso para que entiendas cómo se cocinó el desastre. El elenco entra perfecto en ese tono entre cinismo y desesperación, y McKay encuentra una forma muy filosa de volver entretenido algo que debería ser insoportable. Cuando termina, deja más indignación que alivio, y ahí está parte de su fuerza.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Christian Bale",
+			"character": "Michael Burry",
+			"tmdbMovieId": 318846,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve Carell",
+			"character": "Mark Baum",
+			"tmdbMovieId": 318846,
+			"tmdbPersonId": 4495,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ryan Gosling",
+			"character": "Jared Vennett",
+			"tmdbMovieId": 318846,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Ben Rickert",
+			"tmdbMovieId": 318846,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

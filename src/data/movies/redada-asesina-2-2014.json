@@ -45,17 +45,54 @@
 			"notForYouIf": "No es para vos si te agota la violencia extrema, necesitás una duración corta o preferís acción estilizada sin consecuencias corporales."
 		},
 		"becauseYouLiked": [
-		"bullitt-1968",
-		"una-noche-para-sobrevivir-2015"
-	],
-	"related": [
-		"furious-7-2015",
-		"fast-five-2011",
-		"el-ultimatum-de-bourne-2007",
-		"el-fuego-de-la-venganza-2004"
-	]
-},
+			"bullitt-1968",
+			"una-noche-para-sobrevivir-2015"
+		],
+		"related": [
+			"furious-7-2015",
+			"fast-five-2011",
+			"el-ultimatum-de-bourne-2007",
+			"el-fuego-de-la-venganza-2004"
+		]
+	},
 	"review": "Gareth Evans amplía el encierro de la primera película hacia una guerra de clanes, lealtades y venganzas. La acción se apoya en espacios concretos, golpes legibles y coreografías que usan cada objeto como amenaza. Iko Uwais conserva una presencia contenida mientras la película le exige atravesar una violencia cada vez más grande. El avance de Rama por las bandas enemigas convierte la destreza marcial en una estrategia de supervivencia cada vez más costosa.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Iko Uwais",
+			"character": "Rama",
+			"tmdbMovieId": 180299,
+			"tmdbPersonId": 113732,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Arifin Putra",
+			"character": "Ucok",
+			"tmdbMovieId": 180299,
+			"tmdbPersonId": 1290939,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tio Pakusadewo",
+			"character": "Bangun",
+			"tmdbMovieId": 180299,
+			"tmdbPersonId": 1155281,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Oka Antara",
+			"character": "Eka",
+			"tmdbMovieId": 180299,
+			"tmdbPersonId": 1154465,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alex Abbad",
+			"character": "Bejo",
+			"tmdbMovieId": 180299,
+			"tmdbPersonId": 142018,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

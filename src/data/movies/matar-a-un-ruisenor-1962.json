@@ -69,5 +69,28 @@
     }
   },
   "review": "Mulligan evita convertir a Atticus Finch en una estatua y deja que la historia pase por el punto de vista incompleto de Scout. Gregory Peck compone una autoridad tranquila, mientras Mary Badham aporta la curiosidad y los errores de una infancia que todavía está aprendiendo a leer el mundo. La trama judicial ordena el drama, pero la vida del pueblo, con sus silencios y prejuicios, le da el peso. Es una adaptación clásica que conserva su claridad y deja abierta la pregunta de cuánto puede hacer una persona cuando las reglas ya están torcidas.",
-  "runtimeMinutes": 129
+  "runtimeMinutes": 129,
+  "castCharacters": [
+    {
+      "actor": "Gregory Peck",
+      "character": "Atticus Finch",
+      "tmdbMovieId": 595,
+      "tmdbPersonId": 8487,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Mary Badham",
+      "character": "Scout Finch",
+      "tmdbMovieId": 595,
+      "tmdbPersonId": 8488,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Brock Peters",
+      "character": "Tom Robinson",
+      "tmdbMovieId": 595,
+      "tmdbPersonId": 2112,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

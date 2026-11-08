@@ -40,15 +40,15 @@
 	},
 	"runtimeMinutes": 110,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Loca evasión muestra a Steven Spielberg joven jugando con el caos y la ternura; Goldie Hawn convierte una persecución absurda en algo inesperadamente humano.",
-		"whatToExpect": "Una pareja secuestra a un policía para recuperar a su hijo y atraviesa Texas mientras la prensa y una multitud siguen cada kilómetro.",
-		"pace": "Avanza como una caravana desbordada, alternando conversaciones íntimas, desvíos cómicos y escenas de ruta cada vez más llenas.",
-		"intensity": "El peligro es real pero el tono lo desarma; la película observa cómo una mala decisión se vuelve espectáculo público.",
-		"practicalContext": "Dura 110 minutos y entra como road movie criminal de tarde, con más nervio de personajes que de tiroteos.",
-		"forFansOf": "Te va a gustar si disfrutás persecuciones con humor, parejas desastrosas y el Spielberg que encuentra emoción en medio del descontrol.",
-		"notForYouIf": "Quizás no sea para vos si necesitás una trama criminal rigurosa, un tono parejo o héroes que sepan medir las consecuencias."
-	},
+		"tenSecondTake": {
+			"verdict": "Loca evasión muestra a Steven Spielberg joven jugando con el caos y la ternura; Goldie Hawn convierte una persecución absurda en algo inesperadamente humano.",
+			"whatToExpect": "Una pareja secuestra a un policía para recuperar a su hijo y atraviesa Texas mientras la prensa y una multitud siguen cada kilómetro.",
+			"pace": "Avanza como una caravana desbordada, alternando conversaciones íntimas, desvíos cómicos y escenas de ruta cada vez más llenas.",
+			"intensity": "El peligro es real pero el tono lo desarma; la película observa cómo una mala decisión se vuelve espectáculo público.",
+			"practicalContext": "Dura 110 minutos y entra como road movie criminal de tarde, con más nervio de personajes que de tiroteos.",
+			"forFansOf": "Te va a gustar si disfrutás persecuciones con humor, parejas desastrosas y el Spielberg que encuentra emoción en medio del descontrol.",
+			"notForYouIf": "Quizás no sea para vos si necesitás una trama criminal rigurosa, un tono parejo o héroes que sepan medir las consecuencias."
+		},
 		"becauseYouLiked": [
 			"punales-por-la-espalda-2019",
 			"atrapame-si-puedes-2002"
@@ -61,5 +61,42 @@
 		]
 	},
 	"review": "The Sugarland Express sigue a una pareja que secuestra a un policía para recuperar a su hijo y termina perseguida por medio Texas. Steven Spielberg dirige la fuga con humor, ternura torcida y un caos mediático que anticipa su habilidad para mover multitudes; Goldie Hawn aporta una energía imprevisible y William Atherton le da nervio al compañero. El tono salta entre comedia y drama con cierta desprolijidad, pero nunca pierde vida. Vale por ver al Spielberg joven probando reflejos y encontrando humanidad en una persecución que podría ser pura mecánica.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Goldie Hawn",
+			"character": "Lou Jean Poplin",
+			"tmdbMovieId": 5121,
+			"tmdbPersonId": 18892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Atherton",
+			"character": "Clovis Poplin",
+			"tmdbMovieId": 5121,
+			"tmdbPersonId": 7676,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Johnson",
+			"character": "Captain Tanner",
+			"tmdbMovieId": 5121,
+			"tmdbPersonId": 8258,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Sacks",
+			"character": "Slide",
+			"tmdbMovieId": 5121,
+			"tmdbPersonId": 41278,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gregory Walcott",
+			"character": "Mashburn",
+			"tmdbMovieId": 5121,
+			"tmdbPersonId": 41279,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

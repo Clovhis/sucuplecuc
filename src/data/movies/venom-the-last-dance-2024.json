@@ -47,5 +47,28 @@
 	"reviewPublishedAt": "2026-03-06",
 	"synopsis": "Eddie Brock y el simbionte Venom están prófugos en ambos mundos. Mientras criaturas de su pasado los persiguen y las autoridades estrechan el cerco, deberán tomar decisiones que pondrán a prueba su extraña convivencia.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Hardy",
+			"character": "Eddie Brock / Venom",
+			"tmdbMovieId": 912649,
+			"tmdbPersonId": 2524,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chiwetel Ejiofor",
+			"character": "Strickland",
+			"tmdbMovieId": 912649,
+			"tmdbPersonId": 5294,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Juno Temple",
+			"character": "Dr. Teddy Paine",
+			"tmdbMovieId": 912649,
+			"tmdbPersonId": 36594,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

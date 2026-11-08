@@ -31,16 +31,16 @@
 			"notForYouIf": "Quizás no sea para vos si buscás una competencia académica solemne o una comedia que no se detenga en los trámites y las ideas."
 		},
 		"becauseYouLiked": [
-		"los-justos-2024",
-		"la-casaca-de-dios-2026"
-	],
-	"related": [
-		"parque-lezama-2026",
-		"el-cuento-de-las-comadrejas-2019",
-		"la-odisea-de-los-giles-2019",
-		"las-buenas-intenciones-2019"
-	]
-},
+			"los-justos-2024",
+			"la-casaca-de-dios-2026"
+		],
+		"related": [
+			"parque-lezama-2026",
+			"el-cuento-de-las-comadrejas-2019",
+			"la-odisea-de-los-giles-2019",
+			"las-buenas-intenciones-2019"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -51,5 +51,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "AR",
-	"isArgentinian": true
+	"isArgentinian": true,
+	"castCharacters": [
+		{
+			"actor": "Marcelo Subiotto",
+			"character": "Marcelo Peña",
+			"tmdbMovieId": 764442,
+			"tmdbPersonId": 1500062,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonardo Sbaraglia",
+			"character": "Rafael Sujarchuk",
+			"tmdbMovieId": 764442,
+			"tmdbPersonId": 19803,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

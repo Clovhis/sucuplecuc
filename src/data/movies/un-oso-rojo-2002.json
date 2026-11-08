@@ -43,17 +43,40 @@
 			"notForYouIf": "Buscás redenciones limpias, violencia coreografiada o personajes que puedan explicar con claridad lo que sienten."
 		},
 		"becauseYouLiked": [
-		"el-clan-2015",
-		"nueve-reinas-2000"
-	],
-	"related": [
-		"plata-quemada-2000",
-		"barreda-2026",
-		"el-robo-del-siglo-2020",
-		"lu-pau-2026"
-	]
-},
+			"el-clan-2015",
+			"nueve-reinas-2000"
+		],
+		"related": [
+			"plata-quemada-2000",
+			"barreda-2026",
+			"el-robo-del-siglo-2020",
+			"lu-pau-2026"
+		]
+	},
 	"synopsis": "Tras salir de prisión, el Oso intenta recuperar el vínculo con su hija y con la mujer que rehízo su vida sin él. La falta de dinero y las deudas lo empujan a volver al delito, aunque sabe que esa decisión puede alejarlo para siempre.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Julio Chávez",
+			"character": "Rubén, \"El Oso\"",
+			"tmdbMovieId": 125948,
+			"tmdbPersonId": 583126,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Soledad Villamil",
+			"character": "Natalia",
+			"tmdbMovieId": 125948,
+			"tmdbPersonId": 93647,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Machín",
+			"character": "Sergio",
+			"tmdbMovieId": 125948,
+			"tmdbPersonId": 225408,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

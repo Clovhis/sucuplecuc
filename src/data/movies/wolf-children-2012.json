@@ -30,28 +30,44 @@
   },
   "runtimeMinutes": 117,
   "editorial": {
-		"tenSecondTake": {
-			"verdict": "Mamoru Hosoda convierte la crianza de Yuki y Ame en una aventura íntima; Hana sostiene una película donde amar también es soltar.",
-			"whatToExpect": "Haru Kuroki y Mitsuki Tanimura acompañan dos infancias que eligen direcciones opuestas; la vida rural y la transformación animal conviven sin exhibición.",
-			"pace": "El tiempo salta con naturalidad entre mudanzas, enfermedades, escuela y adolescencia; su calma deja que cada cambio duela un poco.",
-			"intensity": "No busca enemigos externos: la intensidad sale del cansancio de Hana, del secreto familiar y del miedo a perder a sus hijos.",
-			"practicalContext": "Su tono sensible y duración amplia piden verla sin apuro; es una historia de familia y crecimiento, no una aventura de lobos.",
-			"forFansOf": "Para quienes disfrutan anime contemplativo, maternidad fantástica y personajes que cambian sin obedecer un destino único.",
-			"notForYouIf": "Puede quedarte demasiado sentimental si buscás acción sobrenatural, reglas de transformación explicadas o un conflicto más convencional."
-		},
-	"becauseYouLiked": [
-		"the-tale-of-the-princess-kaguya-2013",
-		"the-girl-who-leapt-through-time-2006"
-	],
-	"related": [
-		"the-boy-and-the-heron-2023",
-		"my-neighbor-totoro-1988",
-		"belle-2021",
-		"your-name-2016"
-	]
-},
+    "tenSecondTake": {
+      "verdict": "Mamoru Hosoda convierte la crianza de Yuki y Ame en una aventura íntima; Hana sostiene una película donde amar también es soltar.",
+      "whatToExpect": "Haru Kuroki y Mitsuki Tanimura acompañan dos infancias que eligen direcciones opuestas; la vida rural y la transformación animal conviven sin exhibición.",
+      "pace": "El tiempo salta con naturalidad entre mudanzas, enfermedades, escuela y adolescencia; su calma deja que cada cambio duela un poco.",
+      "intensity": "No busca enemigos externos: la intensidad sale del cansancio de Hana, del secreto familiar y del miedo a perder a sus hijos.",
+      "practicalContext": "Su tono sensible y duración amplia piden verla sin apuro; es una historia de familia y crecimiento, no una aventura de lobos.",
+      "forFansOf": "Para quienes disfrutan anime contemplativo, maternidad fantástica y personajes que cambian sin obedecer un destino único.",
+      "notForYouIf": "Puede quedarte demasiado sentimental si buscás acción sobrenatural, reglas de transformación explicadas o un conflicto más convencional."
+    },
+    "becauseYouLiked": [
+      "the-tale-of-the-princess-kaguya-2013",
+      "the-girl-who-leapt-through-time-2006"
+    ],
+    "related": [
+      "the-boy-and-the-heron-2023",
+      "my-neighbor-totoro-1988",
+      "belle-2021",
+      "your-name-2016"
+    ]
+  },
   "review": "Mamoru Hosoda sigue a Hana mientras cría sola a dos chicos mitad lobos, una premisa fantástica que usa para hablar de maternidad, identidad y el derecho a elegir un camino. Las voces acompañan sin exagerar y la animación encuentra calidez en comidas, mudanzas y juegos antes de que llegue el golpe emocional. La dirección deja crecer a los hijos sin convertir cada decisión en lección, con un ritmo sereno que respeta los cambios. Puede resultar demasiado sentimental para algunos. Vale porque entra suave y termina dejando un silencio difícil de sacudir.",
   "audienceRating": "ATP",
   "reviewPublishedAt": "2026-03-09",
-  "synopsis": "Hana se enamora de un estudiante reservado que guarda un secreto extraordinario. Tras formar una familia con él, debe criar sola a sus dos hijos, Yuki y Ame, mientras ellos descubren cómo convivir con su doble naturaleza."
+  "synopsis": "Hana se enamora de un estudiante reservado que guarda un secreto extraordinario. Tras formar una familia con él, debe criar sola a sus dos hijos, Yuki y Ame, mientras ellos descubren cómo convivir con su doble naturaleza.",
+  "castCharacters": [
+    {
+      "actor": "Haru Kuroki",
+      "character": "Yuki (voice)",
+      "tmdbMovieId": 110420,
+      "tmdbPersonId": 1054260,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Takao Ōsawa",
+      "character": "Wolf Man (voice)",
+      "tmdbMovieId": 110420,
+      "tmdbPersonId": 45999,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

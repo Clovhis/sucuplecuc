@@ -23,7 +23,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Dead Reckoning usa la inteligencia artificial como excusa para volver al cuerpo de Tom Cruise; Christopher McQuarrie convierte el tren y la persecución en una maquinaria de riesgo muy clara.",
-			"whatToExpect": "Una amenaza algorítmica, llaves, espías con lealtades cambiantes y set pieces de escala enorme, con Ethan improvisando porque ningún plan alcanza.",			"pace": "Es larga, pero acelera con inteligencia: explica la misión, abre desvíos y después paga la espera con acción legible y físicamente peligrosa.",			"intensity": "La intensidad es alta y sostenida, con caídas, persecuciones y una amenaza que puede anticipar decisiones; el peligro se siente más en el cuerpo que en la tecnología.",			"practicalContext": "La ficha no informa duración; reservá una sesión amplia y mirala con buen sonido para que el tren, los motores y los impactos tengan peso.",			"forFansOf": "Para fans de Tom Cruise, McQuarrie y la saga cuando combina intriga de espías con riesgos prácticos que no parecen generados en una pantalla.",			"notForYouIf": "Puede frustrarte si no te gustan las partes explicativas, las historias divididas en capítulos o los finales que dejan una misión abierta."
+			"whatToExpect": "Una amenaza algorítmica, llaves, espías con lealtades cambiantes y set pieces de escala enorme, con Ethan improvisando porque ningún plan alcanza.",
+			"pace": "Es larga, pero acelera con inteligencia: explica la misión, abre desvíos y después paga la espera con acción legible y físicamente peligrosa.",
+			"intensity": "La intensidad es alta y sostenida, con caídas, persecuciones y una amenaza que puede anticipar decisiones; el peligro se siente más en el cuerpo que en la tecnología.",
+			"practicalContext": "La ficha no informa duración; reservá una sesión amplia y mirala con buen sonido para que el tren, los motores y los impactos tengan peso.",
+			"forFansOf": "Para fans de Tom Cruise, McQuarrie y la saga cuando combina intriga de espías con riesgos prácticos que no parecen generados en una pantalla.",
+			"notForYouIf": "Puede frustrarte si no te gustan las partes explicativas, las historias divididas en capítulos o los finales que dejan una misión abierta."
 		},
 		"becauseYouLiked": [
 			"jack-reacher-bajo-la-mira-2012",
@@ -40,5 +45,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "Ethan Hunt",
+			"tmdbMovieId": 575264,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hayley Atwell",
+			"character": "Grace",
+			"tmdbMovieId": 575264,
+			"tmdbPersonId": 39459,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ving Rhames",
+			"character": "Luther Stickell",
+			"tmdbMovieId": 575264,
+			"tmdbPersonId": 10182,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

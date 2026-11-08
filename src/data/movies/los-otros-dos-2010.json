@@ -58,5 +58,35 @@
 		]
 	},
 	"runtimeMinutes": 107,
-	"review": "Adam McKay usa el policial como excusa para que Will Ferrell y Mark Wahlberg choquen todo el tiempo: uno disfruta el escritorio y el otro quiere vivir cada día como una persecución. El dúo tiene una energía excelente, y Michael Keaton aprovecha su jefe para sumar chistes que llegan desde un ángulo inesperado. La trama económica se enreda de más, pero esa confusión no frena las ideas visuales ni los remates absurdos. Una comedia de amigos descontrolada que entiende muy bien cuándo cortar una escena."
+	"review": "Adam McKay usa el policial como excusa para que Will Ferrell y Mark Wahlberg choquen todo el tiempo: uno disfruta el escritorio y el otro quiere vivir cada día como una persecución. El dúo tiene una energía excelente, y Michael Keaton aprovecha su jefe para sumar chistes que llegan desde un ángulo inesperado. La trama económica se enreda de más, pero esa confusión no frena las ideas visuales ni los remates absurdos. Una comedia de amigos descontrolada que entiende muy bien cuándo cortar una escena.",
+	"castCharacters": [
+		{
+			"actor": "Will Ferrell",
+			"character": "Detective Allen Gamble",
+			"tmdbMovieId": 27581,
+			"tmdbPersonId": 23659,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Detective Terry Hoitz",
+			"tmdbMovieId": 27581,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eva Mendes",
+			"character": "Sheila Gamble",
+			"tmdbMovieId": 27581,
+			"tmdbPersonId": 8170,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Keaton",
+			"character": "Captain Gene Mauch",
+			"tmdbMovieId": 27581,
+			"tmdbPersonId": 2232,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

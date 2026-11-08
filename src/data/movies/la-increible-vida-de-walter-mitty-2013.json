@@ -32,8 +32,15 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["up-2009", "the-fall-el-sueno-de-alexandria-2006"],
-		"related": ["hugo-2011", "jumanji-1995", "pee-wees-big-adventure-1985"],
+		"becauseYouLiked": [
+			"up-2009",
+			"the-fall-el-sueno-de-alexandria-2006"
+		],
+		"related": [
+			"hugo-2011",
+			"jumanji-1995",
+			"pee-wees-big-adventure-1985"
+		],
 		"tenSecondTake": {
 			"verdict": "Ben Stiller y Kristen Wiig equilibran la fantasía con el viaje concreto de Walter, que descubre su impulso al salir de la oficina.",
 			"whatToExpect": "Un oficinista tímido, fantasías abruptas y una travesía que lo saca de su hábitat.",
@@ -46,5 +53,21 @@
 	},
 	"review": "Stiller ordena la película entre el ensueño de oficina y el viaje real, con imágenes que hacen sentir el contraste entre el encierro y el paisaje. Su actuación contenida sostiene una historia de aventura y romance que a veces subraya demasiado su mensaje, pero encuentra humor cálido en la relación con Cheryl. El recorrido visual es el mayor atractivo; la película gana cuando confía en sus imágenes y no explica tanto el cambio de Walter.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 114
+	"runtimeMinutes": 114,
+	"castCharacters": [
+		{
+			"actor": "Ben Stiller",
+			"character": "Walter Mitty",
+			"tmdbMovieId": 116745,
+			"tmdbPersonId": 7399,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kristen Wiig",
+			"character": "Cheryl Melhoff",
+			"tmdbMovieId": 116745,
+			"tmdbPersonId": 41091,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

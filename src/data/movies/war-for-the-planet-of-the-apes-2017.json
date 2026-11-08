@@ -38,19 +38,42 @@
 			"forFansOf": "Va con fans de ciencia ficción grave, westerns de frontera y actuaciones físicas como la de Andy Serkis.",
 			"notForYouIf": "No es para quien espere explosiones continuas, humor de franquicia o una aventura liviana de simios."
 		},
-	"becauseYouLiked": [
-		"terminator-dark-fate-2019",
-		"sonic-3-la-pelicula-2024"
-	],
-	"related": [
-		"battle-royale-2000",
-		"amos-del-universo-2026",
-		"sonic-la-pelicula-2020",
-		"deja-vu-2006"
-	]
-},
+		"becauseYouLiked": [
+			"terminator-dark-fate-2019",
+			"sonic-3-la-pelicula-2024"
+		],
+		"related": [
+			"battle-royale-2000",
+			"amos-del-universo-2026",
+			"sonic-la-pelicula-2020",
+			"deja-vu-2006"
+		]
+	},
 	"review": "War for the Planet of the Apes encuentra a Caesar intentando proteger a su comunidad después de que un coronel humano convierte la guerra en una cacería personal. Matt Reeves no busca explosiones todo el tiempo: filma bosques nevados, prisiones y caballos con un tono sombrío, casi de western sucio. Andy Serkis vuelve a darle a Caesar una mezcla extraordinaria de inteligencia, dolor y liderazgo, mientras Woody Harrelson encarna una amenaza fanática. Se toma su tiempo y eso puede sentirse pesado, pero cuando entra en modo elegía pega fuerte y cierra la trilogía muy arriba.",
 	"synopsis": "César intenta mantener a salvo a su clan de simios, pero el ataque de un coronel humano lo empuja a buscar venganza. Mientras emprende un viaje peligroso con pocos aliados, deberá decidir si la guerra lo convierte en aquello que combate.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Andy Serkis",
+			"character": "Caesar",
+			"tmdbMovieId": 281338,
+			"tmdbPersonId": 1333,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judy Greer",
+			"character": "Cornelia",
+			"tmdbMovieId": 281338,
+			"tmdbPersonId": 20750,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Woody Harrelson",
+			"character": "The Colonel",
+			"tmdbMovieId": 281338,
+			"tmdbPersonId": 57755,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -52,5 +52,28 @@
 	"synopsis": "En su cuarto año en Hogwarts, Harry es elegido inesperadamente para competir en el peligroso Torneo de los Tres Magos. Mientras enfrenta pruebas cada vez más difíciles, las señales de que Voldemort recupera fuerza convierten el curso en una amenaza real.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Radcliffe",
+			"character": "Harry Potter",
+			"tmdbMovieId": 674,
+			"tmdbPersonId": 10980,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Grint",
+			"character": "Ron Weasley",
+			"tmdbMovieId": 674,
+			"tmdbPersonId": 10989,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Watson",
+			"character": "Hermione Granger",
+			"tmdbMovieId": 674,
+			"tmdbPersonId": 10990,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

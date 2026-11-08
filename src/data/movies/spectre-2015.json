@@ -30,7 +30,7 @@
 			"forFansOf": "Te puede interesar si disfrutaste la etapa de Daniel Craig, el espionaje con escala internacional y las películas de Bond que combinan acción física con una identidad visual muy cuidada.",
 			"notForYouIf": "Quizás no sea para vos si necesitás una amenaza contundente, una aventura más corta o un villano que imponga por presencia en lugar de depender de conexiones explicadas al pasado de Bond."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"skyfall-2012",
 			"no-time-to-die-2021"
 		],
@@ -46,5 +46,28 @@
 	"audienceRating": "+12",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Craig",
+			"character": "James Bond",
+			"tmdbMovieId": 206647,
+			"tmdbPersonId": 8784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Léa Seydoux",
+			"character": "Madeleine",
+			"tmdbMovieId": 206647,
+			"tmdbPersonId": 121529,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christoph Waltz",
+			"character": "Blofeld",
+			"tmdbMovieId": 206647,
+			"tmdbPersonId": 27319,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -56,5 +56,42 @@
 	"review": "Sandy Wexler está construida como un falso documental sobre un representante que vive entre promesas, llamadas y talentos imposibles. Sandler encuentra una voz nasal y una torpeza afectuosa para el personaje, mientras Jennifer Hudson le da a Courtney una presencia que la película no siempre sabe aprovechar. El desfile de celebridades tiene gracia por acumulación, pero la duración y el sentimentalismo terminan pesando más que la historia de amor entre manager y artista.",
 	"runtimeMinutes": 130,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Sandy Wexler",
+			"tmdbMovieId": 419700,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Hudson",
+			"character": "Courtney Clarke",
+			"tmdbMovieId": 419700,
+			"tmdbPersonId": 15565,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin James",
+			"character": "Ted Rafferty",
+			"tmdbMovieId": 419700,
+			"tmdbPersonId": 32895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Colin Quinn",
+			"character": "Kevin Connors",
+			"tmdbMovieId": 419700,
+			"tmdbPersonId": 1219901,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Swardson",
+			"character": "Gary Rodgers",
+			"tmdbMovieId": 419700,
+			"tmdbPersonId": 32907,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

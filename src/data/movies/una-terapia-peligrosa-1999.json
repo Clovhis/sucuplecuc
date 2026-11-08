@@ -52,5 +52,28 @@
 		]
 	},
 	"review": "Una terapia peligrosa encuentra la gracia en el choque entre dos hombres que dominan lenguajes opuestos. Paul Vitti resuelve casi todo con amenazas, mientras Ben Sobel intenta escuchar antes de que su paciente convierta el consultorio en otra escena de negociación. De Niro juega con su imagen de gánster sin desarmarla por completo: el personaje sigue siendo peligroso, pero también queda expuesto en sus inseguridades más domésticas. Billy Crystal aporta un ritmo de réplica constante y Harold Ramis mantiene la comedia enfocada en la pareja, no en una parodia interminable del mundo mafioso. Hay chistes que envejecieron de manera despareja, pero la química central sigue siendo precisa.",
-	"runtimeMinutes": 103
+	"runtimeMinutes": 103,
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Paul Vitti",
+			"tmdbMovieId": 9535,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Crystal",
+			"character": "Dr. Ben Sobel",
+			"tmdbMovieId": 9535,
+			"tmdbPersonId": 7904,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chazz Palminteri",
+			"character": "Primo Sidone",
+			"tmdbMovieId": 9535,
+			"tmdbPersonId": 9046,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

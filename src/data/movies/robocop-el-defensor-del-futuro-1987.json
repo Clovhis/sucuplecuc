@@ -55,5 +55,35 @@
 	},
 	"review": "Detroit está en manos de una empresa y Paul Verhoeven usa a un policía convertido en producto para burlarse del poder corporativo, la televisión basura y la violencia como entretenimiento. Peter Weller encuentra humanidad detrás de una armadura rígida, Nancy Allen le da nervio a la investigación y Kurtwood Smith disfruta cada segundo como villano de historieta podrida. Las explosiones y los disparos son más sangrientos de lo que uno espera de un blockbuster, pero esa exageración es parte de la sátira. Puede ser brutal y graciosa en la misma escena, y esa combinación todavía no perdió potencia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Peter Weller",
+			"character": "Officer Alex J. Murphy / RoboCop",
+			"tmdbMovieId": 5548,
+			"tmdbPersonId": 27811,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nancy Allen",
+			"character": "Officer Anne Lewis",
+			"tmdbMovieId": 5548,
+			"tmdbPersonId": 44038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ronny Cox",
+			"character": "Dick Jones",
+			"tmdbMovieId": 5548,
+			"tmdbPersonId": 780,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kurtwood Smith",
+			"character": "Clarence Boddicker",
+			"tmdbMovieId": 5548,
+			"tmdbPersonId": 2115,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

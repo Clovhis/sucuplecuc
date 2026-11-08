@@ -50,5 +50,28 @@
     }
   },
   "review": "Chaplin sostiene la comedia con una precisión física que nunca reduce a la florista a un objeto de lástima. El vagabundo provoca risa por sus tropiezos y, un minuto después, por la dignidad con que intenta ayudar. La escena final encuentra su fuerza en un gesto pequeño y en el tiempo que deja para mirarlo. El encuentro entre el vagabundo y la florista remata un recorrido donde la generosidad nunca se presenta como recompensa fácil.",
-  "runtimeMinutes": 87
+  "runtimeMinutes": 87,
+  "castCharacters": [
+    {
+      "actor": "Charlie Chaplin",
+      "character": "A Tramp",
+      "tmdbMovieId": 901,
+      "tmdbPersonId": 13848,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Virginia Cherrill",
+      "character": "A Blind Girl",
+      "tmdbMovieId": 901,
+      "tmdbPersonId": 13852,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Harry Myers",
+      "character": "An Eccentric Millionaire",
+      "tmdbMovieId": 901,
+      "tmdbPersonId": 13854,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

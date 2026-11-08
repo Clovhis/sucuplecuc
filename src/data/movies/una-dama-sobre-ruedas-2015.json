@@ -52,5 +52,28 @@
 			"truman-2015"
 		]
 	},
-	"review": "Maggie Smith encuentra una combinación preciosa de aspereza, orgullo y fragilidad en Miss Shepherd, una mujer que convierte una camioneta en refugio y una vereda en territorio propio. Nicholas Hytner evita que el relato sea sólo una colección de rarezas: la mirada del escritor también queda en discusión, entre la curiosidad, la culpa y el deseo de controlar una historia ajena. Alex Jennings acompaña con una sobriedad que equilibra el desborde de su protagonista. Es cálida sin empalagar y deja una pregunta incómoda sobre cuánto creemos conocer de alguien cuando sólo vemos su superficie."
+	"review": "Maggie Smith encuentra una combinación preciosa de aspereza, orgullo y fragilidad en Miss Shepherd, una mujer que convierte una camioneta en refugio y una vereda en territorio propio. Nicholas Hytner evita que el relato sea sólo una colección de rarezas: la mirada del escritor también queda en discusión, entre la curiosidad, la culpa y el deseo de controlar una historia ajena. Alex Jennings acompaña con una sobriedad que equilibra el desborde de su protagonista. Es cálida sin empalagar y deja una pregunta incómoda sobre cuánto creemos conocer de alguien cuando sólo vemos su superficie.",
+	"castCharacters": [
+		{
+			"actor": "Maggie Smith",
+			"character": "Miss Shepherd",
+			"tmdbMovieId": 328589,
+			"tmdbPersonId": 10978,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alex Jennings",
+			"character": "Alan Bennett",
+			"tmdbMovieId": 328589,
+			"tmdbPersonId": 15739,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jim Broadbent",
+			"character": "Underwood",
+			"tmdbMovieId": 328589,
+			"tmdbPersonId": 388,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

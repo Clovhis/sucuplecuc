@@ -52,5 +52,42 @@
 		]
 	},
 	"review": "El color del dinero recupera a Fast Eddie Felson convertido en vendedor de licores, hasta que conoce a un joven jugador de billar al que intenta moldear para volver al ambiente. Martin Scorsese filma las mesas como escenarios de seducción, ego y competencia, con movimientos de cámara que le dan velocidad a cada partida. Paul Newman aporta experiencia y un resentimiento bien guardado, mientras Tom Cruise encarna la arrogancia necesaria para el choque generacional. Es más ligera que otras películas del director, pero la relación entre maestro y alumno está afilada y sostiene el juego.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Paul Newman",
+			"character": "Eddie Felson",
+			"tmdbMovieId": 11873,
+			"tmdbPersonId": 3636,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Cruise",
+			"character": "Vincent Lauria",
+			"tmdbMovieId": 11873,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Elizabeth Mastrantonio",
+			"character": "Carmen",
+			"tmdbMovieId": 11873,
+			"tmdbPersonId": 1161,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helen Shaver",
+			"character": "Janelle",
+			"tmdbMovieId": 11873,
+			"tmdbPersonId": 4160,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Turturro",
+			"character": "Julian",
+			"tmdbMovieId": 11873,
+			"tmdbPersonId": 1241,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

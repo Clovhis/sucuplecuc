@@ -52,5 +52,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 98,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Ryan 'Fang' Flanagan",
+			"tmdbMovieId": 1294189,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marisa Tomei",
+			"character": "Tara",
+			"tmdbMovieId": 1294189,
+			"tmdbPersonId": 3141,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Steve McQueen",
+			"character": "Hilts 'The Cooler King'",
+			"tmdbMovieId": 5925,
+			"tmdbPersonId": 13565,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Garner",
+			"character": "Hendley 'The Scrounger'",
+			"tmdbMovieId": 5925,
+			"tmdbPersonId": 16896,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

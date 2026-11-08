@@ -56,5 +56,42 @@
 	"review": "El Halloween de Hubie arma una comedia de temporada que abraza el acento, los disfraces y la lógica de un dibujo animado. Sandler hace de Hubie un adulto ridiculizado por todos, pero le conserva una bondad que empuja la historia hacia una defensa del vecino raro. La galería de amigos y cameos se divierte con el tono de terror familiar, aunque la película estira el personaje hasta que sus tics reemplazan varias ideas.",
 	"runtimeMinutes": 102,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Hubie Dubois",
+			"tmdbMovieId": 617505,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin James",
+			"character": "Sgt. Steve Downey",
+			"tmdbMovieId": 617505,
+			"tmdbPersonId": 32895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Bowen",
+			"character": "Violet Valentine",
+			"tmdbMovieId": 617505,
+			"tmdbPersonId": 31171,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ray Liotta",
+			"character": "Mr. Landolfa",
+			"tmdbMovieId": 617505,
+			"tmdbPersonId": 11477,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve Buscemi",
+			"character": "Walter Lambert",
+			"tmdbMovieId": 617505,
+			"tmdbPersonId": 884,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

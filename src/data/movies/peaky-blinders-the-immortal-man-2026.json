@@ -53,5 +53,42 @@
 	},
 	"audienceRating": "+16",
 	"review": "Peaky Blinders: El hombre inmortal lleva a Tommy Shelby a la Segunda Guerra Mundial y usa ese nuevo frente para poner en juego a su familia, una conspiración nazi y las viejas cuentas que el personaje nunca termina de cerrar. Tom Harper conserva la atmósfera de Birmingham, el humo y los silencios cargados que hicieron reconocible a la serie, pero evita que todo sea una sucesión de poses con sobretodo. Cillian Murphy sostiene el centro con una actuación seca y agotada, y el reparto alrededor le pone peso a la amenaza. La película tarda un poco en acomodar tantas lealtades, aunque cuando se concentra en Tommy funciona mejor. No reinventa el universo, pero ofrece un cierre tenso y digno para sus seguidores.",
-	"reviewPublishedAt": "2026-03-24"
+	"reviewPublishedAt": "2026-03-24",
+	"castCharacters": [
+		{
+			"actor": "Cillian Murphy",
+			"character": "Tommy Shelby",
+			"tmdbMovieId": 875828,
+			"tmdbPersonId": 2037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rebecca Ferguson",
+			"character": "Kaulo / Zelda",
+			"tmdbMovieId": 875828,
+			"tmdbPersonId": 933238,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Roth",
+			"character": "John Beckett",
+			"tmdbMovieId": 875828,
+			"tmdbPersonId": 3129,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Barry Keoghan",
+			"character": "Duke Shelby",
+			"tmdbMovieId": 875828,
+			"tmdbPersonId": 1290466,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Graham",
+			"character": "Hayden Stagg",
+			"tmdbMovieId": 875828,
+			"tmdbPersonId": 1115,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

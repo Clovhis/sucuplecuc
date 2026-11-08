@@ -40,19 +40,56 @@
 			"forFansOf": "Puede divertirte si disfrutás acción de franquicia, grupos con química y persecuciones desmedidas donde Vin Diesel, Dwayne Johnson y Jason Statham convierten la rivalidad en espectáculo.",
 			"notForYouIf": "Quizás no sea para vos si buscás autos realistas, una intriga compacta o una saga que todavía conserve la escala de barrio. El disparate global ya es la regla."
 		},
-	"becauseYouLiked": [
-		"la-estafa-maestra-2003",
-		"fast-five-2011"
-	],
-	"related": [
-		"redada-asesina-the-raid-2011",
-		"machete-2010",
-		"una-noche-para-sobrevivir-2015",
-		"la-roca-1996"
-	]
-},
+		"becauseYouLiked": [
+			"la-estafa-maestra-2003",
+			"fast-five-2011"
+		],
+		"related": [
+			"redada-asesina-the-raid-2011",
+			"machete-2010",
+			"una-noche-para-sobrevivir-2015",
+			"la-roca-1996"
+		]
+	},
 	"review": "Octava entrega, misma receta inflada, pero todavía con suficiente química para empujar el delirio. Las reseñas fueron bastante claras en que el atractivo sigue estando en el elenco y en la acción exagerada, y Gray se apoya en eso casi todo el tiempo. No tiene la frescura de los mejores picos de la saga, aunque sabe cuándo apretar el acelerador. No toca el techo de la saga, pero todavía sabe vender el disparate con oficio.",
 	"synopsis": "Cuando una ciberterrorista obliga a Dom a traicionar a su propia gente, la familia queda partida y Hobbs tiene que trabajar con enemigos incómodos para volver a reunirla. La persecución escala por medio mundo entre hackeos, traiciones y caos total.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-04-23"
+	"reviewPublishedAt": "2026-04-23",
+	"castCharacters": [
+		{
+			"actor": "Vin Diesel",
+			"character": "Dominic Toretto",
+			"tmdbMovieId": 337339,
+			"tmdbPersonId": 12835,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dwayne Johnson",
+			"character": "Luke Hobbs",
+			"tmdbMovieId": 337339,
+			"tmdbPersonId": 18918,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charlize Theron",
+			"character": "Cipher",
+			"tmdbMovieId": 337339,
+			"tmdbPersonId": 6885,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Statham",
+			"character": "Deckard Shaw",
+			"tmdbMovieId": 337339,
+			"tmdbPersonId": 976,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Rodriguez",
+			"character": "Letty Ortiz",
+			"tmdbMovieId": 337339,
+			"tmdbPersonId": 17647,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

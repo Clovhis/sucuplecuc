@@ -53,5 +53,42 @@
 		]
 	},
 	"review": "Boxcar Bertha sigue a una joven que se une a un grupo de ladrones durante la Gran Depresión y convierte la supervivencia en una mezcla de romance, robo y rabia social. Martin Scorsese todavía está buscando su voz, pero ya dirige la violencia y los márgenes con una energía áspera; Barbara Hershey sostiene a Bertha con más presencia que el guion le concede, y David Carradine le da un aire romántico incómodo. El relato es irregular y algunos golpes melodramáticos no terminan de cuajar. Vale como una película de formación, con mugre y nervio aunque no alcance la precisión de sus grandes trabajos.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Barbara Hershey",
+			"character": "Boxcar Bertha",
+			"tmdbMovieId": 22784,
+			"tmdbPersonId": 10767,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Carradine",
+			"character": "Big Bill Shelly",
+			"tmdbMovieId": 22784,
+			"tmdbPersonId": 141,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Barry Primus",
+			"character": "Rake Brown",
+			"tmdbMovieId": 22784,
+			"tmdbPersonId": 73194,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bernie Casey",
+			"character": "Von Morton",
+			"tmdbMovieId": 22784,
+			"tmdbPersonId": 10939,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Carradine",
+			"character": "H. Buckram Sartoris",
+			"tmdbMovieId": 22784,
+			"tmdbPersonId": 8516,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

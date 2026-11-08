@@ -56,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "FR",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Colin Farrell",
+			"character": "David",
+			"tmdbMovieId": 254320,
+			"tmdbPersonId": 72466,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel Weisz",
+			"character": "Short Sighted Woman",
+			"tmdbMovieId": 254320,
+			"tmdbPersonId": 3293,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

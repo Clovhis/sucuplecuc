@@ -57,5 +57,42 @@
 		]
 	},
 	"review": "Atrápame si puedes sigue a Frank Abagnale Jr., un adolescente que se hace pasar por piloto, médico y abogado mientras un agente del FBI lo persigue por todo Estados Unidos. Steven Spielberg la mueve con una ligereza engañosa, entre aeropuertos brillantes y estafas ingeniosas, pero debajo late una historia triste sobre una familia rota y una identidad inventada. Leonardo DiCaprio combina encanto y soledad, y Tom Hanks encuentra una paciencia seca muy buena. Es larga, aunque su ritmo y la dupla central sostienen una película entretenida con bastante más melancolía de la que parece.",
-	"reviewPublishedAt": "2026-04-05"
+	"reviewPublishedAt": "2026-04-05",
+	"castCharacters": [
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Frank Abagnale Jr.",
+			"tmdbMovieId": 640,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Hanks",
+			"character": "Carl Hanratty",
+			"tmdbMovieId": 640,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Walken",
+			"character": "Frank Abagnale",
+			"tmdbMovieId": 640,
+			"tmdbPersonId": 4690,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martin Sheen",
+			"character": "Roger Strong",
+			"tmdbMovieId": 640,
+			"tmdbPersonId": 8349,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amy Adams",
+			"character": "Brenda Strong",
+			"tmdbMovieId": 640,
+			"tmdbPersonId": 9273,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

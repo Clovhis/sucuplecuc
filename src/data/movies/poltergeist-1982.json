@@ -62,5 +62,42 @@
 		"HBO Max",
 		"Apple TV"
 	],
-	"releaseDate": "2026-10-29"
+	"releaseDate": "2026-10-29",
+	"castCharacters": [
+		{
+			"actor": "JoBeth Williams",
+			"character": "Diane Freeling",
+			"tmdbMovieId": 609,
+			"tmdbPersonId": 10080,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Craig T. Nelson",
+			"character": "Steve Freeling",
+			"tmdbMovieId": 609,
+			"tmdbPersonId": 8977,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Beatrice Straight",
+			"character": "Dr. Lesh",
+			"tmdbMovieId": 609,
+			"tmdbPersonId": 10083,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Heather O'Rourke",
+			"character": "Carol Anne Freeling",
+			"tmdbMovieId": 609,
+			"tmdbPersonId": 10086,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zelda Rubinstein",
+			"character": "Tangina Barrons",
+			"tmdbMovieId": 609,
+			"tmdbPersonId": 10091,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

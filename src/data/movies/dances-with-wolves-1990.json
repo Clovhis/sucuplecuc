@@ -58,5 +58,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Kevin Costner",
+			"character": "Lieutenant Dunbar",
+			"tmdbMovieId": 581,
+			"tmdbPersonId": 1269,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary McDonnell",
+			"character": "Stands With A Fist",
+			"tmdbMovieId": 581,
+			"tmdbPersonId": 1581,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Graham Greene",
+			"character": "Kicking Bird",
+			"tmdbMovieId": 581,
+			"tmdbPersonId": 6804,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

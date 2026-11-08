@@ -44,17 +44,47 @@
 			"notForYouIf": "No es para vos si necesitás intriga procesal, respuestas morales rápidas o una película que alivie el peso del caso."
 		},
 		"becauseYouLiked": [
-		"leonera-2008",
-		"no-odiaras-2020"
-	],
-	"related": [
-		"punales-por-la-espalda-2019",
-		"el-gran-falsificador-2025",
-		"cassandra-s-dream-2007",
-		"barreda-2026"
-	]
-},
+			"leonera-2008",
+			"no-odiaras-2020"
+		],
+		"related": [
+			"punales-por-la-espalda-2019",
+			"el-gran-falsificador-2025",
+			"cassandra-s-dream-2007",
+			"barreda-2026"
+		]
+	},
 	"review": "Alice Diop mezcla ficción, testimonio y escucha para tratar el juicio como un espacio de preguntas, no de respuestas fáciles. Los rostros, las pausas y la palabra legal sostienen una tensión austera donde cada declaración cambia el aire. Kayije Kagame y Guslagie Malanda trabajan desde la contención y convierten la mirada de la espectadora en parte del conflicto. El tribunal escucha un caso, pero Diop desplaza la pregunta hacia quién tiene derecho a interpretar una historia ajena.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Guslagie Malanda",
+			"character": "Laurence Coly",
+			"tmdbMovieId": 925943,
+			"tmdbPersonId": 1360307,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aurélia Petit",
+			"character": "Maître Vaudenay",
+			"tmdbMovieId": 925943,
+			"tmdbPersonId": 4287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Valérie Dréville",
+			"character": "La Présidente",
+			"tmdbMovieId": 925943,
+			"tmdbPersonId": 584544,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Xavier Maly",
+			"character": "Luc Dumontet",
+			"tmdbMovieId": 925943,
+			"tmdbPersonId": 96416,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

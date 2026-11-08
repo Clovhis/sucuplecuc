@@ -46,5 +46,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-02-28",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jake Gyllenhaal",
+			"character": "Dalton",
+			"tmdbMovieId": 359410,
+			"tmdbPersonId": 131,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Conor McGregor",
+			"character": "Knox",
+			"tmdbMovieId": 359410,
+			"tmdbPersonId": 1199115,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Magnussen",
+			"character": "Ben Brandt",
+			"tmdbMovieId": 359410,
+			"tmdbPersonId": 141034,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

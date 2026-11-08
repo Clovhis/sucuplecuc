@@ -41,18 +41,41 @@
 			"forFansOf": "Fans de los policiales cerebrales, de los planes criminales imperfectos y de las películas donde el protagonista se vuelve menos confiable a medida que observa.",
 			"notForYouIf": "Buscás ritmo vertiginoso, explicaciones claras o un héroe resolutivo. El aura trabaja con silencios, percepción y una incomodidad que tarda en cerrarse."
 		},
-	"becauseYouLiked": [
-		"nueve-reinas-2000",
-		"el-robo-del-siglo-2020"
-	],
-	"related": [
-		"los-caminantes-de-la-calle-2026",
-		"lu-pau-2026",
-		"pepita-la-pistolera-2026",
-		"los-delincuentes-2023"
-	]
-},
+		"becauseYouLiked": [
+			"nueve-reinas-2000",
+			"el-robo-del-siglo-2020"
+		],
+		"related": [
+			"los-caminantes-de-la-calle-2026",
+			"lu-pau-2026",
+			"pepita-la-pistolera-2026",
+			"los-delincuentes-2023"
+		]
+	},
 	"synopsis": "La trama gira en torno a un taxidermista epiléptico que a menudo fantasea con cometer el atraco perfecto y que de repente tiene la oportunidad de realizarlo después de matar accidentalmente a un hombre que en realidad era un criminal de carrera.",
 	"audienceRating": "+18",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Esteban Espinosa",
+			"tmdbMovieId": 13653,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dolores Fonzi",
+			"character": "Diana",
+			"tmdbMovieId": 13653,
+			"tmdbPersonId": 74909,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pablo Cedrón",
+			"character": "Sosa",
+			"tmdbMovieId": 13653,
+			"tmdbPersonId": 74910,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

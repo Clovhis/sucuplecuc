@@ -36,7 +36,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Misterio a la vista aprovecha mejor la química de Adam Sandler y Jennifer Aniston cuando abandona el caso y se entrega a la persecución; el misterio sigue siendo secundario.",
-			"whatToExpect": "Agencia de detectives, boda millonaria, secuestro, isla, sospechosos de lujo y una pareja que discute mientras intenta no perder el control.",			"pace": "Es más pareja que la primera y encadena escapes con rapidez; las pistas importan menos que el siguiente escenario de acción.",			"intensity": "La tensión es liviana y cómica, con peligro filtrado por el carisma del dúo; el secuestro funciona como excusa para moverse.",			"practicalContext": "Con 91 minutos, es una comedia de misterio corta para ver sin exigencias; entra mejor si querés acompañar a Sandler y Aniston en modo pareja.",			"forFansOf": "Para quienes disfrutaron a Nick y Audrey, humor de tropiezos y películas de boda con persecuciones internacionales.",			"notForYouIf": "No es para vos si necesitás un whodunit ingenioso, villanos muy trabajados o una secuela que se tome el crimen más en serio."
+			"whatToExpect": "Agencia de detectives, boda millonaria, secuestro, isla, sospechosos de lujo y una pareja que discute mientras intenta no perder el control.",
+			"pace": "Es más pareja que la primera y encadena escapes con rapidez; las pistas importan menos que el siguiente escenario de acción.",
+			"intensity": "La tensión es liviana y cómica, con peligro filtrado por el carisma del dúo; el secuestro funciona como excusa para moverse.",
+			"practicalContext": "Con 91 minutos, es una comedia de misterio corta para ver sin exigencias; entra mejor si querés acompañar a Sandler y Aniston en modo pareja.",
+			"forFansOf": "Para quienes disfrutaron a Nick y Audrey, humor de tropiezos y películas de boda con persecuciones internacionales.",
+			"notForYouIf": "No es para vos si necesitás un whodunit ingenioso, villanos muy trabajados o una secuela que se tome el crimen más en serio."
 		},
 		"becauseYouLiked": [
 			"los-otros-dos-2010",
@@ -52,5 +57,42 @@
 	"review": "Misterio a la vista cambia el yate por una boda internacional y sube la cuota de persecuciones sin abandonar la dinámica de pareja. Aniston juega la impulsividad de Audrey con una precisión que equilibra los tropiezos de Nick, mientras Mark Strong y Mélanie Laurent completan el misterio de lujo. El caso vuelve a ser secundario frente a la cadena de escapes, pero la secuela tiene un ritmo más parejo y sabe aprovechar el carisma de su dúo.",
 	"runtimeMinutes": 91,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Nick",
+			"tmdbMovieId": 638974,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Aniston",
+			"character": "Audrey",
+			"tmdbMovieId": 638974,
+			"tmdbPersonId": 4491,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Strong",
+			"character": "Miller",
+			"tmdbMovieId": 638974,
+			"tmdbPersonId": 2983,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mélanie Laurent",
+			"character": "Claudette",
+			"tmdbMovieId": 638974,
+			"tmdbPersonId": 19119,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jodie Turner-Smith",
+			"character": "Countess Sekou",
+			"tmdbMovieId": 638974,
+			"tmdbPersonId": 1695989,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

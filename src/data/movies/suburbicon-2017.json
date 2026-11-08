@@ -53,5 +53,42 @@
 			"crimen-perfecto-2007"
 		]
 	},
-	"review": "Suburbicon tiene una idea potente: la fachada blanca y ordenada puede esconder una violencia doméstica, económica y racial mucho más profunda. El problema es que la película divide esa energía entre una comedia negra de los Coen y una denuncia histórica que queda demasiado apartada. Damon juega bien la cobardía de Gardner, y Moore se divierte con el doble papel, pero el mecanismo se vuelve obvio. Hay cuadros filosos y escenas logradas, aunque el conjunto no termina de morder."
+	"review": "Suburbicon tiene una idea potente: la fachada blanca y ordenada puede esconder una violencia doméstica, económica y racial mucho más profunda. El problema es que la película divide esa energía entre una comedia negra de los Coen y una denuncia histórica que queda demasiado apartada. Damon juega bien la cobardía de Gardner, y Moore se divierte con el doble papel, pero el mecanismo se vuelve obvio. Hay cuadros filosos y escenas logradas, aunque el conjunto no termina de morder.",
+	"castCharacters": [
+		{
+			"actor": "Matt Damon",
+			"character": "Gardner Lodge",
+			"tmdbMovieId": 395458,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julianne Moore",
+			"character": "Margaret Lodge / Rose",
+			"tmdbMovieId": 395458,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Noah Jupe",
+			"character": "Nicky Lodge",
+			"tmdbMovieId": 395458,
+			"tmdbPersonId": 1590759,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Oscar Isaac",
+			"character": "Bud Cooper",
+			"tmdbMovieId": 395458,
+			"tmdbPersonId": 25072,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Glenn Fleshler",
+			"character": "Ira Sloan",
+			"tmdbMovieId": 395458,
+			"tmdbPersonId": 1377670,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

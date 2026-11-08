@@ -43,18 +43,48 @@
 			"forFansOf": "Fans de las tragicomedias políticas, de las familias que se vuelven equipos de campaña y de los protagonistas que negocian antes de pensar.",
 			"notForYouIf": "Buscás una crítica sutil, un héroe noble o una trama sin desvíos. El yerno disfruta ensuciarse y exagerar."
 		},
-	"becauseYouLiked": [
-		"mexico-86-2026",
-		"la-cortina-de-humo-1997"
-	],
-	"related": [
-		"53-domingos-2026",
-		"la-invitacion-2026",
-		"letras-robadas-2026",
-		"thelma-la-venganza-nunca-ha-sido-tan-dulce-2024"
-	]
-},
+		"becauseYouLiked": [
+			"mexico-86-2026",
+			"la-cortina-de-humo-1997"
+		],
+		"related": [
+			"53-domingos-2026",
+			"la-invitacion-2026",
+			"letras-robadas-2026",
+			"thelma-la-venganza-nunca-ha-sido-tan-dulce-2024"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "El yerno tiene una idea picante: mirar la politica como una maquinaria de oportunismo, familia, violencia y caradurismo sin venderlo como fantasia limpia. Gerardo Naranjo la filma con oficio y con ganas de incomodar, aunque a veces la pelicula se enreda tanto en su propio tono que la mordida pierde filo.\n\nAdrian Vazquez banca bien a un protagonista dificil de querer, y alrededor hay una energia de tragicomedia mexicana que se siente distinta dentro del catalogo de Netflix. No siempre remata todo lo que abre, pero cuando encuentra ritmo deja una satira sucia y bastante atendible."
+	"review": "El yerno tiene una idea picante: mirar la politica como una maquinaria de oportunismo, familia, violencia y caradurismo sin venderlo como fantasia limpia. Gerardo Naranjo la filma con oficio y con ganas de incomodar, aunque a veces la pelicula se enreda tanto en su propio tono que la mordida pierde filo.\n\nAdrian Vazquez banca bien a un protagonista dificil de querer, y alrededor hay una energia de tragicomedia mexicana que se siente distinta dentro del catalogo de Netflix. No siempre remata todo lo que abre, pero cuando encuentra ritmo deja una satira sucia y bastante atendible.",
+	"castCharacters": [
+		{
+			"actor": "Adrián Vázquez",
+			"character": "José Sánchez",
+			"tmdbMovieId": 1651233,
+			"tmdbPersonId": 1413394,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jero Medina",
+			"character": "El Lobo",
+			"tmdbMovieId": 1651233,
+			"tmdbPersonId": 2558356,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Gaitán",
+			"character": "Diego Partida",
+			"tmdbMovieId": 1651233,
+			"tmdbPersonId": 1301519,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eduardo España",
+			"character": "Malvárez",
+			"tmdbMovieId": 1651233,
+			"tmdbPersonId": 590312,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

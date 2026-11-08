@@ -179,3 +179,41 @@ test('mobile search stays usable at 320, 390 and 430px with bounded DOM and no h
 	expect(errors).toEqual([]);
 	await testInfo.attach('mobile-search-metrics', { body: JSON.stringify(metrics, null, 2), contentType: 'application/json' });
 });
+
+
+test('character searches reuse the catalog index and show the matching credit', async ({ page }) => {
+ await page.route('**/search-index-v3.json*', async (route) => {
+  const response = await route.fetch();
+  const payload = await response.json();
+  expect(payload.version).toBe(3);
+  payload.movies[0][8] = [{ actor: 'Actor de prueba', character: 'Zorblax Personaje', variants: ['Zorblax'] }];
+  await route.fulfill({ response, json: payload });
+ });
+ await page.goto('/');
+ await expect(page.locator('[data-movie-search-root]')).toHaveAttribute('data-home-catalog-ready', 'true');
+ await page.locator(field).fill('películas con Zorblax');
+ await expect(page.locator(cards)).toHaveCount(1);
+ await expect(page.locator('[data-movie-search-suggestions]')).toContainText('Zorblax Personaje · Actor de prueba');
+ await page.locator(field).press('Escape');
+ await expect(page.locator(`${cards} [data-character-match]`)).toHaveText('Zorblax Personaje · Actor de prueba');
+ await page.locator(field).fill('Zorblax Personaje');
+ await expect(page.locator(cards)).toHaveCount(1);
+});
+
+test('verified characters in the real catalog find their films and actors', async ({ page }) => {
+ const records = await openHome(page);
+ const scenarios = [
+  { query: 'Legolas', slug: 'the-lord-of-the-rings-the-fellowship-of-the-ring-2001', actor: 'Orlando Bloom' },
+  { query: 'Frodo Bolsón', slug: 'the-lord-of-the-rings-the-fellowship-of-the-ring-2001', actor: 'Elijah Wood' },
+  { query: 'películas con Gandalf', slug: 'the-lord-of-the-rings-the-fellowship-of-the-ring-2001', actor: 'Ian McKellen' },
+  { query: 'Jack Sparrow', slug: 'pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003', actor: 'Johnny Depp' },
+  { query: 'Tony Stark', slug: 'iron-man-2008', actor: 'Robert Downey Jr.' },
+ ];
+ for (const { slug } of scenarios) expect(records.find((record) => record.slug === slug)?.searchCharacters?.length, slug).toBeGreaterThan(0);
+ for (const { query, slug, actor } of scenarios) {
+  await page.locator(field).fill(query);
+  const card = page.locator(cards).filter({ has: page.locator(`a[href="/peliculas/${slug}/"]`) });
+  await expect(card).toBeVisible();
+  await expect(card.locator('[data-character-match]')).toContainText(actor);
+ }
+});

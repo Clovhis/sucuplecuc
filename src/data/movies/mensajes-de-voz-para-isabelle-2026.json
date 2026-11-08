@@ -38,7 +38,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Leah McKendrick encuentra una rom-com de duelo sincera: Zoey Deutch y Nick Robinson convierten los mensajes a una desconocida en una conexión torpe, graciosa y vulnerable.",
-			"whatToExpect": "Una pastelera, un número telefónico heredado, mensajes de voz, cocina y un romance que nace antes del encuentro sin usar la tristeza como simple truco.",			"pace": "Se mueve entre caos cotidiano, llamadas y acercamientos con timing de comedia; deja que el duelo marque pausas sin frenar la historia de amor.",			"intensity": "La emoción mezcla humor y pérdida de manera pareja: hay ternura, vergüenza y miedo a reemplazar un vínculo que no debería poder reemplazarse.",			"practicalContext": "Sus 119 minutos rinden como rom-com de noche o fin de semana; funciona mejor si buscás calidez con un poco de tristeza, no puro azúcar.",			"forFansOf": "Para quienes disfrutan protagonistas nerviosos, romances de voz y comedias que encuentran química en conversaciones antes que en grandes gestos.",			"notForYouIf": "No es para vos si preferís una trama romántica sin duelo, un encuentro inmediato o chistes que no tengan que convivir con una pérdida."
+			"whatToExpect": "Una pastelera, un número telefónico heredado, mensajes de voz, cocina y un romance que nace antes del encuentro sin usar la tristeza como simple truco.",
+			"pace": "Se mueve entre caos cotidiano, llamadas y acercamientos con timing de comedia; deja que el duelo marque pausas sin frenar la historia de amor.",
+			"intensity": "La emoción mezcla humor y pérdida de manera pareja: hay ternura, vergüenza y miedo a reemplazar un vínculo que no debería poder reemplazarse.",
+			"practicalContext": "Sus 119 minutos rinden como rom-com de noche o fin de semana; funciona mejor si buscás calidez con un poco de tristeza, no puro azúcar.",
+			"forFansOf": "Para quienes disfrutan protagonistas nerviosos, romances de voz y comedias que encuentran química en conversaciones antes que en grandes gestos.",
+			"notForYouIf": "No es para vos si preferís una trama romántica sin duelo, un encuentro inmediato o chistes que no tengan que convivir con una pérdida."
 		},
 		"becauseYouLiked": [
 			"loco-y-estupido-amor-2011",
@@ -53,5 +58,42 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Mensajes de voz para Isabelle encuentra algo que muchas rom-com de plataforma pierden rápido: una voz propia. Leah McKendrick mezcla duelo, caos cotidiano y meet-cute improbable sin volverlo empalagoso, y Zoey Deutch sostiene muy bien esa energía nerviosa que hace reír y al mismo tiempo deja ver el dolor abajo.\n\nNick Robinson entra perfecto en el juego del romance a distancia, pero lo mejor es que la película no usa la tristeza como truco sino como motor real de los personajes. Tiene química, timing y un costado sentimental mucho más honesto de lo normal en este tipo de estreno de plataforma."
+	"review": "Mensajes de voz para Isabelle encuentra algo que muchas rom-com de plataforma pierden rápido: una voz propia. Leah McKendrick mezcla duelo, caos cotidiano y meet-cute improbable sin volverlo empalagoso, y Zoey Deutch sostiene muy bien esa energía nerviosa que hace reír y al mismo tiempo deja ver el dolor abajo.\n\nNick Robinson entra perfecto en el juego del romance a distancia, pero lo mejor es que la película no usa la tristeza como truco sino como motor real de los personajes. Tiene química, timing y un costado sentimental mucho más honesto de lo normal en este tipo de estreno de plataforma.",
+	"castCharacters": [
+		{
+			"actor": "Zoey Deutch",
+			"character": "Jill",
+			"tmdbMovieId": 614945,
+			"tmdbPersonId": 1059597,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Robinson",
+			"character": "Wes",
+			"tmdbMovieId": 614945,
+			"tmdbPersonId": 1108907,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ciara Bravo",
+			"character": "Isabelle",
+			"tmdbMovieId": 614945,
+			"tmdbPersonId": 144216,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Offerman",
+			"character": "Chef Bastien",
+			"tmdbMovieId": 614945,
+			"tmdbPersonId": 17039,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lukas Gage",
+			"character": "Arthur",
+			"tmdbMovieId": 614945,
+			"tmdbPersonId": 1371509,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

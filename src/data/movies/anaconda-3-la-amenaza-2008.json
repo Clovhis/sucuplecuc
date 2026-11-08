@@ -52,5 +52,28 @@
 			"extraterrestrial-2014"
 		]
 	},
-	"review": "Anaconda 3 no pretende recuperar la aventura selvática de la primera entrega: abraza el telefilme de monstruos y corre con eso. David Hasselhoff aporta una seriedad divertida, Crystal Allen sostiene el centro de supervivencia y John Rhys-Davies disfruta cada oportunidad de darle gravedad a una situación imposible. Don E. FauntLeRoy filma las persecuciones con recursos acotados, pero el bicho aparece lo suficiente como para que la película cumpla su pacto de entretenimiento de madrugada."
+	"review": "Anaconda 3 no pretende recuperar la aventura selvática de la primera entrega: abraza el telefilme de monstruos y corre con eso. David Hasselhoff aporta una seriedad divertida, Crystal Allen sostiene el centro de supervivencia y John Rhys-Davies disfruta cada oportunidad de darle gravedad a una situación imposible. Don E. FauntLeRoy filma las persecuciones con recursos acotados, pero el bicho aparece lo suficiente como para que la película cumpla su pacto de entretenimiento de madrugada.",
+	"castCharacters": [
+		{
+			"actor": "David Hasselhoff",
+			"character": "Hammet",
+			"tmdbMovieId": 14863,
+			"tmdbPersonId": 28238,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Crystal Allen",
+			"character": "Dr. Amanda Hayes",
+			"tmdbMovieId": 14863,
+			"tmdbPersonId": 146783,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Rhys-Davies",
+			"character": "Peter \"J.D.\" Murdoch",
+			"tmdbMovieId": 14863,
+			"tmdbPersonId": 655,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -48,17 +48,40 @@
 			"notForYouIf": "No es para vos si necesitás símbolos transparentes, violencia moderada o personajes que separen con claridad recuerdo, espectáculo y realidad."
 		},
 		"becauseYouLiked": [
-		"inseparables-1988",
-		"psycho-1960"
-	],
-	"related": [
-		"la-cabana-siniestra-2019",
-		"llega-de-noche-2017",
-		"the-silence-of-the-lambs-1991",
-		"la-escalera-de-jacob-1990"
-	]
-},
+			"inseparables-1988",
+			"psycho-1960"
+		],
+		"related": [
+			"la-cabana-siniestra-2019",
+			"llega-de-noche-2017",
+			"the-silence-of-the-lambs-1991",
+			"la-escalera-de-jacob-1990"
+		]
+	},
 	"review": "Alejandro Jodorowsky mezcla circo, horror y melodrama para hablar de una infancia que nunca logra separarse de la violencia. Los colores, las imágenes religiosas y la puesta teatral construyen un mundo excesivo donde la herida se vuelve espectáculo. Axel Jodorowsky y Blanca Guerra sostienen una relación enfermiza que es más fuerte cuando la película deja de explicar sus símbolos. La puesta circense permite mirar el trauma como una representación, aunque nunca lo vuelve menos doloroso para sus personajes.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Axel Jodorowsky",
+			"character": "Fenix",
+			"tmdbMovieId": 19236,
+			"tmdbPersonId": 143443,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Blanca Guerra",
+			"character": "Concha",
+			"tmdbMovieId": 19236,
+			"tmdbPersonId": 86489,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Guy Stockwell",
+			"character": "Orgo",
+			"tmdbMovieId": 19236,
+			"tmdbPersonId": 93655,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -38,17 +38,40 @@
 			"notForYouIf": "Quizás no sea para vos si necesitás una psicología compleja, un mundo más amplio o un final que no dependa del mecanismo."
 		},
 		"becauseYouLiked": [
-		"el-aura-2005",
-		"los-caminantes-de-la-calle-2026"
-	],
-	"related": [
-		"relatos-salvajes-2014",
-		"nueve-reinas-2000",
-		"carancho-2010",
-		"el-secreto-de-sus-ojos-2009"
-	]
-},
+			"el-aura-2005",
+			"los-caminantes-de-la-calle-2026"
+		],
+		"related": [
+			"relatos-salvajes-2014",
+			"nueve-reinas-2000",
+			"carancho-2010",
+			"el-secreto-de-sus-ojos-2009"
+		]
+	},
 	"synopsis": "Sebastián recoge a sus hijos en el edificio de su exesposa y repiten el juego de bajar: ellos por la escalera y él por el ascensor. Cuando los chicos desaparecen entre un piso y otro, la rutina se convierte en una búsqueda desesperada.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Sebastián",
+			"tmdbMovieId": 214761,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Belén Rueda",
+			"character": "Delia",
+			"tmdbMovieId": 214761,
+			"tmdbPersonId": 19907,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Ziembrowski",
+			"character": "Miguel",
+			"tmdbMovieId": 214761,
+			"tmdbPersonId": 1028444,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

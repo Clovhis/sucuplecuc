@@ -43,18 +43,48 @@
 			"forFansOf": "Si te gustan cine experimental, humor absurdo y protagonistas que convierten el comportamiento en protesta.",
 			"notForYouIf": "No es para vos si necesitás una narración lineal, personajes psicológicos convencionales o un caos fácil de traducir."
 		},
-	"becauseYouLiked": [
-		"my-fair-lady-1964",
-		"annie-hall-1977"
-	],
-	"related": [
-		"stardust-memories-1980",
-		"what-s-up-tiger-lily-1966",
-		"the-apartment-1960",
-		"the-king-of-comedy-1982"
-	]
-},
+		"becauseYouLiked": [
+			"my-fair-lady-1964",
+			"annie-hall-1977"
+		],
+		"related": [
+			"stardust-memories-1980",
+			"what-s-up-tiger-lily-1966",
+			"the-apartment-1960",
+			"the-king-of-comedy-1982"
+		]
+	},
 	"review": "Věra Chytilová usa el caos como una forma de insubordinación contra la moral que quiere ordenar los cuerpos femeninos. El collage de colores, cortes y texturas hace que cada escena parezca una revista rota y vuelta a pegar. Jitka Cerhová e Ivana Karbanová convierten la provocación en juego, aunque la película sabe que ningún juego es inocente. La rebeldía de Marie y Marie parece puro juego hasta que el montaje muestra cuánto incomoda a quienes quieren imponer orden.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jitka Cerhová",
+			"character": "Marie I",
+			"tmdbMovieId": 46919,
+			"tmdbPersonId": 227898,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ivana Karbanová",
+			"character": "Marie II",
+			"tmdbMovieId": 46919,
+			"tmdbPersonId": 227897,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helena Anýžová",
+			"character": "Woman in toilet",
+			"tmdbMovieId": 46919,
+			"tmdbPersonId": 588760,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jan Klusák",
+			"character": "Young Gentleman",
+			"tmdbMovieId": 46919,
+			"tmdbPersonId": 588762,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

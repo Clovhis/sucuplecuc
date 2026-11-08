@@ -57,5 +57,42 @@
 	"review": "Cuentos que no son cuento usa el mecanismo clásico del cuento que cobra vida y lo pone al servicio de una aventura familiar amable. Sandler se mueve mejor cuando la fantasía le permite exagerar sin convertir cada escena en un grito, y Keri Russell aporta un contrapeso cálido. Los mundos inventados tienen encanto, aunque la película acomoda cada conflicto con demasiada facilidad. Es un entretenimiento simpático, ideal para una tarde sin demasiadas pretensiones.",
 	"runtimeMinutes": 99,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Skeeter Bronson",
+			"tmdbMovieId": 10202,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keri Russell",
+			"character": "Jill",
+			"tmdbMovieId": 10202,
+			"tmdbPersonId": 41292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Guy Pearce",
+			"character": "Kendall",
+			"tmdbMovieId": 10202,
+			"tmdbPersonId": 529,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Courteney Cox",
+			"character": "Wendy",
+			"tmdbMovieId": 10202,
+			"tmdbPersonId": 14405,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lucy Lawless",
+			"character": "Aspen",
+			"tmdbMovieId": 10202,
+			"tmdbPersonId": 20584,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

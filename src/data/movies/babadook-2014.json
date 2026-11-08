@@ -56,5 +56,21 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Essie Davis",
+			"character": "Amelia Vanek",
+			"tmdbMovieId": 242224,
+			"tmdbPersonId": 33449,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daniel Henshall",
+			"character": "Robbie",
+			"tmdbMovieId": 242224,
+			"tmdbPersonId": 213202,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

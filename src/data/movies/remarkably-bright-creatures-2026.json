@@ -54,5 +54,42 @@
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
 	"review": "Remarkably Bright Creatures juega sin vergüenza la carta del drama cálido, y por suerte no se cae sólo en la ternura fácil. Lo mejor está en Sally Field, que le da peso de verdad a una historia que podría haber quedado en rareza simpática, mientras Alfred Molina suma la cuota justa de ironía para que el pulpo no sea puro truco. Igual, es de esas películas que subrayan bastante lo que sienten los personajes, así que si te cansan las historias medio azucaradas capaz te saca un poco. Aun con eso, entre el elenco, el clima costero y ese tono de fábula amable, termina funcionando más de lo que su premisa insólita hacía pensar.",
-	"reviewPublishedAt": "2026-05-08"
+	"reviewPublishedAt": "2026-05-08",
+	"castCharacters": [
+		{
+			"actor": "Sally Field",
+			"character": "Tova Sullivan",
+			"tmdbMovieId": 1330021,
+			"tmdbPersonId": 35,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lewis Pullman",
+			"character": "Cameron Cassmore",
+			"tmdbMovieId": 1330021,
+			"tmdbPersonId": 1700685,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alfred Molina",
+			"character": "Marcellus (voice)",
+			"tmdbMovieId": 1330021,
+			"tmdbPersonId": 658,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Colm Meaney",
+			"character": "Ethan Mack",
+			"tmdbMovieId": 1330021,
+			"tmdbPersonId": 17782,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Chen",
+			"character": "Janice Kim",
+			"tmdbMovieId": 1330021,
+			"tmdbPersonId": 6720,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -32,7 +32,7 @@
 			"forFansOf": "Te puede gustar si disfrutás comedias de secundaria, superhéroes aprendices y villanos con problemas concretos, especialmente cuando la acción nace de una esquina conocida y no de una invasión mundial.",
 			"notForYouIf": "Quizás no sea para vos si querés a Peter completamente autónomo, una historia más oscura o un villano que no esté atado a la lógica de negocios y tecnología del universo Marvel."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"batman-returns-1992",
 			"guardians-of-the-galaxy-vol-2-2017"
 		],
@@ -47,5 +47,28 @@
 	"reviewPublishedAt": "2026-03-06",
 	"synopsis": "Después de luchar junto a los Vengadores, Peter Parker regresa a Queens con ganas de demostrar que está listo para desafíos mayores. Mientras intenta equilibrar la escuela y su vida secreta, descubre el peligroso negocio de Adrian Toomes.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Holland",
+			"character": "Peter Parker / Spider-Man",
+			"tmdbMovieId": 315635,
+			"tmdbPersonId": 1136406,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Keaton",
+			"character": "Adrian Toomes / Vulture",
+			"tmdbMovieId": 315635,
+			"tmdbPersonId": 2232,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Favreau",
+			"character": "Happy Hogan",
+			"tmdbMovieId": 315635,
+			"tmdbPersonId": 15277,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

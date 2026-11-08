@@ -46,5 +46,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Dr. Randall Mindy",
+			"tmdbMovieId": 646380,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Lawrence",
+			"character": "Kate Dibiasky",
+			"tmdbMovieId": 646380,
+			"tmdbPersonId": 72129,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "President Orlean",
+			"tmdbMovieId": 646380,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

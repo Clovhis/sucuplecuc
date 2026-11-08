@@ -64,5 +64,42 @@
 	},
 	"review": "Federico Fellini convierte la crisis creativa en una comedia melancólica sobre el deseo de controlar la propia vida. Los pasajes entre sueño, memoria y rodaje no buscan explicar la mente del protagonista: la hacen visible como un escenario cambiante. Marcello Mastroianni sostiene el caos con una elegancia cansada, rodeado de personajes que son también fragmentos de su imaginación. Guido quiere dirigir su vida como una película, pero sus recuerdos y deseos desordenan cualquier plan que intente cerrar.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Marcello Mastroianni",
+			"character": "Guido Anselmi",
+			"tmdbMovieId": 422,
+			"tmdbPersonId": 5676,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claudia Cardinale",
+			"character": "Claudia",
+			"tmdbMovieId": 422,
+			"tmdbPersonId": 4959,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anouk Aimée",
+			"character": "Luisa Anselmi",
+			"tmdbMovieId": 422,
+			"tmdbPersonId": 5682,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sandra Milo",
+			"character": "Carla",
+			"tmdbMovieId": 422,
+			"tmdbPersonId": 5683,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rossella Falk",
+			"character": "Rossella",
+			"tmdbMovieId": 422,
+			"tmdbPersonId": 5684,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ezra Miller",
+			"character": "Barry Allen / The Flash",
+			"tmdbMovieId": 298618,
+			"tmdbPersonId": 132157,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Keaton",
+			"character": "Bruce Wayne / Batman",
+			"tmdbMovieId": 298618,
+			"tmdbPersonId": 2232,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sasha Calle",
+			"character": "Kara Zor-El / Supergirl",
+			"tmdbMovieId": 298618,
+			"tmdbPersonId": 2542319,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

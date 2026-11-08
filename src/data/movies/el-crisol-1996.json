@@ -58,5 +58,42 @@
 		]
 	},
 	"review": "La adaptación de Arthur Miller entiende que el terror de Salem nace menos de lo sobrenatural que de una sociedad feliz de convertir el rumor en autoridad. Daniel Day-Lewis interpreta a John Proctor con una dureza terrenal, un hombre que conoce su culpa pero no acepta que el tribunal le quite el nombre. Winona Ryder y Joan Allen quedan atrapadas en una tensión doméstica que la puesta teatral no siempre disimula. El resultado es solemne y desigual, aunque conserva una pregunta incómoda sobre la obediencia colectiva.",
-	"runtimeMinutes": 123
+	"runtimeMinutes": 123,
+	"castCharacters": [
+		{
+			"actor": "Daniel Day-Lewis",
+			"character": "John Proctor",
+			"tmdbMovieId": 20539,
+			"tmdbPersonId": 11856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Winona Ryder",
+			"character": "Abigail Williams",
+			"tmdbMovieId": 20539,
+			"tmdbPersonId": 1920,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Allen",
+			"character": "Elizabeth Proctor",
+			"tmdbMovieId": 20539,
+			"tmdbPersonId": 11148,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Scofield",
+			"character": "Judge Thomas Danforth",
+			"tmdbMovieId": 20539,
+			"tmdbPersonId": 13324,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bruce Davison",
+			"character": "Reverend Parris",
+			"tmdbMovieId": 20539,
+			"tmdbPersonId": 52374,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

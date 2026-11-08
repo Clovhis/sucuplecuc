@@ -18,7 +18,7 @@
   "poster": "assets/posters/2026/amarga-navidad-2026.webp",
   "screenshots": [],
   "trailerYoutubeId": "SNbVMk-nLu4",
-	"releasePlatform": "Otras plataformas",
+  "releasePlatform": "Otras plataformas",
   "director": "Pedro Almodóvar",
   "mainCast": [
     "Bárbara Lennie",
@@ -33,28 +33,65 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Amarga Navidad junta duelo y bloqueo creativo con el melodrama de Pedro Almodóvar; hay color y heridas reconocibles, aunque el subrayado pesa.",
-			"whatToExpect": "Una hija después de perder a su madre, un guionista en crisis y una ficción que empieza a invadir la vida.",
-			"pace": "Sus 111 minutos alternan escenas de familia y escritura; avanza mejor cuando deja que las emociones se contradigan.",
-			"intensity": "Melancólica y teatral, con humor seco que corta el dolor antes de que se vuelva solemne.",
-			"practicalContext": "Es una función de drama adulto para ver con tiempo; conviene entrar por el tono de Almodóvar, no por una trama de misterio.",
-			"forFansOf": "Los melodramas de duelo, los relatos sobre crear y Bárbara Lennie en personajes que esconden más de lo que dicen.",
-			"notForYouIf": "Necesitás naturalismo, una resolución limpia o una película que no explique cada herida."
-		},
-		"becauseYouLiked": [
-		"la-habitacion-de-al-lado-2024",
-		"rosebush-pruning-2026"
-	],
-	"related": [
-		"padre-madre-hermana-hermano-2025",
-		"suenos-de-oslo-2024",
-		"secretos-de-un-escandalo-2023",
-		"la-despedida-2019"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Amarga Navidad junta duelo y bloqueo creativo con el melodrama de Pedro Almodóvar; hay color y heridas reconocibles, aunque el subrayado pesa.",
+      "whatToExpect": "Una hija después de perder a su madre, un guionista en crisis y una ficción que empieza a invadir la vida.",
+      "pace": "Sus 111 minutos alternan escenas de familia y escritura; avanza mejor cuando deja que las emociones se contradigan.",
+      "intensity": "Melancólica y teatral, con humor seco que corta el dolor antes de que se vuelva solemne.",
+      "practicalContext": "Es una función de drama adulto para ver con tiempo; conviene entrar por el tono de Almodóvar, no por una trama de misterio.",
+      "forFansOf": "Los melodramas de duelo, los relatos sobre crear y Bárbara Lennie en personajes que esconden más de lo que dicen.",
+      "notForYouIf": "Necesitás naturalismo, una resolución limpia o una película que no explique cada herida."
+    },
+    "becauseYouLiked": [
+      "la-habitacion-de-al-lado-2024",
+      "rosebush-pruning-2026"
+    ],
+    "related": [
+      "padre-madre-hermana-hermano-2025",
+      "suenos-de-oslo-2024",
+      "secretos-de-un-escandalo-2023",
+      "la-despedida-2019"
+    ]
+  },
   "isPremiere": true,
   "premiereLabel": "ESTRENO",
-  "review": "Almodovar vuelve a mirarse el ombligo, pero al menos lo hace con oficio, color y un elenco que sabe sostener los silencios raros. La parte mas interesante aparece cuando el duelo y la sequia creativa se pisan sin pedir permiso.\n\nNo todo fluye: por momentos se siente mas explicada que vivida, como si la pelicula necesitara subrayar cada herida. Igual, cuando agarra tono, deja escenas con esa mezcla de melodrama, humor seco y dolor privado que todavia le sale bastante natural."
+  "review": "Almodovar vuelve a mirarse el ombligo, pero al menos lo hace con oficio, color y un elenco que sabe sostener los silencios raros. La parte mas interesante aparece cuando el duelo y la sequia creativa se pisan sin pedir permiso.\n\nNo todo fluye: por momentos se siente mas explicada que vivida, como si la pelicula necesitara subrayar cada herida. Igual, cuando agarra tono, deja escenas con esa mezcla de melodrama, humor seco y dolor privado que todavia le sale bastante natural.",
+  "castCharacters": [
+    {
+      "actor": "Bárbara Lennie",
+      "character": "Elsa Rosado",
+      "tmdbMovieId": 1088548,
+      "tmdbPersonId": 724188,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Leonardo Sbaraglia",
+      "character": "Raúl Durán",
+      "tmdbMovieId": 1088548,
+      "tmdbPersonId": 19803,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Aitana Sánchez-Gijón",
+      "character": "Mónica",
+      "tmdbMovieId": 1088548,
+      "tmdbPersonId": 37946,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Victoria Luengo",
+      "character": "Patricia",
+      "tmdbMovieId": 1088548,
+      "tmdbPersonId": 1208946,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Patrick Criado",
+      "character": "Bonifacio",
+      "tmdbMovieId": 1088548,
+      "tmdbPersonId": 578014,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

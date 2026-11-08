@@ -52,5 +52,28 @@
 	},
 	"review": "Cálculo mortal parte de una idea atractiva: dos adolescentes ricos convierten el asesinato en un problema de lógica y esperan que la policía admire el resultado. Schroeder le da al thriller una superficie fría, aunque la película se dispersa cuando intenta explicar demasiado la psicología de sus personajes. Bullock aporta nervio y experiencia, mientras Gosling y Pitt juegan con una arrogancia bastante venenosa. No siempre encuentra el tono, pero deja un duelo interesante entre intuición detectivesca y narcisismo juvenil.",
 	"runtimeMinutes": 120,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Sandra Bullock",
+			"character": "Cassie Mayweather",
+			"tmdbMovieId": 11892,
+			"tmdbPersonId": 18277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ryan Gosling",
+			"character": "Richard Haywood",
+			"tmdbMovieId": 11892,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Chaplin",
+			"character": "Sam Kennedy",
+			"tmdbMovieId": 11892,
+			"tmdbPersonId": 21343,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

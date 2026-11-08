@@ -59,5 +59,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Timothée Chalamet",
+			"character": "Paul Atreides",
+			"tmdbMovieId": 693134,
+			"tmdbPersonId": 1190668,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zendaya",
+			"character": "Chani",
+			"tmdbMovieId": 693134,
+			"tmdbPersonId": 505710,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rebecca Ferguson",
+			"character": "Jessica",
+			"tmdbMovieId": 693134,
+			"tmdbPersonId": 933238,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

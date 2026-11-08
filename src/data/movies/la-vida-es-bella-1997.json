@@ -80,5 +80,35 @@
 	},
 	"review": "Guido entra a la primera mitad de la película como un torbellino de gestos, coincidencias y frases imposibles, y Roberto Benigni consigue que esa energía no parezca un simple truco. Después, el relato cambia de tono y usa el juego como una forma desesperada de cuidado, una decisión que emocionó a muchísima gente y también generó discusiones sobre cómo representar el Holocausto. La transición no es sutil y por momentos el humor queda al borde del golpe bajo, pero la relación entre padre e hijo tiene una sinceridad que sostiene el conjunto. Es una película sentimental, discutible y muy difícil de olvidar.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Roberto Benigni",
+			"character": "Guido",
+			"tmdbMovieId": 637,
+			"tmdbPersonId": 4818,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicoletta Braschi",
+			"character": "Dora",
+			"tmdbMovieId": 637,
+			"tmdbPersonId": 9235,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Giorgio Cantarini",
+			"character": "Giosué",
+			"tmdbMovieId": 637,
+			"tmdbPersonId": 9236,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Giustino Durano",
+			"character": "Zio",
+			"tmdbMovieId": 637,
+			"tmdbPersonId": 9237,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

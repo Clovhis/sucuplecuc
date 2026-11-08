@@ -60,5 +60,35 @@
 	"releasePlatforms": [
 		"Cine",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Seth Rogen",
+			"character": "Joe",
+			"tmdbMovieId": 950028,
+			"tmdbPersonId": 19274,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Olivia Wilde",
+			"character": "Angela",
+			"tmdbMovieId": 950028,
+			"tmdbPersonId": 59315,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Penélope Cruz",
+			"character": "Piña",
+			"tmdbMovieId": 950028,
+			"tmdbPersonId": 955,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edward Norton",
+			"character": "Hawk",
+			"tmdbMovieId": 950028,
+			"tmdbPersonId": 819,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

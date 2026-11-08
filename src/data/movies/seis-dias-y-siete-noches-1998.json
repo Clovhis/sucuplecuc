@@ -56,5 +56,35 @@
 		]
 	},
 	"runtimeMinutes": 102,
-	"review": "Seis días y siete noches funciona cuando acepta ser una comedia de choque entre dos adultos que no saben pedir ayuda. Harrison Ford se divierte con un personaje brusco, cansado y bastante menos invencible que sus héroes de acción, mientras Anne Heche le devuelve cada ironía con suficiente energía para que la pareja no quede desbalanceada. La isla aporta paisajes y peligro, pero también una serie de obstáculos previsibles que la película resuelve con ligereza. No todo el humor envejeció igual y el romance se acomoda demasiado rápido, aunque el carisma del dúo mantiene el viaje en movimiento."
+	"review": "Seis días y siete noches funciona cuando acepta ser una comedia de choque entre dos adultos que no saben pedir ayuda. Harrison Ford se divierte con un personaje brusco, cansado y bastante menos invencible que sus héroes de acción, mientras Anne Heche le devuelve cada ironía con suficiente energía para que la pareja no quede desbalanceada. La isla aporta paisajes y peligro, pero también una serie de obstáculos previsibles que la película resuelve con ligereza. No todo el humor envejeció igual y el romance se acomoda demasiado rápido, aunque el carisma del dúo mantiene el viaje en movimiento.",
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Quinn Harris",
+			"tmdbMovieId": 6068,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anne Heche",
+			"character": "Robin Monroe",
+			"tmdbMovieId": 6068,
+			"tmdbPersonId": 8256,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Schwimmer",
+			"character": "Frank Martin",
+			"tmdbMovieId": 6068,
+			"tmdbPersonId": 14409,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jacqueline Obradors",
+			"character": "Angelica",
+			"tmdbMovieId": 6068,
+			"tmdbPersonId": 49818,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

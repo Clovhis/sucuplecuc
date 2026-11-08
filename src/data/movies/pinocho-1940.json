@@ -69,5 +69,35 @@
 	},
 	"review": "Pinocho es una fábula más inquietante que amable, y ahí está buena parte de su fuerza. La animación pasa de la calidez del taller de Geppetto a escenarios de explotación, engaño y metamorfosis sin suavizar demasiado las consecuencias. La voz de Dickie Jones y la energía de Jiminy Cricket ordenan un protagonista impulsivo, lejos del héroe perfecto. Entre canciones memorables y momentos que todavía pueden asustar a los chicos, la película sostiene una pregunta sencilla: crecer también implica hacerse responsable de lo que uno elige.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Dickie Jones",
+			"character": "Pinocchio / Alexander (voice) (uncredited)",
+			"tmdbMovieId": 10895,
+			"tmdbPersonId": 67371,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cliff Edwards",
+			"character": "Jiminy Cricket (voice) (uncredited)",
+			"tmdbMovieId": 10895,
+			"tmdbPersonId": 30236,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christian Rub",
+			"character": "Geppetto (voice) (uncredited)",
+			"tmdbMovieId": 10895,
+			"tmdbPersonId": 985275,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Evelyn Venable",
+			"character": "The Blue Fairy (voice) (uncredited)",
+			"tmdbMovieId": 10895,
+			"tmdbPersonId": 117073,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

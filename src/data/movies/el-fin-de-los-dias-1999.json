@@ -53,5 +53,28 @@
 			"dracula-2025"
 		]
 	},
-	"review": "El fin de los días es un cóctel de acción sobrenatural, paranoia de fin de siglo y melancolía urbana que sólo podía pertenecer a 1999. Arnold Schwarzenegger lleva al héroe desde la culpa hasta la resistencia física, Gabriel Byrne se divierte con una amenaza demoníaca de traje impecable y Robin Tunney aporta el centro humano. Peter Hyams filma la ciudad con sombras y explosiones, aunque el exceso mitológico se come parte del suspenso. Es despareja, grandilocuente y muy representativa de su época."
+	"review": "El fin de los días es un cóctel de acción sobrenatural, paranoia de fin de siglo y melancolía urbana que sólo podía pertenecer a 1999. Arnold Schwarzenegger lleva al héroe desde la culpa hasta la resistencia física, Gabriel Byrne se divierte con una amenaza demoníaca de traje impecable y Robin Tunney aporta el centro humano. Peter Hyams filma la ciudad con sombras y explosiones, aunque el exceso mitológico se come parte del suspenso. Es despareja, grandilocuente y muy representativa de su época.",
+	"castCharacters": [
+		{
+			"actor": "Arnold Schwarzenegger",
+			"character": "Jericho Cane",
+			"tmdbMovieId": 9946,
+			"tmdbPersonId": 1100,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gabriel Byrne",
+			"character": "The Man",
+			"tmdbMovieId": 9946,
+			"tmdbPersonId": 5168,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robin Tunney",
+			"character": "Christine York",
+			"tmdbMovieId": 9946,
+			"tmdbPersonId": 17346,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

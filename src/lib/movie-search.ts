@@ -5,6 +5,7 @@ import { matchesAnyFilterValue, matchesCatalogGenre } from './catalog-filters.ts
 export const normalizeQuery = (value: string): string => value.toLowerCase().normalize('NFD')
 	.replace(/[\u0300-\u036f]/g, '').replace(/[^\p{L}\p{N}+<>=.,"\s-]/gu, ' ').replace(/\s+/g, ' ').trim();
 const words = (value: string): string[] => value.match(/[\p{L}\p{N}]+/gu) ?? [];
+const characterTerms = (credit: { character: string; variants?: string[] }): string[] => [credit.character, ...credit.character.split(' / ').map((name) => name.trim()), ...(credit.variants ?? [])];
 const stopWords = new Set('pelicula peliculas peli pelis filme filmes cine una un el la los las de del en con por para que sea sean quiero ver buscar buscame mostrar mostrame algo y o'.split(' '));
 const genreAliases: Record<string, string[]> = {
 	accion: ['accion', 'action'], comedia: ['comedia', 'comedias', 'comedy'],
@@ -191,6 +192,7 @@ export interface MovieSearchResult {
 	ranks: Map<string, number>;
 	parsed: ParsedMovieQuery;
 	explanation: string;
+	characterMatches: Map<string, { actor: string; character: string }[]>;
 }
 
 export function matchesPersonName(name: string, query: string): boolean {
@@ -198,16 +200,24 @@ export function matchesPersonName(name: string, query: string): boolean {
 }
 
 export async function createMovieSearch(records: HomeMovieRecord[]) {
+	const recordsBySlug = new Map(records.map((entry) => [entry.slug, entry]));
 	const titles = new Set<string>();
 	const names = new Set<string>();
 	const directors = new Set<string>();
 	const directorCounts = new Map<string, number>();
 	const castCounts = new Map<string, number>();
 	const recordTitles = new Map<string, string[]>();
+	const characterNames = new Set<string>();
 	for (const entry of records) {
 		const values = [entry.normalizedTitle, entry.normalizedOriginalTitle, ...entry.searchAliases.split(' | ')];
 		for (const title of values) if (title) { titles.add(normalizeQuery(title)); titles.add(normalizeTitle(title)); }
 		recordTitles.set(entry.slug, values.map(normalizeTitle));
+		for (const credit of entry.searchCharacters ?? []) {
+			for (const name of characterTerms(credit)) {
+				const normalized = normalizeQuery(name);
+				if (normalized) characterNames.add(normalized);
+			}
+		}
 		for (const [isDirector, value] of [[true, entry.searchDirector], [false, entry.searchCast]] as const) {
 			for (const name of value.split(isDirector ? /\s*(?:,|\/|&| and | y )\s*/ : ' | ')) {
 				if (!name) continue;
@@ -219,18 +229,19 @@ export async function createMovieSearch(records: HomeMovieRecord[]) {
 			}
 		}
 	}
+	const protectedNames = new Set([...names, ...[...characterNames].filter((name) => name.includes(' '))]);
 	const namesByLength = new Map<number, string[]>();
 	for (const name of names) {
 		const group = namesByLength.get(name.length) ?? []; group.push(name); namesByLength.set(name.length, group);
 	}
 	const index = new MiniSearch({
-		idField: 'slug', fields: ['normalizedTitle', 'normalizedOriginalTitle', 'searchAliases', 'searchDirector', 'searchCast'],
+		idField: 'slug', fields: ['normalizedTitle', 'normalizedOriginalTitle', 'searchAliases', 'searchDirector', 'searchCast', 'searchCharacters'],
 		tokenize: words, processTerm: (term) => term,
 		searchOptions: { combineWith: 'AND', boost: { normalizedTitle: 8, normalizedOriginalTitle: 7, searchAliases: 7, searchDirector: 5, searchCast: 4 } },
 	});
 	// The synopsis remains searchable by a literal scan; indexing it multiplies
 	// postings, startup cost and fuzzy false positives without helping title/credit queries.
-	await index.addAllAsync(records, { chunkSize: 200 });
+	await index.addAllAsync(records.map((entry) => ({ ...entry, searchCharacters: (entry.searchCharacters ?? []).flatMap((credit) => characterTerms(credit)).map(normalizeQuery).join(' | ') })), { chunkSize: 200 });
 	let lastQuery = '';
 	let cached: MovieSearchResult | undefined;
 	return {
@@ -239,7 +250,7 @@ export async function createMovieSearch(records: HomeMovieRecord[]) {
 			const query = normalizeQuery(raw.slice(0, 300));
 			if (cached && query === lastQuery) return cached;
 			lastQuery = query;
-			const parsed = parseMovieQuery(query, titles, names);
+			const parsed = parseMovieQuery(query, titles, protectedNames);
 			let person = names.has(parsed.text) ? parsed.text : '';
 			if (!person && parsed.text.length >= 5 && !titles.has(parsed.text)) {
 				const candidates = [-1, 0, 1].flatMap((offset) => namesByLength.get(parsed.text.length + offset) ?? []).filter((name) => oneTypo(name, parsed.text));
@@ -250,11 +261,12 @@ export async function createMovieSearch(records: HomeMovieRecord[]) {
 			if (!parsed.role && directors.has(person) && (directorCounts.get(person) ?? 0) >= 2 && (directorCounts.get(person) ?? 0) > 2 * (castCounts.get(person) ?? 0) && /\bde\s/.test(query)) parsed.role = 'searchDirector';
 			const titleQuery = !parsed.role && (titles.has(parsed.text) || titles.has(normalizeTitle(parsed.text)));
 			const fields = parsed.role ? [parsed.role] : titleQuery ? ['normalizedTitle', 'normalizedOriginalTitle', 'searchAliases'] : person ? ['searchDirector', 'searchCast'] : undefined;
+			const characterQuery = !parsed.role && characterNames.has(normalizeQuery(parsed.text));
 			const personPattern = person && fields && !titleQuery ? new RegExp(`(^|[^\\p{L}])${escapeRegex(person)}($|[^\\p{L}])`, 'u') : null;
 			const creditTerms = words(parsed.text);
 			const phraseTitles = parsed.phrases.map(normalizeTitle);
 			const eligible = records.filter((entry) => matchesParsedQuery(entry, parsed) &&
-				(!parsed.phrases.length || parsed.phrases.every((phrase, i) => entry.searchable.includes(phrase) || recordTitles.get(entry.slug)?.includes(phraseTitles[i]))) &&
+				(!parsed.phrases.length || parsed.phrases.every((phrase, i) => entry.searchable.includes(phrase) || recordTitles.get(entry.slug)?.includes(phraseTitles[i]) || (entry.searchCharacters ?? []).some((credit) => characterTerms(credit).some((name) => normalizeQuery(name) === phrase)))) &&
 				(!personPattern || fields!.some((field) => personPattern.test(entry[field as 'searchDirector' | 'searchCast']))) &&
 				(!parsed.role || person || !creditTerms.length || entry[parsed.role].split(parsed.role === 'searchCast' ? ' | ' : /\s*(?:,|\/|&| and | y )\s*/).some((name) => creditTerms.every((term) => words(name).some((part) => part === term || (term.length >= 3 && part.startsWith(term)) || (term.length >= 4 && oneTypo(part, term)))))));
 			const eligibleIds = new Set(eligible.map((entry) => entry.slug));
@@ -263,7 +275,7 @@ export async function createMovieSearch(records: HomeMovieRecord[]) {
 			const text = words(parsed.text).join(' ');
 			const normalizedText = normalizeTitle(parsed.text);
 			if (text) {
-				const options = { fields, filter: (result: { id: string | number }) => eligibleIds.has(String(result.id)), prefix: (term: string) => term.length >= 3 && !parsed.phrases.length };
+				const options = { fields: fields ?? ['normalizedTitle', 'normalizedOriginalTitle', 'searchAliases', 'searchDirector', 'searchCast'], filter: (result: { id: string | number }) => eligibleIds.has(String(result.id)), prefix: (term: string) => term.length >= 3 && !parsed.phrases.length };
 				let results = index.search(text, options);
 				if (!results.length && !titleQuery && !parsed.phrases.length && words(text).some((word) => word.length >= 4)) {
 					results = index.search(text, { ...options, fuzzy: (term) => term.length >= 6 ? 2 : term.length >= 4 ? 1 : false, maxFuzzy: 2 });
@@ -290,10 +302,24 @@ export async function createMovieSearch(records: HomeMovieRecord[]) {
 				const terms = words(text);
 				for (const entry of eligible) if (terms.every((term) => entry.searchable.includes(term))) ranks.set(entry.slug, 240);
 			}
+			const characterMatches = new Map<string, { actor: string; character: string }[]>();
+			if (characterQuery) {
+				if (!titleQuery && !person) ranks.clear();
+				// Only full, verified names or aliases qualify; no fuzzy or prefix character matches.
+				const characterResults = index.search(text, { fields: ['searchCharacters'], combineWith: 'AND', prefix: false, fuzzy: false });
+				for (const result of characterResults) {
+					const entry = recordsBySlug.get(String(result.id));
+					if (!entry || !matchesParsedQuery(entry, parsed)) continue;
+					const matches = (entry.searchCharacters ?? []).filter((credit) => characterTerms(credit).some((name) => normalizeQuery(name) === normalizeQuery(parsed.text)));
+					if (!matches.length) continue;
+					characterMatches.set(entry.slug, matches.map(({ actor, character }) => ({ actor, character })));
+					ranks.set(entry.slug, Math.min(ranks.get(entry.slug) ?? 200, 10));
+				}
+			}
 			const labels = parsed.labels.slice();
 			if (person && parsed.role && !labels.includes('dirección') && !labels.includes('reparto')) labels.push(parsed.role === 'searchDirector' ? 'dirección' : 'reparto');
 			const explanation = [...labels.length ? [`Interpretamos: ${labels.join(' · ')}.`] : [], ...fuzzy && ranks.size ? ['Incluimos coincidencias por escritura aproximada.'] : []].join(' ');
-			cached = { ranks, parsed, explanation };
+			cached = { ranks, parsed, explanation, characterMatches };
 			return cached;
 		},
 	};

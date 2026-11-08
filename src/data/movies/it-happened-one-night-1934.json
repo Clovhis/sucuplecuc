@@ -58,5 +58,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Clark Gable",
+			"character": "Peter Warne",
+			"tmdbMovieId": 3078,
+			"tmdbPersonId": 11492,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claudette Colbert",
+			"character": "Ellie Andrews",
+			"tmdbMovieId": 3078,
+			"tmdbPersonId": 30155,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Walter Connolly",
+			"character": "Alexander Andrews",
+			"tmdbMovieId": 3078,
+			"tmdbPersonId": 30156,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

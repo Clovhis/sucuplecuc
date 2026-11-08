@@ -61,5 +61,42 @@
 	],
 	"runtimeMinutes": 99,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Max Simkin",
+			"tmdbMovieId": 238215,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Method Man",
+			"character": "Leon Ludlow",
+			"tmdbMovieId": 238215,
+			"tmdbPersonId": 5384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dustin Hoffman",
+			"character": "Abraham Simkin",
+			"tmdbMovieId": 238215,
+			"tmdbPersonId": 4483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve Buscemi",
+			"character": "Jimmy",
+			"tmdbMovieId": 238215,
+			"tmdbPersonId": 884,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Melonie Díaz",
+			"character": "Carmen Herrara",
+			"tmdbMovieId": 238215,
+			"tmdbPersonId": 53936,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

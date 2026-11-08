@@ -52,5 +52,42 @@
 		]
 	},
 	"review": "Martin Scorsese acompaña a un paramédico insomne por tres noches de ambulancia, culpa y sirenas, y convierte Manhattan en un lugar febril donde nadie logra descansar. Nicolas Cage trabaja al borde del colapso sin perder humanidad, mientras Patricia Arquette aporta un vínculo frágil que nunca resuelve todo. La dirección mezcla luces de neón, rock y cámara inquieta con un ritmo deliberadamente agotador. Puede sentirse caótica y excesiva, pero esa desorientación es el punto. Vale por una mirada rara y muy física sobre el desgaste de querer salvar a alguien.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "Frank Pierce",
+			"tmdbMovieId": 8649,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patricia Arquette",
+			"character": "Mary Burke",
+			"tmdbMovieId": 8649,
+			"tmdbPersonId": 4687,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Goodman",
+			"character": "Larry Verber",
+			"tmdbMovieId": 8649,
+			"tmdbPersonId": 1230,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ving Rhames",
+			"character": "Marcus",
+			"tmdbMovieId": 8649,
+			"tmdbPersonId": 10182,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Sizemore",
+			"character": "Tom Wolls",
+			"tmdbMovieId": 8649,
+			"tmdbPersonId": 3197,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

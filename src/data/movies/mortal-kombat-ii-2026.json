@@ -14,7 +14,7 @@
 	],
 	"country": "US",
 	"isArgentinian": false,
-  "poster": "assets/posters/2026/mortal-kombat-ii-2026.webp",
+	"poster": "assets/posters/2026/mortal-kombat-ii-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "b24oG7qCwp4",
 	"releasePlatform": "Otras plataformas",
@@ -37,21 +37,70 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Mortal Kombat II entiende su contrato de torneo y mejora cuando deja que Karl Urban, Jessica McNamee y el elenco jueguen con los personajes; la mitología sigue siendo rudimentaria.",
-			"whatToExpect": "Campeones, Shao Kahn, arenas, artes marciales y fatalities, con Johnny Cage sumando humor y una batalla que decide el destino de Earthrealm.",			"pace": "Va directo a peleas, rivales y guiños; frena al explicar mitología, pero recupera energía cada vez que arma un combate.",			"intensity": "La violencia es explícita y festiva, pensada para fans del videojuego; la tensión dramática pesa menos que el impacto de los golpes y fatalities.",			"practicalContext": "Con 116 minutos, rinde como función ruidosa para ver en grupo; conviene llegar con tolerancia al fan service y a una historia simple.",			"forFansOf": "Para seguidores de Mortal Kombat, Karl Urban como Johnny Cage y películas de combate que prefieren personajes reconocibles antes que realismo.",			"notForYouIf": "No es para vos si buscás drama de fantasía profundo, violencia moderada o una película que explique el universo sin detener la acción."
+			"whatToExpect": "Campeones, Shao Kahn, arenas, artes marciales y fatalities, con Johnny Cage sumando humor y una batalla que decide el destino de Earthrealm.",
+			"pace": "Va directo a peleas, rivales y guiños; frena al explicar mitología, pero recupera energía cada vez que arma un combate.",
+			"intensity": "La violencia es explícita y festiva, pensada para fans del videojuego; la tensión dramática pesa menos que el impacto de los golpes y fatalities.",
+			"practicalContext": "Con 116 minutos, rinde como función ruidosa para ver en grupo; conviene llegar con tolerancia al fan service y a una historia simple.",
+			"forFansOf": "Para seguidores de Mortal Kombat, Karl Urban como Johnny Cage y películas de combate que prefieren personajes reconocibles antes que realismo.",
+			"notForYouIf": "No es para vos si buscás drama de fantasía profundo, violencia moderada o una película que explique el universo sin detener la acción."
 		},
-	"becauseYouLiked": [
-		"amos-del-universo-2026",
-		"el-hombre-del-norte-2022"
-	],
-	"related": [
-		"the-lord-of-the-rings-the-two-towers-2002",
-		"la-odisea-2026",
-		"the-lord-of-the-rings-the-return-of-the-king-2003",
-		"the-lord-of-the-rings-the-fellowship-of-the-ring-2001"
-	]
-},
+		"becauseYouLiked": [
+			"amos-del-universo-2026",
+			"el-hombre-del-norte-2022"
+		],
+		"related": [
+			"the-lord-of-the-rings-the-two-towers-2002",
+			"la-odisea-2026",
+			"the-lord-of-the-rings-the-return-of-the-king-2003",
+			"the-lord-of-the-rings-the-fellowship-of-the-ring-2001"
+		]
+	},
 	"review": "Mortal Kombat II entiende mucho mejor que la anterior cuál es el negocio: torneo, personajes reconocibles, golpes exagerados y una violencia que no pide disculpas. La entrada de Johnny Cage le da otra energía al grupo y la película parece pensada para que el fan encuentre arenas, guiños y fatalities sin tener que esperar demasiado.\n\nCuando intenta sostener drama o explicar mitología se vuelve más pesada de lo necesario, y ahí asoma lo rudimentaria que sigue siendo la historia. Pero como función ruidosa, sangrienta y armada para ver con gente que reconoce a Shao Kahn al toque, cumple bastante mejor de lo que uno esperaría.",
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"reviewPublishedAt": "2026-05-07"
+	"reviewPublishedAt": "2026-05-07",
+	"castCharacters": [
+		{
+			"actor": "Karl Urban",
+			"character": "Johnny Cage",
+			"tmdbMovieId": 931285,
+			"tmdbPersonId": 1372,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adeline Rudolph",
+			"character": "Kitana",
+			"tmdbMovieId": 931285,
+			"tmdbPersonId": 2168270,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica McNamee",
+			"character": "Sonya Blade",
+			"tmdbMovieId": 931285,
+			"tmdbPersonId": 136347,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Lawson",
+			"character": "Kano",
+			"tmdbMovieId": 931285,
+			"tmdbPersonId": 189230,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mehcad Brooks",
+			"character": "Jax Briggs",
+			"tmdbMovieId": 931285,
+			"tmdbPersonId": 51684,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tati Gabrielle",
+			"character": "Jade",
+			"tmdbMovieId": 931285,
+			"tmdbPersonId": 1859934,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

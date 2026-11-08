@@ -60,5 +60,35 @@
 		"Netflix",
 		"Prime Video"
 	],
-	"runtimeMinutes": 154
+	"runtimeMinutes": 154,
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "Nathan Algren",
+			"tmdbMovieId": 616,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ken Watanabe",
+			"character": "Moritsugu Katsumoto",
+			"tmdbMovieId": 616,
+			"tmdbPersonId": 3899,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hiroyuki Sanada",
+			"character": "Ujio",
+			"tmdbMovieId": 616,
+			"tmdbPersonId": 9195,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Timothy Spall",
+			"character": "Simon Graham",
+			"tmdbMovieId": 616,
+			"tmdbPersonId": 9191,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

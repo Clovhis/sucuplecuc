@@ -61,5 +61,42 @@
 	"releasePlatforms": [
 		"HBO Max",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Clive Owen",
+			"character": "Theo Faron",
+			"tmdbMovieId": 9693,
+			"tmdbPersonId": 2296,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Clare-Hope Ashitey",
+			"character": "Kee",
+			"tmdbMovieId": 9693,
+			"tmdbPersonId": 64986,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chiwetel Ejiofor",
+			"character": "Luke",
+			"tmdbMovieId": 9693,
+			"tmdbPersonId": 5294,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julianne Moore",
+			"character": "Julian",
+			"tmdbMovieId": 9693,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Caine",
+			"character": "Jasper",
+			"tmdbMovieId": 9693,
+			"tmdbPersonId": 3895,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

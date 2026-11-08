@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Disney Plus",
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tim Curry",
+			"character": "Dr. Frank-N-Furter",
+			"tmdbMovieId": 36685,
+			"tmdbPersonId": 13472,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Susan Sarandon",
+			"character": "Janet Weiss",
+			"tmdbMovieId": 36685,
+			"tmdbPersonId": 4038,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

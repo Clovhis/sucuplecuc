@@ -4,7 +4,9 @@
 	"originalTitle": "Los delincuentes",
 	"year": 2023,
 	"category": "Crimen",
-	"subgenres": ["Heist"],
+	"subgenres": [
+		"Heist"
+	],
 	"country": "AR",
 	"isArgentinian": true,
 	"poster": "assets/posters/2023/los-delincuentes-2023.webp",
@@ -34,18 +36,34 @@
 			"forFansOf": "Si te gustan policiales argentinos raros, derivas existenciales y relatos que se toman tiempo para desviarse.",
 			"notForYouIf": "No es para vos si buscás persecuciones, un plan explicado paso a paso o una resolución rápida."
 		},
-	"becauseYouLiked": [
-		"el-robo-del-siglo-2020",
-		"nueve-reinas-2000"
-	],
-	"related": [
-		"lu-pau-2026",
-		"el-aura-2005",
-		"pepita-la-pistolera-2026",
-		"el-sastre-de-la-mafia-2022"
-	]
-},
+		"becauseYouLiked": [
+			"el-robo-del-siglo-2020",
+			"nueve-reinas-2000"
+		],
+		"related": [
+			"lu-pau-2026",
+			"el-aura-2005",
+			"pepita-la-pistolera-2026",
+			"el-sastre-de-la-mafia-2022"
+		]
+	},
 	"synopsis": "Morán trabaja como empleado en un banco de Buenos Aires. Es casi invisible para sus colegas. Durante una cena con su colega Román, Morán le cuenta que robó exactamente 650.000 dólares, que es exactamente el doble de lo que habría ganado hasta su jubilación.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-02-28"
+	"reviewPublishedAt": "2026-02-28",
+	"castCharacters": [
+		{
+			"actor": "Esteban Bigliardi",
+			"character": "Román",
+			"tmdbMovieId": 714889,
+			"tmdbPersonId": 1086358,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margarita Molfino",
+			"character": "Norma",
+			"tmdbMovieId": 714889,
+			"tmdbPersonId": 2310348,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

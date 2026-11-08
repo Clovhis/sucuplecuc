@@ -45,17 +45,54 @@
 			"notForYouIf": "Necesitás continuidad invisible, una trama policial cerrada o protagonistas que digan exactamente qué sienten."
 		},
 		"becauseYouLiked": [
-		"on-the-waterfront-1954",
-		"el-silencio-de-un-hombre-1967"
-	],
-	"related": [
-		"in-the-heat-of-the-night-1967",
-		"confesiones-verdaderas-1981",
-		"un-dia-de-furia-1993",
-		"punales-por-la-espalda-2019"
-	]
-},
+			"on-the-waterfront-1954",
+			"el-silencio-de-un-hombre-1967"
+		],
+		"related": [
+			"in-the-heat-of-the-night-1967",
+			"confesiones-verdaderas-1981",
+			"un-dia-de-furia-1993",
+			"punales-por-la-espalda-2019"
+		]
+	},
 	"review": "Jean-Luc Godard vuelve la persecución una conversación sobre deseo, pose y cine, con una energía que todavía parece recién inventada. Los saltos de eje, los cortes abruptos y la ciudad recorrida a pie transforman las limitaciones en estilo. Jean-Paul Belmondo y Jean Seberg sostienen una pareja imprevisible, hecha de encanto, desconfianza y frases que quedan suspendidas. La forma parece libre porque comparte la impulsividad de Michel, pero la película nunca confunde libertad con inocencia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jean-Paul Belmondo",
+			"character": "Michel Poiccard / László Kovács",
+			"tmdbMovieId": 269,
+			"tmdbPersonId": 3829,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jean Seberg",
+			"character": "Patricia Franchini",
+			"tmdbMovieId": 269,
+			"tmdbPersonId": 3830,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daniel Boulanger",
+			"character": "Police Inspector Vital",
+			"tmdbMovieId": 269,
+			"tmdbPersonId": 3573,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Henri-Jacques Huet",
+			"character": "Antonio Berrutti",
+			"tmdbMovieId": 269,
+			"tmdbPersonId": 3832,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Roger Hanin",
+			"character": "Carl Zubart",
+			"tmdbMovieId": 269,
+			"tmdbPersonId": 3836,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

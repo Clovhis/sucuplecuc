@@ -54,5 +54,35 @@
 		]
 	},
 	"runtimeMinutes": 116,
-	"review": "La película quiere ser thriller legal, comedia romántica y aventura de museo al mismo tiempo, y esa mezcla explica tanto su encanto como sus tropiezos. Redford aporta el aplomo del fiscal que descubre que el reglamento no alcanza, mientras Debra Winger se divierte con una abogada que parece vivir siempre dos pasos adelante. El misterio tiene vueltas bastante caprichosas, pero el choque entre sus protagonistas y la estética de gran producción sostienen un entretenimiento liviano, con más energía que precisión."
+	"review": "La película quiere ser thriller legal, comedia romántica y aventura de museo al mismo tiempo, y esa mezcla explica tanto su encanto como sus tropiezos. Redford aporta el aplomo del fiscal que descubre que el reglamento no alcanza, mientras Debra Winger se divierte con una abogada que parece vivir siempre dos pasos adelante. El misterio tiene vueltas bastante caprichosas, pero el choque entre sus protagonistas y la estética de gran producción sostienen un entretenimiento liviano, con más energía que precisión.",
+	"castCharacters": [
+		{
+			"actor": "Robert Redford",
+			"character": "Tom Logan",
+			"tmdbMovieId": 9930,
+			"tmdbPersonId": 4135,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Debra Winger",
+			"character": "Laura J. Kelly",
+			"tmdbMovieId": 9930,
+			"tmdbPersonId": 26513,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daryl Hannah",
+			"character": "Chelsea Deardon",
+			"tmdbMovieId": 9930,
+			"tmdbPersonId": 589,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brian Dennehy",
+			"character": "Cavanaugh",
+			"tmdbMovieId": 9930,
+			"tmdbPersonId": 6197,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

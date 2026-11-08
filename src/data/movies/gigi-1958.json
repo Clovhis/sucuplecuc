@@ -60,5 +60,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Leslie Caron",
+			"character": "Gigi",
+			"tmdbMovieId": 17281,
+			"tmdbPersonId": 5320,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maurice Chevalier",
+			"character": "Honoré Lachaille",
+			"tmdbMovieId": 17281,
+			"tmdbPersonId": 112972,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Louis Jourdan",
+			"character": "Gaston Lachaille",
+			"tmdbMovieId": 17281,
+			"tmdbPersonId": 10508,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -65,5 +65,35 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 125
+	"runtimeMinutes": 125,
+	"castCharacters": [
+		{
+			"actor": "Robin Williams",
+			"character": "Daniel Hillard / Mrs. Doubtfire",
+			"tmdbMovieId": 788,
+			"tmdbPersonId": 2157,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sally Field",
+			"character": "Miranda Hillard",
+			"tmdbMovieId": 788,
+			"tmdbPersonId": 35,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pierce Brosnan",
+			"character": "Stu",
+			"tmdbMovieId": 788,
+			"tmdbPersonId": 517,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harvey Fierstein",
+			"character": "Frank",
+			"tmdbMovieId": 788,
+			"tmdbPersonId": 7420,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,42 @@
 		]
 	},
 	"runtimeMinutes": 123,
-	"review": "Elizabeth entiende el poder como una habitación llena de puertas que se cierran. Shekhar Kapur filma la corte como un teatro de conspiraciones, con colores y ceremonias que nunca alcanzan para tapar el miedo; Cate Blanchett convierte el aprendizaje de la reina en una actuación que pasa de la vulnerabilidad a la autoridad sin perder humanidad. El relato simplifica algunos conflictos históricos, pero sostiene una tensión política muy eficaz y una protagonista magnética."
+	"review": "Elizabeth entiende el poder como una habitación llena de puertas que se cierran. Shekhar Kapur filma la corte como un teatro de conspiraciones, con colores y ceremonias que nunca alcanzan para tapar el miedo; Cate Blanchett convierte el aprendizaje de la reina en una actuación que pasa de la vulnerabilidad a la autoridad sin perder humanidad. El relato simplifica algunos conflictos históricos, pero sostiene una tensión política muy eficaz y una protagonista magnética.",
+	"castCharacters": [
+		{
+			"actor": "Cate Blanchett",
+			"character": "Elizabeth I",
+			"tmdbMovieId": 4518,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joseph Fiennes",
+			"character": "Robert Dudley, Earl of Leicester",
+			"tmdbMovieId": 4518,
+			"tmdbPersonId": 12763,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geoffrey Rush",
+			"character": "Sir Francis Walsingham",
+			"tmdbMovieId": 4518,
+			"tmdbPersonId": 118,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Eccleston",
+			"character": "Duke of Norfolk",
+			"tmdbMovieId": 4518,
+			"tmdbPersonId": 2040,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Attenborough",
+			"character": "Sir William Cecil",
+			"tmdbMovieId": 4518,
+			"tmdbPersonId": 4786,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

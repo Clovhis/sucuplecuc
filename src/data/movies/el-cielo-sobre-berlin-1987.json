@@ -52,18 +52,55 @@
 			"forFansOf": "Fans de Wim Wenders, de la fantasía filosófica y de los dramas urbanos que convierten una ciudad, una canción o una conversación en una revelación.",
 			"notForYouIf": "Necesitás una narrativa rápida, diálogos naturales todo el tiempo o una fantasía con reglas explicadas. Su poesía puede sentirse distante."
 		},
-	"becauseYouLiked": [
-		"el-curioso-caso-de-benjamin-button-2008",
-		"the-shape-of-water-2017"
-	],
-	"related": [
-		"desconocidos-2023",
-		"always-1989",
-		"paris-texas-1984",
-		"peggy-sue-se-caso-1986"
-	]
-},
+		"becauseYouLiked": [
+			"el-curioso-caso-de-benjamin-button-2008",
+			"the-shape-of-water-2017"
+		],
+		"related": [
+			"desconocidos-2023",
+			"always-1989",
+			"paris-texas-1984",
+			"peggy-sue-se-caso-1986"
+		]
+	},
 	"review": "Wim Wenders encuentra poesía en la soledad urbana y en el deseo de tocar un mundo imperfecto. El pasaje del blanco y negro al color convierte la percepción en una decisión narrativa, no en un simple efecto visual. Bruno Ganz sostiene una melancolía abierta, y Peter Falk aporta una presencia terrenal que vuelve posible el salto. El deseo de sentir vuelve visible la diferencia entre observar una vida y participar de sus riesgos y placeres cotidianos.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Bruno Ganz",
+			"character": "Damiel",
+			"tmdbMovieId": 144,
+			"tmdbPersonId": 2310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Solveig Dommartin",
+			"character": "Marion",
+			"tmdbMovieId": 144,
+			"tmdbPersonId": 2312,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Otto Sander",
+			"character": "Cassiel",
+			"tmdbMovieId": 144,
+			"tmdbPersonId": 2311,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Curt Bois",
+			"character": "Homer",
+			"tmdbMovieId": 144,
+			"tmdbPersonId": 2313,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Falk",
+			"character": "The Filmstar",
+			"tmdbMovieId": 144,
+			"tmdbPersonId": 2314,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

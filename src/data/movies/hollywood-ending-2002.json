@@ -52,5 +52,35 @@
 		]
 	},
 	"review": "Woody Allen interpreta a un director neurótico que se queda ciego justo antes de filmar una película y decide ocultarlo para no perder el trabajo. La idea es ridícula, pero Allen la sostiene con timing y una cuota útil de autodesprecio; Téa Leoni y George Hamilton acompañan el caos con buena energía. La dirección se ríe de productores, egos y premios sin buscar una sátira demasiado feroz. El ritmo es liviano, aunque varios gags no despegan. Vale como comedia menor para quien disfrute del Allen más absurdo y del mundillo de cine.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Val",
+			"tmdbMovieId": 9689,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Hamilton",
+			"character": "Ed",
+			"tmdbMovieId": 9689,
+			"tmdbPersonId": 3267,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Téa Leoni",
+			"character": "Ellie",
+			"tmdbMovieId": 9689,
+			"tmdbPersonId": 4939,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Debra Messing",
+			"character": "Lori",
+			"tmdbMovieId": 9689,
+			"tmdbPersonId": 23959,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

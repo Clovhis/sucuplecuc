@@ -50,5 +50,28 @@
     }
   },
   "review": "Antonioni comienza con una búsqueda y luego observa cómo la vida sigue aun cuando la pregunta original queda abierta. Monica Vitti hace de Claudia una presencia que cambia de postura y de ánimo ante paisajes demasiado amplios para ofrecer respuestas. Gabriele Ferzetti encarna a Sandro como un hombre acostumbrado a seguir adelante sin comprender del todo lo que deja atrás. La película desplaza el misterio hacia las relaciones que se forman alrededor de la ausencia. Su ritmo pausado no resuelve el caso: cambia el lugar desde el que el espectador espera una resolución.",
-  "runtimeMinutes": 144
+  "runtimeMinutes": 144,
+  "castCharacters": [
+    {
+      "actor": "Monica Vitti",
+      "character": "Claudia",
+      "tmdbMovieId": 5165,
+      "tmdbPersonId": 41779,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Gabriele Ferzetti",
+      "character": "Sandro",
+      "tmdbMovieId": 5165,
+      "tmdbPersonId": 4961,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Lea Massari",
+      "character": "Anna",
+      "tmdbMovieId": 5165,
+      "tmdbPersonId": 20882,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

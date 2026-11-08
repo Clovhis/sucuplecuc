@@ -59,5 +59,28 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Nicole Kidman",
+			"character": "Grace Stewart",
+			"tmdbMovieId": 1933,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fionnula Flanagan",
+			"character": "Mrs. Bertha Mills",
+			"tmdbMovieId": 1933,
+			"tmdbPersonId": 58068,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Eccleston",
+			"character": "Charles Stewart",
+			"tmdbMovieId": 1933,
+			"tmdbPersonId": 2040,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

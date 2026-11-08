@@ -64,5 +64,42 @@
 	"reviewPublishedAt": "2026-03-13",
 	"subgenres": [],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Martin Sheen",
+			"character": "Captain Benjamin Willard",
+			"tmdbMovieId": 28,
+			"tmdbPersonId": 8349,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marlon Brando",
+			"character": "Colonel Walter Kurtz",
+			"tmdbMovieId": 28,
+			"tmdbPersonId": 3084,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frederic Forrest",
+			"character": "Jay 'Chef' Hicks",
+			"tmdbMovieId": 28,
+			"tmdbPersonId": 8351,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Albert Hall",
+			"character": "Chief Phillips",
+			"tmdbMovieId": 28,
+			"tmdbPersonId": 8354,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laurence Fishburne",
+			"character": "Tyrone 'Clean' Miller",
+			"tmdbMovieId": 28,
+			"tmdbPersonId": 2975,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -52,5 +52,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Matthew McConaughey",
+			"character": "Cooper",
+			"tmdbMovieId": 157336,
+			"tmdbPersonId": 10297,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anne Hathaway",
+			"character": "Brand",
+			"tmdbMovieId": 157336,
+			"tmdbPersonId": 1813,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Chastain",
+			"character": "Murph",
+			"tmdbMovieId": 157336,
+			"tmdbPersonId": 83002,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -45,17 +45,54 @@
 			"notForYouIf": "Querés una reinvención adulta, un villano con profundidad o una mitología que no dependa de la nostalgia."
 		},
 		"becauseYouLiked": [
-		"e-t-the-extra-terrestrial-1982",
-		"star-wars-episode-iv-a-new-hope-1977"
-	],
-	"related": [
-		"sonic-2-la-pelicula-2022",
-		"sonic-3-la-pelicula-2024",
-		"star-wars-episode-v-the-empire-strikes-back-1980",
-		"terminator-dark-fate-2019"
-	]
-},
+			"e-t-the-extra-terrestrial-1982",
+			"star-wars-episode-iv-a-new-hope-1977"
+		],
+		"related": [
+			"sonic-2-la-pelicula-2022",
+			"sonic-3-la-pelicula-2024",
+			"star-wars-episode-v-the-empire-strikes-back-1980",
+			"terminator-dark-fate-2019"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "He-Man vuelve con una pelicula que entiende que Eternia necesita color, espadas enormes y una cuota generosa de delirio. Travis Knight le pone movimiento y corazon a un universo que podia quedar atrapado en la nostalgia de jugueteria.\n\nLa historia no sorprende demasiado y Skeletor sigue funcionando mejor como presencia que como personaje, pero el elenco entra convencido al juego. Cuando abraza la aventura fantastica sin pedir disculpas, se vuelve un regreso bastante entretenido."
+	"review": "He-Man vuelve con una pelicula que entiende que Eternia necesita color, espadas enormes y una cuota generosa de delirio. Travis Knight le pone movimiento y corazon a un universo que podia quedar atrapado en la nostalgia de jugueteria.\n\nLa historia no sorprende demasiado y Skeletor sigue funcionando mejor como presencia que como personaje, pero el elenco entra convencido al juego. Cuando abraza la aventura fantastica sin pedir disculpas, se vuelve un regreso bastante entretenido.",
+	"castCharacters": [
+		{
+			"actor": "Nicholas Galitzine",
+			"character": "Adam / He-Man",
+			"tmdbMovieId": 454639,
+			"tmdbPersonId": 1425934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Camila Mendes",
+			"character": "Teela",
+			"tmdbMovieId": 454639,
+			"tmdbPersonId": 1721740,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jared Leto",
+			"character": "Skeletor",
+			"tmdbMovieId": 454639,
+			"tmdbPersonId": 7499,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alison Brie",
+			"character": "Evil-Lyn",
+			"tmdbMovieId": 454639,
+			"tmdbPersonId": 88029,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Idris Elba",
+			"character": "Duncan",
+			"tmdbMovieId": 454639,
+			"tmdbPersonId": 17605,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

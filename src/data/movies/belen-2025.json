@@ -32,19 +32,42 @@
 			"forFansOf": "Los dramas judiciales sociales, el cine argentino de denuncia y las historias que miran la clase además del expediente.",
 			"notForYouIf": "Buscás evasión, una protagonista protegida por el guion o una película que resuelva la injusticia con una escena catártica."
 		},
-	"becauseYouLiked": [
-		"barreda-2026",
-		"trenque-lauquen-2022"
-	],
-	"related": [
-		"truman-2015",
-		"el-patron-radiografia-de-un-crimen-2014",
-		"caballos-salvajes-1995",
-		"risa-y-la-cabina-del-viento-2025"
-	]
-},
+		"becauseYouLiked": [
+			"barreda-2026",
+			"trenque-lauquen-2022"
+		],
+		"related": [
+			"truman-2015",
+			"el-patron-radiografia-de-un-crimen-2014",
+			"caballos-salvajes-1995",
+			"risa-y-la-cabina-del-viento-2025"
+		]
+	},
 	"synopsis": "Sigue la historia de Julieta, una joven tucumana que llega al hospital con un fuerte dolor abdominal. Mientras está bajo los efectos de la anestesia es arrestada por la policía que la acusa de haberse inducido un aborto.",
 	"audienceRating": "+17",
 	"review": "Belén no busca lucirse: va al hueso de un caso real de violencia institucional, clase y persecución sobre mujeres pobres. Lo más fuerte aparece en el hospital, en la maquinaria judicial y en la fragilidad de una protagonista que ni siquiera termina de entender del todo el desastre que le cae encima.\n\nPuede perder espesor cuando explica de más, pero tiene urgencia, bronca y un tema que pesa de verdad. No es una película cómoda ni elegante: pega por la impotencia que arrastra y por cómo expone un sistema armado para aplastar a quien menos margen tiene.",
-	"reviewPublishedAt": "2026-02-26"
+	"reviewPublishedAt": "2026-02-26",
+	"castCharacters": [
+		{
+			"actor": "Dolores Fonzi",
+			"character": "Soledad Deza",
+			"tmdbMovieId": 1301844,
+			"tmdbPersonId": 74909,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Paredes",
+			"character": "Bárbara",
+			"tmdbMovieId": 1301844,
+			"tmdbPersonId": 1107942,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julieta Cardinali",
+			"character": "Beatriz Camaño",
+			"tmdbMovieId": 1301844,
+			"tmdbPersonId": 105736,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

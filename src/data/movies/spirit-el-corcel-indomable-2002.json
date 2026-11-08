@@ -41,7 +41,7 @@
 			"forFansOf": "Puede gustarte si disfrutás aventuras animadas sobre animales, relatos de resistencia y películas donde el paisaje cuenta tanto como los diálogos, con una sensibilidad cercana a una fábula histórica.",
 			"notForYouIf": "Quizás no sea para vos si buscás humor constante, personajes animales parlanchines o una historia de conquista con villanos matizados. Su tono es directo y su defensa de la libertad, frontal."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"el-planeta-del-tesoro-2002",
 			"la-era-de-hielo-2002"
 		],
@@ -52,5 +52,21 @@
 			"pollitos-en-fuga-2000"
 		]
 	},
-	"review": "Spirit cuenta una historia de conquista y resistencia desde la mirada de un caballo que casi nunca habla, una decisión que le da al paisaje un papel central. Matt Damon narra sin domesticarlo y Daniel Studi aporta humanidad al vínculo con Little Creek. La música de Bryan Adams marca demasiado algunas emociones, pero la animación de las corridas, el polvo y los cambios de luz tiene una fuerza física notable. El silencio de Spirit también es una forma de carácter."
+	"review": "Spirit cuenta una historia de conquista y resistencia desde la mirada de un caballo que casi nunca habla, una decisión que le da al paisaje un papel central. Matt Damon narra sin domesticarlo y Daniel Studi aporta humanidad al vínculo con Little Creek. La música de Bryan Adams marca demasiado algunas emociones, pero la animación de las corridas, el polvo y los cambios de luz tiene una fuerza física notable. El silencio de Spirit también es una forma de carácter.",
+	"castCharacters": [
+		{
+			"actor": "Matt Damon",
+			"character": "Spirit (voice)",
+			"tmdbMovieId": 9023,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Cromwell",
+			"character": "The Colonel (voice)",
+			"tmdbMovieId": 9023,
+			"tmdbPersonId": 2505,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

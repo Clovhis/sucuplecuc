@@ -54,5 +54,42 @@
 			"agarralo-como-puedas-1988"
 		]
 	},
-	"review": "Los hermanos Coen convierten una historia de secuestro en una persecución de dibujos animados con polvo, acentos imposibles y una imaginación visual que no afloja. Nicolas Cage y Holly Hunter forman una pareja desesperada pero querible, y John Goodman entra como una fuerza de caos que parece llegada de otra película. El relato corre con una velocidad alegre, aunque debajo de los chistes hay una pregunta concreta sobre el deseo de formar una familia y la fantasía de empezar de nuevo. Tiene exageraciones que podrían cansar, pero su mundo es tan preciso que la comedia no pierde identidad."
+	"review": "Los hermanos Coen convierten una historia de secuestro en una persecución de dibujos animados con polvo, acentos imposibles y una imaginación visual que no afloja. Nicolas Cage y Holly Hunter forman una pareja desesperada pero querible, y John Goodman entra como una fuerza de caos que parece llegada de otra película. El relato corre con una velocidad alegre, aunque debajo de los chistes hay una pregunta concreta sobre el deseo de formar una familia y la fantasía de empezar de nuevo. Tiene exageraciones que podrían cansar, pero su mundo es tan preciso que la comedia no pierde identidad.",
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "H.I.",
+			"tmdbMovieId": 378,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Holly Hunter",
+			"character": "Ed",
+			"tmdbMovieId": 378,
+			"tmdbPersonId": 18686,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Goodman",
+			"character": "Gale",
+			"tmdbMovieId": 378,
+			"tmdbPersonId": 1230,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Forsythe",
+			"character": "Evelle",
+			"tmdbMovieId": 378,
+			"tmdbPersonId": 4520,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frances McDormand",
+			"character": "Dot",
+			"tmdbMovieId": 378,
+			"tmdbPersonId": 3910,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

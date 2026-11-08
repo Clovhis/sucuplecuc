@@ -59,5 +59,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Burt Lancaster",
+			"character": "1st Sgt. Milton Warden",
+			"tmdbMovieId": 11426,
+			"tmdbPersonId": 13784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Montgomery Clift",
+			"character": "Pvt. Robert E. Lee 'Prew' Prewitt",
+			"tmdbMovieId": 11426,
+			"tmdbPersonId": 12151,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Deborah Kerr",
+			"character": "Karen Holmes",
+			"tmdbMovieId": 11426,
+			"tmdbPersonId": 20141,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

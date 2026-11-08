@@ -54,5 +54,42 @@
 		]
 	},
 	"runtimeMinutes": 128,
-	"review": "Coppola filma el mito de Drácula como una ópera de terciopelo, sangre y deseo, con una imaginación visual que nunca se conforma con la ilustración prolija. Gary Oldman pasa del monstruo anciano al amante desesperado y sostiene esa transformación con una intensidad que vuelve creíble el costado melodramático. La película es excesiva a propósito: sus sobreimpresiones, decorados y cambios de tono pueden resultar abrumadores, pero también construyen una identidad que no se parece a la de ninguna adaptación sobria. Cuando se entrega a su romanticismo oscuro, encuentra una potencia genuina."
+	"review": "Coppola filma el mito de Drácula como una ópera de terciopelo, sangre y deseo, con una imaginación visual que nunca se conforma con la ilustración prolija. Gary Oldman pasa del monstruo anciano al amante desesperado y sostiene esa transformación con una intensidad que vuelve creíble el costado melodramático. La película es excesiva a propósito: sus sobreimpresiones, decorados y cambios de tono pueden resultar abrumadores, pero también construyen una identidad que no se parece a la de ninguna adaptación sobria. Cuando se entrega a su romanticismo oscuro, encuentra una potencia genuina.",
+	"castCharacters": [
+		{
+			"actor": "Gary Oldman",
+			"character": "Dracula",
+			"tmdbMovieId": 6114,
+			"tmdbPersonId": 64,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Winona Ryder",
+			"character": "Mina Murray / Elisabeta",
+			"tmdbMovieId": 6114,
+			"tmdbPersonId": 1920,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Professor Abraham Van Helsing",
+			"tmdbMovieId": 6114,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keanu Reeves",
+			"character": "Jonathan Harker",
+			"tmdbMovieId": 6114,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard E. Grant",
+			"character": "Dr. Jack Seward",
+			"tmdbMovieId": 6114,
+			"tmdbPersonId": 20766,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

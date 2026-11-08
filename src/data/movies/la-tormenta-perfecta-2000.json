@@ -57,5 +57,28 @@
 		]
 	},
 	"runtimeMinutes": 130,
-	"review": "Wolfgang Petersen sabe vender el tamaño de las olas, el ruido del casco y la sensación de que cada decisión llega tarde. El problema es que fuera del barco varias subtramas familiares quedan trazadas con una birome gruesa, como si necesitaran anunciar la emoción antes de que aparezca. Clooney sostiene bien al capitán obstinado y Wahlberg le da cercanía al grupo, mientras John C. Reilly aprovecha cada momento de camaradería. Cuando se concentra en la tripulación y deja que el temporal haga su trabajo, tiene una potencia física difícil de negar."
+	"review": "Wolfgang Petersen sabe vender el tamaño de las olas, el ruido del casco y la sensación de que cada decisión llega tarde. El problema es que fuera del barco varias subtramas familiares quedan trazadas con una birome gruesa, como si necesitaran anunciar la emoción antes de que aparezca. Clooney sostiene bien al capitán obstinado y Wahlberg le da cercanía al grupo, mientras John C. Reilly aprovecha cada momento de camaradería. Cuando se concentra en la tripulación y deja que el temporal haga su trabajo, tiene una potencia física difícil de negar.",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Capt. Billy Tyne",
+			"tmdbMovieId": 2133,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Bobby Shatford",
+			"tmdbMovieId": 2133,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John C. Reilly",
+			"character": "Dale \"Murp\" Murphy",
+			"tmdbMovieId": 2133,
+			"tmdbPersonId": 4764,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

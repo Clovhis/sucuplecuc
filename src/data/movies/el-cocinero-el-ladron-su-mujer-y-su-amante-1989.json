@@ -44,18 +44,55 @@
 			"forFansOf": "Fans de Peter Greenaway, del cine barroco y de las películas donde el diseño, la comida y el vestuario funcionan como armas narrativas.",
 			"notForYouIf": "Buscás realismo, moderación o una historia que cuide al espectador. Su exceso formal y su violencia son parte del desafío."
 		},
-	"becauseYouLiked": [
-		"wall-street-1987",
-		"el-juego-de-hollywood-1992"
-	],
-	"related": [
-		"la-noche-de-los-lapices-1986",
-		"confesiones-verdaderas-1981",
-		"caballos-salvajes-1995",
-		"nixon-1995"
-	]
-},
+		"becauseYouLiked": [
+			"wall-street-1987",
+			"el-juego-de-hollywood-1992"
+		],
+		"related": [
+			"la-noche-de-los-lapices-1986",
+			"confesiones-verdaderas-1981",
+			"caballos-salvajes-1995",
+			"nixon-1995"
+		]
+	},
 	"review": "Peter Greenaway convierte el poder, el deseo y la humillación en una ópera barroca de colores codificados. Cada espacio tiene una paleta distinta y el vestuario acompaña los desplazamientos como si la película fuera una pintura en movimiento. Helen Mirren y Michael Gambon sostienen el choque con una intensidad teatral que no busca suavizar la crueldad. El cambio de color entre espacios ordena una historia de abuso que termina respondiendo a la brutalidad con una venganza igualmente teatral.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Michael Gambon",
+			"character": "Albert Spica",
+			"tmdbMovieId": 7452,
+			"tmdbPersonId": 5658,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Bohringer",
+			"character": "Richard Boarst",
+			"tmdbMovieId": 7452,
+			"tmdbPersonId": 1977,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helen Mirren",
+			"character": "Georgina Spica",
+			"tmdbMovieId": 7452,
+			"tmdbPersonId": 15735,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Howard",
+			"character": "Michael",
+			"tmdbMovieId": 7452,
+			"tmdbPersonId": 1367,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Roth",
+			"character": "Mitchel",
+			"tmdbMovieId": 7452,
+			"tmdbPersonId": 3129,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

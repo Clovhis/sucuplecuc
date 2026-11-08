@@ -56,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Rene Russo",
+			"character": "Rhodora Haze",
+			"tmdbMovieId": 463684,
+			"tmdbPersonId": 14343,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jake Gyllenhaal",
+			"character": "Morf Vandewalt",
+			"tmdbMovieId": 463684,
+			"tmdbPersonId": 131,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

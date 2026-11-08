@@ -61,5 +61,35 @@
 			"scoop-2006"
 		]
 	},
-	"review": "Robert Altman arma un policial de época donde el crimen importa tanto como el sistema de clases que lo rodea. La mansión funciona como un tablero lleno de pasillos, silencios y alianzas, y el elenco coral convierte cada conversación en una pista posible. Maggie Smith compone a una aristócrata venenosa con una precisión deliciosa, mientras la película cambia de perspectiva sin perder el hilo. Puede pedir atención por la cantidad de personajes, pero la recompensa está en cómo el misterio termina revelando una estructura social entera. Elegante, mordaz y todavía muy entretenida."
+	"review": "Robert Altman arma un policial de época donde el crimen importa tanto como el sistema de clases que lo rodea. La mansión funciona como un tablero lleno de pasillos, silencios y alianzas, y el elenco coral convierte cada conversación en una pista posible. Maggie Smith compone a una aristócrata venenosa con una precisión deliciosa, mientras la película cambia de perspectiva sin perder el hilo. Puede pedir atención por la cantidad de personajes, pero la recompensa está en cómo el misterio termina revelando una estructura social entera. Elegante, mordaz y todavía muy entretenida.",
+	"castCharacters": [
+		{
+			"actor": "Maggie Smith",
+			"character": "Constance Trentham",
+			"tmdbMovieId": 5279,
+			"tmdbPersonId": 10978,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Gambon",
+			"character": "William McCordle",
+			"tmdbMovieId": 5279,
+			"tmdbPersonId": 5658,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helen Mirren",
+			"character": "Mrs. Wilson",
+			"tmdbMovieId": 5279,
+			"tmdbPersonId": 15735,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Watson",
+			"character": "Elsie",
+			"tmdbMovieId": 5279,
+			"tmdbPersonId": 1639,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

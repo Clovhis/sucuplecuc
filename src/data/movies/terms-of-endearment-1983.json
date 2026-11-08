@@ -58,5 +58,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Shirley MacLaine",
+			"character": "Aurora Greenway",
+			"tmdbMovieId": 11050,
+			"tmdbPersonId": 4090,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Debra Winger",
+			"character": "Emma Greenway Horton",
+			"tmdbMovieId": 11050,
+			"tmdbPersonId": 26513,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Nicholson",
+			"character": "Garrett Breedlove",
+			"tmdbMovieId": 11050,
+			"tmdbPersonId": 514,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

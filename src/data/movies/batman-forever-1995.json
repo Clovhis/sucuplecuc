@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Val Kilmer",
+			"character": "Batman / Bruce Wayne",
+			"tmdbMovieId": 414,
+			"tmdbPersonId": 5576,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "Harvey Two-Face / Harvey Dent",
+			"tmdbMovieId": 414,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jim Carrey",
+			"character": "Riddler / Edward Nygma",
+			"tmdbMovieId": 414,
+			"tmdbPersonId": 206,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

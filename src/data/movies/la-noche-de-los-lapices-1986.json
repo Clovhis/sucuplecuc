@@ -44,18 +44,55 @@
 			"forFansOf": "Si te interesan películas argentinas sobre dictadura, historias de estudiantes y relatos de resistencia sin épica decorativa.",
 			"notForYouIf": "No es para vos si buscás distancia, alivio emocional o una recreación histórica que suavice la violencia."
 		},
-	"becauseYouLiked": [
-		"la-patagonia-rebelde-1974",
-		"caballos-salvajes-1995"
-	],
-	"related": [
-		"barreda-2026",
-		"plata-quemada-2000",
-		"el-aura-2005",
-		"pepita-la-pistolera-2026"
-	]
-},
+		"becauseYouLiked": [
+			"la-patagonia-rebelde-1974",
+			"caballos-salvajes-1995"
+		],
+		"related": [
+			"barreda-2026",
+			"plata-quemada-2000",
+			"el-aura-2005",
+			"pepita-la-pistolera-2026"
+		]
+	},
 	"review": "Su fuerza está en mirar la dictadura desde la edad de quienes todavía estaban aprendiendo a discutir el mundo. Olivera filma la persecución con una puesta austera, casi documental, y reserva los golpes de efecto para que el horror aparezca como rutina institucional. La película puede ser dura y pedagógica a la vez, pero conserva una emoción genuina en los vínculos que el terror intenta romper. La amistad juvenil vuelve concreta la persecución, y el recuerdo de esos estudiantes resiste la versión burocrática del horror.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Alejo Garcia Pintos",
+			"character": "Pablo",
+			"tmdbMovieId": 55269,
+			"tmdbPersonId": 1196556,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vita Escardó",
+			"character": "Claudia",
+			"tmdbMovieId": 55269,
+			"tmdbPersonId": 1196557,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pablo Novak",
+			"character": "Horacio",
+			"tmdbMovieId": 55269,
+			"tmdbPersonId": 1184276,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonardo Sbaraglia",
+			"character": "Daniel",
+			"tmdbMovieId": 55269,
+			"tmdbPersonId": 19803,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "José María Monje",
+			"character": "Panchito",
+			"tmdbMovieId": 55269,
+			"tmdbPersonId": 1028519,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

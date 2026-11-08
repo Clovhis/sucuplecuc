@@ -47,5 +47,28 @@
 	"reviewPublishedAt": "2026-03-06",
 	"synopsis": "Tras una larga ausencia de la Tierra, Superman vuelve a Metrópolis y descubre que Lois Lane rehízo su vida. Mientras intenta recuperar su lugar, Lex Luthor prepara un proyecto ambicioso que pone en riesgo a millones de personas.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Brandon Routh",
+			"character": "Clark Kent / Superman",
+			"tmdbMovieId": 1452,
+			"tmdbPersonId": 17271,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Bosworth",
+			"character": "Lois Lane",
+			"tmdbMovieId": 1452,
+			"tmdbPersonId": 7517,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Spacey",
+			"character": "Lex Luthor",
+			"tmdbMovieId": 1452,
+			"tmdbPersonId": 1979,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

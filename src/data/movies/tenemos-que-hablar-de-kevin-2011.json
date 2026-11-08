@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tilda Swinton",
+			"character": "Eva Khatchadourian",
+			"tmdbMovieId": 71859,
+			"tmdbPersonId": 3063,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John C. Reilly",
+			"character": "Franklin",
+			"tmdbMovieId": 71859,
+			"tmdbPersonId": 4764,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

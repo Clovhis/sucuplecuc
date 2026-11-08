@@ -2,6 +2,7 @@ import { spawnSync } from 'node:child_process';
 import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { hasOnlyCharacterChanges, mergeGlobalAuditPaths, planMovieAudit, validateCharacterChanges } from './character-change-policy.mjs';
 
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -116,6 +117,22 @@ function getChangedFiles(base) {
 		.filter(Boolean);
 }
 
+// Global dependencies can also be deleted, renamed away, or newly untracked.
+// Preserve the existing AM candidate selection for movie files while making
+// the exemption conservative for all versions of the working tree.
+function getGlobalAuditFiles(base, changedFiles) {
+	const results = [];
+	if (base) {
+		const diff = git(['diff', '--no-renames', '--name-only', '--diff-filter=AMDRT', base], { allowFailure: true });
+		if (diff.status !== 0) throw new Error('Could not inspect global audit dependencies against base.');
+		results.push(diff.stdout);
+	}
+	const untracked = git(['ls-files', '--others', '--exclude-standard'], { allowFailure: true });
+	if (untracked.status !== 0) throw new Error('Could not inspect untracked global audit dependencies.');
+	results.push(untracked.stdout);
+	return mergeGlobalAuditPaths(changedFiles, ...results);
+}
+
 function getMovieFilesNotInBase(base) {
 	if (!base) {
 		return [];
@@ -136,21 +153,28 @@ function getMovieFilesNotInBase(base) {
 		.filter((file) => !baseFiles.has(file));
 }
 
-function getMoviesWithChangedPeopleCredits(base, files) {
-	if (!base) return files.filter((file) => file.startsWith('src/data/movies/'));
-	return files.filter((file) => {
-		if (!file.startsWith('src/data/movies/') || !file.endsWith('.json')) return false;
-		const previous = git(['show', `${base}:${file}`], { allowFailure: true });
-		if (previous.status !== 0) return true;
+function classifyMovieChanges(base, files) {
+	const peopleChanges = [], characterOnly = [], canonical = [];
+	for (const file of files) {
+		if (!file.startsWith('src/data/movies/') || !file.endsWith('.json')) continue;
+		const previous = base ? spawnSync('git', ['show', `${base}:${file}`], { cwd: ROOT_DIR, encoding: 'utf8' }) : null;
 		try {
+			if (!previous || previous.status !== 0) throw new Error('No baseline');
 			const before = JSON.parse(previous.stdout);
 			const after = JSON.parse(readFileSync(path.join(ROOT_DIR, file), 'utf8'));
-			return JSON.stringify([before.director ?? '', before.mainCast ?? []]) !==
-				JSON.stringify([after.director ?? '', after.mainCast ?? []]);
-		} catch {
-			return true;
+			if (JSON.stringify([before.director ?? '', before.mainCast ?? []]) !== JSON.stringify([after.director ?? '', after.mainCast ?? []])) peopleChanges.push(file);
+			if (hasOnlyCharacterChanges(before, after)) {
+				validateCharacterChanges(after, file);
+				characterOnly.push(file);
+			} else canonical.push(file);
+		} catch (error) {
+			// Invalid or unreadable input must take the full people and content gates.
+			if (error?.message?.includes('invalid or ambiguous character credit') || error?.message?.includes('invalid castCharacters')) throw error;
+			peopleChanges.push(file);
+			canonical.push(file);
 		}
-	});
+	}
+	return { peopleChanges, characterOnly, canonical };
 }
 
 function hasAny(files, predicate) {
@@ -171,7 +195,8 @@ function main() {
 	run('npm', ['run', 'validate:home-editions', ...(base ? ['--', '--base', base] : [])]);
 	const newlyAddedMovieFiles = getMovieFilesNotInBase(base);
 	const changedFiles = [...new Set([...getChangedFiles(base), ...newlyAddedMovieFiles])];
-	const peopleCreditChangedFiles = getMoviesWithChangedPeopleCredits(base, changedFiles);
+	const globalAuditFiles = getGlobalAuditFiles(base, changedFiles);
+	const { peopleChanges: peopleCreditChangedFiles, characterOnly, canonical } = classifyMovieChanges(base, changedFiles);
 	const moviePeopleAuditFiles = [...new Set([...newlyAddedMovieFiles, ...peopleCreditChangedFiles])];
 	const movieContentChanged = hasAny(
 		changedFiles,
@@ -217,13 +242,13 @@ function main() {
 		run('npm', ['run', 'audit:profiles']);
 	} else {
 		if (movieContentChanged) {
-			run('node', [
-				'./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs',
-				'--base-ref',
-				base || 'main',
-				'--recent',
-				'--skip-youtube',
-			]);
+			const { candidates: auditCandidates, global } = planMovieAudit(characterOnly, canonical, globalAuditFiles);
+			if (characterOnly.length && !global) console.log(`Validated character-only data for ${characterOnly.length} movie file(s); other movie changes retain the full auditor.`);
+			if (auditCandidates.length) {
+				for (let index = 0; index < auditCandidates.length; index += 100) run('node', ['./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs', '--base-ref', base || 'main', '--skip-youtube', ...auditCandidates.slice(index, index + 100).flatMap((file) => ['--candidate', file])]);
+			} else if (!characterOnly.length) {
+				run('node', ['./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs', '--base-ref', base || 'main', '--recent', '--skip-youtube']);
+			}
 		} else {
 			console.log('Movie content audit skipped: no movie content changes in branch diff.');
 		}

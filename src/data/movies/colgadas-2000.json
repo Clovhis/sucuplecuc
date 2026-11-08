@@ -53,5 +53,35 @@
 		]
 	},
 	"review": "Colgadas encuentra una buena idea en el ruido de las llamadas: tres hermanas pueden hablar durante horas y seguir esquivando lo importante. Diane Keaton dirige y también actúa con Meg Ryan y Lisa Kudrow, que sostienen la película desde temperamentos bien diferenciados. El tono salta entre el chiste y el duelo sin siempre encontrar el equilibrio, pero hay una sensibilidad genuina en su retrato de la responsabilidad familiar y del cariño que llega tarde.",
-	"runtimeMinutes": 94
+	"runtimeMinutes": 94,
+	"castCharacters": [
+		{
+			"actor": "Meg Ryan",
+			"character": "Eve Mozell Marks",
+			"tmdbMovieId": 10385,
+			"tmdbPersonId": 5344,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Keaton",
+			"character": "Georgia Mozell",
+			"tmdbMovieId": 10385,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lisa Kudrow",
+			"character": "Maddy Mozell",
+			"tmdbMovieId": 10385,
+			"tmdbPersonId": 14406,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Walter Matthau",
+			"character": "Lou Mozell",
+			"tmdbMovieId": 10385,
+			"tmdbPersonId": 6837,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

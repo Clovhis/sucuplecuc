@@ -21,11 +21,11 @@
 	"trailerYoutubeId": "Jit3YhGx5pU",
 	"releasePlatform": "Disney Plus",
 	"director": "Martin McDonagh",
-		"mainCast": [
-			"Frances McDormand",
-			"Woody Harrelson",
-			"Sam Rockwell"
-		],
+	"mainCast": [
+		"Frances McDormand",
+		"Woody Harrelson",
+		"Sam Rockwell"
+	],
 	"productionCompany": "Blueprint Pictures, Film4, Fox Searchlight",
 	"cinepostaScore": 8,
 	"awards": {
@@ -45,8 +45,15 @@
 		]
 	},
 	"editorial": {
-		"becauseYouLiked": ["fargo-secuestro-voluntario-1996", "the-banshees-of-inisherin-2022"],
-		"related": ["no-country-for-old-men-2007", "the-departed-2006", "donnie-brasco-1997"],
+		"becauseYouLiked": [
+			"fargo-secuestro-voluntario-1996",
+			"the-banshees-of-inisherin-2022"
+		],
+		"related": [
+			"no-country-for-old-men-2007",
+			"the-departed-2006",
+			"donnie-brasco-1997"
+		],
 		"tenSecondTake": {
 			"verdict": "Frances McDormand y Sam Rockwell empujan un retrato coral que deja a Mildred y Dixon ante una redención incierta.",
 			"whatToExpect": "Personajes atravesados por duelo, resentimiento y pequeños gestos de humanidad en un pueblo tenso.",
@@ -59,5 +66,28 @@
 	},
 	"review": "McDonagh cruza duelo, ira y humor negro sin convertir el pueblo en un tablero de buenos y malos. La película cambia de punto de vista a medida que sus personajes se revelan, y las actuaciones de McDormand, Harrelson y Rockwell sostienen esas mudanzas con fuerza. Es incómoda y, por momentos, cruel; ese filo no siempre aterriza igual, pero evita que el relato se acomode en una respuesta fácil. El giro hacia Dixon cambia la temperatura del relato y vuelve incierta cualquier idea de redención.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 115
+	"runtimeMinutes": 115,
+	"castCharacters": [
+		{
+			"actor": "Frances McDormand",
+			"character": "Mildred",
+			"tmdbMovieId": 359940,
+			"tmdbPersonId": 3910,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Woody Harrelson",
+			"character": "Willoughby",
+			"tmdbMovieId": 359940,
+			"tmdbPersonId": 57755,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Rockwell",
+			"character": "Dixon",
+			"tmdbMovieId": 359940,
+			"tmdbPersonId": 6807,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

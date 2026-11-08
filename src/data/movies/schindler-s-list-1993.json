@@ -74,5 +74,35 @@
 		"Apple TV"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Oskar Schindler",
+			"tmdbMovieId": 424,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Kingsley",
+			"character": "Itzhak Stern",
+			"tmdbMovieId": 424,
+			"tmdbPersonId": 2282,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Amon Goeth",
+			"tmdbMovieId": 424,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Caroline Goodall",
+			"character": "Emilie Schindler",
+			"tmdbMovieId": 424,
+			"tmdbPersonId": 6692,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

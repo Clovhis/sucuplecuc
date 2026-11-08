@@ -37,7 +37,7 @@
 			"forFansOf": "Puede gustarte si buscás una aventura final de Star Wars, equipos que saltan entre mundos y una película cargada de homenajes, duelos y música reconocible.",
 			"notForYouIf": "Quizás no sea para vos si preferís cierres meditados, ideas nuevas o una narración que no corra para ordenar cada hilo. La abundancia de respuestas puede sentirse más administrativa que emotiva."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"star-wars-episode-vii-the-force-awakens-2015",
 			"star-wars-episode-viii-the-last-jedi-2017"
 		],
@@ -52,5 +52,28 @@
 	"synopsis": "Sigue a Rey, Finn y Poe Dameron mientras lideran los restos de la Resistencia en una batalla final contra el Líder Supremo Kylo Ren y la Primera Orden, quienes ahora están aliados por el Lord Sith resucitado, el Emperador Palpatine, el abuelo paterno de Rey.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Carrie Fisher",
+			"character": "General Leia Organa",
+			"tmdbMovieId": 181812,
+			"tmdbPersonId": 4,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Hamill",
+			"character": "Luke Skywalker",
+			"tmdbMovieId": 181812,
+			"tmdbPersonId": 2,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daisy Ridley",
+			"character": "Rey",
+			"tmdbMovieId": 181812,
+			"tmdbPersonId": 1315036,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

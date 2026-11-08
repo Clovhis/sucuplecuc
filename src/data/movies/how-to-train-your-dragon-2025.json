@@ -45,5 +45,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mason Thames",
+			"character": "Hiccup",
+			"tmdbMovieId": 1087192,
+			"tmdbPersonId": 2803710,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nico Parker",
+			"character": "Astrid",
+			"tmdbMovieId": 1087192,
+			"tmdbPersonId": 2064124,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gerard Butler",
+			"character": "Stoick",
+			"tmdbMovieId": 1087192,
+			"tmdbPersonId": 17276,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

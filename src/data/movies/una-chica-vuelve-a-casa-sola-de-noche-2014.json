@@ -55,5 +55,21 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Sheila Vand",
+			"character": "The Girl",
+			"tmdbMovieId": 252171,
+			"tmdbPersonId": 220573,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Arash Marandi",
+			"character": "Arash",
+			"tmdbMovieId": 252171,
+			"tmdbPersonId": 1289605,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

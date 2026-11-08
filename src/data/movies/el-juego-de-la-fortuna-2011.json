@@ -56,5 +56,42 @@
 	},
 	"review": "Una película de deportes que entiende que la verdadera pelea ocurre en las oficinas, entre planillas, prejuicios y decisiones incómodas. Bennett Miller evita la épica fácil y encuentra tensión en reuniones donde cada silencio pesa; Brad Pitt le da a Billy Beane una mezcla muy precisa de seguridad pública y frustración privada, mientras Jonah Hill funciona como contrapunto seco y lúcido. El tramo final no busca un festejo convencional, y por eso pega mejor: habla de cambiar un sistema aun cuando el resultado no entre prolijamente en una vitrina. Inteligente, melancólica y muy entretenida.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Brad Pitt",
+			"character": "Billy Beane",
+			"tmdbMovieId": 60308,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonah Hill",
+			"character": "Peter Brand",
+			"tmdbMovieId": 60308,
+			"tmdbPersonId": 21007,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Philip Seymour Hoffman",
+			"character": "Art Howe",
+			"tmdbMovieId": 60308,
+			"tmdbPersonId": 1233,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robin Wright",
+			"character": "Sharon",
+			"tmdbMovieId": 60308,
+			"tmdbPersonId": 32,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Pratt",
+			"character": "Scott Hatteberg",
+			"tmdbMovieId": 60308,
+			"tmdbPersonId": 73457,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

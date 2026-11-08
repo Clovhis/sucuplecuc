@@ -47,5 +47,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ryan Reynolds",
+			"character": "Wade Wilson / Deadpool / Nicepool",
+			"tmdbMovieId": 533535,
+			"tmdbPersonId": 10859,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Jackman",
+			"character": "Logan / Wolverine",
+			"tmdbMovieId": 533535,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Corrin",
+			"character": "Cassandra Nova",
+			"tmdbMovieId": 533535,
+			"tmdbPersonId": 2324569,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

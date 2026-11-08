@@ -51,5 +51,21 @@
 			"cars-2006"
 		]
 	},
-	"review": "Bolt arma una aventura de carretera alrededor de una mentira que el protagonista cree verdadera, y encuentra ahí su mejor tono. John Travolta le presta intensidad al perro, mientras Miley Cyrus y un gato callejero equilibran la inocencia con el sarcasmo. La película funciona cuando la acción sirve para desmontar la ficción del programa y construir una relación real. No reinventa el viaje animado, pero lo cuenta con ritmo, ternura y una buena dosis de humor animal."
+	"review": "Bolt arma una aventura de carretera alrededor de una mentira que el protagonista cree verdadera, y encuentra ahí su mejor tono. John Travolta le presta intensidad al perro, mientras Miley Cyrus y un gato callejero equilibran la inocencia con el sarcasmo. La película funciona cuando la acción sirve para desmontar la ficción del programa y construir una relación real. No reinventa el viaje animado, pero lo cuenta con ritmo, ternura y una buena dosis de humor animal.",
+	"castCharacters": [
+		{
+			"actor": "John Travolta",
+			"character": "Bolt (voice)",
+			"tmdbMovieId": 13053,
+			"tmdbPersonId": 8891,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Malcolm McDowell",
+			"character": "Dr. Calico (voice)",
+			"tmdbMovieId": 13053,
+			"tmdbPersonId": 56890,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

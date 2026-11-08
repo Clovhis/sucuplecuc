@@ -38,19 +38,42 @@
 			"forFansOf": "Para quienes prefieren zombis melancólicos, horror australiano y protagonistas quebrados como la Ava de Daisy Ridley.",
 			"notForYouIf": "No te va a servir si buscás humor gore, hordas permanentes o una aventura de supervivencia liviana."
 		},
-	"becauseYouLiked": [
-		"boda-sangrienta-2-2026",
-		"la-zona-muerta-1983"
-	],
-	"related": [
-		"adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
-		"engendro-2026",
-		"la-piel-que-habito-2011",
-		"el-bebe-de-rosemary-1968"
-	]
-},
+		"becauseYouLiked": [
+			"boda-sangrienta-2-2026",
+			"la-zona-muerta-1983"
+		],
+		"related": [
+			"adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+			"engendro-2026",
+			"la-piel-que-habito-2011",
+			"el-bebe-de-rosemary-1968"
+		]
+	},
 	"synopsis": "Tras una catástrofe militar, Ava se suma a una unidad que recupera cadáveres para encontrar a su marido desaparecido. En una Australia devastada, descubre que algunos muertos vuelven a moverse y que seguir buscándolo tiene un precio feroz.",
 	"audienceRating": "+17",
 	"review": "We Bury the Dead tiene algo mejor que una simple excusa zombi: una búsqueda atravesada por duelo, culpa y la esperanza tonta de encontrar a alguien cuando ya todo se rompió. Eso le puede dar un peso extra.\n\nZak Hilditch suele moverse bien en climas ásperos, así que lo lógico sería esperar una película más triste que espectacular. Si combina bien el dolor personal con el desastre alrededor, puede pegar más por ese lado que por los sustos.\n\nRE GARPA si se anima a ser amarga y no sólo apocalíptica. Ahí hay una buena veta para diferenciarse.",
-	"reviewPublishedAt": "2026-03-12"
+	"reviewPublishedAt": "2026-03-12",
+	"castCharacters": [
+		{
+			"actor": "Daisy Ridley",
+			"character": "Ava",
+			"tmdbMovieId": 1198984,
+			"tmdbPersonId": 1315036,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brenton Thwaites",
+			"character": "Clay",
+			"tmdbMovieId": 1198984,
+			"tmdbPersonId": 1017347,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Coles Smith",
+			"character": "Riley",
+			"tmdbMovieId": 1198984,
+			"tmdbPersonId": 1323881,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

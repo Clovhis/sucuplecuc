@@ -43,21 +43,58 @@
 			"forFansOf": "Fans de Álex de la Iglesia, del terror satírico y de las películas que mezclan heavy metal, religión y televisión sin separar el chiste del peligro.",
 			"notForYouIf": "Buscás sutileza, tono estable o una crítica ordenada. El día de la bestia disfruta el caos, la exageración y el mal gusto."
 		},
-	"becauseYouLiked": [
-		"mandy-2018",
-		"the-descent-2005"
-	],
-	"related": [
-		"la-cabana-siniestra-2019",
-		"poltergeist-1982",
-		"jennifer-s-body-2009",
-		"candyman-1992"
-	]
-},
+		"becauseYouLiked": [
+			"mandy-2018",
+			"the-descent-2005"
+		],
+		"related": [
+			"la-cabana-siniestra-2019",
+			"poltergeist-1982",
+			"jennifer-s-body-2009",
+			"candyman-1992"
+		]
+	},
 	"review": "Álex de la Iglesia agarra el apocalipsis, la tele basura y el heavy metal para hacer una película española que todavía parece un ataque de nervios perfectamente calculado. Álex Angulo le da al cura una seriedad desarmante, mientras Santiago Segura y Armando De Razza empujan el disparate sin quitarle peligro. La puesta cruza violencia, gags negrísimos y una Madrid navideña convertida en pesadilla con una energía que no afloja. La crítica celebró justamente esa mezcla de sátira social y relato satánico filmado como historieta venenosa. Tiene excesos, claro, pero son parte de su identidad: una rareza popular, sucia y muy viva.",
 	"synopsis": "El padre Ángel descifra una profecía que anuncia el nacimiento del Anticristo en Madrid durante la Nochebuena de 1995. Para encontrarlo antes de que sea tarde, se alía con José Mari, un metalero de barrio, y con Cavan, un presentador televisivo experto en ocultismo.",
 	"audienceRating": "+18",
 	"isPremiere": false,
 	"premiereLabel": "",
-	"reviewPublishedAt": "2026-07-28"
+	"reviewPublishedAt": "2026-07-28",
+	"castCharacters": [
+		{
+			"actor": "Álex Angulo",
+			"character": "Ángel Berriatua",
+			"tmdbMovieId": 10722,
+			"tmdbPersonId": 3813,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Armando De Razza",
+			"character": "Professor Cavan",
+			"tmdbMovieId": 10722,
+			"tmdbPersonId": 66815,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Santiago Segura",
+			"character": "José María",
+			"tmdbMovieId": 10722,
+			"tmdbPersonId": 10847,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terele Pávez",
+			"character": "Rosario",
+			"tmdbMovieId": 10722,
+			"tmdbPersonId": 66816,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nathalie Seseña",
+			"character": "Mina",
+			"tmdbMovieId": 10722,
+			"tmdbPersonId": 233766,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

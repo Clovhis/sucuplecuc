@@ -52,5 +52,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "FR",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Noémie Merlant",
+			"character": "Marianne",
+			"tmdbMovieId": 531428,
+			"tmdbPersonId": 1385600,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adèle Haenel",
+			"character": "Héloïse",
+			"tmdbMovieId": 531428,
+			"tmdbPersonId": 68816,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

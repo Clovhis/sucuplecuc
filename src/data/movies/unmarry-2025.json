@@ -32,28 +32,65 @@
   "awards": {
     "wins": []
   },
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "UnMarry mira la separación como un trámite que sigue doliendo; Jeffrey Jeturian encuentra en Angelica Panganiban una protagonista que debe negociar su futuro antes de poder imaginarlo.",
-			"whatToExpect": "Anulación, custodias, familiares opinando de más y dos personas que descubren una amistad en medio de la ruptura.",
-			"pace": "Conversado y paciente, deja que los detalles legales pesen sobre los vínculos antes de abrir espacio para algo nuevo.",
-			"intensity": "Media, adulta y emocional; el conflicto no explota tanto como se instala en decisiones que nadie puede tomar livianamente.",
-			"practicalContext": "Sus 130 minutos piden disposición para un drama de relaciones y procedimientos, con una mirada más interesada en el después que en el escándalo.",
-			"forFansOf": "Historias de divorcio sin villanos simples, comedias dramáticas filipinas y personajes que intentan rehacer una vida sin borrar la anterior.",
-			"notForYouIf": "Buscás romance inmediato, giros de telenovela o una ruptura resuelta con una sola conversación liberadora."
-		},
-	"becauseYouLiked": [
-		"pillion-2025",
-		"challengers-2024"
-	],
-	"related": [
-		"cin3-fili4-2026",
-		"la-luz-que-imaginamos-2024",
-		"suenos-de-oslo-2024",
-		"desconocidos-2023"
-	]
-},
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "UnMarry mira la separación como un trámite que sigue doliendo; Jeffrey Jeturian encuentra en Angelica Panganiban una protagonista que debe negociar su futuro antes de poder imaginarlo.",
+      "whatToExpect": "Anulación, custodias, familiares opinando de más y dos personas que descubren una amistad en medio de la ruptura.",
+      "pace": "Conversado y paciente, deja que los detalles legales pesen sobre los vínculos antes de abrir espacio para algo nuevo.",
+      "intensity": "Media, adulta y emocional; el conflicto no explota tanto como se instala en decisiones que nadie puede tomar livianamente.",
+      "practicalContext": "Sus 130 minutos piden disposición para un drama de relaciones y procedimientos, con una mirada más interesada en el después que en el escándalo.",
+      "forFansOf": "Historias de divorcio sin villanos simples, comedias dramáticas filipinas y personajes que intentan rehacer una vida sin borrar la anterior.",
+      "notForYouIf": "Buscás romance inmediato, giros de telenovela o una ruptura resuelta con una sola conversación liberadora."
+    },
+    "becauseYouLiked": [
+      "pillion-2025",
+      "challengers-2024"
+    ],
+    "related": [
+      "cin3-fili4-2026",
+      "la-luz-que-imaginamos-2024",
+      "suenos-de-oslo-2024",
+      "desconocidos-2023"
+    ]
+  },
   "review": "La anulación no aparece como un recurso de melodrama sino como un laberinto legal y emocional que condiciona cada decisión de Celine e Ivan. Jeffrey Jeturian le da tiempo a esa incomodidad y Angelica Panganiban encuentra una fragilidad muy concreta, lejos de una heroína diseñada para caer siempre bien.\n\nZanjoe Marudo acompaña con un tono más contenido, y las intervenciones de Eugene Domingo, Tom Rodriguez y Solenn Heussaff abren la historia sin desordenarla. La duración se siente en algunos pasajes, pero la película conserva una sensibilidad adulta para hablar de vínculos que se terminan sin borrar lo que todavía duele.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Angelica Panganiban",
+      "character": "Celine Santos",
+      "tmdbMovieId": 1560168,
+      "tmdbPersonId": 84059,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Zanjoe Marudo",
+      "character": "Ivan Buencamino",
+      "tmdbMovieId": 1560168,
+      "tmdbPersonId": 592009,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Eugene Domingo",
+      "character": "Atty. Jackie Lombridas",
+      "tmdbMovieId": 1560168,
+      "tmdbPersonId": 238157,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Tom Rodriguez",
+      "character": "Stephen Alcaraz",
+      "tmdbMovieId": 1560168,
+      "tmdbPersonId": 1357102,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Solenn Heussaff",
+      "character": "Maya Castro",
+      "tmdbMovieId": 1560168,
+      "tmdbPersonId": 238158,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

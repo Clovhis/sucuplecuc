@@ -38,7 +38,11 @@
 		"tenSecondTake": {
 			"verdict": "Tom McGrath le saca gracia a un villano sin héroe y deja que Will Ferrell convierta la soledad de Megamente en una redención simpática, aunque apurada en el cierre.",
 			"whatToExpect": "Ciudad de superhéroes, rivalidad invertida, laboratorio, música pop y un protagonista obligado a preguntarse quién es cuando por fin gana.",
-			"pace": "Tiene gags rápidos y un segundo acto con buen movimiento; la redención se resuelve demasiado pronto, pero el diseño mantiene el impulso.",			"intensity": "La amenaza es de historieta y apta para familia; la tensión real está en el vacío de Megamente y en la necesidad de encontrar otra función.",			"practicalContext": "La ficha no trae duración; es una opción familiar de una sentada, ideal si querés una comedia superheroica con un villano como punto de vista.",			"forFansOf": "Para quienes disfrutan animación de superhéroes, la voz de Ferrell y relatos de redención que prefieren jugar con los roles conocidos.",			"notForYouIf": "Puede dejarte a mitad de camino si buscás una aventura más compleja, un villano realmente amenazante o un final que no acelere la moraleja."
+			"pace": "Tiene gags rápidos y un segundo acto con buen movimiento; la redención se resuelve demasiado pronto, pero el diseño mantiene el impulso.",
+			"intensity": "La amenaza es de historieta y apta para familia; la tensión real está en el vacío de Megamente y en la necesidad de encontrar otra función.",
+			"practicalContext": "La ficha no trae duración; es una opción familiar de una sentada, ideal si querés una comedia superheroica con un villano como punto de vista.",
+			"forFansOf": "Para quienes disfrutan animación de superhéroes, la voz de Ferrell y relatos de redención que prefieren jugar con los roles conocidos.",
+			"notForYouIf": "Puede dejarte a mitad de camino si buscás una aventura más compleja, un villano realmente amenazante o un final que no acelere la moraleja."
 		},
 		"becauseYouLiked": [
 			"un-jefe-en-panales-2017",
@@ -51,5 +55,21 @@
 			"toy-story-3-2010"
 		]
 	},
-	"review": "Megamente juega con la rivalidad de superhéroe y villano para preguntar qué queda cuando el conflicto que te definía desaparece. Will Ferrell administra la voz del protagonista entre la fanfarronería y la soledad, y Tina Fey le da a Roxanne una inteligencia que no queda de adorno. La película acelera su redención y el tercer acto pierde algo de precisión, pero el diseño de Metro City, la música y el cambio de perspectiva sostienen una comedia con personalidad."
+	"review": "Megamente juega con la rivalidad de superhéroe y villano para preguntar qué queda cuando el conflicto que te definía desaparece. Will Ferrell administra la voz del protagonista entre la fanfarronería y la soledad, y Tina Fey le da a Roxanne una inteligencia que no queda de adorno. La película acelera su redención y el tercer acto pierde algo de precisión, pero el diseño de Metro City, la música y el cambio de perspectiva sostienen una comedia con personalidad.",
+	"castCharacters": [
+		{
+			"actor": "Will Ferrell",
+			"character": "Megamind (voice)",
+			"tmdbMovieId": 38055,
+			"tmdbPersonId": 23659,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Metro Man (voice)",
+			"tmdbMovieId": 38055,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Paul Dano",
+			"character": "Hank",
+			"tmdbMovieId": 347031,
+			"tmdbPersonId": 17142,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Daniel Radcliffe",
+			"character": "Manny",
+			"tmdbMovieId": 347031,
+			"tmdbPersonId": 10980,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

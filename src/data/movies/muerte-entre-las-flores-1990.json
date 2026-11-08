@@ -37,20 +37,62 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Los Coen filman Muerte entre las flores como un policial de lealtades envenenadas; Gabriel Byrne piensa cada movimiento mientras John Turturro vuelve física la traición.",
-			"whatToExpect": "Bandas rivales, deudas, sombreros, bosques otoñales y diálogos secos, con un consejero atrapado entre códigos que cambian según quién tenga el poder.",			"pace": "Avanza con calma de intriga y explosiones súbitas de violencia; el relato exige seguir alianzas, pero nunca pierde su tono de tragedia criminal.",			"intensity": "La intensidad es moral y física: una amistad o un favor pueden pesar tanto como un disparo, y nadie sale limpio del acuerdo.",			"practicalContext": "Con 115 minutos, funciona como thriller de gánsteres para una noche concentrada; prestá atención a las conversaciones y a quién controla cada espacio.",			"forFansOf": "Para quienes disfrutan a los hermanos Coen, cine negro de época y personajes que se mueven por lealtad aunque sepan que van a perder.",			"notForYouIf": "Puede costarte si buscás acción constante, explicaciones claras o una historia criminal que premie al personaje más inteligente."
+			"whatToExpect": "Bandas rivales, deudas, sombreros, bosques otoñales y diálogos secos, con un consejero atrapado entre códigos que cambian según quién tenga el poder.",
+			"pace": "Avanza con calma de intriga y explosiones súbitas de violencia; el relato exige seguir alianzas, pero nunca pierde su tono de tragedia criminal.",
+			"intensity": "La intensidad es moral y física: una amistad o un favor pueden pesar tanto como un disparo, y nadie sale limpio del acuerdo.",
+			"practicalContext": "Con 115 minutos, funciona como thriller de gánsteres para una noche concentrada; prestá atención a las conversaciones y a quién controla cada espacio.",
+			"forFansOf": "Para quienes disfrutan a los hermanos Coen, cine negro de época y personajes que se mueven por lealtad aunque sepan que van a perder.",
+			"notForYouIf": "Puede costarte si buscás acción constante, explicaciones claras o una historia criminal que premie al personaje más inteligente."
 		},
-	"becauseYouLiked": [
-		"barton-fink-1991",
-		"tiempo-de-matar-1996"
-	],
-	"related": [
-		"el-poder-de-la-justicia-1997",
-		"el-juego-de-hollywood-1992",
-		"cassandra-s-dream-2007",
-		"barreda-2026"
-	]
-},
+		"becauseYouLiked": [
+			"barton-fink-1991",
+			"tiempo-de-matar-1996"
+		],
+		"related": [
+			"el-poder-de-la-justicia-1997",
+			"el-juego-de-hollywood-1992",
+			"cassandra-s-dream-2007",
+			"barreda-2026"
+		]
+	},
 	"review": "Los hermanos Coen recuperan el policial de gánsteres como un laberinto de lealtades que nunca son gratuitas. Los diálogos de precisión quirúrgica conviven con violencia súbita y decorados otoñales que parecen salidos de un recuerdo. Gabriel Byrne le da inteligencia cansada al protagonista, rodeado por la amenaza corporal de John Turturro y Jon Polito. Tom intenta ser leal a todos y descubre que en ese mundo la lealtad también puede ser una forma de traición.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Gabriel Byrne",
+			"character": "Tom Reagan",
+			"tmdbMovieId": 379,
+			"tmdbPersonId": 5168,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marcia Gay Harden",
+			"character": "Verna",
+			"tmdbMovieId": 379,
+			"tmdbPersonId": 4726,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Turturro",
+			"character": "Bernie Bernbaum",
+			"tmdbMovieId": 379,
+			"tmdbPersonId": 1241,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Polito",
+			"character": "Johnny Caspar",
+			"tmdbMovieId": 379,
+			"tmdbPersonId": 4253,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "J.E. Freeman",
+			"character": "Eddie Dane",
+			"tmdbMovieId": 379,
+			"tmdbPersonId": 5169,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

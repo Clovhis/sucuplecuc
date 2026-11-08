@@ -52,5 +52,42 @@
 	},
 	"runtimeMinutes": 106,
 	"review": "Big Eyes cuenta cómo Margaret Keane pintó los famosos retratos de ojos enormes mientras su marido se apropiaba de la firma y del negocio. Tim Burton baja el volumen de su fantasía habitual para seguir una pelea por autoría, y esa elección le sienta bien; Amy Adams sostiene la frustración de Margaret sin volverla pasiva, mientras Christoph Waltz hace de Walter un vendedor encantador y cada vez más monstruoso. El relato es claro y algo convencional, pero la tensión doméstica funciona. Vale por Adams y por una historia de arte, dinero y manipulación contada sin exceso de maquillaje.",
-	"reviewPublishedAt": "2026-04-27"
+	"reviewPublishedAt": "2026-04-27",
+	"castCharacters": [
+		{
+			"actor": "Amy Adams",
+			"character": "Margaret Keane",
+			"tmdbMovieId": 87093,
+			"tmdbPersonId": 9273,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christoph Waltz",
+			"character": "Walter Keane",
+			"tmdbMovieId": 87093,
+			"tmdbPersonId": 27319,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Huston",
+			"character": "Dick Nolan",
+			"tmdbMovieId": 87093,
+			"tmdbPersonId": 6413,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Polito",
+			"character": "Enrico Banducci",
+			"tmdbMovieId": 87093,
+			"tmdbPersonId": 4253,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Krysten Ritter",
+			"character": "Dee-Ann",
+			"tmdbMovieId": 87093,
+			"tmdbPersonId": 78080,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Colt Seavers",
+			"tmdbMovieId": 746036,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Blunt",
+			"character": "Jody Moreno",
+			"tmdbMovieId": 746036,
+			"tmdbPersonId": 5081,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Taylor-Johnson",
+			"character": "Tom Ryder",
+			"tmdbMovieId": 746036,
+			"tmdbPersonId": 27428,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

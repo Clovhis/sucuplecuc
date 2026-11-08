@@ -30,21 +30,48 @@
 		"tenSecondTake": {
 			"verdict": "Othello todavía no puede evaluarse como película vista; Tom Morris tiene el desafío de que David Harewood y Toby Jones vuelvan presentes los celos, el racismo y la manipulación de Shakespeare.",
 			"whatToExpect": "Venecia, Chipre, un comandante manipulado por su alférez y una tragedia que depende de cómo la puesta convierta sospecha en derrumbe.",
-			"pace": "La cadencia real dependerá de la adaptación estrenada; el texto exige un avance que deje crecer el veneno de Iago sin volverlo explicación.",			"intensity": "El conflicto promete intensidad psicológica y social, pero no corresponde inventar cómo se materializan los celos o la violencia antes de verla.",			"practicalContext": "La ficha informa 122 minutos; alcanza para orientar la expectativa, no para reemplazar una evaluación del montaje, las actuaciones y el tono definitivos.",			"forFansOf": "Para quienes siguen a Shakespeare, David Harewood o Toby Jones y quieren juzgar una nueva lectura cuando exista la película completa.",			"notForYouIf": "No es para vos si necesitás un veredicto cerrado ahora: esta guía evita inventar una crítica sobre una obra todavía no vista."
+			"pace": "La cadencia real dependerá de la adaptación estrenada; el texto exige un avance que deje crecer el veneno de Iago sin volverlo explicación.",
+			"intensity": "El conflicto promete intensidad psicológica y social, pero no corresponde inventar cómo se materializan los celos o la violencia antes de verla.",
+			"practicalContext": "La ficha informa 122 minutos; alcanza para orientar la expectativa, no para reemplazar una evaluación del montaje, las actuaciones y el tono definitivos.",
+			"forFansOf": "Para quienes siguen a Shakespeare, David Harewood o Toby Jones y quieren juzgar una nueva lectura cuando exista la película completa.",
+			"notForYouIf": "No es para vos si necesitás un veredicto cerrado ahora: esta guía evita inventar una crítica sobre una obra todavía no vista."
 		},
-	"becauseYouLiked": [
-		"pillion-2025",
-		"el-gran-arco-2025"
-	],
-	"related": [
-		"el-mal-no-existe-2023",
-		"mountainhead-2025",
-		"aun-estoy-aqui-2024",
-		"the-brutalist-2024"
-	]
-},
+		"becauseYouLiked": [
+			"pillion-2025",
+			"el-gran-arco-2025"
+		],
+		"related": [
+			"el-mal-no-existe-2023",
+			"mountainhead-2025",
+			"aun-estoy-aqui-2024",
+			"the-brutalist-2024"
+		]
+	},
 	"synopsis": "Ambientada en Venecia y Chipre, la obra muestra al comandante militar moro Otelo mientras es manipulado por su alférez, Yago, para que sospeche de infidelidad de su esposa Desdémona.",
 	"audienceRating": "+13",
-  "review": "Esta ficha corresponde a una película todavía sin estreno comercial, así que no corresponde inventarle una evaluación terminada. La apuesta de Tom Morris será encontrar en Othello una tragedia viva, donde los celos, el racismo y la manipulación no queden reducidos a una puesta de prestigio. El desafío estará en que las actuaciones sostengan el veneno de Iago y el derrumbe de Othello sin depender sólo de la solemnidad del texto. Cuando pueda verse, habrá que juzgar su dirección, ritmo y tono sobre la película concreta.",
-	"reviewPublishedAt": "2026-03-12"
+	"review": "Esta ficha corresponde a una película todavía sin estreno comercial, así que no corresponde inventarle una evaluación terminada. La apuesta de Tom Morris será encontrar en Othello una tragedia viva, donde los celos, el racismo y la manipulación no queden reducidos a una puesta de prestigio. El desafío estará en que las actuaciones sostengan el veneno de Iago y el derrumbe de Othello sin depender sólo de la solemnidad del texto. Cuando pueda verse, habrá que juzgar su dirección, ritmo y tono sobre la película concreta.",
+	"reviewPublishedAt": "2026-03-12",
+	"castCharacters": [
+		{
+			"actor": "David Harewood",
+			"character": "Othello",
+			"tmdbMovieId": 1595531,
+			"tmdbPersonId": 16752,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Toby Jones",
+			"character": "Iago",
+			"tmdbMovieId": 1595531,
+			"tmdbPersonId": 13014,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Caitlin FitzGerald",
+			"character": "Desdemona",
+			"tmdbMovieId": 1595531,
+			"tmdbPersonId": 211993,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

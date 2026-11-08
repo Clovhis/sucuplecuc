@@ -57,5 +57,28 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Tim Robbins",
+			"character": "Jacob",
+			"tmdbMovieId": 2291,
+			"tmdbPersonId": 504,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Aiello",
+			"character": "Louis",
+			"tmdbMovieId": 2291,
+			"tmdbPersonId": 1004,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matt Craven",
+			"character": "Michael",
+			"tmdbMovieId": 2291,
+			"tmdbPersonId": 13525,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

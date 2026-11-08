@@ -51,18 +51,55 @@
 			"forFansOf": "Fans del cine francés de los 90, de los dramas de barrio y de las películas que muestran la violencia como resultado de un sistema, no como accidente.",
 			"notForYouIf": "Buscás una moraleja reparadora, acción convencional o un cierre tranquilizador. El odio no ofrece una salida limpia."
 		},
-	"becauseYouLiked": [
-		"caballos-salvajes-1995",
-		"nixon-1995"
-	],
-	"related": [
-		"donnie-brasco-1997",
-		"el-juego-de-hollywood-1992",
-		"saint-omer-el-pueblo-contra-laurence-coly-2022",
-		"el-gran-falsificador-2025"
-	]
-},
+		"becauseYouLiked": [
+			"caballos-salvajes-1995",
+			"nixon-1995"
+		],
+		"related": [
+			"donnie-brasco-1997",
+			"el-juego-de-hollywood-1992",
+			"saint-omer-el-pueblo-contra-laurence-coly-2022",
+			"el-gran-falsificador-2025"
+		]
+	},
 	"review": "Mathieu Kassovitz filma la rabia social sin convertirla en una explicación tranquilizadora ni en un decorado de rebeldía. El blanco y negro, el reloj que vuelve y el descenso por la ciudad construyen una cuenta regresiva moral. Vincent Cassel, Hubert Koundé y Saïd Taghmaoui le ponen velocidades distintas a una amistad sitiada por la violencia. La cuenta regresiva no promete una salida: vuelve más urgente la cadena de agravios que los tres amigos no consiguen detener.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Vincent Cassel",
+			"character": "Vinz",
+			"tmdbMovieId": 406,
+			"tmdbPersonId": 1925,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hubert Koundé",
+			"character": "Hubert",
+			"tmdbMovieId": 406,
+			"tmdbPersonId": 5418,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Saïd Taghmaoui",
+			"character": "Saïd",
+			"tmdbMovieId": 406,
+			"tmdbPersonId": 5419,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Abdel Ahmed Ghili",
+			"character": "Abdel",
+			"tmdbMovieId": 406,
+			"tmdbPersonId": 5420,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Solo",
+			"character": "Santo",
+			"tmdbMovieId": 406,
+			"tmdbPersonId": 5422,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

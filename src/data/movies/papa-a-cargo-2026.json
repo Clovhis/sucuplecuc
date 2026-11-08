@@ -19,7 +19,10 @@
 	"screenshots": [],
 	"trailerYoutubeId": "m76VzoDfQWQ",
 	"releasePlatform": "Apple TV",
-	"releasePlatforms": ["Apple TV","Flow"],
+	"releasePlatforms": [
+		"Apple TV",
+		"Flow"
+	],
 	"director": "Eric Appel",
 	"mainCast": [
 		"Nate Bargatze",
@@ -52,5 +55,28 @@
 	},
 	"review": "Hay trabajo que sólo se vuelve visible cuando alguien deja de hacerlo. El viaje de Katie pone a Nate Bargatze frente a ese descubrimiento, y Mandy Moore establece con claridad la diferencia entre tener buena voluntad y conocer de verdad el funcionamiento de una casa. El humor seco de Bargatze puede sacar gracia de una respuesta tardía o de la calma con la que su personaje subestima el próximo problema.\n\nEric Appel rodea esa presencia con accidentes bastante más ruidosos. La combinación no siempre encuentra el mismo ritmo: los chistes pequeños interesan más que la insistencia en hacer del padre un desastre ambulante. La idea del cuidado compartido ofrece algo reconocible, pero la película vuelve demasiado seguido al lugar del adulto que necesita aprender lo elemental. Katie pone en marcha una vida propia; sería bueno que el relato le diera tanto espacio a eso como a los tropiezos de Nate.",
 	"runtimeMinutes": 100,
-	"isPremiere": true
+	"isPremiere": true,
+	"castCharacters": [
+		{
+			"actor": "Nate Bargatze",
+			"character": "Nate Wilcox",
+			"tmdbMovieId": 1440050,
+			"tmdbPersonId": 1337794,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mandy Moore",
+			"character": "Katie Wilcox",
+			"tmdbMovieId": 1440050,
+			"tmdbPersonId": 16855,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Will Forte",
+			"character": "Keegan",
+			"tmdbMovieId": 1440050,
+			"tmdbPersonId": 62831,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

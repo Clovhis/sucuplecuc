@@ -55,5 +55,42 @@
 		]
 	},
 	"runtimeMinutes": 141,
-	"review": "Peligro inminente es la mejor vitrina de Harrison Ford como Jack Ryan porque combina su aplomo de estrella con una historia de decisiones incómodas. El protagonista no gana por ser el más violento, sino por detectar la contradicción entre una operación militar eficaz y un gobierno que quiere negar su existencia. Willem Dafoe aporta una intensidad física que contrasta con el método de Ford, y Phillip Noyce sostiene varias líneas narrativas sin perder el eje político. Puede ser aparatosa en su tramo final, pero mantiene una tensión adulta y una mirada bastante más desconfiada del poder que la de muchos thrillers de la época."
+	"review": "Peligro inminente es la mejor vitrina de Harrison Ford como Jack Ryan porque combina su aplomo de estrella con una historia de decisiones incómodas. El protagonista no gana por ser el más violento, sino por detectar la contradicción entre una operación militar eficaz y un gobierno que quiere negar su existencia. Willem Dafoe aporta una intensidad física que contrasta con el método de Ford, y Phillip Noyce sostiene varias líneas narrativas sin perder el eje político. Puede ser aparatosa en su tramo final, pero mantiene una tensión adulta y una mirada bastante más desconfiada del poder que la de muchos thrillers de la época.",
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Jack Ryan",
+			"tmdbMovieId": 9331,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "John Clark",
+			"tmdbMovieId": 9331,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anne Archer",
+			"character": "Dr. Cathy Ryan",
+			"tmdbMovieId": 9331,
+			"tmdbPersonId": 10427,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joaquim de Almeida",
+			"character": "Col. Felix V. Cortez",
+			"tmdbMovieId": 9331,
+			"tmdbPersonId": 22462,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Earl Jones",
+			"character": "Admiral James Greer",
+			"tmdbMovieId": 9331,
+			"tmdbPersonId": 15152,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

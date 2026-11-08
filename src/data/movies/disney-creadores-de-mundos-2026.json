@@ -51,5 +51,35 @@
 	},
 	"review": "Pasar de una pantalla a un lugar que se puede recorrer exige pensar cosas que una película puede dejar fuera de cuadro. Ese cambio de escala es la parte más atractiva del trabajo de Leslie Iwerks: escuchar a los creadores hablar de mundos obliga a mirar cómo se conectan personajes, espacios y detalles. James Cameron y Jon Favreau aportan ejemplos que ayudan a bajar una palabra tan amplia como imaginación a decisiones concretas.\n\nEl acceso tiene su precio. Disney también está contando una historia sobre sí misma, y el documental acompaña esa celebración con bastante menos curiosidad por sus contradicciones. Cuando muestra procesos hay material para disfrutar; cuando todos los testimonios coinciden en el asombro, el recorrido se acerca a una presentación institucional. La mirada detrás de las atracciones interesa más que la insistencia en recordarnos lo extraordinaria que sería la empresa que las construyó.",
 	"runtimeMinutes": 58,
-	"isPremiere": true
+	"isPremiere": true,
+	"castCharacters": [
+		{
+			"actor": "James Cameron",
+			"character": "Self",
+			"tmdbMovieId": 1736062,
+			"tmdbPersonId": 2710,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Favreau",
+			"character": "Self",
+			"tmdbMovieId": 1736062,
+			"tmdbPersonId": 15277,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jared Bush",
+			"character": "Self",
+			"tmdbMovieId": 1736062,
+			"tmdbPersonId": 1318201,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pete Docter",
+			"character": "Self",
+			"tmdbMovieId": 1736062,
+			"tmdbPersonId": 12890,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

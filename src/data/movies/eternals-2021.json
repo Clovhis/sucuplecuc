@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Gemma Chan",
+			"character": "Sersi",
+			"tmdbMovieId": 524434,
+			"tmdbPersonId": 97576,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Madden",
+			"character": "Ikaris",
+			"tmdbMovieId": 524434,
+			"tmdbPersonId": 512991,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Angelina Jolie",
+			"character": "Thena",
+			"tmdbMovieId": 524434,
+			"tmdbPersonId": 11701,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -57,5 +57,42 @@
 	},
 	"review": "Hitchcock juega a ser una película sobre el rodaje de Psicosis, pero su verdadero tema es el vínculo de trabajo y deseo entre Alfred y Alma. Anthony Hopkins compone al director con una mezcla de capricho, humor y ansiedad, mientras Helen Mirren evita que su personaje quede reducido a la esposa paciente: su mirada es la brújula que mantiene la historia en tierra. Sacha Gervasi aligera los conflictos con una puesta amable y algún subrayado, pero el encanto del elenco y la recreación del proceso creativo hacen que el paseo resulte cálido.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Alfred Hitchcock",
+			"tmdbMovieId": 112336,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Helen Mirren",
+			"character": "Alma Reville",
+			"tmdbMovieId": 112336,
+			"tmdbPersonId": 15735,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Janet Leigh",
+			"tmdbMovieId": 112336,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Huston",
+			"character": "Whitfield Cook",
+			"tmdbMovieId": 112336,
+			"tmdbPersonId": 6413,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Toni Collette",
+			"character": "Peggy Robertson",
+			"tmdbMovieId": 112336,
+			"tmdbPersonId": 3051,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

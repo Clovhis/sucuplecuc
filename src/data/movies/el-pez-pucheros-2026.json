@@ -57,5 +57,21 @@
 	"releasePlatforms": [
 		"HBO Max",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Nick Offerman",
+			"character": "Mr. Fish (voice)",
+			"tmdbMovieId": 1146058,
+			"tmdbPersonId": 17039,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miranda Otto",
+			"character": "Marin (voice)",
+			"tmdbMovieId": 1146058,
+			"tmdbPersonId": 502,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

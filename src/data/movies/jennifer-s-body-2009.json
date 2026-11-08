@@ -60,5 +60,21 @@
 		"Netflix"
 	],
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Megan Fox",
+			"character": "Jennifer",
+			"tmdbMovieId": 19994,
+			"tmdbPersonId": 19537,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amanda Seyfried",
+			"character": "Needy",
+			"tmdbMovieId": 19994,
+			"tmdbPersonId": 71070,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

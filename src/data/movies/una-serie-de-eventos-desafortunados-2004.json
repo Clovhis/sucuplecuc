@@ -54,5 +54,42 @@
 			"harry-potter-and-the-prisoner-of-azkaban-2004"
 		]
 	},
-	"review": "Una serie de eventos desafortunados adapta tres novelas con una estética de cuento gótico, humor negro y decorados que parecen salidos de una caja de juguetes vieja. Brad Silberling deja que los hermanos Baudelaire sean el centro de la aventura, mientras Jim Carrey compone al conde Olaf como un villano teatral que cambia de disfraz y registro con una energía despareja pero disfrutable. La película a veces corre para encajar demasiado material y no todas las bromas tienen la misma fuerza, aunque la dirección de arte, la narración de Jude Law y el vínculo entre los chicos le dan una personalidad clara. Es una fantasía familiar más rara que la media."
+	"review": "Una serie de eventos desafortunados adapta tres novelas con una estética de cuento gótico, humor negro y decorados que parecen salidos de una caja de juguetes vieja. Brad Silberling deja que los hermanos Baudelaire sean el centro de la aventura, mientras Jim Carrey compone al conde Olaf como un villano teatral que cambia de disfraz y registro con una energía despareja pero disfrutable. La película a veces corre para encajar demasiado material y no todas las bromas tienen la misma fuerza, aunque la dirección de arte, la narración de Jude Law y el vínculo entre los chicos le dan una personalidad clara. Es una fantasía familiar más rara que la media.",
+	"castCharacters": [
+		{
+			"actor": "Jim Carrey",
+			"character": "Count Olaf / Dr. Stephano / Captain Sham",
+			"tmdbMovieId": 11774,
+			"tmdbPersonId": 206,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Josephine Anwhistle",
+			"tmdbMovieId": 11774,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Timothy Spall",
+			"character": "Mr. Poe",
+			"tmdbMovieId": 11774,
+			"tmdbPersonId": 9191,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine O'Hara",
+			"character": "Justice Strauss",
+			"tmdbMovieId": 11774,
+			"tmdbPersonId": 11514,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jude Law",
+			"character": "Lemony Snicket",
+			"tmdbMovieId": 11774,
+			"tmdbPersonId": 9642,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

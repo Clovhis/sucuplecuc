@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Batman / Bruce Wayne",
+			"tmdbMovieId": 415,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris O'Donnell",
+			"character": "Robin / Dick Grayson",
+			"tmdbMovieId": 415,
+			"tmdbPersonId": 5577,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Arnold Schwarzenegger",
+			"character": "Mr. Freeze / Dr. Victor Fries",
+			"tmdbMovieId": 415,
+			"tmdbPersonId": 1100,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Halle Berry",
+			"character": "Patience Phillips / Catwoman",
+			"tmdbMovieId": 314,
+			"tmdbPersonId": 4587,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Benjamin Bratt",
+			"character": "Tom Lone",
+			"tmdbMovieId": 314,
+			"tmdbPersonId": 4589,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sharon Stone",
+			"character": "Laurel Hedare",
+			"tmdbMovieId": 314,
+			"tmdbPersonId": 4430,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

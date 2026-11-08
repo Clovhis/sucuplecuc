@@ -57,5 +57,42 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Kristen Connolly",
+			"character": "Dana Polk",
+			"tmdbMovieId": 22970,
+			"tmdbPersonId": 210824,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Hemsworth",
+			"character": "Curt Vaughn",
+			"tmdbMovieId": 22970,
+			"tmdbPersonId": 74568,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anna Hutchison",
+			"character": "Jules Louden",
+			"tmdbMovieId": 22970,
+			"tmdbPersonId": 486603,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Fran Kranz",
+			"character": "Marty Mikalski",
+			"tmdbMovieId": 22970,
+			"tmdbPersonId": 51533,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jesse Williams",
+			"character": "Holden McCrea",
+			"tmdbMovieId": 22970,
+			"tmdbPersonId": 210695,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

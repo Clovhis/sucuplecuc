@@ -31,15 +31,15 @@
 	},
 	"runtimeMinutes": 82,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "La rosa púrpura del Cairo convierte el escape cinéfilo en una herida; Woody Allen encuentra en Mia Farrow una Cecilia frágil y muy concreta.",
-		"whatToExpect": "Una espectadora atrapada en la Depresión ve salir de la pantalla al personaje de su película favorita y debe elegir entre ilusión y vida.",
-		"pace": "Se mueve con ligereza de comedia, deja entrar la fantasía sin aviso y cambia el aire cuando sus consecuencias ya no pueden ser graciosas.",
-		"intensity": "El encanto de Jeff Daniels convive con una tristeza adulta: el cine puede ofrecer refugio, pero no garantiza una salida.",
-		"practicalContext": "Con 82 minutos, es una fantasía compacta para una tarde; su tono amable esconde un remate emocional bastante menos cómodo.",
-		"forFansOf": "Te va a gustar si disfrutás metacine, romances imposibles y películas que aman la pantalla sin confundirla con el mundo.",
-		"notForYouIf": "Quizás no sea para vos si necesitás un final tranquilizador, una comedia sin melancolía o reglas fantásticas explicadas al detalle."
-	},
+		"tenSecondTake": {
+			"verdict": "La rosa púrpura del Cairo convierte el escape cinéfilo en una herida; Woody Allen encuentra en Mia Farrow una Cecilia frágil y muy concreta.",
+			"whatToExpect": "Una espectadora atrapada en la Depresión ve salir de la pantalla al personaje de su película favorita y debe elegir entre ilusión y vida.",
+			"pace": "Se mueve con ligereza de comedia, deja entrar la fantasía sin aviso y cambia el aire cuando sus consecuencias ya no pueden ser graciosas.",
+			"intensity": "El encanto de Jeff Daniels convive con una tristeza adulta: el cine puede ofrecer refugio, pero no garantiza una salida.",
+			"practicalContext": "Con 82 minutos, es una fantasía compacta para una tarde; su tono amable esconde un remate emocional bastante menos cómodo.",
+			"forFansOf": "Te va a gustar si disfrutás metacine, romances imposibles y películas que aman la pantalla sin confundirla con el mundo.",
+			"notForYouIf": "Quizás no sea para vos si necesitás un final tranquilizador, una comedia sin melancolía o reglas fantásticas explicadas al detalle."
+		},
 		"becauseYouLiked": [
 			"alice-1990",
 			"midnight-in-paris-2011"
@@ -52,5 +52,28 @@
 		]
 	},
 	"review": "La rosa púrpura del Cairo parte de una fantasía hermosa: un personaje abandona la pantalla para encontrarse con una espectadora que necesita escapar de su vida. Woody Allen no usa esa idea sólo para homenajear al cine; la convierte en una historia sobre deseo, clase y el límite entre la ilusión y lo posible. Mia Farrow le da a Cecilia una fragilidad muy concreta, mientras Jeff Daniels diferencia con gracia al galán ficticio del actor que lo interpreta. El tono es liviano hasta que deja de serlo, y ahí pega fuerte. Vale por esa mezcla rara de comedia romántica y tristeza adulta.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Mia Farrow",
+			"character": "Cecilia",
+			"tmdbMovieId": 10849,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Daniels",
+			"character": "Tom Baxter / Gil Shepherd",
+			"tmdbMovieId": 10849,
+			"tmdbPersonId": 8447,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Aiello",
+			"character": "Monk",
+			"tmdbMovieId": 10849,
+			"tmdbPersonId": 1004,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

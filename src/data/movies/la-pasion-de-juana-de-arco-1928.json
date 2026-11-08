@@ -52,5 +52,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "FR",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Maria Falconetti",
+			"character": "Jeanne d'Arc",
+			"tmdbMovieId": 780,
+			"tmdbPersonId": 11589,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eugène Silvain",
+			"character": "Bishop Pierre Cauchon",
+			"tmdbMovieId": 780,
+			"tmdbPersonId": 11590,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

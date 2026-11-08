@@ -50,5 +50,21 @@
 		]
 	},
 	"review": "El gran acierto de Street Fighter es aceptar que sus personajes necesitan ocupar el cuadro con la misma desmesura que ocupaban la pantalla del arcade. Kitao Sakurai les da colores fuertes, músculos y un humor que se ríe de su solemnidad. Andrew Koji y Noah Centineo encuentran una fricción entretenida entre Ryu y Ken, aunque el recorrido entre peleas resulta bastante menos imaginativo. Cuando se detiene a explicar la conspiración, pierde una energía que recupera enseguida con otro enfrentamiento. La fidelidad visual tiene más fuerza que el relato que intenta unirla.",
-	"runtimeMinutes": 119
+	"runtimeMinutes": 119,
+	"castCharacters": [
+		{
+			"actor": "Andrew Koji",
+			"character": "Ryu",
+			"tmdbMovieId": 1153576,
+			"tmdbPersonId": 1658375,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Noah Centineo",
+			"character": "Ken Masters",
+			"tmdbMovieId": 1153576,
+			"tmdbPersonId": 1253353,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

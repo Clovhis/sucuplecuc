@@ -51,5 +51,21 @@
 		]
 	},
 	"review": "Shoah no usa material de archivo para resumir el Holocausto: Claude Lanzmann vuelve a los lugares y escucha durante horas a sobrevivientes, testigos y participantes del exterminio. Esa decisión hace que el horror aparezca en los detalles, en una estación, una ruta o una frase dicha con una calma insoportable. La duración exige atención y no busca facilitarle nada al espectador; tampoco ordena la información como una clase tradicional. Justamente ahí está su fuerza: deja que las voces, los silencios y los paisajes actuales expongan la dimensión humana de lo ocurrido. Es una experiencia durísima, pero esencial para pensar cómo se narra una catástrofe sin convertirla en espectáculo.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Claude Lanzmann",
+			"character": "Self - Interviewer",
+			"tmdbMovieId": 42044,
+			"tmdbPersonId": 127491,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jan Karski",
+			"character": "Self",
+			"tmdbMovieId": 42044,
+			"tmdbPersonId": 1182964,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

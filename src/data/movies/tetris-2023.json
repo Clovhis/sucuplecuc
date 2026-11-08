@@ -45,5 +45,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-28",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Taron Egerton",
+			"character": "Henk Rogers",
+			"tmdbMovieId": 726759,
+			"tmdbPersonId": 1303037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nikita Efremov",
+			"character": "Alexey Pajitnov",
+			"tmdbMovieId": 726759,
+			"tmdbPersonId": 931253,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Toby Jones",
+			"character": "Robert Stein",
+			"tmdbMovieId": 726759,
+			"tmdbPersonId": 13014,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

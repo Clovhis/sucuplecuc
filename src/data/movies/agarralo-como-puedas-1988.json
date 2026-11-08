@@ -44,17 +44,54 @@
 			"notForYouIf": "Buscás una investigación seria, una historia emocional o un chiste que espere a que el público lo procese."
 		},
 		"becauseYouLiked": [
-		"arizona-baby-1987",
-		"roofman-un-buen-ladron-2025"
-	],
-	"related": [
-		"ace-ventura-un-detective-diferente-1994",
-		"y-donde-esta-el-policia-2025",
-		"el-gran-lebowski-1998",
-		"small-time-crooks-2000"
-	]
-},
+			"arizona-baby-1987",
+			"roofman-un-buen-ladron-2025"
+		],
+		"related": [
+			"ace-ventura-un-detective-diferente-1994",
+			"y-donde-esta-el-policia-2025",
+			"el-gran-lebowski-1998",
+			"small-time-crooks-2000"
+		]
+	},
 	"review": "David Zucker convierte el policial televisivo en una carrera de gags visuales, dobles sentidos y literalidad absurda. La puesta juega limpio con el espectador: los remates están a la vista, pero llegan con una precisión cómica extraordinaria. Leslie Nielsen encontró el papel perfecto para actuar como si el mundo estuviera en orden mientras todo se cae. El chiste no depende de que Nielsen guiñe el ojo: su compromiso solemne con cada disparate es lo que mantiene la precisión.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Leslie Nielsen",
+			"character": "Frank Drebin",
+			"tmdbMovieId": 37136,
+			"tmdbPersonId": 7633,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Priscilla Presley",
+			"character": "Jane Spencer",
+			"tmdbMovieId": 37136,
+			"tmdbPersonId": 12949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ricardo Montalban",
+			"character": "Vincent Ludwig",
+			"tmdbMovieId": 37136,
+			"tmdbPersonId": 1793,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Kennedy",
+			"character": "Ed Hocken",
+			"tmdbMovieId": 37136,
+			"tmdbPersonId": 12950,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "O. J. Simpson",
+			"character": "Nordberg",
+			"tmdbMovieId": 37136,
+			"tmdbPersonId": 12951,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

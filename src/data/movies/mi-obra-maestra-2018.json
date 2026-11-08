@@ -31,20 +31,47 @@
 		"tenSecondTake": {
 			"verdict": "Gastón Duprat encuentra una amistad feroz debajo de la rosca del arte: Guillermo Francella y Luis Brandoni hacen que cada trampa tenga cariño, ego y una cuota de crueldad.",
 			"whatToExpect": "Galerías, cuadros, mercado, engaños y dos amigos que inventan una salida para un pintor en caída, mientras la estafa también prueba qué les queda en común.",
-			"pace": "Avanza con diálogo rápido y golpes de comedia, pero deja que la relación se desgaste antes de convertir el plan en espectáculo.",			"intensity": "La tensión es satírica y afectiva: el dinero importa, pero la verdadera apuesta está en cuánto puede manipularse una amistad sin romperla.",			"practicalContext": "Con 100 minutos, es una comedia dramática argentina de duración amable; elegila para una noche de humor filoso y personajes con ego enorme.",			"forFansOf": "Para quienes disfrutan a Francella y Brandoni juntos, las historias del mercado del arte y la ironía porteña sobre talento y oportunismo.",			"notForYouIf": "No es para vos si buscás una mirada realista del arte, humor más delicado o personajes que no se comporten como jugadores de una farsa."
+			"pace": "Avanza con diálogo rápido y golpes de comedia, pero deja que la relación se desgaste antes de convertir el plan en espectáculo.",
+			"intensity": "La tensión es satírica y afectiva: el dinero importa, pero la verdadera apuesta está en cuánto puede manipularse una amistad sin romperla.",
+			"practicalContext": "Con 100 minutos, es una comedia dramática argentina de duración amable; elegila para una noche de humor filoso y personajes con ego enorme.",
+			"forFansOf": "Para quienes disfrutan a Francella y Brandoni juntos, las historias del mercado del arte y la ironía porteña sobre talento y oportunismo.",
+			"notForYouIf": "No es para vos si buscás una mirada realista del arte, humor más delicado o personajes que no se comporten como jugadores de una farsa."
 		},
-	"becauseYouLiked": [
-		"la-odisea-de-los-giles-2019",
-		"el-cuento-de-las-comadrejas-2019"
-	],
-	"related": [
-		"parque-lezama-2026",
-		"el-ciudadano-ilustre-2016",
-		"las-buenas-intenciones-2019",
-		"un-cuento-chino-2011"
-	]
-},
+		"becauseYouLiked": [
+			"la-odisea-de-los-giles-2019",
+			"el-cuento-de-las-comadrejas-2019"
+		],
+		"related": [
+			"parque-lezama-2026",
+			"el-ciudadano-ilustre-2016",
+			"las-buenas-intenciones-2019",
+			"un-cuento-chino-2011"
+		]
+	},
 	"synopsis": "Arturo es un galerista de arte encantador, sofisticado y un tanto inescrupuloso. Tiene su propia galería de arte en el centro de Buenos Aires, ciudad que le fascina desde siempre. Renzo es un pintor hosco, algo salvaje y en franca decadencia.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Guillermo Francella",
+			"character": "Arturo",
+			"tmdbMovieId": 535692,
+			"tmdbPersonId": 93650,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Brandoni",
+			"character": "Renzo",
+			"tmdbMovieId": 535692,
+			"tmdbPersonId": 74896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Raúl Arévalo",
+			"character": "Alex",
+			"tmdbMovieId": 535692,
+			"tmdbPersonId": 34021,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

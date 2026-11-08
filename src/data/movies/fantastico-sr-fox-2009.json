@@ -56,5 +56,35 @@
 	"review": "Fantástico Sr. Fox convierte un cuento infantil en una comedia de atracos con tierra debajo de las uñas. Wes Anderson usa el stop motion como si cada rama, túnel y saco de harina tuviera que entrar en una composición exacta, pero la precisión visual nunca le roba velocidad al chiste.\\n\\nGeorge Clooney y Meryl Streep sostienen una familia que se quiere incluso cuando el padre vuelve a ponerla en peligro por puro orgullo. La película es ingeniosa, musical y más melancólica de lo que su paleta naranja deja ver. Puede parecer caprichosa desde afuera, pero adentro tiene una idea muy clara: crecer no siempre significa dejar de ser un animal bastante complicado.",
 	"releasePlatform": "Prime Video",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Mr. Fox (voice)",
+			"tmdbMovieId": 10315,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Mrs. Fox (voice)",
+			"tmdbMovieId": 10315,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Schwartzman",
+			"character": "Ash Fox (voice)",
+			"tmdbMovieId": 10315,
+			"tmdbPersonId": 17881,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Murray",
+			"character": "Clive Badger (voice)",
+			"tmdbMovieId": 10315,
+			"tmdbPersonId": 1532,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

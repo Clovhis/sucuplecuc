@@ -53,5 +53,35 @@
 			"punales-por-la-espalda-2019"
 		]
 	},
-	"review": "Gore Verbinski deja que la vida de David Spritz se vuelva incómoda sin convertirlo en un villano doméstico ni en una víctima simpática. Nicolas Cage encuentra el tono exacto para un hombre que repite frases de optimismo mientras se le cae todo alrededor, y Michael Caine aporta la sombra de un padre cuya aprobación parece imposible de alcanzar. Hope Davis y Nicholas Hoult sostienen el conflicto familiar con una sequedad que evita el sentimentalismo. Es una comedia oscura de ritmo paciente, más interesada en la vergüenza cotidiana que en una gran redención."
+	"review": "Gore Verbinski deja que la vida de David Spritz se vuelva incómoda sin convertirlo en un villano doméstico ni en una víctima simpática. Nicolas Cage encuentra el tono exacto para un hombre que repite frases de optimismo mientras se le cae todo alrededor, y Michael Caine aporta la sombra de un padre cuya aprobación parece imposible de alcanzar. Hope Davis y Nicholas Hoult sostienen el conflicto familiar con una sequedad que evita el sentimentalismo. Es una comedia oscura de ritmo paciente, más interesada en la vergüenza cotidiana que en una gran redención.",
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "David Spritz",
+			"tmdbMovieId": 6963,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Caine",
+			"character": "Robert Spritzel",
+			"tmdbMovieId": 6963,
+			"tmdbPersonId": 3895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hope Davis",
+			"character": "Noreen",
+			"tmdbMovieId": 6963,
+			"tmdbPersonId": 15250,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicholas Hoult",
+			"character": "Mike Spritzel",
+			"tmdbMovieId": 6963,
+			"tmdbPersonId": 3292,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

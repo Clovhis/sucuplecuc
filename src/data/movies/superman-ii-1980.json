@@ -47,5 +47,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Christopher Reeve",
+			"character": "Superman / Clark Kent",
+			"tmdbMovieId": 8536,
+			"tmdbPersonId": 20006,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margot Kidder",
+			"character": "Lois Lane",
+			"tmdbMovieId": 8536,
+			"tmdbPersonId": 20011,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terence Stamp",
+			"character": "General Zod",
+			"tmdbMovieId": 8536,
+			"tmdbPersonId": 28641,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

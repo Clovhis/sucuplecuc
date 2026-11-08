@@ -66,5 +66,35 @@
 		"Apple TV"
 	],
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Miles Teller",
+			"character": "Andrew",
+			"tmdbMovieId": 244786,
+			"tmdbPersonId": 996701,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "J. K. Simmons",
+			"character": "Fletcher",
+			"tmdbMovieId": 244786,
+			"tmdbPersonId": 18999,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Reiser",
+			"character": "Jim",
+			"tmdbMovieId": 244786,
+			"tmdbPersonId": 781,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Austin Stowell",
+			"character": "Ryan",
+			"tmdbMovieId": 244786,
+			"tmdbPersonId": 970216,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

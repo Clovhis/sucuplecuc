@@ -36,7 +36,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Sydney Pollack filma el romance de Meryl Streep y Robert Redford dentro de una Kenia de paisajes enormes y mirada colonial idealizada; la belleza no resuelve esa tensión.",
-			"whatToExpect": "Plantación, matrimonio de conveniencia, independencia, cacerías y un amor que enfrenta el deseo de libertad con una vida diseñada por otros.",			"pace": "Avanza con lentitud contemplativa y escenas de paisaje; la historia deja respirar el romance, aunque el metraje puede sentirse demasiado prolongado.",			"intensity": "La intensidad es romántica y social, con conflictos de pertenencia y poder que la película suaviza detrás del paisaje.",			"practicalContext": "Sus 160 minutos piden una tarde amplia y paciencia; elegila por el melodrama clásico y discutí la idealización del lugar que retrata.",			"forFansOf": "Para quienes disfrutan a Streep, Redford y romances históricos de gran paisaje, con producción elegante y ritmo pausado.",			"notForYouIf": "No es para vos si buscás una mirada anticolonial directa, una película breve o un romance que no esconda sus desequilibrios bajo belleza."
+			"whatToExpect": "Plantación, matrimonio de conveniencia, independencia, cacerías y un amor que enfrenta el deseo de libertad con una vida diseñada por otros.",
+			"pace": "Avanza con lentitud contemplativa y escenas de paisaje; la historia deja respirar el romance, aunque el metraje puede sentirse demasiado prolongado.",
+			"intensity": "La intensidad es romántica y social, con conflictos de pertenencia y poder que la película suaviza detrás del paisaje.",
+			"practicalContext": "Sus 160 minutos piden una tarde amplia y paciencia; elegila por el melodrama clásico y discutí la idealización del lugar que retrata.",
+			"forFansOf": "Para quienes disfrutan a Streep, Redford y romances históricos de gran paisaje, con producción elegante y ritmo pausado.",
+			"notForYouIf": "No es para vos si buscás una mirada anticolonial directa, una película breve o un romance que no esconda sus desequilibrios bajo belleza."
 		},
 		"becauseYouLiked": [
 			"tootsie-1982",
@@ -53,5 +58,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Robert Redford",
+			"character": "Denys Finch Hatton",
+			"tmdbMovieId": 606,
+			"tmdbPersonId": 4135,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Karen Blixen",
+			"tmdbMovieId": 606,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Klaus Maria Brandauer",
+			"character": "Bror / Hans von Blixen-Finecke",
+			"tmdbMovieId": 606,
+			"tmdbPersonId": 10647,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

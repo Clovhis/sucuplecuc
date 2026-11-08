@@ -43,20 +43,43 @@
 			"notForYouIf": "No es la mejor elección si necesitás tensión constante, pistas impecables o un giro final que vuelva inevitable todo lo anterior."
 		},
 		"becauseYouLiked": [
-		"el-profugo-2020",
-		"las-siamesas-2020"
-	],
-	"related": [
-		"relatos-salvajes-2014",
-		"los-bobos-2026",
-		"el-robo-del-siglo-2020",
-		"culpable-2021"
-	]
-},
+			"el-profugo-2020",
+			"las-siamesas-2020"
+		],
+		"related": [
+			"relatos-salvajes-2014",
+			"los-bobos-2026",
+			"el-robo-del-siglo-2020",
+			"culpable-2021"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
 	"review": "Playa de lobos aprovecha bien una rareza: poner a Dani Rovira y Guillermo Francella en un thriller de culpa, desconfianza y humor negro sin quedarse en la comedia facil. La playa funciona como espacio mental, casi una trampa abierta donde cada conversacion parece esconder otra cosa.\n\nNo siempre sostiene la tension con la misma fuerza, y algun giro se siente mas armado que inevitable. Igual tiene clima, dos presencias con buen choque y una incomodidad que la vuelve mas interesante de lo esperable. No es redonda, pero tiene colmillo.",
 	"subgenres": [
 		"Psicológico"
+	],
+	"castCharacters": [
+		{
+			"actor": "Dani Rovira",
+			"character": "Manu",
+			"tmdbMovieId": 1383519,
+			"tmdbPersonId": 1271600,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Guillermo Francella",
+			"character": "Klaus",
+			"tmdbMovieId": 1383519,
+			"tmdbPersonId": 93650,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Javier Veiga",
+			"character": "Florentino",
+			"tmdbMovieId": 1383519,
+			"tmdbPersonId": 92661,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

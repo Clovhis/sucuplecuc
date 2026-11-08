@@ -52,5 +52,28 @@
 	"synopsis": "En un futuro arrasado por las máquinas, John Connor lidera a la resistencia contra Skynet. La llegada de Marcus, un hombre con un secreto tecnológico, lo obliga a replantear qué significa ser humano mientras prepara un rescate decisivo.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Christian Bale",
+			"character": "John Connor",
+			"tmdbMovieId": 534,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Worthington",
+			"character": "Marcus Wright",
+			"tmdbMovieId": 534,
+			"tmdbPersonId": 65731,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Moon Bloodgood",
+			"character": "Blair Williams",
+			"tmdbMovieId": 534,
+			"tmdbPersonId": 56455,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chris Pratt",
+			"character": "Peter Quill / Star-Lord",
+			"tmdbMovieId": 447365,
+			"tmdbPersonId": 73457,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chukwudi Iwuji",
+			"character": "The High Evolutionary",
+			"tmdbMovieId": 447365,
+			"tmdbPersonId": 105238,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bradley Cooper",
+			"character": "Rocket (voice)",
+			"tmdbMovieId": 447365,
+			"tmdbPersonId": 51329,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

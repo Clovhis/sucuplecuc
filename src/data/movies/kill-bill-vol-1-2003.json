@@ -51,5 +51,28 @@
 	"audienceRating": "+18",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Uma Thurman",
+			"character": "The Bride",
+			"tmdbMovieId": 24,
+			"tmdbPersonId": 139,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lucy Liu",
+			"character": "O-Ren Ishii",
+			"tmdbMovieId": 24,
+			"tmdbPersonId": 140,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vivica A. Fox",
+			"character": "Vernita Green",
+			"tmdbMovieId": 24,
+			"tmdbPersonId": 2535,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

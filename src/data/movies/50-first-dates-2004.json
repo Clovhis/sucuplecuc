@@ -62,5 +62,42 @@
 	],
 	"runtimeMinutes": 99,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Henry Roth",
+			"tmdbMovieId": 1824,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Drew Barrymore",
+			"character": "Lucy Whitmore",
+			"tmdbMovieId": 1824,
+			"tmdbPersonId": 69597,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rob Schneider",
+			"character": "Ula",
+			"tmdbMovieId": 1824,
+			"tmdbPersonId": 60949,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Astin",
+			"character": "Doug Whitmore",
+			"tmdbMovieId": 1824,
+			"tmdbPersonId": 1328,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lusia Strus",
+			"character": "Alexa",
+			"tmdbMovieId": 1824,
+			"tmdbPersonId": 19293,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

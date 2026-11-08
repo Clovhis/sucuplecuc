@@ -57,5 +57,42 @@
 		]
 	},
 	"review": "Shutter Island lleva a un agente federal a investigar una desaparición en un hospital psiquiátrico aislado, donde cada pista parece confirmar que algo no cierra. Martin Scorsese dirige el thriller como un noir enfermo, con tormentas, música amenazante y una puesta que desconfía de todo lo que muestra; Leonardo DiCaprio sostiene la obsesión con una intensidad que no se relaja. El giro final puede adivinarse y el exceso de señales le quita sutileza, pero la atmósfera sigue funcionando. Vale por su pesadilla de posguerra y por una tristeza que permanece después del misterio.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Teddy Daniels",
+			"tmdbMovieId": 11324,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Ruffalo",
+			"character": "Chuck Aule",
+			"tmdbMovieId": 11324,
+			"tmdbPersonId": 103,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Kingsley",
+			"character": "Dr. Cawley",
+			"tmdbMovieId": 11324,
+			"tmdbPersonId": 2282,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Max von Sydow",
+			"character": "Dr. Naehring",
+			"tmdbMovieId": 11324,
+			"tmdbPersonId": 2201,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Williams",
+			"character": "Dolores",
+			"tmdbMovieId": 11324,
+			"tmdbPersonId": 1812,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

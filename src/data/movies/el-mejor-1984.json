@@ -53,5 +53,35 @@
 		]
 	},
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Robert Redford",
+			"character": "Roy Hobbs",
+			"tmdbMovieId": 11393,
+			"tmdbPersonId": 4135,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Glenn Close",
+			"character": "Iris Gaines",
+			"tmdbMovieId": 11393,
+			"tmdbPersonId": 515,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Duvall",
+			"character": "Max Mercy",
+			"tmdbMovieId": 11393,
+			"tmdbPersonId": 3087,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kim Basinger",
+			"character": "Memo Paris",
+			"tmdbMovieId": 11393,
+			"tmdbPersonId": 326,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -49,5 +49,21 @@
       "notForYouIf": "Buscás una farsa ligera sin cambios bruscos de tono."
     }
   },
-  "review": "Sturges empieza burlándose del cine que quiere hablar en nombre de los pobres y termina preguntándose qué puede hacer una comedia cuando el mundo se vuelve insoportable. Joel McCrea mantiene la solemnidad de Sullivan lo bastante cerca del ridículo, mientras Veronica Lake encuentra en la ruta una compañera que no necesita ser salvada. El cambio de tono es deliberado: el film prueba su argumento con una experiencia concreta, no con una conclusión declamada."
+  "review": "Sturges empieza burlándose del cine que quiere hablar en nombre de los pobres y termina preguntándose qué puede hacer una comedia cuando el mundo se vuelve insoportable. Joel McCrea mantiene la solemnidad de Sullivan lo bastante cerca del ridículo, mientras Veronica Lake encuentra en la ruta una compañera que no necesita ser salvada. El cambio de tono es deliberado: el film prueba su argumento con una experiencia concreta, no con una conclusión declamada.",
+  "castCharacters": [
+    {
+      "actor": "Joel McCrea",
+      "character": "John Sullivan",
+      "tmdbMovieId": 16305,
+      "tmdbPersonId": 20501,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Veronica Lake",
+      "character": "The Girl",
+      "tmdbMovieId": 16305,
+      "tmdbPersonId": 79245,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

@@ -52,5 +52,28 @@
 	"cinepostaScore": 5,
 	"runtimeMinutes": 104,
 	"synopsis": "Un productor endeudado decide provocar accidentes durante el rodaje de una película para cobrar el seguro, pero el actor veterano que contrata transforma el plan en una aventura imposible de controlar.",
-	"review": "La última estafa mira al Hollywood clásico desde el costado de quienes nunca lograron volver a entrar en la sala principal. De Niro interpreta a Max como un productor desesperado que convierte cada fracaso en una nueva apuesta, mientras Morgan Freeman y Tommy Lee Jones se divierten con dos veteranos que conocen demasiado bien los trucos del negocio. George Gallo arma una comedia de golpes, western barato y planes que se deshacen, con un cariño evidente por las películas hechas a pulmón. El tono es irregular y algunos chistes dependen demasiado de la nostalgia, pero el elenco mantiene una ligereza contagiosa. No reinventa la estafa ni el homenaje, aunque entrega un paseo simpático por el cine como oficio, negocio y refugio."
+	"review": "La última estafa mira al Hollywood clásico desde el costado de quienes nunca lograron volver a entrar en la sala principal. De Niro interpreta a Max como un productor desesperado que convierte cada fracaso en una nueva apuesta, mientras Morgan Freeman y Tommy Lee Jones se divierten con dos veteranos que conocen demasiado bien los trucos del negocio. George Gallo arma una comedia de golpes, western barato y planes que se deshacen, con un cariño evidente por las películas hechas a pulmón. El tono es irregular y algunos chistes dependen demasiado de la nostalgia, pero el elenco mantiene una ligereza contagiosa. No reinventa la estafa ni el homenaje, aunque entrega un paseo simpático por el cine como oficio, negocio y refugio.",
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Max Barber",
+			"tmdbMovieId": 650783,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Morgan Freeman",
+			"character": "Reggie Fontaine",
+			"tmdbMovieId": 650783,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "Duke Montana",
+			"tmdbMovieId": 650783,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

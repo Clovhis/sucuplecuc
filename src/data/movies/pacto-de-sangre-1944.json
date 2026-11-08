@@ -35,7 +35,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Billy Wilder filma el crimen como una charla educada llena de trampas: Fred MacMurray y Barbara Stanwyck se convencen de controlar el plan mientras Edward G. Robinson escucha las grietas.",
-			"whatToExpect": "Seguro de vida, seducción, asesinato, investigación y una alianza criminal que empieza a romperse en cuanto el plan parece perfecto.",			"pace": "Avanza con diálogo preciso y tensión acumulativa; cada conversación ajusta la trampa y deja ver que la confianza entre los culpables ya se está agotando.",			"intensity": "La presión es moral y de suspenso, con violencia medida; importa más la idea de ser descubierto que mostrar el crimen.",			"practicalContext": "Con 107 minutos, es un noir compacto para una noche; mirala atento a las palabras, a las puertas y a los detalles del plan.",			"forFansOf": "Para quienes disfrutan a Wilder, cine negro y duelos de inteligencia donde una cara común puede esconder la peor decisión.",			"notForYouIf": "No es para vos si buscás acción física, villanos transparentes o un policial que explique la investigación sin dejar que los culpables hablen solos."
+			"whatToExpect": "Seguro de vida, seducción, asesinato, investigación y una alianza criminal que empieza a romperse en cuanto el plan parece perfecto.",
+			"pace": "Avanza con diálogo preciso y tensión acumulativa; cada conversación ajusta la trampa y deja ver que la confianza entre los culpables ya se está agotando.",
+			"intensity": "La presión es moral y de suspenso, con violencia medida; importa más la idea de ser descubierto que mostrar el crimen.",
+			"practicalContext": "Con 107 minutos, es un noir compacto para una noche; mirala atento a las palabras, a las puertas y a los detalles del plan.",
+			"forFansOf": "Para quienes disfrutan a Wilder, cine negro y duelos de inteligencia donde una cara común puede esconder la peor decisión.",
+			"notForYouIf": "No es para vos si buscás acción física, villanos transparentes o un policial que explique la investigación sin dejar que los culpables hablen solos."
 		},
 		"becauseYouLiked": [
 			"el-sueno-eterno-1946",
@@ -50,5 +55,28 @@
 	},
 	"review": "Billy Wilder filma el crimen como una conversación envenenada: cada frase amable oculta una salida de emergencia o una trampa. Fred MacMurray aprovecha su cara común para mostrar cómo un tipo corriente se convence de que puede controlar la situación, mientras Barbara Stanwyck le da a Phyllis una frialdad calculada. Edward G. Robinson sostiene el relato desde la inteligencia del investigador, sin convertirlo en un héroe grandilocuente. El suspenso nace del plan, pero también de observar cómo se desarma la confianza entre los culpables.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Fred MacMurray",
+			"character": "Walter Neff",
+			"tmdbMovieId": 996,
+			"tmdbPersonId": 4091,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Barbara Stanwyck",
+			"character": "Phyllis Dietrichson",
+			"tmdbMovieId": 996,
+			"tmdbPersonId": 14974,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edward G. Robinson",
+			"character": "Barton Keyes",
+			"tmdbMovieId": 996,
+			"tmdbPersonId": 13566,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

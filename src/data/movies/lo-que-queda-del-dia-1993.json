@@ -53,5 +53,35 @@
 			"el-ano-que-vivimos-peligrosamente-1982"
 		]
 	},
-	"review": "La película de James Ivory convierte la contención en una forma de suspenso. Anthony Hopkins y Emma Thompson se buscan dentro de una casa gobernada por reglas, y cada conversación parece estar a un paso de decir lo que ninguno se permite admitir. El ritmo es deliberadamente calmo y la política que rodea a la mansión queda en segundo plano frente a esa intimidad frustrada. Un drama de época sobrio, elegante y devastador sin levantar la voz."
+	"review": "La película de James Ivory convierte la contención en una forma de suspenso. Anthony Hopkins y Emma Thompson se buscan dentro de una casa gobernada por reglas, y cada conversación parece estar a un paso de decir lo que ninguno se permite admitir. El ritmo es deliberadamente calmo y la política que rodea a la mansión queda en segundo plano frente a esa intimidad frustrada. Un drama de época sobrio, elegante y devastador sin levantar la voz.",
+	"castCharacters": [
+		{
+			"actor": "Emma Thompson",
+			"character": "Miss Kenton",
+			"tmdbMovieId": 1245,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Hopkins",
+			"character": "James Stevens",
+			"tmdbMovieId": 1245,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Fox",
+			"character": "Lord Darlington",
+			"tmdbMovieId": 1245,
+			"tmdbPersonId": 1292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Grant",
+			"character": "Reginald Cardinal",
+			"tmdbMovieId": 1245,
+			"tmdbPersonId": 3291,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

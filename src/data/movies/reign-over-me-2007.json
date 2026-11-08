@@ -62,5 +62,42 @@
 	],
 	"runtimeMinutes": 124,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Charlie Fineman",
+			"tmdbMovieId": 2355,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Cheadle",
+			"character": "Alan Johnson",
+			"tmdbMovieId": 2355,
+			"tmdbPersonId": 1896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jada Pinkett Smith",
+			"character": "Janeane Johnson",
+			"tmdbMovieId": 2355,
+			"tmdbPersonId": 9575,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liv Tyler",
+			"character": "Angela Oakhurst",
+			"tmdbMovieId": 2355,
+			"tmdbPersonId": 882,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Saffron Burrows",
+			"character": "Donna Remar",
+			"tmdbMovieId": 2355,
+			"tmdbPersonId": 9825,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

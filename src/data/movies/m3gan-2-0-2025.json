@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Allison Williams",
+			"character": "Gemma",
+			"tmdbMovieId": 1071585,
+			"tmdbPersonId": 1255540,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Violet McGraw",
+			"character": "Cady",
+			"tmdbMovieId": 1071585,
+			"tmdbPersonId": 2131391,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amie Donald",
+			"character": "M3GAN",
+			"tmdbMovieId": 1071585,
+			"tmdbPersonId": 3444018,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

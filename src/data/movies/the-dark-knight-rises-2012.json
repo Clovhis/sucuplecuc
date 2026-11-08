@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Christian Bale",
+			"character": "Bruce Wayne",
+			"tmdbMovieId": 49026,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gary Oldman",
+			"character": "Commissioner Gordon",
+			"tmdbMovieId": 49026,
+			"tmdbPersonId": 64,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Hardy",
+			"character": "Bane",
+			"tmdbMovieId": 49026,
+			"tmdbPersonId": 2524,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

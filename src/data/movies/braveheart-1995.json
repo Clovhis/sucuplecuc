@@ -60,5 +60,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Mel Gibson",
+			"character": "William Wallace",
+			"tmdbMovieId": 197,
+			"tmdbPersonId": 2461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine McCormack",
+			"character": "Murron MacClannough",
+			"tmdbMovieId": 197,
+			"tmdbPersonId": 2462,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sophie Marceau",
+			"character": "Princess Isabelle",
+			"tmdbMovieId": 197,
+			"tmdbPersonId": 1957,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

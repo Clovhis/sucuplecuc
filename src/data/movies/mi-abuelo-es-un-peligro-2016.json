@@ -8,7 +8,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Dan Mazer usa el viaje de De Niro y Zac Efron para hablar de duelo y miedo a equivocarse, aunque la comedia se apoya demasiado en la provocación fácil.",
-			"whatToExpect": "Una ruta a Florida, un abuelo desatado, un nieto a punto de casarse y excesos que mezclan bromas sexuales con conversaciones sobre empezar de nuevo.",			"pace": "Encadena gags y paradas de viaje con velocidad irregular; algunas escenas encuentran química y otras parecen competir por ser más groseras que la anterior.",			"intensity": "El tono es vulgar y exagerado, pero la tensión emocional se concentra en la relación entre un viudo que quiere vivir y un nieto paralizado.",			"practicalContext": "Con 102 minutos, sirve para una comedia de ruta sin demasiadas exigencias; elegila si el humor adulto y desprolijo no te espanta.",			"forFansOf": "Para quienes disfrutan ver a Robert De Niro rompiendo su solemnidad, a Zac Efron en clave de ansiedad y comedias de duelo sin pudor.",			"notForYouIf": "No te va a gustar si te cansan los gags sexuales, la provocación repetida o una película que suaviza su costado más triste con remates constantes."
+			"whatToExpect": "Una ruta a Florida, un abuelo desatado, un nieto a punto de casarse y excesos que mezclan bromas sexuales con conversaciones sobre empezar de nuevo.",
+			"pace": "Encadena gags y paradas de viaje con velocidad irregular; algunas escenas encuentran química y otras parecen competir por ser más groseras que la anterior.",
+			"intensity": "El tono es vulgar y exagerado, pero la tensión emocional se concentra en la relación entre un viudo que quiere vivir y un nieto paralizado.",
+			"practicalContext": "Con 102 minutos, sirve para una comedia de ruta sin demasiadas exigencias; elegila si el humor adulto y desprolijo no te espanta.",
+			"forFansOf": "Para quienes disfrutan ver a Robert De Niro rompiendo su solemnidad, a Zac Efron en clave de ansiedad y comedias de duelo sin pudor.",
+			"notForYouIf": "No te va a gustar si te cansan los gags sexuales, la provocación repetida o una película que suaviza su costado más triste con remates constantes."
 		},
 		"becauseYouLiked": [
 			"el-becario-2015",
@@ -46,5 +51,28 @@
 	"cinepostaScore": 5,
 	"runtimeMinutes": 102,
 	"synopsis": "Un abogado a punto de casarse debe llevar a su abuelo a Florida y descubre que el anciano está decidido a recuperar una libertad que el duelo y la familia le habían quitado.",
-	"review": "Mi abuelo es un peligro se propone ser una comedia grosera y cumple con entusiasmo, aunque no siempre con imaginación. De Niro juega a romper su propia solemnidad como Dick, un viudo que usa el viaje para empujar a su nieto fuera de una vida diseñada por otros. Zac Efron funciona mejor cuando deja de ser el blanco de los chistes y muestra la ansiedad de alguien que teme elegir mal, mientras Aubrey Plaza aprovecha cualquier escena para correr la película hacia el absurdo. Dan Mazer acumula excesos y varios gags envejecen en la misma velocidad con la que aparecen, pero la pareja central tiene una energía honesta. Es vulgar, irregular y por momentos simpática cuando habla de duelo, deseo y miedo a empezar tarde."
+	"review": "Mi abuelo es un peligro se propone ser una comedia grosera y cumple con entusiasmo, aunque no siempre con imaginación. De Niro juega a romper su propia solemnidad como Dick, un viudo que usa el viaje para empujar a su nieto fuera de una vida diseñada por otros. Zac Efron funciona mejor cuando deja de ser el blanco de los chistes y muestra la ansiedad de alguien que teme elegir mal, mientras Aubrey Plaza aprovecha cualquier escena para correr la película hacia el absurdo. Dan Mazer acumula excesos y varios gags envejecen en la misma velocidad con la que aparecen, pero la pareja central tiene una energía honesta. Es vulgar, irregular y por momentos simpática cuando habla de duelo, deseo y miedo a empezar tarde.",
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Dick Kelly",
+			"tmdbMovieId": 291870,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zac Efron",
+			"character": "Jason Kelly",
+			"tmdbMovieId": 291870,
+			"tmdbPersonId": 29222,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aubrey Plaza",
+			"character": "Lenore",
+			"tmdbMovieId": 291870,
+			"tmdbPersonId": 119592,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

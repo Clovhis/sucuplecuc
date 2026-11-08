@@ -31,15 +31,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "La última tentación de Cristo pone la duda en el centro y deja que Martin Scorsese filme a Willem Dafoe como un hombre antes que como un ícono.",
-		"whatToExpect": "Vas a encontrar un Jesús atravesado por deseo, miedo y discusiones sobre la misión que otros esperan de él.",
-		"pace": "Se toma su tiempo entre paisajes, conversaciones y momentos de retiro; el movimiento nace de las ideas más que de la acción.",
-		"intensity": "La intensidad es espiritual y física a la vez: cada decisión pesa porque amenaza la imagen sagrada que la película se anima a discutir.",
-		"practicalContext": "Es una experiencia de contemplación y debate, mejor para una función concentrada que para verla buscando una narración religiosa convencional.",
-		"forFansOf": "Te va a gustar si te interesan reinterpretaciones bíblicas, cine de autor incómodo y actuaciones que trabajan la fragilidad.",
-		"notForYouIf": "No es para vos si querés una épica de fe tranquilizadora o preferís que una película no contradiga tus certezas religiosas."
-	},
+		"tenSecondTake": {
+			"verdict": "La última tentación de Cristo pone la duda en el centro y deja que Martin Scorsese filme a Willem Dafoe como un hombre antes que como un ícono.",
+			"whatToExpect": "Vas a encontrar un Jesús atravesado por deseo, miedo y discusiones sobre la misión que otros esperan de él.",
+			"pace": "Se toma su tiempo entre paisajes, conversaciones y momentos de retiro; el movimiento nace de las ideas más que de la acción.",
+			"intensity": "La intensidad es espiritual y física a la vez: cada decisión pesa porque amenaza la imagen sagrada que la película se anima a discutir.",
+			"practicalContext": "Es una experiencia de contemplación y debate, mejor para una función concentrada que para verla buscando una narración religiosa convencional.",
+			"forFansOf": "Te va a gustar si te interesan reinterpretaciones bíblicas, cine de autor incómodo y actuaciones que trabajan la fragilidad.",
+			"notForYouIf": "No es para vos si querés una épica de fe tranquilizadora o preferís que una película no contradiga tus certezas religiosas."
+		},
 		"becauseYouLiked": [
 			"raging-bull-1980",
 			"kundun-1997"
@@ -52,5 +52,42 @@
 		]
 	},
 	"review": "Martin Scorsese imagina a Jesús como un hombre que duda, desea y teme el lugar que le toca ocupar, una decisión que vuelve la historia espiritual y profundamente humana. Willem Dafoe sostiene esa fragilidad sin hacer del personaje una figura distante, mientras Harvey Keitel aporta un Judas áspero y terrenal. La dirección combina paisajes, música y discusiones de fe con una ambición visual que no busca complacer a todos. El tono puede incomodar más de lo que seduce, y algunas elecciones son deliberadamente provocadoras. Vale justamente por atreverse a pensar el sacrificio desde la duda.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Willem Dafoe",
+			"character": "Jesus",
+			"tmdbMovieId": 11051,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andre Gregory",
+			"character": "John the Baptist",
+			"tmdbMovieId": 11051,
+			"tmdbPersonId": 109470,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harvey Keitel",
+			"character": "Judas",
+			"tmdbMovieId": 11051,
+			"tmdbPersonId": 1037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Lurie",
+			"character": "James, Apostle",
+			"tmdbMovieId": 11051,
+			"tmdbPersonId": 6394,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martin Scorsese",
+			"character": "Isaiah (uncredited)",
+			"tmdbMovieId": 11051,
+			"tmdbPersonId": 1032,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

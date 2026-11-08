@@ -55,5 +55,42 @@
 			"the-fate-of-the-furious-2017"
 		]
 	},
-	"review": "Michael Bay arma una máquina de acción de dos horas que sabe exactamente qué quiere vender: una isla imposible, un villano con discurso y una pareja de héroes que no debería funcionar tan bien. Nicolas Cage aporta nervio y humor al científico que debe aprender a moverse en territorio militar, mientras Sean Connery le da gravedad al exconvicto convocado como guía. Ed Harris evita que el antagonista sea apenas una caricatura. La lógica se desarma seguido, pero el montaje, la música y el reparto convierten el disparate en entretenimiento sólido."
+	"review": "Michael Bay arma una máquina de acción de dos horas que sabe exactamente qué quiere vender: una isla imposible, un villano con discurso y una pareja de héroes que no debería funcionar tan bien. Nicolas Cage aporta nervio y humor al científico que debe aprender a moverse en territorio militar, mientras Sean Connery le da gravedad al exconvicto convocado como guía. Ed Harris evita que el antagonista sea apenas una caricatura. La lógica se desarma seguido, pero el montaje, la música y el reparto convierten el disparate en entretenimiento sólido.",
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "Dr. Stanley Goodspeed",
+			"tmdbMovieId": 9802,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Connery",
+			"character": "John Patrick Mason",
+			"tmdbMovieId": 9802,
+			"tmdbPersonId": 738,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Harris",
+			"character": "Brigadier General Francis X. Hummel, USMC",
+			"tmdbMovieId": 9802,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Forsythe",
+			"character": "Special Agent Ernest Paxton",
+			"tmdbMovieId": 9802,
+			"tmdbPersonId": 4520,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Biehn",
+			"character": "Commander Charles Anderson",
+			"tmdbMovieId": 9802,
+			"tmdbPersonId": 2712,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

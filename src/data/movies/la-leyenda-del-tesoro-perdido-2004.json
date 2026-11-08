@@ -57,5 +57,28 @@
 		"Disney Plus"
 	],
 	"runtimeMinutes": 131,
-	"trailerYoutubeId": "vqUPxNT8io4"
+	"trailerYoutubeId": "vqUPxNT8io4",
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "Ben Gates",
+			"tmdbMovieId": 2059,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Kruger",
+			"character": "Abigail Chase",
+			"tmdbMovieId": 2059,
+			"tmdbPersonId": 9824,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Bean",
+			"character": "Ian Howe",
+			"tmdbMovieId": 2059,
+			"tmdbPersonId": 48,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

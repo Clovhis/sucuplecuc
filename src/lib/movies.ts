@@ -3,6 +3,7 @@ import { GENERATED_UPCOMING_RELEASES } from '../data/upcomingReleases.generated'
 import { generateMovieEditorialRecommendations, getMovieRecommendationAffinity } from './recommendation-engine';
 import { getMoviePlatforms } from './platforms';
 import { hasMovieCountry, isValidMovieCountryValue } from './countries';
+import { isRealCharacterDate } from './character-credits';
 import {
 	formatCinePostaScore,
 	getLegacyVerdictFromScore,
@@ -423,6 +424,17 @@ function validateMovies(movies: Movie[]): void {
 		}
 		if (!Array.isArray(movie.mainCast)) {
 			throw new Error(`Movie "${slug}" has invalid mainCast.`);
+		}
+		if (movie.castCharacters !== undefined) {
+			if (!Array.isArray(movie.castCharacters)) throw new Error(`Movie "${slug}" has invalid castCharacters.`);
+			const actors = new Set<string>();
+			for (const credit of movie.castCharacters) {
+				if (!credit || !isRealCharacterDate(credit.verifiedAt)) throw new Error(`Movie "${slug}" has an invalid character verification date.`);
+				if (!credit || typeof credit.actor !== 'string' || !movie.mainCast.includes(credit.actor) || actors.has(credit.actor) || typeof credit.character !== 'string' || !credit.character.trim() || (credit.displayCharacter !== undefined && (typeof credit.displayCharacter !== 'string' || !credit.displayCharacter.trim())) || !Number.isSafeInteger(credit.tmdbMovieId) || credit.tmdbMovieId <= 0 || !Number.isSafeInteger(credit.tmdbPersonId) || credit.tmdbPersonId <= 0 || (credit.variants !== undefined && (!Array.isArray(credit.variants) || credit.variants.some((variant) => typeof variant !== 'string' || !variant.trim())))) {
+					throw new Error(`Movie "${slug}" has an invalid or ambiguous character credit.`);
+				}
+				actors.add(credit.actor);
+			}
 		}
 		if (movie.releasePlatforms !== undefined) {
 			if (!Array.isArray(movie.releasePlatforms)) {

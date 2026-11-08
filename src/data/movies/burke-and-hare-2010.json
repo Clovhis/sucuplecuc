@@ -56,5 +56,35 @@
 	},
 	"review": "Burke and Hare recupera una historia de asesinos y cadáveres con la lógica de una comedia negra británica, llena de médicos ansiosos, actores teatrales y delincuentes que improvisan peor de lo que creen. Simon Pegg y Andy Serkis tienen una química divertida, aunque la película no siempre decide si quiere satirizar la ciencia, el capitalismo o simplemente contar un cuento macabro. John Landis conoce el tono y suma cameos y humor físico, pero el ritmo se desinfla cuando el mecanismo queda demasiado claro.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Simon Pegg",
+			"character": "William Burke",
+			"tmdbMovieId": 50204,
+			"tmdbPersonId": 11108,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andy Serkis",
+			"character": "William Hare",
+			"tmdbMovieId": 50204,
+			"tmdbPersonId": 1333,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Isla Fisher",
+			"character": "Ginny",
+			"tmdbMovieId": 50204,
+			"tmdbPersonId": 52848,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Georgia King",
+			"character": "Emma",
+			"tmdbMovieId": 50204,
+			"tmdbPersonId": 73462,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "James McAvoy",
+			"character": "Charles Xavier (24 Years)",
+			"tmdbMovieId": 49538,
+			"tmdbPersonId": 5530,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Fassbender",
+			"character": "Erik Lehnsherr",
+			"tmdbMovieId": 49538,
+			"tmdbPersonId": 17288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Lawrence",
+			"character": "Raven / Mystique",
+			"tmdbMovieId": 49538,
+			"tmdbPersonId": 72129,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

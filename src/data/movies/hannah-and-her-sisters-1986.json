@@ -72,5 +72,42 @@
 		]
 	},
 	"review": "Hannah and Her Sisters sigue a tres hermanas y a las parejas que se buscan, se engañan y se sostienen alrededor de las cenas familiares. Woody Allen dirige el entramado con una ligereza que nunca borra las heridas, y reparte escenas precisas para que Mia Farrow, Barbara Hershey, Dianne Wiest y Michael Caine encuentren tonos propios. El ritmo coral es cálido y muy fluido, aunque algunos conflictos se resuelven con más optimismo del que merecen. Vale por su mirada adulta sobre el deseo y por una comedia que hace convivir chistes, culpa y afecto sin ponerse solemne.",
-	"reviewPublishedAt": "2026-04-29"
+	"reviewPublishedAt": "2026-04-29",
+	"castCharacters": [
+		{
+			"actor": "Woody Allen",
+			"character": "Mickey Sachs",
+			"tmdbMovieId": 5143,
+			"tmdbPersonId": 1243,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Caine",
+			"character": "Elliot",
+			"tmdbMovieId": 5143,
+			"tmdbPersonId": 3895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mia Farrow",
+			"character": "Hannah",
+			"tmdbMovieId": 5143,
+			"tmdbPersonId": 12021,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Barbara Hershey",
+			"character": "Lee",
+			"tmdbMovieId": 5143,
+			"tmdbPersonId": 10767,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dianne Wiest",
+			"character": "Holly",
+			"tmdbMovieId": 5143,
+			"tmdbPersonId": 1902,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

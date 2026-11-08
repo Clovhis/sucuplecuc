@@ -58,5 +58,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "DE, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Brad Pitt",
+			"character": "LT. Aldo Raine",
+			"tmdbMovieId": 16869,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christoph Waltz",
+			"character": "COL. Hans Landa",
+			"tmdbMovieId": 16869,
+			"tmdbPersonId": 27319,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mélanie Laurent",
+			"character": "Shosanna",
+			"tmdbMovieId": 16869,
+			"tmdbPersonId": 19119,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

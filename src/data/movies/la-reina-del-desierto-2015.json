@@ -56,5 +56,35 @@
 	},
 	"review": "Werner Herzog filma a Gertrude Bell como una viajera que observa antes de imponer su presencia. Nicole Kidman aporta inteligencia y una firmeza serena a una protagonista rodeada de hombres que quieren definir su lugar; James Franco, Robert Pattinson y Damian Lewis funcionan como estaciones de una vida afectiva y política. La narración es irregular y contemplativa, pero el paisaje y la curiosidad de Bell sostienen la aventura. Herzog prefiere la deriva y la conversación a la épica convencional, y esa elección vuelve singular el retrato.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Nicole Kidman",
+			"character": "Gertrude Bell",
+			"tmdbMovieId": 157843,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Franco",
+			"character": "Henry Cadogan",
+			"tmdbMovieId": 157843,
+			"tmdbPersonId": 17051,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Pattinson",
+			"character": "T.E. Lawrence",
+			"tmdbMovieId": 157843,
+			"tmdbPersonId": 11288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Damian Lewis",
+			"character": "Richard Wylie",
+			"tmdbMovieId": 157843,
+			"tmdbPersonId": 20186,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

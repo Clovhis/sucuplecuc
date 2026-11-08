@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ben Affleck",
+			"character": "Bruce Wayne / Batman",
+			"tmdbMovieId": 209112,
+			"tmdbPersonId": 880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Henry Cavill",
+			"character": "Clark Kent / Superman",
+			"tmdbMovieId": 209112,
+			"tmdbPersonId": 73968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jesse Eisenberg",
+			"character": "Lex Luthor",
+			"tmdbMovieId": 209112,
+			"tmdbPersonId": 44735,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -52,5 +52,21 @@
 	},
 	"review": "El sueño de Walt Disney no reconstruye tanto la producción de Mary Poppins como el forcejeo previo por quién puede decidir qué significa ese libro. Emma Thompson trabaja la resistencia de Travers sin suavizar su aspereza, y Tom Hanks compone a Disney desde una mezcla de paciencia comercial y entusiasmo. Los saltos a la infancia explican por qué la negociación despierta recuerdos dolorosos, aunque también conducen el relato hacia una reconciliación más ordenada de lo que su conflicto promete. La película interesa cuando deja ver el costo de adaptar una obra ajena y el esfuerzo por conservar algo de su voz.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 125
+	"runtimeMinutes": 125,
+	"castCharacters": [
+		{
+			"actor": "Emma Thompson",
+			"character": "P.L. Travers",
+			"tmdbMovieId": 140823,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Hanks",
+			"character": "Walt Disney",
+			"tmdbMovieId": 140823,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

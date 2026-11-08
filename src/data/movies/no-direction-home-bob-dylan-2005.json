@@ -35,7 +35,11 @@
 		"tenSecondTake": {
 			"verdict": "Martin Scorsese sigue a Bob Dylan desde Minnesota hasta la electricidad de 1966 y deja que el archivo muestre a un artista brillante, evasivo y difícil de convertir en prócer.",
 			"whatToExpect": "Entrevistas, canciones, Greenwich Village, folk, polémicas y una transformación musical contada con voces de Dylan, Baez, Cash y Ginsberg.",
-			"pace": "Avanza como una conversación larga y bien montada; las canciones y testimonios sostienen el recorrido aunque el metraje sea considerable.",			"intensity": "La intensidad es artística y generacional, concentrada en el choque entre autenticidad, fama y cambio de sonido más que en una biografía íntima.",			"practicalContext": "Sus 208 minutos conviene verlos en una sesión extensa o en dos partes; funciona mejor con tiempo para escuchar canciones completas.",			"forFansOf": "Para quienes disfrutan a Dylan, documentales musicales y el archivo de una escena folk que cambió mientras intentaba definirse.",			"notForYouIf": "No es para vos si buscás una biografía breve, una narración sin canciones largas o un Dylan explicado por completo."
+			"pace": "Avanza como una conversación larga y bien montada; las canciones y testimonios sostienen el recorrido aunque el metraje sea considerable.",
+			"intensity": "La intensidad es artística y generacional, concentrada en el choque entre autenticidad, fama y cambio de sonido más que en una biografía íntima.",
+			"practicalContext": "Sus 208 minutos conviene verlos en una sesión extensa o en dos partes; funciona mejor con tiempo para escuchar canciones completas.",
+			"forFansOf": "Para quienes disfrutan a Dylan, documentales musicales y el archivo de una escena folk que cambió mientras intentaba definirse.",
+			"notForYouIf": "No es para vos si buscás una biografía breve, una narración sin canciones largas o un Dylan explicado por completo."
 		},
 		"becauseYouLiked": [
 			"rolling-thunder-revue-a-bob-dylan-story-by-martin-scorsese-2019",
@@ -49,5 +53,42 @@
 		]
 	},
 	"review": "No Direction Home sigue a Bob Dylan desde el circuito folk hasta el escándalo eléctrico sin intentar resolver del todo a un artista que siempre se escapó de las etiquetas. Martin Scorsese organiza entrevistas y archivo con una paciencia de fan atento: sabe cuándo dejar que una canción, una mirada o una respuesta incómoda cuenten más que una explicación. Dylan aparece brillante, caprichoso y muy gracioso, nunca convertido en prócer de bronce. Es largo, como corresponde a una obra que abarca tanto, pero la narración mantiene viva la transformación. Un documental musical realmente absorbente.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Bob Dylan",
+			"character": "Self",
+			"tmdbMovieId": 19082,
+			"tmdbPersonId": 1487,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Allen Ginsberg",
+			"character": "Self",
+			"tmdbMovieId": 19082,
+			"tmdbPersonId": 110589,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Baez",
+			"character": "Self",
+			"tmdbMovieId": 19082,
+			"tmdbPersonId": 1490,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Johnny Cash",
+			"character": "Self (archive footage)",
+			"tmdbMovieId": 19082,
+			"tmdbPersonId": 84678,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pete Seeger",
+			"character": "Self",
+			"tmdbMovieId": 19082,
+			"tmdbPersonId": 44549,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

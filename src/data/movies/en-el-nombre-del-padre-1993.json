@@ -55,5 +55,42 @@
 		]
 	},
 	"review": "Jim Sheridan construye un drama judicial que no se limita a pedir indignación: muestra cómo una acusación falsa rompe una familia, una comunidad y la idea misma de justicia. Daniel Day-Lewis pasa de la insolencia juvenil al encierro sin borrar las contradicciones de Gerry, y Pete Postlethwaite le da al padre una fragilidad que evita el sentimentalismo fácil. Emma Thompson sostiene la investigación con una energía seca y concreta. La película es frontal, emocional y algo subrayada, pero su rabia tiene una dirección muy clara.",
-	"runtimeMinutes": 133
+	"runtimeMinutes": 133,
+	"castCharacters": [
+		{
+			"actor": "Daniel Day-Lewis",
+			"character": "Gerry Conlon",
+			"tmdbMovieId": 7984,
+			"tmdbPersonId": 11856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Pete Postlethwaite",
+			"character": "Giuseppe Conlon",
+			"tmdbMovieId": 7984,
+			"tmdbPersonId": 4935,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Thompson",
+			"character": "Gareth Peirce",
+			"tmdbMovieId": 7984,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Lynch",
+			"character": "Paul Hill",
+			"tmdbMovieId": 7984,
+			"tmdbPersonId": 28743,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Corin Redgrave",
+			"character": "Robert Dixon",
+			"tmdbMovieId": 7984,
+			"tmdbPersonId": 13328,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

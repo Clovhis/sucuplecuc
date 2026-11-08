@@ -45,5 +45,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-26",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sydney Sweeney",
+			"character": "Millie Calloway",
+			"tmdbMovieId": 1368166,
+			"tmdbPersonId": 115440,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amanda Seyfried",
+			"character": "Nina Winchester",
+			"tmdbMovieId": 1368166,
+			"tmdbPersonId": 71070,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brandon Sklenar",
+			"character": "Andrew Winchester",
+			"tmdbMovieId": 1368166,
+			"tmdbPersonId": 1855143,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

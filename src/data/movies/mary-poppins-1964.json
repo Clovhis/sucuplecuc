@@ -83,5 +83,21 @@
 	},
 	"review": "Robert Stevenson combina números musicales, animación y acción real sin dejar que el truco visual se coma la vida de la familia Banks. Julie Andrews sostiene a Mary con una serenidad que puede ser afectuosa o implacable según lo que la escena necesite; Dick Van Dyke le da a Bert el movimiento de un artista que siempre está inventando otro oficio. La película cambió la escala de lo que Disney podía hacer con una intérprete y un decorado, y todavía encuentra emoción en algo más simple que la magia: un padre aprendiendo a prestar atención.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 139
+	"runtimeMinutes": 139,
+	"castCharacters": [
+		{
+			"actor": "Julie Andrews",
+			"character": "Mary Poppins",
+			"tmdbMovieId": 433,
+			"tmdbPersonId": 5823,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dick Van Dyke",
+			"character": "Bert / Mr. Dawes Sr.",
+			"tmdbMovieId": 433,
+			"tmdbPersonId": 61303,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

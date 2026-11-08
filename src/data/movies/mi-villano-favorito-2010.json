@@ -37,7 +37,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Pierre Coffin encuentra un corazón familiar debajo de la fachada de supervillano: Steve Carell vuelve a Gru querible sin borrar del todo su egoísmo ni el caos de los minions.",
-			"whatToExpect": "Un robo a la Luna, tres niñas usadas en un plan de infiltración, un rival caricaturesco y una adopción que le cambia las prioridades al protagonista.",			"pace": "Va de plan criminal a convivencia con agilidad, alternando golpes visuales y escenas de ternura; la misión se sostiene aunque la villanía sea bastante superficial.",			"intensity": "La aventura es suave y cómica, con el riesgo siempre filtrado por la animación; el peso real está en la soledad de Gru y las chicas.",			"practicalContext": "La ficha no trae duración; es una opción familiar de una sentada, especialmente si querés una comedia de supervillano con adopción como núcleo.",			"forFansOf": "Para quienes disfrutan a Steve Carell en modo animado, humor físico y relatos donde una familia inesperada desarma el plan del villano.",			"notForYouIf": "Puede no ser para vos si buscás una villanía más afilada, menos chistes repetidos o una historia que no avance tan derecho hacia la redención."
+			"whatToExpect": "Un robo a la Luna, tres niñas usadas en un plan de infiltración, un rival caricaturesco y una adopción que le cambia las prioridades al protagonista.",
+			"pace": "Va de plan criminal a convivencia con agilidad, alternando golpes visuales y escenas de ternura; la misión se sostiene aunque la villanía sea bastante superficial.",
+			"intensity": "La aventura es suave y cómica, con el riesgo siempre filtrado por la animación; el peso real está en la soledad de Gru y las chicas.",
+			"practicalContext": "La ficha no trae duración; es una opción familiar de una sentada, especialmente si querés una comedia de supervillano con adopción como núcleo.",
+			"forFansOf": "Para quienes disfrutan a Steve Carell en modo animado, humor físico y relatos donde una familia inesperada desarma el plan del villano.",
+			"notForYouIf": "Puede no ser para vos si buscás una villanía más afilada, menos chistes repetidos o una historia que no avance tan derecho hacia la redención."
 		},
 		"becauseYouLiked": [
 			"minions-2015",
@@ -50,5 +55,21 @@
 			"enredados-2010"
 		]
 	},
-	"review": "Mi villano favorito encuentra una combinación muy eficiente entre la estética de supervillano y una historia de adopción que no se vuelve melosa de entrada. Steve Carell le da a Gru una voz áspera y una ternura que aparece a regañadientes, mientras las niñas tienen suficiente carácter para no ser simples accesorios. Los minions aportan un humor repetitivo pero funcional. La película es irregular en su villanía, aunque su núcleo familiar sostiene cada vuelta."
+	"review": "Mi villano favorito encuentra una combinación muy eficiente entre la estética de supervillano y una historia de adopción que no se vuelve melosa de entrada. Steve Carell le da a Gru una voz áspera y una ternura que aparece a regañadientes, mientras las niñas tienen suficiente carácter para no ser simples accesorios. Los minions aportan un humor repetitivo pero funcional. La película es irregular en su villanía, aunque su núcleo familiar sostiene cada vuelta.",
+	"castCharacters": [
+		{
+			"actor": "Steve Carell",
+			"character": "Gru (voice)",
+			"tmdbMovieId": 20352,
+			"tmdbPersonId": 4495,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Segel",
+			"character": "Vector (voice)",
+			"tmdbMovieId": 20352,
+			"tmdbPersonId": 41088,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

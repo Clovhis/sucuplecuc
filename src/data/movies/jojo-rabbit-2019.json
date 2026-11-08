@@ -40,8 +40,15 @@
 		]
 	},
 	"editorial": {
-		"becauseYouLiked": ["inglourious-basterds-2009", "all-quiet-on-the-western-front-2022"],
-		"related": ["the-grand-budapest-hotel-2014", "la-vida-es-bella-1997", "el-pianista-2002"],
+		"becauseYouLiked": [
+			"inglourious-basterds-2009",
+			"all-quiet-on-the-western-front-2022"
+		],
+		"related": [
+			"the-grand-budapest-hotel-2014",
+			"la-vida-es-bella-1997",
+			"el-pianista-2002"
+		],
 		"tenSecondTake": {
 			"verdict": "Roman Griffin Davis y Scarlett Johansson guían una fábula de guerra donde el absurdo empieza a desmontar el adoctrinamiento de Jojo.",
 			"whatToExpect": "Un chico, una amiga escondida y un Hitler imaginario que pierde autoridad a cada encuentro.",
@@ -57,5 +64,28 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 108
+	"runtimeMinutes": 108,
+	"castCharacters": [
+		{
+			"actor": "Roman Griffin Davis",
+			"character": "Jojo",
+			"tmdbMovieId": 515001,
+			"tmdbPersonId": 2054851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Rosie",
+			"tmdbMovieId": 515001,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Rockwell",
+			"character": "Captain Klenzendorf",
+			"tmdbMovieId": 515001,
+			"tmdbPersonId": 6807,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

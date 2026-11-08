@@ -39,21 +39,44 @@
 			"notForYouIf": "No es para vos si necesitás violencia sugerida, humor o una historia de venganza limpia."
 		},
 		"becauseYouLiked": [
-		"saw-2004",
-		"martires-2008"
-	],
-	"related": [
-		"saw-x-2023",
-		"terrifier-2-2022",
-		"terrifier-3-2024",
-		"ichi-the-killer-2001"
-	]
-},
-  "review": "Hostel: Part II mejora a la primera porque mira el negocio desde los dos lados: las chicas que caen en la trampa y los clientes que pagan para descargar su violencia. Eli Roth sigue siendo bruto y provocador, pero esa alternancia vuelve más incómodo el mecanismo de la organización. La dirección se recrea demasiado en algunos excesos, incluida una escena que busca escandalizar a cualquier costo, aunque no pierde de vista la desigualdad obscena que alimenta el lugar. Heather Matarazzo aporta vulnerabilidad real. Es desagradable a propósito y bastante más pensada que su fama de simple carnicería.",
+			"saw-2004",
+			"martires-2008"
+		],
+		"related": [
+			"saw-x-2023",
+			"terrifier-2-2022",
+			"terrifier-3-2024",
+			"ichi-the-killer-2001"
+		]
+	},
+	"review": "Hostel: Part II mejora a la primera porque mira el negocio desde los dos lados: las chicas que caen en la trampa y los clientes que pagan para descargar su violencia. Eli Roth sigue siendo bruto y provocador, pero esa alternancia vuelve más incómodo el mecanismo de la organización. La dirección se recrea demasiado en algunos excesos, incluida una escena que busca escandalizar a cualquier costo, aunque no pierde de vista la desigualdad obscena que alimenta el lugar. Heather Matarazzo aporta vulnerabilidad real. Es desagradable a propósito y bastante más pensada que su fama de simple carnicería.",
 	"synopsis": "Tres amigas viajan a un spa de Europa del Este y caen en manos de un club que subasta personas; dos clientes esperan el momento de elegir a sus víctimas.",
 	"audienceRating": "+18",
 	"subgenres": [
 		"Gore"
 	],
-	"reviewPublishedAt": "2026-05-23"
+	"reviewPublishedAt": "2026-05-23",
+	"castCharacters": [
+		{
+			"actor": "Lauren German",
+			"character": "Beth",
+			"tmdbMovieId": 1691,
+			"tmdbPersonId": 37014,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Roger Bart",
+			"character": "Stuart",
+			"tmdbMovieId": 1691,
+			"tmdbPersonId": 45566,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Heather Matarazzo",
+			"character": "Lorna",
+			"tmdbMovieId": 1691,
+			"tmdbPersonId": 33656,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

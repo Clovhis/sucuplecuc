@@ -53,5 +53,35 @@
 	"premiereLabel": "",
 	"reviewPublishedAt": "2026-07-18",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Robin Williams",
+			"character": "Nolan",
+			"tmdbMovieId": 259963,
+			"tmdbPersonId": 2157,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Roberto Aguire",
+			"character": "Leo",
+			"tmdbMovieId": 259963,
+			"tmdbPersonId": 1302424,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kathy Baker",
+			"character": "Joy",
+			"tmdbMovieId": 259963,
+			"tmdbPersonId": 1907,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bob Odenkirk",
+			"character": "Winston",
+			"tmdbMovieId": 259963,
+			"tmdbPersonId": 59410,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

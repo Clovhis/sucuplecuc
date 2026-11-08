@@ -39,21 +39,44 @@
 			"notForYouIf": "Quizás no sea para vos si necesitás terror sugerido, un ritmo ligero o una película que no confunda intensidad con cantidad de sangre."
 		},
 		"becauseYouLiked": [
-		"saw-x-2023",
-		"saw-2004"
-	],
-	"related": [
-		"martires-2008",
-		"terrifier-2-2022",
-		"terrifier-3-2024",
-		"tu-madre-se-ha-comido-a-mi-perro-1992"
-	]
-},
+			"saw-x-2023",
+			"saw-2004"
+		],
+		"related": [
+			"martires-2008",
+			"terrifier-2-2022",
+			"terrifier-3-2024",
+			"tu-madre-se-ha-comido-a-mi-perro-1992"
+		]
+	},
 	"review": "Saw III lleva la saga al terreno del gore frontal, pero intenta sostener las trampas con una historia de duelo, venganza y decisiones imposibles. Darren Lynn Bousman filma los mecanismos con una crudeza que a veces tapa todo lo demás, aunque la dinámica entre Jigsaw y Amanda le da una tensión emocional más marcada. Tobin Bell mantiene la calma siniestra del personaje y Shawnee Smith encuentra matices cuando su lealtad se descompone. El ritmo se vuelve pesado en algunos desvíos y la violencia puede resultar excesiva, pero como entrega feroz y melodramática tiene momentos que quedan.",
-  "synopsis": "Jigsaw, al borde de la muerte, secuestra a una cirujana para que lo mantenga vivo mientras un padre devastado recorre pruebas pensadas alrededor del choque que mató a su hijo.",
+	"synopsis": "Jigsaw, al borde de la muerte, secuestra a una cirujana para que lo mantenga vivo mientras un padre devastado recorre pruebas pensadas alrededor del choque que mató a su hijo.",
 	"audienceRating": "+18",
 	"subgenres": [
 		"Gore"
 	],
-	"reviewPublishedAt": "2026-05-23"
+	"reviewPublishedAt": "2026-05-23",
+	"castCharacters": [
+		{
+			"actor": "Tobin Bell",
+			"character": "Jigsaw / John",
+			"tmdbMovieId": 214,
+			"tmdbPersonId": 2144,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shawnee Smith",
+			"character": "Amanda",
+			"tmdbMovieId": 214,
+			"tmdbPersonId": 2138,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Angus Macfadyen",
+			"character": "Jeff",
+			"tmdbMovieId": 214,
+			"tmdbPersonId": 2464,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

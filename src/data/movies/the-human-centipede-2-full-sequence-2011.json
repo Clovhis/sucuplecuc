@@ -42,19 +42,42 @@
 			"forFansOf": "Puede interesarte si te atraen secuelas extremas, body horror y experimentos de mal gusto que discuten la relación entre mirar una película y querer reproducirla.",
 			"notForYouIf": "Quizás no sea para vos si necesitás una trama con matices, violencia sugerida o personajes para acompañar. Su propuesta es insistente, opresiva y bastante agotadora."
 		},
-	"becauseYouLiked": [
-		"re-animator-1985",
-		"posesion-infernal-2013"
-	],
-	"related": [
-		"tu-madre-se-ha-comido-a-mi-perro-1992",
-		"martires-2008",
-		"saw-2004",
-		"ichi-the-killer-2001"
-	]
-},
+		"becauseYouLiked": [
+			"re-animator-1985",
+			"posesion-infernal-2013"
+		],
+		"related": [
+			"tu-madre-se-ha-comido-a-mi-perro-1992",
+			"martires-2008",
+			"saw-2004",
+			"ichi-the-killer-2001"
+		]
+	},
 	"review": "The Human Centipede 2 redobla la provocación hasta volverla casi un castigo para quien la mira. Tom Six filma en blanco y negro, con textura mugrienta y encuadres encerrados, para seguir a un protagonista cuya obsesión transforma todo en una pesadilla de mal gusto. Laurence R. Harvey se entrega al personaje con una incomodidad física eficaz, pero la película confunde insistencia con escalada. Hay imágenes que buscan quedarse pegadas y lo consiguen, aunque el relato no ofrece mucho más que crueldad repetida. Como experimento extremo despierta curiosidad; como película, resulta agotadora y bastante pobre.",
-  "synopsis": "Un guardia de estacionamiento obsesionado con la primera película secuestra a varias personas para copiar su experimento de manera casera y brutal, convencido de poder superar a su creador.",
+	"synopsis": "Un guardia de estacionamiento obsesionado con la primera película secuestra a varias personas para copiar su experimento de manera casera y brutal, convencido de poder superar a su creador.",
 	"audienceRating": "+18",
-	"reviewPublishedAt": "2026-05-23"
+	"reviewPublishedAt": "2026-05-23",
+	"castCharacters": [
+		{
+			"actor": "Laurence R. Harvey",
+			"character": "Martin",
+			"tmdbMovieId": 74997,
+			"tmdbPersonId": 573773,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ashlynn Yennie",
+			"character": "Miss Yennie",
+			"tmdbMovieId": 74997,
+			"tmdbPersonId": 121575,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maddi Black",
+			"character": "Candy",
+			"tmdbMovieId": 74997,
+			"tmdbPersonId": 1080026,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -56,5 +56,42 @@
 	},
 	"review": "Sin identidad se apoya en una pregunta muy básica y efectiva: qué harías si todo el mundo te asegurara que sos otra persona. Jaume Collet-Serra convierte Berlín en un laberinto frío de hospitales, hoteles y calles mojadas, y Liam Neeson sostiene la desesperación sin perder la autoridad que el papel necesita. Diane Kruger aporta movimiento y humanidad a la investigación, mientras Bruno Ganz aparece con la precisión justa. Algunas pistas resultan más convenientes que elegantes, pero el misterio está administrado con pulso y llega a un desenlace que reordena bien lo visto.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Dr. Martin Harris",
+			"tmdbMovieId": 48138,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Kruger",
+			"character": "Gina",
+			"tmdbMovieId": 48138,
+			"tmdbPersonId": 9824,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "January Jones",
+			"character": "Elizabeth Harris",
+			"tmdbMovieId": 48138,
+			"tmdbPersonId": 31717,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aidan Quinn",
+			"character": "Martin B.",
+			"tmdbMovieId": 48138,
+			"tmdbPersonId": 18992,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bruno Ganz",
+			"character": "Ernst Jürgen",
+			"tmdbMovieId": 48138,
+			"tmdbPersonId": 2310,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

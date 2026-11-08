@@ -56,5 +56,28 @@
 	"review": "La fuente de la vida quiere filmar el duelo como una aventura cósmica y no le interesa pedir permiso para mezclar conquistadores, laboratorios y estrellas moribundas. Darren Aronofsky arma un objeto visual de texturas fuertes, obsesionado con la idea de que el amor pueda negociar con la muerte.\\n\\nHugh Jackman y Rachel Weisz ponen emoción real en una película que a veces parece estar redactando su propia tesis mientras avanza. El montaje de las tres líneas temporales puede resultar hipnótico o agotador según la paciencia del espectador, y el símbolo nunca se queda quieto. Es una experiencia ambiciosa, imperfecta y bastante más sensible que su fama de película solemne.",
 	"releasePlatform": "Prime Video",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Hugh Jackman",
+			"character": "Tomás / Tom Creo / Tommy",
+			"tmdbMovieId": 1381,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel Weisz",
+			"character": "Isabel / Izzi Creo",
+			"tmdbMovieId": 1381,
+			"tmdbPersonId": 3293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ellen Burstyn",
+			"character": "Dr. Lillian Guzetti",
+			"tmdbMovieId": 1381,
+			"tmdbPersonId": 9560,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

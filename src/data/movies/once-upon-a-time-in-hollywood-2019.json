@@ -42,7 +42,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Quentin Tarantino convierte el Hollywood de 1969 en una fantasía de amistad y reparación; Leonardo DiCaprio y Brad Pitt llevan la deriva hasta un final violento y extrañamente tierno.",
-			"whatToExpect": "Sets, autos, casas, televisión, una actriz en ascenso y dos hombres intentando sobrevivir a una industria que ya no sabe dónde ponerlos.",			"pace": "Se toma tiempo para recorrer calles y trabajos antes de acelerar; la lentitud es parte de su cariño por los detalles y por los personajes.",			"intensity": "La intensidad aparece tarde y de golpe, mezclando humor cruel con violencia de historieta; hasta entonces la presión es la pérdida de un mundo.",			"practicalContext": "Sus 161 minutos piden una noche despejada y tolerancia a la deriva; funciona mejor si disfrutás reconstrucciones cinéfilas que no van directo al conflicto.",			"forFansOf": "Para quienes siguen a Tarantino, DiCaprio, Pitt y las películas que reescriben una época a través de amistad y fantasía.",			"notForYouIf": "No es para vos si buscás una crónica histórica rigurosa, ritmo parejo o una película que trate a todos sus personajes con la misma distancia."
+			"whatToExpect": "Sets, autos, casas, televisión, una actriz en ascenso y dos hombres intentando sobrevivir a una industria que ya no sabe dónde ponerlos.",
+			"pace": "Se toma tiempo para recorrer calles y trabajos antes de acelerar; la lentitud es parte de su cariño por los detalles y por los personajes.",
+			"intensity": "La intensidad aparece tarde y de golpe, mezclando humor cruel con violencia de historieta; hasta entonces la presión es la pérdida de un mundo.",
+			"practicalContext": "Sus 161 minutos piden una noche despejada y tolerancia a la deriva; funciona mejor si disfrutás reconstrucciones cinéfilas que no van directo al conflicto.",
+			"forFansOf": "Para quienes siguen a Tarantino, DiCaprio, Pitt y las películas que reescriben una época a través de amistad y fantasía.",
+			"notForYouIf": "No es para vos si buscás una crónica histórica rigurosa, ritmo parejo o una película que trate a todos sus personajes con la misma distancia."
 		},
 		"becauseYouLiked": [
 			"django-unchained-2012",
@@ -59,5 +64,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Rick Dalton",
+			"tmdbMovieId": 466272,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Cliff Booth",
+			"tmdbMovieId": 466272,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margot Robbie",
+			"character": "Sharon Tate",
+			"tmdbMovieId": 466272,
+			"tmdbPersonId": 234352,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

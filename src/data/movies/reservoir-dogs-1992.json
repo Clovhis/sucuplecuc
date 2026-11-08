@@ -50,5 +50,28 @@
 	"audienceRating": "+18",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Harvey Keitel",
+			"character": "Mr. White / Larry Dimmick",
+			"tmdbMovieId": 500,
+			"tmdbPersonId": 1037,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Roth",
+			"character": "Mr. Orange / Freddy Newandyke",
+			"tmdbMovieId": 500,
+			"tmdbPersonId": 3129,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Madsen",
+			"character": "Mr. Blonde / Vic Vega",
+			"tmdbMovieId": 500,
+			"tmdbPersonId": 147,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

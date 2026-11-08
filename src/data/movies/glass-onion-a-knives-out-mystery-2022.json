@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Craig",
+			"character": "Benoit Blanc",
+			"tmdbMovieId": 661374,
+			"tmdbPersonId": 8784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edward Norton",
+			"character": "Miles Bron",
+			"tmdbMovieId": 661374,
+			"tmdbPersonId": 819,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Hudson",
+			"character": "Birdie Jay",
+			"tmdbMovieId": 661374,
+			"tmdbPersonId": 11661,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

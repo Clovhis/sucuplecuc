@@ -57,5 +57,21 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Sheri Moon Zombie",
+			"character": "Baby Firefly / Vera-Ellen",
+			"tmdbMovieId": 1696,
+			"tmdbPersonId": 21319,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Forsythe",
+			"character": "Sheriff John Quincy Wydel",
+			"tmdbMovieId": 1696,
+			"tmdbPersonId": 4520,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

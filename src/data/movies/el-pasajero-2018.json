@@ -60,5 +60,42 @@
 	},
 	"review": "El pasajero vuelve a juntar a Liam Neeson y Jaume Collet-Serra para un acertijo en espacio reducido, esta vez arriba de un tren repleto de gente que puede estar mintiendo. La película se divierte con esa condición de juego y Vera Farmiga abre el conflicto con una serenidad que incomoda. Neeson vende bien el agotamiento de Michael, un hombre común que no entiende la escala de lo que aceptó. La explicación final se enreda más de la cuenta y algunas escenas de acción rozan lo imposible, pero el viaje sostiene la curiosidad hasta la última estación.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Michael MacCauley",
+			"tmdbMovieId": 399035,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vera Farmiga",
+			"character": "Joanna",
+			"tmdbMovieId": 399035,
+			"tmdbPersonId": 21657,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick Wilson",
+			"character": "Alex Murphy",
+			"tmdbMovieId": 399035,
+			"tmdbPersonId": 17178,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Neill",
+			"character": "Captain Hawthorne",
+			"tmdbMovieId": 399035,
+			"tmdbPersonId": 4783,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonathan Banks",
+			"character": "Walt",
+			"tmdbMovieId": 399035,
+			"tmdbPersonId": 783,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

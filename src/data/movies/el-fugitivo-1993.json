@@ -63,5 +63,42 @@
 			"una-noche-para-sobrevivir-2015"
 		]
 	},
-	"review": "El fugitivo es una máquina de suspenso extraordinariamente bien calibrada: cada escape de Kimble resuelve un problema y abre otro, mientras la persecución de Gerard gana espesor en lugar de limitarse a ser un obstáculo. Ford sostiene la película desde la urgencia física y la obstinación de un hombre que no puede detenerse; Tommy Lee Jones le da al rival una ironía seca y una inteligencia propia. Andrew Davis encadena acción, investigación y emoción sin perder claridad, una virtud menos común de lo que parece."
+	"review": "El fugitivo es una máquina de suspenso extraordinariamente bien calibrada: cada escape de Kimble resuelve un problema y abre otro, mientras la persecución de Gerard gana espesor en lugar de limitarse a ser un obstáculo. Ford sostiene la película desde la urgencia física y la obstinación de un hombre que no puede detenerse; Tommy Lee Jones le da al rival una ironía seca y una inteligencia propia. Andrew Davis encadena acción, investigación y emoción sin perder claridad, una virtud menos común de lo que parece.",
+	"castCharacters": [
+		{
+			"actor": "Harrison Ford",
+			"character": "Richard Kimble",
+			"tmdbMovieId": 5503,
+			"tmdbPersonId": 3,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "Samuel Gerard",
+			"tmdbMovieId": 5503,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sela Ward",
+			"character": "Helen Kimble",
+			"tmdbMovieId": 5503,
+			"tmdbPersonId": 6068,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Pantoliano",
+			"character": "Cosmo Renfro",
+			"tmdbMovieId": 5503,
+			"tmdbPersonId": 532,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeroen Krabbé",
+			"character": "Charles Nichols",
+			"tmdbMovieId": 5503,
+			"tmdbPersonId": 1924,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

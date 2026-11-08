@@ -51,5 +51,28 @@
 	"synopsis": "Jack Sparrow se cruza otra vez con Angelica, una mujer de su pasado, y termina a bordo del barco del temible Barbanegra. Juntos emprenden la búsqueda de la Fuente de la Juventud mientras varias potencias compiten por llegar primero.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Johnny Depp",
+			"character": "Jack Sparrow",
+			"tmdbMovieId": 1865,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Penélope Cruz",
+			"character": "Angelica",
+			"tmdbMovieId": 1865,
+			"tmdbPersonId": 955,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geoffrey Rush",
+			"character": "Hector Barbossa",
+			"tmdbMovieId": 1865,
+			"tmdbPersonId": 118,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

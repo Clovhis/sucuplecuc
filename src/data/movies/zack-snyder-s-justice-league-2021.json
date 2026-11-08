@@ -47,5 +47,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ben Affleck",
+			"character": "Batman / Bruce Wayne",
+			"tmdbMovieId": 791373,
+			"tmdbPersonId": 880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Henry Cavill",
+			"character": "Superman / Clark Kent",
+			"tmdbMovieId": 791373,
+			"tmdbPersonId": 73968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gal Gadot",
+			"character": "Wonder Woman / Diana Prince",
+			"tmdbMovieId": 791373,
+			"tmdbPersonId": 90633,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

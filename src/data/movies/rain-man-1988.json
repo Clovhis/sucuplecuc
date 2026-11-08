@@ -57,5 +57,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Dustin Hoffman",
+			"character": "Raymond Babbitt",
+			"tmdbMovieId": 380,
+			"tmdbPersonId": 4483,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Cruise",
+			"character": "Charlie Babbitt",
+			"tmdbMovieId": 380,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Valeria Golino",
+			"character": "Susanna",
+			"tmdbMovieId": 380,
+			"tmdbPersonId": 3124,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

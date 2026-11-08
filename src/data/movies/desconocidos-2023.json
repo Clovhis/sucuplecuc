@@ -44,18 +44,48 @@
 			"forFansOf": "Andrew Haigh, los dramas de duelo y las historias donde volver al pasado no significa arreglarlo.",
 			"notForYouIf": "Querés una fantasía con reglas, una trama de thriller o un romance sin familias ausentes."
 		},
-	"becauseYouLiked": [
-		"the-shape-of-water-2017",
-		"el-curioso-caso-de-benjamin-button-2008"
-	],
-	"related": [
-		"el-cielo-sobre-berlin-1987",
-		"la-ultima-pelicula-1971",
-		"peggy-sue-se-caso-1986",
-		"the-lord-of-the-rings-the-return-of-the-king-2003"
-	]
-},
+		"becauseYouLiked": [
+			"the-shape-of-water-2017",
+			"el-curioso-caso-de-benjamin-button-2008"
+		],
+		"related": [
+			"el-cielo-sobre-berlin-1987",
+			"la-ultima-pelicula-1971",
+			"peggy-sue-se-caso-1986",
+			"the-lord-of-the-rings-the-return-of-the-king-2003"
+		]
+	},
 	"review": "Andrew Haigh cruza duelo, deseo y memoria sin separar la fantasía de la verdad emocional. El edificio, las luces nocturnas y los regresos al pasado forman un espacio donde los ausentes pueden conversar sin quedar explicados. Andrew Scott y Paul Mescal sostienen una intimidad vulnerable, mientras Jamie Bell y Claire Foy vuelven tangible una infancia perdida. El regreso a la infancia funciona como una conversación pendiente, llena de amor, reproches y cosas que nadie pudo decir a tiempo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Andrew Scott",
+			"character": "Adam",
+			"tmdbMovieId": 994108,
+			"tmdbPersonId": 125660,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Mescal",
+			"character": "Harry",
+			"tmdbMovieId": 994108,
+			"tmdbPersonId": 2326151,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jamie Bell",
+			"character": "Dad",
+			"tmdbMovieId": 994108,
+			"tmdbPersonId": 478,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claire Foy",
+			"character": "Mum",
+			"tmdbMovieId": 994108,
+			"tmdbPersonId": 120932,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

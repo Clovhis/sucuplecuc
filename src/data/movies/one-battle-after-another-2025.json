@@ -61,7 +61,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Paul Thomas Anderson mezcla persecución y militancia con una escala inesperada; Leonardo DiCaprio sostiene la desesperación mientras el pasado político vuelve a pedir cuentas.",
-			"whatToExpect": "Exrevolucionario oculto, hija desaparecida, viejos aliados y una trama donde la fuga familiar y la historia política se contaminan todo el tiempo.",			"pace": "Acelera, frena y vuelve a tensarse según aparecen secretos; no busca una línea recta y puede exigir más paciencia que una película de persecución convencional.",			"intensity": "La presión es personal y política, con un conflicto que pesa por lo que los adultos transmitieron a la generación siguiente.",			"practicalContext": "Sus 161 minutos requieren una sesión amplia y atención a los cambios de tono; funciona mejor si aceptás una épica nerviosa y ambiciosa.",			"forFansOf": "Para quienes disfrutan el cine de Anderson, actores como DiCaprio y relatos donde la militancia se vuelve problema familiar.",			"notForYouIf": "No es para vos si necesitás una trama lineal, reglas políticas explicadas o una película de acción que no se detenga en sus desvíos."
+			"whatToExpect": "Exrevolucionario oculto, hija desaparecida, viejos aliados y una trama donde la fuga familiar y la historia política se contaminan todo el tiempo.",
+			"pace": "Acelera, frena y vuelve a tensarse según aparecen secretos; no busca una línea recta y puede exigir más paciencia que una película de persecución convencional.",
+			"intensity": "La presión es personal y política, con un conflicto que pesa por lo que los adultos transmitieron a la generación siguiente.",
+			"practicalContext": "Sus 161 minutos requieren una sesión amplia y atención a los cambios de tono; funciona mejor si aceptás una épica nerviosa y ambiciosa.",
+			"forFansOf": "Para quienes disfrutan el cine de Anderson, actores como DiCaprio y relatos donde la militancia se vuelve problema familiar.",
+			"notForYouIf": "No es para vos si necesitás una trama lineal, reglas políticas explicadas o una película de acción que no se detenga en sus desvíos."
 		},
 		"becauseYouLiked": [
 			"los-ilusionistas-3-2025",
@@ -78,5 +83,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-28",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Bob",
+			"tmdbMovieId": 1054867,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Penn",
+			"character": "Col. Steven J. Lockjaw",
+			"tmdbMovieId": 1054867,
+			"tmdbPersonId": 2228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Regina Hall",
+			"character": "Deandra",
+			"tmdbMovieId": 1054867,
+			"tmdbPersonId": 35705,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

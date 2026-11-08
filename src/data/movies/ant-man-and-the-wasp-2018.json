@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Paul Rudd",
+			"character": "Scott Lang / Ant-Man",
+			"tmdbMovieId": 363088,
+			"tmdbPersonId": 22226,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Evangeline Lilly",
+			"character": "Hope Van Dyne / Wasp",
+			"tmdbMovieId": 363088,
+			"tmdbPersonId": 19034,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Peña",
+			"character": "Luis",
+			"tmdbMovieId": 363088,
+			"tmdbPersonId": 454,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

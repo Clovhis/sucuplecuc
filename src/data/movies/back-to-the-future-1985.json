@@ -59,5 +59,28 @@
 	"synopsis": "En 1985, Marty McFly viaja accidentalmente a 1955 en un DeLorean construido por Doc Brown. Allí altera el primer encuentro de sus padres y tiene que arreglar la línea temporal antes de desaparecer y poder volver a su propia época.",
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Michael J. Fox",
+			"character": "Marty McFly",
+			"tmdbMovieId": 105,
+			"tmdbPersonId": 521,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Lloyd",
+			"character": "Emmett Brown",
+			"tmdbMovieId": 105,
+			"tmdbPersonId": 1062,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lea Thompson",
+			"character": "Lorraine Baines",
+			"tmdbMovieId": 105,
+			"tmdbPersonId": 1063,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

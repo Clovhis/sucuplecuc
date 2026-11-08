@@ -55,5 +55,28 @@
 	},
 	"review": "Richard Donner arma una aventura de patio y cueva con la energía de un juego que se salió de control. Sean Astin y el grupo infantil sostienen el entusiasmo sin que los adultos les roben el centro, y cada pasadizo trae una regla nueva para la imaginación. Hay villanos caricaturescos, acertijos y sustos suaves, pero también una preocupación concreta por perder el barrio y crecer demasiado rápido. La película abraza su exageración sin vergüenza. Si entrás en su lógica, la mezcla de amistad y tesoro sigue funcionando como una puerta secreta.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Sean Astin",
+			"character": "Mikey",
+			"tmdbMovieId": 9340,
+			"tmdbPersonId": 1328,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Brolin",
+			"character": "Brand",
+			"tmdbMovieId": 9340,
+			"tmdbPersonId": 16851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Corey Feldman",
+			"character": "Mouth",
+			"tmdbMovieId": 9340,
+			"tmdbPersonId": 3034,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

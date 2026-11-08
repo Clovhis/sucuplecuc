@@ -59,5 +59,35 @@
 	"review": "Camp Rock 3 vuelve al campamento con una misión sencilla: pasar la posta sin romper el recuerdo. Veronica Rodriguez entiende que el atractivo está en la competencia musical, las amistades que se forman bajo presión y la nostalgia de ver a Connect 3 como mentores. Las canciones son el motor principal y la película las usa para ordenar el entusiasmo de su nuevo elenco.\n\nLa fórmula es transparente y las rivalidades se acomodan con una velocidad televisiva, pero el tono tiene una calidez genuina. Liamani Segura lleva bien el centro y las apariciones de Demi Lovato y los Jonas Brothers funcionan como puente entre generaciones. No reinventa la saga: la mantiene afinada, luminosa y lista para su público.",
 	"releasePlatform": "Disney Plus",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Malachi Barton",
+			"character": "Fletch Robinson",
+			"tmdbMovieId": 1493400,
+			"tmdbPersonId": 1836114,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lumi Pollack",
+			"character": "Rosie Kleinman",
+			"tmdbMovieId": 1493400,
+			"tmdbPersonId": 3968040,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hudson Stone",
+			"character": "Desi Scott",
+			"tmdbMovieId": 1493400,
+			"tmdbPersonId": 5695133,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Demi Lovato",
+			"character": "Mitchie Torres",
+			"tmdbMovieId": 1493400,
+			"tmdbPersonId": 85138,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

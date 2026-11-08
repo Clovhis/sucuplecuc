@@ -47,5 +47,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "GB, HK, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Christopher Reeve",
+			"character": "Clark Kent / Superman",
+			"tmdbMovieId": 11411,
+			"tmdbPersonId": 20006,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Margot Kidder",
+			"character": "Lois Lane",
+			"tmdbMovieId": 11411,
+			"tmdbPersonId": 20011,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gene Hackman",
+			"character": "Lex Luthor",
+			"tmdbMovieId": 11411,
+			"tmdbPersonId": 193,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

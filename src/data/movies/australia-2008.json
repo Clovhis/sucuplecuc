@@ -55,5 +55,28 @@
 	},
 	"review": "Baz Luhrmann convierte el paisaje australiano en una aventura romántica de escala enorme, con ganado, bombardeos y melodrama a plena luz. Nicole Kidman empieza como una mujer rígida y encuentra humanidad cuando el viaje la obliga a elegir qué quiere defender; Hugh Jackman le da músculo y calidez al vínculo. El tono salta entre epopeya, comedia y tragedia, pero el exceso también es parte de su identidad. La grandilocuencia puede desacomodar, aunque algunos vínculos y paisajes quedan grabados por su energía.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Nicole Kidman",
+			"character": "Lady Sarah Ashley",
+			"tmdbMovieId": 6972,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Jackman",
+			"character": "The Drover",
+			"tmdbMovieId": 6972,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Wenham",
+			"character": "Neil Fletcher",
+			"tmdbMovieId": 6972,
+			"tmdbPersonId": 1371,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

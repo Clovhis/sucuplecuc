@@ -56,5 +56,42 @@
 	},
 	"review": "Hans Petter Moland no hace una venganza de manual: deja que el duelo de Nels conviva con chistes secos, nombres ridículos y criminales que se toman demasiado en serio. Liam Neeson juega la tristeza con una seriedad útil, mientras el resto de la película se permite correrse hacia una violencia casi de fábula negra. El paisaje blanco ayuda a que cada encuentro parezca aislado del mundo. No todas las líneas secundarias tienen el mismo filo y la mezcla de tonos puede descolocar, pero su rareza es justamente lo que evita que sea otra copia de Taken.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Liam Neeson",
+			"character": "Nels Coxman",
+			"tmdbMovieId": 438650,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Grace Coxman",
+			"tmdbMovieId": 438650,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emmy Rossum",
+			"character": "Kim Dash",
+			"tmdbMovieId": 438650,
+			"tmdbPersonId": 4730,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Bateman",
+			"character": "Trevor 'Viking' Calcote",
+			"tmdbMovieId": 438650,
+			"tmdbPersonId": 1364004,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Jackson",
+			"character": "White Bull Legrew",
+			"tmdbMovieId": 438650,
+			"tmdbPersonId": 78797,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

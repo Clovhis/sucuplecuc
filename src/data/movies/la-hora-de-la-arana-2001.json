@@ -54,5 +54,35 @@
 		]
 	},
 	"runtimeMinutes": 104,
-	"review": "La hora de la araña entiende que Alex Cross funciona mejor cuando piensa antes de disparar. Morgan Freeman vuelve a darle gravedad al detective, mientras Monica Potter aporta una agente marcada por la culpa y Michael Wincott disfruta cada pliegue de un villano que quiere convertir el crimen en espectáculo. Lee Tamahori sostiene un ritmo firme y filma bien las persecuciones, aunque el guion se estira con pistas demasiado convenientes y vueltas que no siempre cierran. No alcanza la tensión de los mejores thrillers del género, pero tiene oficio, oscuridad y una pareja central que mantiene el interés. Zafa, sobre todo para una noche de policial clásico."
+	"review": "La hora de la araña entiende que Alex Cross funciona mejor cuando piensa antes de disparar. Morgan Freeman vuelve a darle gravedad al detective, mientras Monica Potter aporta una agente marcada por la culpa y Michael Wincott disfruta cada pliegue de un villano que quiere convertir el crimen en espectáculo. Lee Tamahori sostiene un ritmo firme y filma bien las persecuciones, aunque el guion se estira con pistas demasiado convenientes y vueltas que no siempre cierran. No alcanza la tensión de los mejores thrillers del género, pero tiene oficio, oscuridad y una pareja central que mantiene el interés. Zafa, sobre todo para una noche de policial clásico.",
+	"castCharacters": [
+		{
+			"actor": "Morgan Freeman",
+			"character": "Alex Cross",
+			"tmdbMovieId": 2043,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Monica Potter",
+			"character": "Jezzie Flannigan",
+			"tmdbMovieId": 2043,
+			"tmdbPersonId": 2140,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Wincott",
+			"character": "Gary Soneji",
+			"tmdbMovieId": 2043,
+			"tmdbPersonId": 7486,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dylan Baker",
+			"character": "Ollie McArthur",
+			"tmdbMovieId": 2043,
+			"tmdbPersonId": 19152,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

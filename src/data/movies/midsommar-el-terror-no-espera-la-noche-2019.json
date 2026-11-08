@@ -28,7 +28,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Ari Aster cambia oscuridad por luz insoportable y hace del duelo de Florence Pugh una puerta hacia una comunidad inquietante; el horror funciona cuando la bienvenida empieza a parecer captura.",
-			"whatToExpect": "Rituales, flores, drogas, luz permanente y una pareja que viaja a Suecia para descubrir que la hospitalidad puede esconder una violencia perfectamente organizada.",			"pace": "Es deliberadamente larga y paciente; acumula detalles, ceremonias y señales hasta que el paisaje abierto deja de sentirse seguro.",			"intensity": "La incomodidad es sostenida y gráfica por momentos, más perturbadora que sorpresiva; el dolor de Dani queda absorbido por el ritual.",			"practicalContext": "Sus 147 minutos piden una sesión sin distracciones y tolerancia a la repetición ritual; no la elijas como terror rápido de sustos.",			"forFansOf": "Para quienes disfrutan horror folk, simbolismo visual y actuaciones como la de Florence Pugh, capaz de sostener un derrumbe bajo el sol.",			"notForYouIf": "No es para vos si necesitás sombras, explicaciones directas o una protagonista que mantenga distancia frente a lo que la comunidad le ofrece."
+			"whatToExpect": "Rituales, flores, drogas, luz permanente y una pareja que viaja a Suecia para descubrir que la hospitalidad puede esconder una violencia perfectamente organizada.",
+			"pace": "Es deliberadamente larga y paciente; acumula detalles, ceremonias y señales hasta que el paisaje abierto deja de sentirse seguro.",
+			"intensity": "La incomodidad es sostenida y gráfica por momentos, más perturbadora que sorpresiva; el dolor de Dani queda absorbido por el ritual.",
+			"practicalContext": "Sus 147 minutos piden una sesión sin distracciones y tolerancia a la repetición ritual; no la elijas como terror rápido de sustos.",
+			"forFansOf": "Para quienes disfrutan horror folk, simbolismo visual y actuaciones como la de Florence Pugh, capaz de sostener un derrumbe bajo el sol.",
+			"notForYouIf": "No es para vos si necesitás sombras, explicaciones directas o una protagonista que mantenga distancia frente a lo que la comunidad le ofrece."
 		},
 		"becauseYouLiked": [
 			"hereditary-2018",
@@ -51,5 +56,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "SE",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Florence Pugh",
+			"character": "Dani",
+			"tmdbMovieId": 530385,
+			"tmdbPersonId": 1373737,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Reynor",
+			"character": "Christian",
+			"tmdbMovieId": 530385,
+			"tmdbPersonId": 1007683,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

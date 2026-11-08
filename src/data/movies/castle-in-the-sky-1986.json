@@ -39,19 +39,42 @@
 			"forFansOf": "Hayao Miyazaki, los mundos perdidos y las películas donde las máquinas tienen peso, ruido y personalidad.",
 			"notForYouIf": "Buscás fantasía oscura, una trama minimalista o una película de aventura sin mensaje sobre poder."
 		},
-	"becauseYouLiked": [
-		"nausicaa-of-the-valley-of-the-wind-1984",
-		"princess-mononoke-1997"
-	],
-	"related": [
-		"spirited-away-2001",
-		"the-boy-and-the-heron-2023",
-		"my-neighbor-totoro-1988",
-		"suzume-2022"
-	]
-},
+		"becauseYouLiked": [
+			"nausicaa-of-the-valley-of-the-wind-1984",
+			"princess-mononoke-1997"
+		],
+		"related": [
+			"spirited-away-2001",
+			"the-boy-and-the-heron-2023",
+			"my-neighbor-totoro-1988",
+			"suzume-2022"
+		]
+	},
 	"review": "Castle in the Sky sigue a Pazu y Sheeta, dos chicos que buscan la ciudad flotante de Laputa mientras piratas y militares persiguen el poder escondido en un cristal. Hayao Miyazaki arma una aventura aérea que avanza sin parar, pero nunca pierde la ternura de sus protagonistas ni su desconfianza hacia la ambición militar. La animación llena el cielo de máquinas con peso y personalidad, y los villanos tienen suficiente humor para no aplastar el tono. Es una película ideal para entrar al universo Ghibli: imaginativa, emocionante y con una frescura que no envejeció.",
 	"synopsis": "Una aeronave que transporta a Sheeta, una niña huérfana secuestrada por el agente del gobierno Muska, es atacada por el pirata aéreo Dola y su pandilla, que buscan el collar de cristal de Sheeta.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Keiko Yokozawa",
+			"character": "Sheeta (voice)",
+			"tmdbMovieId": 10515,
+			"tmdbPersonId": 65509,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mayumi Tanaka",
+			"character": "Pazu (voice)",
+			"tmdbMovieId": 10515,
+			"tmdbPersonId": 65510,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ichirō Nagai",
+			"character": "Shogun Mouro (voice)",
+			"tmdbMovieId": 10515,
+			"tmdbPersonId": 617,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

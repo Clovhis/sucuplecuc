@@ -52,5 +52,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ryan O'Neal",
+			"character": "Barry Lyndon",
+			"tmdbMovieId": 3175,
+			"tmdbPersonId": 31070,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marisa Berenson",
+			"character": "Lady Lyndon",
+			"tmdbMovieId": 3175,
+			"tmdbPersonId": 31071,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

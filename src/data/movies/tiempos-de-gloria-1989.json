@@ -54,15 +54,15 @@
 		]
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Tiempos de gloria encuentra épica en exigir dignidad; Edward Zwick deja que Matthew Broderick y Denzel Washington conviertan el regimiento en comunidad.",
-		"whatToExpect": "El 54.º Regimiento de Massachusetts entrena bajo un coronel joven y enfrenta a un ejército que duda de sus soldados negros.",
-		"pace": "Avanza por formación, castigo y combate, alternando escenas de camaradería con una marcha hacia una misión que ya parece imposible.",
-		"intensity": "El barro, la disciplina y la violencia pesan en el cuerpo; el racismo institucional vuelve cada avance más costoso que el anterior.",
-		"practicalContext": "Con 122 minutos, ofrece un drama bélico de escala clásica, mejor para una sesión atenta que para una aventura de fondo.",
-		"forFansOf": "Te va a gustar si disfrutás historias de regimientos, discursos de dignidad y actuaciones que encuentran emoción dentro de la épica.",
-		"notForYouIf": "Quizás no sea para vos si buscás ambigüedad histórica, guerra sin subrayados o una película que no confíe en el coraje colectivo."
-	},
+		"tenSecondTake": {
+			"verdict": "Tiempos de gloria encuentra épica en exigir dignidad; Edward Zwick deja que Matthew Broderick y Denzel Washington conviertan el regimiento en comunidad.",
+			"whatToExpect": "El 54.º Regimiento de Massachusetts entrena bajo un coronel joven y enfrenta a un ejército que duda de sus soldados negros.",
+			"pace": "Avanza por formación, castigo y combate, alternando escenas de camaradería con una marcha hacia una misión que ya parece imposible.",
+			"intensity": "El barro, la disciplina y la violencia pesan en el cuerpo; el racismo institucional vuelve cada avance más costoso que el anterior.",
+			"practicalContext": "Con 122 minutos, ofrece un drama bélico de escala clásica, mejor para una sesión atenta que para una aventura de fondo.",
+			"forFansOf": "Te va a gustar si disfrutás historias de regimientos, discursos de dignidad y actuaciones que encuentran emoción dentro de la épica.",
+			"notForYouIf": "Quizás no sea para vos si buscás ambigüedad histórica, guerra sin subrayados o una película que no confíe en el coraje colectivo."
+		},
 		"becauseYouLiked": [
 			"en-honor-a-la-verdad-1996",
 			"schindler-s-list-1993"
@@ -74,5 +74,42 @@
 			"lincoln-2012"
 		]
 	},
-	"review": "Edward Zwick consigue que la épica no tape la experiencia de los hombres que mandan a pelear. La puesta en escena le da peso físico al entrenamiento, al barro y a la violencia, pero lo que queda es el choque entre una institución racista y soldados decididos a exigir dignidad. Matthew Broderick arranca contenido y Denzel Washington encuentra una furia lúcida que cambia cada escena donde aparece. La película puede ser enfática en algunos discursos, aunque los transforma en emoción genuina cuando el regimiento deja de ser símbolo y se vuelve una comunidad."
+	"review": "Edward Zwick consigue que la épica no tape la experiencia de los hombres que mandan a pelear. La puesta en escena le da peso físico al entrenamiento, al barro y a la violencia, pero lo que queda es el choque entre una institución racista y soldados decididos a exigir dignidad. Matthew Broderick arranca contenido y Denzel Washington encuentra una furia lúcida que cambia cada escena donde aparece. La película puede ser enfática en algunos discursos, aunque los transforma en emoción genuina cuando el regimiento deja de ser símbolo y se vuelve una comunidad.",
+	"castCharacters": [
+		{
+			"actor": "Matthew Broderick",
+			"character": "Col. Robert Gould Shaw",
+			"tmdbMovieId": 9665,
+			"tmdbPersonId": 4756,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Denzel Washington",
+			"character": "Pvt. Trip",
+			"tmdbMovieId": 9665,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cary Elwes",
+			"character": "Maj. Cabot Forbes",
+			"tmdbMovieId": 9665,
+			"tmdbPersonId": 2130,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Morgan Freeman",
+			"character": "Sgt. Maj. John Rawlins",
+			"tmdbMovieId": 9665,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andre Braugher",
+			"character": "Cpl. Thomas Searles",
+			"tmdbMovieId": 9665,
+			"tmdbPersonId": 6861,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

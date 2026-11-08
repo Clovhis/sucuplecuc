@@ -59,5 +59,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-07",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Major Marquis Warren",
+			"tmdbMovieId": 273248,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kurt Russell",
+			"character": "John 'The Hangman' Ruth",
+			"tmdbMovieId": 273248,
+			"tmdbPersonId": 6856,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Jason Leigh",
+			"character": "Daisy Domergue",
+			"tmdbMovieId": 273248,
+			"tmdbPersonId": 10431,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -35,13 +35,13 @@
 	},
 	"editorial": {
 		"tenSecondTake": {
-		"verdict": "Love Actually abre muchas ventanas al amor y no todas dan a una comedia: Richard Curtis deja que Emma Thompson y Hugh Grant convivan con deseo, duelo y torpeza.",
-		"whatToExpect": "Varias historias se cruzan en Londres antes de Navidad, entre parejas que empiezan, vínculos que se rompen y amistades que sostienen el golpe.",
-		"pace": "Salta de una trama a otra con agilidad de postal navideña, aunque el mosaico a veces deja algunas vidas apenas dibujadas.",
-		"intensity": "La herida más fuerte aparece cuando el romanticismo no alcanza; una sospecha doméstica puede pesar más que cualquier gran declaración.",
-		"practicalContext": "Mirala como un ensamble irregular: tiene encanto, idealización y momentos incómodos, y funciona mejor cuando acepta el amor imperfecto.",
-		"forFansOf": "Si te gustan comedias corales, Londres en fiestas y romances que mezclan ternura con melancolía.",
-		"notForYouIf": "No es para vos si buscás una sola historia profunda, relaciones sin idealización o una Navidad completamente luminosa."
+			"verdict": "Love Actually abre muchas ventanas al amor y no todas dan a una comedia: Richard Curtis deja que Emma Thompson y Hugh Grant convivan con deseo, duelo y torpeza.",
+			"whatToExpect": "Varias historias se cruzan en Londres antes de Navidad, entre parejas que empiezan, vínculos que se rompen y amistades que sostienen el golpe.",
+			"pace": "Salta de una trama a otra con agilidad de postal navideña, aunque el mosaico a veces deja algunas vidas apenas dibujadas.",
+			"intensity": "La herida más fuerte aparece cuando el romanticismo no alcanza; una sospecha doméstica puede pesar más que cualquier gran declaración.",
+			"practicalContext": "Mirala como un ensamble irregular: tiene encanto, idealización y momentos incómodos, y funciona mejor cuando acepta el amor imperfecto.",
+			"forFansOf": "Si te gustan comedias corales, Londres en fiestas y romances que mezclan ternura con melancolía.",
+			"notForYouIf": "No es para vos si buscás una sola historia profunda, relaciones sin idealización o una Navidad completamente luminosa."
 		},
 		"becauseYouLiked": [
 			"sentido-y-sensibilidad-1995",
@@ -54,5 +54,42 @@
 			"lo-que-queda-del-dia-1993"
 		]
 	},
-	"review": "Love Actually arma una postal navideña con muchas ventanas abiertas a la vez: algunas dan a una comedia encantadora y otras a situaciones bastante más incómodas. Emma Thompson encuentra el registro más humano del conjunto en una mujer que intenta sostener la dignidad mientras todo se le mueve debajo de los pies. Richard Curtis maneja el mosaico con ritmo y oído para el remate, aunque varias historias se apoyan demasiado en la idealización. Funciona mejor cuando acepta que el amor también puede ser torpe, desigual y doloroso."
+	"review": "Love Actually arma una postal navideña con muchas ventanas abiertas a la vez: algunas dan a una comedia encantadora y otras a situaciones bastante más incómodas. Emma Thompson encuentra el registro más humano del conjunto en una mujer que intenta sostener la dignidad mientras todo se le mueve debajo de los pies. Richard Curtis maneja el mosaico con ritmo y oído para el remate, aunque varias historias se apoyan demasiado en la idealización. Funciona mejor cuando acepta que el amor también puede ser torpe, desigual y doloroso.",
+	"castCharacters": [
+		{
+			"actor": "Emma Thompson",
+			"character": "Karen",
+			"tmdbMovieId": 508,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hugh Grant",
+			"character": "The Prime Minister",
+			"tmdbMovieId": 508,
+			"tmdbPersonId": 3291,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Rickman",
+			"character": "Harry",
+			"tmdbMovieId": 508,
+			"tmdbPersonId": 4566,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liam Neeson",
+			"character": "Daniel",
+			"tmdbMovieId": 508,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Colin Firth",
+			"character": "Jamie Bennett",
+			"tmdbMovieId": 508,
+			"tmdbPersonId": 5472,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

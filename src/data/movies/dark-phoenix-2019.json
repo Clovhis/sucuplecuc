@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "James McAvoy",
+			"character": "Charles Xavier / Professor X",
+			"tmdbMovieId": 320288,
+			"tmdbPersonId": 5530,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Fassbender",
+			"character": "Erik Lensherr / Magneto",
+			"tmdbMovieId": 320288,
+			"tmdbPersonId": 17288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jessica Chastain",
+			"character": "Vuk",
+			"tmdbMovieId": 320288,
+			"tmdbPersonId": 83002,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

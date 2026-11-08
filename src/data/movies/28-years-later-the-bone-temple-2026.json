@@ -56,5 +56,28 @@
 	"releasePlatforms": [
 		"HBO Max",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Dr. Kelson",
+			"tmdbMovieId": 1272837,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack O'Connell",
+			"character": "Sir Jimmy Crystal",
+			"tmdbMovieId": 1272837,
+			"tmdbPersonId": 85065,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alfie Williams",
+			"character": "Spike",
+			"tmdbMovieId": 1272837,
+			"tmdbPersonId": 5107934,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

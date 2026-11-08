@@ -44,18 +44,55 @@
 			"forFansOf": "Gene Kelly, el musical de Hollywood y las comedias que convierten una crisis laboral en espectáculo.",
 			"notForYouIf": "No te gustan las canciones, la ingenuidad del romance o el humor de backstage."
 		},
-	"becauseYouLiked": [
-		"roofman-un-buen-ladron-2025",
-		"la-invitacion-2026"
-	],
-	"related": [
-		"solo-mio-2026",
-		"tom-jones-1963",
-		"gigi-1958",
-		"con-faldas-y-a-lo-loco-1959"
-	]
-},
+		"becauseYouLiked": [
+			"roofman-un-buen-ladron-2025",
+			"la-invitacion-2026"
+		],
+		"related": [
+			"solo-mio-2026",
+			"tom-jones-1963",
+			"gigi-1958",
+			"con-faldas-y-a-lo-loco-1959"
+		]
+	},
 	"review": "La película celebra el musical mientras se ríe de la industria que transforma la innovación en una amenaza laboral. Los números de baile tienen una claridad física extraordinaria y el humor nace de problemas técnicos tratados como catástrofes románticas. Gene Kelly, Donald O'Connor y Debbie Reynolds sostienen una energía luminosa que todavía hace parecer fácil lo dificilísimo. Los números musicales celebran la transformación del cine sonoro y, al mismo tiempo, hacen que cada cambio técnico parezca una aventura.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Gene Kelly",
+			"character": "Don Lockwood",
+			"tmdbMovieId": 872,
+			"tmdbPersonId": 13294,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Donald O'Connor",
+			"character": "Cosmo Brown",
+			"tmdbMovieId": 872,
+			"tmdbPersonId": 13295,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Debbie Reynolds",
+			"character": "Kathy Selden",
+			"tmdbMovieId": 872,
+			"tmdbPersonId": 8857,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jean Hagen",
+			"character": "Lina Lamont",
+			"tmdbMovieId": 872,
+			"tmdbPersonId": 13296,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Millard Mitchell",
+			"character": "R.F. Simpson",
+			"tmdbMovieId": 872,
+			"tmdbPersonId": 13297,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

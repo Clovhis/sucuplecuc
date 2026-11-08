@@ -50,5 +50,28 @@
     }
   },
   "review": "Chaplin conserva el ritmo de sus comedias mudas mientras pone la caricatura al servicio de una amenaza muy concreta. La doble actuación hace que Hynkel y el barbero compartan cuerpo, pero no experiencia: ahí nace la tensión que la farsa sola no podría sostener. El cierre cambia de registro y deja que la película se haga cargo de lo que venía ridiculizando. La confusión entre el barbero judío y Hynkel estira la ironía hasta una intervención final que ya no es broma.",
-  "runtimeMinutes": 125
+  "runtimeMinutes": 125,
+  "castCharacters": [
+    {
+      "actor": "Charlie Chaplin",
+      "character": "Adenoid Hynkel, Dictator of Tomania / A Jewish Barber",
+      "tmdbMovieId": 914,
+      "tmdbPersonId": 13848,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Paulette Goddard",
+      "character": "Hannah",
+      "tmdbMovieId": 914,
+      "tmdbPersonId": 14027,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Jack Oakie",
+      "character": "Benzino Napaloni, Dictator of Bacteria",
+      "tmdbMovieId": 914,
+      "tmdbPersonId": 14028,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

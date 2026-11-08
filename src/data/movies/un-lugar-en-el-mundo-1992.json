@@ -44,17 +44,40 @@
 			"notForYouIf": "Preferís conflictos veloces, personajes sin contradicciones o un retrato rural usado apenas como fondo pintoresco."
 		},
 		"becauseYouLiked": [
-		"caballos-salvajes-1995",
-		"mundo-grua-1999"
-	],
-	"related": [
-		"kamchatka-2002",
-		"leonera-2008",
-		"la-historia-oficial-1985",
-		"la-patagonia-rebelde-1974"
-	]
-},
+			"caballos-salvajes-1995",
+			"mundo-grua-1999"
+		],
+		"related": [
+			"kamchatka-2002",
+			"leonera-2008",
+			"la-historia-oficial-1985",
+			"la-patagonia-rebelde-1974"
+		]
+	},
 	"review": "Adolfo Aristarain arma un drama de ideas que nunca se olvida de la tierra, la familia y las pequeñas lealtades. El paisaje cuyano no funciona como postal: es un espacio de trabajo, discusión y pertenencia, filmado con una serenidad que deja respirar cada diálogo. Federico Luppi, Cecilia Roth y José Sacristán sostienen una película grande en ambición, pero íntima en sus heridas. La discusión sobre la cooperativa y la escuela convierte el compromiso social en algo que también se decide dentro de una familia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Federico Luppi",
+			"character": "Mario",
+			"tmdbMovieId": 32635,
+			"tmdbPersonId": 17094,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cecilia Roth",
+			"character": "Ana",
+			"tmdbMovieId": 32635,
+			"tmdbPersonId": 953,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leonor Benedetto",
+			"character": "Nelda",
+			"tmdbMovieId": 32635,
+			"tmdbPersonId": 109467,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

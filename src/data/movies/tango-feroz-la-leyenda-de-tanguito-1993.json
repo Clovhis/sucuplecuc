@@ -38,18 +38,41 @@
 			"forFansOf": "Puede gustarte si te atraen biopics musicales, romances trágicos y cine argentino de los noventa que abraza la canción, el exceso y la rebeldía como forma de identidad.",
 			"notForYouIf": "Quizás no sea para vos si buscás rigor histórico, una mirada menos idealizada o personajes que no se expresen a través de grandes gestos. Su leyenda pesa más que el registro."
 		},
-	"becauseYouLiked": [
-		"caballos-salvajes-1995",
-		"funes-un-gran-amor-1993"
-	],
-	"related": [
-		"kamchatka-2002",
-		"el-hijo-de-la-novia-2001",
-		"cin3-fili4-2026",
-		"la-nina-santa-2004"
-	]
-},
+		"becauseYouLiked": [
+			"caballos-salvajes-1995",
+			"funes-un-gran-amor-1993"
+		],
+		"related": [
+			"kamchatka-2002",
+			"el-hijo-de-la-novia-2001",
+			"cin3-fili4-2026",
+			"la-nina-santa-2004"
+		]
+	},
 	"synopsis": "Inspirada libremente en la vida de Tanguito, sigue a un joven músico que queda atrapado entre la explosión del rock nacional y una sociedad que no sabe qué hacer con él. Su romance con una chica de clase alta agrava esa tensión.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Fernán Mirás",
+			"character": "Tanguito",
+			"tmdbMovieId": 73857,
+			"tmdbPersonId": 536259,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cecilia Dopazo",
+			"character": "Mariana",
+			"tmdbMovieId": 73857,
+			"tmdbPersonId": 109003,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Imanol Arias",
+			"character": "Angel",
+			"tmdbMovieId": 73857,
+			"tmdbPersonId": 36281,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

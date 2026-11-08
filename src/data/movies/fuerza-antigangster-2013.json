@@ -54,5 +54,42 @@
 	},
 	"review": "Fuerza antigángster quiere ser un policial de época con músculos de cómic y no siempre logra que ambas cosas convivan. Ruben Fleischer llena el cuadro de neón, trajes y tiroteos, mientras Gosling y Brolin arman una pareja de policías con códigos distintos. Sean Penn sobreactúa como villano y el guion simplifica la historia, pero el elenco sostiene el entretenimiento. Cuando acepta su condición de pulp estilizado, la película avanza con una energía muy difícil de negar.",
 	"runtimeMinutes": 113,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Sgt. Jerry Wooters",
+			"tmdbMovieId": 82682,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Brolin",
+			"character": "John O'Mara",
+			"tmdbMovieId": 82682,
+			"tmdbPersonId": 16851,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Penn",
+			"character": "Mickey Cohen",
+			"tmdbMovieId": 82682,
+			"tmdbPersonId": 2228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Stone",
+			"character": "Grace Faraday",
+			"tmdbMovieId": 82682,
+			"tmdbPersonId": 54693,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Nolte",
+			"character": "Bill Parker",
+			"tmdbMovieId": 82682,
+			"tmdbPersonId": 1733,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

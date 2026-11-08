@@ -49,5 +49,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "AU, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Anya Taylor-Joy",
+			"character": "Furiosa",
+			"tmdbMovieId": 786892,
+			"tmdbPersonId": 1397778,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Hemsworth",
+			"character": "Dementus",
+			"tmdbMovieId": 786892,
+			"tmdbPersonId": 74568,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Burke",
+			"character": "Praetorian Jack",
+			"tmdbMovieId": 786892,
+			"tmdbPersonId": 52891,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

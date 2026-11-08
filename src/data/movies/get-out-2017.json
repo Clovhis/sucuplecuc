@@ -62,5 +62,42 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"HBO Max"
+	],
+	"castCharacters": [
+		{
+			"actor": "Daniel Kaluuya",
+			"character": "Chris Washington",
+			"tmdbMovieId": 419430,
+			"tmdbPersonId": 206919,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Allison Williams",
+			"character": "Rose Armitage",
+			"tmdbMovieId": 419430,
+			"tmdbPersonId": 1255540,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine Keener",
+			"character": "Missy Armitage",
+			"tmdbMovieId": 419430,
+			"tmdbPersonId": 2229,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bradley Whitford",
+			"character": "Dean Armitage",
+			"tmdbMovieId": 419430,
+			"tmdbPersonId": 11367,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Caleb Landry Jones",
+			"character": "Jeremy Armitage",
+			"tmdbMovieId": 419430,
+			"tmdbPersonId": 572541,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

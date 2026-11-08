@@ -56,5 +56,21 @@
 	"runtimeMinutes": 98,
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Dylan Southern no convierte el dolor en un truco de susto: usa la aparición del cuervo para darle forma incómoda a una casa que ya no sabe cómo seguir. Benedict Cumberbatch carga el centro sin buscar golpes bajos y David Thewlis aporta una presencia que estira la inquietud sin explicarla de más. Esa cosa con alas avanza con una tristeza espesa, a veces deliberadamente opaca, pero encuentra imágenes que quedan vibrando mucho después de que el miedo deja de ser literal."
+	"review": "Dylan Southern no convierte el dolor en un truco de susto: usa la aparición del cuervo para darle forma incómoda a una casa que ya no sabe cómo seguir. Benedict Cumberbatch carga el centro sin buscar golpes bajos y David Thewlis aporta una presencia que estira la inquietud sin explicarla de más. Esa cosa con alas avanza con una tristeza espesa, a veces deliberadamente opaca, pero encuentra imágenes que quedan vibrando mucho después de que el miedo deja de ser literal.",
+	"castCharacters": [
+		{
+			"actor": "Benedict Cumberbatch",
+			"character": "Dad",
+			"tmdbMovieId": 1127628,
+			"tmdbPersonId": 71580,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Thewlis",
+			"character": "Crow (voice)",
+			"tmdbMovieId": 1127628,
+			"tmdbPersonId": 11207,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

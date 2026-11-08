@@ -868,6 +868,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																	person.creditedName
 																)}
 															</h3>
+																					{person.character && <p class="movie-detail__person-character">Como {person.character}</p>}
 															{person.profilePath && (
 																<p class="movie-detail__person-badge-row">
 																	<span class="movie-detail__person-flag">Tiene ficha</span>

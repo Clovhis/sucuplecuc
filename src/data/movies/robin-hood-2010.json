@@ -54,5 +54,42 @@
 			"mutiny-on-the-bounty-1935"
 		]
 	},
-	"review": "Ridley Scott arranca con una versión de Robin Hood más interesada en la guerra y la política que en la leyenda conocida. Russell Crowe lo interpreta como un soldado práctico, y Cate Blanchett aporta una Marion con iniciativa propia. La escala visual es imponente y las batallas tienen oficio, aunque la película se dispersa entre una precuela, una aventura medieval y el prólogo de otra historia. Esa ambición le da textura al mundo, pero también demora la llegada del héroe que el título promete. Como aventura histórica tiene momentos vistosos; como origen de Robin Hood, queda a mitad de camino."
+	"review": "Ridley Scott arranca con una versión de Robin Hood más interesada en la guerra y la política que en la leyenda conocida. Russell Crowe lo interpreta como un soldado práctico, y Cate Blanchett aporta una Marion con iniciativa propia. La escala visual es imponente y las batallas tienen oficio, aunque la película se dispersa entre una precuela, una aventura medieval y el prólogo de otra historia. Esa ambición le da textura al mundo, pero también demora la llegada del héroe que el título promete. Como aventura histórica tiene momentos vistosos; como origen de Robin Hood, queda a mitad de camino.",
+	"castCharacters": [
+		{
+			"actor": "Russell Crowe",
+			"character": "Robin Longstride",
+			"tmdbMovieId": 20662,
+			"tmdbPersonId": 934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Marion Loxley",
+			"tmdbMovieId": 20662,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Strong",
+			"character": "Godfrey",
+			"tmdbMovieId": 20662,
+			"tmdbPersonId": 2983,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Oscar Isaac",
+			"character": "Prince John",
+			"tmdbMovieId": 20662,
+			"tmdbPersonId": 25072,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Hurt",
+			"character": "William Marshal",
+			"tmdbMovieId": 20662,
+			"tmdbPersonId": 227,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

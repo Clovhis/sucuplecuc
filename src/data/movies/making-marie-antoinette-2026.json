@@ -51,5 +51,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 86,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Diane Lane",
+			"character": "Eleanor Coppola (voice)",
+			"tmdbMovieId": 1754364,
+			"tmdbPersonId": 2882,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sofia Coppola",
+			"character": "Self",
+			"tmdbMovieId": 1754364,
+			"tmdbPersonId": 1769,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

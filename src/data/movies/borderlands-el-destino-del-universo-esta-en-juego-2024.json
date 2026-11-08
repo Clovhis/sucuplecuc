@@ -55,5 +55,42 @@
 		]
 	},
 	"runtimeMinutes": 102,
-	"review": "Borderlands llega con la energía de una adaptación que quiere resumir un videojuego entero en una sola misión. Cate Blanchett sostiene a Lilith con oficio y el elenco tiene química suficiente para algunos chistes, pero el guion apila criaturas, explicaciones y referencias sin darles ritmo propio. La aventura se deja ver por su color y su reparto, aunque rara vez encuentra una razón cinematográfica para existir más allá de la franquicia."
+	"review": "Borderlands llega con la energía de una adaptación que quiere resumir un videojuego entero en una sola misión. Cate Blanchett sostiene a Lilith con oficio y el elenco tiene química suficiente para algunos chistes, pero el guion apila criaturas, explicaciones y referencias sin darles ritmo propio. La aventura se deja ver por su color y su reparto, aunque rara vez encuentra una razón cinematográfica para existir más allá de la franquicia.",
+	"castCharacters": [
+		{
+			"actor": "Cate Blanchett",
+			"character": "Lilith",
+			"tmdbMovieId": 365177,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Hart",
+			"character": "Roland",
+			"tmdbMovieId": 365177,
+			"tmdbPersonId": 55638,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edgar Ramírez",
+			"character": "Atlas",
+			"tmdbMovieId": 365177,
+			"tmdbPersonId": 25616,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jamie Lee Curtis",
+			"character": "Tannis",
+			"tmdbMovieId": 365177,
+			"tmdbPersonId": 8944,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ariana Greenblatt",
+			"character": "Tiny Tina",
+			"tmdbMovieId": 365177,
+			"tmdbPersonId": 1767250,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

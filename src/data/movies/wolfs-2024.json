@@ -46,5 +46,28 @@
 	"reviewPublishedAt": "2026-02-28",
 	"synopsis": "Dos solucionadores profesionales, acostumbrados a trabajar solos, reciben el encargo de encubrir el mismo incidente durante una noche. Obligados a colaborar, descubren que el problema crece con cada giro y pone a prueba su experiencia.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Margaret's Man",
+			"tmdbMovieId": 877817,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Pam's Man",
+			"tmdbMovieId": 877817,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Austin Abrams",
+			"character": "Kid",
+			"tmdbMovieId": 877817,
+			"tmdbPersonId": 148992,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

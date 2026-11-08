@@ -58,5 +58,42 @@
 		]
 	},
 	"runtimeMinutes": 136,
-	"review": "Peter Jackson apuesta por imágenes de duelo muy grandes, con paisajes imposibles y transiciones que buscan expresar la mirada de Susie desde el más allá. Saoirse Ronan está muy bien y Stanley Tucci vuelve perturbador a su personaje sin apoyarse sólo en gestos obvios. El problema aparece cuando el drama familiar, el policial y la fantasía se empujan entre sí y ninguno termina de respirar. Tiene pasajes hermosos, pero la mezcla queda despareja."
+	"review": "Peter Jackson apuesta por imágenes de duelo muy grandes, con paisajes imposibles y transiciones que buscan expresar la mirada de Susie desde el más allá. Saoirse Ronan está muy bien y Stanley Tucci vuelve perturbador a su personaje sin apoyarse sólo en gestos obvios. El problema aparece cuando el drama familiar, el policial y la fantasía se empujan entre sí y ninguno termina de respirar. Tiene pasajes hermosos, pero la mezcla queda despareja.",
+	"castCharacters": [
+		{
+			"actor": "Saoirse Ronan",
+			"character": "Susie Salmon",
+			"tmdbMovieId": 7980,
+			"tmdbPersonId": 36592,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Jack Salmon",
+			"tmdbMovieId": 7980,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rachel Weisz",
+			"character": "Abigail Salmon",
+			"tmdbMovieId": 7980,
+			"tmdbPersonId": 3293,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Susan Sarandon",
+			"character": "Grandma Lynn",
+			"tmdbMovieId": 7980,
+			"tmdbPersonId": 4038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stanley Tucci",
+			"character": "George Harvey",
+			"tmdbMovieId": 7980,
+			"tmdbPersonId": 2283,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

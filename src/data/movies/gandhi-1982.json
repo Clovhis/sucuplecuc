@@ -58,5 +58,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "GB, IN",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ben Kingsley",
+			"character": "Mahatma Gandhi",
+			"tmdbMovieId": 783,
+			"tmdbPersonId": 2282,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Candice Bergen",
+			"character": "Margaret Bourke-White",
+			"tmdbMovieId": 783,
+			"tmdbPersonId": 11850,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edward Fox",
+			"character": "General Dyer",
+			"tmdbMovieId": 783,
+			"tmdbPersonId": 9126,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

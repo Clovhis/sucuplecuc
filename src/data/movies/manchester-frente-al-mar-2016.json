@@ -67,5 +67,28 @@
 	"releasePlatforms": [
 		"HBO Max"
 	],
-	"runtimeMinutes": 137
+	"runtimeMinutes": 137,
+	"castCharacters": [
+		{
+			"actor": "Casey Affleck",
+			"character": "Lee Chandler",
+			"tmdbMovieId": 334541,
+			"tmdbPersonId": 1893,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Williams",
+			"character": "Randi Chandler",
+			"tmdbMovieId": 334541,
+			"tmdbPersonId": 1812,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kyle Chandler",
+			"character": "Joe Chandler",
+			"tmdbMovieId": 334541,
+			"tmdbPersonId": 3497,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

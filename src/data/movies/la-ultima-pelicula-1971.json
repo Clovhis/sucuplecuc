@@ -52,18 +52,55 @@
 			"forFansOf": "Si te gustan coming-of-age melancólicos, pueblos en retirada y dramas de Peter Bogdanovich.",
 			"notForYouIf": "No es para vos si buscás nostalgia cálida, ritmo acelerado o adolescentes que encuentren respuestas claras."
 		},
-	"becauseYouLiked": [
-		"alice-doesnt-live-here-anymore-1974",
-		"desconocidos-2023"
-	],
-	"related": [
-		"senderos-de-gloria-1957",
-		"el-graduado-1967",
-		"retrato-de-una-dama-1996",
-		"el-ano-que-vivimos-peligrosamente-1982"
-	]
-},
+		"becauseYouLiked": [
+			"alice-doesnt-live-here-anymore-1974",
+			"desconocidos-2023"
+		],
+		"related": [
+			"senderos-de-gloria-1957",
+			"el-graduado-1967",
+			"retrato-de-una-dama-1996",
+			"el-ano-que-vivimos-peligrosamente-1982"
+		]
+	},
 	"review": "Peter Bogdanovich cuenta la adolescencia como una despedida colectiva de un lugar que ya perdió su promesa. El blanco y negro y los espacios abiertos dejan que el deseo circule entre bares, casas y una sala de cine casi vacía. Timothy Bottoms, Jeff Bridges y Cybill Shepherd trabajan una tristeza sin adornos, rodeados de adultos que tampoco saben cómo seguir. El cierre de la sala de cine acompaña el fin de una comunidad, y convierte la adolescencia en una despedida sin ceremonia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Timothy Bottoms",
+			"character": "Sonny Crawford",
+			"tmdbMovieId": 25188,
+			"tmdbPersonId": 19207,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cybill Shepherd",
+			"character": "Jacy Farrow",
+			"tmdbMovieId": 25188,
+			"tmdbPersonId": 1036,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Bridges",
+			"character": "Duane Jackson",
+			"tmdbMovieId": 25188,
+			"tmdbPersonId": 1229,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cloris Leachman",
+			"character": "Ruth Popper",
+			"tmdbMovieId": 25188,
+			"tmdbPersonId": 9599,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ellen Burstyn",
+			"character": "Lois Farrow",
+			"tmdbMovieId": 25188,
+			"tmdbPersonId": 9560,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

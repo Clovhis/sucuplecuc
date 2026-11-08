@@ -64,5 +64,42 @@
 	"releasePlatform": "Apple TV",
 	"country": "US",
 	"releaseDate": "1974-06-20",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jack Nicholson",
+			"character": "J.J. 'Jake' Gittes",
+			"tmdbMovieId": 829,
+			"tmdbPersonId": 514,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Faye Dunaway",
+			"character": "Evelyn Cross Mulwray",
+			"tmdbMovieId": 829,
+			"tmdbPersonId": 6450,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Huston",
+			"character": "Noah Cross",
+			"tmdbMovieId": 829,
+			"tmdbPersonId": 6593,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Perry Lopez",
+			"character": "Lieutenant Lou Escobar",
+			"tmdbMovieId": 829,
+			"tmdbPersonId": 12295,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Burt Young",
+			"character": "Curly",
+			"tmdbMovieId": 829,
+			"tmdbPersonId": 4521,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

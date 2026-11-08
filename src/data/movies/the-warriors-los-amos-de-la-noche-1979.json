@@ -35,27 +35,43 @@
 	},
 	"runtimeMinutes": 94,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "The Warriors (Los amos de la noche) convierte Nueva York en tablero de supervivencia; Walter Hill guía a Michael Beck por una odisea callejera de reglas simples y estilo enorme.",
-		"whatToExpect": "Una banda acusada de un asesinato debe cruzar la ciudad de noche, atravesando territorios rivales, estaciones y alianzas que duran lo que un viaje.",
-		"pace": "Corre de estación en estación con enfrentamientos breves, pausas de orientación y una dirección que nunca pierde el mapa del recorrido.",
-		"intensity": "La amenaza es física y territorial; cada túnel puede esconder otra banda, pero los códigos mantienen al grupo unido bajo presión.",
-		"practicalContext": "Dura 94 minutos y funciona como película de culto compacta, ideal para una noche de acción urbana sin explicaciones largas.",
-		"forFansOf": "Te va a gustar si disfrutás westerns callejeros, estética de pandillas y relatos de fuga donde la ciudad se vuelve personaje.",
-		"notForYouIf": "Quizás no sea para vos si buscás realismo policial, psicologías desarrolladas o una Nueva York menos estilizada y más cotidiana."
+		"tenSecondTake": {
+			"verdict": "The Warriors (Los amos de la noche) convierte Nueva York en tablero de supervivencia; Walter Hill guía a Michael Beck por una odisea callejera de reglas simples y estilo enorme.",
+			"whatToExpect": "Una banda acusada de un asesinato debe cruzar la ciudad de noche, atravesando territorios rivales, estaciones y alianzas que duran lo que un viaje.",
+			"pace": "Corre de estación en estación con enfrentamientos breves, pausas de orientación y una dirección que nunca pierde el mapa del recorrido.",
+			"intensity": "La amenaza es física y territorial; cada túnel puede esconder otra banda, pero los códigos mantienen al grupo unido bajo presión.",
+			"practicalContext": "Dura 94 minutos y funciona como película de culto compacta, ideal para una noche de acción urbana sin explicaciones largas.",
+			"forFansOf": "Te va a gustar si disfrutás westerns callejeros, estética de pandillas y relatos de fuga donde la ciudad se vuelve personaje.",
+			"notForYouIf": "Quizás no sea para vos si buscás realismo policial, psicologías desarrolladas o una Nueva York menos estilizada y más cotidiana."
+		},
+		"becauseYouLiked": [
+			"limite-48-horas-1982",
+			"el-ultimatum-de-bourne-2007"
+		],
+		"related": [
+			"jungla-de-cristal-1988",
+			"bullitt-1968",
+			"the-fast-and-the-furious-2001",
+			"fast-five-2011"
+		]
 	},
-	"becauseYouLiked": [
-		"limite-48-horas-1982",
-		"el-ultimatum-de-bourne-2007"
-	],
-	"related": [
-		"jungla-de-cristal-1988",
-		"bullitt-1968",
-		"the-fast-and-the-furious-2001",
-		"fast-five-2011"
-	]
-},
 	"review": "Walter Hill transforma la noche urbana en una odisea compacta sobre pertenencia, códigos y supervivencia. Los trenes, los túneles y la división por territorios dan al recorrido una estructura de western callejero. Michael Beck y James Remar lideran una película de pulso simple, estética marcada y enorme influencia. El viaje de regreso convierte cada barrio en un obstáculo y cada encuentro en una prueba de lealtad para los Warriors durante toda la noche.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "James Remar",
+			"character": "Ajax",
+			"tmdbMovieId": 11474,
+			"tmdbPersonId": 1736,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Harris",
+			"character": "Cochise",
+			"tmdbMovieId": 11474,
+			"tmdbPersonId": 1058172,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

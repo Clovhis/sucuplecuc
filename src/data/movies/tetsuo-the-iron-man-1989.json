@@ -56,5 +56,21 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Tomorowo Taguchi",
+			"character": "Salaryman",
+			"tmdbMovieId": 41428,
+			"tmdbPersonId": 67091,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Shinya Tsukamoto",
+			"character": "Metal Fetishist",
+			"tmdbMovieId": 41428,
+			"tmdbPersonId": 58608,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

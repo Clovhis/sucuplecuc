@@ -46,5 +46,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Amy Poehler",
+			"character": "Joy (voice)",
+			"tmdbMovieId": 1022789,
+			"tmdbPersonId": 56322,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maya Hawke",
+			"character": "Anxiety (voice)",
+			"tmdbMovieId": 1022789,
+			"tmdbPersonId": 1903874,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kensington Tallman",
+			"character": "Riley (voice)",
+			"tmdbMovieId": 1022789,
+			"tmdbPersonId": 3020876,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

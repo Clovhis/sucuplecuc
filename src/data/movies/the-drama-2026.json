@@ -49,5 +49,35 @@
 	"review": "El drama tiene buena carnada: una pareja a dias de casarse, una revelacion que rompe la confianza y dos actores que saben trabajar la incomodidad. Kristoffer Borgli encuentra momentos filosos cuando deja a Zendaya y Robert Pattinson jugar al desgaste, al reproche elegante y a esa mezcla de deseo con resentimiento que vuelve fea una discusion linda de mirar.\n\nEl problema es que la pelicula no siempre sostiene ese veneno. Hay escenas muy bien actuadas y otras donde el guion parece enamorado de sus propias vueltas, como si la rareza del tono alcanzara para reemplazar desarrollo.\n\nAl final queda una comedia romantica torcida con ideas interesantes, pero menos precisa de lo que promete. Puede rendir si te gustan las relaciones toxicas filmadas con ironia. Si entras esperando un golazo emocional o una bomba de humor negro, se queda bastante a mitad de camino.",
 	"reviewPublishedAt": "2026-04-11",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Zendaya",
+			"character": "Emma",
+			"tmdbMovieId": 1325734,
+			"tmdbPersonId": 505710,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Pattinson",
+			"character": "Charlie",
+			"tmdbMovieId": 1325734,
+			"tmdbPersonId": 11288,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alana Haim",
+			"character": "Rachel",
+			"tmdbMovieId": 1325734,
+			"tmdbPersonId": 1741367,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mamoudou Athie",
+			"character": "Mike",
+			"tmdbMovieId": 1325734,
+			"tmdbPersonId": 1639848,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

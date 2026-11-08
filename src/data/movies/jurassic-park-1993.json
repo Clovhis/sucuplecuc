@@ -63,5 +63,28 @@
 	"synopsis": "El empresario John Hammond invita a un paleontólogo, una paleobotánica y un abogado a revisar su parque de dinosaurios antes de abrirlo al público. Cuando falla la seguridad de Isla Nublar, la visita se convierte en una carrera por sobrevivir entre depredadores que no deberían existir.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sam Neill",
+			"character": "Grant",
+			"tmdbMovieId": 329,
+			"tmdbPersonId": 4783,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Ellie",
+			"tmdbMovieId": 329,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Goldblum",
+			"character": "Malcolm",
+			"tmdbMovieId": 329,
+			"tmdbPersonId": 4785,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

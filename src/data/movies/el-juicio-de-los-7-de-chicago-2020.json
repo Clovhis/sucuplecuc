@@ -55,5 +55,28 @@
 	"releasePlatforms": [
 		"Netflix"
 	],
-	"runtimeMinutes": 129
+	"runtimeMinutes": 129,
+	"castCharacters": [
+		{
+			"actor": "Eddie Redmayne",
+			"character": "Tom Hayden",
+			"tmdbMovieId": 556984,
+			"tmdbPersonId": 37632,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sacha Baron Cohen",
+			"character": "Abbie Hoffman",
+			"tmdbMovieId": 556984,
+			"tmdbPersonId": 6730,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeremy Strong",
+			"character": "Jerry Rubin",
+			"tmdbMovieId": 556984,
+			"tmdbPersonId": 239271,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

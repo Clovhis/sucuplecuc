@@ -60,5 +60,28 @@
 	"reviewPublishedAt": "2026-03-06",
 	"synopsis": "Batman, el teniente Gordon y el fiscal Harvey Dent parecen haber acorralado al crimen organizado de Gotham. La aparición del Joker desata una escalada de violencia y pone a prueba los límites morales de quienes intentan defender la ciudad.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Christian Bale",
+			"character": "Bruce Wayne",
+			"tmdbMovieId": 155,
+			"tmdbPersonId": 3894,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Heath Ledger",
+			"character": "Joker",
+			"tmdbMovieId": 155,
+			"tmdbPersonId": 1810,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Eckhart",
+			"character": "Harvey Dent",
+			"tmdbMovieId": 155,
+			"tmdbPersonId": 6383,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

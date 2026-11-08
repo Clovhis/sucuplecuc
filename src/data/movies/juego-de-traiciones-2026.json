@@ -52,5 +52,21 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 97,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Jack Wolfe",
+			"tmdbMovieId": 1480574,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eva Green",
+			"character": "Nora Wolfe",
+			"tmdbMovieId": 1480574,
+			"tmdbPersonId": 10912,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

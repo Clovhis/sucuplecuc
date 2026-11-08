@@ -34,7 +34,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Taylor Hackford hace del entrenamiento una máquina para desarmar el orgullo de Richard Gere; Debra Winger evita que el romance quede reducido a premio por superar la prueba.",
-			"whatToExpect": "Escuela naval, disciplina, instructor implacable, duelo, deseo y un cadete que debe aprender qué significa comprometerse más allá de la pose.",			"pace": "Alterna rutinas de entrenamiento, romance y pérdidas con ritmo clásico; sabe reservar el estallido emocional para cuando la disciplina ya dejó marcas.",			"intensity": "La presión es física y afectiva, con la exigencia militar enfrentada a una relación que pide sinceridad y no sólo rendimiento.",			"practicalContext": "Con 124 minutos, es un drama romántico de una noche; funciona si aceptás su tono directo y el melodrama de los ochenta.",			"forFansOf": "Para quienes disfrutan romances de formación, Richard Gere, Debra Winger y duelos entre cadete e instructor.",			"notForYouIf": "No es para vos si buscás un entrenamiento realista, un romance sin roles de género marcados o una película que no subraye sus emociones."
+			"whatToExpect": "Escuela naval, disciplina, instructor implacable, duelo, deseo y un cadete que debe aprender qué significa comprometerse más allá de la pose.",
+			"pace": "Alterna rutinas de entrenamiento, romance y pérdidas con ritmo clásico; sabe reservar el estallido emocional para cuando la disciplina ya dejó marcas.",
+			"intensity": "La presión es física y afectiva, con la exigencia militar enfrentada a una relación que pide sinceridad y no sólo rendimiento.",
+			"practicalContext": "Con 124 minutos, es un drama romántico de una noche; funciona si aceptás su tono directo y el melodrama de los ochenta.",
+			"forFansOf": "Para quienes disfrutan romances de formación, Richard Gere, Debra Winger y duelos entre cadete e instructor.",
+			"notForYouIf": "No es para vos si buscás un entrenamiento realista, un romance sin roles de género marcados o una película que no subraye sus emociones."
 		},
 		"becauseYouLiked": [
 			"el-ano-que-vivimos-peligrosamente-1982",
@@ -48,5 +53,35 @@
 		]
 	},
 	"runtimeMinutes": 124,
-	"review": "El entrenamiento militar es el motor visible, pero la película funciona mejor cuando muestra cómo el orgullo se desarma a fuerza de disciplina, deseo y duelo. Richard Gere sostiene a un protagonista que tarda en dejar de actuar para los demás, mientras Debra Winger le da a Paula una firmeza que evita que el romance quede como simple premio. El tono ochentoso puede ser directo hasta el exceso, aunque el duelo entre cadete e instructor conserva una potencia emocional enorme."
+	"review": "El entrenamiento militar es el motor visible, pero la película funciona mejor cuando muestra cómo el orgullo se desarma a fuerza de disciplina, deseo y duelo. Richard Gere sostiene a un protagonista que tarda en dejar de actuar para los demás, mientras Debra Winger le da a Paula una firmeza que evita que el romance quede como simple premio. El tono ochentoso puede ser directo hasta el exceso, aunque el duelo entre cadete e instructor conserva una potencia emocional enorme.",
+	"castCharacters": [
+		{
+			"actor": "Richard Gere",
+			"character": "Zack Mayo",
+			"tmdbMovieId": 2623,
+			"tmdbPersonId": 1205,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Debra Winger",
+			"character": "Paula Pokrifki",
+			"tmdbMovieId": 2623,
+			"tmdbPersonId": 26513,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Louis Gossett Jr.",
+			"character": "Sergeant Emil Foley",
+			"tmdbMovieId": 2623,
+			"tmdbPersonId": 20959,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Keith",
+			"character": "Sid Worley",
+			"tmdbMovieId": 2623,
+			"tmdbPersonId": 18181,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

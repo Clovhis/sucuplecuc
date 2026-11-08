@@ -52,5 +52,28 @@
 	"synopsis": "Lord Voldemort refuerza su control sobre los mundos mágico y muggle: sus mortífagos secuestran al fabricante de varitas Ollivander y destruyen el Puente del Milenio. Con Lucius Malfoy encarcelado en Azkaban, Voldemort elige a su hijo, Draco Malfoy, para llevar a cabo una misión secreta en Hogwarts.",
 	"audienceRating": "+12",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Daniel Radcliffe",
+			"character": "Harry Potter",
+			"tmdbMovieId": 767,
+			"tmdbPersonId": 10980,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rupert Grint",
+			"character": "Ron Weasley",
+			"tmdbMovieId": 767,
+			"tmdbPersonId": 10989,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Watson",
+			"character": "Hermione Granger",
+			"tmdbMovieId": 767,
+			"tmdbPersonId": 10990,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

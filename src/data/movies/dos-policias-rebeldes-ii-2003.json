@@ -57,5 +57,35 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-08-24",
 	"runtimeMinutes": 147,
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Detective Mike Lowrey",
+			"tmdbMovieId": 8961,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Martin Lawrence",
+			"character": "Detective Marcus Burnett",
+			"tmdbMovieId": 8961,
+			"tmdbPersonId": 78029,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jordi Mollà",
+			"character": "Hector Juan Carlos 'Johnny' Tapia",
+			"tmdbMovieId": 8961,
+			"tmdbPersonId": 31384,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gabrielle Union",
+			"character": "Syd",
+			"tmdbMovieId": 8961,
+			"tmdbPersonId": 17773,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -53,5 +53,35 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-08-24",
 	"runtimeMinutes": 128,
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Will Smith",
+			"character": "Genie / Mariner",
+			"tmdbMovieId": 420817,
+			"tmdbPersonId": 2888,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mena Massoud",
+			"character": "Aladdin",
+			"tmdbMovieId": 420817,
+			"tmdbPersonId": 1515478,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Naomi Scott",
+			"character": "Jasmine",
+			"tmdbMovieId": 420817,
+			"tmdbPersonId": 240724,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marwan Kenzari",
+			"character": "Jafar",
+			"tmdbMovieId": 420817,
+			"tmdbPersonId": 935235,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

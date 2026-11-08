@@ -54,5 +54,28 @@
 	"review": "A Nightmare on Elm Street 4 retoma a Freddy cuando una nueva adolescente hereda la capacidad de entrar en los sueños y proteger a sus amigos. Renny Harlin dirige como un espectáculo de pesadillas coloridas, efectos ochentosos y muertes inventivas; Robert Englund está cómodo en el humor negro, aunque eso le quita parte del terror. La protagonista tiene más empuje que varias víctimas de la saga, pero el guion recicla demasiadas reglas. Vale por sus imágenes delirantes y por completar el recorrido de Freddy, no porque recupere el miedo de la original.",
 	"synopsis": "Freddy Krueger vuelve a perseguir en sus sueños a los sobrevivientes de Elm Street. Cuando una joven descubre que puede entrar en las pesadillas ajenas, deberá enfrentar al asesino antes de que alcance a sus amigos.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Robert Englund",
+			"character": "Freddy Krueger",
+			"tmdbMovieId": 10131,
+			"tmdbPersonId": 5139,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rodney Eastman",
+			"character": "Joey",
+			"tmdbMovieId": 10131,
+			"tmdbPersonId": 63916,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Hassel",
+			"character": "Dan",
+			"tmdbMovieId": 10131,
+			"tmdbPersonId": 104275,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -63,5 +63,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ben Affleck",
+			"character": "Tony Mendez",
+			"tmdbMovieId": 68734,
+			"tmdbPersonId": 880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bryan Cranston",
+			"character": "Jack O'Donnell",
+			"tmdbMovieId": 68734,
+			"tmdbPersonId": 17419,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Arkin",
+			"character": "Lester Siegel",
+			"tmdbMovieId": 68734,
+			"tmdbPersonId": 1903,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

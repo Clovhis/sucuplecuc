@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ben Affleck",
+			"character": "Matt Murdock / Daredevil",
+			"tmdbMovieId": 9480,
+			"tmdbPersonId": 880,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Garner",
+			"character": "Elektra",
+			"tmdbMovieId": 9480,
+			"tmdbPersonId": 9278,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Clarke Duncan",
+			"character": "Kingpin / Fisk",
+			"tmdbMovieId": 9480,
+			"tmdbPersonId": 61981,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

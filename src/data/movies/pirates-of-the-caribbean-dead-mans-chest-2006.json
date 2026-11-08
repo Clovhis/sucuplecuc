@@ -58,5 +58,28 @@
 	"synopsis": "La boda de Will Turner y Elizabeth Swann es interrumpida por la Compañía de las Indias Orientales, que exige recuperar la brújula de Jack Sparrow. Jack, además, debe saldar una deuda con Davy Jones antes de que el Kraken lo arrastre al fondo del mar.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Johnny Depp",
+			"character": "Jack Sparrow",
+			"tmdbMovieId": 58,
+			"tmdbPersonId": 85,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Orlando Bloom",
+			"character": "Will Turner",
+			"tmdbMovieId": 58,
+			"tmdbPersonId": 114,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keira Knightley",
+			"character": "Elizabeth Swann",
+			"tmdbMovieId": 58,
+			"tmdbPersonId": 116,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

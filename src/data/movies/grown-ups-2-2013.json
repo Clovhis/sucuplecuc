@@ -60,5 +60,42 @@
 	],
 	"runtimeMinutes": 101,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Lenny Feder",
+			"tmdbMovieId": 109418,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin James",
+			"character": "Eric Lamonsoff",
+			"tmdbMovieId": 109418,
+			"tmdbPersonId": 32895,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Rock",
+			"character": "Kurt McKenzie",
+			"tmdbMovieId": 109418,
+			"tmdbPersonId": 2632,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Spade",
+			"character": "Marcus Higgins",
+			"tmdbMovieId": 109418,
+			"tmdbPersonId": 60950,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Salma Hayek Pinault",
+			"character": "Roxanne Chase-Feder",
+			"tmdbMovieId": 109418,
+			"tmdbPersonId": 3136,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

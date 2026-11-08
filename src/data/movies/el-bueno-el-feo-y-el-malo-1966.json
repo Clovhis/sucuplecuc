@@ -60,5 +60,35 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Clint Eastwood",
+			"character": "Blondie",
+			"tmdbMovieId": 429,
+			"tmdbPersonId": 190,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eli Wallach",
+			"character": "Tuco Ramirez",
+			"tmdbMovieId": 429,
+			"tmdbPersonId": 3265,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lee Van Cleef",
+			"character": "Sentenza / Angel Eyes",
+			"tmdbMovieId": 429,
+			"tmdbPersonId": 4078,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aldo Giuffrè",
+			"character": "Alcoholic Union Captain",
+			"tmdbMovieId": 429,
+			"tmdbPersonId": 5813,
+			"verifiedAt": "2026-11-08"
+		}
 	]
 }

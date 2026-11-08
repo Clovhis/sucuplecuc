@@ -50,5 +50,28 @@
     }
   },
   "review": "El reloj marca el ritmo de esta historia: mientras se acerca el tren, Will Kane cruza el pueblo buscando ayuda y encuentra excusas. Zinnemann hace que la espera pese tanto como el enfrentamiento anunciado; Gary Cooper sostiene el conflicto con miedo y determinación, no con bravura automática. El blanco y negro y las calles vacías transforman un western pequeño en una historia de responsabilidad colectiva. La alegoría política está presente, pero la tensión también funciona en lo concreto: quién aparece cuando hace falta.",
-  "runtimeMinutes": 85
+  "runtimeMinutes": 85,
+  "castCharacters": [
+    {
+      "actor": "Gary Cooper",
+      "character": "Marshal Will Kane",
+      "tmdbMovieId": 288,
+      "tmdbPersonId": 4068,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Grace Kelly",
+      "character": "Amy Fowler Kane",
+      "tmdbMovieId": 288,
+      "tmdbPersonId": 4070,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Katy Jurado",
+      "character": "Helen Ramírez",
+      "tmdbMovieId": 288,
+      "tmdbPersonId": 4069,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

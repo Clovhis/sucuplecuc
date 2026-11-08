@@ -49,5 +49,28 @@
     }
   },
   "review": "Sirk hace que el melodrama crezca alrededor de mujeres a las que la sociedad les ofrece libertades muy distintas. Lana Turner encarna una ambición que ocupa cada vez más espacio, mientras Juanita Moore sostiene a Annie con una calidez que no le quita voluntad ni conflicto. Las hijas heredan tensiones que sus madres no pueden resolver por ellas: una carrera que compite con la intimidad y una identidad racial que el entorno intenta imponer. La puesta colorida amplifica esas emociones hasta volverlas visibles, sin reducirlas a un simple exceso sentimental.",
-  "runtimeMinutes": 125
+  "runtimeMinutes": 125,
+  "castCharacters": [
+    {
+      "actor": "Lana Turner",
+      "character": "Lora Meredith",
+      "tmdbMovieId": 34148,
+      "tmdbPersonId": 29623,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "John Gavin",
+      "character": "Steve Archer",
+      "tmdbMovieId": 34148,
+      "tmdbPersonId": 7304,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Juanita Moore",
+      "character": "Annie Johnson",
+      "tmdbMovieId": 34148,
+      "tmdbPersonId": 35658,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

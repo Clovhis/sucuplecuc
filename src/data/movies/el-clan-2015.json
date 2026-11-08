@@ -38,18 +38,34 @@
 			"forFansOf": "Fans de los policiales basados en hechos reales, de Pablo Trapero y de las historias donde una familia se convierte en una institución corrupta.",
 			"notForYouIf": "Buscás acción, humor negro o un villano explicativo. El clan trabaja desde la frialdad y el horror de lo habitual."
 		},
-	"becauseYouLiked": [
-		"carancho-2010",
-		"el-robo-del-siglo-2020"
-	],
-	"related": [
-		"un-oso-rojo-2002",
-		"el-bonaerense-2002",
-		"nueve-reinas-2000",
-		"lu-pau-2026"
-	]
-},
+		"becauseYouLiked": [
+			"carancho-2010",
+			"el-robo-del-siglo-2020"
+		],
+		"related": [
+			"un-oso-rojo-2002",
+			"el-bonaerense-2002",
+			"nueve-reinas-2000",
+			"lu-pau-2026"
+		]
+	},
 	"synopsis": "A simple vista, los Puccio parecen una familia acomodada de San Isidro durante los primeros años de la democracia. Detrás de esa fachada, Arquímedes organiza secuestros extorsivos desde su propia casa e involucra a sus hijos en una maquinaria de violencia que convive con la rutina doméstica.",
 	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Guillermo Francella",
+			"character": "Arquímedes Puccio",
+			"tmdbMovieId": 352161,
+			"tmdbPersonId": 93650,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Lanzani",
+			"character": "Alejandro Puccio",
+			"tmdbMovieId": 352161,
+			"tmdbPersonId": 1246181,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

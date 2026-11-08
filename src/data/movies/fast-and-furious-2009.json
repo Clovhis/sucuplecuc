@@ -40,19 +40,56 @@
 			"forFansOf": "Fans de Vin Diesel, de Paul Walker y de las secuelas que preparan una transformación de escala para la franquicia.",
 			"notForYouIf": "Buscás carreras de barrio detalladas, personajes con peso o una historia cerrada. Fast & Furious mira más hacia adelante que a lo que cuenta."
 		},
-	"becauseYouLiked": [
-		"fast-five-2011",
-		"el-ultimatum-de-bourne-2007"
-	],
-	"related": [
-		"bullitt-1968",
-		"redada-asesina-the-raid-2011",
-		"jack-reacher-bajo-la-mira-2012",
-		"la-supremacia-de-bourne-2004"
-	]
-},
+		"becauseYouLiked": [
+			"fast-five-2011",
+			"el-ultimatum-de-bourne-2007"
+		],
+		"related": [
+			"bullitt-1968",
+			"redada-asesina-the-raid-2011",
+			"jack-reacher-bajo-la-mira-2012",
+			"la-supremacia-de-bourne-2004"
+		]
+	},
 	"review": "El regreso de Dom y Brian tenía una base atractiva: juntar otra vez a Vin Diesel y Paul Walker y llevarlos a una investigación con cuentas personales pendientes. Justin Lin intenta oscurecer la saga con carreras nocturnas, túneles y un antagonista de cartón, pero el drama de venganza nunca termina de pesar. Las persecuciones tienen algún golpe de energía, aunque la cámara demasiado inquieta vuelve confusa más de una maniobra. Diesel y Walker conservan química, pero alrededor suyo casi nadie tiene algo interesante para hacer. Sirve como pieza de reencuentro y deja acomodado el terreno para lo que vendría; vista sola, es una entrega desganada y bastante olvidable.",
 	"synopsis": "Dom Toretto vuelve a cruzarse con Brian O'Conner en Los Ángeles cuando una pérdida personal lo empuja a buscar venganza. Entre túneles, cargamentos y carreras al borde del desastre, los dos terminan aliándose contra un enemigo común.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-04-23"
+	"reviewPublishedAt": "2026-04-23",
+	"castCharacters": [
+		{
+			"actor": "Vin Diesel",
+			"character": "Dominic Toretto",
+			"tmdbMovieId": 13804,
+			"tmdbPersonId": 12835,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Walker",
+			"character": "Brian O'Conner",
+			"tmdbMovieId": 13804,
+			"tmdbPersonId": 8167,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Rodriguez",
+			"character": "Letty Ortiz",
+			"tmdbMovieId": 13804,
+			"tmdbPersonId": 17647,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jordana Brewster",
+			"character": "Mia Toretto",
+			"tmdbMovieId": 13804,
+			"tmdbPersonId": 22123,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Ortiz",
+			"character": "Ramon Campos",
+			"tmdbMovieId": 13804,
+			"tmdbPersonId": 40543,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

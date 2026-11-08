@@ -59,5 +59,42 @@
 	},
 	"review": "Rebecca Miller cuenta este triángulo amoroso con una ligereza que no borra las contradicciones de sus personajes. Greta Gerwig vuelve simpática a Maggie incluso cuando sus planes se vuelven demasiado calculados, Ethan Hawke encuentra el ridículo y la inseguridad de John, y Julianne Moore se divierte construyendo a Georgette como una mujer brillante, severa y mucho menos fría de lo que quiere parecer. La película salta en el tiempo sin perder el hilo y transforma una cadena de decisiones discutibles en una comedia afectiva, incómoda y bastante humana.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Greta Gerwig",
+			"character": "Maggie Hardin",
+			"tmdbMovieId": 312669,
+			"tmdbPersonId": 45400,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ethan Hawke",
+			"character": "John Harding",
+			"tmdbMovieId": 312669,
+			"tmdbPersonId": 569,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julianne Moore",
+			"character": "Georgette Nørgaard",
+			"tmdbMovieId": 312669,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Hader",
+			"character": "Tony",
+			"tmdbMovieId": 312669,
+			"tmdbPersonId": 19278,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Maya Rudolph",
+			"character": "Felicia",
+			"tmdbMovieId": 312669,
+			"tmdbPersonId": 52792,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

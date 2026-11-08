@@ -30,17 +30,17 @@
 			"forFansOf": "Fans de Pablo Trapero, de los dramas comunitarios y de las historias donde la solidaridad se enfrenta a la violencia y la burocracia.",
 			"notForYouIf": "Buscás una mirada liviana, una trama institucional compleja o un héroe sin contradicciones. Elefante blanco deja la bronca a la vista."
 		},
-	"becauseYouLiked": [
-		"leonera-2008",
-		"carancho-2010"
-	],
-	"related": [
-		"el-clan-2015",
-		"argentina-1985-2022",
-		"el-bonaerense-2002",
-		"el-patron-radiografia-de-un-crimen-2014"
-	]
-},
+		"becauseYouLiked": [
+			"leonera-2008",
+			"carancho-2010"
+		],
+		"related": [
+			"el-clan-2015",
+			"argentina-1985-2022",
+			"el-bonaerense-2002",
+			"el-patron-radiografia-de-un-crimen-2014"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -55,5 +55,21 @@
 		"Netflix"
 	],
 	"country": "AR",
-	"isArgentinian": true
+	"isArgentinian": true,
+	"castCharacters": [
+		{
+			"actor": "Ricardo Darín",
+			"character": "Julián",
+			"tmdbMovieId": 110393,
+			"tmdbPersonId": 69310,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jérémie Renier",
+			"character": "Nicolás",
+			"tmdbMovieId": 110393,
+			"tmdbPersonId": 51325,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

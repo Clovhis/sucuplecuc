@@ -51,5 +51,21 @@
 	"isArgentinian": false,
 	"awards": {
 		"wins": []
-	}
+	},
+	"castCharacters": [
+		{
+			"actor": "Burt Lancaster",
+			"character": "J.J. Hunsecker",
+			"tmdbMovieId": 976,
+			"tmdbPersonId": 13784,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tony Curtis",
+			"character": "Sidney Falco",
+			"tmdbMovieId": 976,
+			"tmdbPersonId": 3150,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

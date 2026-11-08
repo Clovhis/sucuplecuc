@@ -77,5 +77,42 @@
 	"review": "Los miserables apuesta todo al exceso: decorados monumentales, canciones encadenadas y una historia de redención que atraviesa casi dos décadas. Hugh Jackman sostiene a Jean Valjean con una mezcla de cansancio y ternura, mientras Anne Hathaway concentra una emoción devastadora en muy poco tiempo y Russell Crowe le da a Javert una rigidez deliberadamente incómoda. Tom Hooper filma las canciones con una cercanía intensa, aunque esa cámara pegada a los rostros a veces vuelve irregular el ritmo. Cuando el elenco encuentra el tono, el musical tiene una potencia difícil de discutir.",
 	"runtimeMinutes": 158,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Hugh Jackman",
+			"character": "Jean Valjean",
+			"tmdbMovieId": 82695,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Russell Crowe",
+			"character": "Javert",
+			"tmdbMovieId": 82695,
+			"tmdbPersonId": 934,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anne Hathaway",
+			"character": "Fantine",
+			"tmdbMovieId": 82695,
+			"tmdbPersonId": 1813,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amanda Seyfried",
+			"character": "Cosette",
+			"tmdbMovieId": 82695,
+			"tmdbPersonId": 71070,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eddie Redmayne",
+			"character": "Marius Pontmercy",
+			"tmdbMovieId": 82695,
+			"tmdbPersonId": 37632,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

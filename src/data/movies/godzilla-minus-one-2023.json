@@ -63,5 +63,21 @@
 		"Netflix",
 		"Apple TV"
 	],
-	"runtimeMinutes": 125
+	"runtimeMinutes": 125,
+	"castCharacters": [
+		{
+			"actor": "Ryūnosuke Kamiki",
+			"character": "Koichi Shikishima",
+			"tmdbMovieId": 940721,
+			"tmdbPersonId": 225730,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Minami Hamabe",
+			"character": "Noriko Oishi",
+			"tmdbMovieId": 940721,
+			"tmdbPersonId": 1516266,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

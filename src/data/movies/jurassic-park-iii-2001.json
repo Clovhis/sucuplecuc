@@ -52,5 +52,28 @@
 	"synopsis": "El paleontólogo Alan Grant acepta sobrevolar Isla Sorna, aunque la excursión termina en un aterrizaje forzoso. Atrapado entre dinosaurios y junto a una pareja que busca a su hijo desaparecido, deberá encontrar una salida antes de que sea tarde.",
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sam Neill",
+			"character": "Dr. Alan Grant",
+			"tmdbMovieId": 331,
+			"tmdbPersonId": 4783,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William H. Macy",
+			"character": "Paul Kirby",
+			"tmdbMovieId": 331,
+			"tmdbPersonId": 3905,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Téa Leoni",
+			"character": "Amanda Kirby",
+			"tmdbMovieId": 331,
+			"tmdbPersonId": 4939,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

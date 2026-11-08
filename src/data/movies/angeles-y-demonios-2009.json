@@ -53,5 +53,28 @@
 			"la-ventana-indiscreta-1954"
 		]
 	},
-	"review": "Ángeles y demonios entiende que una novela de Dan Brown se adapta mejor como carrera contrarreloj que como tratado de conspiraciones. Ron Howard llena Roma de pasadizos, archivos y plazas reconocibles, y cada pista empuja a la siguiente con una eficacia casi mecánica. Tom Hanks sostiene el conjunto con una versión más seca de Robert Langdon; Ewan McGregor y Stellan Skarsgård le dan al Vaticano el contrapunto de fe, política y urgencia. La explicación final simplifica demasiado el misterio, pero el paseo tiene ritmo y el espectáculo no se cae."
+	"review": "Ángeles y demonios entiende que una novela de Dan Brown se adapta mejor como carrera contrarreloj que como tratado de conspiraciones. Ron Howard llena Roma de pasadizos, archivos y plazas reconocibles, y cada pista empuja a la siguiente con una eficacia casi mecánica. Tom Hanks sostiene el conjunto con una versión más seca de Robert Langdon; Ewan McGregor y Stellan Skarsgård le dan al Vaticano el contrapunto de fe, política y urgencia. La explicación final simplifica demasiado el misterio, pero el paseo tiene ritmo y el espectáculo no se cae.",
+	"castCharacters": [
+		{
+			"actor": "Tom Hanks",
+			"character": "Robert Langdon",
+			"tmdbMovieId": 13448,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ewan McGregor",
+			"character": "Camerlengo Patrick McKenna",
+			"tmdbMovieId": 13448,
+			"tmdbPersonId": 3061,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stellan Skarsgård",
+			"character": "Commander Richter",
+			"tmdbMovieId": 13448,
+			"tmdbPersonId": 1640,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

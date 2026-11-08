@@ -20,7 +20,10 @@
 	"screenshots": [],
 	"trailerYoutubeId": "pK5jYt9QNIY",
 	"releasePlatform": "HBO Max",
-	"releasePlatforms": ["HBO Max", "Apple TV"],
+	"releasePlatforms": [
+		"HBO Max",
+		"Apple TV"
+	],
 	"director": "Spike Jonze",
 	"mainCast": [
 		"Nicolas Cage",
@@ -46,17 +49,54 @@
 			"notForYouIf": "Querés una adaptación fiel, una estructura prolija o un final que no se permita cambiar de género."
 		},
 		"becauseYouLiked": [
-		"como-ser-john-malkovich-1999",
-		"arizona-baby-1987"
-	],
-	"related": [
-		"chicago-2002",
-		"el-gran-lebowski-1998",
-		"roofman-un-buen-ladron-2025",
-		"todo-por-un-sueno-1995"
-	]
-},
+			"como-ser-john-malkovich-1999",
+			"arizona-baby-1987"
+		],
+		"related": [
+			"chicago-2002",
+			"el-gran-lebowski-1998",
+			"roofman-un-buen-ladron-2025",
+			"todo-por-un-sueno-1995"
+		]
+	},
 	"review": "Spike Jonze y Charlie Kaufman hacen de la imposibilidad de adaptar una historia el motor de una comedia sobre el ego. La película se dobla sobre sí misma sin perder el pulso popular, mezclando escritura, naturaleza y persecución. Nicolas Cage juega dos versiones de la inseguridad creativa, con Meryl Streep y Chris Cooper empujando el relato hacia lugares imprevisibles. La película encuentra su humor más afilado al convertir el bloqueo del guionista en el mismo problema que intenta resolver con ingenio.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "Charlie Kaufman / Donald Kaufman",
+			"tmdbMovieId": 2757,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Meryl Streep",
+			"character": "Susan Orlean",
+			"tmdbMovieId": 2757,
+			"tmdbPersonId": 5064,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Cooper",
+			"character": "John Laroche",
+			"tmdbMovieId": 2757,
+			"tmdbPersonId": 2955,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tilda Swinton",
+			"character": "Valerie Thomas",
+			"tmdbMovieId": 2757,
+			"tmdbPersonId": 3063,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jay Tavare",
+			"character": "Matthew Osceola",
+			"tmdbMovieId": 2757,
+			"tmdbPersonId": 29861,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -59,5 +59,42 @@
 	],
 	"runtimeMinutes": 106,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Dave Buznik",
+			"tmdbMovieId": 9506,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Nicholson",
+			"character": "Dr. Buddy Rydell",
+			"tmdbMovieId": 9506,
+			"tmdbPersonId": 514,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marisa Tomei",
+			"character": "Linda",
+			"tmdbMovieId": 9506,
+			"tmdbPersonId": 3141,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Luis Guzmán",
+			"character": "Lou",
+			"tmdbMovieId": 9506,
+			"tmdbPersonId": 40481,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Allen Covert",
+			"character": "Andrew",
+			"tmdbMovieId": 9506,
+			"tmdbPersonId": 20818,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

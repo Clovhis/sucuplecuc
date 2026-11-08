@@ -39,18 +39,41 @@
 			"notForYouIf": "Quizás no sea para vos si necesitás un protagonista noble, una tensión sin humor o una supervivencia menos grotesca."
 		},
 		"becauseYouLiked": [
-		"primate-2026",
-		"the-sixth-sense-1999"
-	],
-	"related": [
-		"jaws-1975",
-		"duel-1971",
-		"infierno-blanco-2012",
-		"boda-sangrienta-2-2026"
-	]
-},
+			"primate-2026",
+			"the-sixth-sense-1999"
+		],
+		"related": [
+			"jaws-1975",
+			"duel-1971",
+			"infierno-blanco-2012",
+			"boda-sangrienta-2-2026"
+		]
+	},
 	"synopsis": "Después de sobrevivir a un accidente aéreo, Linda queda varada en una isla desierta junto a Bradley, su jefe insoportable. Lo que arranca como supervivencia obligada se transforma rápido en una pelea psicológica donde cooperar importa tanto como ver quién quiebra primero.",
 	"audienceRating": "+13",
 	"review": "Send Help arranca como película de supervivencia y enseguida se corre hacia algo bastante más venenoso: el choque entre una mujer harta de que la subestimen y un jefe soberbio que cree que en cualquier contexto va a seguir mandando. Sam Raimi aprovecha esa dinámica para meter humor negro, asco físico y una violencia que aparece cuando la convivencia ya está podrida.\n\nLo mejor está en Rachel McAdams, porque sostiene a Linda sin volverla mártir ni heroína de manual. La película funciona más cuando entiende que la isla no es sólo escenario, sino una máquina para invertir poder, rencor y humillación acumulada. No todo cierra con la misma precisión y alguna vuelta se pasa un poco de rosca, pero el tono enfermo le juega a favor. ESTA BUENA si querés un thriller de supervivencia con mala leche, tensión entre personajes y un Raimi bastante suelto otra vez.",
-	"reviewPublishedAt": "2026-03-05"
+	"reviewPublishedAt": "2026-03-05",
+	"castCharacters": [
+		{
+			"actor": "Rachel McAdams",
+			"character": "Linda Liddle",
+			"tmdbMovieId": 1198994,
+			"tmdbPersonId": 53714,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dylan O'Brien",
+			"character": "Bradley Preston",
+			"tmdbMovieId": 1198994,
+			"tmdbPersonId": 527393,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edyll Ismail",
+			"character": "Zuri",
+			"tmdbMovieId": 1198994,
+			"tmdbPersonId": 4477127,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -38,7 +38,7 @@
 			"forFansOf": "Puede interesarte si disfrutás el cine de Refn, los relatos de crimen casi operáticos y el minimalismo corporal de Ryan Gosling cuando una mirada o una quietud reemplazan una explicación.",
 			"notForYouIf": "Quizás no sea para vos si necesitás protagonistas expresivos, acción frecuente o una moral clara. Su hipnosis visual no compensa la distancia si el ritual te parece puro capricho."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"la-noche-es-nuestra-2007",
 			"el-fuego-de-la-venganza-2004"
 		],
@@ -51,5 +51,21 @@
 	},
 	"review": "Sólo Dios perdona es una película de atmósfera antes que de trama. Nicolas Winding Refn convierte Bangkok en un laberinto rojo y deja que la violencia aparezca como ceremonia, castigo y lenguaje familiar. Gosling trabaja casi sin palabras, una decisión coherente con un personaje bloqueado pero también difícil de sostener durante todo el metraje. Kristin Scott Thomas encuentra el exceso exacto para una madre monstruosa y Vithaya Pansringarm impone una calma sobrenatural. Fascina y distancia en partes iguales.",
 	"runtimeMinutes": 90,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Julian",
+			"tmdbMovieId": 77987,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Burke",
+			"character": "Billy",
+			"tmdbMovieId": 77987,
+			"tmdbPersonId": 52891,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

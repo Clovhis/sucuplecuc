@@ -50,5 +50,35 @@
 		}
 	},
 	"review": "La promesa de silencio del spa dura menos que la primera mala idea del grupo. Relajadas y muy peligrosas pone a Faris, Fisher, Mann y Buteau a pelear con ese mandato de disfrutar unas vacaciones perfectas, y encuentra gracia cuando la amistad trae de vuelta hábitos que ninguna quiere admitir. El choque entre lujo cuidadosamente administrado y conducta descontrolada le da combustible a la comedia. Algunas situaciones estiran demasiado la torpeza para llegar al siguiente remate, pero las cuatro actrices sostienen la complicidad incluso cuando el argumento se queda repitiendo el desastre. Lo mejor surge de cómo se conocen y se provocan.",
-	"runtimeMinutes": 97
+	"runtimeMinutes": 97,
+	"castCharacters": [
+		{
+			"actor": "Anna Faris",
+			"character": "Sophie",
+			"tmdbMovieId": 1341138,
+			"tmdbPersonId": 1772,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Isla Fisher",
+			"character": "Mel",
+			"tmdbMovieId": 1341138,
+			"tmdbPersonId": 52848,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Leslie Mann",
+			"character": "Jane",
+			"tmdbMovieId": 1341138,
+			"tmdbPersonId": 41087,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Buteau",
+			"character": "Coco",
+			"tmdbMovieId": 1341138,
+			"tmdbPersonId": 1475128,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

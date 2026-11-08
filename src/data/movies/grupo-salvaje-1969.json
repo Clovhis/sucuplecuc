@@ -45,17 +45,54 @@
 			"notForYouIf": "Puede no ser para vos si buscás héroes nítidos, violencia estilizada sin consecuencias o un western de ritmo parejo."
 		},
 		"becauseYouLiked": [
-		"el-bueno-el-feo-y-el-malo-1966",
-		"la-patagonia-rebelde-1974"
-	],
-	"related": [
-		"pacto-de-justicia-2003",
-		"dances-with-wolves-1990",
-		"los-colonos-2023",
-		"silverado-1985"
-	]
-},
+			"el-bueno-el-feo-y-el-malo-1966",
+			"la-patagonia-rebelde-1974"
+		],
+		"related": [
+			"pacto-de-justicia-2003",
+			"dances-with-wolves-1990",
+			"los-colonos-2023",
+			"silverado-1985"
+		]
+	},
 	"review": "Sam Peckinpah mira a sus pistoleros con afecto, pero no les concede la ilusión de que todavía controlan su destino. El montaje fragmenta los tiroteos y convierte cada impacto en una suma de decisiones, traiciones y cuerpos que caen. William Holden y Ernest Borgnine sostienen una amistad gastada, más conmovedora cuando deja de fingir que habrá salida. El final no redime a la banda: muestra a hombres aferrados a códigos que el mundo y ellos mismos ya dejaron atrás.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "William Holden",
+			"character": "Pike Bishop",
+			"tmdbMovieId": 576,
+			"tmdbPersonId": 8252,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ernest Borgnine",
+			"character": "Dutch Engstrom",
+			"tmdbMovieId": 576,
+			"tmdbPersonId": 7502,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Ryan",
+			"character": "Deke Thornton",
+			"tmdbMovieId": 576,
+			"tmdbPersonId": 8253,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jaime Sánchez",
+			"character": "Angel",
+			"tmdbMovieId": 576,
+			"tmdbPersonId": 8257,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Warren Oates",
+			"character": "Lyle Gorch",
+			"tmdbMovieId": 576,
+			"tmdbPersonId": 8255,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -62,5 +62,42 @@
 	],
 	"runtimeMinutes": 117,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Danny Maccabee",
+			"tmdbMovieId": 50546,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jennifer Aniston",
+			"character": "Katherine Murphy",
+			"tmdbMovieId": 50546,
+			"tmdbPersonId": 4491,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brooklyn Decker",
+			"character": "Palmer Dodge",
+			"tmdbMovieId": 50546,
+			"tmdbPersonId": 131520,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicole Kidman",
+			"character": "Devlin Adams",
+			"tmdbMovieId": 50546,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nick Swardson",
+			"character": "Eddie Simms",
+			"tmdbMovieId": 50546,
+			"tmdbPersonId": 32907,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

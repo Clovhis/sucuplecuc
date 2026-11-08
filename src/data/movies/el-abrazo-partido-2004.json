@@ -44,18 +44,55 @@
 			"forFansOf": "Fans del cine argentino de personajes, de las comedias familiares con textura barrial y de las historias donde la identidad se arma entre vecinos.",
 			"notForYouIf": "Buscás una trama de investigación cerrada, grandes giros o humor puramente explosivo. La película prefiere la incomodidad cotidiana y el desvío."
 		},
-	"becauseYouLiked": [
-		"las-buenas-intenciones-2019",
-		"silvia-prieto-1999"
-	],
-	"related": [
-		"medianeras-2011",
-		"un-cuento-chino-2011",
-		"el-ciudadano-ilustre-2016",
-		"mi-obra-maestra-2018"
-	]
-},
+		"becauseYouLiked": [
+			"las-buenas-intenciones-2019",
+			"silvia-prieto-1999"
+		],
+		"related": [
+			"medianeras-2011",
+			"un-cuento-chino-2011",
+			"el-ciudadano-ilustre-2016",
+			"mi-obra-maestra-2018"
+		]
+	},
 	"review": "Daniel Burman convierte una búsqueda paterna en una comedia de identidad, inmigración y pertenencia con sensibilidad porteña. La galería funciona como un pequeño mundo de idiomas, negocios y chismes, y la cámara la recorre con energía de comedia coral. Daniel Hendler encuentra el tono justo para un personaje que se hace el canchero mientras evita admitir cuánto le duele estar suspendido. Daniel busca una explicación sobre su familia y encuentra, en cambio, una comunidad de pequeñas rutinas que ya lo estaba sosteniendo.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Daniel Hendler",
+			"character": "Ariel Makaroff",
+			"tmdbMovieId": 49681,
+			"tmdbPersonId": 131867,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adriana Aizemberg",
+			"character": "Sonia Makaroff",
+			"tmdbMovieId": 49681,
+			"tmdbPersonId": 584336,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jorge D'Elía",
+			"character": "Elías Makaroff",
+			"tmdbMovieId": 49681,
+			"tmdbPersonId": 74911,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sergio Boris",
+			"character": "Joseph Makaroff",
+			"tmdbMovieId": 49681,
+			"tmdbPersonId": 934904,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Melina Petriella",
+			"character": "Estela",
+			"tmdbMovieId": 49681,
+			"tmdbPersonId": 1084739,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

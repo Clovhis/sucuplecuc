@@ -55,5 +55,42 @@
 			"el-sastre-de-la-mafia-2022"
 		]
 	},
-	"review": "Andrew Niccol filma el tráfico internacional de armas como una cadena de producción que no se detiene aunque cambien los gobiernos o las banderas. Nicolas Cage interpreta a Yuri Orlov con encanto empresarial y una frialdad que se va volviendo más difícil de justificar, mientras Ethan Hawke le da al perseguidor una obstinación menos vistosa. La película tiene una voz demasiado segura de sus frases y algunos montajes que subrayan lo obvio, pero acierta al mostrar que la culpa no vive sólo en el vendedor visible. Su cinismo sigue siendo incómodo porque nunca deja un lugar limpio para mirar desde afuera."
+	"review": "Andrew Niccol filma el tráfico internacional de armas como una cadena de producción que no se detiene aunque cambien los gobiernos o las banderas. Nicolas Cage interpreta a Yuri Orlov con encanto empresarial y una frialdad que se va volviendo más difícil de justificar, mientras Ethan Hawke le da al perseguidor una obstinación menos vistosa. La película tiene una voz demasiado segura de sus frases y algunos montajes que subrayan lo obvio, pero acierta al mostrar que la culpa no vive sólo en el vendedor visible. Su cinismo sigue siendo incómodo porque nunca deja un lugar limpio para mirar desde afuera.",
+	"castCharacters": [
+		{
+			"actor": "Nicolas Cage",
+			"character": "Yuri Orlov",
+			"tmdbMovieId": 1830,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ethan Hawke",
+			"character": "Jack Valentine",
+			"tmdbMovieId": 1830,
+			"tmdbPersonId": 569,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jared Leto",
+			"character": "Vitaly Orlov",
+			"tmdbMovieId": 1830,
+			"tmdbPersonId": 7499,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bridget Moynahan",
+			"character": "Ava Fontaine Orlov",
+			"tmdbMovieId": 1830,
+			"tmdbPersonId": 18354,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian Holm",
+			"character": "Simeon Weisz",
+			"tmdbMovieId": 1830,
+			"tmdbPersonId": 65,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

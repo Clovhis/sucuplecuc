@@ -49,5 +49,21 @@
       "notForYouIf": "Buscás una biografía rigurosa o un musical de tono más crítico."
     }
   },
-  "review": "Curtiz arma la biografía de Cohan como una función que va y vuelve entre la vida privada y el escenario. Cagney sorprende por la precisión de sus pasos y por cómo hace de la energía una forma de carácter; las canciones no aparecen separadas de la historia, sino como el oficio que le permite al protagonista construir una identidad pública. El patriotismo está presente, pero la película encuentra su fuerza en la disciplina y la inventiva detrás del espectáculo."
+  "review": "Curtiz arma la biografía de Cohan como una función que va y vuelve entre la vida privada y el escenario. Cagney sorprende por la precisión de sus pasos y por cómo hace de la energía una forma de carácter; las canciones no aparecen separadas de la historia, sino como el oficio que le permite al protagonista construir una identidad pública. El patriotismo está presente, pero la película encuentra su fuerza en la disciplina y la inventiva detrás del espectáculo.",
+  "castCharacters": [
+    {
+      "actor": "James Cagney",
+      "character": "George M. Cohan",
+      "tmdbMovieId": 3087,
+      "tmdbPersonId": 5788,
+      "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Joan Leslie",
+      "character": "Mary",
+      "tmdbMovieId": 3087,
+      "tmdbPersonId": 30269,
+      "verifiedAt": "2026-11-08"
+    }
+  ]
 }

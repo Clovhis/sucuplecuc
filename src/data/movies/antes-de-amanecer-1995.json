@@ -51,5 +51,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "AT",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ethan Hawke",
+			"character": "Jesse",
+			"tmdbMovieId": 76,
+			"tmdbPersonId": 569,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Delpy",
+			"character": "Céline",
+			"tmdbMovieId": 76,
+			"tmdbPersonId": 1146,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -44,17 +44,47 @@
 			"notForYouIf": "No es para vos si necesitás emociones explícitas, una trama con cierre tradicional o personajes que expliquen sus motivaciones."
 		},
 		"becauseYouLiked": [
-		"medianeras-2011",
-		"el-abrazo-partido-2004"
-	],
-	"related": [
-		"un-cuento-chino-2011",
-		"el-ciudadano-ilustre-2016",
-		"mi-obra-maestra-2018",
-		"el-cuento-de-las-comadrejas-2019"
-	]
-},
+			"medianeras-2011",
+			"el-abrazo-partido-2004"
+		],
+		"related": [
+			"un-cuento-chino-2011",
+			"el-ciudadano-ilustre-2016",
+			"mi-obra-maestra-2018",
+			"el-cuento-de-las-comadrejas-2019"
+		]
+	},
 	"review": "Martín Rejtman mira la vida urbana como una serie de coincidencias que nadie termina de interpretar. El montaje salta con precisión entre conversaciones secas y conductas absurdas, y encuentra comicidad en la distancia entre lo que se dice y lo que se desea. Rosario Bléfari sostiene el desconcierto con una presencia magnética, sin buscar simpatía ni explicaciones tranquilizadoras. Silvia prueba identidades nuevas con la misma neutralidad con que recibe noticias, y esa calma es el motor de la comedia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Rosario Bléfari",
+			"character": "Silvia Prieto",
+			"tmdbMovieId": 49984,
+			"tmdbPersonId": 1171460,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Valeria Bertuccelli",
+			"character": "Brite",
+			"tmdbMovieId": 49984,
+			"tmdbPersonId": 69311,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Vicentico",
+			"character": "Gabriel Rossi",
+			"tmdbMovieId": 49984,
+			"tmdbPersonId": 1892593,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Susana Pampín",
+			"character": "Marta",
+			"tmdbMovieId": 49984,
+			"tmdbPersonId": 942216,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

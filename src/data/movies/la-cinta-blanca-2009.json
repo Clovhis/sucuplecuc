@@ -62,5 +62,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "AT",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Christian Friedel",
+			"character": "The School Teacher",
+			"tmdbMovieId": 37903,
+			"tmdbPersonId": 71374,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ernst Jacobi",
+			"character": "The School Teacher as an Old Man (voice)",
+			"tmdbMovieId": 37903,
+			"tmdbPersonId": 26498,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

@@ -54,5 +54,42 @@
 			"burning-2018"
 		]
 	},
-	"review": "La mula encuentra una veta más íntima en el Eastwood actor: el protagonista cruza rutas y entregas ilegales mientras descubre que el dinero no recompone por sí solo una vida descuidada. El relato se mueve entre el policial y la elegía, con un ritmo deliberadamente calmo y una interpretación que apuesta al desgaste, la picardía y el arrepentimiento. No todo tiene la misma fuerza, pero la película gana cuando mira al hombre detrás del mito."
+	"review": "La mula encuentra una veta más íntima en el Eastwood actor: el protagonista cruza rutas y entregas ilegales mientras descubre que el dinero no recompone por sí solo una vida descuidada. El relato se mueve entre el policial y la elegía, con un ritmo deliberadamente calmo y una interpretación que apuesta al desgaste, la picardía y el arrepentimiento. No todo tiene la misma fuerza, pero la película gana cuando mira al hombre detrás del mito.",
+	"castCharacters": [
+		{
+			"actor": "Clint Eastwood",
+			"character": "Earl Stone",
+			"tmdbMovieId": 504172,
+			"tmdbPersonId": 190,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bradley Cooper",
+			"character": "Agent Colin Bates",
+			"tmdbMovieId": 504172,
+			"tmdbPersonId": 51329,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laurence Fishburne",
+			"character": "Special Agent in Charge",
+			"tmdbMovieId": 504172,
+			"tmdbPersonId": 2975,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Peña",
+			"character": "Agent Treviño",
+			"tmdbMovieId": 504172,
+			"tmdbPersonId": 454,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dianne Wiest",
+			"character": "Mary",
+			"tmdbMovieId": 504172,
+			"tmdbPersonId": 1902,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

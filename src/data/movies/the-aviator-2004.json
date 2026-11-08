@@ -52,5 +52,42 @@
 		]
 	},
 	"review": "El aviador recorre la etapa en que Howard Hughes produjo películas, diseñó aviones y quedó atrapado en una obsesión cada vez más dura de controlar el mundo y su propia mente. Martin Scorsese convierte el éxito, el lujo y la mugre mental en un espectáculo inquieto, usando color, velocidad y ruido para acompañar el deterioro. Leonardo DiCaprio empuja a Hughes con una energía que nunca se vuelve imitación, y Cate Blanchett encuentra a Katharine Hepburn con carácter propio. Es grandota y algo dispersa, pero su nervio coincide perfectamente con el hombre neurótico que retrata.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Leonardo DiCaprio",
+			"character": "Howard Hughes",
+			"tmdbMovieId": 2567,
+			"tmdbPersonId": 6193,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Katharine Hepburn",
+			"tmdbMovieId": 2567,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Beckinsale",
+			"character": "Ava Gardner",
+			"tmdbMovieId": 2567,
+			"tmdbPersonId": 3967,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John C. Reilly",
+			"character": "Noah Dietrich",
+			"tmdbMovieId": 2567,
+			"tmdbPersonId": 4764,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alec Baldwin",
+			"character": "Juan Trippe",
+			"tmdbMovieId": 2567,
+			"tmdbPersonId": 7447,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

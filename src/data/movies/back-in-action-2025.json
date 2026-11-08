@@ -46,5 +46,28 @@
 	"review": "Back in Action vive casi por completo de ver a Jamie Foxx y Cameron Diaz otra vez juntos. Ellos tienen timing, oficio y algo de picardía para vender la idea de espías jubilados a la fuerza, pero alrededor hay tanta fórmula y tanto chiste automático que la película tarda demasiado en encontrar energía propia.\n\nCuando acelera y deja de explicar, se deja ver. El problema es que casi nunca pasa de eso: hay persecuciones correctas, carisma prestado y poco más. Como entretenimiento liviano acompaña; como regreso con personalidad, queda bastante corta.",
 	"reviewPublishedAt": "2026-02-28",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jamie Foxx",
+			"character": "Matt",
+			"tmdbMovieId": 993710,
+			"tmdbPersonId": 134,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cameron Diaz",
+			"character": "Emily",
+			"tmdbMovieId": 993710,
+			"tmdbPersonId": 6941,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Glenn Close",
+			"character": "Ginny",
+			"tmdbMovieId": 993710,
+			"tmdbPersonId": 515,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

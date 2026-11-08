@@ -32,7 +32,7 @@
 			"forFansOf": "Puede emocionarte si disfrutás historias de superhéroes atravesadas por legado, encuentros multiversales y decisiones que dejan marca, con espacio para la química de Tom Holland y Zendaya.",
 			"notForYouIf": "Quizás no sea para vos si el fan service te saca de la historia, si preferís una aventura sin prólogo de explicaciones o si esperás que cada versión invitada tenga un arco igualmente desarrollado."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"doctor-strange-in-the-multiverse-of-madness-2022",
 			"doctor-strange-2016"
 		],
@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Holland",
+			"character": "Peter Parker / Spider-Man",
+			"tmdbMovieId": 634649,
+			"tmdbPersonId": 1136406,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zendaya",
+			"character": "MJ",
+			"tmdbMovieId": 634649,
+			"tmdbPersonId": 505710,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Benedict Cumberbatch",
+			"character": "Doctor Strange",
+			"tmdbMovieId": 634649,
+			"tmdbPersonId": 71580,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

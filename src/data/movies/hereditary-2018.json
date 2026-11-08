@@ -60,5 +60,21 @@
 		"Apple TV"
 	],
 	"country": "GB",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Toni Collette",
+			"character": "Annie Graham",
+			"tmdbMovieId": 493922,
+			"tmdbPersonId": 3051,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alex Wolff",
+			"character": "Peter Graham",
+			"tmdbMovieId": 493922,
+			"tmdbPersonId": 934281,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

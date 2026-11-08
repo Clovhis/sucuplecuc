@@ -63,5 +63,28 @@
 	"releasePlatforms": [
 		"Prime Video"
 	],
-	"runtimeMinutes": 114
+	"runtimeMinutes": 114,
+	"castCharacters": [
+		{
+			"actor": "Benedict Cumberbatch",
+			"character": "Alan Turing",
+			"tmdbMovieId": 205596,
+			"tmdbPersonId": 71580,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keira Knightley",
+			"character": "Joan Clarke",
+			"tmdbMovieId": 205596,
+			"tmdbPersonId": 116,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matthew Goode",
+			"character": "Hugh Alexander",
+			"tmdbMovieId": 205596,
+			"tmdbPersonId": 1247,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

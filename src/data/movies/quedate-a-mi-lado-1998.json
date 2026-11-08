@@ -8,7 +8,10 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Romance"],
+	"genres": [
+		"Drama",
+		"Romance"
+	],
 	"subgenres": [],
 	"country": "US",
 	"isArgentinian": false,
@@ -17,7 +20,12 @@
 	"trailerYoutubeId": "QNUu1d7i26g",
 	"releasePlatform": "Otras plataformas",
 	"director": "Chris Columbus",
-	"mainCast": ["Susan Sarandon", "Julia Roberts", "Ed Harris", "Jena Malone"],
+	"mainCast": [
+		"Susan Sarandon",
+		"Julia Roberts",
+		"Ed Harris",
+		"Jena Malone"
+	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 5,
 	"runtimeMinutes": 125,
@@ -35,17 +43,47 @@
 			"notForYouIf": "No es la indicada si rechazás golpes bajos, finales preparados para conmover o una puesta que prefiere explicar antes que sugerir."
 		},
 		"becauseYouLiked": [
-		"la-ultima-pelicula-1971",
-		"a-beautiful-mind-2001"
-	],
-	"related": [
-		"desconocidos-2023",
-		"retrato-de-una-dama-1996",
-		"la-pianista-2001",
-		"la-mancha-humana-2003"
-	]
-},
+			"la-ultima-pelicula-1971",
+			"a-beautiful-mind-2001"
+		],
+		"related": [
+			"desconocidos-2023",
+			"retrato-de-una-dama-1996",
+			"la-pianista-2001",
+			"la-mancha-humana-2003"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": "",
-	"review": "Quédate a mi lado se mete en la zona incómoda de una familia que no puede seguir usando los roles de siempre. Chris Columbus sube la emoción con claridad, pero el conflicto funciona porque Susan Sarandon y Julia Roberts no juegan a competir: una representa la historia y la otra el futuro que llega sin pedir permiso. Ed Harris queda en el centro de esa tensión, y Jena Malone aporta una adolescencia que no acepta explicaciones prolijas. Hay golpes bajos y una duración generosa, aunque el drama encuentra momentos sinceros cuando los personajes dejan de defender su lugar."
+	"review": "Quédate a mi lado se mete en la zona incómoda de una familia que no puede seguir usando los roles de siempre. Chris Columbus sube la emoción con claridad, pero el conflicto funciona porque Susan Sarandon y Julia Roberts no juegan a competir: una representa la historia y la otra el futuro que llega sin pedir permiso. Ed Harris queda en el centro de esa tensión, y Jena Malone aporta una adolescencia que no acepta explicaciones prolijas. Hay golpes bajos y una duración generosa, aunque el drama encuentra momentos sinceros cuando los personajes dejan de defender su lugar.",
+	"castCharacters": [
+		{
+			"actor": "Susan Sarandon",
+			"character": "Jackie Harrison",
+			"tmdbMovieId": 9441,
+			"tmdbPersonId": 4038,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julia Roberts",
+			"character": "Isabel Kelly",
+			"tmdbMovieId": 9441,
+			"tmdbPersonId": 1204,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ed Harris",
+			"character": "Luke Harrison",
+			"tmdbMovieId": 9441,
+			"tmdbPersonId": 228,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jena Malone",
+			"character": "Anna Harrison",
+			"tmdbMovieId": 9441,
+			"tmdbPersonId": 20089,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

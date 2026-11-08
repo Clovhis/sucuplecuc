@@ -54,5 +54,42 @@
 			"dia-de-entrenamiento-2001"
 		]
 	},
-	"review": "El dilema de John Q tiene un disparador incómodo y efectivo: cuánto vale una vida cuando el sistema de salud la convierte en una cuenta. Denzel Washington se entrega a esa desesperación sin perder del todo la ternura del padre, y Robert Duvall sabe escuchar sin quedar reducido al policía de turno. Nick Cassavetes subraya bastante, con música y discursos que a veces piden lágrima de más, pero la película conserva tensión porque su bronca de base es reconocible. No es sutil, aunque puede pegar fuerte si entrás en su apuesta emocional."
+	"review": "El dilema de John Q tiene un disparador incómodo y efectivo: cuánto vale una vida cuando el sistema de salud la convierte en una cuenta. Denzel Washington se entrega a esa desesperación sin perder del todo la ternura del padre, y Robert Duvall sabe escuchar sin quedar reducido al policía de turno. Nick Cassavetes subraya bastante, con música y discursos que a veces piden lágrima de más, pero la película conserva tensión porque su bronca de base es reconocible. No es sutil, aunque puede pegar fuerte si entrás en su apuesta emocional.",
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "John Quincy Archibald",
+			"tmdbMovieId": 8470,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Duvall",
+			"character": "Lt. Frank Grimes",
+			"tmdbMovieId": 8470,
+			"tmdbPersonId": 3087,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Woods",
+			"character": "Dr. Raymond Turner",
+			"tmdbMovieId": 8470,
+			"tmdbPersonId": 4512,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kimberly Elise",
+			"character": "Denise Archibald",
+			"tmdbMovieId": 8470,
+			"tmdbPersonId": 55314,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anne Heche",
+			"character": "Rebecca Payne",
+			"tmdbMovieId": 8470,
+			"tmdbPersonId": 8256,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

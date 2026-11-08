@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Tom Holland",
+			"character": "Nathan Drake",
+			"tmdbMovieId": 335787,
+			"tmdbPersonId": 1136406,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Wahlberg",
+			"character": "Victor 'Sully' Sullivan",
+			"tmdbMovieId": 335787,
+			"tmdbPersonId": 13240,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Antonio Banderas",
+			"character": "Santiago Moncada",
+			"tmdbMovieId": 335787,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }

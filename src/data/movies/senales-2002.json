@@ -56,5 +56,21 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 106
+	"runtimeMinutes": 106,
+	"castCharacters": [
+		{
+			"actor": "Mel Gibson",
+			"character": "Graham Hess",
+			"tmdbMovieId": 2675,
+			"tmdbPersonId": 2461,
+			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joaquin Phoenix",
+			"character": "Merrill Hess",
+			"tmdbMovieId": 2675,
+			"tmdbPersonId": 73421,
+			"verifiedAt": "2026-11-08"
+		}
+	]
 }
