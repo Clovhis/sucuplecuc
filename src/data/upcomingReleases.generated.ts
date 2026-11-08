@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-07T10:55:41.309Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-08T11:13:00.948Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Cómo robar un banco",
