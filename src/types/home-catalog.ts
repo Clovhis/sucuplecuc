@@ -7,6 +7,9 @@ export interface HomeMovieRecord {
 	normalizedTitle: string;
 	normalizedOriginalTitle: string;
 	normalizedMeta: string;
+	searchAliases: string;
+	searchDirector: string;
+	searchCast: string;
 	releaseTimestamp: number;
 	recentPremiere: boolean;
 	score: number | null;

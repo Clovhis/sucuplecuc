@@ -1,0 +1,194 @@
+{
+  "method": {
+    "node": "v24.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "nodeTrialsPerSize": 3,
+    "browserTrialsPerEngine": 3,
+    "sourceMovieCount": 2574,
+    "notes": [
+      "Both versions have the same films, scores and credits; the optimized version adds verified aliases.",
+      "Node memory is V8 heapUsed after explicit GC; browser heap is Chromium CDP post-GC, not total process RAM.",
+      "Mobile browsers are emulated, never physical devices.",
+      "Network and images are controlled; local file-snapshot timing is not a mobile connection benchmark.",
+      "10000-record stress repeats actual records with distinct IDs, not unique vocabulary."
+    ]
+  },
+  "inputs": {
+    "beforeEngineSha256": "67cb4f0b62fa4d400ca5a4cccf70d7beba1bf03ff1573a4b7123c3a387cfdcc7",
+    "afterEngineSha256": "749c36c6bfd2966502e59c980f4707db153813c112ebffaa06dcc9ba040e7554",
+    "beforeIndexSha256": "10ec2fd8366ced819b38fc95afc5ee47af0ca341c59e0d87f4b174bb4a5a1b72",
+    "afterIndexSha256": "03b560bd1b90a32988fe834e5230209911ab7241d861e0a29021c04a0bb3cb5d"
+  },
+  "payload": {
+    "rawBytes": {
+      "before": 3503381,
+      "after": 2390869,
+      "reductionPercent": 31.75538144438187
+    },
+    "gzipBytes": {
+      "before": 764201,
+      "after": 664059,
+      "reductionPercent": 13.104144066809647
+    },
+    "brotliBytes": {
+      "before": 532224,
+      "after": 481372,
+      "reductionPercent": 9.554623617123617
+    }
+  },
+  "engine": [
+    {
+      "size": 2574,
+      "initializationMs": {
+        "before": 242.2529,
+        "after": 196.15239999999997,
+        "reductionPercent": 19.02990634993432
+      },
+      "engineHeapBytes": {
+        "before": 17135848,
+        "after": 11536112,
+        "reductionPercent": 32.67848781104968
+      },
+      "dataHeapBytes": {
+        "before": 11920344,
+        "after": 4662592,
+        "reductionPercent": 60.8854241119216
+      },
+      "totalHeapBytes": {
+        "before": 29056632,
+        "after": 16198704,
+        "reductionPercent": 44.25126766240492
+      },
+      "medianQueryMs": {
+        "before": 0.47175000000004275,
+        "after": 0.313350000000014,
+        "reductionPercent": 33.57710651828604
+      }
+    },
+    {
+      "size": 10000,
+      "initializationMs": {
+        "before": 869.1765,
+        "after": 801.4907,
+        "reductionPercent": 7.787348139301981
+      },
+      "engineHeapBytes": {
+        "before": 39184672,
+        "after": 18528384,
+        "reductionPercent": 52.71522497368359
+      },
+      "dataHeapBytes": {
+        "before": 13822840,
+        "after": 6683256,
+        "reductionPercent": 51.650630405907904
+      },
+      "totalHeapBytes": {
+        "before": 53006872,
+        "after": 25211592,
+        "reductionPercent": 52.43712551082056
+      },
+      "medianQueryMs": {
+        "before": 0.9981500000001233,
+        "after": 1.091399999999794,
+        "reductionPercent": -9.342283223930195
+      }
+    }
+  ],
+  "browser": [
+    {
+      "engine": "chromium",
+      "readyMs": {
+        "before": 432.70000000298023,
+        "after": 357,
+        "reductionPercent": 17.494800093011058
+      },
+      "heapBytes": {
+        "before": 18489996,
+        "after": 12105732,
+        "reductionPercent": 34.528206496096594
+      },
+      "initialJavaScriptBytes": {
+        "before": 62960,
+        "after": 68566,
+        "reductionPercent": -8.904066073697585
+      },
+      "retainedInlineIndexChars": {
+        "before": 3483884,
+        "after": 0,
+        "reductionPercent": 100
+      },
+      "pageErrorsBefore": [],
+      "pageErrorsAfter": []
+    },
+    {
+      "engine": "webkit",
+      "readyMs": {
+        "before": 547,
+        "after": 511,
+        "reductionPercent": 6.581352833638026
+      },
+      "heapBytes": null,
+      "initialJavaScriptBytes": {
+        "before": 1372,
+        "after": 1372,
+        "reductionPercent": 0
+      },
+      "retainedInlineIndexChars": {
+        "before": 3483884,
+        "after": 0,
+        "reductionPercent": 100
+      },
+      "pageErrorsBefore": [],
+      "pageErrorsAfter": []
+    }
+  ],
+  "acceptance": {
+    "total": 107,
+    "passedBefore": 68,
+    "passedAfter": 107,
+    "failedBefore": 39,
+    "failedAfter": 0,
+    "fixed": [
+      "Андрей Рублёв",
+      "Batman la película",
+      "Boyhood: Momentos de una Vida",
+      "Cabalgata",
+      "Una pareja despareja",
+      "Phillip Morris ¡Te quiero!",
+      "The Earrings of Madame de...",
+      "El camino de los sueños",
+      "Actividad paranormal",
+      "El dormilón",
+      "Neon Genesis Evangelion: The End of Evangelion",
+      "新世紀エヴァンゲリオン劇場版 Air／まごころを、君に",
+      "WALL·E: Batallón de limpieza",
+      "一一",
+      "de los 80 antes de 2000",
+      "antes de 2000 de los 80",
+      "más de 8 puntos y al menos 7 puntos",
+      "menos de 8 puntos y hasta 9 puntos",
+      "El resplandor",
+      "resplndor",
+      "El padrino",
+      "Sueños de libertad",
+      "Cadena perpetua",
+      "Volver al futuro",
+      "Volver al futuro II",
+      "El viaje de Chihiro",
+      "Tiempos violentos",
+      "紅の豚",
+      "パプリカ",
+      "\"El resplandor\"",
+      "películas de Steven Spielberg",
+      "Alien",
+      "actor Max von Sydow",
+      "terror de los ochenta",
+      "año 1984",
+      "terror sin gore",
+      "terror sin Netflix",
+      "terror sin gore en Max",
+      "不存在的電影"
+    ]
+  }
+}

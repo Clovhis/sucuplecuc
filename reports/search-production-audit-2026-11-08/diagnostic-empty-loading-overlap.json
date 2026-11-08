@@ -1,0 +1,272 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\WebsitePeliculas\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/intelligent-search.spec.ts",
+      "--grep",
+      "pending loading row",
+      "--project=desktop-firefox",
+      "--workers=1",
+      "--retries=0",
+      "--output=.astro/search-production-empty-before",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\WebsitePeliculas\\playwright.config.ts",
+    "rootDir": "C:/WebsitePeliculas/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-empty-before",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-chromium",
+        "name": "desktop-chromium",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-empty-before",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-firefox",
+        "name": "desktop-firefox",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-empty-before",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-webkit",
+        "name": "desktop-webkit",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-empty-before",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-empty-before",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-webkit",
+        "name": "mobile-webkit",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\WebsitePeliculas\\.astro\\search-production-empty-before",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop-firefox",
+        "testDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "snapshotDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:43218",
+          "screenshot": "only-on-failure",
+          "trace": "on-first-retry",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-firefox"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node ./scripts/preview-e2e.mjs --host 127.0.0.1 --port 43218",
+      "url": "http://127.0.0.1:43218",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "intelligent-search.spec.ts",
+      "file": "intelligent-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "an empty result never exposes its recovery action beneath a pending loading row",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2058,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"true\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"true\"\u001b[39m\n    at C:\\WebsitePeliculas\\tests\\e2e\\intelligent-search.spec.ts:73:80",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\intelligent-search.spec.ts",
+                      "column": 80,
+                      "line": 73
+                    },
+                    "snippet": " \u001b[90m 71 |\u001b[39m \t\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-movie-search-root]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'data-home-catalog-ready'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m \t\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Quitar filtros manuales'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m \texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'html'\u001b[39m)\u001b[33m.\u001b[39mgetAttribute(\u001b[32m'data-unstable-empty-result'\u001b[39m))\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Quitar filtros manuales'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 75 |\u001b[39m \t\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(cards)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'data-movie-url'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m/the-shining-1980/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\intelligent-search.spec.ts",
+                        "column": 80,
+                        "line": 73
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"true\"\u001b[39m\n\n  71 | \tawait expect(page.locator('[data-movie-search-root]')).toHaveAttribute('data-home-catalog-ready', 'true');\n  72 | \tawait expect(page.getByRole('button', { name: 'Quitar filtros manuales', exact: true })).toBeVisible();\n> 73 | \texpect(await page.locator('html').getAttribute('data-unstable-empty-result')).toBeNull();\n     | \t                                                                              ^\n  74 | \tawait page.getByRole('button', { name: 'Quitar filtros manuales', exact: true }).click();\n  75 | \tawait expect(page.locator(cards).first()).toHaveAttribute('data-movie-url', /the-shining-1980/);\n  76 | });\n    at C:\\WebsitePeliculas\\tests\\e2e\\intelligent-search.spec.ts:73:80"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T13:00:07.877Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-empty-before\\intelligent-search-an-empt-a256f-neath-a-pending-loading-row-desktop-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-empty-before\\intelligent-search-an-empt-a256f-neath-a-pending-loading-row-desktop-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-empty-before\\intelligent-search-an-empt-a256f-neath-a-pending-loading-row-desktop-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\intelligent-search.spec.ts",
+                    "column": 80,
+                    "line": 73
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bb4fcdc412cded03ad0b-a8ae3629c948208967e1",
+          "file": "intelligent-search.spec.ts",
+          "line": 59,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T13:00:07.448Z",
+    "duration": 3240.776,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

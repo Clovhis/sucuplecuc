@@ -1,0 +1,21 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const folder=process.argv[2]??'reports/search-optimization-2026-11-07';
+const read=async(name)=>JSON.parse(await readFile(`${folder}/${name}.json`,'utf8'));
+const [before,after,browserBefore,browserAfter,queriesBefore,queriesAfter]=await Promise.all(['engine-before','engine-after','browser-before','browser-after','queries-before','queries-after'].map(read));
+if(before.node!==after.node||before.platform!==after.platform||before.arch!==after.arch||before.scenarios.some((row)=>!after.scenarios.some((current)=>current.size===row.size)))throw new Error('Use the same Node version, platform and catalog sizes for a comparable before/after run.');
+const median=(values)=>{const sorted=values.slice().sort((a,b)=>a-b);return sorted[Math.floor(sorted.length/2)];};
+const change=(oldValue,newValue)=>({before:oldValue,after:newValue,reductionPercent:oldValue?100*(oldValue-newValue)/oldValue:null});
+const engine=before.scenarios.map((old)=>{
+	const current=after.scenarios.find((row)=>row.size===old.size);
+	return {size:old.size,initializationMs:change(old.initializationMs,current.initializationMs),engineHeapBytes:change(old.engineHeapBytes,current.engineHeapBytes),dataHeapBytes:change(old.dataHeapBytes,current.dataHeapBytes),totalHeapBytes:change(old.totalHeapBytes,current.totalHeapBytes),medianQueryMs:change(median(old.queries.map((row)=>row.medianMs)),median(current.queries.map((row)=>row.medianMs)))};
+});
+const browser=['chromium','webkit'].map((name)=>{
+	const previous=browserBefore.scenarios.filter((row)=>row.engine===name),current=browserAfter.scenarios.filter((row)=>row.engine===name);
+	const javaScriptBytes=(row)=>row.initial.resources.filter((resource)=>resource.name.endsWith('.js')).reduce((total,resource)=>total+resource.decodedBytes,0);
+	return {engine:name,readyMs:change(median(previous.map((row)=>row.initial.readyMs)),median(current.map((row)=>row.initial.readyMs))),heapBytes:name==='chromium'?change(median(previous.map((row)=>row.heapBytes)),median(current.map((row)=>row.heapBytes))):null,initialJavaScriptBytes:change(median(previous.map(javaScriptBytes)),median(current.map(javaScriptBytes))),retainedInlineIndexChars:change(median(previous.map((row)=>row.initial.inlineIndexChars)),median(current.map((row)=>row.initial.inlineIndexChars))),pageErrorsBefore:previous.flatMap((row)=>row.errors),pageErrorsAfter:current.flatMap((row)=>row.errors)};
+});
+const hash=async(file)=>createHash('sha256').update(await readFile(file)).digest('hex');
+const report={method:{node:before.node,platform:before.platform,arch:before.arch,nodeTrialsPerSize:before.trialsPerSize,browserTrialsPerEngine:3,sourceMovieCount:before.scenarios[0].size,notes:['Both versions have the same films, scores and credits; the optimized version adds verified aliases.','Node memory is V8 heapUsed after explicit GC; browser heap is Chromium CDP post-GC, not total process RAM.','Mobile browsers are emulated, never physical devices.','Network and images are controlled; local file-snapshot timing is not a mobile connection benchmark.','10000-record stress repeats actual records with distinct IDs, not unique vocabulary.']},inputs:{beforeEngineSha256:await hash('.astro/search-baseline/src/lib/movie-search.ts'),afterEngineSha256:await hash('src/lib/movie-search.ts'),beforeIndexSha256:await hash('.astro/search-baseline/search-index.json'),afterIndexSha256:await hash('dist/search-index-v2.json')},payload:{rawBytes:change(before.rawBytes,after.rawBytes),gzipBytes:change(before.gzipBytes,after.gzipBytes),brotliBytes:change(before.brotliBytes,after.brotliBytes)},engine,browser,acceptance:{total:queriesAfter.total,passedBefore:queriesBefore.passed,passedAfter:queriesAfter.passed,failedBefore:queriesBefore.failed,failedAfter:queriesAfter.failed,fixed:queriesBefore.cases.filter((row)=>!row.passed&&queriesAfter.cases.some((current)=>current.query===row.query&&current.passed)).map((row)=>row.query)}};
+await writeFile(`${folder}/comparison.json`,JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({payload:report.payload,engine:report.engine,browser:report.browser,acceptance:{...report.acceptance,fixed:report.acceptance.fixed.length}},null,2));

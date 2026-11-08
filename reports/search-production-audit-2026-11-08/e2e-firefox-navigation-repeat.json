@@ -1,0 +1,525 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\WebsitePeliculas\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/site-navigation.spec.ts",
+      "--grep",
+      "news archive and section state",
+      "--project=desktop-firefox",
+      "--workers=1",
+      "--retries=0",
+      "--repeat-each=5",
+      "--output=.astro/search-production-firefox-navigation-repeat",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\WebsitePeliculas\\playwright.config.ts",
+    "rootDir": "C:/WebsitePeliculas/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-firefox-navigation-repeat",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-chromium",
+        "name": "desktop-chromium",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-firefox-navigation-repeat",
+        "repeatEach": 5,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-firefox",
+        "name": "desktop-firefox",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-firefox-navigation-repeat",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-webkit",
+        "name": "desktop-webkit",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-firefox-navigation-repeat",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-firefox-navigation-repeat",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-webkit",
+        "name": "mobile-webkit",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat",
+        "repeatEach": 5,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop-firefox",
+        "testDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "snapshotDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:43218",
+          "screenshot": "only-on-failure",
+          "trace": "on-first-retry",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-firefox"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node ./scripts/preview-e2e.mjs --host 127.0.0.1 --port 43218",
+      "url": "http://127.0.0.1:43218",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "site-navigation.spec.ts",
+      "file": "site-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "news archive and section state remain available on inner pages",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3713,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                      "column": 18,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/editorial/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Editorial CinePosta'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m   expect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m test(\u001b[32m'section anchors land on the content and preserve an active catalog search'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                        "column": 18,
+                        "line": 47
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  45 |   await expect(page).toHaveURL('/editorial/');\n  46 |   await expect(page.getByRole('heading', { name: 'Editorial CinePosta', exact: true })).toBeVisible();\n> 47 |   expect(errors).toEqual([]);\n     |                  ^\n  48 | });\n  49 |\n  50 | test('section anchors land on the content and preserve an active catalog search', async ({ page }) => {\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:29:40.286Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                    "column": 18,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3397,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                      "column": 18,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/editorial/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Editorial CinePosta'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m   expect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m test(\u001b[32m'section anchors land on the content and preserve an active catalog search'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                        "column": 18,
+                        "line": 47
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  45 |   await expect(page).toHaveURL('/editorial/');\n  46 |   await expect(page.getByRole('heading', { name: 'Editorial CinePosta', exact: true })).toBeVisible();\n> 47 |   expect(errors).toEqual([]);\n     |                  ^\n  48 | });\n  49 |\n  50 | test('section anchors land on the content and preserve an active catalog search', async ({ page }) => {\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:29:44.994Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat1\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                    "column": 18,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3589,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                      "column": 18,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/editorial/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Editorial CinePosta'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m   expect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m test(\u001b[32m'section anchors land on the content and preserve an active catalog search'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                        "column": 18,
+                        "line": 47
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  45 |   await expect(page).toHaveURL('/editorial/');\n  46 |   await expect(page.getByRole('heading', { name: 'Editorial CinePosta', exact: true })).toBeVisible();\n> 47 |   expect(errors).toEqual([]);\n     |                  ^\n  48 | });\n  49 |\n  50 | test('section anchors land on the content and preserve an active catalog search', async ({ page }) => {\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:29:49.379Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat2\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                    "column": 18,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3388,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                      "column": 18,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/editorial/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Editorial CinePosta'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m   expect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m test(\u001b[32m'section anchors land on the content and preserve an active catalog search'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                        "column": 18,
+                        "line": 47
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  45 |   await expect(page).toHaveURL('/editorial/');\n  46 |   await expect(page.getByRole('heading', { name: 'Editorial CinePosta', exact: true })).toBeVisible();\n> 47 |   expect(errors).toEqual([]);\n     |                  ^\n  48 | });\n  49 |\n  50 | test('section anchors land on the content and preserve an active catalog search', async ({ page }) => {\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:29:53.974Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat3\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat3\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat3\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                    "column": 18,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3767,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                      "column": 18,
+                      "line": 47
+                    },
+                    "snippet": " \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/editorial/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Editorial CinePosta'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m   expect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m\n \u001b[90m 50 |\u001b[39m test(\u001b[32m'section anchors land on the content and preserve an active catalog search'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                        "column": 18,
+                        "line": 47
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-community-anon-auth\\\" immediately failed\",\u001b[39m\n\u001b[31m+   \"Acquiring an exclusive Navigator LockManager lock \\\"lock:cineposta-trivia-auth-v1\\\" immediately failed\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  45 |   await expect(page).toHaveURL('/editorial/');\n  46 |   await expect(page.getByRole('heading', { name: 'Editorial CinePosta', exact: true })).toBeVisible();\n> 47 |   expect(errors).toEqual([]);\n     |                  ^\n  48 | });\n  49 |\n  50 | test('section anchors land on the content and preserve an active catalog search', async ({ page }) => {\n    at C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts:47:18"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:29:58.423Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat4\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat4\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-firefox-navigation-repeat\\site-navigation-news-archi-08db4-in-available-on-inner-pages-desktop-firefox-repeat4\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\site-navigation.spec.ts",
+                    "column": 18,
+                    "line": 47
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d95b970bb2013588c70c-c2518f9bed13884af4b3",
+          "file": "site-navigation.spec.ts",
+          "line": 33,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T12:29:39.931Z",
+    "duration": 22929.375,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

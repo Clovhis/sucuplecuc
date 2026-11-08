@@ -1,0 +1,341 @@
+{
+  "checkedAt": "2026-11-08",
+  "reviewed": 23,
+  "aliasesAdded": 16,
+  "moviesWithAdditionalAliases": 14,
+  "sourceConflictsAreNotAutomaticMatches": true,
+  "canonicalMoviesUnchanged": true,
+  "resolutions": [
+    {
+      "slug": "anastasia-1997",
+      "canonicalYear": 1997,
+      "status": "reviewed-no-additional-alias",
+      "added": [],
+      "evidence": [
+        "https://tv.apple.com/ar/movie/anastasia/umc.cmc.4k2h3ylseetmybrpwnck2fg2e"
+      ],
+      "decision": "Apple AR confirms 1997, Don Bluth/Gary Goldman, Meg Ryan and John Cusack. Reject the 1997 Diane Eskenazi/Sony Wonder homonym. No additional title confirmed."
+    },
+    {
+      "slug": "andrei-rublev-1966",
+      "canonicalYear": 1966,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "Андрей Рублёв",
+          "region": "US",
+          "source": "https://www.justwatch.com/us/movie/andrei-rublev",
+          "kind": "original"
+        }
+      ],
+      "evidence": [
+        "https://www.justwatch.com/us/movie/andrei-rublev"
+      ],
+      "decision": "US search found the same 1966 title; original Cyrillic comes from the same Movie node. No invented Spanish transliteration."
+    },
+    {
+      "slug": "batman-1966",
+      "canonicalYear": 1966,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "Batman la película",
+          "region": "AR",
+          "source": "https://tv.apple.com/ar/movie/batman-la-pelicula/umc.cmc.49ment6wl42nyxcyxge1p9xv7"
+        }
+      ],
+      "evidence": [
+        "https://tv.apple.com/ar/movie/batman-la-pelicula/umc.cmc.49ment6wl42nyxcyxge1p9xv7"
+      ],
+      "decision": "Apple AR: 1966, Leslie H. Martinson, Adam West/Burt Ward; excludes later Batman films."
+    },
+    {
+      "slug": "boyhood-2014",
+      "canonicalYear": 2014,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "Boyhood: Momentos de una Vida",
+          "region": "AR",
+          "source": "https://tv.apple.com/ar/movie/boyhood-momentos-de-una-vida/umc.cmc.4axgvzn6bs6yn40r5z8sn6t2e"
+        }
+      ],
+      "evidence": [
+        "https://m.cinesargentinos.com.ar/pelicula/5548-boyhood/",
+        "https://tv.apple.com/ar/movie/boyhood-momentos-de-una-vida/umc.cmc.4axgvzn6bs6yn40r5z8sn6t2e"
+      ],
+      "decision": "Reject JustWatch candidate tm153755: its returned original is Thời Thơ Ấu and year 2023. Apple AR identifies Linklater, Arquette, Hawke and Coltrane, with 2014 copyright; its digital release field is 2015. Cines Argentinos confirms the same film in October 2014. Keep canonical 2014."
+    },
+    {
+      "slug": "broadway-danny-rose-1984",
+      "canonicalYear": 1984,
+      "status": "reviewed-no-additional-alias",
+      "added": [],
+      "evidence": [
+        "https://www.justwatch.com/us/movie/broadway-danny-rose"
+      ],
+      "decision": "US metadata matches the original title and 1984 exactly; no new regional title with evidence."
+    },
+    {
+      "slug": "cavalcade-1933",
+      "canonicalYear": 1933,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "Cabalgata",
+          "region": "ES",
+          "source": "https://www.justwatch.com/es/pelicula/cabalgata"
+        }
+      ],
+      "evidence": [
+        "https://www.justwatch.com/es/pelicula/cabalgata"
+      ],
+      "decision": "Same Movie node, exact original Cavalcade and 1933. ES metadata is explicitly Spanish-market provenance, not a claim about Argentine distribution."
+    },
+    {
+      "slug": "grey-gardens-1975",
+      "canonicalYear": 1975,
+      "status": "reviewed-no-additional-alias",
+      "added": [],
+      "evidence": [
+        "https://www.criterion.com/films/664"
+      ],
+      "decision": "Criterion Film Info confirms the Maysles documentary in 1975; JustWatch returns 1976 and a different 2009 remake. No localized alias added."
+    },
+    {
+      "slug": "hoop-dreams-1994",
+      "canonicalYear": 1994,
+      "status": "reviewed-no-additional-alias",
+      "added": [],
+      "evidence": [
+        "https://www.justwatch.com/us/movie/hoop-dreams"
+      ],
+      "decision": "US metadata matches Hoop Dreams and 1994; reject same-year The Hudsucker Proxy / El gran salto. No new regional title confirmed."
+    },
+    {
+      "slug": "i-love-you-phillip-morris-2009",
+      "canonicalYear": 2009,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "Una pareja despareja",
+          "region": "AR",
+          "source": "https://www.cinesargentinos.com.ar/pelicula/3341-una-pareja-despareja/"
+        },
+        {
+          "title": "Phillip Morris ¡Te quiero!",
+          "region": "ES",
+          "source": "https://www.justwatch.com/es/pelicula/phillip-morris-te-quiero"
+        }
+      ],
+      "evidence": [
+        "https://www.cinesargentinos.com.ar/pelicula/3341-una-pareja-despareja/",
+        "https://www.justwatch.com/es/pelicula/phillip-morris-te-quiero"
+      ],
+      "decision": "Cines Argentinos directly links original title, Ficarra/Requa and Carrey/McGregor. 2010 is Argentine theatrical release, distinct from canonical original 2009. Reject Skiptrace (also called Una pareja despareja) and I Love You Man/Beth Cooper."
+    },
+    {
+      "slug": "jeanne-dielman-23-quai-du-commerce-1080-bruxelles-1975",
+      "canonicalYear": 1975,
+      "status": "reviewed-no-additional-alias",
+      "added": [],
+      "evidence": [
+        "https://www.criterion.com/films/302"
+      ],
+      "decision": "Criterion confirms Chantal Akerman and original 1975. JustWatch uses 1976; comma-only variants already normalize to the canonical title, no extra alias needed."
+    },
+    {
+      "slug": "latalante-1934",
+      "canonicalYear": 1934,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "La Atalante",
+          "region": "ES",
+          "source": "https://www.justwatch.com/es/pelicula/latalante"
+        }
+      ],
+      "evidence": [
+        "https://www.justwatch.com/es/pelicula/latalante"
+      ],
+      "decision": "Exact L'Atalante and 1934 on the same Movie node. ES provenance preserved."
+    },
+    {
+      "slug": "madame-de-1953",
+      "canonicalYear": 1953,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "The Earrings of Madame de...",
+          "region": "US",
+          "source": "https://www.justwatch.com/us/movie/the-earrings-of-madame-de"
+        }
+      ],
+      "evidence": [
+        "https://www.justwatch.com/us/movie/the-earrings-of-madame-de"
+      ],
+      "decision": "Same Movie node, original Madame de… and 1953. Typography-only ellipsis difference; no change to canonical year/title."
+    },
+    {
+      "slug": "meshes-of-the-afternoon-1943",
+      "canonicalYear": 1943,
+      "status": "reviewed-no-additional-alias",
+      "added": [],
+      "evidence": [
+        "https://www.justwatch.com/us/movie/meshes-of-the-afternoon"
+      ],
+      "decision": "Exact original and 1943 confirmed. Localized Un falso despertar lacks an AR/ES public fullPath in the response, so it is not added."
+    },
+    {
+      "slug": "mulholland-drive-2001",
+      "canonicalYear": 2001,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "El camino de los sueños",
+          "region": "AR",
+          "source": "https://www.cinesargentinos.com.ar/pelicula/995-el-camino-de-los-suenos/"
+        }
+      ],
+      "evidence": [
+        "https://www.cinesargentinos.com.ar/pelicula/995-el-camino-de-los-suenos/"
+      ],
+      "decision": "Cines Argentinos directly links Mulholland Drive, David Lynch, Watts/Theroux/Harring. Argentine 2002 release does not replace original 2001. Do not trust the ambiguous JustWatch US /tbc path as evidence."
+    },
+    {
+      "slug": "no-direction-home-bob-dylan-2005",
+      "canonicalYear": 2005,
+      "status": "reviewed-no-additional-alias",
+      "added": [],
+      "evidence": [
+        "https://www.justwatch.com/us/movie/no-direction-home-bob-dylan"
+      ],
+      "decision": "Exact original and 2005 on tm186461; reject Bob Dylan: The Best of Bob Dylan (same year, different film). No new title confirmed."
+    },
+    {
+      "slug": "paranormal-activity-2007",
+      "canonicalYear": 2007,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "Actividad paranormal",
+          "region": "AR",
+          "source": "https://m.cinesargentinos.com.ar/pelicula/3011-actividad-paranormal/"
+        }
+      ],
+      "evidence": [
+        "https://m.cinesargentinos.com.ar/pelicula/3011-actividad-paranormal/"
+      ],
+      "decision": "Cines Argentinos confirms original title, Oren Peli, Katie Featherston and Micah Sloat. 2009 is Argentine theatrical release; keep canonical original 2007. Exclude franchise sequels and the 2027 film."
+    },
+    {
+      "slug": "paris-is-burning-1990",
+      "canonicalYear": 1990,
+      "status": "reviewed-no-additional-alias",
+      "added": [],
+      "evidence": [
+        "https://www.criterion.com/films/29647"
+      ],
+      "decision": "Criterion confirms Jennie Livingston and 1990; JustWatch reports 1991. No translated title is invented."
+    },
+    {
+      "slug": "shine-a-light-2008",
+      "canonicalYear": 2008,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "Rolling Stones: Shine a Light",
+          "region": "ES",
+          "source": "https://www.justwatch.com/es/pelicula/shine-a-light"
+        }
+      ],
+      "evidence": [
+        "https://www.justwatch.com/es/pelicula/shine-a-light"
+      ],
+      "decision": "Same Movie node, exact original Shine a Light and 2008. Localized title is ES metadata, not inferred from the URL."
+    },
+    {
+      "slug": "sleeper-1973",
+      "canonicalYear": 1973,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "El dormilón",
+          "region": "ES",
+          "source": "https://www.justwatch.com/es/pelicula/el-dormilon"
+        }
+      ],
+      "evidence": [
+        "https://www.justwatch.com/es/pelicula/el-dormilon"
+      ],
+      "decision": "Same Movie node, exact original Sleeper and 1973. ES provenance preserved."
+    },
+    {
+      "slug": "the-end-of-evangelion-1997",
+      "canonicalYear": 1997,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "Neon Genesis Evangelion: The End of Evangelion",
+          "region": "AR",
+          "source": "https://www.justwatch.com/ar/pelicula/neon-genesis-evangelion-el-fin-del-evangelion"
+        },
+        {
+          "title": "新世紀エヴァンゲリオン劇場版 Air／まごころを、君に",
+          "region": "US",
+          "source": "https://www.justwatch.com/us/movie/neon-genesis-evangelion-the-end-of-evangelion",
+          "kind": "original"
+        }
+      ],
+      "evidence": [
+        "https://www.justwatch.com/ar/pelicula/neon-genesis-evangelion-el-fin-del-evangelion",
+        "https://www.justwatch.com/us/movie/neon-genesis-evangelion-the-end-of-evangelion"
+      ],
+      "decision": "Same 1997 Movie node. Full English title and original Japanese verified; the Spanish URL slug is not used to invent a Spanish alias."
+    },
+    {
+      "slug": "the-thin-blue-line-1988",
+      "canonicalYear": 1988,
+      "status": "reviewed-no-additional-alias",
+      "added": [],
+      "evidence": [
+        "https://www.justwatch.com/us/movie/the-thin-blue-line",
+        "https://mubi.com/es/ar/films/the-thin-blue-line"
+      ],
+      "decision": "Original title and 1988 confirmed. AR/ES JustWatch fullPath is empty and MUBI AR displays the English title; La delgada línea azul is withheld rather than attributed to an unsupported regional page."
+    },
+    {
+      "slug": "wall-e-2008",
+      "canonicalYear": 2008,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "WALL·E: Batallón de limpieza",
+          "region": "AR",
+          "source": "https://www.justwatch.com/ar/pelicula/wall-e"
+        }
+      ],
+      "evidence": [
+        "https://www.justwatch.com/ar/pelicula/wall-e"
+      ],
+      "decision": "JustWatch AR page explicitly confirms 2008, original WALL·E and Andrew Stanton. Punctuation mismatch caused the initial strict identity gate to reject it. Exclude BURN-E."
+    },
+    {
+      "slug": "yi-yi-2000",
+      "canonicalYear": 2000,
+      "status": "verified-alias-added",
+      "added": [
+        {
+          "title": "一一",
+          "region": "US",
+          "source": "https://www.justwatch.com/us/movie/yi-yi",
+          "kind": "original"
+        }
+      ],
+      "evidence": [
+        "https://www.justwatch.com/us/movie/yi-yi"
+      ],
+      "decision": "Same Movie node, exact English Yi Yi and 2000; verified original Chinese, no invented translation."
+    }
+  ]
+}

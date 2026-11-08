@@ -283,9 +283,10 @@ const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year)
 							Bancá, que estoy acomodando el videoclub...
 						</p>
 					</div>
-					<p class="message-box movie-search__empty" data-movie-search-empty hidden>
-						No apareció nada con ese combo. Probá aflojar algún filtro.
-					</p>
+					<div class="message-box movie-search__empty" data-movie-search-empty hidden role="status">
+						<p data-movie-search-empty-copy>No apareció nada con ese combo. Probá aflojar algún filtro.</p>
+						<button type="button" class="home-results-tools__reset" data-movie-search-empty-action>Editar búsqueda</button>
+					</div>
 				</div>
 			</section>
 

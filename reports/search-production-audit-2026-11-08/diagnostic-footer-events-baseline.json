@@ -1,0 +1,2164 @@
+{
+  "snapshot": ".astro/search-baseline",
+  "attempts": [
+    {
+      "attempt": 0,
+      "failure": null,
+      "trace": [
+        {
+          "at": 84,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 96,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 121,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 121,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 121,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 150,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 110911.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 595,
+          "fonts": "loaded"
+        },
+        {
+          "at": 1208,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 1210,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 1210,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 1212,
+          "type": "open-mutation",
+          "open": true,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 1241,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "failure": null,
+      "trace": [
+        {
+          "at": 87,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 97,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 121,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 121,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 121,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 160,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 110911.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 645,
+          "fonts": "loaded"
+        },
+        {
+          "at": 944,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 946,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 946,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 950,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 953,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "failure": null,
+      "trace": [
+        {
+          "at": 80,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 90,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 113,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 113,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 113,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 219,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13587.15625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 678,
+          "fonts": "loaded"
+        },
+        {
+          "at": 844,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 845,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 846,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 848,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 3,
+      "failure": "expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Sobre', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('link', { name: 'Sobre', exact: true }) with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Sobre', exact: true })\n",
+      "trace": [
+        {
+          "at": 82,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 93,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 114,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 115,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 115,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 219,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13587.15625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 705,
+          "fonts": "loaded"
+        },
+        {
+          "at": 1072,
+          "type": "pointerdown",
+          "target": "A.site-footer__donate",
+          "open": false,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 1091,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 1091,
+          "type": "click",
+          "target": "DIV.site-footer__inner container",
+          "open": false,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 4,
+      "failure": null,
+      "trace": [
+        {
+          "at": 101,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 117,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 155,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 155,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 155,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 264,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13587.15625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 578,
+          "fonts": "loaded"
+        },
+        {
+          "at": 916,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 917,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 917,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 920,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 947,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 5,
+      "failure": null,
+      "trace": [
+        {
+          "at": 66,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 94,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 112,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 112,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 112,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 212,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13587.15625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 675,
+          "fonts": "loaded"
+        },
+        {
+          "at": 921,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 923,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 923,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 926,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 940,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 6,
+      "failure": null,
+      "trace": [
+        {
+          "at": 93,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 104,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 210,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 319,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 13574.453125,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 325,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 13574.453125,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 352,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13631.34375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 541,
+          "fonts": "loaded"
+        },
+        {
+          "at": 904,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 906,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 906,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 909,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 925,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 7,
+      "failure": null,
+      "trace": [
+        {
+          "at": 92,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 103,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 200,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 226,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 226,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 321,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13631.34375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 512,
+          "fonts": "loaded"
+        },
+        {
+          "at": 745,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 802,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 802,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 807,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 820,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 8,
+      "failure": null,
+      "trace": [
+        {
+          "at": 82,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 93,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 192,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 220,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 220,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 313,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13631.34375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 503,
+          "fonts": "loaded"
+        },
+        {
+          "at": 967,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 968,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 969,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 980,
+          "type": "open-mutation",
+          "open": true,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 980,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 614.84375,
+          "scrollY": 13445,
+          "ready": "true",
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 9,
+      "failure": null,
+      "trace": [
+        {
+          "at": 83,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 93,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 182,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 212,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 212,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 307,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13631.34375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 493,
+          "fonts": "loaded"
+        },
+        {
+          "at": 669,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 671,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 671,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 674,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 687,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 10,
+      "failure": null,
+      "trace": [
+        {
+          "at": 80,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 89,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 179,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 206,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 206,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 298,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13631.34375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 526,
+          "fonts": "loaded"
+        },
+        {
+          "at": 925,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 927,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 927,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 930,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 945,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 11,
+      "failure": null,
+      "trace": [
+        {
+          "at": 82,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 92,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 117,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 117,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 117,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 144,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 110911.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 726,
+          "fonts": "loaded"
+        },
+        {
+          "at": 945,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 947,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 947,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 951,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 965,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 12,
+      "failure": null,
+      "trace": [
+        {
+          "at": 83,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 121,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 127,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 127,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 127,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 179,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 110911.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 853,
+          "fonts": "loaded"
+        },
+        {
+          "at": 1132,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 1134,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 1134,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 1137,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 13,
+      "failure": null,
+      "trace": [
+        {
+          "at": 66,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 92,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 109,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 109,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 109,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 144,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 110911.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 664,
+          "fonts": "loaded"
+        },
+        {
+          "at": 806,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 821,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 822,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 824,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 825,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 14,
+      "failure": null,
+      "trace": [
+        {
+          "at": 89,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 99,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 186,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 200,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 201,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 294,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13631.34375,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 650,
+          "fonts": "loaded"
+        },
+        {
+          "at": 880,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 883,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 883,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 886,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 15,
+      "failure": null,
+      "trace": [
+        {
+          "at": 80,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 90,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 181,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 206,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 206,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 299,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13631.34375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 475,
+          "fonts": "loaded"
+        },
+        {
+          "at": 763,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 765,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 765,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 768,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 785,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 16,
+      "failure": null,
+      "trace": [
+        {
+          "at": 81,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 91,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 184,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 210,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 210,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 306,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13631.34375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 485,
+          "fonts": "loaded"
+        },
+        {
+          "at": 735,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 736,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 737,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 739,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 760,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 17,
+      "failure": null,
+      "trace": [
+        {
+          "at": 64,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 91,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 111,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 112,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 112,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 212,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13587.15625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 666,
+          "fonts": "loaded"
+        },
+        {
+          "at": 853,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 854,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 855,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 856,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 857,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 18,
+      "failure": null,
+      "trace": [
+        {
+          "at": 85,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 96,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 190,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 221,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 221,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 13530.265625,
+          "scrollY": 0,
+          "fonts": "loading"
+        },
+        {
+          "at": 312,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 13631.34375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 550,
+          "fonts": "loaded"
+        },
+        {
+          "at": 938,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 979,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 979,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 984,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        },
+        {
+          "at": 1002,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.84375,
+          "scrollY": 13548,
+          "ready": "true",
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "attempt": 19,
+      "failure": null,
+      "trace": [
+        {
+          "at": 81,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": true,
+          "y": 106761.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 91,
+          "type": "script-set-open",
+          "target": "false",
+          "open": true,
+          "y": 104429.71875,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 112,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__sections",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 112,
+          "type": "toggle",
+          "target": "DETAILS.site-navigation__more",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 112,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": false,
+          "y": 110861.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "at": 139,
+          "type": "DOMContentLoaded",
+          "open": false,
+          "y": 110911.109375,
+          "scrollY": 0,
+          "fonts": "loaded"
+        },
+        {
+          "type": "read-open",
+          "open": false,
+          "at": 602,
+          "fonts": "loaded"
+        },
+        {
+          "at": 800,
+          "type": "pointerdown",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 801,
+          "type": "pointerup",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 802,
+          "type": "click",
+          "target": "SUMMARY.",
+          "open": false,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 804,
+          "type": "open-mutation",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        },
+        {
+          "at": 817,
+          "type": "toggle",
+          "target": "DETAILS.site-footer__about",
+          "open": true,
+          "y": 511.34375,
+          "scrollY": 13120,
+          "fonts": "loaded"
+        }
+      ]
+    }
+  ]
+}

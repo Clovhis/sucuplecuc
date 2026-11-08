@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-08T13:38:11.784Z",
+  "scope": "Changed and new text files only; no .env or credentials printed.",
+  "files": 93,
+  "highConfidenceSecretMatches": [],
+  "dangerousDomOrEvaluationSinks": [],
+  "manualReview": [
+    "Query strings use textContent and URLSearchParams; no query enters executable markup.",
+    "Dynamic regular expressions escape their literal inputs; raw engine queries are capped at 300 characters.",
+    "The index is a generated same-origin public file; there is no search API, database, authentication change, server eval, credential or paid service.",
+    "Canonical catalog and availability are unchanged."
+  ]
+}

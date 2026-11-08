@@ -1,9 +1,10 @@
+import { decodeHomeSearchIndex } from '../../src/lib/home-search-codec';
 import { expect, test } from '@playwright/test';
 
 test('a delayed index keeps the initial movies usable and restores URL filters when ready', async ({ page }) => {
 	let release: () => void = () => {};
 	const gate = new Promise<void>((resolve) => { release = resolve; });
-	await page.route('**/search-index.json?*', async (route) => { await gate; await route.continue(); });
+	await page.route('**/search-index-v2.json?*', async (route) => { await gate; await route.continue(); });
 	await page.goto('/?q=alien', { waitUntil: 'domcontentloaded' });
 	await expect(page.locator('[data-movie-search-input]')).toBeDisabled();
 	await expect(page.locator('[data-movie-search-grid] [data-movie-card]')).toHaveCount(12);
@@ -18,7 +19,7 @@ test('a delayed index keeps the initial movies usable and restores URL filters w
 
 test('a failed index offers a working retry without binding duplicate handlers', async ({ page }) => {
 	let requests = 0;
-	await page.route('**/search-index.json?*', async (route) => {
+	await page.route('**/search-index-v2.json?*', async (route) => {
 		requests++;
 		if (requests === 1) return route.fulfill({ status: 503, contentType: 'application/json', body: '{}' });
 		await route.continue();
@@ -42,12 +43,20 @@ test('the HTML stays small and the complete index matches the canonical movie ca
 	const html = await response.text();
 	expect(Buffer.byteLength(html)).toBeLessThan(900000);
 	const indexUrl = html.match(/data-home-movie-index-url="([^"]+)"/)?.[1];
-	expect(indexUrl).toMatch(/^\/search-index\.json\?v=[a-f0-9]{16}$/);
+	expect(indexUrl).toMatch(/^\/search-index-v2\.json\?v=[a-f0-9]{16}$/);
 	const index = await request.get(indexUrl!);
 	expect(index.ok()).toBeTruthy();
-	const records = await index.json() as Array<{ url: string; slug: string }>;
+	const records = decodeHomeSearchIndex(await index.json());
 	const xml = await (await request.get('/sitemap.xml')).text();
 	const movies = [...xml.matchAll(/<loc>https:\/\/www\.cineposta\.com\.ar(\/peliculas\/[^<]+)<\/loc>/g)].map((match) => match[1]);
 	expect(records.map((record) => record.url).sort()).toEqual(movies.sort());
 	expect(new Set(records.map((record) => record.slug)).size).toBe(records.length);
+});
+
+test('the legacy index keeps its array contract and matches the versioned endpoint', async ({ request }) => {
+	const legacy = await (await request.get('/search-index.json')).json();
+	const compact = await (await request.get('/search-index-v2.json')).json();
+	expect(Array.isArray(legacy)).toBeTruthy();
+	expect(compact.version).toBe(2);
+	expect(decodeHomeSearchIndex(compact)).toEqual(legacy);
 });

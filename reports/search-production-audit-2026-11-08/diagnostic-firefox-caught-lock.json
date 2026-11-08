@@ -1,0 +1,13 @@
+{
+  "result": {
+    "caught": true
+  },
+  "pageErrors": [
+    {
+      "message": "Expected contention inside native callback",
+      "name": "Error",
+      "stack": "Error: Expected contention inside native callback\n    at  (debugger eval code line 370 > eval:4:117)\n    at LockGrantedCallback* (debugger eval code line 370 > eval:4:45)\n    at async*evaluate (debugger eval code:372:16)\n    at  (debugger eval code:1:44)\n    at  (debugger eval code:1:62)\n    at evaluateFunction (chrome://juggler/content/content/Runtime.js:422:57)\n    at callFunction (chrome://juggler/content/content/Runtime.js:107:41)\n    at _onMessageInternal (chrome://juggler/content/SimpleChannel.js:237:37)\n    at _onMessage (chrome://juggler/content/SimpleChannel.js:194:12)\n    at bindToActor/actor.receiveMessage (chrome://juggler/content/SimpleChannel.js:39:44)"
+    }
+  ],
+  "nativeErrors": []
+}

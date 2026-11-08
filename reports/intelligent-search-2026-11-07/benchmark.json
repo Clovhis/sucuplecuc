@@ -1,0 +1,271 @@
+{
+  "catalogSize": 2574,
+  "indexBytes": 3503381,
+  "indexGzipBytes": 764201,
+  "scenarios": [
+    {
+      "size": 2574,
+      "initializationMs": 544.33,
+      "queries": [
+        {
+          "query": "película vieja de Kubrick",
+          "total": 9,
+          "top": [
+            "ojos-bien-cerrados-1999",
+            "la-chaqueta-metalica-1987",
+            "the-shining-1980"
+          ],
+          "medianMs": 1.17,
+          "maxMs": 3.1
+        },
+        {
+          "query": "terror de los 80",
+          "total": 36,
+          "top": [
+            "poltergeist-1982",
+            "santa-sangre-1989",
+            "halloween-5-the-revenge-of-michael-myers-1989"
+          ],
+          "medianMs": 0.9,
+          "maxMs": 1.83
+        },
+        {
+          "query": "Brad Pitt en Netflix",
+          "total": 4,
+          "top": [
+            "once-upon-a-time-in-hollywood-2019",
+            "inglourious-basterds-2009",
+            "corazones-de-hierro-2014"
+          ],
+          "medianMs": 1.97,
+          "maxMs": 3.48
+        },
+        {
+          "query": "ciencia ficción con más de 8 puntos",
+          "total": 11,
+          "top": [
+            "aliens-1986",
+            "blade-runner-1982",
+            "e-t-the-extra-terrestrial-1982"
+          ],
+          "medianMs": 0.83,
+          "maxMs": 1.84
+        },
+        {
+          "query": "Bradd Pitt en Netflx",
+          "total": 4,
+          "top": [
+            "once-upon-a-time-in-hollywood-2019",
+            "inglourious-basterds-2009",
+            "corazones-de-hierro-2014"
+          ],
+          "medianMs": 1.87,
+          "maxMs": 4.18
+        },
+        {
+          "query": "película de Kubrcik",
+          "total": 9,
+          "top": [
+            "ojos-bien-cerrados-1999",
+            "la-chaqueta-metalica-1987",
+            "the-shining-1980"
+          ],
+          "medianMs": 3.23,
+          "maxMs": 5.6
+        },
+        {
+          "query": "shinnig",
+          "total": 1,
+          "top": [
+            "the-shining-1980"
+          ],
+          "medianMs": 5.42,
+          "maxMs": 7.6
+        },
+        {
+          "query": "Paprika detective de los sueños",
+          "total": 1,
+          "top": [
+            "paprika-2006"
+          ],
+          "medianMs": 3.26,
+          "maxMs": 3.74
+        },
+        {
+          "query": "ali",
+          "total": 515,
+          "top": [
+            "ali-2001",
+            "ali-g-kien-ez-yo-2026",
+            "aliens-1986"
+          ],
+          "medianMs": 4.6,
+          "maxMs": 6.2
+        },
+        {
+          "query": "a",
+          "total": 2574,
+          "top": [
+            "a-minecraft-movie-2025",
+            "a-beautiful-mind-2001",
+            "a-real-pain-2024"
+          ],
+          "medianMs": 5.58,
+          "maxMs": 7.75
+        },
+        {
+          "query": "terror en Max",
+          "total": 50,
+          "top": [
+            "devorador-de-almas-2026",
+            "mama-2013",
+            "poltergeist-1982"
+          ],
+          "medianMs": 0.79,
+          "maxMs": 1.47
+        },
+        {
+          "query": "zzzzdesconocidoxxxx",
+          "total": 0,
+          "top": [],
+          "medianMs": 4.71,
+          "maxMs": 5.79
+        }
+      ]
+    },
+    {
+      "size": 10000,
+      "initializationMs": 2126.78,
+      "queries": [
+        {
+          "query": "película vieja de Kubrick",
+          "total": 29,
+          "top": [
+            "ojos-bien-cerrados-1999",
+            "la-chaqueta-metalica-1987",
+            "the-shining-1980"
+          ],
+          "medianMs": 3.13,
+          "maxMs": 5.4
+        },
+        {
+          "query": "terror de los 80",
+          "total": 131,
+          "top": [
+            "poltergeist-1982",
+            "santa-sangre-1989",
+            "halloween-5-the-revenge-of-michael-myers-1989"
+          ],
+          "medianMs": 2.06,
+          "maxMs": 3.29
+        },
+        {
+          "query": "Brad Pitt en Netflix",
+          "total": 16,
+          "top": [
+            "once-upon-a-time-in-hollywood-2019",
+            "inglourious-basterds-2009",
+            "scale-3580"
+          ],
+          "medianMs": 3.93,
+          "maxMs": 6.67
+        },
+        {
+          "query": "ciencia ficción con más de 8 puntos",
+          "total": 34,
+          "top": [
+            "aliens-1986",
+            "blade-runner-1982",
+            "e-t-the-extra-terrestrial-1982"
+          ],
+          "medianMs": 1.64,
+          "maxMs": 2.3
+        },
+        {
+          "query": "Bradd Pitt en Netflx",
+          "total": 16,
+          "top": [
+            "once-upon-a-time-in-hollywood-2019",
+            "inglourious-basterds-2009",
+            "scale-3580"
+          ],
+          "medianMs": 4.25,
+          "maxMs": 4.93
+        },
+        {
+          "query": "película de Kubrcik",
+          "total": 29,
+          "top": [
+            "ojos-bien-cerrados-1999",
+            "la-chaqueta-metalica-1987",
+            "the-shining-1980"
+          ],
+          "medianMs": 3.97,
+          "maxMs": 5.36
+        },
+        {
+          "query": "shinnig",
+          "total": 3,
+          "top": [
+            "the-shining-1980",
+            "scale-4890",
+            "scale-7464"
+          ],
+          "medianMs": 11.72,
+          "maxMs": 36.65
+        },
+        {
+          "query": "Paprika detective de los sueños",
+          "total": 4,
+          "top": [
+            "paprika-2006",
+            "scale-4137",
+            "scale-6711"
+          ],
+          "medianMs": 8.38,
+          "maxMs": 19.88
+        },
+        {
+          "query": "ali",
+          "total": 1998,
+          "top": [
+            "ali-2001",
+            "scale-4355",
+            "scale-6929"
+          ],
+          "medianMs": 12.67,
+          "maxMs": 28.44
+        },
+        {
+          "query": "a",
+          "total": 10000,
+          "top": [
+            "a-minecraft-movie-2025",
+            "scale-3191",
+            "scale-5765"
+          ],
+          "medianMs": 18.94,
+          "maxMs": 28.64
+        },
+        {
+          "query": "terror en Max",
+          "total": 193,
+          "top": [
+            "devorador-de-almas-2026",
+            "mama-2013",
+            "poltergeist-1982"
+          ],
+          "medianMs": 2.37,
+          "maxMs": 3.32
+        },
+        {
+          "query": "zzzzdesconocidoxxxx",
+          "total": 0,
+          "top": [],
+          "medianMs": 7.46,
+          "maxMs": 16.27
+        }
+      ]
+    }
+  ]
+}

@@ -51,6 +51,20 @@ body.home-edition::after { display: none; }
 	box-shadow: none;
 }
 
+.home-masthead .movie-search__capability {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: .8rem;
+	transform: translateY(-50%);
+	padding-inline: .35rem;
+	background: #14181f;
+	color: #e6b291;
+	font: 500 .625rem/1.4 var(--font-mono);
+	letter-spacing: .04em;
+	pointer-events: none;
+}
+
 .home-editorial-catalog {
 	--catalog-ink: #f0eee8;
 	--catalog-muted: #aeb5bf;

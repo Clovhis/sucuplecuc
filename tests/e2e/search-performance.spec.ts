@@ -1,8 +1,9 @@
+import { readHomeSearchRecords, broadSearchQuery } from './home-search-index';
+import { decodeHomeSearchIndex } from '../../src/lib/home-search-codec';
 import { expect, test, type Page } from '@playwright/test';
 
 const grid = '[data-movie-search-grid]';
 const input = '[data-movie-search-input]';
-const normalize = (text: string) => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 
 async function openHome(page: Page): Promise<void> {
 	await page.goto('/', { waitUntil: 'load' });
@@ -14,8 +15,9 @@ async function openHome(page: Page): Promise<void> {
 
 test('search preserves matches and relevance while mounting only one small page', async ({ page }) => {
 	await openHome(page);
-	const records = await page.locator('[data-home-movie-index]').evaluate((script) => JSON.parse(script.textContent ?? '[]') as Array<{ searchable: string; title: string }>);
-	for (const query of ['ali', 'alien', 'bat', 'batman', 'the', 'star', 'res', 'resident evil']) {
+	const records = await readHomeSearchRecords(page);
+	const exactTitles = new Set(records.flatMap((row) => [row.normalizedTitle, row.normalizedOriginalTitle, ...row.searchAliases.split(' | ')]));
+	for (const query of new Set([broadSearchQuery(records), ...['ali', 'bat', 'the', 'res'].filter((value) => !exactTitles.has(value))])) {
 		await page.locator(input).fill(query);
 		const matches = records.filter((entry) => entry.searchable.includes(query));
 		await expect(page.locator('[data-home-result-count]')).toHaveText(new Intl.NumberFormat('es-AR').format(matches.length));
@@ -28,19 +30,17 @@ test('search preserves matches and relevance while mounting only one small page'
 	await page.locator(input).fill('Batman');
 	await expect(page.locator(`${grid} [data-movie-card]`).first()).toHaveAttribute('data-movie-title', 'Batman');
 	await page.locator(input).fill('Amélie');
-	await expect(page.locator('[data-home-result-count]')).toHaveText(String(records.filter((entry) => entry.searchable.includes(normalize('Amélie'))).length));
+	await expect(page.locator(`${grid} [data-movie-card]`).first()).toHaveAttribute('data-movie-url', '/peliculas/amelie-2001/');
 	await expect(page.locator('[data-movie-card-template]')).toHaveCount(0);
 });
 
 test('pagination reaches all matches without growing the mounted DOM', async ({ page }) => {
 	await openHome(page);
-	await page.locator(input).fill('ali');
+	const broadQuery = broadSearchQuery(await readHomeSearchRecords(page));
+	await page.locator(input).fill(broadQuery);
 	await expect(page.locator('[data-home-pagination]')).toBeVisible();
 	await page.locator(input).press('Escape');
-	const expected = await page.locator('[data-home-movie-index]').evaluate((script) => {
-		const records = JSON.parse(script.textContent ?? '[]') as Array<{ searchable: string; url: string }>;
-		return records.filter((entry) => entry.searchable.includes('ali')).map((entry) => entry.url).sort();
-	});
+	const expected = (await readHomeSearchRecords(page)).filter((entry) => entry.searchable.includes(broadQuery)).map((entry) => entry.url).sort();
 	const seen: string[] = [];
 	const next = page.locator('[data-home-page-next]');
 	while (true) {
@@ -83,7 +83,8 @@ test('rapid typing, deleting and clearing cancel obsolete queries', async ({ pag
 
 test('returning from a movie restores its result page without changing URLs', async ({ page }) => {
 	await openHome(page);
-	await page.locator(input).fill('ali');
+	const broadQuery = broadSearchQuery(await readHomeSearchRecords(page));
+	await page.locator(input).fill(broadQuery);
 	await expect(page.locator('[data-home-pagination]')).toBeVisible();
 	await page.locator(input).press('Escape');
 	await page.locator('[data-home-page-next]').click();
@@ -101,9 +102,9 @@ test('returning from a movie restores its result page without changing URLs', as
 
 for (const size of [5000, 10000]) {
 	test(`search scales to ${size} records with bounded cards and preprocessed strings`, async ({ page }) => {
-		await page.route('**/search-index.json?*', async (route) => {
+		await page.route('**/search-index-v2.json?*', async (route) => {
 			const response = await route.fetch();
-			const source = await response.json();
+			const source = decodeHomeSearchIndex(await response.json());
 			const records = Array.from({ length: size }, (_, i) => ({ ...source[i % source.length], slug: i < source.length ? source[i].slug : `scale-${i}` }));
 			await route.fulfill({ response, json: records });
 		});

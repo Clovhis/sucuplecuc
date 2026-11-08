@@ -1,0 +1,673 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\WebsitePeliculas\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/runtime-errors.spec.ts",
+      "--workers=1",
+      "--retries=0",
+      "--output=.astro/search-production-runtime-errors",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\WebsitePeliculas\\playwright.config.ts",
+    "rootDir": "C:/WebsitePeliculas/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-chromium",
+        "name": "desktop-chromium",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-firefox",
+        "name": "desktop-firefox",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-webkit",
+        "name": "desktop-webkit",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-webkit",
+        "name": "mobile-webkit",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop-chromium",
+        "testDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "snapshotDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:43218",
+          "screenshot": "only-on-failure",
+          "trace": "on-first-retry",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop-firefox",
+        "testDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "snapshotDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:43218",
+          "screenshot": "only-on-failure",
+          "trace": "on-first-retry",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop-webkit",
+        "testDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "snapshotDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:43218",
+          "screenshot": "only-on-failure",
+          "trace": "on-first-retry",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-webkit"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile-chromium",
+        "testDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "snapshotDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:43218",
+          "screenshot": "only-on-failure",
+          "trace": "on-first-retry",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Mobile Safari/537.36",
+          "viewport": {
+            "width": 393,
+            "height": 727
+          },
+          "screen": {
+            "width": 393,
+            "height": 851
+          },
+          "deviceScaleFactor": 2.75,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile-chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile-webkit",
+        "testDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "snapshotDir": "C:\\WebsitePeliculas\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:43218",
+          "screenshot": "only-on-failure",
+          "trace": "on-first-retry",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+          "viewport": {
+            "width": 390,
+            "height": 664
+          },
+          "screen": {
+            "width": 390,
+            "height": 844
+          },
+          "deviceScaleFactor": 3,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile-webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node ./scripts/preview-e2e.mjs --host 127.0.0.1 --port 43218",
+      "url": "http://127.0.0.1:43218",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "runtime-errors.spec.ts",
+      "file": "runtime-errors.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "runtime error capture distinguishes handled native lock contention from real failures",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5132,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Uncaught Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Uncaught Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                      "column": 34,
+                      "line": 28
+                    },
+                    "snippet": " \u001b[90m 26 |\u001b[39m \texpect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { setTimeout(() \u001b[33m=>\u001b[39m { \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m }\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/runtime-errors-fixture?second-document'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { \u001b[36mvoid\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mreject(\u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual unhandled rejection'\u001b[39m))\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Actual uncaught exception'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Actual unhandled rejection'\u001b[39m])\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                        "column": 34,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Uncaught Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  26 | \texpect(errors).toEqual([]);\n  27 | \tawait page.evaluate(() => { setTimeout(() => { throw new Error('Actual uncaught exception'); }, 0); });\n> 28 | \tawait expect.poll(() => errors).toContain('Actual uncaught exception');\n     | \t                                ^\n  29 | \tawait page.goto('/runtime-errors-fixture?second-document');\n  30 | \tawait page.evaluate(() => { void Promise.reject(new Error('Actual unhandled rejection')); });\n  31 | \tawait expect.poll(() => errors).toEqual(['Actual uncaught exception', 'Actual unhandled rejection']);\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:34:34.872Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-desktop-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-desktop-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-desktop-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                    "column": 34,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5815,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                      "column": 34,
+                      "line": 28
+                    },
+                    "snippet": " \u001b[90m 26 |\u001b[39m \texpect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { setTimeout(() \u001b[33m=>\u001b[39m { \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m }\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/runtime-errors-fixture?second-document'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { \u001b[36mvoid\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mreject(\u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual unhandled rejection'\u001b[39m))\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Actual uncaught exception'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Actual unhandled rejection'\u001b[39m])\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                        "column": 34,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  26 | \texpect(errors).toEqual([]);\n  27 | \tawait page.evaluate(() => { setTimeout(() => { throw new Error('Actual uncaught exception'); }, 0); });\n> 28 | \tawait expect.poll(() => errors).toContain('Actual uncaught exception');\n     | \t                                ^\n  29 | \tawait page.goto('/runtime-errors-fixture?second-document');\n  30 | \tawait page.evaluate(() => { void Promise.reject(new Error('Actual unhandled rejection')); });\n  31 | \tawait expect.poll(() => errors).toEqual(['Actual uncaught exception', 'Actual unhandled rejection']);\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:34:40.434Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-desktop-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-desktop-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-desktop-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                    "column": 34,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-webkit",
+              "projectName": "desktop-webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5352,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                      "column": 34,
+                      "line": 28
+                    },
+                    "snippet": " \u001b[90m 26 |\u001b[39m \texpect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { setTimeout(() \u001b[33m=>\u001b[39m { \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m }\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/runtime-errors-fixture?second-document'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { \u001b[36mvoid\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mreject(\u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual unhandled rejection'\u001b[39m))\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Actual uncaught exception'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Actual unhandled rejection'\u001b[39m])\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                        "column": 34,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  26 | \texpect(errors).toEqual([]);\n  27 | \tawait page.evaluate(() => { setTimeout(() => { throw new Error('Actual uncaught exception'); }, 0); });\n> 28 | \tawait expect.poll(() => errors).toContain('Actual uncaught exception');\n     | \t                                ^\n  29 | \tawait page.goto('/runtime-errors-fixture?second-document');\n  30 | \tawait page.evaluate(() => { void Promise.reject(new Error('Actual unhandled rejection')); });\n  31 | \tawait expect.poll(() => errors).toEqual(['Actual uncaught exception', 'Actual unhandled rejection']);\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:34:47.148Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-desktop-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-desktop-webkit\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-desktop-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                    "column": 34,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5142,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Uncaught Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Uncaught Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                      "column": 34,
+                      "line": 28
+                    },
+                    "snippet": " \u001b[90m 26 |\u001b[39m \texpect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { setTimeout(() \u001b[33m=>\u001b[39m { \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m }\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/runtime-errors-fixture?second-document'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { \u001b[36mvoid\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mreject(\u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual unhandled rejection'\u001b[39m))\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Actual uncaught exception'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Actual unhandled rejection'\u001b[39m])\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                        "column": 34,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Uncaught Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  26 | \texpect(errors).toEqual([]);\n  27 | \tawait page.evaluate(() => { setTimeout(() => { throw new Error('Actual uncaught exception'); }, 0); });\n> 28 | \tawait expect.poll(() => errors).toContain('Actual uncaught exception');\n     | \t                                ^\n  29 | \tawait page.goto('/runtime-errors-fixture?second-document');\n  30 | \tawait page.evaluate(() => { void Promise.reject(new Error('Actual unhandled rejection')); });\n  31 | \tawait expect.poll(() => errors).toEqual(['Actual uncaught exception', 'Actual unhandled rejection']);\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:34:52.911Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-mobile-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-mobile-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-mobile-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                    "column": 34,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5261,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34",
+                    "location": {
+                      "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                      "column": 34,
+                      "line": 28
+                    },
+                    "snippet": " \u001b[90m 26 |\u001b[39m \texpect(errors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { setTimeout(() \u001b[33m=>\u001b[39m { \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m }\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Actual uncaught exception'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/runtime-errors-fixture?second-document'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m { \u001b[36mvoid\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mreject(\u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Actual unhandled rejection'\u001b[39m))\u001b[33m;\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m \t\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m errors)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Actual uncaught exception'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Actual unhandled rejection'\u001b[39m])\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                        "column": 34,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Actual uncaught exception\"\u001b[39m\nReceived array: \u001b[31m[\"Error: Actual uncaught exception\"]\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  26 | \texpect(errors).toEqual([]);\n  27 | \tawait page.evaluate(() => { setTimeout(() => { throw new Error('Actual uncaught exception'); }, 0); });\n> 28 | \tawait expect.poll(() => errors).toContain('Actual uncaught exception');\n     | \t                                ^\n  29 | \tawait page.goto('/runtime-errors-fixture?second-document');\n  30 | \tawait page.evaluate(() => { void Promise.reject(new Error('Actual unhandled rejection')); });\n  31 | \tawait expect.poll(() => errors).toEqual(['Actual uncaught exception', 'Actual unhandled rejection']);\n    at C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts:28:34"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T12:34:58.478Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-mobile-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-mobile-webkit\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\WebsitePeliculas\\.astro\\search-production-runtime-errors\\runtime-errors-runtime-err-a7ee1-ntention-from-real-failures-mobile-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\WebsitePeliculas\\tests\\e2e\\runtime-errors.spec.ts",
+                    "column": 34,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "75677341f7a882faa41c-8ae6dccd122ddec1272d",
+          "file": "runtime-errors.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T12:34:34.472Z",
+    "duration": 29351.426,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

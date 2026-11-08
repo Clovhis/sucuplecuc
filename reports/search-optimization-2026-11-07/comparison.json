@@ -1,0 +1,166 @@
+{
+  "method": {
+    "node": "v24.13.0",
+    "platform": "win32",
+    "arch": "x64",
+    "nodeTrialsPerSize": 3,
+    "browserTrialsPerEngine": 3,
+    "sourceMovieCount": 2574,
+    "notes": [
+      "Both versions have the same films, scores and credits; the optimized version adds verified aliases.",
+      "Node memory is V8 heapUsed after explicit GC; browser heap is Chromium CDP post-GC, not total process RAM.",
+      "Mobile browsers are emulated, never physical devices.",
+      "Network and images are controlled; local file-snapshot timing is not a mobile connection benchmark.",
+      "10000-record stress repeats actual records with distinct IDs, not unique vocabulary."
+    ]
+  },
+  "inputs": {
+    "beforeEngineSha256": "67cb4f0b62fa4d400ca5a4cccf70d7beba1bf03ff1573a4b7123c3a387cfdcc7",
+    "afterEngineSha256": "db53fe13a47897b505520d1d82d43d1153c1132d86ba13538bd1f1a6c12114c2",
+    "beforeIndexSha256": "10ec2fd8366ced819b38fc95afc5ee47af0ca341c59e0d87f4b174bb4a5a1b72",
+    "afterIndexSha256": "269c2f2918a629436fb6553a90bdc5e9efb0154e620d998c87998fd01f1e1662"
+  },
+  "payload": {
+    "rawBytes": {
+      "before": 3503381,
+      "after": 2390021,
+      "reductionPercent": 31.77958663359766
+    },
+    "gzipBytes": {
+      "before": 764201,
+      "after": 663665,
+      "reductionPercent": 13.155701183327423
+    },
+    "brotliBytes": {
+      "before": 532224,
+      "after": 481091,
+      "reductionPercent": 9.607420935545935
+    }
+  },
+  "engine": [
+    {
+      "size": 2574,
+      "initializationMs": {
+        "before": 188.29449999999997,
+        "after": 193.81900000000002,
+        "reductionPercent": -2.9339678004402927
+      },
+      "engineHeapBytes": {
+        "before": 17142576,
+        "after": 11519464,
+        "reductionPercent": 32.80202461987043
+      },
+      "dataHeapBytes": {
+        "before": 11919336,
+        "after": 4660112,
+        "reductionPercent": 60.90292278026226
+      },
+      "totalHeapBytes": {
+        "before": 29062056,
+        "after": 16179800,
+        "reductionPercent": 44.32671934841775
+      },
+      "medianQueryMs": {
+        "before": 0.2604000000000042,
+        "after": 0.29160000000001673,
+        "reductionPercent": -11.981566820281126
+      }
+    },
+    {
+      "size": 10000,
+      "initializationMs": {
+        "before": 789.6912,
+        "after": 784.7262999999999,
+        "reductionPercent": 0.6287141100217474
+      },
+      "engineHeapBytes": {
+        "before": 39183112,
+        "after": 18508152,
+        "reductionPercent": 52.76497691148166
+      },
+      "dataHeapBytes": {
+        "before": 13822248,
+        "after": 6680768,
+        "reductionPercent": 51.66655959291137
+      },
+      "totalHeapBytes": {
+        "before": 53005360,
+        "after": 25189608,
+        "reductionPercent": 52.477243810814606
+      },
+      "medianQueryMs": {
+        "before": 0.8287500000000136,
+        "after": 0.8392999999998665,
+        "reductionPercent": -1.2730015082778485
+      }
+    }
+  ],
+  "browser": [
+    {
+      "engine": "chromium",
+      "readyMs": {
+        "before": 394.5,
+        "after": 314.20000000298023,
+        "reductionPercent": 20.354879593667874
+      },
+      "heapBytes": {
+        "before": 18445208,
+        "after": 12021740,
+        "reductionPercent": 34.82458967120349
+      },
+      "retainedInlineIndexChars": {
+        "before": 3483884,
+        "after": 0,
+        "reductionPercent": 100
+      },
+      "pageErrorsBefore": [],
+      "pageErrorsAfter": []
+    },
+    {
+      "engine": "webkit",
+      "readyMs": {
+        "before": 620,
+        "after": 494,
+        "reductionPercent": 20.322580645161292
+      },
+      "heapBytes": null,
+      "retainedInlineIndexChars": {
+        "before": 3483884,
+        "after": 0,
+        "reductionPercent": 100
+      },
+      "pageErrorsBefore": [],
+      "pageErrorsAfter": []
+    }
+  ],
+  "acceptance": {
+    "total": 85,
+    "passedBefore": 64,
+    "passedAfter": 85,
+    "failedBefore": 21,
+    "failedAfter": 0,
+    "fixed": [
+      "El resplandor",
+      "resplndor",
+      "El padrino",
+      "Sueños de libertad",
+      "Cadena perpetua",
+      "Volver al futuro",
+      "Volver al futuro II",
+      "El viaje de Chihiro",
+      "Tiempos violentos",
+      "紅の豚",
+      "パプリカ",
+      "\"El resplandor\"",
+      "películas de Steven Spielberg",
+      "Alien",
+      "actor Max von Sydow",
+      "terror de los ochenta",
+      "año 1984",
+      "terror sin gore",
+      "terror sin Netflix",
+      "terror sin gore en Max",
+      "不存在的電影"
+    ]
+  }
+}

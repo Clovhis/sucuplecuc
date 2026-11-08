@@ -190,6 +190,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 							Buscar película
 						</label>
 						<div class="movie-search__input-wrap">
+							<span id="movie-search-capability" class="movie-search__capability">Búsqueda inteligente</span>
 							<span class="movie-search__input-icon" aria-hidden="true">
 								<svg viewBox="0 0 24 24" role="presentation">
 									<circle cx="11" cy="11" r="6.5"></circle>
@@ -200,7 +201,9 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 								id="movie-search-input"
 								class="movie-search__input"
 								type="search"
-								placeholder="Título, actor, director, año, plataforma o veredicto..."
+								placeholder="Probá: terror de los 80, Kubrick, Brad Pitt en Netflix..."
+								maxlength="300"
+								aria-describedby="movie-search-capability movie-search-help movie-search-interpretation"
 								autocomplete="off"
 								data-movie-search-input
 								disabled
@@ -224,6 +227,8 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 								<div class="movie-search__suggestions" data-movie-search-suggestions></div>
 							</div>
 						</div>
+						<p id="movie-search-help" class="u-visually-hidden">Buscá por título, actor, director, género, década, plataforma o Score CinePosta. Por ejemplo: ciencia ficción con más de 8 puntos.</p>
+						<p id="movie-search-interpretation" class="movie-search__interpretation" data-movie-search-interpretation role="status" hidden></p>
 					</section>
 					{
 						featuredPeople.length > 0 && (

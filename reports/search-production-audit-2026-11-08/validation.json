@@ -1,0 +1,509 @@
+{
+  "validatedAt": "2026-11-08T13:38:11.464Z",
+  "readiness": "ready-for-production",
+  "publication": "Authorized only after the recorded gates. Remote SHA and Pages handoff are reported in the delivery.",
+  "unit": {
+    "passed": 13,
+    "failed": 0
+  },
+  "acceptance": {
+    "total": 107,
+    "passed": 107,
+    "beforePassed": 68
+  },
+  "checks": {
+    "astro": {
+      "files": 363,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "build": {
+      "passed": true,
+      "pages": 8635
+    },
+    "content": {
+      "passed": true,
+      "mode": "targeted, --skip-build; canonical content unchanged"
+    },
+    "automation": {
+      "passed": true
+    },
+    "publicOutput": {
+      "passed": true
+    },
+    "sitemap": {
+      "passed": true,
+      "canonicalPages": 6052
+    },
+    "catalog": {
+      "movies": 2574,
+      "passed": true,
+      "legacyEndpointEqualsDecodedV2": true,
+      "unchanged": "All record fields except searchable and searchAliases, which contain verified additions. Canonical movie JSON files are unchanged."
+    },
+    "dependencies": {
+      "knownVulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0,
+        "total": 0
+      }
+    }
+  },
+  "e2e": {
+    "stats": {
+      "startTime": "2026-11-08T13:29:40.748Z",
+      "duration": 491527.389,
+      "expected": 385,
+      "skipped": 35,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "globalErrors": [],
+    "projects": {
+      "desktop-chromium": {
+        "passed": 76,
+        "skipped": 8,
+        "failed": 0
+      },
+      "desktop-firefox": {
+        "passed": 75,
+        "skipped": 9,
+        "failed": 0
+      },
+      "desktop-webkit": {
+        "passed": 75,
+        "skipped": 9,
+        "failed": 0
+      },
+      "mobile-chromium": {
+        "passed": 80,
+        "skipped": 4,
+        "failed": 0
+      },
+      "mobile-webkit": {
+        "passed": 79,
+        "skipped": 5,
+        "failed": 0
+      }
+    },
+    "skips": [
+      {
+        "project": "mobile-chromium",
+        "title": "quick picks and score controls share a compact desktop row",
+        "reasons": [
+          "Desktop hierarchy assertion"
+        ]
+      },
+      {
+        "project": "mobile-webkit",
+        "title": "quick picks and score controls share a compact desktop row",
+        "reasons": [
+          "Desktop hierarchy assertion"
+        ]
+      },
+      {
+        "project": "mobile-chromium",
+        "title": "score presets form a compact desktop rail above ordering",
+        "reasons": [
+          "Desktop alignment assertion"
+        ]
+      },
+      {
+        "project": "mobile-webkit",
+        "title": "score presets form a compact desktop rail above ordering",
+        "reasons": [
+          "Desktop alignment assertion"
+        ]
+      },
+      {
+        "project": "desktop-chromium",
+        "title": "score presets stay touch-safe and visible in two rows on mobile",
+        "reasons": [
+          "Mobile layout assertion"
+        ]
+      },
+      {
+        "project": "desktop-firefox",
+        "title": "score presets stay touch-safe and visible in two rows on mobile",
+        "reasons": [
+          "Mobile layout assertion"
+        ]
+      },
+      {
+        "project": "desktop-webkit",
+        "title": "score presets stay touch-safe and visible in two rows on mobile",
+        "reasons": [
+          "Mobile layout assertion"
+        ]
+      },
+      {
+        "project": "mobile-chromium",
+        "title": "editorial filters stay aligned in one desktop row without horizontal overflow",
+        "reasons": [
+          "Desktop layout assertion"
+        ]
+      },
+      {
+        "project": "mobile-webkit",
+        "title": "editorial filters stay aligned in one desktop row without horizontal overflow",
+        "reasons": [
+          "Desktop layout assertion"
+        ]
+      },
+      {
+        "project": "desktop-chromium",
+        "title": "mobile search stays usable at 320, 390 and 430px with bounded DOM and no horizontal overflow",
+        "reasons": [
+          "Mobile layout assertion"
+        ]
+      },
+      {
+        "project": "desktop-firefox",
+        "title": "mobile search stays usable at 320, 390 and 430px with bounded DOM and no horizontal overflow",
+        "reasons": [
+          "Mobile layout assertion"
+        ]
+      },
+      {
+        "project": "desktop-webkit",
+        "title": "mobile search stays usable at 320, 390 and 430px with bounded DOM and no horizontal overflow",
+        "reasons": [
+          "Mobile layout assertion"
+        ]
+      },
+      {
+        "project": "desktop-chromium",
+        "title": "mobile home keeps touch targets and content within the viewport",
+        "reasons": [
+          "This layout check is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-firefox",
+        "title": "mobile home keeps touch targets and content within the viewport",
+        "reasons": [
+          "This layout check is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-webkit",
+        "title": "mobile home keeps touch targets and content within the viewport",
+        "reasons": [
+          "This layout check is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-chromium",
+        "title": "mobile quick filters stay aligned and legible at narrow widths",
+        "reasons": [
+          "This layout check is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-firefox",
+        "title": "mobile quick filters stay aligned and legible at narrow widths",
+        "reasons": [
+          "This layout check is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-webkit",
+        "title": "mobile quick filters stay aligned and legible at narrow widths",
+        "reasons": [
+          "This layout check is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-chromium",
+        "title": "mobile home exposes the complete app flow and keeps cinema labels on one line",
+        "reasons": [
+          "This flow is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-firefox",
+        "title": "mobile home exposes the complete app flow and keeps cinema labels on one line",
+        "reasons": [
+          "This flow is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-webkit",
+        "title": "mobile home exposes the complete app flow and keeps cinema labels on one line",
+        "reasons": [
+          "This flow is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-chromium",
+        "title": "mobile home compacts filters and keeps every facet reachable in the carousel",
+        "reasons": [
+          "This compact layout is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-firefox",
+        "title": "mobile home compacts filters and keeps every facet reachable in the carousel",
+        "reasons": [
+          "This compact layout is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-webkit",
+        "title": "mobile home compacts filters and keeps every facet reachable in the carousel",
+        "reasons": [
+          "This compact layout is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-chromium",
+        "title": "mobile keeps a dense active-filter combination inside the viewport",
+        "reasons": [
+          "This containment check is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-firefox",
+        "title": "mobile keeps a dense active-filter combination inside the viewport",
+        "reasons": [
+          "This containment check is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-webkit",
+        "title": "mobile keeps a dense active-filter combination inside the viewport",
+        "reasons": [
+          "This containment check is intentionally mobile-only."
+        ]
+      },
+      {
+        "project": "desktop-chromium",
+        "title": "touch landscape keeps the mobile app shell contained",
+        "reasons": [
+          "This flow is intentionally touch-only."
+        ]
+      },
+      {
+        "project": "desktop-firefox",
+        "title": "touch landscape keeps the mobile app shell contained",
+        "reasons": [
+          "This flow is intentionally touch-only."
+        ]
+      },
+      {
+        "project": "desktop-webkit",
+        "title": "touch landscape keeps the mobile app shell contained",
+        "reasons": [
+          "This flow is intentionally touch-only."
+        ]
+      },
+      {
+        "project": "mobile-chromium",
+        "title": "desktop keeps the complete home while mobile-only reductions stay hidden",
+        "reasons": [
+          "This regression is intentionally desktop-only."
+        ]
+      },
+      {
+        "project": "mobile-webkit",
+        "title": "desktop keeps the complete home while mobile-only reductions stay hidden",
+        "reasons": [
+          "This regression is intentionally desktop-only."
+        ]
+      },
+      {
+        "project": "desktop-firefox",
+        "title": "renderiza posters locales reales sin activar la contingencia",
+        "reasons": [
+          "La matriz completa cubre el helper; este lote visual corre en Chromium."
+        ]
+      },
+      {
+        "project": "desktop-webkit",
+        "title": "renderiza posters locales reales sin activar la contingencia",
+        "reasons": [
+          "La matriz completa cubre el helper; este lote visual corre en Chromium."
+        ]
+      },
+      {
+        "project": "mobile-webkit",
+        "title": "renderiza posters locales reales sin activar la contingencia",
+        "reasons": [
+          "La matriz completa cubre el helper; este lote visual corre en Chromium."
+        ]
+      }
+    ],
+    "automaticRetries": 0,
+    "source": "e2e-final.json",
+    "coverage": [
+      "107 real-catalog queries",
+      "all filter groups, combinations, score/year constraints, shared URLs, history and detail return",
+      "pagination, cancellation, bounded 36-card DOM, 5000/10000 synthetic records",
+      "loading, retry, legacy and v2 endpoint compatibility",
+      "static SEO catalog with and without JavaScript",
+      "navigation, posters, platform badges, mobile containment and touch targets",
+      "query length and markup safety",
+      "native unhandled-error observer with positive and negative controls"
+    ],
+    "additionalChecks": {
+      "webkitRepeat": {
+        "startTime": "2026-11-08T12:21:50.070Z",
+        "duration": 122614.11300000001,
+        "expected": 14,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "runtimeObserver": {
+        "startTime": "2026-11-08T12:36:58.045Z",
+        "duration": 5748.451999999999,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "firefoxNavigationRepeat": {
+        "startTime": "2026-11-08T12:37:04.212Z",
+        "duration": 22407.964,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "emptyRecoveryRepeat": {
+        "startTime": "2026-11-08T13:10:02.213Z",
+        "duration": 59109.986000000004,
+        "expected": 20,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "footerReadyRepeat": {
+        "startTime": "2026-11-08T13:25:32.303Z",
+        "duration": 56142.002,
+        "expected": 20,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "diagnostics": {
+    "webkit": {
+      "before": {
+        "playwright": "1.60.0",
+        "webkit": "26.4",
+        "testAssertionsPassed": 6,
+        "globalTeardownErrors": 2,
+        "exitCode": 1
+      },
+      "cause": "The trace blocks inside the old Windows WebKit browser process shutdown, after successful test assertions. The browser PID is already absent when the old launcher attempts taskkill. Blocking external resources and disabling video did not cure the failure. Low-level native cause was not patched or claimed.",
+      "resolution": "Updated the existing development runner to Playwright 1.65.0 / WebKit 27.2. Final runs retain the normal config, videos, timeouts and assertions, exit normally, and have zero global errors. No manual worker kill is counted as a passing test."
+    },
+    "firefox": {
+      "originalFailure": "Native Web Locks callback throws a typed lock-contention error which Supabase handles. Firefox debugger nevertheless emits pageerror.",
+      "proof": "diagnostic-firefox-minimal.json reproduces this with no CinePosta or Supabase: caught=true, nativeUnhandledErrors=[], automationErrors contains the handled exception.",
+      "resolution": "Navigation observes actual error/unhandledrejection events across documents. No message-name filter, no preventDefault and no change to authentication or lock semantics. A companion E2E test proves genuine uncaught exceptions and rejected promises are still detected."
+    },
+    "footer": {
+      "failure": "The footer summary click was attempted while the asynchronous people gallery changed the homepage layout.",
+      "evidence": {
+        "historicalSnapshot": {
+          "attempts": 20,
+          "failures": 1
+        },
+        "auditedSnapshot": {
+          "attempts": 20,
+          "failures": 2
+        }
+      },
+      "proof": "Event traces show pointerdown and pointerup on different elements; the footer script does not close an opened disclosure. The same collision reproduces on the historical snapshot.",
+      "resolution": "The smoke test waits for the existing data-home-catalog-ready signal before scrolling to the footer. The native click and all assertions remain. No forced click, retry, arbitrary sleep or footer application change.",
+      "remaining": "The pre-existing asynchronous people gallery still inserts content during initial loading. This is recorded as a layout limitation, not claimed fixed by the search audit."
+    },
+    "dev": {
+      "observed": "An earlier long-lived DEV session timed out waiting for catalog readiness after local builds.",
+      "resolution": "Stopped and restarted the local server with the official Astro background commands. A fresh navigation then returned HTTP 200, all three search checks passed and no page errors were emitted. No low-level cause is asserted.",
+      "evidence": "diagnostic-dev-stale-session.txt and dev-smoke.json"
+    },
+    "emptyRecovery": {
+      "observedFailure": "The first complete final matrix lost a Firefox recovery click; the manual comedy filter remained active.",
+      "reproduction": "diagnostic-empty-loading-overlap.json fails before the fix because the recovery action and the loading row coexist. diagnostic-final-before-loading-fix.json preserves the original full matrix failure.",
+      "cause": "An artificial 120ms hide timer kept the loading row above an already usable empty-state action. Removing the row could move the action during a click.",
+      "resolution": "Hide loading immediately when no posters are pending. No forced clicks, retries, extra waits or relaxed assertions. The original recovery case and the observer regression are repeated ten times each in Firefox, followed by the full browser matrix."
+    }
+  },
+  "titles": {
+    "reviewed": 23,
+    "newAliases": 16,
+    "newAliasMovies": 14,
+    "totalAliasMovies": 129,
+    "totalAliases": 137,
+    "report": "title-resolutions.json"
+  },
+  "ux": {
+    "indicator": "Búsqueda inteligente, small editorial legend on the input border; accessible description, no layout width taken from input.",
+    "socialLink": "Original position retained; no extra space was needed."
+  },
+  "performance": {
+    "report": "comparison.json",
+    "method": "Three fresh processes/contexts per side, same current Node/browser versions, historical MVP snapshot vs audited snapshot. Images/external resources blocked on both sides. Heap is post-GC V8/CDP, not total system RAM. Neither timing nor screenshots come from physical phones.",
+    "syntheticScale": "10000 records repeat actual documents with distinct IDs; not 10000 unique films/vocabulary.",
+    "notes": [
+      "The historical homepage snapshot may differ in frozen non-search editions after synchronizing bot commits. Browser readiness is not an LCP or mobile-network benchmark.",
+      "Query workload is the same 107 cases for both current before/after reports. Earlier 85-query reports are historical."
+    ]
+  },
+  "screenshots": [
+    "reports/search-production-audit-2026-11-08/screenshots/mobile-chromium-intelligent-search-320.png",
+    "reports/search-production-audit-2026-11-08/screenshots/mobile-chromium-intelligent-search-390.png",
+    "reports/search-production-audit-2026-11-08/screenshots/mobile-chromium-intelligent-search-430.png",
+    "reports/search-production-audit-2026-11-08/screenshots/mobile-webkit-intelligent-search-320.png",
+    "reports/search-production-audit-2026-11-08/screenshots/mobile-webkit-intelligent-search-390.png",
+    "reports/search-production-audit-2026-11-08/screenshots/mobile-webkit-intelligent-search-430.png"
+  ],
+  "limits": [
+    "The deterministic grammar is bounded; no semantic plot or subjective-intent interpretation.",
+    "Regional aliases are verified for a sample, not the entire catalog; nine reviewed pending entries had no additional supported alias.",
+    "Availability is the canonical Argentine catalog, not a live lookup.",
+    "The full index still grows in memory; the 10000-record synthetic query median has a small measured cost increase.",
+    "Playwright WebKit on Windows with desktop/iPhone profiles is not Safari/iOS on a physical device.",
+    "The local ignored .astro/search-baseline snapshot is required to reproduce the historical before measurement; scripts, hashes and samples are retained.",
+    "The pre-existing asynchronous people gallery still inserts content during initial loading. This is recorded as a layout limitation, not claimed fixed by the search audit."
+  ],
+  "dev": {
+    "checkedAt": "2026-11-08T13:29:39.231Z",
+    "url": "http://127.0.0.1:43211/",
+    "status": 200,
+    "device": "Pixel 5 emulation, not a physical phone",
+    "indicator": "Búsqueda inteligente",
+    "queries": [
+      {
+        "query": "Sueños de libertad",
+        "firstResult": "/peliculas/the-shawshank-redemption-1994/",
+        "count": "1"
+      },
+      {
+        "query": "terror de los 80",
+        "firstResult": "/peliculas/santa-sangre-1989/",
+        "count": "36"
+      },
+      {
+        "query": "Brad Pitt en Netflix",
+        "firstResult": "/peliculas/once-upon-a-time-in-hollywood-2019/",
+        "count": "4"
+      }
+    ],
+    "pageErrors": []
+  },
+  "buildInputs": {
+    "homeScriptSha256": "728e58c7c89ba3e2c79057fd48393d55d37749e736b580c5742f44610c47c8d1",
+    "engineSha256": "749c36c6bfd2966502e59c980f4707db153813c112ebffaa06dcc9ba040e7554",
+    "compactIndexSha256": "03b560bd1b90a32988fe834e5230209911ab7241d861e0a29021c04a0bb3cb5d",
+    "homeHtmlSha256": "6ad90fac2e26e5f82fc0475efafa3ccf9b095759f8dbed139102a000a702f35c"
+  }
+}

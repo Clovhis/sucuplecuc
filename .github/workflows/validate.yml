@@ -52,6 +52,11 @@ jobs:
       - name: Probar automatizaciones y ediciones del home
         run: npm run test:home-automation
 
+      - name: Probar buscador local y referencias de títulos
+        run: |
+          npm run test:movie-search
+          npm run audit:search-titles -- --check
+
       - name: Probar migraciones de votos y tribunas en PostgreSQL local
         run: npm run test:movie-ratings
 

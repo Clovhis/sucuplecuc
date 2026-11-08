@@ -1,3 +1,4 @@
+import { readHomeSearchRecords } from './home-search-index';
 import { expect, test, type Page } from '@playwright/test';
 
 async function dismissDonationPrompt(page: Page): Promise<void> {
@@ -322,10 +323,7 @@ test.describe('home catalog filters', () => {
     // This checks all result pages, several searches, reload and a movie route.
     test.setTimeout(90_000);
     await gotoHome(page);
-    const expectedMusicals = await page.evaluate(() => {
-      const records = JSON.parse(document.querySelector('[data-home-movie-index]')?.textContent ?? '[]') as Array<{ genres: string[]; title: string }>;
-      return records.filter((record) => record.genres.includes('musical')).map((record) => record.title).sort();
-    });
+    const expectedMusicals = (await readHomeSearchRecords(page)).filter((record) => record.genres.includes('musical')).map((record) => record.title).sort();
     expect(expectedMusicals.length).toBeGreaterThan(80);
     const musical = page.getByRole('button', { name: 'Musical', exact: true });
     await expect(musical).toHaveAttribute('data-home-genre-kind', 'genre');
@@ -718,9 +716,7 @@ test.describe('home catalog filters', () => {
 	test.setTimeout(120_000);
     await gotoHome(page);
 
-    const allCatalogCards = await page.evaluate(() =>
-      JSON.parse(document.querySelector('[data-home-movie-index]')?.textContent ?? '[]') as Array<{ title: string; platforms: string[]; subgenres: string[] }>,
-    );
+    const allCatalogCards = await readHomeSearchRecords(page);
     const subgenreIds = await page.locator('[data-home-subgenre-chip]').evaluateAll((chips) =>
       chips
         .map((chip) => chip.getAttribute('data-home-subgenre-id')?.trim() ?? '')

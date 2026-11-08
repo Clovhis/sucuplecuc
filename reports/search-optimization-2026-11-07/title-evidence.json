@@ -1,0 +1,5842 @@
+{
+  "verifiedAt": "2026-11-07",
+  "identityGate": "Unique exact normalized known title/original/English title AND exact original year; AR search, same Movie node for every regional alias.",
+  "results": [
+    {
+      "slug": "12-angry-men-1957",
+      "year": 1957,
+      "query": "12 Angry Men",
+      "status": "verified",
+      "match": {
+        "id": "tm1962",
+        "content": {
+          "title": "Doce hombres sin piedad",
+          "originalTitle": "12 Angry Men",
+          "originalReleaseYear": 1957,
+          "fullPath": "/ar/pelicula/12-hombres-sin-piedad"
+        },
+        "english": {
+          "title": "12 Angry Men",
+          "originalTitle": "12 Angry Men",
+          "originalReleaseYear": 1957,
+          "fullPath": "/us/movie/12-angry-men"
+        },
+        "spanish": {
+          "title": "Doce hombres sin piedad",
+          "fullPath": "/es/pelicula/12-hombres-sin-piedad"
+        }
+      }
+    },
+    {
+      "slug": "12-years-a-slave-2013",
+      "year": 2013,
+      "query": "12 Years a Slave",
+      "status": "verified",
+      "match": {
+        "id": "tm188852",
+        "content": {
+          "title": "12 años de esclavitud",
+          "originalTitle": "12 Years a Slave",
+          "originalReleaseYear": 2013,
+          "fullPath": "/ar/pelicula/12-anos-de-esclavitud"
+        },
+        "english": {
+          "title": "12 Years a Slave",
+          "originalTitle": "12 Years a Slave",
+          "originalReleaseYear": 2013,
+          "fullPath": "/us/movie/twelve-years-a-slave"
+        },
+        "spanish": {
+          "title": "12 años de esclavitud",
+          "fullPath": "/es/pelicula/12-anos-de-esclavitud"
+        }
+      }
+    },
+    {
+      "slug": "a-goofy-movie-1995",
+      "year": 1995,
+      "query": "A Goofy Movie",
+      "status": "verified",
+      "match": {
+        "id": "tm10470",
+        "content": {
+          "title": "Goofy e hijo",
+          "originalTitle": "A Goofy Movie",
+          "originalReleaseYear": 1995,
+          "fullPath": "/ar/pelicula/goofy-e-hijo"
+        },
+        "english": {
+          "title": "A Goofy Movie",
+          "originalTitle": "A Goofy Movie",
+          "originalReleaseYear": 1995,
+          "fullPath": "/us/movie/a-goofy-movie"
+        },
+        "spanish": {
+          "title": "Goofy e hijo",
+          "fullPath": "/es/pelicula/a-goofy-movie"
+        }
+      }
+    },
+    {
+      "slug": "a-nightmare-on-elm-street-3-dream-warriors-1987",
+      "year": 1987,
+      "query": "A Nightmare on Elm Street 3: Dream Warriors",
+      "status": "verified",
+      "match": {
+        "id": "tm25657",
+        "content": {
+          "title": "Pesadilla en Elm Street 3: Los guerreros del sueño",
+          "originalTitle": "A Nightmare on Elm Street 3: Dream Warriors",
+          "originalReleaseYear": 1987,
+          "fullPath": "/ar/pelicula/pesadilla-en-elm-street-3-los-guerreros-del-sueno"
+        },
+        "english": {
+          "title": "A Nightmare on Elm Street 3: Dream Warriors",
+          "originalTitle": "A Nightmare on Elm Street 3: Dream Warriors",
+          "originalReleaseYear": 1987,
+          "fullPath": "/us/movie/a-nightmare-on-elm-street-3-dream-warriors"
+        },
+        "spanish": {
+          "title": "Pesadilla en Elm Street 3: Los guerreros del sueño",
+          "fullPath": "/es/pelicula/pesadilla-en-elm-street-3-los-guerreros-del-sueno"
+        }
+      }
+    },
+    {
+      "slug": "akira-1988",
+      "year": 1988,
+      "query": "AKIRA",
+      "status": "verified",
+      "match": {
+        "id": "tm44887",
+        "content": {
+          "title": "Akira",
+          "originalTitle": "AKIRA",
+          "originalReleaseYear": 1988,
+          "fullPath": "/ar/pelicula/akira"
+        },
+        "english": {
+          "title": "Akira",
+          "originalTitle": "AKIRA",
+          "originalReleaseYear": 1988,
+          "fullPath": "/us/movie/akira"
+        },
+        "spanish": {
+          "title": "Akira",
+          "fullPath": "/es/pelicula/akira"
+        }
+      }
+    },
+    {
+      "slug": "aladdin-1992",
+      "year": 1992,
+      "query": "Aladdin",
+      "status": "verified",
+      "match": {
+        "id": "tm123824",
+        "content": {
+          "title": "Aladdín",
+          "originalTitle": "Aladdin",
+          "originalReleaseYear": 1992,
+          "fullPath": "/ar/pelicula/aladdin-1992"
+        },
+        "english": {
+          "title": "Aladdin",
+          "originalTitle": "Aladdin",
+          "originalReleaseYear": 1992,
+          "fullPath": "/us/movie/aladdin"
+        },
+        "spanish": {
+          "title": "Aladdín",
+          "fullPath": "/es/pelicula/aladdin"
+        }
+      }
+    },
+    {
+      "slug": "ali-2001",
+      "year": 2001,
+      "query": "Ali",
+      "status": "verified",
+      "match": {
+        "id": "tm57131",
+        "content": {
+          "title": "Alí",
+          "originalTitle": "Ali",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/ali"
+        },
+        "english": {
+          "title": "Ali",
+          "originalTitle": "Ali",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/ali-2001"
+        },
+        "spanish": {
+          "title": "Alí",
+          "fullPath": "/es/pelicula/ali"
+        }
+      }
+    },
+    {
+      "slug": "aliens-1986",
+      "year": 1986,
+      "query": "Aliens",
+      "status": "verified",
+      "match": {
+        "id": "tm121723",
+        "content": {
+          "title": "Aliens: El regreso",
+          "originalTitle": "Aliens",
+          "originalReleaseYear": 1986,
+          "fullPath": "/ar/pelicula/aliens-el-regreso"
+        },
+        "english": {
+          "title": "Aliens",
+          "originalTitle": "Aliens",
+          "originalReleaseYear": 1986,
+          "fullPath": "/us/movie/aliens"
+        },
+        "spanish": {
+          "title": "Aliens: El regreso",
+          "fullPath": "/es/pelicula/aliens-el-regreso"
+        }
+      }
+    },
+    {
+      "slug": "amadeus-1984",
+      "year": 1984,
+      "query": "Amadeus",
+      "status": "verified",
+      "match": {
+        "id": "tm175246",
+        "content": {
+          "title": "Amadeus",
+          "originalTitle": "Amadeus",
+          "originalReleaseYear": 1984,
+          "fullPath": "/ar/pelicula/amadeus"
+        },
+        "english": {
+          "title": "Amadeus",
+          "originalTitle": "Amadeus",
+          "originalReleaseYear": 1984,
+          "fullPath": "/us/movie/amadeus"
+        },
+        "spanish": {
+          "title": "Amadeus",
+          "fullPath": "/es/pelicula/amadeus"
+        }
+      }
+    },
+    {
+      "slug": "amelie-2001",
+      "year": 2001,
+      "query": "Le Fabuleux Destin d'Amélie Poulain",
+      "status": "verified",
+      "match": {
+        "id": "tm50138",
+        "content": {
+          "title": "Amelie",
+          "originalTitle": "Le fabuleux destin d'Amélie Poulain",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/amelie"
+        },
+        "english": {
+          "title": "Amélie",
+          "originalTitle": "Le fabuleux destin d'Amélie Poulain",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/amelie"
+        },
+        "spanish": {
+          "title": "Amelie",
+          "fullPath": "/es/pelicula/amelie"
+        }
+      }
+    },
+    {
+      "slug": "american-gangster-2007",
+      "year": 2007,
+      "query": "American Gangster",
+      "status": "verified",
+      "match": {
+        "id": "tm84751",
+        "content": {
+          "title": "American gangster",
+          "originalTitle": "American Gangster",
+          "originalReleaseYear": 2007,
+          "fullPath": "/ar/pelicula/american-gangster"
+        },
+        "english": {
+          "title": "American Gangster",
+          "originalTitle": "American Gangster",
+          "originalReleaseYear": 2007,
+          "fullPath": "/us/movie/american-gangster"
+        },
+        "spanish": {
+          "title": "American gangster",
+          "fullPath": "/es/pelicula/american-gangster"
+        }
+      }
+    },
+    {
+      "slug": "american-graffiti-1973",
+      "year": 1973,
+      "query": "American Graffiti",
+      "status": "verified",
+      "match": {
+        "id": "tm187679",
+        "content": {
+          "title": "American Graffiti",
+          "originalTitle": "American Graffiti",
+          "originalReleaseYear": 1973,
+          "fullPath": "/ar/pelicula/american-graffiti"
+        },
+        "english": {
+          "title": "American Graffiti",
+          "originalTitle": "American Graffiti",
+          "originalReleaseYear": 1973,
+          "fullPath": "/us/movie/american-graffiti"
+        },
+        "spanish": {
+          "title": "American Graffiti",
+          "fullPath": "/es/pelicula/american-graffiti"
+        }
+      }
+    },
+    {
+      "slug": "amistad-1997",
+      "year": 1997,
+      "query": "Amistad",
+      "status": "verified",
+      "match": {
+        "id": "tm190959",
+        "content": {
+          "title": "Amistad",
+          "originalTitle": "Amistad",
+          "originalReleaseYear": 1997,
+          "fullPath": "/ar/pelicula/amistad"
+        },
+        "english": {
+          "title": "Amistad",
+          "originalTitle": "Amistad",
+          "originalReleaseYear": 1997,
+          "fullPath": "/us/movie/amistad"
+        },
+        "spanish": {
+          "title": "Amistad",
+          "fullPath": "/es/pelicula/amistad"
+        }
+      }
+    },
+    {
+      "slug": "amores-perros-2000",
+      "year": 2000,
+      "query": "Amores Perros",
+      "status": "verified",
+      "match": {
+        "id": "tm24271",
+        "content": {
+          "title": "Amores perros",
+          "originalTitle": "Amores perros",
+          "originalReleaseYear": 2000,
+          "fullPath": "/ar/pelicula/amores-perros"
+        },
+        "english": {
+          "title": "Amores Perros",
+          "originalTitle": "Amores perros",
+          "originalReleaseYear": 2000,
+          "fullPath": "/us/movie/loves-a-bitch"
+        },
+        "spanish": {
+          "title": "Amores perros",
+          "fullPath": "/es/pelicula/amores-perros"
+        }
+      }
+    },
+    {
+      "slug": "an-american-in-paris-1951",
+      "year": 1951,
+      "query": "An American in Paris",
+      "status": "verified",
+      "match": {
+        "id": "tm129542",
+        "content": {
+          "title": "Un americano en París",
+          "originalTitle": "An American in Paris",
+          "originalReleaseYear": 1951,
+          "fullPath": "/ar/pelicula/un-americano-en-paris"
+        },
+        "english": {
+          "title": "An American in Paris",
+          "originalTitle": "An American in Paris",
+          "originalReleaseYear": 1951,
+          "fullPath": "/us/movie/an-american-in-paris"
+        },
+        "spanish": {
+          "title": "Un americano en París",
+          "fullPath": "/es/pelicula/un-americano-en-paris"
+        }
+      }
+    },
+    {
+      "slug": "anastasia-1997",
+      "year": 1997,
+      "query": "Anastasia",
+      "status": "ambiguous",
+      "match": null
+    },
+    {
+      "slug": "andrei-rublev-1966",
+      "year": 1966,
+      "query": "Andrei Rublev",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "annie-hall-1977",
+      "year": 1977,
+      "query": "Annie Hall",
+      "status": "verified",
+      "match": {
+        "id": "tm92591",
+        "content": {
+          "title": "Annie Hall",
+          "originalTitle": "Annie Hall",
+          "originalReleaseYear": 1977,
+          "fullPath": "/ar/pelicula/annie-hall"
+        },
+        "english": {
+          "title": "Annie Hall",
+          "originalTitle": "Annie Hall",
+          "originalReleaseYear": 1977,
+          "fullPath": "/us/movie/annie-hall"
+        },
+        "spanish": {
+          "title": "Annie Hall",
+          "fullPath": "/es/pelicula/annie-hall"
+        }
+      }
+    },
+    {
+      "slug": "ant-man-2015",
+      "year": 2015,
+      "query": "Ant-Man",
+      "status": "verified",
+      "match": {
+        "id": "tm141020",
+        "content": {
+          "title": "Ant-Man",
+          "originalTitle": "Ant-Man",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/ant-man"
+        },
+        "english": {
+          "title": "Ant-Man",
+          "originalTitle": "Ant-Man",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/ant-man"
+        },
+        "spanish": {
+          "title": "Ant-Man",
+          "fullPath": "/es/pelicula/ant-man"
+        }
+      }
+    },
+    {
+      "slug": "argo-2012",
+      "year": 2012,
+      "query": "Argo",
+      "status": "verified",
+      "match": {
+        "id": "tm60292",
+        "content": {
+          "title": "Argo",
+          "originalTitle": "Argo",
+          "originalReleaseYear": 2012,
+          "fullPath": "/ar/pelicula/argo"
+        },
+        "english": {
+          "title": "Argo",
+          "originalTitle": "Argo",
+          "originalReleaseYear": 2012,
+          "fullPath": "/us/movie/escape-from-tehran"
+        },
+        "spanish": {
+          "title": "Argo",
+          "fullPath": "/es/pelicula/argo"
+        }
+      }
+    },
+    {
+      "slug": "avatar-2009",
+      "year": 2009,
+      "query": "Avatar",
+      "status": "verified",
+      "match": {
+        "id": "tm135853",
+        "content": {
+          "title": "Avatar",
+          "originalTitle": "Avatar",
+          "originalReleaseYear": 2009,
+          "fullPath": "/ar/pelicula/avatar"
+        },
+        "english": {
+          "title": "Avatar",
+          "originalTitle": "Avatar",
+          "originalReleaseYear": 2009,
+          "fullPath": "/us/movie/avatar-2009"
+        },
+        "spanish": {
+          "title": "Avatar",
+          "fullPath": "/es/pelicula/avatar"
+        }
+      }
+    },
+    {
+      "slug": "avengers-age-of-ultron-2015",
+      "year": 2015,
+      "query": "Avengers: Age of Ultron",
+      "status": "verified",
+      "match": {
+        "id": "tm141000",
+        "content": {
+          "title": "Vengadores: La era de Ultrón",
+          "originalTitle": "Avengers: Age of Ultron",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/vengadores-la-era-de-ultron"
+        },
+        "english": {
+          "title": "Avengers: Age of Ultron",
+          "originalTitle": "Avengers: Age of Ultron",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/avengers-age-of-ultron"
+        },
+        "spanish": {
+          "title": "Vengadores: La era de Ultrón",
+          "fullPath": "/es/pelicula/vengadores-la-era-de-ultron"
+        }
+      }
+    },
+    {
+      "slug": "back-to-the-future-1985",
+      "year": 1985,
+      "query": "Back to the Future",
+      "status": "verified",
+      "match": {
+        "id": "tm129449",
+        "content": {
+          "title": "Regreso al futuro",
+          "originalTitle": "Back to the Future",
+          "originalReleaseYear": 1985,
+          "fullPath": "/ar/pelicula/regreso-al-futuro"
+        },
+        "english": {
+          "title": "Back to the Future",
+          "originalTitle": "Back to the Future",
+          "originalReleaseYear": 1985,
+          "fullPath": "/us/movie/back-to-the-future-part-i"
+        },
+        "spanish": {
+          "title": "Regreso al futuro",
+          "fullPath": "/es/pelicula/regreso-al-futuro"
+        }
+      }
+    },
+    {
+      "slug": "back-to-the-future-part-ii-1989",
+      "year": 1989,
+      "query": "Back to the Future Part II",
+      "status": "verified",
+      "match": {
+        "id": "tm135347",
+        "content": {
+          "title": "Regreso al futuro II",
+          "originalTitle": "Back to the Future Part II",
+          "originalReleaseYear": 1989,
+          "fullPath": "/ar/pelicula/regreso-al-futuro-ii"
+        },
+        "english": {
+          "title": "Back to the Future Part II",
+          "originalTitle": "Back to the Future Part II",
+          "originalReleaseYear": 1989,
+          "fullPath": "/us/movie/back-to-the-future-part-ii"
+        },
+        "spanish": {
+          "title": "Regreso al futuro II",
+          "fullPath": "/es/pelicula/regreso-al-futuro-ii"
+        }
+      }
+    },
+    {
+      "slug": "bambi-1942",
+      "year": 1942,
+      "query": "Bambi",
+      "status": "verified",
+      "match": {
+        "id": "tm79357",
+        "content": {
+          "title": "Bambi",
+          "originalTitle": "Bambi",
+          "originalReleaseYear": 1942,
+          "fullPath": "/ar/pelicula/bambi"
+        },
+        "english": {
+          "title": "Bambi",
+          "originalTitle": "Bambi",
+          "originalReleaseYear": 1942,
+          "fullPath": "/us/movie/bambi"
+        },
+        "spanish": {
+          "title": "Bambi",
+          "fullPath": "/es/pelicula/bambi"
+        }
+      }
+    },
+    {
+      "slug": "bananas-1971",
+      "year": 1971,
+      "query": "Bananas",
+      "status": "verified",
+      "match": {
+        "id": "tm14797",
+        "content": {
+          "title": "Bananas",
+          "originalTitle": "Bananas",
+          "originalReleaseYear": 1971,
+          "fullPath": "/ar/pelicula/bananas"
+        },
+        "english": {
+          "title": "Bananas",
+          "originalTitle": "Bananas",
+          "originalReleaseYear": 1971,
+          "fullPath": "/us/movie/bananas"
+        },
+        "spanish": {
+          "title": "Bananas",
+          "fullPath": "/es/pelicula/bananas"
+        }
+      }
+    },
+    {
+      "slug": "barry-lyndon-1975",
+      "year": 1975,
+      "query": "Barry Lyndon",
+      "status": "verified",
+      "match": {
+        "id": "tm123656",
+        "content": {
+          "title": "Barry Lyndon",
+          "originalTitle": "Barry Lyndon",
+          "originalReleaseYear": 1975,
+          "fullPath": "/ar/pelicula/barry-lyndon"
+        },
+        "english": {
+          "title": "Barry Lyndon",
+          "originalTitle": "Barry Lyndon",
+          "originalReleaseYear": 1975,
+          "fullPath": "/us/movie/barry-lyndon"
+        },
+        "spanish": {
+          "title": "Barry Lyndon",
+          "fullPath": "/es/pelicula/barry-lyndon"
+        }
+      }
+    },
+    {
+      "slug": "barton-fink-1991",
+      "year": 1991,
+      "query": "Barton Fink",
+      "status": "verified",
+      "match": {
+        "id": "tm8820",
+        "content": {
+          "title": "Barton Fink",
+          "originalTitle": "Barton Fink",
+          "originalReleaseYear": 1991,
+          "fullPath": "/ar/pelicula/barton-fink"
+        },
+        "english": {
+          "title": "Barton Fink",
+          "originalTitle": "Barton Fink",
+          "originalReleaseYear": 1991,
+          "fullPath": "/us/movie/barton-fink"
+        },
+        "spanish": {
+          "title": "Barton Fink",
+          "fullPath": "/es/pelicula/barton-fink"
+        }
+      }
+    },
+    {
+      "slug": "batman-1966",
+      "year": 1966,
+      "query": "Batman",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "batman-1989",
+      "year": 1989,
+      "query": "Batman",
+      "status": "verified",
+      "match": {
+        "id": "tm138000",
+        "content": {
+          "title": "Batman",
+          "originalTitle": "Batman",
+          "originalReleaseYear": 1989,
+          "fullPath": "/ar/pelicula/batman"
+        },
+        "english": {
+          "title": "Batman",
+          "originalTitle": "Batman",
+          "originalReleaseYear": 1989,
+          "fullPath": "/us/movie/batman-1989"
+        },
+        "spanish": {
+          "title": "Batman",
+          "fullPath": "/es/pelicula/batman"
+        }
+      }
+    },
+    {
+      "slug": "batman-returns-1992",
+      "year": 1992,
+      "query": "Batman Returns",
+      "status": "verified",
+      "match": {
+        "id": "tm128715",
+        "content": {
+          "title": "Batman vuelve",
+          "originalTitle": "Batman Returns",
+          "originalReleaseYear": 1992,
+          "fullPath": "/ar/pelicula/batman-vuelve"
+        },
+        "english": {
+          "title": "Batman Returns",
+          "originalTitle": "Batman Returns",
+          "originalReleaseYear": 1992,
+          "fullPath": "/us/movie/batman-returns"
+        },
+        "spanish": {
+          "title": "Batman vuelve",
+          "fullPath": "/es/pelicula/batman-vuelve"
+        }
+      }
+    },
+    {
+      "slug": "beetlejuice-1988",
+      "year": 1988,
+      "query": "Beetlejuice",
+      "status": "verified",
+      "match": {
+        "id": "tm39601",
+        "content": {
+          "title": "Bitelchús",
+          "originalTitle": "Beetlejuice",
+          "originalReleaseYear": 1988,
+          "fullPath": "/ar/pelicula/bitelchus"
+        },
+        "english": {
+          "title": "Beetlejuice",
+          "originalTitle": "Beetlejuice",
+          "originalReleaseYear": 1988,
+          "fullPath": "/us/movie/beetlejuice"
+        },
+        "spanish": {
+          "title": "Bitelchús",
+          "fullPath": "/es/pelicula/bitelchus"
+        }
+      }
+    },
+    {
+      "slug": "ben-hur-1959",
+      "year": 1959,
+      "query": "Ben-Hur",
+      "status": "verified",
+      "match": {
+        "id": "tm42704",
+        "content": {
+          "title": "Ben Hur",
+          "originalTitle": "Ben-Hur",
+          "originalReleaseYear": 1959,
+          "fullPath": "/ar/pelicula/ben-hur"
+        },
+        "english": {
+          "title": "Ben-Hur",
+          "originalTitle": "Ben-Hur",
+          "originalReleaseYear": 1959,
+          "fullPath": "/us/movie/ben-hur"
+        },
+        "spanish": {
+          "title": "Ben Hur",
+          "fullPath": "/es/pelicula/ben-hur"
+        }
+      }
+    },
+    {
+      "slug": "big-fish-2003",
+      "year": 2003,
+      "query": "Big Fish",
+      "status": "verified",
+      "match": {
+        "id": "tm139658",
+        "content": {
+          "title": "Big fish",
+          "originalTitle": "Big Fish",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/big-fish"
+        },
+        "english": {
+          "title": "Big Fish",
+          "originalTitle": "Big Fish",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/big-fish"
+        },
+        "spanish": {
+          "title": "Big fish",
+          "fullPath": "/es/pelicula/big-fish"
+        }
+      }
+    },
+    {
+      "slug": "blade-runner-1982",
+      "year": 1982,
+      "query": "Blade Runner",
+      "status": "verified",
+      "match": {
+        "id": "tm40461",
+        "content": {
+          "title": "Blade Runner",
+          "originalTitle": "Blade Runner",
+          "originalReleaseYear": 1982,
+          "fullPath": "/ar/pelicula/blade-runner"
+        },
+        "english": {
+          "title": "Blade Runner",
+          "originalTitle": "Blade Runner",
+          "originalReleaseYear": 1982,
+          "fullPath": "/us/movie/blade-runner"
+        },
+        "spanish": {
+          "title": "Blade Runner",
+          "fullPath": "/es/pelicula/blade-runner"
+        }
+      }
+    },
+    {
+      "slug": "blue-jasmine-2013",
+      "year": 2013,
+      "query": "Blue Jasmine",
+      "status": "verified",
+      "match": {
+        "id": "tm163686",
+        "content": {
+          "title": "Jasmine",
+          "originalTitle": "Blue Jasmine",
+          "originalReleaseYear": 2013,
+          "fullPath": "/ar/pelicula/blue-jasmine"
+        },
+        "english": {
+          "title": "Blue Jasmine",
+          "originalTitle": "Blue Jasmine",
+          "originalReleaseYear": 2013,
+          "fullPath": "/us/movie/blue-jasmine"
+        },
+        "spanish": {
+          "title": "Jasmine",
+          "fullPath": "/es/pelicula/blue-jasmine"
+        }
+      }
+    },
+    {
+      "slug": "boogie-nights-1997",
+      "year": 1997,
+      "query": "Boogie Nights",
+      "status": "verified",
+      "match": {
+        "id": "tm191013",
+        "content": {
+          "title": "Boogie nights",
+          "originalTitle": "Boogie Nights",
+          "originalReleaseYear": 1997,
+          "fullPath": "/ar/pelicula/boogie-nights"
+        },
+        "english": {
+          "title": "Boogie Nights",
+          "originalTitle": "Boogie Nights",
+          "originalReleaseYear": 1997,
+          "fullPath": "/us/movie/pushing-thirteen"
+        },
+        "spanish": {
+          "title": "Boogie nights",
+          "fullPath": "/es/pelicula/boogie-nights"
+        }
+      }
+    },
+    {
+      "slug": "boyhood-2014",
+      "year": 2014,
+      "query": "Boyhood",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "braveheart-1995",
+      "year": 1995,
+      "query": "Braveheart",
+      "status": "verified",
+      "match": {
+        "id": "tm12503",
+        "content": {
+          "title": "Corazón valiente",
+          "originalTitle": "Braveheart",
+          "originalReleaseYear": 1995,
+          "fullPath": "/ar/pelicula/braveheart"
+        },
+        "english": {
+          "title": "Braveheart",
+          "originalTitle": "Braveheart",
+          "originalReleaseYear": 1995,
+          "fullPath": "/us/movie/braveheart"
+        },
+        "spanish": {
+          "title": "Corazón valiente",
+          "fullPath": "/es/pelicula/braveheart"
+        }
+      }
+    },
+    {
+      "slug": "broadway-danny-rose-1984",
+      "year": 1984,
+      "query": "Broadway Danny Rose",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "brooklyn-2015",
+      "year": 2015,
+      "query": "Brooklyn",
+      "status": "verified",
+      "match": {
+        "id": "tm134804",
+        "content": {
+          "title": "Brooklyn",
+          "originalTitle": "Brooklyn",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/brooklyn"
+        },
+        "english": {
+          "title": "Brooklyn",
+          "originalTitle": "Brooklyn",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/brooklyn"
+        },
+        "spanish": {
+          "title": "Brooklyn",
+          "fullPath": "/es/pelicula/brooklyn"
+        }
+      }
+    },
+    {
+      "slug": "caballos-salvajes-1995",
+      "year": 1995,
+      "query": "Caballos salvajes",
+      "status": "verified",
+      "match": {
+        "id": "tm14015",
+        "content": {
+          "title": "Caballos salvajes",
+          "originalTitle": "Caballos salvajes",
+          "originalReleaseYear": 1995,
+          "fullPath": "/ar/pelicula/caballos-salvajes-1995"
+        },
+        "english": {
+          "title": "Wild Horses",
+          "originalTitle": "Caballos salvajes",
+          "originalReleaseYear": 1995,
+          "fullPath": ""
+        },
+        "spanish": {
+          "title": "Caballos salvajes",
+          "fullPath": ""
+        }
+      }
+    },
+    {
+      "slug": "cabaret-1972",
+      "year": 1972,
+      "query": "Cabaret",
+      "status": "verified",
+      "match": {
+        "id": "tm154519",
+        "content": {
+          "title": "Cabaret",
+          "originalTitle": "Cabaret",
+          "originalReleaseYear": 1972,
+          "fullPath": "/ar/pelicula/cabaret"
+        },
+        "english": {
+          "title": "Cabaret",
+          "originalTitle": "Cabaret",
+          "originalReleaseYear": 1972,
+          "fullPath": "/us/movie/cabaret"
+        },
+        "spanish": {
+          "title": "Cabaret",
+          "fullPath": "/es/pelicula/cabaret"
+        }
+      }
+    },
+    {
+      "slug": "captain-america-the-first-avenger-2011",
+      "year": 2011,
+      "query": "Captain America: The First Avenger",
+      "status": "verified",
+      "match": {
+        "id": "tm162906",
+        "content": {
+          "title": "Capitán América: El primer vengador",
+          "originalTitle": "Captain America: The First Avenger",
+          "originalReleaseYear": 2011,
+          "fullPath": "/ar/pelicula/capitan-america-el-primer-vengador"
+        },
+        "english": {
+          "title": "Captain America: The First Avenger",
+          "originalTitle": "Captain America: The First Avenger",
+          "originalReleaseYear": 2011,
+          "fullPath": "/us/movie/captain-america-the-first-avenger"
+        },
+        "spanish": {
+          "title": "Capitán América: El primer vengador",
+          "fullPath": "/es/pelicula/capitan-america-el-primer-vengador"
+        }
+      }
+    },
+    {
+      "slug": "captain-america-the-winter-soldier-2014",
+      "year": 2014,
+      "query": "Captain America: The Winter Soldier",
+      "status": "verified",
+      "match": {
+        "id": "tm159149",
+        "content": {
+          "title": "Capitán América: El Soldado de Invierno",
+          "originalTitle": "Captain America: The Winter Soldier",
+          "originalReleaseYear": 2014,
+          "fullPath": "/ar/pelicula/capitan-america-el-soldado-de-invierno"
+        },
+        "english": {
+          "title": "Captain America: The Winter Soldier",
+          "originalTitle": "Captain America: The Winter Soldier",
+          "originalReleaseYear": 2014,
+          "fullPath": "/us/movie/captain-america-the-winter-soldier"
+        },
+        "spanish": {
+          "title": "Capitán América: El Soldado de Invierno",
+          "fullPath": "/es/pelicula/capitan-america-el-soldado-de-invierno"
+        }
+      }
+    },
+    {
+      "slug": "carol-2015",
+      "year": 2015,
+      "query": "Carol",
+      "status": "verified",
+      "match": {
+        "id": "tm136004",
+        "content": {
+          "title": "Carol",
+          "originalTitle": "Carol",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/carol"
+        },
+        "english": {
+          "title": "Carol",
+          "originalTitle": "Carol",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/carol"
+        },
+        "spanish": {
+          "title": "Carol",
+          "fullPath": "/es/pelicula/carol"
+        }
+      }
+    },
+    {
+      "slug": "carrie-1976",
+      "year": 1976,
+      "query": "Carrie",
+      "status": "verified",
+      "match": {
+        "id": "tm83003",
+        "content": {
+          "title": "Carrie. Un extraño presentimiento",
+          "originalTitle": "Carrie",
+          "originalReleaseYear": 1976,
+          "fullPath": "/ar/pelicula/carrie-1976"
+        },
+        "english": {
+          "title": "Carrie",
+          "originalTitle": "Carrie",
+          "originalReleaseYear": 1976,
+          "fullPath": "/us/movie/carrie-1976"
+        },
+        "spanish": {
+          "title": "Carrie. Un extraño presentimiento",
+          "fullPath": "/es/pelicula/carrie"
+        }
+      }
+    },
+    {
+      "slug": "casablanca-1943",
+      "year": 1943,
+      "query": "Casablanca",
+      "status": "verified",
+      "match": {
+        "id": "tm77588",
+        "content": {
+          "title": "Casablanca",
+          "originalTitle": "Casablanca",
+          "originalReleaseYear": 1943,
+          "fullPath": "/ar/pelicula/casablanca"
+        },
+        "english": {
+          "title": "Casablanca",
+          "originalTitle": "Casablanca",
+          "originalReleaseYear": 1943,
+          "fullPath": "/us/movie/casablanca"
+        },
+        "spanish": {
+          "title": "Casablanca",
+          "fullPath": "/es/pelicula/casablanca"
+        }
+      }
+    },
+    {
+      "slug": "casino-1995",
+      "year": 1995,
+      "query": "Casino",
+      "status": "verified",
+      "match": {
+        "id": "tm16195",
+        "content": {
+          "title": "Casino, de Scorsese",
+          "originalTitle": "Casino",
+          "originalReleaseYear": 1995,
+          "fullPath": "/ar/pelicula/casino"
+        },
+        "english": {
+          "title": "Casino",
+          "originalTitle": "Casino",
+          "originalReleaseYear": 1995,
+          "fullPath": "/us/movie/casino"
+        },
+        "spanish": {
+          "title": "Casino, de Scorsese",
+          "fullPath": "/es/pelicula/casino"
+        }
+      }
+    },
+    {
+      "slug": "casino-royale-2006",
+      "year": 2006,
+      "query": "Casino Royale",
+      "status": "verified",
+      "match": {
+        "id": "tm39030",
+        "content": {
+          "title": "Casino Royale",
+          "originalTitle": "Casino Royale",
+          "originalReleaseYear": 2006,
+          "fullPath": "/ar/pelicula/casino-royale"
+        },
+        "english": {
+          "title": "Casino Royale",
+          "originalTitle": "Casino Royale",
+          "originalReleaseYear": 2006,
+          "fullPath": "/us/movie/casino-royale-uncut-edition"
+        },
+        "spanish": {
+          "title": "Casino Royale",
+          "fullPath": "/es/pelicula/casino-royale"
+        }
+      }
+    },
+    {
+      "slug": "cavalcade-1933",
+      "year": 1933,
+      "query": "Cavalcade",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "chicago-2002",
+      "year": 2002,
+      "query": "Chicago",
+      "status": "verified",
+      "match": {
+        "id": "tm119082",
+        "content": {
+          "title": "Chicago",
+          "originalTitle": "Chicago",
+          "originalReleaseYear": 2002,
+          "fullPath": "/ar/pelicula/chicago"
+        },
+        "english": {
+          "title": "Chicago",
+          "originalTitle": "Chicago",
+          "originalReleaseYear": 2002,
+          "fullPath": "/us/movie/chicago-the-musical"
+        },
+        "spanish": {
+          "title": "Chicago",
+          "fullPath": "/es/pelicula/chicago"
+        }
+      }
+    },
+    {
+      "slug": "citizen-kane-1941",
+      "year": 1941,
+      "query": "Citizen Kane",
+      "status": "verified",
+      "match": {
+        "id": "tm83648",
+        "content": {
+          "title": "Ciudadano Kane",
+          "originalTitle": "Citizen Kane",
+          "originalReleaseYear": 1941,
+          "fullPath": "/ar/pelicula/ciudadano-kane"
+        },
+        "english": {
+          "title": "Citizen Kane",
+          "originalTitle": "Citizen Kane",
+          "originalReleaseYear": 1941,
+          "fullPath": "/us/movie/citizen-kane"
+        },
+        "spanish": {
+          "title": "Ciudadano Kane",
+          "fullPath": "/es/pelicula/ciudadano-kane"
+        }
+      }
+    },
+    {
+      "slug": "cleo-de-5-a-7-1962",
+      "year": 1962,
+      "query": "Cléo de 5 à 7",
+      "status": "verified",
+      "match": {
+        "id": "tm11228",
+        "content": {
+          "title": "Cleo de 5 a 7",
+          "originalTitle": "Cléo de 5 à 7",
+          "originalReleaseYear": 1962,
+          "fullPath": "/ar/pelicula/cleo-de-5-a-7"
+        },
+        "english": {
+          "title": "Cléo from 5 to 7",
+          "originalTitle": "Cléo de 5 à 7",
+          "originalReleaseYear": 1962,
+          "fullPath": "/us/movie/cleo-from-5-to-7"
+        },
+        "spanish": {
+          "title": "Cleo de 5 a 7",
+          "fullPath": "/es/pelicula/cleo-de-5-a-7"
+        }
+      }
+    },
+    {
+      "slug": "crash-2005",
+      "year": 2005,
+      "query": "Crash",
+      "status": "verified",
+      "match": {
+        "id": "tm94303",
+        "content": {
+          "title": "Alto Impacto",
+          "originalTitle": "Crash",
+          "originalReleaseYear": 2005,
+          "fullPath": "/ar/pelicula/crash-colision"
+        },
+        "english": {
+          "title": "Crash",
+          "originalTitle": "Crash",
+          "originalReleaseYear": 2005,
+          "fullPath": "/us/movie/crash"
+        },
+        "spanish": {
+          "title": "Alto Impacto",
+          "fullPath": "/es/pelicula/crash-colision"
+        }
+      }
+    },
+    {
+      "slug": "creed-2015",
+      "year": 2015,
+      "query": "Creed",
+      "status": "verified",
+      "match": {
+        "id": "tm211204",
+        "content": {
+          "title": "Creed. La leyenda de Rocky",
+          "originalTitle": "Nascidos para lutar",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/creed-la-leyenda-de-rocky"
+        },
+        "english": {
+          "title": "Creed",
+          "originalTitle": "Nascidos para lutar",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/creed"
+        },
+        "spanish": {
+          "title": "Creed. La leyenda de Rocky",
+          "fullPath": "/es/pelicula/creed-la-leyenda-de-rocky"
+        }
+      }
+    },
+    {
+      "slug": "dances-with-wolves-1990",
+      "year": 1990,
+      "query": "Dances with Wolves",
+      "status": "verified",
+      "match": {
+        "id": "tm155112",
+        "content": {
+          "title": "Bailando con Lobos",
+          "originalTitle": "Dances with Wolves",
+          "originalReleaseYear": 1990,
+          "fullPath": "/ar/pelicula/bailando-con-lobos"
+        },
+        "english": {
+          "title": "Dances with Wolves",
+          "originalTitle": "Dances with Wolves",
+          "originalReleaseYear": 1990,
+          "fullPath": "/us/movie/dances-with-wolves"
+        },
+        "spanish": {
+          "title": "Bailando con Lobos",
+          "fullPath": "/es/pelicula/bailando-con-lobos"
+        }
+      }
+    },
+    {
+      "slug": "dark-city-1998",
+      "year": 1998,
+      "query": "Dark City",
+      "status": "verified",
+      "match": {
+        "id": "tm58621",
+        "content": {
+          "title": "Dark City",
+          "originalTitle": "Dark City",
+          "originalReleaseYear": 1998,
+          "fullPath": "/ar/pelicula/dark-city"
+        },
+        "english": {
+          "title": "Dark City",
+          "originalTitle": "Dark City",
+          "originalReleaseYear": 1998,
+          "fullPath": "/us/movie/dark-city-1998"
+        },
+        "spanish": {
+          "title": "Dark City",
+          "fullPath": "/es/pelicula/dark-city"
+        }
+      }
+    },
+    {
+      "slug": "darkman-1990",
+      "year": 1990,
+      "query": "Darkman",
+      "status": "verified",
+      "match": {
+        "id": "tm154394",
+        "content": {
+          "title": "Darkman",
+          "originalTitle": "Darkman",
+          "originalReleaseYear": 1990,
+          "fullPath": "/ar/pelicula/darkman"
+        },
+        "english": {
+          "title": "Darkman",
+          "originalTitle": "Darkman",
+          "originalReleaseYear": 1990,
+          "fullPath": "/us/movie/darkman-1"
+        },
+        "spanish": {
+          "title": "Darkman",
+          "fullPath": "/es/pelicula/darkman"
+        }
+      }
+    },
+    {
+      "slug": "dawn-of-the-planet-of-the-apes-2014",
+      "year": 2014,
+      "query": "Dawn of the Planet of the Apes",
+      "status": "verified",
+      "match": {
+        "id": "tm144049",
+        "content": {
+          "title": "El amanecer del planeta de los simios",
+          "originalTitle": "Dawn of the Planet of the Apes",
+          "originalReleaseYear": 2014,
+          "fullPath": "/ar/pelicula/el-amanecer-del-planeta-de-los-simios"
+        },
+        "english": {
+          "title": "Dawn of the Planet of the Apes",
+          "originalTitle": "Dawn of the Planet of the Apes",
+          "originalReleaseYear": 2014,
+          "fullPath": "/us/movie/dawn-of-the-planet-of-the-apes"
+        },
+        "spanish": {
+          "title": "El amanecer del planeta de los simios",
+          "fullPath": "/es/pelicula/el-amanecer-del-planeta-de-los-simios"
+        }
+      }
+    },
+    {
+      "slug": "donnie-brasco-1997",
+      "year": 1997,
+      "query": "Donnie Brasco",
+      "status": "verified",
+      "match": {
+        "id": "tm191989",
+        "content": {
+          "title": "Donnie Brasco",
+          "originalTitle": "Donnie Brasco",
+          "originalReleaseYear": 1997,
+          "fullPath": "/ar/pelicula/donnie-brasco"
+        },
+        "english": {
+          "title": "Donnie Brasco",
+          "originalTitle": "Donnie Brasco",
+          "originalReleaseYear": 1997,
+          "fullPath": "/us/movie/donnie-brasco"
+        },
+        "spanish": {
+          "title": "Donnie Brasco",
+          "fullPath": "/es/pelicula/donnie-brasco"
+        }
+      }
+    },
+    {
+      "slug": "donnie-darko-2001",
+      "year": 2001,
+      "query": "Donnie Darko",
+      "status": "verified",
+      "match": {
+        "id": "tm51923",
+        "content": {
+          "title": "Donnie Darko",
+          "originalTitle": "Donnie Darko",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/donnie-darko"
+        },
+        "english": {
+          "title": "Donnie Darko",
+          "originalTitle": "Donnie Darko",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/donnie-darko-directors-cut"
+        },
+        "spanish": {
+          "title": "Donnie Darko",
+          "fullPath": "/es/pelicula/donnie-darko"
+        }
+      }
+    },
+    {
+      "slug": "dont-look-back-1967",
+      "year": 1967,
+      "query": "Dont Look Back",
+      "status": "verified",
+      "match": {
+        "id": "tm119413",
+        "content": {
+          "title": "Dont Look Back",
+          "originalTitle": "Bob Dylan – Don't Look Back",
+          "originalReleaseYear": 1967,
+          "fullPath": "/ar/pelicula/dont-look-back"
+        },
+        "english": {
+          "title": "Bob Dylan – Don't Look Back",
+          "originalTitle": "Bob Dylan – Don't Look Back",
+          "originalReleaseYear": 1967,
+          "fullPath": "/us/movie/dont-look-back-1967"
+        },
+        "spanish": {
+          "title": "Dont Look Back",
+          "fullPath": "/es/pelicula/dont-look-back"
+        }
+      }
+    },
+    {
+      "slug": "dumbo-1941",
+      "year": 1941,
+      "query": "Dumbo",
+      "status": "verified",
+      "match": {
+        "id": "tm87946",
+        "content": {
+          "title": "Dumbo",
+          "originalTitle": "Dumbo",
+          "originalReleaseYear": 1941,
+          "fullPath": "/ar/pelicula/dumbo-1941"
+        },
+        "english": {
+          "title": "Dumbo",
+          "originalTitle": "Dumbo",
+          "originalReleaseYear": 1941,
+          "fullPath": "/us/movie/dumbo"
+        },
+        "spanish": {
+          "title": "Dumbo",
+          "fullPath": "/es/pelicula/dumbo"
+        }
+      }
+    },
+    {
+      "slug": "ed-wood-1994",
+      "year": 1994,
+      "query": "Ed Wood",
+      "status": "verified",
+      "match": {
+        "id": "tm112734",
+        "content": {
+          "title": "Ed Wood",
+          "originalTitle": "Ed Wood",
+          "originalReleaseYear": 1994,
+          "fullPath": "/ar/pelicula/ed-wood"
+        },
+        "english": {
+          "title": "Ed Wood",
+          "originalTitle": "Ed Wood",
+          "originalReleaseYear": 1994,
+          "fullPath": "/us/movie/ed-wood"
+        },
+        "spanish": {
+          "title": "Ed Wood",
+          "fullPath": "/es/pelicula/ed-wood"
+        }
+      }
+    },
+    {
+      "slug": "edward-scissorhands-1990",
+      "year": 1990,
+      "query": "Edward Scissorhands",
+      "status": "verified",
+      "match": {
+        "id": "tm147893",
+        "content": {
+          "title": "Eduardo Manostijeras",
+          "originalTitle": "Edward Scissorhands",
+          "originalReleaseYear": 1990,
+          "fullPath": "/ar/pelicula/eduardo-manostijeras"
+        },
+        "english": {
+          "title": "Edward Scissorhands",
+          "originalTitle": "Edward Scissorhands",
+          "originalReleaseYear": 1990,
+          "fullPath": "/us/movie/edward-scissorhands"
+        },
+        "spanish": {
+          "title": "Eduardo Manostijeras",
+          "fullPath": "/es/pelicula/eduardo-manostijeras"
+        }
+      }
+    },
+    {
+      "slug": "el-abrazo-partido-2004",
+      "year": 2004,
+      "query": "El abrazo partido",
+      "status": "verified",
+      "match": {
+        "id": "tm87282",
+        "content": {
+          "title": "El abrazo partido",
+          "originalTitle": "El abrazo partido",
+          "originalReleaseYear": 2004,
+          "fullPath": "/ar/pelicula/el-abrazo-partido"
+        },
+        "english": {
+          "title": "Lost Embrace",
+          "originalTitle": "El abrazo partido",
+          "originalReleaseYear": 2004,
+          "fullPath": ""
+        },
+        "spanish": {
+          "title": "El abrazo partido",
+          "fullPath": "/es/pelicula/lost-embrace"
+        }
+      }
+    },
+    {
+      "slug": "el-bonaerense-2002",
+      "year": 2002,
+      "query": "El bonaerense",
+      "status": "verified",
+      "match": {
+        "id": "tm110244",
+        "content": {
+          "title": "El bonaerense",
+          "originalTitle": "El bonaerense",
+          "originalReleaseYear": 2002,
+          "fullPath": "/ar/pelicula/el-bonaerense"
+        },
+        "english": {
+          "title": "El bonaerense",
+          "originalTitle": "El bonaerense",
+          "originalReleaseYear": 2002,
+          "fullPath": "/us/movie/el-bonaerense"
+        },
+        "spanish": {
+          "title": "El bonaerense",
+          "fullPath": "/es/pelicula/el-bonaerense"
+        }
+      }
+    },
+    {
+      "slug": "el-clan-2015",
+      "year": 2015,
+      "query": "El clan",
+      "status": "verified",
+      "match": {
+        "id": "tm218049",
+        "content": {
+          "title": "El clan",
+          "originalTitle": "El clan",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/el-clan"
+        },
+        "english": {
+          "title": "The Clan",
+          "originalTitle": "El clan",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/the-clan"
+        },
+        "spanish": {
+          "title": "El clan",
+          "fullPath": "/es/pelicula/el-clan"
+        }
+      }
+    },
+    {
+      "slug": "el-dia-de-la-bestia-1995",
+      "year": 1995,
+      "query": "El día de la bestia",
+      "status": "verified",
+      "match": {
+        "id": "tm14011",
+        "content": {
+          "title": "El día de la bestia",
+          "originalTitle": "El día de la bestia",
+          "originalReleaseYear": 1995,
+          "fullPath": "/ar/pelicula/el-dia-de-la-bestia"
+        },
+        "english": {
+          "title": "The Day of the Beast",
+          "originalTitle": "El día de la bestia",
+          "originalReleaseYear": 1995,
+          "fullPath": "/us/movie/the-day-of-the-beast"
+        },
+        "spanish": {
+          "title": "El día de la bestia",
+          "fullPath": "/es/pelicula/el-dia-de-la-bestia"
+        }
+      }
+    },
+    {
+      "slug": "el-espiritu-de-la-colmena-1973",
+      "year": 1973,
+      "query": "El espíritu de la colmena",
+      "status": "verified",
+      "match": {
+        "id": "tm186730",
+        "content": {
+          "title": "El espíritu de la colmena",
+          "originalTitle": "El espíritu de la colmena",
+          "originalReleaseYear": 1973,
+          "fullPath": "/ar/pelicula/el-espiritu-de-la-colmena"
+        },
+        "english": {
+          "title": "The Spirit of the Beehive",
+          "originalTitle": "El espíritu de la colmena",
+          "originalReleaseYear": 1973,
+          "fullPath": "/us/movie/the-spirit-of-the-beehive"
+        },
+        "spanish": {
+          "title": "El espíritu de la colmena",
+          "fullPath": "/es/pelicula/the-spirit-of-the-beehive"
+        }
+      }
+    },
+    {
+      "slug": "el-hijo-de-la-novia-2001",
+      "year": 2001,
+      "query": "El hijo de la novia",
+      "status": "verified",
+      "match": {
+        "id": "tm43487",
+        "content": {
+          "title": "El hijo de la novia",
+          "originalTitle": "El hijo de la novia",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/el-hijo-de-la-novia"
+        },
+        "english": {
+          "title": "Son of the Bride",
+          "originalTitle": "El hijo de la novia",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/son-of-the-bride"
+        },
+        "spanish": {
+          "title": "El hijo de la novia",
+          "fullPath": "/es/pelicula/son-of-the-bride"
+        }
+      }
+    },
+    {
+      "slug": "el-laberinto-del-fauno-2006",
+      "year": 2006,
+      "query": "El laberinto del fauno",
+      "status": "verified",
+      "match": {
+        "id": "tm30521",
+        "content": {
+          "title": "El laberinto del fauno",
+          "originalTitle": "El laberinto del fauno",
+          "originalReleaseYear": 2006,
+          "fullPath": "/ar/pelicula/el-laberinto-del-fauno"
+        },
+        "english": {
+          "title": "Pan's Labyrinth",
+          "originalTitle": "El laberinto del fauno",
+          "originalReleaseYear": 2006,
+          "fullPath": "/us/movie/pans-labyrinth"
+        },
+        "spanish": {
+          "title": "El laberinto del fauno",
+          "fullPath": "/es/pelicula/el-laberinto-del-fauno"
+        }
+      }
+    },
+    {
+      "slug": "el-patron-radiografia-de-un-crimen-2014",
+      "year": 2014,
+      "query": "El patrón, radiografía de un crimen",
+      "status": "verified",
+      "match": {
+        "id": "tm148662",
+        "content": {
+          "title": "El patrón, radiografía de un crimen",
+          "originalTitle": "El patrón, radiografía de un crimen",
+          "originalReleaseYear": 2014,
+          "fullPath": "/ar/pelicula/el-patron-radiografia-de-un-crimen"
+        },
+        "english": {
+          "title": "The Boss: Anatomy of a Crime",
+          "originalTitle": "El patrón, radiografía de un crimen",
+          "originalReleaseYear": 2014,
+          "fullPath": "/us/movie/el-patron-anatomy-of-a-crime"
+        },
+        "spanish": {
+          "title": "El patrón, radiografía de un crimen",
+          "fullPath": "/es/pelicula/el-patron-radiografia-de-un-crimen"
+        }
+      }
+    },
+    {
+      "slug": "el-secreto-de-sus-ojos-2009",
+      "year": 2009,
+      "query": "El secreto de sus ojos",
+      "status": "verified",
+      "match": {
+        "id": "tm151065",
+        "content": {
+          "title": "El secreto de sus ojos",
+          "originalTitle": "El secreto de sus ojos",
+          "originalReleaseYear": 2009,
+          "fullPath": "/ar/pelicula/el-secreto-de-sus-ojos"
+        },
+        "english": {
+          "title": "The Secret in Their Eyes",
+          "originalTitle": "El secreto de sus ojos",
+          "originalReleaseYear": 2009,
+          "fullPath": "/us/movie/the-secret-in-their-eyes"
+        },
+        "spanish": {
+          "title": "El secreto de sus ojos",
+          "fullPath": "/es/pelicula/el-secreto-de-sus-ojos"
+        }
+      }
+    },
+    {
+      "slug": "elephant-2003",
+      "year": 2003,
+      "query": "Elephant",
+      "status": "verified",
+      "match": {
+        "id": "tm140855",
+        "content": {
+          "title": "Elephant",
+          "originalTitle": "Elephant",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/elephant"
+        },
+        "english": {
+          "title": "Elephant",
+          "originalTitle": "Elephant",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/elephant-2003"
+        },
+        "spanish": {
+          "title": "Elephant",
+          "fullPath": "/es/pelicula/elephant"
+        }
+      }
+    },
+    {
+      "slug": "elf-2003",
+      "year": 2003,
+      "query": "Elf",
+      "status": "verified",
+      "match": {
+        "id": "tm129484",
+        "content": {
+          "title": "Elf",
+          "originalTitle": "Elf",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/elf"
+        },
+        "english": {
+          "title": "Elf",
+          "originalTitle": "Elf",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/elf"
+        },
+        "spanish": {
+          "title": "Elf",
+          "fullPath": "/es/pelicula/elf"
+        }
+      }
+    },
+    {
+      "slug": "elizabeth-1998",
+      "year": 1998,
+      "query": "Elizabeth",
+      "status": "verified",
+      "match": {
+        "id": "tm46665",
+        "content": {
+          "title": "Elizabeth",
+          "originalTitle": "Elizabeth",
+          "originalReleaseYear": 1998,
+          "fullPath": "/ar/pelicula/elizabeth"
+        },
+        "english": {
+          "title": "Elizabeth",
+          "originalTitle": "Elizabeth",
+          "originalReleaseYear": 1998,
+          "fullPath": "/us/movie/elizabeth"
+        },
+        "spanish": {
+          "title": "Elizabeth",
+          "fullPath": "/es/pelicula/elizabeth"
+        }
+      }
+    },
+    {
+      "slug": "fantasia-1940",
+      "year": 1940,
+      "query": "Fantasia",
+      "status": "verified",
+      "match": {
+        "id": "tm74391",
+        "content": {
+          "title": "Fantasía",
+          "originalTitle": "Fantasia",
+          "originalReleaseYear": 1940,
+          "fullPath": "/ar/pelicula/fantasia"
+        },
+        "english": {
+          "title": "Fantasia",
+          "originalTitle": "Fantasia",
+          "originalReleaseYear": 1940,
+          "fullPath": "/us/movie/fantasia"
+        },
+        "spanish": {
+          "title": "Fantasía",
+          "fullPath": "/es/pelicula/fantasia"
+        }
+      }
+    },
+    {
+      "slug": "fast-five-2011",
+      "year": 2011,
+      "query": "Fast Five",
+      "status": "verified",
+      "match": {
+        "id": "tm170517",
+        "content": {
+          "title": "Fast & Furious 5",
+          "originalTitle": "Fast Five",
+          "originalReleaseYear": 2011,
+          "fullPath": "/ar/pelicula/fast-y-furious-5"
+        },
+        "english": {
+          "title": "Fast Five",
+          "originalTitle": "Fast Five",
+          "originalReleaseYear": 2011,
+          "fullPath": "/us/movie/fast-five"
+        },
+        "spanish": {
+          "title": "Fast & Furious 5",
+          "fullPath": "/es/pelicula/fast-y-furious-5"
+        }
+      }
+    },
+    {
+      "slug": "fight-club-1999",
+      "year": 1999,
+      "query": "Fight Club",
+      "status": "verified",
+      "match": {
+        "id": "tm42409",
+        "content": {
+          "title": "El club de la lucha",
+          "originalTitle": "Fight Club",
+          "originalReleaseYear": 1999,
+          "fullPath": "/ar/pelicula/el-club-de-la-lucha"
+        },
+        "english": {
+          "title": "Fight Club",
+          "originalTitle": "Fight Club",
+          "originalReleaseYear": 1999,
+          "fullPath": "/us/movie/fight-club"
+        },
+        "spanish": {
+          "title": "El club de la lucha",
+          "fullPath": "/es/pelicula/el-club-de-la-lucha"
+        }
+      }
+    },
+    {
+      "slug": "finding-nemo-2003",
+      "year": 2003,
+      "query": "Finding Nemo",
+      "status": "verified",
+      "match": {
+        "id": "tm135549",
+        "content": {
+          "title": "Buscando a Nemo",
+          "originalTitle": "Finding Nemo",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/buscando-a-nemo"
+        },
+        "english": {
+          "title": "Finding Nemo",
+          "originalTitle": "Finding Nemo",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/finding-nemo"
+        },
+        "spanish": {
+          "title": "Buscando a Nemo",
+          "fullPath": "/es/pelicula/buscando-a-nemo"
+        }
+      }
+    },
+    {
+      "slug": "forrest-gump-1994",
+      "year": 1994,
+      "query": "Forrest Gump",
+      "status": "verified",
+      "match": {
+        "id": "tm122434",
+        "content": {
+          "title": "Forrest Gump",
+          "originalTitle": "Forrest Gump",
+          "originalReleaseYear": 1994,
+          "fullPath": "/ar/pelicula/forrest-gump"
+        },
+        "english": {
+          "title": "Forrest Gump",
+          "originalTitle": "Forrest Gump",
+          "originalReleaseYear": 1994,
+          "fullPath": "/us/movie/forrest-gump"
+        },
+        "spanish": {
+          "title": "Forrest Gump",
+          "fullPath": "/es/pelicula/forrest-gump"
+        }
+      }
+    },
+    {
+      "slug": "frankenweenie-2012",
+      "year": 2012,
+      "query": "Frankenweenie",
+      "status": "verified",
+      "match": {
+        "id": "tm63238",
+        "content": {
+          "title": "Frankenweenie",
+          "originalTitle": "Frankenweenie",
+          "originalReleaseYear": 2012,
+          "fullPath": "/ar/pelicula/frankenweenie"
+        },
+        "english": {
+          "title": "Frankenweenie",
+          "originalTitle": "Frankenweenie",
+          "originalReleaseYear": 2012,
+          "fullPath": "/us/movie/frankenweenie"
+        },
+        "spanish": {
+          "title": "Frankenweenie",
+          "fullPath": "/es/pelicula/frankenweenie"
+        }
+      }
+    },
+    {
+      "slug": "from-dusk-till-dawn-1996",
+      "year": 1996,
+      "query": "From Dusk Till Dawn",
+      "status": "verified",
+      "match": {
+        "id": "tm107359",
+        "content": {
+          "title": "Abierto hasta el amanecer",
+          "originalTitle": "From Dusk Till Dawn",
+          "originalReleaseYear": 1996,
+          "fullPath": "/ar/pelicula/abierto-hasta-el-amanecer"
+        },
+        "english": {
+          "title": "From Dusk Till Dawn",
+          "originalTitle": "From Dusk Till Dawn",
+          "originalReleaseYear": 1996,
+          "fullPath": "/us/movie/from-dusk-till-dawn-1"
+        },
+        "spanish": {
+          "title": "Abierto hasta el amanecer",
+          "fullPath": "/es/pelicula/abierto-hasta-el-amanecer"
+        }
+      }
+    },
+    {
+      "slug": "frozen-2013",
+      "year": 2013,
+      "query": "Frozen",
+      "status": "verified",
+      "match": {
+        "id": "tm181359",
+        "content": {
+          "title": "Frozen: El reino del hielo",
+          "originalTitle": "Frozen",
+          "originalReleaseYear": 2013,
+          "fullPath": "/ar/pelicula/frozen-el-reino-del-hielo"
+        },
+        "english": {
+          "title": "Frozen",
+          "originalTitle": "Frozen",
+          "originalReleaseYear": 2013,
+          "fullPath": "/us/movie/frozen-2013"
+        },
+        "spanish": {
+          "title": "Frozen: El reino del hielo",
+          "fullPath": "/es/pelicula/frozen-el-reino-del-hielo"
+        }
+      }
+    },
+    {
+      "slug": "furious-7-2015",
+      "year": 2015,
+      "query": "Furious 7",
+      "status": "verified",
+      "match": {
+        "id": "tm138641",
+        "content": {
+          "title": "Fast & Furious 7",
+          "originalTitle": "Furious 7",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/fast-y-furious-7"
+        },
+        "english": {
+          "title": "Furious 7",
+          "originalTitle": "Furious 7",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/fast-7"
+        },
+        "spanish": {
+          "title": "Fast & Furious 7",
+          "fullPath": "/es/pelicula/fast-y-furious-7"
+        }
+      }
+    },
+    {
+      "slug": "gandhi-1982",
+      "year": 1982,
+      "query": "Gandhi",
+      "status": "verified",
+      "match": {
+        "id": "tm57354",
+        "content": {
+          "title": "Gandhi",
+          "originalTitle": "Gandhi",
+          "originalReleaseYear": 1982,
+          "fullPath": "/ar/pelicula/gandhi"
+        },
+        "english": {
+          "title": "Gandhi",
+          "originalTitle": "Gandhi",
+          "originalReleaseYear": 1982,
+          "fullPath": "/us/movie/gandhi"
+        },
+        "spanish": {
+          "title": "Gandhi",
+          "fullPath": "/es/pelicula/gandhi"
+        }
+      }
+    },
+    {
+      "slug": "gangs-of-new-york-2002",
+      "year": 2002,
+      "query": "Gangs of New York",
+      "status": "verified",
+      "match": {
+        "id": "tm105987",
+        "content": {
+          "title": "Gangs of New York",
+          "originalTitle": "Gangs of New York",
+          "originalReleaseYear": 2002,
+          "fullPath": "/ar/pelicula/gangs-of-new-york"
+        },
+        "english": {
+          "title": "Gangs of New York",
+          "originalTitle": "Gangs of New York",
+          "originalReleaseYear": 2002,
+          "fullPath": "/us/movie/les-gangs-de-new-york"
+        },
+        "spanish": {
+          "title": "Gangs of New York",
+          "fullPath": "/es/pelicula/gangs-of-new-york"
+        }
+      }
+    },
+    {
+      "slug": "garage-olimpo-1999",
+      "year": 1999,
+      "query": "Garage Olimpo",
+      "status": "verified",
+      "match": {
+        "id": "tm25812",
+        "content": {
+          "title": "Garage Olimpo",
+          "originalTitle": "Garage Olimpo",
+          "originalReleaseYear": 1999,
+          "fullPath": "/ar/pelicula/garage-olimpo"
+        },
+        "english": {
+          "title": "Garage Olimpo",
+          "originalTitle": "Garage Olimpo",
+          "originalReleaseYear": 1999,
+          "fullPath": "/us/movie/garage-olimpo"
+        },
+        "spanish": {
+          "title": "Garage Olimpo",
+          "fullPath": "/es/pelicula/garage-olimpo"
+        }
+      }
+    },
+    {
+      "slug": "gattaca-1997",
+      "year": 1997,
+      "query": "Gattaca",
+      "status": "verified",
+      "match": {
+        "id": "tm192405",
+        "content": {
+          "title": "Gattaca",
+          "originalTitle": "Gattaca",
+          "originalReleaseYear": 1997,
+          "fullPath": "/ar/pelicula/gattaca"
+        },
+        "english": {
+          "title": "Gattaca",
+          "originalTitle": "Gattaca",
+          "originalReleaseYear": 1997,
+          "fullPath": "/us/movie/gattaca"
+        },
+        "spanish": {
+          "title": "Gattaca",
+          "fullPath": "/es/pelicula/gattaca"
+        }
+      }
+    },
+    {
+      "slug": "gentleman-s-agreement-1947",
+      "year": 1947,
+      "query": "Gentleman's Agreement",
+      "status": "verified",
+      "match": {
+        "id": "tm88997",
+        "content": {
+          "title": "La barrera invisible",
+          "originalTitle": "Gentleman's Agreement",
+          "originalReleaseYear": 1947,
+          "fullPath": "/ar/pelicula/la-barrera-invisible"
+        },
+        "english": {
+          "title": "Gentleman's Agreement",
+          "originalTitle": "Gentleman's Agreement",
+          "originalReleaseYear": 1947,
+          "fullPath": "/us/movie/gentlemans-agreement"
+        },
+        "spanish": {
+          "title": "La barrera invisible",
+          "fullPath": "/es/pelicula/la-barrera-invisible"
+        }
+      }
+    },
+    {
+      "slug": "george-harrison-living-in-the-material-world-2011",
+      "year": 2011,
+      "query": "George Harrison: Living in the Material World",
+      "status": "verified",
+      "match": {
+        "id": "tm168252",
+        "content": {
+          "title": "George Harrison: Living in the Material World",
+          "originalTitle": "George Harrison: Living in the Material World",
+          "originalReleaseYear": 2011,
+          "fullPath": "/ar/pelicula/george-harrison"
+        },
+        "english": {
+          "title": "George Harrison: Living in the Material World",
+          "originalTitle": "George Harrison: Living in the Material World",
+          "originalReleaseYear": 2011,
+          "fullPath": "/us/movie/george-harrison-living-in-the-material-world"
+        },
+        "spanish": {
+          "title": "George Harrison: Living in the Material World",
+          "fullPath": "/es/pelicula/george-harrison"
+        }
+      }
+    },
+    {
+      "slug": "gladiator-2000",
+      "year": 2000,
+      "query": "Gladiator",
+      "status": "verified",
+      "match": {
+        "id": "tm28142",
+        "content": {
+          "title": "Gladiator (El gladiador)",
+          "originalTitle": "Gladiator",
+          "originalReleaseYear": 2000,
+          "fullPath": "/ar/pelicula/gladiator-2000"
+        },
+        "english": {
+          "title": "Gladiator",
+          "originalTitle": "Gladiator",
+          "originalReleaseYear": 2000,
+          "fullPath": "/us/movie/gladiator-2000"
+        },
+        "spanish": {
+          "title": "Gladiator (El gladiador)",
+          "fullPath": "/es/pelicula/gladiator"
+        }
+      }
+    },
+    {
+      "slug": "goldeneye-1995",
+      "year": 1995,
+      "query": "GoldenEye",
+      "status": "verified",
+      "match": {
+        "id": "tm7806",
+        "content": {
+          "title": "Goldeneye",
+          "originalTitle": "GoldenEye",
+          "originalReleaseYear": 1995,
+          "fullPath": "/ar/pelicula/goldeneye"
+        },
+        "english": {
+          "title": "GoldenEye",
+          "originalTitle": "GoldenEye",
+          "originalReleaseYear": 1995,
+          "fullPath": "/us/movie/goldeneye-1995"
+        },
+        "spanish": {
+          "title": "Goldeneye",
+          "fullPath": "/es/pelicula/goldeneye"
+        }
+      }
+    },
+    {
+      "slug": "goodfellas-1990",
+      "year": 1990,
+      "query": "GoodFellas",
+      "status": "verified",
+      "match": {
+        "id": "tm155787",
+        "content": {
+          "title": "Uno de los nuestros",
+          "originalTitle": "GoodFellas",
+          "originalReleaseYear": 1990,
+          "fullPath": "/ar/pelicula/uno-de-los-nuestros"
+        },
+        "english": {
+          "title": "GoodFellas",
+          "originalTitle": "GoodFellas",
+          "originalReleaseYear": 1990,
+          "fullPath": "/us/movie/goodfellas"
+        },
+        "spanish": {
+          "title": "Uno de los nuestros",
+          "fullPath": "/es/pelicula/uno-de-los-nuestros"
+        }
+      }
+    },
+    {
+      "slug": "grey-gardens-1975",
+      "year": 1975,
+      "query": "Grey Gardens",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "grizzly-man-2005",
+      "year": 2005,
+      "query": "Grizzly Man",
+      "status": "verified",
+      "match": {
+        "id": "tm161628",
+        "content": {
+          "title": "Grizzly Man",
+          "originalTitle": "Grizzly Man",
+          "originalReleaseYear": 2005,
+          "fullPath": "/ar/pelicula/grizzly-man"
+        },
+        "english": {
+          "title": "Grizzly Man",
+          "originalTitle": "Grizzly Man",
+          "originalReleaseYear": 2005,
+          "fullPath": "/us/movie/grizzly-man"
+        },
+        "spanish": {
+          "title": "Grizzly Man",
+          "fullPath": "/es/pelicula/grizzly-man"
+        }
+      }
+    },
+    {
+      "slug": "guardians-of-the-galaxy-2014",
+      "year": 2014,
+      "query": "Guardians of the Galaxy",
+      "status": "verified",
+      "match": {
+        "id": "tm140097",
+        "content": {
+          "title": "Guardianes de la galaxia",
+          "originalTitle": "Guardians of the Galaxy",
+          "originalReleaseYear": 2014,
+          "fullPath": "/ar/pelicula/guardianes-de-la-galaxia"
+        },
+        "english": {
+          "title": "Guardians of the Galaxy",
+          "originalTitle": "Guardians of the Galaxy",
+          "originalReleaseYear": 2014,
+          "fullPath": "/us/movie/guardians-of-the-galaxy"
+        },
+        "spanish": {
+          "title": "Guardianes de la galaxia",
+          "fullPath": "/es/pelicula/guardianes-de-la-galaxia"
+        }
+      }
+    },
+    {
+      "slug": "hannah-and-her-sisters-1986",
+      "year": 1986,
+      "query": "Hannah and Her Sisters",
+      "status": "verified",
+      "match": {
+        "id": "tm116186",
+        "content": {
+          "title": "Hannah y sus hermanas",
+          "originalTitle": "Hannah and Her Sisters",
+          "originalReleaseYear": 1986,
+          "fullPath": "/ar/pelicula/hannah-y-sus-hermanas"
+        },
+        "english": {
+          "title": "Hannah and Her Sisters",
+          "originalTitle": "Hannah and Her Sisters",
+          "originalReleaseYear": 1986,
+          "fullPath": "/us/movie/hannah-and-her-sisters"
+        },
+        "spanish": {
+          "title": "Hannah y sus hermanas",
+          "fullPath": "/es/pelicula/hannah-y-sus-hermanas"
+        }
+      }
+    },
+    {
+      "slug": "hannibal-2001",
+      "year": 2001,
+      "query": "Hannibal",
+      "status": "verified",
+      "match": {
+        "id": "tm50674",
+        "content": {
+          "title": "Hannibal",
+          "originalTitle": "Hannibal",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/hannibal"
+        },
+        "english": {
+          "title": "Hannibal",
+          "originalTitle": "Hannibal",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/hannibal"
+        },
+        "spanish": {
+          "title": "Hannibal",
+          "fullPath": "/es/pelicula/hannibal"
+        }
+      }
+    },
+    {
+      "slug": "happy-gilmore-1996",
+      "year": 1996,
+      "query": "Happy Gilmore",
+      "status": "verified",
+      "match": {
+        "id": "tm106462",
+        "content": {
+          "title": "Terminagolf",
+          "originalTitle": "Happy Gilmore",
+          "originalReleaseYear": 1996,
+          "fullPath": "/ar/pelicula/terminagolf-happy-gilmore"
+        },
+        "english": {
+          "title": "Happy Gilmore",
+          "originalTitle": "Happy Gilmore",
+          "originalReleaseYear": 1996,
+          "fullPath": "/us/movie/happy-gilmore"
+        },
+        "spanish": {
+          "title": "Terminagolf",
+          "fullPath": "/es/pelicula/happy-gilmore-terminagolf"
+        }
+      }
+    },
+    {
+      "slug": "harry-potter-and-the-chamber-of-secrets-2002",
+      "year": 2002,
+      "query": "Harry Potter and the Chamber of Secrets",
+      "status": "verified",
+      "match": {
+        "id": "tm109994",
+        "content": {
+          "title": "Harry Potter y la cámara secreta",
+          "originalTitle": "Harry Potter and the Chamber of Secrets",
+          "originalReleaseYear": 2002,
+          "fullPath": "/ar/pelicula/harry-potter-y-la-camara-secreta"
+        },
+        "english": {
+          "title": "Harry Potter and the Chamber of Secrets",
+          "originalTitle": "Harry Potter and the Chamber of Secrets",
+          "originalReleaseYear": 2002,
+          "fullPath": "/us/movie/harry-potter-and-the-chamber-of-secrets"
+        },
+        "spanish": {
+          "title": "Harry Potter y la cámara secreta",
+          "fullPath": "/es/pelicula/harry-potter-y-la-camara-secreta"
+        }
+      }
+    },
+    {
+      "slug": "harry-potter-and-the-deathly-hallows-part-2-2011",
+      "year": 2011,
+      "query": "Harry Potter and the Deathly Hallows: Part 2",
+      "status": "verified",
+      "match": {
+        "id": "tm177297",
+        "content": {
+          "title": "Harry Potter y las Reliquias de la Muerte - Parte 2",
+          "originalTitle": "Harry Potter and the Deathly Hallows: Part 2",
+          "originalReleaseYear": 2011,
+          "fullPath": "/ar/pelicula/harry-potter-y-las-reliquias-de-la-muerte-parte-2"
+        },
+        "english": {
+          "title": "Harry Potter and the Deathly Hallows: Part 2",
+          "originalTitle": "Harry Potter and the Deathly Hallows: Part 2",
+          "originalReleaseYear": 2011,
+          "fullPath": "/us/movie/harry-potter-and-the-deathly-hallows-part-2"
+        },
+        "spanish": {
+          "title": "Harry Potter y las Reliquias de la Muerte - Parte 2",
+          "fullPath": "/es/pelicula/harry-potter-y-las-reliquias-de-la-muerte-parte-ii"
+        }
+      }
+    },
+    {
+      "slug": "harry-potter-and-the-half-blood-prince-2009",
+      "year": 2009,
+      "query": "Harry Potter and the Half-Blood Prince",
+      "status": "verified",
+      "match": {
+        "id": "tm144798",
+        "content": {
+          "title": "Harry Potter y el misterio del príncipe",
+          "originalTitle": "Harry Potter and the Half-Blood Prince",
+          "originalReleaseYear": 2009,
+          "fullPath": "/ar/pelicula/harry-potter-y-el-misterio-del-principe"
+        },
+        "english": {
+          "title": "Harry Potter and the Half-Blood Prince",
+          "originalTitle": "Harry Potter and the Half-Blood Prince",
+          "originalReleaseYear": 2009,
+          "fullPath": "/us/movie/harry-potter-and-the-half-blood-prince"
+        },
+        "spanish": {
+          "title": "Harry Potter y el misterio del príncipe",
+          "fullPath": "/es/pelicula/harry-potter-y-el-misterio-del-principe"
+        }
+      }
+    },
+    {
+      "slug": "harry-potter-and-the-order-of-the-phoenix-2007",
+      "year": 2007,
+      "query": "Harry Potter and the Order of the Phoenix",
+      "status": "verified",
+      "match": {
+        "id": "tm85382",
+        "content": {
+          "title": "Harry Potter y la Orden del Fénix",
+          "originalTitle": "Harry Potter and the Order of the Phoenix",
+          "originalReleaseYear": 2007,
+          "fullPath": "/ar/pelicula/harry-potter-y-la-orden-del-fenix"
+        },
+        "english": {
+          "title": "Harry Potter and the Order of the Phoenix",
+          "originalTitle": "Harry Potter and the Order of the Phoenix",
+          "originalReleaseYear": 2007,
+          "fullPath": "/us/movie/harry-potter-and-the-order-of-the-phoenix"
+        },
+        "spanish": {
+          "title": "Harry Potter y la Orden del Fénix",
+          "fullPath": "/es/pelicula/harry-potter-y-la-orden-del-fenix"
+        }
+      }
+    },
+    {
+      "slug": "harry-potter-and-the-prisoner-of-azkaban-2004",
+      "year": 2004,
+      "query": "Harry Potter and the Prisoner of Azkaban",
+      "status": "verified",
+      "match": {
+        "id": "tm86278",
+        "content": {
+          "title": "Harry Potter y el prisionero de Azkaban",
+          "originalTitle": "Harry Potter and the Prisoner of Azkaban",
+          "originalReleaseYear": 2004,
+          "fullPath": "/ar/pelicula/harry-potter-y-el-prisionero-de-azkaban"
+        },
+        "english": {
+          "title": "Harry Potter and the Prisoner of Azkaban",
+          "originalTitle": "Harry Potter and the Prisoner of Azkaban",
+          "originalReleaseYear": 2004,
+          "fullPath": "/us/movie/harry-potter-and-the-prisoner-of-azkaban"
+        },
+        "spanish": {
+          "title": "Harry Potter y el prisionero de Azkaban",
+          "fullPath": "/es/pelicula/harry-potter-y-el-prisionero-de-azkaban"
+        }
+      }
+    },
+    {
+      "slug": "heavy-metal-1981",
+      "year": 1981,
+      "query": "Heavy Metal",
+      "status": "verified",
+      "match": {
+        "id": "tm125876",
+        "content": {
+          "title": "Heavy Metal",
+          "originalTitle": "Heavy Metal",
+          "originalReleaseYear": 1981,
+          "fullPath": "/ar/pelicula/heavy-metal"
+        },
+        "english": {
+          "title": "Heavy Metal",
+          "originalTitle": "Heavy Metal",
+          "originalReleaseYear": 1981,
+          "fullPath": "/us/movie/heavy-metal"
+        },
+        "spanish": {
+          "title": "Heavy Metal",
+          "fullPath": "/es/pelicula/heavy-metal"
+        }
+      }
+    },
+    {
+      "slug": "hercules-1997",
+      "year": 1997,
+      "query": "Hercules",
+      "status": "verified",
+      "match": {
+        "id": "tm191537",
+        "content": {
+          "title": "Hércules",
+          "originalTitle": "Hercules",
+          "originalReleaseYear": 1997,
+          "fullPath": "/ar/pelicula/hercules-1997"
+        },
+        "english": {
+          "title": "Hercules",
+          "originalTitle": "Hercules",
+          "originalReleaseYear": 1997,
+          "fullPath": "/us/movie/hercules"
+        },
+        "spanish": {
+          "title": "Hércules",
+          "fullPath": "/es/pelicula/hercules"
+        }
+      }
+    },
+    {
+      "slug": "hitchcock-2012",
+      "year": 2012,
+      "query": "Hitchcock",
+      "status": "verified",
+      "match": {
+        "id": "tm64158",
+        "content": {
+          "title": "Hitchcok, el maestro del suspenso",
+          "originalTitle": "Hitchcock",
+          "originalReleaseYear": 2012,
+          "fullPath": "/ar/pelicula/hitchcock"
+        },
+        "english": {
+          "title": "Hitchcock",
+          "originalTitle": "Hitchcock",
+          "originalReleaseYear": 2012,
+          "fullPath": "/us/movie/alfred-hitchcock-and-the-making-of-psycho"
+        },
+        "spanish": {
+          "title": "Hitchcok, el maestro del suspenso",
+          "fullPath": "/es/pelicula/hitchcock"
+        }
+      }
+    },
+    {
+      "slug": "hoop-dreams-1994",
+      "year": 1994,
+      "query": "Hoop Dreams",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "how-green-was-my-valley-1941",
+      "year": 1941,
+      "query": "How Green Was My Valley",
+      "status": "verified",
+      "match": {
+        "id": "tm91430",
+        "content": {
+          "title": "¡Qué verde era mi valle!",
+          "originalTitle": "How Green Was My Valley",
+          "originalReleaseYear": 1941,
+          "fullPath": "/ar/pelicula/que-verde-era-mi-valle"
+        },
+        "english": {
+          "title": "How Green Was My Valley",
+          "originalTitle": "How Green Was My Valley",
+          "originalReleaseYear": 1941,
+          "fullPath": "/us/movie/how-green-was-my-valley"
+        },
+        "spanish": {
+          "title": "¡Qué verde era mi valle!",
+          "fullPath": "/es/pelicula/que-verde-era-mi-valle"
+        }
+      }
+    },
+    {
+      "slug": "how-to-train-your-dragon-2-2014",
+      "year": 2014,
+      "query": "How to Train Your Dragon 2",
+      "status": "verified",
+      "match": {
+        "id": "tm134967",
+        "content": {
+          "title": "Cómo entrenar a tu dragón 2",
+          "originalTitle": "How to Train Your Dragon 2",
+          "originalReleaseYear": 2014,
+          "fullPath": "/ar/pelicula/como-entrenar-a-tu-dragon-2"
+        },
+        "english": {
+          "title": "How to Train Your Dragon 2",
+          "originalTitle": "How to Train Your Dragon 2",
+          "originalReleaseYear": 2014,
+          "fullPath": "/us/movie/how-to-train-your-dragon-2"
+        },
+        "spanish": {
+          "title": "Cómo entrenar a tu dragón 2",
+          "fullPath": "/es/pelicula/como-entrenar-a-tu-dragon-2"
+        }
+      }
+    },
+    {
+      "slug": "hulk-2003",
+      "year": 2003,
+      "query": "Hulk",
+      "status": "verified",
+      "match": {
+        "id": "tm136651",
+        "content": {
+          "title": "Hulk",
+          "originalTitle": "Hulk",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/hulk"
+        },
+        "english": {
+          "title": "Hulk",
+          "originalTitle": "Hulk",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/hulk"
+        },
+        "spanish": {
+          "title": "Hulk",
+          "fullPath": "/es/pelicula/hulk"
+        }
+      }
+    },
+    {
+      "slug": "i-love-you-phillip-morris-2009",
+      "year": 2009,
+      "query": "I Love You Phillip Morris",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "in-the-heat-of-the-night-1967",
+      "year": 1967,
+      "query": "In the Heat of the Night",
+      "status": "verified",
+      "match": {
+        "id": "tm120964",
+        "content": {
+          "title": "En el calor de la noche",
+          "originalTitle": "In the Heat of the Night",
+          "originalReleaseYear": 1967,
+          "fullPath": "/ar/pelicula/en-el-calor-de-la-noche"
+        },
+        "english": {
+          "title": "In the Heat of the Night",
+          "originalTitle": "In the Heat of the Night",
+          "originalReleaseYear": 1967,
+          "fullPath": "/us/movie/in-the-heat-of-the-night"
+        },
+        "spanish": {
+          "title": "En el calor de la noche",
+          "fullPath": "/es/pelicula/en-el-calor-de-la-noche"
+        }
+      }
+    },
+    {
+      "slug": "inception-2010",
+      "year": 2010,
+      "query": "Inception",
+      "status": "verified",
+      "match": {
+        "id": "tm92641",
+        "content": {
+          "title": "Origen",
+          "originalTitle": "Inception",
+          "originalReleaseYear": 2010,
+          "fullPath": "/ar/pelicula/origen"
+        },
+        "english": {
+          "title": "Inception",
+          "originalTitle": "Inception",
+          "originalReleaseYear": 2010,
+          "fullPath": "/us/movie/inception"
+        },
+        "spanish": {
+          "title": "Origen",
+          "fullPath": "/es/pelicula/origen"
+        }
+      }
+    },
+    {
+      "slug": "indiana-jones-and-the-last-crusade-1989",
+      "year": 1989,
+      "query": "Indiana Jones and the Last Crusade",
+      "status": "verified",
+      "match": {
+        "id": "tm140316",
+        "content": {
+          "title": "Indiana Jones y la última cruzada",
+          "originalTitle": "Indiana Jones and the Last Crusade",
+          "originalReleaseYear": 1989,
+          "fullPath": "/ar/pelicula/indiana-jones-y-la-ultima-cruzada"
+        },
+        "english": {
+          "title": "Indiana Jones and the Last Crusade",
+          "originalTitle": "Indiana Jones and the Last Crusade",
+          "originalReleaseYear": 1989,
+          "fullPath": "/us/movie/indiana-jones-3"
+        },
+        "spanish": {
+          "title": "Indiana Jones y la última cruzada",
+          "fullPath": "/es/pelicula/indiana-jones-y-la-ultima-cruzada"
+        }
+      }
+    },
+    {
+      "slug": "indiana-jones-and-the-temple-of-doom-1984",
+      "year": 1984,
+      "query": "Indiana Jones and the Temple of Doom",
+      "status": "verified",
+      "match": {
+        "id": "tm168802",
+        "content": {
+          "title": "Indiana Jones y el templo maldito",
+          "originalTitle": "Indiana Jones and the Temple of Doom",
+          "originalReleaseYear": 1984,
+          "fullPath": "/ar/pelicula/indiana-jones-y-el-templo-maldito"
+        },
+        "english": {
+          "title": "Indiana Jones and the Temple of Doom",
+          "originalTitle": "Indiana Jones and the Temple of Doom",
+          "originalReleaseYear": 1984,
+          "fullPath": "/us/movie/indiana-jones-and-the-temple-of-doom"
+        },
+        "spanish": {
+          "title": "Indiana Jones y el templo maldito",
+          "fullPath": "/es/pelicula/indiana-jones-y-el-templo-maldito"
+        }
+      }
+    },
+    {
+      "slug": "inglourious-basterds-2009",
+      "year": 2009,
+      "query": "Inglourious Basterds",
+      "status": "verified",
+      "match": {
+        "id": "tm143861",
+        "content": {
+          "title": "Malditos bastardos",
+          "originalTitle": "Inglourious Basterds",
+          "originalReleaseYear": 2009,
+          "fullPath": "/ar/pelicula/malditos-bastardos"
+        },
+        "english": {
+          "title": "Inglourious Basterds",
+          "originalTitle": "Inglourious Basterds",
+          "originalReleaseYear": 2009,
+          "fullPath": "/us/movie/inglorious-basterds"
+        },
+        "spanish": {
+          "title": "Malditos bastardos",
+          "fullPath": "/es/pelicula/malditos-bastardos"
+        }
+      }
+    },
+    {
+      "slug": "interiors-1978",
+      "year": 1978,
+      "query": "Interiors",
+      "status": "verified",
+      "match": {
+        "id": "tm15928",
+        "content": {
+          "title": "Interiores",
+          "originalTitle": "Interiors",
+          "originalReleaseYear": 1978,
+          "fullPath": "/ar/pelicula/interiores"
+        },
+        "english": {
+          "title": "Interiors",
+          "originalTitle": "Interiors",
+          "originalReleaseYear": 1978,
+          "fullPath": "/us/movie/interiors"
+        },
+        "spanish": {
+          "title": "Interiores",
+          "fullPath": "/es/pelicula/interiores"
+        }
+      }
+    },
+    {
+      "slug": "interstellar-2014",
+      "year": 2014,
+      "query": "Interstellar",
+      "status": "verified",
+      "match": {
+        "id": "tm157099",
+        "content": {
+          "title": "Interestellar",
+          "originalTitle": "Interstellar",
+          "originalReleaseYear": 2014,
+          "fullPath": "/ar/pelicula/interstelar"
+        },
+        "english": {
+          "title": "Interstellar",
+          "originalTitle": "Interstellar",
+          "originalReleaseYear": 2014,
+          "fullPath": "/us/movie/interstellar"
+        },
+        "spanish": {
+          "title": "Interestellar",
+          "fullPath": "/es/pelicula/interstellar"
+        }
+      }
+    },
+    {
+      "slug": "iron-man-2008",
+      "year": 2008,
+      "query": "Iron Man",
+      "status": "verified",
+      "match": {
+        "id": "tm51227",
+        "content": {
+          "title": "Iron Man. El hombre de hierro",
+          "originalTitle": "Iron Man",
+          "originalReleaseYear": 2008,
+          "fullPath": "/ar/pelicula/iron-man"
+        },
+        "english": {
+          "title": "Iron Man",
+          "originalTitle": "Iron Man",
+          "originalReleaseYear": 2008,
+          "fullPath": "/us/movie/iron-man"
+        },
+        "spanish": {
+          "title": "Iron Man. El hombre de hierro",
+          "fullPath": "/es/pelicula/iron-man"
+        }
+      }
+    },
+    {
+      "slug": "iron-man-3-2013",
+      "year": 2013,
+      "query": "Iron Man 3",
+      "status": "verified",
+      "match": {
+        "id": "tm177964",
+        "content": {
+          "title": "Iron man 3",
+          "originalTitle": "Iron Man 3",
+          "originalReleaseYear": 2013,
+          "fullPath": "/ar/pelicula/iron-man-3"
+        },
+        "english": {
+          "title": "Iron Man 3",
+          "originalTitle": "Iron Man 3",
+          "originalReleaseYear": 2013,
+          "fullPath": "/us/movie/iron-man-3"
+        },
+        "spanish": {
+          "title": "Iron man 3",
+          "fullPath": "/es/pelicula/iron-man-3"
+        }
+      }
+    },
+    {
+      "slug": "it-happened-one-night-1934",
+      "year": 1934,
+      "query": "It Happened One Night",
+      "status": "verified",
+      "match": {
+        "id": "tm105201",
+        "content": {
+          "title": "Sucedió una noche",
+          "originalTitle": "It Happened One Night",
+          "originalReleaseYear": 1934,
+          "fullPath": "/ar/pelicula/sucedio-una-noche"
+        },
+        "english": {
+          "title": "It Happened One Night",
+          "originalTitle": "It Happened One Night",
+          "originalReleaseYear": 1934,
+          "fullPath": "/us/movie/it-happened-one-night"
+        },
+        "spanish": {
+          "title": "Sucedió una noche",
+          "fullPath": "/es/pelicula/sucedio-una-noche"
+        }
+      }
+    },
+    {
+      "slug": "jackie-brown-1997",
+      "year": 1997,
+      "query": "Jackie Brown",
+      "status": "verified",
+      "match": {
+        "id": "tm191766",
+        "content": {
+          "title": "Triple traición",
+          "originalTitle": "Jackie Brown",
+          "originalReleaseYear": 1997,
+          "fullPath": "/ar/pelicula/jackie-brown"
+        },
+        "english": {
+          "title": "Jackie Brown",
+          "originalTitle": "Jackie Brown",
+          "originalReleaseYear": 1997,
+          "fullPath": "/us/movie/jackie-brown"
+        },
+        "spanish": {
+          "title": "Triple traición",
+          "fullPath": "/es/pelicula/jackie-brown"
+        }
+      }
+    },
+    {
+      "slug": "jaws-1975",
+      "year": 1975,
+      "query": "Jaws",
+      "status": "verified",
+      "match": {
+        "id": "tm123933",
+        "content": {
+          "title": "Tiburón",
+          "originalTitle": "Jaws",
+          "originalReleaseYear": 1975,
+          "fullPath": "/ar/pelicula/tiburon"
+        },
+        "english": {
+          "title": "Jaws",
+          "originalTitle": "Jaws",
+          "originalReleaseYear": 1975,
+          "fullPath": "/us/movie/jaws"
+        },
+        "spanish": {
+          "title": "Tiburón",
+          "fullPath": "/es/pelicula/tiburon"
+        }
+      }
+    },
+    {
+      "slug": "jeanne-dielman-23-quai-du-commerce-1080-bruxelles-1975",
+      "year": 1975,
+      "query": "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "john-wick-2014",
+      "year": 2014,
+      "query": "John Wick",
+      "status": "verified",
+      "match": {
+        "id": "tm153649",
+        "content": {
+          "title": "Otro día para matar",
+          "originalTitle": "John Wick",
+          "originalReleaseYear": 2014,
+          "fullPath": "/ar/pelicula/john-wick-otro-dia-para-matar"
+        },
+        "english": {
+          "title": "John Wick",
+          "originalTitle": "John Wick",
+          "originalReleaseYear": 2014,
+          "fullPath": "/us/movie/john-wick"
+        },
+        "spanish": {
+          "title": "Otro día para matar",
+          "fullPath": "/es/pelicula/john-wick-otro-dia-para-matar"
+        }
+      }
+    },
+    {
+      "slug": "jurassic-park-1993",
+      "year": 1993,
+      "query": "Jurassic Park",
+      "status": "verified",
+      "match": {
+        "id": "tm184504",
+        "content": {
+          "title": "Jurassic Park (Parque Jurásico)",
+          "originalTitle": "Jurassic Park",
+          "originalReleaseYear": 1993,
+          "fullPath": "/ar/pelicula/parque-jurasico"
+        },
+        "english": {
+          "title": "Jurassic Park",
+          "originalTitle": "Jurassic Park",
+          "originalReleaseYear": 1993,
+          "fullPath": "/us/movie/jurassic-park-i"
+        },
+        "spanish": {
+          "title": "Jurassic Park (Parque Jurásico)",
+          "fullPath": "/es/pelicula/parque-jurasico"
+        }
+      }
+    },
+    {
+      "slug": "k-19-the-widowmaker-2002",
+      "year": 2002,
+      "query": "K-19: The Widowmaker",
+      "status": "verified",
+      "match": {
+        "id": "tm118948",
+        "content": {
+          "title": "K-19: The Widowmaker",
+          "originalTitle": "K-19: The Widowmaker",
+          "originalReleaseYear": 2002,
+          "fullPath": "/ar/pelicula/k-19-the-widowmaker"
+        },
+        "english": {
+          "title": "K-19: The Widowmaker",
+          "originalTitle": "K-19: The Widowmaker",
+          "originalReleaseYear": 2002,
+          "fullPath": "/us/movie/k-19-the-widowmaker"
+        },
+        "spanish": {
+          "title": "K-19: The Widowmaker",
+          "fullPath": "/es/pelicula/k-19-the-widowmaker"
+        }
+      }
+    },
+    {
+      "slug": "kamchatka-2002",
+      "year": 2002,
+      "query": "Kamchatka",
+      "status": "verified",
+      "match": {
+        "id": "tm112220",
+        "content": {
+          "title": "Kamchatka",
+          "originalTitle": "Kamchatka",
+          "originalReleaseYear": 2002,
+          "fullPath": "/ar/pelicula/kamchatka"
+        },
+        "english": {
+          "title": "Kamchatka",
+          "originalTitle": "Kamchatka",
+          "originalReleaseYear": 2002,
+          "fullPath": "/us/movie/kamchatka"
+        },
+        "spanish": {
+          "title": "Kamchatka",
+          "fullPath": "/es/pelicula/kamchatka"
+        }
+      }
+    },
+    {
+      "slug": "kill-bill-vol-1-2003",
+      "year": 2003,
+      "query": "Kill Bill: Vol. 1",
+      "status": "verified",
+      "match": {
+        "id": "tm137220",
+        "content": {
+          "title": "Kill Bill: Volumen 1",
+          "originalTitle": "Kill Bill: Vol. 1",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/kill-bill-volumen-1"
+        },
+        "english": {
+          "title": "Kill Bill: Vol. 1",
+          "originalTitle": "Kill Bill: Vol. 1",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/kill-bill-vol-1"
+        },
+        "spanish": {
+          "title": "Kill Bill: Volumen 1",
+          "fullPath": "/es/pelicula/kill-bill-volume-1"
+        }
+      }
+    },
+    {
+      "slug": "king-kong-1933",
+      "year": 1933,
+      "query": "King Kong",
+      "status": "verified",
+      "match": {
+        "id": "tm137798",
+        "content": {
+          "title": "King Kong",
+          "originalTitle": "King Kong",
+          "originalReleaseYear": 1933,
+          "fullPath": "/ar/pelicula/king-kong-1933"
+        },
+        "english": {
+          "title": "King Kong",
+          "originalTitle": "King Kong",
+          "originalReleaseYear": 1933,
+          "fullPath": "/us/movie/king-kong-1933"
+        },
+        "spanish": {
+          "title": "King Kong",
+          "fullPath": "/es/pelicula/king-kong-1933"
+        }
+      }
+    },
+    {
+      "slug": "kramer-vs-kramer-1979",
+      "year": 1979,
+      "query": "Kramer vs. Kramer",
+      "status": "verified",
+      "match": {
+        "id": "tm75312",
+        "content": {
+          "title": "Kramer contra Kramer",
+          "originalTitle": "Kramer vs. Kramer",
+          "originalReleaseYear": 1979,
+          "fullPath": "/ar/pelicula/kramer-contra-kramer"
+        },
+        "english": {
+          "title": "Kramer vs. Kramer",
+          "originalTitle": "Kramer vs. Kramer",
+          "originalReleaseYear": 1979,
+          "fullPath": "/us/movie/kramer-vs-kramer"
+        },
+        "spanish": {
+          "title": "Kramer contra Kramer",
+          "fullPath": "/es/pelicula/kramer-contra-kramer"
+        }
+      }
+    },
+    {
+      "slug": "kung-fu-panda-2-2011",
+      "year": 2011,
+      "query": "Kung Fu Panda 2",
+      "status": "verified",
+      "match": {
+        "id": "tm171885",
+        "content": {
+          "title": "Kung Fu Panda 2",
+          "originalTitle": "Kung Fu Panda 2",
+          "originalReleaseYear": 2011,
+          "fullPath": "/ar/pelicula/kung-fu-panda-2"
+        },
+        "english": {
+          "title": "Kung Fu Panda 2",
+          "originalTitle": "Kung Fu Panda 2",
+          "originalReleaseYear": 2011,
+          "fullPath": "/us/movie/kung-fu-panda-the-kaboom-of-doom"
+        },
+        "spanish": {
+          "title": "Kung Fu Panda 2",
+          "fullPath": "/es/pelicula/kung-fu-panda-2"
+        }
+      }
+    },
+    {
+      "slug": "la-cienaga-2001",
+      "year": 2001,
+      "query": "La ciénaga",
+      "status": "verified",
+      "match": {
+        "id": "tm45576",
+        "content": {
+          "title": "La ciénaga",
+          "originalTitle": "La Ciénaga",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/la-cienaga"
+        },
+        "english": {
+          "title": "La Ciénaga",
+          "originalTitle": "La Ciénaga",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/the-swamp"
+        },
+        "spanish": {
+          "title": "La ciénaga",
+          "fullPath": "/es/pelicula/la-cienaga"
+        }
+      }
+    },
+    {
+      "slug": "la-dolce-vita-1960",
+      "year": 1960,
+      "query": "La dolce vita",
+      "status": "verified",
+      "match": {
+        "id": "tm61464",
+        "content": {
+          "title": "La Dolce Vita",
+          "originalTitle": "La dolce vita",
+          "originalReleaseYear": 1960,
+          "fullPath": "/ar/pelicula/la-dolce-vita"
+        },
+        "english": {
+          "title": "La Dolce Vita",
+          "originalTitle": "La dolce vita",
+          "originalReleaseYear": 1960,
+          "fullPath": "/us/movie/la-dolce-vita"
+        },
+        "spanish": {
+          "title": "La Dolce Vita",
+          "fullPath": "/es/pelicula/la-dolce-vita"
+        }
+      }
+    },
+    {
+      "slug": "la-jetee-1962",
+      "year": 1962,
+      "query": "La Jetée",
+      "status": "verified",
+      "match": {
+        "id": "tm8302",
+        "content": {
+          "title": "La jetée",
+          "originalTitle": "La Jetée",
+          "originalReleaseYear": 1962,
+          "fullPath": "/ar/pelicula/el-muelle"
+        },
+        "english": {
+          "title": "La jetée",
+          "originalTitle": "La Jetée",
+          "originalReleaseYear": 1962,
+          "fullPath": "/us/movie/the-pier"
+        },
+        "spanish": {
+          "title": "La jetée",
+          "fullPath": "/es/pelicula/el-muelle"
+        }
+      }
+    },
+    {
+      "slug": "la-leyenda-del-tesoro-perdido-2004",
+      "year": 2004,
+      "query": "National Treasure",
+      "status": "verified",
+      "match": {
+        "id": "tm90391",
+        "content": {
+          "title": "La búsqueda",
+          "originalTitle": "National Treasure",
+          "originalReleaseYear": 2004,
+          "fullPath": "/ar/pelicula/la-busqueda-national-treasure"
+        },
+        "english": {
+          "title": "National Treasure",
+          "originalTitle": "National Treasure",
+          "originalReleaseYear": 2004,
+          "fullPath": "/us/movie/national-treasure"
+        },
+        "spanish": {
+          "title": "La búsqueda",
+          "fullPath": "/es/pelicula/la-busqueda"
+        }
+      }
+    },
+    {
+      "slug": "la-noche-de-los-lapices-1986",
+      "year": 1986,
+      "query": "La Noche de los Lápices",
+      "status": "verified",
+      "match": {
+        "id": "tm115772",
+        "content": {
+          "title": "La Noche de los Lápices",
+          "originalTitle": "La Noche de los Lápices",
+          "originalReleaseYear": 1986,
+          "fullPath": "/ar/pelicula/la-noche-de-los-lapices"
+        },
+        "english": {
+          "title": "Night of the Pencils",
+          "originalTitle": "La Noche de los Lápices",
+          "originalReleaseYear": 1986,
+          "fullPath": "/us/movie/night-of-the-pencils"
+        },
+        "spanish": {
+          "title": "La Noche de los Lápices",
+          "fullPath": "/es/pelicula/la-noche-de-los-lapices"
+        }
+      }
+    },
+    {
+      "slug": "la-patagonia-rebelde-1974",
+      "year": 1974,
+      "query": "La Patagonia rebelde",
+      "status": "verified",
+      "match": {
+        "id": "tm117424",
+        "content": {
+          "title": "La Patagonia rebelde",
+          "originalTitle": "La Patagonia rebelde",
+          "originalReleaseYear": 1974,
+          "fullPath": "/ar/pelicula/la-patagonia-rebelde"
+        },
+        "english": {
+          "title": "Rebellion in Patagonia",
+          "originalTitle": "La Patagonia rebelde",
+          "originalReleaseYear": 1974,
+          "fullPath": ""
+        },
+        "spanish": {
+          "title": "La Patagonia rebelde",
+          "fullPath": "/es/pelicula/la-patagonia-rebelde"
+        }
+      }
+    },
+    {
+      "slug": "latalante-1934",
+      "year": 1934,
+      "query": "L'Atalante",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "lincoln-2012",
+      "year": 2012,
+      "query": "Lincoln",
+      "status": "verified",
+      "match": {
+        "id": "tm55567",
+        "content": {
+          "title": "Lincoln",
+          "originalTitle": "Lincoln",
+          "originalReleaseYear": 2012,
+          "fullPath": "/ar/pelicula/lincoln"
+        },
+        "english": {
+          "title": "Lincoln",
+          "originalTitle": "Lincoln",
+          "originalReleaseYear": 2012,
+          "fullPath": "/us/movie/lincoln-2012"
+        },
+        "spanish": {
+          "title": "Lincoln",
+          "fullPath": "/es/pelicula/lincoln"
+        }
+      }
+    },
+    {
+      "slug": "looper-2012",
+      "year": 2012,
+      "query": "Looper",
+      "status": "verified",
+      "match": {
+        "id": "tm50018",
+        "content": {
+          "title": "Looper",
+          "originalTitle": "Looper",
+          "originalReleaseYear": 2012,
+          "fullPath": "/ar/pelicula/looper"
+        },
+        "english": {
+          "title": "Looper",
+          "originalTitle": "Looper",
+          "originalReleaseYear": 2012,
+          "fullPath": "/us/movie/looper"
+        },
+        "spanish": {
+          "title": "Looper",
+          "fullPath": "/es/pelicula/looper"
+        }
+      }
+    },
+    {
+      "slug": "love-actually-2003",
+      "year": 2003,
+      "query": "Love Actually",
+      "status": "verified",
+      "match": {
+        "id": "tm133767",
+        "content": {
+          "title": "Love Actually",
+          "originalTitle": "Love Actually",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/love-actually"
+        },
+        "english": {
+          "title": "Love Actually",
+          "originalTitle": "Love Actually",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/love-actually"
+        },
+        "spanish": {
+          "title": "Love Actually",
+          "fullPath": "/es/pelicula/love-actually"
+        }
+      }
+    },
+    {
+      "slug": "luna-de-avellaneda-2004",
+      "year": 2004,
+      "query": "Luna de Avellaneda",
+      "status": "verified",
+      "match": {
+        "id": "tm86469",
+        "content": {
+          "title": "Luna de Avellaneda",
+          "originalTitle": "Luna de Avellaneda",
+          "originalReleaseYear": 2004,
+          "fullPath": "/ar/pelicula/luna-de-avellaneda"
+        },
+        "english": {
+          "title": "Moon of Avellaneda",
+          "originalTitle": "Luna de Avellaneda",
+          "originalReleaseYear": 2004,
+          "fullPath": ""
+        },
+        "spanish": {
+          "title": "Luna de Avellaneda",
+          "fullPath": "/es/pelicula/luna-de-avellaneda"
+        }
+      }
+    },
+    {
+      "slug": "mad-max-1979",
+      "year": 1979,
+      "query": "Mad Max",
+      "status": "verified",
+      "match": {
+        "id": "tm74688",
+        "content": {
+          "title": "Mad Max. Salvajes de la autopista",
+          "originalTitle": "Mad Max",
+          "originalReleaseYear": 1979,
+          "fullPath": "/ar/pelicula/mad-max-salvajes-de-autopista"
+        },
+        "english": {
+          "title": "Mad Max",
+          "originalTitle": "Mad Max",
+          "originalReleaseYear": 1979,
+          "fullPath": "/us/movie/mad-max-1"
+        },
+        "spanish": {
+          "title": "Mad Max. Salvajes de la autopista",
+          "fullPath": "/es/pelicula/mad-max-salvajes-de-autopista"
+        }
+      }
+    },
+    {
+      "slug": "mad-max-2-1981",
+      "year": 1981,
+      "query": "Mad Max 2",
+      "status": "verified",
+      "match": {
+        "id": "tm130740",
+        "content": {
+          "title": "Mad Max II. El guerrero de la carretera",
+          "originalTitle": "Mad Max 2",
+          "originalReleaseYear": 1981,
+          "fullPath": "/ar/pelicula/mad-max-2-el-guerrero-de-la-carretera"
+        },
+        "english": {
+          "title": "Mad Max 2: The Road Warrior",
+          "originalTitle": "Mad Max 2",
+          "originalReleaseYear": 1981,
+          "fullPath": "/us/movie/mad-max-2-the-road-warrior"
+        },
+        "spanish": {
+          "title": "Mad Max II. El guerrero de la carretera",
+          "fullPath": "/es/pelicula/mad-max-ii-el-guerrero-de-la-carretera"
+        }
+      }
+    },
+    {
+      "slug": "mad-max-fury-road-2015",
+      "year": 2015,
+      "query": "Mad Max: Fury Road",
+      "status": "verified",
+      "match": {
+        "id": "tm139376",
+        "content": {
+          "title": "Mad Max: Furia en la carretera",
+          "originalTitle": "Mad Max: Fury Road",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/mad-max-furia-en-la-carretera"
+        },
+        "english": {
+          "title": "Mad Max: Fury Road",
+          "originalTitle": "Mad Max: Fury Road",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/mad-max-fury-road"
+        },
+        "spanish": {
+          "title": "Mad Max: Furia en la carretera",
+          "fullPath": "/es/pelicula/mad-max-furia-en-la-carretera"
+        }
+      }
+    },
+    {
+      "slug": "madame-de-1953",
+      "year": 1953,
+      "query": "Madame de...",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "malcolm-x-1992",
+      "year": 1992,
+      "query": "Malcolm X",
+      "status": "verified",
+      "match": {
+        "id": "tm125410",
+        "content": {
+          "title": "Malcolm X",
+          "originalTitle": "Malcolm X",
+          "originalReleaseYear": 1992,
+          "fullPath": "/ar/pelicula/malcolm-x"
+        },
+        "english": {
+          "title": "Malcolm X",
+          "originalTitle": "Malcolm X",
+          "originalReleaseYear": 1992,
+          "fullPath": "/us/movie/malcolm-x"
+        },
+        "spanish": {
+          "title": "Malcolm X",
+          "fullPath": "/es/pelicula/malcolm-x"
+        }
+      }
+    },
+    {
+      "slug": "man-on-the-moon-1999",
+      "year": 1999,
+      "query": "Man on the Moon",
+      "status": "verified",
+      "match": {
+        "id": "tm55852",
+        "content": {
+          "title": "Man on the Moon",
+          "originalTitle": "Man on the Moon",
+          "originalReleaseYear": 1999,
+          "fullPath": "/ar/pelicula/man-on-the-moon"
+        },
+        "english": {
+          "title": "Man on the Moon",
+          "originalTitle": "Man on the Moon",
+          "originalReleaseYear": 1999,
+          "fullPath": "/us/movie/man-on-the-moon"
+        },
+        "spanish": {
+          "title": "Man on the Moon",
+          "fullPath": "/es/pelicula/man-on-the-moon"
+        }
+      }
+    },
+    {
+      "slug": "man-with-a-movie-camera-1929",
+      "year": 1929,
+      "query": "Man with a Movie Camera",
+      "status": "verified",
+      "match": {
+        "id": "tm9614",
+        "content": {
+          "title": "L'home de la màquina de filmar",
+          "originalTitle": "Chelovek s kino-apparatom",
+          "originalReleaseYear": 1929,
+          "fullPath": "/ar/pelicula/el-hombre-con-la-camara"
+        },
+        "english": {
+          "title": "Man with a Movie Camera",
+          "originalTitle": "Chelovek s kino-apparatom",
+          "originalReleaseYear": 1929,
+          "fullPath": "/us/movie/man-with-a-movie-camera"
+        },
+        "spanish": {
+          "title": "L'home de la màquina de filmar",
+          "fullPath": "/es/pelicula/el-hombre-con-la-camara"
+        }
+      }
+    },
+    {
+      "slug": "manhattan-1979",
+      "year": 1979,
+      "query": "Manhattan",
+      "status": "verified",
+      "match": {
+        "id": "tm74167",
+        "content": {
+          "title": "Manhattan",
+          "originalTitle": "Manhattan",
+          "originalReleaseYear": 1979,
+          "fullPath": "/ar/pelicula/manhattan"
+        },
+        "english": {
+          "title": "Manhattan",
+          "originalTitle": "Manhattan",
+          "originalReleaseYear": 1979,
+          "fullPath": "/us/movie/manhattan-1979"
+        },
+        "spanish": {
+          "title": "Manhattan",
+          "fullPath": "/es/pelicula/manhattan"
+        }
+      }
+    },
+    {
+      "slug": "mary-poppins-1964",
+      "year": 1964,
+      "query": "Mary Poppins",
+      "status": "verified",
+      "match": {
+        "id": "tm189724",
+        "content": {
+          "title": "Mary Poppins",
+          "originalTitle": "Mary Poppins",
+          "originalReleaseYear": 1964,
+          "fullPath": "/ar/pelicula/mary-poppins"
+        },
+        "english": {
+          "title": "Mary Poppins",
+          "originalTitle": "Mary Poppins",
+          "originalReleaseYear": 1964,
+          "fullPath": "/us/movie/mary-poppins"
+        },
+        "spanish": {
+          "title": "Mary Poppins",
+          "fullPath": "/es/pelicula/mary-poppins"
+        }
+      }
+    },
+    {
+      "slug": "mash-1970",
+      "year": 1970,
+      "query": "M*A*S*H",
+      "status": "verified",
+      "match": {
+        "id": "tm102938",
+        "content": {
+          "title": "M.A.S.H.",
+          "originalTitle": "M*A*S*H",
+          "originalReleaseYear": 1970,
+          "fullPath": "/ar/pelicula/m-a-s-h"
+        },
+        "english": {
+          "title": "M*A*S*H",
+          "originalTitle": "M*A*S*H",
+          "originalReleaseYear": 1970,
+          "fullPath": "/us/movie/m-a-s-h"
+        },
+        "spanish": {
+          "title": "M.A.S.H.",
+          "fullPath": "/es/pelicula/m-a-s-h"
+        }
+      }
+    },
+    {
+      "slug": "match-point-2005",
+      "year": 2005,
+      "query": "Match Point",
+      "status": "verified",
+      "match": {
+        "id": "tm164273",
+        "content": {
+          "title": "Match Point",
+          "originalTitle": "Match Point",
+          "originalReleaseYear": 2005,
+          "fullPath": "/ar/pelicula/match-point"
+        },
+        "english": {
+          "title": "Match Point",
+          "originalTitle": "Match Point",
+          "originalReleaseYear": 2005,
+          "fullPath": "/us/movie/match-point"
+        },
+        "spanish": {
+          "title": "Match Point",
+          "fullPath": "/es/pelicula/match-point"
+        }
+      }
+    },
+    {
+      "slug": "matrix-reloaded-2003",
+      "year": 2003,
+      "query": "The Matrix Reloaded",
+      "status": "verified",
+      "match": {
+        "id": "tm11",
+        "content": {
+          "title": "Matrix Reloaded",
+          "originalTitle": "The Matrix Reloaded",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/matrix-reloaded"
+        },
+        "english": {
+          "title": "The Matrix Reloaded",
+          "originalTitle": "The Matrix Reloaded",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/the-matrix-2-reloaded"
+        },
+        "spanish": {
+          "title": "Matrix Reloaded",
+          "fullPath": "/es/pelicula/matrix-reloaded"
+        }
+      }
+    },
+    {
+      "slug": "memento-2000",
+      "year": 2000,
+      "query": "Memento",
+      "status": "verified",
+      "match": {
+        "id": "tm19313",
+        "content": {
+          "title": "Memento: Recuerdos de un crimen",
+          "originalTitle": "Memento",
+          "originalReleaseYear": 2000,
+          "fullPath": "/ar/pelicula/memento"
+        },
+        "english": {
+          "title": "Memento",
+          "originalTitle": "Memento",
+          "originalReleaseYear": 2000,
+          "fullPath": "/us/movie/memento"
+        },
+        "spanish": {
+          "title": "Memento: Recuerdos de un crimen",
+          "fullPath": "/es/pelicula/memento"
+        }
+      }
+    },
+    {
+      "slug": "meshes-of-the-afternoon-1943",
+      "year": 1943,
+      "query": "Meshes of the Afternoon",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "metropolis-1927",
+      "year": 1927,
+      "query": "Metropolis",
+      "status": "verified",
+      "match": {
+        "id": "tm20203",
+        "content": {
+          "title": "Metrópolis",
+          "originalTitle": "Metropolis",
+          "originalReleaseYear": 1927,
+          "fullPath": "/ar/pelicula/metropolis"
+        },
+        "english": {
+          "title": "Metropolis",
+          "originalTitle": "Metropolis",
+          "originalReleaseYear": 1927,
+          "fullPath": "/us/movie/metropolis"
+        },
+        "spanish": {
+          "title": "Metrópolis",
+          "fullPath": "/es/pelicula/metropolis"
+        }
+      }
+    },
+    {
+      "slug": "michael-collins-1996",
+      "year": 1996,
+      "query": "Michael Collins",
+      "status": "verified",
+      "match": {
+        "id": "tm108483",
+        "content": {
+          "title": "Michael Collins",
+          "originalTitle": "Michael Collins",
+          "originalReleaseYear": 1996,
+          "fullPath": "/ar/pelicula/michael-collins"
+        },
+        "english": {
+          "title": "Michael Collins",
+          "originalTitle": "Michael Collins",
+          "originalReleaseYear": 1996,
+          "fullPath": "/us/movie/michael-collins"
+        },
+        "spanish": {
+          "title": "Michael Collins",
+          "fullPath": "/es/pelicula/michael-collins"
+        }
+      }
+    },
+    {
+      "slug": "minority-report-2002",
+      "year": 2002,
+      "query": "Minority Report",
+      "status": "verified",
+      "match": {
+        "id": "tm113842",
+        "content": {
+          "title": "Minority Report: Sentencia previa",
+          "originalTitle": "Minority Report",
+          "originalReleaseYear": 2002,
+          "fullPath": "/ar/pelicula/minority-report"
+        },
+        "english": {
+          "title": "Minority Report",
+          "originalTitle": "Minority Report",
+          "originalReleaseYear": 2002,
+          "fullPath": "/us/movie/minority-report"
+        },
+        "spanish": {
+          "title": "Minority Report: Sentencia previa",
+          "fullPath": "/es/pelicula/minority-report"
+        }
+      }
+    },
+    {
+      "slug": "mission-impossible-1996",
+      "year": 1996,
+      "query": "Mission: Impossible",
+      "status": "verified",
+      "match": {
+        "id": "tm107744",
+        "content": {
+          "title": "Misión imposible",
+          "originalTitle": "Mission: Impossible",
+          "originalReleaseYear": 1996,
+          "fullPath": "/ar/pelicula/mision-imposible"
+        },
+        "english": {
+          "title": "Mission: Impossible",
+          "originalTitle": "Mission: Impossible",
+          "originalReleaseYear": 1996,
+          "fullPath": "/us/movie/mission-impossible"
+        },
+        "spanish": {
+          "title": "Misión imposible",
+          "fullPath": "/es/pelicula/mission-impossible"
+        }
+      }
+    },
+    {
+      "slug": "mission-impossible-ghost-protocol-2011",
+      "year": 2011,
+      "query": "Mission: Impossible - Ghost Protocol",
+      "status": "verified",
+      "match": {
+        "id": "tm166978",
+        "content": {
+          "title": "Misión imposible: Protocolo fantasma",
+          "originalTitle": "Mission: Impossible - Ghost Protocol",
+          "originalReleaseYear": 2011,
+          "fullPath": "/ar/pelicula/mision-imposible-protocolo-fantasma"
+        },
+        "english": {
+          "title": "Mission: Impossible - Ghost Protocol",
+          "originalTitle": "Mission: Impossible - Ghost Protocol",
+          "originalReleaseYear": 2011,
+          "fullPath": "/us/movie/mission-impossible-iv"
+        },
+        "spanish": {
+          "title": "Misión imposible: Protocolo fantasma",
+          "fullPath": "/es/pelicula/mision-imposible-4-protocolo-fantasma"
+        }
+      }
+    },
+    {
+      "slug": "mission-impossible-iii-2006",
+      "year": 2006,
+      "query": "Mission: Impossible III",
+      "status": "verified",
+      "match": {
+        "id": "tm22457",
+        "content": {
+          "title": "Misión imposible III",
+          "originalTitle": "Mission: Impossible III",
+          "originalReleaseYear": 2006,
+          "fullPath": "/ar/pelicula/mision-imposible-3"
+        },
+        "english": {
+          "title": "Mission: Impossible III",
+          "originalTitle": "Mission: Impossible III",
+          "originalReleaseYear": 2006,
+          "fullPath": "/us/movie/mission-impossible-iii"
+        },
+        "spanish": {
+          "title": "Misión imposible III",
+          "fullPath": "/es/pelicula/mision-imposible-3"
+        }
+      }
+    },
+    {
+      "slug": "mission-impossible-rogue-nation-2015",
+      "year": 2015,
+      "query": "Mission: Impossible - Rogue Nation",
+      "status": "verified",
+      "match": {
+        "id": "tm137836",
+        "content": {
+          "title": "Misión imposible: Nación secreta",
+          "originalTitle": "Mission: Impossible – Rogue Nation",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/mision-imposible-nacion-secreta"
+        },
+        "english": {
+          "title": "Mission: Impossible - Rogue Nation",
+          "originalTitle": "Mission: Impossible – Rogue Nation",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/mission-impossible-rogue-nation"
+        },
+        "spanish": {
+          "title": "Misión imposible: Nación secreta",
+          "fullPath": "/es/pelicula/mision-imposible-5-nacion-secreta"
+        }
+      }
+    },
+    {
+      "slug": "moulin-rouge-2001",
+      "year": 2001,
+      "query": "Moulin Rouge!",
+      "status": "verified",
+      "match": {
+        "id": "tm30891",
+        "content": {
+          "title": "Moulin Rouge",
+          "originalTitle": "Moulin Rouge!",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/moulin-rouge"
+        },
+        "english": {
+          "title": "Moulin Rouge!",
+          "originalTitle": "Moulin Rouge!",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/moulin-rouge-2001"
+        },
+        "spanish": {
+          "title": "Moulin Rouge",
+          "fullPath": "/es/pelicula/moulin-rouge"
+        }
+      }
+    },
+    {
+      "slug": "mrs-miniver-1942",
+      "year": 1942,
+      "query": "Mrs. Miniver",
+      "status": "verified",
+      "match": {
+        "id": "tm76523",
+        "content": {
+          "title": "La señora Miniver",
+          "originalTitle": "Mrs. Miniver",
+          "originalReleaseYear": 1942,
+          "fullPath": "/ar/pelicula/la-senora-miniver"
+        },
+        "english": {
+          "title": "Mrs. Miniver",
+          "originalTitle": "Mrs. Miniver",
+          "originalReleaseYear": 1942,
+          "fullPath": "/us/movie/mrs-miniver"
+        },
+        "spanish": {
+          "title": "La señora Miniver",
+          "fullPath": "/es/pelicula/la-senora-miniver"
+        }
+      }
+    },
+    {
+      "slug": "mulan-1998",
+      "year": 1998,
+      "query": "Mulan",
+      "status": "verified",
+      "match": {
+        "id": "tm66175",
+        "content": {
+          "title": "Mulán",
+          "originalTitle": "Mulan",
+          "originalReleaseYear": 1998,
+          "fullPath": "/ar/pelicula/mulan"
+        },
+        "english": {
+          "title": "Mulan",
+          "originalTitle": "Mulan",
+          "originalReleaseYear": 1998,
+          "fullPath": "/us/movie/mulan"
+        },
+        "spanish": {
+          "title": "Mulán",
+          "fullPath": "/es/pelicula/mulan"
+        }
+      }
+    },
+    {
+      "slug": "mulholland-drive-2001",
+      "year": 2001,
+      "query": "Mulholland Drive",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "mundo-grua-1999",
+      "year": 1999,
+      "query": "Mundo grúa",
+      "status": "verified",
+      "match": {
+        "id": "tm62538",
+        "content": {
+          "title": "Mundo grúa",
+          "originalTitle": "Mundo grúa",
+          "originalReleaseYear": 1999,
+          "fullPath": "/ar/pelicula/mundo-grua"
+        },
+        "english": {
+          "title": "Crane World",
+          "originalTitle": "Mundo grúa",
+          "originalReleaseYear": 1999,
+          "fullPath": ""
+        },
+        "spanish": {
+          "title": "Mundo grúa",
+          "fullPath": "/es/pelicula/mundo-grua"
+        }
+      }
+    },
+    {
+      "slug": "munich-2005",
+      "year": 2005,
+      "query": "Munich",
+      "status": "verified",
+      "match": {
+        "id": "tm174540",
+        "content": {
+          "title": "Múnich",
+          "originalTitle": "Munich",
+          "originalReleaseYear": 2005,
+          "fullPath": "/ar/pelicula/munich"
+        },
+        "english": {
+          "title": "Munich",
+          "originalTitle": "Munich",
+          "originalReleaseYear": 2005,
+          "fullPath": "/us/movie/munich"
+        },
+        "spanish": {
+          "title": "Múnich",
+          "fullPath": "/es/pelicula/munich"
+        }
+      }
+    },
+    {
+      "slug": "mutiny-on-the-bounty-1935",
+      "year": 1935,
+      "query": "Mutiny on the Bounty",
+      "status": "verified",
+      "match": {
+        "id": "tm163314",
+        "content": {
+          "title": "La tragedia de la Bounty",
+          "originalTitle": "Mutiny on the Bounty",
+          "originalReleaseYear": 1935,
+          "fullPath": "/ar/pelicula/rebelion-a-bordo-la-tragedia-de-la-bounty"
+        },
+        "english": {
+          "title": "Mutiny on the Bounty",
+          "originalTitle": "Mutiny on the Bounty",
+          "originalReleaseYear": 1935,
+          "fullPath": "/us/movie/mutiny-on-the-bounty"
+        },
+        "spanish": {
+          "title": "La tragedia de la Bounty",
+          "fullPath": "/es/pelicula/rebelion-a-bordo"
+        }
+      }
+    },
+    {
+      "slug": "my-fair-lady-1964",
+      "year": 1964,
+      "query": "My Fair Lady",
+      "status": "verified",
+      "match": {
+        "id": "tm185072",
+        "content": {
+          "title": "My Fair Lady (Mi bella dama)",
+          "originalTitle": "My Fair Lady",
+          "originalReleaseYear": 1964,
+          "fullPath": "/ar/pelicula/my-fair-lady"
+        },
+        "english": {
+          "title": "My Fair Lady",
+          "originalTitle": "My Fair Lady",
+          "originalReleaseYear": 1964,
+          "fullPath": "/us/movie/my-fair-lady"
+        },
+        "spanish": {
+          "title": "My Fair Lady (Mi bella dama)",
+          "fullPath": "/es/pelicula/my-fair-lady"
+        }
+      }
+    },
+    {
+      "slug": "nashville-1975",
+      "year": 1975,
+      "query": "Nashville",
+      "status": "verified",
+      "match": {
+        "id": "tm126794",
+        "content": {
+          "title": "Nashville",
+          "originalTitle": "Nashville",
+          "originalReleaseYear": 1975,
+          "fullPath": "/ar/pelicula/nashville"
+        },
+        "english": {
+          "title": "Nashville",
+          "originalTitle": "Nashville",
+          "originalReleaseYear": 1975,
+          "fullPath": "/us/movie/nashville"
+        },
+        "spanish": {
+          "title": "Nashville",
+          "fullPath": "/es/pelicula/nashville"
+        }
+      }
+    },
+    {
+      "slug": "nixon-1995",
+      "year": 1995,
+      "query": "Nixon",
+      "status": "verified",
+      "match": {
+        "id": "tm11161",
+        "content": {
+          "title": "Nixon",
+          "originalTitle": "Nixon",
+          "originalReleaseYear": 1995,
+          "fullPath": "/ar/pelicula/nixon"
+        },
+        "english": {
+          "title": "Nixon",
+          "originalTitle": "Nixon",
+          "originalReleaseYear": 1995,
+          "fullPath": "/us/movie/nixon"
+        },
+        "spanish": {
+          "title": "Nixon",
+          "fullPath": "/es/pelicula/nixon"
+        }
+      }
+    },
+    {
+      "slug": "no-2012",
+      "year": 2012,
+      "query": "No",
+      "status": "verified",
+      "match": {
+        "id": "tm40783",
+        "content": {
+          "title": "No",
+          "originalTitle": "No",
+          "originalReleaseYear": 2012,
+          "fullPath": "/ar/pelicula/no"
+        },
+        "english": {
+          "title": "No",
+          "originalTitle": "No",
+          "originalReleaseYear": 2012,
+          "fullPath": "/us/movie/no-2012"
+        },
+        "spanish": {
+          "title": "No",
+          "fullPath": "/es/pelicula/no"
+        }
+      }
+    },
+    {
+      "slug": "no-direction-home-bob-dylan-2005",
+      "year": 2005,
+      "query": "No Direction Home: Bob Dylan",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "nueve-reinas-2000",
+      "year": 2000,
+      "query": "Nueve reinas",
+      "status": "verified",
+      "match": {
+        "id": "tm28871",
+        "content": {
+          "title": "Nueve reinas",
+          "originalTitle": "Nueve reinas",
+          "originalReleaseYear": 2000,
+          "fullPath": "/ar/pelicula/nueve-reinas"
+        },
+        "english": {
+          "title": "Nine Queens",
+          "originalTitle": "Nueve reinas",
+          "originalReleaseYear": 2000,
+          "fullPath": "/us/movie/nine-queens"
+        },
+        "spanish": {
+          "title": "Nueve reinas",
+          "fullPath": "/es/pelicula/nine-queens"
+        }
+      }
+    },
+    {
+      "slug": "one-flew-over-the-cuckoo-s-nest-1975",
+      "year": 1975,
+      "query": "One Flew Over the Cuckoo's Nest",
+      "status": "verified",
+      "match": {
+        "id": "tm127410",
+        "content": {
+          "title": "Alguien voló sobre el nido del cuco",
+          "originalTitle": "One Flew Over the Cuckoo's Nest",
+          "originalReleaseYear": 1975,
+          "fullPath": "/ar/pelicula/alguien-volo-sobre-el-nido-del-cuco"
+        },
+        "english": {
+          "title": "One Flew Over the Cuckoo's Nest",
+          "originalTitle": "One Flew Over the Cuckoo's Nest",
+          "originalReleaseYear": 1975,
+          "fullPath": "/us/movie/one-flew-over-the-cuckoos-nest"
+        },
+        "spanish": {
+          "title": "Alguien voló sobre el nido del cuco",
+          "fullPath": "/es/pelicula/alguien-volo-sobre-el-nido-del-cuco"
+        }
+      }
+    },
+    {
+      "slug": "out-of-africa-1985",
+      "year": 1985,
+      "query": "Out of Africa",
+      "status": "verified",
+      "match": {
+        "id": "tm13",
+        "content": {
+          "title": "Memorias de África",
+          "originalTitle": "Out of Africa",
+          "originalReleaseYear": 1985,
+          "fullPath": "/ar/pelicula/memorias-de-africa"
+        },
+        "english": {
+          "title": "Out of Africa",
+          "originalTitle": "Out of Africa",
+          "originalReleaseYear": 1985,
+          "fullPath": "/us/movie/out-of-africa"
+        },
+        "spanish": {
+          "title": "Memorias de África",
+          "fullPath": "/es/pelicula/memorias-de-africa"
+        }
+      }
+    },
+    {
+      "slug": "paprika-2006",
+      "year": 2006,
+      "query": "パプリカ",
+      "status": "verified",
+      "match": {
+        "id": "tm25303",
+        "content": {
+          "title": "Paprika, detective de los sueños",
+          "originalTitle": "パプリカ",
+          "originalReleaseYear": 2006,
+          "fullPath": "/ar/pelicula/paprika-detective-de-los-suenos"
+        },
+        "english": {
+          "title": "Paprika",
+          "originalTitle": "パプリカ",
+          "originalReleaseYear": 2006,
+          "fullPath": "/us/movie/paprika"
+        },
+        "spanish": {
+          "title": "Paprika, detective de los sueños",
+          "fullPath": "/es/pelicula/paprika-detective-de-los-suenos"
+        }
+      }
+    },
+    {
+      "slug": "paranormal-activity-2007",
+      "year": 2007,
+      "query": "Paranormal Activity",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "paris-is-burning-1990",
+      "year": 1990,
+      "query": "Paris Is Burning",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "paris-texas-1984",
+      "year": 1984,
+      "query": "Paris, Texas",
+      "status": "verified",
+      "match": {
+        "id": "tm174079",
+        "content": {
+          "title": "París, Texas",
+          "originalTitle": "Paris, Texas",
+          "originalReleaseYear": 1984,
+          "fullPath": "/ar/pelicula/paris-texas"
+        },
+        "english": {
+          "title": "Paris, Texas",
+          "originalTitle": "Paris, Texas",
+          "originalReleaseYear": 1984,
+          "fullPath": "/us/movie/paris-texas"
+        },
+        "spanish": {
+          "title": "París, Texas",
+          "fullPath": "/es/pelicula/paris-texas"
+        }
+      }
+    },
+    {
+      "slug": "persepolis-2007",
+      "year": 2007,
+      "query": "Persepolis",
+      "status": "verified",
+      "match": {
+        "id": "tm72301",
+        "content": {
+          "title": "Persépolis",
+          "originalTitle": "Persepolis",
+          "originalReleaseYear": 2007,
+          "fullPath": "/ar/pelicula/persepolis"
+        },
+        "english": {
+          "title": "Persepolis",
+          "originalTitle": "Persepolis",
+          "originalReleaseYear": 2007,
+          "fullPath": "/us/movie/persepolis"
+        },
+        "spanish": {
+          "title": "Persépolis",
+          "fullPath": "/es/pelicula/persepolis"
+        }
+      }
+    },
+    {
+      "slug": "peter-pan-1953",
+      "year": 1953,
+      "query": "Peter Pan",
+      "status": "verified",
+      "match": {
+        "id": "tm105286",
+        "content": {
+          "title": "Peter Pan",
+          "originalTitle": "Peter Pan",
+          "originalReleaseYear": 1953,
+          "fullPath": "/ar/pelicula/peter-pan"
+        },
+        "english": {
+          "title": "Peter Pan",
+          "originalTitle": "Peter Pan",
+          "originalReleaseYear": 1953,
+          "fullPath": "/us/movie/peter-pan-1953"
+        },
+        "spanish": {
+          "title": "Peter Pan",
+          "fullPath": "/es/pelicula/peter-pan-1953"
+        }
+      }
+    },
+    {
+      "slug": "pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
+      "year": 2003,
+      "query": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "status": "verified",
+      "match": {
+        "id": "tm133512",
+        "content": {
+          "title": "Piratas del Caribe: La maldición de la Perla Negra",
+          "originalTitle": "Pirates of the Caribbean: The Curse of the Black Pearl",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/piratas-del-caribe-la-maldicion-de-la-perla-negra"
+        },
+        "english": {
+          "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+          "originalTitle": "Pirates of the Caribbean: The Curse of the Black Pearl",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/pirates-of-the-caribbean-the-curse-of-the-black-pearl"
+        },
+        "spanish": {
+          "title": "Piratas del Caribe: La maldición de la Perla Negra",
+          "fullPath": "/es/pelicula/piratas-del-caribe-la-maldicion-de-la-perla-negra"
+        }
+      }
+    },
+    {
+      "slug": "plata-quemada-2000",
+      "year": 2000,
+      "query": "Plata quemada",
+      "status": "verified",
+      "match": {
+        "id": "tm24243",
+        "content": {
+          "title": "Plata quemada",
+          "originalTitle": "Plata quemada",
+          "originalReleaseYear": 2000,
+          "fullPath": "/ar/pelicula/plata-quemada"
+        },
+        "english": {
+          "title": "Burnt Money",
+          "originalTitle": "Plata quemada",
+          "originalReleaseYear": 2000,
+          "fullPath": "/us/movie/burnt-money"
+        },
+        "spanish": {
+          "title": "Plata quemada",
+          "fullPath": "/es/pelicula/plata-quemada"
+        }
+      }
+    },
+    {
+      "slug": "playtime-1967",
+      "year": 1967,
+      "query": "Playtime",
+      "status": "verified",
+      "match": {
+        "id": "tm116458",
+        "content": {
+          "title": "Playtime",
+          "originalTitle": "PlayTime",
+          "originalReleaseYear": 1967,
+          "fullPath": "/ar/pelicula/playtime"
+        },
+        "english": {
+          "title": "Playtime",
+          "originalTitle": "PlayTime",
+          "originalReleaseYear": 1967,
+          "fullPath": "/us/movie/playtime"
+        },
+        "spanish": {
+          "title": "Playtime",
+          "fullPath": "/es/pelicula/playtime"
+        }
+      }
+    },
+    {
+      "slug": "pocahontas-1995",
+      "year": 1995,
+      "query": "Pocahontas",
+      "status": "verified",
+      "match": {
+        "id": "tm11864",
+        "content": {
+          "title": "Pocahontas",
+          "originalTitle": "Pocahontas",
+          "originalReleaseYear": 1995,
+          "fullPath": "/ar/pelicula/pocahontas"
+        },
+        "english": {
+          "title": "Pocahontas",
+          "originalTitle": "Pocahontas",
+          "originalReleaseYear": 1995,
+          "fullPath": "/us/movie/pocahontas"
+        },
+        "spanish": {
+          "title": "Pocahontas",
+          "fullPath": "/es/pelicula/pocahontas"
+        }
+      }
+    },
+    {
+      "slug": "poltergeist-1982",
+      "year": 1982,
+      "query": "Poltergeist",
+      "status": "verified",
+      "match": {
+        "id": "tm44004",
+        "content": {
+          "title": "Poltergeist. Fenómenos extraños",
+          "originalTitle": "Poltergeist",
+          "originalReleaseYear": 1982,
+          "fullPath": "/ar/pelicula/poltergeist-fenomenos-extranos"
+        },
+        "english": {
+          "title": "Poltergeist",
+          "originalTitle": "Poltergeist",
+          "originalReleaseYear": 1982,
+          "fullPath": "/us/movie/poltergeist"
+        },
+        "spanish": {
+          "title": "Poltergeist. Fenómenos extraños",
+          "fullPath": "/es/pelicula/poltergeist-fenomenos-extranos-1982"
+        }
+      }
+    },
+    {
+      "slug": "porco-rosso-1992",
+      "year": 1992,
+      "query": "Porco Rosso",
+      "status": "verified",
+      "match": {
+        "id": "tm128586",
+        "content": {
+          "title": "Porco Rosso",
+          "originalTitle": "紅の豚",
+          "originalReleaseYear": 1992,
+          "fullPath": "/ar/pelicula/porco-rosso"
+        },
+        "english": {
+          "title": "Porco Rosso",
+          "originalTitle": "紅の豚",
+          "originalReleaseYear": 1992,
+          "fullPath": "/us/movie/porco-rosso"
+        },
+        "spanish": {
+          "title": "Porco Rosso",
+          "fullPath": "/es/pelicula/porco-rosso"
+        }
+      }
+    },
+    {
+      "slug": "psycho-1960",
+      "year": 1960,
+      "query": "Psycho",
+      "status": "verified",
+      "match": {
+        "id": "tm47802",
+        "content": {
+          "title": "Psicosis",
+          "originalTitle": "Psycho",
+          "originalReleaseYear": 1960,
+          "fullPath": "/ar/pelicula/psicosis"
+        },
+        "english": {
+          "title": "Psycho",
+          "originalTitle": "Psycho",
+          "originalReleaseYear": 1960,
+          "fullPath": "/us/movie/psycho"
+        },
+        "spanish": {
+          "title": "Psicosis",
+          "fullPath": "/es/pelicula/psicosis"
+        }
+      }
+    },
+    {
+      "slug": "pulp-fiction-1994",
+      "year": 1994,
+      "query": "Pulp Fiction",
+      "status": "verified",
+      "match": {
+        "id": "tm112130",
+        "content": {
+          "title": "Pulp Fiction",
+          "originalTitle": "Pulp Fiction",
+          "originalReleaseYear": 1994,
+          "fullPath": "/ar/pelicula/pulp-fiction"
+        },
+        "english": {
+          "title": "Pulp Fiction",
+          "originalTitle": "Pulp Fiction",
+          "originalReleaseYear": 1994,
+          "fullPath": "/us/movie/pulp-fiction"
+        },
+        "spanish": {
+          "title": "Pulp Fiction",
+          "fullPath": "/es/pelicula/pulp-fiction"
+        }
+      }
+    },
+    {
+      "slug": "raiders-of-the-lost-ark-1981",
+      "year": 1981,
+      "query": "Raiders of the Lost Ark",
+      "status": "verified",
+      "match": {
+        "id": "tm128131",
+        "content": {
+          "title": "En busca del arca perdida",
+          "originalTitle": "Raiders of the Lost Ark",
+          "originalReleaseYear": 1981,
+          "fullPath": "/ar/pelicula/indiana-jones-en-busca-del-arca-perdida"
+        },
+        "english": {
+          "title": "Raiders of the Lost Ark",
+          "originalTitle": "Raiders of the Lost Ark",
+          "originalReleaseYear": 1981,
+          "fullPath": "/us/movie/indiana-jones-and-the-raiders-of-the-lost-ark"
+        },
+        "spanish": {
+          "title": "En busca del arca perdida",
+          "fullPath": "/es/pelicula/indiana-jones-en-busca-del-arca-perdida"
+        }
+      }
+    },
+    {
+      "slug": "rain-man-1988",
+      "year": 1988,
+      "query": "Rain Man",
+      "status": "verified",
+      "match": {
+        "id": "tm43389",
+        "content": {
+          "title": "Rain man",
+          "originalTitle": "Rain Man",
+          "originalReleaseYear": 1988,
+          "fullPath": "/ar/pelicula/rain-man"
+        },
+        "english": {
+          "title": "Rain Man",
+          "originalTitle": "Rain Man",
+          "originalReleaseYear": 1988,
+          "fullPath": "/us/movie/rain-man"
+        },
+        "spanish": {
+          "title": "Rain man",
+          "fullPath": "/es/pelicula/rain-man"
+        }
+      }
+    },
+    {
+      "slug": "ratatouille-2007",
+      "year": 2007,
+      "query": "Ratatouille",
+      "status": "verified",
+      "match": {
+        "id": "tm70557",
+        "content": {
+          "title": "Ratatouille",
+          "originalTitle": "Ratatouille",
+          "originalReleaseYear": 2007,
+          "fullPath": "/ar/pelicula/ratatouille"
+        },
+        "english": {
+          "title": "Ratatouille",
+          "originalTitle": "Ratatouille",
+          "originalReleaseYear": 2007,
+          "fullPath": "/us/movie/ratatouille"
+        },
+        "spanish": {
+          "title": "Ratatouille",
+          "fullPath": "/es/pelicula/ratatouille"
+        }
+      }
+    },
+    {
+      "slug": "rebecca-1940",
+      "year": 1940,
+      "query": "Rebecca",
+      "status": "verified",
+      "match": {
+        "id": "tm75749",
+        "content": {
+          "title": "Rebeca",
+          "originalTitle": "Rebecca",
+          "originalReleaseYear": 1940,
+          "fullPath": "/ar/pelicula/rebeca"
+        },
+        "english": {
+          "title": "Rebecca",
+          "originalTitle": "Rebecca",
+          "originalReleaseYear": 1940,
+          "fullPath": "/us/movie/rebecca"
+        },
+        "spanish": {
+          "title": "Rebeca",
+          "fullPath": "/es/pelicula/rebeca"
+        }
+      }
+    },
+    {
+      "slug": "rec-2007",
+      "year": 2007,
+      "query": "REC",
+      "status": "verified",
+      "match": {
+        "id": "tm77399",
+        "content": {
+          "title": "[•REC]",
+          "originalTitle": "[REC]",
+          "originalReleaseYear": 2007,
+          "fullPath": "/ar/pelicula/rec"
+        },
+        "english": {
+          "title": "[Rec]",
+          "originalTitle": "[REC]",
+          "originalReleaseYear": 2007,
+          "fullPath": "/us/movie/rec"
+        },
+        "spanish": {
+          "title": "[•REC]",
+          "fullPath": "/es/pelicula/rec"
+        }
+      }
+    },
+    {
+      "slug": "reservoir-dogs-1992",
+      "year": 1992,
+      "query": "Reservoir Dogs",
+      "status": "verified",
+      "match": {
+        "id": "tm123099",
+        "content": {
+          "title": "Reservoir Dogs",
+          "originalTitle": "Reservoir Dogs",
+          "originalReleaseYear": 1992,
+          "fullPath": "/ar/pelicula/reservoir-dogs"
+        },
+        "english": {
+          "title": "Reservoir Dogs",
+          "originalTitle": "Reservoir Dogs",
+          "originalReleaseYear": 1992,
+          "fullPath": "/us/movie/reservoir-dogs"
+        },
+        "spanish": {
+          "title": "Reservoir Dogs",
+          "fullPath": "/es/pelicula/reservoir-dogs"
+        }
+      }
+    },
+    {
+      "slug": "rise-of-the-planet-of-the-apes-2011",
+      "year": 2011,
+      "query": "Rise of the Planet of the Apes",
+      "status": "verified",
+      "match": {
+        "id": "tm176070",
+        "content": {
+          "title": "El origen del planeta de los simios",
+          "originalTitle": "Rise of the Planet of the Apes",
+          "originalReleaseYear": 2011,
+          "fullPath": "/ar/pelicula/el-origen-del-planeta-de-los-simios"
+        },
+        "english": {
+          "title": "Rise of the Planet of the Apes",
+          "originalTitle": "Rise of the Planet of the Apes",
+          "originalReleaseYear": 2011,
+          "fullPath": "/us/movie/rise-of-the-planet-of-the-apes"
+        },
+        "spanish": {
+          "title": "El origen del planeta de los simios",
+          "fullPath": "/es/pelicula/el-origen-del-planeta-de-los-simios"
+        }
+      }
+    },
+    {
+      "slug": "robin-hood-1973",
+      "year": 1973,
+      "query": "Robin Hood",
+      "status": "verified",
+      "match": {
+        "id": "tm186525",
+        "content": {
+          "title": "Robin Hood",
+          "originalTitle": "Robin Hood",
+          "originalReleaseYear": 1973,
+          "fullPath": "/ar/pelicula/robin-hood-1973"
+        },
+        "english": {
+          "title": "Robin Hood",
+          "originalTitle": "Robin Hood",
+          "originalReleaseYear": 1973,
+          "fullPath": "/us/movie/robin-hood-1973"
+        },
+        "spanish": {
+          "title": "Robin Hood",
+          "fullPath": "/es/pelicula/robin-hood"
+        }
+      }
+    },
+    {
+      "slug": "rocky-balboa-2006",
+      "year": 2006,
+      "query": "Rocky Balboa",
+      "status": "verified",
+      "match": {
+        "id": "tm36060",
+        "content": {
+          "title": "Rocky Balboa",
+          "originalTitle": "Rocky Balboa",
+          "originalReleaseYear": 2006,
+          "fullPath": "/ar/pelicula/rocky-balboa"
+        },
+        "english": {
+          "title": "Rocky Balboa",
+          "originalTitle": "Rocky Balboa",
+          "originalReleaseYear": 2006,
+          "fullPath": "/us/movie/rocky-balboa"
+        },
+        "spanish": {
+          "title": "Rocky Balboa",
+          "fullPath": "/es/pelicula/rocky-balboa"
+        }
+      }
+    },
+    {
+      "slug": "rocky-iii-1982",
+      "year": 1982,
+      "query": "Rocky III",
+      "status": "verified",
+      "match": {
+        "id": "tm48779",
+        "content": {
+          "title": "Rocky 3",
+          "originalTitle": "Rocky III",
+          "originalReleaseYear": 1982,
+          "fullPath": "/ar/pelicula/rocky-iii"
+        },
+        "english": {
+          "title": "Rocky III",
+          "originalTitle": "Rocky III",
+          "originalReleaseYear": 1982,
+          "fullPath": "/us/movie/rocky-3"
+        },
+        "spanish": {
+          "title": "Rocky 3",
+          "fullPath": "/es/pelicula/rocky-iii"
+        }
+      }
+    },
+    {
+      "slug": "ronin-1998",
+      "year": 1998,
+      "query": "Ronin",
+      "status": "verified",
+      "match": {
+        "id": "tm52437",
+        "content": {
+          "title": "Ronin",
+          "originalTitle": "Ronin",
+          "originalReleaseYear": 1998,
+          "fullPath": "/ar/pelicula/ronin"
+        },
+        "english": {
+          "title": "Ronin",
+          "originalTitle": "Ronin",
+          "originalReleaseYear": 1998,
+          "fullPath": "/us/movie/ronin"
+        },
+        "spanish": {
+          "title": "Ronin",
+          "fullPath": "/es/pelicula/ronin"
+        }
+      }
+    },
+    {
+      "slug": "santa-sangre-1989",
+      "year": 1989,
+      "query": "Santa Sangre",
+      "status": "verified",
+      "match": {
+        "id": "tm136792",
+        "content": {
+          "title": "Santa Sangre",
+          "originalTitle": "Santa Sangre",
+          "originalReleaseYear": 1989,
+          "fullPath": "/ar/pelicula/santa-sangre"
+        },
+        "english": {
+          "title": "Santa Sangre",
+          "originalTitle": "Santa Sangre",
+          "originalReleaseYear": 1989,
+          "fullPath": "/us/movie/holy-blood"
+        },
+        "spanish": {
+          "title": "Santa Sangre",
+          "fullPath": "/es/pelicula/santa-sangre"
+        }
+      }
+    },
+    {
+      "slug": "saving-private-ryan-1998",
+      "year": 1998,
+      "query": "Saving Private Ryan",
+      "status": "verified",
+      "match": {
+        "id": "tm57554",
+        "content": {
+          "title": "Salvar al soldado Ryan",
+          "originalTitle": "Saving Private Ryan",
+          "originalReleaseYear": 1998,
+          "fullPath": "/ar/pelicula/salvar-al-soldado-ryan"
+        },
+        "english": {
+          "title": "Saving Private Ryan",
+          "originalTitle": "Saving Private Ryan",
+          "originalReleaseYear": 1998,
+          "fullPath": "/us/movie/saving-private-ryan"
+        },
+        "spanish": {
+          "title": "Salvar al soldado Ryan",
+          "fullPath": "/es/pelicula/salvar-al-soldado-ryan"
+        }
+      }
+    },
+    {
+      "slug": "saw-2004",
+      "year": 2004,
+      "query": "Saw",
+      "status": "verified",
+      "match": {
+        "id": "tm79923",
+        "content": {
+          "title": "Saw. Juego macabro",
+          "originalTitle": "Saw",
+          "originalReleaseYear": 2004,
+          "fullPath": "/ar/pelicula/saw"
+        },
+        "english": {
+          "title": "Saw",
+          "originalTitle": "Saw",
+          "originalReleaseYear": 2004,
+          "fullPath": "/us/movie/saw"
+        },
+        "spanish": {
+          "title": "Saw. Juego macabro",
+          "fullPath": "/es/pelicula/saw"
+        }
+      }
+    },
+    {
+      "slug": "scream-2-1997",
+      "year": 1997,
+      "query": "Scream 2",
+      "status": "verified",
+      "match": {
+        "id": "tm192490",
+        "content": {
+          "title": "Scream 2",
+          "originalTitle": "Scream 2",
+          "originalReleaseYear": 1997,
+          "fullPath": "/ar/pelicula/scream-2"
+        },
+        "english": {
+          "title": "Scream 2",
+          "originalTitle": "Scream 2",
+          "originalReleaseYear": 1997,
+          "fullPath": "/us/movie/scream-2"
+        },
+        "spanish": {
+          "title": "Scream 2",
+          "fullPath": "/es/pelicula/scream-2"
+        }
+      }
+    },
+    {
+      "slug": "serpico-1973",
+      "year": 1973,
+      "query": "Serpico",
+      "status": "verified",
+      "match": {
+        "id": "tm189823",
+        "content": {
+          "title": "Serpico",
+          "originalTitle": "Serpico",
+          "originalReleaseYear": 1973,
+          "fullPath": "/ar/pelicula/serpico"
+        },
+        "english": {
+          "title": "Serpico",
+          "originalTitle": "Serpico",
+          "originalReleaseYear": 1973,
+          "fullPath": "/us/movie/serpico"
+        },
+        "spanish": {
+          "title": "Serpico",
+          "fullPath": "/es/pelicula/serpico"
+        }
+      }
+    },
+    {
+      "slug": "shine-a-light-2008",
+      "year": 2008,
+      "query": "Shine a Light",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "shoah-1985",
+      "year": 1985,
+      "query": "Shoah",
+      "status": "verified",
+      "match": {
+        "id": "tm122247",
+        "content": {
+          "title": "Shoah",
+          "originalTitle": "Shoah",
+          "originalReleaseYear": 1985,
+          "fullPath": "/ar/pelicula/shoah"
+        },
+        "english": {
+          "title": "Shoah",
+          "originalTitle": "Shoah",
+          "originalReleaseYear": 1985,
+          "fullPath": "/us/movie/shoah"
+        },
+        "spanish": {
+          "title": "Shoah",
+          "fullPath": "/es/pelicula/shoah"
+        }
+      }
+    },
+    {
+      "slug": "shrek-2-2004",
+      "year": 2004,
+      "query": "Shrek 2",
+      "status": "verified",
+      "match": {
+        "id": "tm89680",
+        "content": {
+          "title": "Shrek 2",
+          "originalTitle": "Shrek 2",
+          "originalReleaseYear": 2004,
+          "fullPath": "/ar/pelicula/shrek-2"
+        },
+        "english": {
+          "title": "Shrek 2",
+          "originalTitle": "Shrek 2",
+          "originalReleaseYear": 2004,
+          "fullPath": "/us/movie/shrek-2"
+        },
+        "spanish": {
+          "title": "Shrek 2",
+          "fullPath": "/es/pelicula/shrek-2"
+        }
+      }
+    },
+    {
+      "slug": "shrek-2001",
+      "year": 2001,
+      "query": "Shrek",
+      "status": "verified",
+      "match": {
+        "id": "tm50314",
+        "content": {
+          "title": "Shrek",
+          "originalTitle": "Shrek",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/shrek"
+        },
+        "english": {
+          "title": "Shrek",
+          "originalTitle": "Shrek",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/shrek"
+        },
+        "spanish": {
+          "title": "Shrek",
+          "fullPath": "/es/pelicula/shrek"
+        }
+      }
+    },
+    {
+      "slug": "shutter-island-2010",
+      "year": 2010,
+      "query": "Shutter Island",
+      "status": "verified",
+      "match": {
+        "id": "tm99575",
+        "content": {
+          "title": "Shutter Island",
+          "originalTitle": "Shutter Island",
+          "originalReleaseYear": 2010,
+          "fullPath": "/ar/pelicula/shutter-island"
+        },
+        "english": {
+          "title": "Shutter Island",
+          "originalTitle": "Shutter Island",
+          "originalReleaseYear": 2010,
+          "fullPath": "/us/movie/shutter-island"
+        },
+        "spanish": {
+          "title": "Shutter Island",
+          "fullPath": "/es/pelicula/shutter-island"
+        }
+      }
+    },
+    {
+      "slug": "silverado-1985",
+      "year": 1985,
+      "query": "Silverado",
+      "status": "verified",
+      "match": {
+        "id": "tm128473",
+        "content": {
+          "title": "Silverado",
+          "originalTitle": "Silverado",
+          "originalReleaseYear": 1985,
+          "fullPath": "/ar/pelicula/silverado"
+        },
+        "english": {
+          "title": "Silverado",
+          "originalTitle": "Silverado",
+          "originalReleaseYear": 1985,
+          "fullPath": "/us/movie/1985-silverado"
+        },
+        "spanish": {
+          "title": "Silverado",
+          "fullPath": "/es/pelicula/silverado"
+        }
+      }
+    },
+    {
+      "slug": "silvia-prieto-1999",
+      "year": 1999,
+      "query": "Silvia Prieto",
+      "status": "verified",
+      "match": {
+        "id": "tm54672",
+        "content": {
+          "title": "Silvia Prieto",
+          "originalTitle": "Silvia Prieto",
+          "originalReleaseYear": 1999,
+          "fullPath": "/ar/pelicula/silvia-prieto"
+        },
+        "english": {
+          "title": "Silvia Prieto",
+          "originalTitle": "Silvia Prieto",
+          "originalReleaseYear": 1999,
+          "fullPath": "/us/movie/silvia-prieto"
+        },
+        "spanish": {
+          "title": "Silvia Prieto",
+          "fullPath": "/es/pelicula/silvia-prieto"
+        }
+      }
+    },
+    {
+      "slug": "skyfall-2012",
+      "year": 2012,
+      "query": "Skyfall",
+      "status": "verified",
+      "match": {
+        "id": "tm72846",
+        "content": {
+          "title": "007: Operación Skyfall",
+          "originalTitle": "Skyfall",
+          "originalReleaseYear": 2012,
+          "fullPath": "/ar/pelicula/skyfall"
+        },
+        "english": {
+          "title": "Skyfall",
+          "originalTitle": "Skyfall",
+          "originalReleaseYear": 2012,
+          "fullPath": "/us/movie/james-bond-007-skyfall"
+        },
+        "spanish": {
+          "title": "007: Operación Skyfall",
+          "fullPath": "/es/pelicula/skyfall"
+        }
+      }
+    },
+    {
+      "slug": "sleeper-1973",
+      "year": 1973,
+      "query": "Sleeper",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "spider-man-2-2004",
+      "year": 2004,
+      "query": "Spider-Man 2",
+      "status": "verified",
+      "match": {
+        "id": "tm79988",
+        "content": {
+          "title": "El hombre araña 2",
+          "originalTitle": "Spider-Man 2",
+          "originalReleaseYear": 2004,
+          "fullPath": "/ar/pelicula/spider-man-2"
+        },
+        "english": {
+          "title": "Spider-Man 2",
+          "originalTitle": "Spider-Man 2",
+          "originalReleaseYear": 2004,
+          "fullPath": "/us/movie/spiderman-2"
+        },
+        "spanish": {
+          "title": "El hombre araña 2",
+          "fullPath": "/es/pelicula/spider-man-2"
+        }
+      }
+    },
+    {
+      "slug": "spider-man-3-2007",
+      "year": 2007,
+      "query": "Spider-Man 3",
+      "status": "verified",
+      "match": {
+        "id": "tm83839",
+        "content": {
+          "title": "El hombre araña 3",
+          "originalTitle": "Spider-Man 3",
+          "originalReleaseYear": 2007,
+          "fullPath": "/ar/pelicula/spider-man-3"
+        },
+        "english": {
+          "title": "Spider-Man 3",
+          "originalTitle": "Spider-Man 3",
+          "originalReleaseYear": 2007,
+          "fullPath": "/us/movie/spider-man-3"
+        },
+        "spanish": {
+          "title": "El hombre araña 3",
+          "fullPath": "/es/pelicula/spider-man-3"
+        }
+      }
+    },
+    {
+      "slug": "spirited-away-2001",
+      "year": 2001,
+      "query": "Sen to Chihiro no Kamikakushi",
+      "status": "verified",
+      "match": {
+        "id": "tm48297",
+        "content": {
+          "title": "El viaje de Chihiro",
+          "originalTitle": "Sen to Chihiro no kamikakushi",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/el-viaje-de-chihiro"
+        },
+        "english": {
+          "title": "Spirited Away",
+          "originalTitle": "Sen to Chihiro no kamikakushi",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/spirited-away"
+        },
+        "spanish": {
+          "title": "El viaje de Chihiro",
+          "fullPath": "/es/pelicula/el-viaje-de-chihiro"
+        }
+      }
+    },
+    {
+      "slug": "spotlight-2015",
+      "year": 2015,
+      "query": "Spotlight",
+      "status": "verified",
+      "match": {
+        "id": "tm218359",
+        "content": {
+          "title": "En primera plana",
+          "originalTitle": "Spotlight",
+          "originalReleaseYear": 2015,
+          "fullPath": "/ar/pelicula/spotlight"
+        },
+        "english": {
+          "title": "Spotlight",
+          "originalTitle": "Spotlight",
+          "originalReleaseYear": 2015,
+          "fullPath": "/us/movie/spotlight"
+        },
+        "spanish": {
+          "title": "En primera plana",
+          "fullPath": "/es/pelicula/spotlight"
+        }
+      }
+    },
+    {
+      "slug": "star-wars-episode-ii-attack-of-the-clones-2002",
+      "year": 2002,
+      "query": "Star Wars: Episode II - Attack of the Clones",
+      "status": "verified",
+      "match": {
+        "id": "tm5",
+        "content": {
+          "title": "La guerra de las galaxias. Episodio II: El ataque de los clones",
+          "originalTitle": "Star Wars: Episode II - Attack of the Clones",
+          "originalReleaseYear": 2002,
+          "fullPath": "/ar/pelicula/la-guerra-de-las-galaxias-episodio-ii-el-ataque-de-los-clones"
+        },
+        "english": {
+          "title": "Star Wars: Episode II - Attack of the Clones",
+          "originalTitle": "Star Wars: Episode II - Attack of the Clones",
+          "originalReleaseYear": 2002,
+          "fullPath": "/us/movie/star-wars-episode-ii-attack-of-the-clones"
+        },
+        "spanish": {
+          "title": "La guerra de las galaxias. Episodio II: El ataque de los clones",
+          "fullPath": "/es/pelicula/la-guerra-de-las-galaxias-episodio-ii-el-ataque-de-los-clones"
+        }
+      }
+    },
+    {
+      "slug": "taxi-driver-1976",
+      "year": 1976,
+      "query": "Taxi Driver",
+      "status": "verified",
+      "match": {
+        "id": "tm84618",
+        "content": {
+          "title": "Taxi driver",
+          "originalTitle": "Taxi Driver",
+          "originalReleaseYear": 1976,
+          "fullPath": "/ar/pelicula/taxi-driver"
+        },
+        "english": {
+          "title": "Taxi Driver",
+          "originalTitle": "Taxi Driver",
+          "originalReleaseYear": 1976,
+          "fullPath": "/us/movie/taxi-driver"
+        },
+        "spanish": {
+          "title": "Taxi driver",
+          "fullPath": "/es/pelicula/taxi-driver"
+        }
+      }
+    },
+    {
+      "slug": "the-end-of-evangelion-1997",
+      "year": 1997,
+      "query": "The End of Evangelion",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "the-godfather-1972",
+      "year": 1972,
+      "query": "The Godfather",
+      "status": "verified",
+      "match": {
+        "id": "tm155580",
+        "content": {
+          "title": "El padrino",
+          "originalTitle": "The Godfather",
+          "originalReleaseYear": 1972,
+          "fullPath": "/ar/pelicula/el-padrino"
+        },
+        "english": {
+          "title": "The Godfather",
+          "originalTitle": "The Godfather",
+          "originalReleaseYear": 1972,
+          "fullPath": "/us/movie/the-godfather-part-i"
+        },
+        "spanish": {
+          "title": "El padrino",
+          "fullPath": "/es/pelicula/el-padrino"
+        }
+      }
+    },
+    {
+      "slug": "the-godfather-part-ii-1974",
+      "year": 1974,
+      "query": "The Godfather Part II",
+      "status": "verified",
+      "match": {
+        "id": "tm112061",
+        "content": {
+          "title": "El padrino II",
+          "originalTitle": "The Godfather Part II",
+          "originalReleaseYear": 1974,
+          "fullPath": "/ar/pelicula/el-padrino-parte-ii"
+        },
+        "english": {
+          "title": "The Godfather Part II",
+          "originalTitle": "The Godfather Part II",
+          "originalReleaseYear": 1974,
+          "fullPath": "/us/movie/the-godfather-part-ii"
+        },
+        "spanish": {
+          "title": "El padrino II",
+          "fullPath": "/es/pelicula/el-padrino-parte-ii"
+        }
+      }
+    },
+    {
+      "slug": "the-incredibles-2004",
+      "year": 2004,
+      "query": "The Incredibles",
+      "status": "verified",
+      "match": {
+        "id": "tm84505",
+        "content": {
+          "title": "Los Increíbles",
+          "originalTitle": "The Incredibles",
+          "originalReleaseYear": 2004,
+          "fullPath": "/ar/pelicula/los-increibles"
+        },
+        "english": {
+          "title": "The Incredibles",
+          "originalTitle": "The Incredibles",
+          "originalReleaseYear": 2004,
+          "fullPath": "/us/movie/the-incredibles"
+        },
+        "spanish": {
+          "title": "Los Increíbles",
+          "fullPath": "/es/pelicula/los-increibles"
+        }
+      }
+    },
+    {
+      "slug": "the-lord-of-the-rings-the-fellowship-of-the-ring-2001",
+      "year": 2001,
+      "query": "The Lord of the Rings: The Fellowship of the Ring",
+      "status": "verified",
+      "match": {
+        "id": "tm44313",
+        "content": {
+          "title": "El señor de los anillos: La comunidad del anillo",
+          "originalTitle": "The Lord of the Rings: The Fellowship of the Ring",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/el-senor-de-los-anillos-la-comunidad-del-anillo"
+        },
+        "english": {
+          "title": "The Lord of the Rings: The Fellowship of the Ring",
+          "originalTitle": "The Lord of the Rings: The Fellowship of the Ring",
+          "originalReleaseYear": 2001,
+          "fullPath": "/us/movie/lord-of-the-rings-i-the-fellowship-of-the-ring"
+        },
+        "spanish": {
+          "title": "El señor de los anillos: La comunidad del anillo",
+          "fullPath": "/es/pelicula/el-senor-de-los-anillos-la-comunidad-del-anillo"
+        }
+      }
+    },
+    {
+      "slug": "the-lord-of-the-rings-the-return-of-the-king-2003",
+      "year": 2003,
+      "query": "The Lord of the Rings: The Return of the King",
+      "status": "verified",
+      "match": {
+        "id": "tm142381",
+        "content": {
+          "title": "El señor de los anillos: El retorno del rey",
+          "originalTitle": "The Lord of the Rings: The Return of the King",
+          "originalReleaseYear": 2003,
+          "fullPath": "/ar/pelicula/el-senor-de-los-anillos-el-retorno-del-rey"
+        },
+        "english": {
+          "title": "The Lord of the Rings: The Return of the King",
+          "originalTitle": "The Lord of the Rings: The Return of the King",
+          "originalReleaseYear": 2003,
+          "fullPath": "/us/movie/the-return-of-the-king"
+        },
+        "spanish": {
+          "title": "El señor de los anillos: El retorno del rey",
+          "fullPath": "/es/pelicula/el-senor-de-los-anillos-el-retorno-del-rey"
+        }
+      }
+    },
+    {
+      "slug": "the-lord-of-the-rings-the-two-towers-2002",
+      "year": 2002,
+      "query": "The Lord of the Rings: The Two Towers",
+      "status": "verified",
+      "match": {
+        "id": "tm115982",
+        "content": {
+          "title": "El señor de los anillos: Las dos torres",
+          "originalTitle": "The Lord of the Rings: The Two Towers",
+          "originalReleaseYear": 2002,
+          "fullPath": "/ar/pelicula/el-senor-de-los-anillos-las-dos-torres"
+        },
+        "english": {
+          "title": "The Lord of the Rings: The Two Towers",
+          "originalTitle": "The Lord of the Rings: The Two Towers",
+          "originalReleaseYear": 2002,
+          "fullPath": "/us/movie/the-lord-of-the-rings-the-two-towers"
+        },
+        "spanish": {
+          "title": "El señor de los anillos: Las dos torres",
+          "fullPath": "/es/pelicula/el-senor-de-los-anillos-las-dos-torres"
+        }
+      }
+    },
+    {
+      "slug": "the-matrix-1999",
+      "year": 1999,
+      "query": "The Matrix",
+      "status": "verified",
+      "match": {
+        "id": "tm10",
+        "content": {
+          "title": "Matrix",
+          "originalTitle": "The Matrix",
+          "originalReleaseYear": 1999,
+          "fullPath": "/ar/pelicula/matrix"
+        },
+        "english": {
+          "title": "The Matrix",
+          "originalTitle": "The Matrix",
+          "originalReleaseYear": 1999,
+          "fullPath": "/us/movie/the-matrix"
+        },
+        "spanish": {
+          "title": "Matrix",
+          "fullPath": "/es/pelicula/matrix"
+        }
+      }
+    },
+    {
+      "slug": "the-shawshank-redemption-1994",
+      "year": 1994,
+      "query": "The Shawshank Redemption",
+      "status": "verified",
+      "match": {
+        "id": "tm119206",
+        "content": {
+          "title": "Cadena perpetua",
+          "originalTitle": "The Shawshank Redemption",
+          "originalReleaseYear": 1994,
+          "fullPath": "/ar/pelicula/cadena-perpetua"
+        },
+        "english": {
+          "title": "The Shawshank Redemption",
+          "originalTitle": "The Shawshank Redemption",
+          "originalReleaseYear": 1994,
+          "fullPath": "/us/movie/the-shawshank-redemption"
+        },
+        "spanish": {
+          "title": "Cadena perpetua",
+          "fullPath": "/es/pelicula/cadena-perpetua"
+        }
+      }
+    },
+    {
+      "slug": "the-shining-1980",
+      "year": 1980,
+      "query": "The Shining",
+      "status": "verified",
+      "match": {
+        "id": "tm97341",
+        "content": {
+          "title": "El resplandor",
+          "originalTitle": "The Shining",
+          "originalReleaseYear": 1980,
+          "fullPath": "/ar/pelicula/el-resplandor"
+        },
+        "english": {
+          "title": "The Shining",
+          "originalTitle": "The Shining",
+          "originalReleaseYear": 1980,
+          "fullPath": "/us/movie/the-shining"
+        },
+        "spanish": {
+          "title": "El resplandor",
+          "fullPath": "/es/pelicula/el-resplandor"
+        }
+      }
+    },
+    {
+      "slug": "the-terminator-1984",
+      "year": 1984,
+      "query": "The Terminator",
+      "status": "verified",
+      "match": {
+        "id": "tm163236",
+        "content": {
+          "title": "Terminator",
+          "originalTitle": "The Terminator",
+          "originalReleaseYear": 1984,
+          "fullPath": "/ar/pelicula/terminator"
+        },
+        "english": {
+          "title": "The Terminator",
+          "originalTitle": "The Terminator",
+          "originalReleaseYear": 1984,
+          "fullPath": "/us/movie/the-terminator"
+        },
+        "spanish": {
+          "title": "Terminator",
+          "fullPath": "/es/pelicula/terminator"
+        }
+      }
+    },
+    {
+      "slug": "the-thin-blue-line-1988",
+      "year": 1988,
+      "query": "The Thin Blue Line",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "the-wizard-of-oz-1939",
+      "year": 1939,
+      "query": "The Wizard of Oz",
+      "status": "verified",
+      "match": {
+        "id": "tm155702",
+        "content": {
+          "title": "El mago de Oz",
+          "originalTitle": "The Wizard of Oz",
+          "originalReleaseYear": 1939,
+          "fullPath": "/ar/pelicula/el-mago-de-oz"
+        },
+        "english": {
+          "title": "The Wizard of Oz",
+          "originalTitle": "The Wizard of Oz",
+          "originalReleaseYear": 1939,
+          "fullPath": "/us/movie/the-wizard-of-oz"
+        },
+        "spanish": {
+          "title": "El mago de Oz",
+          "fullPath": "/es/pelicula/el-mago-de-oz"
+        }
+      }
+    },
+    {
+      "slug": "todo-sobre-mi-madre-1999",
+      "year": 1999,
+      "query": "Todo sobre mi madre",
+      "status": "verified",
+      "match": {
+        "id": "tm51880",
+        "content": {
+          "title": "Todo sobre mi madre",
+          "originalTitle": "Todo sobre mi madre",
+          "originalReleaseYear": 1999,
+          "fullPath": "/ar/pelicula/todo-sobre-mi-madre"
+        },
+        "english": {
+          "title": "All About My Mother",
+          "originalTitle": "Todo sobre mi madre",
+          "originalReleaseYear": 1999,
+          "fullPath": "/us/movie/all-about-my-mother"
+        },
+        "spanish": {
+          "title": "Todo sobre mi madre",
+          "fullPath": "/es/pelicula/all-about-my-mother"
+        }
+      }
+    },
+    {
+      "slug": "toy-story-1995",
+      "year": 1995,
+      "query": "Toy Story",
+      "status": "verified",
+      "match": {
+        "id": "tm14765",
+        "content": {
+          "title": "Toy Story",
+          "originalTitle": "Toy Story",
+          "originalReleaseYear": 1995,
+          "fullPath": "/ar/pelicula/toy-story"
+        },
+        "english": {
+          "title": "Toy Story",
+          "originalTitle": "Toy Story",
+          "originalReleaseYear": 1995,
+          "fullPath": "/us/movie/toy-story"
+        },
+        "spanish": {
+          "title": "Toy Story",
+          "fullPath": "/es/pelicula/toy-story"
+        }
+      }
+    },
+    {
+      "slug": "toy-story-2-1999",
+      "year": 1999,
+      "query": "Toy Story 2",
+      "status": "verified",
+      "match": {
+        "id": "tm40070",
+        "content": {
+          "title": "Toy Story 2: Los juguetes vuelven a la carga",
+          "originalTitle": "Toy Story 2",
+          "originalReleaseYear": 1999,
+          "fullPath": "/ar/pelicula/toy-story-2"
+        },
+        "english": {
+          "title": "Toy Story 2",
+          "originalTitle": "Toy Story 2",
+          "originalReleaseYear": 1999,
+          "fullPath": "/us/movie/toy-story-2"
+        },
+        "spanish": {
+          "title": "Toy Story 2: Los juguetes vuelven a la carga",
+          "fullPath": "/es/pelicula/toy-story-2"
+        }
+      }
+    },
+    {
+      "slug": "toy-story-3-2010",
+      "year": 2010,
+      "query": "Toy Story 3",
+      "status": "verified",
+      "match": {
+        "id": "tm101226",
+        "content": {
+          "title": "Toy Story 3 ",
+          "originalTitle": "Toy Story 3",
+          "originalReleaseYear": 2010,
+          "fullPath": "/ar/pelicula/toy-story-3"
+        },
+        "english": {
+          "title": "Toy Story 3",
+          "originalTitle": "Toy Story 3",
+          "originalReleaseYear": 2010,
+          "fullPath": "/us/movie/toy-story-3-3d"
+        },
+        "spanish": {
+          "title": "Toy Story 3 ",
+          "fullPath": "/es/pelicula/toy-story-3"
+        }
+      }
+    },
+    {
+      "slug": "un-lugar-en-el-mundo-1992",
+      "year": 1992,
+      "query": "Un lugar en el mundo",
+      "status": "verified",
+      "match": {
+        "id": "tm126922",
+        "content": {
+          "title": "Un lugar en el mundo",
+          "originalTitle": "Un lugar en el mundo",
+          "originalReleaseYear": 1992,
+          "fullPath": "/ar/pelicula/un-lugar-en-el-mundo"
+        },
+        "english": {
+          "title": "A Place in the World",
+          "originalTitle": "Un lugar en el mundo",
+          "originalReleaseYear": 1992,
+          "fullPath": ""
+        },
+        "spanish": {
+          "title": "Un lugar en el mundo",
+          "fullPath": "/es/pelicula/un-lugar-en-el-mundo"
+        }
+      }
+    },
+    {
+      "slug": "vertigo-1958",
+      "year": 1958,
+      "query": "Vertigo",
+      "status": "verified",
+      "match": {
+        "id": "tm131442",
+        "content": {
+          "title": "Vértigo",
+          "originalTitle": "Vertigo",
+          "originalReleaseYear": 1958,
+          "fullPath": "/ar/pelicula/vertigo"
+        },
+        "english": {
+          "title": "Vertigo",
+          "originalTitle": "Vertigo",
+          "originalReleaseYear": 1958,
+          "fullPath": "/us/movie/vertigo"
+        },
+        "spanish": {
+          "title": "Vértigo",
+          "fullPath": "/es/pelicula/vertigo"
+        }
+      }
+    },
+    {
+      "slug": "wall-e-2008",
+      "year": 2008,
+      "query": "WALL-E",
+      "status": "unmatched",
+      "match": null
+    },
+    {
+      "slug": "wonder-woman-1984-2020",
+      "year": 2020,
+      "query": "Wonder Woman 1984",
+      "status": "verified",
+      "match": {
+        "id": "tm328069",
+        "content": {
+          "title": "Wonder Woman 1984",
+          "originalTitle": "Wonder Woman 1984",
+          "originalReleaseYear": 2020,
+          "fullPath": "/ar/pelicula/wonder-woman-1984"
+        },
+        "english": {
+          "title": "Wonder Woman 1984",
+          "originalTitle": "Wonder Woman 1984",
+          "originalReleaseYear": 2020,
+          "fullPath": "/us/movie/wonder-woman-1984"
+        },
+        "spanish": {
+          "title": "Wonder Woman 1984",
+          "fullPath": "/es/pelicula/wonder-woman-1984"
+        }
+      }
+    },
+    {
+      "slug": "yi-yi-2000",
+      "year": 2000,
+      "query": "Yi Yi",
+      "status": "unmatched",
+      "match": null
+    }
+  ]
+}

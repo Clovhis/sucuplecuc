@@ -1,0 +1,2509 @@
+{
+  "config": {
+    "configFile": "C:\\WebsitePeliculas\\.astro\\playwright-search-final.config.ts",
+    "rootDir": "C:/WebsitePeliculas/tests/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-webkit-full-repro",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-chromium",
+        "name": "desktop-chromium",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-webkit-full-repro",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-firefox",
+        "name": "desktop-firefox",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-webkit-full-repro",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-webkit",
+        "name": "desktop-webkit",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-webkit-full-repro",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WebsitePeliculas/.astro/search-production-webkit-full-repro",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-webkit",
+        "name": "mobile-webkit",
+        "testDir": "C:/WebsitePeliculas/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node ./scripts/preview-e2e.mjs --host 127.0.0.1 --port 43218",
+      "url": "http://127.0.0.1:43218",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "intelligent-search.spec.ts",
+      "file": "intelligent-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "acceptance corpus resolves at least fifty independent real-catalog queries",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 36825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+2ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"playwright\" \u001b[32m+25ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"playwright\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"headless\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"headless\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"channel\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"channel\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"_browserOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"_browserOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"acceptDownloads\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"clientCertificates\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"colorScheme\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"httpCredentials\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"locale\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"proxy\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"serviceWorkers\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"trace recording\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"trace recording\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"browserName\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"browserName\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"connectOptions\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"connectOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"browser\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[30;1mpw:browser \u001b[0m<launching> C:\\Users\\yosoy\\AppData\\Local\\ms-playwright\\webkit-2287\\Playwright.exe --inspector-pipe --disable-accelerated-compositing --headless --no-startup-window \u001b[30m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[30;1mpw:browser \u001b[0m<launched> pid=3008 \u001b[30m+12ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"browser\" \u001b[32m+60ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+22ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"page\" \u001b[32m+189ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+36s\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+2ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"page\" \u001b[32m+2ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+199ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"navigationTimeout\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"_combinedContextOptions\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"viewport\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"locale\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"isMobile\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"isMobile\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"hasTouch\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"clientCertificates\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-11-08T11:44:07.033Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb4fcdc412cded03ad0b-960b2b668cc245f2e451",
+          "file": "intelligent-search.spec.ts",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "empty-state recovery preserves the query, and suggestions explain title aliases and tolerate person typos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3702,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"acceptDownloads\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"clientCertificates\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"geolocation\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"locale\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"proxy\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"serviceWorkers\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context configuration\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+16ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"page\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"page\" \u001b[32m+175ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+3s\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+170ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"trace recording\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"viewport\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"offline\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"isMobile\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"isMobile\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"httpCredentials\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"deviceScaleFactor\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"acceptDownloads\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-11-08T11:44:43.968Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb4fcdc412cded03ad0b-e056dcc252353e80b3c5",
+          "file": "intelligent-search.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "real catalog: natural language uses actual directors, decades, platforms and canonical scores",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4094,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"acceptDownloads\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"bypassCSP\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"httpCredentials\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"proxy\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"trace recording\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+13ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"page\" \u001b[32m+168ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+4s\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+351ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"testIdAttribute\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"trace recording\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"baseURL\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"proxy\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"isMobile\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"isMobile\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"extraHTTPHeaders\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"bypassCSP\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-11-08T11:44:47.685Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb4fcdc412cded03ad0b-c18cd195fb2bb751486d",
+          "file": "intelligent-search.spec.ts",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "real catalog: typos, original titles and aliases resolve to the same films",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3800,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"acceptDownloads\" \u001b[32m+2ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"colorScheme\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"httpCredentials\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"ignoreHTTPSErrors\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"javaScriptEnabled\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"offline\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"timezoneId\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"_combinedContextOptions\" \u001b[32m+2ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+27ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"page\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"page\" \u001b[32m+163ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+3s\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+277ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context configuration\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"_combinedContextOptions\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"timezoneId\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"offline\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"isMobile\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"isMobile\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"geolocation\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"bypassCSP\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-11-08T11:44:51.793Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb4fcdc412cded03ad0b-e1437b69b19ec01c1003",
+          "file": "intelligent-search.spec.ts",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "query constraints intersect manual filters, survive reload, and clear without stale state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3938,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"acceptDownloads\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"bypassCSP\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"colorScheme\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"geolocation\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"locale\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"storageState\" \u001b[32m+2ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"trace recording\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+15ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"page\" \u001b[32m+163ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+4s\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"page\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+169ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"trace recording\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"timezoneId\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"offline\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"isMobile\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"isMobile\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"extraHTTPHeaders\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+1ms\u001b[0m\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-11-08T11:44:55.612Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb4fcdc412cded03ad0b-6fd4e0895f0ef1736d24",
+          "file": "intelligent-search.spec.ts",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "mobile search stays usable at 320, 390 and 430px with bounded DOM and no horizontal overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2836,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"clientCertificates\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"httpCredentials\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"locale\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"storageState\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"trace recording\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context configuration\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"context\" \u001b[32m+14ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted setup \"page\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished setup \"page\" \u001b[32m+168ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+2s\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"page\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+216ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"context configuration\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"context configuration\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"testIdAttribute\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"navigationTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"actionTimeout\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"trace recording\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"_combinedContextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"serviceWorkers\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"serviceWorkers\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"baseURL\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"userAgent\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"timezoneId\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"viewport\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"storageState\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"proxy\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"proxy\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"permissions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"offline\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"locale\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"javaScriptEnabled\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"isMobile\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"isMobile\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"ignoreHTTPSErrors\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"httpCredentials\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"geolocation\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"geolocation\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"hasTouch\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"extraHTTPHeaders\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"deviceScaleFactor\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"colorScheme\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"clientCertificates\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"bypassCSP\" \u001b[32m+1ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"bypassCSP\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"acceptDownloads\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished teardown \"contextOptions\" \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mstarted test \u001b[32m+0ms\u001b[0m\n"
+                    },
+                    {
+                      "text": "  \u001b[32;1mpw:test \u001b[0mfinished test \u001b[32m+0ms\u001b[0m\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-11-08T11:44:59.564Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "mobile-search-metrics",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJ3aWR0aCI6IDMyMCwKICAgICJjb250ZW50V2lkdGgiOiAzMjAsCiAgICAiY2FyZHMiOiAzNiwKICAgICJjcHVNcyI6IDIxLAogICAgImlucHV0SGVpZ2h0IjogNDgKICB9LAogIHsKICAgICJ3aWR0aCI6IDM5MCwKICAgICJjb250ZW50V2lkdGgiOiAzOTAsCiAgICAiY2FyZHMiOiA2LAogICAgImNwdU1zIjogNiwKICAgICJpbnB1dEhlaWdodCI6IDQ4CiAgfSwKICB7CiAgICAid2lkdGgiOiA0MzAsCiAgICAiY29udGVudFdpZHRoIjogNDMwLAogICAgImNhcmRzIjogMzYsCiAgICAiY3B1TXMiOiA4LAogICAgImlucHV0SGVpZ2h0IjogNDgKICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb4fcdc412cded03ad0b-613f40c875597ae40a93",
+          "file": "intelligent-search.spec.ts",
+          "line": 116,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "Error: worker-0 process did not exit within 300000ms after stop, force-killed it"
+    },
+    {
+      "message": "Error: worker-0 process did not exit within 300000ms after stop, force-killed it"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-11-08T11:44:06.143Z",
+    "duration": 356652.195,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

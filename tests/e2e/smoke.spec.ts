@@ -44,6 +44,9 @@ test('home page renders the catalog shell', async ({ page }) => {
 	await expect(page.locator('.site-header__brand img')).toHaveAttribute('src', '/brand/cineposta-logo-full.png');
 	await expect(page.locator('[data-movie-search-grid]')).toBeVisible();
 	await expect(page.getByRole('heading', { name: /Construí tu carrera en el cine/i })).toBeVisible();
+  // The people gallery is populated during catalog initialization. Let that
+  // layout settle before scrolling across the whole page to click the footer.
+  await expect(page.locator('[data-movie-search-root]')).toHaveAttribute('data-home-catalog-ready', 'true');
   const about = page.locator('.site-footer__about');
   if (!(await about.evaluate((node: HTMLDetailsElement) => node.open))) await about.locator('summary').click();
 	await expect(page.getByRole('link', { name: 'Sobre', exact: true })).toBeVisible();

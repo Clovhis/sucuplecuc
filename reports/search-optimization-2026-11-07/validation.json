@@ -1,0 +1,201 @@
+{
+  "validatedAt": "2026-11-08T11:32:36.477Z",
+  "branch": "feat/buscador-inteligente",
+  "release": {
+    "commit": false,
+    "push": false,
+    "merge": false
+  },
+  "catalogMovies": 2574,
+  "unit": {
+    "passed": 12,
+    "failed": 0
+  },
+  "acceptance": {
+    "before": {
+      "total": 85,
+      "passed": 64,
+      "failed": 21
+    },
+    "after": {
+      "total": 85,
+      "passed": 85,
+      "failed": 0
+    }
+  },
+  "checks": {
+    "astro": {
+      "files": 360,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "build": {
+      "pages": 8635,
+      "passed": true
+    },
+    "publicOutput": {
+      "passed": true
+    },
+    "sitemap": {
+      "canonicalPages": 6052,
+      "passed": true
+    },
+    "aliases": {
+      "movies": 115,
+      "titles": 121,
+      "invalidReferences": 0
+    },
+    "catalogParity": {
+      "passed": true,
+      "legacyEndpointEqualsDecodedV2": true
+    }
+  },
+  "dev": {
+    "url": "http://127.0.0.1:43211/",
+    "status": 200,
+    "device": "Pixel 5 emulation",
+    "queries": [
+      {
+        "query": "Sueños de libertad",
+        "firstResult": "/peliculas/the-shawshank-redemption-1994/",
+        "count": "1"
+      },
+      {
+        "query": "terror de los 80",
+        "firstResult": "/peliculas/santa-sangre-1989/",
+        "count": "36"
+      },
+      {
+        "query": "Brad Pitt en Netflix",
+        "firstResult": "/peliculas/once-upon-a-time-in-hollywood-2019/",
+        "count": "4"
+      }
+    ],
+    "pageErrors": []
+  },
+  "e2e": {
+    "projects": {
+      "desktop-chromium": {
+        "passed": 46,
+        "skipped": 8,
+        "failed": 0
+      },
+      "mobile-chromium": {
+        "passed": 50,
+        "skipped": 4,
+        "failed": 0
+      },
+      "mobile-webkit": {
+        "passed": 50,
+        "skipped": 4,
+        "failed": 0
+      }
+    },
+    "runs": [
+      {
+        "label": "chromium",
+        "exitCode": 0,
+        "expected": 96,
+        "skipped": 12,
+        "unexpected": 0,
+        "flaky": 0,
+        "globalErrors": [],
+        "durationMs": 125212.661
+      },
+      {
+        "label": "webkit-filters-1",
+        "exitCode": 0,
+        "expected": 8,
+        "skipped": 2,
+        "unexpected": 0,
+        "flaky": 0,
+        "globalErrors": [],
+        "durationMs": 16417.311
+      },
+      {
+        "label": "webkit-filters-2",
+        "exitCode": 0,
+        "expected": 9,
+        "skipped": 1,
+        "unexpected": 0,
+        "flaky": 0,
+        "globalErrors": [],
+        "durationMs": 28978.757
+      },
+      {
+        "label": "webkit-filters-3",
+        "exitCode": 1,
+        "expected": 10,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0,
+        "globalErrors": [
+          {
+            "message": "Error: worker-0 process did not exit within 300000ms after stop, force-killed it"
+          },
+          {
+            "message": "Error: worker-0 process did not exit within 300000ms after stop, force-killed it"
+          }
+        ],
+        "durationMs": 333420.195
+      },
+      {
+        "label": "webkit-loading",
+        "exitCode": 0,
+        "expected": 4,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0,
+        "globalErrors": [],
+        "durationMs": 6464.561000000001
+      },
+      {
+        "label": "webkit-intelligent",
+        "exitCode": 1,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0,
+        "globalErrors": [
+          {
+            "message": "Error: worker-0 process did not exit within 300000ms after stop, force-killed it"
+          },
+          {
+            "message": "Error: worker-0 process did not exit within 300000ms after stop, force-killed it"
+          }
+        ],
+        "durationMs": 353696.045
+      },
+      {
+        "label": "webkit-mobile-performance",
+        "exitCode": 0,
+        "expected": 13,
+        "skipped": 1,
+        "unexpected": 0,
+        "flaky": 0,
+        "globalErrors": [],
+        "durationMs": 53020.241
+      }
+    ],
+    "fullyClean": false,
+    "harnessFailure": "All final Chromium and WebKit test assertions passed. Two final WebKit batches completed their assertions, then their native workers failed to terminate within 300000 ms. Those commands exited 1 with global teardown errors; this is NOT a fully clean E2E matrix. Isolated retries with video disabled did not eliminate every teardown failure. Screenshots and all assertions were retained; no product assertions or production timeouts were relaxed."
+  },
+  "screenshots": [
+    "reports/search-optimization-2026-11-07/screenshots/mobile-chromium-intelligent-search-320.png",
+    "reports/search-optimization-2026-11-07/screenshots/mobile-chromium-intelligent-search-390.png",
+    "reports/search-optimization-2026-11-07/screenshots/mobile-chromium-intelligent-search-430.png",
+    "reports/search-optimization-2026-11-07/screenshots/mobile-webkit-intelligent-search-320.png",
+    "reports/search-optimization-2026-11-07/screenshots/mobile-webkit-intelligent-search-390.png",
+    "reports/search-optimization-2026-11-07/screenshots/mobile-webkit-intelligent-search-430.png"
+  ],
+  "performance": "comparison.json; raw samples engine-before/after.json and browser-before/after.json. Local emulation and V8 heap, never physical mobile device measurements.",
+  "weeklyAdditions": "Every movie from canonical src/data/movies is indexed on each build. Alias enrichment is optional and additive. Unit fixture verifies a new film without aliases.",
+  "limits": [
+    "Regional title audit covered a researched sample of 250 films; 23 unresolved cases are listed in title-audit.json.",
+    "Deterministic grammar; no semantic plot interpretation.",
+    "Platform data comes from the canonical catalog, not live availability.",
+    "The full index still grows in memory. The 10000-record stress repeats real records with distinct IDs.",
+    "WebKit native worker teardown did not complete; exact cause is unresolved."
+  ]
+}

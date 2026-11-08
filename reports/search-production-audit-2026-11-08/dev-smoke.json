@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-08T13:29:39.231Z",
+  "url": "http://127.0.0.1:43211/",
+  "status": 200,
+  "device": "Pixel 5 emulation, not a physical phone",
+  "indicator": "Búsqueda inteligente",
+  "queries": [
+    {
+      "query": "Sueños de libertad",
+      "firstResult": "/peliculas/the-shawshank-redemption-1994/",
+      "count": "1"
+    },
+    {
+      "query": "terror de los 80",
+      "firstResult": "/peliculas/santa-sangre-1989/",
+      "count": "36"
+    },
+    {
+      "query": "Brad Pitt en Netflix",
+      "firstResult": "/peliculas/once-upon-a-time-in-hollywood-2019/",
+      "count": "4"
+    }
+  ],
+  "pageErrors": []
+}

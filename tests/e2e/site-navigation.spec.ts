@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { captureUnhandledErrors } from './runtime-errors';
 
 const label = 'Secciones de CinePosta';
 
@@ -31,8 +32,7 @@ test('shared section bar keeps all destinations usable from 320px to desktop', a
 });
 
 test('news archive and section state remain available on inner pages', async ({ page }) => {
-  const errors: string[] = [];
-  page.on('pageerror', error => errors.push(error.message));
+  const errors = await captureUnhandledErrors(page);
   for (const path of ['/editorial/', '/personas/', '/peliculas/12-angry-men-1957/', '/que-miro-hoy/']) {
     const response = await page.goto(path, { waitUntil: 'load' });
     expect(response?.ok()).toBeTruthy();

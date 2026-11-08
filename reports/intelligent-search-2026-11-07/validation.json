@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-07",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "branch": "feat/buscador-inteligente",
+  "unitTestsPassed": 7,
+  "astroCheck": {
+    "files": 351,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "build": {
+    "pages": 8635,
+    "exitCode": 0
+  },
+  "publicOutputPassed": true,
+  "canonicalMovieCount": 2574,
+  "indexSha256": "10ec2fd8366ced819b38fc95afc5ee47af0ca341c59e0d87f4b174bb4a5a1b72",
+  "benchmarkSourceMatchesBuild": true,
+  "mainE2e": {
+    "passed": 106,
+    "skipped": 9,
+    "failed": 0
+  },
+  "runs": {
+    "mobile": {
+      "startTime": "2026-11-07T22:22:40.448Z",
+      "duration": 358848.039,
+      "expected": 94,
+      "skipped": 8,
+      "unexpected": 0,
+      "flaky": 0,
+      "exitCode": 0,
+      "teardown": "Stopped two stalled WebKit workers after every test had completed; report exit code was 0."
+    },
+    "desktop": {
+      "startTime": "2026-11-07T22:27:36.709Z",
+      "duration": 37024.933,
+      "expected": 12,
+      "skipped": 1,
+      "unexpected": 0,
+      "flaky": 0,
+      "exitCode": 0,
+      "teardown": "Normal"
+    },
+    "webkit": {
+      "startTime": "2026-11-07T22:28:58.915Z",
+      "duration": 70732.953,
+      "expected": 10,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "exitCode": 0,
+      "teardown": "Normal"
+    }
+  },
+  "layout": {
+    "mobile-chromium": [
+      {
+        "width": 320,
+        "contentWidth": 320,
+        "cards": 36,
+        "cpuMs": 18.299999997019768,
+        "inputHeight": 48
+      },
+      {
+        "width": 390,
+        "contentWidth": 390,
+        "cards": 6,
+        "cpuMs": 5.200000002980232,
+        "inputHeight": 48
+      },
+      {
+        "width": 430,
+        "contentWidth": 430,
+        "cards": 36,
+        "cpuMs": 5.799999997019768,
+        "inputHeight": 48
+      }
+    ],
+    "mobile-webkit": [
+      {
+        "width": 320,
+        "contentWidth": 320,
+        "cards": 36,
+        "cpuMs": 29,
+        "inputHeight": 48
+      },
+      {
+        "width": 390,
+        "contentWidth": 390,
+        "cards": 6,
+        "cpuMs": 5.999999999999545,
+        "inputHeight": 48
+      },
+      {
+        "width": 430,
+        "contentWidth": 430,
+        "cards": 36,
+        "cpuMs": 15.00000000000091,
+        "inputHeight": 48
+      }
+    ]
+  },
+  "limits": [
+    "Mobile browsers are emulated, not physical phones.",
+    "Synthetic 10000-record growth repeats real documents with distinct IDs.",
+    "Node engine measurements exclude network and rendering.",
+    "Browser pipeline measurements exclude paint and debounce."
+  ]
+}

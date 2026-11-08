@@ -1,0 +1,23 @@
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
+import path from 'node:path';
+import { SEARCH_ACCEPTANCE_CASES, expectedRecords } from './search-acceptance-cases.mjs';
+const arg = (key, fallback) => process.argv.includes(key) ? process.argv[process.argv.indexOf(key)+1] : fallback;
+const { createMovieSearch } = await import(pathToFileURL(path.resolve(arg('--engine', 'src/lib/movie-search.ts'))));
+const payload = JSON.parse(await readFile(arg('--index', 'dist/search-index-v2.json'), 'utf8'));
+const records = Array.isArray(payload) ? payload : (await import('../src/lib/home-search-codec.ts')).decodeHomeSearchIndex(payload);
+const engine = await createMovieSearch(records);
+const cases = SEARCH_ACCEPTANCE_CASES.map((entry) => {
+	const result = engine.search(entry.query);
+	const ranked = [...result.ranks].sort((a,b)=>a[1]-b[1]).map(([slug])=>slug);
+	const expected = entry.kind === 'set' ? expectedRecords(records, entry.where).map((r)=>r.slug) : entry.top ? [entry.top] : [];
+	const falsePositives = entry.kind === 'title' ? [] : ranked.filter((slug)=>!expected.includes(slug));
+	const falseNegatives = entry.kind === 'title' ? ranked[0]===entry.top ? [] : [entry.top] : expected.filter((slug)=>!result.ranks.has(slug));
+	return { query:entry.query, kind:entry.kind, passed:!falsePositives.length&&!falseNegatives.length, expected:expected.length, actual:ranked.length, top:ranked.slice(0,3), falsePositives, falseNegatives };
+});
+const report = { total:cases.length, passed:cases.filter((row)=>row.passed).length, failed:cases.filter((row)=>!row.passed).length, cases };
+const output = arg('--output', '.astro/search-acceptance.json');
+await mkdir(path.dirname(output), { recursive: true });
+await writeFile(output, JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({total:report.total,passed:report.passed,failed:report.failed,failures:cases.filter((row)=>!row.passed).map((row)=>({query:row.query,fp:row.falsePositives.length,fn:row.falseNegatives.length,top:row.top}))},null,2));
+if (process.argv.includes('--assert') && report.failed) process.exitCode=1;

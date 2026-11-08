@@ -1,0 +1,488 @@
+{
+  "method": "Fresh browser contexts; local static HTTP server; external requests and images blocked on both sides. Not a physical device or network-speed simulation. Three trials per engine. Chromium heap is post-GC; WebKit has no equivalent heap API.",
+  "scenarios": [
+    {
+      "engine": "chromium",
+      "browserVersion": "148.0.7778.96",
+      "device": "Pixel 5",
+      "trial": 0,
+      "initial": {
+        "readyMs": 331,
+        "inlineIndexChars": 0,
+        "domNodes": 3476,
+        "longTasksSupported": true,
+        "longTasks": [
+          {
+            "at": 89.29999999701977,
+            "ms": 67
+          }
+        ],
+        "measures": [
+          {
+            "name": "cineposta:index-fetch",
+            "ms": 39.70000000298023
+          },
+          {
+            "name": "cineposta:index-decode",
+            "ms": 5.199999995529652
+          },
+          {
+            "name": "cineposta:index-build",
+            "ms": 80.5
+          }
+        ],
+        "resources": [
+          {
+            "name": "/scripts/poster-fallback.js",
+            "decodedBytes": 1372,
+            "durationMs": 21.700000002980232
+          },
+          {
+            "name": "/_astro/index.astro_astro_type_script_index_1_lang.DR2EDBRl.js",
+            "decodedBytes": 64382,
+            "durationMs": 25.200000002980232
+          },
+          {
+            "name": "/_astro/platforms.Dt81Wd30.js",
+            "decodedBytes": 2560,
+            "durationMs": 2.399999998509884
+          },
+          {
+            "name": "/search-index-v2.json",
+            "decodedBytes": 2390021,
+            "durationMs": 23.299999997019768
+          }
+        ]
+      },
+      "heapBytes": 12021740,
+      "queries": [
+        {
+          "query": "terror de los 80",
+          "pipelineMs": 8.399999998509884,
+          "cards": 36
+        },
+        {
+          "query": "Brad Pitt en Netflix",
+          "pipelineMs": 5.899999998509884,
+          "cards": 4
+        },
+        {
+          "query": "El resplandor",
+          "pipelineMs": 2.9000000059604645,
+          "cards": 1
+        },
+        {
+          "query": "shinnig",
+          "pipelineMs": 4.600000001490116,
+          "cards": 1
+        },
+        {
+          "query": "ciencia ficción con más de 8 puntos",
+          "pipelineMs": 1.8999999985098839,
+          "cards": 11
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "browserVersion": "148.0.7778.96",
+      "device": "Pixel 5",
+      "trial": 1,
+      "initial": {
+        "readyMs": 314.20000000298023,
+        "inlineIndexChars": 0,
+        "domNodes": 3476,
+        "longTasksSupported": true,
+        "longTasks": [
+          {
+            "at": 80.60000000149012,
+            "ms": 65
+          }
+        ],
+        "measures": [
+          {
+            "name": "cineposta:index-fetch",
+            "ms": 38.899999998509884
+          },
+          {
+            "name": "cineposta:index-decode",
+            "ms": 4.899999998509884
+          },
+          {
+            "name": "cineposta:index-build",
+            "ms": 75.5
+          }
+        ],
+        "resources": [
+          {
+            "name": "/scripts/poster-fallback.js",
+            "decodedBytes": 1372,
+            "durationMs": 16.100000001490116
+          },
+          {
+            "name": "/_astro/index.astro_astro_type_script_index_1_lang.DR2EDBRl.js",
+            "decodedBytes": 64382,
+            "durationMs": 5.4000000059604645
+          },
+          {
+            "name": "/_astro/platforms.Dt81Wd30.js",
+            "decodedBytes": 2560,
+            "durationMs": 2.2999999970197678
+          },
+          {
+            "name": "/search-index-v2.json",
+            "decodedBytes": 2390021,
+            "durationMs": 23.899999998509884
+          }
+        ]
+      },
+      "heapBytes": 12058772,
+      "queries": [
+        {
+          "query": "terror de los 80",
+          "pipelineMs": 8,
+          "cards": 36
+        },
+        {
+          "query": "Brad Pitt en Netflix",
+          "pipelineMs": 4.799999997019768,
+          "cards": 4
+        },
+        {
+          "query": "El resplandor",
+          "pipelineMs": 3.6999999955296516,
+          "cards": 1
+        },
+        {
+          "query": "shinnig",
+          "pipelineMs": 5,
+          "cards": 1
+        },
+        {
+          "query": "ciencia ficción con más de 8 puntos",
+          "pipelineMs": 1.8000000044703484,
+          "cards": 11
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "browserVersion": "148.0.7778.96",
+      "device": "Pixel 5",
+      "trial": 2,
+      "initial": {
+        "readyMs": 304.6000000014901,
+        "inlineIndexChars": 0,
+        "domNodes": 3475,
+        "longTasksSupported": true,
+        "longTasks": [
+          {
+            "at": 47.399999998509884,
+            "ms": 74
+          }
+        ],
+        "measures": [
+          {
+            "name": "cineposta:index-fetch",
+            "ms": 51.5
+          },
+          {
+            "name": "cineposta:index-decode",
+            "ms": 7.899999998509884
+          },
+          {
+            "name": "cineposta:index-build",
+            "ms": 83.60000000149012
+          }
+        ],
+        "resources": [
+          {
+            "name": "/scripts/poster-fallback.js",
+            "decodedBytes": 1372,
+            "durationMs": 21.899999998509884
+          },
+          {
+            "name": "/_astro/index.astro_astro_type_script_index_1_lang.DR2EDBRl.js",
+            "decodedBytes": 64382,
+            "durationMs": 4.100000001490116
+          },
+          {
+            "name": "/_astro/platforms.Dt81Wd30.js",
+            "decodedBytes": 2560,
+            "durationMs": 1.8999999985098839
+          },
+          {
+            "name": "/search-index-v2.json",
+            "decodedBytes": 2390021,
+            "durationMs": 30.80000000447035
+          }
+        ]
+      },
+      "heapBytes": 12021212,
+      "queries": [
+        {
+          "query": "terror de los 80",
+          "pipelineMs": 7.799999997019768,
+          "cards": 36
+        },
+        {
+          "query": "Brad Pitt en Netflix",
+          "pipelineMs": 5.300000004470348,
+          "cards": 4
+        },
+        {
+          "query": "El resplandor",
+          "pipelineMs": 2.899999998509884,
+          "cards": 1
+        },
+        {
+          "query": "shinnig",
+          "pipelineMs": 4.9000000059604645,
+          "cards": 1
+        },
+        {
+          "query": "ciencia ficción con más de 8 puntos",
+          "pipelineMs": 1.7999999970197678,
+          "cards": 11
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.4",
+      "device": "iPhone 13",
+      "trial": 0,
+      "initial": {
+        "readyMs": 488,
+        "inlineIndexChars": 0,
+        "domNodes": 3476,
+        "longTasksSupported": false,
+        "longTasks": [],
+        "measures": [
+          {
+            "name": "cineposta:index-fetch",
+            "ms": 50
+          },
+          {
+            "name": "cineposta:index-decode",
+            "ms": 7.000000000000028
+          },
+          {
+            "name": "cineposta:index-build",
+            "ms": 218.99999999999997
+          }
+        ],
+        "resources": [
+          {
+            "name": "/_astro/index.astro_astro_type_script_index_1_lang.DR2EDBRl.js",
+            "decodedBytes": 0,
+            "durationMs": 49
+          },
+          {
+            "name": "/scripts/poster-fallback.js",
+            "decodedBytes": 1372,
+            "durationMs": 4
+          },
+          {
+            "name": "/_astro/platforms.Dt81Wd30.js",
+            "decodedBytes": 0,
+            "durationMs": 17
+          },
+          {
+            "name": "/search-index-v2.json",
+            "decodedBytes": 0,
+            "durationMs": 31
+          }
+        ]
+      },
+      "heapBytes": null,
+      "queries": [
+        {
+          "query": "terror de los 80",
+          "pipelineMs": 15,
+          "cards": 36
+        },
+        {
+          "query": "Brad Pitt en Netflix",
+          "pipelineMs": 7.000000000000114,
+          "cards": 4
+        },
+        {
+          "query": "El resplandor",
+          "pipelineMs": 6,
+          "cards": 1
+        },
+        {
+          "query": "shinnig",
+          "pipelineMs": 6.999999999999773,
+          "cards": 1
+        },
+        {
+          "query": "ciencia ficción con más de 8 puntos",
+          "pipelineMs": 5,
+          "cards": 11
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.4",
+      "device": "iPhone 13",
+      "trial": 1,
+      "initial": {
+        "readyMs": 504,
+        "inlineIndexChars": 0,
+        "domNodes": 3475,
+        "longTasksSupported": false,
+        "longTasks": [],
+        "measures": [
+          {
+            "name": "cineposta:index-fetch",
+            "ms": 49
+          },
+          {
+            "name": "cineposta:index-decode",
+            "ms": 6
+          },
+          {
+            "name": "cineposta:index-build",
+            "ms": 238.00000000000006
+          }
+        ],
+        "resources": [
+          {
+            "name": "/_astro/index.astro_astro_type_script_index_1_lang.DR2EDBRl.js",
+            "decodedBytes": 0,
+            "durationMs": 49
+          },
+          {
+            "name": "/scripts/poster-fallback.js",
+            "decodedBytes": 1372,
+            "durationMs": 3
+          },
+          {
+            "name": "/_astro/platforms.Dt81Wd30.js",
+            "decodedBytes": 0,
+            "durationMs": 17
+          },
+          {
+            "name": "/search-index-v2.json",
+            "decodedBytes": 0,
+            "durationMs": 31
+          }
+        ]
+      },
+      "heapBytes": null,
+      "queries": [
+        {
+          "query": "terror de los 80",
+          "pipelineMs": 15,
+          "cards": 36
+        },
+        {
+          "query": "Brad Pitt en Netflix",
+          "pipelineMs": 8,
+          "cards": 4
+        },
+        {
+          "query": "El resplandor",
+          "pipelineMs": 6,
+          "cards": 1
+        },
+        {
+          "query": "shinnig",
+          "pipelineMs": 10,
+          "cards": 1
+        },
+        {
+          "query": "ciencia ficción con más de 8 puntos",
+          "pipelineMs": 4.999999999999773,
+          "cards": 11
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.4",
+      "device": "iPhone 13",
+      "trial": 2,
+      "initial": {
+        "readyMs": 494,
+        "inlineIndexChars": 0,
+        "domNodes": 3476,
+        "longTasksSupported": false,
+        "longTasks": [],
+        "measures": [
+          {
+            "name": "cineposta:index-fetch",
+            "ms": 48
+          },
+          {
+            "name": "cineposta:index-decode",
+            "ms": 6
+          },
+          {
+            "name": "cineposta:index-build",
+            "ms": 239
+          }
+        ],
+        "resources": [
+          {
+            "name": "/_astro/index.astro_astro_type_script_index_1_lang.DR2EDBRl.js",
+            "decodedBytes": 0,
+            "durationMs": 47
+          },
+          {
+            "name": "/scripts/poster-fallback.js",
+            "decodedBytes": 1372,
+            "durationMs": 4
+          },
+          {
+            "name": "/_astro/platforms.Dt81Wd30.js",
+            "decodedBytes": 0,
+            "durationMs": 13
+          },
+          {
+            "name": "/search-index-v2.json",
+            "decodedBytes": 0,
+            "durationMs": 31
+          }
+        ]
+      },
+      "heapBytes": null,
+      "queries": [
+        {
+          "query": "terror de los 80",
+          "pipelineMs": 14,
+          "cards": 36
+        },
+        {
+          "query": "Brad Pitt en Netflix",
+          "pipelineMs": 7,
+          "cards": 4
+        },
+        {
+          "query": "El resplandor",
+          "pipelineMs": 6,
+          "cards": 1
+        },
+        {
+          "query": "shinnig",
+          "pipelineMs": 7,
+          "cards": 1
+        },
+        {
+          "query": "ciencia ficción con más de 8 puntos",
+          "pipelineMs": 4.999999999999773,
+          "cards": 11
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

@@ -7,6 +7,9 @@
 
 import type { HomeMovieRecord } from '../types/home-catalog';
 import { createHomeMovieCard } from './home-movie-card';
+import { createMovieSearch, matchesPersonName, type MovieSearchResult } from '../lib/movie-search';
+import { matchesAnyFilterValue, matchesCatalogGenre, isMovieYearMatch } from '../lib/catalog-filters';
+import { decodeHomeSearchIndex } from '../lib/home-search-codec';
 
 type StatusMode = 'catalog' | 'search';
 type ReturnBehavior = 'reset';
@@ -113,21 +116,30 @@ async function loadHomeCatalog(searchRoot: HTMLElement): Promise<void> {
 	const controller = new AbortController();
 	const timeout = window.setTimeout(() => controller.abort(), 15000);
 	try {
+		performance.mark('cineposta:index-fetch:start');
 		const response = await fetch(indexData.dataset.homeMovieIndexUrl, { signal: controller.signal });
 		if (!response.ok) throw new Error(`Catalog HTTP ${response.status}`);
-		const records = await response.json() as HomeMovieRecord[];
+		const payload = await response.json();
+		performance.measure('cineposta:index-fetch', 'cineposta:index-fetch:start');
+		performance.mark('cineposta:index-decode:start');
+		const records = decodeHomeSearchIndex(payload);
+		performance.measure('cineposta:index-decode', 'cineposta:index-decode:start');
 		if (!Array.isArray(records) || !records.length || records.some((record) =>
 			!record?.slug || !record?.card || !record?.url || typeof record.searchable !== 'string' ||
+			typeof record.searchDirector !== 'string' || typeof record.searchCast !== 'string' || typeof record.searchAliases !== 'string' ||
 			!Array.isArray(record.genres) || !Array.isArray(record.platforms) || !Array.isArray(record.subgenres))) {
 			throw new Error('Invalid catalog data');
 		}
-		// Preserve the existing observable index contract without transferring it in HTML.
-		indexData.textContent = JSON.stringify(records);
+		// Do not retain a second full JSON string in the DOM after decoding.
+		indexData.textContent = '';
 		const grid = document.querySelector<HTMLElement>('[data-movie-search-grid]');
 		if (grid) grid.dataset.movieTotalCount = String(records.length);
+		performance.mark('cineposta:index-build:start');
+		const movieSearch = await createMovieSearch(records);
+		performance.measure('cineposta:index-build', 'cineposta:index-build:start');
 		input.disabled = false;
 		controls.forEach((control) => { control.disabled = false; });
-		initHomeCatalog(searchRoot, records);
+		initHomeCatalog(searchRoot, records, movieSearch);
 		searchRoot.dataset.homeCatalogReady = 'true';
 		searchRoot.removeAttribute('aria-busy');
 	} catch {
@@ -155,11 +167,14 @@ async function loadHomeCatalog(searchRoot: HTMLElement): Promise<void> {
 	}
 }
 
-function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): void {
+function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[], movieSearch: Awaited<ReturnType<typeof createMovieSearch>>): void {
 	const homeBrandLink = document.querySelector('.site-header__brand');
 	const input = searchRoot.querySelector<HTMLInputElement>('[data-movie-search-input]');
 	const clearButton = searchRoot.querySelector<HTMLButtonElement>('[data-movie-search-clear]');
+	const interpretation = searchRoot.querySelector<HTMLElement>('[data-movie-search-interpretation]');
 	const emptyState = document.querySelector<HTMLElement>('[data-movie-search-empty]');
+	const emptyCopy = emptyState?.querySelector<HTMLElement>('[data-movie-search-empty-copy]');
+	const emptyAction = emptyState?.querySelector<HTMLButtonElement>('[data-movie-search-empty-action]');
 	const statusBox = document.querySelector<HTMLElement>('[data-movie-search-status]');
 	const statusCopy = document.querySelector<HTMLElement>('[data-movie-search-status-copy]');
 	const summaries = Array.from(document.querySelectorAll<HTMLElement>('[data-movie-search-summary]'));
@@ -255,6 +270,7 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 	let matchingMovieEntries = visibleMovieEntries;
 	let currentPage = 0;
 	const suggestionScores = new Map<SearchSuggestionEntry, number>();
+	let queryResult: MovieSearchResult | null = null;
 	let activeGenres: string[] = [];
 	let activeEditorialFilters: string[] = [];
 	let activeSubgenres: string[] = [];
@@ -326,18 +342,6 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 		values.push(value);
 	};
 
-	const matchesAnyFilterValue = (activeValues: string[], entryValues: string[]): boolean =>
-		activeValues.length === 0 || activeValues.some((value) => entryValues.includes(value));
-	const isMovieYearMatch = (year: string, activeValues: string[]): boolean => {
-		if (activeValues.length === 0) return true;
-		const numericYear = Number(year);
-		return activeValues.some((value) => {
-			if (value.startsWith('year-')) return numericYear === Number(value.slice(5));
-			if (value === 'before-1950') return numericYear < 1950;
-			const decade = Number(value.slice(0, 4));
-			return Number.isFinite(decade) && numericYear >= decade && numericYear <= decade + 9;
-		});
-	};
 
 	const isMovieSort = (value: unknown): value is MovieSort =>
 		typeof value === 'string' && sortOptions.includes(value as MovieSort);
@@ -377,7 +381,7 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 		const sort = params.get('orden');
 		const validSort = isMovieSort(sort);
 		return {
-			query: params.get('q')?.trim() ?? '',
+			query: params.get('q')?.trim().slice(0, 300) ?? '',
 			genres: sanitizeFilterValues(params.getAll('genero'), primaryGenreIds),
 			editorialFilters: sanitizeFilterValues(params.getAll('filtro'), editorialFilterIds),
 			subgenres: sanitizeFilterValues(params.getAll('subgenero'), subgenreIds),
@@ -440,10 +444,12 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 
 	const getVisibleEntries = (): MovieIndexEntry[] => visibleMovieEntries;
 
-	const getSuggestionMatches = (query: string, matchingMovies: MovieIndexEntry[]): SearchSuggestionEntry[] =>
-		query.length === 0
-			? []
-			: [...personIndex.filter((entry) => entry.searchable.includes(query)), ...matchingMovies];
+	const getSuggestionMatches = (query: string, matchingMovies: MovieIndexEntry[]): SearchSuggestionEntry[] => {
+		if (!query) return [];
+		const parsed = queryResult?.parsed;
+		const constraints = parsed && (parsed.labels.length > 0 || parsed.minYear !== null || parsed.minScore !== null || parsed.maxScore !== null);
+		return [...constraints ? [] : personIndex.filter((entry) => entry.searchable.includes(query) || matchesPersonName(entry.normalizedTitle, parsed?.text ?? query)), ...matchingMovies];
+	};
 
 	const isDesktopSearchLayout = (): boolean => window.matchMedia('(min-width: 721px)').matches;
 
@@ -835,12 +841,19 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 	const getSuggestionScore = (entry: SearchSuggestionEntry, query: string): number => {
 		const cached = suggestionScores.get(entry);
 		if (cached !== undefined) return cached;
+		if (entry.entryType === 'movie' && queryResult) {
+			const rank = queryResult.ranks.get(entry.slug) ?? 300;
+			suggestionScores.set(entry, rank);
+			return rank;
+		}
 		const normalizedTitle = entry.entryType === 'movie' && entry.normalizedOriginalTitle.includes(query) && !entry.normalizedTitle.includes(query)
 			? entry.normalizedOriginalTitle : entry.normalizedTitle;
 		const normalizedMeta = entry.normalizedMeta;
 		let score = 300;
 
 		if (entry.entryType === 'person') score -= 35;
+		if (entry.entryType === 'person' && matchesPersonName(entry.normalizedTitle, query)) score -= 50;
+		if (entry.entryType === 'person' && !entry.normalizedTitle.includes(query) && matchesPersonName(entry.normalizedTitle, query)) score -= 160;
 		if (normalizedTitle === query) score -= 260;
 		if (normalizedTitle.startsWith(query)) score -= 180;
 		else if (normalizedTitle.includes(query)) score -= 120;
@@ -927,6 +940,13 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 				cast.className = 'movie-search__suggestion-cast';
 				cast.textContent = entry.cast;
 				body.append(cast);
+			}
+			if (entry.entryType === 'movie' && queryResult?.parsed.text) {
+				const text = normalize(queryResult.parsed.text);
+				const alias = entry.searchAliases.split(' | ').find((value) => value === text);
+				if (alias && alias !== entry.normalizedTitle && alias !== entry.normalizedOriginalTitle) {
+					body.append(Object.assign(document.createElement('span'), { className: 'movie-search__suggestion-meta', textContent: `También conocida como: ${alias}` }));
+				}
 			}
 
 			if (entry.entryType === 'person') {
@@ -1071,11 +1091,8 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 		prioritizeVisiblePosters(visibleEntries);
 
 		if (imagesToWait.length === 0) {
-			statusHideTimer = window.setTimeout(() => {
-				if (nextToken === statusToken) {
-					hideStatus();
-				}
-			}, 120);
+			// Keep the empty-state action stable once there are no posters to wait for.
+			hideStatus();
 			return;
 		}
 
@@ -1170,6 +1187,11 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 		suggestionScores.clear();
 		performance.clearMeasures('cineposta:search');
 		performance.mark('cineposta:search:start');
+		queryResult = query ? movieSearch.search(query) : null;
+		if (interpretation) {
+			interpretation.textContent = queryResult?.explanation ?? '';
+			interpretation.hidden = !interpretation.textContent;
+		}
 
 		let matchingEntries: MovieIndexEntry[] = [];
 		const shouldShowFullCatalogMatches = hasActiveCatalogQuery();
@@ -1186,16 +1208,14 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 			}
 
 			// Musical also applies to films in other primary lanes, such as animation or comedy.
-			const genreMatch = activeGenres.length === 0 || activeGenres.some((genre) =>
-				genre === 'musical' ? entry.genres.includes(genre) : entry.primaryGenre === genre,
-			);
+			const genreMatch = matchesCatalogGenre(activeGenres, entry);
 			const editorialFilterMatch = matchesAnyFilterValue(activeEditorialFilters, entry.genres);
 			const subgenreMatch = matchesAnyFilterValue(activeSubgenres, entry.subgenres);
 			const platformMatch = matchesAnyFilterValue(activePlatforms, entry.platforms);
 			const scoreMatch = activeMinScore === null || (entry.score !== null && entry.score >= activeMinScore);
 			const yearMatch = isMovieYearMatch(entry.year, activeYears);
 			const premiereMatch = !activeRecentPremiere || entry.recentPremiere;
-			const queryMatch = query.length === 0 || entry.searchable.includes(query);
+			const queryMatch = queryResult === null || queryResult.ranks.has(entry.slug);
 			const show = genreMatch && editorialFilterMatch && subgenreMatch && platformMatch && scoreMatch && yearMatch && premiereMatch && queryMatch;
 
 			if (show) {
@@ -1223,6 +1243,15 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 
 		if (emptyState instanceof HTMLElement) {
 			emptyState.hidden = visibleCount > 0 || !shouldShowFullCatalogMatches;
+			if (visibleCount === 0 && emptyCopy && emptyAction) {
+				const blockedByControls = Boolean(queryResult?.ranks.size);
+				emptyCopy.textContent = blockedByControls
+					? 'Encontramos películas para esa búsqueda, pero ninguna cumple los filtros manuales que elegiste.'
+					: query ? 'No encontramos esa combinación en el catálogo. Probá el título original, un nombre completo o menos condiciones. La disponibilidad es la registrada en CinePosta.'
+					: 'No apareció nada con ese combo. Probá aflojar algún filtro.';
+				emptyAction.textContent = blockedByControls || !query ? 'Quitar filtros manuales' : 'Editar búsqueda';
+				emptyAction.dataset.clearManualFilters = String(blockedByControls || !query);
+			}
 		}
 
 		renderSuggestions(query, getSuggestionMatches(query, matchingEntries));
@@ -1405,7 +1434,7 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 		filterScheduleVersion += 1;
 		window.clearTimeout(filterTimer);
 		window.cancelAnimationFrame(filterFrame);
-		input.value = state.query;
+		input.value = state.query.slice(0, 300);
 		activeGenres = sanitizeFilterValues(state.genres, primaryGenreIds);
 		activeEditorialFilters = sanitizeFilterValues(state.editorialFilters, editorialFilterIds);
 		activeSubgenres = sanitizeFilterValues(state.subgenres, subgenreIds);
@@ -1505,7 +1534,7 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 		}
 
 		applyHomeFilterState({
-			query: typeof parsed.query === 'string' ? parsed.query : '',
+			query: typeof parsed.query === 'string' ? parsed.query.slice(0, 300) : '',
 			genres: sanitizeFilterValues(parsed.genres ?? parsed.genre, primaryGenreIds),
 			editorialFilters: sanitizeFilterValues(parsed.editorialFilters, editorialFilterIds),
 			subgenres: sanitizeFilterValues(parsed.subgenres ?? parsed.subgenre, subgenreIds),
@@ -1820,6 +1849,16 @@ function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): v
 	filterResetButton?.addEventListener('click', () => {
 		resetCatalog('catalog', 'push');
 		input.focus();
+	});
+	emptyAction?.addEventListener('click', () => {
+		if (emptyAction.dataset.clearManualFilters === 'true') {
+			applyHomeFilterState({ query: input.value, genres: [], editorialFilters: [], subgenres: [], platforms: [], minScore: null, years: [], recentPremiere: false, sort: activeSort, sortExplicit: activeSortExplicit });
+			applyFilterChange();
+		}
+		// Safari can keep the input focused while the user taps a distant button;
+		// focus() alone then leaves the editable field outside the viewport.
+		input.scrollIntoView({ block: 'center', behavior: 'auto' });
+		input.focus({ preventScroll: true });
 	});
 
 	document.addEventListener('pointerdown', (event: PointerEvent) => {

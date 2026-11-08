@@ -3822,6 +3822,14 @@ img {
 	font-family: var(--font-mono);
 }
 
+.movie-search__interpretation {
+	margin: 0.5rem 0 0;
+	font-size: 0.78rem;
+	line-height: 1.5;
+	color: var(--muted);
+	overflow-wrap: anywhere;
+}
+
 .movie-search__input-wrap {
 	position: relative;
 }
@@ -4097,6 +4105,10 @@ img {
 .movie-search__empty {
 	margin-top: 0.25rem;
 }
+
+.movie-search__empty p { margin: 0; }
+.movie-search__empty button { margin-top: 0.5rem; min-height: 44px; }
+.movie-search__input::-webkit-search-cancel-button { display: none; }
 
 .home-catalog-pagination {
 	display: flex;

@@ -1,0 +1,1396 @@
+{
+  "total": 107,
+  "passed": 107,
+  "failed": 0,
+  "cases": [
+    {
+      "query": "Андрей Рублёв",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "andrei-rublev-1966"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Batman la película",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 2,
+      "top": [
+        "batman-1966",
+        "lego-batman-la-pelicula-2017"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Boyhood: Momentos de una Vida",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "boyhood-2014"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Cabalgata",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "cavalcade-1933"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Una pareja despareja",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "i-love-you-phillip-morris-2009"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Phillip Morris ¡Te quiero!",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "i-love-you-phillip-morris-2009"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "La Atalante",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "latalante-1934"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "The Earrings of Madame de...",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "madame-de-1953"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "El camino de los sueños",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "mulholland-drive-2001"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Actividad paranormal",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "paranormal-activity-2007"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Rolling Stones: Shine a Light",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "shine-a-light-2008"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "El dormilón",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "sleeper-1973"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Neon Genesis Evangelion: The End of Evangelion",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "the-end-of-evangelion-1997"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "新世紀エヴァンゲリオン劇場版 Air／まごころを、君に",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "the-end-of-evangelion-1997"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "WALL·E: Batallón de limpieza",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "wall-e-2008"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "一一",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "yi-yi-2000"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "de los 80 antes de 2000",
+      "kind": "set",
+      "passed": true,
+      "expected": 197,
+      "actual": 197,
+      "top": [
+        "poltergeist-1982",
+        "star-trek-v-la-ultima-frontera-1989",
+        "star-trek-iv-mision-salvar-la-tierra-1986"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "antes de 2000 de los 80",
+      "kind": "set",
+      "passed": true,
+      "expected": 197,
+      "actual": 197,
+      "top": [
+        "poltergeist-1982",
+        "star-trek-v-la-ultima-frontera-1989",
+        "star-trek-iv-mision-salvar-la-tierra-1986"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "más de 8 puntos y al menos 7 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 148,
+      "actual": 148,
+      "top": [
+        "fargo-secuestro-voluntario-1996",
+        "the-godfather-part-ii-1974",
+        "terminator-2-judgment-day-1991"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "menos de 8 puntos y hasta 9 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 1556,
+      "actual": 1556,
+      "top": [
+        "911-llamada-infernal-2026",
+        "backrooms-2026",
+        "el-pez-pucheros-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "antes de 1980 y después de 2000",
+      "kind": "set",
+      "passed": true,
+      "expected": 0,
+      "actual": 0,
+      "top": [],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "más de 8 puntos y menos de 7 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 0,
+      "actual": 0,
+      "top": [],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "The Shining",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "the-shining-1980"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "El resplandor",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "the-shining-1980"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "resplndor",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 2,
+      "top": [
+        "the-shining-1980",
+        "eternal-sunshine-of-the-spotless-mind-2004"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "El padrino",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 3,
+      "top": [
+        "the-godfather-1972",
+        "el-padrino-parte-iii-1990",
+        "the-godfather-part-ii-1974"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "El padrino parte II",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "the-godfather-part-ii-1974"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Sueños de libertad",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "the-shawshank-redemption-1994"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Cadena perpetua",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "the-shawshank-redemption-1994"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Volver al futuro",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 2,
+      "top": [
+        "back-to-the-future-1985",
+        "back-to-the-future-part-ii-1989"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Volver al futuro II",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "back-to-the-future-part-ii-1989"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "El viaje de Chihiro",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "spirited-away-2001"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Buenos muchachos",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "goodfellas-1990"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Jaws",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "jaws-1975"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Tiburón",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 2,
+      "top": [
+        "jaws-1975",
+        "tiburon-blanco-la-bestia-del-mar-2025"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Psicosis",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "psycho-1960"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Psycho",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 3,
+      "top": [
+        "psycho-1960",
+        "psycho-killer-2026",
+        "psicopata-americano-2000"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Amélie",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "amelie-2001"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Amelie",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "amelie-2001"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Paprika detective de los sueños",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "paprika-2006"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "shinnig",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "the-shining-1980"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Wonder Woman 1984",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "wonder-woman-1984-2020"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "El club de la pelea",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "fight-club-1999"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Fight Club",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "fight-club-1999"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Matrix",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 4,
+      "top": [
+        "the-matrix-1999",
+        "matrix-reloaded-2003",
+        "the-matrix-resurrections-2021"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Tiempos violentos",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "pulp-fiction-1994"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "紅の豚",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "porco-rosso-1992"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "パプリカ",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "paprika-2006"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "\"2001: Odisea del espacio\"",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "2001-a-space-odyssey-1968"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "\"El resplandor\"",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "the-shining-1980"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "\"Paprika, detective de los sueños\"",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "paprika-2006"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "La leyenda del tesoro perdido",
+      "kind": "title",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "la-leyenda-del-tesoro-perdido-2004"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "película vieja de Kubrick",
+      "kind": "set",
+      "passed": true,
+      "expected": 9,
+      "actual": 9,
+      "top": [
+        "ojos-bien-cerrados-1999",
+        "la-chaqueta-metalica-1987",
+        "the-shining-1980"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "película vieja de Kubrik",
+      "kind": "set",
+      "passed": true,
+      "expected": 9,
+      "actual": 9,
+      "top": [
+        "ojos-bien-cerrados-1999",
+        "la-chaqueta-metalica-1987",
+        "the-shining-1980"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "dirigidas por Stanley Kubrick",
+      "kind": "set",
+      "passed": true,
+      "expected": 9,
+      "actual": 9,
+      "top": [
+        "ojos-bien-cerrados-1999",
+        "la-chaqueta-metalica-1987",
+        "the-shining-1980"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "director David Fincher",
+      "kind": "set",
+      "passed": true,
+      "expected": 10,
+      "actual": 10,
+      "top": [
+        "the-killer-2023",
+        "mank-2020",
+        "la-chica-del-dragon-tatuado-2011"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "dirigida por Christopher Nolan",
+      "kind": "set",
+      "passed": true,
+      "expected": 13,
+      "actual": 13,
+      "top": [
+        "la-odisea-2026",
+        "oppenheimer-2023",
+        "tenet-2020"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "películas de Steven Spielberg",
+      "kind": "set",
+      "passed": true,
+      "expected": 35,
+      "actual": 35,
+      "top": [
+        "el-dia-de-la-revelacion-2026",
+        "the-fabelmans-2022",
+        "west-side-story-2021"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "películas de Tom Hanks",
+      "kind": "set",
+      "passed": true,
+      "expected": 27,
+      "actual": 27,
+      "top": [
+        "saving-private-ryan-1998",
+        "toy-story-4-2019",
+        "el-sueno-de-walt-disney-2013"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "películas de Clint Eastwood",
+      "kind": "set",
+      "passed": true,
+      "expected": 12,
+      "actual": 12,
+      "top": [
+        "million-dollar-baby-2004",
+        "los-puentes-de-madison-1995",
+        "un-mundo-perfecto-1993"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Brad Pitt en Netflix",
+      "kind": "set",
+      "passed": true,
+      "expected": 4,
+      "actual": 4,
+      "top": [
+        "once-upon-a-time-in-hollywood-2019",
+        "inglourious-basterds-2009",
+        "corazones-de-hierro-2014"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Bradd Pitt en Netflx",
+      "kind": "set",
+      "passed": true,
+      "expected": 4,
+      "actual": 4,
+      "top": [
+        "once-upon-a-time-in-hollywood-2019",
+        "inglourious-basterds-2009",
+        "corazones-de-hierro-2014"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "con la actriz Kate Winslet",
+      "kind": "set",
+      "passed": true,
+      "expected": 10,
+      "actual": 10,
+      "top": [
+        "flushed-away-lo-que-el-agua-se-llevo-2006",
+        "titanic-1997",
+        "wonder-wheel-2017"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "protagonizadas por Tom Hanks",
+      "kind": "set",
+      "passed": true,
+      "expected": 27,
+      "actual": 27,
+      "top": [
+        "saving-private-ryan-1998",
+        "toy-story-4-2019",
+        "el-sueno-de-walt-disney-2013"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "actor Keanu Reeves",
+      "kind": "set",
+      "passed": true,
+      "expected": 18,
+      "actual": 18,
+      "top": [
+        "john-wick-chapter-2-2017",
+        "john-wick-chapter-4-2023",
+        "john-wick-chapter-3-parabellum-2019"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Alien",
+      "kind": "set",
+      "passed": true,
+      "expected": 6,
+      "actual": 6,
+      "top": [
+        "alien-1979",
+        "alien-romulus-2024",
+        "alien-covenant-2017"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "Psycho",
+      "kind": "set",
+      "passed": true,
+      "expected": 3,
+      "actual": 3,
+      "top": [
+        "psycho-1960",
+        "psycho-killer-2026",
+        "psicopata-americano-2000"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "actor Max von Sydow",
+      "kind": "set",
+      "passed": true,
+      "expected": 4,
+      "actual": 4,
+      "top": [
+        "the-exorcist-1973",
+        "shutter-island-2010",
+        "minority-report-2002"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "actor Robert de Niro",
+      "kind": "set",
+      "passed": true,
+      "expected": 53,
+      "actual": 53,
+      "top": [
+        "confesiones-verdaderas-1981",
+        "shark-tale-2004",
+        "the-alto-knights-mafia-y-poder-2025"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "dirigida por Guillermo del Toro",
+      "kind": "set",
+      "passed": true,
+      "expected": 7,
+      "actual": 7,
+      "top": [
+        "frankenstein-2025",
+        "pinocho-de-guillermo-del-toro-2022",
+        "nightmare-alley-2021"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror de los 80",
+      "kind": "set",
+      "passed": true,
+      "expected": 36,
+      "actual": 36,
+      "top": [
+        "poltergeist-1982",
+        "santa-sangre-1989",
+        "halloween-5-the-revenge-of-michael-myers-1989"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror de la década del 80",
+      "kind": "set",
+      "passed": true,
+      "expected": 36,
+      "actual": 36,
+      "top": [
+        "poltergeist-1982",
+        "santa-sangre-1989",
+        "halloween-5-the-revenge-of-michael-myers-1989"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror 1980s",
+      "kind": "set",
+      "passed": true,
+      "expected": 36,
+      "actual": 36,
+      "top": [
+        "poltergeist-1982",
+        "santa-sangre-1989",
+        "halloween-5-the-revenge-of-michael-myers-1989"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror de los ochenta",
+      "kind": "set",
+      "passed": true,
+      "expected": 36,
+      "actual": 36,
+      "top": [
+        "poltergeist-1982",
+        "santa-sangre-1989",
+        "halloween-5-the-revenge-of-michael-myers-1989"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "películas del año 1984",
+      "kind": "set",
+      "passed": true,
+      "expected": 21,
+      "actual": 21,
+      "top": [
+        "star-trek-iii-en-busca-de-spock-1984",
+        "enamorarse-1984",
+        "the-terminator-1984"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "año 1984",
+      "kind": "set",
+      "passed": true,
+      "expected": 21,
+      "actual": 21,
+      "top": [
+        "star-trek-iii-en-busca-de-spock-1984",
+        "enamorarse-1984",
+        "the-terminator-1984"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "entre 1980 y 1989",
+      "kind": "set",
+      "passed": true,
+      "expected": 197,
+      "actual": 197,
+      "top": [
+        "poltergeist-1982",
+        "star-trek-v-la-ultima-frontera-1989",
+        "star-trek-iv-mision-salvar-la-tierra-1986"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "antes de 1970",
+      "kind": "set",
+      "passed": true,
+      "expected": 163,
+      "actual": 163,
+      "top": [
+        "bullitt-1968",
+        "el-increible-hombre-menguante-1957",
+        "dos-hombres-y-un-destino-1969"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "después de 2020",
+      "kind": "set",
+      "passed": true,
+      "expected": 835,
+      "actual": 835,
+      "top": [
+        "911-llamada-infernal-2026",
+        "backrooms-2026",
+        "el-pez-pucheros-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "ciencia ficción con más de 8 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 11,
+      "actual": 11,
+      "top": [
+        "aliens-1986",
+        "blade-runner-1982",
+        "e-t-the-extra-terrestrial-1982"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "sci-fi con al menos 8 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 51,
+      "actual": 51,
+      "top": [
+        "godzilla-minus-zero-2026",
+        "los-juegos-del-hambre-en-llamas-2013",
+        "los-juegos-del-hambre-2012"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "ciencia ficción con menos de 8 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 65,
+      "actual": 65,
+      "top": [
+        "oscar-el-regreso-del-mamut-2025",
+        "los-juegos-del-hambre-sinsajo-parte-2-2015",
+        "los-juegos-del-hambre-sinsajo-parte-1-2014"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "score >= 9",
+      "kind": "set",
+      "passed": true,
+      "expected": 148,
+      "actual": 148,
+      "top": [
+        "fargo-secuestro-voluntario-1996",
+        "the-godfather-part-ii-1974",
+        "terminator-2-judgment-day-1991"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "score <= 7",
+      "kind": "set",
+      "passed": true,
+      "expected": 1556,
+      "actual": 1556,
+      "top": [
+        "911-llamada-infernal-2026",
+        "backrooms-2026",
+        "el-pez-pucheros-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "entre 8 y 9 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 992,
+      "actual": 992,
+      "top": [
+        "savage-mountain-2026",
+        "un-amor-posible-2026",
+        "el-afinador-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "más de 8,5 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 148,
+      "actual": 148,
+      "top": [
+        "fargo-secuestro-voluntario-1996",
+        "the-godfather-part-ii-1974",
+        "terminator-2-judgment-day-1991"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "hasta 5 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 670,
+      "actual": 670,
+      "top": [
+        "911-llamada-infernal-2026",
+        "dreams-suenos-2025",
+        "juego-de-traiciones-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror en Max",
+      "kind": "set",
+      "passed": true,
+      "expected": 50,
+      "actual": 50,
+      "top": [
+        "devorador-de-almas-2026",
+        "mama-2013",
+        "poltergeist-1982"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror en Disney+",
+      "kind": "set",
+      "passed": true,
+      "expected": 20,
+      "actual": 20,
+      "top": [
+        "911-llamada-infernal-2026",
+        "backrooms-2026",
+        "rebirth-home-sweet-home-2025"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "comedia en Prime Video",
+      "kind": "set",
+      "passed": true,
+      "expected": 43,
+      "actual": 43,
+      "top": [
+        "todo-sobre-ti-2025",
+        "ali-g-kien-ez-yo-2026",
+        "como-perder-tu-popularidad-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "documentales en MUBI",
+      "kind": "set",
+      "passed": true,
+      "expected": 1,
+      "actual": 1,
+      "top": [
+        "making-marie-antoinette-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "animación en Netflix",
+      "kind": "set",
+      "passed": true,
+      "expected": 22,
+      "actual": 22,
+      "top": [
+        "garuda-dare-to-dream-2026",
+        "el-gato-con-botas-2011",
+        "shrek-tercero-2007"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "suspenso en Flow",
+      "kind": "set",
+      "passed": true,
+      "expected": 2,
+      "actual": 2,
+      "top": [
+        "strung-2026",
+        "cable-mortal-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "películas nacionales",
+      "kind": "set",
+      "passed": true,
+      "expected": 134,
+      "actual": 134,
+      "top": [
+        "4-historias-increibles-2026",
+        "queres-ser-mi-hijo-2026",
+        "susana-rinaldi-libre-2025"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror de culto",
+      "kind": "set",
+      "passed": true,
+      "expected": 48,
+      "actual": 48,
+      "top": [
+        "la-bruja-2015",
+        "el-faro-2019",
+        "mandy-2018"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "musical de los 80",
+      "kind": "set",
+      "passed": true,
+      "expected": 5,
+      "actual": 5,
+      "top": [
+        "la-sirenita-1989",
+        "oliver-y-su-pandilla-1988",
+        "basil-el-gran-detective-1986"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "comedia romántica en Netflix",
+      "kind": "set",
+      "passed": true,
+      "expected": 8,
+      "actual": 8,
+      "top": [
+        "besar-es-facil-2026",
+        "susana-y-elvira-sin-plan-b-2026",
+        "mensajes-de-voz-para-isabelle-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror sin gore",
+      "kind": "set",
+      "passed": true,
+      "expected": 248,
+      "actual": 248,
+      "top": [
+        "911-llamada-infernal-2026",
+        "backrooms-2026",
+        "blood-and-rust-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror sin Netflix",
+      "kind": "set",
+      "passed": true,
+      "expected": 269,
+      "actual": 269,
+      "top": [
+        "911-llamada-infernal-2026",
+        "backrooms-2026",
+        "blood-and-rust-2026"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror sin gore en Max",
+      "kind": "set",
+      "passed": true,
+      "expected": 46,
+      "actual": 46,
+      "top": [
+        "devorador-de-almas-2026",
+        "mama-2013",
+        "poltergeist-1982"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "actor Brad Pitt en Max",
+      "kind": "set",
+      "passed": true,
+      "expected": 8,
+      "actual": 8,
+      "top": [
+        "megamente-2010",
+        "el-asesinato-de-jesse-james-por-el-cobarde-robert-ford-2007",
+        "se7en-1995"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror en Netflix o Max",
+      "kind": "set",
+      "passed": true,
+      "expected": 70,
+      "actual": 70,
+      "top": [
+        "devorador-de-almas-2026",
+        "esto-no-es-un-simulacro-2025",
+        "estacion-zombie-2016"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "terror de los 80 en Max con al menos 7 puntos",
+      "kind": "set",
+      "passed": true,
+      "expected": 6,
+      "actual": 6,
+      "top": [
+        "poltergeist-1982",
+        "a-nightmare-on-elm-street-1984",
+        "la-cosa-el-enigma-de-otro-mundo-1982"
+      ],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "dirigida por Brad Pitt",
+      "kind": "set",
+      "passed": true,
+      "expected": 0,
+      "actual": 0,
+      "top": [],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "zzzzdesconocidoxxxx",
+      "kind": "empty",
+      "passed": true,
+      "expected": 0,
+      "actual": 0,
+      "top": [],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "東京物語ZZZZ",
+      "kind": "empty",
+      "passed": true,
+      "expected": 0,
+      "actual": 0,
+      "top": [],
+      "falsePositives": [],
+      "falseNegatives": []
+    },
+    {
+      "query": "不存在的電影",
+      "kind": "empty",
+      "passed": true,
+      "expected": 0,
+      "actual": 0,
+      "top": [],
+      "falsePositives": [],
+      "falseNegatives": []
+    }
+  ]
+}
