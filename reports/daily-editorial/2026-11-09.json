@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-09",
+  "slug": "godzilla-minus-zero-estreno-global",
+  "topicKey": "godzilla-minus-zero-record-north-american-opening-2026",
+  "title": "Godzilla Minus Zero rompe un récord con un estreno casi simultáneo en Japón y Norteamérica",
+  "execution": {
+    "provider": "codex-native",
+    "model": "gpt-6-luna",
+    "effort": "max",
+    "agentId": "/root/cineposta_luna",
+    "probe": "passed",
+    "status": "completed",
+    "nativeTool": "collaboration.spawn_agent",
+    "forkTurns": "none",
+    "modelSelectionSource": "official native runtime descriptor",
+    "availableModels": [
+      {
+        "model": "gpt-6-luna",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    ]
+  },
+  "tweet": "Lo interesante de este récord es la ventana: Godzilla Minus Zero llegó a Norteamérica apenas tres días después de Japón. Estrenar tan cerca también es una decisión de distribución. https://www.cineposta.com.ar/editorial/godzilla-minus-zero-estreno-global/ #GodzillaMinusZero #CineJapones",
+  "decision": "Elegí cubrir la apertura récord de Godzilla Minus Zero en Norteamérica desde el calendario internacional que Toho empezó a organizar durante la planificación. La nota previa del 4 de noviembre trató el estreno argentino; el hecho nuevo es la apertura de US$31,6 millones en EE. UU. y Canadá, con primer puesto en Japón y Norteamérica. Preciso que la categoría de Toho/AP combina acción real, lengua no inglesa y producción internacional: AFI clasifica La pasión de Cristo como estadounidense, aunque registre diálogos en latín y arameo. La entrevista primaria de Toho explica la preparación de aperturas cercanas; la nota no extrapola el resultado a toda la taquilla global ni a Argentina.",
+  "sourceChecks": [
+    {
+      "url": "https://www.toho.co.jp/company/2026/1109-pr-2.pdf",
+      "role": "primary",
+      "checkedOn": "2026-11-09",
+      "publishedOn": "2026-11-09",
+      "facts": "Toho informa el primer puesto del fin de semana en Japón y Norteamérica; 690.000 espectadores y más de 1.100 millones de yenes en Japón del 6 al 8 de noviembre; 1,61 millones de entradas y 2.500 millones de yenes al día 8; estreno en 3.254 salas norteamericanas; apertura norteamericana estimada de US$31,6 millones y récord para acción real en idioma extranjero. El comunicado identifica a GKIDS como distribuidora norteamericana y anuncia estreno en alrededor de 100 territorios."
+    },
+    {
+      "url": "https://apnews.com/article/godzilla-cat-hat-box-office-bd8e1659697045d34e2ad0ccfab7682c",
+      "role": "secondary",
+      "checkedOn": "2026-11-09",
+      "publishedOn": "2026-11-08",
+      "facts": "AP confirma US$31,6 millones en Estados Unidos y Canadá y distingue la categoría como acción real internacional en idioma no inglés; cita la salvedad de La pasión de Cristo (US$83,8 millones, en gran parte en arameo), la apertura norteamericana de Hero (US$17,9 millones en 2004) y la animación de Demon Slayer: Infinity Castle (US$70,6 millones). También confirma el segundo puesto de El gato con sombrero con US$20,5 millones, los US$21,3 millones de IMAX (34% del total mundial hasta ese momento) y la taquilla de Ramayana: Rise of a Legend."
+    },
+    {
+      "url": "https://www.toho.co.jp/our-moments/2026/11/8.html",
+      "role": "primary",
+      "checkedOn": "2026-11-09",
+      "publishedOn": "2026-11-04",
+      "facts": "La entrevista de Toho explica que el lanzamiento internacional se decidió durante la planificación; inicialmente buscaban estrenar en todo el mundo el Día de Godzilla, el 3 de noviembre, y finalmente eligieron aperturas dentro de la misma semana por las costumbres de cada mercado. Describe coordinación semanal desde enero de 2026 entre producción, promoción, los equipos internacionales y GKIDS, además de la discusión de materiales promocionales entre Japón y Norteamérica."
+    },
+    {
+      "url": "https://gkids.com/2026/09/08/toho-and-gkids-reveal-new-trailer-for-godzilla-minus-zero/",
+      "role": "primary",
+      "checkedOn": "2026-11-09",
+      "publishedOn": "2026-09-08",
+      "facts": "GKIDS anuncia el estreno teatral norteamericano para el 6 de noviembre de 2026 y publica el material promocional en inglés usado para ilustrar esa campaña, con el título, la marca Filmed for IMAX y la fecha de estreno."
+    },
+    {
+      "url": "https://catalog.afi.com/Film/63190-THE-PASSION-OF-THE-CHRIST",
+      "role": "primary",
+      "checkedOn": "2026-11-09",
+      "publishedOn": "fecha desconocida",
+      "facts": "La ficha del catálogo del American Film Institute clasifica The Passion of the Christ como producción de Estados Unidos y registra Latin y Aramaic como idiomas; también consigna su estreno en 2004."
+    }
+  ],
+  "imageChecks": [
+    {
+      "src": "assets/editorial/godzilla-minus-zero-estreno-global/portada.webp",
+      "sourceUrl": "https://godzilla-minuszero.toho-movie.jp/ogp5.jpg",
+      "checkedOn": "2026-11-09",
+      "description": "Inspeccioné el OGP oficial de Toho (1200×630): Godzilla aparece entre fragmentos de ciudad junto al título japonés y la leyenda Filmed for IMAX. Lo usé como portada para identificar la película y su campaña cinematográfica."
+    },
+    {
+      "src": "assets/editorial/godzilla-minus-zero-estreno-global/godzilla-ciudad.webp",
+      "sourceUrl": "https://scifijapan.com/images/Godzilla/GodzillaMinusZero60.jpg",
+      "checkedOn": "2026-11-09",
+      "description": "La galería visual leída durante la revisión atribuye este original a Toho; inspeccioné el archivo y muestra a Godzilla sobre una ciudad destruida bajo humo. Acompaña el párrafo que delimita el récord y presenta la película."
+    },
+    {
+      "src": "assets/editorial/godzilla-minus-zero-estreno-global/equipo-toho.webp",
+      "sourceUrl": "https://www.toho.co.jp/our-moments/images/om8_main_img.jpg",
+      "checkedOn": "2026-11-09",
+      "description": "La foto de la entrevista primaria de Toho muestra a tres hombres posando frente a ventanales; la nota presenta a responsables de producción, promoción y distribución internacional. La imagen acompaña el tramo sobre la coordinación del estreno."
+    },
+    {
+      "src": "assets/editorial/godzilla-minus-zero-estreno-global/campana-norteamericana.webp",
+      "sourceUrl": "https://gkids.com/wp-content/uploads/2026/09/GMZ_Banner-KV2_GKIDS-com_Web_KV-2_MPA_02A.jpg",
+      "checkedOn": "2026-11-09",
+      "description": "El banner oficial en inglés presenta a Godzilla, el título, Filmed for IMAX y el estreno en salas el 6 de noviembre. Lo inspeccioné junto a la página de GKIDS y lo ubiqué después del párrafo sobre la distribuidora norteamericana."
+    },
+    {
+      "src": "assets/editorial/godzilla-minus-zero-estreno-global/encuentro.webp",
+      "sourceUrl": "https://scifijapan.com/images/Godzilla/GodzillaMinusZero55.jpg",
+      "checkedOn": "2026-11-09",
+      "description": "Inspeccioné el archivo original: muestra a una mujer inclinada hacia un escritorio frente a un hombre de cabello canoso, en una oficina con libros. El caption describe sólo lo visible y no atribuye una acción narrativa a partir de la foto."
+    }
+  ],
+  "validation": {
+    "words": 917,
+    "images": 4,
+    "content": "passed",
+    "astroCheck": "passed",
+    "build": "passed",
+    "desktopAndMobile": "passed"
+  },
+  "url": "https://www.cineposta.com.ar/editorial/godzilla-minus-zero-estreno-global/"
+}
