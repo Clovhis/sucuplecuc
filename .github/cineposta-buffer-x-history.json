@@ -953,6 +953,28 @@
 					"Netflix"
 				]
 			}
+		},
+		{
+			"slug": "savage-mountain-2026",
+			"bufferPostId": "6af11bdf004e4879a7eef803",
+			"dueAt": "2026-11-09T22:00:00.000Z",
+			"scheduledAt": "2026-11-09T01:03:27.216Z",
+			"copyStyle": {
+				"opening": 4045412456,
+				"availability": 2866920583,
+				"editorial": 3442307663,
+				"verdict": 2629766759,
+				"link": 4069632186
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/savage-mountain",
+				"checkedAt": "2026-11-09T01:03:26.815Z",
+				"kind": "subscription",
+				"platforms": [
+					"HBO Max"
+				]
+			}
 		}
 	]
 }
