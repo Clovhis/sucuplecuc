@@ -14,7 +14,7 @@ Antes de adoptar una versión, se completa un probe mínimo con ese modelo y Max
 
 `config/daily-editorial.json` guarda el VEVENT de **sábado a miércoles a las 10:00 America/Argentina/Buenos_Aires**, sin ejecuciones los jueves ni viernes, el ID/estado del scheduler nativo y la política de cuotas. `config/daily-editorial-prompt.md` contiene el bootstrap completo, independiente de este chat. `enabled: false` y `automationId: null` significan que aún no hay agenda activa. Sólo se crea/activa después de una publicación real y Pages verificados; al crearla se registra el ID devuelto y su entorno cloud. No se crea un cron de inferencia en GitHub Actions.
 
-Las 10:00 son el inicio solicitado. Investigación, validación, colas y Pages agregan tiempo. Plus tiene cuotas, no ejecución ilimitada ni garantía de terminar todos los días si se agotan. No se habilita consumo adicional. El Radar existente conserva su cron de reconstrucción; este flujo no altera películas, scores, Recomendadas, Próximos estrenos ni el flujo de películas de Buffer.
+Las 10:00 son el inicio solicitado. Investigación, validación, colas y Pages agregan tiempo. Plus tiene cuotas, no ejecución ilimitada ni garantía de terminar todos los días si se agotan. No se habilita consumo adicional. Radar sigue seleccionando editoriales propias en cada build, sin workflow diario separado; este flujo no altera películas, scores, Recomendadas, Próximos estrenos ni el flujo de películas de Buffer.
 
 ## Ejecución del orquestador
 

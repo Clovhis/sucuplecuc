@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { bufferRequest, getXChannel, weightedXLength } from './publish-buffer-x.mjs';
@@ -29,7 +29,17 @@ export function editorialPostPlan(editorial, authoredText) {
 		? `¡Actualizamos los estrenos de cine de la semana! 🍿\nGuía, trailers y fichas para elegir la próxima salida. ¡Nos vemos en la sala!\n${url}\nMás cine: ${site}/\n#Estrenos #Cine #BuenosAires #CinePosta`
 		: `¡Actualizamos CinePosta con los estrenos de streaming de la semana! 🍿\nQué llegó a plataformas en Argentina, trailers y fichas para elegir sin dar mil vueltas.\n${url}\nMás cine: ${site}/\n#Estrenos #Streaming #CinePosta`;
 	if (weightedXLength(text) > 250) throw new Error('El texto supera el margen de X.');
-	return { text, url, imageUrl: `${site}/${imagePath}`, alt: editorial.cover.alt, slug: editorial.slug, date: editorial.date };
+	return { text, url, imageUrl: `${site}/${imagePath}`, alt: editorial.cover.alt, slug: editorial.slug, date: editorial.date, title: editorial.title };
+}
+
+const escapedHtml = value => String(value).replace(/&/gu, '&amp;').replace(/</gu, '&lt;').replace(/>/gu, '&gt;').replace(/"/gu, '&quot;').replace(/'/gu, '&#39;');
+
+export function selectAuthoredEditorialTweet({ slug, date, dailyReceipts = [], weeklyReceipts = [], requireOriginal = false }) {
+	const matches = [...dailyReceipts, ...weeklyReceipts].filter(receipt => receipt.slug === slug && receipt.date === date && typeof receipt.tweet === 'string' && receipt.tweet.trim());
+	if (matches.length > 1) throw new Error(`Hay más de un tweet original para ${slug}; revisar los recibos antes de publicar.`);
+	if (matches.length === 1) return matches[0].tweet;
+	if (requireOriginal && guideSlug.test(slug ?? '')) throw new Error(`La guía ${slug} no tiene un tweet original guardado en su recibo semanal.`);
+	return undefined;
 }
 
 export function alreadyPublished(posts, url) {
@@ -46,7 +56,8 @@ export async function verifyEditorialOnline(plan, fetcher = fetch) {
 		} else {
 			const html = await response.text();
 			const canonical = html.match(/<link\b(?=[^>]*\brel=["']canonical["'])(?=[^>]*\bhref=["']([^"']+)["'])[^>]*>/iu)?.[1];
-			if (canonical !== plan.url || !plan.date || !html.includes(`datetime="${plan.date}"`)) throw new Error('La URL no contiene la nota publicada con su fecha y canonical correctos.');
+			const hasCover = html.includes(new URL(plan.imageUrl).pathname) || html.includes(new URL(plan.imageUrl).pathname.replace(/^\//u, ''));
+			if (canonical !== plan.url || !plan.date || !html.includes(`datetime="${plan.date}"`) || (!html.includes(plan.title) && !html.includes(escapedHtml(plan.title))) || !hasCover) throw new Error('La URL no contiene la nota publicada con su título, fecha, portada y canonical correctos.');
 		}
 	}
 }
@@ -127,11 +138,20 @@ async function main() {
 	const slug = process.argv[2];
 	if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(slug ?? '')) throw new Error('Indicá un slug editorial válido.');
 	const editorial = JSON.parse(await readFile(path.join(root, 'src/data/editorials', `${slug}.json`), 'utf8'));
-	let text;
+	const dailyReceipts = [];
 	try {
 		const report = JSON.parse(await readFile(path.join(root, 'reports/daily-editorial', `${editorial.date}.json`), 'utf8'));
-		if (report.slug === slug) text = report.tweet;
+		dailyReceipts.push(report);
 	} catch (error) { if (error.code !== 'ENOENT') throw error; }
+	const weeklyReceipts = [];
+	for (const kind of ['cine', 'plataformas']) {
+		const directory = path.join(root, 'reports/weekly-releases', kind);
+		let files = [];
+		try { files = (await readdir(directory)).filter(file => file.endsWith('.json')); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+		for (const file of files) weeklyReceipts.push(JSON.parse(await readFile(path.join(directory, file), 'utf8')));
+	}
+	const requireOriginal = process.argv.includes('--require-original-tweet');
+	const text = selectAuthoredEditorialTweet({ slug, date: editorial.date, dailyReceipts, weeklyReceipts, requireOriginal });
 	const plan = editorialPostPlan(editorial, text);
 	await readFile(path.join(root, 'public', editorial.cover.src));
 	if (!process.argv.includes('--publish-now')) { console.log(JSON.stringify({ mode: 'dry-run', ...plan, xWeightedLength: weightedXLength(plan.text) }, null, 2)); return; }

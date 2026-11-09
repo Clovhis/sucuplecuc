@@ -1,0 +1,4 @@
+interface:
+  display_name: "CinePosta: estrenos de cine cloud"
+  short_description: "Verificar y publicar la guía semanal de salas"
+  default_prompt: "Usá $cineposta-cloud-estrenos-cine para verificar funciones elegibles CABA/PBA, mantener fichas auditadas y publicar la guía y su tweet después de Pages."

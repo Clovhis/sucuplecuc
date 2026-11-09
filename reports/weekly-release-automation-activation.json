@@ -1,0 +1,63 @@
+{
+  "type": "cineposta-weekly-automation-activation",
+  "observedAt": "2026-11-09T23:55:57.746Z",
+  "automations": {
+    "cine": {
+      "automationId": "Automation_b1c147edc90c8191a78ac7b966b95e83",
+      "isEnabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Argentina/Buenos_Aires:20261112T100000\nRRULE:FREQ=WEEKLY;BYDAY=TH;BYHOUR=10;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "timingMode": "exact_schedule",
+      "environmentDisplayName": "sucuplecuc",
+      "environmentConfigId": "b64337bc-4643-41ad-8443-f12cbf43ad14~asenvcfg_ab40f4c047148191a99989e9b26c7686"
+    },
+    "plataformas": {
+      "automationId": "Automation_80bc0696bc6081919be360563c088cc7",
+      "isEnabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Argentina/Buenos_Aires:20261113T100000\nRRULE:FREQ=WEEKLY;BYDAY=FR;BYHOUR=10;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "timingMode": "exact_schedule",
+      "environmentDisplayName": "sucuplecuc",
+      "environmentConfigId": "b64337bc-4643-41ad-8443-f12cbf43ad14~asenvcfg_ab40f4c047148191a99989e9b26c7686"
+    }
+  },
+  "nativePreparation": {
+    "provider": "codex-native",
+    "model": "gpt-6-luna",
+    "effort": "max",
+    "agentId": "/root/cineposta_luna_operator",
+    "probe": "passed",
+    "preparationStatus": "completed",
+    "attestedBy": "native-task-root"
+  },
+  "verification": {
+    "weeklyReleaseTests": "19/19 passed",
+    "dailyEditorialAndBufferTests": "19/19 passed",
+    "watchmodeMetadataTests": "15/15 passed",
+    "characterTests": "14/14 passed",
+    "homeAutomationAndRecommendations": "passed",
+    "astroCheck": {
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0,
+      "hints": 4
+    },
+    "build": {
+      "status": "passed",
+      "pageCount": 8636,
+      "duration": "8m48s",
+      "nodeHeapLimitMB": 6144
+    },
+    "preactivationQuietWait": {
+      "method": "same-task silent tool-cell timer",
+      "durationSeconds": 600,
+      "startedAt": "2026-11-09T23:28:35.240Z",
+      "completedAt": "2026-11-09T23:38:35.553Z",
+      "exitCode": 0
+    },
+    "sourceSmokeTests": {
+      "watchmode": "live exact title/year/type match; ratings returned; audience vote count unknown",
+      "tmdb": "live movie credits lookup verified actor-to-character relation; catalogue unchanged"
+    }
+  }
+}

@@ -110,6 +110,23 @@ test('lookup retrieves credits and optional ratings in exactly two calls using o
 	assert.equal(JSON.stringify(result).includes('test-only-key'), false);
 });
 
+test('network failure falls back to the environment curl transport without putting the key in URLs or output', async () => {
+	const calls = [];
+	const key = 'test-only-key';
+	const result = await lookupMetadata({ ...args, includeRatings: true }, key, {
+		fetcher: async () => { throw new TypeError('fetch failed'); },
+		curlRequest: async (url, apiKey) => {
+			calls.push({ url: new URL(url), apiKey });
+			return calls.length === 1 ? { title_results: [match] } : details;
+		},
+	});
+	assert.equal(calls.length, 2);
+	assert.equal(calls[0].apiKey, key);
+	assert.equal(calls[0].url.searchParams.has('apiKey'), false);
+	assert.equal(JSON.stringify(result).includes(key), false);
+	assert.equal(result.ratings.audience.value, 7.3);
+});
+
 test('HTTP quota failure stops with a safe error and does not retry', async (t) => {
 	let calls = 0;
 	t.mock.method(globalThis, 'fetch', async () => { calls += 1; return { ok: false, status: 429 }; });

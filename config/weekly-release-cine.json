@@ -1,0 +1,47 @@
+{
+  "name": "CinePosta: estrenos de cine semanales",
+  "kind": "cine",
+  "repository": "Clovhis/sucuplecuc",
+  "branch": "main",
+  "scheduler": "native-cloud-with-chatgpt-plan",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Argentina/Buenos_Aires:20261112T100000\nRRULE:FREQ=WEEKLY;BYDAY=TH;BYHOUR=10;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+  "enabled": true,
+  "automationId": "Automation_b1c147edc90c8191a78ac7b966b95e83",
+  "activationStatus": "active-exact-schedule-readback-confirmed",
+  "modelPolicy": "latest-native-advertised-gpt-luna-max",
+  "billingPolicy": "included-chatgpt-plan-only-no-openai-api-no-extra-credits",
+  "window": "Thursday through Wednesday, Argentine calendar",
+  "promptFile": "config/weekly-release-cine-prompt.md",
+  "skill": "skills/cineposta-cloud-estrenos-cine/SKILL.md",
+  "cloudEnvironmentConfigId": "b64337bc-4643-41ad-8443-f12cbf43ad14~asenvcfg_ab40f4c047148191a99989e9b26c7686",
+  "supervision": {
+    "quietInitialDelaySeconds": 600,
+    "maxRecoveryCycles": 2,
+    "timeoutMinutes": 45
+  },
+  "social": {
+    "provider": "buffer",
+    "account": "@cineposta",
+    "mode": "shareNow",
+    "workflow": "publish-buffer-editorial-x.yml",
+    "requireOriginalTweet": true
+  },
+  "activationObservedAt": "2026-11-09T23:55:57.746Z",
+  "activationReadback": {
+    "isEnabled": true,
+    "timingMode": "exact_schedule",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "environmentDisplayName": "sucuplecuc",
+    "environmentConfigId": "b64337bc-4643-41ad-8443-f12cbf43ad14~asenvcfg_ab40f4c047148191a99989e9b26c7686",
+    "nativePreparation": {
+      "provider": "codex-native",
+      "model": "gpt-6-luna",
+      "effort": "max",
+      "agentId": "/root/cineposta_luna_operator",
+      "probe": "passed",
+      "preparationStatus": "completed",
+      "attestedBy": "native-task-root"
+    }
+  }
+}

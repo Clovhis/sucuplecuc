@@ -271,11 +271,11 @@ Antes de aplicar cambios de base en producción:
 
 El sitio genera salida estática en `dist/`.
 
-El Radar toma todas las notas propias y muestra hasta seis de los últimos 30 días calendario de Argentina, por fecha descendente y slug como desempate. Excluye fechas futuras y no rellena con notas viejas. Cada publicación lo renueva; la validación diaria a las **10:00 de Argentina** dispara Pages para retirar vencidas. Recomendadas se actualiza los **domingos a la 01:00 de Argentina** y próximos estrenos **todos los días a la 01:00 de Argentina**, con sus snapshots independientes. Los cron pueden demorarse en GitHub.
+El Radar toma todas las notas propias y muestra hasta seis de los últimos 30 días calendario de Argentina, por fecha descendente y slug como desempate. Excluye fechas futuras y no rellena con notas viejas. Cada build recalcula el Radar; si no hay otro deploy, una nota vencida puede seguir visible hasta el próximo. Recomendadas se actualiza los **domingos a la 01:00 de Argentina** y próximos estrenos **todos los días a la 01:00 de Argentina**, con sus snapshots independientes. Los cron pueden demorarse en GitHub.
 
 | Workflow | Responsabilidad | Horario AR |
 | --- | --- | --- |
-| `refresh-cinema-news.yml` | Validar y reconstruir Radar con notas propias | Diario, 10:00 |
+| Radar de Cine | Mostrar editoriales propias recientes al construir el sitio | Cada deploy |
 | `refresh-weekly-recommendations.yml` | Generar y publicar las recomendadas | Domingo, 01:00 |
 | `refresh-upcoming-releases.yml` | Revisar fechas y publicar próximos estrenos con trailers | Diario, 01:00 |
 | `deploy.yml` | Construir y publicar el contenido versionado en Pages | Push a main / actualizador exitoso / manual |

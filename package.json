@@ -4,6 +4,9 @@
   "version": "0.0.1",
   "scripts": {
     "test:daily-editorial": "node --test scripts/daily-editorial.test.mjs scripts/publish-buffer-editorial-x.test.mjs",
+    "test:weekly-release": "node --test scripts/weekly-release-policy.test.mjs scripts/weekly-deployment-supervisor.test.mjs scripts/weekly-release-cli.test.mjs",
+    "cineposta:weekly-release": "node scripts/cineposta-weekly-release.mjs",
+    "cineposta:weekly-supervisor": "node scripts/cineposta-weekly-supervisor.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -60,28 +61,56 @@ function parseDotenvValue(value) {
 async function readApiKey() {
 	if (process.env.WATCHMODE_API_KEY?.trim()) return process.env.WATCHMODE_API_KEY.trim();
 
-	try {
-		const dotenv = await readFile(path.join(repositoryRoot, '.env'), 'utf8');
-		for (const line of dotenv.split(/\r?\n/u)) {
-			const match = line.match(/^\s*WATCHMODE_API_KEY\s*=\s*(.*)$/u);
-			if (match) return parseDotenvValue(match[1]);
+	for (const file of ['.env.local', '.env']) {
+		try {
+			const dotenv = await readFile(path.join(repositoryRoot, file), 'utf8');
+			for (const line of dotenv.split(/\r?\n/u)) {
+				const match = line.match(/^\s*WATCHMODE_API_KEY\s*=\s*(.*)$/u);
+				if (match && parseDotenvValue(match[1])) return parseDotenvValue(match[1]);
+			}
+		} catch (error) {
+			if (error.code !== 'ENOENT') throw error;
 		}
-	} catch (error) {
-		if (error.code !== 'ENOENT') throw error;
 	}
 
-	throw new Error('Falta WATCHMODE_API_KEY en el entorno o en el .env local ignorado.');
+	throw new Error('Falta WATCHMODE_API_KEY en el entorno o en .env.local/.env local ignorado.');
 }
 
-async function fetchJson(url, apiKey) {
-	const response = await fetch(url, {
-		headers: {
-			'X-API-Key': apiKey,
-			Accept: 'application/json',
-			'User-Agent': 'la-posta-cine-watchmode-metadata/1.0',
-		},
-		signal: AbortSignal.timeout(15_000),
-	});
+const curlConfigValue = value => `"${String(value).replaceAll('\\', '\\\\').replaceAll('"', '\\"')}"`;
+
+async function fetchJsonWithCurl(url, apiKey) {
+	const config = [
+		`header = ${curlConfigValue(`X-API-Key: ${apiKey}`)}`,
+		`header = ${curlConfigValue('Accept: application/json')}`,
+		`user-agent = ${curlConfigValue('la-posta-cine-watchmode-metadata/1.0')}`,
+	].join('\n') + '\n';
+	const result = spawnSync('curl', [
+		'--silent', '--show-error', '--max-time', '15',
+		'--proto', '=https', '--config', '-',
+		'--output', '-', '--write-out', '\n%{http_code}', url.toString(),
+	], { input: config, encoding: 'utf8', maxBuffer: 10 * 1024 * 1024, timeout: 17_000 });
+	if (result.error || result.status !== 0) throw new Error('Watchmode no respondió mediante el transporte de red del entorno.');
+	const separator = result.stdout.lastIndexOf('\n');
+	const body = separator < 0 ? result.stdout : result.stdout.slice(0, separator);
+	const status = separator < 0 ? '' : result.stdout.slice(separator + 1).trim();
+	if (!/^2\d\d$/u.test(status)) throw new Error(`Watchmode respondió HTTP ${status || 'desconocido'}.`);
+	try { return JSON.parse(body); } catch { throw new Error('Watchmode devolvió una respuesta JSON inválida.'); }
+}
+
+async function fetchJson(url, apiKey, { fetcher = globalThis.fetch, curlRequest = fetchJsonWithCurl } = {}) {
+	let response;
+	try {
+		response = await fetcher(url, {
+			headers: {
+				'X-API-Key': apiKey,
+				Accept: 'application/json',
+				'User-Agent': 'la-posta-cine-watchmode-metadata/1.0',
+			},
+			signal: AbortSignal.timeout(15_000),
+		});
+	} catch {
+		return curlRequest(url, apiKey);
+	}
 	if (!response.ok) throw new Error(`Watchmode respondió HTTP ${response.status}.`);
 	return response.json();
 }
@@ -169,14 +198,14 @@ export function toOutput(match, details, searchUrl, detailsUrl, { includeRatings
 	return output;
 }
 
-export async function lookupMetadata(args, apiKey) {
+export async function lookupMetadata(args, apiKey, transport = {}) {
 	const searchUrl = buildSearchUrl(args);
-	const results = await fetchJson(searchUrl, apiKey);
+	const results = await fetchJson(searchUrl, apiKey, transport);
 	const match = selectTitleMatch(results, args);
 	const detailsUrl = new URL(`${API_ORIGIN}/title/${match.id}/details/`);
 	detailsUrl.searchParams.set('append_to_response', 'cast-crew');
 	detailsUrl.searchParams.set('language', 'es');
-	const details = await fetchJson(detailsUrl, apiKey);
+	const details = await fetchJson(detailsUrl, apiKey, transport);
 	return toOutput(match, details, searchUrl, detailsUrl, args);
 }
 

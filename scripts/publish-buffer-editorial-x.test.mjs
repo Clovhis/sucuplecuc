@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { editorialPostPlan, alreadyPublished } from './publish-buffer-editorial-x.mjs';
+import { editorialPostPlan, alreadyPublished, selectAuthoredEditorialTweet } from './publish-buffer-editorial-x.mjs';
 import { weightedXLength } from './publish-buffer-x.mjs';
 const editorial = { slug: 'estrenos-streaming-26-octubre-1-noviembre-2026', title: 'Guía semanal', cover: { src: 'assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/tony.webp', alt: 'Dos cocineros en Tony.' } };
 test('la guía genera un post de X con enlaces, hashtags y portada del sitio', () => {
@@ -29,6 +29,14 @@ test('la guía de salas usa cine, dos enlaces y una imagen local sin anunciar st
 	assert.doesNotMatch(plan.text, /streaming|plataformas/iu);
 	assert.ok(plan.text.includes(plan.url));
 	assert.ok(plan.text.includes('Más cine: https://www.cineposta.com.ar/'));
+});
+
+test('weekly Buffer sends the same Luna-authored tweet from its dated receipt and fails closed when it is missing', () => {
+	const weekly = { slug: 'estrenos-cines-12-noviembre-2026', date: '2026-11-12' };
+	const authored = `La cartelera de esta semana tiene funciones comprobadas en salas de Buenos Aires. https://www.cineposta.com.ar/editorial/${weekly.slug}/ #Estrenos #Cine`;
+	assert.equal(selectAuthoredEditorialTweet({ ...weekly, weeklyReceipts: [{ ...weekly, tweet: authored }], requireOriginal: true }), authored);
+	assert.throws(() => selectAuthoredEditorialTweet({ ...weekly, requireOriginal: true }), /tweet original/u);
+	assert.throws(() => selectAuthoredEditorialTweet({ ...weekly, dailyReceipts: [{ ...weekly, tweet: authored }], weeklyReceipts: [{ ...weekly, tweet: authored }], requireOriginal: true }), /más de un tweet/u);
 });
 
 const daily = { ...editorial, date: '2026-11-09', slug: 'godzilla-estreno-global', title: 'Un estreno global' };
@@ -77,6 +85,22 @@ test('Buffer diario verifica online antes de mutar, usa shareNow y confirma sent
 	assert.equal(offline.receipts.at(-1).mode, 'error');
 });
 
+test('Buffer real valida título HTML escapado, portada y fecha antes de crear el post', async () => {
+	const specialEditorial = { ...daily, title: 'La semana de A & B: "cines"' };
+	const text = `Una guía de A y B con funciones verificadas en Buenos Aires. https://www.cineposta.com.ar/editorial/${specialEditorial.slug}/ #Estrenos #Cine`;
+	const plan = editorialPostPlan(specialEditorial, text);
+	const html = `<link rel="canonical" href="${plan.url}"><h1>${specialEditorial.title.replaceAll('&', '&amp;').replaceAll('"', '&quot;')}</h1><time datetime="${specialEditorial.date}"><img src="/${specialEditorial.cover.src}">`;
+	const fetcher = async url => {
+		const response = new Response(url === plan.imageUrl ? new Uint8Array([1, 2]) : html, { headers: { 'content-type': url === plan.imageUrl ? 'image/webp' : 'text/html' } });
+		Object.defineProperty(response, 'url', { value: url });
+		return response;
+	};
+	const f = bufferFixture();
+	const result = await publishEditorialNow({ ...f.options, editorial: specialEditorial, text, verifyOnline: candidate => verifyEditorialOnline(candidate, fetcher) });
+	assert.equal(result.status, 'sent');
+	assert.equal(f.calls.filter(call => call.query.includes('mutation CreatePost')).length, 1);
+});
+
 test('Buffer reintenta sólo el mismo post; un sent existente nunca crea otro', async () => {
 	for (const status of ['sent', 'error', 'sending']) {
 		const f = bufferFixture([{ id: 'existing', status, text: originalText, externalLink: status === 'sent' ? 'https://x.com/cineposta/status/old' : null }]);
@@ -102,8 +126,10 @@ test('Buffer conserva error/ID sin afectar la nota y oculta la clave en diagnós
 test('la comprobación pública rechaza soft-404, fecha incorrecta y origen ajeno', async () => {
 	const plan = editorialPostPlan(daily, originalText);
 	const response = (url, html) => { const r = new Response(html, { headers: { 'content-type': url === plan.imageUrl ? 'image/webp' : 'text/html' } }); Object.defineProperty(r, 'url', { value: url }); return r; };
-	await verifyEditorialOnline(plan, async url => response(url, `<link rel="canonical" href="${plan.url}"><time datetime="${daily.date}">`));
+	const validHtml = `<link rel="canonical" href="${plan.url}"><h1>${daily.title}</h1><time datetime="${daily.date}"><img src="/${daily.cover.src}">`;
+	await verifyEditorialOnline(plan, async url => response(url, validHtml));
 	await assert.rejects(verifyEditorialOnline(plan, async url => response(url, '<h1>not found</h1>')), /canonical/);
+	await assert.rejects(verifyEditorialOnline(plan, async url => response(url, validHtml.replace(daily.cover.src, 'assets/editorial/otra/cover.webp'))), /portada/u);
 });
 
 test('un ID persistido evita duplicados aunque Buffer acorte el enlace del texto', async () => {

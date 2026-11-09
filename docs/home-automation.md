@@ -10,7 +10,7 @@ Recomendadas y próximos estrenos leen snapshots versionados que las cargas de p
 
 | Sección | Snapshot | Generador | Lectura del home |
 | --- | --- | --- | --- |
-| Radar de Cine | `src/data/editorials/*.json` | Cada build y reconstrucción diaria | `getCinemaNews()` selecciona las seis notas más recientes de los últimos 30 días, sin red |
+| Radar de Cine | `src/data/editorials/*.json` | Cada build | `getCinemaNews()` selecciona las seis notas más recientes de los últimos 30 días, sin red |
 | Recomendadas | `src/data/weeklyRecommendations.generated.ts` | `npm run refresh:weekly-recommendations` | Usa `WEEKLY_RECOMMENDATION_CARDS`, con título, póster, plataforma y score congelados |
 | Próximos estrenos | `src/data/upcomingReleases.generated.ts` | `npm run update-upcoming-releases` | Usa la edición generada, sin añadir películas del catálogo ni filtrar por fecha en cada build |
 
@@ -22,10 +22,9 @@ Todos los horarios son de Argentina, UTC-3. Los cron están escritos en UTC y no
 
 | Archivo | Nombre visible | Disparador |
 | --- | --- | --- |
-| `refresh-cinema-news.yml` | Radar de Cine diario (10:00 AR) | `0 13 * * *`, o manual |
 | `refresh-weekly-recommendations.yml` | Recomendadas semanales (domingo 01:00 AR) | `0 4 * * 0`, o manual |
 | `refresh-upcoming-releases.yml` | Proximos estrenos diarios (01:00 AR) | `0 4 * * *`, o manual |
-| `deploy.yml` | Publicar CinePosta en GitHub Pages | Push a `main`, manual o `workflow_run` exitoso de cualquiera de los tres workflows |
+| `deploy.yml` | Publicar CinePosta en GitHub Pages | Push a `main`, manual o `workflow_run` exitoso de los dos workflows de ediciones |
 | `validate.yml` | Validar sitio: contenido, seguridad y navegadores | PR, lunes `30 5 * * 1`, o manual |
 | `publish-buffer-x.yml` | Publicar estreno de plataforma en X (19:00 AR via Buffer) | `30 21 * * *`, o manual; activado por `BUFFER_X_AUTOPUBLISH_ENABLED` |
 
@@ -35,7 +34,7 @@ El semanal genera las seis recomendaciones, valida y publica exclusivamente `wee
 
 Radar usa exclusivamente publicaciones propias de cualquier tipo (nota, editorial, especial u opinión), sin exigir `featured`. Ordena fecha descendente con slug como desempate; toma hoy y los 29 días anteriores según Argentina, excluye notas futuras, deduplica por slug y limita a seis. Muestra la portada local y abre la nota en la misma pestaña. El archivo `/editorial/` sigue ofreciendo todas las publicaciones. Si no hay notas recientes, se omite la sección.
 
-Cada publicación incorpora las notas nuevas en el mismo deploy. `refresh-cinema-news.yml` conserva el cron de las 10:00 AR, valida y construye sin escribir snapshots ni hacer commits; su éxito activa Pages mediante el `workflow_run` existente. Así caducan las notas aunque ese día no se publique ninguna. No se consultan RSS ni páginas de diarios. Como todo el sitio es estático, el corte se aplica en cada build y se refleja al terminar el deploy; una ejecución demorada conserva temporalmente la selección del último build.
+Cada publicación incorpora las notas nuevas en el mismo deploy. Radar se calcula desde editoriales propias en cada build y no tiene workflow o cron independiente. No se consultan RSS ni páginas de diarios. Como todo el sitio es estático, el corte se aplica en cada build y se refleja al terminar el deploy; si no hay otro deploy, una nota vencida puede seguir visible hasta el próximo.
 
 Próximos estrenos toma títulos y fechas de Cines Argentinos, siempre Argentina. El video procede del endpoint de Videos de la **misma ficha** (`/pelicula/<id>/trailer`). YouTube oEmbed confirma que admite inserción; ante 401/403/404 se prueba el siguiente video de esa misma ficha, sin sustituirlo por un título distinto. El log registra título y canal como evidencia. La miniatura procede de YouTube. No se infiere disponibilidad por estudio ni se selecciona el primer resultado de una búsqueda global. Las fichas sin video insertable se omiten y se reportan; se requieren al menos cinco para reemplazar la edición. No se copia una sinopsis remota: el home conserva su descripción de fecha. Se quitó la dependencia de búsquedas HTML en TMDB que devolvían HTTP 403.
 

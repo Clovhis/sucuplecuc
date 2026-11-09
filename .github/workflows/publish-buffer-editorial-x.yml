@@ -20,6 +20,11 @@ on:
         description: Referencia opcional del orquestador para verificar este envío
         required: false
         type: string
+      require_original_tweet:
+        description: Exigir el tweet original guardado en el recibo semanal
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -45,12 +50,19 @@ jobs:
         env:
           EDITORIAL_SLUG: ${{ inputs.slug }}
           PUBLISH_MODE: ${{ inputs.mode }}
+          REQUIRE_ORIGINAL_TWEET: ${{ inputs.require_original_tweet }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           BUFFER_ORGANIZATION_ID: ${{ vars.BUFFER_ORGANIZATION_ID }}
           BUFFER_X_CHANNEL_ID: ${{ vars.BUFFER_X_CHANNEL_ID }}
         run: |
           if [ "$PUBLISH_MODE" = 'publish-now' ]; then
-            node scripts/publish-buffer-editorial-x.mjs "$EDITORIAL_SLUG" --publish-now
+            if [ "$REQUIRE_ORIGINAL_TWEET" = 'true' ]; then
+              node scripts/publish-buffer-editorial-x.mjs "$EDITORIAL_SLUG" --publish-now --require-original-tweet
+            else
+              node scripts/publish-buffer-editorial-x.mjs "$EDITORIAL_SLUG" --publish-now
+            fi
+          elif [ "$REQUIRE_ORIGINAL_TWEET" = 'true' ]; then
+            node scripts/publish-buffer-editorial-x.mjs "$EDITORIAL_SLUG" --require-original-tweet
           else
             node scripts/publish-buffer-editorial-x.mjs "$EDITORIAL_SLUG"
           fi

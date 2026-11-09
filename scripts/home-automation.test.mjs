@@ -48,8 +48,10 @@ try {
 } finally { globalThis.fetch = realFetch; }
 console.log('Home automation: Argentine dates and frozen editions verified.');
 
-const radarWorkflow = await readFile(new URL('../.github/workflows/refresh-cinema-news.yml', import.meta.url), 'utf8');
-assert.ok(radarWorkflow.includes("cron: '0 13 * * *'"));
-assert.ok(deploy.includes('Radar de Cine diario (10:00 AR)'));
-assert.ok(!radarWorkflow.includes('node scripts/publish-home-edition') && !radarWorkflow.includes('refresh:cinema-news'));
-assert.ok(radarWorkflow.includes('run: npm run validate:content -- --astro-check'));
+assert.ok(!deploy.includes('Radar de Cine diario (10:00 AR)'));
+const radar = await readFile(new URL('../src/lib/cinemaNews.ts', import.meta.url), 'utf8');
+const radarSelection = await readFile(new URL('../src/lib/cinema-news-selection.ts', import.meta.url), 'utf8');
+const home = await readFile(new URL('../src/pages/index.astro', import.meta.url), 'utf8');
+assert.ok(radar.includes('getCinemaNews') && radar.includes('getEditorials'));
+assert.ok(radarSelection.includes('selectCinemaNews') && radarSelection.includes('RADAR_DAYS'));
+assert.ok(home.includes('const cinemaNews = getCinemaNews()') && home.includes('<CinemaNewsTicker'));
