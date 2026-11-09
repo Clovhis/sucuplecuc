@@ -1,6 +1,6 @@
 # Nota diaria con la suscripción ChatGPT
 
-La solución usa una tarea nativa de Codex/Work vinculada al entorno cloud del proyecto. El modelo editorial se ejecuta mediante la herramienta oficial nativa `collaboration.spawn_agent`, dentro de las capacidades/cuotas de la cuenta ChatGPT. **No usa OpenAI API, API keys, sesiones exportadas, tokens copiados ni credenciales de una PC.** Si se agota la cuota o no está disponible el modelo, falla sin comprar créditos ni sustituir otra familia.
+La solución usa una tarea nativa de Codex/Work vinculada al entorno cloud del proyecto. El modelo editorial se ejecuta mediante la herramienta oficial nativa `collaboration.spawn_agent`, dentro de las capacidades/cuotas de la cuenta ChatGPT. **No usa OpenAI API, claves de LLM, sesiones exportadas, tokens copiados ni credenciales de una PC.** Si se agota la cuota o no está disponible el modelo, falla sin comprar créditos ni sustituir otra familia.
 
 La prueba nativa del 9 de noviembre de 2026 completó un turno solicitado explícitamente con `model: gpt-6-luna`, `reasoning_effort: max`, `fork_turns: none`, ID `/root/cineposta_luna`. La sesión de CLI anidado había fallado con `unauthorized`; no se intenta renovarla ni usarla para inferencia. Se retiró la alternativa de API antes de activarla. El CLI no forma parte de la ejecución editorial.
 
@@ -19,7 +19,7 @@ Las 10:00 son el inicio solicitado. Investigación, validación, colas y Pages a
 ## Ejecución del orquestador
 
 1. Guardar el catálogo nativo vigente y ejecutar `node scripts/daily-editorial.mjs --prepare`. Crea un worktree desde origin/main, instala dependencias/Chromium y escribe el índice acotado de publicaciones; devuelve fecha, ruta, selección y executionFile. Si ya hay nota del día, no genera otro turno.
-2. Invocar el único agente con los argumentos devueltos, probarlo y encargarle la preparación con `cineposta-cloud-nota-diaria` y `cineposta-editorial`. El agente escribe una nota, sus WebP y `.tmp/cineposta-daily/draft.json` en el worktree. Nunca hace commits ni push.
+2. Invocar el único agente con los argumentos devueltos, probarlo y encargarle la preparación con `cineposta-cloud-nota-diaria` y `cineposta-editorial`. El agente escribe una nota, sus WebP y `.tmp/cineposta-daily/draft.json` con un tweet original, en el mismo turno y worktree. Nunca hace commits ni push.
 3. Tras completion nativo satisfactorio, escribir el executionFile con `{ provider: "codex-native", model, effort: "max", agentId, probe: "passed", status: "completed" }`, usando datos de las llamadas reales. Ejecutar `--dry-run`: valida sin publicar. En el primer run, revisar la nota completa y las capturas desktop/320 px.
 4. Ejecutar `--publish` sobre esa misma preparación aprobada. Si cambia el contenido o main, `--revalidate` integra y repite checks sin otra redacción. El usuario autorizó publicación directa y comprobación completa de producción.
 5. Después de verificar Pages de la primera nota, crear una única agenda nativa con el prompt/VEVENT versionados, el entorno cloud guardado y timezone argentino. Registrar la respuesta real y el ID en config. Si las herramientas del scheduler no incluyen el ejecutor nativo requerido, detener/pausar la agenda y reportar esa limitación; no suponer compatibilidad.
@@ -39,3 +39,12 @@ Lesson Learned de red: `fetch` nativo de Node devolvió ECONNREFUSED en este clo
 - [ChatGPT Work y Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex): Work cloud y tareas nativas son distintos de controlar una PC remotamente.
 
 La herramienta de scheduler disponible en este chat no expone campos model/reasoning. Por eso el modelo real se impone en el único ejecutor nativo, con el override oficial, en vez de prometer que el texto del prompt cambia el modelo del scheduler. La prueba inicial confirmó esa vía nativa. No se afirma aún que una agenda nueva haya publicado hasta observar su resultado.
+
+
+## Buffer y X después de publicar
+
+La misma ejecución creativa de Luna genera el tweet y lo guarda en el borrador; se valida antes del build y queda versionado en el registro diario. Debe tener un comentario propio, URL canónica y 1–3 hashtags, con límite interno de 250 caracteres ponderados reutilizando el contador existente (URLs 23, emojis/Unicode según ponderación X). No se usa otro LLM ni una nueva skill.
+
+Sólo después de Pages y la comprobación pública, `--publish` despacha el workflow existente `publish-buffer-editorial-x.yml`. Reutiliza `BUFFER_API_KEY`, organización/canal ya configurados y el cliente oficial de Buffer de `publish-buffer-x.mjs`. El workflow confirma canonical/fecha/portada reales, canal X @cineposta, y manda `shareNow` sin `dueAt` futuro. Consulta posts existentes antes de crear y reutiliza un ID persistido; un error de entrega se reintenta por `editPost` en modo `shareNow`, no con un segundo `createPost`.
+
+Se confirma `sent` y se conserva `externalLink` cuando Buffer lo proporciona. El comprobante/error se guarda en `reports/buffer-editorial/<slug>.json` en main y como artifact. Un fallo de X no revierte la nota. `node scripts/daily-editorial.mjs --tweet` reintenta sólo el tweet de hoy; para cualquier fecha, ejecutar ese mismo workflow con `slug` y `mode=publish-now`. El envío de una URL ya publicada recupera su comprobante sin duplicarla. No se altera el workflow de películas de las 19:00 ni su historial.

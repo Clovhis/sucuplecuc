@@ -8,7 +8,8 @@
   "automationId": null,
   "activationStatus": "native-luna-probe-passed-awaiting-real-publication",
   "modelPolicy": "latest-native-advertised-gpt-luna-max",
-  "billingPolicy": "included-chatgpt-plan-only-no-api-no-extra-credits",
+  "billingPolicy": "included-chatgpt-plan-only-no-openai-api-no-extra-credits",
+  "social": { "provider": "buffer", "account": "@cineposta", "mode": "shareNow", "workflow": "publish-buffer-editorial-x.yml" },
   "deployTimeoutMinutes": 45,
   "promptFile": "config/daily-editorial-prompt.md"
 }

@@ -1,10 +1,11 @@
-name: Publicar guía semanal en X via Buffer
+name: Publicar editorial en X via Buffer
+run-name: X @cineposta · ${{ inputs.slug }} · ${{ inputs.request_id }}
 
 on:
   workflow_dispatch:
     inputs:
       slug:
-        description: Slug de la guía semanal publicada
+        description: Slug de la editorial publicada (o guía semanal)
         required: true
         type: string
       mode:
@@ -15,9 +16,13 @@ on:
         options:
           - dry-run
           - publish-now
+      request_id:
+        description: Referencia opcional del orquestador para verificar este envío
+        required: false
+        type: string
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: cineposta-buffer-x
@@ -56,3 +61,19 @@ jobs:
           name: buffer-editorial-receipt
           path: buffer-editorial-receipt.json
           if-no-files-found: error
+      - name: Conservar resultado o error para reintentar sólo X
+        if: ${{ inputs.mode == 'publish-now' && always() }}
+        env:
+          EDITORIAL_SLUG: ${{ inputs.slug }}
+        run: |
+          if [ -f buffer-editorial-receipt.json ]; then
+            mkdir -p reports/buffer-editorial
+            cp buffer-editorial-receipt.json "reports/buffer-editorial/$EDITORIAL_SLUG.json"
+            git add -- "reports/buffer-editorial/$EDITORIAL_SLUG.json"
+            if ! git diff --cached --quiet; then
+              git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "chore(buffer): record editorial delivery $EDITORIAL_SLUG"
+              git fetch origin main
+              git rebase origin/main
+              git push origin HEAD:main
+            fi
+          fi

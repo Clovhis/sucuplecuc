@@ -7,13 +7,13 @@ description: Orquestar una única nota cinematográfica diaria de CinePosta en c
 
 ## Ejecutor nativo incluido en ChatGPT Plus
 
-La orquestación debe ejecutarse en Codex Cloud/Work mediante la cuenta ChatGPT y sus cuotas incluidas. No usar OpenAI API, claves API, sesiones exportadas ni un CLI anidado para inferencia.
+La orquestación debe ejecutarse en Codex Cloud/Work mediante la cuenta ChatGPT y sus cuotas incluidas. No usar OpenAI API, claves de LLM, sesiones exportadas ni un CLI anidado para inferencia. Buffer usa exclusivamente su integración oficial existente, sin contratar servicios nuevos.
 
 El orquestador debe invocar **un único subagente editorial nativo** con la herramienta oficial `collaboration.spawn_agent`, `fork_turns: "none"`, `model` igual a la última versión Luna que anuncie la herramienta y `reasoning_effort: "max"`. Es el único agente necesario para imponer el modelo real cuando el scheduler no expone ese campo. No delegar ningún otro trabajo. La selección debe hacerse desde los identificadores y capacidades anunciados en el runtime, sin inventarlos ni sustituir otra familia. Si la herramienta o Luna Max no están disponibles, detenerse sin publicar.
 
 Antes de adoptar una versión nueva, ejecutar con ese agente una comprobación mínima real y exigir completion satisfactorio; después reutilizar **ese mismo agente** para investigar/redactar con esta skill y `cineposta-editorial`. El subagente editorial nunca crea otros agentes. El orquestador no investiga ni redacta: sólo prepara el checkout, selecciona el ejecutor, valida y publica. Guardar la selección real y el ID nativo junto al registro de publicación. La agenda permanece desactivada hasta publicar y verificar la primera nota real.
 
-Leé `AGENTS.md` y **ejecutá siempre `skills/cineposta-editorial/SKILL.md`** para la redacción y preparación visual. Esa skill es la fuente de voz, estructura, imágenes, integración y revisión editorial; no la reimplementes. El tema investigado reemplaza las ideas provistas por el usuario. Es una nota informativa firmada CinePosta: no inventes opiniones, experiencias ni recuerdos de Leo. No toques fichas, scores, snapshots, componentes ni configuración. No envíes mensajes ni publiques en redes.
+Leé `AGENTS.md` y **ejecutá siempre `skills/cineposta-editorial/SKILL.md`** para la redacción y preparación visual. Esa skill es la fuente de voz, estructura, imágenes, integración y revisión editorial; no la reimplementes. El tema investigado reemplaza las ideas provistas por el usuario. Es una nota informativa firmada CinePosta: no inventes opiniones, experiencias ni recuerdos de Leo. No toques fichas, scores, snapshots, componentes ni configuración. El redactor no envía mensajes ni publica: el publicador externo realiza nota y X según los controles siguientes.
 
 ## Investigación acotada
 
@@ -35,6 +35,7 @@ Escribí `.tmp/cineposta-daily/draft.json` con este contrato (no agregar campos 
   "date": "YYYY-MM-DD",
   "slug": "slug-de-la-nota",
   "topicKey": "acontecimiento-concreto-estable-sin-fecha-de-ejecucion",
+  "tweet": "Comentario original sobre esta noticia, URL canónica directa y 1–3 hashtags, hasta 250 caracteres ponderados para X.",
   "decision": "Ángulo elegido y por qué aporta algo nuevo, en hasta 150 palabras.",
   "sourceChecks": [
     { "url": "https://fuente-primaria/...", "role": "primary", "checkedOn": "YYYY-MM-DD", "publishedOn": "YYYY-MM-DD o fecha desconocida", "facts": "Hechos concretos comprobados al abrir esta fuente." },
@@ -47,6 +48,12 @@ Escribí `.tmp/cineposta-daily/draft.json` con este contrato (no agregar campos 
 ```
 
 Usá exactamente las URLs de `sources` y `image.source`. `topicKey` identifica el hecho (película, festival/edición y anuncio/premio, o aniversario concreto), sin sinónimos destinados a evadir duplicados. Reutilizá el `topicKey` existente si se trata del mismo hecho: el publicador lo bloqueará. Todas las imágenes, incluida la portada, necesitan una entrada de inspección. No afirmes licencias o permisos no verificados.
+
+## Tweet y Buffer dentro de la misma ejecución
+
+El mismo Luna que redacta la nota debe escribir `tweet` en ese turno, sin otro agente ni otra invocación creativa. Español argentino cercano, natural y atractivo; un comentario específico de la noticia, su URL directa y 1–3 hashtags. Evitá plantillas, publicidad automática y repetir aperturas de los últimos tweets del índice. Reutilizá `weightedXLength`/`editorialPostPlan` existentes para un margen de 250 caracteres ponderados (X permite 280; URLs cuentan 23 y emojis se ponderan).
+
+Después de confirmar Pages y la URL pública, `--publish` invoca el workflow existente `publish-buffer-editorial-x.yml`. Éste usa el secret Buffer ya configurado, verifica canonical/fecha/portada, comprueba X @cineposta y publica con la API oficial en `shareNow`, nunca en una cola futura. Busca duplicados por URL e ID persistido y verifica `sent`, guardando el enlace externo cuando está disponible. Si Buffer falla, conserva la nota y registra el error en `reports/buffer-editorial/<slug>.json` y el artifact del run. Usá `--tweet` (hoy) o el mismo workflow con slug para reintentar únicamente X; no investigues ni redactes otra vez. Nunca crees otro post si ya hay uno enviado; los reintentos recuperan el mismo ID cuando existe.
 
 ## Publicación, recuperación y primer run
 

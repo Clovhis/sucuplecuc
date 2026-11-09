@@ -227,8 +227,18 @@ export function movieHashtags(movie) {
 }
 
 export function weightedXLength(text) {
-	const urls = text.match(/https?:\/\/[^\s]+/gu) ?? [];
-	return [...text].length - urls.reduce((total, url) => total + [...url].length, 0) + urls.length * URL_WEIGHT;
+	const normalized = text.normalize('NFC');
+	const urls = normalized.match(/https?:\/\/[^\s]+/gu) ?? [];
+	const withoutUrls = normalized.replace(/https?:\/\/[^\s]+/gu, '');
+	let length = urls.length * URL_WEIGHT;
+	for (const { segment } of new Intl.Segmenter('es', { granularity: 'grapheme' }).segment(withoutUrls)) {
+		if (/\p{Extended_Pictographic}|\p{Regional_Indicator}|\u20e3/u.test(segment)) { length += 2; continue; }
+		for (const character of segment) {
+			const point = character.codePointAt(0);
+			length += point <= 0x10ff || (point >= 0x2000 && point <= 0x200d) || (point >= 0x2010 && point <= 0x201f) || (point >= 0x2032 && point <= 0x2037) ? 1 : 2;
+		}
+	}
+	return length;
 }
 
 function pickVariant(values, index) {

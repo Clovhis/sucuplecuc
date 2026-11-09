@@ -3,13 +3,15 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, rmSync, lstatSync }
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
+import { randomUUID } from 'node:crypto';
+import { editorialPostPlan } from './publish-buffer-editorial-x.mjs';
 import { selectNativeLuna, validateNativeExecution } from './lib/cineposta-luna.mjs';
 import { argentinaDate, digest, readJsonDirectory, validateDraft, assertPublicationScope } from './lib/daily-editorial-policy.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(readFileSync(resolve(root, 'config/daily-editorial.json'), 'utf8'));
 const mode = process.argv[2];
-if (!['--prepare', '--dry-run', '--revalidate', '--publish', '--verify'].includes(mode) || process.argv.length !== 3) throw new Error('Usá --prepare, --dry-run, --revalidate, --publish o --verify.');
+if (!['--prepare', '--dry-run', '--revalidate', '--publish', '--verify', '--tweet'].includes(mode) || process.argv.length !== 3) throw new Error('Usá --prepare, --dry-run, --revalidate, --publish, --verify o --tweet.');
 const date = argentinaDate();
 const state = resolve(root, '.tmp/cineposta-daily');
 const work = resolve(state, `work-${date}`);
@@ -43,6 +45,7 @@ async function inspectDraft(base) {
   const previous = oldFiles.map(file => JSON.parse(git('show', `${base}:${file}`)));
   const receipts = git('ls-tree', '-r', '--name-only', base, '--', 'reports/daily-editorial').split('\n').filter(file => file.endsWith('.json')).map(file => JSON.parse(git('show', `${base}:${file}`)));
   const counts = validateDraft(note, draft, previous, receipts, date);
+  editorialPostPlan(note, draft.tweet); // Reuse Buffer's copy/URL/hashtag/X validation.
   const sharp = createRequire(resolve(work, 'package.json'))('sharp');
   let bytes = 0;
   const referenced = new Set();
@@ -81,7 +84,7 @@ async function validate(base, execution) {
   mkdirSync(resolve(work, 'reports/daily-editorial'), { recursive: true });
   writeFileSync(resolve(work, receiptPath), `${JSON.stringify({
     date, slug: note.slug, topicKey: draft.topicKey, title: note.title,
-    execution, decision: draft.decision, sourceChecks: draft.sourceChecks, imageChecks: draft.imageChecks,
+    execution, tweet: draft.tweet, decision: draft.decision, sourceChecks: draft.sourceChecks, imageChecks: draft.imageChecks,
     validation: { ...counts, content: 'passed', astroCheck: 'passed', build: 'passed', desktopAndMobile: 'passed' },
     url: `https://www.cineposta.com.ar/editorial/${note.slug}/`,
   }, null, 2)}\n`);
@@ -116,6 +119,26 @@ async function verify(sha, receipt) {
   throw new Error(`No se confirmó Pages en ${config.deployTimeoutMinutes} minutos. Nota conservada en main. Revisar ${runUrl || 'Actions'} y usar --verify.`);
 }
 
+async function publishTweet(slug) {
+  const requestId = randomUUID();
+  run('gh', ['workflow', 'run', 'publish-buffer-editorial-x.yml', '--repo', config.repository, '--ref', 'main', '-f', `slug=${slug}`, '-f', 'mode=publish-now', '-f', `request_id=${requestId}`], root);
+  const deadline = Date.now() + 8 * 60_000;
+  while (Date.now() < deadline) {
+    const runs = JSON.parse(run('gh', ['api', `repos/${config.repository}/actions/workflows/publish-buffer-editorial-x.yml/runs?event=workflow_dispatch&per_page=20`], root, true)).workflow_runs;
+    const current = runs.find(item => item.display_title.includes(requestId));
+    if (current) {
+      log(`Buffer: ${current.status} | ${current.html_url}`);
+      if (current.status === 'completed') {
+        if (current.conclusion !== 'success') throw new Error(`La nota sigue publicada; Buffer ${current.conclusion}: ${current.html_url}. Reintentar sólo --tweet.`);
+        log(`Tweet verificado por Buffer: ${current.html_url}. Comprobante persistido en reports/buffer-editorial/${slug}.json.`);
+        return;
+      }
+    }
+    await new Promise(resolve => setTimeout(resolve, 10_000));
+  }
+  throw new Error('La nota sigue publicada. Buffer no confirmó el envío dentro de 8 minutos; consultar el run antes de reintentar sólo --tweet.');
+}
+
 mkdirSync(state, { recursive: true });
 const lock = resolve(state, 'lock');
 try { mkdirSync(lock); } catch { throw new Error(`Otra ejecución usa ${lock}. Si quedó huérfana, inspeccionarla antes de retirar el lock.`); }
@@ -131,8 +154,11 @@ try {
         const commit = run('git', ['log', '-1', '--format=%H', head, '--', `reports/daily-editorial/${date}.json`], root, true);
         await verify(commit, published);
       }
+      if (mode === '--publish' || mode === '--tweet') await publishTweet(published.slug);
     } else if (mode === '--verify') {
       throw new Error('No existe una publicación diaria de hoy en main.');
+    } else if (mode === '--tweet') {
+      throw new Error('No existe una nota diaria publicada hoy para enviar a X.');
     } else {
       if (mode === '--prepare') {
         const catalog = json(resolve(state, 'native-catalog.json'));
@@ -144,7 +170,7 @@ try {
         run('npx', ['playwright', 'install', 'chromium']);
         mkdirSync(resolve(work, '.tmp/cineposta-daily'), { recursive: true });
         const publications = readJsonDirectory(resolve(work, 'src/data/editorials')).map(note => ({ slug: note.slug, title: note.title, date: note.date })).sort((a, b) => b.date.localeCompare(a.date));
-        writeFileSync(resolve(work, '.tmp/cineposta-daily/published.json'), JSON.stringify({ totalPublications: publications.length, recentPublications: publications.slice(0, 60), recentDaily: receiptsAt(work).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 60).map(item => ({ date: item.date, topicKey: item.topicKey, title: item.title })) }));
+        writeFileSync(resolve(work, '.tmp/cineposta-daily/published.json'), JSON.stringify({ totalPublications: publications.length, recentPublications: publications.slice(0, 60), recentDaily: receiptsAt(work).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 60).map((item, index) => ({ date: item.date, topicKey: item.topicKey, title: item.title, ...(index < 7 ? { tweet: item.tweet } : {}) })) }));
         const context = { date, base: head, worktree: work, selection, availableModels: catalog.models, executionFile: resolve(work, '.tmp/cineposta-daily/native-execution.json') };
         writeFileSync(contextPath, JSON.stringify(context, null, 2));
         log(JSON.stringify(context));
@@ -209,6 +235,7 @@ try {
         await verify(sha, json(resolve(work, `reports/daily-editorial/${date}.json`)));
         run('git', ['worktree', 'remove', work], root);
         rmSync(proofPath);
+        await publishTweet(proof.slug);
       }
     }
     }

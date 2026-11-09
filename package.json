@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "test:daily-editorial": "node --test scripts/daily-editorial.test.mjs",
+    "test:daily-editorial": "node --test scripts/daily-editorial.test.mjs scripts/publish-buffer-editorial-x.test.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

@@ -33,6 +33,7 @@ function fixture() {
   const image = i => ({ type: 'image', src: `assets/editorial/${slug}/imagen-${i}.webp`, srcSmall: `assets/editorial/${slug}/imagen-${i}-640.webp`, source: `https://festival.example/image-${i}`, width: 1280, height: 720, alt: 'Imagen comprobada del festival de cine' });
   const note = { date, slug, title: 'Un hecho nuevo del festival', author: 'CinePosta', type: 'nota', spoilers: false, cover: image(0), sources: [{ label: 'Festival', url: 'https://festival.example/news' }, { label: 'Medio', url: 'https://news.example/cinema' }], content: [{ type: 'paragraph', text: Array(950).fill('cine').join(' ') }, ...[0, 1, 2, 3].map(image)] };
   const draft = { date, slug, topicKey: 'festival-edicion-anuncio', decision: 'Un anuncio nuevo con valor cinematográfico.', sourceChecks: note.sources.map((source, i) => ({ url: source.url, role: i === 0 ? 'primary' : 'secondary', checkedOn: date, facts: 'Hecho comprobado en la fuente abierta con información independiente.' })), imageChecks: [0, 1, 2, 3].map(i => ({ src: image(i).src, sourceUrl: image(i).source, checkedOn: date, description: 'Inspección visual del original y relación con el texto.' })) };
+  draft.tweet = `La distribución también cuenta: este estreno invita a mirar cómo se organiza el encuentro con el público. https://www.cineposta.com.ar/editorial/${slug}/ #Cine`;
   return { date, slug, note, draft };
 }
 test('draft gate: complete evidence is accepted and invalid dates, sources, images and extent are blocked', () => {
@@ -84,6 +85,7 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     shell('git', ['config', 'user.name', 'fixture']); shell('git', ['config', 'user.email', 'fixture@example.org']);
     cpSync(resolve(project, 'scripts/daily-editorial.mjs'), resolve(repository, 'scripts/daily-editorial.mjs'), { recursive: true });
     cpSync(resolve(project, 'scripts/lib'), resolve(repository, 'scripts/lib'), { recursive: true });
+    for (const file of ['publish-buffer-editorial-x.mjs', 'publish-buffer-x.mjs', 'buffer-x-availability.mjs']) cpSync(resolve(project, 'scripts', file), resolve(repository, 'scripts', file));
     mkdirSync(resolve(repository, 'config'));
     writeFileSync(resolve(repository, 'config/daily-editorial.json'), JSON.stringify({ repository: 'fixture/test', deployTimeoutMinutes: 0.1 }));
     writeFileSync(resolve(repository, 'package.json'), '{"type":"module"}');
@@ -116,9 +118,12 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
       if(process.env.TEST_FAIL_VALIDATION==='1'&&process.argv[2]==='run') process.exit(1);
       if(process.argv[2]==='ci'&&!existsSync('node_modules')) { mkdirSync('node_modules'); symlinkSync(process.env.TEST_DEPENDENCIES+'/sharp', 'node_modules/sharp', 'dir'); }`;
     tool('npm', fakeTools); tool('npx', fakeTools);
-    tool('gh', `const sha=process.argv.at(-1).match(/head_sha=([^&]+)/)[1]; console.log(JSON.stringify({workflow_runs:[{head_sha:sha,event:'push',status:'completed',conclusion:'success',html_url:'https://example.org/fixture-run'}]}));`);
+    tool('gh', `import {writeFileSync,readFileSync} from 'node:fs';
+      if(process.argv[2]==='workflow') { writeFileSync(process.env.TEST_BUFFER_REQUEST,process.argv.find(arg=>arg.startsWith('request_id=')).split('=')[1]); }
+      else if(process.argv.at(-1).includes('publish-buffer-editorial-x')) console.log(JSON.stringify({workflow_runs:[{display_title:readFileSync(process.env.TEST_BUFFER_REQUEST,'utf8'),status:'completed',conclusion:'success',html_url:'https://example.org/fixture-buffer'}]}));
+      else { const sha=process.argv.at(-1).match(/head_sha=([^&]+)/)[1]; console.log(JSON.stringify({workflow_runs:[{head_sha:sha,event:'push',status:'completed',conclusion:'success',html_url:'https://example.org/fixture-run'}]})); }`);
     tool('curl', `console.log('${slug} datetime="${note.date}"');`);
-    const env = { ...process.env, GITHUB_ACTIONS: '', PATH: `${bin}:${process.env.PATH}`, TEST_COMMAND_LOG: commandLog, TEST_DEPENDENCIES: resolve(project, 'node_modules') };
+    const env = { ...process.env, GITHUB_ACTIONS: '', PATH: `${bin}:${process.env.PATH}`, TEST_BUFFER_REQUEST: resolve(directory, 'buffer-request.txt'), TEST_COMMAND_LOG: commandLog, TEST_DEPENDENCIES: resolve(project, 'node_modules') };
     const execute = flag => spawnSync(process.execPath, ['scripts/daily-editorial.mjs', flag], { cwd: repository, env, encoding: 'utf8', timeout: 20_000 });
     mkdirSync(resolve(repository, '.tmp/cineposta-daily'), { recursive: true });
     writeFileSync(resolve(repository, '.tmp/cineposta-daily/native-catalog.json'), JSON.stringify({ observedAt: new Date().toISOString(), models: [model('gpt-6-luna')] }));
