@@ -92,7 +92,7 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     writeFileSync(resolve(repository, 'src/data/editorials/.gitkeep'), '');
     shell('git', ['add', '.']); shell('git', ['commit', '-m', 'fixture base']);
     shell('git', ['remote', 'add', 'origin', resolve(directory, 'remote.git')]); shell('git', ['push', '-u', 'origin', 'main']);
-    const base = shell('git', ['rev-parse', 'HEAD']);
+    let base = shell('git', ['rev-parse', 'HEAD']);
     const { note, draft, slug } = fixture();
     note.date = draft.date = argentinaDate();
     for (const check of [...draft.sourceChecks, ...draft.imageChecks]) check.checkedOn = draft.date;
@@ -117,9 +117,8 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
       if(process.argv[2]==='ci'&&!existsSync('node_modules')) { mkdirSync('node_modules'); symlinkSync(process.env.TEST_DEPENDENCIES+'/sharp', 'node_modules/sharp', 'dir'); }`;
     tool('npm', fakeTools); tool('npx', fakeTools);
     tool('gh', `const sha=process.argv.at(-1).match(/head_sha=([^&]+)/)[1]; console.log(JSON.stringify({workflow_runs:[{head_sha:sha,event:'push',status:'completed',conclusion:'success',html_url:'https://example.org/fixture-run'}]}));`);
-    const preload = resolve(directory, 'network-fixture.mjs');
-    writeFileSync(preload, `globalThis.fetch=async url=>{const body='${slug} datetime="${note.date}"';const r=new Response(body);Object.defineProperty(r,'url',{value:String(url)});return r;};`);
-    const env = { ...process.env, GITHUB_ACTIONS: '', PATH: `${bin}:${process.env.PATH}`, NODE_OPTIONS: `--import=${preload}`, TEST_CANDIDATE: candidate, TEST_TURN_COUNTER: resolve(directory, 'turns.log'), TEST_RPC_LOG: resolve(directory, 'rpc.log'), TEST_COMMAND_LOG: commandLog, TEST_DEPENDENCIES: resolve(project, 'node_modules'), TEST_RPC_CASE: 'ok' };
+    tool('curl', `console.log('${slug} datetime="${note.date}"');`);
+    const env = { ...process.env, GITHUB_ACTIONS: '', PATH: `${bin}:${process.env.PATH}`, TEST_COMMAND_LOG: commandLog, TEST_DEPENDENCIES: resolve(project, 'node_modules') };
     const execute = flag => spawnSync(process.execPath, ['scripts/daily-editorial.mjs', flag], { cwd: repository, env, encoding: 'utf8', timeout: 20_000 });
     mkdirSync(resolve(repository, '.tmp/cineposta-daily'), { recursive: true });
     writeFileSync(resolve(repository, '.tmp/cineposta-daily/native-catalog.json'), JSON.stringify({ observedAt: new Date().toISOString(), models: [model('gpt-6-luna')] }));
@@ -128,6 +127,9 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     const work = resolve(repository, `.tmp/cineposta-daily/work-${note.date}`);
     cpSync(candidate, work, { recursive: true });
     writeFileSync(resolve(work, '.tmp/cineposta-daily/native-execution.json'), JSON.stringify({ model: 'gpt-6-luna', effort: 'max', agentId: 'fixture-native-agent', provider: 'codex-native', status: 'completed', probe: 'passed' }));
+    writeFileSync(resolve(repository, 'early-bot.txt'), 'update before first validation');
+    shell('git', ['add', 'early-bot.txt']); shell('git', ['commit', '-m', 'fixture early bot']); shell('git', ['push']);
+    base = shell('git', ['rev-parse', 'HEAD']);
     result = execute('--dry-run');
     assert.equal(result.status, 0, result.stdout + result.stderr);
     assert.equal(shell('git', ['ls-remote', 'origin', 'refs/heads/main']).split(/\s/)[0], base, 'dry-run must not push');
@@ -161,6 +163,7 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     assert.equal(receipt.execution.model, 'gpt-6-luna');
     assert.equal(receipt.execution.effort, 'max');
     assert.equal(shell('git', ['show', 'origin/main:bot-edition.txt']), 'concurrent bot update');
+    assert.equal(shell('git', ['show', 'origin/main:early-bot.txt']), 'update before first validation');
     const finalSha = shell('git', ['rev-parse', 'origin/main']);
     result = execute('--publish');
     assert.equal(result.status, 0, result.stdout + result.stderr);

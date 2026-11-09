@@ -30,6 +30,8 @@ El gate reutiliza `validate:content -- --astro-check` (un build), la suite edito
 
 Hay lock local, ámbito limitado a nota/imagenes/registro, rebase y push fast-forward sin force. El registro `reports/daily-editorial/<fecha AR>.json` se publica atómicamente con la nota y conserva modelo/Max/ID nativo, tema, fuentes y checks. Un reintento de la fecha no redacta otra nota. Pages se comprueba por SHA y URL/fecha; si falla, conservar el commit y usar `--verify`, sin regenerar contenido. Un fallo de validación invalida la prueba anterior. No descartar preparaciones ni locks sin inspección.
 
+Lesson Learned de red: `fetch` nativo de Node devolvió ECONNREFUSED en este cloud, mientras `curl` accede correctamente mediante los proxies y CA heredados. Las verificaciones usan curl con TLS y redirecciones exclusivamente HTTPS; no se desactiva la comprobación de certificados. Si main avanza antes de la primera validación, se integra por fast-forward conservando la preparación; después se valida el contenido combinado.
+
 ## Fuentes oficiales y límites
 
 - [Tareas programadas y skills/modelo/razonamiento](https://learn.chatgpt.com/docs/automations): las tareas web son cloud, pueden usar skills/plugins y las opciones disponibles dependen de la cuenta; el CLI no administra Scheduled. Los proyectos locales requieren PC encendida.

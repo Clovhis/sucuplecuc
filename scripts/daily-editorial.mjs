@@ -32,6 +32,7 @@ const changes = base => [
 ];
 const fingerprint = files => Object.fromEntries(files.sort().map(file => [file, digest(readFileSync(resolve(work, file)))]));
 const log = message => console.log(`[cineposta ${date}] ${message}`);
+const httpsArgs = ['--fail', '--silent', '--show-error', '--location', '--max-time', '30', '--proto', '=https', '--proto-redir', '=https'];
 
 async function inspectDraft(base) {
   const draft = json(resolve(work, '.tmp/cineposta-daily/draft.json'));
@@ -62,9 +63,7 @@ async function inspectDraft(base) {
   if (bytes > 2_500_000) throw new Error('Las imágenes de la nota superan 2,5 MB.');
   // Sources were read by Luna, and must still be reachable before publishing.
   for (const source of note.sources) {
-    const response = await fetch(source.url, { signal: AbortSignal.timeout(30_000), headers: { 'user-agent': 'CinePosta editorial verification/1.0' } });
-    await response.body?.cancel();
-    if (!response.ok || !response.url.startsWith('https:')) throw new Error(`Fuente no verificable: ${source.url} (${response.status})`);
+    run('curl', [...httpsArgs, '--output', '/dev/null', source.url]);
   }
   return { draft, note, counts };
 }
@@ -103,9 +102,9 @@ async function verify(sha, receipt) {
       runUrl = current.html_url;
       if (current.status === 'completed') {
         if (current.conclusion !== 'success') throw new Error(`Pages ${current.conclusion}: ${runUrl}. Reejecutar deploy, no generar otra nota.`);
-        const response = await fetch(receipt.url, { signal: AbortSignal.timeout(30_000), cache: 'no-store' });
-        const html = await response.text();
-        if (response.ok && html.includes(receipt.slug) && html.includes(`datetime="${receipt.date}"`)) {
+        let html = '';
+        try { html = run('curl', [...httpsArgs, '--header', 'Cache-Control: no-cache', receipt.url], root, true); } catch { /* CDN may still be propagating; bounded retry below. */ }
+        if (html.includes(receipt.slug) && html.includes(`datetime="${receipt.date}"`)) {
           log(`Pages verificado: ${receipt.url} | ${runUrl}`);
           return;
         }
@@ -172,7 +171,11 @@ try {
       } else {
         if (!existsSync(contextPath) || !existsSync(work)) throw new Error('Primero ejecutar --prepare y el ejecutor editorial nativo.');
         const context = json(contextPath);
-        if (context.base !== head) throw new Error('main avanzó durante la preparación; conservarla e integrarla antes de validar.');
+        if (context.base !== head) {
+          git('merge', '--ff-only', 'origin/main');
+          context.base = head;
+          writeFileSync(contextPath, JSON.stringify(context, null, 2));
+        }
         const execution = validateNativeExecution(json(context.executionFile), context.selection);
         proof = await validate(head, execution);
       }
