@@ -4,8 +4,7 @@
 - Se exige título y año exactos y únicos, dirección y al menos dos actores distintos con nombre e IMDb coincidentes. El estado aprobado describe coincidencias automáticas, no revisión editorial individual de cada personaje.
 - Películas procesadas: 2574; con créditos: 2003; pendientes: 571; créditos guardados: 7039 de 8970 integrantes del reparto.
 - Los personajes conservan el texto de la fuente; no se traducen ni se generan variantes sin evidencia.
-- Excepción verificada de visualización para la trilogía: Elijah Wood figura como «Frodo» en TMDB; el nombre localizado «Frodo Bolsón» se contrasta con [Prime Video Argentina](https://www.primevideo.com/-/es/detail/0N0CRBLY1S5GDA4EVTQ34LF5GN?tr=ar). La variante original «Frodo Baggins» se contrasta con [The One Ring](https://www.theonering.com/galleries/the-lord-of-the-rings-movies/cast/). Se conserva el crédito original de TMDB para su renovación.
-- La autorización de almacenamiento permanente comunicada por el titular y la actualización opcional figuran en [personajes-reparto.md](personajes-reparto.md).
+- Excepción verificada de visualización para la trilogía: Elijah Wood figura como «Frodo» en TMDB; el nombre localizado «Frodo Bolsón» se contrasta con [Prime Video Argentina](https://www.primevideo.com/-/es/detail/0N0CRBLY1S5GDA4EVTQ34LF5GN?tr=ar). La variante original «Frodo Baggins» se contrasta con [The One Ring](https://www.theonering.com/galleries/the-lord-of-the-rings-movies/cast/). Se conserva el texto original de TMDB como dato de procedencia.
 
 ## Pendientes
 

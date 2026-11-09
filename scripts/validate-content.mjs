@@ -2,7 +2,7 @@ import { spawnSync } from 'node:child_process';
 import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { hasOnlyCharacterChanges, mergeGlobalAuditPaths, planMovieAudit, validateCharacterChanges } from './character-change-policy.mjs';
+import { hasOnlyCharacterChanges, mergeGlobalAuditPaths, planMovieAudit, requireCreditCorrectionEvidence, validateCharacterChanges } from './character-change-policy.mjs';
 
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -12,6 +12,7 @@ function parseArgs(argv) {
 		astroCheck: false,
 		base: 'origin/main',
 		build: true,
+		characterCorrections: new Map(),
 	};
 
 	for (let index = 0; index < argv.length; index += 1) {
@@ -22,6 +23,19 @@ function parseArgs(argv) {
 			args.astroCheck = true;
 		} else if (token === '--base') {
 			args.base = argv[index + 1] || args.base;
+			index += 1;
+		} else if (token === '--allow-character-correction') {
+			const value = argv[index + 1] || '';
+			const separator = value.indexOf('=');
+			const slug = value.slice(0, separator);
+			const source = value.slice(separator + 1);
+			let parsedSource;
+			try { parsedSource = new URL(source); } catch {}
+			if (separator < 1 || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || parsedSource?.protocol !== 'https:') {
+				throw new Error('Use --allow-character-correction <slug>=<https://fuente-verificable>.');
+			}
+			if (args.characterCorrections.has(slug)) throw new Error(`Duplicate character correction for ${slug}.`);
+			args.characterCorrections.set(slug, source);
 			index += 1;
 		} else if (token === '--skip-build') {
 			args.build = false;
@@ -49,6 +63,7 @@ function printUsage() {
 			'  --all             Run full movie/profile audits instead of targeted audits',
 			'  --astro-check     Run Astro type/content checks before build',
 			'  --skip-build      Skip npm run build',
+			'  --allow-character-correction <slug>=<https URL>  Allow a verified credit correction for one title',
 		].join('\n'),
 	);
 }
@@ -153,26 +168,39 @@ function getMovieFilesNotInBase(base) {
 		.filter((file) => !baseFiles.has(file));
 }
 
-function classifyMovieChanges(base, files) {
+function classifyMovieChanges(base, files, characterCorrections = new Map()) {
 	const peopleChanges = [], characterOnly = [], canonical = [];
+	const usedCorrections = new Set();
 	for (const file of files) {
 		if (!file.startsWith('src/data/movies/') || !file.endsWith('.json')) continue;
 		const previous = base ? spawnSync('git', ['show', `${base}:${file}`], { cwd: ROOT_DIR, encoding: 'utf8' }) : null;
 		try {
-			if (!previous || previous.status !== 0) throw new Error('No baseline');
-			const before = JSON.parse(previous.stdout);
 			const after = JSON.parse(readFileSync(path.join(ROOT_DIR, file), 'utf8'));
+			validateCharacterChanges(after, file);
+			if (!previous || previous.status !== 0) {
+				peopleChanges.push(file);
+				canonical.push(file);
+				continue;
+			}
+			const before = JSON.parse(previous.stdout);
+			const source = characterCorrections.get(after.slug);
+			if (requireCreditCorrectionEvidence(before, after, file, source)) {
+				usedCorrections.add(after.slug);
+				console.warn(`${file}: explicit character correction uses ${source}; record the exact old and new credit in the task report.`);
+			}
 			if (JSON.stringify([before.director ?? '', before.mainCast ?? []]) !== JSON.stringify([after.director ?? '', after.mainCast ?? []])) peopleChanges.push(file);
 			if (hasOnlyCharacterChanges(before, after)) {
-				validateCharacterChanges(after, file);
 				characterOnly.push(file);
 			} else canonical.push(file);
 		} catch (error) {
 			// Invalid or unreadable input must take the full people and content gates.
-			if (error?.message?.includes('invalid or ambiguous character credit') || error?.message?.includes('invalid castCharacters')) throw error;
+			if (error?.message?.includes('invalid or ambiguous character credit') || error?.message?.includes('invalid castCharacters') || error?.message?.includes('invalid mainCast') || error?.message?.includes('stored character credits may not be removed or rewritten')) throw error;
 			peopleChanges.push(file);
 			canonical.push(file);
 		}
+	}
+	for (const slug of characterCorrections.keys()) {
+		if (!usedCorrections.has(slug)) throw new Error(`Character correction for ${slug} did not match a removed or rewritten stored credit.`);
 	}
 	return { peopleChanges, characterOnly, canonical };
 }
@@ -196,7 +224,7 @@ function main() {
 	const newlyAddedMovieFiles = getMovieFilesNotInBase(base);
 	const changedFiles = [...new Set([...getChangedFiles(base), ...newlyAddedMovieFiles])];
 	const globalAuditFiles = getGlobalAuditFiles(base, changedFiles);
-	const { peopleChanges: peopleCreditChangedFiles, characterOnly, canonical } = classifyMovieChanges(base, changedFiles);
+	const { peopleChanges: peopleCreditChangedFiles, characterOnly, canonical } = classifyMovieChanges(base, changedFiles, args.characterCorrections);
 	const moviePeopleAuditFiles = [...new Set([...newlyAddedMovieFiles, ...peopleCreditChangedFiles])];
 	const movieContentChanged = hasAny(
 		changedFiles,

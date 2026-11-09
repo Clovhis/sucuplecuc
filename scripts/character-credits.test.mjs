@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { isRealCharacterDate } from '../src/lib/character-credits.ts';
 
-test('valida fechas de procedencia sin aplicarles vencimiento', () => {
+test('la fecha de procedencia valida el formato sin límite de antigüedad', () => {
 	assert.equal(isRealCharacterDate('2024-02-29'), true);
 	assert.equal(isRealCharacterDate('2023-02-29'), false);
 	assert.equal(isRealCharacterDate('2026-2-01'), false);

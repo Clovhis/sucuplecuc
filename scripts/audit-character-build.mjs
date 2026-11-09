@@ -1,6 +1,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import { validateCharacterChanges } from './character-change-policy.mjs';
 
 // Compare every persisted credit with the static search index and movie HTML.
 // The build directory may be a normal build or one generated with a future clock.
@@ -11,6 +12,7 @@ const bySlug = new Map(payload.movies.map((row) => [row[0], row[8] ?? []]));
 let films = 0, credits = 0;
 for (const file of (await readdir('src/data/movies')).filter((entry) => entry.endsWith('.json'))) {
 	const movie = JSON.parse(await readFile(path.join('src/data/movies', file), 'utf8'));
+	validateCharacterChanges(movie, file);
 	if (!movie.castCharacters?.length) continue;
 	films++; credits += movie.castCharacters.length;
 	const indexed = bySlug.get(movie.slug);

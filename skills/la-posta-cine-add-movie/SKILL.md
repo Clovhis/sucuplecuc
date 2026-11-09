@@ -187,10 +187,17 @@ If the final label is `Cine`, invoke `la-posta-cine-cartelera-revalidator` befor
 
 ## Character credits
 
-After the cast and person identities are verified, follow `docs/personajes-reparto.md` to enrich only the changed movies with `npm run enrich:characters -- --changed --license-confirmed --apply`. Run this only after the documented pilot passes and TMDB credentials, attribution and the applicable license are confirmed. Review the checkpoint; leave unresolved credits absent. If the prerequisites are unavailable, report the pending enrichment and do not infer characters. The build incorporates verified credits into the existing search index automatically.
+After verifying the final cast and person identities, enrich each new movie automatically. For one title, run:
 
-TMDB character credits are persistent catalog data under the express authorization communicated by the CinePosta owner; do not expire or delete them by age. Refresh is optional and targeted: `npm run enrich:characters -- --slug <slug> --refresh --license-confirmed --apply`. Preserve existing credits when the API fails or differs, record discrepancies for review, and use verified sources for any manual correction. Keep the TMDB logo and attribution.
+```bash
+npm run enrich:characters -- --slug <slug> --apply
+```
 
+After every cast in a batch is verified, run `npm run enrich:characters -- --changed --apply` once. The command processes the full selected set; it has no implicit pilot or batch cap. It skips every movie that already has stored character credits and only appends newly verified entries.
+
+TMDB results are accepted only when title/year, director, cast names, and IMDb person IDs match the verified movie and people catalog. No match, no character data, missing `TMDB_API_KEY`, or an API error leaves an internal pending record without inventing or writing a character. Continue the movie load; character lookup must not block it. The API key belongs in `.env.local` or the process environment and must never enter tracked files.
+
+`castCharacters` is stored in the movie JSON and flows into the movie detail page and MiniSearch index during the normal build. The automated enricher never rewrites or deletes a stored credit. A correction must be explicitly requested, match the exact movie and person IDs, and include verifiable source evidence in the title's evidence ledger. `validate:content` blocks removal or rewriting unless that title is explicitly allowed with `--allow-character-correction <slug>=<https://verified-source>`. After a character change, run `npm run validate:content`; after the build, run `npm run audit:character-build`.
 ## Gate
 
 Run the candidate checks; they enforce schema, originality, people, taxonomy, generated route/reaction, carousel eligibility, and forbidden content fields:

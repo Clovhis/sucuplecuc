@@ -133,3 +133,10 @@ Report candidate paths, total-catalog count when applicable, the semantic genre 
 For a batch, pass every candidate explicitly; do not let an untracked-file glob silently decide the audit set. Keep the same list for the pre-build no-skip audit and the post-build route audit, and report agreement between manifest count, source-file count, and audited candidate count.
 
 When candidates are uncommitted, do not rely on `npm run validate:content` or `git diff <base>...HEAD` to discover them: those checks can see zero changed movie files until a commit exists. Preserve the explicit working-tree manifest. For poster-only revalidation, capture the baseline auditor findings first and distinguish inherited trailer/content errors from regressions introduced by the candidate; inherited errors remain visible but do not get silently “fixed” by changing unrelated fields.
+
+
+## Character-credit audit
+
+For every candidate with `castCharacters`, check that each actor exactly matches one `mainCast` entry, the credited character is nonempty, TMDB movie/person IDs are positive safe integers, each actor and person ID appears once, and every character in a movie uses the same movie ID. Validate the source date and any localized display name or variants. The normal content validator enforces these checks on changed files; `npm run audit:character-build` checks the whole catalog and verifies that every stored credit remains in the movie page and MiniSearch index.
+
+Character enrichment is append-only. `validate:content` blocks removal or rewriting of any stored credit against `origin/main`. Treat a changed or removed stored credit as a correction only when the user explicitly requested it and the exact replacement is backed by verifiable movie/person evidence; record the exact old/new value and source in the task report, and pass `--allow-character-correction <slug>=<https://verified-source>` for that title only. An unavailable API or unmatched title remains a pending item; it does not invalidate the movie load. Do not reprocess already-enriched catalog entries.
