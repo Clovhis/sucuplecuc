@@ -1,0 +1,14 @@
+{
+  "repository": "Clovhis/sucuplecuc",
+  "branch": "main",
+  "scheduler": "native-cloud-with-chatgpt-plan",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Argentina/Buenos_Aires:20261110T100000\nRRULE:FREQ=DAILY;BYHOUR=10;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+  "enabled": false,
+  "automationId": null,
+  "activationStatus": "native-luna-probe-passed-awaiting-real-publication",
+  "modelPolicy": "latest-native-advertised-gpt-luna-max",
+  "billingPolicy": "included-chatgpt-plan-only-no-api-no-extra-credits",
+  "deployTimeoutMinutes": 45,
+  "promptFile": "config/daily-editorial-prompt.md"
+}

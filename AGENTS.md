@@ -31,6 +31,8 @@
 
 ## Automatización
 
+- La nota diaria usa la skill `cineposta-cloud-nota-diaria`, un único ejecutor editorial Luna Max nativo de Codex/Work y `scripts/daily-editorial.mjs` para preparar/validar/publicar. Se limita a las cuotas incluidas de ChatGPT, sin API de pago, sesiones exportadas ni compras de créditos. Contrato y agenda nativa: `docs/daily-editorial.md` y `config/daily-editorial.json`. Activar sólo después de nota real y Pages verificados. El usuario autorizó comprobar producción además de publicar en main.
+
 - Los horarios son de Argentina (UTC-3). Radar usa exclusivamente notas propias. Cada publicación las incorpora al construir el sitio; todos los días a las 10:00 (`0 13 * * *`) se valida y reconstruye para retirar notas vencidas, sin consultar medios ni generar commits de snapshots.
 - Recomendadas tiene su workflow semanal los domingos a la 01:00 (`0 4 * * 0`), después del sábado a la noche. Próximos estrenos tiene un workflow independiente todos los días a la 01:00 (`0 4 * * *`), que excluye películas con fecha de estreno igual o anterior al día de ejecución en Argentina. Cada uno valida y publica sólo su snapshot; si falla, conserva su edición publicada.
 - `deploy.yml` sólo construye/publica el contenido versionado. Corre por push a `main`, manualmente o al finalizar exitosamente un actualizador. No consulta feeds ni regenera ediciones; calcula el Radar local con la fecha de Argentina.
