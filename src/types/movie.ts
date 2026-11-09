@@ -46,7 +46,7 @@ export interface MovieEditorial {
 export interface MovieCastCharacter {
 	actor: string;
 	character: string;
-	/** Nombre localizado de exhibición, sólo con fuente verificada. */
+	/** Forma completa o localizada para mostrar, sólo con fuente verificada. */
 	displayCharacter?: string;
 	tmdbMovieId: number;
 	tmdbPersonId: number;

@@ -1,0 +1,1153 @@
+{
+  "summary": {
+    "checkedAt": "2026-11-09",
+    "mode": "apply",
+    "movies": 2003,
+    "storedCredits": 7039,
+    "matchedCredits": 7033,
+    "missingFromTmdb": 0,
+    "ambiguousTmdbPerson": 4,
+    "actorNameMismatch": 2,
+    "characterDifferences": 0,
+    "confirmedAdditions": 0,
+    "apiErrors": 0,
+    "apiCalls": 2058
+  },
+  "records": [
+    {
+      "file": "aida-y-vuelta-2026.json",
+      "slug": "aida-y-vuelta-2026",
+      "tmdbMovieId": 1370123,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Mariano Peña",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 374832
+        }
+      ]
+    },
+    {
+      "file": "american-boy-a-profile-of-steven-prince-1978.json",
+      "slug": "american-boy-a-profile-of-steven-prince-1978",
+      "tmdbMovieId": 33470,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Steven Prince",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 76155
+        }
+      ]
+    },
+    {
+      "file": "anora-2024.json",
+      "slug": "anora-2024",
+      "tmdbMovieId": 1064213,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Paul Weissman",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 3964262
+        }
+      ]
+    },
+    {
+      "file": "baby-do-die-do-2026.json",
+      "slug": "baby-do-die-do-2026",
+      "tmdbMovieId": 1512084,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Rachit Singh",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 4308463
+        }
+      ]
+    },
+    {
+      "file": "belen-2025.json",
+      "slug": "belen-2025",
+      "tmdbMovieId": 1301844,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Camila Pláate",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2286273
+        }
+      ]
+    },
+    {
+      "file": "cruzadas-2011.json",
+      "slug": "cruzadas-2011",
+      "tmdbMovieId": 287367,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Nacha Guevara",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 262525
+        }
+      ]
+    },
+    {
+      "file": "el-ansia-1983.json",
+      "slug": "el-ansia-1983",
+      "tmdbMovieId": 11654,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Catherine Deneuve",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 50
+        }
+      ]
+    },
+    {
+      "file": "el-hombre-de-mimbre-1973.json",
+      "slug": "el-hombre-de-mimbre-1973",
+      "tmdbMovieId": 16307,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Diane Cilento",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 45467
+        }
+      ]
+    },
+    {
+      "file": "el-perro-que-no-calla-2021.json",
+      "slug": "el-perro-que-no-calla-2021",
+      "tmdbMovieId": 638784,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Daniel Katz",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2079701
+        }
+      ]
+    },
+    {
+      "file": "el-ultimo-gigante-2026.json",
+      "slug": "el-ultimo-gigante-2026",
+      "tmdbMovieId": 1487320,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Matías Mayer",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2483053
+        }
+      ]
+    },
+    {
+      "file": "el-yerno-2026.json",
+      "slug": "el-yerno-2026",
+      "tmdbMovieId": 1651233,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Verónica Bravo",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2448601
+        }
+      ]
+    },
+    {
+      "file": "embaucadores-2023.json",
+      "slug": "embaucadores-2023",
+      "tmdbMovieId": 717980,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Briana Middleton",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2996176
+        }
+      ]
+    },
+    {
+      "file": "fear-street-prom-queen-2025.json",
+      "slug": "fear-street-prom-queen-2025",
+      "tmdbMovieId": 1001414,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Suzanna Son",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2971462
+        }
+      ]
+    },
+    {
+      "file": "franz-2025.json",
+      "slug": "franz-2025",
+      "tmdbMovieId": 1157322,
+      "checkedAt": "2026-11-09",
+      "stored": 5,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [
+        {
+          "actor": "Peter Kurth",
+          "tmdbPersonId": 15486,
+          "matchCount": 2
+        },
+        {
+          "actor": "Katharina Stark",
+          "tmdbPersonId": 1682097,
+          "matchCount": 2
+        },
+        {
+          "actor": "Sebastian Schwarz",
+          "tmdbPersonId": 133262,
+          "matchCount": 2
+        }
+      ],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": []
+    },
+    {
+      "file": "friday-the-13th-part-viii-jason-takes-manhattan-1989.json",
+      "slug": "friday-the-13th-part-viii-jason-takes-manhattan-1989",
+      "tmdbMovieId": 10283,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Sharlene Martin",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 159614
+        }
+      ]
+    },
+    {
+      "file": "haikyu-the-dumpster-battle-2024.json",
+      "slug": "haikyu-the-dumpster-battle-2024",
+      "tmdbMovieId": 1012201,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Ayumu Murase",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1325230
+        }
+      ]
+    },
+    {
+      "file": "hollywood-ending-2002.json",
+      "slug": "hollywood-ending-2002",
+      "tmdbMovieId": 9689,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Mark Rydell",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 21958
+        }
+      ]
+    },
+    {
+      "file": "hoop-dreams-1994.json",
+      "slug": "hoop-dreams-1994",
+      "tmdbMovieId": 14275,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Emma Gates",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 6549460
+        }
+      ]
+    },
+    {
+      "file": "hustle-2022.json",
+      "slug": "hustle-2022",
+      "tmdbMovieId": 705861,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Kenny Smith",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 267116
+        }
+      ]
+    },
+    {
+      "file": "iron-lung-2026.json",
+      "slug": "iron-lung-2026",
+      "tmdbMovieId": 1116201,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Mark Fischbach",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1494060
+        }
+      ]
+    },
+    {
+      "file": "jack-and-jill-2011.json",
+      "slug": "jack-and-jill-2011",
+      "tmdbMovieId": 71880,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Rohan Chand",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 935701
+        }
+      ]
+    },
+    {
+      "file": "la-asistente-de-la-morgue-2026.json",
+      "slug": "la-asistente-de-la-morgue-2026",
+      "tmdbMovieId": 1470130,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "John Adams",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1391986
+        }
+      ]
+    },
+    {
+      "file": "la-caida-de-la-ballena-2026.json",
+      "slug": "la-caida-de-la-ballena-2026",
+      "tmdbMovieId": 1255833,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 1,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [
+        {
+          "actor": "Austin Abrams",
+          "tmdbName": "Austin AbraDIH",
+          "tmdbPersonId": 148992
+        }
+      ],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": []
+    },
+    {
+      "file": "la-boca-del-diablo-2026.json",
+      "slug": "la-boca-del-diablo-2026",
+      "tmdbMovieId": 1481343,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Tommi Rose",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1979741
+        }
+      ]
+    },
+    {
+      "file": "la-caja-azul-2026.json",
+      "slug": "la-caja-azul-2026",
+      "tmdbMovieId": 1620996,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Gustavo Bassani",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 3382922
+        }
+      ]
+    },
+    {
+      "file": "la-hermanastra-fea-2025.json",
+      "slug": "la-hermanastra-fea-2025",
+      "tmdbMovieId": 1284120,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Thea Sofie Loch Næss",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1384976
+        }
+      ]
+    },
+    {
+      "file": "la-montana-sagrada-1973.json",
+      "slug": "la-montana-sagrada-1973",
+      "tmdbMovieId": 8327,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Horacio Salinas",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 55123
+        }
+      ]
+    },
+    {
+      "file": "la-purga-por-siempre-2021.json",
+      "slug": "la-purga-por-siempre-2021",
+      "tmdbMovieId": 602223,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Ana de la Reguera",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 57409
+        }
+      ]
+    },
+    {
+      "file": "los-descendientes-viaje-al-mundo-oscuro-2026.json",
+      "slug": "los-descendientes-viaje-al-mundo-oscuro-2026",
+      "tmdbMovieId": 1318621,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Kiara Romero",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2982884
+        }
+      ]
+    },
+    {
+      "file": "los-dos-papas-2019.json",
+      "slug": "los-dos-papas-2019",
+      "tmdbMovieId": 551332,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Cristina Banegas",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1028517
+        }
+      ]
+    },
+    {
+      "file": "modha-rathri-2026.json",
+      "slug": "modha-rathri-2026",
+      "tmdbMovieId": 1685882,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Chetan",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1321712
+        }
+      ]
+    },
+    {
+      "file": "mortal-kombat-ii-2026.json",
+      "slug": "mortal-kombat-ii-2026",
+      "tmdbMovieId": 931285,
+      "checkedAt": "2026-11-09",
+      "stored": 6,
+      "matched": 6,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Ludi Lin",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1525689
+        }
+      ]
+    },
+    {
+      "file": "nada-entre-los-dos-2026.json",
+      "slug": "nada-entre-los-dos-2026",
+      "tmdbMovieId": 1632812,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Pía Watson",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2808115
+        }
+      ]
+    },
+    {
+      "file": "nando-entre-dos-mundos-2026.json",
+      "slug": "nando-entre-dos-mundos-2026",
+      "tmdbMovieId": 1487864,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Julia Yamaguchi",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 3520794
+        },
+        {
+          "actor": "Jottapê",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2374742
+        }
+      ]
+    },
+    {
+      "file": "ninja-wars-blackfox-vs-shoguns-ninja-2026.json",
+      "slug": "ninja-wars-blackfox-vs-shoguns-ninja-2026",
+      "tmdbMovieId": 1593380,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Kanon Miyahara",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1501758
+        }
+      ]
+    },
+    {
+      "file": "no-es-pais-para-solteros-2026.json",
+      "slug": "no-es-pais-para-solteros-2026",
+      "tmdbMovieId": 1317448,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Cristiano Caccamo",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1634155
+        }
+      ]
+    },
+    {
+      "file": "nosotros-al-final-2026.json",
+      "slug": "nosotros-al-final-2026",
+      "tmdbMovieId": 1636593,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Belle Mariano",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1796626
+        }
+      ]
+    },
+    {
+      "file": "parque-lezama-2026.json",
+      "slug": "parque-lezama-2026",
+      "tmdbMovieId": 1631485,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Manuela Menéndez",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 3300568
+        }
+      ]
+    },
+    {
+      "file": "por-que-me-case-entonces-2026.json",
+      "slug": "por-que-me-case-entonces-2026",
+      "tmdbMovieId": 1522689,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Jill Scott",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 4721
+        }
+      ]
+    },
+    {
+      "file": "queres-ser-mi-hijo-2026.json",
+      "slug": "queres-ser-mi-hijo-2026",
+      "tmdbMovieId": 1779106,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Charo López",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2038404
+        }
+      ]
+    },
+    {
+      "file": "saint-omer-el-pueblo-contra-laurence-coly-2022.json",
+      "slug": "saint-omer-el-pueblo-contra-laurence-coly-2022",
+      "tmdbMovieId": 925943,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Kayije Kagame",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 3268219
+        }
+      ]
+    },
+    {
+      "file": "shoah-1985.json",
+      "slug": "shoah-1985",
+      "tmdbMovieId": 42044,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Raul Hilberg",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2697967
+        }
+      ]
+    },
+    {
+      "file": "suenos-de-oslo-2024.json",
+      "slug": "suenos-de-oslo-2024",
+      "tmdbMovieId": 1228682,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Ella Øverbye",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2221380
+        },
+        {
+          "actor": "Selome Emnetu",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1569491
+        }
+      ]
+    },
+    {
+      "file": "susana-y-elvira-sin-plan-b-2026.json",
+      "slug": "susana-y-elvira-sin-plan-b-2026",
+      "tmdbMovieId": 1580803,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Mabel Moreno",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2071690
+        },
+        {
+          "actor": "Claudio Cataño",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1633150
+        },
+        {
+          "actor": "Emmanuel Restrepo",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 3513369
+        }
+      ]
+    },
+    {
+      "file": "terrorificamente-muertos-1987.json",
+      "slug": "terrorificamente-muertos-1987",
+      "tmdbMovieId": 765,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Dan Hicks",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 11750
+        }
+      ]
+    },
+    {
+      "file": "thats-my-boy-2012.json",
+      "slug": "thats-my-boy-2012",
+      "tmdbMovieId": 87428,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Tony Orlando",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 84920
+        }
+      ]
+    },
+    {
+      "file": "the-mandalorian-and-grogu-2026.json",
+      "slug": "the-mandalorian-and-grogu-2026",
+      "tmdbMovieId": 1228710,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Steve Blum",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 571562
+        }
+      ]
+    },
+    {
+      "file": "titane-2021.json",
+      "slug": "titane-2021",
+      "tmdbMovieId": 630240,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Agathe Rousselle",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2418333
+        }
+      ]
+    },
+    {
+      "file": "un-hijo-propio-2026.json",
+      "slug": "un-hijo-propio-2026",
+      "tmdbMovieId": 1616131,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [
+        {
+          "actor": "Mayra Sérbulo",
+          "tmdbPersonId": 17687,
+          "matchCount": 2
+        }
+      ],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Ana Celeste",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 4060453
+        }
+      ]
+    },
+    {
+      "file": "un-lugar-en-el-mundo-1992.json",
+      "slug": "un-lugar-en-el-mundo-1992",
+      "tmdbMovieId": 32635,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "José Sacristán",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 105217
+        }
+      ]
+    },
+    {
+      "file": "until-dawn-2025.json",
+      "slug": "until-dawn-2025",
+      "tmdbMovieId": 1232546,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Michael Cimino",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 2342988
+        }
+      ]
+    },
+    {
+      "file": "ven-a-volar-conmigo-2026.json",
+      "slug": "ven-a-volar-conmigo-2026",
+      "tmdbMovieId": 1662414,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 3,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Kelly Eviston-Quinnett",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 1923615
+        }
+      ]
+    },
+    {
+      "file": "very-important-perros-2000.json",
+      "slug": "very-important-perros-2000",
+      "tmdbMovieId": 13785,
+      "checkedAt": "2026-11-09",
+      "stored": 4,
+      "matched": 4,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Michael Hitchcock",
+          "reason": "imdb-id-mismatch",
+          "tmdbPersonId": 75463
+        }
+      ]
+    },
+    {
+      "file": "wolf-children-2012.json",
+      "slug": "wolf-children-2012",
+      "tmdbMovieId": 110420,
+      "checkedAt": "2026-11-09",
+      "stored": 2,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": [
+        {
+          "actor": "Mitsuki Tanimura",
+          "reason": "multiple-tmdb-cast-matches"
+        }
+      ]
+    },
+    {
+      "file": "wolfs-2024.json",
+      "slug": "wolfs-2024",
+      "tmdbMovieId": 877817,
+      "checkedAt": "2026-11-09",
+      "stored": 3,
+      "matched": 2,
+      "missingFromTmdb": [],
+      "ambiguousTmdbPerson": [],
+      "actorNameMismatch": [
+        {
+          "actor": "Austin Abrams",
+          "tmdbName": "Austin AbraDIH",
+          "tmdbPersonId": 148992
+        }
+      ],
+      "characterDifferences": [],
+      "confirmedAdditions": [],
+      "unverifiedCandidates": []
+    }
+  ]
+}

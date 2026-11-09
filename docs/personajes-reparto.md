@@ -1,6 +1,6 @@
 # Personajes del reparto
 
-Los créditos de personajes viven en el campo opcional `castCharacters` de cada película. `actor` debe coincidir exactamente con `mainCast`; `character` conserva el nombre acreditado por TMDB. `tmdbMovieId` y `tmdbPersonId` identifican el crédito de origen, y `verifiedAt` registra la fecha de consulta. `displayCharacter` y `variants` sólo se agregan con una fuente verificable; no se infieren traducciones ni aliases.
+Los créditos de personajes viven en el campo opcional `castCharacters` de cada película. `actor` debe coincidir exactamente con `mainCast`; `character` conserva el rol acreditado por TMDB o, si falta allí, el rol verificado en una fuente web. `tmdbMovieId` y `tmdbPersonId` identifican las entidades de película y persona; `verifiedAt` registra la fecha de consulta a TMDB. Si una fuente fiable confirma una forma completa que TMDB abrevia, conserva el texto original en `character` y muestra la forma completa en `displayCharacter`. Las URLs y el dato corroborado se guardan en el reporte de la carga; `displayCharacter` y `variants` no se infieren ni traducen.
 
 ## Alta
 
@@ -16,7 +16,7 @@ Para una tanda, una vez verificado el reparto de todas las fichas seleccionadas:
 npm run enrich:characters -- --changed --apply
 ```
 
-El lote procesa todos los archivos seleccionados, sin límite implícito. Omite las películas que ya tienen personajes almacenados y sólo agrega créditos verificados. Una coincidencia exige título y año únicos, director coincidente y al menos dos actores con IMDb coincidente entre `people.json` y los IDs externos de TMDB. Si falta la clave, no hay personajes o falla la API, el checkpoint registra el pendiente y la carga sigue sin inventar datos.
+El lote procesa todos los archivos seleccionados, sin límite implícito. Omite las películas que ya tienen personajes almacenados y sólo agrega créditos verificados. Una coincidencia exige título y año únicos, director coincidente y al menos dos actores con IMDb coincidente entre `people.json` y los IDs externos de TMDB. El registro de pendientes evita inventar datos, pero no significa que una carga nueva esté lista para aprobarse: la información de personajes es casi obligatoria. Si TMDB no devuelve el rol o la API no lo resuelve, hay que buscar fuentes web fiables y guardar la evidencia en el reporte. El auditor sólo puede aceptar una carga sin personajes cuando la película sea verdaderamente de nicho y se documenten las búsquedas agotadas y la falta de información fiable. Una falla de API o una clave ausente nunca habilita por sí sola esa excepción.
 
 ## Datos y operación
 
