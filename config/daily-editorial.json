@@ -4,12 +4,26 @@
   "scheduler": "native-cloud-with-chatgpt-plan",
   "timezone": "America/Argentina/Buenos_Aires",
   "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Argentina/Buenos_Aires:20261110T100000\nRRULE:FREQ=DAILY;BYHOUR=10;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
-  "enabled": false,
-  "automationId": null,
-  "activationStatus": "native-luna-probe-passed-awaiting-real-publication",
+  "enabled": true,
+  "automationId": "Automation_8853e9bbe7cc8191a36e6603b81239d7",
+  "activationStatus": "active-native-luna-max-pages-buffer-verified",
   "modelPolicy": "latest-native-advertised-gpt-luna-max",
   "billingPolicy": "included-chatgpt-plan-only-no-openai-api-no-extra-credits",
-  "social": { "provider": "buffer", "account": "@cineposta", "mode": "shareNow", "workflow": "publish-buffer-editorial-x.yml" },
+  "social": {
+    "provider": "buffer",
+    "account": "@cineposta",
+    "mode": "shareNow",
+    "workflow": "publish-buffer-editorial-x.yml"
+  },
   "deployTimeoutMinutes": 45,
-  "promptFile": "config/daily-editorial-prompt.md"
+  "promptFile": "config/daily-editorial-prompt.md",
+  "cloudEnvironmentConfigId": "b64337bc-4643-41ad-8443-f12cbf43ad14~asenvcfg_ab40f4c047148191a99989e9b26c7686",
+  "activationProbe": {
+    "date": "2026-11-09",
+    "model": "gpt-6-luna",
+    "effort": "max",
+    "agentId": "/root/cineposta_scheduler_probe",
+    "status": "completed",
+    "bufferRetryRun": 42677431215
+  }
 }
