@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-10",
+  "slug": "native-cinema-showcase-smithsonian-2026",
+  "topicKey": "native-cinema-showcase-2026-online-program-announcement",
+  "title": "Del básquet a una heladera insólita: vuelve el Native Cinema Showcase",
+  "execution": {
+    "provider": "codex-native",
+    "model": "gpt-6-luna",
+    "effort": "max",
+    "agentId": "/root/cineposta_luna_20261110",
+    "probe": "passed",
+    "status": "completed",
+    "nativeTool": "collaboration.spawn_agent",
+    "forkTurns": "none",
+    "modelSelectionSource": "official native runtime descriptor",
+    "availableModels": [
+      {
+        "model": "gpt-6-luna",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    ],
+    "completedAt": "2026-11-10T13:25:35.556272+00:00"
+  },
+  "tweet": "Una heladera inesperada, básquet universitario y relatos en seis lenguas: 14 películas del Native Cinema Showcase llegan online del 13 al 27/11. https://www.cineposta.com.ar/editorial/native-cinema-showcase-smithsonian-2026/ #CineIndigena #Smithsonian",
+  "decision": "Elegí el anuncio del Native Cinema Showcase 2026, publicado el 9 de noviembre y cubierto al día siguiente. El ángulo cruza la escala del programa —14 películas, cinco países y seis lenguas— con relatos concretos de deporte, memoria, territorio y vida cotidiana. Así la novedad se entiende como una selección heterogénea y verificable, sin presentar una sola obra como resumen de comunidades distintas.",
+  "sourceChecks": [
+    {
+      "url": "https://www.si.edu/newsdesk/releases/national-museum-american-indian-presents-2026-native-cinema-showcase",
+      "role": "primary",
+      "checkedOn": "2026-11-10",
+      "publishedOn": "2026-11-09",
+      "facts": "El comunicado anuncia la muestra bajo demanda del 13 al 27 de noviembre a las 17:00 ET: cuatro largometrajes y diez cortos de Canadá, Guatemala, México, Uruguay y Estados Unidos; menciona seis lenguas y aclara que todas las películas salvo Remaining Native estarán disponibles mundialmente."
+    },
+    {
+      "url": "https://nativenewsonline.net/arts-entertainment/smithsonians-national-museum-of-the-american-indian-announces-return-of-native-cinema-showcase/",
+      "role": "secondary",
+      "checkedOn": "2026-11-10",
+      "publishedOn": "2026-11-10",
+      "facts": "La nota de Native News Online, fechada el 10 de noviembre, confirma las fechas de la muestra, el formato online, las 14 películas, la lista de países y lenguas; amplía las sinopsis de La Raya, Medicine Ball, Remaining Native y varios cortos."
+    },
+    {
+      "url": "https://americanindian.si.edu/native-cinema-showcase-2026/all-films",
+      "role": "primary",
+      "checkedOn": "2026-11-10",
+      "publishedOn": "fecha desconocida",
+      "facts": "El programa oficial agrupa los títulos en cuatro largometrajes y diez cortos, publica imágenes identificadas para las películas y confirma la ventana de disponibilidad del 13 al 27 de noviembre."
+    }
+  ],
+  "imageChecks": [
+    {
+      "src": "assets/editorial/native-cinema-showcase-smithsonian-2026/portada.webp",
+      "sourceUrl": "https://americanindian.si.edu/native-cinema-showcase-2026/images/La-Raya--1440.webp",
+      "checkedOn": "2026-11-10",
+      "description": "El original muestra a un grupo de chicos y chicas caminando con instrumentos alrededor de una heladera sobre un carro, imagen central de La Raya y portada de la nota."
+    },
+    {
+      "src": "assets/editorial/native-cinema-showcase-smithsonian-2026/medicine-ball.webp",
+      "sourceUrl": "https://americanindian.si.edu/native-cinema-showcase-2026/images/medicine-ball--1440.webp",
+      "checkedOn": "2026-11-10",
+      "description": "El still muestra a jugadoras en una cancha de gimnasio; acompaña el pasaje sobre el básquet universitario de Medicine Ball."
+    },
+    {
+      "src": "assets/editorial/native-cinema-showcase-smithsonian-2026/ku-stevens.webp",
+      "sourceUrl": "https://americanindian.si.edu/native-cinema-showcase-2026/images/remaining-native--1440.webp",
+      "checkedOn": "2026-11-10",
+      "description": "El original muestra a una persona corriendo sola por una ruta de grava desde una toma aérea; acompaña el relato de Ku Stevens que vuelve sobre el recorrido de su bisabuelo."
+    },
+    {
+      "src": "assets/editorial/native-cinema-showcase-smithsonian-2026/curtido-moose-hides.webp",
+      "sourceUrl": "https://americanindian.si.edu/native-cinema-showcase-2026/images/we-get-better-when-we-tan-moose-hides--1440.webp",
+      "checkedOn": "2026-11-10",
+      "description": "Se ve a una mujer trabajando sobre una piel extendida en una lona; acompaña el corto sobre la recuperación del curtido tradicional Dené."
+    },
+    {
+      "src": "assets/editorial/native-cinema-showcase-smithsonian-2026/escalada.webp",
+      "sourceUrl": "https://americanindian.si.edu/native-cinema-showcase-2026/images/grateful-to-be-on-the-land--1440.webp",
+      "checkedOn": "2026-11-10",
+      "description": "La toma desde arriba muestra a una escaladora con casco en la roca y personas abajo; acompaña el vínculo entre clínicas, comunidad y territorio del corto de Trevor Solway."
+    },
+    {
+      "src": "assets/editorial/native-cinema-showcase-smithsonian-2026/cocina-fry-roti.webp",
+      "sourceUrl": "https://americanindian.si.edu/native-cinema-showcase-2026/images/legend-of-fry-roti--1440.webp",
+      "checkedOn": "2026-11-10",
+      "description": "El still muestra a tres mujeres reunidas en una cocina, una con una bandeja de comida; acompaña el corto sobre una disputa culinaria entre herencias navajo y bengalí."
+    }
+  ],
+  "validation": {
+    "words": 1050,
+    "images": 5,
+    "content": "passed",
+    "astroCheck": "passed",
+    "build": "passed",
+    "desktopAndMobile": "passed"
+  },
+  "url": "https://www.cineposta.com.ar/editorial/native-cinema-showcase-smithsonian-2026/"
+}
