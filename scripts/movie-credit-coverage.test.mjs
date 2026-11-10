@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createMovieCreditCoverageDraft, validateMovieCreditCoverage } from './movie-credit-coverage.mjs';
+import { createMovieCreditCoverageDraft, hasFirstAndLastName, normalizeCreditName, validateMovieCreditCoverage } from './movie-credit-coverage.mjs';
 
 const reviewedOn = '2026-11-10';
 const fullCreditsUrl = 'https://www.imdb.com/title/tt1234567/fullcredits/';
@@ -32,6 +32,32 @@ function reviewFor(film = movie) {
 		],
 	};
 }
+
+test('normaliza nombres Unicode sin transliterar ni borrar marcas no latinas', () => {
+	assert.equal(normalizeCreditName('José O’Neil'), normalizeCreditName("JOSE O'Neil"));
+	assert.equal(normalizeCreditName('ПЁТР'), normalizeCreditName('пётр'));
+	assert.equal(normalizeCreditName('가'), normalizeCreditName('\u1100\u1161'));
+	assert.equal(normalizeCreditName('ガ'), normalizeCreditName('カ\u3099'));
+	assert.notEqual(normalizeCreditName('й'), normalizeCreditName('и'));
+	assert.notEqual(normalizeCreditName('ガ'), normalizeCreditName('カ'));
+	assert.notEqual(normalizeCreditName('مُحَمَّد'), normalizeCreditName('محمد'));
+	assert.notEqual(normalizeCreditName('कि'), normalizeCreditName('क'));
+	assert.equal(normalizeCreditName('山田太郎'), '山田太郎');
+	assert.notEqual(normalizeCreditName('山田太郎'), normalizeCreditName('山田次郎'));
+	assert.notEqual(normalizeCreditName('山田太郎'), normalizeCreditName('ジョゼ'));
+	for (const name of ['山田太郎', '김민수', 'Пётр Иванов', 'مُحَمَّد', 'श्रेया']) assert.notEqual(normalizeCreditName(name), '');
+});
+
+test('el piso identifica dos componentes pero no separa automáticamente un nombre CJK unido', () => {
+	assert.equal(hasFirstAndLastName('José O’Neil'), true);
+	assert.equal(hasFirstAndLastName('J Smith'), false);
+	assert.equal(hasFirstAndLastName('山 田'), true);
+	assert.equal(hasFirstAndLastName('山田 太郎'), true);
+	assert.equal(hasFirstAndLastName('山田太郎'), false);
+	assert.equal(hasFirstAndLastName('王'), false);
+	assert.equal(hasFirstAndLastName('А. Иванов'), false);
+	assert.equal(hasFirstAndLastName('А Иванов'), false);
+});
 
 test('un film pequeño pasa con el piso de director y dos intérpretes, sin mínimo extra', () => {
 	const review = reviewFor();
@@ -135,4 +161,13 @@ test('el ledger ata identidad y año exactos y no acepta filas de extras como el
 	review.credits.push(extra);
 	review.billingSources[0].relevantCreditCount = 4;
 	assert.ok(validateMovieCreditCoverage(movie, review).errors.some(error => /incidental\/crew y no puede rellenar/u.test(error)));
+});
+
+test('el manifiesto distingue créditos japoneses diferentes sin romper el match de nombres latinos', () => {
+	const film = { ...movie, mainCast: [...movie.mainCast, '山田太郎', '山田次郎'] };
+	const review = reviewFor(film);
+	review.billingSources[0].relevantCreditCount = 5;
+	review.credits.push(personCredit('山田太郎', 'performer', 'supporting'));
+	review.credits.push(personCredit('山田次郎', 'performer', 'supporting'));
+	assert.deepEqual(validateMovieCreditCoverage(film, review).errors, []);
 });

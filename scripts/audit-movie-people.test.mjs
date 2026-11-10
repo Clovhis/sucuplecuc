@@ -26,9 +26,10 @@ function auditBase(movie) {
 	return { people, personImage };
 }
 
-async function createFixture({ missingLeadPortrait = false, brokenExceptionImage = false, exceptionWithPortrait = false, withReview = true, committed = false } = {}) {
+async function createFixture({ missingLeadPortrait = false, brokenExceptionImage = false, exceptionWithPortrait = false, additionalNativeCredit = false, withReview = true, committed = false } = {}) {
 	const root = mkdtempSync(path.join(tmpdir(), 'cineposta-people-credit-audit-'));
 	const mainCast = missingLeadPortrait ? ['Lead Actor One', 'Voice Performer'] : withReview ? ['Lead Actor One', 'Lead Actor Two', 'Voice Performer'] : ['Lead Actor One', 'Lead Actor Two'];
+	if (additionalNativeCredit) mainCast.push('山田太郎');
 	const movie = {
 		slug: 'fixture-film-2026', title: 'Fixture Film', year: 2026,
 		director: 'Director Person', mainCast,
@@ -71,27 +72,31 @@ async function createFixture({ missingLeadPortrait = false, brokenExceptionImage
 				{ url: 'https://www.imdb.com/name/nm0000001/', fact: 'La filmografía del director confirma su participación en el título.' },
 				{ url: 'https://www.themoviedb.org/person/1-director', fact: 'El perfil biográfico independiente confirma la identidad.' },
 			], portrait: { sourceUrl: 'https://commons.wikimedia.org/wiki/Director_Person', visuallyVerified: true } },
-			...movie.mainCast.map((name, index) => name === 'Voice Performer' ? {
-				name, role: 'performer', prominence: 'supporting', decision: 'include', creditSourceUrl: fullCreditsUrl,
-				identitySources: [
-					{ url: 'https://www.imdb.com/name/nm7654321/', fact: 'La filmografía de la persona confirma el crédito en la película.' },
-					{ url: 'https://www.themoviedb.org/person/7654321-voice', fact: 'El perfil independiente coincide con la identidad acreditada.' },
-				],
-				portraitException: {
-					category: 'secondary-voice-no-individual-portrait',
-					reason: 'Voz secundaria confirmada; las fuentes consultadas no identifican un retrato individual confiable.',
-					sourcesSearched: [
-						{ url: 'https://www.imdb.com/name/nm7654321/photos/', result: 'La ficha de persona no publica una foto individual atribuible.' },
-						{ url: 'https://agency.example/talento', result: 'La agencia no publica un retrato verificable de la voz secundaria.' },
+			...movie.mainCast.map((name, index) => {
+				if (name === 'Voice Performer') return {
+					name, role: 'performer', prominence: 'supporting', decision: 'include', creditSourceUrl: fullCreditsUrl,
+					identitySources: [
+						{ url: 'https://www.imdb.com/name/nm7654321/', fact: 'La filmografía de la persona confirma el crédito en la película.' },
+						{ url: 'https://www.themoviedb.org/person/7654321-voice', fact: 'El perfil independiente coincide con la identidad acreditada.' },
 					],
-				},
-			} : {
-				name, role: 'performer', prominence: 'lead', decision: 'include', creditSourceUrl: fullCreditsUrl,
-				identitySources: [
-					{ url: `https://www.imdb.com/name/nm000000${index + 2}/`, fact: `La filmografía confirma el crédito de ${name} en la película.` },
-					{ url: `https://www.themoviedb.org/person/${index + 2}-actor`, fact: `El perfil independiente confirma la identidad de ${name}.` },
-				],
-				portrait: { sourceUrl: `https://commons.wikimedia.org/wiki/${encodeURIComponent(name)}`, visuallyVerified: true },
+					portraitException: {
+						category: 'secondary-voice-no-individual-portrait',
+						reason: 'Voz secundaria confirmada; las fuentes consultadas no identifican un retrato individual confiable.',
+						sourcesSearched: [
+							{ url: 'https://www.imdb.com/name/nm7654321/photos/', result: 'La ficha de persona no publica una foto individual atribuible.' },
+							{ url: 'https://agency.example/talento', result: 'La agencia no publica un retrato verificable de la voz secundaria.' },
+						],
+					},
+				};
+				const isNativeSupporting = name === '山田太郎';
+				return {
+					name, role: 'performer', prominence: isNativeSupporting ? 'supporting' : 'lead', decision: 'include', creditSourceUrl: fullCreditsUrl,
+					identitySources: [
+						{ url: `https://www.imdb.com/name/nm000000${index + 2}/`, fact: `La filmografía confirma el crédito de ${name} en la película.` },
+						{ url: `https://www.themoviedb.org/person/${index + 2}-actor`, fact: `El perfil independiente confirma la identidad de ${name}.` },
+					],
+					portrait: { sourceUrl: `https://commons.wikimedia.org/wiki/${encodeURIComponent(name)}`, visuallyVerified: true },
+				};
 			}),
 		],
 	};
@@ -115,6 +120,15 @@ async function createFixture({ missingLeadPortrait = false, brokenExceptionImage
 
 test('new movie permits one justified secondary no-photo exception while the photographed floor remains intact', async () => {
 	const fixture = await createFixture();
+	try {
+		const result = run(fixture.root, '--file', fixture.moviePath, '--credit-review', `reports/movie-intake/${fixture.movie.slug}.json`);
+		assert.equal(result.status, 0, result.stderr || result.stdout);
+		assert.match(result.stdout, /Movie people audit passed/u);
+	} finally { rmSync(fixture.root, { recursive: true, force: true }); }
+});
+
+test('the real people audit accepts an additional native-script credit while preserving the photographed floor', async () => {
+	const fixture = await createFixture({ additionalNativeCredit: true });
 	try {
 		const result = run(fixture.root, '--file', fixture.moviePath, '--credit-review', `reports/movie-intake/${fixture.movie.slug}.json`);
 		assert.equal(result.status, 0, result.stderr || result.stdout);

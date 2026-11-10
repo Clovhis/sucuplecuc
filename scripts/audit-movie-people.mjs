@@ -4,7 +4,7 @@ import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import process from 'node:process';
 import sharp from 'sharp';
-import { normalizeCreditName, validateMovieCreditCoverage } from './movie-credit-coverage.mjs';
+import { hasFirstAndLastName, normalizeCreditName, validateMovieCreditCoverage } from './movie-credit-coverage.mjs';
 
 const MOVIES_DIR = path.resolve('src/data/movies');
 const PEOPLE_CATALOG_PATH = path.resolve('src/data/people.json');
@@ -57,13 +57,7 @@ function normalizeWhitespace(value) {
 }
 
 function normalizeKey(value) {
-	return normalizeWhitespace(value)
-		.normalize('NFD')
-		.replace(/[\u0300-\u036f]/g, '')
-		.toLowerCase()
-		.replace(/[^a-z0-9\s']/g, ' ')
-		.replace(/\s+/g, ' ')
-		.trim();
+	return normalizeCreditName(value);
 }
 
 function splitCreditNames(value) {
@@ -128,13 +122,6 @@ async function loadMovies(args) {
 			data: await loadJson(moviePath),
 		})),
 	);
-}
-
-function hasFirstAndLastName(value) {
-	const words = normalizeKey(value)
-		.split(' ')
-		.filter((word) => word.replace(/[^a-z']/g, '').length > 1);
-	return words.length >= 2;
 }
 
 function resolveLocalPortraitPath(personRecord) {

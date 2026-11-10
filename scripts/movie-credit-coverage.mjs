@@ -23,11 +23,23 @@ export function createMovieCreditCoverageDraft(movie, createdOn) {
 export function normalizeCreditName(value) {
 	return String(value ?? '')
 		.normalize('NFD')
-		.replace(/[\u0300-\u036f]/gu, '')
+		.replace(/(?<=\p{Script=Latin})\p{M}+/gu, '')
 		.toLowerCase()
-		.replace(/[^a-z0-9\s']/gu, ' ')
+		.replace(/[\u2018\u2019\u02bc]/gu, "'")
+		.replace(/[^\p{L}\p{M}\p{N}\s']/gu, ' ')
 		.replace(/\s+/gu, ' ')
-		.trim();
+		.trim()
+		.normalize('NFC');
+}
+
+export function hasFirstAndLastName(value) {
+	const parts = normalizeCreditName(value).split(' ').filter(part => {
+		const letters = [...part.matchAll(/\p{L}/gu)].map(([letter]) => letter);
+		if (letters.length === 0) return false;
+		if (letters.length > 1) return true;
+		return /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(letters[0]);
+	});
+	return parts.length >= 2;
 }
 
 function splitCredits(value) {
