@@ -55,6 +55,9 @@ jobs:
       - name: Probar controles de publicación editorial diaria
         run: npm run test:daily-editorial
 
+      - name: Exigir revisión factual para nuevos recibos editoriales diarios
+        run: npm run validate:editorial-reviews
+
       - name: Probar buscador local y referencias de títulos
         run: |
           npm run test:movie-search

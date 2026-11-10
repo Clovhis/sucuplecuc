@@ -6,6 +6,7 @@ import { tmpdir } from 'node:os';
 import { resolve } from 'node:path';
 import { selectNativeLuna, validateNativeExecution } from './lib/cineposta-luna.mjs';
 import { argentinaDate, canonicalSource, validateDraft, assertPublicationScope } from './lib/daily-editorial-policy.mjs';
+import { addQualityFixture, approveQualityFixture } from './test-helpers/editorial-quality-fixture.mjs';
 
 const model = (name, reasoningEfforts = ['medium', 'max']) => ({ model: name, reasoningEfforts });
 
@@ -31,7 +32,7 @@ test('Argentina calendar boundary and source canonicalization', () => {
 function fixture() {
   const date = '2026-11-09', slug = 'festival-hecho-nuevo';
   const image = i => ({ type: 'image', src: `assets/editorial/${slug}/imagen-${i}.webp`, srcSmall: `assets/editorial/${slug}/imagen-${i}-640.webp`, source: `https://festival.example/image-${i}`, width: 1280, height: 720, alt: 'Imagen comprobada del festival de cine' });
-  const note = { date, slug, title: 'Un hecho nuevo del festival', author: 'CinePosta', type: 'nota', spoilers: false, cover: image(0), sources: [{ label: 'Festival', url: 'https://festival.example/news' }, { label: 'Medio', url: 'https://news.example/cinema' }], content: [{ type: 'paragraph', text: Array(950).fill('cine').join(' ') }, ...[0, 1, 2, 3].map(image)] };
+  const note = { date, slug, title: 'Un hecho nuevo del festival', excerpt: 'Un anuncio cinematográfico original del festival.', author: 'CinePosta', type: 'nota', spoilers: false, cover: image(0), sources: [{ label: 'Festival', url: 'https://festival.example/news' }, { label: 'Medio', url: 'https://news.example/cinema' }], content: [{ type: 'paragraph', text: Array(950).fill('cine').join(' ') }, ...[0, 1, 2, 3].map(image)] };
   const draft = { date, slug, topicKey: 'festival-edicion-anuncio', decision: 'Un anuncio nuevo con valor cinematográfico.', sourceChecks: note.sources.map((source, i) => ({ url: source.url, role: i === 0 ? 'primary' : 'secondary', checkedOn: date, facts: 'Hecho comprobado en la fuente abierta con información independiente.' })), imageChecks: [0, 1, 2, 3].map(i => ({ src: image(i).src, sourceUrl: image(i).source, checkedOn: date, description: 'Inspección visual del original y relación con el texto.' })) };
   draft.tweet = `La distribución también cuenta: este estreno invita a mirar cómo se organiza el encuentro con el público. https://www.cineposta.com.ar/editorial/${slug}/ #Cine`;
   return { date, slug, note, draft };
@@ -42,7 +43,7 @@ test('draft gate: complete evidence is accepted and invalid dates, sources, imag
   assert.deepEqual(check(), { words: 950, images: 4 });
   assert.throws(() => check({ ...note, date: '2026-11-10' }), /fecha real/);
   assert.throws(() => check({ ...note, author: 'Leo' }), /informativa/);
-  assert.throws(() => check({ ...note, sources: [note.sources[0]] }), /dominios/);
+  assert.throws(() => check({ ...note, sources: [] }), /primaria abierta/);
   assert.throws(() => check(note, { ...draft, sourceChecks: draft.sourceChecks.slice(1) }), /primaria/);
   assert.throws(() => check(note, { ...draft, imageChecks: [] }), /inspección visual/);
   assert.throws(() => check({ ...note, content: [{ type: 'paragraph', text: 'Texto insuficiente.' }] }), /Extensión/);
@@ -98,6 +99,7 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     const { note, draft, slug } = fixture();
     note.date = draft.date = argentinaDate();
     for (const check of [...draft.sourceChecks, ...draft.imageChecks]) check.checkedOn = draft.date;
+    addQualityFixture(note, draft);
     mkdirSync(resolve(candidate, 'src/data/editorials'), { recursive: true });
     mkdirSync(resolve(candidate, 'public/assets/editorial', slug), { recursive: true });
     mkdirSync(resolve(candidate, '.tmp/cineposta-daily'), { recursive: true });
@@ -131,13 +133,62 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     assert.equal(result.status, 0, result.stdout + result.stderr);
     const work = resolve(repository, `.tmp/cineposta-daily/work-${note.date}`);
     cpSync(candidate, work, { recursive: true });
-    writeFileSync(resolve(work, '.tmp/cineposta-daily/native-execution.json'), JSON.stringify({ model: 'gpt-6-luna', effort: 'max', agentId: 'fixture-native-agent', provider: 'codex-native', status: 'completed', probe: 'passed' }));
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/native-execution.json'), JSON.stringify({ model: 'gpt-6-luna', effort: 'max', agentId: 'fixture-native-agent', provider: 'codex-native', status: 'completed', probe: 'passed', forkTurns: 'none' }));
+    result = execute('--dry-run');
+    assert.notEqual(result.status, 0);
+    assert.match(result.stderr, /Falta revisión factual independiente/);
+    result = execute('--review');
+    assert.equal(result.status, 0, result.stdout + result.stderr);
+    const reviewPath = resolve(work, '.tmp/cineposta-daily/factual-review.json');
+    const reviewInputPath = resolve(work, '.tmp/cineposta-daily/review-input.json');
+    let approval = approveQualityFixture(JSON.parse(readFileSync(reviewInputPath, 'utf8')));
+    writeFileSync(reviewPath, JSON.stringify(approval.report));
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/native-review-execution.json'), JSON.stringify(approval.reviewerExecution));
     writeFileSync(resolve(repository, 'early-bot.txt'), 'update before first validation');
     shell('git', ['add', 'early-bot.txt']); shell('git', ['commit', '-m', 'fixture early bot']); shell('git', ['push']);
     base = shell('git', ['rev-parse', 'HEAD']);
-    result = execute('--dry-run');
+    result = execute('--revalidate');
     assert.equal(result.status, 0, result.stdout + result.stderr);
     assert.equal(shell('git', ['ls-remote', 'origin', 'refs/heads/main']).split(/\s/)[0], base, 'dry-run must not push');
+    const mirrorPath = resolve(work, '.tmp/cineposta-daily/review-history.json');
+    const mirror = readFileSync(mirrorPath, 'utf8');
+    writeFileSync(mirrorPath, '[]');
+    result = execute('--publish');
+    assert.notEqual(result.status, 0); assert.match(result.stderr, /espejo de revisión/);
+    rmSync(mirrorPath);
+    result = execute('--review');
+    assert.notEqual(result.status, 0); assert.match(result.stderr, /espejo de revisión/);
+    writeFileSync(mirrorPath, mirror);
+    const beforeBlockedCommit = shell('git', ['rev-parse', 'HEAD'], work);
+    const adverse = structuredClone(approval.report);
+    adverse.findings = [{ id: 'material-fixture', kind: 'claim', targetId: 'headline-event', severity: 'material', status: 'open', description: 'Synthetic material contradiction detected independently.' }];
+    writeFileSync(reviewPath, JSON.stringify(adverse));
+    result = execute('--publish');
+    assert.notEqual(result.status, 0);
+    assert.match(result.stderr, /contradicción material/);
+    assert.equal(shell('git', ['rev-parse', 'HEAD'], work), beforeBlockedCommit, 'material contradiction must block even a local commit');
+    assert.equal(shell('git', ['ls-remote', 'origin', 'refs/heads/main']).split(/\s/)[0], base);
+    writeFileSync(reviewPath, JSON.stringify(approval.report));
+    result = execute('--publish');
+    assert.notEqual(result.status, 0);
+    assert.match(result.stderr, /borrar hallazgos materiales/);
+    const correctedExecution = { ...JSON.parse(readFileSync(resolve(work, '.tmp/cineposta-daily/native-execution.json'), 'utf8')), completedAt: new Date().toISOString() };
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/native-execution.json'), JSON.stringify(correctedExecution));
+    const correctedNotePath = resolve(work, `src/data/editorials/${slug}.json`);
+    const correctedNote = JSON.parse(readFileSync(correctedNotePath, 'utf8'));
+    correctedNote.title = 'El festival anuncia el dato corregido';
+    writeFileSync(correctedNotePath, JSON.stringify(correctedNote));
+    const correctedDraft = JSON.parse(readFileSync(resolve(work, '.tmp/cineposta-daily/draft.json'), 'utf8'));
+    correctedDraft.claims[0].statement = correctedNote.title;
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/draft.json'), JSON.stringify(correctedDraft));
+    result = execute('--review');
+    assert.equal(result.status, 0, result.stdout + result.stderr);
+    approval = approveQualityFixture(JSON.parse(readFileSync(reviewInputPath, 'utf8')));
+    approval.report.findings = [{ ...adverse.findings[0], status: 'resolved', before: note.title, after: correctedNote.title, resolution: 'Fixture correction verified independently against its sources.', evidence: [ { url: note.sources[0].url, checkedOn: note.date, excerpt: 'Synthetic evidence supporting the corrected public title.' } ] }];
+    writeFileSync(reviewPath, JSON.stringify(approval.report));
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/native-review-execution.json'), JSON.stringify(approval.reviewerExecution));
+    result = execute('--revalidate');
+    assert.equal(result.status, 0, result.stdout + result.stderr);
     env.TEST_FAIL_VALIDATION = '1';
     result = execute('--revalidate');
     assert.notEqual(result.status, 0);
@@ -167,6 +218,10 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     const receipt = JSON.parse(shell('git', ['show', `origin/main:reports/daily-editorial/${note.date}.json`]));
     assert.equal(receipt.execution.model, 'gpt-6-luna');
     assert.equal(receipt.execution.effort, 'max');
+    assert.equal(receipt.editorialReview.reviewerExecution.agentId, 'fixture-reviewer');
+    assert.deepEqual(receipt.execution, correctedExecution, 'receipt must use the latest completed author execution after correction, never the old technical proof');
+    assert.deepEqual(receipt.editorialReview.authorExecution, correctedExecution);
+    assert.ok(receipt.editorialReview.history.some(entry => entry.report.findings.some(f => f.id === 'material-fixture' && f.status === 'open')));
     assert.equal(shell('git', ['show', 'origin/main:bot-edition.txt']), 'concurrent bot update');
     assert.equal(shell('git', ['show', 'origin/main:early-bot.txt']), 'update before first validation');
     const finalSha = shell('git', ['rev-parse', 'origin/main']);
@@ -177,5 +232,18 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     assert.match(commands, /validate:content/);
     assert.match(commands, /editorial.spec.ts/);
     assert.match(commands, /daily-editorial.spec.ts/);
+    // Even an explicitly grandfathered receipt is not clearance for a new X
+    // delivery. Exercise the real CLI branch without any real Buffer request.
+    shell('git', ['pull', '--ff-only', 'origin', 'main']);
+    const legacyReceipt = { ...receipt }; delete legacyReceipt.editorialReview;
+    writeFileSync(resolve(repository, `reports/daily-editorial/${note.date}.json`), JSON.stringify(legacyReceipt));
+    const { digest } = await import('./lib/daily-editorial-policy.mjs');
+    writeFileSync(resolve(repository, 'config/editorial-review-legacy.json'), JSON.stringify({ [note.date]: digest(JSON.stringify(legacyReceipt)) }));
+    shell('git', ['add', `reports/daily-editorial/${note.date}.json`, 'config/editorial-review-legacy.json']);
+    shell('git', ['commit', '-m', 'fixture grandfathered receipt']); shell('git', ['push']);
+    const previousBufferRequest = readFileSync(env.TEST_BUFFER_REQUEST, 'utf8');
+    result = execute('--tweet');
+    assert.notEqual(result.status, 0); assert.match(result.stderr, /histórica sin revisión/);
+    assert.equal(readFileSync(env.TEST_BUFFER_REQUEST, 'utf8'), previousBufferRequest, 'no Buffer workflow dispatch for an unreviewed legacy receipt');
   } finally { rmSync(directory, { recursive: true, force: true }); }
 });

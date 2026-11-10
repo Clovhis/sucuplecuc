@@ -3,7 +3,8 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "test:daily-editorial": "node --test scripts/daily-editorial.test.mjs scripts/publish-buffer-editorial-x.test.mjs",
+    "test:daily-editorial": "node --test scripts/daily-editorial.test.mjs scripts/editorial-quality.test.mjs scripts/publish-buffer-editorial-x.test.mjs",
+    "validate:editorial-reviews": "node scripts/validate-editorial-reviews.mjs",
     "test:weekly-release": "node --test scripts/weekly-release-policy.test.mjs scripts/weekly-deployment-supervisor.test.mjs scripts/weekly-release-cli.test.mjs",
     "test:movie-intake": "node --test scripts/movie-credit-coverage.test.mjs scripts/audit-movie-people.test.mjs scripts/new-movie.test.mjs",
     "test:movie-credit-ui": "node scripts/movie-credit-initials-playwright.mjs",

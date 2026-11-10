@@ -1,5 +1,5 @@
 import { execFileSync, spawnSync } from 'node:child_process';
-import { existsSync, mkdirSync, readFileSync, writeFileSync, rmSync, lstatSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync, rmSync, lstatSync, renameSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
@@ -7,11 +7,12 @@ import { randomUUID } from 'node:crypto';
 import { editorialPostPlan } from './publish-buffer-editorial-x.mjs';
 import { selectNativeLuna, validateNativeExecution } from './lib/cineposta-luna.mjs';
 import { argentinaDate, digest, readJsonDirectory, validateDraft, assertPublicationScope } from './lib/daily-editorial-policy.mjs';
+import { reviewInput, validateEditorialQuality, snapshotEditorialAssets, validateStoredEditorialReview, requireReviewedForSocial } from './lib/editorial-quality.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(readFileSync(resolve(root, 'config/daily-editorial.json'), 'utf8'));
 const mode = process.argv[2];
-if (!['--prepare', '--dry-run', '--revalidate', '--publish', '--verify', '--tweet'].includes(mode) || process.argv.length !== 3) throw new Error('Usá --prepare, --dry-run, --revalidate, --publish, --verify o --tweet.');
+if (!['--prepare', '--review', '--dry-run', '--revalidate', '--publish', '--verify', '--tweet'].includes(mode) || process.argv.length !== 3) throw new Error('Usá --prepare, --review, --dry-run, --revalidate, --publish, --verify o --tweet.');
 const date = argentinaDate();
 const state = resolve(root, '.tmp/cineposta-daily');
 const work = resolve(state, `work-${date}`);
@@ -35,6 +36,75 @@ const changes = base => [
 const fingerprint = files => Object.fromEntries(files.sort().map(file => [file, digest(readFileSync(resolve(work, file)))]));
 const log = message => console.log(`[cineposta ${date}] ${message}`);
 const httpsArgs = ['--fail', '--silent', '--show-error', '--location', '--max-time', '30', '--proto', '=https', '--proto-redir', '=https'];
+const reviewDirectory = resolve(work, '.tmp/cineposta-daily');
+const reviewFile = resolve(reviewDirectory, 'factual-review.json');
+const reviewExecutionFile = resolve(reviewDirectory, 'native-review-execution.json');
+const reviewInputFile = resolve(reviewDirectory, 'review-input.json');
+const reviewHistoryFile = resolve(reviewDirectory, 'review-history.json');
+const reviewJournalFile = resolve(state, `${date}-review-journal.json`);
+
+function readReviewJournal() {
+  if (!existsSync(reviewJournalFile)) {
+    if (existsSync(reviewInputFile) || existsSync(reviewHistoryFile)) throw new Error('Falta el journal del orquestador; no se reinicia desde el worktree.');
+    return [];
+  }
+  const journal = json(reviewJournalFile);
+  if (digest(JSON.stringify(journal.entries)) !== journal.digest) throw new Error('Journal del orquestador alterado.');
+  if (!existsSync(reviewHistoryFile) || digest(JSON.stringify(json(reviewHistoryFile))) !== journal.digest) throw new Error('El espejo de revisión del worktree fue alterado o eliminado.');
+  return journal.entries;
+}
+
+function writeReviewJournal(entries) {
+  const temporary = `${reviewJournalFile}.${randomUUID()}.tmp`;
+  writeFileSync(temporary, `${JSON.stringify({ entries, digest: digest(JSON.stringify(entries)) }, null, 2)}\n`);
+  renameSync(temporary, reviewJournalFile);
+  writeFileSync(reviewHistoryFile, `${JSON.stringify(entries, null, 2)}\n`);
+}
+
+function rememberReview(history) {
+  if (!existsSync(reviewFile)) return history;
+  const entry = { input: json(reviewInputFile), report: json(reviewFile), execution: existsSync(reviewExecutionFile) ? json(reviewExecutionFile) : null };
+  if (!history.some(previous => digest(JSON.stringify(previous)) === digest(JSON.stringify(entry)))) {
+    history.push(entry);
+    writeReviewJournal(history);
+  }
+  return history;
+}
+
+function currentReviewInput() {
+  const context = json(contextPath);
+  const author = validateNativeExecution(json(context.executionFile), context.selection);
+  const draft = json(resolve(reviewDirectory, 'draft.json'));
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(draft.slug || '')) throw new Error('Slug de revisión inválido.');
+  const note = json(resolve(work, `src/data/editorials/${draft.slug}.json`));
+  validateDraft(note, draft, [], [], date); // Basic contract before freezing; never editorial approval.
+  const assets = snapshotEditorialAssets(note, path => {
+    if (!lstatSync(resolve(work, 'public', path)).isFile()) throw new Error('Asset de revisión no regular.');
+    return readFileSync(resolve(work, 'public', path));
+  });
+  return reviewInput(note, draft, assets, author);
+}
+
+function requireEditorialReview() {
+  if (![reviewInputFile, reviewFile, reviewExecutionFile, reviewHistoryFile].every(existsSync)) throw new Error('Falta revisión factual independiente: ejecutar --review y el segundo Luna Max antes de validar/publicar.');
+  const history = rememberReview(readReviewJournal());
+  const input = currentReviewInput();
+  if (json(reviewInputFile).contentDigest !== input.contentDigest) throw new Error('La preparación cambió: necesita --review y una nueva revisión independiente.');
+  // Record observed negative findings before checking verdict; overwriting an
+  // adverse report with an older approval cannot erase a material contradiction.
+  const report = json(reviewFile);
+  if (report.date !== input.note.date || report.slug !== input.note.slug) throw new Error('Revisión correspondiente a otra publicación.');
+  return validateEditorialQuality(input, report, json(reviewExecutionFile), history);
+}
+
+function prepareEditorialReview() {
+  const history = rememberReview(readReviewJournal());
+  const input = currentReviewInput();
+  writeReviewJournal(history);
+  for (const file of [reviewFile, reviewExecutionFile]) rmSync(file, { force: true });
+  writeFileSync(reviewInputFile, `${JSON.stringify(input, null, 2)}\n`);
+  log(JSON.stringify({ contentDigest: input.contentDigest, reviewInputFile, reviewFile, reviewExecutionFile, selection: json(contextPath).selection }));
+}
 
 async function inspectDraft(base) {
   const draft = json(resolve(work, '.tmp/cineposta-daily/draft.json'));
@@ -71,10 +141,13 @@ async function inspectDraft(base) {
   return { draft, note, counts };
 }
 
-async function validate(base, execution) {
+async function validate(base) {
   // A failed revalidation invalidates older evidence even when bytes did not change.
-  writeFileSync(proofPath, `${JSON.stringify({ date, base, execution, valid: false }, null, 2)}\n`);
+  writeFileSync(proofPath, `${JSON.stringify({ date, base, valid: false }, null, 2)}\n`);
+  const quality = requireEditorialReview();
+  const execution = quality.record.authorExecution;
   const { draft, note, counts } = await inspectDraft(base);
+  for (const url of quality.evidenceUrls.filter(url => !note.sources.some(source => source.url === url))) run('curl', [...httpsArgs, '--output', '/dev/null', url]);
   assertPublicationScope(changes(base), note.slug, date);
   // Reuse the project's gate: it already runs check + one complete build.
   run('npm', ['run', 'validate:content', '--', '--base', base, '--astro-check']);
@@ -85,11 +158,13 @@ async function validate(base, execution) {
   writeFileSync(resolve(work, receiptPath), `${JSON.stringify({
     date, slug: note.slug, topicKey: draft.topicKey, title: note.title,
     execution, tweet: draft.tweet, decision: draft.decision, sourceChecks: draft.sourceChecks, imageChecks: draft.imageChecks,
+    editorialReview: quality.record,
     validation: { ...counts, content: 'passed', astroCheck: 'passed', build: 'passed', desktopAndMobile: 'passed' },
     url: `https://www.cineposta.com.ar/editorial/${note.slug}/`,
   }, null, 2)}\n`);
   assertPublicationScope(changes(base), note.slug, date);
-  const proof = { date, base, slug: note.slug, execution, valid: true, files: fingerprint(changes(base).map(item => item.path)) };
+  if (requireEditorialReview().reviewProof !== quality.reviewProof) throw new Error('La revisión o la preparación cambió durante los tests; revalidar.');
+  const proof = { date, base, slug: note.slug, execution, reviewProof: quality.reviewProof, valid: true, files: fingerprint(changes(base).map(item => item.path)) };
   writeFileSync(proofPath, `${JSON.stringify(proof, null, 2)}\n`);
   return proof;
 }
@@ -119,7 +194,8 @@ async function verify(sha, receipt) {
   throw new Error(`No se confirmó Pages en ${config.deployTimeoutMinutes} minutos. Nota conservada en main. Revisar ${runUrl || 'Actions'} y usar --verify.`);
 }
 
-async function publishTweet(slug) {
+async function publishTweet(slug, reviewStatus) {
+  requireReviewedForSocial(reviewStatus);
   const requestId = randomUUID();
   run('gh', ['workflow', 'run', 'publish-buffer-editorial-x.yml', '--repo', config.repository, '--ref', 'main', '-f', `slug=${slug}`, '-f', 'mode=publish-now', '-f', `request_id=${requestId}`], root);
   const deadline = Date.now() + 8 * 60_000;
@@ -149,12 +225,21 @@ try {
     const publishedRaw = spawnSync('git', ['show', `${head}:reports/daily-editorial/${date}.json`], { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
     if (publishedRaw.status === 0) {
       const published = JSON.parse(publishedRaw.stdout);
+      let publishedReviewStatus;
+      if (['--publish', '--verify', '--tweet'].includes(mode)) {
+        if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(published.slug || '')) throw new Error('Slug publicado inválido.');
+        const fromGit = path => execFileSync('git', ['show', `${head}:${path}`], { cwd: root, maxBuffer: 20 * 1024 * 1024 });
+        const note = JSON.parse(fromGit(`src/data/editorials/${published.slug}.json`).toString('utf8'));
+        const assets = published.editorialReview ? snapshotEditorialAssets(note, path => fromGit(`public/${path}`)) : {};
+        const legacyPath = resolve(root, 'config/editorial-review-legacy.json');
+        publishedReviewStatus = validateStoredEditorialReview(published, note, assets, existsSync(legacyPath) ? json(legacyPath) : {});
+      }
       log(`Ya existe la nota de hoy: ${published.url}. No se consume otro turno editorial.`);
       if (mode === '--publish' || mode === '--verify') {
         const commit = run('git', ['log', '-1', '--format=%H', head, '--', `reports/daily-editorial/${date}.json`], root, true);
         await verify(commit, published);
       }
-      if (mode === '--publish' || mode === '--tweet') await publishTweet(published.slug);
+      if (mode === '--publish' || mode === '--tweet') await publishTweet(published.slug, publishedReviewStatus);
     } else if (mode === '--verify') {
       throw new Error('No existe una publicación diaria de hoy en main.');
     } else if (mode === '--tweet') {
@@ -175,6 +260,8 @@ try {
         writeFileSync(contextPath, JSON.stringify(context, null, 2));
         log(JSON.stringify(context));
         process.exitCode = 0;
+      } else if (mode === '--review') {
+        prepareEditorialReview();
       } else {
       let proof;
       if (existsSync(proofPath)) {
@@ -184,11 +271,12 @@ try {
           if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(correctedSlug || '')) throw new Error('Slug de preparación inválido.');
           assertPublicationScope(changes(proof.base), correctedSlug, date);
           if (head !== proof.base) {
+            requireEditorialReview(); // No integration commit before factual clearance.
             git('add', '--', ...changes(proof.base).map(item => item.path));
             if (spawnSync('git', ['diff', '--cached', '--quiet'], { cwd: work }).status !== 0) git('-c', 'user.name=CinePosta editorial', '-c', 'user.email=cineposta-editorial@users.noreply.github.com', 'commit', '-m', `chore(editorial): preparar integración ${date}`);
             git('rebase', 'origin/main');
           }
-          proof = await validate(head, proof.execution);
+          proof = await validate(head);
         } else {
           if (!proof.valid) throw new Error('La última validación falló o quedó incompleta. Corregir y usar --revalidate.');
           if (proof.date !== date || JSON.stringify(fingerprint(Object.keys(proof.files))) !== JSON.stringify(proof.files)) throw new Error('La preparación cambió después de validarse. Inspeccionar y usar --revalidate.');
@@ -202,9 +290,9 @@ try {
           context.base = head;
           writeFileSync(contextPath, JSON.stringify(context, null, 2));
         }
-        const execution = validateNativeExecution(json(context.executionFile), context.selection);
-        proof = await validate(head, execution);
+        proof = await validate(head);
       }
+      if (requireEditorialReview().reviewProof !== proof.reviewProof) throw new Error('La revisión editorial cambió después del gate; revalidar antes del commit.');
       if (mode === '--dry-run' || mode === '--revalidate') {
         log(`Simulación real completa aprobada. No hubo push. Publicar la misma preparación con --publish. Worktree: ${work}`);
       } else {
@@ -219,12 +307,14 @@ try {
           git('rebase', 'origin/main');
           // Revalidate merged inputs; a previous build does not prove the new tree.
           const { draft, note } = await inspectDraft(remote);
+          if (requireEditorialReview().reviewProof !== proof.reviewProof) throw new Error('El rebase cambió la preparación revisada; no se publica.');
           if (draft.slug !== proof.slug || note.date !== date) throw new Error('La preparación cambió al integrar main.');
           run('npm', ['run', 'validate:content', '--', '--base', remote, '--astro-check']);
           run('npx', ['playwright', 'test', 'tests/e2e/editorial.spec.ts', 'tests/e2e/daily-editorial.spec.ts', '--project=desktop-chromium', '--project=mobile-chromium', '--workers=2']);
         }
         if (argentinaDate() !== date) throw new Error('Cambió la fecha argentina antes del push.');
         if (git('status', '--porcelain')) throw new Error('El worktree cambió durante las validaciones.');
+        if (requireEditorialReview().reviewProof !== proof.reviewProof) throw new Error('Revisión factual obsoleta antes del push.');
         // Normal fast-forward push is the cross-machine compare-and-swap. Never force.
         git('push', 'origin', 'HEAD:main');
         const sha = git('rev-parse', 'HEAD');
@@ -235,7 +325,7 @@ try {
         await verify(sha, json(resolve(work, `reports/daily-editorial/${date}.json`)));
         run('git', ['worktree', 'remove', work], root);
         rmSync(proofPath);
-        await publishTweet(proof.slug);
+        await publishTweet(proof.slug, 'reviewed');
       }
     }
     }

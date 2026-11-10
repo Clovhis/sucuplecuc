@@ -22,7 +22,7 @@ export function validateDraft(note, draft, previous, receipts, date) {
   if (receipts.some(item => item.date === date || item.topicKey === draft.topicKey)) throw new Error('Día o tema ya publicado.');
   if (previous.some(item => item.slug === note.slug || normalizeTopic(item.title) === normalizeTopic(note.title))) throw new Error('Nota duplicada.');
   const sources = note.sources || [];
-  if (new Set(sources.map(source => new URL(source.url).hostname.replace(/^www\./, ''))).size < 2) throw new Error('Se requieren dos fuentes de distintos dominios.');
+  if (!sources.length) throw new Error('Se requiere al menos una fuente primaria abierta; no inventar una segunda fuente.');
   const canonical = new Set(sources.map(source => canonicalSource(source.url)));
   for (const old of previous) {
     const overlap = (old.sources || []).filter(source => canonical.has(canonicalSource(source.url))).length;
