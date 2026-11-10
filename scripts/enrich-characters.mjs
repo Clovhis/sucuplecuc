@@ -4,7 +4,7 @@ import path from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
 import { createHash } from 'node:crypto';
 import { matchCredits, normalize, selectMovie } from './character-matching.mjs';
-import { validateCharacterChanges } from './character-change-policy.mjs';
+import { appendVerifiedCharacterCredits, validateCharacterChanges } from './character-change-policy.mjs';
 
 try { process.loadEnvFile('.env.local'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 
@@ -147,7 +147,9 @@ async function processFile(file) {
 	const original = await readFile(filePath, 'utf8');
 	const movie = JSON.parse(original);
 	validateCharacterChanges(movie, file);
-	if (movie.castCharacters?.length) {
+	const selectedActors = Array.isArray(movie.mainCast) ? movie.mainCast.map(normalize).filter(Boolean) : [];
+	const existingCharacterActors = new Set((movie.castCharacters ?? []).map((credit) => normalize(credit.actor)).filter(Boolean));
+	if (movie.castCharacters?.length && selectedActors.length > 0 && selectedActors.every((actor) => existingCharacterActors.has(actor))) {
 		skippedVerified++;
 		return;
 	}
@@ -195,12 +197,13 @@ async function processFile(file) {
 			const current = JSON.parse(await readFile(filePath, 'utf8'));
 			if (JSON.stringify(current) !== JSON.stringify(movie)) throw new Error('La ficha cambió durante el procesamiento; no se escribió.');
 			const existing = movie.castCharacters ?? [];
-			const additions = result.credits.filter((credit) => !existing.some((prior) => prior.actor === credit.actor || prior.tmdbPersonId === credit.tmdbPersonId));
-			if (additions.length) {
-				movie.castCharacters = [...existing, ...additions];
+			const merged = appendVerifiedCharacterCredits(movie, result.credits, file);
+			const additionsCount = merged.length - existing.length;
+			if (additionsCount) {
+				movie.castCharacters = merged;
 				const indentation = original.match(/\n([\t ]+)"/)?.[1] ?? '\t';
 				await atomic(filePath, movie, indentation, original.includes('\r\n') ? '\r\n' : '\n');
-				appliedCredits += additions.length;
+				appliedCredits += additionsCount;
 			}
 		}
 		await saveCheckpoint();

@@ -1,4 +1,4 @@
-import { execFileSync, spawnSync } from 'node:child_process';
+import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
@@ -91,7 +91,10 @@ function movieForSlug(slug) {
 }
 
 function getBaselineCinemaMovies(ref) {
-	const candidates = git('grep', '-Il', '"Cine"', ref, '--', 'src/data/movies').split('\n').filter(Boolean);
+	const grepResult = spawnSync('git', ['grep', '-Il', '"Cine"', ref, '--', 'src/data/movies'], { cwd: root, encoding: 'utf8' });
+	if (grepResult.status === 1) return {};
+	if (grepResult.status !== 0) throw new Error(`No se pudo leer la cartelera Cine de ${ref}: ${grepResult.stderr || grepResult.status}.`);
+	const candidates = grepResult.stdout.split('\n').filter(Boolean).map(file => file.startsWith(`${ref}:`) ? file.slice(ref.length + 1) : file);
 	const result = {};
 	for (const file of candidates) {
 		const movie = JSON.parse(git('show', `${ref}:${file}`));
@@ -131,7 +134,6 @@ async function validate() {
 		const notePath = `src/data/editorials/${draft.slug}.json`;
 		const note = readJson(path.join(root, notePath));
 		const moviesBySlug = Object.fromEntries(draft.report.candidates.map(entry => [entry.slug, movieForSlug(entry.slug)]));
-		if (Object.values(moviesBySlug).some(movie => !movie)) throw new Error('Un candidato del manifiesto no existe como ficha real del catálogo.');
 		const baselineMoviesBySlug = kind === 'cine' ? getBaselineCinemaMovies('origin/main') : {};
 		const baselineCinemaSlugs = Object.keys(baselineMoviesBySlug).sort();
 		const priorReports = jsonDirectory(path.join(root, 'reports/weekly-releases', kind)).filter(item => item.date !== date || item.slug !== draft.slug);
@@ -143,6 +145,12 @@ async function validate() {
 		const movieChanges = changes.filter(change => change.path.startsWith('src/data/movies/')).map(change => change.path).sort();
 		const declaredMovieChanges = [...new Set(draft.report.candidates.filter(entry => entry.changedFile).map(entry => entry.changedFile))].sort();
 		if (movieChanges.join('\n') !== declaredMovieChanges.join('\n')) throw new Error('Los archivos de películas cambiados no coinciden con el manifiesto explícito.');
+		const declaredIntakePaths = new Set(draft.report.candidates
+			.filter(entry => entry.changedFile === `src/data/movies/${entry.slug}.json`)
+			.map(entry => `reports/movie-intake/${entry.slug}.json`));
+		for (const change of changes.filter(item => item.path.startsWith('reports/movie-intake/'))) {
+			if (!declaredIntakePaths.has(change.path)) throw new Error(`El ledger de alta ${change.path} no corresponde a una película modificada y declarada en el manifiesto.`);
+		}
 		const affected = draft.report.candidates.filter(entry => entry.changedFile).map(entry => entry.changedFile);
 		const characterFieldsChanged = affected.some(file => changedMovieCharacterFields(file, 'origin/main'));
 		for (const file of affected) {

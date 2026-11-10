@@ -1,7 +1,10 @@
+import { existsSync } from 'node:fs';
 import { lstat, readFile } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import process from 'node:process';
 import sharp from 'sharp';
+import { normalizeCreditName, validateMovieCreditCoverage } from './movie-credit-coverage.mjs';
 
 const MOVIES_DIR = path.resolve('src/data/movies');
 const PEOPLE_CATALOG_PATH = path.resolve('src/data/people.json');
@@ -12,6 +15,8 @@ function parseArgs(argv) {
 	const args = {
 		movies: [],
 		files: [],
+		creditReview: undefined,
+		baseRef: 'origin/main',
 	};
 
 	for (let index = 0; index < argv.length; index += 1) {
@@ -20,6 +25,12 @@ function parseArgs(argv) {
 			args.movies.push(argv[++index]);
 		} else if (arg === '--file') {
 			args.files.push(argv[++index]);
+		} else if (arg === '--credit-review') {
+			args.creditReview = argv[++index];
+			if (!args.creditReview || args.creditReview.startsWith('--')) throw new Error('--credit-review necesita la ruta del ledger de elenco.');
+		} else if (arg === '--base-ref') {
+			args.baseRef = argv[++index];
+			if (!args.baseRef || args.baseRef.startsWith('--')) throw new Error('--base-ref necesita una referencia Git existente.');
 		} else if (arg === '--help' || arg === '-h') {
 			args.help = true;
 		} else {
@@ -36,6 +47,7 @@ function usage() {
 			'Usage:',
 			'  npm run audit:movie-people -- --movie project-hail-mary-2026',
 			'  npm run audit:movie-people -- --file src/data/movies/project-hail-mary-2026.json',
+			'  npm run audit:movie-people -- --movie project-hail-mary-2026 --base-ref origin/main --credit-review reports/movie-intake/project-hail-mary-2026.json',
 		].join('\n'),
 	);
 }
@@ -79,6 +91,27 @@ async function loadJson(filePath) {
 	return JSON.parse(await readFile(filePath, 'utf8'));
 }
 
+function runGit(args) {
+	return spawnSync('git', args, { cwd: process.cwd(), encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+}
+
+function isNewMovieFile(filePath, preferredBaseRef) {
+	const relative = path.relative(process.cwd(), path.resolve(filePath)).replace(/\\/g, '/');
+	if (!relative.startsWith('src/data/movies/') || relative.includes('..')) return false;
+	for (const ref of [...new Set([preferredBaseRef, 'origin/main', 'main', 'HEAD'].filter(Boolean))]) {
+		if (runGit(['rev-parse', '--verify', '--quiet', ref]).status !== 0) continue;
+		return runGit(['cat-file', '-e', `${ref}:${relative}`]).status !== 0;
+	}
+	const tracked = runGit(['ls-files', '--error-unmatch', '--', relative]).status === 0;
+	if (!tracked) return true;
+	return runGit(['diff', '--cached', '--name-only', '--diff-filter=A', 'HEAD', '--', relative]).stdout.trim() === relative;
+}
+
+function defaultReviewPath(movie) {
+	if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(movie.slug ?? '')) throw new Error('La ficha nueva necesita un slug válido para ubicar su ledger de elenco.');
+	return path.resolve(`reports/movie-intake/${movie.slug}.json`);
+}
+
 async function loadMovies(args) {
 	const moviePaths = [
 		...args.files.map((filePath) => path.resolve(filePath)),
@@ -118,8 +151,13 @@ function resolveLocalPortraitPath(personRecord) {
 	return imagePath;
 }
 
-async function validatePersonCredit(personName, role, personRecord, problems, warnings) {
+async function validatePersonCredit(personName, role, personRecord, problems, warnings, allowPortraitException = false) {
+	if (allowPortraitException && (personRecord?.image?.trim() || personRecord?.remoteImageUrl?.trim())) {
+		problems.push(`${role}: ${personName} declara excepción de retrato aunque conserva una ruta de imagen; quitá la URI o aportá un retrato verificado.`);
+		return { qualifiesForMinimum: false };
+	}
 	if (!personRecord) {
+		if (allowPortraitException) return { qualifiesForMinimum: false };
 		problems.push(`${role}: ${personName} no tiene una ficha personal con nombre y retrato local verificado; completarla o quitar ese crédito de la película.`);
 		return { qualifiesForMinimum: false };
 	}
@@ -148,7 +186,8 @@ async function validatePersonCredit(personName, role, personRecord, problems, wa
 	const portraitPath = resolveLocalPortraitPath(personRecord);
 	let hasLocalPortrait = false;
 	if (!portraitPath) {
-		problems.push(`${role}: ${personName} necesita un retrato local válido en public/people`);
+		const hasBrokenOrRemotePortrait = Boolean(personRecord.image?.trim() || personRecord.remoteImageUrl?.trim());
+		if (!allowPortraitException || hasBrokenOrRemotePortrait) problems.push(`${role}: ${personName} necesita un retrato local válido en public/people`);
 	} else {
 		try {
 			const imageStat = await lstat(portraitPath);
@@ -184,12 +223,13 @@ async function validatePersonCredit(personName, role, personRecord, problems, wa
 	const hasTraceableReference =
 		(typeof personRecord.imdbUrl === 'string' && /^https?:\/\/(?:www\.)?imdb\.com\/name\/nm\d+\/?$/i.test(personRecord.imdbUrl)) ||
 		referenceUrls.length > 0;
-	if (!hasTraceableReference) {
+	if (!hasTraceableReference && !allowPortraitException) {
 		problems.push(`${role}: ${personName} necesita al menos una referencia trazable para validar identidad y retrato`);
 	}
 
 	return {
 		qualifiesForMinimum:
+			!allowPortraitException &&
 			nameMatchesCredit &&
 			hasFirstAndLastName(displayName) &&
 			hasFirstAndLastName(personName) &&
@@ -245,10 +285,39 @@ async function main() {
 	const catalog = await loadJson(PEOPLE_CATALOG_PATH);
 	const catalogIndex = buildCatalogIndex(catalog);
 	const movies = await loadMovies(args);
+	if (args.creditReview && movies.length !== 1) throw new Error('--credit-review sólo puede acompañar una ficha por ejecución.');
 	const problems = [];
 	const warnings = [];
 
 	for (const movie of movies) {
+		const isNew = isNewMovieFile(movie.filePath, args.baseRef);
+		let portraitExceptions = new Set();
+		const defaultPath = defaultReviewPath(movie.data);
+		const reviewPath = args.creditReview ? path.resolve(args.creditReview) : defaultPath;
+		const hasPublishedReview = existsSync(defaultPath);
+		if (args.creditReview && !isNew && !hasPublishedReview) {
+			problems.push(`${movie.filePath}: --credit-review no puede aplicar retroactivamente el contrato de nuevas altas a una ficha histórica sin ledger.`);
+			continue;
+		}
+		if (args.creditReview && reviewPath !== defaultPath) {
+			problems.push(`${movie.filePath}: el ledger debe corresponder a esta ficha: ${path.relative(process.cwd(), defaultPath)}`);
+			continue;
+		}
+		const applyNewCreditContract = isNew || hasPublishedReview;
+		if (applyNewCreditContract) {
+			if (isNew && !existsSync(reviewPath)) {
+				problems.push(`${movie.filePath}: falta el ledger de elenco ${path.relative(process.cwd(), reviewPath)}`);
+				continue;
+			}
+			try {
+				const review = await loadJson(reviewPath);
+				const coverage = validateMovieCreditCoverage(movie.data, review);
+				portraitExceptions = coverage.portraitExceptions;
+				problems.push(...coverage.errors.map(problem => `${movie.filePath}: ${problem}`));
+			} catch (error) {
+				problems.push(`${movie.filePath}: ${error.code === 'ENOENT' ? `falta el ledger de elenco ${path.relative(process.cwd(), reviewPath)}` : error.message}`);
+			}
+		}
 		const directors = splitCreditNames(movie.data.director);
 		const cast = Array.isArray(movie.data.mainCast)
 			? movie.data.mainCast.flatMap((entry) => splitCreditNames(entry))
@@ -258,13 +327,13 @@ async function main() {
 
 		for (const director of directors) {
 			const entry = findCatalogEntry(catalog, catalogIndex, director);
-			const result = await validatePersonCredit(director, 'director', entry, problems, warnings);
+			const result = await validatePersonCredit(director, 'director', entry, problems, warnings, portraitExceptions.has(`director:${normalizeCreditName(director)}`));
 			directorChecks.push({ name: director, result });
 		}
 
 		for (const actor of cast) {
 			const entry = findCatalogEntry(catalog, catalogIndex, actor);
-			const result = await validatePersonCredit(actor, 'cast', entry, problems, warnings);
+			const result = await validatePersonCredit(actor, 'cast', entry, problems, warnings, portraitExceptions.has(`performer:${normalizeCreditName(actor)}`));
 			castChecks.push({ name: actor, result });
 		}
 

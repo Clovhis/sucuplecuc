@@ -8,6 +8,20 @@ export function retainsExistingCredits(beforeCredits, afterCredits) {
 	return before.every((credit) => after.some((candidate) => isDeepStrictEqual(credit, candidate)));
 }
 
+/** Append only newly verified TMDb credits while keeping every stored credit byte-for-byte. */
+export function appendVerifiedCharacterCredits(movie, additions, file = 'movie') {
+	const existing = movie.castCharacters ?? [];
+	if (!Array.isArray(existing) || !Array.isArray(additions)) throw new Error(file + ': invalid character-credit merge input');
+	const merged = [...existing];
+	for (const credit of additions) {
+		if (merged.some((prior) => prior.actor === credit?.actor || prior.tmdbPersonId === credit?.tmdbPersonId)) continue;
+		merged.push(credit);
+	}
+	if (!retainsExistingCredits(existing, merged)) throw new Error(file + ': stored character credits may not be removed or rewritten.');
+	validateCharacterChanges({ ...movie, castCharacters: merged }, file);
+	return merged;
+}
+
 export function requireCreditCorrectionEvidence(before, after, file, source) {
 	if (retainsExistingCredits(before?.castCharacters, after?.castCharacters)) return false;
 	if (typeof source !== 'string' || !source.trim()) {

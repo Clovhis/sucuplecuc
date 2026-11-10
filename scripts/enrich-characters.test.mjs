@@ -59,6 +59,27 @@ test('alta individual agrega créditos verificados y no vuelve a consultar una f
 	} finally { await rm(root, { recursive: true, force: true }); }
 });
 
+test('completa un reparto parcial y conserva exactamente el personaje ya verificado', async () => {
+	const root = await mkdtemp(path.join(tmpdir(), 'cineposta-characters-partial-'));
+	try {
+		await mkdir(path.join(root, 'src/data/movies'), { recursive: true });
+		const argentinaToday = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Argentina/Buenos_Aires', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+		const existingCredit = { actor: 'Actor One', character: 'Verified original role', tmdbMovieId: 42, tmdbPersonId: 1, verifiedAt: '2026-10-01' };
+		const partial = { ...movie, castCharacters: [existingCredit] };
+		await writeFile(moviePath(root, 'partial'), JSON.stringify(partial));
+		await writeFile(path.join(root, 'src/data/people.json'), JSON.stringify(people));
+		const result = run(root, ['--slug', 'partial', '--apply'], { ...process.env, TMDB_API_KEY: 'test-only' });
+		assert.equal(result.status, 0, result.stderr);
+		assert.equal(report(result).processed, 1);
+		assert.equal(report(result).appliedCredits, 1);
+		assert.equal(report(result).skippedVerified, 0);
+		const saved = JSON.parse(await readFile(moviePath(root, 'partial'), 'utf8'));
+		assert.deepEqual(saved.castCharacters, [existingCredit, {
+			actor: 'Actor Two', character: 'Friend', tmdbMovieId: 42, tmdbPersonId: 2, verifiedAt: argentinaToday,
+		}]);
+	} finally { await rm(root, { recursive: true, force: true }); }
+});
+
 test('el lote procesa todas las fichas seleccionadas sin un tope por defecto', async () => {
 	const root = await mkdtemp(path.join(tmpdir(), 'cineposta-characters-batch-'));
 	try {
@@ -107,10 +128,11 @@ test('falla de API queda pendiente, continúa el lote y conserva créditos ya gu
 		await writeFile(moviePath(root, 'api-error'), JSON.stringify(movie));
 		const result = run(root, ['--all', '--apply'], { ...process.env, TMDB_API_KEY: 'test-only', CHARACTER_FIXTURE_FAILURE: '1' });
 		assert.equal(result.status, 0, result.stderr);
-		assert.equal(report(result).processed, 1);
-		assert.equal(report(result).pending, 1);
-		assert.equal(report(result).skippedVerified, 1);
+		assert.equal(report(result).processed, 2);
+		assert.equal(report(result).pending, 2);
+		assert.equal(report(result).skippedVerified, 0);
 		const checkpoint = JSON.parse(await readFile(path.join(root, 'reports/character-enrichment/checkpoint.json'), 'utf8'));
+		assert.equal(checkpoint['already-enriched.json'].reason, 'tmdb-api-unavailable');
 		assert.equal(checkpoint['api-error.json'].reason, 'tmdb-api-unavailable');
 		assert.deepEqual(JSON.parse(await readFile(moviePath(root, 'already-enriched'), 'utf8')), existing);
 		assert.equal(JSON.parse(await readFile(moviePath(root, 'api-error'), 'utf8')).castCharacters, undefined);

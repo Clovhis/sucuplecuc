@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { hasOnlyCharacterChanges, hasGlobalMovieAuditChanges, mergeGlobalAuditPaths, planMovieAudit, requireCreditCorrectionEvidence, retainsExistingCredits, validateCharacterChanges } from './character-change-policy.mjs';
+import { appendVerifiedCharacterCredits, hasOnlyCharacterChanges, hasGlobalMovieAuditChanges, mergeGlobalAuditPaths, planMovieAudit, requireCreditCorrectionEvidence, retainsExistingCredits, validateCharacterChanges } from './character-change-policy.mjs';
 
 const base = { title: 'Fixture', mainCast: ['Actor'], director: 'Director', review: 'Review' };
 const credit = { actor: 'Actor', character: 'Personaje', tmdbMovieId: 1, tmdbPersonId: 2, verifiedAt: '2000-01-01' };
@@ -24,6 +24,17 @@ test('las fichas conservan cada crédito previo exacto salvo corrección explíc
 	assert.equal(requireCreditCorrectionEvidence({ ...base, castCharacters: [credit] }, { ...base, castCharacters: [credit] }, 'test', undefined), false);
 	assert.throws(() => requireCreditCorrectionEvidence({ ...base, castCharacters: [credit] }, { ...base }, 'test', undefined), /verifiable source/);
 	assert.equal(requireCreditCorrectionEvidence({ ...base, castCharacters: [credit] }, { ...base }, 'test', 'https://example.org/evidence'), true);
+});
+
+test('al agregar un actor con IDs y papel TMDb se conserva exacto cada personaje previamente verificado', () => {
+	const previous = { actor: 'Actor', character: 'Personaje anterior', tmdbMovieId: 42, tmdbPersonId: 2, verifiedAt: '2026-11-10' };
+	const added = { actor: 'New Actor', character: 'Personaje de créditos TMDb', tmdbMovieId: 42, tmdbPersonId: 3, verifiedAt: '2026-11-10' };
+	const movie = { ...base, mainCast: ['Actor', 'New Actor'], castCharacters: [previous] };
+	const merged = appendVerifiedCharacterCredits(movie, [added], 'new-movie.json');
+	assert.deepEqual(merged, [previous, added]);
+	assert.equal(retainsExistingCredits(movie.castCharacters, merged), true);
+	assert.doesNotThrow(() => validateCharacterChanges({ ...movie, castCharacters: merged }, 'new-movie.json'));
+	assert.throws(() => appendVerifiedCharacterCredits(movie, [{ ...added, actor: 'Uncredited Performer' }], 'new-movie.json'), /invalid or ambiguous character credit/u);
 });
 
 test('todos los cambios globales fuerzan la auditoría canónica', () => {

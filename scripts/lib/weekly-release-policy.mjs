@@ -222,6 +222,7 @@ export function assertWeeklyReleaseScope(changes, { kind, date, slug }) {
 	const editorialAsset = new RegExp(`^public/assets/editorial/${slug}/[a-z0-9-]+\\.webp$`, 'u');
 	const allowed = path => path === editorial || path === receipt || editorialAsset.test(path)
 		|| /^src\/data\/movies\/[a-z0-9-]+\.json$/u.test(path)
+		|| /^reports\/movie-intake\/[a-z0-9-]+\.json$/u.test(path)
 		|| path === 'src/data/people.json'
 		|| /^src\/data\/personProfiles(?:[A-Za-z0-9_-]+)?\.ts$/u.test(path)
 		|| /^public\/people\/[a-z0-9-]+\.(?:webp|avif|jpg|jpeg|png)$/iu.test(path)

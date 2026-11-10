@@ -254,10 +254,14 @@ function main() {
 	run('npm', ['run', 'catalog:people:reference:check']);
 	if (moviePeopleAuditFiles.length > 0) {
 		console.log(`Checking portraits for ${moviePeopleAuditFiles.length} new or people-credit-changed movie file(s).`);
-		run('node', [
-			'./scripts/audit-movie-people.mjs',
-			...moviePeopleAuditFiles.flatMap((file) => ['--file', file]),
-		]);
+		for (const file of moviePeopleAuditFiles) {
+			const auditArgs = ['./scripts/audit-movie-people.mjs', '--file', file, '--base-ref', base || 'main'];
+			if (newlyAddedMovieFiles.includes(file)) {
+				const slug = path.basename(file, '.json');
+				auditArgs.push('--credit-review', `reports/movie-intake/${slug}.json`);
+			}
+			run('node', auditArgs);
+		}
 	} else {
 		console.log('Movie people portrait gate skipped: no new files or changed director/mainCast credits.');
 	}

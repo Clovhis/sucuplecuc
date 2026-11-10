@@ -2,9 +2,11 @@ import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import process from 'node:process';
+import { createMovieCreditCoverageDraft } from './movie-credit-coverage.mjs';
 
 const MOVIES_DIR = path.resolve('src/data/movies');
 const TEMPLATE_PATH = path.resolve('templates/movie.template.json');
+const INTAKE_DIR = path.resolve('reports/movie-intake');
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function parseArgs(argv) {
@@ -106,6 +108,7 @@ function printResult(result, asJson) {
 
 	console.log(`slug: ${result.slug}`);
 	console.log(`output: ${result.outputPath}`);
+	console.log(`credit review: ${result.creditReviewPath} (${result.creditReviewStatus})`);
 	console.log(`duplicate: ${result.duplicates.length > 0 ? result.duplicates.join(', ') : 'no'}`);
 	console.log(`dry run: ${result.dryRun ? 'yes' : 'no'}`);
 }
@@ -125,6 +128,8 @@ async function main() {
 	const result = {
 		slug: args.slug,
 		outputPath: outputPath.replace(/\\/g, '/'),
+		creditReviewPath: `reports/movie-intake/${args.slug}.json`,
+		creditReviewStatus: 'incomplete',
 		duplicates: duplicates.map((duplicate) => duplicate.replace(/\\/g, '/')),
 		dryRun: Boolean(args['dry-run']),
 	};
@@ -135,6 +140,13 @@ async function main() {
 	if (args['dry-run']) {
 		printResult(result, args.json);
 		return;
+	}
+	const reviewPath = path.join(INTAKE_DIR, `${args.slug}.json`);
+	try {
+		await readFile(reviewPath);
+		throw new Error(`Ya existe un ledger de elenco para ${args.slug}; preservalo y reanudá esa carga.`);
+	} catch (error) {
+		if (error.code !== 'ENOENT') throw error;
 	}
 
 	const template = await loadTemplate();
@@ -164,6 +176,12 @@ async function main() {
 	};
 
 	await writeFile(outputPath, `${JSON.stringify(movieData, null, '\t')}\n`, 'utf8');
+	await mkdir(INTAKE_DIR, { recursive: true });
+	const argentinaDate = new Intl.DateTimeFormat('en-CA', {
+		timeZone: 'America/Argentina/Buenos_Aires', year: 'numeric', month: '2-digit', day: '2-digit',
+	}).format(new Date());
+	const creditReview = createMovieCreditCoverageDraft({ slug: args.slug, title: args.title, year }, argentinaDate);
+	await writeFile(reviewPath, `${JSON.stringify(creditReview, null, '\t')}\n`, 'utf8');
 	if (args['poster-url']) {
 		const localized = spawnSync(process.execPath, ['scripts/localize-movie-posters.mjs', '--candidate', outputPath], {
 			stdio: 'inherit',
