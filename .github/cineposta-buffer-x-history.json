@@ -975,6 +975,29 @@
 					"HBO Max"
 				]
 			}
+		},
+		{
+			"slug": "todo-sobre-ti-2025",
+			"bufferPostId": "6af29216223aa16048e7dd0b",
+			"dueAt": "2026-11-10T22:00:00.000Z",
+			"scheduledAt": "2026-11-10T03:40:07.035Z",
+			"copyStyle": {
+				"opening": 4129816323,
+				"availability": 3902382370,
+				"editorial": 1520389706,
+				"verdict": 1588875738,
+				"link": 1433864165
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/todo-sobre-ti",
+				"checkedAt": "2026-11-10T03:40:06.501Z",
+				"kind": "transactional",
+				"platforms": [
+					"Prime Video",
+					"Apple TV"
+				]
+			}
 		}
 	]
 }
