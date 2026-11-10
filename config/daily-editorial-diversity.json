@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "purpose": "Originality and topic-diversity policy for daily editorial candidates.",
+  "extraHistoryInputs": [],
+  "windows": {
+    "filmFranchiseCooldownDays": 14,
+    "concentrationDays": 30
+  },
+  "limits": {
+    "maxEntityPublicationsInConcentrationWindow": 3
+  },
+  "entities": [
+    {
+      "id": "godzilla-minus-zero-2026",
+      "kind": "film",
+      "canonicalTitle": "Godzilla Minus Zero",
+      "aliases": [
+        "Godzilla Minus Zero",
+        "Gojira Minus Zero",
+        "godzilla-minus-zero",
+        "GodzillaMinusZero",
+        "GojiraMinusZero"
+      ],
+      "franchise": "godzilla"
+    },
+    {
+      "id": "godzilla",
+      "kind": "franchise",
+      "canonicalTitle": "Godzilla",
+      "aliases": [
+        "Godzilla",
+        "Gojira"
+      ]
+    }
+  ],
+  "topicKeyAliases": []
+}

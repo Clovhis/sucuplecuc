@@ -1,18 +1,21 @@
 import { execFileSync, spawnSync } from 'node:child_process';
-import { existsSync, mkdirSync, readFileSync, writeFileSync, rmSync, lstatSync, renameSync } from 'node:fs';
-import { dirname, resolve } from 'node:path';
+import { existsSync, mkdirSync, readFileSync, writeFileSync, rmSync, lstatSync, renameSync, cpSync, readdirSync } from 'node:fs';
+import { dirname, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import { randomUUID } from 'node:crypto';
+import { hostname } from 'node:os';
 import { editorialPostPlan } from './publish-buffer-editorial-x.mjs';
 import { selectNativeLuna, validateNativeExecution } from './lib/cineposta-luna.mjs';
-import { argentinaDate, digest, readJsonDirectory, validateDraft, assertPublicationScope } from './lib/daily-editorial-policy.mjs';
+import { argentinaDate, digest, validateDraft, assertPublicationScope } from './lib/daily-editorial-policy.mjs';
 import { reviewInput, validateEditorialQuality, snapshotEditorialAssets, validateStoredEditorialReview, requireReviewedForSocial } from './lib/editorial-quality.mjs';
+import { EditorialDay, REVIEW_VERDICTS, REPLACEMENT_VERDICTS, candidateField, validateCandidateCorrections } from './lib/editorial-day.mjs';
+import { buildEditorialHistory, preflightCandidate, validateOriginalityReview } from './lib/editorial-diversity.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(readFileSync(resolve(root, 'config/daily-editorial.json'), 'utf8'));
 const mode = process.argv[2];
-if (!['--prepare', '--review', '--dry-run', '--revalidate', '--publish', '--verify', '--tweet'].includes(mode) || process.argv.length !== 3) throw new Error('Usá --prepare, --review, --dry-run, --revalidate, --publish, --verify o --tweet.');
+if (!['--prepare', '--status', '--candidate', '--record-review', '--revise', '--assess-viability', '--switch-topic', '--review', '--dry-run', '--revalidate', '--publish', '--verify', '--tweet'].includes(mode) || process.argv.length !== 3) throw new Error('Usá --prepare, --status, --candidate, --record-review, --revise, --assess-viability, --switch-topic, --review, --dry-run, --revalidate, --publish, --verify o --tweet.');
 const date = argentinaDate();
 const state = resolve(root, '.tmp/cineposta-daily');
 const work = resolve(state, `work-${date}`);
@@ -28,7 +31,6 @@ const run = (command, args, cwd = work, capture = false) => {
 };
 const git = (...args) => run('git', args, work, true);
 const json = path => JSON.parse(readFileSync(path, 'utf8'));
-const receiptsAt = cwd => existsSync(resolve(cwd, 'reports/daily-editorial')) ? readJsonDirectory(resolve(cwd, 'reports/daily-editorial')) : [];
 const changes = base => [
   ...git('diff', '--name-status', '--no-renames', base).split('\n').filter(Boolean).map(line => { const [status, path] = line.split('\t'); return { status, path }; }),
   ...git('ls-files', '--others', '--exclude-standard').split('\n').filter(Boolean).map(path => ({ status: '??', path })),
@@ -41,9 +43,41 @@ const reviewFile = resolve(reviewDirectory, 'factual-review.json');
 const reviewExecutionFile = resolve(reviewDirectory, 'native-review-execution.json');
 const reviewInputFile = resolve(reviewDirectory, 'review-input.json');
 const reviewHistoryFile = resolve(reviewDirectory, 'review-history.json');
-const reviewJournalFile = resolve(state, `${date}-review-journal.json`);
+let day;
+let mainHead;
+const reviewJournalPath = () => resolve(day.attemptDirectory, 'review-journal.json');
+const policy = () => json(resolve(work, 'config/daily-editorial-diversity.json'));
+
+function historyAt(base) {
+  const records = folder => git('ls-tree', '-r', '--name-only', base, '--', folder).split('\n').filter(path => path.endsWith('.json')).map(path => JSON.parse(git('show', `${base}:${path}`)));
+  return buildEditorialHistory(work, { notes: records('src/data/editorials'), receipts: records('reports/daily-editorial'), discarded: day.value.discarded, policy: policy() });
+}
+
+function persistContext() {
+  const context = json(contextPath);
+  Object.assign(context, { attemptId: day.attempt.id, checkpoint: day.file, status: day.value.status });
+  writeFileSync(contextPath, `${JSON.stringify(context, null, 2)}\n`);
+  return context;
+}
+
+function printStatus() {
+  const pendingReport = day.value.status === 'reviewing' && [reviewFile, reviewExecutionFile].every(existsSync);
+  log(JSON.stringify({ ...persistContext(), ...day.summary(), ...(pendingReport ? { nextAction: 'record_review' } : {}), validationCommand: existsSync(proofPath) ? '--revalidate' : '--dry-run' }));
+}
 
 function readReviewJournal() {
+  const reviewJournalFile = reviewJournalPath();
+  const pendingPath = `${reviewJournalFile}.pending`;
+  if (existsSync(pendingPath)) {
+    const pending = json(pendingPath), current = existsSync(reviewJournalFile) ? json(reviewJournalFile).digest : null;
+    const mirror = existsSync(reviewHistoryFile) ? digest(JSON.stringify(json(reviewHistoryFile))) : null;
+    if (pending.digest !== digest(JSON.stringify(pending.entries)) || ![pending.previousDigest, pending.digest].includes(current) || ![pending.previousDigest, pending.digest].includes(mirror)) throw new Error('Transacción de journal alterada; conservar y diagnosticar.');
+    writeFileSync(reviewHistoryFile, `${JSON.stringify(pending.entries, null, 2)}\n`);
+    const temporary = `${reviewJournalFile}.${randomUUID()}.tmp`;
+    writeFileSync(temporary, `${JSON.stringify({ entries: pending.entries, digest: pending.digest }, null, 2)}\n`);
+    renameSync(temporary, reviewJournalFile);
+    rmSync(pendingPath);
+  }
   if (!existsSync(reviewJournalFile)) {
     if (existsSync(reviewInputFile) || existsSync(reviewHistoryFile)) throw new Error('Falta el journal del orquestador; no se reinicia desde el worktree.');
     return [];
@@ -55,14 +89,201 @@ function readReviewJournal() {
 }
 
 function writeReviewJournal(entries) {
-  const temporary = `${reviewJournalFile}.${randomUUID()}.tmp`;
-  writeFileSync(temporary, `${JSON.stringify({ entries, digest: digest(JSON.stringify(entries)) }, null, 2)}\n`);
-  renameSync(temporary, reviewJournalFile);
+  const reviewJournalFile = reviewJournalPath();
+  const envelope = { entries, digest: digest(JSON.stringify(entries)) };
+  const pendingPath = `${reviewJournalFile}.pending`;
+  const pendingTemporary = `${pendingPath}.${randomUUID()}.tmp`;
+  writeFileSync(pendingTemporary, `${JSON.stringify({ ...envelope, previousDigest: existsSync(reviewJournalFile) ? json(reviewJournalFile).digest : null }, null, 2)}\n`);
+  renameSync(pendingTemporary, pendingPath);
   writeFileSync(reviewHistoryFile, `${JSON.stringify(entries, null, 2)}\n`);
+  const temporary = `${reviewJournalFile}.${randomUUID()}.tmp`;
+  writeFileSync(temporary, `${JSON.stringify(envelope, null, 2)}\n`);
+  renameSync(temporary, reviewJournalFile);
+  rmSync(pendingPath);
+}
+
+function installReviewPacket(round) {
+  if (round.artifactsReady) return; // Repeated freeze does not erase a completed, unprocessed review.
+  if (existsSync(reviewFile)) {
+    round.preservedArtifacts ||= [];
+    round.preservedArtifacts.push({ report: json(reviewFile), execution: existsSync(reviewExecutionFile) ? json(reviewExecutionFile) : null });
+    day.save();
+  }
+  if (round.phase === 'article') writeReviewJournal(readReviewJournal());
+  for (const file of [reviewFile, reviewExecutionFile]) rmSync(file, { force: true });
+  const path = round.phase === 'candidate' ? resolve(reviewDirectory, 'candidate-input.json') : reviewInputFile;
+  writeFileSync(path, `${JSON.stringify(round.input, null, 2)}\n`);
+  round.artifactsReady = true;
+  day.save();
+}
+
+function candidateReview(viabilityOnly = false) {
+  const context = json(contextPath);
+  const author = validateNativeExecution(json(context.executionFile), context.selection);
+  if (author.forkTurns !== 'none') throw new Error('El autor debe usar fork_turns none.');
+  const candidate = json(resolve(reviewDirectory, 'candidate.json'));
+  const history = historyAt(mainHead);
+  const configuredPolicy = policy();
+  const preflight = preflightCandidate(candidate, history, configuredPolicy, date);
+  if (viabilityOnly) {
+    if (digest(JSON.stringify(candidate)) !== digest(JSON.stringify(day.attempt.candidate))) throw new Error('La evaluación de viabilidad no cambia de candidato.');
+  } else day.select(candidate, preflight, history.digest);
+  const payload = { version: 1, date, candidate, history, historyRef: mainHead, policy: configuredPolicy, preflight, authorExecution: author };
+  const input = { ...payload, contentDigest: digest(JSON.stringify(payload)) };
+  const round = day.freeze(input, 'candidate', { viabilityOnly });
+  installReviewPacket(round);
+  writeFileSync(resolve(reviewDirectory, 'published.json'), `${JSON.stringify(history, null, 2)}\n`);
+  log(JSON.stringify({ ...day.summary(), reviewInputFile: resolve(reviewDirectory, 'candidate-input.json'), reviewFile, reviewExecutionFile, selection: context.selection, viabilityOnly }));
+}
+
+function validateAdverseReport(input, report) {
+  if (!REVIEW_VERDICTS.includes(report.verdict) || report.verdict === 'approved') throw new Error('Veredicto adverso inválido.');
+  if (typeof report.reason !== 'string' || report.reason.trim().length < 20) throw new Error('El rechazo necesita un motivo concreto y accionable.');
+  const evidence = items => {
+    if (!Array.isArray(items) || !items.length) throw new Error('El rechazo necesita evidencia verificable, no una clasificación sola.');
+    for (const item of items) {
+      const url = new URL(item.url);
+      if (url.protocol !== 'https:' || url.username || url.password || item.checkedOn !== date || typeof item.excerpt !== 'string' || item.excerpt.trim().length < 8) throw new Error('Evidencia adversa inválida.');
+    }
+  };
+  if (report.verdict === 'changes_required') {
+    if (!report.findings?.some(f => f.status === 'open')) throw new Error('changes_required debe devolver hallazgos abiertos.');
+    for (const finding of report.findings.filter(f => f.status === 'open')) {
+      if (!finding.id || !finding.targetId || !['claim', 'access', 'image', 'text'].includes(finding.kind) || !['material', 'minor'].includes(finding.severity) || !finding.description || typeof finding.action !== 'string' || finding.action.length < 12) throw new Error('El hallazgo debe identificar objeto, problema y corrección concreta.');
+      if (input.candidate) {
+        if (finding.kind !== 'text') throw new Error('En preflight el hallazgo debe ser text y señalar candidate/campo.');
+        candidateField(input.candidate, finding.targetId);
+      }
+      evidence(finding.evidence);
+    }
+  } else {
+    evidence(report.evidence);
+    if (report.verdict === 'topic_unviable' && (!report.searches?.length || typeof report.unresolvable !== 'string' || report.unresolvable.length < 20)) throw new Error('topic_unviable requiere búsquedas razonables y explicar por qué corregir o sustituir recursos no resuelve el problema.');
+    for (const search of report.searches || []) evidence([search]);
+    if (['duplicate_topic', 'editorial_saturation'].includes(report.verdict) && !report.relatedPublications?.length && !day.attempt.preflight?.matches?.length) throw new Error('El rechazo por originalidad debe señalar publicaciones relacionadas.');
+  }
+}
+
+function processReview() {
+  if (![reviewFile, reviewExecutionFile].every(existsSync)) throw new Error('Falta revisión factual independiente y su completion real.');
+  const context = json(contextPath), round = day.attempt.rounds.at(-1);
+  if (!round) throw new Error('Primero congelar con --candidate o --review.');
+  const input = round.phase === 'candidate' ? json(resolve(reviewDirectory, 'candidate-input.json')) : currentReviewInput();
+  if (digest(JSON.stringify(input)) !== digest(JSON.stringify(round.input))) throw new Error('El snapshot del candidato o de la nota cambió después de congelarse; no coincide con el digest persistido.');
+  const report = json(reviewFile), execution = validateNativeExecution(json(reviewExecutionFile), context.selection);
+  if (execution.forkTurns !== 'none' || report.contentDigest !== input.contentDigest || round.input.contentDigest !== input.contentDigest || report.date !== date || (round.phase === 'candidate' ? report.candidateId !== input.candidate.id : report.slug !== input.note.slug)) throw new Error('Informe/ejecutor no correspondiente al snapshot vigente.');
+  day.pinAgents(input.authorExecution, execution);
+  if (round.phase === 'article') rememberReview(readReviewJournal());
+  if (round.viabilityOnly && report.verdict === 'approved') throw new Error('Una evaluación viabilityOnly sin avances no permite aprobar; corregir y volver a --review.');
+  if (report.verdict === 'approved') {
+    if (round.phase === 'candidate') {
+      validateCandidateCorrections(input, report, day.attempt.rounds);
+      validateOriginalityReview(input, report, { history: input.history, policy: input.policy, candidate: input.candidate, preflight: input.preflight });
+    }
+    else validateEditorialQuality(input, report, execution, readReviewJournal());
+  } else validateAdverseReport(input, report);
+  day.record(report, execution);
+  printStatus();
+}
+
+function archiveAttempt() {
+  if (!REPLACEMENT_VERDICTS.includes(day.value.status)) throw new Error('Primero obtener un rechazo de candidato; changes_required exige correcciones.');
+  const destination = resolve(day.attemptDirectory, 'archive');
+  mkdirSync(destination, { recursive: true });
+  // Only uncommitted files of this new candidate may be withdrawn. Never reset
+  // a worktree, historical note or remotely published commit to choose Plan B.
+  const draftPath = resolve(reviewDirectory, 'draft.json');
+  const draft = existsSync(draftPath) ? json(draftPath) : null;
+  if (draft) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(draft.slug || '')) throw new Error('Slug de intento inválido.');
+    const notePath = `src/data/editorials/${draft.slug}.json`;
+    if (spawnSync('git', ['cat-file', '-e', `origin/main:${notePath}`], { cwd: work, stdio: 'ignore' }).status === 0 || spawnSync('git', ['cat-file', '-e', `origin/main:reports/daily-editorial/${date}.json`], { cwd: work, stdio: 'ignore' }).status === 0) throw new Error('No se archiva ni retira una nota ya publicada en main.');
+    if (spawnSync('git', ['cat-file', '-e', `HEAD:${notePath}`], { cwd: work, stdio: 'ignore' }).status === 0) {
+      // A failed fast-forward push/revalidation can leave our own unpublished
+      // commits. Preserve their exact history, then make only this preparation
+      // untracked again; mixed reset retains every working file.
+      const common = git('merge-base', 'HEAD', 'origin/main');
+      assertPublicationScope(changes(common), draft.slug, date);
+      const bookmark = `refs/cineposta-daily/${date}/${day.attempt.id}`;
+      const sha = git('rev-parse', 'HEAD');
+      git('update-ref', bookmark, sha);
+      day.attempt.localHistory = { bookmark, sha, base: common }; day.save();
+      git('reset', '--mixed', common);
+      const context = json(contextPath); context.base = common; writeFileSync(contextPath, JSON.stringify(context, null, 2));
+    }
+    assertPublicationScope(changes(json(contextPath).base), draft.slug, date);
+    cpSync(resolve(work, notePath), resolve(destination, 'note.json'));
+    if (existsSync(resolve(work, `public/assets/editorial/${draft.slug}`))) cpSync(resolve(work, `public/assets/editorial/${draft.slug}`), resolve(destination, 'assets'), { recursive: true });
+  }
+  cpSync(reviewDirectory, resolve(destination, 'research'), { recursive: true });
+  if (existsSync(proofPath)) cpSync(proofPath, resolve(destination, 'technical-proof.json'));
+  const preparedReceipt = resolve(work, `reports/daily-editorial/${date}.json`);
+  if (existsSync(preparedReceipt)) {
+    cpSync(preparedReceipt, resolve(destination, 'prepared-receipt.json'));
+    const { editorialJourney: previousJourney, ...ownReceipt } = json(preparedReceipt);
+    writeFileSync(resolve(destination, 'prepared-validation.json'), JSON.stringify({ ...ownReceipt, journeyDigest: digest(JSON.stringify(previousJourney)) }));
+  }
+  const manifest = [], documents = {};
+  const walk = (directory, prefix = '') => {
+    for (const name of readdirSync(directory).sort()) {
+      const path = resolve(directory, name), relative = `${prefix}${name}`, stat = lstatSync(path);
+      if (stat.isSymbolicLink()) throw new Error('No archivar enlaces simbólicos en la investigación.');
+      if (stat.isDirectory()) walk(path, `${relative}/`);
+      else {
+        const bytes = readFileSync(path);
+        manifest.push({ path: relative, sha256: digest(bytes), bytes: bytes.length });
+        // The complete receipt bytes stay archived locally; avoid embedding
+        // previous journeys recursively inside the next versioned receipt.
+        if (/\.(?:json|md|txt)$/.test(name) && relative !== 'prepared-receipt.json') documents[relative] = bytes.toString('utf8');
+      }
+    }
+  };
+  walk(destination);
+  day.replace({ directory: destination, manifest, documents, slug: draft?.slug ?? null });
+  finishSwitch();
+}
+
+function finishSwitch() {
+  if (day.value.status !== 'switching_topic' || !day.attempt.archive?.manifest?.length) throw new Error('No hay cambio de tema archivado para recuperar.');
+  const { slug } = day.attempt.archive;
+  const archive = day.attempt.archive;
+  if (archive.directory !== resolve(day.attemptDirectory, 'archive')) throw new Error('Archivo fuera del intento activo; conservar originales.');
+  for (const item of archive.manifest) {
+    const target = resolve(archive.directory, item.path);
+    if (!target.startsWith(`${archive.directory}${sep}`)) throw new Error('Ruta de archivo inválida; conservar originales.');
+    const matches = path => existsSync(path) && lstatSync(path).isFile() && !lstatSync(path).isSymbolicLink() && readFileSync(path).length === item.bytes && digest(readFileSync(path)) === item.sha256;
+    if (!matches(target)) {
+      const source = item.path.startsWith('research/') ? resolve(reviewDirectory, item.path.slice(9))
+        : item.path.startsWith('assets/') && slug ? resolve(work, `public/assets/editorial/${slug}`, item.path.slice(7))
+          : item.path === 'note.json' && slug ? resolve(work, `src/data/editorials/${slug}.json`)
+            : item.path === 'technical-proof.json' ? proofPath
+              : item.path === 'prepared-receipt.json' ? resolve(work, `reports/daily-editorial/${date}.json`) : null;
+      if (!source || !matches(source)) throw new Error(`Archivo incompleto/alterado ${item.path}; originales conservados, recuperar antes de reemplazar.`);
+      mkdirSync(dirname(target), { recursive: true }); cpSync(source, target);
+    }
+  }
+  const receipt = `reports/daily-editorial/${date}.json`;
+  if (spawnSync('git', ['cat-file', '-e', `HEAD:${receipt}`], { cwd: work, stdio: 'ignore' }).status === 0) throw new Error('No se reemplaza una jornada ya incluida en un commit.');
+  if (slug) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || spawnSync('git', ['cat-file', '-e', `HEAD:src/data/editorials/${slug}.json`], { cwd: work, stdio: 'ignore' }).status === 0) throw new Error('No se retira una nota histórica o comprometida.');
+    rmSync(resolve(work, `src/data/editorials/${slug}.json`), { force: true });
+    rmSync(resolve(work, `public/assets/editorial/${slug}`), { recursive: true, force: true });
+  }
+  rmSync(resolve(work, receipt), { force: true });
+  rmSync(reviewDirectory, { recursive: true, force: true });
+  mkdirSync(reviewDirectory, { recursive: true });
+  rmSync(proofPath, { force: true });
+  git('merge', '--ff-only', 'origin/main');
+  const context = json(contextPath); context.base = git('rev-parse', 'origin/main'); writeFileSync(contextPath, JSON.stringify(context, null, 2));
+  day.newAttempt();
+  const history = historyAt(mainHead);
+  writeFileSync(resolve(reviewDirectory, 'published.json'), `${JSON.stringify(history, null, 2)}\n`);
+  printStatus();
 }
 
 function rememberReview(history) {
   if (!existsSync(reviewFile)) return history;
+  if (!json(reviewFile).slug && json(reviewFile).candidateId) return history; // Candidate rounds never mix with article findings.
   const entry = { input: json(reviewInputFile), report: json(reviewFile), execution: existsSync(reviewExecutionFile) ? json(reviewExecutionFile) : null };
   if (!history.some(previous => digest(JSON.stringify(previous)) === digest(JSON.stringify(entry)))) {
     history.push(entry);
@@ -74,7 +295,12 @@ function rememberReview(history) {
 function currentReviewInput() {
   const context = json(contextPath);
   const author = validateNativeExecution(json(context.executionFile), context.selection);
+  const pinned = day.value.agents.author;
+  if (author.forkTurns !== 'none' || (pinned && (pinned.agentId !== author.agentId || pinned.model !== author.model || pinned.effort !== author.effort))) throw new Error('Reutilizar el mismo agente author y selección real, fork_turns none, durante la jornada.');
   const draft = json(resolve(reviewDirectory, 'draft.json'));
+  if (!day.attempt.candidateApproved || digest(JSON.stringify(draft.candidate)) !== digest(JSON.stringify(day.attempt.candidate))) throw new Error('El borrador debe conservar el candidato comprobado y aprobado; no cambiar de noticia al corregir.');
+  const history = historyAt(mainHead);
+  if (draft.originalityContext?.history?.digest !== history.digest || digest(JSON.stringify(draft.originalityContext?.policy)) !== digest(JSON.stringify(policy()))) throw new Error('El historial o política cambió o falta el preflight completo: ejecutar --review y nueva auditoría.');
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(draft.slug || '')) throw new Error('Slug de revisión inválido.');
   const note = json(resolve(work, `src/data/editorials/${draft.slug}.json`));
   validateDraft(note, draft, [], [], date); // Basic contract before freezing; never editorial approval.
@@ -94,16 +320,32 @@ function requireEditorialReview() {
   // adverse report with an older approval cannot erase a material contradiction.
   const report = json(reviewFile);
   if (report.date !== input.note.date || report.slug !== input.note.slug) throw new Error('Revisión correspondiente a otra publicación.');
-  return validateEditorialQuality(input, report, json(reviewExecutionFile), history);
+  const execution = validateNativeExecution(json(reviewExecutionFile), json(contextPath).selection);
+  day.pinAgents(input.authorExecution, execution);
+  if (day.attempt.rounds.at(-1)?.viabilityOnly && report.verdict === 'approved') throw new Error('Una evaluación viabilityOnly no habilita publicación; corregir y volver a --review.');
+  if (report.verdict !== 'approved') {
+    validateAdverseReport(input, report);
+    day.record(report, execution);
+    throw new Error(`Revisión ${report.verdict}: continuar con ${day.summary().nextAction}; no cancelar la jornada.`);
+  }
+  const quality = validateEditorialQuality(input, report, execution, history);
+  day.record(report, execution);
+  if (day.value.status !== 'approved') throw new Error('Falta estado aprobado de la preparación final.');
+  return quality;
 }
 
-function prepareEditorialReview() {
-  const history = rememberReview(readReviewJournal());
+function prepareEditorialReview(viabilityOnly = false) {
+  rememberReview(readReviewJournal());
+  const draftPath = resolve(reviewDirectory, 'draft.json');
+  const draft = json(draftPath), fullHistory = historyAt(mainHead), configuredPolicy = policy();
+  const candidate = day.attempt.candidate;
+  if (!candidate) throw new Error('Primero --candidate y auditoría independiente de originalidad.');
+  draft.originalityContext = { history: fullHistory, historyRef: mainHead, policy: configuredPolicy, candidate, preflight: preflightCandidate(candidate, fullHistory, configuredPolicy, date) };
+  writeFileSync(draftPath, `${JSON.stringify(draft, null, 2)}\n`);
   const input = currentReviewInput();
-  writeReviewJournal(history);
-  for (const file of [reviewFile, reviewExecutionFile]) rmSync(file, { force: true });
-  writeFileSync(reviewInputFile, `${JSON.stringify(input, null, 2)}\n`);
-  log(JSON.stringify({ contentDigest: input.contentDigest, reviewInputFile, reviewFile, reviewExecutionFile, selection: json(contextPath).selection }));
+  const round = day.freeze(input, 'article', { viabilityOnly });
+  installReviewPacket(round);
+  log(JSON.stringify({ contentDigest: input.contentDigest, reviewInputFile, reviewFile, reviewExecutionFile, selection: json(contextPath).selection, viabilityOnly }));
 }
 
 async function inspectDraft(base) {
@@ -159,6 +401,7 @@ async function validate(base) {
     date, slug: note.slug, topicKey: draft.topicKey, title: note.title,
     execution, tweet: draft.tweet, decision: draft.decision, sourceChecks: draft.sourceChecks, imageChecks: draft.imageChecks,
     editorialReview: quality.record,
+    editorialJourney: day.value,
     validation: { ...counts, content: 'passed', astroCheck: 'passed', build: 'passed', desktopAndMobile: 'passed' },
     url: `https://www.cineposta.com.ar/editorial/${note.slug}/`,
   }, null, 2)}\n`);
@@ -217,11 +460,19 @@ async function publishTweet(slug, reviewStatus) {
 
 mkdirSync(state, { recursive: true });
 const lock = resolve(state, 'lock');
-try { mkdirSync(lock); } catch { throw new Error(`Otra ejecución usa ${lock}. Si quedó huérfana, inspeccionarla antes de retirar el lock.`); }
+const processStart = pid => { try { return readFileSync(`/proc/${pid}/stat`, 'utf8').split(') ').at(-1).split(' ')[19]; } catch { return null; } };
+try { mkdirSync(lock); } catch {
+  const ownerPath = resolve(lock, 'owner.json'), owner = existsSync(ownerPath) ? json(ownerPath) : null;
+  if (!owner || owner.host !== hostname() || processStart(owner.pid) === owner.processStart) throw new Error(`Otra ejecución usa ${lock}, o no se puede acreditar que su lock esté huérfano.`);
+  renameSync(lock, `${lock}.interrupted-${randomUUID()}`);
+  mkdirSync(lock);
+}
+writeFileSync(resolve(lock, 'owner.json'), JSON.stringify({ pid: process.pid, host: hostname(), processStart: processStart(process.pid), startedAt: new Date().toISOString() }));
 try {
   {
     run('git', ['fetch', 'origin', 'main'], root);
     const head = run('git', ['rev-parse', 'origin/main'], root, true);
+    mainHead = head;
     const publishedRaw = spawnSync('git', ['show', `${head}:reports/daily-editorial/${date}.json`], { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
     if (publishedRaw.status === 0) {
       const published = JSON.parse(publishedRaw.stdout);
@@ -235,6 +486,10 @@ try {
         publishedReviewStatus = validateStoredEditorialReview(published, note, assets, existsSync(legacyPath) ? json(legacyPath) : {});
       }
       log(`Ya existe la nota de hoy: ${published.url}. No se consume otro turno editorial.`);
+      if (existsSync(resolve(state, `${date}-session.json`))) {
+        const previousDay = new EditorialDay(state, date);
+        if (previousDay.value.status === 'approved') previousDay.published(published, run('git', ['log', '-1', '--format=%H', head, '--', `reports/daily-editorial/${date}.json`], root, true));
+      }
       if (mode === '--publish' || mode === '--verify') {
         const commit = run('git', ['log', '-1', '--format=%H', head, '--', `reports/daily-editorial/${date}.json`], root, true);
         await verify(commit, published);
@@ -245,23 +500,47 @@ try {
     } else if (mode === '--tweet') {
       throw new Error('No existe una nota diaria publicada hoy para enviar a X.');
     } else {
+      if (mode !== '--prepare' && (!existsSync(work) || !existsSync(contextPath))) throw new Error('Primero ejecutar --prepare y el ejecutor editorial nativo.');
+      day = new EditorialDay(state, date);
       if (mode === '--prepare') {
         const catalog = json(resolve(state, 'native-catalog.json'));
         if (argentinaDate(new Date(catalog.observedAt)) !== date) throw new Error('Actualizar el catálogo desde la herramienta nativa de este run.');
         const selection = selectNativeLuna(catalog.models);
-        if (existsSync(work)) throw new Error(`Hay una preparación previa en ${work}; inspeccionarla sin descartarla.`);
-        run('git', ['worktree', 'add', '--detach', work, head], root);
-        run('npm', ['ci']);
-        run('npx', ['playwright', 'install', 'chromium']);
-        mkdirSync(resolve(work, '.tmp/cineposta-daily'), { recursive: true });
-        const publications = readJsonDirectory(resolve(work, 'src/data/editorials')).map(note => ({ slug: note.slug, title: note.title, date: note.date })).sort((a, b) => b.date.localeCompare(a.date));
-        writeFileSync(resolve(work, '.tmp/cineposta-daily/published.json'), JSON.stringify({ totalPublications: publications.length, recentPublications: publications.slice(0, 60), recentDaily: receiptsAt(work).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 60).map((item, index) => ({ date: item.date, topicKey: item.topicKey, title: item.title, ...(index < 7 ? { tweet: item.tweet } : {}) })) }));
-        const context = { date, base: head, worktree: work, selection, availableModels: catalog.models, executionFile: resolve(work, '.tmp/cineposta-daily/native-execution.json') };
-        writeFileSync(contextPath, JSON.stringify(context, null, 2));
-        log(JSON.stringify(context));
+        if (!existsSync(work)) {
+          if (existsSync(contextPath) || day.attempt.candidate || day.value.attempts.length > 1) throw new Error('Falta el worktree de una jornada previa; conservar el checkpoint y recuperar el entorno, no reiniciar la redacción.');
+          run('git', ['worktree', 'add', '--detach', work, head], root);
+        }
+        mkdirSync(reviewDirectory, { recursive: true });
+        if (!existsSync(contextPath)) {
+          if (git('status', '--porcelain')) throw new Error('Worktree previo sin contexto y con cambios: conservar y diagnosticar, no sobrescribir.');
+          const context = { date, base: git('rev-parse', 'HEAD'), worktree: work, selection, availableModels: catalog.models, executionFile: resolve(reviewDirectory, 'native-execution.json') };
+          writeFileSync(contextPath, JSON.stringify(context, null, 2));
+        } else if (JSON.stringify(json(contextPath).selection) !== JSON.stringify(selection)) throw new Error('La selección Luna anunciada cambió durante la jornada; preservar los agentes y el checkpoint para resolver compatibilidad sin cambiar silenciosamente.');
+        const ready = resolve(state, `${date}-dependencies-ready`);
+        if (!existsSync(ready)) {
+          run('npm', ['ci']); run('npx', ['playwright', 'install', 'chromium']);
+          writeFileSync(ready, 'ready\n');
+        }
+        if (day.value.status === 'switching_topic') finishSwitch();
+        if (day.value.status === 'reviewing') installReviewPacket(day.attempt.rounds.at(-1));
+        writeFileSync(resolve(reviewDirectory, 'published.json'), `${JSON.stringify(historyAt(head), null, 2)}\n`);
+        printStatus();
         process.exitCode = 0;
+      } else if (mode === '--status') {
+        printStatus();
+      } else if (mode === '--candidate') {
+        candidateReview();
+      } else if (mode === '--record-review') {
+        processReview();
+      } else if (mode === '--revise') {
+        const plan = resolve(reviewDirectory, 'correction-plan.json');
+        day.revise(existsSync(plan) ? json(plan) : null); printStatus();
+      } else if (mode === '--switch-topic') {
+        if (day.value.status === 'switching_topic') finishSwitch(); else archiveAttempt();
       } else if (mode === '--review') {
         prepareEditorialReview();
+      } else if (mode === '--assess-viability') {
+        if (day.attempt.rounds.at(-1)?.phase === 'candidate') candidateReview(true); else prepareEditorialReview(true);
       } else {
       let proof;
       if (existsSync(proofPath)) {
@@ -303,7 +582,9 @@ try {
         // A concurrent daily publisher must not create a second publication.
         if (spawnSync('git', ['cat-file', '-e', `origin/main:reports/daily-editorial/${date}.json`], { cwd: work, stdio: 'ignore' }).status === 0) throw new Error('Otra ejecución publicó este día. Se conserva la preparación, sin segundo push.');
         const remote = git('rev-parse', 'origin/main');
+        mainHead = remote;
         if (remote !== proof.base) {
+          requireEditorialReview(); // Newly fetched editorials require a fresh independent review before integration.
           git('rebase', 'origin/main');
           // Revalidate merged inputs; a previous build does not prove the new tree.
           const { draft, note } = await inspectDraft(remote);
@@ -320,6 +601,7 @@ try {
         const sha = git('rev-parse', 'HEAD');
         if (run('git', ['ls-remote', 'origin', 'refs/heads/main'], root, true).split(/\s/)[0] !== sha) throw new Error('No se confirmó el SHA publicado en main; revisar concurrencia.');
         log(`Push confirmado: ${sha}`);
+        day.published(json(resolve(work, `reports/daily-editorial/${date}.json`)), sha);
         // GITHUB_TOKEN pushes do not trigger a push workflow. Dispatch is explicit.
         if (process.env.GITHUB_ACTIONS === 'true') run('gh', ['api', `repos/${config.repository}/actions/workflows/deploy.yml/dispatches`, '--method', 'POST', '--field', 'ref=main'], root);
         await verify(sha, json(resolve(work, `reports/daily-editorial/${date}.json`)));

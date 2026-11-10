@@ -6,7 +6,7 @@ import { tmpdir } from 'node:os';
 import { resolve } from 'node:path';
 import { selectNativeLuna, validateNativeExecution } from './lib/cineposta-luna.mjs';
 import { argentinaDate, canonicalSource, validateDraft, assertPublicationScope } from './lib/daily-editorial-policy.mjs';
-import { addQualityFixture, approveQualityFixture } from './test-helpers/editorial-quality-fixture.mjs';
+import { addQualityFixture, approveQualityFixture, approveOriginalityFixture } from './test-helpers/editorial-quality-fixture.mjs';
 
 const model = (name, reasoningEfforts = ['medium', 'max']) => ({ model: name, reasoningEfforts });
 
@@ -71,7 +71,7 @@ test('publication gate: only one new note, its own images and same-day receipt m
   assert.throws(() => assertPublicationScope(allowed.slice(1), slug, date), /exactamente una/);
 });
 
-test('publisher integration with simulated research/builds: dry-run, tamper block, rebase, single atomic push, idempotent recovery', { timeout: 30_000 }, async () => {
+test('publisher integration with simulated research/builds: dry-run, tamper block, rebase, single atomic push, idempotent recovery', { timeout: 90_000 }, async () => {
   // Everything here is a fixture: no model inference, GitHub call or real article.
   const directory = mkdtempSync(resolve(tmpdir(), 'cineposta-publisher-test-'));
   const repository = resolve(directory, 'repo');
@@ -89,6 +89,7 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     for (const file of ['publish-buffer-editorial-x.mjs', 'publish-buffer-x.mjs', 'buffer-x-availability.mjs']) cpSync(resolve(project, 'scripts', file), resolve(repository, 'scripts', file));
     mkdirSync(resolve(repository, 'config'));
     writeFileSync(resolve(repository, 'config/daily-editorial.json'), JSON.stringify({ repository: 'fixture/test', deployTimeoutMinutes: 0.1 }));
+    cpSync(resolve(project, 'config/daily-editorial-diversity.json'), resolve(repository, 'config/daily-editorial-diversity.json'));
     writeFileSync(resolve(repository, 'package.json'), '{"type":"module"}');
     writeFileSync(resolve(repository, '.gitignore'), '.tmp/\nnode_modules/\n');
     mkdirSync(resolve(repository, 'src/data/editorials'), { recursive: true });
@@ -137,6 +138,17 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     result = execute('--dry-run');
     assert.notEqual(result.status, 0);
     assert.match(result.stderr, /Falta revisión factual independiente/);
+    const topic = { id: 'fixture-festival', topicKey: draft.topicKey, title: note.title, summary: 'Synthetic original announcement from a film festival edition.', event: { key: draft.topicKey, type: 'announcement', date: note.date, entities: ['festival-fixture'], description: 'Synthetic original film festival announcement.' }, entities: [{ id: 'festival-fixture', kind: 'festival', aliases: ['Fixture Festival'] }], category: 'festivals', novelty: 'Synthetic substantial new film festival announcement.', evidence: [{ url: note.sources[0].url, checkedOn: note.date, excerpt: 'Synthetic original announcement from the official film festival.' }] };
+    draft.candidate = topic;
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/draft.json'), JSON.stringify(draft));
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/candidate.json'), JSON.stringify(topic));
+    result = execute('--candidate');
+    assert.equal(result.status, 0, result.stdout + result.stderr);
+    const candidateInput = JSON.parse(readFileSync(resolve(work, '.tmp/cineposta-daily/candidate-input.json'), 'utf8'));
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/factual-review.json'), JSON.stringify({ version: 1, date: note.date, candidateId: topic.id, contentDigest: candidateInput.contentDigest, verdict: 'approved', originality: approveOriginalityFixture(candidateInput) }));
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/native-review-execution.json'), JSON.stringify({ provider: 'codex-native', model: 'gpt-6-luna', effort: 'max', status: 'completed', probe: 'passed', agentId: 'fixture-reviewer', forkTurns: 'none' }));
+    result = execute('--record-review');
+    assert.equal(result.status, 0, result.stdout + result.stderr);
     result = execute('--review');
     assert.equal(result.status, 0, result.stdout + result.stderr);
     const reviewPath = resolve(work, '.tmp/cineposta-daily/factual-review.json');
@@ -181,6 +193,24 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     const correctedDraft = JSON.parse(readFileSync(resolve(work, '.tmp/cineposta-daily/draft.json'), 'utf8'));
     correctedDraft.claims[0].statement = correctedNote.title;
     writeFileSync(resolve(work, '.tmp/cineposta-daily/draft.json'), JSON.stringify(correctedDraft));
+    // An adverse amended approval was preserved by the factual journal. Enter
+    // the explicit correction state before asking for its replacement review.
+    const correctionReport = { ...adverse, verdict: 'changes_required', reason: 'The synthetic headline claim requires the documented factual correction.', findings: adverse.findings.map(f => ({ ...f, action: 'Correct the public headline and its claim using the fixture source.', evidence: [{ url: note.sources[0].url, checkedOn: note.date, excerpt: 'Synthetic source records the factual correction to the public title.' }] })) };
+    // Bind the corrective request to the original snapshot, before freezing
+    // the author's replacement bytes; --record-review normally precedes edits.
+    const correctedBytes = readFileSync(correctedNotePath, 'utf8');
+    const correctedDraftBytes = readFileSync(resolve(work, '.tmp/cineposta-daily/draft.json'), 'utf8');
+    const oldInput = JSON.parse(readFileSync(reviewInputPath, 'utf8'));
+    writeFileSync(correctedNotePath, JSON.stringify(oldInput.note));
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/draft.json'), JSON.stringify(oldInput.draft));
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/native-execution.json'), JSON.stringify(oldInput.authorExecution));
+    writeFileSync(reviewPath, JSON.stringify(correctionReport));
+    result = execute('--record-review');
+    assert.equal(result.status, 0, result.stdout + result.stderr);
+    result = execute('--revise'); assert.equal(result.status, 0, result.stdout + result.stderr);
+    writeFileSync(correctedNotePath, correctedBytes);
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/draft.json'), correctedDraftBytes);
+    writeFileSync(resolve(work, '.tmp/cineposta-daily/native-execution.json'), JSON.stringify(correctedExecution));
     result = execute('--review');
     assert.equal(result.status, 0, result.stdout + result.stderr);
     approval = approveQualityFixture(JSON.parse(readFileSync(reviewInputPath, 'utf8')));

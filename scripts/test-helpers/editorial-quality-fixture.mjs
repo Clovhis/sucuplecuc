@@ -27,7 +27,16 @@ export function approveQualityFixture(input) {
       accessEvidence: [fixtureEvidence(note.sources[0].url, note.date)],
       images: [...new Set(draft.imageChecks.map(image => image.src))].map(src => ({ src, status: 'cleared', basis: 'Synthetic license inspected independently.', evidence: [fixtureEvidence('https://fixture.example/license', note.date)] })),
       findings: [],
+      ...(draft.candidate ? { candidateId: draft.candidate.id, dimensions: { factual: 'approved', editorial: 'approved', originality: 'approved' }, originality: approveOriginalityFixture(draft.originalityContext) } : {}),
     },
+  };
+}
+export function approveOriginalityFixture({ history, preflight }) {
+  return {
+    verdict: 'approved', history: { digest: history.digest, recordCount: history.records.length, checkedRecordIds: history.records.map(r => r.id), checkedDiscardedIds: history.discarded.map(r => r.id) },
+    coverage: { fullHistory: true, events: true, entities: true, guideContributions: true },
+    comparisons: preflight.matches.filter(m => m.requiresEditorialComparison).map(match => ({ recordId: match.recordId, relation: 'distinct_event', priorAngle: 'Synthetic prior article about a different film event.', candidateContribution: 'Synthetic new event with a genuinely different announcement.', difference: 'Synthetic distinct facts and event independently verified.', evidence: [{ recordId: match.recordId, sourcePath: history.records.find(r => r.id === match.recordId).sourcePath, excerpt: 'Synthetic historical comparison with a distinct original announcement.' }] })),
+    guideComparisons: history.records.filter(r => r.isGuide).map(record => ({ recordId: record.id, relation: 'no_same_event', basis: 'Synthetic guide only mentions another event and does not develop this announcement.', evidence: [{ recordId: record.id, sourcePath: record.sourcePaths[0], excerpt: 'Synthetic programme guide with a different event and useful context.' }] })),
   };
 }
 export function qualityFixture(note, draft, assets = {}) {

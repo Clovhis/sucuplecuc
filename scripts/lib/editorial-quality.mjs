@@ -1,6 +1,8 @@
 import { canonicalSource, digest } from './daily-editorial-policy.mjs';
 import { validateNativeExecution } from './cineposta-luna.mjs';
 import { isDeepStrictEqual } from 'node:util';
+import { validateOriginalityReview } from './editorial-diversity.mjs';
+import { validateCandidateCorrections } from './editorial-day.mjs';
 
 const requireThat = (condition, message) => { if (!condition) throw new Error(`Revisión editorial: ${message}`); };
 const text = value => typeof value === 'string' && value.trim().length >= 8;
@@ -70,6 +72,41 @@ export function validateStoredEditorialReview(receipt, note, assets, legacy = {}
   const input = reviewInput(note, q.draft, assets, q.authorExecution);
   requireThat(q.contentDigest === input.contentDigest && isDeepStrictEqual(q.assets, assets), 'la nota o las imágenes publicadas no coinciden con la revisión.');
   validateEditorialQuality(input, q.report, q.reviewerExecution, q.history);
+  if (q.draft.candidate) {
+    const journey = receipt.editorialJourney;
+    requireThat(journey?.version === 1 && journey.date === note.date && journey.status === 'approved', 'falta checkpoint aprobado de la jornada.');
+    const active = journey.attempts?.at(-1);
+    requireThat(active?.status === 'approved' && isDeepStrictEqual(active.candidate, q.draft.candidate), 'intento aprobado distinto del contenido publicado.');
+    for (const [role, execution] of [['author', q.authorExecution], ['reviewer', q.reviewerExecution]]) requireThat(journey.agents?.[role]?.agentId === execution.agentId && journey.agents[role].model === execution.model && journey.agents[role].effort === execution.effort, 'la jornada cambió de agente o selección durante el ciclo.');
+    const last = active.rounds?.at(-1);
+    requireThat(last?.phase === 'article' && last.input.contentDigest === input.contentDigest && isDeepStrictEqual(last.report, q.report) && isDeepStrictEqual(last.execution, q.reviewerExecution), 'aprobación no vinculada al último snapshot del intento.');
+    for (const attempt of journey.attempts) {
+      for (const [roundIndex, round] of (attempt.rounds || []).entries()) {
+        const payload = round.phase === 'candidate'
+          ? Object.fromEntries(Object.entries(round.input).filter(([key]) => key !== 'contentDigest'))
+          : { version: round.input.version, note: round.input.note, draft: round.input.draft, assets: round.input.assets, authorExecution: round.input.authorExecution };
+        requireThat(digest(JSON.stringify(payload)) === round.input.contentDigest, 'snapshot de intento archivado alterado.');
+        if (round.report) {
+          requireThat(round.report.contentDigest === round.input.contentDigest, 'informe archivado ajeno a su snapshot.');
+          requireThat(round.input.authorExecution.agentId === journey.agents.author.agentId && round.execution?.agentId === journey.agents.reviewer.agentId, 'los intentos no reutilizaron los dos agentes independientes.');
+          validateNativeExecution(round.input.authorExecution, journey.agents.author);
+          validateNativeExecution(round.execution, journey.agents.reviewer);
+          requireThat(round.input.authorExecution.forkTurns === 'none' && round.execution.forkTurns === 'none', 'los intentos heredaron contexto de otro rol.');
+          if (round.phase === 'candidate' && round.report.verdict === 'approved') {
+            validateCandidateCorrections(round.input, round.report, attempt.rounds.slice(0, roundIndex + 1));
+            validateOriginalityReview(round.input, round.report, round.input);
+          }
+        }
+      }
+      if (attempt !== active) {
+        requireThat(attempt.status === 'switching_topic' && attempt.archive?.manifest?.length && journey.discarded.some(item => item.attemptId === attempt.id), 'falta archivo o motivo del candidato descartado.');
+        for (const [path, document] of Object.entries(attempt.archive.documents || {})) {
+          const file = attempt.archive.manifest.find(item => item.path === path);
+          requireThat(typeof document === 'string' && file && Buffer.byteLength(document) === file.bytes && digest(document) === file.sha256, 'documento archivado distinto de su manifiesto.');
+        }
+      }
+    }
+  }
   return 'reviewed';
 }
 
@@ -269,6 +306,10 @@ export function validateEditorialQuality(input, report, reviewerExecution, histo
   }
   const previousMaterial = boundHistory.flatMap(entry => entry.report?.findings || []).filter(f => f.severity === 'material');
   for (const finding of previousMaterial) requireThat(report.findings.some(f => f.id === finding.id && f.severity === 'material' && f.status === 'resolved'), 'no se pueden borrar hallazgos materiales de una revisión anterior.');
+  if (draft.candidate) {
+    requireThat(isDeepStrictEqual(draft.candidate, draft.originalityContext?.candidate), 'candidato distinto del preflight congelado.');
+    validateOriginalityReview(input, report, draft.originalityContext);
+  }
   const reviewProof = digest(JSON.stringify({ contentDigest, report, reviewerExecution, history }));
   const evidenceUrls = new Set();
   const walk = object => {
