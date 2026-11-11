@@ -107,6 +107,53 @@ test('unchanged approved preflight/article freezes are idempotent, while new byt
   });
 });
 
+test('a daily tweet must present the story and earn explicit independent social approval before publication', async () => {
+  await withFixture(async fixture => {
+    const candidate = fixtureCandidate(fixture.today);
+    approveCandidate(fixture, startCandidate(fixture, candidate));
+    await writeFixtureArticle(fixture, candidate);
+    writeNativePair(fixture);
+    const draft = fixture.readJson('.tmp/cineposta-daily/draft.json');
+    const good = structuredClone(draft);
+    draft.tweet = `Ojo: son admisiones reportadas, no personas únicas. Portada: Foto: Autor. https://www.cineposta.com.ar/editorial/${draft.slug}/ #Cine`;
+    fixture.writeJson('.tmp/cineposta-daily/draft.json', draft);
+    rejects(fixture.execute('--review'), /mensaje principal|presentación/);
+    assert.equal(stateOf(fixture).status, 'drafting', 'a credits dump cannot freeze a new article');
+    fixture.writeJson('.tmp/cineposta-daily/draft.json', { ...good, social: undefined });
+    rejects(fixture.execute('--review'), /social.version/);
+    fixture.writeJson('.tmp/cineposta-daily/draft.json', good);
+    succeeds(fixture.execute('--review'));
+    const input = fixture.readJson('.tmp/cineposta-daily/review-input.json');
+    assert.equal(fixture.readJson('.tmp/cineposta-daily/review-template.json').social.naturalArgentineSpanish, false);
+    const approval = approvedArticleReview(input).report;
+    approval.social.naturalArgentineSpanish = false;
+    rejects(submitReview(fixture, approval), /aprobación editorial independiente/);
+    assert.equal(stateOf(fixture).status, 'reviewing');
+    approval.social.naturalArgentineSpanish = true;
+    succeeds(submitReview(fixture, approval));
+    assert.equal(stateOf(fixture).status, 'approved');
+    const notePath = fixture.pathInWorktree('src/data/editorials/' + good.slug + '.json');
+    const noteBytes = readFileSync(notePath, 'utf8');
+    const finding = { id: 'social-invitation', kind: 'social', targetId: 'tweet', severity: 'minor', status: 'open',
+      description: 'The invitation should explain the specific festival angle more naturally.', action: 'Rewrite only the tweet with the opening-film angle and a clear invitation to the note.', evidence: [fixtureEvidence(input.note.sources[0].url, fixture.today)] };
+    succeeds(submitReview(fixture, { ...approval, verdict: 'changes_required', reason: 'Improve the reader invitation while retaining the approved facts and article.', findings: [finding] }));
+    succeeds(fixture.execute('--revise'));
+    const revised = fixture.readJson('.tmp/cineposta-daily/draft.json');
+    revised.tweet = `${revised.social.subject}: la apertura ya tiene película. Miramos qué dice esta elección sobre el festival en la nota: https://www.cineposta.com.ar/editorial/${revised.slug}/ #Cine`;
+    fixture.writeJson('.tmp/cineposta-daily/draft.json', revised);
+    writeNativePair(fixture);
+    succeeds(fixture.execute('--review'));
+    const updated = fixture.readJson('.tmp/cineposta-daily/review-input.json');
+    const corrected = approvedArticleReview(updated).report;
+    rejects(submitReview(fixture, corrected), /borrar hallazgos/);
+    corrected.findings = [{ ...finding, status: 'resolved', before: input.draft.tweet, after: revised.tweet, resolution: 'A specific opening-film angle and reader invitation replaced the generic presentation.' }];
+    succeeds(submitReview(fixture, corrected));
+    assert.equal(stateOf(fixture).status, 'approved');
+    assert.equal(readFileSync(notePath, 'utf8'), noteBytes, 'a style correction never rewrites the approved article or invents a factual claim');
+    assert.equal(existsSync(fixture.bufferRequest), false);
+  });
+});
+
 test('browser failure retains approval and exact build; source or dist changes require rebuilding', async () => {
   await withFixture(async fixture => {
     const candidate = fixtureCandidate(fixture.today);

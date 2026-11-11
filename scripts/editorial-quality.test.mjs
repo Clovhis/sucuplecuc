@@ -217,6 +217,11 @@ test('material findings cannot be approved, erased or marked fixed without a rea
   f.report.findings = []; assert.throws(() => check(f, history), /borrar hallazgos/);
   const resolved = { ...finding, status: 'resolved', before: 'Ku Stevens recorre 50 kilómetros', after: distance.statement, resolution: 'Corrected the statement and checked it against the original source.', evidence: [fixtureEvidence(f.input.note.sources[0].url, f.input.note.date)] };
   f.report.findings = [resolved]; assert.doesNotThrow(() => check(f, history));
+  f.report.findings = [{ ...resolved, kind: 'social', targetId: 'tweet', severity: 'minor' }];
+  assert.throws(() => check(f, history), /hallazgo original|borrar hallazgos/, 'a factual material finding cannot be relabeled as tweet style');
+  f.report.findings = [{ ...resolved, kind: 'social', targetId: 'tweet' }];
+  assert.throws(() => check(f, history), /social sólo/, 'material contradictions never use the presentation-only type');
+  f.report.findings = [resolved];
   resolved.after = f.input.note.title; assert.throws(() => check(f, history), /mismo claim/);
   resolved.after = resolved.before; assert.throws(() => check(f, history), /antes, después/);
 });

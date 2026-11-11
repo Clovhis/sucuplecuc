@@ -2,6 +2,7 @@ import { isDeepStrictEqual } from 'node:util';
 import { canonicalSource, validateDraft } from './daily-editorial-policy.mjs';
 import { editorialTextFields, findingTarget, validateEditorialReviewContent } from './editorial-quality.mjs';
 import { validateOriginalityReview } from './editorial-diversity.mjs';
+import { SOCIAL_REVIEW_CHECKS, validateDailySocial } from './editorial-social.mjs';
 
 const topics = ['names', 'quantities', 'units', 'dates', 'timezones', 'places', 'quotes', 'events', 'availability', 'visualRights', 'tweet', 'allMaterialClaims'];
 const text = value => typeof value === 'string' && value.trim().length >= 8;
@@ -23,6 +24,7 @@ function collector() {
 export function draftContractIssues(note, draft) {
   const { issues, test, attempt, evidence } = collector(), date = note?.date;
   attempt('draft', () => validateDraft(note, draft, [], [], date));
+  attempt('social', () => validateDailySocial(note, draft));
   if (!note?.cover || !Array.isArray(note.content)) return issues;
   const fields = editorialTextFields(note, draft.tweet), appears = value => typeof value === 'string' && Object.values(fields).some(field => field?.includes(value));
   test('claims', Array.isArray(draft.claims) && draft.claims.length > 0, 'registrar los hechos importantes');
@@ -76,6 +78,7 @@ export function reviewContractIssues(input, report, history = []) {
     attempt('originality', () => validateOriginalityReview(input, report, { history: input.history, policy: input.policy, candidate: input.candidate, preflight: input.preflight }));
     return issues;
   }
+  if (input.draft.social?.version === 1) attempt('social', () => validateDailySocial(input.note, input.draft, report));
   for (const claim of input.draft.claims || []) if (claim.corroboration === 'primary-only') test('draft/claims/' + claim.id + '/attribution', text(claim.attribution) && Object.values(input.textFields).some(field => field.includes(claim.attribution)), 'atribución literal específica de al menos 8 caracteres');
   for (const source of input.draft.sourceChecks || []) {
     const assessed = report.sources?.find(item => item.url === source.url), path = 'sources/' + source.url;
@@ -148,7 +151,11 @@ export function makeReviewPacket(input, { previous = null, history = [], candida
       access: !delta.accessChanged && sameSources ? copy(own?.report.access || []) : [],
       ...(!delta.accessChanged && own?.report.accessReason ? { accessReason: own.report.accessReason, accessEvidence: copy(own.report.accessEvidence) } : {}),
     });
-    for (const entry of history.filter(entry => entry.report?.contentDigest === entry.input?.contentDigest)) for (const finding of entry.report.findings || []) if (finding.severity === 'material' && !template.findings.some(item => item.id === finding.id)) template.findings.push(copy(finding));
+    if (input.draft.social?.version === 1) template.social = copy(
+      input.draft.tweet === own?.input.draft?.tweet && isDeepStrictEqual(input.draft.social, own?.input.draft?.social)
+      && isDeepStrictEqual(input.draft.imageChecks, own?.input.draft?.imageChecks) && !delta.assetsChanged && own?.report.social
+        ? own.report.social : { ...Object.fromEntries(SOCIAL_REVIEW_CHECKS.map(key => [key, false])), basis: '' });
+    for (const entry of history.filter(entry => entry.report?.contentDigest === entry.input?.contentDigest)) for (const finding of entry.report.findings || []) if ((finding.severity === 'material' || finding.kind === 'social') && !template.findings.some(item => item.id === finding.id)) template.findings.push(copy(finding));
     for (const finding of template.findings) {
       const original = history.find(entry => entry.report?.contentDigest === entry.input?.contentDigest && entry.report.findings?.some(old => old.id === finding.id && old.kind === finding.kind && old.targetId === finding.targetId && (old.field || 'statement') === (finding.field || 'statement') && old.status === 'open'));
       if (!original) continue;

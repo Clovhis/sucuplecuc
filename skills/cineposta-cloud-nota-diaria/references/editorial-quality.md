@@ -111,6 +111,20 @@ Con `uncertain`/`prohibited`, titular sin comprobar, condiciones incompatibles o
 
 El revisor abre las condiciones por su cuenta, revisa las imágenes y captions y escribe `images: [{src,status:"cleared"|"blocked",basis,evidence}]`. Cada decisión debe citar la página de términos del recurso, no sólo el JPEG/WebP.
 
+## Tweet: una invitación editorial, no un informe interno
+
+En las nuevas preparaciones, `draft.social` es obligatorio: `{ "version": 1, "subject": "Nombre concreto de película, evento o protagonista" }`. Ese sujeto debe corresponder al título o un alias del candidato y aparecer en el mensaje principal. No alcanza nombrarlo en URL, hashtags o créditos. Películas con nombres cortos o numéricos también son válidas.
+
+La autora escribe un tweet original, cercano y natural en español argentino que explique **qué pasó y por qué vale leer la nota**, con un comentario específico, la URL directa y 1–3 hashtags. Se lee solo en X: no presupone que el lector vio la imagen o el artículo. Invitar a leer puede integrarse de distintas maneras; no usar una fórmula repetida ni exigir entusiasmo artificial ante temas delicados. Una salvedad metodológica, aunque sea cierta, no reemplaza la noticia. Mantener las precisiones necesarias, sin convertir el tweet en un apunte del auditor.
+
+El control conserva el mínimo existente de 40 caracteres de comentario, pero ahora excluye URLs, hashtags y apéndices de crédito al contarlo. No hay cuota de palabras ni obligación de rellenar un tweet breve y útil. Los créditos no pueden ocupar más texto que ese mensaje. Estas comprobaciones no detectan por sí solas originalidad, tono o veracidad: el auditor los juzga independientemente.
+
+Para aprobar, `report.social` necesita `subjectClear`, `newsAndAngle`, `invitesReading`, `naturalArgentineSpanish` y `creditsSecondary` en `true`, más `basis` explicando el juicio editorial. Las plantillas comienzan con todos esos checks en `false`. Datos, licencia y longitud correctos **no bastan**. Ante un tweet frío, genérico, confuso o dominado por créditos: `changes_required`, hallazgo `kind: social`, `targetId: tweet`, `severity: minor` y acción concreta; corregir sólo el tweet y reutilizar texto/evidencia válidos de la nota. La autora y el mismo auditor trabajan sobre el nuevo snapshot sin otro agente creativo. `social` sirve exclusivamente para presentación: conserva el antes/después literal del tweet y evidencia, exige cerrar el hallazgo y no permite borrarlo. No requiere inventar un claim factual para corregir estilo. Errores de cifras, atribuciones o derechos mantienen sus tipos y severidades; ningún hallazgo material puede convertirse en uno de estilo.
+
+Planear la portada también para X. Preferir permisos comprobados que permitan un crédito breve y legible. Si las obligaciones no dejan espacio para una buena presentación, cambiar por otra portada autorizada y revisar sus bytes/derechos/tweet. No quitar atribuciones, enlaces o avisos obligatorios; no asumir que ubicarlos sólo en la web basta. No modificar el flujo de Buffer, agendas ni posts anteriores para resolverlo.
+
+Los recibos históricos conservan su revisión original: no se reclasifican ni habilitan un reenvío. Las nuevas preparaciones exigen este contrato tanto antes de congelar como antes del commit; quitar `draft.social` no permite saltarlo.
+
 ## Informe del revisor y correcciones
 
 `factual-review.json` contiene:
@@ -136,6 +150,7 @@ El ejemplo es adverso e incompleto: **no pasa el gate**. Un informe real clasifi
 
 Hallazgos materiales incluyen contradicciones en unidades/cifras/fechas/zonas/nombres/citas/lugares/eventos/disponibilidad y derechos no acreditados. No esconderlos como menores para aprobar. Usar IDs estables y `kind`/`targetId` que identifican el **mismo objeto** de los snapshots:
 
+- `kind: social`: sólo presentación del tweet, `targetId: tweet`, `severity: minor`; antes/después son los mensajes completos. Debe cerrarse sin borrar su historial. Nunca sustituye un hallazgo factual o de derechos.
 - `kind: text`: para un hecho omitido del ledger, `targetId` es una clave de `textFields` (por ejemplo `content/0/text` o `tweet`). `before`/`after` son los campos públicos completos antes/después; `objectedText` cita el fragmento factual objetado, que debe desaparecer. `claimId` identifica el nuevo claim que registra el hecho corregido con evidencia; su statement debe figurar en el campo corregido. Si se retira el campo completo, usar after null; no hay un nuevo hecho que registrar. Así se puede corregir y registrar un dato omitido sin inventar un claim antiguo.
 - `kind: claim`: `targetId` es el ID del claim. `before` debe ser el statement original y `after` el statement corregido exacto del mismo ID. El texto objetado debe desaparecer de la publicación; no se permite sustituirlo por un título ajeno.
 - En `kind: claim`, `field` opcional identifica `statement` (predeterminado), `attribution`, `limitation`, `evidence` o `corroboration`. Para metadata, antes/después son los valores reales de ese mismo campo en ambos snapshots; el claim debe seguir presente. Una atribución/evidencia corregida no exige retirar texto público correcto. El campo queda ligado al hallazgo original: no se puede convertir una contradicción de statement en un cambio de metadata ni borrar un material previo.

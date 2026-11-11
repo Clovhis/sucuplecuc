@@ -13,6 +13,7 @@ import { EditorialDay, REVIEW_VERDICTS, REPLACEMENT_VERDICTS, candidateField, va
 import { buildEditorialHistory, preflightCandidate, validateOriginalityReview } from './lib/editorial-diversity.mjs';
 import { EditorialMetrics, EditorialValidationStages, buildArtifactDigest, readEditorialMetrics, validationInputDigest } from './lib/editorial-validation.mjs';
 import { compactEditorialHistory, makeReviewPacket, reviewContractIssues } from './lib/editorial-review-tools.mjs';
+import { validateDailySocial } from './lib/editorial-social.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(readFileSync(resolve(root, 'config/daily-editorial.json'), 'utf8'));
@@ -181,7 +182,7 @@ function validateAdverseReport(input, report) {
   if (report.verdict === 'changes_required') {
     if (!report.findings?.some(f => f.status === 'open')) throw new Error('changes_required debe devolver hallazgos abiertos.');
     for (const finding of report.findings.filter(f => f.status === 'open')) {
-      if (!finding.id || !finding.targetId || !['claim', 'access', 'image', 'text'].includes(finding.kind) || !['material', 'minor'].includes(finding.severity) || !finding.description || typeof finding.action !== 'string' || finding.action.length < 12) throw new Error('El hallazgo debe identificar objeto, problema y corrección concreta.');
+      if (!finding.id || !finding.targetId || !['claim', 'access', 'image', 'text', 'social'].includes(finding.kind) || !['material', 'minor'].includes(finding.severity) || !finding.description || typeof finding.action !== 'string' || finding.action.length < 12) throw new Error('El hallazgo debe identificar objeto, problema y corrección concreta.');
       if (input.candidate) {
         if (finding.kind !== 'text') throw new Error('En preflight el hallazgo debe ser text y señalar candidate/campo.');
         candidateField(input.candidate, finding.targetId);
@@ -379,6 +380,7 @@ function prepareEditorialReview(viabilityOnly = false) {
   draft.originalityContext = { history: fullHistory, historyRef: mainHead, policy: configuredPolicy, candidate, preflight: preflightCandidate(candidate, fullHistory, configuredPolicy, date) };
   writeFileSync(draftPath, `${JSON.stringify(draft, null, 2)}\n`);
   const input = currentReviewInput();
+  validateDailySocial(input.note, input.draft);
   if (!viabilityOnly && day.attempt.status === 'approved' && day.attempt.rounds.at(-1)?.input.contentDigest === input.contentDigest) {
     requireEditorialReview(); // Recheck both executions, history and all findings.
     printStatus();
@@ -394,6 +396,7 @@ async function inspectDraft(base) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(draft.slug || '')) throw new Error('Slug de preparación inválido.');
   const notePath = `src/data/editorials/${draft.slug}.json`;
   const note = json(resolve(work, notePath));
+  validateDailySocial(note, draft);
   const oldFiles = git('ls-tree', '-r', '--name-only', base, '--', 'src/data/editorials').split('\n').filter(file => file.endsWith('.json'));
   const previous = oldFiles.map(file => JSON.parse(git('show', `${base}:${file}`)));
   const receipts = git('ls-tree', '-r', '--name-only', base, '--', 'reports/daily-editorial').split('\n').filter(file => file.endsWith('.json')).map(file => JSON.parse(git('show', `${base}:${file}`)));
@@ -652,6 +655,10 @@ try {
         proof = await validate(head);
       }
       if (requireEditorialReview().reviewProof !== proof.reviewProof) throw new Error('La revisión editorial cambió después del gate; revalidar antes del commit.');
+      // Also enforce on an unpublished preparation with an older saved proof.
+      // Published receipts keep their original audit and idempotent recovery.
+      const socialInput = currentReviewInput();
+      validateDailySocial(socialInput.note, socialInput.draft, json(reviewFile));
       if (mode === '--dry-run' || mode === '--revalidate') {
         log(`Simulación real completa aprobada. No hubo push. Publicar la misma preparación con --publish. Worktree: ${work}`);
       } else {

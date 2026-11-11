@@ -9,7 +9,7 @@ function fixture(withOriginality = false) {
   const date = '2026-11-14', candidate = fixtureCandidate(date), note = fixtureNote(date, candidate), draft = fixtureDraft(date, candidate, note);
   if (withOriginality) draft.originalityContext = { history: { version: 1, digest: 'complete-history-1', records: [], discarded: [] }, preflight: { matches: [] } };
   else delete draft.candidate;
-  return qualityFixture(note, draft);
+  return qualityFixture(note, draft, {}, { social: true });
 }
 
 test('local preflight reports all Nov 11 contract omissions together without changing artifacts', () => {

@@ -1,6 +1,7 @@
 import { canonicalSource, digest } from './daily-editorial-policy.mjs';
 import { validateNativeExecution } from './cineposta-luna.mjs';
 import { isDeepStrictEqual } from 'node:util';
+import { validateDailySocial } from './editorial-social.mjs';
 import { validateOriginalityReview } from './editorial-diversity.mjs';
 import { validateCandidateCorrections } from './editorial-day.mjs';
 
@@ -17,6 +18,10 @@ export function requireReviewedForSocial(status) {
 export const CLAIM_REVIEW_FIELDS = ['statement', 'attribution', 'limitation', 'evidence', 'corroboration'];
 const findingField = finding => finding.kind === 'claim' ? (finding.field || 'statement') : null;
 export function findingTarget(input, finding) {
+  if (finding.kind === 'social') {
+    requireThat(finding.targetId === 'tweet' && finding.severity === 'minor', 'social sólo identifica presentación del tweet; hechos y derechos conservan sus tipos y severidad.');
+    return { exists: typeof input.draft.tweet === 'string', value: input.draft.tweet ?? null };
+  }
   if (finding.kind === 'text') {
     const fields = editorialTextFields(input.note, input.draft.tweet);
     return { exists: Object.hasOwn(fields, finding.targetId), value: fields[finding.targetId] ?? null };
@@ -282,6 +287,10 @@ export function validateEditorialReviewContent(input, report, history = []) {
   for (const finding of report.findings) {
     requireThat(['material', 'minor'].includes(finding.severity) && ['open', 'resolved'].includes(finding.status) && text(finding.description), 'hallazgo sin clasificación o explicación.');
     requireThat(finding.severity !== 'material' || finding.status === 'resolved', 'contradicción material abierta: push bloqueado aunque Astro/Playwright pasen.');
+    if (finding.kind === 'social') {
+      findingTarget(input, finding);
+      requireThat(finding.status === 'resolved', 'presentación social pendiente: corregir el tweet antes de aprobar.');
+    }
     if (finding.status === 'resolved') {
       requireThat(typeof finding.targetId === 'string' && text(finding.resolution) && !isDeepStrictEqual(finding.before, finding.after), 'la corrección debe documentar antes, después y fundamento.');
       evidence(finding.evidence, date);
@@ -305,8 +314,8 @@ export function validateEditorialReviewContent(input, report, history = []) {
       }
     }
   }
-  const previousMaterial = boundHistory.flatMap(entry => entry.report?.findings || []).filter(f => f.severity === 'material');
-  for (const finding of previousMaterial) requireThat(report.findings.some(f => f.id === finding.id && f.kind === finding.kind && f.targetId === finding.targetId && findingField(f) === findingField(finding) && f.severity === 'material' && f.status === 'resolved'), 'no se pueden borrar hallazgos materiales ni cambiarlos de objeto en una revisión anterior.');
+  const previousRequired = boundHistory.flatMap(entry => entry.report?.findings || []).filter(f => f.severity === 'material' || f.kind === 'social');
+  for (const finding of previousRequired) requireThat(report.findings.some(f => f.id === finding.id && f.kind === finding.kind && f.targetId === finding.targetId && findingField(f) === findingField(finding) && f.severity === finding.severity && f.status === 'resolved'), 'no se pueden borrar hallazgos materiales o de presentación social ni cambiarlos de objeto en una revisión anterior.');
   if (draft.candidate) {
     requireThat(isDeepStrictEqual(draft.candidate, draft.originalityContext?.candidate), 'candidato distinto del preflight congelado.');
     validateOriginalityReview(input, report, draft.originalityContext);
@@ -320,6 +329,7 @@ export function validateEditorialReviewContent(input, report, history = []) {
     }
   };
   walk({ claims: draft.claims, access, imageChecks: draft.imageChecks, report });
+  if (draft.social?.version === 1) validateDailySocial(note, draft, report);
   return { evidenceUrls: [...evidenceUrls] };
 }
 

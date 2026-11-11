@@ -38,6 +38,7 @@ Escribí `.tmp/cineposta-daily/draft.json` con este contrato (no agregar campos 
   "date": "YYYY-MM-DD",
   "slug": "slug-de-la-nota",
   "topicKey": "acontecimiento-concreto-estable-sin-fecha-de-ejecucion",
+  "social": { "version": 1, "subject": "Nombre concreto de película, evento o protagonista" },
   "tweet": "Comentario original sobre esta noticia, URL canónica directa y 1–3 hashtags, hasta 250 caracteres ponderados para X.",
   "decision": "Ángulo elegido y por qué aporta algo nuevo, en hasta 150 palabras.",
   "sourceChecks": [
