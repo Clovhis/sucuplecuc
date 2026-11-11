@@ -1,0 +1,222 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "touch-2024",
+	"title": "Touch",
+	"year": 2024,
+	"reviewedOn": "2026-11-10",
+	"createdOn": "2026-11-10",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"kind": "TMDb full movie credits; 50 billed cast entries inspected",
+			"fullCredits": true,
+			"relevantCreditCount": 9,
+			"checkedOn": "2026-11-10"
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/touch-0",
+			"kind": "JustWatch Argentina cast and availability cross-check",
+			"fullCredits": false,
+			"checkedOn": "2026-11-10"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt23468836/fullcredits/",
+			"kind": "IMDb full credits access attempt",
+			"fullCredits": false,
+			"checkedOn": "2026-11-10",
+			"accessResult": "HTTP 403 Forbidden; no credits were counted from this source."
+		}
+	],
+	"credits": [
+		{
+			"name": "Baltasar Kormákur",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/67813",
+					"fact": "El perfil de TMDb identifica a Baltasar Kormákur y vincula su trayectoria con la persona acreditada."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q167522",
+					"fact": "Wikidata identifica a Baltasar Kormákur y registra el mismo IMDb nm0466349 que devuelve external_ids de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Baltasar%20Korm%C3%A1kur-68717.jpg?width=640",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Egill Ólafsson",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/80921",
+					"fact": "El perfil de TMDb identifica a Egill Ólafsson y vincula su trayectoria con la persona acreditada."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q3481782",
+					"fact": "Wikidata identifica a Egill Ólafsson y registra el mismo IMDb nm0959958 que devuelve external_ids de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/s6d2SnwoD2FtRb0lmTqf4TpVI8m.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kōki",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3171312",
+					"fact": "El perfil de TMDb identifica a Kōki y vincula su trayectoria con la persona acreditada."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q54365875",
+					"fact": "Wikidata identifica a Kōki y registra el mismo IMDb nm11152317 que devuelve external_ids de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/K%C3%B5ki(Mitsuki%20Kimura)%20in%20March%202026.png?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Pálmi Kormákur Baltasarsson",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/238165",
+					"fact": "El perfil de TMDb identifica a Pálmi Kormákur Baltasarsson y vincula su trayectoria con la persona acreditada."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q124735115",
+					"fact": "Wikidata identifica a Pálmi Kormákur Baltasarsson y registra el mismo IMDb nm2141003 que devuelve external_ids de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/mMpkcyp9SIU3nO3ZkhF3YZKoXCi.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Masahiro Motoki",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/80863",
+					"fact": "El perfil de TMDb identifica a Masahiro Motoki y vincula su trayectoria con la persona acreditada."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q1138347",
+					"fact": "Wikidata identifica a Masahiro Motoki y registra el mismo IMDb nm0609403 que devuelve external_ids de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/2W5391NRFyhvCZgtR2drmc9VIrh.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Yoko Narahashi",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1095403",
+					"fact": "El perfil de TMDb identifica a Yōko Narahashi y vincula su trayectoria con la persona acreditada."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q11445125",
+					"fact": "Wikidata identifica a Yōko Narahashi y registra el mismo IMDb nm0621201 que devuelve external_ids de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/vEzorKfyvuHoIRDFs8nGfj4bgdf.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ruth Sheen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/53367",
+					"fact": "El perfil de TMDb identifica a Ruth Sheen y vincula su trayectoria con la persona acreditada."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q436451",
+					"fact": "Wikidata identifica a Ruth Sheen y registra el mismo IMDb nm0790689 que devuelve external_ids de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruth%20Sheen%20at%20Mr%20Turner%20premiere.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Masatoshi Nakamura",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/567065",
+					"fact": "El perfil de TMDb identifica a Masatoshi Nakamura y vincula su trayectoria con la persona acreditada."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q2817191",
+					"fact": "Wikidata identifica a Masatoshi Nakamura y registra el mismo IMDb nm0620190 que devuelve external_ids de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/nwGXYsfq1VuuEqXOOy1skWcxe1l.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Meg Kubota",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1032472-touch/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1522261",
+					"fact": "El perfil de TMDb identifica a Meg Kubota y vincula su trayectoria con la persona acreditada."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q124735120",
+					"fact": "Wikidata identifica a Meg Kubota y registra el mismo IMDb nm1207093 que devuelve external_ids de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/la2ofJczz2e9iOMOdpMbct7uNHF.jpg",
+				"visuallyVerified": true
+			}
+		}
+	]
+}

@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-11-07. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-11-11. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2574
+Total de peliculas: 2575
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -624,6 +624,7 @@ Total de peliculas: 2574
 | 2024 | The Wild Robot | the-wild-robot-2024 | Animacion | HBO Max | ATP |
 | 2024 | Thelma: La venganza nunca ha sido tan dulce | thelma-la-venganza-nunca-ha-sido-tan-dulce-2024 | Comedia | Prime Video | +13 |
 | 2024 | Topuria. Matador | topuria-matador-2024 | Documental | Paramount Plus | +14 |
+| 2024 | Touch | touch-2024 | Drama | Netflix | +13 |
 | 2024 | Transformers Uno | transformers-one-2024 | Acción | Netflix | ATP |
 | 2024 | Turtles All the Way Down | turtles-all-the-way-down-2024 | Drama | HBO Max | +13 |
 | 2024 | Twisters | twisters-2024 | Accion | Netflix | +13 |
