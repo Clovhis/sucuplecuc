@@ -8,32 +8,8 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-10T12:13:33.000Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-11T11:43:44.127Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"title": "Cómo robar un banco",
-		"releaseDate": "2026-11-12",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10630-como-robar-un-banco/",
-		"slug": "cines-argentinos-10630",
-		"videoUrl": "https://www.youtube.com/watch?v=eUikTiezPlw",
-		"thumbnailUrl": "https://i.ytimg.com/vi/eUikTiezPlw/hqdefault.jpg"
-	},
-	{
-		"title": "Ebenezer: Los fantasmas de Navidad",
-		"releaseDate": "2026-11-12",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10657-ebenezer-los-fantasmas-de-navidad/",
-		"slug": "cines-argentinos-10657",
-		"videoUrl": "https://www.youtube.com/watch?v=TKz2QyzSnFY",
-		"thumbnailUrl": "https://i.ytimg.com/vi/TKz2QyzSnFY/hqdefault.jpg"
-	},
-	{
-		"title": "Aniquilación",
-		"releaseDate": "2026-11-12",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10642-aniquilacion/",
-		"slug": "cines-argentinos-10642",
-		"videoUrl": "https://www.youtube.com/watch?v=dRQrD6khw8c",
-		"thumbnailUrl": "https://i.ytimg.com/vi/dRQrD6khw8c/hqdefault.jpg"
-	},
 	{
 		"title": "Los Juegos del Hambre: Amanecer en la Cosecha",
 		"releaseDate": "2026-11-19",
@@ -89,5 +65,13 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10441",
 		"videoUrl": "https://www.youtube.com/watch?v=FHNCmFQSjkI",
 		"thumbnailUrl": "https://i.ytimg.com/vi/FHNCmFQSjkI/hqdefault.jpg"
+	},
+	{
+		"title": "La Era de Hielo: Mundo de lava",
+		"releaseDate": "2027-02-04",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10208-la-era-de-hielo-mundo-de-lava/",
+		"slug": "cines-argentinos-10208",
+		"videoUrl": "https://www.youtube.com/watch?v=XaSkYbItiKk",
+		"thumbnailUrl": "https://i.ytimg.com/vi/XaSkYbItiKk/hqdefault.jpg"
 	}
 ];
