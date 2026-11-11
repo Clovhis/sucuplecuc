@@ -998,6 +998,28 @@
 					"Apple TV"
 				]
 			}
+		},
+		{
+			"slug": "el-pez-pucheros-2026",
+			"bufferPostId": "6af3c2bfffe2872794e52dea",
+			"dueAt": "2026-11-11T22:00:00.000Z",
+			"scheduledAt": "2026-11-11T01:19:59.580Z",
+			"copyStyle": {
+				"opening": 913532476,
+				"availability": 3528795531,
+				"editorial": 1910216899,
+				"verdict": 502410563,
+				"link": 2211939694
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/el-pez-pucheros",
+				"checkedAt": "2026-11-11T01:19:58.914Z",
+				"kind": "subscription",
+				"platforms": [
+					"HBO Max"
+				]
+			}
 		}
 	]
 }
