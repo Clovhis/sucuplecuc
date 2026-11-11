@@ -119,7 +119,7 @@ export async function createDailyOrchestratorFixture({ historyNotes = [], histor
 		extraHistoryInputs: [],
 	}));
 	writeFileSync(resolve(repository, 'package.json'), '{"type":"module"}');
-	writeFileSync(resolve(repository, '.gitignore'), '.tmp/\nnode_modules/\n');
+	writeFileSync(resolve(repository, '.gitignore'), '.tmp/\nnode_modules/\ndist/\ntest-results/\nplaywright-report/\n');
 	mkdirSync(resolve(repository, 'src/data/editorials'), { recursive: true });
 	writeFileSync(resolve(repository, 'src/data/editorials/.gitkeep'), '');
 	for (const note of historyNotes) writeFileSync(resolve(repository, `src/data/editorials/${note.slug}.json`), `${JSON.stringify(note, null, 2)}\n`);
@@ -139,9 +139,11 @@ export async function createDailyOrchestratorFixture({ historyNotes = [], histor
 	}));
 
 	makeTool(bin, 'codex', `throw Error('Nested CLI inference is forbidden');`);
-	const fakeTools = `import { appendFileSync, existsSync, symlinkSync, mkdirSync } from 'node:fs';
+	const fakeTools = `import { appendFileSync, existsSync, symlinkSync, mkdirSync, writeFileSync } from 'node:fs';
 appendFileSync(process.env.TEST_COMMAND_LOG, process.argv[1].split('/').at(-1)+' '+process.argv.slice(2).join(' ')+'\\n');
 if(process.env.TEST_FAIL_VALIDATION==='1'&&process.argv[2]==='run') process.exit(1);
+if(process.env.TEST_FAIL_BROWSERS==='1'&&process.argv[1].endsWith('/npx')&&process.argv[2]==='playwright'&&process.argv[3]==='test') process.exit(1);
+if(process.argv[2]==='run'&&process.argv[3]==='build'){mkdirSync('dist',{recursive:true});writeFileSync('dist/index.html','Synthetic fixture build output.');}
 if(process.argv[2]==='ci'&&!existsSync('node_modules')) { mkdirSync('node_modules'); symlinkSync(process.env.TEST_DEPENDENCIES+'/sharp','node_modules/sharp','dir'); }`;
 	makeTool(bin, 'npm', fakeTools);
 	makeTool(bin, 'npx', fakeTools);

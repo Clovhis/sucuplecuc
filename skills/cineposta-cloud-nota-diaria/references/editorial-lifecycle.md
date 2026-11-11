@@ -1,5 +1,7 @@
 # Ciclo editorial diario y diversidad
 
+La operación cotidiana y las métricas están en [cloud-operations.md](cloud-operations.md). `--status` no toma el lock ni modifica estado. Las plantillas son pendientes; los diffs y el índice compacto completo evitan volver a producir comprobaciones intactas, sin reemplazar la decisión independiente. Los stages técnicos aprobados sólo se reutilizan con entradas/artefactos idénticos; la suite de navegador siempre se ejecuta completa al validar.
+
 Aplica sólo a la tarea diaria. No cambia agendas, selección de los dos Luna Max, suscripción, guías semanales, Pages ni Buffer. Reutiliza el contrato factual v1: evidencia por afirmación, unidades, ART/DST, linaje de fuentes, acceso argentino, permisos, atribuciones y cierre material siguen siendo obligatorios.
 
 ## Roles y checkpoints
@@ -19,7 +21,7 @@ La revisión preliminar del candidato tiene `phase: candidate`; su aprobación d
 
 ## Antes de investigar cada candidato
 
-El autor lee el índice completo `published.json`, revisa antecedentes pertinentes y compara candidatos por relevancia, hecho nuevo, calidad de fuentes y diversidad. Escribe `.tmp/cineposta-daily/candidate.json`:
+El autor lee el índice completo `published-brief.json` (o el canónico `published.json` si falta), revisa antecedentes pertinentes y compara candidatos por relevancia, hecho nuevo, calidad de fuentes y diversidad. Escribe `.tmp/cineposta-daily/candidate.json`:
 
 ```json
 {

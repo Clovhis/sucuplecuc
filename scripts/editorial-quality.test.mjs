@@ -18,6 +18,32 @@ const refresh = value => {
   return value;
 };
 
+test('claim metadata corrections bind actual fields without erasing correct public text', () => {
+  const f = fixture();
+  f.input.note.content[0].text += ' El festival informó la selección.';
+  const claim = f.input.draft.claims[0];
+  claim.corroboration = 'primary-only';
+  claim.attribution = 'informó';
+  claim.limitation = 'Solo el festival confirma esta selección cinematográfica.';
+  refresh(f);
+  const opening = { id: 'attribution-specific-source', kind: 'claim', field: 'attribution', targetId: claim.id, severity: 'minor', status: 'open', description: 'The metadata attribution names only a verb rather than its actual source.' };
+  const prior = { input: structuredClone(f.input), report: { ...structuredClone(f.report), verdict: 'changes_required', findings: [opening] }, execution: f.reviewerExecution };
+  f.input.draft.claims[0].attribution = 'El festival informó';
+  refresh(f);
+  f.report.claims[0].status = 'attributed';
+  f.report.findings = [{ ...opening, status: 'resolved', before: 'informó', after: 'El festival informó', resolution: 'Only the actual attribution field was expanded to identify the source already named publicly.', evidence: [fixtureEvidence(f.input.note.sources[0].url, f.input.note.date)] }];
+  assert.doesNotThrow(() => check(f, [prior]));
+  assert.equal(f.input.draft.claims[0].statement, prior.input.draft.claims[0].statement);
+  const forged = structuredClone(f);
+  forged.report.findings[0].field = 'statement';
+  assert.throws(() => check(forged, [prior]), /hallazgo original|mismo objeto/);
+  const oldMaterial = structuredClone(prior);
+  oldMaterial.report.findings[0].field = 'statement';
+  oldMaterial.report.findings[0].severity = 'material';
+  f.report.findings[0].severity = 'material';
+  assert.throws(() => check(f, [oldMaterial]), /hallazgo original|objeto/);
+});
+
 test('approval requires another completed native Luna Max, full coverage and matching immutable input', () => {
   const f = fixture();
   assert.ok(check(f).reviewProof);

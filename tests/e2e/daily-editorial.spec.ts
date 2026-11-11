@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+const screenshotOptions = { scale: 'css', animations: 'disabled' } as const;
 import { existsSync, readFileSync } from 'node:fs';
 
 const draftPath = '.tmp/cineposta-daily/draft.json';
@@ -25,11 +26,11 @@ test('daily note: archive, SEO, sources, decoded images and 320 px layout', asyn
     await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.complete && node.naturalWidth > 0)).toBe(true);
     await expect(image).toHaveAttribute('srcset', /640w/);
   }
-  await page.screenshot({ path: testInfo.outputPath('daily-desktop.png'), fullPage: true });
+  await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('daily-desktop.png'), fullPage: true });
   await page.setViewportSize({ width: 320, height: 760 });
   await page.evaluate(() => window.scrollTo(0, 0));
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  await page.screenshot({ path: testInfo.outputPath('daily-320.png'), fullPage: true });
+  await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('daily-320.png'), fullPage: true });
   await page.getByRole('link', { name: 'Volver a Editorial CinePosta →', exact: true }).click();
   await expect(page).toHaveURL('/editorial/');
   await page.goto('/');

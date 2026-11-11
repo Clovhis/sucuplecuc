@@ -1,5 +1,7 @@
 # Contrato obligatorio de calidad editorial diaria (v1)
 
+Antes de terminar su turno, cada rol ejecuta `scripts/check-daily-editorial.mjs --draft` o `--review` desde el worktree. El chequeo de revisión reutiliza el validador de contenido sin fabricar una ejecución del auditor ni una aprobación: el publicador sigue exigiendo ambos completions reales. Las plantillas/diffs son auxiliares pendientes, según [Operación eficiente](cloud-operations.md).
+
 Estos controles pertenecen sólo a la nota diaria. No cambian agendas, Buffer ni automatizaciones semanales. La skill editorial sigue definiendo voz, estructura e integración; este contrato añade revisión factual y de derechos. No es un permiso para modificar notas ya publicadas. El [contrato de ciclo persistente y originalidad](editorial-lifecycle.md) amplía estas reglas sin flexibilizarlas: preflight independiente de cada candidato, cinco veredictos, correcciones iterativas y reemplazos archivados.
 
 ## Dos ejecuciones reales y una preparación congelada
@@ -136,6 +138,7 @@ Hallazgos materiales incluyen contradicciones en unidades/cifras/fechas/zonas/no
 
 - `kind: text`: para un hecho omitido del ledger, `targetId` es una clave de `textFields` (por ejemplo `content/0/text` o `tweet`). `before`/`after` son los campos públicos completos antes/después; `objectedText` cita el fragmento factual objetado, que debe desaparecer. `claimId` identifica el nuevo claim que registra el hecho corregido con evidencia; su statement debe figurar en el campo corregido. Si se retira el campo completo, usar after null; no hay un nuevo hecho que registrar. Así se puede corregir y registrar un dato omitido sin inventar un claim antiguo.
 - `kind: claim`: `targetId` es el ID del claim. `before` debe ser el statement original y `after` el statement corregido exacto del mismo ID. El texto objetado debe desaparecer de la publicación; no se permite sustituirlo por un título ajeno.
+- En `kind: claim`, `field` opcional identifica `statement` (predeterminado), `attribution`, `limitation`, `evidence` o `corroboration`. Para metadata, antes/después son los valores reales de ese mismo campo en ambos snapshots; el claim debe seguir presente. Una atribución/evidencia corregida no exige retirar texto público correcto. El campo queda ligado al hallazgo original: no se puede convertir una contradicción de statement en un cambio de metadata ni borrar un material previo.
 - `kind: access`: `targetId` es el ID del item de acceso. `before`/`after` son los objetos JSON completos de ese item antes/después.
 - `kind: image`: `targetId` es `src`. `before`/`after` son los objetos `rights` del mismo recurso antes/después (null si no había condiciones acreditadas).
 

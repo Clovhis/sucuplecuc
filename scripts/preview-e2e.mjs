@@ -1,6 +1,8 @@
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
 
 const getArgument = (name, fallback) => {
 	const index = process.argv.indexOf(name);
@@ -9,7 +11,6 @@ const getArgument = (name, fallback) => {
 
 const host = getArgument('--host', '127.0.0.1');
 const port = Number(getArgument('--port', '43210'));
-const distDirectory = path.resolve('dist');
 const contentTypes = new Map([
 	['.css', 'text/css; charset=utf-8'],
 	['.html', 'text/html; charset=utf-8'],
@@ -18,12 +19,19 @@ const contentTypes = new Map([
 	['.json', 'application/json; charset=utf-8'],
 	['.mjs', 'text/javascript; charset=utf-8'],
 	['.png', 'image/png'],
+	['.jpg', 'image/jpeg'],
+	['.jpeg', 'image/jpeg'],
+	['.avif', 'image/avif'],
+	['.woff', 'font/woff'],
+	['.woff2', 'font/woff2'],
 	['.svg', 'image/svg+xml'],
 	['.webmanifest', 'application/manifest+json; charset=utf-8'],
 	['.webp', 'image/webp'],
 	['.xml', 'application/xml; charset=utf-8'],
 ]);
 
+export function createPreviewServer({ directory = path.resolve('dist') } = {}) {
+const distDirectory = path.resolve(directory);
 function requestedFile(url) {
 	const pathname = decodeURIComponent(new URL(url, `http://${host}:${port}`).pathname);
 	const relativePath = pathname === '/' ? '.' : `.${pathname}`;
@@ -34,7 +42,7 @@ function requestedFile(url) {
 	return pathname.endsWith('/') ? path.join(candidate, 'index.html') : candidate;
 }
 
-const server = createServer(async (request, response) => {
+return createServer(async (request, response) => {
 	try {
 		const file = requestedFile(request.url ?? '/');
 		if (!file) {
@@ -57,12 +65,23 @@ const server = createServer(async (request, response) => {
 			body = Buffer.from(body.toString('utf8').replace('; upgrade-insecure-requests', ''));
 		}
 
-		response.writeHead(200, {
-			'cache-control': 'no-store',
+		// The artifact is immutable during a test run. Match Pages asset caching
+		// instead of downloading/decoding every shared font/image again after each
+		// navigation. HTML stays fresh; exact dist bytes are pinned by the gate.
+		const etag = '"' + createHash('sha256').update(body).digest('hex') + '"';
+		const headers = {
+			'cache-control': extension === '.html' ? 'no-store' : 'public, max-age=600, must-revalidate',
 			'content-type': contentType,
-		});
+			'etag': etag,
+		};
+		if (extension !== '.html' && request.headers['if-none-match'] === etag) {
+			response.writeHead(304, headers).end();
+			return;
+		}
+		response.writeHead(200, { ...headers, 'content-length': body.length });
 		response.end(body);
 	} catch (error) {
+		if (error instanceof URIError) { response.writeHead(400).end('Bad request'); return; }
 		if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
 			response.writeHead(404).end('Not found');
 			return;
@@ -71,7 +90,8 @@ const server = createServer(async (request, response) => {
 		response.writeHead(500).end('Internal server error');
 	}
 });
+}
 
-server.listen(port, host, () => {
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) createPreviewServer().listen(port, host, () => {
 	console.log(`E2E preview server listening on http://${host}:${port}`);
 });

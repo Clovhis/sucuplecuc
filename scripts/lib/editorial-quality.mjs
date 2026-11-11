@@ -14,14 +14,17 @@ export function requireReviewedForSocial(status) {
   requireThat(status === 'reviewed', 'una excepción histórica sin revisión no habilita envíos a X; usar --verify para lectura de Pages.');
 }
 
-function findingTarget(input, finding) {
+export const CLAIM_REVIEW_FIELDS = ['statement', 'attribution', 'limitation', 'evidence', 'corroboration'];
+const findingField = finding => finding.kind === 'claim' ? (finding.field || 'statement') : null;
+export function findingTarget(input, finding) {
   if (finding.kind === 'text') {
     const fields = editorialTextFields(input.note, input.draft.tweet);
     return { exists: Object.hasOwn(fields, finding.targetId), value: fields[finding.targetId] ?? null };
   }
   if (finding.kind === 'claim') {
+    requireThat(CLAIM_REVIEW_FIELDS.includes(findingField(finding)), 'campo de claim no verificable.');
     const claim = input.draft.claims?.find(item => item.id === finding.targetId);
-    return { exists: !!claim, value: claim?.statement ?? null };
+    return { exists: !!claim, value: claim?.[findingField(finding)] ?? null };
   }
   if (finding.kind === 'access') {
     const item = input.draft.access?.items?.find(item => item.id === finding.targetId);
@@ -171,15 +174,12 @@ export function checkTime({ instant, sourceZone, sourceLocal, art }) {
 }
 
 const topics = ['names', 'quantities', 'units', 'dates', 'timezones', 'places', 'quotes', 'events', 'availability', 'visualRights', 'tweet', 'allMaterialClaims'];
-export function validateEditorialQuality(input, report, reviewerExecution, history = []) {
-  const { note, draft, authorExecution, contentDigest, assets } = input;
+// Pure content/contract check for the native reviewer's local preflight. This
+// returns no runtime attestation or publication proof. The publisher always
+// calls validateEditorialQuality below with both actual completed executions.
+export function validateEditorialReviewContent(input, report, history = []) {
+  const { note, draft, contentDigest, assets } = input;
   const date = note.date;
-  requireThat(/^gpt-\d+(?:\.\d+)*-luna$/.test(authorExecution.model), 'el ejecutor debe pertenecer a la familia Luna anunciada.');
-  validateNativeExecution(authorExecution, { model: authorExecution.model, effort: 'max' });
-  requireThat(authorExecution.forkTurns === 'none', 'el autor debe iniciar sin historial heredado.');
-  validateNativeExecution(reviewerExecution, { model: authorExecution.model, effort: 'max' });
-  requireThat(reviewerExecution.agentId !== authorExecution.agentId, 'autor y revisor deben ser agentes nativos diferentes, sin contexto heredado.');
-  requireThat(reviewerExecution.forkTurns === 'none', 'el revisor debe iniciar sin el historial del autor.');
   requireThat(report?.version === QUALITY_VERSION && report.date === date && report.slug === note.slug && report.contentDigest === contentDigest, 'revisión ausente, antigua o correspondiente a otra preparación.');
   requireThat(report.verdict === 'approved', 'el revisor exige correcciones; los tests técnicos no sustituyen su aprobación.');
   requireThat(topics.every(topic => report.coverage?.[topic] === true), 'falta revisar una categoría factual, disponibilidad, derechos o tweet.');
@@ -285,11 +285,12 @@ export function validateEditorialQuality(input, report, reviewerExecution, histo
     if (finding.status === 'resolved') {
       requireThat(typeof finding.targetId === 'string' && text(finding.resolution) && !isDeepStrictEqual(finding.before, finding.after), 'la corrección debe documentar antes, después y fundamento.');
       evidence(finding.evidence, date);
-      const original = boundHistory.find(entry => entry.report.findings?.some(old => old.id === finding.id && old.status === 'open' && old.kind === finding.kind && old.targetId === finding.targetId));
+      const original = boundHistory.find(entry => entry.report.findings?.some(old => old.id === finding.id && old.status === 'open' && old.kind === finding.kind && old.targetId === finding.targetId && findingField(old) === findingField(finding)));
       requireThat(original, 'falta el hallazgo original vinculado al mismo objeto; no se sustituye una distancia por un título ajeno.');
       const before = findingTarget(original.input, finding), after = findingTarget(input, finding);
       requireThat(before.exists && isDeepStrictEqual(finding.before, before.value) && isDeepStrictEqual(finding.after, after.value), 'antes/después no corresponden al mismo claim, acceso o imagen de sus snapshots.');
-      if (finding.kind === 'claim') requireThat(!appears(before.value), 'la afirmación objetada sigue publicada, aunque se haya reasignado su ID.');
+      if (finding.kind === 'claim' && findingField(finding) === 'statement') requireThat(!appears(before.value), 'la afirmación objetada sigue publicada, aunque se haya reasignado su ID.');
+      if (finding.kind === 'claim' && findingField(finding) !== 'statement') requireThat(after.exists, 'una corrección de metadata no retira el claim ni oculta su afirmación pública.');
       if (finding.kind === 'text') {
         requireThat(text(finding.objectedText) && before.value.includes(finding.objectedText) && !appears(finding.objectedText), 'el fragmento factual objetado sigue publicado o no estaba en el texto original.');
         const registered = draft.claims.find(claim => claim.id === finding.claimId);
@@ -305,12 +306,11 @@ export function validateEditorialQuality(input, report, reviewerExecution, histo
     }
   }
   const previousMaterial = boundHistory.flatMap(entry => entry.report?.findings || []).filter(f => f.severity === 'material');
-  for (const finding of previousMaterial) requireThat(report.findings.some(f => f.id === finding.id && f.severity === 'material' && f.status === 'resolved'), 'no se pueden borrar hallazgos materiales de una revisión anterior.');
+  for (const finding of previousMaterial) requireThat(report.findings.some(f => f.id === finding.id && f.kind === finding.kind && f.targetId === finding.targetId && findingField(f) === findingField(finding) && f.severity === 'material' && f.status === 'resolved'), 'no se pueden borrar hallazgos materiales ni cambiarlos de objeto en una revisión anterior.');
   if (draft.candidate) {
     requireThat(isDeepStrictEqual(draft.candidate, draft.originalityContext?.candidate), 'candidato distinto del preflight congelado.');
     validateOriginalityReview(input, report, draft.originalityContext);
   }
-  const reviewProof = digest(JSON.stringify({ contentDigest, report, reviewerExecution, history }));
   const evidenceUrls = new Set();
   const walk = object => {
     if (!object || typeof object !== 'object') return;
@@ -320,6 +320,19 @@ export function validateEditorialQuality(input, report, reviewerExecution, histo
     }
   };
   walk({ claims: draft.claims, access, imageChecks: draft.imageChecks, report });
+  return { evidenceUrls: [...evidenceUrls] };
+}
+
+export function validateEditorialQuality(input, report, reviewerExecution, history = []) {
+  const { draft, authorExecution, contentDigest, assets } = input;
+  requireThat(/^gpt-\d+(?:\.\d+)*-luna$/.test(authorExecution.model), 'el ejecutor debe pertenecer a la familia Luna anunciada.');
+  validateNativeExecution(authorExecution, { model: authorExecution.model, effort: 'max' });
+  requireThat(authorExecution.forkTurns === 'none', 'el autor debe iniciar sin historial heredado.');
+  validateNativeExecution(reviewerExecution, { model: authorExecution.model, effort: 'max' });
+  requireThat(reviewerExecution.agentId !== authorExecution.agentId, 'autor y revisor deben ser agentes nativos diferentes, sin contexto heredado.');
+  requireThat(reviewerExecution.forkTurns === 'none', 'el revisor debe iniciar sin el historial del autor.');
+  const content = validateEditorialReviewContent(input, report, history);
+  const reviewProof = digest(JSON.stringify({ contentDigest, report, reviewerExecution, history }));
   const prior = history.filter(entry => !(isDeepStrictEqual(entry.report, report) && isDeepStrictEqual(entry.execution, reviewerExecution)));
-  return { contentDigest, reviewProof, evidenceUrls: [...evidenceUrls], record: { version: QUALITY_VERSION, contentDigest, assets, authorExecution, draft, claims: draft.claims, access, report, reviewerExecution, history: prior } };
+  return { contentDigest, reviewProof, evidenceUrls: content.evidenceUrls, record: { version: QUALITY_VERSION, contentDigest, assets, authorExecution, draft, claims: draft.claims, access: draft.access, report, reviewerExecution, history: prior } };
 }

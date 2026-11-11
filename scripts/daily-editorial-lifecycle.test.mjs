@@ -62,6 +62,102 @@ function approveCandidate(fixture, input, report = approvedCandidateReport(input
 	return result;
 }
 
+test('status reads a live locked day without fetch, mutation or stealing its lock', async () => {
+  await withFixture(async fixture => {
+    succeeds(fixture.execute('--prepare'));
+    const lock = resolve(fixture.repository, '.tmp/cineposta-daily/lock');
+    mkdirSync(lock);
+    const processStart = readFileSync('/proc/' + process.pid + '/stat', 'utf8').split(') ').at(-1).split(' ')[19];
+    const owner = { pid: process.pid, host: hostname(), processStart, startedAt: new Date().toISOString() };
+    writeFileSync(resolve(lock, 'owner.json'), JSON.stringify(owner));
+    const before = readFileSync(fixture.sessionFile, 'utf8');
+    const context = resolve(fixture.repository, '.tmp/cineposta-daily/' + fixture.today + '-context.json');
+    const contextBefore = readFileSync(context, 'utf8');
+    const result = fixture.execute('--status');
+    succeeds(result);
+    assert.match(result.stdout, /"running":true/);
+    assert.equal(readFileSync(fixture.sessionFile, 'utf8'), before);
+    assert.equal(readFileSync(context, 'utf8'), contextBefore);
+    assert.deepEqual(JSON.parse(readFileSync(resolve(lock, 'owner.json'), 'utf8')), owner);
+    rejects(fixture.execute('--prepare'), /Otra ejecución/);
+    rmSync(lock, { recursive: true });
+  });
+});
+
+test('unchanged approved preflight/article freezes are idempotent, while new bytes require a new review', async () => {
+  await withFixture(async fixture => {
+    const candidate = fixtureCandidate(fixture.today);
+    approveCandidate(fixture, startCandidate(fixture, candidate));
+    const candidateReport = readFileSync(fixture.pathInWorktree('.tmp/cineposta-daily/factual-review.json'), 'utf8');
+    succeeds(fixture.execute('--candidate'));
+    assert.equal(stateOf(fixture).status, 'drafting');
+    assert.equal(stateOf(fixture).attempts[0].rounds.length, 1);
+    assert.equal(readFileSync(fixture.pathInWorktree('.tmp/cineposta-daily/factual-review.json'), 'utf8'), candidateReport);
+    const article = await startArticle(fixture, candidate);
+    approveArticle(fixture, article.input);
+    succeeds(fixture.execute('--review'));
+    assert.equal(stateOf(fixture).status, 'approved');
+    assert.equal(stateOf(fixture).attempts[0].rounds.length, 2);
+    const path = fixture.pathInWorktree('src/data/editorials/' + article.input.note.slug + '.json');
+    const note = JSON.parse(readFileSync(path, 'utf8')); note.title += ' con otra precisión';
+    writeFileSync(path, JSON.stringify(note));
+    succeeds(fixture.execute('--review'));
+    assert.equal(stateOf(fixture).status, 'reviewing');
+    assert.equal(stateOf(fixture).attempts[0].rounds.length, 3);
+  });
+});
+
+test('browser failure retains approval and exact build; source or dist changes require rebuilding', async () => {
+  await withFixture(async fixture => {
+    const candidate = fixtureCandidate(fixture.today);
+    const input = startCandidate(fixture, candidate);
+    approveCandidate(fixture, input);
+    const article = await startArticle(fixture, candidate);
+    approveArticle(fixture, article.input);
+    const remote = fixture.remoteHead();
+    fixture.env.TEST_FAIL_BROWSERS = '1';
+    rejects(fixture.execute('--dry-run'), /Playwright falló/);
+    assert.equal(stateOf(fixture).status, 'approved');
+    fixture.env.TEST_FAIL_BROWSERS = '';
+    succeeds(fixture.execute('--revalidate'));
+    const builds = () => (readFileSync(fixture.commandLog, 'utf8').match(/^npm run build$/gm) || []).length;
+    assert.equal(builds(), 1, 'a browser retry must not rebuild identical approved source/artifacts');
+    assert.equal(fixture.remoteHead(), remote, 'validation does not publish');
+    writeFileSync(fixture.pathInWorktree('dist/index.html'), 'tampered artifact');
+    succeeds(fixture.execute('--revalidate'));
+    assert.equal(builds(), 2, 'changed dist must never be trusted');
+    writeFileSync(fixture.pathInWorktree('source-change.txt'), 'new untracked input');
+    rejects(fixture.execute('--revalidate'), /alcance|fuera|scope/i, 'publication scope still blocks unrelated untracked inputs');
+  });
+});
+
+test('a metadata-only correction completes the real review cycle without rewriting the approved public statement', async () => {
+  await withFixture(async fixture => {
+    const candidate = fixtureCandidate(fixture.today);
+    approveCandidate(fixture, startCandidate(fixture, candidate));
+    const article = await startArticle(fixture, candidate);
+    const finding = { id: 'claim-evidence-caveat', kind: 'claim', field: 'limitation', targetId: 'headline-event', severity: 'minor', status: 'open',
+      description: 'Add the independently checked scope of evidence to the private claim metadata.', action: 'Document the scope limitation without changing the correct public statement.', evidence: [fixtureEvidence(article.input.note.sources[0].url, fixture.today)] };
+    succeeds(submitReview(fixture, { date: fixture.today, slug: article.input.note.slug, contentDigest: article.input.contentDigest, verdict: 'changes_required', reason: 'The factual statement is correct but its evidence scope should be recorded explicitly.', findings: [finding] }));
+    succeeds(fixture.execute('--revise'));
+    const publicBefore = readFileSync(fixture.pathInWorktree('src/data/editorials/' + article.input.note.slug + '.json'), 'utf8');
+    const draft = fixture.readJson('.tmp/cineposta-daily/draft.json');
+    draft.claims[0].limitation = 'The announcement confirms selection, not later distribution in Argentina.';
+    fixture.writeJson('.tmp/cineposta-daily/draft.json', draft);
+    writeNativePair(fixture);
+    succeeds(fixture.execute('--review'));
+    const input = fixture.readJson('.tmp/cineposta-daily/review-input.json');
+    const packet = fixture.readJson('.tmp/cineposta-daily/review-template.json');
+    assert.equal(packet.verdict, 'pending');
+    assert.equal(packet.findings[0].field, 'limitation');
+    const report = approvedArticleReview(input).report;
+    report.findings = [{ ...finding, status: 'resolved', before: null, after: draft.claims[0].limitation, resolution: 'Recorded the actual evidentiary scope in the same claim metadata; public copy is unchanged.' }];
+    succeeds(submitReview(fixture, report));
+    assert.equal(stateOf(fixture).status, 'approved');
+    assert.equal(readFileSync(fixture.pathInWorktree('src/data/editorials/' + article.input.note.slug + '.json'), 'utf8'), publicBefore);
+  });
+});
+
 async function startArticle(fixture, candidate, options) {
 	const article = await writeFixtureArticle(fixture, candidate, options);
 	writeNativePair(fixture);

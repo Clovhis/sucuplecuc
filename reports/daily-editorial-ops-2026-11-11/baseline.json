@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-11",
+  "baselineCommit": "5d4bf469",
+  "evidence": [
+    "daily checkpoint and review journal preserved in managed cloud .tmp",
+    "reports/daily-editorial/2026-11-11.json",
+    "GitHub Actions runs 43077348545 and 43079127622",
+    "preserved initial validation and revalidation logs"
+  ],
+  "timelineUtc": {
+    "createdAt": "2026-11-11T13:04:54.768Z",
+    "editorialApprovedAt": "2026-11-11T17:15:30.448Z",
+    "pushedAt": "2026-11-11T18:23:42.015Z",
+    "pagesCompletedAt": "2026-11-11T18:34:43Z",
+    "bufferWorkflowCompletedAt": "2026-11-11T18:35:50Z"
+  },
+  "wallMinutes": {
+    "editorialIncludingResearchImagesCoordinationAndQuotaInterruption": 250.59,
+    "approvalToPush": 68.19,
+    "startToBufferWorkflowCompletion": 330.92
+  },
+  "attempts": 1,
+  "discardedCandidates": 0,
+  "frozenRounds": {
+    "candidate": 2,
+    "article": 3
+  },
+  "registeredDistinctCompletionsLowerBound": {
+    "author": 4,
+    "reviewer": 8
+  },
+  "providerTokenUsage": null,
+  "tokenUsageReason": "Native runtime did not expose per-call token usage; completions do not include all probes/auxiliary research. Wall time is not inference time.",
+  "originalTechnicalValidation": {
+    "initialBrowser": {
+      "passed": 60,
+      "failed": 10,
+      "minutes": 11.9
+    },
+    "revalidationBrowser": {
+      "passed": 70,
+      "failed": 0,
+      "retriesUsed": 0,
+      "minutes": 7.9
+    },
+    "revalidationBuildSeconds": 1235
+  },
+  "engineeringBuildComparison": {
+    "baselineProfiledSeconds": 1195,
+    "optimizedSeconds": 158,
+    "generatedRoutes": 8641,
+    "htmlFilesCompared": 8642,
+    "changedHtmlAfterNormalizingAstroAssetFingerprints": 0,
+    "note": "Same cloud/data/date. Baseline CPU sampled every 10 ms; engineering runs are observations, not a production SLA."
+  },
+  "cpuSelfSampleSeconds": {
+    "normalizeComparableText": 431.62,
+    "validateMovies": 154.11,
+    "getMovieSortTimestamp": 66.55,
+    "getMovies": 57.87
+  },
+  "nextRealRun": "2026-11-14T10:00:00-03:00",
+  "schedulerAgendaChanged": false,
+  "newArticleOrTweetGenerated": false,
+  "engineeringBrowserValidation": {
+    "passed": 70,
+    "failed": 0,
+    "retriesUsed": 0,
+    "minutes": 7.1,
+    "targetedContentionCasesPassed": 2,
+    "note": "Final run isolated from CPU audits and CLI integration suites; timeouts/assertions unchanged."
+  },
+  "engineeringRegressionTests": {
+    "passed": 75,
+    "failed": 0,
+    "skipped": 0,
+    "includes": "Real CLI lifecycle with synthetic isolated repositories, not live editorial agents or production social sends."
+  }
+}

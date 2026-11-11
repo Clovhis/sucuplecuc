@@ -1,4 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
+const screenshotOptions = { scale: 'css', animations: 'disabled' } as const;
 import { readdirSync, readFileSync } from 'node:fs';
 import residentEvil from '../../src/data/editorials/resident-evil-noche-cero-la-veria-99-veces.json' with { type: 'json' };
 import miasma from '../../src/data/editorials/campamento-miasma-si-venis-por-jason-preparate-para-el-delirio.json' with { type: 'json' };
@@ -93,12 +94,12 @@ for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival, 
       await expect(page).toHaveURL(path);
     }
     await page.evaluate(() => window.scrollTo(0, 0));
-    await page.screenshot({ path: testInfo.outputPath('news-viewport.png'), scale: 'css' });
-    await page.screenshot({ path: testInfo.outputPath('news-full.png'), fullPage: true, scale: 'css' });
+    await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('news-viewport.png') });
+    await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('news-full.png'), fullPage: true });
     await page.setViewportSize({ width: 320, height: 760 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-    await page.screenshot({ path: testInfo.outputPath('news-320-viewport.png'), scale: 'css' });
-    await page.screenshot({ path: testInfo.outputPath('news-320-full.png'), fullPage: true, scale: 'css' });
+    await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('news-320-viewport.png') });
+    await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('news-320-full.png'), fullPage: true });
     await page.getByRole('link', { name: 'Volver a Editorial CinePosta' }).click();
     await expect(page).toHaveURL('/editorial/');
     const archived = page.locator('.editorial-card').filter({ hasText: entry.title });
@@ -126,7 +127,7 @@ test('story cards navigate by keyboard, fit narrow screens and link to the compl
     await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.complete && node.naturalWidth > 0)).toBe(true);
     await expect(card.getByText('Leer nota')).toBeVisible();
   }
-  await home.screenshot({ path: testInfo.outputPath('stories-home.png'), scale: 'css' });
+  await home.screenshot({ ...screenshotOptions, path: testInfo.outputPath('stories-home.png') });
   const firstLink = cards.first().getByRole('link');
   const firstHref = await firstLink.getAttribute('href');
   await firstLink.focus();
@@ -144,7 +145,7 @@ test('story cards navigate by keyboard, fit narrow screens and link to the compl
     expect(box!.x).toBeGreaterThanOrEqual(0);
     expect(box!.x + box!.width).toBeLessThanOrEqual(320);
   }
-  await home.screenshot({ path: testInfo.outputPath('stories-home-320.png'), scale: 'css' });
+  await home.screenshot({ ...screenshotOptions, path: testInfo.outputPath('stories-home-320.png') });
   await openEditorialIndex(page);
   await expect(page.locator('.editorial-card')).toHaveCount(publications.length);
   expect(await page.locator('.editorial-card time').evaluateAll(nodes => nodes.map(node => node.getAttribute('datetime'))))
@@ -152,7 +153,7 @@ test('story cards navigate by keyboard, fit narrow screens and link to the compl
   expect(await page.locator('.editorial-card > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))))
     .toEqual(publications.map(entry => `/editorial/${entry.slug}/`));
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-  await page.locator('.editorial-index').screenshot({ path: testInfo.outputPath('stories-archive-320.png'), scale: 'css' });
+  await page.locator('.editorial-index').screenshot({ ...screenshotOptions, path: testInfo.outputPath('stories-archive-320.png') });
   expect(errors).toEqual([]);
 });
 
@@ -209,11 +210,11 @@ for (const { entry, movieTitle, sourcePattern } of [
       expect(await figure.evaluate(node => node.nextElementSibling?.tagName)).toBe('P');
       await expect(figure.getByRole('link', { name: 'Fuente de la imagen' })).toHaveAttribute('href', sourcePattern);
     }
-    await page.screenshot({ path: testInfo.outputPath('editorial-full.png'), fullPage: true });
+    await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('editorial-full.png'), fullPage: true });
     await page.setViewportSize({ width: 320, height: 760 });
     await page.evaluate(() => window.scrollTo(0, 0));
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-    await page.screenshot({ path: testInfo.outputPath('editorial-320.png'), fullPage: true });
+    await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('editorial-320.png'), fullPage: true });
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://www.cineposta.com.ar${path}`);
     const schema = await page.locator('script[type="application/ld+json"]').first().textContent();
     expect(JSON.parse(schema!).timeRequired).toBe('PT5M');
@@ -276,13 +277,13 @@ test(`${cancelados.slug}: note, internal biographies, SEO and images render on d
   const schema = await page.locator('script[type="application/ld+json"]').first().textContent();
   expect(JSON.parse(schema!).timeRequired).toBe(`PT${expectedMinutes}M`);
   await page.evaluate(() => window.scrollTo(0, 0));
-  await page.screenshot({ path: testInfo.outputPath('cancelados-desktop-viewport.png') });
-  await page.screenshot({ path: testInfo.outputPath('cancelados-desktop.png'), fullPage: true, scale: 'css' });
+  await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('cancelados-desktop-viewport.png') });
+  await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('cancelados-desktop.png'), fullPage: true });
 
   await page.setViewportSize({ width: 320, height: 760 });
   await page.evaluate(() => window.scrollTo(0, 0));
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-  await page.screenshot({ path: testInfo.outputPath('cancelados-mobile-320-viewport.png') });
-  await page.screenshot({ path: testInfo.outputPath('cancelados-mobile-320.png'), fullPage: true, scale: 'css' });
+  await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('cancelados-mobile-320-viewport.png') });
+  await page.screenshot({ ...screenshotOptions, path: testInfo.outputPath('cancelados-mobile-320.png'), fullPage: true });
   expect(errors).toEqual([]);
 });

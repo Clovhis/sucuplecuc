@@ -1,4 +1,5 @@
 import type { CinePostaScore, Movie } from '../types/movie';
+import { createValidatedBuildCatalog } from './validated-build-catalog';
 import { GENERATED_UPCOMING_RELEASES } from '../data/upcomingReleases.generated';
 import { generateMovieEditorialRecommendations, getMovieRecommendationAffinity } from './recommendation-engine';
 import { getMoviePlatforms } from './platforms';
@@ -633,7 +634,7 @@ function getWeeklySuggestionScore(movie: Movie): number {
 	return (movie.cinepostaScore ?? 0) * 10;
 }
 
-export function getMovies(): Movie[] {
+const getValidatedMovies = createValidatedBuildCatalog<Movie>(() => {
 	const movies = Object.values(movieModules)
 		.map((moduleItem) => moduleItem.default)
 		.filter((movie) => isReleased(movie))
@@ -644,8 +645,13 @@ export function getMovies(): Movie[] {
 				a.title.localeCompare(b.title, 'es'),
 		);
 
-	validateMovies(movies);
 	return movies;
+}, validateMovies);
+
+export function getMovies(): Movie[] {
+	// The existing release filter uses UTC days; keep its semantics unchanged.
+	const buildDay = import.meta.env.SSR && import.meta.env.PROD ? new Date().toISOString().slice(0, 10) : undefined;
+	return getValidatedMovies(buildDay);
 }
 
 export function getLatestReviewMovies(movies: Movie[], limit = 3): Movie[] {

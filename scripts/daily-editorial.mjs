@@ -8,9 +8,11 @@ import { hostname } from 'node:os';
 import { editorialPostPlan } from './publish-buffer-editorial-x.mjs';
 import { selectNativeLuna, validateNativeExecution } from './lib/cineposta-luna.mjs';
 import { argentinaDate, digest, validateDraft, assertPublicationScope } from './lib/daily-editorial-policy.mjs';
-import { reviewInput, validateEditorialQuality, snapshotEditorialAssets, validateStoredEditorialReview, requireReviewedForSocial } from './lib/editorial-quality.mjs';
+import { reviewInput, validateEditorialQuality, snapshotEditorialAssets, validateStoredEditorialReview, requireReviewedForSocial, findingTarget } from './lib/editorial-quality.mjs';
 import { EditorialDay, REVIEW_VERDICTS, REPLACEMENT_VERDICTS, candidateField, validateCandidateCorrections } from './lib/editorial-day.mjs';
 import { buildEditorialHistory, preflightCandidate, validateOriginalityReview } from './lib/editorial-diversity.mjs';
+import { EditorialMetrics, EditorialValidationStages, buildArtifactDigest, readEditorialMetrics, validationInputDigest } from './lib/editorial-validation.mjs';
+import { compactEditorialHistory, makeReviewPacket, reviewContractIssues } from './lib/editorial-review-tools.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(readFileSync(resolve(root, 'config/daily-editorial.json'), 'utf8'));
@@ -21,6 +23,8 @@ const state = resolve(root, '.tmp/cineposta-daily');
 const work = resolve(state, `work-${date}`);
 const proofPath = resolve(state, `${date}-proof.json`);
 const contextPath = resolve(state, `${date}-context.json`);
+const processStart = pid => { try { return readFileSync(`/proc/${pid}/stat`, 'utf8').split(') ').at(-1).split(' ')[19]; } catch { return null; } };
+let metrics;
 const run = (command, args, cwd = work, capture = false) => {
   if (capture) return execFileSync(command, args, { cwd, encoding: 'utf8', maxBuffer: 20 * 1024 * 1024 }).trim();
   const env = command === 'npm' && args[0] === 'run'
@@ -62,7 +66,7 @@ function persistContext() {
 
 function printStatus() {
   const pendingReport = day.value.status === 'reviewing' && [reviewFile, reviewExecutionFile].every(existsSync);
-  log(JSON.stringify({ ...persistContext(), ...day.summary(), ...(pendingReport ? { nextAction: 'record_review' } : {}), validationCommand: existsSync(proofPath) ? '--revalidate' : '--dry-run' }));
+  log(JSON.stringify({ ...persistContext(), ...day.summary(), ...(pendingReport ? { nextAction: 'record_review' } : {}), validationCommand: existsSync(proofPath) ? '--revalidate' : '--dry-run', metrics: metrics?.summary() }));
 }
 
 function readReviewJournal() {
@@ -102,8 +106,26 @@ function writeReviewJournal(entries) {
   rmSync(pendingPath);
 }
 
+function writeReviewHelpers(round) {
+  const article = round.phase === 'article';
+  const history = article ? readReviewJournal() : [];
+  const previous = article ? history.findLast(entry => entry.report?.contentDigest === entry.input?.contentDigest)
+    : day.attempt.rounds.slice(0, -1).findLast(previous => previous.phase === 'candidate' && previous.report);
+  const candidateApproval = day.attempt.candidateApproved;
+  const approvedCandidateInput = day.attempt.rounds.find(item => item.phase === 'candidate' && item.input.contentDigest === candidateApproval?.report?.contentDigest)?.input;
+  const packet = makeReviewPacket(round.input, { previous, history, candidateApproval: candidateApproval ? { ...candidateApproval, input: approvedCandidateInput } : null, reviewerAgentId: day.value.agents.reviewer?.agentId });
+  const fullHistory = article ? round.input.draft.originalityContext.history : round.input.history;
+  writeFileSync(resolve(reviewDirectory, 'review-template.json'), `${JSON.stringify(packet.template, null, 2)}\n`);
+  writeFileSync(resolve(reviewDirectory, 'review-diff.json'), `${JSON.stringify(packet.delta, null, 2)}\n`);
+  writeFileSync(resolve(reviewDirectory, 'published-brief.json'), `${JSON.stringify(compactEditorialHistory(fullHistory))}\n`);
+  writeFileSync(resolve(reviewDirectory, 'review-packet.json'), `${JSON.stringify({ version: 1, phase: round.phase, contentDigest: round.input.contentDigest, input: article ? 'review-input.json' : 'candidate-input.json', template: 'review-template.json', delta: 'review-diff.json', history: 'published-brief.json' }, null, 2)}\n`);
+}
+
 function installReviewPacket(round) {
-  if (round.artifactsReady) return; // Repeated freeze does not erase a completed, unprocessed review.
+  if (round.artifactsReady) {
+    if (!existsSync(resolve(reviewDirectory, 'review-packet.json'))) writeReviewHelpers(round);
+    return; // Repeated freeze never erases a completed, unprocessed review.
+  }
   if (existsSync(reviewFile)) {
     round.preservedArtifacts ||= [];
     round.preservedArtifacts.push({ report: json(reviewFile), execution: existsSync(reviewExecutionFile) ? json(reviewExecutionFile) : null });
@@ -113,6 +135,7 @@ function installReviewPacket(round) {
   for (const file of [reviewFile, reviewExecutionFile]) rmSync(file, { force: true });
   const path = round.phase === 'candidate' ? resolve(reviewDirectory, 'candidate-input.json') : reviewInputFile;
   writeFileSync(path, `${JSON.stringify(round.input, null, 2)}\n`);
+  writeReviewHelpers(round);
   round.artifactsReady = true;
   day.save();
 }
@@ -120,16 +143,25 @@ function installReviewPacket(round) {
 function candidateReview(viabilityOnly = false) {
   const context = json(contextPath);
   const author = validateNativeExecution(json(context.executionFile), context.selection);
+  metrics.native('author', author);
   if (author.forkTurns !== 'none') throw new Error('El autor debe usar fork_turns none.');
   const candidate = json(resolve(reviewDirectory, 'candidate.json'));
   const history = historyAt(mainHead);
   const configuredPolicy = policy();
   const preflight = preflightCandidate(candidate, history, configuredPolicy, date);
+  const payload = { version: 1, date, candidate, history, historyRef: mainHead, policy: configuredPolicy, preflight, authorExecution: author };
+  const input = { ...payload, contentDigest: digest(JSON.stringify(payload)) };
+  const previous = day.attempt.rounds.at(-1);
+  if (!viabilityOnly && day.attempt.status === 'drafting' && previous?.phase === 'candidate' && previous.report?.verdict === 'approved'
+    && day.attempt.candidateApproved?.report?.contentDigest === input.contentDigest && previous.input.contentDigest === input.contentDigest
+    && [reviewFile, reviewExecutionFile].every(existsSync) && previous.reportDigest === digest(JSON.stringify({ report: json(reviewFile), execution: json(reviewExecutionFile) }))) {
+    validateOriginalityReview(input, previous.report, { history, policy: configuredPolicy, candidate, preflight });
+    log(JSON.stringify({ ...day.summary(), reusedReview: true, selection: context.selection }));
+    return;
+  }
   if (viabilityOnly) {
     if (digest(JSON.stringify(candidate)) !== digest(JSON.stringify(day.attempt.candidate))) throw new Error('La evaluación de viabilidad no cambia de candidato.');
   } else day.select(candidate, preflight, history.digest);
-  const payload = { version: 1, date, candidate, history, historyRef: mainHead, policy: configuredPolicy, preflight, authorExecution: author };
-  const input = { ...payload, contentDigest: digest(JSON.stringify(payload)) };
   const round = day.freeze(input, 'candidate', { viabilityOnly });
   installReviewPacket(round);
   writeFileSync(resolve(reviewDirectory, 'published.json'), `${JSON.stringify(history, null, 2)}\n`);
@@ -153,7 +185,7 @@ function validateAdverseReport(input, report) {
       if (input.candidate) {
         if (finding.kind !== 'text') throw new Error('En preflight el hallazgo debe ser text y señalar candidate/campo.');
         candidateField(input.candidate, finding.targetId);
-      }
+      } else if (!findingTarget(input, finding).exists) throw new Error('El hallazgo debe apuntar a un objeto real del snapshot.');
       evidence(finding.evidence);
     }
   } else {
@@ -171,9 +203,12 @@ function processReview() {
   const input = round.phase === 'candidate' ? json(resolve(reviewDirectory, 'candidate-input.json')) : currentReviewInput();
   if (digest(JSON.stringify(input)) !== digest(JSON.stringify(round.input))) throw new Error('El snapshot del candidato o de la nota cambió después de congelarse; no coincide con el digest persistido.');
   const report = json(reviewFile), execution = validateNativeExecution(json(reviewExecutionFile), context.selection);
+  metrics.native('reviewer', execution);
   if (execution.forkTurns !== 'none' || report.contentDigest !== input.contentDigest || round.input.contentDigest !== input.contentDigest || report.date !== date || (round.phase === 'candidate' ? report.candidateId !== input.candidate.id : report.slug !== input.note.slug)) throw new Error('Informe/ejecutor no correspondiente al snapshot vigente.');
   day.pinAgents(input.authorExecution, execution);
   if (round.phase === 'article') rememberReview(readReviewJournal());
+  const contractIssues = reviewContractIssues(input, report, round.phase === 'article' ? readReviewJournal() : []);
+  if (contractIssues.length) throw new Error(`Contrato de revisión incompleto:\n${contractIssues.join('\n')}`);
   if (round.viabilityOnly && report.verdict === 'approved') throw new Error('Una evaluación viabilityOnly sin avances no permite aprobar; corregir y volver a --review.');
   if (report.verdict === 'approved') {
     if (round.phase === 'candidate') {
@@ -295,6 +330,7 @@ function rememberReview(history) {
 function currentReviewInput() {
   const context = json(contextPath);
   const author = validateNativeExecution(json(context.executionFile), context.selection);
+  metrics.native('author', author);
   const pinned = day.value.agents.author;
   if (author.forkTurns !== 'none' || (pinned && (pinned.agentId !== author.agentId || pinned.model !== author.model || pinned.effort !== author.effort))) throw new Error('Reutilizar el mismo agente author y selección real, fork_turns none, durante la jornada.');
   const draft = json(resolve(reviewDirectory, 'draft.json'));
@@ -343,6 +379,11 @@ function prepareEditorialReview(viabilityOnly = false) {
   draft.originalityContext = { history: fullHistory, historyRef: mainHead, policy: configuredPolicy, candidate, preflight: preflightCandidate(candidate, fullHistory, configuredPolicy, date) };
   writeFileSync(draftPath, `${JSON.stringify(draft, null, 2)}\n`);
   const input = currentReviewInput();
+  if (!viabilityOnly && day.attempt.status === 'approved' && day.attempt.rounds.at(-1)?.input.contentDigest === input.contentDigest) {
+    requireEditorialReview(); // Recheck both executions, history and all findings.
+    printStatus();
+    return;
+  }
   const round = day.freeze(input, 'article', { viabilityOnly });
   installReviewPacket(round);
   log(JSON.stringify({ contentDigest: input.contentDigest, reviewInputFile, reviewFile, reviewExecutionFile, selection: json(contextPath).selection, viabilityOnly }));
@@ -391,9 +432,29 @@ async function validate(base) {
   const { draft, note, counts } = await inspectDraft(base);
   for (const url of quality.evidenceUrls.filter(url => !note.sources.some(source => source.url === url))) run('curl', [...httpsArgs, '--output', '/dev/null', url]);
   assertPublicationScope(changes(base), note.slug, date);
-  // Reuse the project's gate: it already runs check + one complete build.
-  run('npm', ['run', 'validate:content', '--', '--base', base, '--astro-check']);
-  run('npx', ['playwright', 'test', 'tests/e2e/editorial.spec.ts', 'tests/e2e/daily-editorial.spec.ts', '--project=desktop-chromium', '--project=mobile-chromium', '--workers=2'], work);
+  const inputDigest = validationInputDigest(work, date);
+  const stages = new EditorialValidationStages({ directory: state, date, worktree: work, metrics });
+  stages.run('content-astro', digest(JSON.stringify({ inputDigest, base })), () => {
+    run('npm', ['run', 'validate:content', '--', '--base', base, '--astro-check', '--skip-build']);
+  });
+  // Preserve every check in validate-content's build branch. A failed browser
+  // run does not erase an approved, byte-identical build and its output audits.
+  stages.run('build', inputDigest, () => {
+    run('npm', ['run', 'build']);
+    run('npm', ['run', 'audit:profile-originality', '--', '--require-dist']);
+    run('npm', ['run', 'validate:public-output']);
+    run('npm', ['run', 'validate:sitemap-indexability']);
+  }, { artifact: resolve(work, 'dist') });
+  const endBrowsers = metrics.start('playwright');
+  try {
+    // Same mandatory suite, timeouts and workers; use the project's existing
+    // CI retry/trace policy from the first attempt, not after losing a build.
+    const result = spawnSync('npx', ['playwright', 'test', 'tests/e2e/editorial.spec.ts', 'tests/e2e/daily-editorial.spec.ts', '--project=desktop-chromium', '--project=mobile-chromium', '--workers=2'], { cwd: work, env: { ...process.env, CI: 'true' }, stdio: 'inherit' });
+    if (result.status !== 0) throw new Error('Playwright falló; conservar diagnóstico y corregir o revalidar, sin repetir builds intactos.');
+    endBrowsers('passed');
+  } catch (error) { endBrowsers('failed'); throw error; }
+  finally { const directory = stages.preserveBrowserArtifacts(); if (directory) log(`Artefactos de navegador conservados: ${directory}`); }
+  if (validationInputDigest(work, date) !== inputDigest || buildArtifactDigest(resolve(work, 'dist')) !== stages.value.stages.build.outputDigest) throw new Error('Las entradas o el build cambiaron durante los tests; no se reutiliza esa evidencia.');
   if (argentinaDate() !== date) throw new Error('Cambió la fecha argentina; no se publica una nota fechada ayer.');
   const receiptPath = `reports/daily-editorial/${date}.json`;
   mkdirSync(resolve(work, 'reports/daily-editorial'), { recursive: true });
@@ -403,6 +464,7 @@ async function validate(base) {
     editorialReview: quality.record,
     editorialJourney: day.value,
     validation: { ...counts, content: 'passed', astroCheck: 'passed', build: 'passed', desktopAndMobile: 'passed' },
+    validationMetrics: { stages: metrics.summary().stages, native: metrics.summary().native },
     url: `https://www.cineposta.com.ar/editorial/${note.slug}/`,
   }, null, 2)}\n`);
   assertPublicationScope(changes(base), note.slug, date);
@@ -458,9 +520,25 @@ async function publishTweet(slug, reviewStatus) {
   throw new Error('La nota sigue publicada. Buffer no confirmó el envío dentro de 8 minutos; consultar el run antes de reintentar sólo --tweet.');
 }
 
-mkdirSync(state, { recursive: true });
 const lock = resolve(state, 'lock');
-const processStart = pid => { try { return readFileSync(`/proc/${pid}/stat`, 'utf8').split(') ').at(-1).split(' ')[19]; } catch { return null; } };
+// Status is a read-only diagnostic, including while a live validation owns the
+// mutation lock. Never fetch, recover journals, create a day or rewrite context.
+if (mode === '--status') {
+  if (!existsSync(resolve(state, `${date}-session.json`))) throw new Error('No hay checkpoint local de hoy; --status no crea una jornada.');
+  day = new EditorialDay(state, date);
+  const ownerPath = resolve(lock, 'owner.json'), owner = existsSync(ownerPath) ? json(ownerPath) : null;
+  const pendingReport = day.value.status === 'reviewing' && [reviewFile, reviewExecutionFile].every(existsSync);
+  log(JSON.stringify({ ...(existsSync(contextPath) ? json(contextPath) : {}), ...day.summary(), ...(pendingReport ? { nextAction: 'record_review' } : {}),
+    validationCommand: existsSync(proofPath) ? '--revalidate' : '--dry-run',
+    phaseSince: day.value.events.at(-1)?.at, phaseElapsedMs: Math.max(0, Date.now() - Date.parse(day.value.events.at(-1)?.at)),
+    activeExecution: owner ? { ...owner, running: owner.host === hostname() ? processStart(owner.pid) === owner.processStart : null } : null,
+    metrics: readEditorialMetrics(resolve(state, `${date}-metrics.jsonl`)) }));
+  process.exit(0);
+}
+mkdirSync(state, { recursive: true });
+metrics = new EditorialMetrics(state, date);
+const endInvocation = metrics.start(mode.slice(2));
+process.on('exit', code => endInvocation(code === 0 ? 'passed' : 'failed'));
 try { mkdirSync(lock); } catch {
   const ownerPath = resolve(lock, 'owner.json'), owner = existsSync(ownerPath) ? json(ownerPath) : null;
   if (!owner || owner.host !== hostname() || processStart(owner.pid) === owner.processStart) throw new Error(`Otra ejecución usa ${lock}, o no se puede acreditar que su lock esté huérfano.`);
@@ -492,9 +570,9 @@ try {
       }
       if (mode === '--publish' || mode === '--verify') {
         const commit = run('git', ['log', '-1', '--format=%H', head, '--', `reports/daily-editorial/${date}.json`], root, true);
-        await verify(commit, published);
+        await metrics.measure('pages', () => verify(commit, published));
       }
-      if (mode === '--publish' || mode === '--tweet') await publishTweet(published.slug, publishedReviewStatus);
+      if (mode === '--publish' || mode === '--tweet') await metrics.measure('buffer', () => publishTweet(published.slug, publishedReviewStatus));
     } else if (mode === '--verify') {
       throw new Error('No existe una publicación diaria de hoy en main.');
     } else if (mode === '--tweet') {
@@ -523,7 +601,9 @@ try {
         }
         if (day.value.status === 'switching_topic') finishSwitch();
         if (day.value.status === 'reviewing') installReviewPacket(day.attempt.rounds.at(-1));
-        writeFileSync(resolve(reviewDirectory, 'published.json'), `${JSON.stringify(historyAt(head), null, 2)}\n`);
+        const fullHistory = historyAt(head);
+        writeFileSync(resolve(reviewDirectory, 'published.json'), `${JSON.stringify(fullHistory, null, 2)}\n`);
+        writeFileSync(resolve(reviewDirectory, 'published-brief.json'), `${JSON.stringify(compactEditorialHistory(fullHistory))}\n`);
         printStatus();
         process.exitCode = 0;
       } else if (mode === '--status') {
@@ -604,10 +684,12 @@ try {
         day.published(json(resolve(work, `reports/daily-editorial/${date}.json`)), sha);
         // GITHUB_TOKEN pushes do not trigger a push workflow. Dispatch is explicit.
         if (process.env.GITHUB_ACTIONS === 'true') run('gh', ['api', `repos/${config.repository}/actions/workflows/deploy.yml/dispatches`, '--method', 'POST', '--field', 'ref=main'], root);
-        await verify(sha, json(resolve(work, `reports/daily-editorial/${date}.json`)));
+        await metrics.measure('pages', () => verify(sha, json(resolve(work, `reports/daily-editorial/${date}.json`))));
+        const evidenceDirectory = resolve(state, `${date}-publication-evidence-${sha.slice(0, 12)}`);
+        if (!existsSync(evidenceDirectory)) cpSync(reviewDirectory, evidenceDirectory, { recursive: true, errorOnExist: true, force: false });
         run('git', ['worktree', 'remove', work], root);
         rmSync(proofPath);
-        await publishTweet(proof.slug, 'reviewed');
+        await metrics.measure('buffer', () => publishTweet(proof.slug, 'reviewed'));
       }
     }
     }

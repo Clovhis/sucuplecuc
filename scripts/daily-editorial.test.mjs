@@ -91,7 +91,7 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     writeFileSync(resolve(repository, 'config/daily-editorial.json'), JSON.stringify({ repository: 'fixture/test', deployTimeoutMinutes: 0.1 }));
     cpSync(resolve(project, 'config/daily-editorial-diversity.json'), resolve(repository, 'config/daily-editorial-diversity.json'));
     writeFileSync(resolve(repository, 'package.json'), '{"type":"module"}');
-    writeFileSync(resolve(repository, '.gitignore'), '.tmp/\nnode_modules/\n');
+    writeFileSync(resolve(repository, '.gitignore'), '.tmp/\nnode_modules/\ndist/\ntest-results/\nplaywright-report/\n');
     mkdirSync(resolve(repository, 'src/data/editorials'), { recursive: true });
     writeFileSync(resolve(repository, 'src/data/editorials/.gitkeep'), '');
     shell('git', ['add', '.']); shell('git', ['commit', '-m', 'fixture base']);
@@ -116,9 +116,11 @@ test('publisher integration with simulated research/builds: dry-run, tamper bloc
     writeFileSync(resolve(directory, 'package.json'), '{"type":"module"}');
     tool('codex', `throw Error('Nested CLI inference is forbidden');`);
     const commandLog = resolve(directory, 'commands.log');
-    const fakeTools = `import { appendFileSync, existsSync, symlinkSync, mkdirSync } from 'node:fs';
+    const fakeTools = `import { appendFileSync, existsSync, symlinkSync, mkdirSync, writeFileSync } from 'node:fs';
+      if(process.argv[2]==='run'&&process.argv[3]==='build'){mkdirSync('dist',{recursive:true});writeFileSync('dist/index.html','Synthetic fixture build output.');}
       appendFileSync(process.env.TEST_COMMAND_LOG, process.argv[1].split('/').at(-1)+' '+process.argv.slice(2).join(' ')+'\\n');
-      if(process.env.TEST_FAIL_VALIDATION==='1'&&process.argv[2]==='run') process.exit(1);
+      // Browsers always run, even when an identical validated build is reused.
+      if(process.env.TEST_FAIL_VALIDATION==='1'&&process.argv[2]==='playwright') process.exit(1);
       if(process.argv[2]==='ci'&&!existsSync('node_modules')) { mkdirSync('node_modules'); symlinkSync(process.env.TEST_DEPENDENCIES+'/sharp', 'node_modules/sharp', 'dir'); }`;
     tool('npm', fakeTools); tool('npx', fakeTools);
     tool('gh', `import {writeFileSync,readFileSync} from 'node:fs';
