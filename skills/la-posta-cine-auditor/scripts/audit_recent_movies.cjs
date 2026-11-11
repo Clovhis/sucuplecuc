@@ -1669,40 +1669,55 @@ function analyzeYoutubeTitle(movie, embedTitle) {
 	};
 }
 
-function checkYoutubeOEmbed(videoId) {
-	const url = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`;
+function requestYoutubeOEmbed(videoId, host, getRequest) {
+	const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+	const url = `https://${host}/oembed?url=${encodeURIComponent(videoUrl)}&format=json`;
 
 	return new Promise((resolve) => {
-		const request = https.get(url, (response) => {
-			let body = '';
-			response.on('data', (chunk) => {
-				body += chunk;
-			});
-			response.on('end', () => {
-				if (response.statusCode !== 200) {
-					resolve({
-						ok: false,
+		let request;
+		try {
+			request = getRequest(url, (response) => {
+				let body = '';
+				response.on('data', (chunk) => {
+					body += chunk;
+				});
+				response.on('end', () => {
+					if (response.statusCode !== 200) {
+						resolve({
+							ok: false,
+						transportError: false,
 						statusCode: response.statusCode,
-						reason: `YouTube oEmbed returned HTTP ${response.statusCode}.`,
-					});
-					return;
-				}
+						reason: `YouTube oEmbed returned HTTP ${response.statusCode} from ${host}.`,
+						});
+						return;
+					}
 
-				try {
-					const data = JSON.parse(body);
-					resolve({
-						ok: true,
+					try {
+						const data = JSON.parse(body);
+						resolve({
+							ok: true,
+						transportError: false,
 						title: data.title || '',
 						authorName: data.author_name || '',
-					});
-				} catch (error) {
-					resolve({
-						ok: false,
-						reason: `YouTube oEmbed JSON parse failed: ${error.message}`,
-					});
-				}
+						sourceHost: host,
+						});
+					} catch (error) {
+						resolve({
+							ok: false,
+							transportError: false,
+							reason: `YouTube oEmbed JSON parse failed from ${host}: ${error.message}`,
+						});
+					}
+				});
 			});
-		});
+		} catch (error) {
+			resolve({
+				ok: false,
+				transportError: true,
+				reason: `YouTube oEmbed request failed for ${host}: ${error.message}`,
+			});
+			return;
+		}
 
 		request.setTimeout(8000, () => {
 			request.destroy(new Error('timeout'));
@@ -1711,10 +1726,25 @@ function checkYoutubeOEmbed(videoId) {
 		request.on('error', (error) => {
 			resolve({
 				ok: false,
-				reason: `YouTube oEmbed request failed: ${error.message}`,
+				transportError: true,
+				reason: `YouTube oEmbed request failed for ${host}: ${error.message}`,
 			});
 		});
 	});
+}
+
+async function checkYoutubeOEmbed(videoId, getRequest = https.get) {
+	const primary = await requestYoutubeOEmbed(videoId, 'www.youtube.com', getRequest);
+	if (primary.ok || !primary.transportError) return primary;
+
+	const officialAlternate = await requestYoutubeOEmbed(videoId, 'www.youtube-nocookie.com', getRequest);
+	if (officialAlternate.ok) return { ...officialAlternate, fallbackFrom: primary.reason };
+
+	return {
+		...officialAlternate,
+		ok: false,
+		reason: `${primary.reason}; official youtube-nocookie fallback failed: ${officialAlternate.reason}`,
+	};
 }
 
 async function searchYoutubeResults(movie) {
@@ -2174,4 +2204,5 @@ async function main() {
 	}
 }
 
-main();
+if (require.main === module) main();
+module.exports = { checkYoutubeOEmbed, analyzeYoutubeTitle };
