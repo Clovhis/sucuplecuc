@@ -124,6 +124,7 @@ For a poster, the ledger must contain `source URL → final HTTP status/content-
 ## Automatic contingency before declaring a candidate pending
 
 - Before reporting a title as pending, blocked or omitted for missing score, identity, portraits, trailer, poster or required metadata, read and execute [intake-contingency.md](references/intake-contingency.md) for each missing field. This is mandatory for single loads and batches; do not wait for another user prompt to search IMDb, Metacritic, Watchmode or complementary primary sources.
+- For missing cast or character credits, use the IMDb localized and indexed-credit fallback in that reference, then cross-check the exact film, performer and role with a second reliable source before deciding whether the credit remains pending.
 - Keep the same candidate manifest and branch. Search only unresolved fields, reuse verified IDs and same-run responses, and record `field -> attempted source/query -> result -> decision`. Do not rerun an exhausted contingency without a new lead or changed evidence.
 - A recovered field returns the candidate to the normal load and audit gates. A genuinely unresolved field remains a publication blocker with the attempted sources and exact missing evidence in the final report; unavailable access is different from an absent rating or asset. Never invent scores, weaken portrait/credit floors or substitute a different film's media to clear the batch.
 
