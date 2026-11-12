@@ -84,6 +84,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "un-lugar-en-el-mundo-1992"
   ],
   "adria-arjona": [
+    "aniquilacion-2026",
     "hit-man-2024",
     "morbius-2022"
   ],
@@ -3152,6 +3153,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "rise-of-the-planet-of-the-apes-2011"
   ],
   "john-malkovich": [
+    "caballo-salvaje-nueve-2026",
     "in-the-hand-of-dante-2026",
     "opus-2025",
     "red-2-2013",
@@ -4215,6 +4217,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "fantastic-four-2015"
   ],
   "michael-biehn": [
+    "aniquilacion-2026",
     "planet-terror-2007",
     "la-roca-1996",
     "abyss-1989",
@@ -4891,6 +4894,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "life-vida-2017"
   ],
   "rebecca-hall": [
+    "aniquilacion-2026",
     "godzilla-x-kong-the-new-empire-2024",
     "godzilla-vs-kong-2021",
     "la-casa-oscura-2020",
@@ -5319,6 +5323,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "sam-rockwell": [
     "buena-suerte-diviertete-no-mueras-2026",
+    "caballo-salvaje-nueve-2026",
     "los-tipos-malos-2-2025",
     "los-tipos-malos-2022",
     "jojo-rabbit-2019",
@@ -5559,6 +5564,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-insoportable-levedad-del-ser-1988"
   ],
   "steve-buscemi": [
+    "caballo-salvaje-nueve-2026",
     "hubie-halloween-2020",
     "los-muertos-no-mueren-2019",
     "the-week-of-2018",

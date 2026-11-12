@@ -1,0 +1,604 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "aniquilacion-2026",
+	"title": "Aniquilación",
+	"year": 2026,
+	"reviewedOn": "2026-11-12",
+	"createdOn": "2026-11-12",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"kind": "TMDb: cast completo de Onslaught (2026), 28 créditos de reparto y director; revisados por nombre, orden y personaje.",
+			"fullCredits": true,
+			"relevantCreditCount": 20,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://a24films.com/films/onslaught",
+			"kind": "A24 oficial: ficha del film, sinopsis, fecha de estreno estadounidense, director y reparto destacado de ocho adultos; no presenta créditos completos.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://www.guampdn.com/news/young-guam-rooted-actress-makes-big-screen-debut/article_5c2759cb-c8b3-4b0a-8c98-87088996a473.html",
+			"kind": "Guam Daily Post: artículo sobre Blake Kennedy que identifica a Daisy y a los tres supersoldados centrales: The Butcher, Cockroach y Crybaby.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://www.atlantanewsfirst.com/2026/08/31/blake-kennedy-stars-onslaught/",
+			"kind": "Atlanta News First: entrevista local que confirma que Blake Kennedy interpreta a Daisy.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://api.watchmode.com/v1/title/1818694/details/?append_to_response=cast-crew&language=es",
+			"kind": "Watchmode API, cruce de reparto y personajes de Onslaught 2026 para Dave Campbell y Tyler Hall.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt32268691/fullcredits/",
+			"kind": "IMDb full credits access attempt; no se contaron créditos desde este endpoint.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12",
+			"accessResult": "HTTP 403 Forbidden."
+		}
+	],
+	"credits": [
+		{
+			"name": "Adam Wingard",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/98631-adam-wingard",
+					"fact": "El perfil TMDb 98631 identifica a Adam Wingard y lo vincula con la dirección del título exacto."
+				},
+				{
+					"url": "https://a24films.com/films/onslaught",
+					"fact": "La página oficial de A24 identifica a Adam Wingard como director de Onslaught (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1417392/",
+					"fact": "El identificador IMDb nm1417392 corresponde al director Adam Wingard; se usa como referencia de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Wingard%20by%20Gage%20Skidmore.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Adria Arjona",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1371297",
+					"fact": "El perfil TMDb 1371297 identifica a Adria Arjona; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5245722/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm5245722; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://a24films.com/films/onslaught",
+					"fact": "La página oficial de A24 incluye a Adria Arjona en el reparto de Onslaught y la sinopsis la vincula con la protagonista."
+				}
+			],
+			"character": "Celeste",
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adria%20Arjona-7303%20(cropped).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dan Stevens",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/221018",
+					"fact": "El perfil TMDb 221018 identifica a Dan Stevens; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1405398/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm1405398; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://a24films.com/films/onslaught",
+					"fact": "La página oficial de A24 incluye a Dan Stevens entre el reparto destacado de Onslaught."
+				}
+			],
+			"character": "Hans Kammler",
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dan%20Stevens%20(46801499514).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Eric Wareheim",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/132857",
+					"fact": "El perfil TMDb 132857 identifica a Eric Wareheim; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1728099/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm1728099; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://a24films.com/films/onslaught",
+					"fact": "A24 incluye a Eric Wareheim en el reparto destacado; la ficha TMDb del film lo acredita como Kovacks."
+				}
+			],
+			"character": "Kovacks",
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/EricWareheim(by%20Scott%20Dudelson).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Reginald VelJohnson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/7672",
+					"fact": "El perfil TMDb 7672 identifica a Reginald VelJohnson; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001817/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm0001817; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://a24films.com/films/onslaught",
+					"fact": "La página oficial de A24 incluye a Reginald VelJohnson entre el reparto destacado de Onslaught."
+				}
+			],
+			"character": "Josiah",
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Reginald%20VelJohnson%2C%202021%20(579134550).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Michael Biehn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2712",
+					"fact": "El perfil TMDb 2712 identifica a Michael Biehn; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000299/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm0000299; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://a24films.com/films/onslaught",
+					"fact": "La página oficial de A24 incluye a Michael Biehn entre el reparto destacado de Onslaught."
+				}
+			],
+			"character": "Baylor",
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/8.23.12MichaelBiehnByLuigiNovi1.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Blake Kennedy",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5277239",
+					"fact": "El perfil TMDb 5277239 identifica a Blake Kennedy; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm13433273/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm13433273; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://www.guampdn.com/news/young-guam-rooted-actress-makes-big-screen-debut/article_5c2759cb-c8b3-4b0a-8c98-87088996a473.html",
+					"fact": "Guam Daily Post identifica a Blake Kennedy como Daisy, hija de la protagonista, y señala que tenía 10 años al publicarse el artículo."
+				},
+				{
+					"url": "https://www.atlantanewsfirst.com/2026/08/31/blake-kennedy-stars-onslaught/",
+					"fact": "Atlanta News First identifica a Blake Kennedy como la actriz que interpreta a Daisy en Onslaught."
+				}
+			],
+			"character": "Daisy",
+			"portraitException": {
+				"category": "child-privacy",
+				"reason": "La actriz es menor de edad y su personaje central es una niña; se confirma la participación con fuentes textuales, pero se evita conservar o publicar su retrato.",
+				"subjectStatus": {
+					"isMinor": true,
+					"sourceUrl": "https://www.guampdn.com/news/young-guam-rooted-actress-makes-big-screen-debut/article_5c2759cb-c8b3-4b0a-8c98-87088996a473.html",
+					"fact": "El artículo de Guam Daily Post identifica a Blake Kennedy como una actriz de 10 años y confirma que interpreta a Daisy, hija de la protagonista."
+				},
+				"sourcesSearched": [
+					{
+						"url": "https://www.themoviedb.org/person/5277239",
+						"result": "El perfil muestra una foto de perfil de una menor; se registró el crédito y se decidió no copiar ni publicar la imagen."
+					},
+					{
+						"url": "https://www.imdb.com/name/nm13433273/",
+						"result": "El perfil IMDb está vinculado por TMDb; su consulta devolvió HTTP 403 y no se descargó ni publicó ningún retrato."
+					},
+					{
+						"url": "https://www.atlantanewsfirst.com/2026/08/31/blake-kennedy-stars-onslaught/",
+						"result": "La nota identifica a Blake Kennedy como Daisy; no se tomó ni archivó una imagen de la menor."
+					}
+				]
+			}
+		},
+		{
+			"name": "Alex Pereira",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3300242",
+					"fact": "El perfil TMDb 3300242 identifica a Alex Pereira; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm10057247/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm10057247; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://a24films.com/films/onslaught",
+					"fact": "A24 incluye a Alex Pereira entre el reparto destacado; Guam Daily Post identifica a The Butcher como uno de los tres supersoldados."
+				},
+				{
+					"url": "https://www.guampdn.com/news/young-guam-rooted-actress-makes-big-screen-debut/article_5c2759cb-c8b3-4b0a-8c98-87088996a473.html",
+					"fact": "Guam Daily Post enumera a The Butcher entre los tres supersoldados centrales de la película."
+				}
+			],
+			"character": "The Butcher",
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alex%20Pereira%20in%20the%20Oval%20Office%20(while%20President%20Donald%20J.%20Trump%20is%20holding%20a%20meeting%20with%20UFC%20fighters).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Drew Starkey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1939676",
+					"fact": "El perfil TMDb 1939676 identifica a Drew Starkey; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm6481846/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm6481846; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://a24films.com/films/onslaught",
+					"fact": "La página oficial de A24 incluye a Drew Starkey entre el reparto destacado de Onslaught."
+				}
+			],
+			"character": "Cyrus",
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Drew%20Starkey%20at%2081st%20Venice%20International%20Film%20Festival.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rebecca Hall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/15556",
+					"fact": "El perfil TMDb 15556 identifica a Rebecca Hall; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0356017/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm0356017; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://a24films.com/films/onslaught",
+					"fact": "La página oficial de A24 incluye a Rebecca Hall entre el reparto destacado de Onslaught."
+				}
+			],
+			"character": "Hanna Kammler",
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rebecca%20Hall%20(2024)%20(cropped).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dave Campbell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1452416",
+					"fact": "El perfil TMDb 1452416 identifica a Dave Campbell; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm8799760/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm8799760; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://api.watchmode.com/v1/title/1818694/details/?append_to_response=cast-crew&language=es",
+					"fact": "El detalle de Watchmode para Onslaught 2026 cruza Dave Campbell como reparto en el papel The Cockroach."
+				},
+				{
+					"url": "https://www.guampdn.com/news/young-guam-rooted-actress-makes-big-screen-debut/article_5c2759cb-c8b3-4b0a-8c98-87088996a473.html",
+					"fact": "Guam Daily Post identifica a Cockroach como uno de los tres supersoldados centrales; TMDb atribuye ese papel a Dave Campbell."
+				}
+			],
+			"character": "The Cockroach",
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/yLoKRiuKHyhweLUxUD56AsnNdgj.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tyler Hall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1890932",
+					"fact": "El perfil TMDb 1890932 identifica a Tyler Hall; el crédito de Onslaught se registra en la página completa del reparto."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1427991/",
+					"fact": "TMDb enlaza este perfil con el identificador de IMDb nm1427991; no se atribuyen otros datos biográficos sin verificación."
+				},
+				{
+					"url": "https://api.watchmode.com/v1/title/1818694/details/?append_to_response=cast-crew&language=es",
+					"fact": "El detalle de Watchmode para Onslaught 2026 cruza Tyler Hall como reparto en el papel The Crybaby."
+				},
+				{
+					"url": "https://www.guampdn.com/news/young-guam-rooted-actress-makes-big-screen-debut/article_5c2759cb-c8b3-4b0a-8c98-87088996a473.html",
+					"fact": "Guam Daily Post identifica a Crybaby como uno de los tres supersoldados centrales; TMDb atribuye ese papel a Tyler Hall."
+				}
+			],
+			"character": "The Crybaby",
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/lN0FFCcqLTAKMv9uyWYR2o1OPRl.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jacob Scipio",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Griffin",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Griffin aparece después del reparto principal (orden 9); A24 no lo destaca ni el resumen oficial lo sitúa en el núcleo de la historia. Se conserva aquí para cobertura."
+		},
+		{
+			"name": "Leon M. Brown",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Larkin",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Larkin aparece después del reparto principal (orden 10); A24 no lo destaca ni el resumen oficial lo sitúa en el núcleo de la historia. Se conserva aquí para cobertura."
+		},
+		{
+			"name": "Jasper Keen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Arlo",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Arlo aparece después del reparto principal (orden 13); A24 no lo destaca ni el resumen oficial lo sitúa en el núcleo de la historia. Se conserva aquí para cobertura."
+		},
+		{
+			"name": "Abby Townsend",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Lily",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Lily aparece después del reparto principal (orden 14); A24 no lo destaca ni el resumen oficial lo sitúa en el núcleo de la historia. Se conserva aquí para cobertura."
+		},
+		{
+			"name": "Sarah Minnich",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Inger",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Inger aparece después del reparto principal (orden 15); A24 no lo destaca ni el resumen oficial lo sitúa en el núcleo de la historia. Se conserva aquí para cobertura."
+		},
+		{
+			"name": "Maurice Greene",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Teddy",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Teddy aparece después del reparto principal (orden 16); A24 no lo destaca ni el resumen oficial lo sitúa en el núcleo de la historia. Se conserva aquí para cobertura."
+		},
+		{
+			"name": "Christian Calloway",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Tremaine",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Tremaine aparece después del reparto principal (orden 17); A24 no lo destaca ni el resumen oficial lo sitúa en el núcleo de la historia. Se conserva aquí para cobertura."
+		},
+		{
+			"name": "L.C. Holt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Phil",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Phil aparece después del reparto principal (orden 18); A24 no lo destaca ni el resumen oficial lo sitúa en el núcleo de la historia. Se conserva aquí para cobertura."
+		},
+		{
+			"name": "Stephen Burhoe",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Diner Cook",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Diner Cook aparece en el orden 19 como participación breve/de conjunto, fuera del reparto principal destacado por A24."
+		},
+		{
+			"name": "Madeleine Schaefer Scovil",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Pistol MP",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Pistol MP aparece en el orden 20 como participación breve/de conjunto, fuera del reparto principal destacado por A24."
+		},
+		{
+			"name": "André Bédard",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Radio MP",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Radio MP aparece en el orden 21 como participación breve/de conjunto, fuera del reparto principal destacado por A24."
+		},
+		{
+			"name": "Jonathan Bédard",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Army Field Surgeon",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Army Field Surgeon aparece en el orden 22 como participación breve/de conjunto, fuera del reparto principal destacado por A24."
+		},
+		{
+			"name": "Whitley Strieber",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Meditation Tape Guru",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Meditation Tape Guru aparece en el orden 23 como participación breve/de conjunto, fuera del reparto principal destacado por A24."
+		},
+		{
+			"name": "Mat Williams",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Sports Radio Commentator (voice)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Sports Radio Commentator (voice) aparece en el orden 24 como participación breve/de conjunto, fuera del reparto principal destacado por A24."
+		},
+		{
+			"name": "Fanshen Cox",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Police Dispatcher",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Police Dispatcher aparece en el orden 25 como participación breve/de conjunto, fuera del reparto principal destacado por A24."
+		},
+		{
+			"name": "TK Shom",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Handler",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Handler aparece en el orden 26 como participación breve/de conjunto, fuera del reparto principal destacado por A24."
+		},
+		{
+			"name": "Ashley Lambert",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US",
+			"character": "Base Intercom Voice (voice)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Base Intercom Voice (voice) aparece en el orden 27 como participación breve/de conjunto, fuera del reparto principal destacado por A24."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisaron los 28 créditos de reparto y el director. A24 destaca ocho adultos; la fuente local identifica a Daisy como hija de la protagonista y los tres supersoldados como The Butcher, Cockroach y Crybaby. Se incluyen a los ocho nombres oficiales, a Blake Kennedy por el papel central de Daisy y a Dave Campbell y Tyler Hall como los dos antagonistas identificados por nombre; ocho apoyos posteriores quedan registrados como omisiones cotejadas y los roles breves de órdenes 19–27 como incidentales.",
+		"omittedRelevantCredits": [
+			{
+				"role": "performer",
+				"name": "Jacob Scipio"
+			},
+			{
+				"role": "performer",
+				"name": "Leon M. Brown"
+			},
+			{
+				"role": "performer",
+				"name": "Jasper Keen"
+			},
+			{
+				"role": "performer",
+				"name": "Abby Townsend"
+			},
+			{
+				"role": "performer",
+				"name": "Sarah Minnich"
+			},
+			{
+				"role": "performer",
+				"name": "Maurice Greene"
+			},
+			{
+				"role": "performer",
+				"name": "Christian Calloway"
+			},
+			{
+				"role": "performer",
+				"name": "L.C. Holt"
+			}
+		]
+	}
+}

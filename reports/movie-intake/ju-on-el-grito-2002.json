@@ -1,0 +1,520 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "ju-on-el-grito-2002",
+	"title": "Ju-on: El grito",
+	"year": 2002,
+	"reviewedOn": "2026-11-12",
+	"createdOn": "2026-11-12",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"kind": "TMDb: créditos completos de Ju-on: The Grudge (2002), 20 intérpretes y director; se revisaron identidad, orden y personaje.",
+			"fullCredits": true,
+			"relevantCreditCount": 13,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://jfdb.jp/en/title/49",
+			"kind": "JFDB oficial: título exacto, año, dirección, duración y reparto principal; contraste de identidad y billing destacado.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://globalcinema.kadokawa.co.jp/library/entry-3228.html",
+			"kind": "KADOKAWA Global Cinema: título, año, duración, director y reparto principal de la película japonesa.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://api.watchmode.com/v1/title/1194753/details/?append_to_response=cast-crew&language=es",
+			"kind": "Watchmode: coincidencia exacta por TMDb 11838/IMDb tt0364385, 28 intérpretes y créditos de dirección; contraste de billing y roles.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://letterboxd.com/film/ju-on-the-grudge/",
+			"kind": "Letterboxd: página de Ju-on: The Grudge (2002), reparto ampliado, roles, duración y rating público.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0364385/fullcredits/",
+			"kind": "IMDb full credits: consulta directa del título exacto, sin datos por bloqueo de acceso.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12",
+			"accessResult": "HTTP 403 Forbidden; no se contaron créditos desde este endpoint."
+		}
+	],
+	"credits": [
+		{
+			"name": "Takashi Shimizu",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/20310",
+					"fact": "El perfil TMDb 20310 identifica a Takashi Shimizu y su filmografía como director."
+				},
+				{
+					"url": "https://jfdb.jp/en/title/49",
+					"fact": "La ficha oficial JFDB acredita a Takashi Shimizu como director de Ju-on (2002)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Takashi%20Shimizu%20cropped.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Megumi Okina",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/67318",
+					"fact": "El perfil TMDb 67318 identifica a Megumi Okina y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://jfdb.jp/en/title/49",
+					"fact": "La ficha de la base oficial JFDB incluye a Megumi Okina en el reparto de Ju-on (2002)."
+				}
+			],
+			"character": "Rika Nishina",
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/zOY3nJLKX8zqeO9VNVvm2slv1mD.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Misa Uehara",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1241458",
+					"fact": "El perfil TMDb 1241458 identifica a Misa Uehara y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://jfdb.jp/en/title/49",
+					"fact": "La ficha oficial JFDB identifica a Misa Uehara como integrante del reparto de Ju-on (2002)."
+				}
+			],
+			"character": "Izumi Toyama",
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/1pDgNc7IMlyw6mQVZqYoiKyfgC3.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Yoji Tanaka",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/115659",
+					"fact": "El perfil TMDb 115659 identifica a Yoji Tanaka y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://letterboxd.com/actor/yoji-tanaka/",
+					"fact": "El perfil de reparto de Letterboxd vincula a Yoji Tanaka con Ju-on y el personaje Yuji Toyama."
+				}
+			],
+			"character": "Yuji Toyama",
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/752oL9YrUumjrqbhdj4GNJ938x3.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Misaki Itō",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/70671",
+					"fact": "El perfil TMDb 70671 identifica a Misaki Itō y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://jfdb.jp/en/title/49",
+					"fact": "La ficha oficial JFDB incluye a Misaki Ito en el reparto del título exacto."
+				}
+			],
+			"character": "Hitomi Tokunaga",
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/T1RGegZr3sH33EaPRqCzXyUAwL.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kanji Tsuda",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/13256",
+					"fact": "El perfil TMDb 13256 identifica a Kanji Tsuda y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://letterboxd.com/actor/kanji-tsuda/",
+					"fact": "El perfil de reparto de Letterboxd vincula a Kanji Tsuda con Ju-on y el personaje Katsuya Tokunaga."
+				}
+			],
+			"character": "Katsuya Tokunaga",
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/eMydsUZjDuo9oS1asKI1I6cbpvL.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Shuri Matsuda",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2499264",
+					"fact": "El perfil TMDb 2499264 identifica a Shuri Matsuda y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://eiga.com/person/264575/",
+					"fact": "El perfil de Eiga.com identifica a Shuri Matsuda y la vincula con Ju-on."
+				}
+			],
+			"character": "Kazumi Tokunaga",
+			"portrait": {
+				"sourceUrl": "https://rankingoo.net/wp-content/uploads/tdb/2000018068.webp",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kayoko Shibata",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/552501",
+					"fact": "El perfil TMDb 552501 identifica a Kayoko Shibata y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://letterboxd.com/actor/kayoko-shibata/",
+					"fact": "El perfil de reparto de Letterboxd vincula a Kayoko Shibata con Ju-on y el personaje Mariko."
+				}
+			],
+			"character": "Mariko",
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/wj408ED2EXBZHUzyFFu1PULfJMO.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Yui Ichikawa",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/58444",
+					"fact": "El perfil TMDb 58444 identifica a Yui Ichikawa y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://letterboxd.com/actor/yui-ichikawa/",
+					"fact": "El perfil de reparto de Letterboxd vincula a Yui Ichikawa con Ju-on y el personaje Chiharu."
+				}
+			],
+			"character": "Chiharu",
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/uGSeCY4Aqq9X9b85bLuTuFWP67G.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Yukako Kukuri",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/70670",
+					"fact": "El perfil TMDb 70670 identifica a Yukako Kukuri y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://eiga.com/person/264574/",
+					"fact": "El perfil de Eiga.com identifica a Yukako Kukuri y la vincula con la película."
+				}
+			],
+			"character": "Miyuki",
+			"portraitException": {
+				"category": "obscure-no-reliable-image",
+				"recognition": "obscure",
+				"recognitionBasis": {
+					"sourceUrl": "https://eiga.com/person/264574/",
+					"fact": "El perfil de Eiga.com limita la filmografía pública de Yukako Kukuri a Ju-on y un crédito televisivo; no presenta retrato."
+				},
+				"reason": "Intérprete adicional de reparto sin retrato individual atribuible tras búsquedas concretas; las únicas imágenes encontradas son una foto de personaje y material de la película.",
+				"sourcesSearched": [
+					{
+						"url": "https://www.themoviedb.org/person/70670",
+						"result": "El perfil muestra una imagen de una niña en uniforme que corresponde a un fotograma del personaje; se descartó como retrato."
+					},
+					{
+						"url": "https://eiga.com/person/264574/",
+						"result": "El perfil exacto de Yukako Kukuri no presenta foto y muestra una filmografía muy breve."
+					},
+					{
+						"url": "https://thetv.jp/person/0000131901/",
+						"result": "El perfil exacto no ofrece una imagen de persona utilizable ni un retrato individual."
+					},
+					{
+						"url": "https://www.imdb.com/name/nm1505484/",
+						"result": "La página de IMDb fue inaccesible (HTTP 403); no se usó ninguna imagen de ese endpoint."
+					}
+				]
+			}
+		},
+		{
+			"name": "Takako Fuji",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/20329",
+					"fact": "El perfil TMDb 20329 identifica a Takako Fuji y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://letterboxd.com/actor/takako-fuji/",
+					"fact": "El perfil de reparto de Letterboxd vincula a Takako Fuji con Ju-on y el personaje Kayako Saeki."
+				}
+			],
+			"character": "Kayako Saeki",
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/efoDNuBBboAhnzHIkiw72AFdSvX.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Yuya Ozeki",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/552504",
+					"fact": "El perfil TMDb 552504 identifica a Yuya Ozeki y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://eiga.com/person/217203/",
+					"fact": "El perfil de Eiga.com identifica a Yuya Ozeki y registra sus participaciones en Ju-on."
+				}
+			],
+			"character": "Toshio Saeki",
+			"portraitException": {
+				"category": "obscure-no-reliable-image",
+				"recognition": "obscure",
+				"recognitionBasis": {
+					"sourceUrl": "https://www.slashfilm.com/1490936/cursed-boy-the-grudge-whatever-happened-to-him-yuya-ozeki/",
+					"fact": "La nota revisa la trayectoria de Yuya Ozeki y señala que su carrera actoral pública quedó prácticamente reducida a las películas Ju-on."
+				},
+				"reason": "Intérprete adicional de reparto sin retrato adulto individual atribuible tras búsquedas concretas; la única imagen hallada en TMDb corresponde a su apariencia infantil en la película.",
+				"sourcesSearched": [
+					{
+						"url": "https://www.themoviedb.org/person/552504",
+						"result": "El perfil ofrece un retrato infantil del papel de Toshio; se inspeccionó y se descartó por ser una imagen de la película, no un retrato adulto."
+					},
+					{
+						"url": "https://eiga.com/person/217203/",
+						"result": "El perfil exacto de Yuya Ozeki no publica imagen individual y enumera principalmente Ju-on y Ju-on 2."
+					},
+					{
+						"url": "https://thetv.jp/person/1000021081/",
+						"result": "El perfil exacto de 尾関優哉 no contiene retrato; se conserva sólo como señal de identidad y filmografía."
+					},
+					{
+						"url": "https://www.crank-in.net/person/128485",
+						"result": "El perfil de Crank-in no ofrece un retrato atribuible y lista sus créditos de Ju-on sin imagen."
+					},
+					{
+						"url": "https://www.alamy.com/search.html?qt=Yuya%20Ozeki",
+						"result": "La búsqueda exacta en el archivo fotográfico devolvió material de la película, sin un retrato adulto atribuible."
+					}
+				]
+			}
+		},
+		{
+			"name": "Takashi Matsuyama",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/216330",
+					"fact": "El perfil TMDb 216330 identifica a Takashi Matsuyama y confirma su vínculo filmográfico con Ju-on."
+				},
+				{
+					"url": "https://letterboxd.com/actor/takashi-matsuyama/",
+					"fact": "El perfil de reparto de Letterboxd vincula a Takashi Matsuyama con Ju-on y el personaje Takeo Saeki."
+				}
+			],
+			"character": "Takeo Saeki",
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/fBufEEFKgnEirPWJoGOpnJsZUjn.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Hirokazu Inoue",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"character": "Detective Nakagawa",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Detective Nakagawa aparece en el orden 12 del reparto completo; es una participación de función puntual, posterior al núcleo de protagonistas y elenco secundario de la ficha."
+		},
+		{
+			"name": "Daisuke Honda",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"character": "Detective Igarashi",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Detective Igarashi aparece en el orden 13 del reparto completo; es una participación de función puntual, posterior al núcleo de protagonistas y elenco secundario de la ficha."
+		},
+		{
+			"name": "Yoshiyuki Morishita",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"character": "Keibiin",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Keibiin aparece en el orden 14 del reparto completo; es una participación de función puntual, posterior al núcleo de protagonistas y elenco secundario de la ficha."
+		},
+		{
+			"name": "Hideo Sakaki",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"character": "Fukushi Senta Jimuin",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Fukushi Senta Jimuin aparece en el orden 15 del reparto completo; es una participación de función puntual, posterior al núcleo de protagonistas y elenco secundario de la ficha."
+		},
+		{
+			"name": "Chikara Ishikura",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"character": "Hirohashi",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Hirohashi aparece en el orden 16 del reparto completo; es una participación de función puntual, posterior al núcleo de protagonistas y elenco secundario de la ficha."
+		},
+		{
+			"name": "Chikako Isomura",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"character": "Sachie",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Sachie aparece en el orden 17 del reparto completo; es una participación de función puntual, posterior al núcleo de protagonistas y elenco secundario de la ficha."
+		},
+		{
+			"name": "Chiona Ôkuni",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"character": "Person in Elevator",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Person in Elevator aparece en el orden 18 del reparto completo; es una participación de función puntual, posterior al núcleo de protagonistas y elenco secundario de la ficha."
+		},
+		{
+			"name": "Miho Fujima",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/11838/cast?language=en-US",
+			"character": "Joshi Ana",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Joshi Ana aparece en el orden 19 del reparto completo; es una participación de función puntual, posterior al núcleo de protagonistas y elenco secundario de la ficha."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se conservaron los doce papeles nombrados de mayor peso en el reparto de TMDb, respaldados por la ficha oficial JFDB, KADOKAWA y el contraste de Watchmode/Letterboxd. Los ocho créditos siguientes de TMDb son participaciones puntuales de investigadores, personal, una persona en ascensor y una locutora; quedan documentados como incidentales. Watchmode y Letterboxd añaden ocho apariciones de orden inferior, incluida una voz de enfermería, sin evidencia de que integren el elenco central de la película.",
+		"omittedRelevantCredits": []
+	},
+	"crossSourceOmissions": [
+		{
+			"name": "Aki Fujî",
+			"character": "Yoko Toyama",
+			"sourceUrl": "https://api.watchmode.com/v1/title/1194753/details/?append_to_response=cast-crew&language=es",
+			"reason": "Aparición adicional de orden 21 según Watchmode/Letterboxd; no forma parte del núcleo de doce personajes."
+		},
+		{
+			"name": "Risa Odagiri",
+			"character": "Saori",
+			"sourceUrl": "https://api.watchmode.com/v1/title/1194753/details/?append_to_response=cast-crew&language=es",
+			"reason": "Aparición adicional de orden 22 según Watchmode/Letterboxd; no forma parte del núcleo de doce personajes."
+		},
+		{
+			"name": "Kaori Nakajô",
+			"character": "Chiaki",
+			"sourceUrl": "https://api.watchmode.com/v1/title/1194753/details/?append_to_response=cast-crew&language=es",
+			"reason": "Aparición adicional de orden 23 según Watchmode/Letterboxd; no forma parte del núcleo de doce personajes."
+		},
+		{
+			"name": "Kana Kobayashi",
+			"character": "Ayano",
+			"sourceUrl": "https://api.watchmode.com/v1/title/1194753/details/?append_to_response=cast-crew&language=es",
+			"reason": "Aparición adicional de orden 24 según Watchmode/Letterboxd; no forma parte del núcleo de doce personajes."
+		},
+		{
+			"name": "Akira Saito",
+			"character": "Teacher Sekine",
+			"sourceUrl": "https://api.watchmode.com/v1/title/1194753/details/?append_to_response=cast-crew&language=es",
+			"reason": "Aparición adicional de orden 25 según Watchmode/Letterboxd; no forma parte del núcleo de doce personajes."
+		},
+		{
+			"name": "Isao Yatsu",
+			"character": "Saito",
+			"sourceUrl": "https://api.watchmode.com/v1/title/1194753/details/?append_to_response=cast-crew&language=es",
+			"reason": "Aparición adicional de orden 26 según Watchmode/Letterboxd; no forma parte del núcleo de doce personajes."
+		},
+		{
+			"name": "Haruka Yamano",
+			"character": "Fukikae",
+			"sourceUrl": "https://api.watchmode.com/v1/title/1194753/details/?append_to_response=cast-crew&language=es",
+			"reason": "Aparición adicional de orden 27 según Watchmode/Letterboxd; rol de doblaje incidental, no parte del núcleo de doce personajes."
+		},
+		{
+			"name": "Hiroyuki Yokoo",
+			"character": "Nurse (voice)",
+			"sourceUrl": "https://api.watchmode.com/v1/title/1194753/details/?append_to_response=cast-crew&language=es",
+			"reason": "Aparición adicional de orden 28 como voz breve de enfermería, fuera del núcleo de doce personajes."
+		}
+	]
+}

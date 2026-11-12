@@ -707,7 +707,7 @@
 		"image": "/people/adam-wingard-nm1417392.jpg",
 		"imdbId": "nm1417392",
 		"imdbUrl": "https://www.imdb.com/name/nm1417392/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Wingard%20by%20Gage%20Skidmore.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Wingard%20by%20Gage%20Skidmore.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q4679987",
 			"https://www.imdb.com/name/nm1417392/",
@@ -849,7 +849,7 @@
 		"image": "/people/adria-arjona-nm5245722.jpg",
 		"imdbId": "nm5245722",
 		"imdbUrl": "https://www.imdb.com/name/nm5245722/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adria%20Arjona-7303.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adria%20Arjona-7303%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q18684239",
 			"https://www.imdb.com/name/nm5245722/",
@@ -1460,6 +1460,23 @@
 		"source": "tmdb-filmography-verified",
 		"birthDate": "1995-11-11",
 		"birthYear": 1995
+	},
+	"Ailín Salas": {
+		"name": "Ailín Salas",
+		"birthDate": "1993-07-14",
+		"birthYear": 1993,
+		"nationalityPrimary": "Argentina",
+		"image": "/people/ailin-salas-nm2764483.jpg",
+		"imdbId": "nm2764483",
+		"imdbUrl": "https://www.imdb.com/name/nm2764483/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ail%C3%ADn%20Salas%20at%2083rd%20Venice%20International%20Film%20Festival-19%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q5661221",
+			"https://www.imdb.com/name/nm2764483/",
+			"https://www.themoviedb.org/person/96481-ailin-salas"
+		],
+		"lastVerifiedAt": "2026-11-12",
+		"source": "wikidata-imdb-cache"
 	},
 	"Aishwarya Lekshmi": {
 		"name": "Aishwarya Lekshmi",
@@ -3007,6 +3024,23 @@
 		],
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Alex Pereira": {
+		"name": "Alex Pereira",
+		"birthDate": "1987-07-07",
+		"birthYear": 1987,
+		"nationalityPrimary": "Brasileño",
+		"image": "/people/alex-pereira-nm10057247.jpg",
+		"imdbId": "nm10057247",
+		"imdbUrl": "https://www.imdb.com/name/nm10057247/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alex%20Pereira%20in%20the%20Oval%20Office%20(while%20President%20Donald%20J.%20Trump%20is%20holding%20a%20meeting%20with%20UFC%20fighters).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q15987809",
+			"https://www.imdb.com/name/nm10057247/",
+			"https://www.themoviedb.org/person/3300242-alex-pereira"
+		],
+		"lastVerifiedAt": "2026-11-12",
+		"source": "wikidata-imdb-cache"
 	},
 	"Alex Proyas": {
 		"name": "Alex Proyas",
@@ -11426,6 +11460,19 @@
 		],
 		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
+	},
+	"Blake Kennedy": {
+		"name": "Blake Kennedy",
+		"imdbId": "nm13433273",
+		"imdbUrl": "https://www.imdb.com/name/nm13433273/",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/5277239-blake-kennedy",
+			"https://www.imdb.com/name/nm13433273/",
+			"https://www.guampdn.com/news/young-guam-rooted-actress-makes-big-screen-debut/article_5c2759cb-c8b3-4b0a-8c98-87088996a473.html",
+			"https://www.atlantanewsfirst.com/2026/08/31/blake-kennedy-stars-onslaught/"
+		],
+		"lastVerifiedAt": "2026-11-12",
+		"source": "manual-child-privacy-credit"
 	},
 	"Blake Lively": {
 		"name": "Blake Lively",
@@ -21373,7 +21420,7 @@
 		"image": "/people/dan-stevens-nm1405398.jpg",
 		"imdbId": "nm1405398",
 		"imdbUrl": "https://www.imdb.com/name/nm1405398/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dan%20Stevens%20(46801499514).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dan%20Stevens%20(46801499514).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q958385",
 			"https://www.imdb.com/name/nm1405398/",
@@ -22669,6 +22716,20 @@
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q44158",
 		"sexVerifiedAt": "2026-10-11"
+	},
+	"Dave Campbell": {
+		"name": "Dave Campbell",
+		"imdbId": "nm8799760",
+		"imdbUrl": "https://www.imdb.com/name/nm8799760/",
+		"image": "/people/dave-campbell-nm8799760.jpg",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/yLoKRiuKHyhweLUxUD56AsnNdgj.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/1452416-dave-campbell",
+			"https://www.imdb.com/name/nm8799760/",
+			"https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US"
+		],
+		"lastVerifiedAt": "2026-11-12",
+		"source": "tmdb-imdb-crosswalk-reviewed"
 	},
 	"Dave England": {
 		"name": "Dave England",
@@ -26603,6 +26664,23 @@
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
+	"Drew Starkey": {
+		"name": "Drew Starkey",
+		"birthDate": "1993-11-04",
+		"birthYear": 1993,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/drew-starkey-nm6481846.jpg",
+		"imdbId": "nm6481846",
+		"imdbUrl": "https://www.imdb.com/name/nm6481846/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Drew%20Starkey%20at%2081st%20Venice%20International%20Film%20Festival.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q65012920",
+			"https://www.imdb.com/name/nm6481846/",
+			"https://www.themoviedb.org/person/1939676-drew-starkey"
+		],
+		"lastVerifiedAt": "2026-11-12",
+		"source": "wikidata-imdb-cache"
+	},
 	"Duda Pimenta": {
 		"name": "Duda Pimenta",
 		"nationalityPrimary": "Brasileña",
@@ -29779,6 +29857,26 @@
 		"lastVerifiedAt": "2026-08-07",
 		"source": "wikidata-imdb-cache"
 	},
+	"Enrique Piñeyro": {
+		"name": "Enrique Piñeyro",
+		"birthDate": "1956-12-09",
+		"birthYear": 1956,
+		"nationalityPrimary": "Argentino",
+		"image": "/people/enrique-pineyro-nm0684127.jpg",
+		"imdbId": "nm0684127",
+		"imdbUrl": "https://www.imdb.com/name/nm0684127/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Enrique%20Pi%C3%B1eyro.png?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q5379791",
+			"https://www.imdb.com/name/nm0684127/",
+			"https://www.themoviedb.org/person/56247-enrique-pineyro"
+		],
+		"lastVerifiedAt": "2026-08-11",
+		"source": "wikidata-imdb-cache",
+		"sex": "masculino",
+		"sexSourceUrl": "https://www.wikidata.org/wiki/Q5379791",
+		"sexVerifiedAt": "2026-10-11"
+	},
 	"Enrique Pinti": {
 		"name": "Enrique Pinti",
 		"birthDate": "1939-10-07",
@@ -29799,26 +29897,6 @@
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q5379789",
-		"sexVerifiedAt": "2026-10-11"
-	},
-	"Enrique Piñeyro": {
-		"name": "Enrique Piñeyro",
-		"birthDate": "1956-12-09",
-		"birthYear": 1956,
-		"nationalityPrimary": "Argentino",
-		"image": "/people/enrique-pineyro-nm0684127.jpg",
-		"imdbId": "nm0684127",
-		"imdbUrl": "https://www.imdb.com/name/nm0684127/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Enrique%20Pi%C3%B1eyro.png?width=640",
-		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q5379791",
-			"https://www.imdb.com/name/nm0684127/",
-			"https://www.themoviedb.org/person/56247-enrique-pineyro"
-		],
-		"lastVerifiedAt": "2026-08-11",
-		"source": "wikidata-imdb-cache",
-		"sex": "masculino",
-		"sexSourceUrl": "https://www.wikidata.org/wiki/Q5379791",
 		"sexVerifiedAt": "2026-10-11"
 	},
 	"Enrique Rottenberg": {
@@ -30164,6 +30242,23 @@
 			"https://www.imdb.com/name/nm0874676/"
 		],
 		"lastVerifiedAt": "2026-08-11",
+		"source": "wikidata-imdb-cache"
+	},
+	"Eric Wareheim": {
+		"name": "Eric Wareheim",
+		"birthDate": "1976-04-07",
+		"birthYear": 1976,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/eric-wareheim-nm1728099.jpg",
+		"imdbId": "nm1728099",
+		"imdbUrl": "https://www.imdb.com/name/nm1728099/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/EricWareheim(by%20Scott%20Dudelson).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q5387705",
+			"https://www.imdb.com/name/nm1728099/",
+			"https://www.themoviedb.org/person/132857-eric-wareheim"
+		],
+		"lastVerifiedAt": "2026-11-12",
 		"source": "wikidata-imdb-cache"
 	},
 	"Érica Rivas": {
@@ -40919,6 +41014,21 @@
 		"lastVerifiedAt": "2026-08-14",
 		"source": "wikidata-imdb-cache"
 	},
+	"Iñaki Ardanaz": {
+		"name": "Iñaki Ardanaz",
+		"birthYear": 1984,
+		"nationalityPrimary": "Española",
+		"image": "/people/inaki-ardanaz-nm1964119.jpg",
+		"imdbId": "nm1964119",
+		"imdbUrl": "https://www.imdb.com/name/nm1964119/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/I%C3%B1aki%20Ardanaz.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q106573742",
+			"https://www.imdb.com/name/nm1964119/"
+		],
+		"lastVerifiedAt": "2026-08-07",
+		"source": "manual-verified"
+	},
 	"Inde Navarrette": {
 		"name": "Inde Navarrette",
 		"birthDate": "2001-03-03",
@@ -41113,21 +41223,6 @@
 		"lastVerifiedAt": "2026-08-11",
 		"image": "/people/inma-cuesta-224728.jpg",
 		"source": "tmdb-cache"
-	},
-	"Iñaki Ardanaz": {
-		"name": "Iñaki Ardanaz",
-		"birthYear": 1984,
-		"nationalityPrimary": "Española",
-		"image": "/people/inaki-ardanaz-nm1964119.jpg",
-		"imdbId": "nm1964119",
-		"imdbUrl": "https://www.imdb.com/name/nm1964119/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/I%C3%B1aki%20Ardanaz.jpg?width=640",
-		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q106573742",
-			"https://www.imdb.com/name/nm1964119/"
-		],
-		"lastVerifiedAt": "2026-08-07",
-		"source": "manual-verified"
 	},
 	"Ioan Gruffudd": {
 		"name": "Ioan Gruffudd",
@@ -54633,6 +54728,18 @@
 		"image": "/people/kani-kusruti-1399177.jpg",
 		"source": "tmdb-cache"
 	},
+	"Kanji Tsuda": {
+		"name": "Kanji Tsuda",
+		"image": "/people/kanji-tsuda-nm0875244.jpg",
+		"imdbId": "nm0875244",
+		"imdbUrl": "https://www.imdb.com/name/nm0875244/",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/eMydsUZjDuo9oS1asKI1I6cbpvL.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/13256",
+			"https://www.imdb.com/name/nm0875244/",
+			"https://www.themoviedb.org/movie/11838/cast?language=en-US"
+		]
+	},
 	"Kanon Miyahara": {
 		"name": "Kanon Miyahara",
 		"birthDate": "1996-04-08",
@@ -55844,6 +55951,18 @@
 		],
 		"lastVerifiedAt": "2026-03-15",
 		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Kayoko Shibata": {
+		"name": "Kayoko Shibata",
+		"image": "/people/kayoko-shibata-nm0756986.jpg",
+		"imdbId": "nm0756986",
+		"imdbUrl": "https://www.imdb.com/name/nm0756986/",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/wj408ED2EXBZHUzyFFu1PULfJMO.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/552501",
+			"https://www.imdb.com/name/nm0756986/",
+			"https://www.themoviedb.org/movie/11838/cast?language=en-US"
+		]
 	},
 	"Kazunari Ninomiya": {
 		"name": "Kazunari Ninomiya",
@@ -60216,6 +60335,23 @@
 		],
 		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
+	},
+	"Leon Lai Ming": {
+		"name": "Leon Lai Ming",
+		"aliases": [
+			"Leon Lai"
+		],
+		"birthDate": "1966-12-11",
+		"birthYear": 1966,
+		"image": "/people/leon-lai-plex.jpg",
+		"remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fpeople%2F49203ca470fc9e7d84f852b4c0906343.jpg",
+		"referenceUrls": [
+			"https://watch.plex.tv/person/leon-lai",
+			"https://www.janusfilms.com/films/1742",
+			"https://sede.mcu.gob.es/CatalogoICAA/Peliculas/GetPdf?Pelicula=8744440"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "plex-cache"
 	},
 	"Leonard Nimoy": {
 		"name": "Leonard Nimoy",
@@ -65682,6 +65818,23 @@
 		"lastVerifiedAt": "2026-09-12",
 		"source": "wikidata-imdb-cache"
 	},
+	"Mariana di Girolamo": {
+		"name": "Mariana di Girolamo",
+		"birthDate": "1990-10-22",
+		"birthYear": 1990,
+		"nationalityPrimary": "Chilena",
+		"image": "/people/mariana-di-girolamo-nm6797988.jpg",
+		"imdbId": "nm6797988",
+		"imdbUrl": "https://www.imdb.com/name/nm6797988/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mariana%20Di%20Girolamo%20at%2083rd%20Venice%20International%20Film%20Festival-13%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q20888373",
+			"https://www.imdb.com/name/nm6797988/",
+			"https://www.themoviedb.org/person/2064168-mariana-di-girolamo"
+		],
+		"lastVerifiedAt": "2026-11-12",
+		"source": "wikidata-imdb-cache"
+	},
 	"Mariana Sanguinetti": {
 		"name": "Mariana Sanguinetti",
 		"image": "/people/mariana-sanguinetti.jpg",
@@ -69140,6 +69293,18 @@
 		"lastVerifiedAt": "2026-08-26",
 		"source": "wikidata-imdb-cache"
 	},
+	"Megumi Okina": {
+		"name": "Megumi Okina",
+		"image": "/people/megumi-okina-nm0645648.jpg",
+		"imdbId": "nm0645648",
+		"imdbUrl": "https://www.imdb.com/name/nm0645648/",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/zOY3nJLKX8zqeO9VNVvm2slv1mD.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/67318",
+			"https://www.imdb.com/name/nm0645648/",
+			"https://www.themoviedb.org/movie/11838/cast?language=en-US"
+		]
+	},
 	"Megumi Toyoguchi": {
 		"name": "Megumi Toyoguchi",
 		"birthYear": 1978,
@@ -72521,6 +72686,18 @@
 		"notes": "Referente de Productores Independientes de Piray (PIP) y de la agricultura familiar en Misiones.",
 		"source": "manual-prensa-trailer-oficial"
 	},
+	"Misa Uehara": {
+		"name": "Misa Uehara",
+		"image": "/people/misa-uehara-nm1503952.jpg",
+		"imdbId": "nm1503952",
+		"imdbUrl": "https://www.imdb.com/name/nm1503952/",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/1pDgNc7IMlyw6mQVZqYoiKyfgC3.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/1241458",
+			"https://www.imdb.com/name/nm1503952/",
+			"https://www.themoviedb.org/movie/11838/cast?language=en-US"
+		]
+	},
 	"Misagh Zare": {
 		"name": "Missagh Zareh",
 		"birthDate": "1981",
@@ -72537,6 +72714,18 @@
 		],
 		"lastVerifiedAt": "2026-08-12",
 		"source": "wikidata-imdb-plex-cache"
+	},
+	"Misaki Itō": {
+		"name": "Misaki Itō",
+		"image": "/people/misaki-ito-nm0411725.jpg",
+		"imdbId": "nm0411725",
+		"imdbUrl": "https://www.imdb.com/name/nm0411725/",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/T1RGegZr3sH33EaPRqCzXyUAwL.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/70671",
+			"https://www.imdb.com/name/nm0411725/",
+			"https://www.themoviedb.org/movie/11838/cast?language=en-US"
+		]
 	},
 	"Missi Pyle": {
 		"name": "Missi Pyle",
@@ -90610,6 +90799,16 @@
 		"lastVerifiedAt": "2026-07-31",
 		"source": "wikidata-imdb-plex-cache"
 	},
+	"Shuri Matsuda": {
+		"name": "Shuri Matsuda",
+		"image": "/people/shuri-matsuda.jpg",
+		"remoteImageUrl": "https://rankingoo.net/wp-content/uploads/tdb/2000018068.webp",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/2499264",
+			"https://eiga.com/person/264575/",
+			"https://rankingoo.net/profile/view?id=2000018068"
+		]
+	},
 	"Sian Heder": {
 		"name": "Siân Héder",
 		"birthYear": 1977,
@@ -94006,6 +94205,18 @@
 		"lastVerifiedAt": "2026-08-26",
 		"source": "wikidata-imdb-cache"
 	},
+	"Takako Fuji": {
+		"name": "Takako Fuji",
+		"image": "/people/takako-fuji-nm1232416.jpg",
+		"imdbId": "nm1232416",
+		"imdbUrl": "https://www.imdb.com/name/nm1232416/",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/efoDNuBBboAhnzHIkiw72AFdSvX.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/20329",
+			"https://www.imdb.com/name/nm1232416/",
+			"https://www.themoviedb.org/movie/11838/cast?language=en-US"
+		]
+	},
 	"Takao Ōsawa": {
 		"name": "Takao Ōsawa",
 		"birthYear": 1968,
@@ -94038,6 +94249,18 @@
 		"image": "/people/takashi-katagiri.jpg",
 		"remoteImageUrl": "https://cdn.animenewsnetwork.com/thumbnails/crop150x150gH7/encyc/P157982-3049348378.1620733556.jpg"
 	},
+	"Takashi Matsuyama": {
+		"name": "Takashi Matsuyama",
+		"image": "/people/takashi-matsuyama-nm0559690.jpg",
+		"imdbId": "nm0559690",
+		"imdbUrl": "https://www.imdb.com/name/nm0559690/",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/fBufEEFKgnEirPWJoGOpnJsZUjn.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/216330",
+			"https://www.imdb.com/name/nm0559690/",
+			"https://www.themoviedb.org/movie/11838/cast?language=en-US"
+		]
+	},
 	"Takashi Miike": {
 		"name": "Takashi Miike",
 		"birthDate": "1960-08-24",
@@ -94053,6 +94276,18 @@
 		],
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
+	},
+	"Takashi Shimizu": {
+		"name": "Takashi Shimizu",
+		"image": "/people/takashi-shimizu-nm1234345.jpg",
+		"imdbId": "nm1234345",
+		"imdbUrl": "https://www.imdb.com/name/nm1234345/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Takashi%20Shimizu%20cropped.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/20310",
+			"https://www.imdb.com/name/nm1234345/",
+			"https://jfdb.jp/en/title/49"
+		]
 	},
 	"Takashi Shimura": {
 		"name": "Takashi Shimura",
@@ -98449,6 +98684,20 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1982-03-06"
 	},
+	"Tyler Hall": {
+		"name": "Tyler Hall",
+		"imdbId": "nm1427991",
+		"imdbUrl": "https://www.imdb.com/name/nm1427991/",
+		"image": "/people/tyler-hall-nm1427991.jpg",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/lN0FFCcqLTAKMv9uyWYR2o1OPRl.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/1890932-tyler-hall",
+			"https://www.imdb.com/name/nm1427991/",
+			"https://www.themoviedb.org/movie/1284046-onslaught/cast?language=en-US"
+		],
+		"lastVerifiedAt": "2026-11-12",
+		"source": "tmdb-imdb-crosswalk-reviewed"
+	},
 	"Tyler Hoechlin": {
 		"name": "Tyler Hoechlin",
 		"birthDate": "1987-09-11",
@@ -102269,6 +102518,18 @@
 		"remoteImageUrl": "https://api.screendollars.com/wp-content/uploads/2024/07/150720241721054211-scaled.jpeg",
 		"birthDate": "1967-10-19"
 	},
+	"Yoji Tanaka": {
+		"name": "Yoji Tanaka",
+		"image": "/people/yoji-tanaka-nm0849093.jpg",
+		"imdbId": "nm0849093",
+		"imdbUrl": "https://www.imdb.com/name/nm0849093/",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/752oL9YrUumjrqbhdj4GNJ938x3.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/115659",
+			"https://www.imdb.com/name/nm0849093/",
+			"https://www.themoviedb.org/movie/11838/cast?language=en-US"
+		]
+	},
 	"Yoko Honna": {
 		"name": "Yoko Honna",
 		"nationalityPrimary": "Japonesa",
@@ -102523,6 +102784,18 @@
 		"lastVerifiedAt": "2026-08-26",
 		"source": "wikidata-imdb-cache"
 	},
+	"Yui Ichikawa": {
+		"name": "Yui Ichikawa",
+		"image": "/people/yui-ichikawa-nm1368557.jpg",
+		"imdbId": "nm1368557",
+		"imdbUrl": "https://www.imdb.com/name/nm1368557/",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/uGSeCY4Aqq9X9b85bLuTuFWP67G.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/58444",
+			"https://www.imdb.com/name/nm1368557/",
+			"https://www.themoviedb.org/movie/11838/cast?language=en-US"
+		]
+	},
 	"Yui Ogura": {
 		"name": "Yui Ogura",
 		"birthDate": "1995-08-15",
@@ -102583,6 +102856,17 @@
 		],
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Yukako Kukuri": {
+		"name": "Yukako Kukuri",
+		"imdbId": "nm1505484",
+		"imdbUrl": "https://www.imdb.com/name/nm1505484/",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/70670",
+			"https://www.imdb.com/name/nm1505484/",
+			"https://eiga.com/person/264574/",
+			"https://thetv.jp/person/0000131901/"
+		]
 	},
 	"Yuki Amami": {
 		"name": "Yuki Amami",
@@ -102844,6 +103128,18 @@
 		],
 		"lastVerifiedAt": "2026-06-19",
 		"source": "wikidata-imdb-plex-cache"
+	},
+	"Yuya Ozeki": {
+		"name": "Yuya Ozeki",
+		"imdbId": "nm1505005",
+		"imdbUrl": "https://www.imdb.com/name/nm1505005/",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/552504",
+			"https://www.imdb.com/name/nm1505005/",
+			"https://eiga.com/person/217203/",
+			"https://thetv.jp/person/1000021081/",
+			"https://www.slashfilm.com/1490936/cursed-boy-the-grudge-whatever-happened-to-him-yuya-ozeki/"
+		]
 	},
 	"Yves Barsacq": {
 		"name": "Yves Barsacq",
@@ -103403,22 +103699,5 @@
 		],
 		"lastVerifiedAt": "2026-10-01",
 		"source": "wikidata-imdb-cache"
-	},
-	"Leon Lai Ming": {
-		"name": "Leon Lai Ming",
-		"aliases": [
-			"Leon Lai"
-		],
-		"birthDate": "1966-12-11",
-		"birthYear": 1966,
-		"image": "/people/leon-lai-plex.jpg",
-		"remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fpeople%2F49203ca470fc9e7d84f852b4c0906343.jpg",
-		"referenceUrls": [
-			"https://watch.plex.tv/person/leon-lai",
-			"https://www.janusfilms.com/films/1742",
-			"https://sede.mcu.gob.es/CatalogoICAA/Peliculas/GetPdf?Pelicula=8744440"
-		],
-		"lastVerifiedAt": "2026-11-06",
-		"source": "plex-cache"
 	}
 }

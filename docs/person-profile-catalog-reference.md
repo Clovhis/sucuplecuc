@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-07. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-12. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4666
+Total de vínculos de películas del catálogo: 4672
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -15,7 +15,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Adam McKay | `adam-mckay` | /personas/adam-mckay/ | Director / Guionista / Productor | 4 | 6 |
 | Adam Sandler | `adam-sandler` | /personas/adam-sandler/ | Actor / Comediante / Productor | 48 | 8 |
 | Adolfo Aristarain | `adolfo-aristarain` | /personas/adolfo-aristarain/ | Director / Guionista | 1 | 5 |
-| Adria Arjona | `adria-arjona` | /personas/adria-arjona/ | Actriz | 2 | 7 |
+| Adria Arjona | `adria-arjona` | /personas/adria-arjona/ | Actriz | 3 | 7 |
 | Adrián Caetano | `adrian-caetano` | /personas/adrian-caetano/ | Director / Guionista | 1 | 7 |
 | Adrián Suar | `adrian-suar` | /personas/adrian-suar/ | Actor / Director / Productor | 1 | 11 |
 | Adriana Aizemberg | `adriana-aizemberg` | /personas/adriana-aizemberg/ | Actriz | 2 | 4 |
@@ -412,7 +412,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | John Hurt | `john-hurt` | /personas/john-hurt/ | Actor | 7 | 3 |
 | John Leguizamo | `john-leguizamo` | /personas/john-leguizamo/ | Actor / Comediante / Productor | 13 | 7 |
 | John Lithgow | `john-lithgow` | /personas/john-lithgow/ | Actor / Autor | 3 | 7 |
-| John Malkovich | `john-malkovich` | /personas/john-malkovich/ | Actor | 11 | 7 |
+| John Malkovich | `john-malkovich` | /personas/john-malkovich/ | Actor | 12 | 7 |
 | John Travolta | `john-travolta` | /personas/john-travolta/ | Actor | 9 | 6 |
 | John Turturro | `john-turturro` | /personas/john-turturro/ | Actor | 10 | 3 |
 | Johnny Depp | `johnny-depp` | /personas/johnny-depp/ | Actor | 17 | 7 |
@@ -556,7 +556,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Mia Farrow | `mia-farrow` | /personas/mia-farrow/ | Actriz | 15 | 3 |
 | Mia Goth | `mia-goth` | /personas/mia-goth/ | Actriz | 4 | 3 |
 | Michael B. Jordan | `michael-b-jordan` | /personas/michael-b-jordan/ | Actor | 7 | 7 |
-| Michael Biehn | `michael-biehn` | /personas/michael-biehn/ | Actor | 5 | 3 |
+| Michael Biehn | `michael-biehn` | /personas/michael-biehn/ | Actor | 6 | 3 |
 | Michael Caine | `michael-caine` | /personas/michael-caine/ | Actor | 9 | 7 |
 | Michael Cera | `michael-cera` | /personas/michael-cera/ | Actor | 11 | 5 |
 | Michael Clarke Duncan | `michael-clarke-duncan` | /personas/michael-clarke-duncan/ | Actor | 3 | 7 |
@@ -656,7 +656,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Raúl Perrone | `raul-perrone` | /personas/raul-perrone/ | Director / Guionista / Productor | 1 | 5 |
 | Ray Liotta | `ray-liotta` | /personas/ray-liotta/ | Actor | 4 | 6 |
 | Rebecca Ferguson | `rebecca-ferguson` | /personas/rebecca-ferguson/ | Actriz | 6 | 7 |
-| Rebecca Hall | `rebecca-hall` | /personas/rebecca-hall/ | Actriz | 7 | 7 |
+| Rebecca Hall | `rebecca-hall` | /personas/rebecca-hall/ | Actriz | 8 | 7 |
 | Reese Witherspoon | `reese-witherspoon` | /personas/reese-witherspoon/ | Actriz / Productora | 6 | 6 |
 | Renate Reinsve | `renate-reinsve` | /personas/renate-reinsve/ | Actriz | 3 | 7 |
 | Rene Russo | `rene-russo` | /personas/rene-russo/ | Actriz | 8 | 4 |
@@ -698,7 +698,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Sam Mendes | `sam-mendes` | /personas/sam-mendes/ | Director | 6 | 7 |
 | Sam Neill | `sam-neill` | /personas/sam-neill/ | Actor | 5 | 3 |
 | Sam Raimi | `sam-raimi` | /personas/sam-raimi/ | Director | 8 | 6 |
-| Sam Rockwell | `sam-rockwell` | /personas/sam-rockwell/ | Actor | 9 | 5 |
+| Sam Rockwell | `sam-rockwell` | /personas/sam-rockwell/ | Actor | 10 | 5 |
 | Sam Worthington | `sam-worthington` | /personas/sam-worthington/ | Actor | 5 | 7 |
 | Samara Weaving | `samara-weaving` | /personas/samara-weaving/ | Actriz | 2 | 7 |
 | Samuel L. Jackson | `samuel-l-jackson` | /personas/samuel-l-jackson/ | Actor | 17 | 7 |
@@ -730,7 +730,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Stanley Kubrick | `stanley-kubrick` | /personas/stanley-kubrick/ | Director / Guionista / Productor | 9 | 6 |
 | Stanley Tucci | `stanley-tucci` | /personas/stanley-tucci/ | Actor | 7 | 3 |
 | Stellan Skarsgård | `stellan-skarsgard` | /personas/stellan-skarsgard/ | Actor | 4 | 5 |
-| Steve Buscemi | `steve-buscemi` | /personas/steve-buscemi/ | Actor / Director | 11 | 6 |
+| Steve Buscemi | `steve-buscemi` | /personas/steve-buscemi/ | Actor / Director | 12 | 6 |
 | Steve Carell | `steve-carell` | /personas/steve-carell/ | Actor | 14 | 4 |
 | Steven Seagal | `steven-seagal` | /personas/steven-seagal/ | Actor | 1 | 3 |
 | Steven Soderbergh | `steven-soderbergh` | /personas/steven-soderbergh/ | Director / Productor / Guionista | 7 | 5 |

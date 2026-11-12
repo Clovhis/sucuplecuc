@@ -7,7 +7,7 @@
 	"poster": "assets/posters/1976/rocky-1976.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "4plqh6obZW4",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "Cine",
 	"director": "John G. Avildsen",
 	"mainCast": [
 		"Sylvester Stallone",
@@ -58,5 +58,8 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"Cine"
+	]
 }

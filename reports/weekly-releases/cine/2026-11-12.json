@@ -1,0 +1,1798 @@
+{
+  "kind": "cine",
+  "date": "2026-11-12",
+  "period": {
+    "kind": "cine",
+    "runDate": "2026-11-12",
+    "start": "2026-11-12",
+    "end": "2026-11-18",
+    "schedule": "jueves-10-art"
+  },
+  "slug": "estrenos-cines-semana-2026-11-12",
+  "execution": {
+    "provider": "codex-native",
+    "model": "gpt-6-luna",
+    "effort": "max",
+    "agentId": "/root/cineposta_cine_20261112",
+    "probe": "passed",
+    "status": "completed",
+    "parentCompletion": {
+      "attestedBy": "native-task-root",
+      "agentId": "/root/cineposta_cine_20261112",
+      "completedAt": "2026-11-12T18:06:47.869Z"
+    }
+  },
+  "tweet": "¿Una casa maldita, un asalto al límite o una aventura en Rapa Nui? Esta semana elegí Ju-on, Aniquilación y Caballo Salvaje Nueve con la guía de CinePosta: https://www.cineposta.com.ar/editorial/estrenos-cines-semana-2026-11-12/ #Cine #Estrenos",
+  "social": {
+    "tweet": "¿Una casa maldita, un asalto al límite o una aventura en Rapa Nui? Esta semana elegí Ju-on, Aniquilación y Caballo Salvaje Nueve con la guía de CinePosta: https://www.cineposta.com.ar/editorial/estrenos-cines-semana-2026-11-12/ #Cine #Estrenos"
+  },
+  "includedSlugs": [
+    "aniquilacion-2026",
+    "caballo-salvaje-nueve-2026",
+    "ju-on-el-grito-2002",
+    "godzilla-minus-zero-2026",
+    "rocky-1976",
+    "toy-story-5-2026"
+  ],
+  "homeSlugs": [
+    "aniquilacion-2026",
+    "caballo-salvaje-nueve-2026",
+    "ju-on-el-grito-2002",
+    "godzilla-minus-zero-2026",
+    "rocky-1976",
+    "toy-story-5-2026"
+  ],
+  "candidates": [
+    {
+      "slug": "obsesion-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/obsesion-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre. JustWatch AR confirma Prime Video (RENT); la página oficial argentina del proveedor identifica el título y su modalidad vigente.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.cinemark.com.ar/elegi-pelicula",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/obsesion-2026",
+          "offers": [
+            {
+              "provider": "Prime Video",
+              "offerType": "RENT",
+              "country": "AR",
+              "url": "https://www.primevideo.com/-/es_419/detail/0M1G8W35R6LZYZ25OYBKKX3PBF?tr=ar"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "toy-story-5-2026",
+      "status": "revalidated",
+      "include": true,
+      "reason": "Función elegible confirmada en la ventana; título seleccionado para la guía.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-14",
+            "chain": "Cinemacenter",
+            "venue": "Cinemacenter Bahía Blanca",
+            "locality": "Bahía Blanca",
+            "jurisdiction": "PBA",
+            "url": "https://bahiablancaplazashopping.com/cine/5608-TOY-STORY-5---2D-CAST"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-14",
+            "chain": "Cinemacenter",
+            "venue": "Cinemacenter Bahía Blanca",
+            "locality": "Bahía Blanca",
+            "jurisdiction": "PBA",
+            "url": "https://bahiablancaplazashopping.com/cine/5608-TOY-STORY-5---2D-CAST"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "los-colores-del-tiempo-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/los-colores-del-tiempo-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre y JustWatch AR no confirmó una oferta legal exacta; se usa Otras plataformas.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=&codPelicula=504",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/los-colores-del-tiempo",
+          "offers": []
+        }
+      }
+    },
+    {
+      "slug": "la-odisea-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5875"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5875"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "spider-man-brand-new-day-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/spider-man-brand-new-day-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre. JustWatch AR confirma Prime Video (RENT); la página oficial argentina del proveedor identifica el título y su modalidad vigente.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.cinemark.com.ar/elegi-pelicula",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/untitled-spider-man-sequel",
+          "offers": [
+            {
+              "provider": "Prime Video",
+              "offerType": "RENT",
+              "country": "AR",
+              "url": "https://www.primevideo.com/-/es_419/detail/0MH84EJKE2M4I598UISANJRS1X?tr=ar"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "la-invitacion-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/la-invitacion-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre. JustWatch AR confirma Apple TV (RENT); la página oficial argentina del proveedor identifica el título y su modalidad vigente. Prime Video Argentina indica que su ficha no está disponible; Apple TV Argentina sí identifica esta película de 2026.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.cinemark.com.ar/elegi-pelicula",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/the-invite",
+          "offers": [
+            {
+              "provider": "Apple TV",
+              "offerType": "RENT",
+              "country": "AR",
+              "url": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "coyote-vs-acme-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5984"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5984"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "resident-evil-noche-cero-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Cinemark Hoyts",
+            "venue": "Cinemark Hoyts Alto Avellaneda",
+            "locality": "Avellaneda",
+            "jurisdiction": "PBA",
+            "url": "https://www.cinemark.com.ar/pelicula/resident-evil-noche-cero"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Cinemark Hoyts",
+            "venue": "Cinemark Hoyts Alto Avellaneda",
+            "locality": "Avellaneda",
+            "jurisdiction": "PBA",
+            "url": "https://www.cinemark.com.ar/pelicula/resident-evil-noche-cero"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "el-corazon-de-la-bestia-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Nordelta",
+            "locality": "Tigre",
+            "jurisdiction": "PBA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=196&codPelicula=578&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Nordelta",
+            "locality": "Tigre",
+            "jurisdiction": "PBA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=196&codPelicula=578&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-isla-olvidada-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6082"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6082"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "digger-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6101"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6101"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "verity-la-sombra-de-un-engano-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Cinemacenter",
+            "venue": "Cinemacenter Bahía Blanca",
+            "locality": "Bahía Blanca",
+            "jurisdiction": "PBA",
+            "url": "https://bahiablancaplazashopping.com/cine/5802-VERITY-LA-SOMBRA-DE-UN-ENGA-O---2D-SUB"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Cinemacenter",
+            "venue": "Cinemacenter Bahía Blanca",
+            "locality": "Bahía Blanca",
+            "jurisdiction": "PBA",
+            "url": "https://bahiablancaplazashopping.com/cine/5802-VERITY-LA-SOMBRA-DE-UN-ENGA-O---2D-SUB"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "cars-2006",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/cars-2006.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre. JustWatch AR confirma Disney Plus (FLATRATE); la página oficial argentina del proveedor identifica el título y su modalidad vigente.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=&codPelicula=593",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/cars",
+          "offers": [
+            {
+              "provider": "Disney Plus",
+              "offerType": "FLATRATE",
+              "country": "AR",
+              "url": "https://www.disneyplus.com/es-ar/browse/entity-9c1b0ec2-2e4e-4717-89fb-bdf3a45523df"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "la-casa-2025",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=595&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=595&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-vida-es-asi-2025",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Patio Bullrich",
+            "locality": "Ciudad Autónoma de Buenos Aires",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=596&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Patio Bullrich",
+            "locality": "Ciudad Autónoma de Buenos Aires",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=596&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "madre-siniestra-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Catan",
+            "locality": "González Catán",
+            "jurisdiction": "PBA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=192&codPelicula=597&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Catan",
+            "locality": "González Catán",
+            "jurisdiction": "PBA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=192&codPelicula=597&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "escuela-de-monstruos-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/escuela-de-monstruos-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre y JustWatch AR no confirmó una oferta legal exacta; se usa Otras plataformas.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=&codPelicula=604",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/buscar?q=Monster%20Mia",
+          "offers": []
+        }
+      }
+    },
+    {
+      "slug": "la-caida-de-la-ballena-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6191"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6191"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "street-fighter-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/street-fighter-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre y JustWatch AR no confirmó una oferta legal exacta; se usa Otras plataformas.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.cinemark.com.ar/elegi-pelicula",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/street-fighter",
+          "offers": []
+        }
+      }
+    },
+    {
+      "slug": "tiempos-de-ilusion-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/tiempos-de-ilusion-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre y JustWatch AR no confirmó una oferta legal exacta; se usa Otras plataformas.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=&codPelicula=607",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/tiempos-de-ilusion",
+          "offers": []
+        }
+      }
+    },
+    {
+      "slug": "queres-ser-mi-hijo-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Cinemark Hoyts",
+            "venue": "Cinemark Hoyts Unicenter",
+            "locality": "Martínez",
+            "jurisdiction": "PBA",
+            "url": "https://www.cinemark.com.ar/pelicula/queres-ser-mi-hijo"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Cinemark Hoyts",
+            "venue": "Cinemark Hoyts Unicenter",
+            "locality": "Martínez",
+            "jurisdiction": "PBA",
+            "url": "https://www.cinemark.com.ar/pelicula/queres-ser-mi-hijo"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "clayface-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "el-poder-de-la-red-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/el-poder-de-la-red-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre y JustWatch AR no confirmó una oferta legal exacta; se usa Otras plataformas.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.cinemark.com.ar/elegi-pelicula",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/buscar?q=The%20Social%20Reckoning",
+          "offers": []
+        }
+      }
+    },
+    {
+      "slug": "que-dios-perdona-a-todos-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Patio Bullrich",
+            "locality": "Ciudad Autónoma de Buenos Aires",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=613&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Patio Bullrich",
+            "locality": "Ciudad Autónoma de Buenos Aires",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=613&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-caja-del-demonio-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Catan",
+            "locality": "González Catán",
+            "jurisdiction": "PBA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=192&codPelicula=621&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Catan",
+            "locality": "González Catán",
+            "jurisdiction": "PBA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=192&codPelicula=621&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-cena-2025",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-13",
+            "chain": "Atlas Cines",
+            "venue": "Patio Bullrich",
+            "locality": "Ciudad Autónoma de Buenos Aires",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=619&fecha=2026-11-13"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-13",
+            "chain": "Atlas Cines",
+            "venue": "Patio Bullrich",
+            "locality": "Ciudad Autónoma de Buenos Aires",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=619&fecha=2026-11-13"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "pinocho-sin-cuerdas-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/pinocho-sin-cuerdas-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre y JustWatch AR no confirmó una oferta legal exacta; se usa Otras plataformas.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=&codPelicula=623",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/pinocho-2026",
+          "offers": []
+        }
+      }
+    },
+    {
+      "slug": "sensatez-y-sentimiento-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=624&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=624&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "tierra-de-mi-padre-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=618&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=618&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "wildwood-el-bosque-salvaje-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=625&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=625&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "babystar-2025",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Patio Bullrich",
+            "locality": "Ciudad Autónoma de Buenos Aires",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=627&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Patio Bullrich",
+            "locality": "Ciudad Autónoma de Buenos Aires",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=627&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "el-gato-con-sombrero-2026",
+      "status": "revalidated",
+      "include": false,
+      "reason": "Función elegible confirmada en CABA/PBA durante la ventana; el título no quedó seleccionado para la guía editorial.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=628&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=628&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "entrega-al-limite-2026",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/entrega-al-limite-2026.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre y JustWatch AR no confirmó una oferta legal exacta; se usa Otras plataformas.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=&codPelicula=629",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/entrega-al-limite",
+          "offers": []
+        }
+      }
+    },
+    {
+      "slug": "godzilla-minus-zero-2026",
+      "status": "revalidated",
+      "include": true,
+      "reason": "Función elegible confirmada en la ventana; título seleccionado para la guía.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=616&fecha=2026-11-12"
+          }
+        ]
+      },
+      "cinemaRevalidation": {
+        "decision": "retained",
+        "checkedOn": "2026-11-12",
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=616&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "sacrificio-los-elegidos-2025",
+      "status": "revalidated",
+      "include": false,
+      "changedFile": "src/data/movies/sacrificio-los-elegidos-2025.json",
+      "reason": "Se retiró Cine: no hubo función de cadena elegible en CABA/PBA del 12 al 18 de noviembre y JustWatch AR no confirmó una oferta legal exacta; se usa Otras plataformas.",
+      "cinemaRevalidation": {
+        "decision": "removed",
+        "checkedOn": "2026-11-12",
+        "showings": [],
+        "venueChecks": [
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-12",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-13",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-14",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-15",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-16",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-17",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://baseinformativa.com.ar/horarios-de-cine/buenos-aires/?dia=2026-11-18",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing"
+          },
+          {
+            "url": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=&codPelicula=630",
+            "checkedOn": "2026-11-12",
+            "result": "no-eligible-showing",
+            "official": true
+          }
+        ],
+        "availability": {
+          "checkedOn": "2026-11-12",
+          "justwatchUrl": "https://www.justwatch.com/ar/pelicula/sacrifice-2025",
+          "offers": []
+        }
+      }
+    },
+    {
+      "slug": "aniquilacion-2026",
+      "status": "loaded",
+      "include": true,
+      "changedFile": "src/data/movies/aniquilacion-2026.json",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6298"
+          }
+        ]
+      },
+      "score": {
+        "source": "TMDb",
+        "sourceUrl": "https://www.themoviedb.org/movie/1284046",
+        "metric": "audience",
+        "rawValue": 5.5,
+        "voteCount": 146,
+        "retrievedOn": "2026-11-12",
+        "conversion": "round(5.5)",
+        "final": 6
+      }
+    },
+    {
+      "slug": "caballo-salvaje-nueve-2026",
+      "status": "loaded",
+      "include": true,
+      "changedFile": "src/data/movies/caballo-salvaje-nueve-2026.json",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Showcase",
+            "venue": "Showcase Norcenter",
+            "locality": "Munro",
+            "jurisdiction": "PBA",
+            "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6297"
+          }
+        ]
+      },
+      "score": {
+        "source": "TMDb",
+        "sourceUrl": "https://www.themoviedb.org/movie/891621",
+        "metric": "audience",
+        "rawValue": 8.083,
+        "voteCount": 150,
+        "retrievedOn": "2026-11-12",
+        "conversion": "round(8.083)",
+        "final": 8
+      }
+    },
+    {
+      "slug": "ju-on-el-grito-2002",
+      "status": "loaded",
+      "include": true,
+      "changedFile": "src/data/movies/ju-on-el-grito-2002.json",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Cinemark",
+            "venue": "Cinemark Terrazas de Mayo",
+            "locality": "Malvinas Argentinas",
+            "jurisdiction": "PBA",
+            "url": "https://www.cinemark.com.ar/pelicula/ju-on-el-grito"
+          }
+        ]
+      },
+      "score": {
+        "source": "TMDb",
+        "sourceUrl": "https://www.themoviedb.org/movie/11838",
+        "metric": "audience",
+        "rawValue": 6.8,
+        "voteCount": 1028,
+        "retrievedOn": "2026-11-12",
+        "conversion": "round(6.8)",
+        "final": 7
+      }
+    },
+    {
+      "slug": "rocky-1976",
+      "status": "revalidated",
+      "include": true,
+      "changedFile": "src/data/movies/rocky-1976.json",
+      "reason": "Se conservó Cine por la cartelera oficial de Atlas; no se retuvo Prime Video porque JustWatch lista FLATRATE pero la página oficial argentina consultada acredita alquiler/compra, no esa modalidad.",
+      "evidence": {
+        "showings": [
+          {
+            "date": "2026-11-12",
+            "chain": "Atlas Cines",
+            "venue": "Atlas Caballito",
+            "locality": "Caballito",
+            "jurisdiction": "CABA",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=626&fecha=2026-11-12"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "como-robar-un-banco-2026",
+      "status": "pending",
+      "include": false,
+      "reason": "No publicar JSON ni assets públicos: después del fallback web y TMDb no se pudo verificar personaje para Michael Gandolfini ni Sam Lerner, ambos créditos principales; el auditor no permite cerrar el gate de roles sin esos datos.",
+      "scoreSearches": [
+        {
+          "source": "Rotten Tomatoes",
+          "url": "https://www.rottentomatoes.com/m/how_to_rob_a_bank_2026",
+          "result": "Tomatometer 44% de 41 críticas; Popcornmeter con menos de 50 ratings verificados, sin score de audiencia estable."
+        },
+        {
+          "source": "IMDb",
+          "url": "https://www.imdb.com/title/tt35866986/ratings",
+          "result": "La búsqueda de score público del título no devolvió un valor accesible."
+        },
+        {
+          "source": "TMDb",
+          "url": "https://www.themoviedb.org/movie/1437511",
+          "result": "7.4/10 de 4 votos; muestra insuficiente para representar una valoración estable."
+        },
+        {
+          "source": "Letterboxd",
+          "url": "https://letterboxd.com/film/how-to-rob-a-bank-2026/",
+          "result": "3.14/5; 4,700 ratings y 2,813 reviews. El candidato sigue pendiente por el gate de roles, no por falta de puntuación."
+        }
+      ]
+    },
+    {
+      "slug": "plumas-operacion-rescate-2024",
+      "status": "pending",
+      "include": false,
+      "reason": "No publicar JSON: las fuentes de billing consultadas no resuelven el reparto principal; TMDb y Watchmode sólo exponen a Jinanavin Veerapatra como voz genérica `(voice)`, sin nombres de personaje ni la cobertura necesaria del elenco.",
+      "score": {
+        "source": "TMDb",
+        "sourceUrl": "https://www.themoviedb.org/movie/1280405",
+        "metric": "audience",
+        "rawValue": 7.8,
+        "voteCount": 4,
+        "retrievedOn": "2026-11-12",
+        "conversion": "round(7.8)",
+        "final": 8
+      },
+      "scoreSearches": [
+        {
+          "source": "Rotten Tomatoes",
+          "url": "https://www.rottentomatoes.com/m/out_of_the_nest",
+          "result": "Ficha pública consultada; no ofrece un score de audiencia con muestra utilizable."
+        },
+        {
+          "source": "IMDb",
+          "url": "https://www.imdb.com/title/tt31520900/ratings",
+          "result": "No se obtuvo un score público accesible en la consulta registrada."
+        },
+        {
+          "source": "TMDb",
+          "url": "https://www.themoviedb.org/movie/1280405",
+          "result": "7.8/10 de 4 votos; fuente primaria según el orden de consulta tras RT/IMDb."
+        },
+        {
+          "source": "Letterboxd",
+          "url": "https://letterboxd.com/film/out-of-the-nest/",
+          "result": "3.08/5, 519 ratings y 174 reviews; contraste, no fuente primaria elegida por tamaño de muestra."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://a24films.com/films/onslaught",
+      "role": "primary",
+      "fact": "A24 identifica Onslaught y presenta la premisa usada para Aniquilación."
+    },
+    {
+      "url": "https://press.searchlightpictures.com/wild-horse-nine",
+      "role": "primary",
+      "fact": "Press kit oficial de Searchlight para Wild Horse Nine, trama, reparto e imágenes."
+    },
+    {
+      "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6298",
+      "role": "primary",
+      "fact": "Ticketera oficial de Showcase, con funciones de Aniquilación en Norcenter."
+    },
+    {
+      "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6297",
+      "role": "primary",
+      "fact": "Ticketera oficial de Showcase, con funciones de Caballo Salvaje Nueve en Norcenter."
+    },
+    {
+      "url": "https://www.cinemark.com.ar/pelicula/ju-on-el-grito",
+      "role": "primary",
+      "fact": "Página oficial de Cinemark para las funciones diarias 2D en castellano de Ju-on en Terrazas de Mayo."
+    },
+    {
+      "url": "https://www.arrowvideochannel.com/juon-the-grudge-japanese-version/videos/juon-the-grudge-japanese-version",
+      "role": "primary",
+      "fact": "Arrow Video identifica la versión japonesa de Ju-on y aporta arte promocional oficial."
+    },
+    {
+      "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=616&fecha=2026-11-12",
+      "role": "primary",
+      "fact": "Atlas publica las funciones de Godzilla Minus Zero en Caballito el 12 de noviembre."
+    },
+    {
+      "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=626&fecha=2026-11-12",
+      "role": "primary",
+      "fact": "Atlas publica Rocky 50° aniversario en Caballito el 12 de noviembre."
+    },
+    {
+      "url": "https://bahiablancaplazashopping.com/cine/5608-TOY-STORY-5---2D-CAST",
+      "role": "primary",
+      "fact": "Agenda oficial de Cinemacenter Bahía Blanca: Toy Story 5, 14 y 15 de noviembre a las 14:30."
+    },
+    {
+      "url": "https://godzilla.com/pages/godzilla-minus-zero",
+      "role": "primary",
+      "fact": "Sitio oficial de Godzilla Minus Zero para su identidad e imágenes promocionales."
+    },
+    {
+      "url": "https://movies.disney.com/toy-story-5",
+      "role": "primary",
+      "fact": "Disney confirma la identidad y el contexto visual de Toy Story 5."
+    }
+  ],
+  "imageChecks": [
+    {
+      "sourceUrl": "https://cdn.craft.cloud/019dbb1d-e294-7306-bc26-5fd6f719e05c/assets/film/wild-horse-nine/WHN-03290_v1.jpg",
+      "description": "Still oficial de Searchlight inspeccionado en original y en recortes de portada de 640 y 320 px; cuatro personas permanecen reconocibles en la mesa."
+    },
+    {
+      "sourceUrl": "https://api-asset-production.s3.amazonaws.com/media/images/ONSL_Trailer_Textless.jpg",
+      "description": "Still oficial de A24 inspeccionado; primer plano de una mujer con lentes y reflejos de retícula, sin fecha ni marcas añadidas."
+    },
+    {
+      "sourceUrl": "https://vhx.imgix.net/arrow2/assets/fdcb6a05-4049-4a95-9766-e39901de1bf9.jpg?auto=format%2Ccompress&fit=crop&h=720&w=1280",
+      "description": "Arte oficial de Arrow Video inspeccionado; rostro pálido, fondo oscuro y título Ju-on: The Grudge claramente legibles."
+    },
+    {
+      "sourceUrl": "https://godzilla.com/cdn/shop/files/GMZ_914da1ad-d2d4-4826-94ef-e9e88cda1bcf.jpg?v=1790279819",
+      "description": "Arte promocional oficial del sitio de Godzilla inspeccionado; Godzilla, escombros y título legibles, sin fecha extranjera."
+    },
+    {
+      "sourceUrl": "https://lumiere-a.akamaihd.net/v1/images/g_disneymovies_toystory5_6_b89f2798.jpeg?region=0%2C0%2C1300%2C730",
+      "description": "Imagen oficial de Disney/Pixar inspeccionada; Woody y Buzz miran hacia Lilypad y el recorte conserva las figuras."
+    }
+  ],
+  "candidateCount": 41,
+  "includedCount": 6,
+  "url": "https://www.cineposta.com.ar/editorial/estrenos-cines-semana-2026-11-12/",
+  "movieUrls": [
+    "https://www.cineposta.com.ar/peliculas/aniquilacion-2026/",
+    "https://www.cineposta.com.ar/peliculas/caballo-salvaje-nueve-2026/",
+    "https://www.cineposta.com.ar/peliculas/ju-on-el-grito-2002/",
+    "https://www.cineposta.com.ar/peliculas/godzilla-minus-zero-2026/",
+    "https://www.cineposta.com.ar/peliculas/rocky-1976/",
+    "https://www.cineposta.com.ar/peliculas/toy-story-5-2026/"
+  ],
+  "validation": {
+    "content": "passed",
+    "astroCheck": "passed",
+    "build": "passed",
+    "editorialAndHomeDesktopMobile": "passed",
+    "posterSourcePolicy": "passed"
+  },
+  "base": "958b78549f4d35203622746032ffda588759bf3b"
+}

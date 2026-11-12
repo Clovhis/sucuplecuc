@@ -1,0 +1,487 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "caballo-salvaje-nueve-2026",
+	"title": "Caballo Salvaje Nueve",
+	"year": 2026,
+	"reviewedOn": "2026-11-12",
+	"createdOn": "2026-11-12",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/891621/cast",
+			"kind": "TMDb: ficha de créditos completos, 33 intérpretes y director; revisado por orden y personaje, contraste con cartel oficial Searchlight.",
+			"fullCredits": true,
+			"relevantCreditCount": 10,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://press.searchlightpictures.com/wild-horse-nine",
+			"kind": "Searchlight Pictures: página oficial con el reparto destacado de siete intérpretes y material promocional del film; no es un crédito completo.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://api.watchmode.com/v1/title/1647844/details/?append_to_response=cast-crew&language=es",
+			"kind": "Watchmode: cruce de identidad, IMDb/TMDb IDs, reparto y personajes del título exacto.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt15799564/fullcredits/",
+			"kind": "IMDb full credits access attempt.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12",
+			"accessResult": "HTTP 403 Forbidden; no se contaron créditos desde este endpoint."
+		}
+	],
+	"credits": [
+		{
+			"name": "Martin McDonagh",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/54472",
+					"fact": "El perfil de TMDb identifica a Martin McDonagh y la ficha exacta lo acredita como director."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1732981/",
+					"fact": "IMDb identifica a Martin McDonagh; el mismo ID consta en las referencias públicas del perfil de TMDb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20McDonagh%20at%2083rd%20Venice%20International%20Film%20Festival-7%20(cropped%203x4).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "John Malkovich",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Chris",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6949",
+					"fact": "El perfil de TMDb identifica a John Malkovich; el crédito de la película exacta lo vincula con Chris."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q172261",
+					"fact": "La referencia pública de identidad coincide con John Malkovich y su trayectoria acreditada en Wild Horse Nine (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Malkovich%2C%20Berlinale%202023%20cropped.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sam Rockwell",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Lee",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6807",
+					"fact": "El perfil de TMDb identifica a Sam Rockwell; el crédito de la película exacta lo vincula con Lee."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q316446",
+					"fact": "La referencia pública de identidad coincide con Sam Rockwell y su trayectoria acreditada en Wild Horse Nine (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Rockwell%20(51492)%20(cropped).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Steve Buscemi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "MJ",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/884",
+					"fact": "El perfil de TMDb identifica a Steve Buscemi; el crédito de la película exacta lo vincula con MJ."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q104061",
+					"fact": "La referencia pública de identidad coincide con Steve Buscemi y su trayectoria acreditada en Wild Horse Nine (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Steve%20Buscemi%20at%20the%20Sundance%20Film%20Festival.jpg?width=640",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Mariana di Girolamo",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Monica",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2064168",
+					"fact": "El perfil de TMDb identifica a Mariana di Girolamo; el crédito de la película exacta lo vincula con Monica."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q20888373",
+					"fact": "La referencia pública de identidad coincide con Mariana di Girolamo y su trayectoria acreditada en Wild Horse Nine (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mariana%20Di%20Girolamo%20at%2083rd%20Venice%20International%20Film%20Festival-13%20(cropped).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ailín Salas",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Alicia",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/96481",
+					"fact": "El perfil de TMDb identifica a Ailín Salas; el crédito de la película exacta lo vincula con Alicia."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q5661221",
+					"fact": "La referencia pública de identidad coincide con Ailín Salas y su trayectoria acreditada en Wild Horse Nine (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ail%C3%ADn%20Salas%20at%2083rd%20Venice%20International%20Film%20Festival-19%20(cropped).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Parker Posey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Marge",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/7489",
+					"fact": "El perfil de TMDb identifica a Parker Posey; el crédito de la película exacta lo vincula con Marge."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q204586",
+					"fact": "La referencia pública de identidad coincide con Parker Posey y su trayectoria acreditada en Wild Horse Nine (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Parker%20Posey%20by%20Gage%20Skidmore.jpg?width=640",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tom Waits",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Jim",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2887",
+					"fact": "El perfil de TMDb identifica a Tom Waits; el crédito de la película exacta lo vincula con Jim."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q184805",
+					"fact": "La referencia pública de identidad coincide con Tom Waits y su trayectoria acreditada en Wild Horse Nine (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Waits%20(1974%E2%80%9375%20Asylum%20publicity%20photo%20-%20with%20cigarette).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Paola Giannini",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Rosa",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Rosa aparece en orden 7 después del reparto oficial destacado; se registra como apoyo, sin incorporarlo al elenco principal del catálogo."
+		},
+		{
+			"name": "Bastián Bodenhöfer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Priest",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito Priest aparece en orden 8 después del reparto oficial destacado; se registra como apoyo, sin incorporarlo al elenco principal del catálogo."
+		},
+		{
+			"name": "Sofía Chacón",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Student",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Student aparece en orden 9 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Luciano Reinoso",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Student",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Student aparece en orden 10 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Laura Villa",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Student",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Student aparece en orden 11 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Djure Gasic",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Student",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Student aparece en orden 12 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Isabel Noreiga Inzunza",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Church Lady",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Church Lady aparece en orden 13 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Mireya Sotoconil",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Church Lady",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Church Lady aparece en orden 14 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Tongariki Teave",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Car Rental Guy",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Car Rental Guy aparece en orden 15 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Jaime Omeñaca",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Chilean Officer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Chilean Officer aparece en orden 16 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Mauricio Pitta",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Chilean Officer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Chilean Officer aparece en orden 17 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "John Heffernan",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "English Man",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito English Man aparece en orden 18 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Poppy O'Shaughnessy",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "English Woman",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito English Woman aparece en orden 19 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Juan Carlos Brown",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "High-Ranking Chilean Officer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito High-Ranking Chilean Officer aparece en orden 20 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Moisés Angulo",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "High-Ranking Chilean Officer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito High-Ranking Chilean Officer aparece en orden 21 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Ryan Robert Howard",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Iowa Danny",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Iowa Danny aparece en orden 22 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Arón Hernández",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Victor Jara",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Victor Jara aparece en orden 23 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Francisca Muñoz Muñoz",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Backing Singer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Backing Singer aparece en orden 24 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Fernanda Cancino",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Backing Singer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Backing Singer aparece en orden 25 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Marcus Truman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Basketball Guy",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Basketball Guy aparece en orden 26 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Josefa Rencoret",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Stewardess",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Stewardess aparece en orden 27 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Pablo Bustamante",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Chilean Solider",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Chilean Solider aparece en orden 28 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Francisco Castro",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Chilean Soldier",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Chilean Soldier aparece en orden 29 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Morgan Grace Champ",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Teenager (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Teenager (uncredited) aparece en orden 30 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Liam Marcy",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Shadowy Figure (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Shadowy Figure (uncredited) aparece en orden 31 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		},
+		{
+			"name": "Samuel Wayt",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/891621/cast",
+			"character": "Teenage Kid (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El crédito Teenage Kid (uncredited) aparece en orden 32 y queda fuera de los siete intérpretes destacados por Searchlight; su papel no integra el elenco principal del catálogo."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se cotejaron los 33 registros de reparto TMDb con los créditos de Watchmode y la página oficial de Searchlight. El distribuidor destaca a los siete nombres incluidos; Paola Giannini (Rosa) y Bastián Bodenhöfer (Priest) quedan documentados como apoyos secundarios, no como elenco principal. El resto figura después del orden 8 con roles de conjunto, carácter, personal, militares o apariciones sin acreditar; se deja fuera del elenco principal, sin usar el piso técnico como tope. La descripción oficial sitúa a dos estudiantes en la trama y sus intérpretes principales coinciden con Mariana di Girolamo y Ailín Salas, incluidos arriba como Monica y Alicia.",
+		"omittedRelevantCredits": [
+			{
+				"role": "performer",
+				"name": "Paola Giannini"
+			},
+			{
+				"role": "performer",
+				"name": "Bastián Bodenhöfer"
+			}
+		]
+	}
+}
