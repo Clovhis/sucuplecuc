@@ -225,6 +225,7 @@ export function assertWeeklyReleaseScope(changes, { kind, date, slug }) {
 		|| /^reports\/movie-intake\/[a-z0-9-]+\.json$/u.test(path)
 		|| path === 'src/data/people.json'
 		|| /^src\/data\/personProfiles(?:[A-Za-z0-9_-]+)?\.ts$/u.test(path)
+		|| path === 'src/data/personProfileCatalogCredits.generated.ts'
 		|| /^public\/people\/[a-z0-9-]+\.(?:webp|avif|jpg|jpeg|png)$/iu.test(path)
 		|| /^public\/assets\/posters\/[0-9]{4}\/[a-z0-9-]+\.webp$/u.test(path)
 		|| path === 'docs/movie-catalog-reference.md'

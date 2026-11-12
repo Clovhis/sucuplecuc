@@ -153,9 +153,12 @@ test('publication footprint allows catalog and editorial assets but rejects home
 	assert.equal(assertWeeklyReleaseScope([
 		{ status: 'M', path: `src/data/editorials/${slug}.json` },
 		{ status: 'A', path: 'src/data/movies/pelicula-de-prueba-2026.json' },
+		{ status: 'M', path: 'src/data/personProfileCatalogCredits.generated.ts' },
 		{ status: 'A', path: `public/assets/editorial/${slug}/portada.webp` },
 		{ status: 'A', path: `reports/weekly-releases/cine/${runDate}.json` },
 	], opts), true);
 	assert.throws(() => assertWeeklyReleaseScope([{ status: 'M', path: 'src/data/weeklyRecommendations.generated.ts' }], opts), /fuera del alcance/u);
+	assert.throws(() => assertWeeklyReleaseScope([{ status: 'M', path: 'src/data/personProfileCatalog.generated.ts' }], opts), /fuera del alcance/u);
+	assert.throws(() => assertWeeklyReleaseScope([{ status: 'M', path: 'src/data/personProfileCatalogCredits.generated.tsx' }], opts), /fuera del alcance/u);
 	assert.throws(() => assertWeeklyReleaseScope([{ status: 'D', path: `src/data/editorials/${slug}.json` }], opts), /borrados/u);
 });
