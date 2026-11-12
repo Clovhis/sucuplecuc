@@ -25,7 +25,7 @@ Usá el MCP oficial `https://mcp.buffer.com/mcp` para las operaciones de los age
 
 ## Elegir formato y enviar
 
-Leé [references/formatos.md](references/formatos.md) para placas, carruseles, Stories, Reels y alojamiento de archivos. Hay un generador local gratuito (`npm run social:media`); no necesita API de IA. Revisá visualmente los archivos antes de adjuntarlos. Un MP4 real es necesario para un Reel; una imagen vertical sigue siendo imagen.
+Leé [references/formatos.md](references/formatos.md) para placas, carruseles, Stories, Reels y alojamiento de archivos. Para estrenos con clips, fotos de escena o audio, leé [references/prensa.md](references/prensa.md) antes de buscar materiales. Priorizá un storyboard propio con gancho inmediato, montaje, movimiento y audio pertinente; el generador de placas es una opción simple, no el formato obligatorio de Instagram. Hay generadores locales gratuitos (`npm run social:media` y `npm run social:reel`), sin API de IA. Revisá visualmente los archivos antes de adjuntarlos. Un MP4 real es necesario para un Reel; una imagen vertical sigue siendo imagen.
 
 Con las piezas listas y dentro de la autorización del pedido:
 
