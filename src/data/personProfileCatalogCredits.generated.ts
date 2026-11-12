@@ -3063,6 +3063,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "un-dia-de-furia-1993"
   ],
   "john-c-reilly": [
+    "como-robar-un-banco-2026",
     "rompe-ralph-2012",
     "tenemos-que-hablar-de-kevin-2011",
     "un-dios-salvaje-2011",
@@ -4498,6 +4499,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "lu-pau-2026"
   ],
   "nicholas-hoult": [
+    "como-robar-un-banco-2026",
     "superman-2025",
     "nosferatu-2024",
     "el-menu-2022",

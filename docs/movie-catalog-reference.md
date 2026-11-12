@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-11-12. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2579
+Total de peliculas: 2581
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -62,6 +62,7 @@ Total de peliculas: 2579
 | 2026 | Colisión | colision-2026 | Thriller | Netflix | +16 |
 | 2026 | Colony: Zona Cero | colony-zona-cero-2026 | Terror | Apple TV + Prime Video | +16 |
 | 2026 | Cómo perder tu popularidad | como-perder-tu-popularidad-2026 | Comedia | Netflix + Prime Video | +13 |
+| 2026 | Cómo robar un banco | como-robar-un-banco-2026 | Accion | Cine | +18 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | CordobeCes: La película | cordobeces-la-pelicula-2026 | Comedia | Otras plataformas | ATP |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
@@ -605,6 +606,7 @@ Total de peliculas: 2579
 | 2024 | Nosferatu | nosferatu-2024 | Terror | HBO Max | +16 |
 | 2024 | OVERLORD: El Reino Sagrado | overlord-el-reino-sagrado-2024 | Anime | Netflix | +17 |
 | 2024 | Pintor at Paraluman | pintor-at-paraluman-2024 | Romance | Prime Video | +13 |
+| 2024 | Plumas: Operación rescate | plumas-operacion-rescate-2024 | Animacion | Cine | ATP |
 | 2024 | Raíces | raices-2024 | Drama | Apple TV | +16 |
 | 2024 | Relay: El intermediario | relay-el-intermediario-2024 | Thriller | HBO Max + Prime Video | +17 |
 | 2024 | Road House | road-house-2024 | Accion | Prime Video | +17 |

@@ -1,0 +1,311 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "como-robar-un-banco-2026",
+	"title": "Cómo robar un banco",
+	"year": 2026,
+	"reviewedOn": "2026-11-12",
+	"createdOn": "2026-11-12",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1437511/cast",
+			"kind": "Revisión del reparto completo y director para la película y año identificados.",
+			"fullCredits": true,
+			"relevantCreditCount": 12,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://www.imdb.com/es/title/tt35866986/",
+			"kind": "Fuente independiente para contrastar identidad de película y reparto.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		}
+	],
+	"credits": [
+		{
+			"name": "David Leitch",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q5236475",
+					"fact": "Perfil de David Leitch y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0500610/",
+					"fact": "Perfil de David Leitch y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/40684-david-leitch",
+					"fact": "Perfil de David Leitch y trayectoria contrastados con los créditos de How to Rob a Bank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Leitch%20by%20Gage%20Skidmore.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nicholas Hoult",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"character": "Ryan",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q298347",
+					"fact": "Perfil de Nicholas Hoult y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0396558/",
+					"fact": "Perfil de Nicholas Hoult y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3292-nicholas-hoult",
+					"fact": "Perfil de Nicholas Hoult y trayectoria contrastados con los créditos de How to Rob a Bank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/NicholasHoultTolkien2.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Zoë Kravitz",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"character": "Reagan Gardner",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q227129",
+					"fact": "Perfil de Zoë Kravitz y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2368789/",
+					"fact": "Perfil de Zoë Kravitz y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/37153-zo-kravitz",
+					"fact": "Perfil de Zoë Kravitz y trayectoria contrastados con los créditos de How to Rob a Bank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Zoe%20Kravitz%202020%20dvna%20studio.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Anna Sawai",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"character": "Emi",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q65123837",
+					"fact": "Perfil de Anna Sawai y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3660091/",
+					"fact": "Perfil de Anna Sawai y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1434487-anna-sawai",
+					"fact": "Perfil de Anna Sawai y trayectoria contrastados con los créditos de How to Rob a Bank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Anna%20Sawai%20from%20Sidewalks%20Entertainment%202024.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rhenzy Feliz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"character": "Hugo",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q34344805",
+					"fact": "Perfil de Rhenzy Feliz y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm7968341/",
+					"fact": "Perfil de Rhenzy Feliz y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1761634-rhenzy-feliz",
+					"fact": "Perfil de Rhenzy Feliz y trayectoria contrastados con los créditos de How to Rob a Bank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/9YPe3GgyWjG4D0GnTx9KzfvnO0L.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Pete Davidson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"character": "Vince",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q18097962",
+					"fact": "Perfil de Pete Davidson y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0203457/",
+					"fact": "Perfil de Pete Davidson y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1427948-pete-davidson",
+					"fact": "Perfil de Pete Davidson y trayectoria contrastados con los créditos de How to Rob a Bank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pete%20Davidson%20portrait%20(cropped).png?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "John C. Reilly",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"character": "Agent West",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q223110",
+					"fact": "Perfil de John C. Reilly y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000604/",
+					"fact": "Perfil de John C. Reilly y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/4764-john-c-reilly",
+					"fact": "Perfil de John C. Reilly y trayectoria contrastados con los créditos de How to Rob a Bank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/JohnCReillyJune09.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Christian Slater",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"character": "Walton",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q204590",
+					"fact": "Perfil de Christian Slater y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000225/",
+					"fact": "Perfil de Christian Slater y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2224-christian-slater",
+					"fact": "Perfil de Christian Slater y trayectoria contrastados con los créditos de How to Rob a Bank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Slater%20at%20the%2064th%20Berlin%20International%20Film%20Festival%2C%20February%202014.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tati Gabrielle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"character": "Skyler",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q58680736",
+					"fact": "Perfil de Tati Gabrielle y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm6616259/",
+					"fact": "Perfil de Tati Gabrielle y trayectoria contrastados con los créditos de How to Rob a Bank."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1859934-tati-gabrielle",
+					"fact": "Perfil de Tati Gabrielle y trayectoria contrastados con los créditos de How to Rob a Bank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tati%20Gabrielle%20by%20Gage%20Skidmore.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Young Mazino",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "El crédito figura después de los ocho nombres seleccionados y las fuentes disponibles no identifican su personaje."
+		},
+		{
+			"name": "Michael Gandolfini",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "El crédito figura después de los ocho nombres seleccionados y no se encontró su personaje en el billing consultado."
+		},
+		{
+			"name": "Sam Lerner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1437511/cast",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Aparece después del reparto seleccionado y el billing consultado no identifica su personaje."
+		}
+	],
+	"coverageReview": {
+		"rationale": "El billing se contrastó con fuentes de reparto y las decisiones sobre créditos adicionales se explican individualmente.",
+		"omittedRelevantCredits": [
+			{
+				"role": "performer",
+				"name": "Young Mazino"
+			},
+			{
+				"role": "performer",
+				"name": "Michael Gandolfini"
+			},
+			{
+				"role": "performer",
+				"name": "Sam Lerner"
+			}
+		]
+	},
+	"evidence": {
+		"cinema": "https://baseinformativa.com.ar/horarios-de-cine/caba/?dia=2026-11-12 — Cinemark Puerto Madero, CABA, 12 de noviembre.",
+		"country": "https://www.imdb.com/title/tt35866986/ — Estados Unidos.",
+		"rating": "https://www.themoviedb.org/movie/1437511 — 6.917/10, 6 votos, 12/11/2026; round=7, muestra chica y tope 8. RT sin porcentaje de audiencia; IMDb no accesible directamente y referencias indirectas discordantes.",
+		"poster": "https://image.tmdb.org/t/p/original/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg — 2000x3000, imagen revisada y localizada.",
+		"trailer": "https://www.youtube.com/watch?v=ORxw68y3lyw — tráiler oficial.",
+		"musical": "https://imagine-entertainment.com/film/how-to-rob-a-bank/ — atraco de acción, sin números musicales que conduzcan la narración."
+	}
+}

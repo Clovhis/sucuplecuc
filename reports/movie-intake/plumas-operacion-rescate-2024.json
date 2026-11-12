@@ -1,0 +1,223 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "plumas-operacion-rescate-2024",
+	"title": "Plumas: Operación rescate",
+	"year": 2024,
+	"reviewedOn": "2026-11-12",
+	"createdOn": "2026-11-12",
+	"billingSources": [
+		{
+			"url": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"kind": "Revisión del reparto completo y director para la película y año identificados.",
+			"fullCredits": true,
+			"relevantCreditCount": 9,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://tv.apple.com/us/movie/out-of-the-nest/umc.cmc.7k67hpthhuqnhezkjx74r3za6",
+			"kind": "Fuente independiente para contrastar identidad de película y reparto.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		}
+	],
+	"credits": [
+		{
+			"name": "Arturo Hernandez",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.cartoonbrew.com/feature-film/out-of-the-nest-arturo-hernandez-interview-258183.html",
+					"fact": "Perfil de Arturo Hernandez y trayectoria contrastados con los créditos de Out of the Nest."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1779872",
+					"fact": "Perfil de Arturo Hernandez y trayectoria contrastados con los créditos de Out of the Nest."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2402435/",
+					"fact": "Perfil de Arturo Hernandez y trayectoria contrastados con los créditos de Out of the Nest."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://www.cartoonbrew.com/wp-content/uploads/2026/01/Arturo-Hernandez.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Cory Yee",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"character": "Arthur",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q106576397",
+					"fact": "Perfil de Cory Yee y trayectoria contrastados con los créditos de Out of the Nest."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2822967/",
+					"fact": "Perfil de Cory Yee y trayectoria contrastados con los créditos de Out of the Nest."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/6594314-cory-yee",
+					"fact": "Perfil de Cory Yee y trayectoria contrastados con los créditos de Out of the Nest."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/4JNyFMr28yD8q7Sj5emxv7U6KhA.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sean Burgos",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"character": "Master Toad",
+			"identitySources": [
+				{
+					"url": "https://www.seanburgos.com/",
+					"fact": "Perfil de Sean Burgos y trayectoria contrastados con los créditos de Out of the Nest."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3804007/",
+					"fact": "Perfil de Sean Burgos y trayectoria contrastados con los créditos de Out of the Nest."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1984038-sean-burgos",
+					"fact": "Perfil de Sean Burgos y trayectoria contrastados con los créditos de Out of the Nest."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/l7WqU6nLrlRabVVwjooV7a2CwIs.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gillian Berrow",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"character": "Mei",
+			"identitySources": [
+				{
+					"url": "https://2023.everfreenw.com/guests/",
+					"fact": "Perfil de Gillian Berrow y trayectoria contrastados con los créditos de Out of the Nest."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3186756/",
+					"fact": "Perfil de Gillian Berrow y trayectoria contrastados con los créditos de Out of the Nest."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2149689",
+					"fact": "Perfil de Gillian Berrow y trayectoria contrastados con los créditos de Out of the Nest."
+				}
+			],
+			"portraitException": {
+				"category": "secondary-voice-no-individual-portrait",
+				"reason": "Voz secundaria Mei: el retrato del encuentro Everfree tiene 300x241 píxeles y no alcanza las dimensiones mínimas; no se identificó otro retrato individual verificable suficiente.",
+				"sourcesSearched": [
+					{
+						"url": "https://2023.everfreenw.com/guests/",
+						"result": "El retrato individual identificado mide 300x241 píxeles y resulta demasiado pequeño."
+					},
+					{
+						"url": "https://www.imdb.com/name/nm3186756/",
+						"result": "IMDb identifica la voz de Mei pero no se obtuvo un retrato individual utilizable."
+					}
+				]
+			}
+		},
+		{
+			"name": "Luis Bermudez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"character": "Jacobus",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Voz de reparto adicional en los créditos en inglés, por detrás de los dos protagonistas principales."
+		},
+		{
+			"name": "Fong Fong Poon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"character": "Canis",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Voz secundaria que no integra la selección de protagonistas y la voz de Mei."
+		},
+		{
+			"name": "Nick Afka Thomas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"character": "Chronus",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Voz secundaria acreditada después del reparto principal en el billing consultado."
+		},
+		{
+			"name": "Duc Luu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"character": "King Damien",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Voz de reparto adicional para el rey Damien dentro del elenco de conjunto."
+		},
+		{
+			"name": "Pittaya Saechua",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt31520900/fullcredits/",
+			"character": "Arthur",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "La voz tailandesa de Arthur corresponde a otra versión idiomática; Apple identifica inglés y tailandés como audio original."
+		}
+	],
+	"coverageReview": {
+		"rationale": "El billing se contrastó con fuentes de reparto y las decisiones sobre créditos adicionales se explican individualmente.",
+		"omittedRelevantCredits": [
+			{
+				"role": "performer",
+				"name": "Luis Bermudez"
+			},
+			{
+				"role": "performer",
+				"name": "Fong Fong Poon"
+			},
+			{
+				"role": "performer",
+				"name": "Nick Afka Thomas"
+			},
+			{
+				"role": "performer",
+				"name": "Duc Luu"
+			},
+			{
+				"role": "performer",
+				"name": "Pittaya Saechua"
+			}
+		]
+	},
+	"evidence": {
+		"cinema": "https://cineya.lat/ar/pelicula/plumas-operacion-rescate/buenos-aires/ — Cinemark Abasto, CABA, 12 de noviembre.",
+		"country": "https://www.annecyfestival.com/en/out-the-nest — coproducción Tailandia y China.",
+		"rating": "https://www.imdb.com/es/title/tt31520900 — 6.4/10 con 246 votos, consulta indexada 12/11/2026; round=6.",
+		"cast": "https://tv.apple.com/us/movie/out-of-the-nest/umc.cmc.7k67hpthhuqnhezkjx74r3za6 — identifica inglés y tailandés como originales, y Arthur, Master Toad y Mei; https://www.themoviedb.org/person/6594314-cory-yee — mismo retrato que IMDb nm2822967; https://www.themoviedb.org/person/1984038 — IMDb nm3804007; https://www.themoviedb.org/person/2149689 — IMDb nm3186756.",
+		"poster": "https://image.tmdb.org/t/p/original/wko3GEAMPbOYpH0COlQhLDZOqbw.jpg — imagen 1707x2560 inspeccionada y localizada.",
+		"trailer": "https://www.youtube.com/watch?v=MBNaY7GdtS0 — pista Watchmode, pendiente comprobación oEmbed.",
+		"musical": "https://www.tandbmediaglobal.com/outofthenest — aventura animada; no se verificaron números musicales conductores de la trama."
+	}
+}

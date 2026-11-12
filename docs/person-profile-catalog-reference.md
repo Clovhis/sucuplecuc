@@ -3,7 +3,7 @@
 Generado automaticamente el 2026-11-12. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4675
+Total de vínculos de películas del catálogo: 4677
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -402,7 +402,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Joe Pesci | `joe-pesci` | /personas/joe-pesci/ | Actor / Músico | 8 | 7 |
 | Joel Coen | `joel-coen` | /personas/joel-coen/ | Director / Guionista / Productor | 11 | 5 |
 | Joel Schumacher | `joel-schumacher` | /personas/joel-schumacher/ | Director / Guionista / Productor | 8 | 5 |
-| John C. Reilly | `john-c-reilly` | /personas/john-c-reilly/ | Actor | 7 | 6 |
+| John C. Reilly | `john-c-reilly` | /personas/john-c-reilly/ | Actor | 8 | 6 |
 | John Carpenter | `john-carpenter` | /personas/john-carpenter/ | Director / Guionista / Compositor | 5 | 5 |
 | John Cena | `john-cena` | /personas/john-cena/ | Actor | 7 | 6 |
 | John Cusack | `john-cusack` | /personas/john-cusack/ | Actor | 6 | 3 |
@@ -596,7 +596,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Néstor Montalbano | `nestor-montalbano` | /personas/nestor-montalbano/ | Director / Guionista | 1 | 5 |
 | Neve Campbell | `neve-campbell` | /personas/neve-campbell/ | Actriz | 6 | 7 |
 | Nicanor Loreti | `nicanor-loreti` | /personas/nicanor-loreti/ | Director / Guionista | 1 | 5 |
-| Nicholas Hoult | `nicholas-hoult` | /personas/nicholas-hoult/ | Actor | 6 | 6 |
+| Nicholas Hoult | `nicholas-hoult` | /personas/nicholas-hoult/ | Actor | 7 | 6 |
 | Nicolas Cage | `nicolas-cage` | /personas/nicolas-cage/ | Actor | 19 | 6 |
 | Nicolás Galvagno | `nicolas-galvagno` | /personas/nicolas-galvagno/ | Director / Guionista / Actor / Productor | 1 | 5 |
 | Nicolás Onetti | `nicolas-onetti` | /personas/nicolas-onetti/ | Director / Guionista / Productor | 1 | 5 |
