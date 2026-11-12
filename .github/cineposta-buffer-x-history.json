@@ -1020,6 +1020,28 @@
 					"HBO Max"
 				]
 			}
+		},
+		{
+			"slug": "backrooms-2026",
+			"bufferPostId": "6af522b23d8c751bfd0b8ccf",
+			"dueAt": "2026-11-12T22:00:00.000Z",
+			"scheduledAt": "2026-11-12T02:21:38.879Z",
+			"copyStyle": {
+				"opening": 2108930941,
+				"availability": 3517709464,
+				"editorial": 2942938636,
+				"verdict": 2820489456,
+				"link": 171324587
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/backrooms",
+				"checkedAt": "2026-11-12T02:21:38.463Z",
+				"kind": "subscription",
+				"platforms": [
+					"Disney Plus"
+				]
+			}
 		}
 	]
 }
