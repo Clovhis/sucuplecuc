@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-11-12. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2578
+Total de peliculas: 2579
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -78,6 +78,7 @@ Total de peliculas: 2578
 | 2026 | Disney: Creadores de mundos | disney-creadores-de-mundos-2026 | Documental | Disney Plus | +7 |
 | 2026 | Dracula | dracula-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Drags to Riches | drags-to-riches-2026 | Comedia | Prime Video | +13 |
+| 2026 | Ebenezer: Los fantasmas de Navidad | ebenezer-los-fantasmas-de-navidad-2026 | Drama | Cine | ATP |
 | 2026 | El amor de tu vida | el-amor-de-tu-vida-2026 | Romance | Prime Video | +16 |
 | 2026 | El árbol mágico | el-arbol-magico-2026 | Aventura | Otras plataformas | ATP |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |

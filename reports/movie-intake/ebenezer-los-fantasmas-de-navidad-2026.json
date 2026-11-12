@@ -1,0 +1,321 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "ebenezer-los-fantasmas-de-navidad-2026",
+	"title": "Ebenezer: Los fantasmas de Navidad",
+	"year": 2026,
+	"createdOn": "2026-11-12",
+	"reviewedOn": "2026-11-12",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1567605/cast",
+			"kind": "TMDb: reparto completo y créditos del film identificado por IMDb tt38773219.",
+			"fullCredits": true,
+			"relevantCreditCount": 13,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://www.paramount.com/movies/ebenezer",
+			"kind": "Paramount: director, protagonista y reparto promocional.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt38773219/",
+			"kind": "IMDb: identidad, personajes y contraste del reparto.",
+			"fullCredits": false,
+			"checkedOn": "2026-11-12"
+		}
+	],
+	"credits": [
+		{
+			"name": "Ti West",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/101542-ti-west",
+					"fact": "Ti West: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.wikidata.org/wiki/Q3527989",
+					"fact": "Ti West: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1488800/",
+					"fact": "Ti West: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ti%20West%202013%20(cropped).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Johnny Depp",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Ebenezer Scrooge",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q37175",
+					"fact": "Johnny Depp: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000136/",
+					"fact": "Johnny Depp: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/85-johnny-depp",
+					"fact": "Johnny Depp: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Johnny%20Depp%202020.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rupert Grint",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Bob Cratchit",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q19190",
+					"fact": "Rupert Grint: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0342488/",
+					"fact": "Rupert Grint: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/10989-rupert-grint",
+					"fact": "Rupert Grint: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rupert%20Grint%20at%20Berlin%20Film%20Festival%202026%2C%20(P1230675)%20(cropped).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Daisy Ridley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Emily Cratchit",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q16738674",
+					"fact": "Daisy Ridley: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5397459/",
+					"fact": "Daisy Ridley: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1315036-daisy-ridley",
+					"fact": "Daisy Ridley: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Daisy%20Ridley%20Our%20Movie%20Guide%202024.png?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tramell Tillman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Ghost of Christmas Present",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q111488758",
+					"fact": "Tramell Tillman: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm7436993/",
+					"fact": "Tramell Tillman: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2028037-tramell-tillman",
+					"fact": "Tramell Tillman: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/TramellTillman.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ian McKellen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Jacob Marley",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q170510",
+					"fact": "Ian McKellen: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0005212/",
+					"fact": "Ian McKellen: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1327-ian-mckellen",
+					"fact": "Ian McKellen: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/McKellenRichmnd040219-5%20(46275370484)%20(cropped).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Andrea Riseborough",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Ghost of Christmas Past",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q289545",
+					"fact": "Andrea Riseborough: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2057859/",
+					"fact": "Andrea Riseborough: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/127558-andrea-riseborough",
+					"fact": "Andrea Riseborough: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea%20Riseborough%202012.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sam Claflin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Fred",
+			"identitySources": [
+				{
+					"url": "https://www.wikidata.org/wiki/Q366833",
+					"fact": "Sam Claflin: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3510471/",
+					"fact": "Sam Claflin: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/237455-sam-claflin",
+					"fact": "Sam Claflin: perfil de identidad, contrastado con el reparto de Ebenezer (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Claflin.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Arthur Conti",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Young Ebenezer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Figura como Scrooge joven; queda fuera de la selección de siete intérpretes y se conserva su crédito en la revisión."
+		},
+		{
+			"name": "Charlie Murphy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "El reparto oficial la menciona, pero la fuente de créditos consultada no identifica su personaje."
+		},
+		{
+			"name": "Ellie Bamber",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Isabel Fezziwig",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Papel de reparto complementario; la selección prioriza al protagonista, Cratchit y los espíritus."
+		},
+		{
+			"name": "Henry Lloyd-Hughes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Figura en la lista oficial; el personaje no está identificado en la fuente consultada."
+		},
+		{
+			"name": "Robert Strange",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1567605/cast",
+			"character": "Ghost of Christmas Future",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Papel complementario de un espíritu; se seleccionaron los intérpretes acreditados en las primeras posiciones."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Siete actores cubren al protagonista, la familia Cratchit y los espíritus destacados. Se documentan los restantes nombres promocionales y sus límites de identificación.",
+		"omittedRelevantCredits": [
+			{
+				"role": "performer",
+				"name": "Arthur Conti"
+			},
+			{
+				"role": "performer",
+				"name": "Charlie Murphy"
+			},
+			{
+				"role": "performer",
+				"name": "Ellie Bamber"
+			},
+			{
+				"role": "performer",
+				"name": "Henry Lloyd-Hughes"
+			},
+			{
+				"role": "performer",
+				"name": "Robert Strange"
+			}
+		]
+	},
+	"evidence": {
+		"cinema": "https://baseinformativa.com.ar/horarios-de-cine/caba/?dia=2026-11-12 — Cinemark Puerto Madero, CABA, 12 de noviembre.",
+		"country": "https://letterboxd.com/film/ebenezer-2026/ — producción USA y UK.",
+		"rating": "https://www.themoviedb.org/movie/1567605 — 8.35/10, 20 votos, 2026-11-12; redondeo 8 y tope de confianza 8 por muestra pequeña.",
+		"poster": "https://image.tmdb.org/t/p/original/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg — imagen 2000x3000, inspeccionada y localizada.",
+		"trailer": "https://www.youtube.com/watch?v=A7lyvgnDuDE — tráiler oficial Paramount.",
+		"streaming": "JustWatch AR consultado sin resultado accesible; Cine confirmado por cartelera.",
+		"musical": "https://www.paramount.com/movies/ebenezer — relato fantástico de Scrooge; no se verificaron números musicales que conduzcan la trama."
+	}
+}

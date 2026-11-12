@@ -3,7 +3,7 @@
 Generado automaticamente el 2026-11-12. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4672
+Total de vínculos de películas del catálogo: 4675
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -341,7 +341,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Hugo Weaving | `hugo-weaving` | /personas/hugo-weaving/ | Actor | 6 | 3 |
 | Humphrey Bogart | `humphrey-bogart` | /personas/humphrey-bogart/ | Actor | 5 | 3 |
 | Ian Holm | `ian-holm` | /personas/ian-holm/ | Actor | 9 | 3 |
-| Ian McKellen | `ian-mckellen` | /personas/ian-mckellen/ | Actor | 8 | 7 |
+| Ian McKellen | `ian-mckellen` | /personas/ian-mckellen/ | Actor | 9 | 7 |
 | Idris Elba | `idris-elba` | /personas/idris-elba/ | Actor | 6 | 3 |
 | Ignacio Huang | `ignacio-huang` | /personas/ignacio-huang/ | Actor | 1 | 5 |
 | Inés Efrón | `ines-efron` | /personas/ines-efron/ | Actriz | 2 | 5 |
@@ -415,7 +415,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | John Malkovich | `john-malkovich` | /personas/john-malkovich/ | Actor | 12 | 7 |
 | John Travolta | `john-travolta` | /personas/john-travolta/ | Actor | 9 | 6 |
 | John Turturro | `john-turturro` | /personas/john-turturro/ | Actor | 10 | 3 |
-| Johnny Depp | `johnny-depp` | /personas/johnny-depp/ | Actor | 17 | 7 |
+| Johnny Depp | `johnny-depp` | /personas/johnny-depp/ | Actor | 18 | 7 |
 | Jon Bernthal | `jon-bernthal` | /personas/jon-bernthal/ | Actor | 5 | 3 |
 | Jon Favreau | `jon-favreau` | /personas/jon-favreau/ | Actor / Director / Guionista / Productor | 6 | 6 |
 | Jon M. Chu | `jon-m-chu` | /personas/jon-m-chu/ | Director | 2 | 7 |
@@ -687,7 +687,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Rooney Mara | `rooney-mara` | /personas/rooney-mara/ | Actriz | 6 | 3 |
 | Rosamund Pike | `rosamund-pike` | /personas/rosamund-pike/ | Actriz | 5 | 6 |
 | Rosario Bléfari | `rosario-blefari` | /personas/rosario-blefari/ | Actriz / Cantante / Escritora | 1 | 5 |
-| Rupert Grint | `rupert-grint` | /personas/rupert-grint/ | Actor | 9 | 6 |
+| Rupert Grint | `rupert-grint` | /personas/rupert-grint/ | Actor | 10 | 6 |
 | Russell Crowe | `russell-crowe` | /personas/russell-crowe/ | Actor | 16 | 5 |
 | Ryan Coogler | `ryan-coogler` | /personas/ryan-coogler/ | Director | 4 | 7 |
 | Ryan Gosling | `ryan-gosling` | /personas/ryan-gosling/ | Actor | 23 | 6 |

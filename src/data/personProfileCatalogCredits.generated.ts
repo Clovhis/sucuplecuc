@@ -2518,6 +2518,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "brazil-la-pelicula-1985"
   ],
   "ian-mckellen": [
+    "ebenezer-los-fantasmas-de-navidad-2026",
     "el-codigo-da-vinci-2006",
     "x-men-the-last-stand-2006",
     "the-lord-of-the-rings-the-return-of-the-king-2003",
@@ -3190,6 +3191,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-color-of-money-1986"
   ],
   "johnny-depp": [
+    "ebenezer-los-fantasmas-de-navidad-2026",
     "fantastic-beasts-the-crimes-of-grindelwald-2018",
     "pirates-of-the-caribbean-dead-men-tell-no-tales-2017",
     "dark-shadows-2012",
@@ -5212,6 +5214,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "silvia-prieto-1999"
   ],
   "rupert-grint": [
+    "ebenezer-los-fantasmas-de-navidad-2026",
     "engendro-2026",
     "harry-potter-and-the-deathly-hallows-part-2-2011",
     "harry-potter-and-the-deathly-hallows-part-1-2010",
