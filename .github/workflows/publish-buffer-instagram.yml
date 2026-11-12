@@ -1,0 +1,116 @@
+name: Instagram diario CinePosta (19:15 AR via Buffer)
+
+on:
+  schedule:
+    # 18:15 AR: prepare one post for 19:15 AR (22:15 UTC).
+    - cron: '15 21 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'dry-run: local preview; check: read-only Buffer preflight; publish: schedule today.'
+        required: true
+        default: dry-run
+        type: choice
+        options: [dry-run, check, publish]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cineposta-buffer-instagram
+  cancel-in-progress: false
+
+jobs:
+  instagram:
+    if: ${{ github.event_name != 'schedule' || vars.BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      BUFFER_ORGANIZATION_ID: ${{ vars.BUFFER_ORGANIZATION_ID }}
+      BUFFER_INSTAGRAM_CHANNEL_ID: ${{ vars.BUFFER_INSTAGRAM_CHANNEL_ID }}
+    steps:
+      - name: Checkout application
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify Instagram publisher
+        run: npm run test:buffer:instagram
+
+      - name: Offline preview
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'dry-run' }}
+        run: npm run buffer:instagram
+
+      - name: Read-only Buffer preflight
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'check' }}
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: npm run buffer:instagram -- --check
+
+      - name: Checkout isolated operational state
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'publish' }}
+        uses: actions/checkout@v6
+        with:
+          ref: cineposta-instagram-state
+          path: .tmp/instagram-state
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Reserve movie and render media
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'publish' }}
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: npm run buffer:instagram -- --prepare --state-dir .tmp/instagram-state
+
+      - name: Persist reservation and public media before Buffer
+        id: reservation
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'publish' }}
+        working-directory: .tmp/instagram-state
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add history.json media/
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: reserve daily Instagram post [skip ci]'
+            git push origin HEAD:cineposta-instagram-state
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Schedule Instagram at 19:15 AR
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'publish' }}
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          MEDIA_REF: ${{ steps.reservation.outputs.sha }}
+        run: npm run buffer:instagram -- --publish --state-dir .tmp/instagram-state --media-ref "$MEDIA_REF"
+
+      - name: Persist receipt even after a Buffer error
+        if: ${{ always() && steps.reservation.outcome == 'success' }}
+        working-directory: .tmp/instagram-state
+        run: |
+          git add history.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: record Instagram Buffer receipt [skip ci]'
+            git push origin HEAD:cineposta-instagram-state
+          fi
+
+      - name: Keep preview and recovery evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: instagram-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .tmp/instagram-preview/
+            .tmp/instagram-state/history.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 7

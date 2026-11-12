@@ -1,0 +1,11 @@
+interface:
+  display_name: "CinePosta Redes Sociales"
+  short_description: "Publica en X e Instagram con Buffer"
+  default_prompt: "Usá $cineposta-redes-sociales para compartir una película o nota en las redes de CinePosta."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "buffer"
+      description: "Buffer oficial para X e Instagram de CinePosta"
+      transport: "streamable_http"
+      url: "https://mcp.buffer.com/mcp"

@@ -52,6 +52,9 @@ jobs:
       - name: Probar automatizaciones y ediciones del home
         run: npm run test:home-automation
 
+      - name: Probar publicador independiente de Instagram
+        run: npm run test:buffer:instagram
+
       - name: Probar controles de publicación editorial diaria
         run: npm run test:daily-editorial
 

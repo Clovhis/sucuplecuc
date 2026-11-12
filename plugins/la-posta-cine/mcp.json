@@ -4,6 +4,10 @@
     "github": {
       "type": "streamable-http",
       "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "buffer": {
+      "type": "streamable-http",
+      "url": "https://mcp.buffer.com/mcp"
     }
   }
 }

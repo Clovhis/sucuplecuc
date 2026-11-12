@@ -80,7 +80,10 @@
     "gsc:queries": "node ./scripts/gsc.mjs queries",
     "gsc:pages": "node ./scripts/gsc.mjs pages",
     "gsc:inspect": "node ./scripts/gsc.mjs inspect",
-    "gsc:inspect-sitemap": "node ./scripts/gsc.mjs inspect-sitemap"
+    "gsc:inspect-sitemap": "node ./scripts/gsc.mjs inspect-sitemap",
+    "buffer:instagram": "node --experimental-strip-types scripts/publish-buffer-instagram.mjs",
+    "test:buffer:instagram": "node --experimental-strip-types --test scripts/publish-buffer-instagram.test.mjs",
+    "social:media": "node --experimental-strip-types scripts/create-social-media.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.101.1",

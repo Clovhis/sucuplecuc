@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "la-posta-cine",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Skills y herramientas de trabajo para mantener el catálogo editorial argentino de Cine Posta.",
   "author": {
     "name": "Cine Posta",
@@ -14,6 +14,8 @@
     "argentina",
     "astro",
     "movie-catalog",
-    "editorial"
+    "editorial",
+    "social",
+    "buffer"
   ]
 }
