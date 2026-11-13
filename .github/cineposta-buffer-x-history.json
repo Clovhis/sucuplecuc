@@ -1042,6 +1042,28 @@
 					"Disney Plus"
 				]
 			}
+		},
+		{
+			"slug": "la-ia-optimismo-o-apocalipsis-2026",
+			"bufferPostId": "6af66ef9c1a0010a5bf062c2",
+			"dueAt": "2026-11-13T22:00:00.000Z",
+			"scheduledAt": "2026-11-13T01:59:21.424Z",
+			"copyStyle": {
+				"opening": 1612019709,
+				"availability": 2459740492,
+				"editorial": 2626746500,
+				"verdict": 2684685828,
+				"link": 1592392751
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/the-ai-doc-or-how-i-became-an-apocaloptimist",
+				"checkedAt": "2026-11-13T01:59:20.869Z",
+				"kind": "subscription",
+				"platforms": [
+					"Netflix"
+				]
+			}
 		}
 	]
 }
