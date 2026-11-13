@@ -2,6 +2,8 @@
 
 Corte: viernes 13/11/2026, Argentina (UTC-3). Se usaron las skills de alta, auditoría, editorial, redes sociales y publicación GitHub. No se usaron skills cineposta-cloud- ni subagentes. El usuario autorizó commit y push directos a main.
 
+Revisión posterior del 13/11: el barrido incluyó películas antiguas, pero una clasificación posterior recortó los candidatos a 2025 en adelante y omitió evaluar Mothers’ Instinct (2024). Las altas/actualizaciones documentadas conservan su evidencia; el subconjunto reciente no demuestra cobertura exhaustiva de novedades de todos los años. Ver [hallazgo, fuentes y corrección de la skill](revision-estrenos-plataforma.md).
+
 ## Alcance y criterio
 
 - Barrido JustWatch AR, MOVIE, lunes a domingo: 345 registros diarios, paginación agotada; 14 y 15 todavía sin registros. El valor 445 adelantado durante la investigación fue corregido a 345.
