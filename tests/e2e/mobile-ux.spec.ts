@@ -18,7 +18,7 @@ test('mobile home keeps touch targets and content within the viewport', async ({
     await donationGate.getByRole('button', { name: /Ahora no, entrar al sitio/i }).click();
   }
 
-  await expect(page.locator('.site-header__actions > a')).toHaveCount(2);
+  await expect(page.locator('.site-header__actions > a')).toHaveCount(3);
 
   const measurements = await page.evaluate(() => {
     const controls = [

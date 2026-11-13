@@ -255,14 +255,26 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 					}
 					<div class="site-header__actions">
 						<a
-							class="site-header__x"
+							class="site-header__social site-header__x"
 							href="https://x.com/cineposta"
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Seguir a Cine Posta en X (se abre en una pestaña nueva)"
+							title="Cine Posta en X: @cineposta"
 						>
-							<img class="site-header__x-icon" src={`${assetBase}brand/x-logo.svg`} alt="" />
+							<img src={`${assetBase}brand/x-logo.svg`} alt="" width="16" height="16" />
 							<span>@cineposta</span>
+						</a>
+						<a
+							class="site-header__social site-header__instagram"
+							href="https://www.instagram.com/cineposta.ar/"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Seguir a Cine Posta en Instagram (se abre en una pestaña nueva)"
+							title="Cine Posta en Instagram: @cineposta.ar"
+						>
+							<img src={`${assetBase}brand/instagram-logo.svg`} alt="" width="16" height="16" />
+							<span>@cineposta.ar</span>
 						</a>
 						<a class="site-header__contact" href={CONTACT_PATH}>
 							Prensa / Contacto
