@@ -1,0 +1,104 @@
+{
+  "campaign": "streaming_20261109",
+  "week": {
+    "from": "2026-11-09",
+    "to": "2026-11-15",
+    "market": "AR",
+    "researchCutoff": "2026-11-13"
+  },
+  "main": {
+    "sha": "364b642d5a3eaf035e468085f19c86b066aefcbe",
+    "originMatches": true,
+    "workspaceClean": true,
+    "localValidation": "validate:content --base origin/main passed, including 8761-page build and 6138 canonical sitemap pages; repeated successfully by pre-push",
+    "playwright": {
+      "passed": 93,
+      "skipped": 1
+    },
+    "pages": {
+      "runId": 43467850328,
+      "url": "https://github.com/Clovhis/sucuplecuc/actions/runs/43467850328",
+      "job": "build",
+      "jobStatusAtHandoff": "in_progress",
+      "observedStep": "Checkout",
+      "productionVerified": false
+    }
+  },
+  "counts": {
+    "added": 33,
+    "updated": 8,
+    "carousel": 12,
+    "pendingOrExcluded": 18
+  },
+  "rights": {
+    "graphics": "Original CinePosta illustrations; own site logo",
+    "music": "Original procedural synth, 120 BPM, no third-party samples",
+    "video": {
+      "durationSeconds": 20,
+      "width": 1080,
+      "height": 1920,
+      "codecs": [
+        "h264",
+        "aac"
+      ]
+    }
+  },
+  "x": {
+    "id": "6af74174f27e6d89214217bf",
+    "channelId": "6a9d89a6cd8b9c702c191cd9",
+    "channelService": "twitter",
+    "status": "sent",
+    "text": "🍿 Actualizamos CinePosta con los estrenos de streaming de la semana: 33 fichas nuevas y 8 revisadas, trailers y dónde verlas en Argentina. El finde ya tiene plan 🎬\nhttps://www.cineposta.com.ar/?utm_source=x&utm_medium=social&utm_campaign=streaming_20261109\n#Estrenos #CinePosta",
+    "createdAt": "2026-11-13T16:57:24.710Z",
+    "sentAt": "2026-11-13T16:57:25.930Z",
+    "externalLink": "https://x.com/2096616474295074823/status/2121286322975375402",
+    "error": null,
+    "assets": [
+      {
+        "__typename": "ImageAsset",
+        "id": null,
+        "type": "image",
+        "mimeType": "image/jpeg",
+        "source": "https://raw.githubusercontent.com/Clovhis/sucuplecuc/18c30b297ce2d4c5d0fcd82b14db500ea146ffdb/media/2026-11-13-streaming-x-6ee2c9bb8f35.jpg",
+        "thumbnail": "https://raw.githubusercontent.com/Clovhis/sucuplecuc/18c30b297ce2d4c5d0fcd82b14db500ea146ffdb/media/2026-11-13-streaming-x-6ee2c9bb8f35.jpg",
+        "image": {
+          "width": 1200,
+          "height": 675,
+          "altText": "El finde ya tiene plan: estrenos de streaming de la semana del 9 al 15 de noviembre en Argentina. CinePosta suma 33 fichas nuevas y actualiza 8, con trailers, reseñas y dónde verlas.",
+          "isAnimated": false,
+          "animatedThumbnail": null,
+          "userTags": null
+        }
+      }
+    ]
+  },
+  "instagram": {
+    "id": "6af7417d38f9934c19fcc82b",
+    "channelId": "6af6465a62b70b94b0105899",
+    "channelService": "instagram",
+    "status": "sent",
+    "text": "🍿 Actualizamos CinePosta con los estrenos de streaming de la semana del 9 al 15 de noviembre en Argentina.\n\nSumamos 33 fichas nuevas y revisamos 8 que ya estaban: trailers, reparto, reseñas y dónde ver cada película. Heartland, Siendo Heumann, Pruebas de amor y unas cuantas más para elegir sin pasar el finde scrolleando.\n\nTambién aclaramos qué viene con la suscripción y qué se paga aparte. Guardá este post para cuando aparezca el clásico “¿qué miramos?” y contanos cuál va primero 🎬\n\nBuscá la guía “Streaming de la semana” en cineposta.com.ar\nhttps://www.cineposta.com.ar/?utm_source=instagram&utm_medium=social&utm_campaign=streaming_20261109\n\nMúsica y gráfica originales de CinePosta.\n\n#Estrenos #StreamingArgentina #CinePosta",
+    "createdAt": "2026-11-13T16:57:33.519Z",
+    "sentAt": "2026-11-13T16:58:28.557Z",
+    "externalLink": "https://www.instagram.com/reel/DfsHOaYgjdD/",
+    "error": null,
+    "assets": [
+      {
+        "__typename": "VideoAsset",
+        "id": null,
+        "type": "video",
+        "mimeType": "video/mp4",
+        "source": "https://raw.githubusercontent.com/Clovhis/sucuplecuc/18c30b297ce2d4c5d0fcd82b14db500ea146ffdb/media/2026-11-13-streaming-instagram-7ceb2b4fd466.mp4",
+        "thumbnail": "https://images.buffer.com/thumbnail/wQDlEvOQn3g29vL3fYgvTe0Bx44Pedh0Et55_04pjeo?url=https%3A%2F%2Fraw.githubusercontent.com%2FClovhis%2Fsucuplecuc%2F18c30b297ce2d4c5d0fcd82b14db500ea146ffdb%2Fmedia%2F2026-11-13-streaming-instagram-7ceb2b4fd466.mp4&offset=17000",
+        "video": {
+          "durationMs": 20000,
+          "containerFormat": null,
+          "videoCodec": null,
+          "frameRate": null,
+          "title": "Estrenos de streaming · 9–15 noviembre · CinePosta",
+          "thumbnailOffset": 17000
+        }
+      }
+    ]
+  }
+}
