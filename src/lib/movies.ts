@@ -709,7 +709,7 @@ function hasConfirmedStreamingPlatform(movie: Pick<Movie, 'releasePlatform' | 'r
 export function getHomeMovieShowcase(
 	movies: Movie[],
 	limit = 12,
-	platformSlots = 4,
+	platformSlots = 6,
 ): Movie[] {
 	const showcaseLimit = Math.max(0, limit);
 	const reservedPlatformSlots = Math.min(Math.max(0, platformSlots), showcaseLimit);

@@ -20,7 +20,12 @@ test('favicon publishes the transparent glasses mark in browser sizes', async ({
 	await page.goto('/', { waitUntil: 'domcontentloaded' });
 
 	const iconHrefs = await page.locator('link[rel="icon"]').evaluateAll((links) => links.map((link) => link.getAttribute('href')));
-	expect(iconHrefs).toEqual(expect.arrayContaining(['/favicon.ico', '/favicon.svg', '/favicon-32x32.png', '/favicon-48x48.png', '/favicon-192x192.png']));
+	const iconUrls = iconHrefs.map((href) => new URL(href!, page.url()));
+	expect(iconUrls.map((url) => url.pathname)).toEqual(expect.arrayContaining(['/favicon.ico', '/favicon.svg', '/favicon-32x32.png', '/favicon-48x48.png', '/favicon-192x192.png']));
+	for (const url of iconUrls) {
+		expect(url.searchParams.get('v')).toBeTruthy();
+		expect((await request.get(url.href)).ok()).toBeTruthy();
+	}
 
 	for (const path of ['/favicon.ico', '/favicon.svg', '/favicon.png', '/favicon-32x32.png', '/favicon-48x48.png', '/favicon-192x192.png', '/favicon-512x512.png', '/apple-touch-icon.png']) {
 		const response = await request.get(path);
@@ -122,6 +127,7 @@ test('editorial identity is presented as a team', async ({ page }) => {
 test('home separates the initial cards into cinema and platform releases', async ({ page }) => {
 	await page.goto('/', { waitUntil: 'load' });
 
+	await expect(page.locator('[data-movie-search-root]')).toHaveAttribute('data-home-catalog-ready', 'true');
 	const initialMovies = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) =>
 		cards.map((card) => ({
 			title: card.getAttribute('data-movie-title'),
@@ -130,9 +136,9 @@ test('home separates the initial cards into cinema and platform releases', async
 	);
 
 	expect(initialMovies).toHaveLength(12);
-	expect(initialMovies.slice(0, 8).every(({ platforms }) => platforms.includes('cine'))).toBeTruthy();
+	expect(initialMovies.slice(0, 6).every(({ platforms }) => platforms.includes('cine'))).toBeTruthy();
 	expect(
-		initialMovies.slice(8).every(
+		initialMovies.slice(6).every(
 			({ platforms }) =>
 				platforms.length > 0 && !platforms.includes('cine') && !platforms.includes('otras plataformas'),
 		),

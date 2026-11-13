@@ -13,7 +13,6 @@
   "billingPolicy": "included-chatgpt-plan-only-no-openai-api-no-extra-credits",
   "window": "Current Monday through Sunday, Argentine calendar; include only releases/offers active by Friday runDate",
   "promptFile": "config/weekly-release-plataformas-prompt.md",
-  "skill": "skills/cineposta-cloud-estrenos-plataformas/SKILL.md",
   "cloudEnvironmentConfigId": "b64337bc-4643-41ad-8443-f12cbf43ad14~asenvcfg_ab40f4c047148191a99989e9b26c7686",
   "supervision": {
     "quietInitialDelaySeconds": 600,

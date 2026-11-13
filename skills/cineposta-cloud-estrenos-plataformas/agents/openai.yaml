@@ -1,4 +1,0 @@
-interface:
-  display_name: "CinePosta: estrenos de plataformas cloud"
-  short_description: "Verificar y publicar la guía semanal de streaming"
-  default_prompt: "Usá $cineposta-cloud-estrenos-plataformas para verificar novedades AR y su modalidad, mantener fichas auditadas y publicar la guía y su tweet después de Pages."

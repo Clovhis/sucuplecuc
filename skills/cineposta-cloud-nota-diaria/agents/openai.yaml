@@ -1,4 +1,0 @@
-interface:
-  display_name: "CinePosta: nota diaria cloud"
-  short_description: "Investigar y preparar una nota diaria con Luna"
-  default_prompt: "Usá $cineposta-cloud-nota-diaria mediante el ejecutor versionado para preparar la nota cinematográfica diaria."

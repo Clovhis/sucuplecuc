@@ -66,7 +66,7 @@ const currentStreamingReleases = getCurrentStreamingMovieReleases(new Date(), 12
 	}))
 	.filter((release) => release.embedUrl);
 const INITIAL_HOME_MOVIE_COUNT = 12;
-const HOME_PLATFORM_SLOTS = 4;
+const HOME_PLATFORM_SLOTS = 6;
 const initialHomeMovies = getHomeMovieShowcase(movies, INITIAL_HOME_MOVIE_COUNT, HOME_PLATFORM_SLOTS);
 const latestReviewCards = getLatestReviewMovies(movies, 3).map((movie) => {
 	const score = getMovieCinePostaScore(movie);
