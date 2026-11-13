@@ -1,0 +1,396 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "psycho-therapy-2024",
+	"title": "Psycho Therapy",
+	"year": 2024,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/681434/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 19
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/psycho-therapy",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt17492148/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Tolga Karaçelik",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/545067",
+					"fact": "El perfil público identifica a Tolga Karaçelik; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/psycho-therapy",
+					"fact": "Identidad cotejada con el crédito del título Psycho Therapy, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/545067",
+					"fact": "Fuente atribuible que identifica el retrato de Tolga Karaçelik."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8AFn3RvQhoXx6T2EYgjLlgcv9kT.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/tolga-karacelik-tmdb-545067.jpg"
+			}
+		},
+		{
+			"name": "Steve Buscemi",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Kollmick",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/884",
+					"fact": "El perfil público identifica a Steve Buscemi; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/psycho-therapy",
+					"fact": "Identidad cotejada con el crédito del título Psycho Therapy, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Steve%20Buscemi%20at%20the%20Sundance%20Film%20Festival.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/steve-buscemi-nm0000114.jpg"
+			}
+		},
+		{
+			"name": "Britt Lower",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Suzie",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/973497",
+					"fact": "El perfil público identifica a Britt Lower; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/psycho-therapy",
+					"fact": "Identidad cotejada con el crédito del título Psycho Therapy, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/973497",
+					"fact": "Fuente atribuible que identifica el retrato de Britt Lower."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5XIcTMDSyj7hRICQAcnY9U83ujF.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/britt-lower-tmdb-973497.jpg"
+			}
+		},
+		{
+			"name": "John Magaro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Keane",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/37154",
+					"fact": "El perfil público identifica a John Magaro; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/psycho-therapy",
+					"fact": "Identidad cotejada con el crédito del título Psycho Therapy, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MKr22942%20John%20Magaro%20(Past%20Lives%2C%20Berlinale%202023).jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/john-magaro-nm1910274.jpg"
+			}
+		},
+		{
+			"name": "Ward Horton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "David",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/94436",
+					"fact": "El perfil público identifica a Ward Horton; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/psycho-therapy",
+					"fact": "Identidad cotejada con el crédito del título Psycho Therapy, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/94436",
+					"fact": "Fuente atribuible que identifica el retrato de Ward Horton."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qN28HktqfOCIaLVRK8W6bofdbvs.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ward-horton-tmdb-94436.jpg"
+			}
+		},
+		{
+			"name": "Olli Haaskivi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Seymour",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1493745",
+					"fact": "El perfil público identifica a Olli Haaskivi; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/psycho-therapy",
+					"fact": "Identidad cotejada con el crédito del título Psycho Therapy, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1493745",
+					"fact": "Fuente atribuible que identifica el retrato de Olli Haaskivi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9ewQqJJpjIUCmYWyaak6NuBsrzL.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/olli-haaskivi-tmdb-1493745.jpg"
+			}
+		},
+		{
+			"name": "Sydney Cole Alexander",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Zoe",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3442851",
+					"fact": "El perfil público identifica a Sydney Cole Alexander; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/psycho-therapy",
+					"fact": "Identidad cotejada con el crédito del título Psycho Therapy, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3442851",
+					"fact": "Fuente atribuible que identifica el retrato de Sydney Cole Alexander."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yenCGtAl6GsRD6ofelurkSvfmHS.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/sydney-cole-alexander-tmdb-3442851.jpg"
+			}
+		},
+		{
+			"name": "Jacob Ming-Trent",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Clint Foreman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1481242",
+					"fact": "El perfil público identifica a Jacob Ming-Trent; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/psycho-therapy",
+					"fact": "Identidad cotejada con el crédito del título Psycho Therapy, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1481242",
+					"fact": "Fuente atribuible que identifica el retrato de Jacob Ming-Trent."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xTupOoBtrmhlQQa1vNoS3Di8xT5.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jacob-ming-trent-tmdb-1481242.jpg"
+			}
+		},
+		{
+			"name": "Nik Sadhnani",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Singh",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Nik Sadhnani interpreta Singh: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Mario D'Leon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Big Guy",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Mario D'Leon interpreta Big Guy: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Anthony Michael López",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Scott",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Anthony Michael López interpreta Scott: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lee Sellars",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Cesna",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lee Sellars interpreta Cesna: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Nadir Sarıbacak",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Llama Man",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Nadir Sarıbacak interpreta Llama Man: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Tuğçe Altuğ",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Elanor",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Tuğçe Altuğ interpreta Elanor: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Cihan Yıldız",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Injured Neanderthal",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Cihan Yıldız interpreta Injured Neanderthal: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Thomas Vorsteg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Ramon",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Thomas Vorsteg interpreta Ramon: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Johnny Vorsteg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Carlos",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Johnny Vorsteg interpreta Carlos: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "John Richard Mateyko",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Student",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "John Richard Mateyko interpreta Student: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Keymer Cuesta",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/681434/cast",
+			"screenRole": "Book Club Guy #1",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Keymer Cuesta interpreta Book Club Guy #1: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Nik Sadhnani",
+				"role": "performer"
+			},
+			{
+				"name": "Mario D'Leon",
+				"role": "performer"
+			},
+			{
+				"name": "Anthony Michael López",
+				"role": "performer"
+			},
+			{
+				"name": "Lee Sellars",
+				"role": "performer"
+			},
+			{
+				"name": "Nadir Sarıbacak",
+				"role": "performer"
+			},
+			{
+				"name": "Tuğçe Altuğ",
+				"role": "performer"
+			},
+			{
+				"name": "Cihan Yıldız",
+				"role": "performer"
+			},
+			{
+				"name": "Thomas Vorsteg",
+				"role": "performer"
+			},
+			{
+				"name": "Johnny Vorsteg",
+				"role": "performer"
+			},
+			{
+				"name": "John Richard Mateyko",
+				"role": "performer"
+			},
+			{
+				"name": "Keymer Cuesta",
+				"role": "performer"
+			}
+		]
+	}
+}

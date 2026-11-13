@@ -1,0 +1,653 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "ladrones-con-clase-2-2025",
+	"title": "Ladrones con clase 2",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1149167/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 26
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt27829510/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Randall Emmett",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17211",
+					"fact": "El perfil público identifica a Randall Emmett; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+					"fact": "Identidad cotejada con el crédito del título Ladrones con clase 2, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/17211",
+					"fact": "Fuente atribuible que identifica el retrato de Randall Emmett."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qkSvRlmJFSPl9Y1qMiOZyfP29mU.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/randall-emmett-tmdb-17211.jpg"
+			}
+		},
+		{
+			"name": "John Travolta",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Mason Goddard",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8891",
+					"fact": "El perfil público identifica a John Travolta; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+					"fact": "Identidad cotejada con el crédito del título Ladrones con clase 2, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Travolta%2C%202014%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/john-travolta-nm0000237.jpg"
+			}
+		},
+		{
+			"name": "Gina Gershon",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Amelia Decker",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11150",
+					"fact": "El perfil público identifica a Gina Gershon; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+					"fact": "Identidad cotejada con el crédito del título Ladrones con clase 2, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gina%20Gershon%202018%20by%20Sachyn%20Mital%20(cropped%202).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/gina-gershon-nm0000153.jpg"
+			}
+		},
+		{
+			"name": "Lukas Haas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Shawn",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/526",
+					"fact": "El perfil público identifica a Lukas Haas; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+					"fact": "Identidad cotejada con el crédito del título Ladrones con clase 2, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lukas%20Haas%20in%202018.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/lukas-haas-nm0001305.jpg"
+			}
+		},
+		{
+			"name": "Quavo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Anton",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2138143",
+					"fact": "El perfil público identifica a Quavo; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+					"fact": "Identidad cotejada con el crédito del título Ladrones con clase 2, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2138143",
+					"fact": "Fuente atribuible que identifica el retrato de Quavo."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xnNpJvPluhit6LFxLEFlbZwHtoJ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/quavo-tmdb-2138143.jpg"
+			}
+		},
+		{
+			"name": "Natali Yura",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Link",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2070149",
+					"fact": "El perfil público identifica a Natali Yura; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+					"fact": "Identidad cotejada con el crédito del título Ladrones con clase 2, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2070149",
+					"fact": "Fuente atribuible que identifica el retrato de Natali Yura."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hu0yDZwdHZyv24BAyJzrfq2hjPr.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/natali-yura-tmdb-2070149.jpg"
+			}
+		},
+		{
+			"name": "Noel Gugliemi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Hector (as Noel G.)",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/53252",
+					"fact": "El perfil público identifica a Noel Gugliemi; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+					"fact": "Identidad cotejada con el crédito del título Ladrones con clase 2, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/53252",
+					"fact": "Fuente atribuible que identifica el retrato de Noel Gugliemi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8jujXofjpSroMQ1R2JLB0GWIPor.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/noel-gugliemi-tmdb-53252.jpg"
+			}
+		},
+		{
+			"name": "Swen Temmel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Georgios Caras",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1075049",
+					"fact": "El perfil público identifica a Swen Temmel; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+					"fact": "Identidad cotejada con el crédito del título Ladrones con clase 2, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1075049",
+					"fact": "Fuente atribuible que identifica el retrato de Swen Temmel."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/y5LJNkjObFkyp0Ru36v7sy7dMX5.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/swen-temmel-tmdb-1075049.jpg"
+			}
+		},
+		{
+			"name": "Demián Castro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Zade Black",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1494513",
+					"fact": "El perfil público identifica a Demián Castro; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ladrones-con-clase-2",
+					"fact": "Identidad cotejada con el crédito del título Ladrones con clase 2, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1494513",
+					"fact": "Fuente atribuible que identifica el retrato de Demián Castro."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ddUS8OUqbaeesEEsy1P0ezy3AqF.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/demian-castro-tmdb-1494513.jpg"
+			}
+		},
+		{
+			"name": "Alex Hurt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Mr. Flowers",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Alex Hurt interpreta Mr. Flowers: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Danny Pardo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Abel Salzar",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Danny Pardo interpreta Abel Salzar: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Kelly Greyson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Bella",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Kelly Greyson interpreta Bella: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Joel Cohen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Vernon Richter",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Joel Cohen interpreta Vernon Richter: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Daniel Louis Rivas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Chaz Antonelli",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Daniel Louis Rivas interpreta Chaz Antonelli: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Meadow Williams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Penelope",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Meadow Williams interpreta Penelope: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Natalie St. Peter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Tanya",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Natalie St. Peter interpreta Tanya: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Miller Garfinkel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Reuben",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Miller Garfinkel interpreta Reuben: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Vasilios Viores",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "FBI Driver",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Vasilios Viores interpreta FBI Driver: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Alvin Saurage",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Card Dealer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Alvin Saurage interpreta Card Dealer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Brittany Furlan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Adrianna",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Brittany Furlan interpreta Adrianna: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Luis Da Silva, Jr.",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Fernando",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Luis Da Silva, Jr. interpreta Fernando: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Austin Zelan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Business Man",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Austin Zelan interpreta Business Man: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Abigail Spear",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Maria",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Abigail Spear interpreta Maria: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Korrina Rico",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Lucy",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Korrina Rico interpreta Lucy: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Yosef Martin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Gus",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Yosef Martin interpreta Gus: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Brandon Menchen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Chef Ivy",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Brandon Menchen interpreta Chef Ivy: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Gene Alexander",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Salazar Guard (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Gene Alexander interpreta Salazar Guard (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Anthony Arrigo",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Salazar Guard (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Anthony Arrigo interpreta Salazar Guard (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Charles Barber",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Handsome Pool Guy (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Charles Barber interpreta Handsome Pool Guy (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Bama Boy Buck",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Armed Bodyguard (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Bama Boy Buck interpreta Armed Bodyguard (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Leslee Emmett",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Bank Teller (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Leslee Emmett interpreta Bank Teller (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jerome Evans",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Zade Bodyguard (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jerome Evans interpreta Zade Bodyguard (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Derrick Goodman Jr.",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Commando (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Derrick Goodman Jr. interpreta Commando (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Wade Hammond",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Casino Floor Manager (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Wade Hammond interpreta Casino Floor Manager (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Sebastien Large",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Bartender (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Sebastien Large interpreta Bartender (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Quentin Ziare Perryman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "FBI Agent (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Quentin Ziare Perryman interpreta FBI Agent (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jeff Sapp",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Zade Black Guard (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jeff Sapp interpreta Zade Black Guard (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Joey Shear",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Salazar Guard (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Joey Shear interpreta Salazar Guard (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Faith Stowers",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Agent (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Faith Stowers interpreta Agent (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Calvin Williams",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Bodyguard (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Calvin Williams interpreta Bodyguard (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Ronnie Yelverton",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1149167/cast",
+			"screenRole": "Pit Boss (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ronnie Yelverton interpreta Pit Boss (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Alex Hurt",
+				"role": "performer"
+			},
+			{
+				"name": "Danny Pardo",
+				"role": "performer"
+			},
+			{
+				"name": "Kelly Greyson",
+				"role": "performer"
+			},
+			{
+				"name": "Joel Cohen",
+				"role": "performer"
+			},
+			{
+				"name": "Daniel Louis Rivas",
+				"role": "performer"
+			},
+			{
+				"name": "Meadow Williams",
+				"role": "performer"
+			},
+			{
+				"name": "Natalie St. Peter",
+				"role": "performer"
+			},
+			{
+				"name": "Miller Garfinkel",
+				"role": "performer"
+			},
+			{
+				"name": "Vasilios Viores",
+				"role": "performer"
+			},
+			{
+				"name": "Alvin Saurage",
+				"role": "performer"
+			},
+			{
+				"name": "Brittany Furlan",
+				"role": "performer"
+			},
+			{
+				"name": "Luis Da Silva, Jr.",
+				"role": "performer"
+			},
+			{
+				"name": "Austin Zelan",
+				"role": "performer"
+			},
+			{
+				"name": "Abigail Spear",
+				"role": "performer"
+			},
+			{
+				"name": "Korrina Rico",
+				"role": "performer"
+			},
+			{
+				"name": "Yosef Martin",
+				"role": "performer"
+			},
+			{
+				"name": "Brandon Menchen",
+				"role": "performer"
+			}
+		]
+	}
+}

@@ -1,0 +1,179 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-vestido-2026",
+	"title": "El vestido",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1474226/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 6
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/el-vestido",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt36822366/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Jacob Santana",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1474226/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3190577",
+					"fact": "El perfil público identifica a Jacob Santana; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-vestido",
+					"fact": "Identidad cotejada con el crédito del título El vestido, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3190577",
+					"fact": "Fuente atribuible que identifica el retrato de Jacob Santana."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tN7RTi76S3dIWc6WrE34YH6hOgw.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jacob-santana-tmdb-3190577.jpg"
+			}
+		},
+		{
+			"name": "Belén Rueda",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1474226/cast",
+			"screenRole": "Alicia",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/19907",
+					"fact": "El perfil público identifica a Belén Rueda; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-vestido",
+					"fact": "Identidad cotejada con el crédito del título El vestido, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aDsAbbf492dFKBuZ9Bd7sWo2Hfl.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/belen-rueda-nm0749104.jpg"
+			}
+		},
+		{
+			"name": "Vera Centenera",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1474226/cast",
+			"screenRole": "Carla",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3714054",
+					"fact": "El perfil público identifica a Vera Centenera; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-vestido",
+					"fact": "Identidad cotejada con el crédito del título El vestido, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3714054",
+					"fact": "Fuente atribuible que identifica el retrato de Vera Centenera."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tGfKkWbMaejtbXLjXtRzajanhW8.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/vera-centenera-tmdb-3714054.jpg"
+			}
+		},
+		{
+			"name": "Santiago Molero",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1474226/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Santiago Molero: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Elena Irureta",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1474226/cast",
+			"screenRole": null,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/16980",
+					"fact": "El perfil público identifica a Elena Irureta; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-vestido",
+					"fact": "Identidad cotejada con el crédito del título El vestido, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/16980",
+					"fact": "Fuente atribuible que identifica el retrato de Elena Irureta."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/gJWLhfOXFoYTTVjh5Q9GlxLSsEE.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/elena-irureta-tmdb-16980.jpg"
+			}
+		},
+		{
+			"name": "Belén Écija",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1474226/cast",
+			"screenRole": null,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2484857",
+					"fact": "El perfil público identifica a Belén Écija; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-vestido",
+					"fact": "Identidad cotejada con el crédito del título El vestido, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2484857",
+					"fact": "Fuente atribuible que identifica el retrato de Belén Écija."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/gmWgyf4nhRYopLvcnThpcqVetPG.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/belen-ecija-tmdb-2484857.jpg"
+			}
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Santiago Molero",
+				"role": "performer"
+			}
+		]
+	}
+}

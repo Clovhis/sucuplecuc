@@ -1,0 +1,386 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "invocacion-2025",
+	"title": "Invocación",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1339206/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 17
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/the-surrender",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt33270263/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Julia Max",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/90558",
+					"fact": "El perfil público identifica a Julia Max; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-surrender",
+					"fact": "Identidad cotejada con el crédito del título Invocación, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/90558",
+					"fact": "Fuente atribuible que identifica el retrato de Julia Max."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5vJjsAXMbRFXedIb3WtihKpqfgJ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/julia-max-tmdb-90558.jpg"
+			}
+		},
+		{
+			"name": "Kate Burton",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Barbara",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/20879",
+					"fact": "El perfil público identifica a Kate Burton; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-surrender",
+					"fact": "Identidad cotejada con el crédito del título Invocación, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/20879",
+					"fact": "Fuente atribuible que identifica el retrato de Kate Burton."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rHnt0gTvarr492I1ZIYg8VNBdPn.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/kate-burton-tmdb-20879.jpg"
+			}
+		},
+		{
+			"name": "Colby Minifie",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Megan",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1157294",
+					"fact": "El perfil público identifica a Colby Minifie; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-surrender",
+					"fact": "Identidad cotejada con el crédito del título Invocación, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1157294",
+					"fact": "Fuente atribuible que identifica el retrato de Colby Minifie."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/56FVZRFdctYhZI8zHNbegkKMwl3.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/colby-minifie-tmdb-1157294.jpg"
+			}
+		},
+		{
+			"name": "Neil Sandilands",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "The Man",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/136295",
+					"fact": "El perfil público identifica a Neil Sandilands; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-surrender",
+					"fact": "Identidad cotejada con el crédito del título Invocación, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/136295",
+					"fact": "Fuente atribuible que identifica el retrato de Neil Sandilands."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ehl64LZJ9jnlYNhoIfNDzKaO2kX.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/neil-sandilands-tmdb-136295.jpg"
+			}
+		},
+		{
+			"name": "Vaughn Armstrong",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Robert",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/103804",
+					"fact": "El perfil público identifica a Vaughn Armstrong; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-surrender",
+					"fact": "Identidad cotejada con el crédito del título Invocación, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/103804",
+					"fact": "Fuente atribuible que identifica el retrato de Vaughn Armstrong."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zqzBwa5Oavm8JN5T9ZDdQNKJt7S.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/vaughn-armstrong-tmdb-103804.jpg"
+			}
+		},
+		{
+			"name": "Mia Ellis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Nikki",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1792852",
+					"fact": "El perfil público identifica a Mia Ellis; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-surrender",
+					"fact": "Identidad cotejada con el crédito del título Invocación, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1792852",
+					"fact": "Fuente atribuible que identifica el retrato de Mia Ellis."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vGWc92KUXSCl9WCfDuvnMUObjdc.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/mia-ellis-tmdb-1792852.jpg"
+			}
+		},
+		{
+			"name": "Pete Ploszek",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Young Robert",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1163622",
+					"fact": "El perfil público identifica a Pete Ploszek; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-surrender",
+					"fact": "Identidad cotejada con el crédito del título Invocación, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1163622",
+					"fact": "Fuente atribuible que identifica el retrato de Pete Ploszek."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9ZFxQLUQzfMNEHVqYjwK346vaCK.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/pete-ploszek-tmdb-1163622.jpg"
+			}
+		},
+		{
+			"name": "Chelsea Alden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Young Barbara",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1367249",
+					"fact": "El perfil público identifica a Chelsea Alden; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-surrender",
+					"fact": "Identidad cotejada con el crédito del título Invocación, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1367249",
+					"fact": "Fuente atribuible que identifica el retrato de Chelsea Alden."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jV4wuulX7WHdoGMx0HCQfHnQKYF.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/chelsea-alden-tmdb-1367249.jpg"
+			}
+		},
+		{
+			"name": "Riley Rose Critchlow",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Lacey",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Riley Rose Critchlow interpreta Lacey: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lola Kelly",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Alexa",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lola Kelly interpreta Alexa: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Alaina Pollack",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Young Megan",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Alaina Pollack interpreta Young Megan: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Judith Foster Thompson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Lost Soul",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Judith Foster Thompson interpreta Lost Soul: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Richard B. Larimore",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Lost Soul",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Richard B. Larimore interpreta Lost Soul: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Hal Perry",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Lost Soul",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Hal Perry interpreta Lost Soul: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "LeAnne Fuller",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Lost Soul",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "LeAnne Fuller interpreta Lost Soul: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Sophia Konstantine Segal",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Lost Soul",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Sophia Konstantine Segal interpreta Lost Soul: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Bill Pryor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Lost Soul",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Bill Pryor interpreta Lost Soul: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Huyler",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1339206/cast",
+			"screenRole": "Lost Soul (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Huyler interpreta Lost Soul (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Riley Rose Critchlow",
+				"role": "performer"
+			},
+			{
+				"name": "Lola Kelly",
+				"role": "performer"
+			},
+			{
+				"name": "Alaina Pollack",
+				"role": "performer"
+			},
+			{
+				"name": "Judith Foster Thompson",
+				"role": "performer"
+			},
+			{
+				"name": "Richard B. Larimore",
+				"role": "performer"
+			},
+			{
+				"name": "Hal Perry",
+				"role": "performer"
+			},
+			{
+				"name": "LeAnne Fuller",
+				"role": "performer"
+			},
+			{
+				"name": "Sophia Konstantine Segal",
+				"role": "performer"
+			},
+			{
+				"name": "Bill Pryor",
+				"role": "performer"
+			}
+		]
+	}
+}

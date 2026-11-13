@@ -1,0 +1,433 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "drive-back-home-2024",
+	"title": "Drive Back Home",
+	"year": 2024,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1194985/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 22
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/drive-back-home",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt26774341/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Michael Clowater",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2901811",
+					"fact": "El perfil público identifica a Michael Clowater; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/drive-back-home",
+					"fact": "Identidad cotejada con el crédito del título Drive Back Home, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://shotsmag.slateprod.io/news/view/jojx-signs-director-michael-clowater",
+					"fact": "Fuente atribuible que identifica el retrato de Michael Clowater."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.slatecdn.net/SZHCaKxKRHwQftBdYXV2WjcJeOuvptPBd3xHp2z7B5I/rs:fill:1200:630:1/q:80/aHR0cHM6Ly9zMy11/cy13ZXN0LTEuYW1h/em9uYXdzLmNvbS9t/ZWRpYS11cy13ZXN0/c2xhdGVhcHBjb20v/c2hvdHNtYWcvcHJv/ZHVjdGlvbi9jbGlw/cy83MDY5NjkyMy05/ZmY1LTQwNjgtOGNm/ZS1mZWZlMGY4YjQ3/YjAvc2NyZWVuc2hv/dC0yMDIzLTEwLTE4/LWF0LTE0LjQwLjUx/LnBuZw?v=1&quality=70&format=jpeg",
+				"visuallyVerified": true,
+				"localPath": "/people/michael-clowater-tmdb-2901811.jpg"
+			}
+		},
+		{
+			"name": "Alan Cumming",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Perley",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10697",
+					"fact": "El perfil público identifica a Alan Cumming; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/drive-back-home",
+					"fact": "Identidad cotejada con el crédito del título Drive Back Home, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/10697",
+					"fact": "Fuente atribuible que identifica el retrato de Alan Cumming."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/axil8ufunARfqyU4ceZNh36fkVQ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/alan-cumming-tmdb-10697.jpg"
+			}
+		},
+		{
+			"name": "Charlie Creed-Miles",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Weldon",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8397",
+					"fact": "El perfil público identifica a Charlie Creed-Miles; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/drive-back-home",
+					"fact": "Identidad cotejada con el crédito del título Drive Back Home, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/8397",
+					"fact": "Fuente atribuible que identifica el retrato de Charlie Creed-Miles."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aVPpJs7X03oNmbxFtHNaQdsnNod.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/charlie-creed-miles-tmdb-8397.jpg"
+			}
+		},
+		{
+			"name": "Clare Coulter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Adelaide",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1025076",
+					"fact": "El perfil público identifica a Clare Coulter; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/drive-back-home",
+					"fact": "Identidad cotejada con el crédito del título Drive Back Home, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1025076",
+					"fact": "Fuente atribuible que identifica el retrato de Clare Coulter."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ki6Mxhn92agQRFJ9AN417s4ShhL.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/clare-coulter-tmdb-1025076.jpg"
+			}
+		},
+		{
+			"name": "Sprague Grayden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Martha",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/118243",
+					"fact": "El perfil público identifica a Sprague Grayden; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/drive-back-home",
+					"fact": "Identidad cotejada con el crédito del título Drive Back Home, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/118243",
+					"fact": "Fuente atribuible que identifica el retrato de Sprague Grayden."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dhWyIHiG9fYMkcd3pUK3Q7kFm37.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/sprague-grayden-tmdb-118243.jpg"
+			}
+		},
+		{
+			"name": "Gray Powell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Moses",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1535127",
+					"fact": "El perfil público identifica a Gray Powell; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/drive-back-home",
+					"fact": "Identidad cotejada con el crédito del título Drive Back Home, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1535127",
+					"fact": "Fuente atribuible que identifica el retrato de Gray Powell."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4YDKZTlKbAoPHEOt4Z4rZAFHaIQ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/gray-powell-tmdb-1535127.jpg"
+			}
+		},
+		{
+			"name": "Judah Davidson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Ellis",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4151300",
+					"fact": "El perfil público identifica a Judah Davidson; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/drive-back-home",
+					"fact": "Identidad cotejada con el crédito del título Drive Back Home, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/4151300",
+					"fact": "Fuente atribuible que identifica el retrato de Judah Davidson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/d2ZkMfAMLS54oAbihm3IxJLGVrh.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/judah-davidson-tmdb-4151300.jpg"
+			}
+		},
+		{
+			"name": "Guy Sprung",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Etienne Durocher",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Guy Sprung interpreta Etienne Durocher: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Alexandre Bourgeois",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Michel",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Alexandre Bourgeois interpreta Michel: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Anthony Jones Nestoras",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Jerome",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Anthony Jones Nestoras interpreta Jerome: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Gord Rand",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Perley Sr.",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Gord Rand interpreta Perley Sr.: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Brian Bisson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Policeman",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Brian Bisson interpreta Policeman: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Thomas Mitchell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Desk Sergeant",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Thomas Mitchell interpreta Desk Sergeant: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jennifer Carroll",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Archangel Spinney",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jennifer Carroll interpreta Archangel Spinney: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Deborah Tennant",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Hazel",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Deborah Tennant interpreta Hazel: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Dan Beirne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Father Carr",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Dan Beirne interpreta Father Carr: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "David Assinewai",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Gas Attendent",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "David Assinewai interpreta Gas Attendent: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jayden Kirton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Kid on Street",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jayden Kirton interpreta Kid on Street: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Joe Drinkwalter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Waiter",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Joe Drinkwalter interpreta Waiter: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Cameron Nicoll",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Young Weldon",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Cameron Nicoll interpreta Young Weldon: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Liam Culhane",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Apple Picker",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Liam Culhane interpreta Apple Picker: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jude Zappala",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1194985/cast",
+			"screenRole": "Yves",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jude Zappala interpreta Yves: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Guy Sprung",
+				"role": "performer"
+			},
+			{
+				"name": "Alexandre Bourgeois",
+				"role": "performer"
+			},
+			{
+				"name": "Anthony Jones Nestoras",
+				"role": "performer"
+			},
+			{
+				"name": "Gord Rand",
+				"role": "performer"
+			},
+			{
+				"name": "Brian Bisson",
+				"role": "performer"
+			},
+			{
+				"name": "Thomas Mitchell",
+				"role": "performer"
+			},
+			{
+				"name": "Jennifer Carroll",
+				"role": "performer"
+			},
+			{
+				"name": "Deborah Tennant",
+				"role": "performer"
+			},
+			{
+				"name": "Dan Beirne",
+				"role": "performer"
+			},
+			{
+				"name": "David Assinewai",
+				"role": "performer"
+			},
+			{
+				"name": "Jayden Kirton",
+				"role": "performer"
+			},
+			{
+				"name": "Joe Drinkwalter",
+				"role": "performer"
+			},
+			{
+				"name": "Cameron Nicoll",
+				"role": "performer"
+			},
+			{
+				"name": "Liam Culhane",
+				"role": "performer"
+			},
+			{
+				"name": "Jude Zappala",
+				"role": "performer"
+			}
+		]
+	}
+}

@@ -1,0 +1,446 @@
+[
+  {
+    "i": 8,
+    "title": "A Fighting Legacy",
+    "decision": "pending-or-excluded",
+    "reason": "Faltan país de producción y retratos inequívocos de la dirección y de dos participantes principales. IMDb/Watchmode/TMDB no bastan para resolver las identidades.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/a-fighting-legacy",
+      "https://www.imdb.com/title/tt38593367/",
+      "https://www.themoviedb.org/movie/1599301",
+      "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt38593367&types=movie",
+      "https://api.watchmode.com/v1/title/11077370/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 11077370,
+        "title": "A Fighting Legacy",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt38593367",
+        "tmdbId": 1599301
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 8.3,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 9,
+    "title": "Beyond Disclosure",
+    "decision": "pending-or-excluded",
+    "reason": "No se consiguieron retratos inequívocos y país de producción de la obra exacta; no se completó con homónimos del elenco.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/beyond-disclosure-the-corey-goode-files",
+      "https://www.imdb.com/title/tt37408540/",
+      "https://www.themoviedb.org/movie/1586757",
+      "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt37408540&types=movie",
+      "https://api.watchmode.com/v1/title/11068422/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 11068422,
+        "title": "Beyond Disclosure: The Corey Goode Files",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt37408540",
+        "tmdbId": 1586757
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 3.9,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 12,
+    "title": "Universo de diseño",
+    "decision": "pending-or-excluded",
+    "reason": "País de producción y retratos del núcleo participante sin resolver en fuentes contrastadas.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/universo-de-diseno",
+      "https://www.imdb.com/title/tt20101594/",
+      "https://www.themoviedb.org/movie/1597863",
+      "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt20101594&types=movie",
+      "https://api.watchmode.com/v1/title/11076340/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 11076340,
+        "title": "Universe Designed",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt20101594",
+        "tmdbId": 1597863
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 5.7,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 13,
+    "title": "Janelle James: Especial",
+    "decision": "pending-or-excluded",
+    "reason": "Unipersonal: no cumple el piso de dos intérpretes principales con nombre completo y retrato. No se inventa un segundo participante.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/janelle-james-how-romantic",
+      "https://www.imdb.com/title/tt49625485/",
+      "https://www.themoviedb.org/movie/1820172"
+    ],
+    "watchmode": null
+  },
+  {
+    "i": 15,
+    "title": "Borrón y vida nueva",
+    "decision": "pending-or-excluded",
+    "reason": "Identificador IMDb inicialmente ausente en JustWatch; la consulta TMDB dio un ID que necesita contraste adicional. Falta país y retrato del protagonista Omar Yubeili.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/borron-y-vida-nueva",
+      "https://www.themoviedb.org/movie/1584628",
+      "https://api.watchmode.com/v1/search/?search_field=name&search_value=Borr%C3%B3n+y+Vida+Nueva&types=movie",
+      "https://api.watchmode.com/v1/title/11066844/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 11066844,
+        "title": "Borrón y Vida Nueva",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt34696732",
+        "tmdbId": 1584628
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 16,
+    "title": "Crazy Texas",
+    "decision": "pending-or-excluded",
+    "reason": "Identificador IMDb ausente en JustWatch, país y retratos de dirección/intérpretes sin resolver con seguridad.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/crazy-texas",
+      "https://www.themoviedb.org/movie/1460265",
+      "https://api.watchmode.com/v1/search/?search_field=name&search_value=Crazy+Texas&types=movie",
+      "https://api.watchmode.com/v1/title/1979262/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 1979262,
+        "title": "Crazy Texas",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt30587102",
+        "tmdbId": 1460265
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 3.4,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 21,
+    "title": "Oro Nero",
+    "decision": "pending-or-excluded",
+    "reason": "Sin TMDB resuelto; el fallback de Watchmode no produjo una identidad inequívoca suficiente.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/oro-nero",
+      "https://www.imdb.com/title/tt21220878/"
+    ],
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    }
+  },
+  {
+    "i": 24,
+    "title": "Suzane von Richthofen: Lo que el tiempo no borra",
+    "decision": "pending-or-excluded",
+    "reason": "Dirección con retratos atribuibles sin resolver. No se reemplazan por fotografías de la persona retratada.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/suzane-von-richthofen-lo-que-el-tiempo-no-borra",
+      "https://www.imdb.com/title/tt50817930/",
+      "https://www.themoviedb.org/movie/1664682",
+      "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt50817930&types=movie",
+      "https://api.watchmode.com/v1/title/11121591/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 11121591,
+        "title": "Suzane Von Richthofen: O Que o Tempo Não Apaga",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt50817930",
+        "tmdbId": 1664682
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 26,
+    "title": "Echo Point",
+    "decision": "pending-or-excluded",
+    "reason": "Sin agregado numérico de público verificable tras RT/IMDb/TMDB/Watchmode; también faltan país y retratos.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/echo-point",
+      "https://www.themoviedb.org/movie/1764193",
+      "https://api.watchmode.com/v1/search/?search_field=name&search_value=Echo+Point&types=movie",
+      "https://api.watchmode.com/v1/title/11229456/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 11229456,
+        "title": "Echo Point",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt36393405",
+        "tmdbId": 1764193
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 27,
+    "title": "Local Area Network",
+    "decision": "pending-or-excluded",
+    "reason": "Watchmode recuperó TMDB 1729704 y país US, pero dirección Glenn Garrabrant y los dos intérpretes no tienen retratos verificables ni trailer en esa ficha. Nuevas pistas consultadas, no se dio por resuelta sólo la identidad.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/local-area-network",
+      "https://www.imdb.com/title/tt18949836/",
+      "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt18949836&types=movie",
+      "https://api.watchmode.com/v1/title/11217741/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 11217741,
+        "title": "Local Area Network",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt18949836",
+        "tmdbId": 1729704
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 30,
+    "title": "My Friend Sandro",
+    "decision": "pending-or-excluded",
+    "reason": "Riesgo de mezclar documentales homónimos: las referencias a Luiz Torelli/Dario Honorio no son intercambiables. Sin score y participantes suficientes verificados.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/my-friend-sandro",
+      "https://www.imdb.com/title/tt44535857/",
+      "https://www.themoviedb.org/movie/1804183",
+      "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt44535857&types=movie",
+      "https://api.watchmode.com/v1/title/11231048/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 11231048,
+        "title": "Meu Amigo Sandro",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt44535857",
+        "tmdbId": 1804183
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 31,
+    "title": "Lonely People: Nunca confíes en nadie",
+    "decision": "pending-or-excluded",
+    "reason": "El billing devuelve dirección monónima y no hay elenco/score suficientemente documentado; no se inventa apellido.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/lonely-people-nunca-confies-en-nadie",
+      "https://www.imdb.com/title/tt39308470/",
+      "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt39308470&types=movie",
+      "https://api.watchmode.com/v1/title/11215481/details/?append_to_response=cast-crew&language=es"
+    ],
+    "watchmode": {
+      "match": {
+        "watchmodeId": 11215481,
+        "title": "Lonely People: Nunca Confie Em Ninguém",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt39308470",
+        "tmdbId": 1623279
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "i": 38,
+    "title": "Ne Zha 2",
+    "decision": "pending-or-excluded",
+    "reason": "Disponibilidad Netflix AR comprobada. Pendiente por el piso de dirección con nombre completo: el crédito artístico Jiaozi es monónimo. No se sustituyó por el nombre civil para eludir la regla de la skill. Se verificó el público (98%), pero ese dato no levanta el bloqueo de créditos.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/ne-zha-the-devil-boy-in-the-sea",
+      "https://www.imdb.com/title/tt34956443/",
+      "https://www.themoviedb.org/movie/980477"
+    ],
+    "watchmode": null
+  },
+  {
+    "i": 58,
+    "title": "Avengers: Endgame Encore",
+    "decision": "pending-or-excluded",
+    "reason": "Edición/evento de una película ya catalogada; TMDB respondió sin una película independiente verificable. No se duplica Avengers: Endgame ni se traslada su ficha a una supuesta obra nueva.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/avengers-endgame-encore-2026",
+      "https://www.themoviedb.org/movie/1786842"
+    ],
+    "watchmode": null
+  },
+  {
+    "i": 61,
+    "title": "Lobos en primer plano con Bertie Gregory",
+    "decision": "pending-or-excluded",
+    "reason": "La comunicación de estreno corresponde al 6/11; el registro posterior de JustWatch no basta para convertirla en estreno de esta semana. Además no se resolvieron dirección/retratos suficientes.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/lobos-en-primer-plano-con-bertie-gregory",
+      "https://www.imdb.com/title/tt49241977/",
+      "https://www.themoviedb.org/movie/1798383"
+    ],
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    }
+  },
+  {
+    "i": 68,
+    "title": "Snoopy presenta: 12 días para Navidad",
+    "decision": "pending-or-excluded",
+    "reason": "Especial de 33 minutos: no cumple el mínimo de 40 del catálogo. Se conserva en la guía con enlace al servicio; el borrador se archiva y no se falsea su duración.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/snoopy-presenta-12-dias-para-navidad",
+      "https://www.imdb.com/title/tt47791876/",
+      "https://www.themoviedb.org/movie/1780407"
+    ],
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    }
+  },
+  {
+    "i": 69,
+    "title": "Mi niñera es una bruja",
+    "decision": "pending-or-excluded",
+    "reason": "El IMDb de TMDB necesita contraste con la identidad localizada, y faltan datos/roles verificados del título exacto. No se usa otra Baba Yaga.",
+    "sources": [
+      "https://www.justwatch.com/ar/pelicula/mi-ninera-es-una-bruja",
+      "https://www.themoviedb.org/movie/1447053"
+    ],
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    }
+  },
+  {
+    "title": "Músicas",
+    "decision": "guide-only",
+    "reason": "Corto de 33 minutos, disponible MUBI AR desde 13/11 00:00 AR. No alcanza el piso de dos participantes principales individualmente identificados con retratos. La guía enlaza el servicio oficial sin inventar ficha ni score.",
+    "sources": [
+      "https://mubi.com/es/ar/films/musicas",
+      "https://www.imdb.com/find/?q=M%C3%BAsicas%20Lila%20Avil%C3%A9s",
+      "https://www.themoviedb.org/search/movie?query=M%C3%BAsicas"
+    ]
+  }
+]

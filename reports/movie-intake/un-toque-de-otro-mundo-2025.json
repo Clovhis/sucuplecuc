@@ -1,0 +1,248 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "un-toque-de-otro-mundo-2025",
+	"title": "Un Toque de Otro Mundo",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1400763/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/un-toque-de-otro-mundo",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt34967068/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Addison Heimann",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2701650",
+					"fact": "El perfil público identifica a Addison Heimann; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/un-toque-de-otro-mundo",
+					"fact": "Identidad cotejada con el crédito del título Un Toque de Otro Mundo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2701650",
+					"fact": "Fuente atribuible que identifica el retrato de Addison Heimann."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jE2LZKBaAW3G0im8XU7Y1qxIr8l.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/addison-heimann-tmdb-2701650.jpg"
+			}
+		},
+		{
+			"name": "Olivia Taylor Dudley",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "Joey",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/999817",
+					"fact": "El perfil público identifica a Olivia Taylor Dudley; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/un-toque-de-otro-mundo",
+					"fact": "Identidad cotejada con el crédito del título Un Toque de Otro Mundo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/999817",
+					"fact": "Fuente atribuible que identifica el retrato de Olivia Taylor Dudley."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aJi17dqIha844bxSyj5ql4HINvo.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/olivia-taylor-dudley-tmdb-999817.jpg"
+			}
+		},
+		{
+			"name": "Lou Taylor Pucci",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "Brian",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17441",
+					"fact": "El perfil público identifica a Lou Taylor Pucci; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/un-toque-de-otro-mundo",
+					"fact": "Identidad cotejada con el crédito del título Un Toque de Otro Mundo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lou%20Taylor%20Pucci%20WonderCon%202013.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/lou-taylor-pucci-nm1086384.jpg"
+			}
+		},
+		{
+			"name": "Jordan Gavaris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "Craig",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/222143",
+					"fact": "El perfil público identifica a Jordan Gavaris; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/un-toque-de-otro-mundo",
+					"fact": "Identidad cotejada con el crédito del título Un Toque de Otro Mundo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/222143",
+					"fact": "Fuente atribuible que identifica el retrato de Jordan Gavaris."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ClIWbJx4T93QxRextCaEpMQVHS.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jordan-gavaris-tmdb-222143.jpg"
+			}
+		},
+		{
+			"name": "Marlene Forte",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "Laura",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/146004",
+					"fact": "El perfil público identifica a Marlene Forte; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/un-toque-de-otro-mundo",
+					"fact": "Identidad cotejada con el crédito del título Un Toque de Otro Mundo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/146004",
+					"fact": "Fuente atribuible que identifica el retrato de Marlene Forte."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qBhO3tT3VzF1bxUhw3ylmQsfTwP.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/marlene-forte-tmdb-146004.jpg"
+			}
+		},
+		{
+			"name": "Paget Brewster",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "Marge",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/15423",
+					"fact": "El perfil público identifica a Paget Brewster; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/un-toque-de-otro-mundo",
+					"fact": "Identidad cotejada con el crédito del título Un Toque de Otro Mundo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/15423",
+					"fact": "Fuente atribuible que identifica el retrato de Paget Brewster."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nq9ZuGPvzyfS8dOuPWTQUw7Igxg.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/paget-brewster-tmdb-15423.jpg"
+			}
+		},
+		{
+			"name": "Ashley Lauren Nedd",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "Dr. Kelly",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ashley Lauren Nedd interpreta Dr. Kelly: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "JJ Phillips",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "Noah",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "JJ Phillips interpreta Noah: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Yumarie Morales",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "Celeste",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Yumarie Morales interpreta Celeste: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Eli Lucas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1400763/cast",
+			"screenRole": "River",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Eli Lucas interpreta River: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Ashley Lauren Nedd",
+				"role": "performer"
+			},
+			{
+				"name": "JJ Phillips",
+				"role": "performer"
+			},
+			{
+				"name": "Yumarie Morales",
+				"role": "performer"
+			},
+			{
+				"name": "Eli Lucas",
+				"role": "performer"
+			}
+		]
+	}
+}

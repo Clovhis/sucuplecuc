@@ -1,0 +1,117 @@
+{
+  "posters": {
+    "total": 41,
+    "loaded": 41,
+    "bad": []
+  },
+  "layouts": [
+    {
+      "width": 1365,
+      "noOverflow": true,
+      "movieLinks": 41,
+      "imagesDecoded": 7,
+      "homeAndArchive": true
+    },
+    {
+      "width": 320,
+      "noOverflow": true,
+      "movieLinks": 41,
+      "imagesDecoded": 7,
+      "homeAndArchive": true
+    }
+  ],
+  "carousel": {
+    "count": 12,
+    "unique": true,
+    "confirmed": true,
+    "noFuture": true,
+    "noCinema": true,
+    "cards": [
+      {
+        "slug": "300-cartas-2025",
+        "platforms": [
+          "CINE.AR"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "a-j-y-su-extrano-colegio-2025",
+        "platforms": [
+          "Paramount Plus"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "daniela-forever-2024",
+        "platforms": [
+          "Prime Video",
+          "Apple TV"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "el-deshielo-2026",
+        "platforms": [
+          "MUBI"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "heartland-2026",
+        "platforms": [
+          "Netflix"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "la-venganza-de-sweeney-todd-2025",
+        "platforms": [
+          "Prime Video"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "mas-alla-del-muro-2025",
+        "platforms": [
+          "HBO Max"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "pruebas-de-amor-2025",
+        "platforms": [
+          "MUBI"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "siendo-heumann-2026",
+        "platforms": [
+          "Apple TV"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "spinal-tap-ii-el-final-continua-2025",
+        "platforms": [
+          "HBO Max"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "todos-te-estan-mintiendo-por-dinero-2025",
+        "platforms": [
+          "Prime Video"
+        ],
+        "releaseDate": "2026-11-13"
+      },
+      {
+        "slug": "allen-2026",
+        "platforms": [
+          "Netflix"
+        ],
+        "releaseDate": "2026-11-12"
+      }
+    ]
+  }
+}

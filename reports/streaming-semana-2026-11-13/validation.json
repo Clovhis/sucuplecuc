@@ -1,0 +1,98 @@
+[
+  {
+    "name": "people",
+    "exitCode": 0,
+    "at": "2026-11-13T13:19:38.903Z"
+  },
+  {
+    "name": "audit",
+    "exitCode": 0,
+    "at": "2026-11-13T13:20:54.763Z"
+  },
+  {
+    "name": "catalog",
+    "exitCode": 0,
+    "at": "2026-11-13T13:20:55.548Z"
+  },
+  {
+    "name": "catalog-check",
+    "exitCode": 0,
+    "at": "2026-11-13T13:20:56.419Z"
+  },
+  {
+    "name": "person-links",
+    "exitCode": 0,
+    "at": "2026-11-13T13:21:05.353Z"
+  },
+  {
+    "name": "person-reference",
+    "exitCode": 0,
+    "at": "2026-11-13T13:21:05.779Z"
+  },
+  {
+    "name": "check",
+    "exitCode": 0,
+    "at": "2026-11-13T13:21:56.412Z"
+  },
+  {
+    "name": "poster-policy",
+    "exitCode": 0,
+    "at": "2026-11-13T13:21:57.217Z"
+  },
+  {
+    "name": "meters",
+    "exitCode": 0,
+    "at": "2026-11-13T13:21:58.061Z"
+  },
+  {
+    "name": "people-images",
+    "exitCode": 0,
+    "at": "2026-11-13T13:22:03.506Z"
+  },
+  {
+    "name": "duplicates",
+    "exitCode": 0,
+    "at": "2026-11-13T13:22:04.894Z"
+  },
+  {
+    "name": "content",
+    "exitCode": 0,
+    "at": "2026-11-13T16:38:13.994Z"
+  },
+  {
+    "name": "build",
+    "exitCode": 0,
+    "at": "2026-11-13T16:39:18.937Z"
+  },
+  {
+    "name": "public-output",
+    "exitCode": 0,
+    "at": "2026-11-13T16:39:24.545Z"
+  },
+  {
+    "name": "sitemap",
+    "exitCode": 0,
+    "at": "2026-11-13T16:39:31.641Z"
+  },
+  {
+    "name": "character-build",
+    "exitCode": 0,
+    "at": "2026-11-13T16:39:34.343Z"
+  },
+  {
+    "name": "post-build-audit",
+    "candidates": 41,
+    "exitCode": 0,
+    "errors": [],
+    "warningCount": 699,
+    "at": "2026-11-13T16:42:31.076Z"
+  },
+  {
+    "name": "streaming-selected-audit",
+    "candidates": 12,
+    "exitCode": 0,
+    "errors": [],
+    "warningCount": 251,
+    "at": "2026-11-13T16:42:35.622Z"
+  }
+]

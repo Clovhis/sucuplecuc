@@ -1,0 +1,376 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "vibe-2026",
+	"title": "Vibe",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1654566/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 17
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/vibe",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt40856286/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Kunal Kemmu",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/85454",
+					"fact": "El perfil público identifica a Kunal Kemmu; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/vibe",
+					"fact": "Identidad cotejada con el crédito del título Vibe, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/85454",
+					"fact": "Fuente atribuible que identifica el retrato de Kunal Kemmu."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/b14MYOFVeebBGyD2Zr86DIMNH0h.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/kunal-kemmu-tmdb-85454.jpg"
+			}
+		},
+		{
+			"name": "Preity Zinta",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Madam H",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/35745",
+					"fact": "El perfil público identifica a Preity Zinta; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/vibe",
+					"fact": "Identidad cotejada con el crédito del título Vibe, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/35745",
+					"fact": "Fuente atribuible que identifica el retrato de Preity Zinta."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dcDMi0u33alx4x4ZtZ7JWf5J98H.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/preity-zinta-tmdb-35745.jpg"
+			}
+		},
+		{
+			"name": "Kunal Kemmu",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Hardik Sharma",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/85454",
+					"fact": "El perfil público identifica a Kunal Kemmu; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/vibe",
+					"fact": "Identidad cotejada con el crédito del título Vibe, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/85454",
+					"fact": "Fuente atribuible que identifica el retrato de Kunal Kemmu."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/b14MYOFVeebBGyD2Zr86DIMNH0h.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/kunal-kemmu-tmdb-85454.jpg"
+			}
+		},
+		{
+			"name": "Sparsh Shrivastava",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Bhagirath 'Bugs'",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2505976",
+					"fact": "El perfil público identifica a Sparsh Shrivastava; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/vibe",
+					"fact": "Identidad cotejada con el crédito del título Vibe, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2505976",
+					"fact": "Fuente atribuible que identifica el retrato de Sparsh Shrivastava."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/d123XZfocCLnc5LAjrlBifffYFf.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/sparsh-shrivastava-tmdb-2505976.jpg"
+			}
+		},
+		{
+			"name": "Vanshika Dhir",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Kareena",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6082756",
+					"fact": "El perfil público identifica a Vanshika Dhir; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/vibe",
+					"fact": "Identidad cotejada con el crédito del título Vibe, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/6082756",
+					"fact": "Fuente atribuible que identifica el retrato de Vanshika Dhir."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yD9JA0MODbRELEZbhcvbrXWpjRt.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/vanshika-dhir-tmdb-6082756.jpg"
+			}
+		},
+		{
+			"name": "Dinesh Lal Yadav Nirahua",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Bansi",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1640836",
+					"fact": "El perfil público identifica a Dinesh Lal Yadav Nirahua; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/vibe",
+					"fact": "Identidad cotejada con el crédito del título Vibe, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1640836",
+					"fact": "Fuente atribuible que identifica el retrato de Dinesh Lal Yadav Nirahua."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/flTi9LuCoEkWX5zUNnBC5brdIzT.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/dinesh-lal-yadav-nirahua-tmdb-1640836.jpg"
+			}
+		},
+		{
+			"name": "Yashpal Sharma",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Rawal",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/86022",
+					"fact": "El perfil público identifica a Yashpal Sharma; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/vibe",
+					"fact": "Identidad cotejada con el crédito del título Vibe, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/86022",
+					"fact": "Fuente atribuible que identifica el retrato de Yashpal Sharma."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hYDZkMl6u3rM2cASabpHgrvA0mf.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/yashpal-sharma-tmdb-86022.jpg"
+			}
+		},
+		{
+			"name": "Sharmila Tagore",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Home Minister",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/13753",
+					"fact": "El perfil público identifica a Sharmila Tagore; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/vibe",
+					"fact": "Identidad cotejada con el crédito del título Vibe, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/13753",
+					"fact": "Fuente atribuible que identifica el retrato de Sharmila Tagore."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/m2MFSVdx4aKVoLRFPJoO5u0FMon.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/sharmila-tagore-tmdb-13753.jpg"
+			}
+		},
+		{
+			"name": "Aditya Kulshreshtha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Next Phase Tech Office Colleague",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Aditya Kulshreshtha interpreta Next Phase Tech Office Colleague: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Salem Kali",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Abid",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Salem Kali interpreta Abid: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Hiten Paintal",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Abu Al Sayeed",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Hiten Paintal interpreta Abu Al Sayeed: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Mark Bennington",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Badshah Al Sayeed",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Mark Bennington interpreta Badshah Al Sayeed: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Pradeep Kabra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Hardik's Interrogator",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Pradeep Kabra interpreta Hardik's Interrogator: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Rajesh Krishnan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Bugs' Boss",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Rajesh Krishnan interpreta Bugs' Boss: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Uorfi Javed",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Chanchal Screwvala",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Uorfi Javed interpreta Chanchal Screwvala: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Akshat Jain",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Hanged Laptop Guy",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Akshat Jain interpreta Hanged Laptop Guy: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Stanislav Iurovskikh",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1654566/cast",
+			"screenRole": "Abu's Israeli Bodyguard",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Stanislav Iurovskikh interpreta Abu's Israeli Bodyguard: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Aditya Kulshreshtha",
+				"role": "performer"
+			},
+			{
+				"name": "Salem Kali",
+				"role": "performer"
+			},
+			{
+				"name": "Hiten Paintal",
+				"role": "performer"
+			},
+			{
+				"name": "Mark Bennington",
+				"role": "performer"
+			},
+			{
+				"name": "Pradeep Kabra",
+				"role": "performer"
+			},
+			{
+				"name": "Rajesh Krishnan",
+				"role": "performer"
+			},
+			{
+				"name": "Uorfi Javed",
+				"role": "performer"
+			},
+			{
+				"name": "Akshat Jain",
+				"role": "performer"
+			},
+			{
+				"name": "Stanislav Iurovskikh",
+				"role": "performer"
+			}
+		]
+	}
+}

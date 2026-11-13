@@ -25,7 +25,8 @@
 	"director": "David Ayer",
 	"mainCast": [
 		"Brad Pitt",
-		"J. K. Simmons"
+		"J. K. Simmons",
+		"Anna Lambe"
 	],
 	"productionCompany": "Plan B Entertainment, Temple Hill Entertainment, Wild Chickens Productions, Crave Films",
 	"awards": {
@@ -70,6 +71,17 @@
 			"tmdbMovieId": 1263337,
 			"tmdbPersonId": 18999,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anna Lambe",
+			"character": "Amber",
+			"tmdbMovieId": 1263337,
+			"tmdbPersonId": 2307481,
+			"verifiedAt": "2026-11-13"
 		}
+	],
+	"releasePlatforms": [
+		"Cine",
+		"Prime Video"
 	]
 }

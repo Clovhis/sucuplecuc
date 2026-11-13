@@ -1,0 +1,377 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "kijsada-paradise-2026",
+	"title": "Kijsada Paradise",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1419036/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 18
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/kijsada-paradise",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/null/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Phontharis Chotkijsadarsopon",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1651297",
+					"fact": "El perfil público identifica a Phontharis Chotkijsadarsopon; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/kijsada-paradise",
+					"fact": "Identidad cotejada con el crédito del título Kijsada Paradise, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1651297",
+					"fact": "Fuente atribuible que identifica el retrato de Phontharis Chotkijsadarsopon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pA6btMLzMRIRGjUDxwL0nlVRBw7.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/phontharis-chotkijsadarsopon-tmdb-1651297.jpg"
+			}
+		},
+		{
+			"name": "Nattawat Jirochtikul",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Taek",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3345110",
+					"fact": "El perfil público identifica a Nattawat Jirochtikul; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/kijsada-paradise",
+					"fact": "Identidad cotejada con el crédito del título Kijsada Paradise, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3345110",
+					"fact": "Fuente atribuible que identifica el retrato de Nattawat Jirochtikul."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yc8KQx26NR2bDfl2DSOxl2qOoSr.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/nattawat-jirochtikul-tmdb-3345110.jpg"
+			}
+		},
+		{
+			"name": "Yongsin Wongpanitnont",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Ohm",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1862365",
+					"fact": "El perfil público identifica a Yongsin Wongpanitnont; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/kijsada-paradise",
+					"fact": "Identidad cotejada con el crédito del título Kijsada Paradise, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1862365",
+					"fact": "Fuente atribuible que identifica el retrato de Yongsin Wongpanitnont."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/AnJDf5hgW9RuT1NjkKbhFa7QAyM.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/yongsin-wongpanitnont-tmdb-1862365.jpg"
+			}
+		},
+		{
+			"name": "Jaturawit Cheawprasit",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Jod",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jaturawit Cheawprasit interpreta Jod: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Pannawit Phattanasiri",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Park",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3119992",
+					"fact": "El perfil público identifica a Pannawit Phattanasiri; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/kijsada-paradise",
+					"fact": "Identidad cotejada con el crédito del título Kijsada Paradise, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3119992",
+					"fact": "Fuente atribuible que identifica el retrato de Pannawit Phattanasiri."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tJarieOtgXpC3HfhXscqtdswQXS.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/pannawit-phattanasiri-tmdb-3119992.jpg"
+			}
+		},
+		{
+			"name": "Sorathon Chaloemlapsombut",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Melon",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4915657",
+					"fact": "El perfil público identifica a Sorathon Chaloemlapsombut; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/kijsada-paradise",
+					"fact": "Identidad cotejada con el crédito del título Kijsada Paradise, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/4915657",
+					"fact": "Fuente atribuible que identifica el retrato de Sorathon Chaloemlapsombut."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oy1tWgRL1PMUHAT9sc1Y9sCh3pC.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/sorathon-chaloemlapsombut-tmdb-4915657.jpg"
+			}
+		},
+		{
+			"name": "Worapat Pakpattaraporn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Tee",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5710567",
+					"fact": "El perfil público identifica a Worapat Pakpattaraporn; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/kijsada-paradise",
+					"fact": "Identidad cotejada con el crédito del título Kijsada Paradise, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/5710567",
+					"fact": "Fuente atribuible que identifica el retrato de Worapat Pakpattaraporn."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/65qaDcr006WDDtfkZwHEctKoaXA.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/worapat-pakpattaraporn-tmdb-5710567.jpg"
+			}
+		},
+		{
+			"name": "Waratthip Kittisiripaisan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Waen",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4178633",
+					"fact": "El perfil público identifica a Waratthip Kittisiripaisan; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/kijsada-paradise",
+					"fact": "Identidad cotejada con el crédito del título Kijsada Paradise, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/4178633",
+					"fact": "Fuente atribuible que identifica el retrato de Waratthip Kittisiripaisan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/v6fu8ekytDg6vursoHYMjDSIJLP.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/waratthip-kittisiripaisan-tmdb-4178633.jpg"
+			}
+		},
+		{
+			"name": "Tirakhun Srichoo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Pae",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Tirakhun Srichoo interpreta Pae: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Bhuripat Vejvongsatechavat",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Yung",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Bhuripat Vejvongsatechavat interpreta Yung: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Yasaka Chaisorn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Uncle",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Yasaka Chaisorn interpreta Uncle: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Supapat Phoncharoenrat",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Pat",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Supapat Phoncharoenrat interpreta Pat: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Supoj Janjareonborn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Ohm's Father",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Supoj Janjareonborn interpreta Ohm's Father: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Nutpawin Kulkalyadee",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Danai",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Nutpawin Kulkalyadee interpreta Danai: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Suphach Tawsagun",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Young Yung",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Suphach Tawsagun interpreta Young Yung: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Chavanat Dabbhadatta",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Young Yung's Friend",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Chavanat Dabbhadatta interpreta Young Yung's Friend: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Peeradaj Rangsamran",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Police",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Peeradaj Rangsamran interpreta Police: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Rachata Chalayundacha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1419036/cast",
+			"screenRole": "Police",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Rachata Chalayundacha interpreta Police: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Jaturawit Cheawprasit",
+				"role": "performer"
+			},
+			{
+				"name": "Tirakhun Srichoo",
+				"role": "performer"
+			},
+			{
+				"name": "Bhuripat Vejvongsatechavat",
+				"role": "performer"
+			},
+			{
+				"name": "Yasaka Chaisorn",
+				"role": "performer"
+			},
+			{
+				"name": "Supapat Phoncharoenrat",
+				"role": "performer"
+			},
+			{
+				"name": "Supoj Janjareonborn",
+				"role": "performer"
+			},
+			{
+				"name": "Nutpawin Kulkalyadee",
+				"role": "performer"
+			},
+			{
+				"name": "Suphach Tawsagun",
+				"role": "performer"
+			},
+			{
+				"name": "Chavanat Dabbhadatta",
+				"role": "performer"
+			},
+			{
+				"name": "Peeradaj Rangsamran",
+				"role": "performer"
+			},
+			{
+				"name": "Rachata Chalayundacha",
+				"role": "performer"
+			}
+		]
+	}
+}

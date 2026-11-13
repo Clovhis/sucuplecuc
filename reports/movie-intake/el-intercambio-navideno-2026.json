@@ -1,0 +1,403 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-intercambio-navideno-2026",
+	"title": "El intercambio navideño",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1757174/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 18
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt39313557/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Adam Pålsson",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1137377",
+					"fact": "El perfil público identifica a Adam Pålsson; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+					"fact": "Identidad cotejada con el crédito del título El intercambio navideño, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1137377",
+					"fact": "Fuente atribuible que identifica el retrato de Adam Pålsson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sdBaRl4pG3qUGOyASo3lcLll1p4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/adam-palsson-tmdb-1137377.jpg"
+			}
+		},
+		{
+			"name": "Felice Jankell",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Mathilda Stjärne",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1036879",
+					"fact": "El perfil público identifica a Felice Jankell; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+					"fact": "Identidad cotejada con el crédito del título El intercambio navideño, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1036879",
+					"fact": "Fuente atribuible que identifica el retrato de Felice Jankell."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7DbXVbGlWcYESPBtAHwwRvMLwzf.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/felice-jankell-tmdb-1036879.jpg"
+			}
+		},
+		{
+			"name": "Happy Jankell",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Freddie Stjärne",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/225093",
+					"fact": "El perfil público identifica a Happy Jankell; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+					"fact": "Identidad cotejada con el crédito del título El intercambio navideño, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/225093",
+					"fact": "Fuente atribuible que identifica el retrato de Happy Jankell."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1HxWCM4tKvr3BE7LbWNi7iSjSCo.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/happy-jankell-tmdb-225093.jpg"
+			}
+		},
+		{
+			"name": "Christian Fandango Sundgren",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Oliver",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2500180",
+					"fact": "El perfil público identifica a Christian Fandango Sundgren; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+					"fact": "Identidad cotejada con el crédito del título El intercambio navideño, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2500180",
+					"fact": "Fuente atribuible que identifica el retrato de Christian Fandango Sundgren."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yFzKniD7f5eZWR5cbheKLsoPM9R.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/christian-fandango-sundgren-tmdb-2500180.jpg"
+			}
+		},
+		{
+			"name": "Celie Sparre",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Emma",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2187851",
+					"fact": "El perfil público identifica a Celie Sparre; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+					"fact": "Identidad cotejada con el crédito del título El intercambio navideño, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2187851",
+					"fact": "Fuente atribuible que identifica el retrato de Celie Sparre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hWlwSfIKMEg7MStKtxW7DPlOidM.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/celie-sparre-tmdb-2187851.jpg"
+			}
+		},
+		{
+			"name": "Anastasios Soulis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Jonas",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/90605",
+					"fact": "El perfil público identifica a Anastasios Soulis; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+					"fact": "Identidad cotejada con el crédito del título El intercambio navideño, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/90605",
+					"fact": "Fuente atribuible que identifica el retrato de Anastasios Soulis."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ioaYJiSJd3jtirOETB1dit4XLEi.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/anastasios-soulis-tmdb-90605.jpg"
+			}
+		},
+		{
+			"name": "Maria Kulle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Lillian",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/93485",
+					"fact": "El perfil público identifica a Maria Kulle; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+					"fact": "Identidad cotejada con el crédito del título El intercambio navideño, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/93485",
+					"fact": "Fuente atribuible que identifica el retrato de Maria Kulle."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/x30VUJlKmycPzG09f5bB8MwgPgl.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/maria-kulle-tmdb-93485.jpg"
+			}
+		},
+		{
+			"name": "Dag Malmberg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Janne",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/116615",
+					"fact": "El perfil público identifica a Dag Malmberg; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+					"fact": "Identidad cotejada con el crédito del título El intercambio navideño, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/116615",
+					"fact": "Fuente atribuible que identifica el retrato de Dag Malmberg."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rVVc0e3uUtLPiL3ze87OQYF8BYD.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/dag-malmberg-tmdb-116615.jpg"
+			}
+		},
+		{
+			"name": "Bengt Braskered",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Patric",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1017336",
+					"fact": "El perfil público identifica a Bengt Braskered; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+					"fact": "Identidad cotejada con el crédito del título El intercambio navideño, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1017336",
+					"fact": "Fuente atribuible que identifica el retrato de Bengt Braskered."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dYNbesiCfIwuzXbxBlThl7cmOaP.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/bengt-braskered-tmdb-1017336.jpg"
+			}
+		},
+		{
+			"name": "Lisa Hu Yu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Li-Fen",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lisa Hu Yu interpreta Li-Fen: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Bahar Pars",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Katja",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Bahar Pars interpreta Katja: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lydia Capolicchio",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Customer in a flower shop",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lydia Capolicchio interpreta Customer in a flower shop: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Natasha Träger",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Waitress",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Natasha Träger interpreta Waitress: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jesper Salén",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Doctor",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jesper Salén interpreta Doctor: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Elinor Silfversparre",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Hockey girl",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Elinor Silfversparre interpreta Hockey girl: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Sophia Gellerstedt Gutale",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Iris",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Sophia Gellerstedt Gutale interpreta Iris: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Penny Parnevik Murray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Podcaster",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Penny Parnevik Murray interpreta Podcaster: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Rochelle Neil",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1757174/cast",
+			"screenRole": "Heather",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Rochelle Neil interpreta Heather: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Lisa Hu Yu",
+				"role": "performer"
+			},
+			{
+				"name": "Bahar Pars",
+				"role": "performer"
+			},
+			{
+				"name": "Lydia Capolicchio",
+				"role": "performer"
+			},
+			{
+				"name": "Natasha Träger",
+				"role": "performer"
+			},
+			{
+				"name": "Jesper Salén",
+				"role": "performer"
+			},
+			{
+				"name": "Elinor Silfversparre",
+				"role": "performer"
+			},
+			{
+				"name": "Sophia Gellerstedt Gutale",
+				"role": "performer"
+			},
+			{
+				"name": "Penny Parnevik Murray",
+				"role": "performer"
+			},
+			{
+				"name": "Rochelle Neil",
+				"role": "performer"
+			}
+		]
+	}
+}

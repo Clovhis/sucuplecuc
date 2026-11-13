@@ -19,7 +19,7 @@
 	"poster": "assets/posters/2025/la-negociacion-2025.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "G7129DSuJPM",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "Prime Video",
 	"director": "Gus Van Sant",
 	"mainCast": [
 		"Colman Domingo",
@@ -54,5 +54,21 @@
 	"runtimeMinutes": 104,
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Gus Van Sant encuentra en este secuestro una pelea entre desesperación, espectáculo y resentimiento de clase, y evita volverla un simple caso policial. Bill Skarsgård arma un Tony Kiritsis imprevisible sin romantizarlo, mientras Colman Domingo aprovecha cada entrada para mostrar cómo la transmisión en vivo cambia las reglas. La negociación tiene el pulso de un relato setentista, con ironía amarga y una tensión que depende más de la palabra que del golpe de efecto."
+	"review": "Gus Van Sant encuentra en este secuestro una pelea entre desesperación, espectáculo y resentimiento de clase, y evita volverla un simple caso policial. Bill Skarsgård arma un Tony Kiritsis imprevisible sin romantizarlo, mientras Colman Domingo aprovecha cada entrada para mostrar cómo la transmisión en vivo cambia las reglas. La negociación tiene el pulso de un relato setentista, con ironía amarga y una tensión que depende más de la palabra que del golpe de efecto.",
+	"castCharacters": [
+		{
+			"actor": "Colman Domingo",
+			"character": "Fred Temple",
+			"tmdbMovieId": 1263012,
+			"tmdbPersonId": 91671,
+			"verifiedAt": "2026-11-13"
+		},
+		{
+			"actor": "Al Pacino",
+			"character": "M.L. Hall",
+			"tmdbMovieId": 1263012,
+			"tmdbPersonId": 1158,
+			"verifiedAt": "2026-11-13"
+		}
+	]
 }

@@ -1,0 +1,252 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "300-cartas-2025",
+	"title": "300 cartas",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1279093/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/300cartas",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt28806247/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Lucas Santa Ana",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1769533",
+					"fact": "El perfil público identifica a Lucas Santa Ana; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/300cartas",
+					"fact": "Identidad cotejada con el crédito del título 300 cartas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1769533",
+					"fact": "Fuente atribuible que identifica el retrato de Lucas Santa Ana."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/njPD7GePwF6YNJZYWOmbBP6epKW.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/lucas-santa-ana-tmdb-1769533.jpg"
+			}
+		},
+		{
+			"name": "Cristian Mariani",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Jero",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4677407",
+					"fact": "El perfil público identifica a Cristian Mariani; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/300cartas",
+					"fact": "Identidad cotejada con el crédito del título 300 cartas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/4677407",
+					"fact": "Fuente atribuible que identifica el retrato de Cristian Mariani."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yFsZCBvxgT3od7BqMzkfplaJVEE.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/cristian-mariani-tmdb-4677407.jpg"
+			}
+		},
+		{
+			"name": "Gastón Frías",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Tom",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3560420",
+					"fact": "El perfil público identifica a Gastón Frías; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/300cartas",
+					"fact": "Identidad cotejada con el crédito del título 300 cartas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3560420",
+					"fact": "Fuente atribuible que identifica el retrato de Gastón Frías."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2xdoU4pQqjU1AZwwShUuFplU7HO.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/gaston-frias-tmdb-3560420.jpg"
+			}
+		},
+		{
+			"name": "Bruno Giganti",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Esteban",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2699160",
+					"fact": "El perfil público identifica a Bruno Giganti; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/300cartas",
+					"fact": "Identidad cotejada con el crédito del título 300 cartas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2699160",
+					"fact": "Fuente atribuible que identifica el retrato de Bruno Giganti."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ucU95WEQQYE78qTRAw6acLfOo0d.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/bruno-giganti-tmdb-2699160.jpg"
+			}
+		},
+		{
+			"name": "Jorge Thefs",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Q",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4366011",
+					"fact": "El perfil público identifica a Jorge Thefs; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/300cartas",
+					"fact": "Identidad cotejada con el crédito del título 300 cartas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://mutuverriapr.com/talentos/talento/jorge-thefs/",
+					"fact": "Fuente atribuible que identifica el retrato de Jorge Thefs."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://mutuverriapr.com/wp-content/uploads/2023/02/Jorge-ThefsDSC_3674.Agencia-Marcos-Mutuverria-2025-Foto-Carlos-Furman.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jorge-thefs-tmdb-4366011.jpg"
+			}
+		},
+		{
+			"name": "Franco Mosqueiras",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Fede",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4066011",
+					"fact": "El perfil público identifica a Franco Mosqueiras; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/300cartas",
+					"fact": "Identidad cotejada con el crédito del título 300 cartas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/4066011",
+					"fact": "Fuente atribuible que identifica el retrato de Franco Mosqueiras."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vWbX2RwFpT8FV23W6DLcsy6x25L.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/franco-mosqueiras-tmdb-4066011.jpg"
+			}
+		},
+		{
+			"name": "Jordán Romero",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Pablo",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jordán Romero interpreta Pablo: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Francisco Cottet",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Repartidor",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Francisco Cottet interpreta Repartidor: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Nancy Meijide",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Alumna de gym",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Nancy Meijide interpreta Alumna de gym: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Esmeralda Segui",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1279093/cast",
+			"screenRole": "Alumna",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Esmeralda Segui interpreta Alumna: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Jordán Romero",
+				"role": "performer"
+			},
+			{
+				"name": "Francisco Cottet",
+				"role": "performer"
+			},
+			{
+				"name": "Nancy Meijide",
+				"role": "performer"
+			},
+			{
+				"name": "Esmeralda Segui",
+				"role": "performer"
+			}
+		]
+	}
+}

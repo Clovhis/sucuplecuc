@@ -1,0 +1,193 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "un-buen-abogado-2026",
+	"title": "Un buen abogado",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1616419/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 7
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/the-good-lawyer",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt39453578/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Tristan Séguéla",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616419/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1277829",
+					"fact": "El perfil público identifica a Tristan Séguéla; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-good-lawyer",
+					"fact": "Identidad cotejada con el crédito del título Un buen abogado, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1277829",
+					"fact": "Fuente atribuible que identifica el retrato de Tristan Séguéla."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/91ilAaSvodJWhyezosu4P6LaSVr.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/tristan-seguela-tmdb-1277829.jpg"
+			}
+		},
+		{
+			"name": "Laurent Lafitte",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616419/cast",
+			"screenRole": "Léonard Landry",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/93532",
+					"fact": "El perfil público identifica a Laurent Lafitte; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-good-lawyer",
+					"fact": "Identidad cotejada con el crédito del título Un buen abogado, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/93532",
+					"fact": "Fuente atribuible que identifica el retrato de Laurent Lafitte."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9mTtfK5F9WMoYqvUvqlugnsX6SS.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/laurent-lafitte-tmdb-93532.jpg"
+			}
+		},
+		{
+			"name": "Anthony Bajon",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616419/cast",
+			"screenRole": "Noé",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1660839",
+					"fact": "El perfil público identifica a Anthony Bajon; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-good-lawyer",
+					"fact": "Identidad cotejada con el crédito del título Un buen abogado, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1660839",
+					"fact": "Fuente atribuible que identifica el retrato de Anthony Bajon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eHpGmQtj4oRHQ3jn9tngWdb6Z9T.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/anthony-bajon-tmdb-1660839.jpg"
+			}
+		},
+		{
+			"name": "Mélanie Laurent",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616419/cast",
+			"screenRole": "Iris Saint Didier",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/19119",
+					"fact": "El perfil público identifica a Mélanie Laurent; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-good-lawyer",
+					"fact": "Identidad cotejada con el crédito del título Un buen abogado, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/i99ogEo4gQyanCmHWYYoS6hsUqL.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/melanie-laurent-nm0491259.jpg"
+			}
+		},
+		{
+			"name": "Carole Bouquet",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616419/cast",
+			"screenRole": "Anne Lamarck",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10500",
+					"fact": "El perfil público identifica a Carole Bouquet; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/the-good-lawyer",
+					"fact": "Identidad cotejada con el crédito del título Un buen abogado, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/10500",
+					"fact": "Fuente atribuible que identifica el retrato de Carole Bouquet."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nCyI95wVvhXFH1GiornFHsL9YOx.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/carole-bouquet-tmdb-10500.jpg"
+			}
+		},
+		{
+			"name": "Gwendal Kerdelhue",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616419/cast",
+			"screenRole": "L'homme de main",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Gwendal Kerdelhue interpreta L'homme de main: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Antoine Signac",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616419/cast",
+			"screenRole": "Visiteur tribunal",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Antoine Signac interpreta Visiteur tribunal: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Gwendal Kerdelhue",
+				"role": "performer"
+			},
+			{
+				"name": "Antoine Signac",
+				"role": "performer"
+			}
+		]
+	}
+}

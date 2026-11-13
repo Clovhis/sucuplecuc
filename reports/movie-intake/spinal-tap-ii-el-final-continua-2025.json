@@ -1,0 +1,803 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "spinal-tap-ii-el-final-continua-2025",
+	"title": "Spinal Tap II: El final continúa",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/975225/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 48
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt20222166/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Rob Reiner",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3026",
+					"fact": "El perfil público identifica a Rob Reiner; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+					"fact": "Identidad cotejada con el crédito del título Spinal Tap II: El final continúa, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rob%20Reiner%20MFF%202016.jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/rob-reiner-nm0001661.jpg"
+			}
+		},
+		{
+			"name": "Christopher Guest",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Nigel Tufnel",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/13524",
+					"fact": "El perfil público identifica a Christopher Guest; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+					"fact": "Identidad cotejada con el crédito del título Spinal Tap II: El final continúa, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Guest4.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/christopher-guest-nm0001302.jpg"
+			}
+		},
+		{
+			"name": "Michael McKean",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "David St. Hubbins",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/21731",
+					"fact": "El perfil público identifica a Michael McKean; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+					"fact": "Identidad cotejada con el crédito del título Spinal Tap II: El final continúa, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20McKean%201999.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/michael-mckean-nm0571106.jpg"
+			}
+		},
+		{
+			"name": "Harry Shearer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Derek Smalls",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6008",
+					"fact": "El perfil público identifica a Harry Shearer; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+					"fact": "Identidad cotejada con el crédito del título Spinal Tap II: El final continúa, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7PnGZGVKJNDTUv3DkbaMEnCseT0.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/harry-shearer-nm0733427.jpg"
+			}
+		},
+		{
+			"name": "Rob Reiner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Marty DiBergi",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3026",
+					"fact": "El perfil público identifica a Rob Reiner; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+					"fact": "Identidad cotejada con el crédito del título Spinal Tap II: El final continúa, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rob%20Reiner%20MFF%202016.jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/rob-reiner-nm0001661.jpg"
+			}
+		},
+		{
+			"name": "Valerie Franco",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Didi Crockett",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5685992",
+					"fact": "El perfil público identifica a Valerie Franco; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+					"fact": "Identidad cotejada con el crédito del título Spinal Tap II: El final continúa, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://connselmer.com/artists/valerie-franco",
+					"fact": "Fuente atribuible que identifica el retrato de Valerie Franco."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://conn-selmer.cdn.picturepark.com/v/exDxhO9L/?height=800&width=800",
+				"visuallyVerified": true,
+				"localPath": "/people/valerie-franco-tmdb-5685992.jpg"
+			}
+		},
+		{
+			"name": "CJ Vanston",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Caucasian Jeff",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1537021",
+					"fact": "El perfil público identifica a CJ Vanston; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+					"fact": "Identidad cotejada con el crédito del título Spinal Tap II: El final continúa, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1537021",
+					"fact": "Fuente atribuible que identifica el retrato de CJ Vanston."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/psnnDzVOhDYhCarJyOdfgRowMSm.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/cj-vanston-tmdb-1537021.jpg"
+			}
+		},
+		{
+			"name": "Jean Cromie",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Oxygen",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1748248",
+					"fact": "El perfil público identifica a Jean Cromie; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+					"fact": "Identidad cotejada con el crédito del título Spinal Tap II: El final continúa, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1748248",
+					"fact": "Fuente atribuible que identifica el retrato de Jean Cromie."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oQzvTBrvB4sn9vCWby4t2K4DmsJ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jean-cromie-tmdb-1748248.jpg"
+			}
+		},
+		{
+			"name": "Kerry Godliman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Hope Faith",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/220372",
+					"fact": "El perfil público identifica a Kerry Godliman; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/spinal-tap-ii",
+					"fact": "Identidad cotejada con el crédito del título Spinal Tap II: El final continúa, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/220372",
+					"fact": "Fuente atribuible que identifica el retrato de Kerry Godliman."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eLbKxu58ZPFCGl6WF9rbRJdg7R4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/kerry-godliman-tmdb-220372.jpg"
+			}
+		},
+		{
+			"name": "Garth Brooks",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Garth Brooks interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Trisha Yearwood",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Trisha Yearwood interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "June Chadwick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Jeanine Pettibone",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "June Chadwick interpreta Jeanine Pettibone: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Fran Drescher",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Bobbi Flekman",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Fran Drescher interpreta Bobbi Flekman: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Griffin Matthews",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Peter La Pierre",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Griffin Matthews interpreta Peter La Pierre: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Paul Shaffer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Artie Fufkin",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Paul Shaffer interpreta Artie Fufkin: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Elton John",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Elton John interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Paul McCartney",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Paul McCartney interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "David Furnish",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "David Furnish interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Chad Smith",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Chad Smith interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Chris Addison",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Simon Howler",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Chris Addison interpreta Simon Howler: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Kathreen Khavari",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Yasmine Farangi",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Kathreen Khavari interpreta Yasmine Farangi: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lars Ulrich",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lars Ulrich interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Questlove",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Questlove interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Nina Conti",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Moira",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Nina Conti interpreta Moira: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Robert Walker Branchaud",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "SFX Tech Assistant Ben",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Robert Walker Branchaud interpreta SFX Tech Assistant Ben: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Annie Gordenier",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Didi's Girlfriend Annie",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Annie Gordenier interpreta Didi's Girlfriend Annie: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Brad Williams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Daniel The Druid",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Brad Williams interpreta Daniel The Druid: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jason 'Wee Man' Acuña",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Damien The Druid",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jason 'Wee Man' Acuña interpreta Damien The Druid: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "John Michael Higgins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Bob Kitness",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "John Michael Higgins interpreta Bob Kitness: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Josh Ford",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Trainer's Assistant",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Josh Ford interpreta Trainer's Assistant: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Don Lake",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Tour Guide",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Don Lake interpreta Tour Guide: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Derrick Rossi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Tap Fan #1",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Derrick Rossi interpreta Tap Fan #1: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Justin Miles",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Tap Fan #2",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Justin Miles interpreta Tap Fan #2: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Rajeev Jacob",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Hari Krishna Type Assistant",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Rajeev Jacob interpreta Hari Krishna Type Assistant: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Dorothea Taylor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Grandma Drummer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Dorothea Taylor interpreta Grandma Drummer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Matthew Ramsey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Blue Man Drummer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Matthew Ramsey interpreta Blue Man Drummer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Andrew McLean",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Tabla Drummer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Andrew McLean interpreta Tabla Drummer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Steve Hickman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Hambone Drummer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Steve Hickman interpreta Hambone Drummer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Quintron",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "One-man-band Drummer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Quintron interpreta One-man-band Drummer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Scott Allen Perry",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Throwback Drummer #2",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Scott Allen Perry interpreta Throwback Drummer #2: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Thom Lowry",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Music Tech 1",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Thom Lowry interpreta Music Tech 1: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Soroush Rajabnik",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Music Tech 2",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Soroush Rajabnik interpreta Music Tech 2: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Greta Pasqua",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Music PA",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Greta Pasqua interpreta Music PA: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Little Freddie King",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Little Freddie King interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Ryan Farris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Podcast Narrator (voice)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ryan Farris interpreta Podcast Narrator (voice): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Bart St. Germain",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Sound Recordist",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Bart St. Germain interpreta Sound Recordist: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Judith Owen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Podcast Voice",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Judith Owen interpreta Podcast Voice: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Henry Diltz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/975225/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Henry Diltz interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Garth Brooks",
+				"role": "performer"
+			},
+			{
+				"name": "Trisha Yearwood",
+				"role": "performer"
+			},
+			{
+				"name": "June Chadwick",
+				"role": "performer"
+			},
+			{
+				"name": "Fran Drescher",
+				"role": "performer"
+			},
+			{
+				"name": "Griffin Matthews",
+				"role": "performer"
+			},
+			{
+				"name": "Paul Shaffer",
+				"role": "performer"
+			},
+			{
+				"name": "Elton John",
+				"role": "performer"
+			},
+			{
+				"name": "Paul McCartney",
+				"role": "performer"
+			},
+			{
+				"name": "David Furnish",
+				"role": "performer"
+			},
+			{
+				"name": "Chad Smith",
+				"role": "performer"
+			},
+			{
+				"name": "Chris Addison",
+				"role": "performer"
+			},
+			{
+				"name": "Kathreen Khavari",
+				"role": "performer"
+			},
+			{
+				"name": "Lars Ulrich",
+				"role": "performer"
+			},
+			{
+				"name": "Questlove",
+				"role": "performer"
+			},
+			{
+				"name": "Nina Conti",
+				"role": "performer"
+			},
+			{
+				"name": "Robert Walker Branchaud",
+				"role": "performer"
+			},
+			{
+				"name": "Annie Gordenier",
+				"role": "performer"
+			},
+			{
+				"name": "Brad Williams",
+				"role": "performer"
+			},
+			{
+				"name": "Jason 'Wee Man' Acuña",
+				"role": "performer"
+			},
+			{
+				"name": "John Michael Higgins",
+				"role": "performer"
+			},
+			{
+				"name": "Josh Ford",
+				"role": "performer"
+			},
+			{
+				"name": "Don Lake",
+				"role": "performer"
+			},
+			{
+				"name": "Derrick Rossi",
+				"role": "performer"
+			},
+			{
+				"name": "Justin Miles",
+				"role": "performer"
+			},
+			{
+				"name": "Rajeev Jacob",
+				"role": "performer"
+			},
+			{
+				"name": "Dorothea Taylor",
+				"role": "performer"
+			},
+			{
+				"name": "Matthew Ramsey",
+				"role": "performer"
+			},
+			{
+				"name": "Andrew McLean",
+				"role": "performer"
+			},
+			{
+				"name": "Steve Hickman",
+				"role": "performer"
+			},
+			{
+				"name": "Quintron",
+				"role": "performer"
+			},
+			{
+				"name": "Scott Allen Perry",
+				"role": "performer"
+			},
+			{
+				"name": "Thom Lowry",
+				"role": "performer"
+			},
+			{
+				"name": "Soroush Rajabnik",
+				"role": "performer"
+			},
+			{
+				"name": "Greta Pasqua",
+				"role": "performer"
+			},
+			{
+				"name": "Little Freddie King",
+				"role": "performer"
+			},
+			{
+				"name": "Ryan Farris",
+				"role": "performer"
+			},
+			{
+				"name": "Bart St. Germain",
+				"role": "performer"
+			},
+			{
+				"name": "Judith Owen",
+				"role": "performer"
+			},
+			{
+				"name": "Henry Diltz",
+				"role": "performer"
+			}
+		]
+	}
+}

@@ -1,0 +1,110 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "snoopy-presenta-12-dias-para-navidad-2026",
+	"title": "Snoopy presenta: 12 días para Navidad",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1780407/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 3
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/snoopy-presenta-12-dias-para-navidad",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt47791876/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Matt Ferguson",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1780407/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2732436",
+					"fact": "El perfil público identifica a Matt Ferguson; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/snoopy-presenta-12-dias-para-navidad",
+					"fact": "Identidad cotejada con el crédito del título Snoopy presenta: 12 días para Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.vanas.ca/es/instructores",
+					"fact": "Fuente atribuible que identifica el retrato de Matt Ferguson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://www.vanas.ca/images/teachers/matt-ferguson-vanas.webp",
+				"visuallyVerified": true,
+				"localPath": "/people/matt-ferguson-tmdb-2732436.jpg"
+			}
+		},
+		{
+			"name": "Terry McGurrin",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1780407/cast",
+			"screenRole": "Snoopy (voice)",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1232771",
+					"fact": "El perfil público identifica a Terry McGurrin; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/snoopy-presenta-12-dias-para-navidad",
+					"fact": "Identidad cotejada con el crédito del título Snoopy presenta: 12 días para Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1232771",
+					"fact": "Fuente atribuible que identifica el retrato de Terry McGurrin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aruw7oreQdYRzyT2oTFWJUVgO3r.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/terry-mcgurrin-tmdb-1232771.jpg"
+			}
+		},
+		{
+			"name": "Rob Tinkler",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1780407/cast",
+			"screenRole": "Woodstock (voice)",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/118814",
+					"fact": "El perfil público identifica a Rob Tinkler; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/snoopy-presenta-12-dias-para-navidad",
+					"fact": "Identidad cotejada con el crédito del título Snoopy presenta: 12 días para Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/i08td9dgUt51SEeMUbPgHHkbGbt.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/rob-tinkler-nm0863999.jpg"
+			}
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": []
+	}
+}

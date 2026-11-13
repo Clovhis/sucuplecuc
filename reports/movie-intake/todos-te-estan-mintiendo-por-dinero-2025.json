@@ -1,0 +1,295 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "todos-te-estan-mintiendo-por-dinero-2025",
+	"title": "Todos te están mintiendo por dinero",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1472844/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 13
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/everyone-is-lying-to-you-for-money",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt36733913/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Ben McKenzie",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17245",
+					"fact": "El perfil público identifica a Ben McKenzie; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/everyone-is-lying-to-you-for-money",
+					"fact": "Identidad cotejada con el crédito del título Todos te están mintiendo por dinero, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/17245",
+					"fact": "Fuente atribuible que identifica el retrato de Ben McKenzie."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2jlwhOXKakL6gk365u4gPkTtHHi.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ben-mckenzie-tmdb-17245.jpg"
+			}
+		},
+		{
+			"name": "Ben McKenzie",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self - Cryptocurrency Critic, Actor and Author",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17245",
+					"fact": "El perfil público identifica a Ben McKenzie; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/everyone-is-lying-to-you-for-money",
+					"fact": "Identidad cotejada con el crédito del título Todos te están mintiendo por dinero, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/17245",
+					"fact": "Fuente atribuible que identifica el retrato de Ben McKenzie."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2jlwhOXKakL6gk365u4gPkTtHHi.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ben-mckenzie-tmdb-17245.jpg"
+			}
+		},
+		{
+			"name": "Morena Baccarin",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self - Ben's Wife",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/54882",
+					"fact": "El perfil público identifica a Morena Baccarin; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/everyone-is-lying-to-you-for-money",
+					"fact": "Identidad cotejada con el crédito del título Todos te están mintiendo por dinero, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4gyHyg6FJ1oFczOm5pmMkdEEo2J.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/morena-baccarin-nm1072555.jpg"
+			}
+		},
+		{
+			"name": "Sam Bankman-Fried",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self - CEO, FTX",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4459163",
+					"fact": "El perfil público identifica a Sam Bankman-Fried; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/everyone-is-lying-to-you-for-money",
+					"fact": "Identidad cotejada con el crédito del título Todos te están mintiendo por dinero, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Sam_Bankman-Fried",
+					"fact": "Fuente atribuible que identifica el retrato de Sam Bankman-Fried."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Sam_Bankman-Fried_%28cropped%29.png/960px-Sam_Bankman-Fried_%28cropped%29.png?utm_source=en.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail",
+				"visuallyVerified": true,
+				"localPath": "/people/sam-bankman-fried-tmdb-4459163.jpg"
+			}
+		},
+		{
+			"name": "Alex Mashinsky",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self - CEO, Celsius Network",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5405228",
+					"fact": "El perfil público identifica a Alex Mashinsky; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/everyone-is-lying-to-you-for-money",
+					"fact": "Identidad cotejada con el crédito del título Todos te están mintiendo por dinero, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/2021_-_Centre_Stage_PO1_0057_%2851654289843%29.jpg/1280px-2021_-_Centre_Stage_PO1_0057_%2851654289843%29.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail",
+				"visuallyVerified": true,
+				"localPath": "/people/alex-mashinsky-tmdb-5405228.jpg"
+			}
+		},
+		{
+			"name": "Gerard Butler",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self - Very Famous Actor",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17276",
+					"fact": "El perfil público identifica a Gerard Butler; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/everyone-is-lying-to-you-for-money",
+					"fact": "Identidad cotejada con el crédito del título Todos te están mintiendo por dinero, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/i54XoxYieuff2w6MwyfwVUBvmR0.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/gerard-butler-nm0124930.jpg"
+			}
+		},
+		{
+			"name": "Scott \"The Scaffolder\"",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Scott \"The Scaffolder\" interpreta Self: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Giorgio Angelini",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2151642",
+					"fact": "El perfil público identifica a Giorgio Angelini; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/everyone-is-lying-to-you-for-money",
+					"fact": "Identidad cotejada con el crédito del título Todos te están mintiendo por dinero, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2151642",
+					"fact": "Fuente atribuible que identifica el retrato de Giorgio Angelini."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7XbfsfnbWGt5XAh0tguJhSTnXVY.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/giorgio-angelini-tmdb-2151642.jpg"
+			}
+		},
+		{
+			"name": "Alex Gladstein",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self - Chief Strategy Officer, Human Rights Foundation",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Alex Gladstein interpreta Self - Chief Strategy Officer, Human Rights Foundation: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Corbin Keegan",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self - 1st Resident of Bitcoin City",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Corbin Keegan interpreta Self - 1st Resident of Bitcoin City: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Wilfredo Claros",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self - Fisher",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Wilfredo Claros interpreta Self - Fisher: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Dan Davies",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self - Author, Lying for Money",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Dan Davies interpreta Self - Author, Lying for Money: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Nayib Bukele",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1472844/cast",
+			"screenRole": "Self (archive footage)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Nayib Bukele interpreta Self (archive footage): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Scott \"The Scaffolder\"",
+				"role": "performer"
+			},
+			{
+				"name": "Alex Gladstein",
+				"role": "performer"
+			},
+			{
+				"name": "Corbin Keegan",
+				"role": "performer"
+			},
+			{
+				"name": "Wilfredo Claros",
+				"role": "performer"
+			},
+			{
+				"name": "Dan Davies",
+				"role": "performer"
+			},
+			{
+				"name": "Nayib Bukele",
+				"role": "performer"
+			}
+		]
+	}
+}

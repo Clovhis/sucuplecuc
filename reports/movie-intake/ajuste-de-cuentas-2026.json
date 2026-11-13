@@ -1,0 +1,455 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "ajuste-de-cuentas-2026",
+	"title": "Ajuste de Cuentas",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1449400/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 22
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt34706535/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Elliott Montello",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3486791",
+					"fact": "El perfil público identifica a Elliott Montello; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+					"fact": "Identidad cotejada con el crédito del título Ajuste de Cuentas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://entertainmentpost.com/elliott-montello-drives-change-in-modern-british-filmmaking/",
+					"fact": "Fuente atribuible que identifica el retrato de Elliott Montello."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://entertainmentpost.com/wp-content/uploads/2025/07/image2.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/elliott-montello-tmdb-3486791.jpg"
+			}
+		},
+		{
+			"name": "Scott Adkins",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Devon",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/78110",
+					"fact": "El perfil público identifica a Scott Adkins; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+					"fact": "Identidad cotejada con el crédito del título Ajuste de Cuentas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Scott%20Adkins%20(53319300983).jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/scott-adkins-nm0012078.jpg"
+			}
+		},
+		{
+			"name": "Vinnie Jones",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Trent",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/980",
+					"fact": "El perfil público identifica a Vinnie Jones; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+					"fact": "Identidad cotejada con el crédito del título Ajuste de Cuentas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/980",
+					"fact": "Fuente atribuible que identifica el retrato de Vinnie Jones."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tkYWG9gY2QpoBfOh4OWNz8yQfsw.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/vinnie-jones-tmdb-980.jpg"
+			}
+		},
+		{
+			"name": "Nicole Deon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Kimber",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4124102",
+					"fact": "El perfil público identifica a Nicole Deon; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+					"fact": "Identidad cotejada con el crédito del título Ajuste de Cuentas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/4124102",
+					"fact": "Fuente atribuible que identifica el retrato de Nicole Deon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1Vf2xA9PqPjuFYREBODOiEkGVAT.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/nicole-deon-tmdb-4124102.jpg"
+			}
+		},
+		{
+			"name": "Kris Johnson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Jackson",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1211164",
+					"fact": "El perfil público identifica a Kris Johnson; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+					"fact": "Identidad cotejada con el crédito del título Ajuste de Cuentas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1211164",
+					"fact": "Fuente atribuible que identifica el retrato de Kris Johnson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fJnip1lhIU0NErmJVBTLBcNHNNq.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/kris-johnson-tmdb-1211164.jpg"
+			}
+		},
+		{
+			"name": "Dean Gaffney",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Wilmott",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1220460",
+					"fact": "El perfil público identifica a Dean Gaffney; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+					"fact": "Identidad cotejada con el crédito del título Ajuste de Cuentas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1220460",
+					"fact": "Fuente atribuible que identifica el retrato de Dean Gaffney."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hrUsqrAHe57pYTFOx6NMPsU3Qmc.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/dean-gaffney-tmdb-1220460.jpg"
+			}
+		},
+		{
+			"name": "Adam Deacon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Kyle",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/78064",
+					"fact": "El perfil público identifica a Adam Deacon; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+					"fact": "Identidad cotejada con el crédito del título Ajuste de Cuentas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/78064",
+					"fact": "Fuente atribuible que identifica el retrato de Adam Deacon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mczRWiQEkwd3nI0lywVALpaZyhp.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/adam-deacon-tmdb-78064.jpg"
+			}
+		},
+		{
+			"name": "Jordan Long",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "George",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/199529",
+					"fact": "El perfil público identifica a Jordan Long; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+					"fact": "Identidad cotejada con el crédito del título Ajuste de Cuentas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/199529",
+					"fact": "Fuente atribuible que identifica el retrato de Jordan Long."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ew39mDa4vhhylYnRg5nC8USOwTf.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jordan-long-tmdb-199529.jpg"
+			}
+		},
+		{
+			"name": "Mark Strange",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Bishop",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/81671",
+					"fact": "El perfil público identifica a Mark Strange; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/ajuste-de-cuentas-2026",
+					"fact": "Identidad cotejada con el crédito del título Ajuste de Cuentas, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/81671",
+					"fact": "Fuente atribuible que identifica el retrato de Mark Strange."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1oYGZnDhIHpJHonuCCwKSeTN1mR.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/mark-strange-tmdb-81671.jpg"
+			}
+		},
+		{
+			"name": "Gavin Fraser",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Toby",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Gavin Fraser interpreta Toby: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Kirsty J. Curtis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Veronica",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Kirsty J. Curtis interpreta Veronica: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Sarina Taylor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Briana",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Sarina Taylor interpreta Briana: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Susan Twist",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Rebecca",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Susan Twist interpreta Rebecca: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Helen Austin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Siobhan",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Helen Austin interpreta Siobhan: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Raffaello Degruttola",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Haime",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Raffaello Degruttola interpreta Haime: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Hélder Fernandes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Foss",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Hélder Fernandes interpreta Foss: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Miroslav Marinov",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Willmott's Henchman",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Miroslav Marinov interpreta Willmott's Henchman: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lockhart Ogilvie",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Goon",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lockhart Ogilvie interpreta Goon: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Elliott Redding",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Police Officer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Elliott Redding interpreta Police Officer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Thomas Semeraro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Thomas Semeraro: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Stu Small",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Dartmoor",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Stu Small interpreta Dartmoor: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Phillip Ray Tommy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1449400/cast",
+			"screenRole": "Arthur",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Phillip Ray Tommy interpreta Arthur: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Gavin Fraser",
+				"role": "performer"
+			},
+			{
+				"name": "Kirsty J. Curtis",
+				"role": "performer"
+			},
+			{
+				"name": "Sarina Taylor",
+				"role": "performer"
+			},
+			{
+				"name": "Susan Twist",
+				"role": "performer"
+			},
+			{
+				"name": "Helen Austin",
+				"role": "performer"
+			},
+			{
+				"name": "Raffaello Degruttola",
+				"role": "performer"
+			},
+			{
+				"name": "Hélder Fernandes",
+				"role": "performer"
+			},
+			{
+				"name": "Miroslav Marinov",
+				"role": "performer"
+			},
+			{
+				"name": "Lockhart Ogilvie",
+				"role": "performer"
+			},
+			{
+				"name": "Elliott Redding",
+				"role": "performer"
+			},
+			{
+				"name": "Thomas Semeraro",
+				"role": "performer"
+			},
+			{
+				"name": "Stu Small",
+				"role": "performer"
+			},
+			{
+				"name": "Phillip Ray Tommy",
+				"role": "performer"
+			}
+		]
+	}
+}

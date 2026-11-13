@@ -1,0 +1,1729 @@
+[
+  {
+    "i": 0,
+    "title": "Un buen abogado",
+    "imdbId": "tt39453578",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/the_good_lawyer_2026",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/the-good-lawyer",
+    "metric": "audience",
+    "value": 6.4,
+    "scale": 10,
+    "voteCount": 447,
+    "normalization": "round(6.4) = 6",
+    "normalized": 6,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 6
+  },
+  {
+    "i": 1,
+    "title": "Turbulencias",
+    "imdbId": "tt33009027",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/turbulence",
+      "status": 200,
+      "matchedName": "Turbulence",
+      "audience": {
+        "bandedRatingCount": "0 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/turbulence",
+    "metric": "audience",
+    "value": 4.9,
+    "scale": 10,
+    "voteCount": 3242,
+    "normalization": "round(4.9) = 5",
+    "normalized": 5,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 5
+  },
+  {
+    "i": 2,
+    "title": "Prime Crime: A True Story",
+    "imdbId": "tt15181326",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/dead_mans_wire",
+      "status": 200,
+      "matchedName": "Dead Man's Wire",
+      "audience": {
+        "averageRating": "3.9",
+        "bandedRatingCount": "250+ Verified Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/dead_mans_wire/reviews/verified-audience",
+        "scorePercent": "77%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/dead_mans_wire",
+    "metric": "audience",
+    "value": 77,
+    "scale": 100,
+    "voteCount": "250+ Verified Ratings",
+    "normalization": "round(77/10) = 8",
+    "normalized": 8,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 3,
+    "title": "Girls Like Girls",
+    "imdbId": "tt32432654",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/girls_like_girls",
+      "status": 200,
+      "matchedName": "Girls Like Girls",
+      "audience": {
+        "averageRating": "4.4",
+        "bandedRatingCount": "250+ Verified Ratings",
+        "certified": true,
+        "reviewsPageUrl": "/m/girls_like_girls/reviews/verified-audience",
+        "scorePercent": "87%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/girls_like_girls",
+    "metric": "audience",
+    "value": 87,
+    "scale": 100,
+    "voteCount": "250+ Verified Ratings",
+    "normalization": "round(87/10) = 9",
+    "normalized": 9,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 4,
+    "title": "La Patrulla Canina: La dino película",
+    "imdbId": "tt29356163",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/paw_patrol_the_dino_movie",
+      "status": 200,
+      "matchedName": "PAW Patrol: The Dino Movie",
+      "audience": {
+        "averageRating": "4.7",
+        "bandedRatingCount": "500+ Verified Ratings",
+        "certified": true,
+        "reviewsPageUrl": "/m/paw_patrol_the_dino_movie/reviews/verified-audience",
+        "scorePercent": "94%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/paw_patrol_the_dino_movie",
+    "metric": "audience",
+    "value": 94,
+    "scale": 100,
+    "voteCount": "500+ Verified Ratings",
+    "normalization": "round(94/10) = 9",
+    "normalized": 9,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 5,
+    "title": "Sangre de Mi Sangre",
+    "imdbId": "tt33319714",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/like_father_like_son",
+      "status": 200,
+      "matchedName": "Like Father, Like Son",
+      "audience": {
+        "bandedRatingCount": "0 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/like-father-like-son",
+    "metric": "audience",
+    "value": 3.9,
+    "scale": 10,
+    "voteCount": 148,
+    "normalization": "round(3.9) = 4",
+    "normalized": 4,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 4
+  },
+  {
+    "i": 7,
+    "title": "Portrait of an Artist: Stephen Curry",
+    "imdbId": "tt44840680",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/portrait_of_an_artist_stephen_curry",
+      "status": 200,
+      "matchedName": "Portrait of an Artist: Stephen Curry",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/portrait_of_an_artist_stephen_curry/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/portrait-of-an-artist-stephen-curry",
+    "metric": "audience",
+    "value": 6.5,
+    "scale": 10,
+    "voteCount": 60,
+    "normalization": "round(6.5) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 8,
+    "title": "A Fighting Legacy",
+    "imdbId": "tt38593367",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/a_fighting_legacy",
+      "status": 200,
+      "matchedName": "A Fighting Legacy",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/a-fighting-legacy",
+    "metric": "audience",
+    "value": 9.4,
+    "scale": 10,
+    "voteCount": 104,
+    "normalization": "round(9.4) = 9",
+    "normalized": 9,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 9,
+    "title": "Beyond Disclosure: The Corey Goode Files",
+    "imdbId": "tt37408540",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/beyond_disclosure_the_corey_goode_files",
+      "status": 200,
+      "matchedName": "Beyond Disclosure: The Corey Goode Files",
+      "audience": {
+        "bandedRatingCount": "0 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/beyond-disclosure-the-corey-goode-files",
+    "metric": "audience",
+    "value": 4.1,
+    "scale": 10,
+    "voteCount": 128,
+    "normalization": "round(4.1) = 4",
+    "normalized": 4,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 4
+  },
+  {
+    "i": 10,
+    "title": "Drive Back Home",
+    "imdbId": "tt26774341",
+    "year": 2024,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/drive_back_home",
+      "status": 200,
+      "matchedName": "Drive Back Home",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/drive_back_home/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/drive-back-home",
+    "metric": "audience",
+    "value": 6.9,
+    "scale": 10,
+    "voteCount": 497,
+    "normalization": "round(6.9) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 11,
+    "title": "Ajuste de Cuentas",
+    "imdbId": "tt34706535",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/reckless_2026",
+      "status": 200,
+      "matchedName": "Reckless (2026)",
+      "audience": {
+        "averageRating": "4.6",
+        "bandedRatingCount": "50+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/reckless_2026/reviews/all-audience",
+        "scorePercent": "91%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/reckless_2026",
+    "metric": "audience",
+    "value": 91,
+    "scale": 100,
+    "voteCount": "50+ Ratings",
+    "normalization": "round(91/10) = 9",
+    "normalized": 9,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 12,
+    "title": "Universo de diseño",
+    "imdbId": "tt20101594",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/universe_designed",
+      "status": 200,
+      "matchedName": "Universe Designed",
+      "audience": {
+        "bandedRatingCount": "0 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/universo-de-diseno",
+    "metric": "audience",
+    "value": 5.9,
+    "scale": 10,
+    "voteCount": 212,
+    "normalization": "round(5.9) = 6",
+    "normalized": 6,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 6
+  },
+  {
+    "i": 13,
+    "title": "Janelle James: How Romantic",
+    "imdbId": "tt49625485",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/janelle_james_how_romantic",
+      "status": 200,
+      "matchedName": "Janelle James: How Romantic",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/janelle_james_how_romantic/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/janelle-james-how-romantic",
+    "metric": "audience",
+    "value": 6.6,
+    "scale": 10,
+    "voteCount": 50,
+    "normalization": "round(6.6) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 14,
+    "title": "Casa Grande",
+    "imdbId": "tt35887288",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/casa_grande",
+      "status": 200,
+      "matchedName": "Casa Grande",
+      "audience": {
+        "averageRating": "3.6",
+        "bandedRatingCount": "100+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/casa_grande/reviews/all-audience",
+        "scorePercent": "69%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/casa_grande",
+    "metric": "audience",
+    "value": 69,
+    "scale": 100,
+    "voteCount": "100+ Ratings",
+    "normalization": "round(69/10) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 15,
+    "title": "Borrón y Vida Nueva",
+    "imdbId": null,
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/borr_n_y_vida_nueva",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.themoviedb.org/movie/1584628",
+    "metric": "audience",
+    "value": 8.3,
+    "scale": 10,
+    "voteCount": 19,
+    "normalization": "round(8.3) = 8",
+    "normalized": 8,
+    "confidenceCeiling": "Audiencia TMDB API oficial con conteo; muestra inicial o pequeña, máximo 8.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 16,
+    "title": "Crazy Texas",
+    "imdbId": null,
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/crazy_texas",
+      "status": 200,
+      "matchedName": "Crazy Texas",
+      "audience": {
+        "averageRating": "4.4",
+        "bandedRatingCount": "50+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/crazy_texas/reviews/all-audience",
+        "scorePercent": "92%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/crazy_texas",
+    "metric": "audience",
+    "value": 92,
+    "scale": 100,
+    "voteCount": "50+ Ratings",
+    "normalization": "round(92/10) = 9",
+    "normalized": 9,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 19,
+    "title": "En el corazón de la bestia",
+    "imdbId": "tt7526136",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/heart_of_the_beast",
+      "status": 200,
+      "matchedName": "Heart of the Beast",
+      "audience": {
+        "averageRating": "4.6",
+        "bandedRatingCount": "2,500+ Verified Ratings",
+        "certified": true,
+        "reviewsPageUrl": "/m/heart_of_the_beast/reviews/verified-audience",
+        "scorePercent": "94%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/heart_of_the_beast",
+    "metric": "audience",
+    "value": 94,
+    "scale": 100,
+    "voteCount": "2,500+ Verified Ratings",
+    "normalization": "round(94/10) = 9",
+    "normalized": 9,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 20,
+    "title": "Avedon",
+    "imdbId": "tt41593493",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/avedon",
+      "status": 200,
+      "matchedName": "Avedon",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/avedon",
+    "metric": "audience",
+    "value": 7.7,
+    "scale": 10,
+    "voteCount": 91,
+    "normalization": "round(7.7) = 8",
+    "normalized": 8,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 21,
+    "title": "Oro Nero",
+    "imdbId": "tt21220878",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/oro_negro",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/oro-nero",
+    "metric": "audience",
+    "value": 4.6,
+    "scale": 10,
+    "voteCount": 48,
+    "normalization": "round(4.6) = 5",
+    "normalized": 5,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 5
+  },
+  {
+    "i": 22,
+    "title": "Psycho Therapy",
+    "imdbId": "tt17492148",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/psycho_therapy_the_shallow_tale_of_a_writer_who_decided_to_write_about_a_serial_killer",
+      "status": 200,
+      "audience": {
+        "averageRating": "3.3",
+        "bandedRatingCount": "50+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/psycho_therapy_the_shallow_tale_of_a_writer_who_decided_to_write_about_a_serial_killer/reviews/all-audience",
+        "scorePercent": "58%",
+        "sentiment": "NEGATIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/psycho_therapy_the_shallow_tale_of_a_writer_who_decided_to_write_about_a_serial_killer",
+    "metric": "audience",
+    "value": 58,
+    "scale": 100,
+    "voteCount": "50+ Ratings",
+    "normalization": "round(58/10) = 6",
+    "normalized": 6,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 6
+  },
+  {
+    "i": 23,
+    "title": "Góspel de Navidad",
+    "imdbId": "tt38420997",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/tyler_perrys_the_gospel_of_christmas",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/tyler-perrys-the-gospel-of-christmas",
+    "metric": "audience",
+    "value": 6.4,
+    "scale": 10,
+    "voteCount": 83,
+    "normalization": "round(6.4) = 6",
+    "normalized": 6,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 6
+  },
+  {
+    "i": 24,
+    "title": "Suzane von Richthofen: Lo que el tiempo no borra",
+    "imdbId": "tt50817930",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/suzane_von_richthofen_o_que_o_tempo_n_o_apaga",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/suzane-von-richthofen-lo-que-el-tiempo-no-borra",
+    "metric": "audience",
+    "value": 4.8,
+    "scale": 10,
+    "voteCount": 37,
+    "normalization": "round(4.8) = 5",
+    "normalized": 5,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 5
+  },
+  {
+    "i": 25,
+    "title": "Kijsada Paradise",
+    "imdbId": null,
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.themoviedb.org/movie/1419036",
+    "metric": "audience",
+    "value": 4.2,
+    "scale": 10,
+    "voteCount": 4,
+    "normalization": "round(4.2) = 4",
+    "normalized": 4,
+    "confidenceCeiling": "Audiencia TMDB API oficial con conteo; muestra inicial o pequeña, máximo 8.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 4
+  },
+  {
+    "i": 26,
+    "title": "Echo Point",
+    "imdbId": null,
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/echo_point",
+      "status": 200,
+      "matchedName": "Echo Point",
+      "audience": {
+        "bandedRatingCount": "0 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "metric": "audience",
+    "value": null,
+    "scale": 10,
+    "voteCount": null,
+    "normalization": "Sin puntuación verificable",
+    "normalized": null,
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": null
+  },
+  {
+    "i": 27,
+    "title": "Local Area Network",
+    "imdbId": "tt18949836",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/local_area_network",
+      "status": 200,
+      "matchedName": "Local Area Network",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/local_area_network/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/local-area-network",
+    "metric": "audience",
+    "value": 8.1,
+    "scale": 10,
+    "voteCount": 26,
+    "normalization": "round(8.1) = 8",
+    "normalized": 8,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 29,
+    "title": "Los Archivos Perdidos Del Dr. Romanoski",
+    "imdbId": "tt38607229",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/paranor_as_los_archivos_perdidos_del_dr_romanoski",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/los-archivos-perdidos-del-dr-romanoski",
+    "metric": "audience",
+    "value": 8.3,
+    "scale": 10,
+    "voteCount": 21,
+    "normalization": "round(8.3) = 8",
+    "normalized": 8,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 30,
+    "title": "My Friend Sandro",
+    "imdbId": "tt44535857",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/meu_amigo_sandro",
+      "status": 404,
+      "audience": null
+    },
+    "metric": "audience",
+    "value": null,
+    "scale": 10,
+    "voteCount": null,
+    "normalization": "Sin puntuación verificable",
+    "normalized": null,
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": null
+  },
+  {
+    "i": 31,
+    "title": "Lonely People - Nunca Confíes en Nadie",
+    "imdbId": "tt39308470",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/lonely_people_nunca_confie_em_ningu_m",
+      "status": 404,
+      "audience": null
+    },
+    "metric": "audience",
+    "value": null,
+    "scale": 10,
+    "voteCount": null,
+    "normalization": "Sin puntuación verificable",
+    "normalized": null,
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": null
+  },
+  {
+    "i": 32,
+    "title": "Coyote contra Acme",
+    "imdbId": "tt1756855",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/coyote_vs_acme",
+      "status": 200,
+      "matchedName": "Coyote vs. Acme",
+      "audience": {
+        "averageRating": "4.5",
+        "bandedRatingCount": "2,500+ Verified Ratings",
+        "certified": true,
+        "reviewsPageUrl": "/m/coyote_vs_acme/reviews/verified-audience",
+        "scorePercent": "94%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/coyote_vs_acme",
+    "metric": "audience",
+    "value": 94,
+    "scale": 100,
+    "voteCount": "2,500+ Verified Ratings",
+    "normalization": "round(94/10) = 9",
+    "normalized": 9,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 33,
+    "title": "Jackass: la última y nos vamos",
+    "imdbId": "tt39316472",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/jackass_best_and_last",
+      "status": 200,
+      "matchedName": "Jackass: Best and Last",
+      "audience": {
+        "averageRating": "4.2",
+        "bandedRatingCount": "1,000+ Verified Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/jackass_best_and_last/reviews/verified-audience",
+        "scorePercent": "81%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/jackass_best_and_last",
+    "metric": "audience",
+    "value": 81,
+    "scale": 100,
+    "voteCount": "1,000+ Verified Ratings",
+    "normalization": "round(81/10) = 8",
+    "normalized": 8,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 34,
+    "title": "Invocación",
+    "imdbId": "tt33270263",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/the_surrender",
+      "status": 200,
+      "matchedName": "The Surrender",
+      "audience": {
+        "averageRating": "3.1",
+        "bandedRatingCount": "100+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/the_surrender/reviews/all-audience",
+        "scorePercent": "46%",
+        "sentiment": "NEGATIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/the_surrender",
+    "metric": "audience",
+    "value": 46,
+    "scale": 100,
+    "voteCount": "100+ Ratings",
+    "normalization": "round(46/10) = 5",
+    "normalized": 5,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 5
+  },
+  {
+    "i": 35,
+    "title": "Allen",
+    "imdbId": "tt37675123",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/allen_2026",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.themoviedb.org/movie/1518204",
+    "metric": "audience",
+    "value": 6.4,
+    "scale": 10,
+    "voteCount": 7,
+    "normalization": "round(6.4) = 6",
+    "normalized": 6,
+    "confidenceCeiling": "Audiencia TMDB API oficial con conteo; muestra inicial o pequeña, máximo 8.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 6
+  },
+  {
+    "i": 36,
+    "title": "No nos rendimos",
+    "imdbId": "tt39370926",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/serangan_balik",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.themoviedb.org/movie/1616687",
+    "metric": "audience",
+    "value": 6.9,
+    "scale": 10,
+    "voteCount": 8,
+    "normalization": "round(6.9) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "Audiencia TMDB API oficial con conteo; muestra inicial o pequeña, máximo 8.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 37,
+    "title": "El intercambio navideño",
+    "imdbId": "tt39313557",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/the_christmas_switch_2026",
+      "status": 200,
+      "matchedName": "The Christmas Switch (2026)",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.themoviedb.org/movie/1757174",
+    "metric": "audience",
+    "value": 7.4,
+    "scale": 10,
+    "voteCount": 8,
+    "normalization": "round(7.4) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "Audiencia TMDB API oficial con conteo; muestra inicial o pequeña, máximo 8.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 38,
+    "title": "Ne Zha 2",
+    "imdbId": "tt34956443",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/ne_zha_2",
+      "status": 200,
+      "matchedName": "Ne Zha II",
+      "audience": {
+        "averageRating": "4.9",
+        "bandedRatingCount": "1,000+ Verified Ratings",
+        "certified": true,
+        "reviewsPageUrl": "/m/ne_zha_ii/reviews/verified-audience",
+        "scorePercent": "98%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/ne_zha_2",
+    "metric": "audience",
+    "value": 98,
+    "scale": 100,
+    "voteCount": "1,000+ Verified Ratings",
+    "normalization": "round(98/10) = 10",
+    "normalized": 10,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 40,
+    "title": "La desaparición de Josef Mengele",
+    "imdbId": "tt22852560",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/the_disappearance_of_josef_mengele",
+      "status": 200,
+      "matchedName": "The Disappearance of Josef Mengele",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/the_disappearance_of_josef_mengele/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/la-desaparicion-de-josef-mengele",
+    "metric": "audience",
+    "value": 6.9,
+    "scale": 10,
+    "voteCount": 2172,
+    "normalization": "round(6.9) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 41,
+    "title": "El vestido",
+    "imdbId": "tt36822366",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/el_vestido",
+      "status": 200,
+      "matchedName": "El vestido",
+      "audience": {
+        "bandedRatingCount": "0 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/el-vestido",
+    "metric": "audience",
+    "value": 4.3,
+    "scale": 10,
+    "voteCount": 193,
+    "normalization": "round(4.3) = 4",
+    "normalized": 4,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 4
+  },
+  {
+    "i": 42,
+    "title": "Un Toque de Otro Mundo",
+    "imdbId": "tt34967068",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/touch_me_2025",
+      "status": 200,
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/touch_me_2025/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/un-toque-de-otro-mundo",
+    "metric": "audience",
+    "value": 5.1,
+    "scale": 10,
+    "voteCount": 1740,
+    "normalization": "round(5.1) = 5",
+    "normalized": 5,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 5
+  },
+  {
+    "i": 43,
+    "title": "Vibe",
+    "imdbId": "tt40856286",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/vibe",
+    "metric": "audience",
+    "value": 7.1,
+    "scale": 10,
+    "voteCount": 1524,
+    "normalization": "round(7.1) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 44,
+    "title": "Relajadas y muy peligrosas",
+    "imdbId": "tt33305867",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/spa_weekend",
+      "status": 200,
+      "matchedName": "Spa Weekend",
+      "audience": {
+        "averageRating": "3.9",
+        "bandedRatingCount": "250+ Verified Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/spa_weekend/reviews/verified-audience",
+        "scorePercent": "74%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/spa_weekend",
+    "metric": "audience",
+    "value": 74,
+    "scale": 100,
+    "voteCount": "250+ Verified Ratings",
+    "normalization": "round(74/10) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 45,
+    "title": "Blue Film",
+    "imdbId": "tt34915693",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/blue_film",
+      "status": 200,
+      "matchedName": "Blue Film",
+      "audience": {
+        "averageRating": "3.4",
+        "bandedRatingCount": "100+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/blue_film/reviews/all-audience",
+        "scorePercent": "67%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/blue_film",
+    "metric": "audience",
+    "value": 67,
+    "scale": 100,
+    "voteCount": "100+ Ratings",
+    "normalization": "round(67/10) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 46,
+    "title": "Good Night, and Good Luck",
+    "imdbId": "tt13286652",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/good_night_and_good_luck_2025",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+    "metric": "audience",
+    "value": 7.9,
+    "scale": 10,
+    "voteCount": 661,
+    "normalization": "round(7.9) = 8",
+    "normalized": 8,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 47,
+    "title": "Ladrones con clase 2",
+    "imdbId": "tt27829510",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/high_rollers",
+      "status": 200,
+      "matchedName": "High Rollers",
+      "audience": {
+        "averageRating": "3.9",
+        "bandedRatingCount": "250+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/high_rollers/reviews/all-audience",
+        "scorePercent": "73%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/high_rollers",
+    "metric": "audience",
+    "value": 73,
+    "scale": 100,
+    "voteCount": "250+ Ratings",
+    "normalization": "round(73/10) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 48,
+    "title": "El Heladero, Dulce Sabor A Muerte",
+    "imdbId": "tt36893729",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/ice_cream_man",
+      "status": 200,
+      "matchedName": "Ice Cream Man",
+      "audience": {
+        "averageRating": "3",
+        "bandedRatingCount": "2,500+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/ice_cream_man/reviews/all-audience",
+        "scorePercent": "44%",
+        "sentiment": "NEGATIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/ice_cream_man",
+    "metric": "audience",
+    "value": 44,
+    "scale": 100,
+    "voteCount": "2,500+ Ratings",
+    "normalization": "round(44/10) = 4",
+    "normalized": 4,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 4
+  },
+  {
+    "i": 49,
+    "title": "La muerte de Robin Hood",
+    "imdbId": "tt32273171",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/the_death_of_robin_hood",
+      "status": 200,
+      "matchedName": "The Death of Robin Hood",
+      "audience": {
+        "averageRating": "3.3",
+        "bandedRatingCount": "500+ Verified Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/the_death_of_robin_hood/reviews/verified-audience",
+        "scorePercent": "56%",
+        "sentiment": "NEGATIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/the_death_of_robin_hood",
+    "metric": "audience",
+    "value": 56,
+    "scale": 100,
+    "voteCount": "500+ Verified Ratings",
+    "normalization": "round(56/10) = 6",
+    "normalized": 6,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 6
+  },
+  {
+    "i": 51,
+    "title": "Resurrection Road",
+    "imdbId": "tt27000642",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/resurrection_road",
+      "status": 200,
+      "matchedName": "Resurrection Road",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/resurrection_road/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+    "metric": "audience",
+    "value": 4.3,
+    "scale": 10,
+    "voteCount": 460,
+    "normalization": "round(4.3) = 4",
+    "normalized": 4,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 4
+  },
+  {
+    "i": 55,
+    "title": "Todos los tonos del placer",
+    "imdbId": "tt38533212",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/vsi_vidtinky_spokusy",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/todos-los-tonos-del-placer",
+    "metric": "audience",
+    "value": 3.7,
+    "scale": 10,
+    "voteCount": 194,
+    "normalization": "round(3.7) = 4",
+    "normalized": 4,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 4
+  },
+  {
+    "i": 56,
+    "title": "El final de Oak Street",
+    "imdbId": "tt27165187",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/the_end_of_oak_street",
+      "status": 200,
+      "matchedName": "The End of Oak Street",
+      "audience": {
+        "averageRating": "3.9",
+        "bandedRatingCount": "2,500+ Verified Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/the_end_of_oak_street/reviews/verified-audience",
+        "scorePercent": "76%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/the_end_of_oak_street",
+    "metric": "audience",
+    "value": 76,
+    "scale": 100,
+    "voteCount": "2,500+ Verified Ratings",
+    "normalization": "round(76/10) = 8",
+    "normalized": 8,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 57,
+    "title": "911: Llamada infernal",
+    "imdbId": "tt37538172",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/bodycam",
+      "status": 200,
+      "matchedName": "Bodycam",
+      "audience": {
+        "averageRating": "2.8",
+        "bandedRatingCount": "100+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/bodycam/reviews/all-audience",
+        "scorePercent": "38%",
+        "sentiment": "NEGATIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/bodycam",
+    "metric": "audience",
+    "value": 38,
+    "scale": 100,
+    "voteCount": "100+ Ratings",
+    "normalization": "round(38/10) = 4",
+    "normalized": 4,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 4
+  },
+  {
+    "i": 58,
+    "title": "Avengers Endgame Encore",
+    "imdbId": null,
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/avengers_endgame_encore",
+      "status": 404,
+      "audience": null
+    },
+    "metric": "audience",
+    "value": null,
+    "scale": 10,
+    "voteCount": null,
+    "normalization": "Sin puntuación verificable",
+    "normalized": null,
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": null
+  },
+  {
+    "i": 59,
+    "title": "Heartland",
+    "imdbId": "tt38213251",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/heartland_2026",
+      "status": 200,
+      "matchedName": "Heartland (2026)",
+      "audience": {
+        "bandedRatingCount": "0 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.filmweb.pl/film/Heartland-2026-10134052",
+    "metric": "audience",
+    "value": 6.5,
+    "scale": 10,
+    "voteCount": 2,
+    "normalization": "round(6.5) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "Agregado de audiencia Filmweb abierto el 13/11; dos votos. Tope 8; no se usa la crítica 5/10 al existir público.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 60,
+    "title": "Siendo Heumann",
+    "imdbId": "tt15095848",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/being_heumann",
+      "status": 200,
+      "matchedName": "Being Heumann",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/being_heumann/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+    "metric": "audience",
+    "value": 7.1,
+    "scale": 10,
+    "voteCount": 267,
+    "normalization": "round(7.1) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 61,
+    "title": "Lobos en primer plano con Bertie Gregory",
+    "imdbId": "tt49241977",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/wolves_up_close_with_bertie_gregory",
+      "status": 200,
+      "matchedName": "Wolves Up Close with Bertie Gregory",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/wolves_up_close_with_bertie_gregory/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/lobos-en-primer-plano-con-bertie-gregory",
+    "metric": "audience",
+    "value": 8.2,
+    "scale": 10,
+    "voteCount": 62,
+    "normalization": "round(8.2) = 8",
+    "normalized": 8,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 63,
+    "title": "Todos te están mintiendo por dinero",
+    "imdbId": "tt36733913",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/everyone_is_lying_to_you_for_money",
+      "status": 200,
+      "matchedName": "Everyone Is Lying to You for Money",
+      "audience": {
+        "averageRating": "4.2",
+        "bandedRatingCount": "50+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/everyone_is_lying_to_you_for_money/reviews/all-audience",
+        "scorePercent": "85%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/everyone_is_lying_to_you_for_money",
+    "metric": "audience",
+    "value": 85,
+    "scale": 100,
+    "voteCount": "50+ Ratings",
+    "normalization": "round(85/10) = 9",
+    "normalized": 9,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 64,
+    "title": "Spinal Tap II: El final continúa",
+    "imdbId": "tt20222166",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/spinal_tap_ii_the_end_continues",
+      "status": 200,
+      "matchedName": "Spinal Tap II: The End Continues",
+      "audience": {
+        "averageRating": "4.3",
+        "bandedRatingCount": "250+ Verified Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/spinal_tap_ii_the_end_continues/reviews/verified-audience",
+        "scorePercent": "89%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/spinal_tap_ii_the_end_continues",
+    "metric": "audience",
+    "value": 89,
+    "scale": 100,
+    "voteCount": "250+ Verified Ratings",
+    "normalization": "round(89/10) = 9",
+    "normalized": 9,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 8
+  },
+  {
+    "i": 65,
+    "title": "15 pruebas de amor",
+    "imdbId": "tt34762801",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/love_letters_2025",
+      "status": 200,
+      "matchedName": "Love Letters (2025)",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+    "metric": "audience",
+    "value": 6.8,
+    "scale": 10,
+    "voteCount": 964,
+    "normalization": "round(6.8) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 66,
+    "title": "Más allá del muro",
+    "imdbId": "tt21349688",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/east_of_wall",
+      "status": 200,
+      "matchedName": "East of Wall",
+      "audience": {
+        "averageRating": "3.9",
+        "bandedRatingCount": "100+ Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/east_of_wall/reviews/all-audience",
+        "scorePercent": "73%",
+        "sentiment": "POSITIVE",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.rottentomatoes.com/m/east_of_wall",
+    "metric": "audience",
+    "value": 73,
+    "scale": 100,
+    "voteCount": "100+ Ratings",
+    "normalization": "round(73/10) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "Muestra publicada por RT; no se transforma porcentaje de aprobación en media.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 67,
+    "title": "Daniela Forever",
+    "imdbId": "tt26676914",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/daniela_forever",
+      "status": 200,
+      "matchedName": "Daniela Forever",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/daniela_forever/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+    "metric": "audience",
+    "value": 5.4,
+    "scale": 10,
+    "voteCount": 833,
+    "normalization": "round(5.4) = 5",
+    "normalized": 5,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 5
+  },
+  {
+    "i": 68,
+    "title": "Snoopy presenta: 12 días para Navidad",
+    "imdbId": "tt47791876",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/snoopy_presents_12_days_of_snoopy",
+      "status": 200,
+      "matchedName": "Snoopy Presents: 12 Days of Snoopy",
+      "audience": {
+        "bandedRatingCount": "0 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.themoviedb.org/movie/1780407",
+    "metric": "audience",
+    "value": 7,
+    "scale": 10,
+    "voteCount": 1,
+    "normalization": "round(7) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "Audiencia TMDB API oficial con conteo; muestra inicial o pequeña, máximo 8.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 69,
+    "title": "Mi Niñera Es Una Bruja",
+    "imdbId": null,
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.themoviedb.org/movie/1447053",
+    "metric": "audience",
+    "value": 5.8,
+    "scale": 10,
+    "voteCount": 5,
+    "normalization": "round(5.8) = 6",
+    "normalized": 6,
+    "confidenceCeiling": "Audiencia TMDB API oficial con conteo; muestra inicial o pequeña, máximo 8.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 6
+  },
+  {
+    "i": 70,
+    "title": "#300Cartas",
+    "imdbId": "tt28806247",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/300cartas",
+      "status": 200,
+      "matchedName": "300letters",
+      "audience": {
+        "bandedRatingCount": "0 Ratings",
+        "certified": false,
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/300cartas",
+    "metric": "audience",
+    "value": 6,
+    "scale": 10,
+    "voteCount": 135,
+    "normalization": "round(6) = 6",
+    "normalized": 6,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 6
+  },
+  {
+    "i": 71,
+    "title": "A.J y su extraño colegio",
+    "imdbId": "tt34254116",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/my_weird_school",
+      "status": 200,
+      "matchedName": "My Weird School",
+      "audience": {
+        "bandedRatingCount": "Fewer than 50 Ratings",
+        "certified": false,
+        "reviewsPageUrl": "/m/my_weird_school/reviews/all-audience",
+        "title": "Popcornmeter"
+      }
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/a-j-y-su-extrano-colegio",
+    "metric": "audience",
+    "value": 5.5,
+    "scale": 10,
+    "voteCount": 84,
+    "normalization": "round(5.5) = 6",
+    "normalized": 6,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 6
+  },
+  {
+    "i": 72,
+    "title": "El deshielo",
+    "imdbId": "tt39571626",
+    "year": 2026,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/the_meltdown_2026",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+    "metric": "audience",
+    "value": 6.7,
+    "scale": 10,
+    "voteCount": 275,
+    "normalization": "round(6.7) = 7",
+    "normalized": 7,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 7
+  },
+  {
+    "i": 73,
+    "title": "La Venganza de Sweeney Todd",
+    "imdbId": "tt33308008",
+    "year": 2025,
+    "checkedOn": "2026-11-13",
+    "rtAttempt": {
+      "url": "https://www.rottentomatoes.com/m/sweeney_todd_slice_dice",
+      "status": 404,
+      "audience": null
+    },
+    "source": "https://www.justwatch.com/ar/pelicula/la-venganza-de-sweeney-todd",
+    "metric": "audience",
+    "value": 4,
+    "scale": 10,
+    "voteCount": 267,
+    "normalization": "round(4) = 4",
+    "normalized": 4,
+    "confidenceCeiling": "IMDb mostrado por JustWatch AR; evidencia indirecta, tope de confianza 8. No se afirma acceso directo a IMDb.",
+    "masterpieceCeiling": "Máximo 8: no se documentó reconocimiento perdurable excepcional para conceder 9/10. Sólo baja el normalizado.",
+    "final": 4
+  }
+]

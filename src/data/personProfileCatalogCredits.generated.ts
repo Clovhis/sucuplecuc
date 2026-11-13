@@ -2136,6 +2136,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "shakespeare-in-love-1998"
   ],
   "george-clooney": [
+    "good-night-and-good-luck-2025",
     "jay-kelly-2025",
     "wolfs-2024",
     "viaje-al-paraiso-2022",
@@ -2182,6 +2183,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "greenland-2-migration-2026",
     "in-the-hand-of-dante-2026",
     "how-to-train-your-dragon-2025",
+    "todos-te-estan-mintiendo-por-dinero-2025",
     "how-to-train-your-dragon-2-2014",
     "how-to-train-your-dragon-2010"
   ],
@@ -2910,6 +2912,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "fantastic-four-2005"
   ],
   "jessica-chastain": [
+    "heartland-2026",
     "madre-siniestra-2026",
     "dreams-suenos-2025",
     "los-ojos-de-tammy-faye-2021",
@@ -3170,6 +3173,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "john-travolta": [
     "ven-a-volar-conmigo-2026",
+    "ladrones-con-clase-2-2025",
     "asalto-al-tren-pelham-123-2009",
     "bolt-un-perro-fuera-de-serie-2008",
     "the-punisher-2004",
@@ -3929,6 +3933,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "mark-ruffalo": [
     "crime-101-2026",
+    "siendo-heumann-2026",
     "spider-man-brand-new-day-2026",
     "poor-things-2023",
     "avengers-endgame-2019",
@@ -4416,6 +4421,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "morena-baccarin": [
     "greenland-2-migration-2026",
     "the-wrecking-crew-2026",
+    "todos-te-estan-mintiendo-por-dinero-2025",
     "deadpool-2-2018",
     "deadpool-2016"
   ],
@@ -5001,6 +5007,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "las-siamesas-2020"
   ],
   "rob-reiner": [
+    "spinal-tap-ii-el-final-continua-2025",
     "asi-nos-va-2014",
     "el-verano-de-sus-vidas-2012",
     "alex-y-emma-2003",
@@ -5178,6 +5185,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "romina-ricci": [],
   "ron-howard": [
+    "avedon-2026",
     "jim-henson-idea-man-2024",
     "music-by-john-williams-2024",
     "solo-a-star-wars-story-2018",
@@ -5570,6 +5578,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "steve-buscemi": [
     "caballo-salvaje-nueve-2026",
+    "psycho-therapy-2024",
     "hubie-halloween-2020",
     "los-muertos-no-mueren-2019",
     "the-week-of-2018",
@@ -6029,6 +6038,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "riesgo-en-el-aire-1997"
   ],
   "viola-davis": [
+    "portrait-of-an-artist-stephen-curry-2026",
     "g20-2025",
     "kung-fu-panda-4-2024",
     "air-2023",

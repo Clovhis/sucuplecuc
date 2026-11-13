@@ -1,0 +1,247 @@
+{
+  "slug": "los-archivos-perdidos-del-dr-romanoski-2026",
+  "scope": "Existing record: score-only update. Stored cast and metadata preserved.",
+  "attempts": [
+    {
+      "name": "Javier Sanca",
+      "source": "https://www.themoviedb.org/search/person?query=Javier%20Sanca",
+      "status": 200,
+      "results": [
+        {
+          "id": 5834762,
+          "name": "Javier Sanca",
+          "knownFor": [
+            [
+              1586242,
+              "Dry River"
+            ]
+          ]
+        }
+      ],
+      "decision": "No se adjudica un ID sólo por coincidencia de nombre. TMDB movie/1721329 devolvió cast vacío; IMDb sí identifica roles pero no suministra IDs TMDB."
+    },
+    {
+      "name": "Fabián Terrone",
+      "source": "https://www.themoviedb.org/search/person?query=Fabi%C3%A1n%20Terrone",
+      "status": 200,
+      "results": [],
+      "decision": "No se adjudica un ID sólo por coincidencia de nombre. TMDB movie/1721329 devolvió cast vacío; IMDb sí identifica roles pero no suministra IDs TMDB."
+    },
+    {
+      "name": "Joaquín González",
+      "source": "https://www.themoviedb.org/search/person?query=Joaqu%C3%ADn%20Gonz%C3%A1lez",
+      "status": 200,
+      "results": [
+        {
+          "id": 3444514,
+          "name": "Joaquín González",
+          "knownFor": [
+            [
+              943795,
+              "Viaje a la Alcarria"
+            ],
+            [
+              1780336,
+              "Golden Fish"
+            ]
+          ]
+        },
+        {
+          "id": 4192665,
+          "name": "Joaquín Gonzalez",
+          "knownFor": [
+            [
+              1159177,
+              "Joaquín, mi primón"
+            ]
+          ]
+        },
+        {
+          "id": 2572672,
+          "name": "Joaquín González Vaillant",
+          "knownFor": [
+            [
+              684904,
+              "Restless Spirit"
+            ]
+          ]
+        },
+        {
+          "id": 2537864,
+          "name": "Joaquín Menchaca González",
+          "knownFor": [
+            [
+              672580,
+              "The Mexican Galapagos Island"
+            ]
+          ]
+        },
+        {
+          "id": 1698366,
+          "name": "Joaquín González Muro",
+          "knownFor": [
+            [
+              573227,
+              "The Longest Night"
+            ],
+            [
+              258602,
+              "The Transsexual"
+            ]
+          ]
+        },
+        {
+          "id": 3422777,
+          "name": "Joaquín González Vaillant",
+          "knownFor": []
+        },
+        {
+          "id": 3971174,
+          "name": "Joaquin Gonzalez",
+          "knownFor": [
+            [
+              789354,
+              "Ice Patrol"
+            ]
+          ]
+        },
+        {
+          "id": 3639642,
+          "name": "Joaquin Octavio Gonzalez",
+          "knownFor": [
+            [
+              934028,
+              "Parsley"
+            ]
+          ]
+        },
+        {
+          "id": 5422884,
+          "name": "Joaquín González",
+          "knownFor": [
+            [
+              939892,
+              "Monkey Business"
+            ]
+          ]
+        },
+        {
+          "id": 4166090,
+          "name": "Joaquin Gonzalez Martin",
+          "knownFor": [
+            [
+              21872,
+              "The Flying Liftboy"
+            ]
+          ]
+        },
+        {
+          "id": 5511669,
+          "name": "Joaquín González",
+          "knownFor": [
+            [
+              881708,
+              "The Girl from Uruguay"
+            ]
+          ]
+        },
+        {
+          "id": 4716303,
+          "name": "Joaquín González",
+          "knownFor": [
+            [
+              1290932,
+              "The Nicest Person in the World"
+            ]
+          ]
+        },
+        {
+          "id": 5221055,
+          "name": "Joaquín González",
+          "knownFor": []
+        },
+        {
+          "id": 4716306,
+          "name": "Joaquín González",
+          "knownFor": [
+            [
+              1290932,
+              "The Nicest Person in the World"
+            ]
+          ]
+        },
+        {
+          "id": 2656539,
+          "name": "Joaquin Gonzalez Pallares",
+          "knownFor": [
+            [
+              709238,
+              "Tea Time"
+            ]
+          ]
+        },
+        {
+          "id": 4812422,
+          "name": "Joaquín González",
+          "knownFor": [
+            [
+              1312819,
+              "Absence"
+            ]
+          ]
+        },
+        {
+          "id": 5628122,
+          "name": "Joaquín González",
+          "knownFor": [
+            [
+              1524774,
+              "Hesse Kassel: Heading to La Brea"
+            ]
+          ]
+        },
+        {
+          "id": 5664876,
+          "name": "Joaquín González",
+          "knownFor": [
+            [
+              1473222,
+              "El novio de mamá"
+            ]
+          ]
+        },
+        {
+          "id": 5791751,
+          "name": "Joaquín Gonzalez",
+          "knownFor": [
+            [
+              633149,
+              "Gunman"
+            ]
+          ]
+        },
+        {
+          "id": 5334405,
+          "name": "Joaquín González Vaillant",
+          "knownFor": [
+            [
+              1455762,
+              "Love Commandos"
+            ],
+            [
+              1560661,
+              "Dios llama a la puerta"
+            ]
+          ]
+        }
+      ],
+      "decision": "No se adjudica un ID sólo por coincidencia de nombre. TMDB movie/1721329 devolvió cast vacío; IMDb sí identifica roles pero no suministra IDs TMDB."
+    }
+  ],
+  "webSources": [
+    "https://www.imdb.com/title/tt38607229/",
+    "https://theunivfilms.com/",
+    "https://diariolaportada.com.ar/2025/09/06/matias-carelli-presenta-paranorias-una-pelicula-rodada-en-esquel-con-actores-locales/"
+  ],
+  "notes": "Película regional de 62 minutos con muestra inicial muy pequeña. El texto del feed no prueba primera disponibilidad: hay comunicación de Prime anterior a noviembre. No se anuncia como estreno de esta semana en el cuerpo de la guía. Año histórico en conflicto entre fuentes (IMDb/primera exhibición 2025, ficha/FA 2026); no se crea un duplicado ni se reescriben créditos heredados. La revisión de público se conserva separada de estas lagunas."
+}

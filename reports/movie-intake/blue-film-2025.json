@@ -1,0 +1,124 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "blue-film-2025",
+	"title": "Blue Film",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1398655/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 3
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/blue-film",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt34915693/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Elliot Tuttle",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398655/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2504505",
+					"fact": "El perfil público identifica a Elliot Tuttle; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/blue-film",
+					"fact": "Identidad cotejada con el crédito del título Blue Film, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2504505",
+					"fact": "Fuente atribuible que identifica el retrato de Elliot Tuttle."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xPxFnUdYSX2OYszrhGSoMz0ubr4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/elliot-tuttle-tmdb-2504505.jpg"
+			}
+		},
+		{
+			"name": "Reed Birney",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398655/cast",
+			"screenRole": "Hank Grant",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/163774",
+					"fact": "El perfil público identifica a Reed Birney; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/blue-film",
+					"fact": "Identidad cotejada con el crédito del título Blue Film, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/163774",
+					"fact": "Fuente atribuible que identifica el retrato de Reed Birney."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dfLgNLUt6Xs2MJJTi6B1iWdXjU6.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/reed-birney-tmdb-163774.jpg"
+			}
+		},
+		{
+			"name": "Kieron Moore",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398655/cast",
+			"screenRole": "Aaron Eagle",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2511084",
+					"fact": "El perfil público identifica a Kieron Moore; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/blue-film",
+					"fact": "Identidad cotejada con el crédito del título Blue Film, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2511084",
+					"fact": "Fuente atribuible que identifica el retrato de Kieron Moore."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/knZqIAb4XPOzYyvRUU8qJwCvBOw.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/kieron-moore-tmdb-2511084.jpg"
+			}
+		},
+		{
+			"name": "Turner Beckett",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398655/cast",
+			"screenRole": "Pre-teen (uncredited)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Turner Beckett interpreta Pre-teen (uncredited): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": []
+	}
+}

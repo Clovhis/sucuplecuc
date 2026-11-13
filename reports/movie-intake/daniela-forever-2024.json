@@ -1,0 +1,473 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "daniela-forever-2024",
+	"title": "Daniela Forever",
+	"year": 2024,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1084440/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 23
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt26676914/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Nacho Vigalondo",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/118303",
+					"fact": "El perfil público identifica a Nacho Vigalondo; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+					"fact": "Identidad cotejada con el crédito del título Daniela Forever, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/118303",
+					"fact": "Fuente atribuible que identifica el retrato de Nacho Vigalondo."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ydoLch061IWUMdIi5CkbKnFIph8.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/nacho-vigalondo-tmdb-118303.jpg"
+			}
+		},
+		{
+			"name": "Henry Golding",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Nicolas",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1807132",
+					"fact": "El perfil público identifica a Henry Golding; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+					"fact": "Identidad cotejada con el crédito del título Daniela Forever, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1807132",
+					"fact": "Fuente atribuible que identifica el retrato de Henry Golding."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zWZDvqMInsficgm4o3W2cRJ6tmn.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/henry-golding-tmdb-1807132.jpg"
+			}
+		},
+		{
+			"name": "Beatrice Grannò",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Daniela",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2436940",
+					"fact": "El perfil público identifica a Beatrice Grannò; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+					"fact": "Identidad cotejada con el crédito del título Daniela Forever, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2436940",
+					"fact": "Fuente atribuible que identifica el retrato de Beatrice Grannò."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hWy9xXHdWJuAY9svylCM4H3j3Mo.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/beatrice-granno-tmdb-2436940.jpg"
+			}
+		},
+		{
+			"name": "Aura Garrido",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Teresa",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/566544",
+					"fact": "El perfil público identifica a Aura Garrido; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+					"fact": "Identidad cotejada con el crédito del título Daniela Forever, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/566544",
+					"fact": "Fuente atribuible que identifica el retrato de Aura Garrido."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/195NlsR4hNQtvvZi3eZ19EJCOu7.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/aura-garrido-tmdb-566544.jpg"
+			}
+		},
+		{
+			"name": "Rubén Ochandiano",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Garrido",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/102221",
+					"fact": "El perfil público identifica a Rubén Ochandiano; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+					"fact": "Identidad cotejada con el crédito del título Daniela Forever, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/102221",
+					"fact": "Fuente atribuible que identifica el retrato de Rubén Ochandiano."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mTNriPJ3tf9zf3hXNAWdVKZklVN.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ruben-ochandiano-tmdb-102221.jpg"
+			}
+		},
+		{
+			"name": "Nathalie Poza",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Victoria",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/27464",
+					"fact": "El perfil público identifica a Nathalie Poza; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+					"fact": "Identidad cotejada con el crédito del título Daniela Forever, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/27464",
+					"fact": "Fuente atribuible que identifica el retrato de Nathalie Poza."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ebG1AgIEi9WhUxCREmz4WiKoRtV.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/nathalie-poza-tmdb-27464.jpg"
+			}
+		},
+		{
+			"name": "Pilar Bergés",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Susi",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1488928",
+					"fact": "El perfil público identifica a Pilar Bergés; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+					"fact": "Identidad cotejada con el crédito del título Daniela Forever, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1488928",
+					"fact": "Fuente atribuible que identifica el retrato de Pilar Bergés."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/izWJf0WfhOqIrkWs1dsxI7JwLi3.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/pilar-berges-tmdb-1488928.jpg"
+			}
+		},
+		{
+			"name": "Godeliv Van den Brandt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Dr. Émilie Vermeiren",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1352032",
+					"fact": "El perfil público identifica a Godeliv Van den Brandt; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+					"fact": "Identidad cotejada con el crédito del título Daniela Forever, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1352032",
+					"fact": "Fuente atribuible que identifica el retrato de Godeliv Van den Brandt."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xh1CkwcHU2W8fMFw26Ds0v5LDnM.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/godeliv-van-den-brandt-tmdb-1352032.jpg"
+			}
+		},
+		{
+			"name": "Frank Feys",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Dr. Raymond",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1036040",
+					"fact": "El perfil público identifica a Frank Feys; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/daniela-forever",
+					"fact": "Identidad cotejada con el crédito del título Daniela Forever, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1036040",
+					"fact": "Fuente atribuible que identifica el retrato de Frank Feys."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xnUFPC9Fohaz5nVS2SUtmb4lPzA.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/frank-feys-tmdb-1036040.jpg"
+			}
+		},
+		{
+			"name": "Rocío Saiz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Catalina",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Rocío Saiz interpreta Catalina: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Itziar Castro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Taxi Driver",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Itziar Castro interpreta Taxi Driver: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Carles Cuevas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Security Guard / Lolo",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Carles Cuevas interpreta Security Guard / Lolo: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Paula Púa",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Lola",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Paula Púa interpreta Lola: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Nacho Marraco",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Receptionist / Exhibition Critic",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Nacho Marraco interpreta Receptionist / Exhibition Critic: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Genís Segarra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Hidrogenesse",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Genís Segarra interpreta Hidrogenesse: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Carlos Ballesteros",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Hidrogenesse",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Carlos Ballesteros interpreta Hidrogenesse: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Luis Hacha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Security Guard",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Luis Hacha interpreta Security Guard: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Juan Cavestany",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Supermarket Manager / Exhibition Coordinator",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Juan Cavestany interpreta Supermarket Manager / Exhibition Coordinator: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Aníbal Gómez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "DJ",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Aníbal Gómez interpreta DJ: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Rubén Lardín",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Guest",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Rubén Lardín interpreta Guest: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Cindy Claes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Dr. Van Brandt",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Cindy Claes interpreta Dr. Van Brandt: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Percy Olmedo Zegarra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "Supermarket Worker / Exhibition Coordinator",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Percy Olmedo Zegarra interpreta Supermarket Worker / Exhibition Coordinator: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Miguel Agnes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1084440/cast",
+			"screenRole": "DJ",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Miguel Agnes interpreta DJ: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Rocío Saiz",
+				"role": "performer"
+			},
+			{
+				"name": "Itziar Castro",
+				"role": "performer"
+			},
+			{
+				"name": "Carles Cuevas",
+				"role": "performer"
+			},
+			{
+				"name": "Paula Púa",
+				"role": "performer"
+			},
+			{
+				"name": "Nacho Marraco",
+				"role": "performer"
+			},
+			{
+				"name": "Genís Segarra",
+				"role": "performer"
+			},
+			{
+				"name": "Carlos Ballesteros",
+				"role": "performer"
+			},
+			{
+				"name": "Luis Hacha",
+				"role": "performer"
+			},
+			{
+				"name": "Juan Cavestany",
+				"role": "performer"
+			},
+			{
+				"name": "Aníbal Gómez",
+				"role": "performer"
+			},
+			{
+				"name": "Rubén Lardín",
+				"role": "performer"
+			},
+			{
+				"name": "Cindy Claes",
+				"role": "performer"
+			},
+			{
+				"name": "Percy Olmedo Zegarra",
+				"role": "performer"
+			},
+			{
+				"name": "Miguel Agnes",
+				"role": "performer"
+			}
+		]
+	}
+}

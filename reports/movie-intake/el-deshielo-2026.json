@@ -1,0 +1,451 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-deshielo-2026",
+	"title": "El deshielo",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1210268/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 21
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://cinechile.cl/pelicula/el-deshielo/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Manuela Martelli",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1040061",
+					"fact": "El perfil público identifica a Manuela Martelli; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+					"fact": "Identidad cotejada con el crédito del título El deshielo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1040061",
+					"fact": "Fuente atribuible que identifica el retrato de Manuela Martelli."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/s1nGfbYbJKyPKmKZRiZamyrWKlT.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/manuela-martelli-tmdb-1040061.jpg"
+			}
+		},
+		{
+			"name": "Maya O’Rourke",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Inés",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5967396",
+					"fact": "El perfil público identifica a Maya O’Rourke; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+					"fact": "Identidad cotejada con el crédito del título El deshielo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portraitException": {
+				"category": "child-privacy",
+				"reason": "Intérprete infantil de quinto básico. La foto pública del colegio es grupal y demasiado pequeña para extraer un retrato de 200x250; no se usa un fotograma ni se amplía una cara.",
+				"subjectStatus": {
+					"isMinor": true,
+					"sourceUrl": "https://www.notredame.cl/maya-orourke-estudiante-del-colegio-notre-dame-integra-el-elenco-de-el-deshielo-pelicula-seleccionada-en-el-festival-de-cannes-2026/",
+					"fact": "El colegio la identifica como alumna de quinto básico y actriz de Inés."
+				},
+				"sourcesSearched": [
+					{
+						"url": "https://www.festival-cannes.com/en/p/maya-o-rourke/",
+						"result": "Crédito exacto; no se obtuvo retrato individual adecuado."
+					},
+					{
+						"url": "https://www.imdb.com/name/nm18180877/",
+						"result": "Identidad y participación verificadas; no se obtuvo foto individual utilizable."
+					}
+				]
+			}
+		},
+		{
+			"name": "Saskia Rosendahl",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Lina",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1075020",
+					"fact": "El perfil público identifica a Saskia Rosendahl; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+					"fact": "Identidad cotejada con el crédito del título El deshielo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1075020",
+					"fact": "Fuente atribuible que identifica el retrato de Saskia Rosendahl."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fmH7MMldJvzlQxVPDOMQGzP0f9J.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/saskia-rosendahl-tmdb-1075020.jpg"
+			}
+		},
+		{
+			"name": "Maia Domagala",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Hanna",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4753219",
+					"fact": "El perfil público identifica a Maia Domagala; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+					"fact": "Identidad cotejada con el crédito del título El deshielo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.rietz-casting-agentur.de/index.php?id=1619&tx_ttnews%5Btt_news%5D=3973",
+					"fact": "Fuente atribuible que identifica el retrato de Maia Domagala."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://www.rietz-casting-agentur.de/typo3temp/assets/_processed_/a/2/csm_maia_rae_domagala6_01_611477bec7.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/maia-domagala-tmdb-4753219.jpg"
+			}
+		},
+		{
+			"name": "Jakub Gierszał",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Alexander",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/489961",
+					"fact": "El perfil público identifica a Jakub Gierszał; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+					"fact": "Identidad cotejada con el crédito del título El deshielo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/489961",
+					"fact": "Fuente atribuible que identifica el retrato de Jakub Gierszał."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/z54kt8s5OsRooCWBMT2Df4q61BZ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jakub-giersza-tmdb-489961.jpg"
+			}
+		},
+		{
+			"name": "Paulina Urrutia",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Techa",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1260894",
+					"fact": "El perfil público identifica a Paulina Urrutia; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+					"fact": "Identidad cotejada con el crédito del título El deshielo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1260894",
+					"fact": "Fuente atribuible que identifica el retrato de Paulina Urrutia."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jvyispcqR1XpGFlcPpNp3XNLdal.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/paulina-urrutia-tmdb-1260894.jpg"
+			}
+		},
+		{
+			"name": "Mauricio Pesutic",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Ricardo",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/118373",
+					"fact": "El perfil público identifica a Mauricio Pesutic; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+					"fact": "Identidad cotejada con el crédito del título El deshielo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/118373",
+					"fact": "Fuente atribuible que identifica el retrato de Mauricio Pesutic."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zxa8y6KaU9stbr9l4ogtNXa7jyC.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/mauricio-pesutic-tmdb-118373.jpg"
+			}
+		},
+		{
+			"name": "Lautaro Cantillana",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Sebastián",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lautaro Cantillana interpreta Sebastián: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Paula Zúñiga",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Sonia",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1615223",
+					"fact": "El perfil público identifica a Paula Zúñiga; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+					"fact": "Identidad cotejada con el crédito del título El deshielo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1615223",
+					"fact": "Fuente atribuible que identifica el retrato de Paula Zúñiga."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dtwtPLQCo0ERYZ01OeoIKPgE6xm.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/paula-zuniga-tmdb-1615223.jpg"
+			}
+		},
+		{
+			"name": "Roberto Farías",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Soto",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/590879",
+					"fact": "El perfil público identifica a Roberto Farías; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+					"fact": "Identidad cotejada con el crédito del título El deshielo, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Roberto%20Far%C3%ADas%202%20(cropped).jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/roberto-farias-nm9928618.jpg"
+			}
+		},
+		{
+			"name": "Daniela Pino",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Paty",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Daniela Pino interpreta Paty: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Luis Uribe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Genaro",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Luis Uribe interpreta Genaro: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Marcela Salinas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Marcela",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Marcela Salinas interpreta Marcela: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Victoria Giesen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Amparo",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Victoria Giesen interpreta Amparo: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Christian von Plate",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Funcionario Embajada Alemana",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Christian von Plate interpreta Funcionario Embajada Alemana: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Rodrigo Velasco",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Padre Ines",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Rodrigo Velasco interpreta Padre Ines: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Santiago Cantillana",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Lucas",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Santiago Cantillana interpreta Lucas: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Moisés Angulo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Jefe Socorro Andino",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Moisés Angulo interpreta Jefe Socorro Andino: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lino Melnick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Philip",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lino Melnick interpreta Philip: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Alonso Torres",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Español",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Alonso Torres interpreta Español: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lautaro Cantillana Teke",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1210268/cast",
+			"screenRole": "Sebastián",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lautaro Cantillana Teke interpreta Sebastián: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Lautaro Cantillana",
+				"role": "performer"
+			},
+			{
+				"name": "Daniela Pino",
+				"role": "performer"
+			},
+			{
+				"name": "Luis Uribe",
+				"role": "performer"
+			},
+			{
+				"name": "Marcela Salinas",
+				"role": "performer"
+			},
+			{
+				"name": "Victoria Giesen",
+				"role": "performer"
+			},
+			{
+				"name": "Christian von Plate",
+				"role": "performer"
+			},
+			{
+				"name": "Rodrigo Velasco",
+				"role": "performer"
+			},
+			{
+				"name": "Santiago Cantillana",
+				"role": "performer"
+			},
+			{
+				"name": "Moisés Angulo",
+				"role": "performer"
+			},
+			{
+				"name": "Lino Melnick",
+				"role": "performer"
+			},
+			{
+				"name": "Alonso Torres",
+				"role": "performer"
+			},
+			{
+				"name": "Lautaro Cantillana Teke",
+				"role": "performer"
+			}
+		]
+	}
+}

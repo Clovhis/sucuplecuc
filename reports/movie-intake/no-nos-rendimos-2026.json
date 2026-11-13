@@ -1,0 +1,427 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "no-nos-rendimos-2026",
+	"title": "No nos rendimos",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1616687/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 20
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt39370926/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Sidharta Tata",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2246464",
+					"fact": "El perfil público identifica a Sidharta Tata; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+					"fact": "Identidad cotejada con el crédito del título No nos rendimos, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2246464",
+					"fact": "Fuente atribuible que identifica el retrato de Sidharta Tata."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/koZJJiqSOUybcaTM8feylsO161C.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/sidharta-tata-tmdb-2246464.jpg"
+			}
+		},
+		{
+			"name": "Lukman Sardi",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Eyang Hari",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1206436",
+					"fact": "El perfil público identifica a Lukman Sardi; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+					"fact": "Identidad cotejada con el crédito del título No nos rendimos, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1206436",
+					"fact": "Fuente atribuible que identifica el retrato de Lukman Sardi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pMZiVVu8k5MzGteRgpNVzMybxLm.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/lukman-sardi-tmdb-1206436.jpg"
+			}
+		},
+		{
+			"name": "Callista Arum",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Putri",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4684137",
+					"fact": "El perfil público identifica a Callista Arum; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+					"fact": "Identidad cotejada con el crédito del título No nos rendimos, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/4684137",
+					"fact": "Fuente atribuible que identifica el retrato de Callista Arum."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1GaAlD5Qeg1KkBND9kCKWtMEmZu.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/callista-arum-tmdb-4684137.jpg"
+			}
+		},
+		{
+			"name": "Sulthan Hamonangan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Dimas",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4137347",
+					"fact": "El perfil público identifica a Sulthan Hamonangan; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+					"fact": "Identidad cotejada con el crédito del título No nos rendimos, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/4137347",
+					"fact": "Fuente atribuible que identifica el retrato de Sulthan Hamonangan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zY4t9gyvxGvZxvQ3IKLeIVmEUuZ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/sulthan-hamonangan-tmdb-4137347.jpg"
+			}
+		},
+		{
+			"name": "Derby Romero",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Bastian",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1179545",
+					"fact": "El perfil público identifica a Derby Romero; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+					"fact": "Identidad cotejada con el crédito del título No nos rendimos, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1179545",
+					"fact": "Fuente atribuible que identifica el retrato de Derby Romero."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/45F1pXWKSye5YzII0VqzgEGrQJG.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/derby-romero-tmdb-1179545.jpg"
+			}
+		},
+		{
+			"name": "Donny Alamsyah",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Ulo",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1202416",
+					"fact": "El perfil público identifica a Donny Alamsyah; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+					"fact": "Identidad cotejada con el crédito del título No nos rendimos, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/zfv0xvwhealzqRwI0BUQpbzrUuD.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/donny-alamsyah-nm1902766.jpg"
+			}
+		},
+		{
+			"name": "Ismi Melinda",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Jegeg",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2413870",
+					"fact": "El perfil público identifica a Ismi Melinda; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+					"fact": "Identidad cotejada con el crédito del título No nos rendimos, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2413870",
+					"fact": "Fuente atribuible que identifica el retrato de Ismi Melinda."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xNyLFkkbbEKzvFIwQ1AbZfL1vqo.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ismi-melinda-tmdb-2413870.jpg"
+			}
+		},
+		{
+			"name": "Laras Sardi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Mayang",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3022892",
+					"fact": "El perfil público identifica a Laras Sardi; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+					"fact": "Identidad cotejada con el crédito del título No nos rendimos, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3022892",
+					"fact": "Fuente atribuible que identifica el retrato de Laras Sardi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aOlQuPslY2mgBbfixUHkLqLfEJc.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/laras-sardi-tmdb-3022892.jpg"
+			}
+		},
+		{
+			"name": "Dennis Adishwara",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Agus",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/121970",
+					"fact": "El perfil público identifica a Dennis Adishwara; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/never-surrender",
+					"fact": "Identidad cotejada con el crédito del título No nos rendimos, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/121970",
+					"fact": "Fuente atribuible que identifica el retrato de Dennis Adishwara."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tfpxGYEcLZdiHleucYzQsiyllzr.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/dennis-adishwara-tmdb-121970.jpg"
+			}
+		},
+		{
+			"name": "Erick Estrada",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Iyang",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Erick Estrada interpreta Iyang: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "M. N. Qomaruddin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Bendot",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "M. N. Qomaruddin interpreta Bendot: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Amos Putra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Tuku",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Amos Putra interpreta Tuku: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Winky Wiryawan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Colonel Anton",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Winky Wiryawan interpreta Colonel Anton: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Mike Lucock",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Minister",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Mike Lucock interpreta Minister: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Novi Rahmat Hidayat",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Captain Anjas",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Novi Rahmat Hidayat interpreta Captain Anjas: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Ully Triani",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Sari",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ully Triani interpreta Sari: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "David Hendrawan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Aldo",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "David Hendrawan interpreta Aldo: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Alex Suhendra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Derry",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Alex Suhendra interpreta Derry: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Knajla Rayvisha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Abel",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Knajla Rayvisha interpreta Abel: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jessy Davita",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1616687/cast",
+			"screenRole": "Tia",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jessy Davita interpreta Tia: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Erick Estrada",
+				"role": "performer"
+			},
+			{
+				"name": "M. N. Qomaruddin",
+				"role": "performer"
+			},
+			{
+				"name": "Amos Putra",
+				"role": "performer"
+			},
+			{
+				"name": "Winky Wiryawan",
+				"role": "performer"
+			},
+			{
+				"name": "Mike Lucock",
+				"role": "performer"
+			},
+			{
+				"name": "Novi Rahmat Hidayat",
+				"role": "performer"
+			},
+			{
+				"name": "Ully Triani",
+				"role": "performer"
+			},
+			{
+				"name": "David Hendrawan",
+				"role": "performer"
+			},
+			{
+				"name": "Alex Suhendra",
+				"role": "performer"
+			},
+			{
+				"name": "Knajla Rayvisha",
+				"role": "performer"
+			},
+			{
+				"name": "Jessy Davita",
+				"role": "performer"
+			}
+		]
+	}
+}

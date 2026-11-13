@@ -1,0 +1,529 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "mas-alla-del-muro-2025",
+	"title": "Más allá del muro",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1398911/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 31
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/east-of-wall",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt21349688/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Kate Beecroft",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2140341",
+					"fact": "El perfil público identifica a Kate Beecroft; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/east-of-wall",
+					"fact": "Identidad cotejada con el crédito del título Más allá del muro, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2140341",
+					"fact": "Fuente atribuible que identifica el retrato de Kate Beecroft."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9YZKpapDOzKSsSSV6r4PRaQ8Wxn.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/kate-beecroft-tmdb-2140341.jpg"
+			}
+		},
+		{
+			"name": "Tabatha Zimiga",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Tabatha Zimiga",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5173944",
+					"fact": "El perfil público identifica a Tabatha Zimiga; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/east-of-wall",
+					"fact": "Identidad cotejada con el crédito del título Más allá del muro, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/5173944",
+					"fact": "Fuente atribuible que identifica el retrato de Tabatha Zimiga."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/SEf6SRdZkhP98zwUPBRUv2RNUc.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/tabatha-zimiga-tmdb-5173944.jpg"
+			}
+		},
+		{
+			"name": "Porshia Zimiga",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Porshia Zimiga",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5173945",
+					"fact": "El perfil público identifica a Porshia Zimiga; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/east-of-wall",
+					"fact": "Identidad cotejada con el crédito del título Más allá del muro, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/5173945",
+					"fact": "Fuente atribuible que identifica el retrato de Porshia Zimiga."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xNKBbG7vEVJ52zU6WO82caeEGBC.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/porshia-zimiga-tmdb-5173945.jpg"
+			}
+		},
+		{
+			"name": "Scoot McNairy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Roy Waters",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/59233",
+					"fact": "El perfil público identifica a Scoot McNairy; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/east-of-wall",
+					"fact": "Identidad cotejada con el crédito del título Más allá del muro, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Scoot%20McNairy%20at%20the%202024%20Toronto%20International%20Film%20Festival.%2002%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/scoot-mcnairy-nm1058940.jpg"
+			}
+		},
+		{
+			"name": "Jennifer Ehle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Tracey Zimiga",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/49971",
+					"fact": "El perfil público identifica a Jennifer Ehle; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/east-of-wall",
+					"fact": "Identidad cotejada con el crédito del título Más allá del muro, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/49971",
+					"fact": "Fuente atribuible que identifica el retrato de Jennifer Ehle."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kMddVKineLFpxsUoGrb3E6edkOv.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jennifer-ehle-tmdb-49971.jpg"
+			}
+		},
+		{
+			"name": "Jesse Thorson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Jesse",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jesse Thorson interpreta Jesse: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Chancey Ryder Witt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Ryder",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Chancey Ryder Witt interpreta Ryder: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Clay Pateneaude",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Clay",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Clay Pateneaude interpreta Clay: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Leanna Shumpert",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Leanna",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Leanna Shumpert interpreta Leanna: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Brynn Darling",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Brynn",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Brynn Darling interpreta Brynn: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Wyatt Mansfield",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Skylar",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Wyatt Mansfield interpreta Skylar: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Stetson Neumann",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Stetson",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Stetson Neumann interpreta Stetson: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Traden Lockwood",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Traden Lockwood",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Traden Lockwood interpreta Traden Lockwood: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Don Gummer Garnier",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Gummer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Don Gummer Garnier interpreta Gummer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Renee Mousseaux",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Renee",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Renee Mousseaux interpreta Renee: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Brett Fly Sr.",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Brett",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Brett Fly Sr. interpreta Brett: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Ryan Caraway",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Wes",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ryan Caraway interpreta Wes: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Haley Strode",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Laura",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Haley Strode interpreta Laura: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lori Ann Reed",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Lori",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lori Ann Reed interpreta Lori: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Amy Shedeed",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Amy",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Amy Shedeed interpreta Amy: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Angela Heinze",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Angela",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Angela Heinze interpreta Angela: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Tracey Osmotherly",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Janette",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Tracey Osmotherly interpreta Janette: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Janis Schell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Janis",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Janis Schell interpreta Janis: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Cheryl Walker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Speech Therapist",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Cheryl Walker interpreta Speech Therapist: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lisa Anderson-Pelton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Judge",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lisa Anderson-Pelton interpreta Judge: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Patsy R. Tines",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Jules",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Patsy R. Tines interpreta Jules: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jace Thompson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Gordon Auctioneer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jace Thompson interpreta Gordon Auctioneer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jason Mathis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Rodeo Announcer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jason Mathis interpreta Rodeo Announcer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Parker Rain Hill",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "National Anthem Girl",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Parker Rain Hill interpreta National Anthem Girl: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Ryan M. Hall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Bailiff",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ryan M. Hall interpreta Bailiff: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Bradley Otte",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1398911/cast",
+			"screenRole": "Martin Auctioneer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Bradley Otte interpreta Martin Auctioneer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "La selección conserva a las dos mujeres del núcleo familiar y a los dos intérpretes profesionales principales. El resto del elenco comunitario figura revisado en el ledger; no se convierte la amplitud de autointerpretaciones en una cuota artificial.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Jesse Thorson",
+				"role": "performer"
+			},
+			{
+				"name": "Chancey Ryder Witt",
+				"role": "performer"
+			},
+			{
+				"name": "Clay Pateneaude",
+				"role": "performer"
+			},
+			{
+				"name": "Leanna Shumpert",
+				"role": "performer"
+			},
+			{
+				"name": "Brynn Darling",
+				"role": "performer"
+			},
+			{
+				"name": "Wyatt Mansfield",
+				"role": "performer"
+			},
+			{
+				"name": "Stetson Neumann",
+				"role": "performer"
+			},
+			{
+				"name": "Traden Lockwood",
+				"role": "performer"
+			},
+			{
+				"name": "Don Gummer Garnier",
+				"role": "performer"
+			},
+			{
+				"name": "Renee Mousseaux",
+				"role": "performer"
+			},
+			{
+				"name": "Brett Fly Sr.",
+				"role": "performer"
+			},
+			{
+				"name": "Ryan Caraway",
+				"role": "performer"
+			},
+			{
+				"name": "Haley Strode",
+				"role": "performer"
+			},
+			{
+				"name": "Lori Ann Reed",
+				"role": "performer"
+			},
+			{
+				"name": "Amy Shedeed",
+				"role": "performer"
+			},
+			{
+				"name": "Angela Heinze",
+				"role": "performer"
+			},
+			{
+				"name": "Tracey Osmotherly",
+				"role": "performer"
+			},
+			{
+				"name": "Janis Schell",
+				"role": "performer"
+			},
+			{
+				"name": "Cheryl Walker",
+				"role": "performer"
+			},
+			{
+				"name": "Lisa Anderson-Pelton",
+				"role": "performer"
+			},
+			{
+				"name": "Patsy R. Tines",
+				"role": "performer"
+			},
+			{
+				"name": "Jace Thompson",
+				"role": "performer"
+			},
+			{
+				"name": "Jason Mathis",
+				"role": "performer"
+			},
+			{
+				"name": "Parker Rain Hill",
+				"role": "performer"
+			},
+			{
+				"name": "Ryan M. Hall",
+				"role": "performer"
+			},
+			{
+				"name": "Bradley Otte",
+				"role": "performer"
+			}
+		]
+	}
+}

@@ -28,21 +28,21 @@
 		"Kelsey Grammer"
 	],
 	"productionCompany": "Altitude Film Entertainment, Phiphen Pictures",
-	"cinepostaScore": 4,
+	"cinepostaScore": 5,
 	"awards": {
 		"wins": []
 	},
 	"runtimeMinutes": 91,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Turbulencias tiene un globo, altura y una pareja rota, pero Claudio Fäh no logra que Jeremy Irvine y Olga Kurylenko escapen de un guion mecánico.",
-		"whatToExpect": "Una excursión por los Dolomitas se transforma en lucha por sobrevivir cuando una tercera pasajera y varias decisiones peligrosas dejan a la pareja sin salida.",
-		"pace": "Arranca con tensión de relación, sube cuando el globo queda atrapado y después encadena complicaciones que explican demasiado su propio peligro.",
-		"intensity": "La altura aporta riesgo concreto, aunque las conductas poco creíbles le sacan fuerza a los momentos en que debería faltar el aire.",
-		"practicalContext": "Dura 91 minutos y funciona como thriller de supervivencia breve; conviene entrar por el escenario suspendido y no por la lógica de los personajes.",
-		"forFansOf": "Te puede interesar si disfrutás desastres de espacio cerrado, parejas bajo presión y paisajes que funcionan como amenaza.",
-		"notForYouIf": "No es para vos si necesitás decisiones verosímiles, personajes desarrollados o un suspenso que no dependa de la próxima complicación."
-	},
+		"tenSecondTake": {
+			"verdict": "Turbulencias tiene un globo, altura y una pareja rota, pero Claudio Fäh no logra que Jeremy Irvine y Olga Kurylenko escapen de un guion mecánico.",
+			"whatToExpect": "Una excursión por los Dolomitas se transforma en lucha por sobrevivir cuando una tercera pasajera y varias decisiones peligrosas dejan a la pareja sin salida.",
+			"pace": "Arranca con tensión de relación, sube cuando el globo queda atrapado y después encadena complicaciones que explican demasiado su propio peligro.",
+			"intensity": "La altura aporta riesgo concreto, aunque las conductas poco creíbles le sacan fuerza a los momentos en que debería faltar el aire.",
+			"practicalContext": "Dura 91 minutos y funciona como thriller de supervivencia breve; conviene entrar por el escenario suspendido y no por la lógica de los personajes.",
+			"forFansOf": "Te puede interesar si disfrutás desastres de espacio cerrado, parejas bajo presión y paisajes que funcionan como amenaza.",
+			"notForYouIf": "No es para vos si necesitás decisiones verosímiles, personajes desarrollados o un suspenso que no dependa de la próxima complicación."
+		},
 		"becauseYouLiked": [
 			"wolfwalkers-espiritu-de-lobo-2020",
 			"the-killer-2023"
@@ -54,5 +54,28 @@
 			"shelter-2026"
 		]
 	},
-	"review": "Turbulencias tiene un escenario con potencial inmediato: un globo atrapado en el aire, una pareja que ya llega rota y una amenaza que vuelve cada decisión física. La altura y el paisaje aportan una tensión concreta, pero el guion se apoya demasiado en malentendidos y conductas difíciles de creer. Jeremy Irvine y Olga Kurylenko sostienen el esfuerzo con seriedad, mientras Kelsey Grammer aparece como una pieza de autoridad dentro de un mecanismo bastante mecánico. El suspenso entrega algún tramo entretenido, aunque los personajes quedan subordinados a la próxima complicación. NO GARPA: peligro de altura, escritura a ras del piso."
+	"review": "Turbulencias tiene un escenario con potencial inmediato: un globo atrapado en el aire, una pareja que ya llega rota y una amenaza que vuelve cada decisión física. La altura y el paisaje aportan una tensión concreta, pero el guion se apoya demasiado en malentendidos y conductas difíciles de creer. Jeremy Irvine y Olga Kurylenko sostienen el esfuerzo con seriedad, mientras Kelsey Grammer aparece como una pieza de autoridad dentro de un mecanismo bastante mecánico. El suspenso entrega algún tramo entretenido, aunque los personajes quedan subordinados a la próxima complicación. NO GARPA: peligro de altura, escritura a ras del piso.",
+	"castCharacters": [
+		{
+			"actor": "Jeremy Irvine",
+			"character": "Zach",
+			"tmdbMovieId": 1401778,
+			"tmdbPersonId": 225692,
+			"verifiedAt": "2026-11-13"
+		},
+		{
+			"actor": "Olga Kurylenko",
+			"character": "Julia",
+			"tmdbMovieId": 1401778,
+			"tmdbPersonId": 18182,
+			"verifiedAt": "2026-11-13"
+		},
+		{
+			"actor": "Kelsey Grammer",
+			"character": "Harry",
+			"tmdbMovieId": 1401778,
+			"tmdbPersonId": 7090,
+			"verifiedAt": "2026-11-13"
+		}
+	]
 }

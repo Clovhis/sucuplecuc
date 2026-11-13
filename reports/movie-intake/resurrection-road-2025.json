@@ -1,0 +1,361 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "resurrection-road-2025",
+	"title": "Resurrection Road",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1260794/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 15
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt27000642/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Ashley Cahill",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4599409",
+					"fact": "El perfil público identifica a Ashley Cahill; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+					"fact": "Identidad cotejada con el crédito del título Resurrection Road, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.screamfestnola.com/director/ashley-cahill",
+					"fact": "Fuente atribuible que identifica el retrato de Ashley Cahill."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2335689/",
+					"fact": "El enriquecedor canónico recuperó la identidad IMDb, cotejada con la dirección de Resurrection Road y el perfil del festival Screamfest."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://www.screamfestnola.com/sites/default/files/styles/height/public/director_image/Screenshot%202026-07-02%20at%2020.27.24%20copy.png",
+				"visuallyVerified": true,
+				"localPath": "/people/ashley-cahill-nm2335689.jpg"
+			}
+		},
+		{
+			"name": "Malcolm Goodwin",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Barabbas",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/57997",
+					"fact": "El perfil público identifica a Malcolm Goodwin; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+					"fact": "Identidad cotejada con el crédito del título Resurrection Road, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/57997",
+					"fact": "Fuente atribuible que identifica el retrato de Malcolm Goodwin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/h2AVP07OdXOsX3ERNwpsQuvrUEB.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/malcolm-goodwin-tmdb-57997.jpg"
+			}
+		},
+		{
+			"name": "Furly Mac",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Cuffy",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3013797",
+					"fact": "El perfil público identifica a Furly Mac; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+					"fact": "Identidad cotejada con el crédito del título Resurrection Road, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3013797",
+					"fact": "Fuente atribuible que identifica el retrato de Furly Mac."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/koxzNS85xweKTtm09j5LiGBlWET.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/furly-mac-tmdb-3013797.jpg"
+			}
+		},
+		{
+			"name": "Triana Browne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Tsula",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3123227",
+					"fact": "El perfil público identifica a Triana Browne; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+					"fact": "Identidad cotejada con el crédito del título Resurrection Road, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3123227",
+					"fact": "Fuente atribuible que identifica el retrato de Triana Browne."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pHNzmohlbD3SI0gLOAxYKY12Hpv.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/triana-browne-tmdb-3123227.jpg"
+			}
+		},
+		{
+			"name": "Okea Eme-Akwari",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Washington",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2921159",
+					"fact": "El perfil público identifica a Okea Eme-Akwari; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+					"fact": "Identidad cotejada con el crédito del título Resurrection Road, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2921159",
+					"fact": "Fuente atribuible que identifica el retrato de Okea Eme-Akwari."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aSu6uok2bKB0sL2FQOtD82iGHr6.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/okea-eme-akwari-tmdb-2921159.jpg"
+			}
+		},
+		{
+			"name": "Randall J. Bacon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Stevens",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3098427",
+					"fact": "El perfil público identifica a Randall J. Bacon; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+					"fact": "Identidad cotejada con el crédito del título Resurrection Road, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/3098427",
+					"fact": "Fuente atribuible que identifica el retrato de Randall J. Bacon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6udR5ntbDRJ5aGNqrA6P9IPjq8G.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/randall-j-bacon-tmdb-3098427.jpg"
+			}
+		},
+		{
+			"name": "Jeff Daniel Phillips",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "General Craven",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/59673",
+					"fact": "El perfil público identifica a Jeff Daniel Phillips; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+					"fact": "Identidad cotejada con el crédito del título Resurrection Road, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/59673",
+					"fact": "Fuente atribuible que identifica el retrato de Jeff Daniel Phillips."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8U2mqgRt0mMaCBFnINQxYzqREGm.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jeff-daniel-phillips-tmdb-59673.jpg"
+			}
+		},
+		{
+			"name": "Michael Madsen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Quantrill",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/147",
+					"fact": "El perfil público identifica a Michael Madsen; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+					"fact": "Identidad cotejada con el crédito del título Resurrection Road, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fvr2EXEPrVwsF2JlfRp0Olbj4g8.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/michael-madsen-nm0000514.jpg"
+			}
+		},
+		{
+			"name": "Ronnie Gene Blevins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Hap Rawls",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/98804",
+					"fact": "El perfil público identifica a Ronnie Gene Blevins; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/resurrection-road",
+					"fact": "Identidad cotejada con el crédito del título Resurrection Road, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/98804",
+					"fact": "Fuente atribuible que identifica el retrato de Ronnie Gene Blevins."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/28O4ALimfSVQgMOvkstDJpzHKDc.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ronnie-gene-blevins-tmdb-98804.jpg"
+			}
+		},
+		{
+			"name": "Randy Wayne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Kentucky Bragg",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Randy Wayne interpreta Kentucky Bragg: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Faron Ledbetter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Union Soldier",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Faron Ledbetter interpreta Union Soldier: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Johannes Becht",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Confederate Soldier",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Johannes Becht interpreta Confederate Soldier: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Leila Anastasia Scott",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Rebecca",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Leila Anastasia Scott interpreta Rebecca: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Timothy Batten",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Lt. Williams",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Timothy Batten interpreta Lt. Williams: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Matthew Jaycox",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1260794/cast",
+			"screenRole": "Union Soldier",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Matthew Jaycox interpreta Union Soldier: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Randy Wayne",
+				"role": "performer"
+			},
+			{
+				"name": "Faron Ledbetter",
+				"role": "performer"
+			},
+			{
+				"name": "Johannes Becht",
+				"role": "performer"
+			},
+			{
+				"name": "Leila Anastasia Scott",
+				"role": "performer"
+			},
+			{
+				"name": "Timothy Batten",
+				"role": "performer"
+			},
+			{
+				"name": "Matthew Jaycox",
+				"role": "performer"
+			}
+		]
+	}
+}

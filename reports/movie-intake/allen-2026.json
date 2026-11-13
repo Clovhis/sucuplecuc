@@ -1,0 +1,376 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "allen-2026",
+	"title": "Allen",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1518204/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 17
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/allen",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt37675123/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Daley Pearson",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1672488",
+					"fact": "El perfil público identifica a Daley Pearson; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/allen",
+					"fact": "Identidad cotejada con el crédito del título Allen, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1672488",
+					"fact": "Fuente atribuible que identifica el retrato de Daley Pearson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/iX77YtxdoslRXdG6EVK2WEknbwD.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/daley-pearson-tmdb-1672488.jpg"
+			}
+		},
+		{
+			"name": "Jeffrey Walker",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/131776",
+					"fact": "El perfil público identifica a Jeffrey Walker; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/allen",
+					"fact": "Identidad cotejada con el crédito del título Allen, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/131776",
+					"fact": "Fuente atribuible que identifica el retrato de Jeffrey Walker."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eifaOb3XPsf3d7jrXFml2DSIo5H.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jeffrey-walker-tmdb-131776.jpg"
+			}
+		},
+		{
+			"name": "T.J. Power",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Petey",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1667890",
+					"fact": "El perfil público identifica a T.J. Power; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/allen",
+					"fact": "Identidad cotejada con el crédito del título Allen, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1667890",
+					"fact": "Fuente atribuible que identifica el retrato de T.J. Power."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/v7SPjOZx9gIFXK3LmtFzYeXP1He.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/t-j-power-tmdb-1667890.jpg"
+			}
+		},
+		{
+			"name": "Charlotte Nicdao",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Carly",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1434826",
+					"fact": "El perfil público identifica a Charlotte Nicdao; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/allen",
+					"fact": "Identidad cotejada con el crédito del título Allen, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1434826",
+					"fact": "Fuente atribuible que identifica el retrato de Charlotte Nicdao."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rCqf3HcEr4GmSYAMqmdEpo6cZwr.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/charlotte-nicdao-tmdb-1434826.jpg"
+			}
+		},
+		{
+			"name": "Josh Helman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Jaden",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1056053",
+					"fact": "El perfil público identifica a Josh Helman; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/allen",
+					"fact": "Identidad cotejada con el crédito del título Allen, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1056053",
+					"fact": "Fuente atribuible que identifica el retrato de Josh Helman."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1thwLjrgvFv7ifjyVtTKQh23OCh.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/josh-helman-tmdb-1056053.jpg"
+			}
+		},
+		{
+			"name": "Emily Barclay",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Sarah",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/15577",
+					"fact": "El perfil público identifica a Emily Barclay; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/allen",
+					"fact": "Identidad cotejada con el crédito del título Allen, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/15577",
+					"fact": "Fuente atribuible que identifica el retrato de Emily Barclay."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xGX91Byjuxa83yGadH375Ep9fgm.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/emily-barclay-tmdb-15577.jpg"
+			}
+		},
+		{
+			"name": "Benedict Hardie",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Rory",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1275904",
+					"fact": "El perfil público identifica a Benedict Hardie; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/allen",
+					"fact": "Identidad cotejada con el crédito del título Allen, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1275904",
+					"fact": "Fuente atribuible que identifica el retrato de Benedict Hardie."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bf02Dz4LMV23scJC6c8P4R6xji6.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/benedict-hardie-tmdb-1275904.jpg"
+			}
+		},
+		{
+			"name": "Elijah Tamati",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Cameron",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5035274",
+					"fact": "El perfil público identifica a Elijah Tamati; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/allen",
+					"fact": "Identidad cotejada con el crédito del título Allen, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/5035274",
+					"fact": "Fuente atribuible que identifica el retrato de Elijah Tamati."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rFGB97FgZDQ7t01NtMdb4n6vkgg.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/elijah-tamati-tmdb-5035274.jpg"
+			}
+		},
+		{
+			"name": "Edward A O'Sullivan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Young Petey",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Edward A O'Sullivan interpreta Young Petey: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Caitlin Niemotko",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Young Carly",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Caitlin Niemotko interpreta Young Carly: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Tommy Broadmore",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Young Jaden",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Tommy Broadmore interpreta Young Jaden: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Kelly Butler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Gaye",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Kelly Butler interpreta Gaye: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Mark Doggett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Chief Fireman",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Mark Doggett interpreta Chief Fireman: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Christopher Sommers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Deputy Officer Gary Foots",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Christopher Sommers interpreta Deputy Officer Gary Foots: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Kaipo Heke",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Nahuel",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Kaipo Heke interpreta Nahuel: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Chaydon Jay",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Roy",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Chaydon Jay interpreta Roy: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Steven Bonutto",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1518204/cast",
+			"screenRole": "Dr. Summers",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Steven Bonutto interpreta Dr. Summers: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Edward A O'Sullivan",
+				"role": "performer"
+			},
+			{
+				"name": "Caitlin Niemotko",
+				"role": "performer"
+			},
+			{
+				"name": "Tommy Broadmore",
+				"role": "performer"
+			},
+			{
+				"name": "Kelly Butler",
+				"role": "performer"
+			},
+			{
+				"name": "Mark Doggett",
+				"role": "performer"
+			},
+			{
+				"name": "Christopher Sommers",
+				"role": "performer"
+			},
+			{
+				"name": "Kaipo Heke",
+				"role": "performer"
+			},
+			{
+				"name": "Chaydon Jay",
+				"role": "performer"
+			},
+			{
+				"name": "Steven Bonutto",
+				"role": "performer"
+			}
+		]
+	}
+}

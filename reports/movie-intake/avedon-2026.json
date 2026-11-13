@@ -1,0 +1,449 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "avedon-2026",
+	"title": "Avedon",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.festival-cannes.com/en/f/avedon/",
+			"kind": "Catálogo oficial del estreno mundial: 23 participantes nombrados, revisados individualmente",
+			"fullCredits": true,
+			"checkedOn": "2026-11-13",
+			"relevantCreditCount": 24
+		},
+		{
+			"url": "https://www.themoviedb.org/movie/1666787/cast",
+			"kind": "Archivo del sujeto y dirección; esta API es incompleta para las entrevistas",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://app.mvff.com/film/avedon",
+			"kind": "Segundo festival y descripción expresa de los entrevistados principales",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Ron Howard",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6159",
+					"fact": "El perfil público identifica a Ron Howard; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.festival-cannes.com/f/avedon/",
+					"fact": "Identidad cotejada con el crédito del título Avedon, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ron%20Howard%20at%20the%202024%20Toronto%20International%20Film%20Festival%2005%20(cropped).jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/ron-howard-nm0000165.jpg"
+			}
+		},
+		{
+			"name": "Isabella Rossellini",
+			"role": "performer",
+			"screenRole": "Self",
+			"prominence": "participant",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6588",
+					"fact": "Perfil exacto de Isabella Rossellini, cotejado con el nombre y su trayectoria pública."
+				},
+				{
+					"url": "https://app.mvff.com/film/avedon",
+					"fact": "El festival identifica a Isabella Rossellini entre los testimonios de Avedon (2026), dirigido por Ron Howard."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Isabella%20Rossellini%20at%20the%202024%20Toronto%20International%20Film%20Festival%20(cropped).jpg?width=640",
+				"localPath": "/people/isabella-rossellini-nm0000618.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lauren Hutton",
+			"role": "performer",
+			"screenRole": "Self",
+			"prominence": "participant",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/27964",
+					"fact": "Perfil exacto de Lauren Hutton, cotejado con el nombre y su trayectoria pública."
+				},
+				{
+					"url": "https://app.mvff.com/film/avedon",
+					"fact": "El festival identifica a Lauren Hutton entre los testimonios de Avedon (2026), dirigido por Ron Howard."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lauren%20Hutton%201997.jpg?width=640",
+				"localPath": "/people/lauren-hutton-nm0001381.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Larry Gagosian",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Larry Gagosian figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Adam Gopnik",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2352235",
+					"fact": "El perfil público identifica a Adam Gopnik; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.festival-cannes.com/f/avedon/",
+					"fact": "Identidad cotejada con el crédito del título Avedon, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2352235",
+					"fact": "Fuente atribuible que identifica el retrato de Adam Gopnik."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lR485axKmDSDqy2Fm7CkXkMM4cG.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/adam-gopnik-tmdb-2352235.jpg"
+			}
+		},
+		{
+			"name": "Calvin Klein",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1224484",
+					"fact": "El perfil público identifica a Calvin Klein; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.festival-cannes.com/f/avedon/",
+					"fact": "Identidad cotejada con el crédito del título Avedon, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1224484",
+					"fact": "Fuente atribuible que identifica el retrato de Calvin Klein."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ovBFrenNX1MMMCc9AV3fZc1ysy5.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/calvin-klein-tmdb-1224484.jpg"
+			}
+		},
+		{
+			"name": "Twiggy Lawson",
+			"role": "performer",
+			"screenRole": "Self",
+			"prominence": "participant",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"decision": "omit",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Twiggy Lawson figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "John Avedon",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "La selección de la ficha se concentra en lectura de imágenes, trabajo editorial y experiencia frente a cámara; no reproduce toda la reconstrucción familiar. El testimonio del hijo queda registrado en el billing completo, sin afirmar que sea menor ni resolverlo como otro John Avedon."
+		},
+		{
+			"name": "Penelope Tree",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Penelope Tree figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Tina Brown",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1233559",
+					"fact": "El perfil público identifica a Tina Brown; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.festival-cannes.com/f/avedon/",
+					"fact": "Identidad cotejada con el crédito del título Avedon, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1233559",
+					"fact": "Fuente atribuible que identifica el retrato de Tina Brown."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qF1KqpmhAeAGvN1nuByXnIVOrul.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/tina-brown-tmdb-1233559.jpg"
+			}
+		},
+		{
+			"name": "Twyla Tharp",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Twyla Tharp figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Hilton Als",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Hilton Als figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Yolanda Cuomo",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Yolanda Cuomo figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Beverly Johnson",
+			"role": "performer",
+			"screenRole": "Self",
+			"prominence": "participant",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"decision": "omit",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Beverly Johnson figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Sebastian Kim",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Sebastian Kim figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "John Lahr",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "John Lahr figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Jane Livingston",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Jane Livingston figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "James Martin",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Se priorizan seis voces que contrastan escritura, fotografía, diseño y experiencia de modelo; la perspectiva institucional de la fundación queda documentada aquí. No se confunde al director ejecutivo con el chef ni con el sacerdote homónimos."
+		},
+		{
+			"name": "Joel Meyerowitz",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1899386",
+					"fact": "El perfil público identifica a Joel Meyerowitz; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.festival-cannes.com/f/avedon/",
+					"fact": "Identidad cotejada con el crédito del título Avedon, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Joel_Meyerowitz",
+					"fact": "Fuente atribuible que identifica el retrato de Joel Meyerowitz."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Meyerowitz_271104_k%C3%B6ln_galeriezander.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail_unscaled",
+				"visuallyVerified": true,
+				"localPath": "/people/joel-meyerowitz-tmdb-1899386.jpg"
+			}
+		},
+		{
+			"name": "Tyler Mitchell",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Tyler Mitchell figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Samira Nasr",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Samira Nasr figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Ginny Heyman Waldman",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Ginny Heyman Waldman figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Greg Wakabayashi",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"screenRole": "Self",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Greg Wakabayashi figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		},
+		{
+			"name": "Laura Wilson",
+			"role": "performer",
+			"screenRole": "Self",
+			"prominence": "participant",
+			"creditSourceUrl": "https://www.festival-cannes.com/en/f/avedon/",
+			"decision": "omit",
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Laura Wilson figura entre los testimonios del catálogo oficial de Cannes. La ficha ofrece seis perspectivas complementarias y no replica la lista completa de colaboradores; la omisión es editorial y no afirma menor duración o ausencia en pantalla."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Seis entrevistados: Adam Gopnik y Tina Brown aportan el mundo de la escritura y la edición, Joel Meyerowitz la fotografía, Calvin Klein el diseño, Isabella Rossellini y Lauren Hutton la experiencia de estar frente a la cámara. No se presenta al resto como figuración, ni se usa el orden de una base como jerarquía dramática en un documental coral. Las 23 voces nombradas por Cannes se conservan en este ledger; el archivo del fotógrafo se contrastó aparte con TMDB; el retrato de la ficha es una selección editorial.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Larry Gagosian",
+				"role": "performer"
+			},
+			{
+				"name": "Twiggy Lawson",
+				"role": "performer"
+			},
+			{
+				"name": "John Avedon",
+				"role": "performer"
+			},
+			{
+				"name": "Penelope Tree",
+				"role": "performer"
+			},
+			{
+				"name": "Twyla Tharp",
+				"role": "performer"
+			},
+			{
+				"name": "Hilton Als",
+				"role": "performer"
+			},
+			{
+				"name": "Yolanda Cuomo",
+				"role": "performer"
+			},
+			{
+				"name": "Beverly Johnson",
+				"role": "performer"
+			},
+			{
+				"name": "Sebastian Kim",
+				"role": "performer"
+			},
+			{
+				"name": "John Lahr",
+				"role": "performer"
+			},
+			{
+				"name": "Jane Livingston",
+				"role": "performer"
+			},
+			{
+				"name": "James Martin",
+				"role": "performer"
+			},
+			{
+				"name": "Tyler Mitchell",
+				"role": "performer"
+			},
+			{
+				"name": "Samira Nasr",
+				"role": "performer"
+			},
+			{
+				"name": "Ginny Heyman Waldman",
+				"role": "performer"
+			},
+			{
+				"name": "Greg Wakabayashi",
+				"role": "performer"
+			},
+			{
+				"name": "Laura Wilson",
+				"role": "performer"
+			}
+		]
+	}
+}

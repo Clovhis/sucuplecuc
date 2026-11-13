@@ -1,0 +1,679 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "pruebas-de-amor-2025",
+	"title": "Pruebas de amor",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1119537/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 38
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt34762801/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Alice Douard",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1434424",
+					"fact": "El perfil público identifica a Alice Douard; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+					"fact": "Identidad cotejada con el crédito del título Pruebas de amor, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1434424",
+					"fact": "Fuente atribuible que identifica el retrato de Alice Douard."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7Hr45YpLyUD7AXKPNyMfNKTvSBi.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/alice-douard-tmdb-1434424.jpg"
+			}
+		},
+		{
+			"name": "Ella Rumpf",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Céline",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1438688",
+					"fact": "El perfil público identifica a Ella Rumpf; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+					"fact": "Identidad cotejada con el crédito del título Pruebas de amor, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/2025%20Ella%20Rumpf%20(cropped).jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/ella-rumpf-nm5050688.jpg"
+			}
+		},
+		{
+			"name": "Monia Chokri",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Nadia",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/143595",
+					"fact": "El perfil público identifica a Monia Chokri; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+					"fact": "Identidad cotejada con el crédito del título Pruebas de amor, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/143595",
+					"fact": "Fuente atribuible que identifica el retrato de Monia Chokri."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/i06QbNMDTrjeM4NgdT1lgrWF4IK.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/monia-chokri-tmdb-143595.jpg"
+			}
+		},
+		{
+			"name": "Noémie Lvovsky",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Marguerite",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/49168",
+					"fact": "El perfil público identifica a Noémie Lvovsky; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+					"fact": "Identidad cotejada con el crédito del título Pruebas de amor, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/49168",
+					"fact": "Fuente atribuible que identifica el retrato de Noémie Lvovsky."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rCAE48eQMBRxLGksTdbjTjeiPbP.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/noemie-lvovsky-tmdb-49168.jpg"
+			}
+		},
+		{
+			"name": "Emy Juretzko",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Erika",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5487996",
+					"fact": "El perfil público identifica a Emy Juretzko; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+					"fact": "Identidad cotejada con el crédito del título Pruebas de amor, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.agencesartistiques.com/Fiche-Artiste/768629-emy-juretzko.html",
+					"fact": "Fuente atribuible que identifica el retrato de Emy Juretzko."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://diffusionph.cccommunication.biz/jpgok/RepGR/768/768629_95.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/emy-juretzko-tmdb-5487996.jpg"
+			}
+		},
+		{
+			"name": "Julien Gaspar-Oliveri",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "François",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2287369",
+					"fact": "El perfil público identifica a Julien Gaspar-Oliveri; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+					"fact": "Identidad cotejada con el crédito del título Pruebas de amor, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2287369",
+					"fact": "Fuente atribuible que identifica el retrato de Julien Gaspar-Oliveri."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6rqBEDnlUeB3MEAry58trJChxHs.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/julien-gaspar-oliveri-tmdb-2287369.jpg"
+			}
+		},
+		{
+			"name": "Jeanne Herry",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "L'avocate",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/19066",
+					"fact": "El perfil público identifica a Jeanne Herry; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+					"fact": "Identidad cotejada con el crédito del título Pruebas de amor, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/19066",
+					"fact": "Fuente atribuible que identifica el retrato de Jeanne Herry."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2xmHOlRJ6LuBsO94WHB0pVNs59T.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jeanne-herry-tmdb-19066.jpg"
+			}
+		},
+		{
+			"name": "Aude Pépin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Adèle",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1342075",
+					"fact": "El perfil público identifica a Aude Pépin; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+					"fact": "Identidad cotejada con el crédito del título Pruebas de amor, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1342075",
+					"fact": "Fuente atribuible que identifica el retrato de Aude Pépin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/76xPVTDLVhYv6ddZh1R6ztnFIOR.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/aude-pepin-tmdb-1342075.jpg"
+			}
+		},
+		{
+			"name": "Philippe Petit",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Nour",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Philippe Petit interpreta Nour: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Anne Le Ny",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Friquette",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/19370",
+					"fact": "El perfil público identifica a Anne Le Ny; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/15-pruebas-de-amor",
+					"fact": "Identidad cotejada con el crédito del título Pruebas de amor, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/19370",
+					"fact": "Fuente atribuible que identifica el retrato de Anne Le Ny."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eyvOUlmpllkSTRRT2mmGcUUrKZR.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/anne-le-ny-tmdb-19370.jpg"
+			}
+		},
+		{
+			"name": "Émilie Brisavoine",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Sofia",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Émilie Brisavoine interpreta Sofia: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Hammou Graïa",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Hammou",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Hammou Graïa interpreta Hammou: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Tom Harari",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Pierre",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Tom Harari interpreta Pierre: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Eva Huault",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Sage-femme visite",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Eva Huault interpreta Sage-femme visite: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Pauline Bayle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Agathe",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Pauline Bayle interpreta Agathe: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Félix Kysyl",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Yann",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Félix Kysyl interpreta Yann: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Hamza Meziani",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "L'interne maternité",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Hamza Meziani interpreta L'interne maternité: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Édouard Sulpice",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Le mec du bar",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Édouard Sulpice interpreta Le mec du bar: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Mélodie Bonnin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "L'obstétricienne",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Mélodie Bonnin interpreta L'obstétricienne: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Loane Seguillon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "La sage-femme",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Loane Seguillon interpreta La sage-femme: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Marianne Dubut",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "L'auxiliaire de puériculture",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Marianne Dubut interpreta L'auxiliaire de puériculture: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Mila Furie",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Mila",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Mila Furie interpreta Mila: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lomane de Dietrich",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Lomane",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lomane de Dietrich interpreta Lomane: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Marion Lambert",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Emma",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Marion Lambert interpreta Emma: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Marius Massard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Bébé Max",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Marius Massard interpreta Bébé Max: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Paul-Antoine Massard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Bébé Max",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Paul-Antoine Massard interpreta Bébé Max: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Zéphyr Massard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Bébé Max",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Zéphyr Massard interpreta Bébé Max: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Yannick Marais",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Groupe de musique La Maison Tellier",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Yannick Marais interpreta Groupe de musique La Maison Tellier: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Sébastien Miel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Groupe de musique La Maison Tellier",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Sébastien Miel interpreta Groupe de musique La Maison Tellier: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Mathieu Pigné",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Groupe de musique La Maison Tellier",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Mathieu Pigné interpreta Groupe de musique La Maison Tellier: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Alice Douard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Journaliste (voix)",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Alice Douard interpreta Journaliste (voix): crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "June Douard Boitard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Charlotte",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "June Douard Boitard interpreta Charlotte: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lou Fleury",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Lou",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lou Fleury interpreta Lou: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Élisa Réchiniac",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "La femme de Yann",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Élisa Réchiniac interpreta La femme de Yann: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Laurie Tonnadre",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "La femme visite maternité",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Laurie Tonnadre interpreta La femme visite maternité: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Georgia Ives",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "La fille extérieur club",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Georgia Ives interpreta La fille extérieur club: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Patrice Vanneufville",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Le testeur piano",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Patrice Vanneufville interpreta Le testeur piano: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Didier Berhault",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1119537/cast",
+			"screenRole": "Le chauffeur du bus de nuit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Didier Berhault interpreta Le chauffeur du bus de nuit: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Philippe Petit",
+				"role": "performer"
+			},
+			{
+				"name": "Émilie Brisavoine",
+				"role": "performer"
+			},
+			{
+				"name": "Hammou Graïa",
+				"role": "performer"
+			},
+			{
+				"name": "Tom Harari",
+				"role": "performer"
+			},
+			{
+				"name": "Eva Huault",
+				"role": "performer"
+			},
+			{
+				"name": "Pauline Bayle",
+				"role": "performer"
+			},
+			{
+				"name": "Félix Kysyl",
+				"role": "performer"
+			},
+			{
+				"name": "Hamza Meziani",
+				"role": "performer"
+			},
+			{
+				"name": "Édouard Sulpice",
+				"role": "performer"
+			},
+			{
+				"name": "Mélodie Bonnin",
+				"role": "performer"
+			},
+			{
+				"name": "Loane Seguillon",
+				"role": "performer"
+			},
+			{
+				"name": "Marianne Dubut",
+				"role": "performer"
+			},
+			{
+				"name": "Mila Furie",
+				"role": "performer"
+			},
+			{
+				"name": "Lomane de Dietrich",
+				"role": "performer"
+			},
+			{
+				"name": "Marion Lambert",
+				"role": "performer"
+			},
+			{
+				"name": "Marius Massard",
+				"role": "performer"
+			},
+			{
+				"name": "Paul-Antoine Massard",
+				"role": "performer"
+			},
+			{
+				"name": "Zéphyr Massard",
+				"role": "performer"
+			},
+			{
+				"name": "Yannick Marais",
+				"role": "performer"
+			},
+			{
+				"name": "Sébastien Miel",
+				"role": "performer"
+			},
+			{
+				"name": "Mathieu Pigné",
+				"role": "performer"
+			},
+			{
+				"name": "Alice Douard",
+				"role": "performer"
+			},
+			{
+				"name": "June Douard Boitard",
+				"role": "performer"
+			},
+			{
+				"name": "Lou Fleury",
+				"role": "performer"
+			},
+			{
+				"name": "Élisa Réchiniac",
+				"role": "performer"
+			},
+			{
+				"name": "Laurie Tonnadre",
+				"role": "performer"
+			},
+			{
+				"name": "Georgia Ives",
+				"role": "performer"
+			},
+			{
+				"name": "Patrice Vanneufville",
+				"role": "performer"
+			},
+			{
+				"name": "Didier Berhault",
+				"role": "performer"
+			}
+		]
+	}
+}

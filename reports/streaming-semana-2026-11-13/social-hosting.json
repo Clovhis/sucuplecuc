@@ -1,0 +1,32 @@
+{
+  "worktree": "C:\\WebsitePeliculas\\.tmp\\streaming-2026-11-13\\media-publish",
+  "sha": "18c30b297ce2d4c5d0fcd82b14db500ea146ffdb",
+  "files": [
+    {
+      "type": "x",
+      "file": "media/2026-11-13-streaming-x-6ee2c9bb8f35.jpg",
+      "sha256": "6ee2c9bb8f35820becfdb4a6f2d27f529fc92740efccafa3bd1e9f85714a9ccf",
+      "bytes": 71021,
+      "url": "https://raw.githubusercontent.com/Clovhis/sucuplecuc/18c30b297ce2d4c5d0fcd82b14db500ea146ffdb/media/2026-11-13-streaming-x-6ee2c9bb8f35.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "verifiedAt": "2026-11-13T16:37:09.620Z"
+    },
+    {
+      "type": "instagram",
+      "file": "media/2026-11-13-streaming-instagram-7ceb2b4fd466.mp4",
+      "sha256": "7ceb2b4fd466e880de1755adb955e2d757502762b698fb9b334f8aad22e7c783",
+      "bytes": 2741163,
+      "url": "https://raw.githubusercontent.com/Clovhis/sucuplecuc/18c30b297ce2d4c5d0fcd82b14db500ea146ffdb/media/2026-11-13-streaming-instagram-7ceb2b4fd466.mp4",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "verifiedAt": "2026-11-13T16:37:10.174Z"
+    }
+  ],
+  "destination": {
+    "url": "https://www.cineposta.com.ar/?utm_source=instagram&utm_medium=social&utm_campaign=streaming_20261109",
+    "status": 200,
+    "identity": "Existing canonical CinePosta home, verified for social destination. No post-deploy production verification claimed.",
+    "checkedAt": "2026-11-13T16:37:10.622Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "siendo-heumann-2026",
+	"title": "Siendo Heumann",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1050981/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 20
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt15095848/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Siân Héder",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/154865",
+					"fact": "El perfil público identifica a Siân Héder; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+					"fact": "Identidad cotejada con el crédito del título Siendo Heumann, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sTJnldwESQ7Bbc5EjzoE018KV0k.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/sian-heder-nm1571761.jpg"
+			}
+		},
+		{
+			"name": "Ruth Madeley",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Judith 'Judy' Heumann",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1491590",
+					"fact": "El perfil público identifica a Ruth Madeley; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+					"fact": "Identidad cotejada con el crédito del título Siendo Heumann, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1491590",
+					"fact": "Fuente atribuible que identifica el retrato de Ruth Madeley."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nTO7qTvUkgZ9s2Imejbi2DsrqEF.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ruth-madeley-tmdb-1491590.jpg"
+			}
+		},
+		{
+			"name": "Mark Ruffalo",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Joseph Califano",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/103",
+					"fact": "El perfil público identifica a Mark Ruffalo; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+					"fact": "Identidad cotejada con el crédito del título Siendo Heumann, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mark%20Ruffalo%20(36201774756)%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/mark-ruffalo-nm0749263.jpg"
+			}
+		},
+		{
+			"name": "Dylan O'Brien",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Evan White",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/527393",
+					"fact": "El perfil público identifica a Dylan O'Brien; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+					"fact": "Identidad cotejada con el crédito del título Siendo Heumann, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jr08zI0cwDA1kW2iSeeRzwMwRvO.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/dylan-obrien-nm3729721.jpg"
+			}
+		},
+		{
+			"name": "Madeline Delp",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Kitty Cone",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5554500",
+					"fact": "El perfil público identifica a Madeline Delp; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+					"fact": "Identidad cotejada con el crédito del título Siendo Heumann, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/5554500",
+					"fact": "Fuente atribuible que identifica el retrato de Madeline Delp."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fA4Q48Q0z7XRWBNDtAp7t2EP4Tq.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/madeline-delp-tmdb-5554500.jpg"
+			}
+		},
+		{
+			"name": "Rob Delaney",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Congressman Miller",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1091324",
+					"fact": "El perfil público identifica a Rob Delaney; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+					"fact": "Identidad cotejada con el crédito del título Siendo Heumann, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xirfT1znRkkughLiPemKu3NhkKQ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/rob-delaney-nm3008739.jpg"
+			}
+		},
+		{
+			"name": "Ray Fisher",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Chuck Jackson",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1313559",
+					"fact": "El perfil público identifica a Ray Fisher; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+					"fact": "Identidad cotejada con el crédito del título Siendo Heumann, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1313559",
+					"fact": "Fuente atribuible que identifica el retrato de Ray Fisher."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/310snvA05xDOQZDn2fJSp242GHw.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ray-fisher-tmdb-1313559.jpg"
+			}
+		},
+		{
+			"name": "Michael Patrick Thornton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Ed Roberts",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1445659",
+					"fact": "El perfil público identifica a Michael Patrick Thornton; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+					"fact": "Identidad cotejada con el crédito del título Siendo Heumann, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1445659",
+					"fact": "Fuente atribuible que identifica el retrato de Michael Patrick Thornton."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/t7Z7ubKXOi58K1Li4lcMJk0RkXN.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/michael-patrick-thornton-tmdb-1445659.jpg"
+			}
+		},
+		{
+			"name": "Antwan Tolliver",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Brad Lomax",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5554488",
+					"fact": "El perfil público identifica a Antwan Tolliver; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+					"fact": "Identidad cotejada con el crédito del título Siendo Heumann, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/5554488",
+					"fact": "Fuente atribuible que identifica el retrato de Antwan Tolliver."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8f3KJTqDtN2XL3qzVPLXXPKUOV6.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/antwan-tolliver-tmdb-5554488.jpg"
+			}
+		},
+		{
+			"name": "Daniel Durant",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Steve McCleeland",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Daniel Durant interpreta Steve McCleeland: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jon Beavers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Jim Pechin",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jon Beavers interpreta Jim Pechin: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Roberta Colindrez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Joni Breves",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Roberta Colindrez interpreta Joni Breves: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Siena Rafter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Lynette",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Siena Rafter interpreta Lynette: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Andrew Pilkington",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Hale Zukas",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Andrew Pilkington interpreta Hale Zukas: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Rein Barcel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Cece",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Rein Barcel interpreta Cece: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Darcee Charington Neal",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Ron Washington",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Darcee Charington Neal interpreta Ron Washington: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Matthew Jeffers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Gerald",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Matthew Jeffers interpreta Gerald: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Nic Novicki",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Walter",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Nic Novicki interpreta Walter: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Will Brill",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Will Brill: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "David Hewlett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1050981/cast",
+			"screenRole": "Agent Sullivan",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "David Hewlett interpreta Agent Sullivan: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Daniel Durant",
+				"role": "performer"
+			},
+			{
+				"name": "Jon Beavers",
+				"role": "performer"
+			},
+			{
+				"name": "Roberta Colindrez",
+				"role": "performer"
+			},
+			{
+				"name": "Siena Rafter",
+				"role": "performer"
+			},
+			{
+				"name": "Andrew Pilkington",
+				"role": "performer"
+			},
+			{
+				"name": "Rein Barcel",
+				"role": "performer"
+			},
+			{
+				"name": "Darcee Charington Neal",
+				"role": "performer"
+			},
+			{
+				"name": "Matthew Jeffers",
+				"role": "performer"
+			},
+			{
+				"name": "Nic Novicki",
+				"role": "performer"
+			},
+			{
+				"name": "Will Brill",
+				"role": "performer"
+			},
+			{
+				"name": "David Hewlett",
+				"role": "performer"
+			}
+		]
+	}
+}

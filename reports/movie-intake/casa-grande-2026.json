@@ -1,0 +1,335 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "casa-grande-2026",
+	"title": "Casa Grande",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1469164/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 15
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/casa-grande-2026",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt35887288/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Juan Pablo Arias Munoz",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1921469",
+					"fact": "El perfil público identifica a Juan Pablo Arias Munoz; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/casa-grande-2026",
+					"fact": "Identidad cotejada con el crédito del título Casa Grande, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.jpariasmunoz.com/bio",
+					"fact": "Fuente atribuible que identifica el retrato de Juan Pablo Arias Munoz."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c0c2f424cde7a31e1cfdcdb/975a37fe-2bd0-40b4-a98a-7aa529f9d57f/2026WBDJUAN-101.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/juan-pablo-arias-munoz-tmdb-1921469.jpg"
+			}
+		},
+		{
+			"name": "John Pyper-Ferguson",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Sawyer Clarkman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/95638",
+					"fact": "El perfil público identifica a John Pyper-Ferguson; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/casa-grande-2026",
+					"fact": "Identidad cotejada con el crédito del título Casa Grande, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/95638",
+					"fact": "Fuente atribuible que identifica el retrato de John Pyper-Ferguson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2IYFYfH67yG1UGedH49BYjigMe.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/john-pyper-ferguson-tmdb-95638.jpg"
+			}
+		},
+		{
+			"name": "Christina Moore",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Susanna Clarkman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/439765",
+					"fact": "El perfil público identifica a Christina Moore; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/casa-grande-2026",
+					"fact": "Identidad cotejada con el crédito del título Casa Grande, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/439765",
+					"fact": "Fuente atribuible que identifica el retrato de Christina Moore."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kbv3pHnb1w0JkUfiseamJ91VgMB.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/christina-moore-tmdb-439765.jpg"
+			}
+		},
+		{
+			"name": "Madison Lawlor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Hassie Clarkman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1426494",
+					"fact": "El perfil público identifica a Madison Lawlor; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/casa-grande-2026",
+					"fact": "Identidad cotejada con el crédito del título Casa Grande, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1426494",
+					"fact": "Fuente atribuible que identifica el retrato de Madison Lawlor."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sXeIgJQ590hLYgnu5z6NO3sKsYw.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/madison-lawlor-tmdb-1426494.jpg"
+			}
+		},
+		{
+			"name": "Lou Diamond Phillips",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lou Diamond Phillips: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Daniel Edward Mora",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Rafael Morales",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/170293",
+					"fact": "El perfil público identifica a Daniel Edward Mora; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/casa-grande-2026",
+					"fact": "Identidad cotejada con el crédito del título Casa Grande, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/170293",
+					"fact": "Fuente atribuible que identifica el retrato de Daniel Edward Mora."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/gRpa5p0MgrHTwhHhpE9MLoCbszq.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/daniel-edward-mora-tmdb-170293.jpg"
+			}
+		},
+		{
+			"name": "Javier Bolanos",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Mael Morales",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2108039",
+					"fact": "El perfil público identifica a Javier Bolanos; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/casa-grande-2026",
+					"fact": "Identidad cotejada con el crédito del título Casa Grande, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2108039",
+					"fact": "Fuente atribuible que identifica el retrato de Javier Bolanos."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yXuRrxFfTxCnLpC3gg1KIEK9PkF.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/javier-bolanos-tmdb-2108039.jpg"
+			}
+		},
+		{
+			"name": "Loren Escandon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Ximena Morales",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2700602",
+					"fact": "El perfil público identifica a Loren Escandon; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/casa-grande-2026",
+					"fact": "Identidad cotejada con el crédito del título Casa Grande, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2700602",
+					"fact": "Fuente atribuible que identifica el retrato de Loren Escandon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/opoScvw2IjT80vfU3gcO2mQ5URG.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/loren-escandon-tmdb-2700602.jpg"
+			}
+		},
+		{
+			"name": "Kate Mansi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Hunter Clarkman",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Kate Mansi interpreta Hunter Clarkman: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Terry Woodberry",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Dick Harris",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Terry Woodberry interpreta Dick Harris: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Shalim Ortiz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Shalim Ortiz: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lauren Swickard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lauren Swickard: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Zeus Ley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Beto",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Zeus Ley interpreta Beto: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Shaun Paul Piccinino",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Jake",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Shaun Paul Piccinino interpreta Jake: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Victor Carrera",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1469164/cast",
+			"screenRole": "Jose",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Victor Carrera interpreta Jose: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Lou Diamond Phillips",
+				"role": "performer"
+			},
+			{
+				"name": "Kate Mansi",
+				"role": "performer"
+			},
+			{
+				"name": "Terry Woodberry",
+				"role": "performer"
+			},
+			{
+				"name": "Shalim Ortiz",
+				"role": "performer"
+			},
+			{
+				"name": "Lauren Swickard",
+				"role": "performer"
+			},
+			{
+				"name": "Zeus Ley",
+				"role": "performer"
+			},
+			{
+				"name": "Shaun Paul Piccinino",
+				"role": "performer"
+			},
+			{
+				"name": "Victor Carrera",
+				"role": "performer"
+			}
+		]
+	}
+}

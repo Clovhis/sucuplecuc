@@ -1,0 +1,434 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "la-venganza-de-sweeney-todd-2025",
+	"title": "La Venganza de Sweeney Todd",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1372745/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 23
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/la-venganza-de-sweeney-todd",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt33308008/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Steven M. Smith",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1294859",
+					"fact": "El perfil público identifica a Steven M. Smith; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/la-venganza-de-sweeney-todd",
+					"fact": "Identidad cotejada con el crédito del título La Venganza de Sweeney Todd, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1294859",
+					"fact": "Fuente atribuible que identifica el retrato de Steven M. Smith."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wA8QUvri7UAanl3r6lPais3gGzh.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/steven-m-smith-tmdb-1294859.jpg"
+			}
+		},
+		{
+			"name": "Terry Bird",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Sweeney Todd",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/218107",
+					"fact": "El perfil público identifica a Terry Bird; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/la-venganza-de-sweeney-todd",
+					"fact": "Identidad cotejada con el crédito del título La Venganza de Sweeney Todd, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/218107",
+					"fact": "Fuente atribuible que identifica el retrato de Terry Bird."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4Hp7cPOsZIXn6G2OngGh0LsjYxF.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/terry-bird-tmdb-218107.jpg"
+			}
+		},
+		{
+			"name": "Jo Dyson",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Mrs. Lovett",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1539575",
+					"fact": "El perfil público identifica a Jo Dyson; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/la-venganza-de-sweeney-todd",
+					"fact": "Identidad cotejada con el crédito del título La Venganza de Sweeney Todd, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.stage32.com/profile/141375/about",
+					"fact": "Fuente atribuible que identifica el retrato de Jo Dyson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://www.stage32.com/sites/stage32.com/files/imagecache/head_shot_500/headshots/f07c386f8af9034650edc3f709a5bcc9_1386576644_l.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jo-dyson-tmdb-1539575.jpg"
+			}
+		},
+		{
+			"name": "Alexander Simkin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Sergeant Babwitch",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2734689",
+					"fact": "El perfil público identifica a Alexander Simkin; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/la-venganza-de-sweeney-todd",
+					"fact": "Identidad cotejada con el crédito del título La Venganza de Sweeney Todd, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2734689",
+					"fact": "Fuente atribuible que identifica el retrato de Alexander Simkin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oclwdtf5M3EPuFB0UDdY0H9AX5g.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/alexander-simkin-tmdb-2734689.jpg"
+			}
+		},
+		{
+			"name": "Steven Brandon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Tobias",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Steven Brandon interpreta Tobias: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Toby Wynn-Davies",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Judge Canning",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2062955",
+					"fact": "El perfil público identifica a Toby Wynn-Davies; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/la-venganza-de-sweeney-todd",
+					"fact": "Identidad cotejada con el crédito del título La Venganza de Sweeney Todd, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/2062955",
+					"fact": "Fuente atribuible que identifica el retrato de Toby Wynn-Davies."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5UIQn9iFFY1LCdsML4XhQTb47JJ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/toby-wynn-davies-tmdb-2062955.jpg"
+			}
+		},
+		{
+			"name": "Lee Brown",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Mr. Fields",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1921313",
+					"fact": "El perfil público identifica a Lee Brown; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/la-venganza-de-sweeney-todd",
+					"fact": "Identidad cotejada con el crédito del título La Venganza de Sweeney Todd, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1921313",
+					"fact": "Fuente atribuible que identifica el retrato de Lee Brown."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2aeRWv4L3VY4IFq3l52AiWBa4EY.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/lee-brown-tmdb-1921313.jpg"
+			}
+		},
+		{
+			"name": "Ian Ralph",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Neary",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ian Ralph interpreta Neary: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jason Ford",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Lord Wright",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jason Ford interpreta Lord Wright: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Samantha Anderson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Jane Thomas",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Samantha Anderson interpreta Jane Thomas: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Danny Gorst",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Charlie Thomas",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Danny Gorst interpreta Charlie Thomas: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Tyler Bowden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Eton Boy #2",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Tyler Bowden interpreta Eton Boy #2: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jed Kerby",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Eton Boy",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jed Kerby interpreta Eton Boy: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Alexander Jeffs",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Eton Boy",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Alexander Jeffs interpreta Eton Boy: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Stuart Walker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Peeler",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Stuart Walker interpreta Peeler: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jessica Pim",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Barmaid",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jessica Pim interpreta Barmaid: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jimmy 'The Bee' Bennett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Gentleman",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jimmy 'The Bee' Bennett interpreta Gentleman: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Anita-Marie Hammant Shutt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Eviction Mum",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Anita-Marie Hammant Shutt interpreta Eviction Mum: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lorna Jane Lintern-Thorneycroft",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Prostitute",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lorna Jane Lintern-Thorneycroft interpreta Prostitute: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Cheryl Rowlands",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Posh Woman",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Cheryl Rowlands interpreta Posh Woman: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Victoria Dinham",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Screaming Woman",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Victoria Dinham interpreta Screaming Woman: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Steven M. Smith",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Drunk",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Steven M. Smith interpreta Drunk: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Robbie Gribble",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1372745/cast",
+			"screenRole": "Eviction Dad",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Robbie Gribble interpreta Eviction Dad: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Steven Brandon",
+				"role": "performer"
+			},
+			{
+				"name": "Ian Ralph",
+				"role": "performer"
+			},
+			{
+				"name": "Jason Ford",
+				"role": "performer"
+			},
+			{
+				"name": "Samantha Anderson",
+				"role": "performer"
+			},
+			{
+				"name": "Danny Gorst",
+				"role": "performer"
+			},
+			{
+				"name": "Tyler Bowden",
+				"role": "performer"
+			},
+			{
+				"name": "Jed Kerby",
+				"role": "performer"
+			},
+			{
+				"name": "Alexander Jeffs",
+				"role": "performer"
+			},
+			{
+				"name": "Stuart Walker",
+				"role": "performer"
+			},
+			{
+				"name": "Jessica Pim",
+				"role": "performer"
+			},
+			{
+				"name": "Jimmy 'The Bee' Bennett",
+				"role": "performer"
+			},
+			{
+				"name": "Anita-Marie Hammant Shutt",
+				"role": "performer"
+			},
+			{
+				"name": "Lorna Jane Lintern-Thorneycroft",
+				"role": "performer"
+			},
+			{
+				"name": "Cheryl Rowlands",
+				"role": "performer"
+			},
+			{
+				"name": "Victoria Dinham",
+				"role": "performer"
+			},
+			{
+				"name": "Steven M. Smith",
+				"role": "performer"
+			},
+			{
+				"name": "Robbie Gribble",
+				"role": "performer"
+			}
+		]
+	}
+}

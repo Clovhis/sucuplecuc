@@ -1,0 +1,474 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "good-night-and-good-luck-2025",
+	"title": "Good Night, and Good Luck",
+	"year": 2025,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1481851/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 23
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt13286652/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Grant Heslov",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/31511",
+					"fact": "El perfil público identifica a Grant Heslov; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/31511",
+					"fact": "Fuente atribuible que identifica el retrato de Grant Heslov."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xNkGkkRN2I2Ly57PqDNk9QgAPJs.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/grant-heslov-tmdb-31511.jpg"
+			}
+		},
+		{
+			"name": "Micah Bickham",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2433205",
+					"fact": "El perfil público identifica a Micah Bickham; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://musebyclios.com/music/vevos-micah-bickham-on-brand-collabs-and-truth-sayers-in-music/",
+					"fact": "Fuente atribuible que identifica el retrato de Micah Bickham."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://cdn.musebyclios.com/wp-content/uploads/2024/06/11201238/Micah-Bickham-Liner-Notes-hed-2022.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/micah-bickham-tmdb-2433205.jpg"
+			}
+		},
+		{
+			"name": "George Clooney",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Edward R. Murrow",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1461",
+					"fact": "El perfil público identifica a George Clooney; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/George%20Clooney.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/george-clooney-nm0000123.jpg"
+			}
+		},
+		{
+			"name": "Mac Brandt",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Colonel Anderson",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1215837",
+					"fact": "El perfil público identifica a Mac Brandt; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1215837",
+					"fact": "Fuente atribuible que identifica el retrato de Mac Brandt."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/u2zRIywRVcih7LsZIsybmbzwmJW.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/mac-brandt-tmdb-1215837.jpg"
+			}
+		},
+		{
+			"name": "Will Dagger",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Don Hewitt",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1790713",
+					"fact": "El perfil público identifica a Will Dagger; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1790713",
+					"fact": "Fuente atribuible que identifica el retrato de Will Dagger."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/a6FDozLo3VqoDZyKoH34WpEssBY.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/will-dagger-tmdb-1790713.jpg"
+			}
+		},
+		{
+			"name": "Christopher Denham",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "John Aaron",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/61510",
+					"fact": "El perfil público identifica a Christopher Denham; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/61510",
+					"fact": "Fuente atribuible que identifica el retrato de Christopher Denham."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ffPY0KrV5KP9Nuv27m3JQU6j3Tq.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/christopher-denham-tmdb-61510.jpg"
+			}
+		},
+		{
+			"name": "Glenn Fleshler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Fred W. Friendly",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1377670",
+					"fact": "El perfil público identifica a Glenn Fleshler; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/x1Cef2yPZS7bJTwxI7DX3q0HNcv.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/glenn-fleshler-nm0281909.jpg"
+			}
+		},
+		{
+			"name": "Ilana Glazer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Shirley Wershba",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1325716",
+					"fact": "El perfil público identifica a Ilana Glazer; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1325716",
+					"fact": "Fuente atribuible que identifica el retrato de Ilana Glazer."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/etW0YsMvj67bSRuJCsevpAOLsWf.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ilana-glazer-tmdb-1325716.jpg"
+			}
+		},
+		{
+			"name": "Clark Gregg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Don Hollenbeck",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/9048",
+					"fact": "El perfil público identifica a Clark Gregg; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/ClarkGreggTIFFSept2012.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/clark-gregg-nm0163988.jpg"
+			}
+		},
+		{
+			"name": "Paul Gross",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "William S. Paley",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/84021",
+					"fact": "El perfil público identifica a Paul Gross; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/good-night-and-good-luck",
+					"fact": "Identidad cotejada con el crédito del título Good Night, and Good Luck, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/84021",
+					"fact": "Fuente atribuible que identifica el retrato de Paul Gross."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fqpHv6pMb7OnAB6PKSMX23Pvrzi.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/paul-gross-tmdb-84021.jpg"
+			}
+		},
+		{
+			"name": "Georgia Heers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Ella / Jazz Singer",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Georgia Heers interpreta Ella / Jazz Singer: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Carter Hudson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Joseph Wershba",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Carter Hudson interpreta Joseph Wershba: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Fran Kranz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Palmer Williams",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Fran Kranz interpreta Palmer Williams: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jennifer Morris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Millie Green",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jennifer Morris interpreta Millie Green: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Michael Nathanson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Eddie Scott",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Michael Nathanson interpreta Eddie Scott: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Andrew Polk",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Charlie Mack",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Andrew Polk interpreta Charlie Mack: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Aaron Roman Weiner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "Don Surine",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Aaron Roman Weiner interpreta Don Surine: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "R. Ward Duffy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "CBS Staff",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "R. Ward Duffy interpreta CBS Staff: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Joe Forbrich",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "CBS Staff",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Joe Forbrich interpreta CBS Staff: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Imani Rousselle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "CBS Staff",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Imani Rousselle interpreta CBS Staff: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Greg Stuhr",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Greg Stuhr: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "JD Taylor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "CBS Staff",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "JD Taylor interpreta CBS Staff: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Sophia Tzougros",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1481851/cast",
+			"screenRole": "CBS Staff",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Sophia Tzougros interpreta CBS Staff: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Georgia Heers",
+				"role": "performer"
+			},
+			{
+				"name": "Carter Hudson",
+				"role": "performer"
+			},
+			{
+				"name": "Fran Kranz",
+				"role": "performer"
+			},
+			{
+				"name": "Jennifer Morris",
+				"role": "performer"
+			},
+			{
+				"name": "Michael Nathanson",
+				"role": "performer"
+			},
+			{
+				"name": "Andrew Polk",
+				"role": "performer"
+			},
+			{
+				"name": "Aaron Roman Weiner",
+				"role": "performer"
+			},
+			{
+				"name": "R. Ward Duffy",
+				"role": "performer"
+			},
+			{
+				"name": "Joe Forbrich",
+				"role": "performer"
+			},
+			{
+				"name": "Imani Rousselle",
+				"role": "performer"
+			},
+			{
+				"name": "Greg Stuhr",
+				"role": "performer"
+			},
+			{
+				"name": "JD Taylor",
+				"role": "performer"
+			},
+			{
+				"name": "Sophia Tzougros",
+				"role": "performer"
+			}
+		]
+	}
+}

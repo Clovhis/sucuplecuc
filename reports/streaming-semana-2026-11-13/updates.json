@@ -1,0 +1,445 @@
+[
+  {
+    "i": 1,
+    "slug": "turbulencias-2025",
+    "path": "src/data/movies/turbulencias-2025.json",
+    "title": "Turbulencias",
+    "checkedOn": "2026-11-13",
+    "source": "https://www.justwatch.com/ar/pelicula/turbulence",
+    "arrivalDetected": "2026-11-09",
+    "offers": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0577485f-0f1f-40e8-944d-703539100398",
+        "package": {
+          "clearName": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/turbulencia-panico-en-el-aire/umc.cmc.2x9as0y78040eqi8g49haiutm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1890340164",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0577485f-0f1f-40e8-944d-703539100398",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0577485f-0f1f-40e8-944d-703539100398",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/turbulencia-panico-en-el-aire/umc.cmc.2x9as0y78040eqi8g49haiutm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1890340164",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "before": {
+      "platforms": [
+        "Prime Video"
+      ],
+      "score": 4,
+      "releaseDate": "2026-08-28"
+    },
+    "after": {
+      "platforms": [
+        "Prime Video"
+      ],
+      "score": 5,
+      "releaseDate": "2026-08-28"
+    }
+  },
+  {
+    "i": 2,
+    "slug": "la-negociacion-2025",
+    "path": "src/data/movies/la-negociacion-2025.json",
+    "title": "La negociación",
+    "checkedOn": "2026-11-13",
+    "source": "https://www.justwatch.com/ar/pelicula/prime-crime-a-true-story",
+    "arrivalDetected": "2026-11-09",
+    "offers": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.80dcc8ba-5e4d-4497-a070-09b8ba436a81",
+        "package": {
+          "clearName": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/la-negociacion/umc.cmc.63cu8sfx2xqbso5zv3ai3l38l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810129162",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.80dcc8ba-5e4d-4497-a070-09b8ba436a81",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.80dcc8ba-5e4d-4497-a070-09b8ba436a81",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/la-negociacion/umc.cmc.63cu8sfx2xqbso5zv3ai3l38l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810129162",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "before": {
+      "platforms": [
+        "Otras plataformas"
+      ],
+      "score": 8,
+      "releaseDate": "2026-09-03"
+    },
+    "after": {
+      "platforms": [
+        "Prime Video"
+      ],
+      "score": 8,
+      "releaseDate": "2026-09-03"
+    }
+  },
+  {
+    "i": 19,
+    "slug": "el-corazon-de-la-bestia-2026",
+    "path": "src/data/movies/el-corazon-de-la-bestia-2026.json",
+    "title": "El corazón de la bestia",
+    "checkedOn": "2026-11-13",
+    "source": "https://www.justwatch.com/ar/pelicula/en-el-corazon-de-la-bestia",
+    "arrivalDetected": "2026-11-11",
+    "offers": [
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.d7db4af4-cf8f-4452-bd0a-13b5a7a1a0a7",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-corazon-de-la-bestia/umc.cmc.nzfrrcork0mq1tn5c0kevdvl?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812460052",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.d7db4af4-cf8f-4452-bd0a-13b5a7a1a0a7",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-corazon-de-la-bestia/umc.cmc.nzfrrcork0mq1tn5c0kevdvl?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812460052",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "before": {
+      "platforms": [
+        "Cine"
+      ],
+      "score": 8,
+      "releaseDate": "2026-09-24"
+    },
+    "after": {
+      "platforms": [
+        "Cine",
+        "Prime Video"
+      ],
+      "score": 8,
+      "releaseDate": "2026-09-24"
+    }
+  },
+  {
+    "i": 29,
+    "slug": "los-archivos-perdidos-del-dr-romanoski-2026",
+    "path": "src/data/movies/los-archivos-perdidos-del-dr-romanoski-2026.json",
+    "title": "Los Archivos Perdidos Del Dr. Romanoski",
+    "checkedOn": "2026-11-13",
+    "source": "https://www.justwatch.com/ar/pelicula/los-archivos-perdidos-del-dr-romanoski",
+    "arrivalDetected": "2026-11-11",
+    "offers": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ea7d0b55-36cf-4282-b5d2-cf074684802f",
+        "package": {
+          "clearName": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo"
+        }
+      }
+    ],
+    "before": {
+      "platforms": [
+        "Prime Video"
+      ],
+      "score": 5,
+      "releaseDate": "2026-09-10"
+    },
+    "after": {
+      "platforms": [
+        "Prime Video"
+      ],
+      "score": 8,
+      "releaseDate": "2026-09-10"
+    }
+  },
+  {
+    "i": 33,
+    "slug": "jackass-la-ultima-y-nos-vamos-2026",
+    "path": "src/data/movies/jackass-la-ultima-y-nos-vamos-2026.json",
+    "title": "Jackass: La última y nos vamos",
+    "checkedOn": "2026-11-13",
+    "source": "https://www.justwatch.com/ar/pelicula/jackass-lo-mejor-para-el-final",
+    "arrivalDetected": "2026-11-12",
+    "offers": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://www.paramountplus.com/movies/jackass-best-and-last/ALVE01M2NP4KD6EHHR26KF51WDYSBM?searchReferral=&amp;utm_source=publisher",
+        "package": {
+          "clearName": "Paramount Plus",
+          "technicalName": "paramountplus"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7cfd9e18-de75-4d13-bc89-12a9b016a5f6",
+        "package": {
+          "clearName": "Paramount+ Amazon Channel",
+          "technicalName": "amazonparamountplus"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/jackass-la-ultima-y-nos-vamos/umc.cmc.5r4lz7ffxj4v6zgwukj7ro5q4?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6778737058",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/jackass-la-ultima-y-nos-vamos/umc.cmc.5r4lz7ffxj4v6zgwukj7ro5q4?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6778737058",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "before": {
+      "platforms": [
+        "Otras plataformas"
+      ],
+      "score": 5,
+      "releaseDate": "2026-06-25"
+    },
+    "after": {
+      "platforms": [
+        "Paramount Plus"
+      ],
+      "score": 8,
+      "releaseDate": "2026-06-25"
+    }
+  },
+  {
+    "i": 44,
+    "slug": "relajadas-y-muy-peligrosas-2026",
+    "path": "src/data/movies/relajadas-y-muy-peligrosas-2026.json",
+    "title": "Relajadas y muy peligrosas",
+    "checkedOn": "2026-11-13",
+    "source": "https://www.justwatch.com/ar/pelicula/spa-weekend",
+    "arrivalDetected": "2026-11-12",
+    "offers": [
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/relajadas-y-muy-peligrosas/umc.cmc.1xaj7m04c816hrkxvp170di0y?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810953034",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.bad936c6-d26f-408f-bd5e-d7353966baec",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.bad936c6-d26f-408f-bd5e-d7353966baec",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/relajadas-y-muy-peligrosas/umc.cmc.1xaj7m04c816hrkxvp170di0y?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810953034",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "before": {
+      "platforms": [
+        "Otras plataformas"
+      ],
+      "score": 7,
+      "releaseDate": "2026-10-01"
+    },
+    "after": {
+      "platforms": [
+        "Prime Video",
+        "Apple TV"
+      ],
+      "score": 7,
+      "releaseDate": "2026-10-01"
+    }
+  },
+  {
+    "i": 48,
+    "slug": "el-heladero-2026",
+    "path": "src/data/movies/el-heladero-2026.json",
+    "title": "El heladero",
+    "checkedOn": "2026-11-13",
+    "source": "https://www.justwatch.com/ar/pelicula/ice-cream-man",
+    "arrivalDetected": "2026-11-12",
+    "offers": [
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-heladero-dulce-sabor-a-muerte/umc.cmc.239mbolyeuudbfuerc3ppeh73?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6818661689",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.68769164-e7ea-400e-ba76-98f0682d860a",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.68769164-e7ea-400e-ba76-98f0682d860a",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-heladero-dulce-sabor-a-muerte/umc.cmc.239mbolyeuudbfuerc3ppeh73?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6818661689",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "before": {
+      "platforms": [
+        "Otras plataformas"
+      ],
+      "score": 5,
+      "releaseDate": "2026-09-10"
+    },
+    "after": {
+      "platforms": [
+        "Prime Video",
+        "Apple TV"
+      ],
+      "score": 4,
+      "releaseDate": "2026-09-10"
+    }
+  },
+  {
+    "i": 56,
+    "slug": "el-final-de-la-calle-oak-2026",
+    "path": "src/data/movies/el-final-de-la-calle-oak-2026.json",
+    "title": "El final de la calle Oak",
+    "checkedOn": "2026-11-13",
+    "source": "https://www.justwatch.com/ar/pelicula/flowervale-street",
+    "arrivalDetected": "2026-11-13",
+    "offers": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://play.hbomax.com/show/710798da-f811-40be-9ed9-3a7443e36278?utm_source=universal_search",
+        "package": {
+          "clearName": "HBO Max",
+          "technicalName": "max"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-final-de-la-calle-oak/umc.cmc.zgc43vpna42wfgfi645em0sm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788867495",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-final-de-la-calle-oak/umc.cmc.zgc43vpna42wfgfi645em0sm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788867495",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "before": {
+      "platforms": [
+        "Otras plataformas"
+      ],
+      "score": 8,
+      "releaseDate": "2026-08-13"
+    },
+    "after": {
+      "platforms": [
+        "HBO Max"
+      ],
+      "score": 8,
+      "releaseDate": "2026-08-13"
+    }
+  }
+]

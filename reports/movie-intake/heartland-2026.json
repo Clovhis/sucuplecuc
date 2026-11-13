@@ -1,0 +1,257 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "heartland-2026",
+	"title": "Heartland",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1543469/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/heartland-2026",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt38213251/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Shana Feste",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/129718",
+					"fact": "El perfil público identifica a Shana Feste; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/heartland-2026",
+					"fact": "Identidad cotejada con el crédito del título Heartland, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/129718",
+					"fact": "Fuente atribuible que identifica el retrato de Shana Feste."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/exBIbwKgmSuE2tsaqfjsoLTOd1l.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/shana-feste-tmdb-129718.jpg"
+			}
+		},
+		{
+			"name": "Jessica Chastain",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": "Misty Jones",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/83002",
+					"fact": "El perfil público identifica a Jessica Chastain; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/heartland-2026",
+					"fact": "Identidad cotejada con el crédito del título Heartland, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessica%20Chastain-64424%20(cropped).jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/jessica-chastain-nm1567113.jpg"
+			}
+		},
+		{
+			"name": "Garrett Hedlund",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": "Roy Combs",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/9828",
+					"fact": "El perfil público identifica a Garrett Hedlund; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/heartland-2026",
+					"fact": "Identidad cotejada con el crédito del título Heartland, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/9828",
+					"fact": "Fuente atribuible que identifica el retrato de Garrett Hedlund."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9zec61HuFJgiUEzPSt0NfPIj0Xv.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/garrett-hedlund-tmdb-9828.jpg"
+			}
+		},
+		{
+			"name": "Carter Faith",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": "Charlie Heart",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5678267",
+					"fact": "El perfil público identifica a Carter Faith; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/heartland-2026",
+					"fact": "Identidad cotejada con el crédito del título Heartland, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/5678267",
+					"fact": "Fuente atribuible que identifica el retrato de Carter Faith."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/163TNSZfms4EYiXDY0wkUGWwHWa.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/carter-faith-tmdb-5678267.jpg"
+			}
+		},
+		{
+			"name": "Ross Lynch",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": "Jace",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/973385",
+					"fact": "El perfil público identifica a Ross Lynch; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/heartland-2026",
+					"fact": "Identidad cotejada con el crédito del título Heartland, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/973385",
+					"fact": "Fuente atribuible que identifica el retrato de Ross Lynch."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/AlCEYF6SbZtCoOWBkVZvzdufMjs.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ross-lynch-tmdb-973385.jpg"
+			}
+		},
+		{
+			"name": "Jennifer Nettles",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": "Winnie Jo Lean",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1546496",
+					"fact": "El perfil público identifica a Jennifer Nettles; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/heartland-2026",
+					"fact": "Identidad cotejada con el crédito del título Heartland, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1546496",
+					"fact": "Fuente atribuible que identifica el retrato de Jennifer Nettles."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/s6IDogtE93cMaMe4EYBjUeXVOV4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jennifer-nettles-tmdb-1546496.jpg"
+			}
+		},
+		{
+			"name": "John Hawkes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": "Clark",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/16861",
+					"fact": "El perfil público identifica a John Hawkes; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/heartland-2026",
+					"fact": "Identidad cotejada con el crédito del título Heartland, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/JohnHawkesHS2009.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/john-hawkes-nm0370035.jpg"
+			}
+		},
+		{
+			"name": "Hill Harper",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Hill Harper: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Norbert Leo Butz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Norbert Leo Butz: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Ben Dickey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1543469/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ben Dickey: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Hill Harper",
+				"role": "performer"
+			},
+			{
+				"name": "Norbert Leo Butz",
+				"role": "performer"
+			},
+			{
+				"name": "Ben Dickey",
+				"role": "performer"
+			}
+		]
+	}
+}

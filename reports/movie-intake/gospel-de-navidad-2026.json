@@ -1,0 +1,359 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "gospel-de-navidad-2026",
+	"title": "Góspel de Navidad",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1559980/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 17
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/tyler-perrys-the-gospel-of-christmas",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.netflix.com/tudum/articles/tyler-perrys-gospel-of-christmas-cast-guide",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Tyler Perry",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/80602",
+					"fact": "El perfil público identifica a Tyler Perry; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/tyler-perrys-the-gospel-of-christmas",
+					"fact": "Identidad cotejada con el crédito del título Góspel de Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/TylerPerry-byPhilipRomano.jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/tyler-perry-nm1347153.jpg"
+			}
+		},
+		{
+			"name": "Tank",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": null,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1744605",
+					"fact": "El perfil público identifica a Tank; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/tyler-perrys-the-gospel-of-christmas",
+					"fact": "Identidad cotejada con el crédito del título Góspel de Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1744605",
+					"fact": "Fuente atribuible que identifica el retrato de Tank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4rT7a9OukGG6eBz9izKMfOqwWdT.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/tank-tmdb-1744605.jpg"
+			}
+		},
+		{
+			"name": "Mason Douglas",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": "Jacob",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1600735",
+					"fact": "El perfil público identifica a Mason Douglas; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/tyler-perrys-the-gospel-of-christmas",
+					"fact": "Identidad cotejada con el crédito del título Góspel de Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1600735",
+					"fact": "Fuente atribuible que identifica el retrato de Mason Douglas."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ilPoDR0eIG1e4OXJwuTmV4M3v1r.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/mason-douglas-tmdb-1600735.jpg"
+			}
+		},
+		{
+			"name": "Fantasia Barrino",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": null,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/165909",
+					"fact": "El perfil público identifica a Fantasia Barrino; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/tyler-perrys-the-gospel-of-christmas",
+					"fact": "Identidad cotejada con el crédito del título Góspel de Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/165909",
+					"fact": "Fuente atribuible que identifica el retrato de Fantasia Barrino."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/z8EsOmdzNxUQooSjH4NBSpzhnP3.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/fantasia-barrino-tmdb-165909.jpg"
+			}
+		},
+		{
+			"name": "Yolanda Adams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Yolanda Adams: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Christopher Jensen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": "Concert Usher",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Christopher Jensen interpreta Concert Usher: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Jalia Maléy Brodie",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Jalia Maléy Brodie: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Ryan Edmonds",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ryan Edmonds: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Antwinette Mccloud",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Antwinette Mccloud: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Ebony Jenae",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": "Dana",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ebony Jenae interpreta Dana: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Shirley Caesar",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Shirley Caesar: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Eloris Michelle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Eloris Michelle: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Derrick Phillips",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": "Father",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Derrick Phillips interpreta Father: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Lauren Chanel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": null,
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Lauren Chanel: crédito posterior al núcleo seleccionado en el billing consultado; se conserva la selección de protagonistas y secundarios que sostienen el conflicto, sin sumar figuración o apariciones breves."
+		},
+		{
+			"name": "Fred Hammond",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": "Abraham",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1234260",
+					"fact": "El perfil público identifica a Fred Hammond; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/tyler-perrys-the-gospel-of-christmas",
+					"fact": "Identidad cotejada con el crédito del título Góspel de Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1234260",
+					"fact": "Fuente atribuible que identifica el retrato de Fred Hammond."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/erPKpeZC0CY2nNyMxvHCkF0YBFR.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/fred-hammond-tmdb-1234260.jpg"
+			}
+		},
+		{
+			"name": "Ann Nesby",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": "Sarah",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/873664",
+					"fact": "El perfil público identifica a Ann Nesby; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/tyler-perrys-the-gospel-of-christmas",
+					"fact": "Identidad cotejada con el crédito del título Góspel de Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Ann_Nesby",
+					"fact": "Fuente atribuible que identifica el retrato de Ann Nesby."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Ann_Nesby_2019.png?utm_source=en.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail_unscaled",
+				"visuallyVerified": true,
+				"localPath": "/people/ann-nesby-tmdb-873664.jpg"
+			}
+		},
+		{
+			"name": "Smokie Norful",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1559980/cast",
+			"screenRole": "Peter",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2448590",
+					"fact": "El perfil público identifica a Smokie Norful; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/tyler-perrys-the-gospel-of-christmas",
+					"fact": "Identidad cotejada con el crédito del título Góspel de Navidad, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://smokienorful.com/",
+					"fact": "Fuente atribuible que identifica el retrato de Smokie Norful."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://smokienorful.com/wp-content/uploads/2024/02/smokie-2.png",
+				"visuallyVerified": true,
+				"localPath": "/people/smokie-norful-tmdb-2448590.png"
+			}
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Yolanda Adams",
+				"role": "performer"
+			},
+			{
+				"name": "Christopher Jensen",
+				"role": "performer"
+			},
+			{
+				"name": "Jalia Maléy Brodie",
+				"role": "performer"
+			},
+			{
+				"name": "Ryan Edmonds",
+				"role": "performer"
+			},
+			{
+				"name": "Antwinette Mccloud",
+				"role": "performer"
+			},
+			{
+				"name": "Ebony Jenae",
+				"role": "performer"
+			},
+			{
+				"name": "Shirley Caesar",
+				"role": "performer"
+			},
+			{
+				"name": "Eloris Michelle",
+				"role": "performer"
+			},
+			{
+				"name": "Derrick Phillips",
+				"role": "performer"
+			},
+			{
+				"name": "Lauren Chanel",
+				"role": "performer"
+			}
+		]
+	}
+}

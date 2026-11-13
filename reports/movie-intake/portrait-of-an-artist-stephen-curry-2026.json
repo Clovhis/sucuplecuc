@@ -1,0 +1,183 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "portrait-of-an-artist-stephen-curry-2026",
+	"title": "Portrait of an Artist: Stephen Curry",
+	"year": 2026,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1756286/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 6
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/portrait-of-an-artist-stephen-curry",
+			"kind": "JustWatch Argentina identity and local offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt44840680/fullcredits/",
+			"kind": "Credit cross-check; access limitations and additional primary evidence recorded in task report",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Gotham Chopra",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1756286/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/70575",
+					"fact": "El perfil público identifica a Gotham Chopra; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/portrait-of-an-artist-stephen-curry",
+					"fact": "Identidad cotejada con el crédito del título Portrait of an Artist: Stephen Curry, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/70575",
+					"fact": "Fuente atribuible que identifica el retrato de Gotham Chopra."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8HPXN7NewvKysfpcaMshkcpZ5MO.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/gotham-chopra-tmdb-70575.jpg"
+			}
+		},
+		{
+			"name": "Stephen Curry",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1756286/cast",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1718307",
+					"fact": "El perfil público identifica a Stephen Curry; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/portrait-of-an-artist-stephen-curry",
+					"fact": "Identidad cotejada con el crédito del título Portrait of an Artist: Stephen Curry, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dmLZdGhZkCYktooIp8iqXhAvoWz.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/stephen-curry-nm2967426.jpg"
+			}
+		},
+		{
+			"name": "Viola Davis",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1756286/cast",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/19492",
+					"fact": "El perfil público identifica a Viola Davis; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/portrait-of-an-artist-stephen-curry",
+					"fact": "Identidad cotejada con el crédito del título Portrait of an Artist: Stephen Curry, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Viola%20Davis%20(27983785894)%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/viola-davis-nm0205626.jpg"
+			}
+		},
+		{
+			"name": "Rick Rubin",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1756286/cast",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/22026",
+					"fact": "El perfil público identifica a Rick Rubin; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/portrait-of-an-artist-stephen-curry",
+					"fact": "Identidad cotejada con el crédito del título Portrait of an Artist: Stephen Curry, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/22026",
+					"fact": "Fuente atribuible que identifica el retrato de Rick Rubin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lGjDUOYo3zONPColYG2DuOaYfn5.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/rick-rubin-tmdb-22026.jpg"
+			}
+		},
+		{
+			"name": "Patti Smith",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1756286/cast",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/56200",
+					"fact": "El perfil público identifica a Patti Smith; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/portrait-of-an-artist-stephen-curry",
+					"fact": "Identidad cotejada con el crédito del título Portrait of an Artist: Stephen Curry, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Patti%20Smith%20at%20the%2081st%20Venice%20International%20Film%20Festival%20in%202024.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/patti-smith-nm0005446.jpg"
+			}
+		},
+		{
+			"name": "Jon Batiste",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1756286/cast",
+			"screenRole": "Self",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1513968",
+					"fact": "El perfil público identifica a Jon Batiste; la filmografía consultada contiene la película o el oficio documentado."
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/portrait-of-an-artist-stephen-curry",
+					"fact": "Identidad cotejada con el crédito del título Portrait of an Artist: Stephen Curry, su año y su reparto/dirección; no se usa coincidencia sólo de nombre."
+				},
+				{
+					"url": "https://www.themoviedb.org/person/1513968",
+					"fact": "Fuente atribuible que identifica el retrato de Jon Batiste."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bdRHptdxbY8gMCAiJ48kdLB8Vzy.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jon-batiste-tmdb-1513968.jpg"
+			}
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el billing completo, manteniendo el núcleo protagonista y los secundarios de mayor presencia. Las omisiones conservan nombre y rol de la fuente; la lista de la ficha no intenta replicar toda la figuración, los cameos y los papeles menores.",
+		"omittedRelevantCredits": []
+	}
+}
