@@ -12,7 +12,7 @@ const palettes = [
   {bg:'#312135',fg:'#fff0dd',accent:'#ffb77c',muted:'#d9bfcf',panel:'#54334d'},
 ];
 const seed = value => parseInt(digest(value).slice(0,8),16);
-const categoryLabel = category => ({accion:'acción',animacion:'animación',documental:'documentales','sci-fi':'ciencia ficción',superheroes:'superhéroes','pelicula-nacional':'cine argentino','oscar-mejor-pelicula':'ganadoras del Oscar',romcom:'comedia romántica'}[category] || category.toLocaleLowerCase('es-AR'));
+const categoryLabel = category => ({accion:'acción',animacion:'animación',documental:'documentales','ciencia ficcion':'ciencia ficción','comedia romantica':'comedia romántica',fantasia:'fantasía',biografica:'biográfica','sci-fi':'ciencia ficción',superheroes:'superhéroes','pelicula-nacional':'cine argentino','oscar-mejor-pelicula':'ganadoras del Oscar',romcom:'comedia romántica'}[category.normalize('NFD').replace(/\p{M}/gu,'').toLocaleLowerCase('es-AR')] || category.toLocaleLowerCase('es-AR'));
 export function nextDate(date) { return new Date(new Date(`${date}T12:00:00-03:00`).getTime()+86400000).toISOString().slice(0,10); }
 
 // Formats compete by eligibility and recent use, rather than following a weekday rotation.
@@ -82,7 +82,7 @@ async function text(value,width,height,size,color,bold=true) {
 
 // Original geometric cinema illustrations. No stills, likenesses, film logos or samples.
 function illustration(p,index,width,height) {
-  const motif=index%4;
+  const motif=index%6;
   let shapes='';
   if(motif===0) {
     for(let i=0;i<9;i++) shapes+=`<path d="M ${width*.5} ${height*.12} L ${-width*.8+i*width*.33} ${height} L ${-width*.66+i*width*.33} ${height} Z" fill="${i%2?p.accent:p.fg}" opacity="${i%2?.48:.10}"/>`;
@@ -93,9 +93,14 @@ function illustration(p,index,width,height) {
   } else if(motif===2) {
     for(let i=0;i<7;i++) shapes+=`<ellipse cx="${width*.54}" cy="${height*.51}" rx="${width*(.13+i*.065)}" ry="${height*(.09+i*.058)}" fill="none" stroke="${i%2?p.fg:p.accent}" stroke-width="${i%2?2:5}" transform="rotate(-24 ${width*.54} ${height*.51})" opacity=".7"/>`;
     shapes+=`<circle cx="${width*.54}" cy="${height*.51}" r="${height*.09}" fill="${p.accent}"/>`;
-  } else {
+  } else if(motif===3) {
     for(let i=0;i<12;i++) shapes+=`<path d="M ${i*width/12} ${height} v ${-height*(.15+((i*7)%11)/14)} h ${width/14} v ${height}" fill="${i%3?p.accent:p.fg}" opacity="${i%2?.7:.35}"/>`;
     shapes+=`<circle cx="${width*.73}" cy="${height*.22}" r="${height*.12}" fill="${p.fg}"/>`;
+  } else if(motif===4) {
+    for(let i=0;i<5;i++)shapes+=`<circle cx="${width*(.18+i*.16)}" cy="${height*(i%2?.38:.61)}" r="${height*(.10+i*.015)}" fill="${i%2?p.fg:p.accent}" opacity="${.35+i*.13}"/><circle cx="${width*(.18+i*.16)}" cy="${height*(i%2?.38:.61)}" r="${height*(.14+i*.015)}" fill="none" stroke="${p.accent}" stroke-width="2"/>`;
+  } else {
+    for(let i=0;i<6;i++)shapes+=`<path d="M ${width*(.12+i*.11)} ${height*.86} v ${-height*(.2+i*.09)} h ${width*.11} v ${height*(.2+i*.09)} Z" fill="${i%2?p.fg:p.accent}" opacity="${.35+i*.1}"/>`;
+    shapes+=`<path d="M ${width*.1} ${height*.25} L ${width*.85} ${height*.8}" fill="none" stroke="${p.fg}" stroke-width="4"/>`;
   }
   return Buffer.from(`<svg width="${width}" height="${height}"><rect width="100%" height="100%" fill="${p.panel}"/>${shapes}</svg>`);
 }
@@ -154,7 +159,7 @@ export async function renderEdition(edition,directory,{root=ROOT}={}) {
     } else {
       await add(movie.title,64,258,952,215,76);
       const art=await clearedArt(movie,root);
-      layers.push({input:art ? await sharp(art.bytes).resize(952,450,{fit:'contain',background:p.panel}).png().toBuffer() : illustration(p,seed(movie.slug),952,450),left:64,top:510});
+      layers.push({input:art ? await sharp(art.bytes).resize(952,450,{fit:'contain',background:p.panel}).png().toBuffer() : illustration(p,seed(edition.theme)+index,952,450),left:64,top:510});
       await add(`${movie.year}${movie.runtimeMinutes?`  /  ${movie.runtimeMinutes} MIN`:''}   ·   ${scoreLabel(movie)}`,64,982,952,65,32,p.accent);
       await add(editorialExcerpt(movie),64,1063,952,145,34,p.fg,false);
       if(art) await add(art.credit,80,920,900,35,28,p.fg,false);

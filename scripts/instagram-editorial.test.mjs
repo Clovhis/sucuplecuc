@@ -47,6 +47,12 @@ test('captions preserve real scores, avoid platform assertions and expose every 
   assert.equal(entryMatches([{id:'x',text:`https://www.cineposta.com.ar/peliculas/${plan.slugs[3]}/`}],{slugs:plan.slugs}).length,1);
 });
 
+test('display titles restore accents from legacy category spellings without editing the catalog',()=>{
+  const plan=planEdition(pool.map(m=>({...m,year:2020,category:'Animacion'})),{posts:[]},new Set(),'2026-11-14',{format:'carousel'});
+  assert.equal(plan.title,'5 de animación para tu lista');
+  assert.equal(plan.category,'Animacion');
+});
+
 test('rights ledger cannot bless a missing permission or changed image',async t=>{
   const root=await fixture(t);await mkdir(path.join(root,'assets/social'),{recursive:true});await mkdir(path.join(root,'public/assets'),{recursive:true});
   assert.equal(await clearedArt(movie,root),null);

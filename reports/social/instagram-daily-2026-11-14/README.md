@@ -22,8 +22,9 @@ Buffer Free admite la API y carruseles automáticos profesionales; cuenta compro
 
 ## Validación local
 
-24 pruebas Instagram aprobadas: calendario ART, demora real de ayer, cuatro renders con catálogo real, deduplicación de cada integrante, derechos/hashes, payload multimagen, cola, reservas, timeout ambiguo y reconciliación. Pruebas de X aprobadas, archivos de automatización X sin cambios contra la base `d3538456`. `npm run check`: 0 errores/advertencias, 3 hints preexistentes. Build local: 8915 páginas, aprobado. La skill social se sincronizó y se verificó entre repo, plugin e instalación global.
+25 pruebas Instagram aprobadas: calendario ART, demora real de ayer, cuatro renders con catálogo real, deduplicación de cada integrante, derechos/hashes, payload multimagen, cola, reservas, timeout ambiguo y reconciliación. Pruebas de X aprobadas, archivos de automatización X sin cambios contra la base `d3538456`. `npm run check`: 0 errores/advertencias, 3 hints preexistentes. Build local: 8915 páginas, aprobado. La skill social se sincronizó y se verificó entre repo, plugin e instalación global.
 
 No cambió UI ni JavaScript del navegador: validación visual de JPEGs y pruebas del pipeline Node, sin suite Playwright adicional para estas placas.
 
 Fuentes: [API/Free](https://support.buffer.com/en-us/articles/what-is-buffers-api-GtIYIQilz5), [Instagram y carruseles automáticos](https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p). El detalle operativo y la recuperación están en [buffer-instagram-automation.md](../../../docs/buffer-instagram-automation.md).
+
