@@ -1,68 +1,70 @@
 # Instagram diario de CinePosta
 
-El workflow nuevo `.github/workflows/publish-buffer-instagram.yml` prepara una recomendación del catálogo a las **18:15 de Argentina** (`15 21 * * *`) y la programa en Buffer para **19:15 AR** (`22:15 UTC`). El cron de GitHub puede demorarse; Buffer recibe una hora fija con una hora de margen. Si quedan menos de cinco minutos, se omite ese día: no se arrastra el envío a mañana ni se acumula una cola. Funciona en GitHub aunque la PC esté apagada.
+El workflow `.github/workflows/publish-buffer-instagram.yml` conserva el cron **18:15 ART** (`15 21 * * *`) y Buffer publica **19:15 ART** (`22:15 UTC`). Prepara **la edición de mañana**, una por ejecución: la anticipación absorbe demoras del cron sin cambiar la publicación. Normalmente hay una edición futura; durante una hora pueden coexistir la de hoy y la de mañana. Funciona con la PC apagada.
 
-La publicación diaria de X queda intacta: conserva scripts, workflows, configuración, historial, variables y secret existentes. No hay dependencia funcional desde X hacia el código nuevo.
+GitHub puede demorar o perder un cron: no hay garantía absoluta. Si se pierde más de un día, recuperar sólo una franja futura vacía. Nunca trasladar una reserva vencida ni repetir una mutación ambigua. La automatización, configuración, historial y claves de **X permanecen intactos**.
 
-## Componentes
+## Incidente del 13/11/2026
 
-- `skills/cineposta-redes-sociales/`: operaciones de agentes mediante MCP oficial y OAuth local. Una skill para X e Instagram, con adaptación editorial por red, estados, borradores, programación, imágenes, carruseles, Stories y Reels.
-- `scripts/publish-buffer-instagram.mjs`: job determinista por GraphQL oficial. Una única mutación de programación por ejecución y canal verificado. Reutiliza el secret `BUFFER_API_KEY` de Actions sin modificarlo.
-- `scripts/lib/social-media.mjs`: selección, caption y placas con Sharp. Recomendaciones con score canónico ≥6, fecha no futura, texto editorial concreto y póster local; rota categorías y excluye todo título usado. No presenta títulos antiguos como estrenos ni afirma disponibilidad actual a partir de una plataforma almacenada.
-- `scripts/create-social-media.mjs`: piezas para agentes, con varios slugs y formatos feed, story o reel. El Reel opcional requiere FFmpeg gratuito. No envía nada a Buffer.
-- `assets/social/`: Noto Sans Regular/Bold con su licencia SIL OFL, desde [Noto Fonts](https://github.com/notofonts/noto-fonts/tree/main/hinted/ttf/NotoSans). Evita depender de las fuentes instaladas en cada sistema.
-- Rama remota **`cineposta-instagram-state`**: `history.json` y `media/`. Es un árbol operativo independiente, sin código del sitio ni workflows. Sus commits no van a main ni disparan Pages. No mezclar ni rebasar esta rama sobre main.
+El [run 43540537062](https://github.com/Clovhis/sucuplecuc/actions/runs/43540537062), previsto para 21:15 UTC, se creó el 14/11 a las 01:25:48 UTC (**13/11, 22:25:48 ART**): más de cuatro horas tarde. La preparación a las 22:26 ART omitió la franja vencida antes de consultar Buffer. El historial quedó vacío. Actions informó success porque los skips terminaban con exit 0. No fue un error de clave ni de activación. Hubo un Reel manual enviado el 13/11; faltó la edición diaria automática.
 
-## Contenido y medios
+El 14/11 se comprobaron workflow activo, `BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED=true`, organización **My organization** `6a9d88d88ecb84720dd91cc1`, canal profesional `@cineposta.ar` `6af6465a62b70b94b0105899`, conectado, desbloqueado, cola habilitada y `defaultToReminders=false`. El [check con el secret real de Actions](https://github.com/Clovhis/sucuplecuc/actions/runs/43593537937) pasó con dos posts históricos y cero pendientes. OAuth MCP y secret de Actions se comprobaron por separado; no se rotó ninguna clave.
 
-El caption tiene una apertura variable, título/año, una oración completa de la mirada editorial existente, score con su etiqueta, invitación a guardar y dominio/URL con UTM. El generador no usa LLM, claves de IA, Codex Cloud, sesiones de Codex ni servicios de imágenes. La variante se elige por el historial propio. No copia el texto generado para X.
+## Sistema editorial
 
-Placa JPEG sRGB 1080×1350, menor de 8 MB, con póster completo, logo, título, score, una idea editorial y el dominio. Se genera una por día: no requiere renderizar todo el catálogo durante el build. Las variantes manuales de Story/Reel usan 1080×1920. Los títulos sin score o con crítica negativa no entran en la recomendación automática; los agentes pueden promocionarlos como crítica respetando su valoración.
+`scripts/lib/instagram-editorial.mjs` combina cuatro familias y cuatro paletas: carbón/coral, papel/tinta roja, azul/lima y ciruela/durazno. Incluye ilustración a todo el ancho, número protagonista y tarjetas numeradas. La ilustración geométrica se genera localmente, sin IA ni costos; no pretende ser un fotograma.
 
-La API/MCP de Buffer necesita una URL pública, no acepta upload directo. Por eso se sube primero la placa a la rama operativa y se usa `https://raw.githubusercontent.com/Clovhis/sucuplecuc/<SHA>/media/<archivo>.jpg`, fijada al SHA del commit. Antes de crear el post se descarga sin autenticación y se compara SHA-256. Se conservan medios e historial, sin force-push ni borrados. No se espera un deploy ni se usa una URL firmada que venza.
+- **Deslizá para descubrir:** portada + cinco películas relacionadas por género, director o recorrido histórico.
+- **En primer plano:** una película, ilustración grande, título y mirada concreta de su reseña.
+- **Score CinePosta:** número de la ficha, escala /10 y etiqueta canónica. Requiere score ≥8 para este formato.
+- **Doble función:** portada + dos películas del mismo género. No inventa un ranking.
 
-## Habilitación y pruebas sin publicaciones ficticias
+Los formatos compiten según candidatos e historial, sin rotación por día de semana. Penaliza categorías/temas recientes, evita repetir formato consecutivo cuando hay alternativas y cambia paleta. Cada integrante de un carrusel se reserva individualmente; nunca reinicia el historial para reciclar títulos. Recomendaciones con score ≥6, fecha no futura y reseña completa. No modifica el catálogo.
 
-1. Conectar `@cineposta.ar` a Buffer como cuenta profesional (Business/Creator) por el flujo oficial. Un perfil personal o `defaultToReminders=true` no sirve. No hace falta página de Facebook para publicaciones normales.
-2. Mantener OAuth local del MCP separado del secret de Actions. No generar una segunda clave por defecto: Buffer Free limita la cantidad de claves. No rotar/revocar la clave usada por X.
-3. Crear la rama operativa con este contenido inicial, sin ancestros del sitio:
+Captions con títulos, años, opinión existente, scores, invitación a conversar/guardar, hasta tres hashtags y URL con UTM **para cada integrante**, para deduplicación remota completa. Si cinco reseñas exceden 2200 caracteres, usa títulos/scores en caption y deja la oración completa en cada placa: no recorta frases. No afirma disponibilidad, plataformas o estrenos a partir de datos almacenados, ni promete enlace en bio sin verificarlo.
 
-   ```json
-   { "version": 1, "posts": [] }
-   ```
+## Derechos y calidad
 
-   Archivo `history.json`, más `media/.gitkeep` vacío. El workflow sólo modifica esos datos/medios. Persiste las credenciales únicamente en el checkout operativo; el token de Actions conserva permiso `contents: write` del repositorio. El checkout del código usa `persist-credentials: false`.
-4. Configurar `BUFFER_INSTAGRAM_CHANNEL_ID` con el ID confirmado por MCP. Reutilizar `BUFFER_ORGANIZATION_ID` sin cambiarlo. Mantener `BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED` ausente o `false` hasta que pase el check real.
-5. `workflow_dispatch`, `mode=dry-run`: genera una vista previa sin llamar a Buffer. `mode=check`: consulta canal/cola con el secret real de Actions, sin crear un post. Debe mostrar Instagram correcto, profesional, conectado, desbloqueado, cola habilitada y sin recordatorios predeterminados. Si faltan permisos o la clave devuelve 401, dejar desactivado el cron y resolver la credencial con Leo por el mecanismo oficial; no afectar la clave de X para ocultar el problema.
-6. Sólo después del check aprobado, configurar `BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED=true`. El cron programará el siguiente día elegible. `mode=publish` también exige los mismos controles y publica contenido real: no usarlo como test ficticio.
+JPEG sRGB **1080×1350**, ratio 4:5, menos de 8 MB. Noto Sans local y licencia SIL OFL en `assets/social/`. Texto que no baja de 28 px; si no entra se descarta ese candidato. No renderiza todo el catálogo en el build.
 
-Comandos locales:
+Un póster del catálogo no acredita permiso de adaptación para Instagram. Por defecto se publica **gráfica original de CinePosta**, con texto/datos propios, sin fotogramas, logos de películas ni música ajena. Es una alternativa publicable permanente, no una maqueta pendiente.
+
+`assets/social/instagram-rights.json` permite incorporar fotografías con permiso documentado: `slug`, `path` bajo `public/assets/`, `sha256`, `sourceUrl`, `evidenceUrl`, `credit`, `license`, `socialAdaptationAllowed: true`. Permisos incompletos o hashes cambiados impiden usar esa imagen. La lista actual está vacía. No se heredan permisos de posts anteriores.
+
+## Estado, publicación y recuperación
+
+El job usa GraphQL oficial y el secret existente `BUFFER_API_KEY`. OAuth del MCP es independiente: sólo el `check` de Actions prueba ese secret. No leer ni rotar el valor. Variables: `BUFFER_ORGANIZATION_ID`, `BUFFER_INSTAGRAM_CHANNEL_ID`, `BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED`. Activar sólo tras check aprobado. Para pausar: `false`, que no cancela posts ya aceptados por Buffer.
+
+La rama `cineposta-instagram-state` es un árbol operativo independiente: `history.json` y `media/`. No se mezcla ni rebasa sobre main, no se reescribe y no dispara Pages. No borrar medios fijados a posts existentes. Historial inicial: `{ "version": 1, "posts": [] }`. El checkout del código no persiste credenciales; el de estado usa `contents: write`.
+
+Antes de reservar/programar se leen todos los estados del canal (hasta 20 páginas de 100), se excluyen todos los slugs y se comprueba la franja argentina y el máximo de 10 pendientes. Borradores/errores también reservan películas. El grupo de concurrencia propio serializa los jobs. No usa el historial ni consume posiciones de X.
+
+Primero se pushean reserva y medios, con formato, tema, paleta, todos los slugs, caption, derechos/hashes y `attemptId`. Después se descarga cada URL pública inmutable `https://raw.githubusercontent.com/Clovhis/sucuplecuc/<SHA>/media/<archivo>.jpg` y se compara SHA-256. Sólo entonces se hace **una mutación** con 1, 3 o 6 imágenes ordenadas. `customScheduled`, `automatic`, `type: post`, hora exacta: los horarios irregulares de la cola de Buffer no influyen.
+
+El recibo persiste incluso tras errores y se guarda en artifact por siete días. El código acepta registros históricos de una imagen. Timeout o reserva sin recibo bloquean otro intento hasta reconciliarlo. Si existe un ID, revisar ese mismo post, no crear otro. Sólo con evidencia inequívoca de ausencia remota puede retirarse manualmente esa reserva no enviada, preservando todos los demás registros.
+
+Se reconcilian recibos anteriores y se advierte sobre errores/reservas viejas; no se reprograman. Los skips por franja vencida, cola llena o reserva inexistente ahora **fallan Actions** y explican el motivo; una edición existente aceptada por Buffer termina correctamente con su ID. El resumen diferencia `prepared`, `existing`, `scheduled`, `checked`. Programado no significa publicado: comprobar `sent` y enlace externo cuando corresponda.
+
+## Operación manual
 
 ```powershell
 npm run test:buffer:instagram
+npm run social:instagram:preview
 npm run buffer:instagram
-npm run buffer:instagram -- --check
-npm run social:media -- --slugs the-shining-1980 --format story --out .tmp/story
+gh workflow run publish-buffer-instagram.yml -f mode=check
+# Envíos REALES, sólo para franjas futuras vacías:
+gh workflow run publish-buffer-instagram.yml -f mode=publish -f edition=today
+gh workflow run publish-buffer-instagram.yml -f mode=publish -f edition=tomorrow
 ```
 
-`--check` necesita credenciales válidas en el entorno. No usar el antiguo `BUFFER_API_KEY` local si venció: el MCP se reconectó por OAuth, pero eso no renueva esa variable ni el secret de Actions. El modo sin argumentos es offline; el artefacto de Actions permite revisar la placa sin publicar.
+`dry-run` es offline, sin secretos ni cambios de historial. `check` consulta Buffer con el secret real, sin crear posts. `publish` es real: `edition=today` permite sembrar hoy y `tomorrow` preparar la edición normal. No usarlo para posts ficticios. Si faltan menos de cinco minutos, no reprograma al día siguiente.
 
-## Duplicados y recuperación
+La galería reproducible está en `.tmp/instagram-design/`: cuatro formatos, carrusel completo y `manifest.json` con captions/hashes. Generarla no llama a Buffer. Los generadores manuales `social:media` y `social:reel` siguen disponibles; su capacidad de componer un póster no acredita derechos para publicarlo.
 
-El job consulta todos los estados de Instagram, paginando hasta 100 por página (máximo conservador de 20 páginas; excederlo bloquea para revisar cuota). Busca enlaces/slug, incluso con UTM. Títulos de borradores o errores también se reservan. Antes de crear contenido, verifica que no exista otro post para el día argentino y que haya menos de 10 pendientes. Vuelve a comprobar ambos límites antes de la mutación. No usa el historial de X ni le consume posiciones de cola.
+## Compatibilidad y costos
 
-Primero persiste y pushea la reserva con película, texto, hora, hash y `attemptId` (run:attempt); luego crea el post. El recibo incluye ID y estado de Buffer. La persistencia final corre también si el envío falla; además conserva el historial como artifact durante siete días. Un fallo de push de la reserva impide llegar a la mutación. El grupo de concurrencia propio impide ejecuciones simultáneas del job.
+Buffer Free comprobado el 14/11/2026: 3 canales, 10 programados **por canal**, API incluida. Se usan hasta seis imágenes, por debajo de los límites documentados. Un carrusel cuenta como un post. Normalmente seis requests por día, más paginación; cuota compartida con X/MCP. Respetar 429, sin reintentar mutaciones automáticamente.
 
-Si se perdió el recibo, una nueva ejecución recupera el post desde Buffer y no crea otro. Si hay reserva pero no aparece un post, o una mutación tuvo timeout, el job se detiene: **no reintentar la creación a ciegas**. Revisar el run/artifact y `list_posts` del canal, incluyendo borradores, errores y enviados. Si Buffer tiene un ID, conservarlo y recuperar/editar ese mismo post según la autorización del usuario. Una reserva de un día anterior queda en el historial y no impide elegir otra película mañana.
+Reels/Stories existentes quedan para piezas especiales. La edición diaria usa imagen/carrusel para publicación automática sin móvil, música comercial, stickers ni funciones pagas. No agrega servicios, dependencias ni APIs de IA. Runner Linux estándar del repositorio público.
 
-Sólo si se confirmó inequívocamente que no se creó ningún post, una recuperación manual puede quitar **esa reserva no enviada** de `history.json` en la rama operativa, preservando los demás registros, commitear sin force y ejecutar `publish` antes del corte. Es una operación excepcional con evidencia, no un reinicio del historial ni un paso automático. Si el post existe con `error`, corregir/reintentar el mismo ID; no borrar su registro para volver a publicar.
-
-Para pausar, `BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED=false`. Eso frena futuros cron; no cancela posts ya recibidos por Buffer. Consultar sus IDs y estados antes de prometer cancelación. Las publicaciones programadas se informan como programadas: confirmar `sent` y enlace externo posteriormente requiere una consulta real.
-
-## Costos y límites
-
-Usa el plan gratuito existente: dos de tres canales y hasta diez programados por canal, comprobados por MCP al configurar. Una publicación diaria ocupa aproximadamente un espacio en Instagram; no precarga un mes. Ambos clientes comparten la cuota API de la organización: normalmente este job usa seis requests por día con menos de cien posts, y crece por paginación; respetar cuota viva y 429, no insistir con mutaciones. El límite mensual mostrado por la cuenta es la referencia, incluso si cambia la página de precios.
-
-GitHub Actions usa runner Linux estándar en este repositorio público; no se habilitan runners pagos, grandes, servicios adicionales ni compras. Los MP4 opcionales se generan con FFmpeg sin audio. No se usan primer comentario (pago), música comercial, Shop Grid ni stickers para sostener la automatización.
-
-Fuentes oficiales consultadas el 12/11/2026: [MCP](https://developers.buffer.com/guides/integrations/mcp.html), [OAuth de Codex](https://developers.buffer.com/guides/integrations/chatgpt.html), [Instagram](https://support.buffer.com/en-us/articles/using-instagram-with-buffer-YSjg2dXFV8), [medios públicos](https://developers.buffer.com/guides/hosting-media.html), [metadatos](https://developers.buffer.com/types/InstagramPostMetadataInput.html), [Buffer Free](https://buffer.com/pricing).
+Fuentes oficiales revalidadas el 14/11/2026: [API incluida en Free](https://support.buffer.com/en-us/articles/what-is-buffers-api-GtIYIQilz5), [publicación automática y carruseles](https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p), [medios públicos](https://developers.buffer.com/guides/hosting-media.html), [InstagramMetadata](https://developers.buffer.com/types/InstagramPostMetadataInput.html).

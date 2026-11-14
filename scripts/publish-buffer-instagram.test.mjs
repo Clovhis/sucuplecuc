@@ -128,7 +128,7 @@ test('real local card generation produces safe JPEG feed/story dimensions and a 
 	assert.equal(result.mode,'prepared');
 	const stored=(await readHistory(stateDir)).posts[0];
 	assert.equal(stored.state,'reserved');
-	const feed=await sharp(await readFile(path.join(stateDir,stored.mediaPath))).metadata();
+	const feed=await sharp(await readFile(path.join(stateDir,stored.media[0].mediaPath))).metadata();
 	assert.deepEqual([feed.width,feed.height,feed.format],[1080,1350,'jpeg']);
 	const storyPath=path.join(root,'story.jpg');
 	await renderMovieCard({...movie,title:'Una película con un título bastante largo & signos <raros>'},storyPath,{format:'story',root});

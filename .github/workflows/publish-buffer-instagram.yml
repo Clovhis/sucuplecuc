@@ -2,16 +2,23 @@ name: Instagram diario CinePosta (19:15 AR via Buffer)
 
 on:
   schedule:
-    # 18:15 AR: prepare one post for 19:15 AR (22:15 UTC).
+    # 18:15 AR: prepare tomorrow's edition for 19:15 AR (22:15 UTC).
+    # A one-day buffer absorbs delayed GitHub schedules without moving the publish time.
     - cron: '15 21 * * *'
   workflow_dispatch:
     inputs:
       mode:
-        description: 'dry-run: local preview; check: read-only Buffer preflight; publish: schedule today.'
+        description: 'dry-run: local preview; check: read-only Buffer preflight; publish: real edition.'
         required: true
         default: dry-run
         type: choice
         options: [dry-run, check, publish]
+      edition:
+        description: 'tomorrow: normal advance preparation; today: seed/recover a future empty slot.'
+        required: true
+        default: tomorrow
+        type: choice
+        options: [tomorrow, today]
 
 permissions:
   contents: write
@@ -28,11 +35,12 @@ jobs:
     env:
       BUFFER_ORGANIZATION_ID: ${{ vars.BUFFER_ORGANIZATION_ID }}
       BUFFER_INSTAGRAM_CHANNEL_ID: ${{ vars.BUFFER_INSTAGRAM_CHANNEL_ID }}
+      INSTAGRAM_EDITION: ${{ github.event_name == 'schedule' && 'tomorrow' || inputs.edition || 'tomorrow' }}
     steps:
       - name: Checkout application
         uses: actions/checkout@v6
         with:
-          ref: main
+          ref: ${{ github.sha }}
           persist-credentials: false
 
       - name: Setup Node

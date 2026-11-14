@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "assets": [],
+  "note": "Only add assets with documented permission for Instagram publication and adaptation. Required: slug, path (under public/), sha256, sourceUrl, evidenceUrl, credit, license, socialAdaptationAllowed: true. Empty means original CinePosta graphics; catalog posters are not automatically licensed for social use."
+}
