@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-13T11:55:05.269Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-14T11:15:40.588Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Los Juegos del Hambre: Amanecer en la Cosecha",
