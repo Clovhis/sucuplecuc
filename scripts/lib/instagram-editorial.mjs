@@ -61,7 +61,7 @@ export function editionCaption(edition) {
   const multi=edition.movies.length>1;
   const intro=multi?edition.title+'.':`${edition.movies[0].title}: la mirada de CinePosta.`;
   const credits=editionCredits(edition);
-  const ending=multi?'¿Cuál va primero? Guardá la selección y compartila.':'¿Qué te dejó esta película? Leé la reseña en cineposta.com.ar.';
+  const ending=multi?'¿Cuál va primero? Guardá la selección y compartila. Reseñas completas en el enlace del perfil.':'¿Qué te dejó esta película? Reseña completa en el enlace del perfil.';
   // Instagram captions render URLs as plain text. Keep canonical references for
   // identification/deduplication without exposing long, unusable tracking queries.
   const links=edition.movies.map(m=>movieUrl(m.slug));
@@ -141,7 +141,7 @@ export async function renderEdition(edition,directory,{root=ROOT}={}) {
       }
     }
     rect(54,1297,972,1,'#777777');
-    await add('cineposta.com.ar',54,1310,650,38,26,p.fg);
+    await add('cineposta.com.ar · enlace en el perfil',54,1310,972,38,26,p.fg);
     const filename=`${edition.date}-${edition.movies[0].slug}-${edition.format}-photo-${index+1}.jpg`;
     const output=path.join(directory,filename);
     await sharp({create:{width:1080,height:1350,channels:3,background:p.bg}}).composite(layers).toColourspace('srgb').jpeg({quality:94,mozjpeg:true}).toFile(output);

@@ -16,7 +16,7 @@ El 14/11 se comprobaron workflow activo, `BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED=t
 
 JPEG sRGB 1080×1350, menos de 8 MB. Tipografía local Noto Sans SIL OFL, mínimo 24 px para créditos. La composición respeta permisos de recorte/superposición. Los retratos y conciertos llevan nombre y año de archivo; no se hacen pasar por fotogramas. Los captions conservan créditos, títulos de las fotos, fuente, licencia/enlace y cambios. Las adaptaciones SA se distribuyen bajo CC BY-SA 4.0.
 
-Instagram/Buffer no convierten las URLs del caption en links clicables. Las próximas ediciones conservan referencias canónicas para identificar las películas y evitar duplicados, sin parámetros UTM visibles. No prometer clic directo desde el caption; orientar al enlace del perfil sólo cuando esté comprobado que está configurado. El formato final no cambia los posts existentes.
+Instagram/Buffer no convierten las URLs del caption en links clicables. Las próximas ediciones conservan referencias canónicas para identificar las películas y evitar duplicados, sin parámetros UTM visibles. Caption y placa indican «enlace del perfil»: el 14/11 Leo mostró `cineposta.com.ar` configurado en el campo Sitio web de `@cineposta.ar`. No prometer clic directo desde el caption. El formato final no cambia los posts existentes.
 
 El registro v2 `assets/social/instagram-rights.json` conserva 28 fotografías aprobadas; la biblioteca operativa se consulta en Supabase. Cada permiso conserva fuente, evidencia archivada/hash, identidad, licencia, territorio, embargo/vencimiento y alcance para publicación orgánica/alojamiento público. **El conjunto inicial contiene personas/eventos; los pósters y escenas de estudios siguen pendientes de permiso.** No se atribuye a TMDB una licencia que no posee.
 
