@@ -50,6 +50,12 @@ Para incorporar ese material hace falta una política aplicable o autorización 
 
 Horarios conservados: preparación **18:15 ART**, edición de mañana, publicación **19:15 ART**. Actions, Buffer Free, ramas operativas, concurrencia, hashes públicos y protecciones contra duplicados se mantienen. Las dos ediciones ya están programadas, no se informan como publicadas.
 
+## Publicación inmediata pedida después
+
+Leo autorizó explícitamente publicar una pieza real ahora y sólo en Instagram. Se adelantó **el mismo ID** de KATSEYE `6af8537e918fe79d2e79d5ec`, sin crear otro post. Buffer confirmó `sent`, automático, el **14/11/2026 a las 10:54:30 ART** (`2026-11-14T13:54:30.711Z`), sin error, con [enlace público de Instagram](https://www.instagram.com/p/DfuXDRgFIIo/). El horario originalmente reservado de las 19:15 se conserva en `manualPublicationOverride` del historial; la edición de hoy ya fue enviada y no queda otra copia para esta noche.
+
+El carrusel de mañana `6af8549ac5b364e062edcec2` sigue programado para **15/11, 19:15 ART**, automático, seis imágenes reales. La excepción manual de hoy no cambia el cron ni los horarios diarios.
+
 Todas las composiciones con ShareAlike y las galerías de este informe se ofrecen bajo [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), conservando los derechos/licencias originales de las fotografías. Créditos completos, títulos y fuentes individuales en el [registro de imágenes](../../../assets/social/instagram-rights.json) y sus evidencias. Montaje, recorte y tipografía: CinePosta; Noto Sans bajo SIL OFL.
 
 Guía operativa: [instagram-image-rights.md](../../../docs/instagram-image-rights.md). Fuentes primarias: [TMDB FAQ](https://developer.themoviedb.org/docs/faq), [foto KATSEYE](https://commons.wikimedia.org/wiki/File:Katseye_at_Wango_Tango_2025.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), [BY-SA 2.0, cláusula 4.b](https://creativecommons.org/licenses/by-sa/2.0/legalcode.en), [Disney+ Press](https://press.disneyplus.com/news/katseye-wild-hearts-on-disneyplus-hulu).
