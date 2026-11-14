@@ -1,0 +1,459 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "los-emigrantes-2021",
+	"title": "Los emigrantes",
+	"year": 2021,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/744733/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 22
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/the-emigrants",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt4697290/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Erik Poppe",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 79322,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/79322",
+					"fact": "Identidad de Erik Poppe, oficio y filmografía cotejados con el ID exacto de Los emigrantes (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/744733/cast",
+					"fact": "El billing del título exacto acredita a Erik Poppe en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/em53SjKHw8vPGuqTHsqnEVZrDsi.jpg",
+				"localPath": "/people/erik-poppe-nm0691547.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lisa Carlehed",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Kristina",
+			"tmdbPersonId": 1111176,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1111176",
+					"fact": "Identidad de Lisa Carlehed, oficio y filmografía cotejados con el ID exacto de Los emigrantes (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/744733/cast",
+					"fact": "El billing del título exacto acredita a Lisa Carlehed como Kristina."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/r6vxXVZfiTgOHumGRtPTQpXQtKz.jpg",
+				"localPath": "/people/lisa-carlehed-nm2527686.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gustaf Skarsgård",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Karl-Oskar",
+			"tmdbPersonId": 63764,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/63764",
+					"fact": "Identidad de Gustaf Skarsgård, oficio y filmografía cotejados con el ID exacto de Los emigrantes (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/744733/cast",
+					"fact": "El billing del título exacto acredita a Gustaf Skarsgård como Karl-Oskar."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/bfh0yP6Qr55jg9CGTGScXAw8Ftu.jpg",
+				"localPath": "/people/gustaf-skarsgard-tmdb-63764.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tove Lo",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Ulrika",
+			"tmdbPersonId": 1702842,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1702842",
+					"fact": "Identidad de Tove Lo, oficio y filmografía cotejados con el ID exacto de Los emigrantes (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/744733/cast",
+					"fact": "El billing del título exacto acredita a Tove Lo como Ulrika."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/js10eXFmXrsETlhfShL9FCZKCsy.jpg",
+				"localPath": "/people/tove-lo-nm6241336.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lena Strömdahl",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Anna",
+			"tmdbPersonId": 79265,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/79265",
+					"fact": "Identidad de Lena Strömdahl, oficio y filmografía cotejados con el ID exacto de Los emigrantes (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/744733/cast",
+					"fact": "El billing del título exacto acredita a Lena Strömdahl como Anna."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jznIGHTRPcltXyM3jLO14JsbOPj.jpg",
+				"localPath": "/people/lena-stromdahl-nm0835563.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sofia Helin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Judit",
+			"tmdbPersonId": 55885,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/55885",
+					"fact": "Identidad de Sofia Helin, oficio y filmografía cotejados con el ID exacto de Los emigrantes (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/744733/cast",
+					"fact": "El billing del título exacto acredita a Sofia Helin como Judit."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4O2IEQHkeq1vhOrA41n313HaflG.jpg",
+				"localPath": "/people/sofia-helin-nm0375138.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nova Salmi-Wikander",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Elin",
+			"tmdbPersonId": 2876702,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2876702",
+					"fact": "Identidad de Nova Salmi-Wikander, oficio y filmografía cotejados con el ID exacto de Los emigrantes (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/744733/cast",
+					"fact": "El billing del título exacto acredita a Nova Salmi-Wikander como Elin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/17oDts1Z90P8xJSRqq28M3657Na.jpg",
+				"localPath": "/people/nova-salmi-wikander-nm12113204.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Díana Bermudez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Wichahpi",
+			"tmdbPersonId": 1704268,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1704268",
+					"fact": "Identidad de Díana Bermudez, oficio y filmografía cotejados con el ID exacto de Los emigrantes (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/744733/cast",
+					"fact": "El billing del título exacto acredita a Díana Bermudez como Wichahpi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4g1J1lAjrH62nMB7BUEIlXZJ6UW.jpg",
+				"localPath": "/people/diana-bermudez-nm6946524.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "James Longshore",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Saloon Owner",
+			"tmdbPersonId": 1871762,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1871762",
+					"fact": "Identidad de James Longshore, oficio y filmografía cotejados con el ID exacto de Los emigrantes (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/744733/cast",
+					"fact": "El billing del título exacto acredita a James Longshore como Saloon Owner."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mEnDAztpBTAzG5rEGEMaixebVJx.jpg",
+				"localPath": "/people/james-longshore-nm4553679.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Florin Zhang",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": null,
+			"tmdbPersonId": 2987312,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito sin personaje detallado cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kerstin Linden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Lill-Märta",
+			"tmdbPersonId": 2987313,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lill-Märta cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jesper Arin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Dean Brusander",
+			"tmdbPersonId": 2987314,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dean Brusander cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Laurence Kinlan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Pastor Jackson",
+			"tmdbPersonId": 17019,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pastor Jackson cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alexandru Simion",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Harbour Coordinator",
+			"tmdbPersonId": 2987315,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Harbour Coordinator cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stefan Cronwall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Blacksmith",
+			"tmdbPersonId": 930582,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Blacksmith cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Harald Knutsen-Öy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Johan",
+			"tmdbPersonId": 2987316,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Johan cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paul Cimpoieru",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Lunatic Man",
+			"tmdbPersonId": 2295084,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lunatic Man cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mari Loewen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Boat Passanger",
+			"tmdbPersonId": 3145225,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Boat Passanger cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ola Normelli",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Country Gentleman",
+			"tmdbPersonId": 2610907,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Country Gentleman cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Iulian Burciu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Sweets Man",
+			"tmdbPersonId": 2023216,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sweets Man cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pedram Hajigholi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Alone Traveler",
+			"tmdbPersonId": 3145226,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Alone Traveler cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rebecca Runfors Carlzzon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/744733/cast",
+			"screenRole": "Emmigrant",
+			"tmdbPersonId": 5015541,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Emmigrant cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Los emigrantes; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Florin Zhang",
+				"role": "performer",
+				"reason": "Crédito sin personaje detallado cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kerstin Linden",
+				"role": "performer",
+				"reason": "Crédito Lill-Märta cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jesper Arin",
+				"role": "performer",
+				"reason": "Crédito Dean Brusander cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Laurence Kinlan",
+				"role": "performer",
+				"reason": "Crédito Pastor Jackson cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alexandru Simion",
+				"role": "performer",
+				"reason": "Crédito Harbour Coordinator cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stefan Cronwall",
+				"role": "performer",
+				"reason": "Crédito Blacksmith cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Harald Knutsen-Öy",
+				"role": "performer",
+				"reason": "Crédito Johan cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paul Cimpoieru",
+				"role": "performer",
+				"reason": "Crédito Lunatic Man cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mari Loewen",
+				"role": "performer",
+				"reason": "Crédito Boat Passanger cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ola Normelli",
+				"role": "performer",
+				"reason": "Crédito Country Gentleman cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Iulian Burciu",
+				"role": "performer",
+				"reason": "Crédito Sweets Man cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pedram Hajigholi",
+				"role": "performer",
+				"reason": "Crédito Alone Traveler cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rebecca Runfors Carlzzon",
+				"role": "performer",
+				"reason": "Crédito Emmigrant cotejado en el billing completo de Los emigrantes; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

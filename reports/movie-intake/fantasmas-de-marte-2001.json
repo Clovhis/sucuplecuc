@@ -1,0 +1,555 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "fantasmas-de-marte-2001",
+	"title": "Fantasmas de Marte",
+	"year": 2001,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/10016/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 28
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/fantasmas-de-marte",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0228333/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "John Carpenter",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 11770,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11770",
+					"fact": "Identidad de John Carpenter, oficio y filmografía cotejados con el ID exacto de Fantasmas de Marte (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10016/cast",
+					"fact": "El billing del título exacto acredita a John Carpenter en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3Qp0mg61u1qSZNJh30BFEUZrIMG.jpg",
+				"localPath": "/people/john-carpenter-nm0000118.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Natasha Henstridge",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Lt. Melanie Ballard",
+			"tmdbPersonId": 57395,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/57395",
+					"fact": "Identidad de Natasha Henstridge, oficio y filmografía cotejados con el ID exacto de Fantasmas de Marte (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10016/cast",
+					"fact": "El billing del título exacto acredita a Natasha Henstridge como Lt. Melanie Ballard."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lfRFm3MLOGPtaDHWTstoQfKAyLM.jpg",
+				"localPath": "/people/natasha-henstridge-nm0000449.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ice Cube",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "James 'Desolation' Williams",
+			"tmdbPersonId": 9778,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/9778",
+					"fact": "Identidad de Ice Cube, oficio y filmografía cotejados con el ID exacto de Fantasmas de Marte (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10016/cast",
+					"fact": "El billing del título exacto acredita a Ice Cube como James 'Desolation' Williams."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ice-Cube%202014-01-09-Chicago-photoby-Adam-Bielawski.jpg?width=640",
+				"localPath": "/people/ice-cube-nm0001084.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jason Statham",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Sgt. Jericho Butler",
+			"tmdbPersonId": 976,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/976",
+					"fact": "Identidad de Jason Statham, oficio y filmografía cotejados con el ID exacto de Fantasmas de Marte (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10016/cast",
+					"fact": "El billing del título exacto acredita a Jason Statham como Sgt. Jericho Butler."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jason%20Statham%202018.jpg?width=1200",
+				"localPath": "/people/jason-statham-nm0005458.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Clea DuVall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Bashira Kincaid",
+			"tmdbPersonId": 20387,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/20387",
+					"fact": "Identidad de Clea DuVall, oficio y filmografía cotejados con el ID exacto de Fantasmas de Marte (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10016/cast",
+					"fact": "El billing del título exacto acredita a Clea DuVall como Bashira Kincaid."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yueygn1Lmmni7EaMQD9LslexDlu.jpg",
+				"localPath": "/people/clea-duvall-nm0245112.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Pam Grier",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Commander Helena Braddock",
+			"tmdbPersonId": 2230,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2230",
+					"fact": "Identidad de Pam Grier, oficio y filmografía cotejados con el ID exacto de Fantasmas de Marte (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10016/cast",
+					"fact": "El billing del título exacto acredita a Pam Grier como Commander Helena Braddock."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/irCJf8OTSaPkThijP8PWkP1A7ls.jpg",
+				"localPath": "/people/pam-grier-nm0000427.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Joanna Cassidy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Dr. Arlene Whitlock",
+			"tmdbPersonId": 593,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/593",
+					"fact": "Identidad de Joanna Cassidy, oficio y filmografía cotejados con el ID exacto de Fantasmas de Marte (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10016/cast",
+					"fact": "El billing del título exacto acredita a Joanna Cassidy como Dr. Arlene Whitlock."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cgyR6QLZdC6apR8eHnhgqDQmqyr.jpg",
+				"localPath": "/people/joanna-cassidy-nm0001026.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Richard Cetrone",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Big Daddy Mars",
+			"tmdbPersonId": 12371,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/12371",
+					"fact": "Identidad de Richard Cetrone, oficio y filmografía cotejados con el ID exacto de Fantasmas de Marte (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10016/cast",
+					"fact": "El billing del título exacto acredita a Richard Cetrone como Big Daddy Mars."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lZQqNU3QUcnIssWhIfatePfU6M7.jpg",
+				"localPath": "/people/richard-cetrone-nm0149150.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rosemary Forsyth",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Inquisitor",
+			"tmdbPersonId": 49958,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/49958",
+					"fact": "Identidad de Rosemary Forsyth, oficio y filmografía cotejados con el ID exacto de Fantasmas de Marte (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10016/cast",
+					"fact": "El billing del título exacto acredita a Rosemary Forsyth como Inquisitor."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cngF4dNTDfU8187094ey08bgb2F.jpg",
+				"localPath": "/people/rosemary-forsyth-nm0287071.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Liam Waite",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Michael Descanso",
+			"tmdbPersonId": 62031,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Michael Descanso cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Duane Davis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Uno",
+			"tmdbPersonId": 62032,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Uno cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lobo Sebastian",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Dos",
+			"tmdbPersonId": 48071,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dos cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rodney A. Grant",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Tres",
+			"tmdbPersonId": 7853,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Tres cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Peter Jason",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Engineer McSimms",
+			"tmdbPersonId": 6916,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Engineer McSimms cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Wanda De Jesus",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Akooshay",
+			"tmdbPersonId": 57991,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Akooshay cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Doug McGrath",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Benchley",
+			"tmdbPersonId": 62033,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Benchley cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rick Edelstein",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Zimmerman",
+			"tmdbPersonId": 62034,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Zimmerman cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Carradine",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Rodale",
+			"tmdbPersonId": 62036,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rodale cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Michael Krawic",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Man in the Rover",
+			"tmdbPersonId": 62035,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man in the Rover cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eileen Weisinger",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Woman Warrior",
+			"tmdbPersonId": 62037,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Woman Warrior cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rex Linn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Yared",
+			"tmdbPersonId": 16937,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Yared cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Matt Nolan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Miner",
+			"tmdbPersonId": 159720,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Miner cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marjean Holden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Young Woman",
+			"tmdbPersonId": 106728,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Woman cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Charlotte Cornwell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Narrator (voice)",
+			"tmdbPersonId": 87416,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Narrator (voice) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Danielle Burgio",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Local Lady Cop (uncredited)",
+			"tmdbPersonId": 96753,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Local Lady Cop (uncredited) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lena Milan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Hand-Double (uncredited)",
+			"tmdbPersonId": 2642846,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hand-Double (uncredited) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Damon Caro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Shape-Male Intern (uncredited)",
+			"tmdbPersonId": 1368878,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Shape-Male Intern (uncredited) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christopher Allen Nelson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10016/cast",
+			"screenRole": "Demon Miner (uncredited)",
+			"tmdbPersonId": 6446,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Demon Miner (uncredited) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Fantasmas de Marte; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Liam Waite",
+				"role": "performer",
+				"reason": "Crédito Michael Descanso cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Duane Davis",
+				"role": "performer",
+				"reason": "Crédito Uno cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lobo Sebastian",
+				"role": "performer",
+				"reason": "Crédito Dos cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rodney A. Grant",
+				"role": "performer",
+				"reason": "Crédito Tres cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Peter Jason",
+				"role": "performer",
+				"reason": "Crédito Engineer McSimms cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Wanda De Jesus",
+				"role": "performer",
+				"reason": "Crédito Akooshay cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Doug McGrath",
+				"role": "performer",
+				"reason": "Crédito Benchley cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rick Edelstein",
+				"role": "performer",
+				"reason": "Crédito Zimmerman cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Carradine",
+				"role": "performer",
+				"reason": "Crédito Rodale cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Michael Krawic",
+				"role": "performer",
+				"reason": "Crédito Man in the Rover cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eileen Weisinger",
+				"role": "performer",
+				"reason": "Crédito Woman Warrior cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rex Linn",
+				"role": "performer",
+				"reason": "Crédito Yared cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Matt Nolan",
+				"role": "performer",
+				"reason": "Crédito Miner cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marjean Holden",
+				"role": "performer",
+				"reason": "Crédito Young Woman cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Charlotte Cornwell",
+				"role": "performer",
+				"reason": "Crédito Narrator (voice) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Danielle Burgio",
+				"role": "performer",
+				"reason": "Crédito Local Lady Cop (uncredited) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lena Milan",
+				"role": "performer",
+				"reason": "Crédito Hand-Double (uncredited) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Damon Caro",
+				"role": "performer",
+				"reason": "Crédito Shape-Male Intern (uncredited) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christopher Allen Nelson",
+				"role": "performer",
+				"reason": "Crédito Demon Miner (uncredited) cotejado en el billing completo de Fantasmas de Marte; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

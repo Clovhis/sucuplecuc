@@ -1,0 +1,467 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "medium-2024",
+	"title": "Médium",
+	"year": 2024,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1216191/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 23
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/oddity",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt26470109/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Damian McCarthy",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1102882,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1102882",
+					"fact": "Identidad de Damian Mc Carthy, oficio y filmografía cotejados con el ID exacto de Médium (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1216191/cast",
+					"fact": "El billing del título exacto acredita a Damian Mc Carthy en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/mCY9Q0rJcmbj165O3qOutFMOEoH.jpg",
+				"localPath": "/people/damian-mccarthy-nm3374835.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Carolyn Bracken",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Dani Timmis / Darcy Odello",
+			"tmdbPersonId": 1800020,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1800020",
+					"fact": "Identidad de Carolyn Bracken, oficio y filmografía cotejados con el ID exacto de Médium (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1216191/cast",
+					"fact": "El billing del título exacto acredita a Carolyn Bracken como Dani Timmis / Darcy Odello."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7b334UCJPr5qtS8gcTpGwdFRAO0.jpg",
+				"localPath": "/people/carolyn-bracken-nm5427601.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gwilym Lee",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Ted Timmis",
+			"tmdbPersonId": 1220123,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1220123",
+					"fact": "Identidad de Gwilym Lee, oficio y filmografía cotejados con el ID exacto de Médium (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1216191/cast",
+					"fact": "El billing del título exacto acredita a Gwilym Lee como Ted Timmis."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bHSmjJLJyrg5Q0tC0W2FFreuOnO.jpg",
+				"localPath": "/people/gwilym-lee-nm3152605.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Steve Wall",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Ivan",
+			"tmdbPersonId": 1398632,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1398632",
+					"fact": "Identidad de Steve Wall, oficio y filmografía cotejados con el ID exacto de Médium (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1216191/cast",
+					"fact": "El billing del título exacto acredita a Steve Wall como Ivan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tEXsLuN0w1aaosb4kzf5DwT7rok.jpg",
+				"localPath": "/people/steve-wall-nm2425811.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Joe Rooney",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Bernie",
+			"tmdbPersonId": 1227306,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1227306",
+					"fact": "Identidad de Joe Rooney, oficio y filmografía cotejados con el ID exacto de Médium (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1216191/cast",
+					"fact": "El billing del título exacto acredita a Joe Rooney como Bernie."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wjwv8NrNba6SrAe8CgfEg5wHLBg.jpg",
+				"localPath": "/people/joe-rooney-nm0740327.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tadhg Murphy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Olin Boole",
+			"tmdbPersonId": 1256162,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1256162",
+					"fact": "Identidad de Tadhg Murphy, oficio y filmografía cotejados con el ID exacto de Médium (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1216191/cast",
+					"fact": "El billing del título exacto acredita a Tadhg Murphy como Olin Boole."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5YQzdACbDvDwcfITmcwxMUEPJLK.jpg",
+				"localPath": "/people/tadhg-murphy-nm1752532.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Caroline Menton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Yana",
+			"tmdbPersonId": 4532173,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4532173",
+					"fact": "Identidad de Caroline Menton, oficio y filmografía cotejados con el ID exacto de Médium (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1216191/cast",
+					"fact": "El billing del título exacto acredita a Caroline Menton como Yana."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7iXSKiWfW6Ykxo8c9JuBoZ5U47O.jpg",
+				"localPath": "/people/caroline-menton-nm9665108.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jonathan French",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Declan",
+			"tmdbPersonId": 2785002,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2785002",
+					"fact": "Identidad de Jonathan French, oficio y filmografía cotejados con el ID exacto de Médium (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1216191/cast",
+					"fact": "El billing del título exacto acredita a Jonathan French como Declan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4SY5uR9j4e0aLudZFEA9HKYwM6o.jpg",
+				"localPath": "/people/jonathan-french-nm7038625.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ivan de Wergifosse",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Wooden Man",
+			"tmdbPersonId": 4841063,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Wooden Man cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Shane Whisker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Bellboy",
+			"tmdbPersonId": 3598010,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bellboy cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Josuha Campbell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Patient",
+			"tmdbPersonId": 4841062,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Austin Lawlor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Patient",
+			"tmdbPersonId": 4841065,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Peter McCarthy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Patient",
+			"tmdbPersonId": 4841067,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Fiach McHugh",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Patient",
+			"tmdbPersonId": 4841068,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Patrick Mullins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Patient",
+			"tmdbPersonId": 4841070,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jim O'Donnell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Patient",
+			"tmdbPersonId": 4841072,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Inma Pavon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Nurse",
+			"tmdbPersonId": 2854105,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nurse cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Leticia Lopez Ramos",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Nurse",
+			"tmdbPersonId": 3724732,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nurse cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chris Mudrack",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Orderly",
+			"tmdbPersonId": 4841069,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Orderly cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eileen McCarthy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Cleaner",
+			"tmdbPersonId": 4841066,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cleaner cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pete McCarthy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Olin Boole Double",
+			"tmdbPersonId": 4843228,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Olin Boole Double cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Collender",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Ivan Double",
+			"tmdbPersonId": 4843217,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ivan Double cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Evan Horan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1216191/cast",
+			"screenRole": "Weatherman",
+			"tmdbPersonId": 2273626,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Weatherman cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Médium; se retuvieron 1 créditos de dirección y 7 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Ivan de Wergifosse",
+				"role": "performer",
+				"reason": "Crédito Wooden Man cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Shane Whisker",
+				"role": "performer",
+				"reason": "Crédito Bellboy cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Josuha Campbell",
+				"role": "performer",
+				"reason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Austin Lawlor",
+				"role": "performer",
+				"reason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Peter McCarthy",
+				"role": "performer",
+				"reason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Fiach McHugh",
+				"role": "performer",
+				"reason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Patrick Mullins",
+				"role": "performer",
+				"reason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jim O'Donnell",
+				"role": "performer",
+				"reason": "Crédito Patient cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Inma Pavon",
+				"role": "performer",
+				"reason": "Crédito Nurse cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Leticia Lopez Ramos",
+				"role": "performer",
+				"reason": "Crédito Nurse cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Chris Mudrack",
+				"role": "performer",
+				"reason": "Crédito Orderly cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eileen McCarthy",
+				"role": "performer",
+				"reason": "Crédito Cleaner cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pete McCarthy",
+				"role": "performer",
+				"reason": "Crédito Olin Boole Double cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Collender",
+				"role": "performer",
+				"reason": "Crédito Ivan Double cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Evan Horan",
+				"role": "performer",
+				"reason": "Crédito Weatherman cotejado en el billing completo de Médium; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

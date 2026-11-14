@@ -1,0 +1,603 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "torque-rodando-al-limite-2004",
+	"title": "Torque: Rodando al límite",
+	"year": 2004,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/10718/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 31
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/torque-rodando-al-limite",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0329691/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Joseph Kahn",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 66823,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/66823",
+					"fact": "Identidad de Joseph Kahn, oficio y filmografía cotejados con el ID exacto de Torque: Rodando al límite (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10718/cast",
+					"fact": "El billing del título exacto acredita a Joseph Kahn en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dukj3byVdRSHkpZKq2eOq9A7cin.jpg",
+				"localPath": "/people/joseph-kahn-nm0994538.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Martin Henderson",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Cary Ford",
+			"tmdbPersonId": 26291,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/26291",
+					"fact": "Identidad de Martin Henderson, oficio y filmografía cotejados con el ID exacto de Torque: Rodando al límite (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10718/cast",
+					"fact": "El billing del título exacto acredita a Martin Henderson como Cary Ford."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/avJFARzEPaB24rKQUYLinGQqilL.jpg",
+				"localPath": "/people/martin-henderson-nm0376540.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ice Cube",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Trey",
+			"tmdbPersonId": 9778,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/9778",
+					"fact": "Identidad de Ice Cube, oficio y filmografía cotejados con el ID exacto de Torque: Rodando al límite (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10718/cast",
+					"fact": "El billing del título exacto acredita a Ice Cube como Trey."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ice-Cube%202014-01-09-Chicago-photoby-Adam-Bielawski.jpg?width=640",
+				"localPath": "/people/ice-cube-nm0001084.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Monet Mazur",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Shane",
+			"tmdbPersonId": 34844,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/34844",
+					"fact": "Identidad de Monet Mazur, oficio y filmografía cotejados con el ID exacto de Torque: Rodando al límite (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10718/cast",
+					"fact": "El billing del título exacto acredita a Monet Mazur como Shane."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3i7cXN0GoVAejogJtLSONhwqgfE.jpg",
+				"localPath": "/people/monet-mazur-nm0005195.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Adam Scott",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Jay McPherson",
+			"tmdbPersonId": 36801,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/36801",
+					"fact": "Identidad de Adam Scott, oficio y filmografía cotejados con el ID exacto de Torque: Rodando al límite (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10718/cast",
+					"fact": "El billing del título exacto acredita a Adam Scott como Jay McPherson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Scott%20-%20Severance.jpg?width=640",
+				"localPath": "/people/adam-scott-nm0004395.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Matt Schulze",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Henry James",
+			"tmdbPersonId": 31841,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/31841",
+					"fact": "Identidad de Matt Schulze, oficio y filmografía cotejados con el ID exacto de Torque: Rodando al límite (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10718/cast",
+					"fact": "El billing del título exacto acredita a Matt Schulze como Henry James."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1dPinwDyFIEN30wUQG9Mm3Emnjh.jpg",
+				"localPath": "/people/matt-schulze-nm0776580.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Will Yun Lee",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Val",
+			"tmdbPersonId": 10884,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10884",
+					"fact": "Identidad de Will Yun Lee, oficio y filmografía cotejados con el ID exacto de Torque: Rodando al límite (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10718/cast",
+					"fact": "El billing del título exacto acredita a Will Yun Lee como Val."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zR29E2BHrp6PF7bxD6bVq0nDZXm.jpg",
+				"localPath": "/people/will-yun-lee-nm0498449.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jaime Pressly",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "China",
+			"tmdbPersonId": 56824,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/56824",
+					"fact": "Identidad de Jaime Pressly, oficio y filmografía cotejados con el ID exacto de Torque: Rodando al límite (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10718/cast",
+					"fact": "El billing del título exacto acredita a Jaime Pressly como China."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sST9yap7qQXr6Us9rg6w9GwaFDH.jpg",
+				"localPath": "/people/jaime-pressly-nm0005326.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Max Beesley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Luther",
+			"tmdbPersonId": 66587,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/66587",
+					"fact": "Identidad de Max Beesley, oficio y filmografía cotejados con el ID exacto de Torque: Rodando al límite (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10718/cast",
+					"fact": "El billing del título exacto acredita a Max Beesley como Luther."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kUBoZ4cMo1i6ojBci0VMznmbn9y.jpg",
+				"localPath": "/people/max-beesley-nm0066586.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Christina Milian",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Nina",
+			"tmdbPersonId": 37936,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nina cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jay Hernandez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Dalton",
+			"tmdbPersonId": 19487,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dalton cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Faizon Love",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Sonny",
+			"tmdbPersonId": 62066,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sonny cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Fredro Starr",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Junior",
+			"tmdbPersonId": 59568,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Junior cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Justina Machado",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Henderson",
+			"tmdbPersonId": 95517,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Henderson cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Doe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Sheriff Barnes",
+			"tmdbPersonId": 42746,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sheriff Barnes cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dane Cook",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Neil Luff",
+			"tmdbPersonId": 31837,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Neil Luff cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nichole Galicia",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Mikisha",
+			"tmdbPersonId": 1037108,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mikisha cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joseph Kahn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Passenger on Train",
+			"tmdbPersonId": 66823,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Passenger on Train cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Ashker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Yellow Car Driver",
+			"tmdbPersonId": 1030724,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Yellow Car Driver cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gichi Gamba",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Nomo",
+			"tmdbPersonId": 155767,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nomo cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lance Gilbert",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "18 Wheeler Driver",
+			"tmdbPersonId": 1345608,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito 18 Wheeler Driver cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Hayden McFarland",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Kid",
+			"tmdbPersonId": 1602372,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Kid cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kinga Philipps",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Neal Luff's Girlfriend",
+			"tmdbPersonId": 1226794,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Neal Luff's Girlfriend cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Harry Anthony Shelley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Officer Frank",
+			"tmdbPersonId": 1602373,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Officer Frank cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tina Shelley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Reporter",
+			"tmdbPersonId": 1602374,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Reporter cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eddie Steeples",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Rasan",
+			"tmdbPersonId": 202958,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rasan cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Scott Waugh",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Red Car Driver",
+			"tmdbPersonId": 293911,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Red Car Driver cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tony Wilde",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Young Dude",
+			"tmdbPersonId": 170803,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Dude cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jim Cody Williams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Earl",
+			"tmdbPersonId": 92328,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Earl cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jerry Winsett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "Farmer",
+			"tmdbPersonId": 1602375,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Farmer cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Josh Cruze",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10718/cast",
+			"screenRole": "CHP Officer (uncredited)",
+			"tmdbPersonId": 4665,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito CHP Officer (uncredited) cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Torque: Rodando al límite; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Christina Milian",
+				"role": "performer",
+				"reason": "Crédito Nina cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jay Hernandez",
+				"role": "performer",
+				"reason": "Crédito Dalton cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Faizon Love",
+				"role": "performer",
+				"reason": "Crédito Sonny cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Fredro Starr",
+				"role": "performer",
+				"reason": "Crédito Junior cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Justina Machado",
+				"role": "performer",
+				"reason": "Crédito Henderson cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Doe",
+				"role": "performer",
+				"reason": "Crédito Sheriff Barnes cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dane Cook",
+				"role": "performer",
+				"reason": "Crédito Neil Luff cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nichole Galicia",
+				"role": "performer",
+				"reason": "Crédito Mikisha cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joseph Kahn",
+				"role": "performer",
+				"reason": "Crédito Passenger on Train cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Ashker",
+				"role": "performer",
+				"reason": "Crédito Yellow Car Driver cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gichi Gamba",
+				"role": "performer",
+				"reason": "Crédito Nomo cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lance Gilbert",
+				"role": "performer",
+				"reason": "Crédito 18 Wheeler Driver cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Hayden McFarland",
+				"role": "performer",
+				"reason": "Crédito Kid cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kinga Philipps",
+				"role": "performer",
+				"reason": "Crédito Neal Luff's Girlfriend cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Harry Anthony Shelley",
+				"role": "performer",
+				"reason": "Crédito Officer Frank cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tina Shelley",
+				"role": "performer",
+				"reason": "Crédito Reporter cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eddie Steeples",
+				"role": "performer",
+				"reason": "Crédito Rasan cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Scott Waugh",
+				"role": "performer",
+				"reason": "Crédito Red Car Driver cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tony Wilde",
+				"role": "performer",
+				"reason": "Crédito Young Dude cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jim Cody Williams",
+				"role": "performer",
+				"reason": "Crédito Earl cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jerry Winsett",
+				"role": "performer",
+				"reason": "Crédito Farmer cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Josh Cruze",
+				"role": "performer",
+				"reason": "Crédito CHP Officer (uncredited) cotejado en el billing completo de Torque: Rodando al límite; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

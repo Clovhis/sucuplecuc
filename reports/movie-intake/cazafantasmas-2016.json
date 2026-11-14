@@ -1,0 +1,1243 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "cazafantasmas-2016",
+	"title": "Cazafantasmas",
+	"year": 2016,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/43074/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 71
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/cazafantasmas",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt1289401/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Paul Feig",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 116805,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/116805",
+					"fact": "Identidad de Paul Feig, oficio y filmografía cotejados con el ID exacto de Cazafantasmas (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/43074/cast",
+					"fact": "El billing del título exacto acredita a Paul Feig en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mE3eFY3gq1UQ7Rj2He2YbZ7PFya.jpg",
+				"localPath": "/people/paul-feig-nm0082450.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kristen Wiig",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Erin Gilbert",
+			"tmdbPersonId": 41091,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/41091",
+					"fact": "Identidad de Kristen Wiig, oficio y filmografía cotejados con el ID exacto de Cazafantasmas (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/43074/cast",
+					"fact": "El billing del título exacto acredita a Kristen Wiig como Erin Gilbert."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kristin%20Wiig%202013.jpg?width=1200",
+				"localPath": "/people/kristen-wiig-nm1325419.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Melissa McCarthy",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Abby Yates",
+			"tmdbPersonId": 55536,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/55536",
+					"fact": "Identidad de Melissa McCarthy, oficio y filmografía cotejados con el ID exacto de Cazafantasmas (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/43074/cast",
+					"fact": "El billing del título exacto acredita a Melissa McCarthy como Abby Yates."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yl0qva0O4u92fvtItakdvKmKrW9.jpg",
+				"localPath": "/people/melissa-mccarthy-nm0565250.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kate McKinnon",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Jillian Holtzmann",
+			"tmdbPersonId": 1240487,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1240487",
+					"fact": "Identidad de Kate McKinnon, oficio y filmografía cotejados con el ID exacto de Cazafantasmas (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/43074/cast",
+					"fact": "El billing del título exacto acredita a Kate McKinnon como Jillian Holtzmann."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2cNetzianFcxPQbyOQnkAIkKUZE.jpg",
+				"localPath": "/people/kate-mckinnon-nm0571952.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Leslie Jones",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Patty Tolan",
+			"tmdbPersonId": 168452,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/168452",
+					"fact": "Identidad de Leslie Jones, oficio y filmografía cotejados con el ID exacto de Cazafantasmas (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/43074/cast",
+					"fact": "El billing del título exacto acredita a Leslie Jones como Patty Tolan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1rBpNNijHRg4Ha3PxlpOjcbPVeN.jpg",
+				"localPath": "/people/leslie-jones-nm0428656.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Chris Hemsworth",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Kevin",
+			"tmdbPersonId": 74568,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/74568",
+					"fact": "Identidad de Chris Hemsworth, oficio y filmografía cotejados con el ID exacto de Cazafantasmas (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/43074/cast",
+					"fact": "El billing del título exacto acredita a Chris Hemsworth como Kevin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg",
+				"localPath": "/people/chris-hemsworth-nm1165110.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Neil Casey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Rowan North",
+			"tmdbPersonId": 1267216,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1267216",
+					"fact": "Identidad de Neil Casey, oficio y filmografía cotejados con el ID exacto de Cazafantasmas (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/43074/cast",
+					"fact": "El billing del título exacto acredita a Neil Casey como Rowan North."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xuoT9GT77FZCmvNxKZTlEYIkkuz.jpg",
+				"localPath": "/people/neil-casey-nm2654481.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Zach Woods",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Tour Guide",
+			"tmdbPersonId": 464993,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/464993",
+					"fact": "Identidad de Zach Woods, oficio y filmografía cotejados con el ID exacto de Cazafantasmas (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/43074/cast",
+					"fact": "El billing del título exacto acredita a Zach Woods como Tour Guide."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jolb1uMzDZGTKOKyhgeG3RIsL2W.jpg",
+				"localPath": "/people/zach-woods-nm2046855.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ed Begley Jr.",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Ed Mulgrave",
+			"tmdbPersonId": 42157,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/42157",
+					"fact": "Identidad de Ed Begley, Jr., oficio y filmografía cotejados con el ID exacto de Cazafantasmas (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/43074/cast",
+					"fact": "El billing del título exacto acredita a Ed Begley, Jr. como Ed Mulgrave."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ed%20Begley%2C%20Jr.%20at%20San%20Diego%20Writers%20Festival%202025%2001%20(cropped).jpg?width=640",
+				"localPath": "/people/ed-begley-jr-nm0000893.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Charles Dance",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Harold Fillmore",
+			"tmdbPersonId": 4391,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Harold Fillmore cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Milhiser",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Higgins Student",
+			"tmdbPersonId": 1286525,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Higgins Student cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ben Harris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Higgins Student",
+			"tmdbPersonId": 1717724,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Higgins Student cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Karan Soni",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Bennie",
+			"tmdbPersonId": 1109702,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bennie cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bess Rous",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Gertrude Aldridge Ghost",
+			"tmdbPersonId": 1217650,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gertrude Aldridge Ghost cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steve Higgins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Dean",
+			"tmdbPersonId": 1215931,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dean cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dave Allen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Electrocuted Ghost",
+			"tmdbPersonId": 88971,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Electrocuted Ghost cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Katie Dippold",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Rental Agent",
+			"tmdbPersonId": 1106222,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rental Agent cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nate Corddry",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Graffiti Artist",
+			"tmdbPersonId": 127048,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Graffiti Artist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Daniel Ramis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Metal Head",
+			"tmdbPersonId": 1686559,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Metal Head cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pat Kiernan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "NY1 News Anchor #1",
+			"tmdbPersonId": 1480047,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito NY1 News Anchor #1 cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bill Murray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Martin Heiss",
+			"tmdbPersonId": 1532,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Martin Heiss cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Michael McDonald",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Jonathan the Theater Manager",
+			"tmdbPersonId": 178926,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jonathan the Theater Manager cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jaime Pacheco",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Fernando the Janitor",
+			"tmdbPersonId": 1640435,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fernando the Janitor cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Adam Ray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Lead Singer / Slimer (voice)",
+			"tmdbPersonId": 1637555,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lead Singer / Slimer (voice) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eugene Cordero",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Bass Guitarist",
+			"tmdbPersonId": 1370567,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bass Guitarist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Davey Jones",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Ely the Drummer",
+			"tmdbPersonId": 1462917,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ely the Drummer cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ryan Levine",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Rock Guitarist",
+			"tmdbPersonId": 1772809,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rock Guitarist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dan Teicher",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Rock Guitarist",
+			"tmdbPersonId": 1772810,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rock Guitarist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Theodore Shapiro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Keyboardist",
+			"tmdbPersonId": 10572,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Keyboardist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Matteo Borghese",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Lightboard Operator",
+			"tmdbPersonId": 1772812,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lightboard Operator cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ozzy Osbourne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Famous Rock Star",
+			"tmdbPersonId": 12208,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Famous Rock Star cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jeanine Ramirez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Reporter Outside Theater",
+			"tmdbPersonId": 1772805,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Reporter Outside Theater cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jessica Chaffin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Waitress",
+			"tmdbPersonId": 1231211,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waitress cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jamie Denbo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Waitress",
+			"tmdbPersonId": 1219121,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waitress cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Toby Huss",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Officer Stevenson",
+			"tmdbPersonId": 18271,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Officer Stevenson cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Michael Kenneth Williams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Agent Hawkins",
+			"tmdbPersonId": 39390,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Agent Hawkins cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Matt Walsh",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Agent Rorke",
+			"tmdbPersonId": 59841,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Agent Rorke cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Andy Garcia",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Mayor Bradley",
+			"tmdbPersonId": 1271,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mayor Bradley cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cecily Strong",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Jennifer Lynch",
+			"tmdbPersonId": 1093919,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jennifer Lynch cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Annie Potts",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Desk Clerk",
+			"tmdbPersonId": 8873,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Desk Clerk cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cheryl Wills",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "NY1 News Anchor #2",
+			"tmdbPersonId": 1772813,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito NY1 News Anchor #2 cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sam Richardson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Basement Cop",
+			"tmdbPersonId": 1429453,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Basement Cop cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steve Bannos",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Flasher Ghost",
+			"tmdbPersonId": 54720,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Flasher Ghost cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tom Yi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Flashed Man",
+			"tmdbPersonId": 305993,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Flashed Man cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Susan Park",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Flashed Woman",
+			"tmdbPersonId": 1255901,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Flashed Woman cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Milana Vayntrub",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Subway Rat Woman",
+			"tmdbPersonId": 1454946,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Subway Rat Woman cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dan Aykroyd",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Cabbie",
+			"tmdbPersonId": 707,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cabbie cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tony Viveiros",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Police Officer",
+			"tmdbPersonId": 1772814,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Police Officer cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stephen 'tWitch' Boss",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Police Officer",
+			"tmdbPersonId": 110743,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Police Officer cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robin Shelby",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Lady Slimer (voice)",
+			"tmdbPersonId": 1534447,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lady Slimer (voice) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rosanna Scotto",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Fox 5 News Anchor",
+			"tmdbPersonId": 1686558,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fox 5 News Anchor cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Greg Kelly",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Fox 5 News Anchor",
+			"tmdbPersonId": 1243729,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fox 5 News Anchor cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Al Roker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Al Roker",
+			"tmdbPersonId": 111875,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Al Roker cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ernie Hudson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Uncle Bill",
+			"tmdbPersonId": 8874,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Uncle Bill cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sigourney Weaver",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Rebecca Gorin",
+			"tmdbPersonId": 10205,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rebecca Gorin cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Elizabeth Perkins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Phyllis Adler (uncredited)",
+			"tmdbPersonId": 20,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Phyllis Adler (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stephanie Atkinson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Restaurant Patron (uncredited)",
+			"tmdbPersonId": 1053275,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Restaurant Patron (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Brian Baumgartner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Frank (uncredited)",
+			"tmdbPersonId": 94622,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Frank (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paige MacLean",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Concert Goer (uncredited)",
+			"tmdbPersonId": 1772824,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Concert Goer (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lesley Nicol",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Mrs. Ponner (uncredited)",
+			"tmdbPersonId": 174727,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mrs. Ponner (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lexie Roth",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Guitar Technician (uncredited)",
+			"tmdbPersonId": 1602952,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Guitar Technician (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kallie Tabor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Community College Student (uncredited)",
+			"tmdbPersonId": 1572024,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Community College Student (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jordan Tofalo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "1950s Ghost (uncredited)",
+			"tmdbPersonId": 1772829,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito 1950s Ghost (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Franchi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "NYC Pedestrian (uncredited)",
+			"tmdbPersonId": 928638,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito NYC Pedestrian (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jason Tisi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Precision Driver (uncredited)",
+			"tmdbPersonId": 2511894,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Precision Driver (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Arthur Hiou",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "John Gotti Ghost (uncredited)",
+			"tmdbPersonId": 1674440,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito John Gotti Ghost (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chris Gethard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Blogger (uncredited)",
+			"tmdbPersonId": 169265,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Blogger (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Al Conti",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "G-Man Ghost (uncredited)",
+			"tmdbPersonId": 1178983,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito G-Man Ghost (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Justin Kirk",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Phil Hudson (uncredited)",
+			"tmdbPersonId": 20301,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Phil Hudson (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Higgins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Baba Booey Shouter",
+			"tmdbPersonId": 3631835,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Baba Booey Shouter cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lenny Clarke",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/43074/cast",
+			"screenRole": "Coffee House Ghost (uncredited)",
+			"tmdbPersonId": 87131,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Coffee House Ghost (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Cazafantasmas; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Charles Dance",
+				"role": "performer",
+				"reason": "Crédito Harold Fillmore cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Milhiser",
+				"role": "performer",
+				"reason": "Crédito Higgins Student cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ben Harris",
+				"role": "performer",
+				"reason": "Crédito Higgins Student cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Karan Soni",
+				"role": "performer",
+				"reason": "Crédito Bennie cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bess Rous",
+				"role": "performer",
+				"reason": "Crédito Gertrude Aldridge Ghost cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steve Higgins",
+				"role": "performer",
+				"reason": "Crédito Dean cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dave Allen",
+				"role": "performer",
+				"reason": "Crédito Electrocuted Ghost cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Katie Dippold",
+				"role": "performer",
+				"reason": "Crédito Rental Agent cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nate Corddry",
+				"role": "performer",
+				"reason": "Crédito Graffiti Artist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Daniel Ramis",
+				"role": "performer",
+				"reason": "Crédito Metal Head cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pat Kiernan",
+				"role": "performer",
+				"reason": "Crédito NY1 News Anchor #1 cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bill Murray",
+				"role": "performer",
+				"reason": "Crédito Martin Heiss cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Michael McDonald",
+				"role": "performer",
+				"reason": "Crédito Jonathan the Theater Manager cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jaime Pacheco",
+				"role": "performer",
+				"reason": "Crédito Fernando the Janitor cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Adam Ray",
+				"role": "performer",
+				"reason": "Crédito Lead Singer / Slimer (voice) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eugene Cordero",
+				"role": "performer",
+				"reason": "Crédito Bass Guitarist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Davey Jones",
+				"role": "performer",
+				"reason": "Crédito Ely the Drummer cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ryan Levine",
+				"role": "performer",
+				"reason": "Crédito Rock Guitarist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dan Teicher",
+				"role": "performer",
+				"reason": "Crédito Rock Guitarist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Theodore Shapiro",
+				"role": "performer",
+				"reason": "Crédito Keyboardist cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Matteo Borghese",
+				"role": "performer",
+				"reason": "Crédito Lightboard Operator cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ozzy Osbourne",
+				"role": "performer",
+				"reason": "Crédito Famous Rock Star cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jeanine Ramirez",
+				"role": "performer",
+				"reason": "Crédito Reporter Outside Theater cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jessica Chaffin",
+				"role": "performer",
+				"reason": "Crédito Waitress cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jamie Denbo",
+				"role": "performer",
+				"reason": "Crédito Waitress cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Toby Huss",
+				"role": "performer",
+				"reason": "Crédito Officer Stevenson cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Michael Kenneth Williams",
+				"role": "performer",
+				"reason": "Crédito Agent Hawkins cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Matt Walsh",
+				"role": "performer",
+				"reason": "Crédito Agent Rorke cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Andy Garcia",
+				"role": "performer",
+				"reason": "Crédito Mayor Bradley cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cecily Strong",
+				"role": "performer",
+				"reason": "Crédito Jennifer Lynch cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Annie Potts",
+				"role": "performer",
+				"reason": "Crédito Desk Clerk cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cheryl Wills",
+				"role": "performer",
+				"reason": "Crédito NY1 News Anchor #2 cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sam Richardson",
+				"role": "performer",
+				"reason": "Crédito Basement Cop cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steve Bannos",
+				"role": "performer",
+				"reason": "Crédito Flasher Ghost cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tom Yi",
+				"role": "performer",
+				"reason": "Crédito Flashed Man cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Susan Park",
+				"role": "performer",
+				"reason": "Crédito Flashed Woman cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Milana Vayntrub",
+				"role": "performer",
+				"reason": "Crédito Subway Rat Woman cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dan Aykroyd",
+				"role": "performer",
+				"reason": "Crédito Cabbie cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tony Viveiros",
+				"role": "performer",
+				"reason": "Crédito Police Officer cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stephen 'tWitch' Boss",
+				"role": "performer",
+				"reason": "Crédito Police Officer cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robin Shelby",
+				"role": "performer",
+				"reason": "Crédito Lady Slimer (voice) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rosanna Scotto",
+				"role": "performer",
+				"reason": "Crédito Fox 5 News Anchor cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Greg Kelly",
+				"role": "performer",
+				"reason": "Crédito Fox 5 News Anchor cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Al Roker",
+				"role": "performer",
+				"reason": "Crédito Al Roker cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ernie Hudson",
+				"role": "performer",
+				"reason": "Crédito Uncle Bill cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sigourney Weaver",
+				"role": "performer",
+				"reason": "Crédito Rebecca Gorin cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Elizabeth Perkins",
+				"role": "performer",
+				"reason": "Crédito Phyllis Adler (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stephanie Atkinson",
+				"role": "performer",
+				"reason": "Crédito Restaurant Patron (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Brian Baumgartner",
+				"role": "performer",
+				"reason": "Crédito Frank (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paige MacLean",
+				"role": "performer",
+				"reason": "Crédito Concert Goer (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lesley Nicol",
+				"role": "performer",
+				"reason": "Crédito Mrs. Ponner (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lexie Roth",
+				"role": "performer",
+				"reason": "Crédito Guitar Technician (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kallie Tabor",
+				"role": "performer",
+				"reason": "Crédito Community College Student (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jordan Tofalo",
+				"role": "performer",
+				"reason": "Crédito 1950s Ghost (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Franchi",
+				"role": "performer",
+				"reason": "Crédito NYC Pedestrian (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jason Tisi",
+				"role": "performer",
+				"reason": "Crédito Precision Driver (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Arthur Hiou",
+				"role": "performer",
+				"reason": "Crédito John Gotti Ghost (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Chris Gethard",
+				"role": "performer",
+				"reason": "Crédito Blogger (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Al Conti",
+				"role": "performer",
+				"reason": "Crédito G-Man Ghost (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Justin Kirk",
+				"role": "performer",
+				"reason": "Crédito Phil Hudson (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Higgins",
+				"role": "performer",
+				"reason": "Crédito Baba Booey Shouter cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lenny Clarke",
+				"role": "performer",
+				"reason": "Crédito Coffee House Ghost (uncredited) cotejado en el billing completo de Cazafantasmas; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

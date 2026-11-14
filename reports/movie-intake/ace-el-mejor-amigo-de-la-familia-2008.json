@@ -1,0 +1,299 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "ace-el-mejor-amigo-de-la-familia-2008",
+	"title": "Ace, el mejor amigo de la familia",
+	"year": 2008,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/17157/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 12
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/ace-el-mejor-amigo-de-la-familia",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt1032746/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "David Mackay",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 210872,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/210872",
+					"fact": "Identidad de David Mackay, oficio y filmografía cotejados con el ID exacto de Ace, el mejor amigo de la familia (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/17157/cast",
+					"fact": "El billing del título exacto acredita a David Mackay en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/f3M1kTIRl0LaNUi6I4Omme40aRE.jpg",
+				"localPath": "/people/david-mackay-nm0533145.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dean Cain",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Daniel Harding",
+			"tmdbPersonId": 21721,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/21721",
+					"fact": "Identidad de Dean Cain, oficio y filmografía cotejados con el ID exacto de Ace, el mejor amigo de la familia (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/17157/cast",
+					"fact": "El billing del título exacto acredita a Dean Cain como Daniel Harding."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vVBqgo0BJQVreLZaIW8tHI8hXYZ.jpg",
+				"localPath": "/people/dean-cain-nm0001002.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Britt McKillip",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Julia Harding",
+			"tmdbPersonId": 74365,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/74365",
+					"fact": "Identidad de Britt McKillip, oficio y filmografía cotejados con el ID exacto de Ace, el mejor amigo de la familia (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/17157/cast",
+					"fact": "El billing del título exacto acredita a Britt McKillip como Julia Harding."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qUa6360myhK6b9jz2XShMkaioLE.jpg",
+				"localPath": "/people/britt-mckillip-nm0571741.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Anne Marie DeLuise",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Lily Harding",
+			"tmdbPersonId": 90131,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/90131",
+					"fact": "Identidad de Anne Marie DeLuise, oficio y filmografía cotejados con el ID exacto de Ace, el mejor amigo de la familia (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/17157/cast",
+					"fact": "El billing del título exacto acredita a Anne Marie DeLuise como Lily Harding."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pQqkG6Wmucs1BkEZ6SZhqL1oeGN.jpg",
+				"localPath": "/people/anne-marie-deluise-nm0517059.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Burkely Duffield",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Kenny",
+			"tmdbPersonId": 1049441,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1049441",
+					"fact": "Identidad de Burkely Duffield, oficio y filmografía cotejados con el ID exacto de Ace, el mejor amigo de la familia (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/17157/cast",
+					"fact": "El billing del título exacto acredita a Burkely Duffield como Kenny."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oOU3Y7lROuVXpqKcQ4Swxt73W1O.jpg",
+				"localPath": "/people/burkely-duffield-nm2242578.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Mike Dopud",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Torko",
+			"tmdbPersonId": 64674,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/64674",
+					"fact": "Identidad de Mike Dopud, oficio y filmografía cotejados con el ID exacto de Ace, el mejor amigo de la familia (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/17157/cast",
+					"fact": "El billing del título exacto acredita a Mike Dopud como Torko."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yOYOX3TnIaBrLdkAMznSK6SLY38.jpg",
+				"localPath": "/people/mike-dopud-nm0233304.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Peter Kelamis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Deputy D.A. Hilliard",
+			"tmdbPersonId": 89551,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/89551",
+					"fact": "Identidad de Peter Kelamis, oficio y filmografía cotejados con el ID exacto de Ace, el mejor amigo de la familia (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/17157/cast",
+					"fact": "El billing del título exacto acredita a Peter Kelamis como Deputy D.A. Hilliard."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nV0lHILeENtQ8PbGa3E5Mrx607a.jpg",
+				"localPath": "/people/peter-kelamis-nm0445389.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Zak Santiago",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Officer Sanchez",
+			"tmdbPersonId": 52705,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/52705",
+					"fact": "Identidad de Zak Santiago, oficio y filmografía cotejados con el ID exacto de Ace, el mejor amigo de la familia (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/17157/cast",
+					"fact": "El billing del título exacto acredita a Zak Santiago como Officer Sanchez."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hzFNa8a6rAD9FtWqJoXj20F2xdq.jpg",
+				"localPath": "/people/zak-santiago-nm0015865.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Keith Dallas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Boss Crowder",
+			"tmdbPersonId": 55788,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/55788",
+					"fact": "Identidad de Keith Dallas, oficio y filmografía cotejados con el ID exacto de Ace, el mejor amigo de la familia (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/17157/cast",
+					"fact": "El billing del título exacto acredita a Keith Dallas como Boss Crowder."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wF5r0FdmnKfg4O493VwMeZNvkJ6.jpg",
+				"localPath": "/people/keith-dallas-nm0198040.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "David Patrick Green",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Capt. Porter",
+			"tmdbPersonId": 203315,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Capt. Porter cotejado en el billing completo de Ace, el mejor amigo de la familia; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Shaw",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Frank Burgess",
+			"tmdbPersonId": 79346,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Frank Burgess cotejado en el billing completo de Ace, el mejor amigo de la familia; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Matthew Harrison",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/17157/cast",
+			"screenRole": "Jimmy Boder",
+			"tmdbPersonId": 21360,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jimmy Boder cotejado en el billing completo de Ace, el mejor amigo de la familia; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Ace, el mejor amigo de la familia; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "David Patrick Green",
+				"role": "performer",
+				"reason": "Crédito Capt. Porter cotejado en el billing completo de Ace, el mejor amigo de la familia; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Shaw",
+				"role": "performer",
+				"reason": "Crédito Frank Burgess cotejado en el billing completo de Ace, el mejor amigo de la familia; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Matthew Harrison",
+				"role": "performer",
+				"reason": "Crédito Jimmy Boder cotejado en el billing completo de Ace, el mejor amigo de la familia; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

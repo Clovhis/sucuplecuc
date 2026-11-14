@@ -44,3 +44,7 @@ Por lo tanto, las 33 altas y 8 actualizaciones ya realizadas son una carga compr
 - Revisión del caso real: la política nueva conserva Mothers’ Instinct (2024) como candidata; su llegada exacta permanece pendiente, sin convertir detección en estreno confirmado.
 - Revisión de límites: una restricción expresa «películas de 2026» conserva su filtro; una oferta vigente sin fecha no se anuncia como novedad fechada; una película existente se revalida sin duplicarla ni mover `catalogAddedAt`.
 - No se modificaron películas, scores, people, editoriales publicadas, UI, carruseles, automatizaciones ni snapshots. Esta revisión no genera publicaciones adicionales en redes.
+
+## Carga posterior
+
+El pedido de carga se resolvió en un lote posterior, cerrado a 51 fichas por indicación del usuario. Instinto maternal (2024) cuenta ahora con evento de Prime Video Argentina del 13/11/2026. Ver [reporte de recuperación](../streaming-recuperados-2026-11-13/README.md) y su reconciliación completa; no confundir la disponibilidad comprobada con una primera llegada histórica demostrada.

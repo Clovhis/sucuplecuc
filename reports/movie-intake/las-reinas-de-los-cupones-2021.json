@@ -1,0 +1,579 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "las-reinas-de-los-cupones-2021",
+	"title": "Las reinas de los cupones",
+	"year": 2021,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/628914/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 29
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/queenpins",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt9054192/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Aron Gaudet",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 95573,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/95573",
+					"fact": "Identidad de Aron Gaudet, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Aron Gaudet en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/110520/cache-464831-1566637154/image-w856.jpg",
+				"localPath": "/people/aron-gaudet-nm2704505.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gita Pullapilly",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 95575,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/95575",
+					"fact": "Identidad de Gita Pullapilly, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Gita Pullapilly en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/110521/cache-555652-1591922918/image-w856.jpg",
+				"localPath": "/people/gita-pullapilly-nm2700559.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kristen Bell",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Connie Janikowski",
+			"tmdbPersonId": 40462,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/40462",
+					"fact": "Identidad de Kristen Bell, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Kristen Bell como Connie Janikowski."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rP74dJXl7EjinGM0shQtUOlH5s2.jpg",
+				"localPath": "/people/kristen-bell-nm0068338.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kirby Howell-Baptiste",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "JoJo",
+			"tmdbPersonId": 1532312,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1532312",
+					"fact": "Identidad de Kirby Howell-Baptiste, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Kirby Howell-Baptiste como JoJo."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hXJmhnsi6JwtlTLASj8mUMFzYdW.jpg",
+				"localPath": "/people/kirby-howell-baptiste-nm4624730.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Vince Vaughn",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Simon Kilmurry",
+			"tmdbPersonId": 4937,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4937",
+					"fact": "Identidad de Vince Vaughn, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Vince Vaughn como Simon Kilmurry."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qImHvsd7SFJh46Ujx50xUfkeMNz.jpg",
+				"localPath": "/people/vince-vaughn-nm0000681.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Paul Walter Hauser",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Ken",
+			"tmdbPersonId": 1294982,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1294982",
+					"fact": "Identidad de Paul Walter Hauser, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Paul Walter Hauser como Ken."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/hXjjbYg1Ah8mFf5ZcaakyXzDKMx.jpg",
+				"localPath": "/people/paul-walter-hauser-nm3236159.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Joel McHale",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Rick",
+			"tmdbPersonId": 74949,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/74949",
+					"fact": "Identidad de Joel McHale, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Joel McHale como Rick."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7iwIiaYhIPaiAyiaZOc2Gl1ZAY4.jpg",
+				"localPath": "/people/joel-mchale-nm0570364.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Bebe Rexha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Tempe Tina",
+			"tmdbPersonId": 2167419,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2167419",
+					"fact": "Identidad de Bebe Rexha, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Bebe Rexha como Tempe Tina."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cpzK852JtDLJf3zd0RuVd1giOeX.jpg",
+				"localPath": "/people/bebe-rexha-nm4737223.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dayo Okeniyi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Earl",
+			"tmdbPersonId": 1030512,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1030512",
+					"fact": "Identidad de Dayo Okeniyi, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Dayo Okeniyi como Earl."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8m4ZIuzVBDjFbJFLXebc4iwv27o.jpg",
+				"localPath": "/people/dayo-okeniyi-nm3912883.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nick Cassavetes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Captain Pain",
+			"tmdbPersonId": 11151,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11151",
+					"fact": "Identidad de Nick Cassavetes, oficio y filmografía cotejados con el ID exacto de Las reinas de los cupones (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/628914/cast",
+					"fact": "El billing del título exacto acredita a Nick Cassavetes como Captain Pain."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/NickCassavetesJune09.jpg?width=640",
+				"localPath": "/people/nick-cassavetes-nm0001024.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Michael Masini",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "SWAT Agent Harris",
+			"tmdbPersonId": 1689357,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito SWAT Agent Harris cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paul Rust",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Albert Anderson",
+			"tmdbPersonId": 85236,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Albert Anderson cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eduardo Franco",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Greg (Cashier)",
+			"tmdbPersonId": 1653235,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Greg (Cashier) cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marc Evan Jackson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Dr. Girard",
+			"tmdbPersonId": 141956,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dr. Girard cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lidia Porto",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Mrs. Flores",
+			"tmdbPersonId": 180527,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mrs. Flores cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Greta Oglesby",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Mama Josie",
+			"tmdbPersonId": 94625,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mama Josie cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jack McBrayer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Agent Park",
+			"tmdbPersonId": 58737,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Agent Park cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Annie Mumolo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Crystal",
+			"tmdbPersonId": 174514,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Crystal cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bill Glass",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Jail Guard Jones",
+			"tmdbPersonId": 1416393,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jail Guard Jones cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dustan Costine",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Sandman",
+			"tmdbPersonId": 2016308,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sandman cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rooter Wareing",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Rattlesnake",
+			"tmdbPersonId": 1936040,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rattlesnake cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stephen Root",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Agent Flannigan",
+			"tmdbPersonId": 17401,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Agent Flannigan cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nneoma Sampson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Makeup Client",
+			"tmdbPersonId": 1358759,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Makeup Client cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tricia Fukuhara",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Cashier Nevada",
+			"tmdbPersonId": 2809787,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cashier Nevada cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Francisco J. Rodriguez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Alejandro",
+			"tmdbPersonId": 3394317,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Alejandro cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ilia Isorelýs Paulino",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Rosa",
+			"tmdbPersonId": 3209866,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rosa cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Quincy Cho",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Checkout Cashier",
+			"tmdbPersonId": 3259990,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Checkout Cashier cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rosie Garcia",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "Nurse (Sperm Bank)",
+			"tmdbPersonId": 1340827,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nurse (Sperm Bank) cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ross Kimball",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/628914/cast",
+			"screenRole": "SWAT Agent",
+			"tmdbPersonId": 1696150,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito SWAT Agent cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Las reinas de los cupones; se retuvieron 2 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Michael Masini",
+				"role": "performer",
+				"reason": "Crédito SWAT Agent Harris cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paul Rust",
+				"role": "performer",
+				"reason": "Crédito Albert Anderson cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eduardo Franco",
+				"role": "performer",
+				"reason": "Crédito Greg (Cashier) cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marc Evan Jackson",
+				"role": "performer",
+				"reason": "Crédito Dr. Girard cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lidia Porto",
+				"role": "performer",
+				"reason": "Crédito Mrs. Flores cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Greta Oglesby",
+				"role": "performer",
+				"reason": "Crédito Mama Josie cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jack McBrayer",
+				"role": "performer",
+				"reason": "Crédito Agent Park cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Annie Mumolo",
+				"role": "performer",
+				"reason": "Crédito Crystal cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bill Glass",
+				"role": "performer",
+				"reason": "Crédito Jail Guard Jones cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dustan Costine",
+				"role": "performer",
+				"reason": "Crédito Sandman cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rooter Wareing",
+				"role": "performer",
+				"reason": "Crédito Rattlesnake cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stephen Root",
+				"role": "performer",
+				"reason": "Crédito Agent Flannigan cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nneoma Sampson",
+				"role": "performer",
+				"reason": "Crédito Makeup Client cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tricia Fukuhara",
+				"role": "performer",
+				"reason": "Crédito Cashier Nevada cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Francisco J. Rodriguez",
+				"role": "performer",
+				"reason": "Crédito Alejandro cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ilia Isorelýs Paulino",
+				"role": "performer",
+				"reason": "Crédito Rosa cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Quincy Cho",
+				"role": "performer",
+				"reason": "Crédito Checkout Cashier cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rosie Garcia",
+				"role": "performer",
+				"reason": "Crédito Nurse (Sperm Bank) cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ross Kimball",
+				"role": "performer",
+				"reason": "Crédito SWAT Agent cotejado en el billing completo de Las reinas de los cupones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

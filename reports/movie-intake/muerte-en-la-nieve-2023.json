@@ -1,0 +1,491 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "muerte-en-la-nieve-2023",
+	"title": "Muerte en la nieve",
+	"year": 2023,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1025596/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 24
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/blood-for-dust",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt10669888/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Rod Blackhurst",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1043983,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1043983",
+					"fact": "Identidad de Rod Blackhurst, oficio y filmografía cotejados con el ID exacto de Muerte en la nieve (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1025596/cast",
+					"fact": "El billing del título exacto acredita a Rod Blackhurst en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/dSDKoZPi605ROlMRAYAbcPixMyH.jpg",
+				"localPath": "/people/rod-blackhurst-nm2060444.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Scoot McNairy",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Cliff",
+			"tmdbPersonId": 59233,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/59233",
+					"fact": "Identidad de Scoot McNairy, oficio y filmografía cotejados con el ID exacto de Muerte en la nieve (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1025596/cast",
+					"fact": "El billing del título exacto acredita a Scoot McNairy como Cliff."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Scoot%20McNairy%20at%20the%202024%20Toronto%20International%20Film%20Festival.%2002%20(cropped).jpg?width=640",
+				"localPath": "/people/scoot-mcnairy-nm1058940.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kit Harington",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Ricky",
+			"tmdbPersonId": 239019,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/239019",
+					"fact": "Identidad de Kit Harington, oficio y filmografía cotejados con el ID exacto de Muerte en la nieve (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1025596/cast",
+					"fact": "El billing del título exacto acredita a Kit Harington como Ricky."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/iGXlJbExWwZmo9sUDsYuzf4Sv4y.jpg",
+				"localPath": "/people/kit-harington-nm3229685.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Josh Lucas",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "John",
+			"tmdbPersonId": 6164,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6164",
+					"fact": "Identidad de Josh Lucas, oficio y filmografía cotejados con el ID exacto de Muerte en la nieve (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1025596/cast",
+					"fact": "El billing del título exacto acredita a Josh Lucas como John."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Josh%20Lucas%20at%20the%202009%20Tribeca%20Film%20Festival.jpg?width=640",
+				"localPath": "/people/josh-lucas-nm0524197.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Stephen Dorff",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Gus",
+			"tmdbPersonId": 10822,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10822",
+					"fact": "Identidad de Stephen Dorff, oficio y filmografía cotejados con el ID exacto de Muerte en la nieve (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1025596/cast",
+					"fact": "El billing del título exacto acredita a Stephen Dorff como Gus."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bhlM1xNzBvc8jTw42YloUKlGTCL.jpg",
+				"localPath": "/people/stephen-dorff-nm0001151.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nora Zehetner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Amy",
+			"tmdbPersonId": 34070,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/34070",
+					"fact": "Identidad de Nora Zehetner, oficio y filmografía cotejados con el ID exacto de Muerte en la nieve (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1025596/cast",
+					"fact": "El billing del título exacto acredita a Nora Zehetner como Amy."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sMGaRvtMmWorucXAVBIvGElGhnC.jpg",
+				"localPath": "/people/nora-zehetner-nm0954253.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ethan Suplee",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Slim",
+			"tmdbPersonId": 824,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/824",
+					"fact": "Identidad de Ethan Suplee, oficio y filmografía cotejados con el ID exacto de Muerte en la nieve (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1025596/cast",
+					"fact": "El billing del título exacto acredita a Ethan Suplee como Slim."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ethan%20Suplee%20cropped.jpg?width=640",
+				"localPath": "/people/ethan-suplee-nm0839486.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Amber Rose Mason",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Rebecca",
+			"tmdbPersonId": 2497962,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2497962",
+					"fact": "Identidad de Amber Rose Mason, oficio y filmografía cotejados con el ID exacto de Muerte en la nieve (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1025596/cast",
+					"fact": "El billing del título exacto acredita a Amber Rose Mason como Rebecca."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zGiL5YJC6M6Nf04i9Ak7HeM9wyC.jpg",
+				"localPath": "/people/amber-rose-mason-nm3478273.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Megan Folsom",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Ruby",
+			"tmdbPersonId": 142243,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/142243",
+					"fact": "Identidad de Megan Folsom, oficio y filmografía cotejados con el ID exacto de Muerte en la nieve (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1025596/cast",
+					"fact": "El billing del título exacto acredita a Megan Folsom como Ruby."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1Lip3HigX69WFpRLfbaFksY8qis.jpg",
+				"localPath": "/people/megan-folsom-nm0284405.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Chris Mullinax",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Bill",
+			"tmdbPersonId": 2170918,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bill cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Golden Garnick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Goldy",
+			"tmdbPersonId": 3350301,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Goldy cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Everett Blunck",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Kyle",
+			"tmdbPersonId": 4577703,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Kyle cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Algin Mendez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Antonio",
+			"tmdbPersonId": 2573555,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Antonio cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jeff Medley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Portly Cowboy",
+			"tmdbPersonId": 1897604,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Portly Cowboy cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "J.D. Hoppe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Car loader",
+			"tmdbPersonId": 2185665,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Car loader cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gabriel Clark",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "The Leader",
+			"tmdbPersonId": 1448929,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito The Leader cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Blake de Pastino",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Mark",
+			"tmdbPersonId": 3129733,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mark cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Scott McCauley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Sales Manager",
+			"tmdbPersonId": 1976786,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sales Manager cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Travis W Bruyer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Don",
+			"tmdbPersonId": 1715425,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Don cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Budge",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Gruff Blond",
+			"tmdbPersonId": 1533751,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gruff Blond cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ross O'Connor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Carl Hair",
+			"tmdbPersonId": 4577704,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Carl Hair cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Russ Tiller",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Hayes",
+			"tmdbPersonId": 2646693,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hayes cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Majerus",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Mad Dog",
+			"tmdbPersonId": 4577705,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mad Dog cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jackson T. Scott",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1025596/cast",
+			"screenRole": "Daniel",
+			"tmdbPersonId": 4577706,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Daniel cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Muerte en la nieve; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Chris Mullinax",
+				"role": "performer",
+				"reason": "Crédito Bill cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Golden Garnick",
+				"role": "performer",
+				"reason": "Crédito Goldy cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Everett Blunck",
+				"role": "performer",
+				"reason": "Crédito Kyle cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Algin Mendez",
+				"role": "performer",
+				"reason": "Crédito Antonio cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jeff Medley",
+				"role": "performer",
+				"reason": "Crédito Portly Cowboy cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "J.D. Hoppe",
+				"role": "performer",
+				"reason": "Crédito Car loader cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gabriel Clark",
+				"role": "performer",
+				"reason": "Crédito The Leader cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Blake de Pastino",
+				"role": "performer",
+				"reason": "Crédito Mark cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Scott McCauley",
+				"role": "performer",
+				"reason": "Crédito Sales Manager cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Travis W Bruyer",
+				"role": "performer",
+				"reason": "Crédito Don cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Budge",
+				"role": "performer",
+				"reason": "Crédito Gruff Blond cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ross O'Connor",
+				"role": "performer",
+				"reason": "Crédito Carl Hair cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Russ Tiller",
+				"role": "performer",
+				"reason": "Crédito Hayes cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Majerus",
+				"role": "performer",
+				"reason": "Crédito Mad Dog cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jackson T. Scott",
+				"role": "performer",
+				"reason": "Crédito Daniel cotejado en el billing completo de Muerte en la nieve; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

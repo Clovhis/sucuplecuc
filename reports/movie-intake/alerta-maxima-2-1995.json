@@ -1,0 +1,859 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "alerta-maxima-2-1995",
+	"title": "Alerta máxima 2",
+	"year": 1995,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/3512/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 47
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/alerta-maxima-2",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0114781/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Geoff Murphy",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 32277,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/32277",
+					"fact": "Identidad de Geoff Murphy, oficio y filmografía cotejados con el ID exacto de Alerta máxima 2 (1995)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/3512/cast",
+					"fact": "El billing del título exacto acredita a Geoff Murphy en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/AtNod4v6Nzq9wXKXejIiOn4TAsW.jpg",
+				"localPath": "/people/geoff-murphy-nm0614276.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Steven Seagal",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Casey Ryback",
+			"tmdbPersonId": 23880,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/23880",
+					"fact": "Identidad de Steven Seagal, oficio y filmografía cotejados con el ID exacto de Alerta máxima 2 (1995)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/3512/cast",
+					"fact": "El billing del título exacto acredita a Steven Seagal como Casey Ryback."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Steven%20Seagal%20November%202016.jpg?width=640",
+				"localPath": "/people/steven-seagal-nm0000219.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Eric Bogosian",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Travis Dane",
+			"tmdbPersonId": 10866,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10866",
+					"fact": "Identidad de Eric Bogosian, oficio y filmografía cotejados con el ID exacto de Alerta máxima 2 (1995)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/3512/cast",
+					"fact": "El billing del título exacto acredita a Eric Bogosian como Travis Dane."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lUtLCWoLh18UFVOHBFr1VpUpoYJ.jpg",
+				"localPath": "/people/eric-bogosian-nm0091899.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Katherine Heigl",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Sarah Ryback",
+			"tmdbPersonId": 25541,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/25541",
+					"fact": "Identidad de Katherine Heigl, oficio y filmografía cotejados con el ID exacto de Alerta máxima 2 (1995)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/3512/cast",
+					"fact": "El billing del título exacto acredita a Katherine Heigl como Sarah Ryback."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1yYJI5qtkeJMZo9JU4KMVuO2Hy9.jpg",
+				"localPath": "/people/katherine-heigl-nm0001337.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Morris Chestnut",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Bobby Zachs",
+			"tmdbPersonId": 9779,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/9779",
+					"fact": "Identidad de Morris Chestnut, oficio y filmografía cotejados con el ID exacto de Alerta máxima 2 (1995)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/3512/cast",
+					"fact": "El billing del título exacto acredita a Morris Chestnut como Bobby Zachs."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lbWJ1mIgAamsREnbKLoj1GdH0sr.jpg",
+				"localPath": "/people/morris-chestnut-nm0004820.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Everett McGill",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Penn",
+			"tmdbPersonId": 5616,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5616",
+					"fact": "Identidad de Everett McGill, oficio y filmografía cotejados con el ID exacto de Alerta máxima 2 (1995)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/3512/cast",
+					"fact": "El billing del título exacto acredita a Everett McGill como Penn."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nc3IMwRItjFzScYdJWR7MT9p5cW.jpg",
+				"localPath": "/people/everett-mcgill-nm0569239.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Brenda Bakke",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Cap. Linda Gilder",
+			"tmdbPersonId": 32290,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/32290",
+					"fact": "Identidad de Brenda Bakke, oficio y filmografía cotejados con el ID exacto de Alerta máxima 2 (1995)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/3512/cast",
+					"fact": "El billing del título exacto acredita a Brenda Bakke como Cap. Linda Gilder."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nCef3oKQVRsCi95s8fpUH9IXRsx.jpg",
+				"localPath": "/people/brenda-bakke-nm0000283.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Peter Greene",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Merc #1",
+			"tmdbPersonId": 11803,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11803",
+					"fact": "Identidad de Peter Greene, oficio y filmografía cotejados con el ID exacto de Alerta máxima 2 (1995)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/3512/cast",
+					"fact": "El billing del título exacto acredita a Peter Greene como Merc #1."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Greene%202014.jpg?width=640",
+				"localPath": "/people/peter-greene-nm0338886.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Andy Romano",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Admiral Bates",
+			"tmdbPersonId": 32289,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/32289",
+					"fact": "Identidad de Andy Romano, oficio y filmografía cotejados con el ID exacto de Alerta máxima 2 (1995)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/3512/cast",
+					"fact": "El billing del título exacto acredita a Andy Romano como Admiral Bates."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/maQYk63vsymyolmJBHEsBmv3KxR.jpg",
+				"localPath": "/people/andy-romano-nm0738850.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nick Mancuso",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Tom Breaker",
+			"tmdbPersonId": 49877,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Tom Breaker cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jonathan Banks",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Scotty",
+			"tmdbPersonId": 783,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Scotty cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Royce D. Applegate",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Ryback's Cook",
+			"tmdbPersonId": 22251,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ryback's Cook cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dale Dye",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Captain Garza",
+			"tmdbPersonId": 3211,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Captain Garza cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Gianopoulos",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Captain David Trilling",
+			"tmdbPersonId": 66994,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Captain David Trilling cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Patrick Kilpatrick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Merc #2",
+			"tmdbPersonId": 32286,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Merc #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sandra Taylor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Kelly",
+			"tmdbPersonId": 32291,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Kelly cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kurtwood Smith",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "General Stanley Cooper",
+			"tmdbPersonId": 2115,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito General Stanley Cooper cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Scott Sowers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Merc #3",
+			"tmdbPersonId": 32287,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Merc #3 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Afifi Alaouie",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Female Merc",
+			"tmdbPersonId": 32288,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Female Merc cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christopher Darga",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Cook #1",
+			"tmdbPersonId": 75923,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cook #1 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Don Blakely",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Cook #2",
+			"tmdbPersonId": 90337,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cook #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James Clark",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Train Consultant",
+			"tmdbPersonId": 3052531,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Train Consultant cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stan Garner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Train Consultant",
+			"tmdbPersonId": 1656368,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Train Consultant cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Silan Smith",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Friendly Faced Engineer #1",
+			"tmdbPersonId": 3052532,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Friendly Faced Engineer #1 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Denis L. Stewart",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Holy-Merc",
+			"tmdbPersonId": 12770,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Holy-Merc cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jim Dirker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Helicopter Pilot",
+			"tmdbPersonId": 1200767,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Helicopter Pilot cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Todd O. Russell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Ryback's Driver",
+			"tmdbPersonId": 1594450,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ryback's Driver cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Warren Tabata",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Bartender",
+			"tmdbPersonId": 1217905,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bartender cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Julius R. Nasso",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Hostage #3",
+			"tmdbPersonId": 939559,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hostage #3 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Phyllis Davis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Hostage #3",
+			"tmdbPersonId": 36480,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hostage #3 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James V. Caciola",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Hostage #4",
+			"tmdbPersonId": 3052533,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hostage #4 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ginger Lewis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Lady Hostage",
+			"tmdbPersonId": 3052534,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lady Hostage cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Greg Collins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Huey Pilot",
+			"tmdbPersonId": 58950,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Huey Pilot cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ken Vieira",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Helicopter Pilot",
+			"tmdbPersonId": 3052535,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Helicopter Pilot cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Wren T. Brown",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Captain #1",
+			"tmdbPersonId": 55965,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Captain #1 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "D. C. Douglas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Technician #1",
+			"tmdbPersonId": 43961,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Technician #1 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Thom Adcox-Hernandez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Technician #2",
+			"tmdbPersonId": 93843,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Technician #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Catherine MacNeal",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Assistant",
+			"tmdbPersonId": 157673,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Assistant cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Frank Roman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Aide",
+			"tmdbPersonId": 77587,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Aide cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Al Sapienza",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Captain #2",
+			"tmdbPersonId": 154917,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Captain #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jennifer Starr",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "ATAC Asst. #2",
+			"tmdbPersonId": 1586895,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito ATAC Asst. #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ping Wu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "SYSOS Officer",
+			"tmdbPersonId": 1223812,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito SYSOS Officer cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joe Bucaro III",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Mercenary Thrown From Train (uncredited)",
+			"tmdbPersonId": 51302,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary Thrown From Train (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James Lew",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Mercenary (uncredited)",
+			"tmdbPersonId": 94089,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nils Allen Stewart",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Mercenary (uncredited)",
+			"tmdbPersonId": 24968,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jen Sung",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Mercenary (uncredited)",
+			"tmdbPersonId": 84609,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Machado",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/3512/cast",
+			"screenRole": "Terrorist (uncredited)",
+			"tmdbPersonId": 94660,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Terrorist (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Alerta máxima 2; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Nick Mancuso",
+				"role": "performer",
+				"reason": "Crédito Tom Breaker cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jonathan Banks",
+				"role": "performer",
+				"reason": "Crédito Scotty cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Royce D. Applegate",
+				"role": "performer",
+				"reason": "Crédito Ryback's Cook cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dale Dye",
+				"role": "performer",
+				"reason": "Crédito Captain Garza cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Gianopoulos",
+				"role": "performer",
+				"reason": "Crédito Captain David Trilling cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Patrick Kilpatrick",
+				"role": "performer",
+				"reason": "Crédito Merc #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sandra Taylor",
+				"role": "performer",
+				"reason": "Crédito Kelly cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kurtwood Smith",
+				"role": "performer",
+				"reason": "Crédito General Stanley Cooper cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Scott Sowers",
+				"role": "performer",
+				"reason": "Crédito Merc #3 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Afifi Alaouie",
+				"role": "performer",
+				"reason": "Crédito Female Merc cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christopher Darga",
+				"role": "performer",
+				"reason": "Crédito Cook #1 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Don Blakely",
+				"role": "performer",
+				"reason": "Crédito Cook #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James Clark",
+				"role": "performer",
+				"reason": "Crédito Train Consultant cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stan Garner",
+				"role": "performer",
+				"reason": "Crédito Train Consultant cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Silan Smith",
+				"role": "performer",
+				"reason": "Crédito Friendly Faced Engineer #1 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Denis L. Stewart",
+				"role": "performer",
+				"reason": "Crédito Holy-Merc cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jim Dirker",
+				"role": "performer",
+				"reason": "Crédito Helicopter Pilot cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Todd O. Russell",
+				"role": "performer",
+				"reason": "Crédito Ryback's Driver cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Warren Tabata",
+				"role": "performer",
+				"reason": "Crédito Bartender cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Julius R. Nasso",
+				"role": "performer",
+				"reason": "Crédito Hostage #3 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Phyllis Davis",
+				"role": "performer",
+				"reason": "Crédito Hostage #3 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James V. Caciola",
+				"role": "performer",
+				"reason": "Crédito Hostage #4 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ginger Lewis",
+				"role": "performer",
+				"reason": "Crédito Lady Hostage cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Greg Collins",
+				"role": "performer",
+				"reason": "Crédito Huey Pilot cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ken Vieira",
+				"role": "performer",
+				"reason": "Crédito Helicopter Pilot cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Wren T. Brown",
+				"role": "performer",
+				"reason": "Crédito Captain #1 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "D. C. Douglas",
+				"role": "performer",
+				"reason": "Crédito Technician #1 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Thom Adcox-Hernandez",
+				"role": "performer",
+				"reason": "Crédito Technician #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Catherine MacNeal",
+				"role": "performer",
+				"reason": "Crédito Assistant cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Frank Roman",
+				"role": "performer",
+				"reason": "Crédito Aide cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Al Sapienza",
+				"role": "performer",
+				"reason": "Crédito Captain #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jennifer Starr",
+				"role": "performer",
+				"reason": "Crédito ATAC Asst. #2 cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ping Wu",
+				"role": "performer",
+				"reason": "Crédito SYSOS Officer cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joe Bucaro III",
+				"role": "performer",
+				"reason": "Crédito Mercenary Thrown From Train (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James Lew",
+				"role": "performer",
+				"reason": "Crédito Mercenary (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nils Allen Stewart",
+				"role": "performer",
+				"reason": "Crédito Mercenary (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jen Sung",
+				"role": "performer",
+				"reason": "Crédito Mercenary (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Machado",
+				"role": "performer",
+				"reason": "Crédito Terrorist (uncredited) cotejado en el billing completo de Alerta máxima 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

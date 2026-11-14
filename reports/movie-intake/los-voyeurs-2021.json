@@ -1,0 +1,603 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "los-voyeurs-2021",
+	"title": "Los Voyeurs",
+	"year": 2021,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/645710/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 31
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/the-voyeurs",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt11235772/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Michael Mohan",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 856440,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/856440",
+					"fact": "Identidad de Michael Mohan, oficio y filmografía cotejados con el ID exacto de Los Voyeurs (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/645710/cast",
+					"fact": "El billing del título exacto acredita a Michael Mohan en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/gyE6mePSGD2ElzgeMPXIb1tyj1e.jpg",
+				"localPath": "/people/michael-mohan-nm2278537.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sydney Sweeney",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Pippa",
+			"tmdbPersonId": 115440,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/115440",
+					"fact": "Identidad de Sydney Sweeney, oficio y filmografía cotejados con el ID exacto de Los Voyeurs (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/645710/cast",
+					"fact": "El billing del título exacto acredita a Sydney Sweeney como Pippa."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sydney%20Sweeney%20at%20the%202024%20Toronto%20International%20Film%20Festival%2004%20(Cropped).jpg?width=120",
+				"localPath": "/people/sydney-sweeney-nm2858875.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Justice Smith",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Thomas",
+			"tmdbPersonId": 1029934,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1029934",
+					"fact": "Identidad de Justice Smith, oficio y filmografía cotejados con el ID exacto de Los Voyeurs (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/645710/cast",
+					"fact": "El billing del título exacto acredita a Justice Smith como Thomas."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Justice%20Smith%20(32517668231)%20(cropped1).jpg?width=120",
+				"localPath": "/people/justice-smith-nm6819854.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ben Hardy",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Seb",
+			"tmdbPersonId": 1452045,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1452045",
+					"fact": "Identidad de Ben Hardy, oficio y filmografía cotejados con el ID exacto de Los Voyeurs (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/645710/cast",
+					"fact": "El billing del título exacto acredita a Ben Hardy como Seb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Hardy%20by%20Gage%20Skidmore.jpg?width=640",
+				"localPath": "/people/ben-hardy-nm5228887.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Natasha Liu Bordizzo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Julia",
+			"tmdbPersonId": 1583307,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1583307",
+					"fact": "Identidad de Natasha Liu Bordizzo, oficio y filmografía cotejados con el ID exacto de Los Voyeurs (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/645710/cast",
+					"fact": "El billing del título exacto acredita a Natasha Liu Bordizzo como Julia."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/92hZjJ2f7HWATUEw4BbMMWlGXps.jpg",
+				"localPath": "/people/natasha-liu-bordizzo-nm6812060.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Katharine King So",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Ari",
+			"tmdbPersonId": 1200669,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1200669",
+					"fact": "Identidad de Katharine King So, oficio y filmografía cotejados con el ID exacto de Los Voyeurs (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/645710/cast",
+					"fact": "El billing del título exacto acredita a Katharine King So como Ari."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/A1giE59gq1zupkhAgru7FpdJwWe.jpg",
+				"localPath": "/people/katharine-king-so-nm4548114.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Cameo Adele",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Joni",
+			"tmdbPersonId": 3228980,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3228980",
+					"fact": "Identidad de Cameo Adele, oficio y filmografía cotejados con el ID exacto de Los Voyeurs (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/645710/cast",
+					"fact": "El billing del título exacto acredita a Cameo Adele como Joni."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9ZHfqoeE2sQp4o6RWb5vgGSvvxy.jpg",
+				"localPath": "/people/cameo-adele-nm12902200.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jean Yoon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Dr. Sato",
+			"tmdbPersonId": 88929,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/88929",
+					"fact": "Identidad de Jean Yoon, oficio y filmografía cotejados con el ID exacto de Los Voyeurs (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/645710/cast",
+					"fact": "El billing del título exacto acredita a Jean Yoon como Dr. Sato."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ce8sXtsy7HNGWG0xqSo4QTaghjM.jpg",
+				"localPath": "/people/jean-yoon-nm1050153.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Cait Alexander",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Sam",
+			"tmdbPersonId": 2091816,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2091816",
+					"fact": "Identidad de Cait Alexander, oficio y filmografía cotejados con el ID exacto de Los Voyeurs (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/645710/cast",
+					"fact": "El billing del título exacto acredita a Cait Alexander como Sam."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bLkdoVhjVeJdWMGSEI8UZvYa64Y.jpg",
+				"localPath": "/people/cait-alexander-nm3342571.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Blessing Adedijo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Mere",
+			"tmdbPersonId": 2780098,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mere cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bianca Blizzard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Model #1",
+			"tmdbPersonId": 3228979,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Model #1 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sandrine Bergeron",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Model #2",
+			"tmdbPersonId": 3226925,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Model #2 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Emily Shelton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Japanese Journalist",
+			"tmdbPersonId": 73611,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Journalist cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ryo Hayashida",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Japanese Translator",
+			"tmdbPersonId": 1677943,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Translator cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Inka Malovic",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Property Manager",
+			"tmdbPersonId": 1142295,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Property Manager cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jillian Harris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Prom Queen",
+			"tmdbPersonId": 2336547,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Prom Queen cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Madeline Harvey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Barb",
+			"tmdbPersonId": 1496335,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Barb cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Abdul Ayoola",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Mover #1",
+			"tmdbPersonId": 229561,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mover #1 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Derek Johns",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Mover #2",
+			"tmdbPersonId": 2719571,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mover #2 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "André-Luc Tessier",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Young Man #1",
+			"tmdbPersonId": 2497916,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Man #1 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Noah Parker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Young Man #2",
+			"tmdbPersonId": 1967356,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Man #2 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Elisabeth Etienne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Waitress",
+			"tmdbPersonId": 2603206,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waitress cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stephanie White",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Spa Client #1",
+			"tmdbPersonId": 3231073,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Spa Client #1 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Charlotte Poitras",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Spa Client #2",
+			"tmdbPersonId": 1686312,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Spa Client #2 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rhiannon Moller-Trotter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Nervous Patient",
+			"tmdbPersonId": 119709,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nervous Patient cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lou-Gabrielle Vaugeois",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Young Pregnant Woman",
+			"tmdbPersonId": 3231074,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Pregnant Woman cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alexandra Petrachuk",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Alex",
+			"tmdbPersonId": 2336545,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Alex cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Caitlyn Sponheimer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Cait",
+			"tmdbPersonId": 2058459,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cait cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marie Westbrook",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Commercial Narrator",
+			"tmdbPersonId": 86206,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Commercial Narrator cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Angie Russo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Trendy Client at Bar",
+			"tmdbPersonId": 3076285,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Trendy Client at Bar cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Courtnee Rasmussen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/645710/cast",
+			"screenRole": "Maylin",
+			"tmdbPersonId": 2398693,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Maylin cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Los Voyeurs; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Blessing Adedijo",
+				"role": "performer",
+				"reason": "Crédito Mere cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bianca Blizzard",
+				"role": "performer",
+				"reason": "Crédito Model #1 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sandrine Bergeron",
+				"role": "performer",
+				"reason": "Crédito Model #2 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Emily Shelton",
+				"role": "performer",
+				"reason": "Crédito Japanese Journalist cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ryo Hayashida",
+				"role": "performer",
+				"reason": "Crédito Japanese Translator cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Inka Malovic",
+				"role": "performer",
+				"reason": "Crédito Property Manager cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jillian Harris",
+				"role": "performer",
+				"reason": "Crédito Prom Queen cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Madeline Harvey",
+				"role": "performer",
+				"reason": "Crédito Barb cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Abdul Ayoola",
+				"role": "performer",
+				"reason": "Crédito Mover #1 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Derek Johns",
+				"role": "performer",
+				"reason": "Crédito Mover #2 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "André-Luc Tessier",
+				"role": "performer",
+				"reason": "Crédito Young Man #1 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Noah Parker",
+				"role": "performer",
+				"reason": "Crédito Young Man #2 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Elisabeth Etienne",
+				"role": "performer",
+				"reason": "Crédito Waitress cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stephanie White",
+				"role": "performer",
+				"reason": "Crédito Spa Client #1 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Charlotte Poitras",
+				"role": "performer",
+				"reason": "Crédito Spa Client #2 cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rhiannon Moller-Trotter",
+				"role": "performer",
+				"reason": "Crédito Nervous Patient cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lou-Gabrielle Vaugeois",
+				"role": "performer",
+				"reason": "Crédito Young Pregnant Woman cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alexandra Petrachuk",
+				"role": "performer",
+				"reason": "Crédito Alex cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Caitlyn Sponheimer",
+				"role": "performer",
+				"reason": "Crédito Cait cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marie Westbrook",
+				"role": "performer",
+				"reason": "Crédito Commercial Narrator cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Angie Russo",
+				"role": "performer",
+				"reason": "Crédito Trendy Client at Bar cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Courtnee Rasmussen",
+				"role": "performer",
+				"reason": "Crédito Maylin cotejado en el billing completo de Los Voyeurs; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

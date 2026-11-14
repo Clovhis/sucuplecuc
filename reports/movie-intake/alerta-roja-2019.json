@@ -1,0 +1,1347 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "alerta-roja-2019",
+	"title": "Alerta roja",
+	"year": 2019,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/581387/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 77
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/alerta-roja-2019",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt11285908/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Kim Byung-seo",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1293085,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1293085",
+					"fact": "Identidad de Kim Byung-seo, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Kim Byung-seo en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/gqRy9wYEusoapWB4lB26hHcfwFM.jpg",
+				"localPath": "/people/kim-byung-seo-nm2303963.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lee Hae-jun",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 108536,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/108536",
+					"fact": "Identidad de Lee Hae-jun, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Lee Hae-jun en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kG5qnSxXG74JMbjcXUtrOycpfxf.jpg",
+				"localPath": "/people/lee-hae-jun-nm1536497.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lee Byung-hun",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Lee Jun-pyeong",
+			"tmdbPersonId": 25002,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/25002",
+					"fact": "Identidad de Lee Byung-hun, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Lee Byung-hun como Lee Jun-pyeong."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lee%20Byung-hun%202025%20Toronto%20(cropped).jpg?width=1200",
+				"localPath": "/people/lee-byung-hun-nm0496932.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ha Jung-woo",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Jo In-chang",
+			"tmdbPersonId": 75913,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/75913",
+					"fact": "Identidad de Ha Jung-woo, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Ha Jung-woo como Jo In-chang."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9KINm0XIwbt4Qql4oZX55krzKxg.jpg",
+				"localPath": "/people/ha-jung-woo-nm1978402.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ma Dong-seok",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Kang Bong-rae",
+			"tmdbPersonId": 1024395,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1024395",
+					"fact": "Identidad de Ma Dong-seok, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Ma Dong-seok como Kang Bong-rae."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Don%20Lee%20by%20Gage%20Skidmore.jpg?width=1200",
+				"localPath": "/people/ma-dong-seok-nm3011350.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jeon Hye-jin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Jeon Yu-gyeong",
+			"tmdbPersonId": 150126,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/150126",
+					"fact": "Identidad de Jeon Hye-jin, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Jeon Hye-jin como Jeon Yu-gyeong."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7PliJIOzUei41vyE9FaIWvFMNzC.jpg",
+				"localPath": "/people/jeon-hye-jin-nm2246822.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Suzy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Seo Ji-young",
+			"tmdbPersonId": 1014784,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1014784",
+					"fact": "Identidad de Suzy, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Suzy como Seo Ji-young."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xdmQeM0UuwVGyZucc3eLhynlb7b.jpg",
+				"localPath": "/people/suzy-nm7108248.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lee Kyung-young",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "General Choi",
+			"tmdbPersonId": 231476,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/231476",
+					"fact": "Identidad de Lee Kyung-young, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Lee Kyung-young como General Choi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aDNcLCWs7KHToiXxfG7ACwvne3l.jpg",
+				"localPath": "/people/lee-kyung-young-nm0497710.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kim Sia",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Sun-ok",
+			"tmdbPersonId": 2115785,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2115785",
+					"fact": "Identidad de Kim Sia, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Kim Sia como Sun-ok."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4xNracGIzNRRLNbIO5cWigbPpCA.jpg",
+				"localPath": "/people/kim-sia-nm10870914.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lee Sang-won",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Park Tae-sik",
+			"tmdbPersonId": 2260893,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2260893",
+					"fact": "Identidad de Lee Sang-won, oficio y filmografía cotejados con el ID exacto de Alerta roja (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/581387/cast",
+					"fact": "El billing del título exacto acredita a Lee Sang-won como Park Tae-sik."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kF8RJL5DFUpzUamV15i400vKIM9.jpg",
+				"localPath": "/people/lee-sang-won-nm6229011.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "옥자연",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Sergeant Min",
+			"tmdbPersonId": 2133924,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sergeant Min cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "최광일",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "President",
+			"tmdbPersonId": 2485848,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito President cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "조한철",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Colonel",
+			"tmdbPersonId": 1203792,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Colonel cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "강신철",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Lieutenant Han",
+			"tmdbPersonId": 1326155,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lieutenant Han cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Han Su-hyeon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Sergeant Kim",
+			"tmdbPersonId": 2490273,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sergeant Kim cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "임형국",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Chen",
+			"tmdbPersonId": 125732,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Chen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "전도연",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Sun Hwa",
+			"tmdbPersonId": 20737,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sun Hwa cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "김연교",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Assistant Nurse",
+			"tmdbPersonId": 2490270,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Assistant Nurse cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "정윤하",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Interpreter",
+			"tmdbPersonId": 2475737,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Interpreter cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jai Day",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "US Navy Seal Commander Philip",
+			"tmdbPersonId": 222881,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito US Navy Seal Commander Philip cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "김민식",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Staff sergeant Kim",
+			"tmdbPersonId": 2854670,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Staff sergeant Kim cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joey Albright",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Bocheon US Army Special Ops Solider",
+			"tmdbPersonId": 1957562,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bocheon US Army Special Ops Solider cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Maurice Turner Jr.",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Seal Team",
+			"tmdbPersonId": 2966792,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kevin Dockry",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Seal Team",
+			"tmdbPersonId": 2965847,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stefan van der Ree",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Seal Team",
+			"tmdbPersonId": 2983574,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christopher Gordon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Seal Team",
+			"tmdbPersonId": 2983578,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jonathan Ehren Groff",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Seal Team",
+			"tmdbPersonId": 4303310,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jack Lyons",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "U.S. Military Police",
+			"tmdbPersonId": 2260887,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito U.S. Military Police cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "최정현",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Bodyguard",
+			"tmdbPersonId": 3216779,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bodyguard cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Daniel C. Kennedy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Security Team Leader",
+			"tmdbPersonId": 3246187,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Security Team Leader cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Derek Chouinard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Bus Passenger",
+			"tmdbPersonId": 3210112,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bus Passenger cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "이은희",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Reporter",
+			"tmdbPersonId": 3741093,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Reporter cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Amy Aleha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Officer Amy / News Anchor",
+			"tmdbPersonId": 3796009,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Officer Amy / News Anchor cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "허지나",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Elevator / Elevator mother",
+			"tmdbPersonId": 2242937,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elevator cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante. La fuente repite este mismo ID; se consolida en una única fila."
+		},
+		{
+			"name": "박지홍",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Park",
+			"tmdbPersonId": 2470130,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Park cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kim Jun-won",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Training Lieutenant",
+			"tmdbPersonId": 3005536,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Training Lieutenant cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "남상지",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Nurse",
+			"tmdbPersonId": 3210310,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nurse cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "한수현",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Sergeant Kim",
+			"tmdbPersonId": 1313733,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sergeant Kim cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nam Seong-joon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Ha",
+			"tmdbPersonId": 1442577,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ha cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "서현우",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "1 Deputy Department Head",
+			"tmdbPersonId": 1591370,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito 1 Deputy Department Head cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "박태산",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Chinese agent",
+			"tmdbPersonId": 2475424,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Chinese agent cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Curtis Brown",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Ambassador Wilson",
+			"tmdbPersonId": 233298,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ambassador Wilson cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "신성일",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": null,
+			"tmdbPersonId": 145932,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito sin personaje detallado cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "남문철",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Cabinet Member #1",
+			"tmdbPersonId": 1627313,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cabinet Member #1 cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "박성근",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Cabinet Member #2",
+			"tmdbPersonId": 2519095,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cabinet Member #2 cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "손성찬",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Cabinet Member #3",
+			"tmdbPersonId": 1631997,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cabinet Member #3 cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "박지훈",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Security service chief",
+			"tmdbPersonId": 2378978,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Security service chief cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Yang Ji-soo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Transportation officer / In Chang's stand-in",
+			"tmdbPersonId": 2962512,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Transportation officer / In Chang's stand-in cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "양대혁",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Agent, Situation Room",
+			"tmdbPersonId": 2766987,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Agent, Situation Room cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cha Si-won",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Member of Military Headquarters",
+			"tmdbPersonId": 2391355,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Member of Military Headquarters cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "손영순",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Refugee Grandmother",
+			"tmdbPersonId": 1099795,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Refugee Grandmother cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "서명찬",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Secretary of Defense",
+			"tmdbPersonId": 3788609,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Secretary of Defense cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "서석규",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "YTN Reporter",
+			"tmdbPersonId": 4047197,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito YTN Reporter cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lee Jae-han",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Member of the military headquarters",
+			"tmdbPersonId": 2685234,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Member of the military headquarters cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "안석현",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Village boy",
+			"tmdbPersonId": 4156722,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Village boy cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "변우석",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Bodyguard",
+			"tmdbPersonId": 2117890,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bodyguard cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "장재희",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Girl who looks like Soon Ok",
+			"tmdbPersonId": 2720756,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Girl who looks like Soon Ok cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "나경진",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Incheon Port Broadcasting / Pyeongyang citizen",
+			"tmdbPersonId": 3866821,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Incheon Port Broadcasting / Pyeongyang citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "오지영",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Seoul Citizen",
+			"tmdbPersonId": 3045792,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Seoul Citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Justin Harvey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "U.S. sniper in Bocheon",
+			"tmdbPersonId": 3570790,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito U.S. sniper in Bocheon cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jeong Han-bin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Bodyguard",
+			"tmdbPersonId": 3218513,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bodyguard cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "나경철",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "News Anchor",
+			"tmdbPersonId": 4188118,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito News Anchor cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "한창민",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Gangnam child",
+			"tmdbPersonId": 4210795,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gangnam child cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "장근영",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Citizen",
+			"tmdbPersonId": 4492389,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "고한민",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "North Korean Military",
+			"tmdbPersonId": 2894929,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito North Korean Military cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "박정숙",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Hamheung",
+			"tmdbPersonId": 2378985,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hamheung cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "최홍락",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Transport Soldier",
+			"tmdbPersonId": 3987192,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Transport Soldier cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "지민",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Escorting Soldier",
+			"tmdbPersonId": 1622744,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Escorting Soldier cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "정진혁",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "South Korean Military",
+			"tmdbPersonId": 6056940,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito South Korean Military cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "이한결",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Bodyguard",
+			"tmdbPersonId": 5606489,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bodyguard cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "김효준",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Pyongyang Citizen",
+			"tmdbPersonId": 3371675,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pyongyang Citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "김기태",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Main Unit Member",
+			"tmdbPersonId": 6282777,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Main Unit Member cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "한동훈",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Seoul Citizen",
+			"tmdbPersonId": 6293148,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Seoul Citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "장나라",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Main Unit Member",
+			"tmdbPersonId": 4221350,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Main Unit Member cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "박주환",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": "Sergeant",
+			"tmdbPersonId": 6327465,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sergeant cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "함은정",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": null,
+			"tmdbPersonId": 1252339,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito sin personaje detallado cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "엄현경",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/581387/cast",
+			"screenRole": null,
+			"tmdbPersonId": 1623728,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito sin personaje detallado cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Alerta roja; se retuvieron 2 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "옥자연",
+				"role": "performer",
+				"reason": "Crédito Sergeant Min cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "최광일",
+				"role": "performer",
+				"reason": "Crédito President cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "조한철",
+				"role": "performer",
+				"reason": "Crédito Colonel cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "강신철",
+				"role": "performer",
+				"reason": "Crédito Lieutenant Han cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Han Su-hyeon",
+				"role": "performer",
+				"reason": "Crédito Sergeant Kim cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "임형국",
+				"role": "performer",
+				"reason": "Crédito Chen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "전도연",
+				"role": "performer",
+				"reason": "Crédito Sun Hwa cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "김연교",
+				"role": "performer",
+				"reason": "Crédito Assistant Nurse cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "정윤하",
+				"role": "performer",
+				"reason": "Crédito Interpreter cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jai Day",
+				"role": "performer",
+				"reason": "Crédito US Navy Seal Commander Philip cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "김민식",
+				"role": "performer",
+				"reason": "Crédito Staff sergeant Kim cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joey Albright",
+				"role": "performer",
+				"reason": "Crédito Bocheon US Army Special Ops Solider cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Maurice Turner Jr.",
+				"role": "performer",
+				"reason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kevin Dockry",
+				"role": "performer",
+				"reason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stefan van der Ree",
+				"role": "performer",
+				"reason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christopher Gordon",
+				"role": "performer",
+				"reason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jonathan Ehren Groff",
+				"role": "performer",
+				"reason": "Crédito Seal Team cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jack Lyons",
+				"role": "performer",
+				"reason": "Crédito U.S. Military Police cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "최정현",
+				"role": "performer",
+				"reason": "Crédito Bodyguard cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Daniel C. Kennedy",
+				"role": "performer",
+				"reason": "Crédito Security Team Leader cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Derek Chouinard",
+				"role": "performer",
+				"reason": "Crédito Bus Passenger cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "이은희",
+				"role": "performer",
+				"reason": "Crédito Reporter cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Amy Aleha",
+				"role": "performer",
+				"reason": "Crédito Officer Amy / News Anchor cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "허지나",
+				"role": "performer",
+				"reason": "Crédito Elevator cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante. La fuente repite este mismo ID; se consolida en una única fila."
+			},
+			{
+				"name": "박지홍",
+				"role": "performer",
+				"reason": "Crédito Park cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kim Jun-won",
+				"role": "performer",
+				"reason": "Crédito Training Lieutenant cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "남상지",
+				"role": "performer",
+				"reason": "Crédito Nurse cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "한수현",
+				"role": "performer",
+				"reason": "Crédito Sergeant Kim cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nam Seong-joon",
+				"role": "performer",
+				"reason": "Crédito Ha cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "서현우",
+				"role": "performer",
+				"reason": "Crédito 1 Deputy Department Head cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "박태산",
+				"role": "performer",
+				"reason": "Crédito Chinese agent cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Curtis Brown",
+				"role": "performer",
+				"reason": "Crédito Ambassador Wilson cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "신성일",
+				"role": "performer",
+				"reason": "Crédito sin personaje detallado cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "남문철",
+				"role": "performer",
+				"reason": "Crédito Cabinet Member #1 cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "박성근",
+				"role": "performer",
+				"reason": "Crédito Cabinet Member #2 cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "손성찬",
+				"role": "performer",
+				"reason": "Crédito Cabinet Member #3 cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "박지훈",
+				"role": "performer",
+				"reason": "Crédito Security service chief cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Yang Ji-soo",
+				"role": "performer",
+				"reason": "Crédito Transportation officer / In Chang's stand-in cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "양대혁",
+				"role": "performer",
+				"reason": "Crédito Agent, Situation Room cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cha Si-won",
+				"role": "performer",
+				"reason": "Crédito Member of Military Headquarters cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "손영순",
+				"role": "performer",
+				"reason": "Crédito Refugee Grandmother cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "서명찬",
+				"role": "performer",
+				"reason": "Crédito Secretary of Defense cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "서석규",
+				"role": "performer",
+				"reason": "Crédito YTN Reporter cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lee Jae-han",
+				"role": "performer",
+				"reason": "Crédito Member of the military headquarters cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "안석현",
+				"role": "performer",
+				"reason": "Crédito Village boy cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "변우석",
+				"role": "performer",
+				"reason": "Crédito Bodyguard cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "장재희",
+				"role": "performer",
+				"reason": "Crédito Girl who looks like Soon Ok cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "나경진",
+				"role": "performer",
+				"reason": "Crédito Incheon Port Broadcasting / Pyeongyang citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "오지영",
+				"role": "performer",
+				"reason": "Crédito Seoul Citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Justin Harvey",
+				"role": "performer",
+				"reason": "Crédito U.S. sniper in Bocheon cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jeong Han-bin",
+				"role": "performer",
+				"reason": "Crédito Bodyguard cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "나경철",
+				"role": "performer",
+				"reason": "Crédito News Anchor cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "한창민",
+				"role": "performer",
+				"reason": "Crédito Gangnam child cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "장근영",
+				"role": "performer",
+				"reason": "Crédito Citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "고한민",
+				"role": "performer",
+				"reason": "Crédito North Korean Military cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "박정숙",
+				"role": "performer",
+				"reason": "Crédito Hamheung cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "최홍락",
+				"role": "performer",
+				"reason": "Crédito Transport Soldier cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "지민",
+				"role": "performer",
+				"reason": "Crédito Escorting Soldier cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "정진혁",
+				"role": "performer",
+				"reason": "Crédito South Korean Military cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "이한결",
+				"role": "performer",
+				"reason": "Crédito Bodyguard cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "김효준",
+				"role": "performer",
+				"reason": "Crédito Pyongyang Citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "김기태",
+				"role": "performer",
+				"reason": "Crédito Main Unit Member cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "한동훈",
+				"role": "performer",
+				"reason": "Crédito Seoul Citizen cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "장나라",
+				"role": "performer",
+				"reason": "Crédito Main Unit Member cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "박주환",
+				"role": "performer",
+				"reason": "Crédito Sergeant cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "함은정",
+				"role": "performer",
+				"reason": "Crédito sin personaje detallado cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "엄현경",
+				"role": "performer",
+				"reason": "Crédito sin personaje detallado cotejado en el billing completo de Alerta roja; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,379 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "desastre-inminente-2020",
+	"title": "Desastre inminente",
+	"year": 2020,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/613658/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 17
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/desastre-en-china",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt9283920/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Dante Lam Chiu-yin",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 81220,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/81220",
+					"fact": "Identidad de Dante Lam Chiu-yin, oficio y filmografía cotejados con el ID exacto de Desastre inminente (2020)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/613658/cast",
+					"fact": "El billing del título exacto acredita a Dante Lam Chiu-yin en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4xXjPWxN8AwUdh3yL0lp1XjTCLs.jpg",
+				"localPath": "/people/dante-lam-chiu-yin-nm0482592.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Eddie Peng",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Gao Qian",
+			"tmdbPersonId": 126778,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/126778",
+					"fact": "Identidad de Eddie Peng, oficio y filmografía cotejados con el ID exacto de Desastre inminente (2020)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/613658/cast",
+					"fact": "El billing del título exacto acredita a Eddie Peng como Gao Qian."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4ZTpN3lXCyHsC02fgJdO9RqgYwt.jpg",
+				"localPath": "/people/eddie-peng-nm2108643.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Wang Yanlin",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Zhao Cheng",
+			"tmdbPersonId": 1724346,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1724346",
+					"fact": "Identidad de Wang Yanlin, oficio y filmografía cotejados con el ID exacto de Desastre inminente (2020)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/613658/cast",
+					"fact": "El billing del título exacto acredita a Wang Yanlin como Zhao Cheng."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bl4wKqUhYdPNVg0p4rXJ2ZVO3T0.jpg",
+				"localPath": "/people/wang-yanlin-nm9045234.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Xin Zhilei",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Fang Yuling",
+			"tmdbPersonId": 1569934,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1569934",
+					"fact": "Identidad de Xin Zhilei, oficio y filmografía cotejados con el ID exacto de Desastre inminente (2020)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/613658/cast",
+					"fact": "El billing del título exacto acredita a Xin Zhilei como Fang Yuling."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Xin%20Zhilei%20from%20%22The%20Unseen%20Sister%22%20at%20Red%20Carpet%20of%20the%20Tokyo%20International%20Film%20Festival%202024%20(54578121368).jpg?width=1200",
+				"localPath": "/people/xin-zhilei-nm7928249.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lyric Lan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Wen Shan",
+			"tmdbPersonId": 1742841,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1742841",
+					"fact": "Identidad de Lyric Lan, oficio y filmografía cotejados con el ID exacto de Desastre inminente (2020)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/613658/cast",
+					"fact": "El billing del título exacto acredita a Lyric Lan como Wen Shan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2jLu5wGbyJFiIh2Uq6xunaTANwB.jpg",
+				"localPath": "/people/lyric-lan-nm5019286.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Wang Yutian",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "An Peng",
+			"tmdbPersonId": 2133336,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2133336",
+					"fact": "Identidad de Wang Yutian, oficio y filmografía cotejados con el ID exacto de Desastre inminente (2020)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/613658/cast",
+					"fact": "El billing del título exacto acredita a Wang Yutian como An Peng."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9F9oPL9lliVqyGYA8qqW4rWsbzW.jpg",
+				"localPath": "/people/wang-yutian-nm9177055.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Carlos Chan Ka-lok",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Lin Weiquan",
+			"tmdbPersonId": 1172629,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1172629",
+					"fact": "Identidad de Carlos Chan Ka-lok, oficio y filmografía cotejados con el ID exacto de Desastre inminente (2020)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/613658/cast",
+					"fact": "El billing del título exacto acredita a Carlos Chan Ka-lok como Lin Weiquan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/uCocD9qqMME6ADzKmfaHU6m2eV8.jpg",
+				"localPath": "/people/carlos-chan-ka-lok-nm3225390.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Li Mincheng",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Liu Bin",
+			"tmdbPersonId": 1396081,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1396081",
+					"fact": "Identidad de Li Mincheng, oficio y filmografía cotejados con el ID exacto de Desastre inminente (2020)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/613658/cast",
+					"fact": "El billing del título exacto acredita a Li Mincheng como Liu Bin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oyoC8DiqEqiLO8Y8rjvZuJs0GTp.jpg",
+				"localPath": "/people/li-mincheng-nm6130412.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Zhang Guoqiang",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Pan Zhengjun",
+			"tmdbPersonId": 1006596,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1006596",
+					"fact": "Identidad de Zhang Guoqiang, oficio y filmografía cotejados con el ID exacto de Desastre inminente (2020)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/613658/cast",
+					"fact": "El billing del título exacto acredita a Zhang Guoqiang como Pan Zhengjun."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ako7Cv49GuZfl4ew6sWOvBUqBug.jpg",
+				"localPath": "/people/zhang-guoqiang-nm3590261.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "郭晓东",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Ding Yi",
+			"tmdbPersonId": 116636,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ding Yi cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "魏大勋",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Huo Da",
+			"tmdbPersonId": 1712691,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Huo Da cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "张峰",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Bao Yunke",
+			"tmdbPersonId": 3442734,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bao Yunke cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Will Tomi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Heli-Rescue Pilot",
+			"tmdbPersonId": 2544248,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Heli-Rescue Pilot cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "刘亦淳",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Tang Min",
+			"tmdbPersonId": 3421486,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Tang Min cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "上白",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Lu Qili",
+			"tmdbPersonId": 1897313,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lu Qili cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jingyi Zhang",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Cong Cong",
+			"tmdbPersonId": 3352101,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cong Cong cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "張婧儀",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/613658/cast",
+			"screenRole": "Cong Cong",
+			"tmdbPersonId": 2631253,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cong Cong cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Desastre inminente; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "郭晓东",
+				"role": "performer",
+				"reason": "Crédito Ding Yi cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "魏大勋",
+				"role": "performer",
+				"reason": "Crédito Huo Da cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "张峰",
+				"role": "performer",
+				"reason": "Crédito Bao Yunke cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Will Tomi",
+				"role": "performer",
+				"reason": "Crédito Heli-Rescue Pilot cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "刘亦淳",
+				"role": "performer",
+				"reason": "Crédito Tang Min cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "上白",
+				"role": "performer",
+				"reason": "Crédito Lu Qili cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jingyi Zhang",
+				"role": "performer",
+				"reason": "Crédito Cong Cong cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "張婧儀",
+				"role": "performer",
+				"reason": "Crédito Cong Cong cotejado en el billing completo de Desastre inminente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

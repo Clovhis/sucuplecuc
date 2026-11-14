@@ -1,0 +1,355 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "las-munecas-del-crimen-2019",
+	"title": "Las muñecas del crimen",
+	"year": 2019,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/586460/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 16
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/stray-dolls",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt6690836/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Sonejuhi Sinha",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1793273,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1793273",
+					"fact": "Identidad de Sonejuhi Sinha, oficio y filmografía cotejados con el ID exacto de Las muñecas del crimen (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/586460/cast",
+					"fact": "El billing del título exacto acredita a Sonejuhi Sinha en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3kVnJHbxDagwSSF1401JOooapss.jpg",
+				"localPath": "/people/sonejuhi-sinha-nm3572939.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Geetanjali Thapa",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Riz",
+			"tmdbPersonId": 1182686,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1182686",
+					"fact": "Identidad de Geetanjali Thapa, oficio y filmografía cotejados con el ID exacto de Las muñecas del crimen (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/586460/cast",
+					"fact": "El billing del título exacto acredita a Geetanjali Thapa como Riz."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qQx2Z4LoQOvxmA28XSwVPsfVbez.jpg",
+				"localPath": "/people/geetanjali-thapa-nm6804040.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Olivia DeJonge",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Dallas",
+			"tmdbPersonId": 1385063,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1385063",
+					"fact": "Identidad de Olivia DeJonge, oficio y filmografía cotejados con el ID exacto de Las muñecas del crimen (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/586460/cast",
+					"fact": "El billing del título exacto acredita a Olivia DeJonge como Dallas."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/gQ43hkgb3jJRBjCtRwx7zEHexic.jpg",
+				"localPath": "/people/olivia-dejonge-nm4609822.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Robert Aramayo",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Jimmy",
+			"tmdbPersonId": 1648346,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1648346",
+					"fact": "Identidad de Robert Aramayo, oficio y filmografía cotejados con el ID exacto de Las muñecas del crimen (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/586460/cast",
+					"fact": "El billing del título exacto acredita a Robert Aramayo como Jimmy."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1wqSZVvB018H2mZbemMSn6gH4zq.jpg",
+				"localPath": "/people/robert-aramayo-nm7075019.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Cynthia Nixon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Una",
+			"tmdbPersonId": 38024,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/38024",
+					"fact": "Identidad de Cynthia Nixon, oficio y filmografía cotejados con el ID exacto de Las muñecas del crimen (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/586460/cast",
+					"fact": "El billing del título exacto acredita a Cynthia Nixon como Una."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sSl5zvn1R56nkbcL52JGO1BY7z0.jpg",
+				"localPath": "/people/cynthia-nixon-nm0633223.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Samrat Chakrabarti",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Sal",
+			"tmdbPersonId": 113693,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/113693",
+					"fact": "Identidad de Samrat Chakrabarti, oficio y filmografía cotejados con el ID exacto de Las muñecas del crimen (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/586460/cast",
+					"fact": "El billing del título exacto acredita a Samrat Chakrabarti como Sal."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yBbJLufuA5Rxy7jhqWHxgMBT2hm.jpg",
+				"localPath": "/people/samrat-chakrabarti-nm1589782.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Shiloh Verrico",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Kid 1",
+			"tmdbPersonId": 2405873,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2405873",
+					"fact": "Identidad de Shiloh Verrico, oficio y filmografía cotejados con el ID exacto de Las muñecas del crimen (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/586460/cast",
+					"fact": "El billing del título exacto acredita a Shiloh Verrico como Kid 1."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vsmT5WhtZeMIe06Zc6JxMPYL2ll.jpg",
+				"localPath": "/people/shiloh-verrico-nm9121760.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rosemary Howard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Doreen",
+			"tmdbPersonId": 130843,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/130843",
+					"fact": "Identidad de Rosemary Howard, oficio y filmografía cotejados con el ID exacto de Las muñecas del crimen (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/586460/cast",
+					"fact": "El billing del título exacto acredita a Rosemary Howard como Doreen."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/DJj5tzb25LanRIeHoNtDccNm7b.jpg",
+				"localPath": "/people/rosemary-howard-nm2674188.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jeff Musillo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Motel Guest - Cross Dresser",
+			"tmdbPersonId": 2598678,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Motel Guest - Cross Dresser cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alberto Bonilla",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Angel",
+			"tmdbPersonId": 205586,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Angel cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alyssa Maria App",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Kid 2",
+			"tmdbPersonId": 2142871,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Kid 2 cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Yvette Lashawn Williams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Peaches",
+			"tmdbPersonId": 2598679,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Peaches cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kelvin McGrue",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Mikey",
+			"tmdbPersonId": 1954098,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mikey cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Schiappa",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Floyd",
+			"tmdbPersonId": 2019038,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Floyd cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Puy Navarro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Sandy",
+			"tmdbPersonId": 2343405,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sandy cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Tuttle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/586460/cast",
+			"screenRole": "Motel Guest",
+			"tmdbPersonId": 1859815,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Motel Guest cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Las muñecas del crimen; se retuvieron 1 créditos de dirección y 7 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Jeff Musillo",
+				"role": "performer",
+				"reason": "Crédito Motel Guest - Cross Dresser cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alberto Bonilla",
+				"role": "performer",
+				"reason": "Crédito Angel cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alyssa Maria App",
+				"role": "performer",
+				"reason": "Crédito Kid 2 cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Yvette Lashawn Williams",
+				"role": "performer",
+				"reason": "Crédito Peaches cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kelvin McGrue",
+				"role": "performer",
+				"reason": "Crédito Mikey cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Schiappa",
+				"role": "performer",
+				"reason": "Crédito Floyd cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Puy Navarro",
+				"role": "performer",
+				"reason": "Crédito Sandy cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Tuttle",
+				"role": "performer",
+				"reason": "Crédito Motel Guest cotejado en el billing completo de Las muñecas del crimen; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

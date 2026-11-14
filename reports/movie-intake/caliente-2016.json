@@ -1,0 +1,259 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "caliente-2016",
+	"title": "Caliente",
+	"year": 2016,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/429405/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/caliente",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt5953674/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Johan Nijenhuis",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 114759,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/114759",
+					"fact": "Identidad de Johan Nijenhuis, oficio y filmografía cotejados con el ID exacto de Caliente (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/429405/cast",
+					"fact": "El billing del título exacto acredita a Johan Nijenhuis en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ywaRbkpG3mgaUYMRQbC8WpXqq31.jpg",
+				"localPath": "/people/johan-nijenhuis-nm0631590.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jim Bakkum",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": null,
+			"tmdbPersonId": 111851,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/111851",
+					"fact": "Identidad de Jim Bakkum, oficio y filmografía cotejados con el ID exacto de Caliente (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/429405/cast",
+					"fact": "El billing del título exacto acredita a Jim Bakkum en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yMCEoysF9P0Aos6ayIxCVHnDRbh.jpg",
+				"localPath": "/people/jim-bakkum-nm1383969.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Martijn Fischer",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": null,
+			"tmdbPersonId": 1388985,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1388985",
+					"fact": "Identidad de Martijn Fischer, oficio y filmografía cotejados con el ID exacto de Caliente (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/429405/cast",
+					"fact": "El billing del título exacto acredita a Martijn Fischer en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ovRIx14Wa9E2WlzSzIpRPN5twC3.jpg",
+				"localPath": "/people/martijn-fischer-nm1410887.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Barbara Sloesen",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": null,
+			"tmdbPersonId": 1365646,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1365646",
+					"fact": "Identidad de Barbara Sloesen, oficio y filmografía cotejados con el ID exacto de Caliente (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/429405/cast",
+					"fact": "El billing del título exacto acredita a Barbara Sloesen en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mNVsebMLrBQ9ti9hR1pbBIn7lld.jpg",
+				"localPath": "/people/barbara-sloesen-nm1575994.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sanne Vogel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": null,
+			"tmdbPersonId": 114758,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/114758",
+					"fact": "Identidad de Sanne Vogel, oficio y filmografía cotejados con el ID exacto de Caliente (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/429405/cast",
+					"fact": "El billing del título exacto acredita a Sanne Vogel en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/18nsQEaimtWO4ZD0SLrErm9l4MW.jpg",
+				"localPath": "/people/sanne-vogel-nm1469068.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Juvat Westendorp",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": null,
+			"tmdbPersonId": 1258939,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1258939",
+					"fact": "Identidad de Juvat Westendorp, oficio y filmografía cotejados con el ID exacto de Caliente (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/429405/cast",
+					"fact": "El billing del título exacto acredita a Juvat Westendorp en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/r4K1V17D4VJt9BTuPf1ga2gFpWy.jpg",
+				"localPath": "/people/juvat-westendorp-nm5580606.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tarikh Janssen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": null,
+			"tmdbPersonId": 1272047,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1272047",
+					"fact": "Identidad de Tarikh Janssen, oficio y filmografía cotejados con el ID exacto de Caliente (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/429405/cast",
+					"fact": "El billing del título exacto acredita a Tarikh Janssen en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/v2i38M9I8CTTBHVvHpI703flM1J.jpg",
+				"localPath": "/people/tarikh-janssen-nm4331536.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Eldrick Gijsbertha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": null,
+			"tmdbPersonId": 1719745,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito sin personaje detallado cotejado en el billing completo de Caliente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aiko Beemsterboer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": "Lies",
+			"tmdbPersonId": 1790805,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1790805",
+					"fact": "Identidad de Aiko Beemsterboer, oficio y filmografía cotejados con el ID exacto de Caliente (2016)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/429405/cast",
+					"fact": "El billing del título exacto acredita a Aiko Beemsterboer como Lies."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ng1nu4yks5cvo2oxWt4W29RLlxQ.jpg",
+				"localPath": "/people/aiko-beemsterboer-nm5333701.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ilse Warringa",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/429405/cast",
+			"screenRole": "Monique",
+			"tmdbPersonId": 1967413,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Monique cotejado en el billing completo de Caliente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Caliente; se retuvieron 1 créditos de dirección y 7 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Eldrick Gijsbertha",
+				"role": "performer",
+				"reason": "Crédito sin personaje detallado cotejado en el billing completo de Caliente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ilse Warringa",
+				"role": "performer",
+				"reason": "Crédito Monique cotejado en el billing completo de Caliente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

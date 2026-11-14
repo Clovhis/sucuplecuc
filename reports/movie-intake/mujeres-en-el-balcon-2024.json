@@ -1,0 +1,811 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "mujeres-en-el-balcon-2024",
+	"title": "Mujeres en el balcón",
+	"year": 2024,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1112466/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 44
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/the-balconettes-2024",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt27721737/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Noémie Merlant",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1385600,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1385600",
+					"fact": "Identidad de Noémie Merlant, oficio y filmografía cotejados con el ID exacto de Mujeres en el balcón (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1112466/cast",
+					"fact": "El billing del título exacto acredita a Noémie Merlant en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/l9ECDc9GGIESuKuT5zxIJknAD33.jpg",
+				"localPath": "/people/noemie-merlant-nm4374524.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Souheila Yacoub",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Ruby",
+			"tmdbPersonId": 2037046,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2037046",
+					"fact": "Identidad de Souheila Yacoub, oficio y filmografía cotejados con el ID exacto de Mujeres en el balcón (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1112466/cast",
+					"fact": "El billing del título exacto acredita a Souheila Yacoub como Ruby."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Souheila%20yacoub%202021%202.jpg?width=640",
+				"localPath": "/people/souheila-yacoub-nm9113893.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sanda Codreanu",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Nicole",
+			"tmdbPersonId": 2533470,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2533470",
+					"fact": "Identidad de Sanda Codreanu, oficio y filmografía cotejados con el ID exacto de Mujeres en el balcón (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1112466/cast",
+					"fact": "El billing del título exacto acredita a Sanda Codreanu como Nicole."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/skyPbjo94KXkz3ptFq9iSzEAHTf.jpg",
+				"localPath": "/people/sanda-codreanu-nm10815521.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Noémie Merlant",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Élise",
+			"tmdbPersonId": 1385600,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1385600",
+					"fact": "Identidad de Noémie Merlant, oficio y filmografía cotejados con el ID exacto de Mujeres en el balcón (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1112466/cast",
+					"fact": "El billing del título exacto acredita a Noémie Merlant como Élise."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/l9ECDc9GGIESuKuT5zxIJknAD33.jpg",
+				"localPath": "/people/noemie-merlant-nm4374524.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lucas Bravo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Voisin d'en Face",
+			"tmdbPersonId": 2417980,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2417980",
+					"fact": "Identidad de Lucas Bravo, oficio y filmografía cotejados con el ID exacto de Mujeres en el balcón (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1112466/cast",
+					"fact": "El billing del título exacto acredita a Lucas Bravo como Voisin d'en Face."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/uO6vMlJBMASyOQMisvnPehjsfJB.jpg",
+				"localPath": "/people/lucas-bravo-nm5575725.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nadège Beausson-Diagne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Denise",
+			"tmdbPersonId": 149988,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/149988",
+					"fact": "Identidad de Nadège Beausson-Diagne, oficio y filmografía cotejados con el ID exacto de Mujeres en el balcón (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1112466/cast",
+					"fact": "El billing del título exacto acredita a Nadège Beausson-Diagne como Denise."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rwZYnWtbR1SOF5J1tLWcKrx0rOh.jpg",
+				"localPath": "/people/nadege-beausson-diagne-nm0064702.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "François Cottrelle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Mari de Denise",
+			"tmdbPersonId": 1511141,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1511141",
+					"fact": "Identidad de François Cottrelle, oficio y filmografía cotejados con el ID exacto de Mujeres en el balcón (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1112466/cast",
+					"fact": "El billing del título exacto acredita a François Cottrelle como Mari de Denise."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zNqG0l4s9z21EeZQEEpWrSI5n4p.jpg",
+				"localPath": "/people/francois-cottrelle-nm0183188.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Christophe Montenez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Paul",
+			"tmdbPersonId": 1622993,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1622993",
+					"fact": "Identidad de Christophe Montenez, oficio y filmografía cotejados con el ID exacto de Mujeres en el balcón (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1112466/cast",
+					"fact": "El billing del título exacto acredita a Christophe Montenez como Paul."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zmeyQ1BBgzOOJNPaEnmtmQh9a98.jpg",
+				"localPath": "/people/christophe-montenez-nm8144032.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Augustin Palvanh",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Dams / Fantôme",
+			"tmdbPersonId": 5396724,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5396724",
+					"fact": "Identidad de Augustin Palvanh, oficio y filmografía cotejados con el ID exacto de Mujeres en el balcón (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1112466/cast",
+					"fact": "El billing del título exacto acredita a Augustin Palvanh como Dams / Fantôme."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/1191228/cache-1071704-1752644712/image-w856.jpg",
+				"localPath": "/people/augustin-palvanh-tmdb-5396724.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Emanuele Carfora",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Diego",
+			"tmdbPersonId": 5269295,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Diego cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Henri Cohen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Gynécologue",
+			"tmdbPersonId": 1173777,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gynécologue cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nasir Bachouche",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Enzo",
+			"tmdbPersonId": 5571087,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Enzo cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Annie Mercier",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "La Voisine",
+			"tmdbPersonId": 286453,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito La Voisine cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jean-François Comminges",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Xavier Duflotte",
+			"tmdbPersonId": 5571090,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Xavier Duflotte cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Hamzah Raja Mohammad",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Caissier",
+			"tmdbPersonId": 5571091,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Caissier cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Amir Baylly",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Tony",
+			"tmdbPersonId": 3917835,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Tony cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alice Griveau",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Katya",
+			"tmdbPersonId": 5571093,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Katya cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Victor Sansano",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Client Ruby",
+			"tmdbPersonId": 3425332,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Client Ruby cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Yassine Douani",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Journaliste TV",
+			"tmdbPersonId": 3498461,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Journaliste TV cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paul Granier",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Fantôme",
+			"tmdbPersonId": 1344818,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pierre-François Créancier",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Fantôme",
+			"tmdbPersonId": 1959144,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Hannil Ghilas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Fantôme",
+			"tmdbPersonId": 3170358,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Boris Bayard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Fantôme",
+			"tmdbPersonId": 5571095,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mickaël Migliorini",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Fantôme",
+			"tmdbPersonId": 2646469,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Thomas Weber",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Fantôme",
+			"tmdbPersonId": 3490545,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Elma Urriaga",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Fantôme",
+			"tmdbPersonId": 5233672,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gabriel Harel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Fantôme",
+			"tmdbPersonId": 1604295,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Samba Diéne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Fantôme",
+			"tmdbPersonId": 5571098,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Fleur Oury",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Apprentie Auteure",
+			"tmdbPersonId": 5571099,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Apprentie Auteure cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Laurent Davienne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Apprenti Auteur",
+			"tmdbPersonId": 5571103,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Apprenti Auteur cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jéssica Quianque",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Modèle Photo",
+			"tmdbPersonId": 5571105,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Modèle Photo cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alexia Lefaix",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Modèle Photo",
+			"tmdbPersonId": 3587911,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Modèle Photo cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Glenn Marausse",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Passant",
+			"tmdbPersonId": 2802416,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ryam Noui",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Passant",
+			"tmdbPersonId": 5571106,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Redha Belaribi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Passant",
+			"tmdbPersonId": 5571107,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alexis Lameda-Waksmann",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Passant",
+			"tmdbPersonId": 5571108,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Damien Béranger",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Passant",
+			"tmdbPersonId": 5571109,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kévin Chassé",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Passant",
+			"tmdbPersonId": 5571110,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robin Denoyer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Passant",
+			"tmdbPersonId": 3501393,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mohamed Benhadda",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Passant",
+			"tmdbPersonId": 5571111,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Senda El Ouni",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Femme de Catalan",
+			"tmdbPersonId": 5571114,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Femme de Catalan cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Barbara Sarreau",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Femme de Catalan",
+			"tmdbPersonId": 5571115,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Femme de Catalan cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Caroline Tyranowicz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Femme de Catalan",
+			"tmdbPersonId": 5571117,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Femme de Catalan cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "César",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1112466/cast",
+			"screenRole": "Brad le Pit",
+			"tmdbPersonId": 5571120,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Brad le Pit cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Mujeres en el balcón; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Emanuele Carfora",
+				"role": "performer",
+				"reason": "Crédito Diego cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Henri Cohen",
+				"role": "performer",
+				"reason": "Crédito Gynécologue cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nasir Bachouche",
+				"role": "performer",
+				"reason": "Crédito Enzo cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Annie Mercier",
+				"role": "performer",
+				"reason": "Crédito La Voisine cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jean-François Comminges",
+				"role": "performer",
+				"reason": "Crédito Xavier Duflotte cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Hamzah Raja Mohammad",
+				"role": "performer",
+				"reason": "Crédito Caissier cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Amir Baylly",
+				"role": "performer",
+				"reason": "Crédito Tony cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alice Griveau",
+				"role": "performer",
+				"reason": "Crédito Katya cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Victor Sansano",
+				"role": "performer",
+				"reason": "Crédito Client Ruby cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Yassine Douani",
+				"role": "performer",
+				"reason": "Crédito Journaliste TV cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paul Granier",
+				"role": "performer",
+				"reason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pierre-François Créancier",
+				"role": "performer",
+				"reason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Hannil Ghilas",
+				"role": "performer",
+				"reason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Boris Bayard",
+				"role": "performer",
+				"reason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mickaël Migliorini",
+				"role": "performer",
+				"reason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Thomas Weber",
+				"role": "performer",
+				"reason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Elma Urriaga",
+				"role": "performer",
+				"reason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gabriel Harel",
+				"role": "performer",
+				"reason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Samba Diéne",
+				"role": "performer",
+				"reason": "Crédito Fantôme cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Fleur Oury",
+				"role": "performer",
+				"reason": "Crédito Apprentie Auteure cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Laurent Davienne",
+				"role": "performer",
+				"reason": "Crédito Apprenti Auteur cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jéssica Quianque",
+				"role": "performer",
+				"reason": "Crédito Modèle Photo cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alexia Lefaix",
+				"role": "performer",
+				"reason": "Crédito Modèle Photo cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Glenn Marausse",
+				"role": "performer",
+				"reason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ryam Noui",
+				"role": "performer",
+				"reason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Redha Belaribi",
+				"role": "performer",
+				"reason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alexis Lameda-Waksmann",
+				"role": "performer",
+				"reason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Damien Béranger",
+				"role": "performer",
+				"reason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kévin Chassé",
+				"role": "performer",
+				"reason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robin Denoyer",
+				"role": "performer",
+				"reason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mohamed Benhadda",
+				"role": "performer",
+				"reason": "Crédito Passant cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Senda El Ouni",
+				"role": "performer",
+				"reason": "Crédito Femme de Catalan cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Barbara Sarreau",
+				"role": "performer",
+				"reason": "Crédito Femme de Catalan cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Caroline Tyranowicz",
+				"role": "performer",
+				"reason": "Crédito Femme de Catalan cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "César",
+				"role": "performer",
+				"reason": "Crédito Brad le Pit cotejado en el billing completo de Mujeres en el balcón; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

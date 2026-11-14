@@ -1,0 +1,347 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "jack-diane-2012",
+	"title": "Jack & Diane",
+	"year": 2012,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/105531/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 15
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/jack-y-diane",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0850677/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Bradley Rust Gray",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 131388,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/131388",
+					"fact": "Identidad de Bradley Rust Gray, oficio y filmografía cotejados con el ID exacto de Jack & Diane (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/105531/cast",
+					"fact": "El billing del título exacto acredita a Bradley Rust Gray en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://m.media-amazon.com/images/M/MV5BMjE2OTkzNzQ2NV5BMl5BanBnXkFtZTYwNzU3ODA1._V1_.jpg",
+				"localPath": "/people/bradley-rust-gray-nm0336486.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Juno Temple",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Diane",
+			"tmdbPersonId": 36594,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/36594",
+					"fact": "Identidad de Juno Temple, oficio y filmografía cotejados con el ID exacto de Jack & Diane (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/105531/cast",
+					"fact": "El billing del título exacto acredita a Juno Temple como Diane."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Juno%20Temple%20at%20Sundance%202011.jpg?width=640",
+				"localPath": "/people/juno-temple-nm1017334.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Riley Keough",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Jack",
+			"tmdbPersonId": 98522,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/98522",
+					"fact": "Identidad de Riley Keough, oficio y filmografía cotejados con el ID exacto de Jack & Diane (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/105531/cast",
+					"fact": "El billing del título exacto acredita a Riley Keough como Jack."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/103513/cache-139157-1603356262/image-w856.jpg",
+				"localPath": "/people/riley-keough-nm2142336.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kylie Minogue",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Tara",
+			"tmdbPersonId": 12207,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/12207",
+					"fact": "Identidad de Kylie Minogue, oficio y filmografía cotejados con el ID exacto de Jack & Diane (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/105531/cast",
+					"fact": "El billing del título exacto acredita a Kylie Minogue como Tara."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sVe6DQ1iFlk4nad0Bd3WVVVj23P.jpg",
+				"localPath": "/people/kylie-minogue-nm0001541.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Cara Seymour",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Aunt Linda",
+			"tmdbPersonId": 2617,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2617",
+					"fact": "Identidad de Cara Seymour, oficio y filmografía cotejados con el ID exacto de Jack & Diane (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/105531/cast",
+					"fact": "El billing del título exacto acredita a Cara Seymour como Aunt Linda."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dYzhA0tw1OPU50vtXsfgSGKSwpf.jpg",
+				"localPath": "/people/cara-seymour-nm0786806.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lou Taylor Pucci",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Tom",
+			"tmdbPersonId": 17441,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17441",
+					"fact": "Identidad de Lou Taylor Pucci, oficio y filmografía cotejados con el ID exacto de Jack & Diane (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/105531/cast",
+					"fact": "El billing del título exacto acredita a Lou Taylor Pucci como Tom."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lou%20Taylor%20Pucci%20WonderCon%202013.jpg?width=640",
+				"localPath": "/people/lou-taylor-pucci-nm1086384.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dane DeHaan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Chris",
+			"tmdbPersonId": 122889,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/122889",
+					"fact": "Identidad de Dane DeHaan, oficio y filmografía cotejados con el ID exacto de Jack & Diane (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/105531/cast",
+					"fact": "El billing del título exacto acredita a Dane DeHaan como Chris."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dane%20DeHaan%20by%20Gage%20Skidmore.jpg?width=1200",
+				"localPath": "/people/dane-dehaan-nm2851530.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Michael Chernus",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Jaimie",
+			"tmdbPersonId": 87070,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/87070",
+					"fact": "Identidad de Michael Chernus, oficio y filmografía cotejados con el ID exacto de Jack & Diane (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/105531/cast",
+					"fact": "El billing del título exacto acredita a Michael Chernus como Jaimie."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tqtVxv36oQf4LlHpR3nlfUCm6M4.jpg",
+				"localPath": "/people/michael-chernus-nm1985974.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Neal Huff",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Jerry",
+			"tmdbPersonId": 58544,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/58544",
+					"fact": "Identidad de Neal Huff, oficio y filmografía cotejados con el ID exacto de Jack & Diane (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/105531/cast",
+					"fact": "El billing del título exacto acredita a Neal Huff como Jerry."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/iNvUcnFm4O3tESbemiMFdMJH2zp.jpg",
+				"localPath": "/people/neal-huff-nm0400223.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jen Ponton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Stacy",
+			"tmdbPersonId": 1416580,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Stacy cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Haviland Morris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Jack's Mom",
+			"tmdbPersonId": 16181,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jack's Mom cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Leo Fitzpatrick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Joby",
+			"tmdbPersonId": 57387,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Joby cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rock Kohli",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Cab Driver",
+			"tmdbPersonId": 170382,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cab Driver cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Zohren Weiss",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Punk Kid",
+			"tmdbPersonId": 2845670,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Punk Kid cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lena Góra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/105531/cast",
+			"screenRole": "Kissing Girl (uncredited)",
+			"tmdbPersonId": 1754597,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Kissing Girl (uncredited) cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Jack & Diane; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Jen Ponton",
+				"role": "performer",
+				"reason": "Crédito Stacy cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Haviland Morris",
+				"role": "performer",
+				"reason": "Crédito Jack's Mom cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Leo Fitzpatrick",
+				"role": "performer",
+				"reason": "Crédito Joby cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rock Kohli",
+				"role": "performer",
+				"reason": "Crédito Cab Driver cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Zohren Weiss",
+				"role": "performer",
+				"reason": "Crédito Punk Kid cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lena Góra",
+				"role": "performer",
+				"reason": "Crédito Kissing Girl (uncredited) cotejado en el billing completo de Jack & Diane; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

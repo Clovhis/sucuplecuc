@@ -1,0 +1,811 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-critico-de-teatro-2023",
+	"title": "El crítico de teatro",
+	"year": 2023,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/992940/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 44
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/the-critic",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt13457790/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Anand Tucker",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 26481,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/26481",
+					"fact": "Identidad de Anand Tucker, oficio y filmografía cotejados con el ID exacto de El crítico de teatro (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/992940/cast",
+					"fact": "El billing del título exacto acredita a Anand Tucker en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mmR4URdOgo21p3VDzUb63PrtwWD.jpg",
+				"localPath": "/people/anand-tucker-nm0875793.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ian McKellen",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Jimmy Erskine",
+			"tmdbPersonId": 1327,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1327",
+					"fact": "Identidad de Ian McKellen, oficio y filmografía cotejados con el ID exacto de El crítico de teatro (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/992940/cast",
+					"fact": "El billing del título exacto acredita a Ian McKellen como Jimmy Erskine."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/McKellenRichmnd040219-5%20(46275370484)%20(cropped).jpg?width=1200",
+				"localPath": "/people/ian-mckellen-nm0005212.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gemma Arterton",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Nina Land",
+			"tmdbPersonId": 59620,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/59620",
+					"fact": "Identidad de Gemma Arterton, oficio y filmografía cotejados con el ID exacto de El crítico de teatro (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/992940/cast",
+					"fact": "El billing del título exacto acredita a Gemma Arterton como Nina Land."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gemma%20Arterton%20at%20The%20Prince's%20Trust%20Awards%20(cropped).jpg?width=640",
+				"localPath": "/people/gemma-arterton-nm2605345.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Mark Strong",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "David Brooke",
+			"tmdbPersonId": 2983,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2983",
+					"fact": "Identidad de Mark Strong, oficio y filmografía cotejados con el ID exacto de El crítico de teatro (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/992940/cast",
+					"fact": "El billing del título exacto acredita a Mark Strong como David Brooke."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3cNmatYsoifytg7TfQhI1EHow3v.jpg",
+				"localPath": "/people/mark-strong-nm0835016.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lesley Manville",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Annabel Land",
+			"tmdbPersonId": 72305,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/72305",
+					"fact": "Identidad de Lesley Manville, oficio y filmografía cotejados con el ID exacto de El crítico de teatro (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/992940/cast",
+					"fact": "El billing del título exacto acredita a Lesley Manville como Annabel Land."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Leslie%20Manville%20(cropped).jpg?width=640",
+				"localPath": "/people/lesley-manville-nm0544334.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ben Barnes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Stephen Wyley",
+			"tmdbPersonId": 25130,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/25130",
+					"fact": "Identidad de Ben Barnes, oficio y filmografía cotejados con el ID exacto de El crítico de teatro (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/992940/cast",
+					"fact": "El billing del título exacto acredita a Ben Barnes como Stephen Wyley."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/k0tAM9XK0s4n0VQq1jX5cGf9uAa.jpg",
+				"localPath": "/people/ben-barnes-nm1602660.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Romola Garai",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Cora Wyley",
+			"tmdbPersonId": 6979,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6979",
+					"fact": "Identidad de Romola Garai, oficio y filmografía cotejados con el ID exacto de El crítico de teatro (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/992940/cast",
+					"fact": "El billing del título exacto acredita a Romola Garai como Cora Wyley."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ywRx2yXWjkJAVbyEVQNXziSwVLu.jpg",
+				"localPath": "/people/romola-garai-nm0304801.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alfred Enoch",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Tom Tunner",
+			"tmdbPersonId": 234923,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/234923",
+					"fact": "Identidad de Alfred Enoch, oficio y filmografía cotejados con el ID exacto de El crítico de teatro (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/992940/cast",
+					"fact": "El billing del título exacto acredita a Alfred Enoch como Tom Tunner."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eEVvPHmxRBcEGqtoTujncmwNDhR.jpg",
+				"localPath": "/people/alfred-enoch-nm0257917.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ron Cook",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Hugh Morris",
+			"tmdbPersonId": 5319,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5319",
+					"fact": "Identidad de Ron Cook, oficio y filmografía cotejados con el ID exacto de El crítico de teatro (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/992940/cast",
+					"fact": "El billing del título exacto acredita a Ron Cook como Hugh Morris."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/gRHsTI9gwajULovSd2TVHROEEMj.jpg",
+				"localPath": "/people/ron-cook-nm0177267.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Claire Skinner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Mary Brooke",
+			"tmdbPersonId": 42641,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mary Brooke cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Matthew Cottle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Graham Meadows",
+			"tmdbPersonId": 195606,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Graham Meadows cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Beau Gadsdon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Freya",
+			"tmdbPersonId": 1725276,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Freya cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nikesh Patel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Ferdy Harwood",
+			"tmdbPersonId": 1069504,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ferdy Harwood cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rebecca Gethings",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Joan",
+			"tmdbPersonId": 1503872,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Joan cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Éva Magyar",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Dolly Langdon",
+			"tmdbPersonId": 1658940,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dolly Langdon cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jay Simpson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Slyfield",
+			"tmdbPersonId": 86467,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Slyfield cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jacob James Beswick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Robbie",
+			"tmdbPersonId": 1805068,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Robbie cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nicholas Bishop",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Richard Pugh",
+			"tmdbPersonId": 1479303,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Richard Pugh cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Albie Marber",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Lennie",
+			"tmdbPersonId": 1675781,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lennie cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Debra Gillett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Mrs. Keefe",
+			"tmdbPersonId": 141946,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mrs. Keefe cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jake Neads",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Flamineo",
+			"tmdbPersonId": 3310895,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Flamineo cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Griffin Stevens",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Lodovico",
+			"tmdbPersonId": 1793936,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lodovico cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joe Coen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Brachiano",
+			"tmdbPersonId": 1698788,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Brachiano cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Oliver Shaw",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Rowan",
+			"tmdbPersonId": 4178602,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rowan cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Avye Leventis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Lizzie",
+			"tmdbPersonId": 2059519,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lizzie cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tom Padley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Police Officer",
+			"tmdbPersonId": 1652638,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Police Officer cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ed Madden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Ivan Franklin",
+			"tmdbPersonId": 5072837,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ivan Franklin cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jasper Britton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Gideon Lambert",
+			"tmdbPersonId": 83005,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gideon Lambert cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pearce Quigley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Mr. Morrisey",
+			"tmdbPersonId": 119415,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mr. Morrisey cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nick Moss",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Blackshirt",
+			"tmdbPersonId": 1545946,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Blackshirt cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tom Rouvray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Giovanni",
+			"tmdbPersonId": 5072846,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Giovanni cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Louis Pieris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Doctor Julio",
+			"tmdbPersonId": 3640539,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Doctor Julio cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aisling Longshaw",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Cornelia",
+			"tmdbPersonId": 5072850,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cornelia cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Magnus Gordon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Gasparo",
+			"tmdbPersonId": 3900848,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gasparo cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eleanor Wyld",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Isabella / Viola",
+			"tmdbPersonId": 209579,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Isabella / Viola cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Shanika Ocean",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Zanche",
+			"tmdbPersonId": 2178960,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Zanche cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ross Armstrong",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Oswald Mosley (uncredited)",
+			"tmdbPersonId": 1576829,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Oswald Mosley (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cara Ballingall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Daphne (uncredited)",
+			"tmdbPersonId": 4022913,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Daphne (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Grant Crookes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Critic (uncredited)",
+			"tmdbPersonId": 1718377,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Critic (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Libbi Fox",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Diana Guinness (uncredited)",
+			"tmdbPersonId": 4659742,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Diana Guinness (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ty Hurley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Private Members Club / Bar Patron (uncredited)",
+			"tmdbPersonId": 2417290,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Private Members Club / Bar Patron (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James McNicholas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Hospital PC (uncredited)",
+			"tmdbPersonId": 2347103,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hospital PC (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Thrower",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Cafe Owner (uncredited)",
+			"tmdbPersonId": 4323486,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cafe Owner (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paul Warwick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/992940/cast",
+			"screenRole": "Distinguished Gentleman (uncredited)",
+			"tmdbPersonId": 2541728,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Distinguished Gentleman (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de El crítico de teatro; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Claire Skinner",
+				"role": "performer",
+				"reason": "Crédito Mary Brooke cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Matthew Cottle",
+				"role": "performer",
+				"reason": "Crédito Graham Meadows cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Beau Gadsdon",
+				"role": "performer",
+				"reason": "Crédito Freya cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nikesh Patel",
+				"role": "performer",
+				"reason": "Crédito Ferdy Harwood cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rebecca Gethings",
+				"role": "performer",
+				"reason": "Crédito Joan cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Éva Magyar",
+				"role": "performer",
+				"reason": "Crédito Dolly Langdon cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jay Simpson",
+				"role": "performer",
+				"reason": "Crédito Slyfield cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jacob James Beswick",
+				"role": "performer",
+				"reason": "Crédito Robbie cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nicholas Bishop",
+				"role": "performer",
+				"reason": "Crédito Richard Pugh cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Albie Marber",
+				"role": "performer",
+				"reason": "Crédito Lennie cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Debra Gillett",
+				"role": "performer",
+				"reason": "Crédito Mrs. Keefe cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jake Neads",
+				"role": "performer",
+				"reason": "Crédito Flamineo cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Griffin Stevens",
+				"role": "performer",
+				"reason": "Crédito Lodovico cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joe Coen",
+				"role": "performer",
+				"reason": "Crédito Brachiano cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Oliver Shaw",
+				"role": "performer",
+				"reason": "Crédito Rowan cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Avye Leventis",
+				"role": "performer",
+				"reason": "Crédito Lizzie cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tom Padley",
+				"role": "performer",
+				"reason": "Crédito Police Officer cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ed Madden",
+				"role": "performer",
+				"reason": "Crédito Ivan Franklin cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jasper Britton",
+				"role": "performer",
+				"reason": "Crédito Gideon Lambert cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pearce Quigley",
+				"role": "performer",
+				"reason": "Crédito Mr. Morrisey cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nick Moss",
+				"role": "performer",
+				"reason": "Crédito Blackshirt cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tom Rouvray",
+				"role": "performer",
+				"reason": "Crédito Giovanni cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Louis Pieris",
+				"role": "performer",
+				"reason": "Crédito Doctor Julio cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aisling Longshaw",
+				"role": "performer",
+				"reason": "Crédito Cornelia cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Magnus Gordon",
+				"role": "performer",
+				"reason": "Crédito Gasparo cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eleanor Wyld",
+				"role": "performer",
+				"reason": "Crédito Isabella / Viola cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Shanika Ocean",
+				"role": "performer",
+				"reason": "Crédito Zanche cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ross Armstrong",
+				"role": "performer",
+				"reason": "Crédito Oswald Mosley (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cara Ballingall",
+				"role": "performer",
+				"reason": "Crédito Daphne (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Grant Crookes",
+				"role": "performer",
+				"reason": "Crédito Critic (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Libbi Fox",
+				"role": "performer",
+				"reason": "Crédito Diana Guinness (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ty Hurley",
+				"role": "performer",
+				"reason": "Crédito Private Members Club / Bar Patron (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James McNicholas",
+				"role": "performer",
+				"reason": "Crédito Hospital PC (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Thrower",
+				"role": "performer",
+				"reason": "Crédito Cafe Owner (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paul Warwick",
+				"role": "performer",
+				"reason": "Crédito Distinguished Gentleman (uncredited) cotejado en el billing completo de El crítico de teatro; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

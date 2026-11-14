@@ -1,0 +1,451 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "the-strange-ones-2017",
+	"title": "The Strange Ones",
+	"year": 2017,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/426258/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 21
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/the-strange-ones-2018",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt6014904/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Lauren Wolkstein",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1191348,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1191348",
+					"fact": "Identidad de Lauren Wolkstein, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a Lauren Wolkstein en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/iYAHjKmsbzi7Ev0B4ypau2SsVKk.jpg",
+				"localPath": "/people/lauren-wolkstein-nm2171388.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Christopher Radcliff",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1709464,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1709464",
+					"fact": "Identidad de Christopher Radcliff, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a Christopher Radcliff en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/uCXAbFswtWIont78E36cpBC9IEI.jpg",
+				"localPath": "/people/christopher-radcliff-nm3503400.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alex Pettyfer",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Nick",
+			"tmdbPersonId": 61363,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/61363",
+					"fact": "Identidad de Alex Pettyfer, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a Alex Pettyfer como Nick."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jcejkad2OWB71Bz1RRc4Ib0961k.jpg",
+				"localPath": "/people/alex-pettyfer-nm1641117.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "James Freedson-Jackson",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Sam",
+			"tmdbPersonId": 1397783,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1397783",
+					"fact": "Identidad de James Freedson-Jackson, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a James Freedson-Jackson como Sam."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oWYiNpLFKMALq7pEt62XWFevQjO.jpg",
+				"localPath": "/people/james-freedson-jackson-nm6627667.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Marin Ireland",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Crystal",
+			"tmdbPersonId": 164094,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/164094",
+					"fact": "Identidad de Marin Ireland, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a Marin Ireland como Crystal."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jAIOQNraHjvIAdqk81QDV5Phupp.jpg",
+				"localPath": "/people/marin-ireland-nm1677477.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Cindy Cheung",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Sarah's Mother",
+			"tmdbPersonId": 58619,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/58619",
+					"fact": "Identidad de Cindy Cheung, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a Cindy Cheung como Sarah's Mother."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/j7zNyJHlAxqrsIUZYOObssZnj5s.jpg",
+				"localPath": "/people/cindy-cheung-nm0156461.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Melanie Nicholls-King",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Detective Reynolds",
+			"tmdbPersonId": 1212964,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1212964",
+					"fact": "Identidad de Melanie Nicholls-King, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a Melanie Nicholls-King como Detective Reynolds."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lgDou5t3q8IsW5IlyJJtzVPESvz.jpg",
+				"localPath": "/people/melanie-nicholls-king-nm0629517.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gene Jones",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Gary",
+			"tmdbPersonId": 1194944,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1194944",
+					"fact": "Identidad de Gene Jones, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a Gene Jones como Gary."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bafq3sKRaz20gZHfyaIY8E93K3w.jpg",
+				"localPath": "/people/gene-jones-nm0428122.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Owen Campbell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Luke",
+			"tmdbPersonId": 132220,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/132220",
+					"fact": "Identidad de Owen Campbell, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a Owen Campbell como Luke."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qP1NpcKcLi7fQzD4GPW2J74emib.jpg",
+				"localPath": "/people/owen-campbell-nm3338805.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Emily Althaus",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Kelly",
+			"tmdbPersonId": 1774266,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1774266",
+					"fact": "Identidad de Emily Althaus, oficio y filmografía cotejados con el ID exacto de The Strange Ones (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/426258/cast",
+					"fact": "El billing del título exacto acredita a Emily Althaus como Kelly."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2X4Ig3KrvHy9An4mQoZtU3yZaCe.jpg",
+				"localPath": "/people/emily-althaus-nm4279268.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Laurent Rejto",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Man in Truck",
+			"tmdbPersonId": 1084956,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man in Truck cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Will Blomker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Robert",
+			"tmdbPersonId": 1709465,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Robert cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tobias Campbell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Jeremiah",
+			"tmdbPersonId": 118402,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jeremiah cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Allen Fawcett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Rest Stop Attendant",
+			"tmdbPersonId": 1947032,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rest Stop Attendant cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cliff Ferraro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Cop",
+			"tmdbPersonId": 1614440,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cop cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Betsy Holt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Diner Waitress",
+			"tmdbPersonId": 1597546,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Diner Waitress cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Birgit Huppuch",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Dr. Faller",
+			"tmdbPersonId": 1506489,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dr. Faller cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sara Kiener",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Counselor",
+			"tmdbPersonId": 1499452,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Counselor cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Sitler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Male Hiker",
+			"tmdbPersonId": 1386019,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Male Hiker cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Olivia Wang",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Sarah",
+			"tmdbPersonId": 1947034,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sarah cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sheila Stasack",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/426258/cast",
+			"screenRole": "Female Hiker",
+			"tmdbPersonId": 1947033,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Female Hiker cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de The Strange Ones; se retuvieron 2 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Laurent Rejto",
+				"role": "performer",
+				"reason": "Crédito Man in Truck cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Will Blomker",
+				"role": "performer",
+				"reason": "Crédito Robert cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tobias Campbell",
+				"role": "performer",
+				"reason": "Crédito Jeremiah cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Allen Fawcett",
+				"role": "performer",
+				"reason": "Crédito Rest Stop Attendant cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cliff Ferraro",
+				"role": "performer",
+				"reason": "Crédito Cop cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Betsy Holt",
+				"role": "performer",
+				"reason": "Crédito Diner Waitress cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Birgit Huppuch",
+				"role": "performer",
+				"reason": "Crédito Dr. Faller cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sara Kiener",
+				"role": "performer",
+				"reason": "Crédito Counselor cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Sitler",
+				"role": "performer",
+				"reason": "Crédito Male Hiker cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Olivia Wang",
+				"role": "performer",
+				"reason": "Crédito Sarah cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sheila Stasack",
+				"role": "performer",
+				"reason": "Crédito Female Hiker cotejado en el billing completo de The Strange Ones; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

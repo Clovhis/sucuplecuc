@@ -1,0 +1,627 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "underworld-el-despertar-2012",
+	"title": "Underworld: El despertar",
+	"year": 2012,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/52520/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 32
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/underworld-el-despertar",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt1496025/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Måns Mårlind",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 80923,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/80923",
+					"fact": "Identidad de Måns Mårlind, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a Måns Mårlind en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cwREhDorVXl73gE25absnlsClIN.jpg",
+				"localPath": "/people/mans-marlind-nm0617523.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Björn Stein",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 80924,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/80924",
+					"fact": "Identidad de Björn Stein, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a Björn Stein en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pcynK98rOCnZF9wEjSuVNQpyCOC.jpg",
+				"localPath": "/people/bjorn-stein-nm0825407.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kate Beckinsale",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Selene",
+			"tmdbPersonId": 3967,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3967",
+					"fact": "Identidad de Kate Beckinsale, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a Kate Beckinsale como Selene."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kate%20Beckinsale%20Comic-Con%202011%20(Cropped).jpg?width=1200",
+				"localPath": "/people/kate-beckinsale-nm0000295.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Stephen Rea",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Dr. Jacob Lane",
+			"tmdbPersonId": 9029,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/9029",
+					"fact": "Identidad de Stephen Rea, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a Stephen Rea como Dr. Jacob Lane."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephen%20Rea%20at%20JDIFF%202012.jpg?width=640",
+				"localPath": "/people/stephen-rea-nm0001653.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Michael Ealy",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Detective Sebastian",
+			"tmdbPersonId": 8177,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8177",
+					"fact": "Identidad de Michael Ealy, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a Michael Ealy como Detective Sebastian."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rOaJMKiy2JcwhRuJZ977kOvFQRS.jpg",
+				"localPath": "/people/michael-ealy-nm1013003.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Theo James",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "David",
+			"tmdbPersonId": 587020,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/587020",
+					"fact": "Identidad de Theo James, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a Theo James como David."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/g4yeW1EgIpyht0fy1stv7EXUmPC.jpg",
+				"localPath": "/people/theo-james-nm3772243.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "India Eisley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Eve",
+			"tmdbPersonId": 221116,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/221116",
+					"fact": "Identidad de India Eisley, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a India Eisley como Eve."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7dmchBMMzEvUG7pkEGYdyQ35Y3F.jpg",
+				"localPath": "/people/india-eisley-nm2086223.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Charles Dance",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Thomas",
+			"tmdbPersonId": 4391,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4391",
+					"fact": "Identidad de Charles Dance, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a Charles Dance como Thomas."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Dance%202012%20(cropped).jpg?width=640",
+				"localPath": "/people/charles-dance-nm0001097.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sandrine Holt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Lida",
+			"tmdbPersonId": 65345,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/65345",
+					"fact": "Identidad de Sandrine Holt, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a Sandrine Holt como Lida."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qvuH2mRmfG2yIchpsHefprcKYLK.jpg",
+				"localPath": "/people/sandrine-holt-nm0002142.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sanny van Heteren",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "British newscaster",
+			"tmdbPersonId": 115177,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/115177",
+					"fact": "Identidad de Sanny van Heteren, oficio y filmografía cotejados con el ID exacto de Underworld: El despertar (2012)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/52520/cast",
+					"fact": "El billing del título exacto acredita a Sanny van Heteren como British newscaster."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1tf5L6W4g3SDIBdzqG06fQmUV9r.jpg",
+				"localPath": "/people/sanny-van-heteren-nm0887110.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jacob Blair",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Kolb (Officer)",
+			"tmdbPersonId": 208069,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Kolb (Officer) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Lawrenson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Waterfront Cop",
+			"tmdbPersonId": 211958,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waterfront Cop cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kurt Max Runte",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Leader of the Troop",
+			"tmdbPersonId": 60721,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Leader of the Troop cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marvin Duerkholz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Lestroy",
+			"tmdbPersonId": 582923,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lestroy cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ron Wear",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Jack Fletcher",
+			"tmdbPersonId": 928199,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jack Fletcher cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Richard Cetrone",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Lycan 1",
+			"tmdbPersonId": 12371,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lycan 1 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dan Payne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Lycan 2",
+			"tmdbPersonId": 85505,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lycan 2 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mark Gibbon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Announcing Guard",
+			"tmdbPersonId": 118459,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Announcing Guard cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Benita Ha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Surgical Nurse",
+			"tmdbPersonId": 75532,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Surgical Nurse cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tyler McClendon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Scientist",
+			"tmdbPersonId": 168540,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Scientist cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Panou",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Old City Cop #1",
+			"tmdbPersonId": 1219446,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Old City Cop #1 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ian Rozylo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Old City Cop #2",
+			"tmdbPersonId": 1475089,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Old City Cop #2 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kristen Holden-Ried",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Quint Lane",
+			"tmdbPersonId": 557840,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Quint Lane cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Innes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Medical Supervisor",
+			"tmdbPersonId": 173006,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Medical Supervisor cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lee Majdoub",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Desk Guard",
+			"tmdbPersonId": 208677,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Desk Guard cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Catlin Adams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Olivia",
+			"tmdbPersonId": 52030,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Olivia cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Adam Greydon Reid",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Med Tech",
+			"tmdbPersonId": 939457,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Med Tech cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christian Tessier",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Security Guard #1",
+			"tmdbPersonId": 43612,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Security Guard #1 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Wes Bentley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Antigen Scientist (uncredited)",
+			"tmdbPersonId": 8210,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Antigen Scientist (uncredited) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Scott Speedman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Michael (archive footage) (uncredited)",
+			"tmdbPersonId": 100,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Michael (archive footage) (uncredited) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joe Censoplano",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Cadillac Driver (uncredited)",
+			"tmdbPersonId": 1608628,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cadillac Driver (uncredited) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Preston Cook",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/52520/cast",
+			"screenRole": "Antigen Surgeon (uncredited)",
+			"tmdbPersonId": 1608629,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Antigen Surgeon (uncredited) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Underworld: El despertar; se retuvieron 2 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Jacob Blair",
+				"role": "performer",
+				"reason": "Crédito Kolb (Officer) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Lawrenson",
+				"role": "performer",
+				"reason": "Crédito Waterfront Cop cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kurt Max Runte",
+				"role": "performer",
+				"reason": "Crédito Leader of the Troop cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marvin Duerkholz",
+				"role": "performer",
+				"reason": "Crédito Lestroy cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ron Wear",
+				"role": "performer",
+				"reason": "Crédito Jack Fletcher cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Richard Cetrone",
+				"role": "performer",
+				"reason": "Crédito Lycan 1 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dan Payne",
+				"role": "performer",
+				"reason": "Crédito Lycan 2 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mark Gibbon",
+				"role": "performer",
+				"reason": "Crédito Announcing Guard cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Benita Ha",
+				"role": "performer",
+				"reason": "Crédito Surgical Nurse cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tyler McClendon",
+				"role": "performer",
+				"reason": "Crédito Scientist cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Panou",
+				"role": "performer",
+				"reason": "Crédito Old City Cop #1 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ian Rozylo",
+				"role": "performer",
+				"reason": "Crédito Old City Cop #2 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kristen Holden-Ried",
+				"role": "performer",
+				"reason": "Crédito Quint Lane cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Innes",
+				"role": "performer",
+				"reason": "Crédito Medical Supervisor cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lee Majdoub",
+				"role": "performer",
+				"reason": "Crédito Desk Guard cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Catlin Adams",
+				"role": "performer",
+				"reason": "Crédito Olivia cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Adam Greydon Reid",
+				"role": "performer",
+				"reason": "Crédito Med Tech cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christian Tessier",
+				"role": "performer",
+				"reason": "Crédito Security Guard #1 cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Wes Bentley",
+				"role": "performer",
+				"reason": "Crédito Antigen Scientist (uncredited) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Scott Speedman",
+				"role": "performer",
+				"reason": "Crédito Michael (archive footage) (uncredited) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joe Censoplano",
+				"role": "performer",
+				"reason": "Crédito Cadillac Driver (uncredited) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Preston Cook",
+				"role": "performer",
+				"reason": "Crédito Antigen Surgeon (uncredited) cotejado en el billing completo de Underworld: El despertar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,391 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "instinto-maternal-2024",
+	"title": "Instinto maternal",
+	"year": 2024,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/758679/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 18
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/mothers-instinct",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt13397574/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Benoît Delhomme",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 21655,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/21655",
+					"fact": "Identidad de Benoît Delhomme, oficio y filmografía cotejados con el ID exacto de Instinto maternal (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/758679/cast",
+					"fact": "El billing del título exacto acredita a Benoît Delhomme en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qa2h6tyIG4iIc700VN7acYnhU4v.jpg",
+				"localPath": "/people/benoit-delhomme-nm0217120.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jessica Chastain",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Alice",
+			"tmdbPersonId": 83002,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/83002",
+					"fact": "Identidad de Jessica Chastain, oficio y filmografía cotejados con el ID exacto de Instinto maternal (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/758679/cast",
+					"fact": "El billing del título exacto acredita a Jessica Chastain como Alice."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessica%20Chastain-64424%20(cropped).jpg?width=1200",
+				"localPath": "/people/jessica-chastain-nm1567113.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Anne Hathaway",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Céline",
+			"tmdbPersonId": 1813,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1813",
+					"fact": "Identidad de Anne Hathaway, oficio y filmografía cotejados con el ID exacto de Instinto maternal (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/758679/cast",
+					"fact": "El billing del título exacto acredita a Anne Hathaway como Céline."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/AnneHathaway-byPhilipRomano3.jpg?width=640",
+				"localPath": "/people/anne-hathaway-nm0004266.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Anders Danielsen Lie",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Simon",
+			"tmdbPersonId": 71610,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/71610",
+					"fact": "Identidad de Anders Danielsen Lie, oficio y filmografía cotejados con el ID exacto de Instinto maternal (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/758679/cast",
+					"fact": "El billing del título exacto acredita a Anders Danielsen Lie como Simon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg",
+				"localPath": "/people/anders-danielsen-lie-71610.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Josh Charles",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Damian",
+			"tmdbPersonId": 2694,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2694",
+					"fact": "Identidad de Josh Charles, oficio y filmografía cotejados con el ID exacto de Instinto maternal (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/758679/cast",
+					"fact": "El billing del título exacto acredita a Josh Charles como Damian."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xmFdIoFKVRNUmXaslBlErA3UHfF.jpg",
+				"localPath": "/people/josh-charles-nm0001038.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Eamon Patrick O'Connell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Theo",
+			"tmdbPersonId": 4441779,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4441779",
+					"fact": "Identidad de Eamon Patrick O'Connell, oficio y filmografía cotejados con el ID exacto de Instinto maternal (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/758679/cast",
+					"fact": "El billing del título exacto acredita a Eamon Patrick O'Connell como Theo."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm14717348/",
+					"fact": "La biografía y filmografía identifican a Theo en Mothers’ Instinct junto a Chastain y Hathaway."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://cloudimages2.broadwayworld.com/upload13/35678/66F27037-EEE0-4242-A17E62C06F06934D.jpg?format=jpg&width=1200",
+				"localPath": "/people/eamon-patrick-o-connell-nm14717348.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Caroline Lagerfelt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Grannny Jean",
+			"tmdbPersonId": 1213094,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1213094",
+					"fact": "Identidad de Caroline Lagerfelt, oficio y filmografía cotejados con el ID exacto de Instinto maternal (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/758679/cast",
+					"fact": "El billing del título exacto acredita a Caroline Lagerfelt como Grannny Jean."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8ynemfG1ypTk4QCCW4UvwfVNDYi.jpg",
+				"localPath": "/people/caroline-lagerfelt-nm0481222.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Baylen D. Bielitz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Max",
+			"tmdbPersonId": 2965525,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2965525",
+					"fact": "Identidad de Baylen D. Bielitz, oficio y filmografía cotejados con el ID exacto de Instinto maternal (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/758679/cast",
+					"fact": "El billing del título exacto acredita a Baylen D. Bielitz como Max."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tUNUsTXuCYmG2tp9TjqnrxAuQHg.jpg",
+				"localPath": "/people/baylen-d-bielitz-nm10862947.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Steve Routman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Medical Examiner",
+			"tmdbPersonId": 1232531,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Medical Examiner cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Keeley Miller",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Pregnant Mother",
+			"tmdbPersonId": 3473979,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pregnant Mother cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joel Nagle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Attorney",
+			"tmdbPersonId": 1675606,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Attorney cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "T.L. Flint",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Officer",
+			"tmdbPersonId": 3469125,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Officer cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alexander Blaise",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Dr. Wallace",
+			"tmdbPersonId": 1257863,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dr. Wallace cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Scott Robertson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Judge",
+			"tmdbPersonId": 2300838,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Judge cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Larry Petersen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Pastor",
+			"tmdbPersonId": 1656546,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pastor cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gavin Cox",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Singing Boy #1",
+			"tmdbPersonId": 5109870,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Singing Boy #1 cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Arlo Smith",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Singing Boy #2",
+			"tmdbPersonId": 5484836,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Singing Boy #2 cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gina Francia",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/758679/cast",
+			"screenRole": "Admitting Nurse",
+			"tmdbPersonId": 6653596,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Admitting Nurse cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Instinto maternal; se retuvieron 1 créditos de dirección y 7 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Steve Routman",
+				"role": "performer",
+				"reason": "Crédito Medical Examiner cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Keeley Miller",
+				"role": "performer",
+				"reason": "Crédito Pregnant Mother cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joel Nagle",
+				"role": "performer",
+				"reason": "Crédito Attorney cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "T.L. Flint",
+				"role": "performer",
+				"reason": "Crédito Officer cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alexander Blaise",
+				"role": "performer",
+				"reason": "Crédito Dr. Wallace cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Scott Robertson",
+				"role": "performer",
+				"reason": "Crédito Judge cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Larry Petersen",
+				"role": "performer",
+				"reason": "Crédito Pastor cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gavin Cox",
+				"role": "performer",
+				"reason": "Crédito Singing Boy #1 cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Arlo Smith",
+				"role": "performer",
+				"reason": "Crédito Singing Boy #2 cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gina Francia",
+				"role": "performer",
+				"reason": "Crédito Admitting Nurse cotejado en el billing completo de Instinto maternal; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

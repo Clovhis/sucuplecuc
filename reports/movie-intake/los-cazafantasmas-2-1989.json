@@ -1,0 +1,1211 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "los-cazafantasmas-2-1989",
+	"title": "Los cazafantasmas 2",
+	"year": 1989,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/2978/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 69
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/los-cazafantasmas-ii",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0097428/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Ivan Reitman",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 8858,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8858",
+					"fact": "Identidad de Ivan Reitman, oficio y filmografía cotejados con el ID exacto de Los cazafantasmas 2 (1989)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/2978/cast",
+					"fact": "El billing del título exacto acredita a Ivan Reitman en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ivan%20Reitman%202011.jpg?width=640",
+				"localPath": "/people/ivan-reitman-nm0718645.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Bill Murray",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Dr. Peter Venkman",
+			"tmdbPersonId": 1532,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1532",
+					"fact": "Identidad de Bill Murray, oficio y filmografía cotejados con el ID exacto de Los cazafantasmas 2 (1989)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/2978/cast",
+					"fact": "El billing del título exacto acredita a Bill Murray como Dr. Peter Venkman."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bill%20Murray-8882.jpg?width=640",
+				"localPath": "/people/bill-murray-nm0000195.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dan Aykroyd",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Dr. Raymond Stantz",
+			"tmdbPersonId": 707,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/707",
+					"fact": "Identidad de Dan Aykroyd, oficio y filmografía cotejados con el ID exacto de Los cazafantasmas 2 (1989)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/2978/cast",
+					"fact": "El billing del título exacto acredita a Dan Aykroyd como Dr. Raymond Stantz."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dan%20Aykroyd%20cropped.jpg?width=120",
+				"localPath": "/people/dan-aykroyd-nm0000101.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sigourney Weaver",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Dana Barrett",
+			"tmdbPersonId": 10205,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10205",
+					"fact": "Identidad de Sigourney Weaver, oficio y filmografía cotejados con el ID exacto de Los cazafantasmas 2 (1989)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/2978/cast",
+					"fact": "El billing del título exacto acredita a Sigourney Weaver como Dana Barrett."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sigourney%20Weaver%20at%20the%202025%20Toronto%20International%20Film%20Festival%20(cropped).jpg?width=640",
+				"localPath": "/people/sigourney-weaver-nm0000244.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Harold Ramis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Dr. Egon Spengler",
+			"tmdbPersonId": 1524,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1524",
+					"fact": "Identidad de Harold Ramis, oficio y filmografía cotejados con el ID exacto de Los cazafantasmas 2 (1989)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/2978/cast",
+					"fact": "El billing del título exacto acredita a Harold Ramis como Dr. Egon Spengler."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HaroldRamisOct2009.jpg?width=640",
+				"localPath": "/people/harold-ramis-nm0000601.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ernie Hudson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Winston Zeddemore",
+			"tmdbPersonId": 8874,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8874",
+					"fact": "Identidad de Ernie Hudson, oficio y filmografía cotejados con el ID exacto de Los cazafantasmas 2 (1989)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/2978/cast",
+					"fact": "El billing del título exacto acredita a Ernie Hudson como Winston Zeddemore."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/10.17.09ErnieHudsonByLuigiNovi.jpg?width=640",
+				"localPath": "/people/ernie-hudson-nm0001368.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rick Moranis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Louis Tully",
+			"tmdbPersonId": 8872,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8872",
+					"fact": "Identidad de Rick Moranis, oficio y filmografía cotejados con el ID exacto de Los cazafantasmas 2 (1989)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/2978/cast",
+					"fact": "El billing del título exacto acredita a Rick Moranis como Louis Tully."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rick%20Moranis%20at%20San%20Diego%20Comic%20Con%202026-2.jpg?width=640",
+				"localPath": "/people/rick-moranis-nm0001548.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Annie Potts",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Janine Melnitz",
+			"tmdbPersonId": 8873,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8873",
+					"fact": "Identidad de Annie Potts, oficio y filmografía cotejados con el ID exacto de Los cazafantasmas 2 (1989)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/2978/cast",
+					"fact": "El billing del título exacto acredita a Annie Potts como Janine Melnitz."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nugPVN28qOhOIoHawrDJ6fIfrxR.jpg",
+				"localPath": "/people/annie-potts-nm0001633.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Peter MacNicol",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Janosz Poha",
+			"tmdbPersonId": 12688,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/12688",
+					"fact": "Identidad de Peter MacNicol, oficio y filmografía cotejados con el ID exacto de Los cazafantasmas 2 (1989)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/2978/cast",
+					"fact": "El billing del título exacto acredita a Peter MacNicol como Janosz Poha."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8gizugTP8hykdfBkOY0Qg0aqpiP.jpg",
+				"localPath": "/people/peter-macnicol-nm0001493.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Harris Yulin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "The Judge",
+			"tmdbPersonId": 1166,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito The Judge cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Margulies",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "The Mayor of NY",
+			"tmdbPersonId": 8875,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito The Mayor of NY cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kurt Fuller",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Hardemeyer",
+			"tmdbPersonId": 29685,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hardemeyer cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Janet Margolin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "The Prosecutor",
+			"tmdbPersonId": 10558,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito The Prosecutor cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Norbert Grupe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Vigo",
+			"tmdbPersonId": 27585,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Vigo cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "William T. Deutschendorf",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Baby Oscar",
+			"tmdbPersonId": 3196077,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Baby Oscar cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Henry J. Deutschendorf II",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Baby Oscar",
+			"tmdbPersonId": 3196087,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Baby Oscar cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Michael P. Moran",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Frank the Doorman",
+			"tmdbPersonId": 1170,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Frank the Doorman cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Olivia Ward",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Meter Maid",
+			"tmdbPersonId": 1454478,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Meter Maid cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mordecai Lawner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Man with a Ticket",
+			"tmdbPersonId": 10562,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man with a Ticket cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Susanna Boehm",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Young Woman on Crutches",
+			"tmdbPersonId": 1300451,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Woman on Crutches cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mary Ellen Trainor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Brownstone Mother",
+			"tmdbPersonId": 23967,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Brownstone Mother cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christopher Villaseñor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Brownstone Boy #1",
+			"tmdbPersonId": 3457459,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Brownstone Boy #1 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jason Reitman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Brownstone Boy #2",
+			"tmdbPersonId": 52443,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Brownstone Boy #2 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aaron Lustig",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Norman the Producer",
+			"tmdbPersonId": 140237,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Norman the Producer cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Page Leong",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Spengler's Assistant",
+			"tmdbPersonId": 156729,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Spengler's Assistant cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mark Schneider",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Arguing Couple",
+			"tmdbPersonId": 140041,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Arguing Couple cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Valery Pappas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Arguing Couple",
+			"tmdbPersonId": 215961,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Arguing Couple cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Catherine Reitman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Girl with Puppy",
+			"tmdbPersonId": 154826,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Girl with Puppy cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dave Florek",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "First Cop",
+			"tmdbPersonId": 107438,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito First Cop cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Richard Foronjy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Con Ed Supervisor",
+			"tmdbPersonId": 47771,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Con Ed Supervisor cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "George P. Wilbur",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Bailiff",
+			"tmdbPersonId": 69129,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bailiff cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sharon Kramer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Stenographer",
+			"tmdbPersonId": 2949387,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Stenographer cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Walter Flanagan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Rudy the Museum Guard",
+			"tmdbPersonId": 3487329,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rudy the Museum Guard cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bobby Brown",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Mayor's Doorman",
+			"tmdbPersonId": 93279,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mayor's Doorman cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christopher Neame",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Maitre D'",
+			"tmdbPersonId": 58860,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Maitre D' cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Judy Ovitz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Slimed Restaurant Patron",
+			"tmdbPersonId": 1379150,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Slimed Restaurant Patron cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tom Dugan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Restaurant Cop #1",
+			"tmdbPersonId": 1144361,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Restaurant Cop #1 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Angelo Dimascio",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Restaurant Cop #2",
+			"tmdbPersonId": 1648830,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Restaurant Cop #2 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Alan Beuth",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Store Manager",
+			"tmdbPersonId": 86475,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Store Manager cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ralph Monaco",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Police Sergeant",
+			"tmdbPersonId": 156741,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Police Sergeant cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ron Cummins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Police Lieutenant",
+			"tmdbPersonId": 122078,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Police Lieutenant cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cheech Marin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Dock Supervisor",
+			"tmdbPersonId": 11159,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dock Supervisor cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Yvette Cruise",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Maria, Dana's Maid",
+			"tmdbPersonId": 129867,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Maria, Dana's Maid cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Hammil",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Detective #1",
+			"tmdbPersonId": 1390442,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Detective #1 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ray Glanzmann",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Detective #2",
+			"tmdbPersonId": 172525,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Detective #2 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alex Zimmerman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Detective #3",
+			"tmdbPersonId": 3348977,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Detective #3 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Brian Doyle-Murray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Psychiatrist",
+			"tmdbPersonId": 1535,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Psychiatrist cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Louise Troy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Woman with Fur Coat",
+			"tmdbPersonId": 153582,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Woman with Fur Coat cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Douglas Seale",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Plaza Hotel Man",
+			"tmdbPersonId": 15833,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Plaza Hotel Man cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ben Stein",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Public Works Official",
+			"tmdbPersonId": 131667,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Public Works Official cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Erik Holland",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Fire Commissioner",
+			"tmdbPersonId": 157989,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fire Commissioner cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Philip Baker Hall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Police Commissioner",
+			"tmdbPersonId": 4492,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Police Commissioner cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steve Baker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Telephone Man (uncredited)",
+			"tmdbPersonId": 1197047,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Telephone Man (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Trish Cook",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Nun at Statue of Liberty (uncredited)",
+			"tmdbPersonId": 557968,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nun at Statue of Liberty (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kevin Dunn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Milton Angland (uncredited)",
+			"tmdbPersonId": 14721,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Milton Angland (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ryan Francis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Brownstone Boy #3 (uncredited)",
+			"tmdbPersonId": 1226119,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Brownstone Boy #3 (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tyra Reneé Fuller",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Driver (uncredited)",
+			"tmdbPersonId": 3457466,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Driver (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jim Fyfe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Scoleri Brother / Ghost Jogger (uncredited)",
+			"tmdbPersonId": 101776,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Scoleri Brother / Ghost Jogger (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "George Gerard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Man in Cab (uncredited)",
+			"tmdbPersonId": 3313757,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man in Cab (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Donna Guidry",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Art Restoration Student (uncredited)",
+			"tmdbPersonId": 3249510,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Art Restoration Student (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tim Lawrence",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Scoleri Brother (uncredited)",
+			"tmdbPersonId": 3457469,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Scoleri Brother (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Peter Papageorgio",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Spectator (uncredited)",
+			"tmdbPersonId": 3457470,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Spectator (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kariim Ratcliff",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Crowd Member (uncredited)",
+			"tmdbPersonId": 3313765,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Crowd Member (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ivan Reitman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Man Walking Outside Firehouse / Slimer (voice) (uncredited)",
+			"tmdbPersonId": 8858,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man Walking Outside Firehouse / Slimer (voice) (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ira S. Rosenstein",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Stage Manager (uncredited)",
+			"tmdbPersonId": 61208,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Stage Manager (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Felix Silla",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Courtroom Spectator (uncredited)",
+			"tmdbPersonId": 33853,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Courtroom Spectator (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Max von Sydow",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Vigo (voice) (uncredited)",
+			"tmdbPersonId": 2201,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Vigo (voice) (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chloe Webb",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Elaine (uncredited)",
+			"tmdbPersonId": 43476,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elaine (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Justin Michael Woods",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2978/cast",
+			"screenRole": "Baby on the Street (uncredited)",
+			"tmdbPersonId": 1521872,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Baby on the Street (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Los cazafantasmas 2; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Harris Yulin",
+				"role": "performer",
+				"reason": "Crédito The Judge cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Margulies",
+				"role": "performer",
+				"reason": "Crédito The Mayor of NY cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kurt Fuller",
+				"role": "performer",
+				"reason": "Crédito Hardemeyer cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Janet Margolin",
+				"role": "performer",
+				"reason": "Crédito The Prosecutor cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Norbert Grupe",
+				"role": "performer",
+				"reason": "Crédito Vigo cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "William T. Deutschendorf",
+				"role": "performer",
+				"reason": "Crédito Baby Oscar cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Henry J. Deutschendorf II",
+				"role": "performer",
+				"reason": "Crédito Baby Oscar cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Michael P. Moran",
+				"role": "performer",
+				"reason": "Crédito Frank the Doorman cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Olivia Ward",
+				"role": "performer",
+				"reason": "Crédito Meter Maid cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mordecai Lawner",
+				"role": "performer",
+				"reason": "Crédito Man with a Ticket cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Susanna Boehm",
+				"role": "performer",
+				"reason": "Crédito Young Woman on Crutches cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mary Ellen Trainor",
+				"role": "performer",
+				"reason": "Crédito Brownstone Mother cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christopher Villaseñor",
+				"role": "performer",
+				"reason": "Crédito Brownstone Boy #1 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jason Reitman",
+				"role": "performer",
+				"reason": "Crédito Brownstone Boy #2 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aaron Lustig",
+				"role": "performer",
+				"reason": "Crédito Norman the Producer cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Page Leong",
+				"role": "performer",
+				"reason": "Crédito Spengler's Assistant cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mark Schneider",
+				"role": "performer",
+				"reason": "Crédito Arguing Couple cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Valery Pappas",
+				"role": "performer",
+				"reason": "Crédito Arguing Couple cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Catherine Reitman",
+				"role": "performer",
+				"reason": "Crédito Girl with Puppy cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dave Florek",
+				"role": "performer",
+				"reason": "Crédito First Cop cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Richard Foronjy",
+				"role": "performer",
+				"reason": "Crédito Con Ed Supervisor cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "George P. Wilbur",
+				"role": "performer",
+				"reason": "Crédito Bailiff cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sharon Kramer",
+				"role": "performer",
+				"reason": "Crédito Stenographer cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Walter Flanagan",
+				"role": "performer",
+				"reason": "Crédito Rudy the Museum Guard cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bobby Brown",
+				"role": "performer",
+				"reason": "Crédito Mayor's Doorman cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christopher Neame",
+				"role": "performer",
+				"reason": "Crédito Maitre D' cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Judy Ovitz",
+				"role": "performer",
+				"reason": "Crédito Slimed Restaurant Patron cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tom Dugan",
+				"role": "performer",
+				"reason": "Crédito Restaurant Cop #1 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Angelo Dimascio",
+				"role": "performer",
+				"reason": "Crédito Restaurant Cop #2 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Alan Beuth",
+				"role": "performer",
+				"reason": "Crédito Store Manager cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ralph Monaco",
+				"role": "performer",
+				"reason": "Crédito Police Sergeant cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ron Cummins",
+				"role": "performer",
+				"reason": "Crédito Police Lieutenant cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cheech Marin",
+				"role": "performer",
+				"reason": "Crédito Dock Supervisor cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Yvette Cruise",
+				"role": "performer",
+				"reason": "Crédito Maria, Dana's Maid cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Hammil",
+				"role": "performer",
+				"reason": "Crédito Detective #1 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ray Glanzmann",
+				"role": "performer",
+				"reason": "Crédito Detective #2 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alex Zimmerman",
+				"role": "performer",
+				"reason": "Crédito Detective #3 cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Brian Doyle-Murray",
+				"role": "performer",
+				"reason": "Crédito Psychiatrist cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Louise Troy",
+				"role": "performer",
+				"reason": "Crédito Woman with Fur Coat cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Douglas Seale",
+				"role": "performer",
+				"reason": "Crédito Plaza Hotel Man cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ben Stein",
+				"role": "performer",
+				"reason": "Crédito Public Works Official cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Erik Holland",
+				"role": "performer",
+				"reason": "Crédito Fire Commissioner cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Philip Baker Hall",
+				"role": "performer",
+				"reason": "Crédito Police Commissioner cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steve Baker",
+				"role": "performer",
+				"reason": "Crédito Telephone Man (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Trish Cook",
+				"role": "performer",
+				"reason": "Crédito Nun at Statue of Liberty (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kevin Dunn",
+				"role": "performer",
+				"reason": "Crédito Milton Angland (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ryan Francis",
+				"role": "performer",
+				"reason": "Crédito Brownstone Boy #3 (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tyra Reneé Fuller",
+				"role": "performer",
+				"reason": "Crédito Driver (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jim Fyfe",
+				"role": "performer",
+				"reason": "Crédito Scoleri Brother / Ghost Jogger (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "George Gerard",
+				"role": "performer",
+				"reason": "Crédito Man in Cab (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Donna Guidry",
+				"role": "performer",
+				"reason": "Crédito Art Restoration Student (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tim Lawrence",
+				"role": "performer",
+				"reason": "Crédito Scoleri Brother (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Peter Papageorgio",
+				"role": "performer",
+				"reason": "Crédito Spectator (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kariim Ratcliff",
+				"role": "performer",
+				"reason": "Crédito Crowd Member (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ivan Reitman",
+				"role": "performer",
+				"reason": "Crédito Man Walking Outside Firehouse / Slimer (voice) (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ira S. Rosenstein",
+				"role": "performer",
+				"reason": "Crédito Stage Manager (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Felix Silla",
+				"role": "performer",
+				"reason": "Crédito Courtroom Spectator (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Max von Sydow",
+				"role": "performer",
+				"reason": "Crédito Vigo (voice) (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Chloe Webb",
+				"role": "performer",
+				"reason": "Crédito Elaine (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Justin Michael Woods",
+				"role": "performer",
+				"reason": "Crédito Baby on the Street (uncredited) cotejado en el billing completo de Los cazafantasmas 2; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,435 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "una-feliz-navidad-escocesa-2023",
+	"title": "Una feliz Navidad escocesa",
+	"year": 2023,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1145635/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 21
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/una-feliz-navidad-escocesa",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt28237077/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Dustin Rikert",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 548599,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/548599",
+					"fact": "Identidad de Dustin Rikert, oficio y filmografía cotejados con el ID exacto de Una feliz Navidad escocesa (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1145635/cast",
+					"fact": "El billing del título exacto acredita a Dustin Rikert en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sTHc9pupAI6noW60AsIz02I8tWn.jpg",
+				"localPath": "/people/dustin-rikert-nm1046566.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lacey Chabert",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Lindsay Morgan",
+			"tmdbPersonId": 22082,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/22082",
+					"fact": "Identidad de Lacey Chabert, oficio y filmografía cotejados con el ID exacto de Una feliz Navidad escocesa (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1145635/cast",
+					"fact": "El billing del título exacto acredita a Lacey Chabert como Lindsay Morgan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1q9Xe7QVi5oayhPMEiRPgd6FFKG.jpg",
+				"localPath": "/people/lacey-chabert-nm0000327.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Scott Wolf",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Brad Morgan",
+			"tmdbPersonId": 24965,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/24965",
+					"fact": "Identidad de Scott Wolf, oficio y filmografía cotejados con el ID exacto de Una feliz Navidad escocesa (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1145635/cast",
+					"fact": "El billing del título exacto acredita a Scott Wolf como Brad Morgan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pg1K2DNuX5LWZ1KqYpX6ykdeLYa.jpg",
+				"localPath": "/people/scott-wolf-nm0937930.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "James Robinson",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Mac Bell",
+			"tmdbPersonId": 2465,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2465",
+					"fact": "Identidad de James Robinson, oficio y filmografía cotejados con el ID exacto de Una feliz Navidad escocesa (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1145635/cast",
+					"fact": "El billing del título exacto acredita a James Robinson como Mac Bell."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zESqY8KKwkTsuEx75n7Jaumn8ho.jpg",
+				"localPath": "/people/james-robinson-nm0732703.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kellie Blaise",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Sarah Morgan",
+			"tmdbPersonId": 1168777,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1168777",
+					"fact": "Identidad de Kellie Blaise, oficio y filmografía cotejados con el ID exacto de Una feliz Navidad escocesa (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1145635/cast",
+					"fact": "El billing del título exacto acredita a Kellie Blaise como Sarah Morgan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/l9FBomIsHLjZuFwkSUsz2nkToz1.jpg",
+				"localPath": "/people/kellie-blaise-nm1624276.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Fiona Bell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Josephine",
+			"tmdbPersonId": 1426907,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1426907",
+					"fact": "Identidad de Fiona Bell, oficio y filmografía cotejados con el ID exacto de Una feliz Navidad escocesa (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1145635/cast",
+					"fact": "El billing del título exacto acredita a Fiona Bell como Josephine."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cuybiYzQ5GBQSBG7HgToCLUdwQf.jpg",
+				"localPath": "/people/fiona-bell-nm0068201.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gerry O'Brien",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Graeme Stewart",
+			"tmdbPersonId": 188426,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/188426",
+					"fact": "Identidad de Gerry O'Brien, oficio y filmografía cotejados con el ID exacto de Una feliz Navidad escocesa (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1145635/cast",
+					"fact": "El billing del título exacto acredita a Gerry O'Brien como Graeme Stewart."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8WVgINpdOFZBlideEPbV6YnhOp0.jpg",
+				"localPath": "/people/gerry-o-brien-nm0639569.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tom Doonan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Hamish",
+			"tmdbPersonId": 4321379,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hamish cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ali White",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Dr. Amerila Bell",
+			"tmdbPersonId": 1896321,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1896321",
+					"fact": "Identidad de Ali White, oficio y filmografía cotejados con el ID exacto de Una feliz Navidad escocesa (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1145635/cast",
+					"fact": "El billing del título exacto acredita a Ali White como Dr. Amerila Bell."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://m.media-amazon.com/images/M/MV5BNDQxZTM1MGMtMWM0OC00NTA1LTg1MzAtMzQzYjNjNGViNDQzXkEyXkFqcGc@._V1_.jpg",
+				"localPath": "/people/ali-white-nm0924441.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Laura Hughes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Elspeth Abernathy",
+			"tmdbPersonId": 1122013,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elspeth Abernathy cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eilidh Murray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Young Josephine",
+			"tmdbPersonId": 4402232,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Josephine cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Andy Peppiette",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Danny",
+			"tmdbPersonId": 4402234,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Danny cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chris McHallem",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Angus Ryan",
+			"tmdbPersonId": 33452,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Angus Ryan cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tiernan Messitt-Greene",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Charlie",
+			"tmdbPersonId": 3004480,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Charlie cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gemma Kane",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Isla",
+			"tmdbPersonId": 4372438,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Isla cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Will Kemp",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Thomas",
+			"tmdbPersonId": 54500,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Thomas cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Deirdre Monaghan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Local Woman",
+			"tmdbPersonId": 1614351,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Local Woman cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Iggy Bownes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Morgan Family Driver",
+			"tmdbPersonId": 4402264,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Morgan Family Driver cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stella Watson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Maid",
+			"tmdbPersonId": 4402267,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Maid cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bryce Rikert",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Footman",
+			"tmdbPersonId": 4402269,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Footman cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Janet Grene",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1145635/cast",
+			"screenRole": "Whiskey Distiller (uncredited)",
+			"tmdbPersonId": 3176583,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Whiskey Distiller (uncredited) cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Una feliz Navidad escocesa; se retuvieron 1 créditos de dirección y 7 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Tom Doonan",
+				"role": "performer",
+				"reason": "Crédito Hamish cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Laura Hughes",
+				"role": "performer",
+				"reason": "Crédito Elspeth Abernathy cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eilidh Murray",
+				"role": "performer",
+				"reason": "Crédito Young Josephine cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Andy Peppiette",
+				"role": "performer",
+				"reason": "Crédito Danny cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Chris McHallem",
+				"role": "performer",
+				"reason": "Crédito Angus Ryan cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tiernan Messitt-Greene",
+				"role": "performer",
+				"reason": "Crédito Charlie cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gemma Kane",
+				"role": "performer",
+				"reason": "Crédito Isla cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Will Kemp",
+				"role": "performer",
+				"reason": "Crédito Thomas cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Deirdre Monaghan",
+				"role": "performer",
+				"reason": "Crédito Local Woman cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Iggy Bownes",
+				"role": "performer",
+				"reason": "Crédito Morgan Family Driver cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stella Watson",
+				"role": "performer",
+				"reason": "Crédito Maid cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bryce Rikert",
+				"role": "performer",
+				"reason": "Crédito Footman cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Janet Grene",
+				"role": "performer",
+				"reason": "Crédito Whiskey Distiller (uncredited) cotejado en el billing completo de Una feliz Navidad escocesa; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,1355 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-precio-del-manana-2011",
+	"title": "El precio del mañana",
+	"year": 2011,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/49530/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 78
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/in-time",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt1637688/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Andrew Niccol",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 8685,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8685",
+					"fact": "Identidad de Andrew Niccol, oficio y filmografía cotejados con el ID exacto de El precio del mañana (2011)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/49530/cast",
+					"fact": "El billing del título exacto acredita a Andrew Niccol en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20Niccol%20by%20Gage%20Skidmore.jpg?width=640",
+				"localPath": "/people/andrew-niccol-nm0629272.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Amanda Seyfried",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Sylvia Weis",
+			"tmdbPersonId": 71070,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/71070",
+					"fact": "Identidad de Amanda Seyfried, oficio y filmografía cotejados con el ID exacto de El precio del mañana (2011)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/49530/cast",
+					"fact": "El billing del título exacto acredita a Amanda Seyfried como Sylvia Weis."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amanda%20Seyfried%20at%20Berlinale%202024%2C%20cropped.jpg?width=1200",
+				"localPath": "/people/amanda-seyfried-nm1086543.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Justin Timberlake",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Will Salas",
+			"tmdbPersonId": 12111,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/12111",
+					"fact": "Identidad de Justin Timberlake, oficio y filmografía cotejados con el ID exacto de El precio del mañana (2011)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/49530/cast",
+					"fact": "El billing del título exacto acredita a Justin Timberlake como Will Salas."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Justin%20Timberlake%20by%20Gage%20Skidmore%202.jpg?width=640",
+				"localPath": "/people/justin-timberlake-nm0005493.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Cillian Murphy",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Raymond Leon",
+			"tmdbPersonId": 2037,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2037",
+					"fact": "Identidad de Cillian Murphy, oficio y filmografía cotejados con el ID exacto de El precio del mañana (2011)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/49530/cast",
+					"fact": "El billing del título exacto acredita a Cillian Murphy como Raymond Leon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/CillianMurphy-TIFF2025-01-Cropped%20(cropped).png?width=1200",
+				"localPath": "/people/cillian-murphy-nm0614165.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Vincent Kartheiser",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Philippe Weis",
+			"tmdbPersonId": 52646,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/52646",
+					"fact": "Identidad de Vincent Kartheiser, oficio y filmografía cotejados con el ID exacto de El precio del mañana (2011)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/49530/cast",
+					"fact": "El billing del título exacto acredita a Vincent Kartheiser como Philippe Weis."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/h6rT6R3Zys2acrOunX7Hep1XQIZ.jpg",
+				"localPath": "/people/vincent-kartheiser-nm0440229.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Olivia Wilde",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Rachel Salas",
+			"tmdbPersonId": 59315,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/59315",
+					"fact": "Identidad de Olivia Wilde, oficio y filmografía cotejados con el ID exacto de El precio del mañana (2011)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/49530/cast",
+					"fact": "El billing del título exacto acredita a Olivia Wilde como Rachel Salas."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Olivia%20Wilde%20in%202022.jpg?width=640",
+				"localPath": "/people/olivia-wilde-nm1312575.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Matt Bomer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Henry Hamilton",
+			"tmdbPersonId": 66743,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/66743",
+					"fact": "Identidad de Matt Bomer, oficio y filmografía cotejados con el ID exacto de El precio del mañana (2011)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/49530/cast",
+					"fact": "El billing del título exacto acredita a Matt Bomer como Henry Hamilton."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oxL27Z3XtjoABaOynKazZeg7qKM.jpg",
+				"localPath": "/people/matt-bomer-nm0093589.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Johnny Galecki",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Borel",
+			"tmdbPersonId": 16478,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/16478",
+					"fact": "Identidad de Johnny Galecki, oficio y filmografía cotejados con el ID exacto de El precio del mañana (2011)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/49530/cast",
+					"fact": "El billing del título exacto acredita a Johnny Galecki como Borel."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5zTHvvKpR9VUkzHxGnbrdB51Kyc.jpg",
+				"localPath": "/people/johnny-galecki-nm0301959.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Collins Pennie",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Timekeeper Jaeger",
+			"tmdbPersonId": 53652,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/53652",
+					"fact": "Identidad de Collins Pennie, oficio y filmografía cotejados con el ID exacto de El precio del mañana (2011)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/49530/cast",
+					"fact": "El billing del título exacto acredita a Collins Pennie como Timekeeper Jaeger."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oeZ1uRTGokydrG84zEOY4tUq16U.jpg",
+				"localPath": "/people/collins-pennie-nm1574663.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Toby Hemingway",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Timekeeper Kors",
+			"tmdbPersonId": 60901,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Timekeeper Kors cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Brendan Miller",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Kolber",
+			"tmdbPersonId": 83861,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Kolber cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Yaya DaCosta",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Greta",
+			"tmdbPersonId": 60033,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Greta cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alex Pettyfer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Fortis",
+			"tmdbPersonId": 61363,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fortis cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Shyloh Oostwald",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Mya",
+			"tmdbPersonId": 1011100,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mya cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Colin McGurk",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Citizen",
+			"tmdbPersonId": 1572100,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Citizen cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Will Harris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Ulysse",
+			"tmdbPersonId": 135786,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ulysse cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Michael William Freeman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Nardin",
+			"tmdbPersonId": 1416557,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nardin cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jesse Lee Soffer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Webb",
+			"tmdbPersonId": 1011102,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Webb cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aaron Perilo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Bell",
+			"tmdbPersonId": 205114,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bell cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nick Lashaway",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Ekman",
+			"tmdbPersonId": 114600,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ekman cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Will Peltz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Pierre",
+			"tmdbPersonId": 1011103,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pierre cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ray Santiago",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Victa",
+			"tmdbPersonId": 52957,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Victa cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Zuleyka Silver",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Pasha",
+			"tmdbPersonId": 1011104,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pasha cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Laura Ashley Samuels",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Sagita",
+			"tmdbPersonId": 1011105,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sagita cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "La Monde Byrd",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Minuteman Rado",
+			"tmdbPersonId": 1888283,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Minuteman Rado cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paul David Story",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Minuteman Roth",
+			"tmdbPersonId": 1232600,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Minuteman Roth cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Maximilian Osinski",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Louis",
+			"tmdbPersonId": 1011106,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Louis cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Blake Sheldon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Man at Door",
+			"tmdbPersonId": 1439167,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man at Door cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Melissa Ordway",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Leila",
+			"tmdbPersonId": 114602,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Leila cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Abhi Sinha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Ross",
+			"tmdbPersonId": 1324452,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ross cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ethan Peck",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Constantin",
+			"tmdbPersonId": 119586,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Constantin cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Germano Sardinha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Carlo",
+			"tmdbPersonId": 2210866,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Carlo cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Korrina Rico",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Hotel Clerk",
+			"tmdbPersonId": 1169764,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hotel Clerk cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Emma Fitzpatrick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Kara",
+			"tmdbPersonId": 1011107,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Kara cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Seema Lazar",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Timekeeper Ellini",
+			"tmdbPersonId": 1446850,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Timekeeper Ellini cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Adam Jamal Craig",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Girard",
+			"tmdbPersonId": 1230849,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Girard cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Andreas Wigand",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Milus",
+			"tmdbPersonId": 1816172,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Milus cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bella Heathcote",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Michele Weis",
+			"tmdbPersonId": 234982,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Michele Weis cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sasha Pivovarova",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Clara",
+			"tmdbPersonId": 2210996,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Clara cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Luis Chávez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Ernest",
+			"tmdbPersonId": 1231304,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ernest cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "August Emerson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Levi",
+			"tmdbPersonId": 208727,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Levi cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cathy Baron",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Ruby",
+			"tmdbPersonId": 1011108,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ruby cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kris Lemche",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Markus",
+			"tmdbPersonId": 20176,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Markus cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sterling Sulieman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Franck",
+			"tmdbPersonId": 223200,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Franck cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rachel Roberts",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Carrera",
+			"tmdbPersonId": 35198,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Carrera cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christiann Castellanos",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Jasmine",
+			"tmdbPersonId": 936308,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jasmine cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jeff Staron",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Oris",
+			"tmdbPersonId": 1464847,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Oris cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Drew James",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Thomas",
+			"tmdbPersonId": 1367845,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Thomas cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Swen Temmel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Breitling",
+			"tmdbPersonId": 1075049,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Breitling cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jessica Parker Kennedy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Edouarda",
+			"tmdbPersonId": 211540,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Edouarda cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Matt O'Leary",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Moser",
+			"tmdbPersonId": 71467,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Moser cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Trever O'Brien",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Nomos",
+			"tmdbPersonId": 59016,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nomos cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Faye Kingslee",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Timekeeper Jean",
+			"tmdbPersonId": 1304467,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Timekeeper Jean cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kristopher Higgins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Timekeeper Dent",
+			"tmdbPersonId": 1448885,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Timekeeper Dent cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Spencer Kayden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Bar Dancer / Villager (uncredited)",
+			"tmdbPersonId": 2666286,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bar Dancer / Villager (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jason Woods",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Bodyguard (uncredited)",
+			"tmdbPersonId": 1465481,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bodyguard (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alycia Grant",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Bus Passenger / Factory Worker (uncredited)",
+			"tmdbPersonId": 1370923,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bus Passenger / Factory Worker (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Michael James Wong",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Bus Passenger / Factory Worker (uncredited)",
+			"tmdbPersonId": 2719266,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bus Passenger / Factory Worker (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Adrianna Adams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Casino High Roller (uncredited)",
+			"tmdbPersonId": 1811348,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Casino High Roller (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Skyler Maxon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Casino High Roller (uncredited)",
+			"tmdbPersonId": 1442972,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Casino High Roller (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Talon Reid",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Casino High Roller (uncredited)",
+			"tmdbPersonId": 1482502,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Casino High Roller (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christian Madsen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Dayton Citizen Leader (uncredited)",
+			"tmdbPersonId": 1193606,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dayton Citizen Leader (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marcos Mateo Ochoa",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Dayton Thug (uncredited)",
+			"tmdbPersonId": 1893346,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dayton Thug (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nick Benseman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Dayton Thug (uncredited)",
+			"tmdbPersonId": 1456598,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dayton Thug (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mo Zelof",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Factory Boss (uncredited)",
+			"tmdbPersonId": 1517253,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Factory Boss (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Patrick Salway",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Factory Worker (uncredited)",
+			"tmdbPersonId": 3118535,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Factory Worker (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Giggi Yazicioglu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Jane (uncredited)",
+			"tmdbPersonId": 1320575,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jane (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mary Elise Hayden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Jazz Singer (uncredited)",
+			"tmdbPersonId": 237055,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jazz Singer (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ernest Pierce",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Minuteman (uncredited)",
+			"tmdbPersonId": 1741530,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Minuteman (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jason Weary",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Roulette Dealer (uncredited)",
+			"tmdbPersonId": 1514413,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Roulette Dealer (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Corbin McCarthy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Server (uncredited)",
+			"tmdbPersonId": 1680194,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Server (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Matthew Broadley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Street Child (uncredited)",
+			"tmdbPersonId": 2611575,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Street Child (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sloane Avery",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Teen Girl (uncredited)",
+			"tmdbPersonId": 1223439,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Teen Girl (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Skyler Bible",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Timegiver (uncredited)",
+			"tmdbPersonId": 1670808,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Timegiver (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Laura Henschel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Timekeeper (uncredited)",
+			"tmdbPersonId": 1824031,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Timekeeper (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sam Meader",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Timekeeper Enforcer (uncredited)",
+			"tmdbPersonId": 1870953,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Timekeeper Enforcer (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alyssa de Boisblanc",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Young Girl (uncredited)",
+			"tmdbPersonId": 2818609,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Girl (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sarah May Sommers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/49530/cast",
+			"screenRole": "Young Girl (uncredited)",
+			"tmdbPersonId": 2317703,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Girl (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de El precio del mañana; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Toby Hemingway",
+				"role": "performer",
+				"reason": "Crédito Timekeeper Kors cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Brendan Miller",
+				"role": "performer",
+				"reason": "Crédito Kolber cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Yaya DaCosta",
+				"role": "performer",
+				"reason": "Crédito Greta cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alex Pettyfer",
+				"role": "performer",
+				"reason": "Crédito Fortis cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Shyloh Oostwald",
+				"role": "performer",
+				"reason": "Crédito Mya cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Colin McGurk",
+				"role": "performer",
+				"reason": "Crédito Citizen cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Will Harris",
+				"role": "performer",
+				"reason": "Crédito Ulysse cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Michael William Freeman",
+				"role": "performer",
+				"reason": "Crédito Nardin cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jesse Lee Soffer",
+				"role": "performer",
+				"reason": "Crédito Webb cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aaron Perilo",
+				"role": "performer",
+				"reason": "Crédito Bell cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nick Lashaway",
+				"role": "performer",
+				"reason": "Crédito Ekman cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Will Peltz",
+				"role": "performer",
+				"reason": "Crédito Pierre cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ray Santiago",
+				"role": "performer",
+				"reason": "Crédito Victa cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Zuleyka Silver",
+				"role": "performer",
+				"reason": "Crédito Pasha cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Laura Ashley Samuels",
+				"role": "performer",
+				"reason": "Crédito Sagita cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "La Monde Byrd",
+				"role": "performer",
+				"reason": "Crédito Minuteman Rado cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paul David Story",
+				"role": "performer",
+				"reason": "Crédito Minuteman Roth cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Maximilian Osinski",
+				"role": "performer",
+				"reason": "Crédito Louis cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Blake Sheldon",
+				"role": "performer",
+				"reason": "Crédito Man at Door cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Melissa Ordway",
+				"role": "performer",
+				"reason": "Crédito Leila cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Abhi Sinha",
+				"role": "performer",
+				"reason": "Crédito Ross cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ethan Peck",
+				"role": "performer",
+				"reason": "Crédito Constantin cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Germano Sardinha",
+				"role": "performer",
+				"reason": "Crédito Carlo cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Korrina Rico",
+				"role": "performer",
+				"reason": "Crédito Hotel Clerk cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Emma Fitzpatrick",
+				"role": "performer",
+				"reason": "Crédito Kara cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Seema Lazar",
+				"role": "performer",
+				"reason": "Crédito Timekeeper Ellini cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Adam Jamal Craig",
+				"role": "performer",
+				"reason": "Crédito Girard cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Andreas Wigand",
+				"role": "performer",
+				"reason": "Crédito Milus cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bella Heathcote",
+				"role": "performer",
+				"reason": "Crédito Michele Weis cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sasha Pivovarova",
+				"role": "performer",
+				"reason": "Crédito Clara cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Luis Chávez",
+				"role": "performer",
+				"reason": "Crédito Ernest cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "August Emerson",
+				"role": "performer",
+				"reason": "Crédito Levi cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cathy Baron",
+				"role": "performer",
+				"reason": "Crédito Ruby cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kris Lemche",
+				"role": "performer",
+				"reason": "Crédito Markus cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sterling Sulieman",
+				"role": "performer",
+				"reason": "Crédito Franck cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rachel Roberts",
+				"role": "performer",
+				"reason": "Crédito Carrera cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christiann Castellanos",
+				"role": "performer",
+				"reason": "Crédito Jasmine cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jeff Staron",
+				"role": "performer",
+				"reason": "Crédito Oris cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Drew James",
+				"role": "performer",
+				"reason": "Crédito Thomas cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Swen Temmel",
+				"role": "performer",
+				"reason": "Crédito Breitling cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jessica Parker Kennedy",
+				"role": "performer",
+				"reason": "Crédito Edouarda cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Matt O'Leary",
+				"role": "performer",
+				"reason": "Crédito Moser cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Trever O'Brien",
+				"role": "performer",
+				"reason": "Crédito Nomos cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Faye Kingslee",
+				"role": "performer",
+				"reason": "Crédito Timekeeper Jean cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kristopher Higgins",
+				"role": "performer",
+				"reason": "Crédito Timekeeper Dent cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Spencer Kayden",
+				"role": "performer",
+				"reason": "Crédito Bar Dancer / Villager (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jason Woods",
+				"role": "performer",
+				"reason": "Crédito Bodyguard (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alycia Grant",
+				"role": "performer",
+				"reason": "Crédito Bus Passenger / Factory Worker (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Michael James Wong",
+				"role": "performer",
+				"reason": "Crédito Bus Passenger / Factory Worker (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Adrianna Adams",
+				"role": "performer",
+				"reason": "Crédito Casino High Roller (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Skyler Maxon",
+				"role": "performer",
+				"reason": "Crédito Casino High Roller (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Talon Reid",
+				"role": "performer",
+				"reason": "Crédito Casino High Roller (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christian Madsen",
+				"role": "performer",
+				"reason": "Crédito Dayton Citizen Leader (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marcos Mateo Ochoa",
+				"role": "performer",
+				"reason": "Crédito Dayton Thug (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nick Benseman",
+				"role": "performer",
+				"reason": "Crédito Dayton Thug (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mo Zelof",
+				"role": "performer",
+				"reason": "Crédito Factory Boss (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Patrick Salway",
+				"role": "performer",
+				"reason": "Crédito Factory Worker (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Giggi Yazicioglu",
+				"role": "performer",
+				"reason": "Crédito Jane (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mary Elise Hayden",
+				"role": "performer",
+				"reason": "Crédito Jazz Singer (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ernest Pierce",
+				"role": "performer",
+				"reason": "Crédito Minuteman (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jason Weary",
+				"role": "performer",
+				"reason": "Crédito Roulette Dealer (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Corbin McCarthy",
+				"role": "performer",
+				"reason": "Crédito Server (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Matthew Broadley",
+				"role": "performer",
+				"reason": "Crédito Street Child (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sloane Avery",
+				"role": "performer",
+				"reason": "Crédito Teen Girl (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Skyler Bible",
+				"role": "performer",
+				"reason": "Crédito Timegiver (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Laura Henschel",
+				"role": "performer",
+				"reason": "Crédito Timekeeper (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sam Meader",
+				"role": "performer",
+				"reason": "Crédito Timekeeper Enforcer (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alyssa de Boisblanc",
+				"role": "performer",
+				"reason": "Crédito Young Girl (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sarah May Sommers",
+				"role": "performer",
+				"reason": "Crédito Young Girl (uncredited) cotejado en el billing completo de El precio del mañana; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,723 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "starman-1984",
+	"title": "Starman",
+	"year": 1984,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/9663/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 39
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/starman",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0088172/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "John Carpenter",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 11770,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11770",
+					"fact": "Identidad de John Carpenter, oficio y filmografía cotejados con el ID exacto de Starman (1984)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9663/cast",
+					"fact": "El billing del título exacto acredita a John Carpenter en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3Qp0mg61u1qSZNJh30BFEUZrIMG.jpg",
+				"localPath": "/people/john-carpenter-nm0000118.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jeff Bridges",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Starman / Scott Hayden",
+			"tmdbPersonId": 1229,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1229",
+					"fact": "Identidad de Jeff Bridges, oficio y filmografía cotejados con el ID exacto de Starman (1984)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9663/cast",
+					"fact": "El billing del título exacto acredita a Jeff Bridges como Starman / Scott Hayden."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeff%20Bridges%20by%20Gage%20Skidmore%203.jpg?width=1200",
+				"localPath": "/people/jeff-bridges-nm0000313.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Karen Allen",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Jenny Hayden",
+			"tmdbPersonId": 650,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/650",
+					"fact": "Identidad de Karen Allen, oficio y filmografía cotejados con el ID exacto de Starman (1984)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9663/cast",
+					"fact": "El billing del título exacto acredita a Karen Allen como Jenny Hayden."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eJszpndpRzrXbSlz7RUlApoTykn.jpg",
+				"localPath": "/people/karen-allen-nm0000261.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Charles Martin Smith",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Mark Shermin",
+			"tmdbPersonId": 1270,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1270",
+					"fact": "Identidad de Charles Martin Smith, oficio y filmografía cotejados con el ID exacto de Starman (1984)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9663/cast",
+					"fact": "El billing del título exacto acredita a Charles Martin Smith como Mark Shermin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/uzm5v0Q7nCH223EvPiJyh9Y0qiN.jpg",
+				"localPath": "/people/charles-martin-smith-nm0001747.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Richard Jaeckel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "George Fox",
+			"tmdbPersonId": 58423,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/58423",
+					"fact": "Identidad de Richard Jaeckel, oficio y filmografía cotejados con el ID exacto de Starman (1984)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9663/cast",
+					"fact": "El billing del título exacto acredita a Richard Jaeckel como George Fox."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bqPHmgKzNOWU58GtoB2SDiH8MHV.jpg",
+				"localPath": "/people/richard-jaeckel-nm0001395.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Robert Phalen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Major Bell",
+			"tmdbPersonId": 15515,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/15515",
+					"fact": "Identidad de Robert Phalen, oficio y filmografía cotejados con el ID exacto de Starman (1984)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9663/cast",
+					"fact": "El billing del título exacto acredita a Robert Phalen como Major Bell."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3iYiOBKzGkz3Ny9J72aHSqwPfQs.jpg",
+				"localPath": "/people/robert-phalen-nm0679606.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tony Edwards",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Sergeant Lemon",
+			"tmdbPersonId": 170644,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/170644",
+					"fact": "Identidad de Tony Edwards, oficio y filmografía cotejados con el ID exacto de Starman (1984)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9663/cast",
+					"fact": "El billing del título exacto acredita a Tony Edwards como Sergeant Lemon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vmbrsMS8HSGh91FC2uglYKQ5I2b.jpg",
+				"localPath": "/people/tony-edwards-nm0250415.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "John Walter Davis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Brad Heinmuller",
+			"tmdbPersonId": 1211987,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Brad Heinmuller cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ted White",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Deer Hunter",
+			"tmdbPersonId": 176475,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/176475",
+					"fact": "Identidad de Ted White, oficio y filmografía cotejados con el ID exacto de Starman (1984)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9663/cast",
+					"fact": "El billing del título exacto acredita a Ted White como Deer Hunter."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/o0xZT23XzW3xpDmqEwe9i7CiAxD.jpg",
+				"localPath": "/people/ted-white-nm0925500.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dirk Blocker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Cop #1",
+			"tmdbPersonId": 123016,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cop #1 cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "M.C. Gainey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Cop #2",
+			"tmdbPersonId": 22132,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cop #2 cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sean Stanek",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Hot Rodder",
+			"tmdbPersonId": 108662,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hot Rodder cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "George Buck Flower",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Cook",
+			"tmdbPersonId": 54564,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cook cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Russ Benning",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Scientist",
+			"tmdbPersonId": 1305080,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Scientist cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ralph Cosham",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Marine Lieutenant",
+			"tmdbPersonId": 1305082,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Marine Lieutenant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Wells",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Fox's Assistant",
+			"tmdbPersonId": 64236,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fox's Assistant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Anthony Grumbach",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "NSA Officer",
+			"tmdbPersonId": 2266031,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito NSA Officer cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James Deeth",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "S-61 Pilot",
+			"tmdbPersonId": 54433,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito S-61 Pilot cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alex Daniels",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Gas Station Attendant",
+			"tmdbPersonId": 63935,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gas Station Attendant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Carol Rosenthal",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Gas Customer",
+			"tmdbPersonId": 154022,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gas Customer cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mickey Jones",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Trucker",
+			"tmdbPersonId": 100230,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Trucker cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lu Leonard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Roadhouse Waitress",
+			"tmdbPersonId": 42751,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Roadhouse Waitress cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Charlie Hughes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Bus Driver",
+			"tmdbPersonId": 1090837,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bus Driver cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Byron Walls",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Police Sergeant",
+			"tmdbPersonId": 1746995,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Police Sergeant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Betty Bunch",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Truck Stop Waitress",
+			"tmdbPersonId": 1721955,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Truck Stop Waitress cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Victor McLemore",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Roadblock Lt.",
+			"tmdbPersonId": 2266034,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Roadblock Lt. cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steven Brennan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Roadblock Sergeant",
+			"tmdbPersonId": 2266035,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Roadblock Sergeant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pat Lee",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Bracero Wife",
+			"tmdbPersonId": 2266037,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bracero Wife cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Judith Kim",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Girl Barker",
+			"tmdbPersonId": 2266038,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Girl Barker cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ronald Colby",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Cafe Waiter",
+			"tmdbPersonId": 2266039,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cafe Waiter cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Stein",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "State Trooper",
+			"tmdbPersonId": 2266040,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito State Trooper cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kenny Call",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Donnie Bob",
+			"tmdbPersonId": 183968,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Donnie Bob cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jeff Ramsey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Hunter #1",
+			"tmdbPersonId": 982374,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hunter #1 cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jerry Gatlin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Hunter #2",
+			"tmdbPersonId": 127314,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hunter #2 cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Daniell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Letterman",
+			"tmdbPersonId": 2266041,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Letterman cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Randy Tutton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "2nd Letterman",
+			"tmdbPersonId": 2266042,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito 2nd Letterman cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Carpenter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Man in Helicopter (uncredited)",
+			"tmdbPersonId": 11770,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man in Helicopter (uncredited) cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mark Jensen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Extra (uncredited)",
+			"tmdbPersonId": 2566054,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Extra (uncredited) cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ronald L. Colby",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9663/cast",
+			"screenRole": "Cafe Waiter",
+			"tmdbPersonId": 3302452,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cafe Waiter cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Starman; se retuvieron 1 créditos de dirección y 7 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "John Walter Davis",
+				"role": "performer",
+				"reason": "Crédito Brad Heinmuller cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dirk Blocker",
+				"role": "performer",
+				"reason": "Crédito Cop #1 cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "M.C. Gainey",
+				"role": "performer",
+				"reason": "Crédito Cop #2 cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sean Stanek",
+				"role": "performer",
+				"reason": "Crédito Hot Rodder cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "George Buck Flower",
+				"role": "performer",
+				"reason": "Crédito Cook cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Russ Benning",
+				"role": "performer",
+				"reason": "Crédito Scientist cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ralph Cosham",
+				"role": "performer",
+				"reason": "Crédito Marine Lieutenant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Wells",
+				"role": "performer",
+				"reason": "Crédito Fox's Assistant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Anthony Grumbach",
+				"role": "performer",
+				"reason": "Crédito NSA Officer cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James Deeth",
+				"role": "performer",
+				"reason": "Crédito S-61 Pilot cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alex Daniels",
+				"role": "performer",
+				"reason": "Crédito Gas Station Attendant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Carol Rosenthal",
+				"role": "performer",
+				"reason": "Crédito Gas Customer cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mickey Jones",
+				"role": "performer",
+				"reason": "Crédito Trucker cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lu Leonard",
+				"role": "performer",
+				"reason": "Crédito Roadhouse Waitress cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Charlie Hughes",
+				"role": "performer",
+				"reason": "Crédito Bus Driver cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Byron Walls",
+				"role": "performer",
+				"reason": "Crédito Police Sergeant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Betty Bunch",
+				"role": "performer",
+				"reason": "Crédito Truck Stop Waitress cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Victor McLemore",
+				"role": "performer",
+				"reason": "Crédito Roadblock Lt. cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steven Brennan",
+				"role": "performer",
+				"reason": "Crédito Roadblock Sergeant cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pat Lee",
+				"role": "performer",
+				"reason": "Crédito Bracero Wife cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Judith Kim",
+				"role": "performer",
+				"reason": "Crédito Girl Barker cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ronald Colby",
+				"role": "performer",
+				"reason": "Crédito Cafe Waiter cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Stein",
+				"role": "performer",
+				"reason": "Crédito State Trooper cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kenny Call",
+				"role": "performer",
+				"reason": "Crédito Donnie Bob cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jeff Ramsey",
+				"role": "performer",
+				"reason": "Crédito Hunter #1 cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jerry Gatlin",
+				"role": "performer",
+				"reason": "Crédito Hunter #2 cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Daniell",
+				"role": "performer",
+				"reason": "Crédito Letterman cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Randy Tutton",
+				"role": "performer",
+				"reason": "Crédito 2nd Letterman cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Carpenter",
+				"role": "performer",
+				"reason": "Crédito Man in Helicopter (uncredited) cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mark Jensen",
+				"role": "performer",
+				"reason": "Crédito Extra (uncredited) cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ronald L. Colby",
+				"role": "performer",
+				"reason": "Crédito Cafe Waiter cotejado en el billing completo de Starman; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

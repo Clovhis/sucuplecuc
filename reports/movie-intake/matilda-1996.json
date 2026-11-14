@@ -1,0 +1,1225 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "matilda-1996",
+	"title": "Matilda",
+	"year": 1996,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/10830/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 68
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/matilda",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0117008/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Danny DeVito",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 518,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/518",
+					"fact": "Identidad de Danny DeVito, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Danny DeVito en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Danny%20DeVito%20cropped%20and%20edited%20for%20brightness.jpg?width=640",
+				"localPath": "/people/danny-devito-nm0000362.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Mara Wilson",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda",
+			"tmdbPersonId": 11717,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11717",
+					"fact": "Identidad de Mara Wilson, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Mara Wilson como Matilda."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/305mjPnTI7ep8rDJ4i7H6XyvLqP.jpg",
+				"localPath": "/people/mara-wilson-nm0933798.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Danny DeVito",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Mr. Wormwood / Narrator (voice)",
+			"tmdbPersonId": 518,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/518",
+					"fact": "Identidad de Danny DeVito, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Danny DeVito como Mr. Wormwood / Narrator (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Danny%20DeVito%20cropped%20and%20edited%20for%20brightness.jpg?width=640",
+				"localPath": "/people/danny-devito-nm0000362.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rhea Perlman",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Mrs. Wormwood",
+			"tmdbPersonId": 24203,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/24203",
+					"fact": "Identidad de Rhea Perlman, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Rhea Perlman como Mrs. Wormwood."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4S4PdeHea2pePiWHy8MlDODZRLP.jpg",
+				"localPath": "/people/rhea-perlman-nm0674231.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Embeth Davidtz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Miss Honey",
+			"tmdbPersonId": 6368,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6368",
+					"fact": "Identidad de Embeth Davidtz, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Embeth Davidtz como Miss Honey."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Embeth%20Davidtz%20at%20the%202024%20Toronto%20International%20Film%20Festival%20(cropped).jpg?width=640",
+				"localPath": "/people/embeth-davidtz-nm0001110.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Pam Ferris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Trunchbull",
+			"tmdbPersonId": 11213,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11213",
+					"fact": "Identidad de Pam Ferris, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Pam Ferris como Trunchbull."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aVvdYkgolh22FYqqCJhVO8jd7To.jpg",
+				"localPath": "/people/pam-ferris-nm0274913.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Paul Reubens",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "FBI Agent",
+			"tmdbPersonId": 5129,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5129",
+					"fact": "Identidad de Paul Reubens, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Paul Reubens como FBI Agent."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Reubens%20SXSW%202016.jpg?width=640",
+				"localPath": "/people/paul-reubens-nm0000607.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tracey Walter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "FBI Agent",
+			"tmdbPersonId": 3801,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3801",
+					"fact": "Identidad de Tracey Walter, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Tracey Walter como FBI Agent."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9aALfdCcP0PDYcBmqB6auHF0Eud.jpg",
+				"localPath": "/people/tracey-walter-nm0910145.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jean Speegle Howard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Miss Phelps",
+			"tmdbPersonId": 8188,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8188",
+					"fact": "Identidad de Jean Speegle Howard, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Jean Speegle Howard como Miss Phelps."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/y4KfUoxGaAc5Yn9P5cPbsQz6cla.jpg",
+				"localPath": "/people/jean-speegle-howard-nm0397362.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Brian Levinson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Michael",
+			"tmdbPersonId": 109693,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/109693",
+					"fact": "Identidad de Brian Levinson, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Brian Levinson como Michael."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/niLTXFdEw7pxEZAdS1tqaaVcpm.jpg",
+				"localPath": "/people/brian-levinson-nm0506025.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sara Magdalin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda, 4 Years",
+			"tmdbPersonId": 2059552,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Matilda, 4 Years cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "R.D. Robb",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Roy",
+			"tmdbPersonId": 12711,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Roy cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gregory R. Goliath",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Luther",
+			"tmdbPersonId": 2581003,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Luther cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Fred Parnes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 1527274,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kiami Davael",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Lavender",
+			"tmdbPersonId": 109694,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/109694",
+					"fact": "Identidad de Kiami Davael, oficio y filmografía cotejados con el ID exacto de Matilda (1996)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/10830/cast",
+					"fact": "El billing del título exacto acredita a Kiami Davael como Lavender."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1FN1pat2wE6NmKYcgMDKhSy8NeS.jpg",
+				"localPath": "/people/kiami-davael-nm0202484.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Leor Livneh Hackel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Julius Rottwinkle",
+			"tmdbPersonId": 228236,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Julius Rottwinkle cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jacqueline Steiger",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Amanda Thripp",
+			"tmdbPersonId": 167189,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Amanda Thripp cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jimmy Karz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Bruce Bogtrotter",
+			"tmdbPersonId": 156734,
+			"omissionCategory": "no-safe-portrait",
+			"omissionReason": "Compañero de escuela, papel secundario; no se halló retrato individual atribuible utilizable tras TMDB, IMDb y prensa. No es uno de los protagonistas ni se utiliza para el piso de publicación.",
+			"portraitSearches": [
+				{
+					"url": "https://www.imdb.com/name/nm0440342/",
+					"result": "Crédito verificado, sin retrato individual seguro que cumpla la política."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0440342/mediaindex/",
+					"result": "Crédito verificado, sin retrato individual seguro que cumpla la política."
+				},
+				{
+					"url": "https://bfidatadigipres.github.io/pdf/2023-05-07-matilda.pdf",
+					"result": "Crédito verificado, sin retrato individual seguro que cumpla la política."
+				}
+			]
+		},
+		{
+			"name": "Michael Valentine",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Nigel HIcks",
+			"tmdbPersonId": 2703644,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nigel HIcks cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Liam Kearns",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Charles",
+			"tmdbPersonId": 1942314,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Charles cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mark Watson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Magnus",
+			"tmdbPersonId": 216040,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Magnus cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kira Spencer Hesser",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Hortensia",
+			"tmdbPersonId": 1520039,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hortensia cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "J.C. Alexander",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Nearby Boy",
+			"tmdbPersonId": 2703645,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nearby Boy cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Malone Brinton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Older Boy",
+			"tmdbPersonId": 2703646,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Older Boy cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marion Dugan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Cookie",
+			"tmdbPersonId": 1785629,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cookie cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joshua Alvarez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child at Assembly",
+			"tmdbPersonId": 2059555,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child at Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Max E. Blum",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child at Assembly",
+			"tmdbPersonId": 2059556,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child at Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Erin M. Gray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child at Assembly",
+			"tmdbPersonId": 2703650,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child at Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Misty L. Oppenheim",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Assembly",
+			"tmdbPersonId": 2703652,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christopher Shepard Hughes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Assembly",
+			"tmdbPersonId": 2703654,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rachel Snow",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Assembly",
+			"tmdbPersonId": 1226451,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Craig Lamar Traylor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 1228691,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jennifer Key",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 2703655,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marty Bautista",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 2703656,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Anthony Hernandez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 2703657,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Raina Cease",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 2059558,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jonathan Osser",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 166944,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Vinnie Buffolino",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 2703661,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marcella Sassano",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 2703662,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Johnny Thomas III",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 2703663,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Shannon Hughes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 1210256,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christel Khalil",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 1213734,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cassie Colaw",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 2703664,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Austin Stout",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 88736,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cindy Tran",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 2703665,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jonathan Feyer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Child in Classroom",
+			"tmdbPersonId": 15036,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alissa Graham",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda, Newborn",
+			"tmdbPersonId": 2703666,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Matilda, Newborn cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Amanda Graham",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda, Newborn",
+			"tmdbPersonId": 2703667,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Matilda, Newborn cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Trevor Gallagher",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda, Newborn",
+			"tmdbPersonId": 2703669,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Matilda, Newborn cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James Gallagher",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda, Newborn",
+			"tmdbPersonId": 2703672,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Matilda, Newborn cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kayla Fredericks",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda, 9 Months",
+			"tmdbPersonId": 2059559,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Matilda, 9 Months cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kelsey Fredericks",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda, 9 Months",
+			"tmdbPersonId": 2703676,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Matilda, 9 Months cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Amanda Fein",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda, Toddler",
+			"tmdbPersonId": 1351208,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Matilda, Toddler cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Caitlin Fein",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Matilda, Toddler",
+			"tmdbPersonId": 1236031,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Matilda, Toddler cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nicholas Cox",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Michael, 6 Years",
+			"tmdbPersonId": 2703682,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Michael, 6 Years cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Amanda Summers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Miss Honey, 2 Years",
+			"tmdbPersonId": 2703684,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Miss Honey, 2 Years cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kristin Summers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Two-Year-Old Miss Honey",
+			"tmdbPersonId": 2703685,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Two-Year-Old Miss Honey cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Phoebe Garcia-Pearl",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Miss Honey, 5 Years",
+			"tmdbPersonId": 2703686,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Miss Honey, 5 Years cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kathy Barbour",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Million $ Sticky Showgirl",
+			"tmdbPersonId": 1532955,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Million $ Sticky Showgirl cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Donna Spangler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Million $ Sticky Showgirl",
+			"tmdbPersonId": 102938,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Million $ Sticky Showgirl cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marianne Curan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Million $ Sticky Contestant",
+			"tmdbPersonId": 2703692,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Million $ Sticky Contestant cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Penny Holland",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Million $ Sticky Contestant",
+			"tmdbPersonId": 2703693,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Million $ Sticky Contestant cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Richard E. Coe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Million $ Sticky Contestant",
+			"tmdbPersonId": 2703694,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Million $ Sticky Contestant cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sabrina Bryan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Girl (uncredited)",
+			"tmdbPersonId": 183426,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Girl (uncredited) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Trevor Coppola",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Restaurant Patron (uncredited)",
+			"tmdbPersonId": 1137847,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Restaurant Patron (uncredited) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Simon Jones",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Shellhammer (uncredited)",
+			"tmdbPersonId": 37891,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Shellhammer (uncredited) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jon Lovitz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Million $ Sticky Host (uncredited)",
+			"tmdbPersonId": 16165,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Million $ Sticky Host (uncredited) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kira Spencer Cook",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/10830/cast",
+			"screenRole": "Hortensia (as Kira Spencer Hesser)",
+			"tmdbPersonId": 4837968,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hortensia (as Kira Spencer Hesser) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Matilda; se retuvieron 1 créditos de dirección y 10 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Sara Magdalin",
+				"role": "performer",
+				"reason": "Crédito Matilda, 4 Years cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "R.D. Robb",
+				"role": "performer",
+				"reason": "Crédito Roy cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gregory R. Goliath",
+				"role": "performer",
+				"reason": "Crédito Luther cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Fred Parnes",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Leor Livneh Hackel",
+				"role": "performer",
+				"reason": "Crédito Julius Rottwinkle cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jacqueline Steiger",
+				"role": "performer",
+				"reason": "Crédito Amanda Thripp cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jimmy Karz",
+				"role": "performer",
+				"reason": "Compañero de escuela, papel secundario; no se halló retrato individual atribuible utilizable tras TMDB, IMDb y prensa. No es uno de los protagonistas ni se utiliza para el piso de publicación."
+			},
+			{
+				"name": "Michael Valentine",
+				"role": "performer",
+				"reason": "Crédito Nigel HIcks cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Liam Kearns",
+				"role": "performer",
+				"reason": "Crédito Charles cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mark Watson",
+				"role": "performer",
+				"reason": "Crédito Magnus cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kira Spencer Hesser",
+				"role": "performer",
+				"reason": "Crédito Hortensia cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "J.C. Alexander",
+				"role": "performer",
+				"reason": "Crédito Nearby Boy cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Malone Brinton",
+				"role": "performer",
+				"reason": "Crédito Older Boy cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marion Dugan",
+				"role": "performer",
+				"reason": "Crédito Cookie cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joshua Alvarez",
+				"role": "performer",
+				"reason": "Crédito Child at Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Max E. Blum",
+				"role": "performer",
+				"reason": "Crédito Child at Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Erin M. Gray",
+				"role": "performer",
+				"reason": "Crédito Child at Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Misty L. Oppenheim",
+				"role": "performer",
+				"reason": "Crédito Child in Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christopher Shepard Hughes",
+				"role": "performer",
+				"reason": "Crédito Child in Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rachel Snow",
+				"role": "performer",
+				"reason": "Crédito Child in Assembly cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Craig Lamar Traylor",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jennifer Key",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marty Bautista",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Anthony Hernandez",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Raina Cease",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jonathan Osser",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Vinnie Buffolino",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marcella Sassano",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Johnny Thomas III",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Shannon Hughes",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christel Khalil",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cassie Colaw",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Austin Stout",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cindy Tran",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jonathan Feyer",
+				"role": "performer",
+				"reason": "Crédito Child in Classroom cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alissa Graham",
+				"role": "performer",
+				"reason": "Crédito Matilda, Newborn cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Amanda Graham",
+				"role": "performer",
+				"reason": "Crédito Matilda, Newborn cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Trevor Gallagher",
+				"role": "performer",
+				"reason": "Crédito Matilda, Newborn cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James Gallagher",
+				"role": "performer",
+				"reason": "Crédito Matilda, Newborn cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kayla Fredericks",
+				"role": "performer",
+				"reason": "Crédito Matilda, 9 Months cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kelsey Fredericks",
+				"role": "performer",
+				"reason": "Crédito Matilda, 9 Months cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Amanda Fein",
+				"role": "performer",
+				"reason": "Crédito Matilda, Toddler cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Caitlin Fein",
+				"role": "performer",
+				"reason": "Crédito Matilda, Toddler cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nicholas Cox",
+				"role": "performer",
+				"reason": "Crédito Michael, 6 Years cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Amanda Summers",
+				"role": "performer",
+				"reason": "Crédito Miss Honey, 2 Years cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kristin Summers",
+				"role": "performer",
+				"reason": "Crédito Two-Year-Old Miss Honey cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Phoebe Garcia-Pearl",
+				"role": "performer",
+				"reason": "Crédito Miss Honey, 5 Years cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kathy Barbour",
+				"role": "performer",
+				"reason": "Crédito Million $ Sticky Showgirl cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Donna Spangler",
+				"role": "performer",
+				"reason": "Crédito Million $ Sticky Showgirl cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marianne Curan",
+				"role": "performer",
+				"reason": "Crédito Million $ Sticky Contestant cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Penny Holland",
+				"role": "performer",
+				"reason": "Crédito Million $ Sticky Contestant cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Richard E. Coe",
+				"role": "performer",
+				"reason": "Crédito Million $ Sticky Contestant cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sabrina Bryan",
+				"role": "performer",
+				"reason": "Crédito Girl (uncredited) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Trevor Coppola",
+				"role": "performer",
+				"reason": "Crédito Restaurant Patron (uncredited) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Simon Jones",
+				"role": "performer",
+				"reason": "Crédito Shellhammer (uncredited) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jon Lovitz",
+				"role": "performer",
+				"reason": "Crédito Million $ Sticky Host (uncredited) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kira Spencer Cook",
+				"role": "performer",
+				"reason": "Crédito Hortensia (as Kira Spencer Hesser) cotejado en el billing completo de Matilda; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,635 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "lara-croft-tomb-raider-2001",
+	"title": "Lara Croft. Tomb Raider",
+	"year": 2001,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1995/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 33
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/lara-croft-tomb-raider",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0146316/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Simon West",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 12786,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/12786",
+					"fact": "Identidad de Simon West, oficio y filmografía cotejados con el ID exacto de Lara Croft. Tomb Raider (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1995/cast",
+					"fact": "El billing del título exacto acredita a Simon West en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Reims%20polar%202025%201560875%20(simon%20west).jpg?width=1200",
+				"localPath": "/people/simon-west-nm0922346.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Angelina Jolie",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Lara Croft",
+			"tmdbPersonId": 11701,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11701",
+					"fact": "Identidad de Angelina Jolie, oficio y filmografía cotejados con el ID exacto de Lara Croft. Tomb Raider (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1995/cast",
+					"fact": "El billing del título exacto acredita a Angelina Jolie como Lara Croft."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Angelina%20Jolie-643531%20(cropped).jpg?width=1200",
+				"localPath": "/people/angelina-jolie-nm0001401.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Iain Glen",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Manfred Powell",
+			"tmdbPersonId": 20508,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/20508",
+					"fact": "Identidad de Iain Glen, oficio y filmografía cotejados con el ID exacto de Lara Croft. Tomb Raider (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1995/cast",
+					"fact": "El billing del título exacto acredita a Iain Glen como Manfred Powell."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/d9CKAAiV1HvSnzzmpDzD0mC0HlX.jpg",
+				"localPath": "/people/iain-glen-nm0322513.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Daniel Craig",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Alex West",
+			"tmdbPersonId": 8784,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8784",
+					"fact": "Identidad de Daniel Craig, oficio y filmografía cotejados con el ID exacto de Lara Croft. Tomb Raider (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1995/cast",
+					"fact": "El billing del título exacto acredita a Daniel Craig como Alex West."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Craig%20TIFF%202025%20Red%20Carpet%20(cropped).jpg?width=640",
+				"localPath": "/people/daniel-craig-nm0185819.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Noah Taylor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Bryce",
+			"tmdbPersonId": 1284,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1284",
+					"fact": "Identidad de Noah Taylor, oficio y filmografía cotejados con el ID exacto de Lara Croft. Tomb Raider (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1995/cast",
+					"fact": "El billing del título exacto acredita a Noah Taylor como Bryce."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Noah%20Taylor%20(29694898461).jpg?width=640",
+				"localPath": "/people/noah-taylor-nm0852965.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Chris Barrie",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Hillary",
+			"tmdbPersonId": 20511,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/20511",
+					"fact": "Identidad de Chris Barrie, oficio y filmografía cotejados con el ID exacto de Lara Croft. Tomb Raider (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1995/cast",
+					"fact": "El billing del título exacto acredita a Chris Barrie como Hillary."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/210iRxlqUWjCulX9HhkywDuG1dR.jpg",
+				"localPath": "/people/chris-barrie-nm0057368.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jon Voight",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Lord Richard Croft",
+			"tmdbPersonId": 10127,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10127",
+					"fact": "Identidad de Jon Voight, oficio y filmografía cotejados con el ID exacto de Lara Croft. Tomb Raider (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1995/cast",
+					"fact": "El billing del título exacto acredita a Jon Voight como Lord Richard Croft."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jon%20Voight%202011.jpg?width=1200",
+				"localPath": "/people/jon-voight-nm0000685.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Julian Rhind-Tutt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Mr. Pimms",
+			"tmdbPersonId": 7031,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/7031",
+					"fact": "Identidad de Julian Rhind-Tutt, oficio y filmografía cotejados con el ID exacto de Lara Croft. Tomb Raider (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1995/cast",
+					"fact": "El billing del título exacto acredita a Julian Rhind-Tutt como Mr. Pimms."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jvwtFc8XFpTb7NX1XRJX8TOfH5.jpg",
+				"localPath": "/people/julian-rhind-tutt-nm0722279.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Leslie Phillips",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Wilson",
+			"tmdbPersonId": 10655,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10655",
+					"fact": "Identidad de Leslie Phillips, oficio y filmografía cotejados con el ID exacto de Lara Croft. Tomb Raider (2001)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1995/cast",
+					"fact": "El billing del título exacto acredita a Leslie Phillips como Wilson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xD1ud9ud75GRRQz2EDATyE7NhUV.jpg",
+				"localPath": "/people/leslie-phillips-nm0680587.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Richard Johnson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Distinguished Gentleman",
+			"tmdbPersonId": 20510,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Distinguished Gentleman cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Phillips",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Assault Team Leader (Julius)",
+			"tmdbPersonId": 20509,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Assault Team Leader (Julius) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rachel Appleton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Young Lara",
+			"tmdbPersonId": 20512,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Lara cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Henry Wyndham",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Boothby's Auctioneer",
+			"tmdbPersonId": 1371446,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Boothby's Auctioneer cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Cheung",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Head Laborer",
+			"tmdbPersonId": 1371452,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Head Laborer cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David K.S. Tse",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Head Laborer",
+			"tmdbPersonId": 1013950,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Head Laborer cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ayla Amiral",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Little Cambodian Girl",
+			"tmdbPersonId": 1371450,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Little Cambodian Girl cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ozzie Yue",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Aged Buddhist Monk",
+			"tmdbPersonId": 1227314,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Aged Buddhist Monk cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Wai-Keat Lau",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Young Buddhist Monk",
+			"tmdbPersonId": 1371453,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Buddhist Monk cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stephanie Burns",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Little Inuit Girl",
+			"tmdbPersonId": 1371454,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Little Inuit Girl cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Carl Chase",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Ancient High Priest",
+			"tmdbPersonId": 127166,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ancient High Priest cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Richenda Carey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Imperious Woman",
+			"tmdbPersonId": 90764,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Imperious Woman cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sylvano Clarke",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "UPS Guy",
+			"tmdbPersonId": 1371455,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito UPS Guy cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Олег Фёдоров",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Russian Commander",
+			"tmdbPersonId": 69471,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Russian Commander cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Anna-Maria Everett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Maid",
+			"tmdbPersonId": 129840,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Maid cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gary Bunn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Powell's Henchman (uncredited)",
+			"tmdbPersonId": 2535201,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Powell's Henchman (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steve Darts",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Special Forces Soldier (uncredited)",
+			"tmdbPersonId": 1283832,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Special Forces Soldier (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James Embree",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Special Forces Team Member (uncredited)",
+			"tmdbPersonId": 1390394,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Special Forces Team Member (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Prince Thompson Iyamu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Special Forces Team Member (uncredited)",
+			"tmdbPersonId": 3679522,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Special Forces Team Member (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aidan Harrington",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Board Member (uncredited)",
+			"tmdbPersonId": 3125244,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Board Member (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Ioannou",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Combat Fighter (uncredited)",
+			"tmdbPersonId": 589666,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Combat Fighter (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sonny Caldinez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Gentleman (uncredited)",
+			"tmdbPersonId": 1230490,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gentleman (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ray Donn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Special Forces Team Member (uncredited)",
+			"tmdbPersonId": 4211521,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Special Forces Team Member (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jimmy Roussounis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1995/cast",
+			"screenRole": "Venetian Rogue (uncredited)",
+			"tmdbPersonId": 1380903,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Venetian Rogue (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Lara Croft. Tomb Raider; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Richard Johnson",
+				"role": "performer",
+				"reason": "Crédito Distinguished Gentleman cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Phillips",
+				"role": "performer",
+				"reason": "Crédito Assault Team Leader (Julius) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rachel Appleton",
+				"role": "performer",
+				"reason": "Crédito Young Lara cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Henry Wyndham",
+				"role": "performer",
+				"reason": "Crédito Boothby's Auctioneer cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Cheung",
+				"role": "performer",
+				"reason": "Crédito Head Laborer cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David K.S. Tse",
+				"role": "performer",
+				"reason": "Crédito Head Laborer cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ayla Amiral",
+				"role": "performer",
+				"reason": "Crédito Little Cambodian Girl cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ozzie Yue",
+				"role": "performer",
+				"reason": "Crédito Aged Buddhist Monk cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Wai-Keat Lau",
+				"role": "performer",
+				"reason": "Crédito Young Buddhist Monk cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stephanie Burns",
+				"role": "performer",
+				"reason": "Crédito Little Inuit Girl cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Carl Chase",
+				"role": "performer",
+				"reason": "Crédito Ancient High Priest cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Richenda Carey",
+				"role": "performer",
+				"reason": "Crédito Imperious Woman cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sylvano Clarke",
+				"role": "performer",
+				"reason": "Crédito UPS Guy cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Олег Фёдоров",
+				"role": "performer",
+				"reason": "Crédito Russian Commander cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Anna-Maria Everett",
+				"role": "performer",
+				"reason": "Crédito Maid cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gary Bunn",
+				"role": "performer",
+				"reason": "Crédito Powell's Henchman (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steve Darts",
+				"role": "performer",
+				"reason": "Crédito Special Forces Soldier (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James Embree",
+				"role": "performer",
+				"reason": "Crédito Special Forces Team Member (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Prince Thompson Iyamu",
+				"role": "performer",
+				"reason": "Crédito Special Forces Team Member (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aidan Harrington",
+				"role": "performer",
+				"reason": "Crédito Board Member (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Ioannou",
+				"role": "performer",
+				"reason": "Crédito Combat Fighter (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sonny Caldinez",
+				"role": "performer",
+				"reason": "Crédito Gentleman (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ray Donn",
+				"role": "performer",
+				"reason": "Crédito Special Forces Team Member (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jimmy Roussounis",
+				"role": "performer",
+				"reason": "Crédito Venetian Rogue (uncredited) cotejado en el billing completo de Lara Croft. Tomb Raider; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

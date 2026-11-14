@@ -1,0 +1,1075 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-expreso-polar-2004",
+	"title": "El expreso polar",
+	"year": 2004,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/5255/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 60
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/polar-express",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0338348/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Robert Zemeckis",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 24,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/24",
+					"fact": "Identidad de Robert Zemeckis, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Robert Zemeckis en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lPYDQ5LYNJ12rJZENtyASmVZ1Ql.jpg",
+				"localPath": "/people/robert-zemeckis-nm0000709.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tom Hanks",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Hero Boy (Adult)/ Father / Conductor / Hobo / Scrooge / Santa Claus",
+			"tmdbPersonId": 31,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/31",
+					"fact": "Identidad de Tom Hanks, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Tom Hanks como Hero Boy (Adult)/ Father / Conductor / Hobo / Scrooge / Santa Claus."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Hanks%20at%20the%20Elvis%20Premiere%202022.jpg?width=640",
+				"localPath": "/people/tom-hanks-nm0000158.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Leslie Zemeckis",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Sister Sarah / Mother",
+			"tmdbPersonId": 42287,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/42287",
+					"fact": "Identidad de Leslie Zemeckis, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Leslie Zemeckis como Sister Sarah / Mother."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1bUcEr76agVCsWpMDbfll78biaW.jpg",
+				"localPath": "/people/leslie-zemeckis-nm0366667.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Eddie Deezen",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Know-It-All",
+			"tmdbPersonId": 42362,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/42362",
+					"fact": "Identidad de Eddie Deezen, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Eddie Deezen como Know-It-All."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/AqjxoV14Jd3p5uvPsSPoAHmzQHI.jpg",
+				"localPath": "/people/eddie-deezen-nm0214430.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nona Gaye",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Hero Girl (voice)",
+			"tmdbPersonId": 18286,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/18286",
+					"fact": "Identidad de Nona Gaye, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Nona Gaye como Hero Girl (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nD6Gawyx0QOQIKsFtJXBWMzjLw3.jpg",
+				"localPath": "/people/nona-gaye-nm0310850.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Peter Scolari",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Billy / Lonely Boy",
+			"tmdbPersonId": 42363,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/42363",
+					"fact": "Identidad de Peter Scolari, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Peter Scolari como Billy / Lonely Boy."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/r9sBCkb6hSinCpgWC7lu5XTJEfc.jpg",
+				"localPath": "/people/peter-scolari-nm0778642.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Michael Jeter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Smokey / Steamer",
+			"tmdbPersonId": 2169,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2169",
+					"fact": "Identidad de Michael Jeter, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Michael Jeter como Smokey / Steamer."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Jeter%20at%20the%2044th%20Emmy%20Awards%20cropped.jpg?width=640",
+				"localPath": "/people/michael-jeter-nm0005052.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Josh Hutcherson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Hero Boy (motion capture)",
+			"tmdbPersonId": 27972,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/27972",
+					"fact": "Identidad de Josh Hutcherson, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Josh Hutcherson como Hero Boy (motion capture)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Josh%20Hutcherson%20by%20Gage%20Skidmore%202.jpg?width=640",
+				"localPath": "/people/josh-hutcherson-nm1242688.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Daryl Sabara",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Hero Boy (voice)",
+			"tmdbPersonId": 57675,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/57675",
+					"fact": "Identidad de Daryl Sabara, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Daryl Sabara como Hero Boy (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eZfWmQqNgmuveRWSYuvnQyLXM0d.jpg",
+				"localPath": "/people/daryl-sabara-nm0754512.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jimmy Bennett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Lonely Boy (voice)",
+			"tmdbPersonId": 6860,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lonely Boy (voice) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tinashe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Hero Girl (motion capture)",
+			"tmdbPersonId": 206100,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hero Girl (motion capture) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Brendan King",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Pastry Chef",
+			"tmdbPersonId": 2018016,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pastry Chef cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Andy Pellick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Pastry Chef",
+			"tmdbPersonId": 1080274,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pastry Chef cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Josh Eli",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 2018033,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mark Mendonca",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 2018034,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rolondas Hendricks",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 1733417,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mark Goodman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 1314372,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jon Scott",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 2018057,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gregory Gast",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 86538,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sean Scott",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 2769681,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gordon Hart",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 1613764,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chris Coppola",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Toothless Boy / Elf",
+			"tmdbPersonId": 23791,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/23791",
+					"fact": "Identidad de Chris Coppola, oficio y filmografía cotejados con el ID exacto de El expreso polar (2004)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/5255/cast",
+					"fact": "El billing del título exacto acredita a Chris Coppola como Toothless Boy / Elf."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zLe7V3g6TG0IbwA5nY8w5QoOqpK.jpg",
+				"localPath": "/people/chris-coppola-nm0178875.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Julene Renee",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Red Head Girl / Elf",
+			"tmdbPersonId": 42286,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Red Head Girl / Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Charles Fleischer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elf General",
+			"tmdbPersonId": 12826,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elf General cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steven Tyler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elf Lieutenant / Elf Singer",
+			"tmdbPersonId": 37935,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elf Lieutenant / Elf Singer cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Phil Fondacaro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elf",
+			"tmdbPersonId": 12662,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Debbie Lee Carrington",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elf",
+			"tmdbPersonId": 19753,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mark Povinelli",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elf",
+			"tmdbPersonId": 154785,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ed Gale",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elf",
+			"tmdbPersonId": 1471,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dante Pastula",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Little Boy",
+			"tmdbPersonId": 1226509,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Little Boy cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "André Sogliuzzo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Smokey / Steamer (voice)",
+			"tmdbPersonId": 177588,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Smokey / Steamer (voice) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Isabella Peregrina",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Sister Sarah (voice)",
+			"tmdbPersonId": 1934088,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sister Sarah (voice) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eric Newton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 2018062,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aidan O'Shea",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 2018064,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aaron Hendry",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 61536,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kevin C. Carr",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 2018065,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bee Jay Joyer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 2018066,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jena Carpenter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 2018067,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Karine Mauffrey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 2018068,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Elisabeth P. Carpenter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 1094413,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bill Forchion",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 1238996,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Devin Henderson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 2018069,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sagiv Ben-Binyamin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Acrobatic Elf",
+			"tmdbPersonId": 2018070,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ashly Holloway",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Sister Sarah",
+			"tmdbPersonId": 179557,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sister Sarah cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jimmy 'Jax' Pinchak",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Know-It-All",
+			"tmdbPersonId": 284628,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Know-It-All cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chantel Valdivieso",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Hero Girl",
+			"tmdbPersonId": 1934093,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hero Girl cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Hayden McFarland",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Lonely Boy",
+			"tmdbPersonId": 1602372,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lonely Boy cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Connor Matheus",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Toothless Boy",
+			"tmdbPersonId": 1213527,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Toothless Boy cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eve Solaris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Young Boy",
+			"tmdbPersonId": 38407,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Boy cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steve Alterman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 217777,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jeff Bennett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 34982,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jack Blessing",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 102336,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Corey Burton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 35219,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mitch Carter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 64447,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Clotworthy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 35172,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Cowgill",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 60232,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Donald Fullilove",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 84494,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nicholas Guest",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited",
+			"tmdbPersonId": 36821,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rif Hutton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 15373,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paul Pape",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/5255/cast",
+			"screenRole": "Elves (voice) (uncredited)",
+			"tmdbPersonId": 174563,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de El expreso polar; se retuvieron 1 créditos de dirección y 9 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Jimmy Bennett",
+				"role": "performer",
+				"reason": "Crédito Lonely Boy (voice) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tinashe",
+				"role": "performer",
+				"reason": "Crédito Hero Girl (motion capture) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Brendan King",
+				"role": "performer",
+				"reason": "Crédito Pastry Chef cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Andy Pellick",
+				"role": "performer",
+				"reason": "Crédito Pastry Chef cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Josh Eli",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mark Mendonca",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rolondas Hendricks",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mark Goodman",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jon Scott",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gregory Gast",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sean Scott",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gordon Hart",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Julene Renee",
+				"role": "performer",
+				"reason": "Crédito Red Head Girl / Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Charles Fleischer",
+				"role": "performer",
+				"reason": "Crédito Elf General cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steven Tyler",
+				"role": "performer",
+				"reason": "Crédito Elf Lieutenant / Elf Singer cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Phil Fondacaro",
+				"role": "performer",
+				"reason": "Crédito Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Debbie Lee Carrington",
+				"role": "performer",
+				"reason": "Crédito Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mark Povinelli",
+				"role": "performer",
+				"reason": "Crédito Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ed Gale",
+				"role": "performer",
+				"reason": "Crédito Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dante Pastula",
+				"role": "performer",
+				"reason": "Crédito Little Boy cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "André Sogliuzzo",
+				"role": "performer",
+				"reason": "Crédito Smokey / Steamer (voice) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Isabella Peregrina",
+				"role": "performer",
+				"reason": "Crédito Sister Sarah (voice) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eric Newton",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aidan O'Shea",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aaron Hendry",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kevin C. Carr",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bee Jay Joyer",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jena Carpenter",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Karine Mauffrey",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Elisabeth P. Carpenter",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bill Forchion",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Devin Henderson",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sagiv Ben-Binyamin",
+				"role": "performer",
+				"reason": "Crédito Acrobatic Elf cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ashly Holloway",
+				"role": "performer",
+				"reason": "Crédito Sister Sarah cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jimmy 'Jax' Pinchak",
+				"role": "performer",
+				"reason": "Crédito Know-It-All cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Chantel Valdivieso",
+				"role": "performer",
+				"reason": "Crédito Hero Girl cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Hayden McFarland",
+				"role": "performer",
+				"reason": "Crédito Lonely Boy cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Connor Matheus",
+				"role": "performer",
+				"reason": "Crédito Toothless Boy cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eve Solaris",
+				"role": "performer",
+				"reason": "Crédito Young Boy cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steve Alterman",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jeff Bennett",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jack Blessing",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Corey Burton",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mitch Carter",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Clotworthy",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Cowgill",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Donald Fullilove",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nicholas Guest",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rif Hutton",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paul Pape",
+				"role": "performer",
+				"reason": "Crédito Elves (voice) (uncredited) cotejado en el billing completo de El expreso polar; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,395 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "tommaso-2019",
+	"title": "Tommaso",
+	"year": 2019,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/575426/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 19
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/tommaso",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt9482230/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Abel Ferrara",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 39104,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/39104",
+					"fact": "Identidad de Abel Ferrara, oficio y filmografía cotejados con el ID exacto de Tommaso (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/575426/cast",
+					"fact": "El billing del título exacto acredita a Abel Ferrara en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Abel%20Ferrara%20Cannes%202017.jpg?width=1200",
+				"localPath": "/people/abel-ferrara-nm0001206.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Willem Dafoe",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Tommaso",
+			"tmdbPersonId": 5293,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5293",
+					"fact": "Identidad de Willem Dafoe, oficio y filmografía cotejados con el ID exacto de Tommaso (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/575426/cast",
+					"fact": "El billing del título exacto acredita a Willem Dafoe como Tommaso."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Willem%20Dafoe%20Cannes%202019.jpg?width=640",
+				"localPath": "/people/willem-dafoe-nm0000353.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Cristina Chiriac",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Nikki",
+			"tmdbPersonId": 2313632,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2313632",
+					"fact": "Identidad de Cristina Chiriac, oficio y filmografía cotejados con el ID exacto de Tommaso (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/575426/cast",
+					"fact": "El billing del título exacto acredita a Cristina Chiriac como Nikki."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5x6jT8iIYGDnaAe9lEZDQ0xhfn9.jpg",
+				"localPath": "/people/cristina-chiriac-nm7713812.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Anna Ferrara",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "DeeDee",
+			"tmdbPersonId": 2313633,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2313633",
+					"fact": "Identidad de Anna Ferrara, oficio y filmografía cotejados con el ID exacto de Tommaso (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/575426/cast",
+					"fact": "El billing del título exacto acredita a Anna Ferrara como DeeDee."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7QztAytIiwYDUD2zAu4hwoyYnn1.jpg",
+				"localPath": "/people/anna-ferrara-nm9790051.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alessandra Scarci",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Alex",
+			"tmdbPersonId": 2483732,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2483732",
+					"fact": "Identidad de Alessandra Scarci, oficio y filmografía cotejados con el ID exacto de Tommaso (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/575426/cast",
+					"fact": "El billing del título exacto acredita a Alessandra Scarci como Alex."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2LkmmM6HN65giwMvh092Sk0VQMc.jpg",
+				"localPath": "/people/alessandra-scarci-nm9580241.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Maricla Amoriello",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Italian Teacher",
+			"tmdbPersonId": 2574474,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2574474",
+					"fact": "Identidad de Maricla Amoriello, oficio y filmografía cotejados con el ID exacto de Tommaso (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/575426/cast",
+					"fact": "El billing del título exacto acredita a Maricla Amoriello como Italian Teacher."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/1289837/cache-1129070-1777370352/image-w856.jpg",
+				"localPath": "/people/maricla-amoriello-tmdb-2574474.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Luciano Sovena",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Police Chief",
+			"tmdbPersonId": 2574476,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2574476",
+					"fact": "Identidad de Luciano Sovena, oficio y filmografía cotejados con el ID exacto de Tommaso (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/575426/cast",
+					"fact": "El billing del título exacto acredita a Luciano Sovena como Police Chief."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/64224/cache-1129075-1777370601/image-w856.jpg",
+				"localPath": "/people/luciano-sovena-tmdb-2574476.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sofia Rania",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Girl Bar 081",
+			"tmdbPersonId": 2574477,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Girl Bar 081 cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Anastasia Balan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Nikki's Mother",
+			"tmdbPersonId": 2574479,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nikki's Mother cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dharma Mangia Woods",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Acting Class Dancer",
+			"tmdbPersonId": 2574480,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acting Class Dancer cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alessandra Camilla Scarci",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Student in Car",
+			"tmdbPersonId": 2574481,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Student in Car cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stefano Papa",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Blonde Guy",
+			"tmdbPersonId": 2574482,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Blonde Guy cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Harry McCrory",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Danny",
+			"tmdbPersonId": 2574484,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Danny cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Claudia Palmira",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Diedre",
+			"tmdbPersonId": 2574485,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Diedre cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "William Supple",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Man in Car",
+			"tmdbPersonId": 2574486,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man in Car cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tonino Angelini",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Cab Driver",
+			"tmdbPersonId": 2574488,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cab Driver cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stella Mastrantonio",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Acting Class Student",
+			"tmdbPersonId": 2483728,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acting Class Student cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alessandro Prato",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Acting Class Student",
+			"tmdbPersonId": 2483730,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acting Class Student cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lorenzo Piazzoni",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/575426/cast",
+			"screenRole": "Acting Class Student",
+			"tmdbPersonId": 2483729,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Acting Class Student cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Tommaso; se retuvieron 1 créditos de dirección y 6 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Sofia Rania",
+				"role": "performer",
+				"reason": "Crédito Girl Bar 081 cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Anastasia Balan",
+				"role": "performer",
+				"reason": "Crédito Nikki's Mother cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dharma Mangia Woods",
+				"role": "performer",
+				"reason": "Crédito Acting Class Dancer cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alessandra Camilla Scarci",
+				"role": "performer",
+				"reason": "Crédito Student in Car cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stefano Papa",
+				"role": "performer",
+				"reason": "Crédito Blonde Guy cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Harry McCrory",
+				"role": "performer",
+				"reason": "Crédito Danny cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Claudia Palmira",
+				"role": "performer",
+				"reason": "Crédito Diedre cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "William Supple",
+				"role": "performer",
+				"reason": "Crédito Man in Car cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tonino Angelini",
+				"role": "performer",
+				"reason": "Crédito Cab Driver cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stella Mastrantonio",
+				"role": "performer",
+				"reason": "Crédito Acting Class Student cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alessandro Prato",
+				"role": "performer",
+				"reason": "Crédito Acting Class Student cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lorenzo Piazzoni",
+				"role": "performer",
+				"reason": "Crédito Acting Class Student cotejado en el billing completo de Tommaso; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

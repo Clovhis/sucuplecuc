@@ -1,0 +1,651 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "see-you-soon-2019",
+	"title": "See You Soon",
+	"year": 2019,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/610781/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 34
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/see-you-soon",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt7216068/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "David Mahmoudieh",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 2197454,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2197454",
+					"fact": "Identidad de David Mahmoudieh, oficio y filmografía cotejados con el ID exacto de See You Soon (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/610781/cast",
+					"fact": "El billing del título exacto acredita a David Mahmoudieh en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F7%2Fpeople%2F7a169bc051ff63f4f62e894efb5243e7.jpg",
+				"localPath": "/people/david-mahmoudieh-tmdb-2197454.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Liam McIntyre",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Ryan Hawkes",
+			"tmdbPersonId": 934219,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/934219",
+					"fact": "Identidad de Liam McIntyre, oficio y filmografía cotejados con el ID exacto de See You Soon (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/610781/cast",
+					"fact": "El billing del título exacto acredita a Liam McIntyre como Ryan Hawkes."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vTw11F1awNW8AlxInljEsK96cNB.jpg",
+				"localPath": "/people/liam-mcintyre-nm2553987.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Harvey Keitel",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Billy",
+			"tmdbPersonId": 1037,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1037",
+					"fact": "Identidad de Harvey Keitel, oficio y filmografía cotejados con el ID exacto de See You Soon (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/610781/cast",
+					"fact": "El billing del título exacto acredita a Harvey Keitel como Billy."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harvey%20Keitel%20VF%202012%20Shankbone.JPG?width=640",
+				"localPath": "/people/harvey-keitel-nm0000172.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Oleg Taktarov",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Ruslan",
+			"tmdbPersonId": 77351,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/77351",
+					"fact": "Identidad de Oleg Taktarov, oficio y filmografía cotejados con el ID exacto de See You Soon (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/610781/cast",
+					"fact": "El billing del título exacto acredita a Oleg Taktarov como Ruslan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zYcB7R9K9xvh30n3gb1Gi4c2McY.jpg",
+				"localPath": "/people/oleg-taktarov-nm0847727.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Larisa Malevannaya",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Grandma Marina",
+			"tmdbPersonId": 587516,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/587516",
+					"fact": "Identidad de Larisa Malevannaya, oficio y filmografía cotejados con el ID exacto de See You Soon (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/610781/cast",
+					"fact": "El billing del título exacto acredita a Larisa Malevannaya como Grandma Marina."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8Wa255OWC74jG7G2Q2tKkA2yPAY.jpg",
+				"localPath": "/people/larisa-malevannaya-nm0539421.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Poppy Drayton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Elise",
+			"tmdbPersonId": 1541266,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1541266",
+					"fact": "Identidad de Poppy Drayton, oficio y filmografía cotejados con el ID exacto de See You Soon (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/610781/cast",
+					"fact": "El billing del título exacto acredita a Poppy Drayton como Elise."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mx81cyurTIGDtoWcNPcK4fDKxAu.jpg",
+				"localPath": "/people/poppy-drayton-nm5014360.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jenia Tanaeva",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Lana Kalinina",
+			"tmdbPersonId": 2786202,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2786202",
+					"fact": "Identidad de Jenia Tanaeva, oficio y filmografía cotejados con el ID exacto de See You Soon (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/610781/cast",
+					"fact": "El billing del título exacto acredita a Jenia Tanaeva como Lana Kalinina."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/774TqZ3EUX278v6B541zpos4C3W.jpg",
+				"localPath": "/people/jenia-tanaeva-tmdb-2786202.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Doina Teodoru",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Sabine",
+			"tmdbPersonId": 2222634,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2222634",
+					"fact": "Identidad de Doina Teodoru, oficio y filmografía cotejados con el ID exacto de See You Soon (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/610781/cast",
+					"fact": "El billing del título exacto acredita a Doina Teodoru como Sabine."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mzlZEzMIwa0UX044yanaL31Nz2D.jpg",
+				"localPath": "/people/doina-teodoru-tmdb-2222634.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Mircea Stoian",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Mr. Zimmer",
+			"tmdbPersonId": 1426154,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1426154",
+					"fact": "Identidad de Mircea Stoian, oficio y filmografía cotejados con el ID exacto de See You Soon (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/610781/cast",
+					"fact": "El billing del título exacto acredita a Mircea Stoian como Mr. Zimmer."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mSBgvRw43DEuGeNEZLCFZlODnWL.jpg",
+				"localPath": "/people/mircea-stoian-nm0831143.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Petr Tereschenko",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Danny",
+			"tmdbPersonId": 2055003,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Danny cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "George Lako",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Giorgio",
+			"tmdbPersonId": 1300119,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Giorgio cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Carla Abruzzo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Amanda",
+			"tmdbPersonId": 3357317,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Amanda cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ionut Achivoaie",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Doctor Saint Petersburg",
+			"tmdbPersonId": 4635681,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Doctor Saint Petersburg cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Virgil Aioanei",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Club Official",
+			"tmdbPersonId": 1747539,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Club Official cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "George Anthony Anisimow",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Newspaper Boy",
+			"tmdbPersonId": 1999491,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Newspaper Boy cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mihai Bisericanu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Coach L.A.S.C",
+			"tmdbPersonId": 1897592,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Coach L.A.S.C cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alma Boiangiu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Singer",
+			"tmdbPersonId": 1912481,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Singer cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Oana Carmaciu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Elise's Friend",
+			"tmdbPersonId": 2408967,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elise's Friend cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Corina Druc",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Ms. Romanova",
+			"tmdbPersonId": 2149907,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ms. Romanova cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Annalea Fiachi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Reporter",
+			"tmdbPersonId": 4604333,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Reporter cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Roman Florentin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Doctor Gupta",
+			"tmdbPersonId": 1699001,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Doctor Gupta cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Anca Florescu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Nurse LA",
+			"tmdbPersonId": 1113159,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nurse LA cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Șerban Georgevici",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Doctor Daniels",
+			"tmdbPersonId": 1490161,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Doctor Daniels cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kamara",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Sam (the piano player)",
+			"tmdbPersonId": 6573109,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sam (the piano player) cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nikoleta Karantai",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Island Restaurant Host",
+			"tmdbPersonId": 6573113,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Island Restaurant Host cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Giannis Lazaridis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": null,
+			"tmdbPersonId": 5068563,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito sin personaje detallado cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alice Cora Mihalache",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Elise's Friend",
+			"tmdbPersonId": 2505967,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Elise's Friend cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jay Oxenham",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Sportscaster LA",
+			"tmdbPersonId": 6573121,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sportscaster LA cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alin Panc",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Youth coach",
+			"tmdbPersonId": 1178619,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Youth coach cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Andreea Popa",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Young blonde woman",
+			"tmdbPersonId": 4452043,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young blonde woman cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Carles Puyol",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Himself",
+			"tmdbPersonId": 2178883,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Himself cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alexi Lalas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Himself",
+			"tmdbPersonId": 4837468,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Himself cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alin Rosu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Bartender Del Posto",
+			"tmdbPersonId": 5083845,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bartender Del Posto cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dan Uliel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/610781/cast",
+			"screenRole": "Fox Sports Host",
+			"tmdbPersonId": 4974903,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fox Sports Host cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de See You Soon; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Petr Tereschenko",
+				"role": "performer",
+				"reason": "Crédito Danny cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "George Lako",
+				"role": "performer",
+				"reason": "Crédito Giorgio cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Carla Abruzzo",
+				"role": "performer",
+				"reason": "Crédito Amanda cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ionut Achivoaie",
+				"role": "performer",
+				"reason": "Crédito Doctor Saint Petersburg cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Virgil Aioanei",
+				"role": "performer",
+				"reason": "Crédito Club Official cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "George Anthony Anisimow",
+				"role": "performer",
+				"reason": "Crédito Newspaper Boy cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mihai Bisericanu",
+				"role": "performer",
+				"reason": "Crédito Coach L.A.S.C cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alma Boiangiu",
+				"role": "performer",
+				"reason": "Crédito Singer cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Oana Carmaciu",
+				"role": "performer",
+				"reason": "Crédito Elise's Friend cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Corina Druc",
+				"role": "performer",
+				"reason": "Crédito Ms. Romanova cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Annalea Fiachi",
+				"role": "performer",
+				"reason": "Crédito Reporter cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Roman Florentin",
+				"role": "performer",
+				"reason": "Crédito Doctor Gupta cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Anca Florescu",
+				"role": "performer",
+				"reason": "Crédito Nurse LA cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Șerban Georgevici",
+				"role": "performer",
+				"reason": "Crédito Doctor Daniels cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kamara",
+				"role": "performer",
+				"reason": "Crédito Sam (the piano player) cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nikoleta Karantai",
+				"role": "performer",
+				"reason": "Crédito Island Restaurant Host cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Giannis Lazaridis",
+				"role": "performer",
+				"reason": "Crédito sin personaje detallado cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alice Cora Mihalache",
+				"role": "performer",
+				"reason": "Crédito Elise's Friend cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jay Oxenham",
+				"role": "performer",
+				"reason": "Crédito Sportscaster LA cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alin Panc",
+				"role": "performer",
+				"reason": "Crédito Youth coach cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Andreea Popa",
+				"role": "performer",
+				"reason": "Crédito Young blonde woman cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Carles Puyol",
+				"role": "performer",
+				"reason": "Crédito Himself cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alexi Lalas",
+				"role": "performer",
+				"reason": "Crédito Himself cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alin Rosu",
+				"role": "performer",
+				"reason": "Crédito Bartender Del Posto cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dan Uliel",
+				"role": "performer",
+				"reason": "Crédito Fox Sports Host cotejado en el billing completo de See You Soon; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

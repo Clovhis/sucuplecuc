@@ -1,0 +1,1611 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "los-fantasmas-atacan-al-jefe-1988",
+	"title": "Los fantasmas atacan al jefe",
+	"year": 1988,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/9647/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 94
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/los-fantasmas-atacan-al-jefe",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0096061/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Richard Donner",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 7187,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/7187",
+					"fact": "Identidad de Richard Donner, oficio y filmografía cotejados con el ID exacto de Los fantasmas atacan al jefe (1988)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9647/cast",
+					"fact": "El billing del título exacto acredita a Richard Donner en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Donner%20(4505771045)%20(cropped).jpg?width=1200",
+				"localPath": "/people/richard-donner-nm0001149.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Bill Murray",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Francis Cross",
+			"tmdbPersonId": 1532,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1532",
+					"fact": "Identidad de Bill Murray, oficio y filmografía cotejados con el ID exacto de Los fantasmas atacan al jefe (1988)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9647/cast",
+					"fact": "El billing del título exacto acredita a Bill Murray como Francis Cross."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bill%20Murray-8882.jpg?width=640",
+				"localPath": "/people/bill-murray-nm0000195.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Karen Allen",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Claire Phillips",
+			"tmdbPersonId": 650,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/650",
+					"fact": "Identidad de Karen Allen, oficio y filmografía cotejados con el ID exacto de Los fantasmas atacan al jefe (1988)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9647/cast",
+					"fact": "El billing del título exacto acredita a Karen Allen como Claire Phillips."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eJszpndpRzrXbSlz7RUlApoTykn.jpg",
+				"localPath": "/people/karen-allen-nm0000261.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "John Forsythe",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Lew Hayward",
+			"tmdbPersonId": 24367,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/24367",
+					"fact": "Identidad de John Forsythe, oficio y filmografía cotejados con el ID exacto de Los fantasmas atacan al jefe (1988)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9647/cast",
+					"fact": "El billing del título exacto acredita a John Forsythe como Lew Hayward."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lfhKEIepJXdIW9JVCZZ15ULYy8n.jpg",
+				"localPath": "/people/john-forsythe-nm0001234.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "John Glover",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Bryce Cummings",
+			"tmdbPersonId": 5589,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5589",
+					"fact": "Identidad de John Glover, oficio y filmografía cotejados con el ID exacto de Los fantasmas atacan al jefe (1988)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9647/cast",
+					"fact": "El billing del título exacto acredita a John Glover como Bryce Cummings."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aPmq20MXqFALrUxaaJoC2Xonumo.jpg",
+				"localPath": "/people/john-glover-nm0001278.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Bobcat Goldthwait",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Eliot Loudermilk",
+			"tmdbPersonId": 95024,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/95024",
+					"fact": "Identidad de Bobcat Goldthwait, oficio y filmografía cotejados con el ID exacto de Los fantasmas atacan al jefe (1988)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9647/cast",
+					"fact": "El billing del título exacto acredita a Bobcat Goldthwait como Eliot Loudermilk."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7Q6MWUQ5YheFm6xxUxigqIFAB95.jpg",
+				"localPath": "/people/bobcat-goldthwait-nm0001281.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Robert Mitchum",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Preston Rhinelander",
+			"tmdbPersonId": 10158,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10158",
+					"fact": "Identidad de Robert Mitchum, oficio y filmografía cotejados con el ID exacto de Los fantasmas atacan al jefe (1988)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9647/cast",
+					"fact": "El billing del título exacto acredita a Robert Mitchum como Preston Rhinelander."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Mitchum%201949%20(no%20signature).jpg?width=640",
+				"localPath": "/people/robert-mitchum-nm0000053.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "David Johansen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Ghost of Christmas Past",
+			"tmdbPersonId": 57116,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/57116",
+					"fact": "Identidad de David Johansen, oficio y filmografía cotejados con el ID exacto de Los fantasmas atacan al jefe (1988)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9647/cast",
+					"fact": "El billing del título exacto acredita a David Johansen como Ghost of Christmas Past."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Johansen%20at%20SO36.jpg?width=640",
+				"localPath": "/people/david-johansen-nm0423774.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Carol Kane",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Ghost of Christmas Present",
+			"tmdbPersonId": 10556,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10556",
+					"fact": "Identidad de Carol Kane, oficio y filmografía cotejados con el ID exacto de Los fantasmas atacan al jefe (1988)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9647/cast",
+					"fact": "El billing del título exacto acredita a Carol Kane como Ghost of Christmas Present."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dm3Ci8XuVYZBqqlYtaLgth94VUe.jpg",
+				"localPath": "/people/carol-kane-nm0001406.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nicholas Phillips",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Calvin Cooley",
+			"tmdbPersonId": 1445671,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Calvin Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Michael J. Pollard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Herman",
+			"tmdbPersonId": 6451,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Herman cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alfre Woodard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Grace Cooley",
+			"tmdbPersonId": 1981,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Grace Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mabel King",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Gramma",
+			"tmdbPersonId": 52031,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gramma cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Murray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "James Cross",
+			"tmdbPersonId": 66107,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito James Cross cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jamie Farr",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Jacob Marley",
+			"tmdbPersonId": 55432,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jacob Marley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Goulet",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Self",
+			"tmdbPersonId": 128621,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Buddy Hackett",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Self",
+			"tmdbPersonId": 67393,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Houseman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Self",
+			"tmdbPersonId": 11783,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lee Majors",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Self",
+			"tmdbPersonId": 18589,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pat McCormick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Ghost of Christmas Present (TV)",
+			"tmdbPersonId": 45611,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ghost of Christmas Present (TV) cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Brian Doyle-Murray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Earl Cross",
+			"tmdbPersonId": 1535,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Earl Cross cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mary Lou Retton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Self",
+			"tmdbPersonId": 1224933,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Al 'Red Dog' Weber",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Santa Claus",
+			"tmdbPersonId": 1445668,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Santa Claus cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jean Speegle Howard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Mrs. Claus",
+			"tmdbPersonId": 8188,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mrs. Claus cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "June Chandler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "June Cleaver",
+			"tmdbPersonId": 106285,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito June Cleaver cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Michael Eidam",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Wally Cleaver",
+			"tmdbPersonId": 3827399,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Wally Cleaver cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mary Ellen Trainor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Ted",
+			"tmdbPersonId": 23967,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ted cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bruce Jarchow",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Wayne",
+			"tmdbPersonId": 53005,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Wayne cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sanford Jensen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Executive",
+			"tmdbPersonId": 1788528,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Executive cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jeffrey Joseph",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Executive",
+			"tmdbPersonId": 79989,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Executive cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Peter Bromilow",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Archbishop",
+			"tmdbPersonId": 53594,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Archbishop cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bill Marcus",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "IBC Guard",
+			"tmdbPersonId": 1191434,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito IBC Guard cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cal Gibson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "IBC Guard",
+			"tmdbPersonId": 1213889,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito IBC Guard cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Damon Hines",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Steven Cooley",
+			"tmdbPersonId": 14316,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Steven Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tamika McCollum",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Shasta Cooley",
+			"tmdbPersonId": 3827404,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Shasta Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Koren McCollum",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Randee Cooley",
+			"tmdbPersonId": 3827405,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Randee Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Reina King",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Lanell Cooley",
+			"tmdbPersonId": 1212644,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lanell Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paul Tuerpe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Stage Manager",
+			"tmdbPersonId": 159013,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Stage Manager cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lester Wilson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Choreographer",
+			"tmdbPersonId": 1213894,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Choreographer cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ron Strang",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Art Director",
+			"tmdbPersonId": 3827406,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Art Director cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kate McGregor-Stewart",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Lady Censor",
+			"tmdbPersonId": 54348,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lady Censor cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jack McGee",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Carpenter",
+			"tmdbPersonId": 10489,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Carpenter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bill Hart",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Carpenter",
+			"tmdbPersonId": 160598,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Carpenter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kathy Kinney",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "IBC Nurse",
+			"tmdbPersonId": 162605,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito IBC Nurse cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ralph Gervais",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Mouse Wrangler",
+			"tmdbPersonId": 3827407,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mouse Wrangler cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alvin Hammer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Foreman",
+			"tmdbPersonId": 135842,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Foreman cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tony Steedman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Headwaiter",
+			"tmdbPersonId": 18360,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Headwaiter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lisa Mende",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Doris Cross",
+			"tmdbPersonId": 95201,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Doris Cross cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ryan Todd",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Frank as Child",
+			"tmdbPersonId": 188368,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Frank as Child cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rebeca Arthur",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Tina",
+			"tmdbPersonId": 165938,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Tina cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Selma Archerd",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Mrs. Claus at Party",
+			"tmdbPersonId": 152587,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mrs. Claus at Party cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jay Byron",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Man #2 at Party",
+			"tmdbPersonId": 1787059,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man #2 at Party cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Harvey Fisher",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Party Guest",
+			"tmdbPersonId": 2113548,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Party Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "C. Ransom Walrod",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Party Animal",
+			"tmdbPersonId": 1899695,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Party Animal cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James R. Miller",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Security Guard at Party",
+			"tmdbPersonId": 1288322,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Security Guard at Party cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jennie Lew Tugend",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Foo-Ling",
+			"tmdbPersonId": 14337,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Foo-Ling cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Roy Brocksmith",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Mike the Mailman",
+			"tmdbPersonId": 12888,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mike the Mailman cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Shawn Michaels",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Stage Manager - \"Frisbee\"",
+			"tmdbPersonId": 1055728,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Stage Manager - \"Frisbee\" cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stella Hall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Lew Hayward's Secretary",
+			"tmdbPersonId": 551937,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lew Hayward's Secretary cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sachi Parker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Belle",
+			"tmdbPersonId": 77874,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Belle cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Delores Hall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Hazel",
+			"tmdbPersonId": 1232201,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hazel cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Anne Ramsey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Woman in Shelter",
+			"tmdbPersonId": 49944,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Woman in Shelter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Logan Ramsey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Man in Shelter",
+			"tmdbPersonId": 16031,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man in Shelter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sydna Scott",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Woman #2 in Shelter",
+			"tmdbPersonId": 1784982,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Woman #2 in Shelter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Wendie Malick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Wendie Cross",
+			"tmdbPersonId": 61980,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Wendie Cross cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joel Murray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Guest",
+			"tmdbPersonId": 155649,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mitch Glazer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Guest",
+			"tmdbPersonId": 28866,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Susan Isaacs",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Guest",
+			"tmdbPersonId": 108635,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lauri Kempson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Guest",
+			"tmdbPersonId": 3827422,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chaz Conner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Ghost of Christmas Future (TV)",
+			"tmdbPersonId": 3827423,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ghost of Christmas Future (TV) cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Miro Polo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Mary Lou's Coach",
+			"tmdbPersonId": 1066981,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mary Lou's Coach cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ralph Bruneau",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Nephew",
+			"tmdbPersonId": 157679,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nephew cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Maria Riva",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Mrs. Rhinelander",
+			"tmdbPersonId": 1236151,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mrs. Rhinelander cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James Kindelon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Butler",
+			"tmdbPersonId": 1966507,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Butler cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Raphael Harris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Older Calvin",
+			"tmdbPersonId": 104793,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Older Calvin cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Wayne A. Finkelman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Orderly",
+			"tmdbPersonId": 1542823,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Orderly cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Susan Barnes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Harpy",
+			"tmdbPersonId": 104059,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Harpy cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lynne Randall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Harpy",
+			"tmdbPersonId": 3802971,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Harpy cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gilles Savard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Waiter",
+			"tmdbPersonId": 1865107,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waiter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Michael O'Donoghue",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Priest",
+			"tmdbPersonId": 10450,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Priest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dick McGarvin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Announcer",
+			"tmdbPersonId": 160560,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Announcer cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tom Doak",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Video Tape Director",
+			"tmdbPersonId": 3522305,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Video Tape Director cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sam Drummy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Cameraman on Crane",
+			"tmdbPersonId": 2260100,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cameraman on Crane cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Winfred Tennison",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Marvin",
+			"tmdbPersonId": 1757692,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Marvin cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steve Kahan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Technician",
+			"tmdbPersonId": 14328,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Norman D. Wilson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Technician",
+			"tmdbPersonId": 95805,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Henry Brown",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Technician",
+			"tmdbPersonId": 106738,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jeanine Jackson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Technician",
+			"tmdbPersonId": 152355,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Amy Hill",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Technician",
+			"tmdbPersonId": 59401,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Miles Davis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Street Musician",
+			"tmdbPersonId": 15393,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Street Musician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Larry Carlton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Street Musician",
+			"tmdbPersonId": 1055165,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Street Musician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Sanborn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Street Musician",
+			"tmdbPersonId": 14322,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Street Musician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paul Shaffer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Street Musician",
+			"tmdbPersonId": 69921,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Street Musician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dick Blasucci",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9647/cast",
+			"screenRole": "Executive",
+			"tmdbPersonId": 1226387,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Executive cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Los fantasmas atacan al jefe; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Nicholas Phillips",
+				"role": "performer",
+				"reason": "Crédito Calvin Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Michael J. Pollard",
+				"role": "performer",
+				"reason": "Crédito Herman cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alfre Woodard",
+				"role": "performer",
+				"reason": "Crédito Grace Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mabel King",
+				"role": "performer",
+				"reason": "Crédito Gramma cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Murray",
+				"role": "performer",
+				"reason": "Crédito James Cross cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jamie Farr",
+				"role": "performer",
+				"reason": "Crédito Jacob Marley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Goulet",
+				"role": "performer",
+				"reason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Buddy Hackett",
+				"role": "performer",
+				"reason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Houseman",
+				"role": "performer",
+				"reason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lee Majors",
+				"role": "performer",
+				"reason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pat McCormick",
+				"role": "performer",
+				"reason": "Crédito Ghost of Christmas Present (TV) cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Brian Doyle-Murray",
+				"role": "performer",
+				"reason": "Crédito Earl Cross cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mary Lou Retton",
+				"role": "performer",
+				"reason": "Crédito Self cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Al 'Red Dog' Weber",
+				"role": "performer",
+				"reason": "Crédito Santa Claus cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jean Speegle Howard",
+				"role": "performer",
+				"reason": "Crédito Mrs. Claus cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "June Chandler",
+				"role": "performer",
+				"reason": "Crédito June Cleaver cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Michael Eidam",
+				"role": "performer",
+				"reason": "Crédito Wally Cleaver cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mary Ellen Trainor",
+				"role": "performer",
+				"reason": "Crédito Ted cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bruce Jarchow",
+				"role": "performer",
+				"reason": "Crédito Wayne cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sanford Jensen",
+				"role": "performer",
+				"reason": "Crédito Executive cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jeffrey Joseph",
+				"role": "performer",
+				"reason": "Crédito Executive cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Peter Bromilow",
+				"role": "performer",
+				"reason": "Crédito Archbishop cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bill Marcus",
+				"role": "performer",
+				"reason": "Crédito IBC Guard cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cal Gibson",
+				"role": "performer",
+				"reason": "Crédito IBC Guard cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Damon Hines",
+				"role": "performer",
+				"reason": "Crédito Steven Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tamika McCollum",
+				"role": "performer",
+				"reason": "Crédito Shasta Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Koren McCollum",
+				"role": "performer",
+				"reason": "Crédito Randee Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Reina King",
+				"role": "performer",
+				"reason": "Crédito Lanell Cooley cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paul Tuerpe",
+				"role": "performer",
+				"reason": "Crédito Stage Manager cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lester Wilson",
+				"role": "performer",
+				"reason": "Crédito Choreographer cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ron Strang",
+				"role": "performer",
+				"reason": "Crédito Art Director cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kate McGregor-Stewart",
+				"role": "performer",
+				"reason": "Crédito Lady Censor cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jack McGee",
+				"role": "performer",
+				"reason": "Crédito Carpenter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bill Hart",
+				"role": "performer",
+				"reason": "Crédito Carpenter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kathy Kinney",
+				"role": "performer",
+				"reason": "Crédito IBC Nurse cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ralph Gervais",
+				"role": "performer",
+				"reason": "Crédito Mouse Wrangler cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alvin Hammer",
+				"role": "performer",
+				"reason": "Crédito Foreman cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tony Steedman",
+				"role": "performer",
+				"reason": "Crédito Headwaiter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lisa Mende",
+				"role": "performer",
+				"reason": "Crédito Doris Cross cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ryan Todd",
+				"role": "performer",
+				"reason": "Crédito Frank as Child cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rebeca Arthur",
+				"role": "performer",
+				"reason": "Crédito Tina cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Selma Archerd",
+				"role": "performer",
+				"reason": "Crédito Mrs. Claus at Party cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jay Byron",
+				"role": "performer",
+				"reason": "Crédito Man #2 at Party cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Harvey Fisher",
+				"role": "performer",
+				"reason": "Crédito Party Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "C. Ransom Walrod",
+				"role": "performer",
+				"reason": "Crédito Party Animal cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James R. Miller",
+				"role": "performer",
+				"reason": "Crédito Security Guard at Party cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jennie Lew Tugend",
+				"role": "performer",
+				"reason": "Crédito Foo-Ling cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Roy Brocksmith",
+				"role": "performer",
+				"reason": "Crédito Mike the Mailman cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Shawn Michaels",
+				"role": "performer",
+				"reason": "Crédito Stage Manager - \"Frisbee\" cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stella Hall",
+				"role": "performer",
+				"reason": "Crédito Lew Hayward's Secretary cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sachi Parker",
+				"role": "performer",
+				"reason": "Crédito Belle cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Delores Hall",
+				"role": "performer",
+				"reason": "Crédito Hazel cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Anne Ramsey",
+				"role": "performer",
+				"reason": "Crédito Woman in Shelter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Logan Ramsey",
+				"role": "performer",
+				"reason": "Crédito Man in Shelter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sydna Scott",
+				"role": "performer",
+				"reason": "Crédito Woman #2 in Shelter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Wendie Malick",
+				"role": "performer",
+				"reason": "Crédito Wendie Cross cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joel Murray",
+				"role": "performer",
+				"reason": "Crédito Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mitch Glazer",
+				"role": "performer",
+				"reason": "Crédito Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Susan Isaacs",
+				"role": "performer",
+				"reason": "Crédito Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lauri Kempson",
+				"role": "performer",
+				"reason": "Crédito Guest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Chaz Conner",
+				"role": "performer",
+				"reason": "Crédito Ghost of Christmas Future (TV) cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Miro Polo",
+				"role": "performer",
+				"reason": "Crédito Mary Lou's Coach cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ralph Bruneau",
+				"role": "performer",
+				"reason": "Crédito Nephew cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Maria Riva",
+				"role": "performer",
+				"reason": "Crédito Mrs. Rhinelander cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James Kindelon",
+				"role": "performer",
+				"reason": "Crédito Butler cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Raphael Harris",
+				"role": "performer",
+				"reason": "Crédito Older Calvin cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Wayne A. Finkelman",
+				"role": "performer",
+				"reason": "Crédito Orderly cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Susan Barnes",
+				"role": "performer",
+				"reason": "Crédito Harpy cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lynne Randall",
+				"role": "performer",
+				"reason": "Crédito Harpy cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gilles Savard",
+				"role": "performer",
+				"reason": "Crédito Waiter cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Michael O'Donoghue",
+				"role": "performer",
+				"reason": "Crédito Priest cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dick McGarvin",
+				"role": "performer",
+				"reason": "Crédito Announcer cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tom Doak",
+				"role": "performer",
+				"reason": "Crédito Video Tape Director cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sam Drummy",
+				"role": "performer",
+				"reason": "Crédito Cameraman on Crane cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Winfred Tennison",
+				"role": "performer",
+				"reason": "Crédito Marvin cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steve Kahan",
+				"role": "performer",
+				"reason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Norman D. Wilson",
+				"role": "performer",
+				"reason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Henry Brown",
+				"role": "performer",
+				"reason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jeanine Jackson",
+				"role": "performer",
+				"reason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Amy Hill",
+				"role": "performer",
+				"reason": "Crédito Technician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Miles Davis",
+				"role": "performer",
+				"reason": "Crédito Street Musician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Larry Carlton",
+				"role": "performer",
+				"reason": "Crédito Street Musician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Sanborn",
+				"role": "performer",
+				"reason": "Crédito Street Musician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paul Shaffer",
+				"role": "performer",
+				"reason": "Crédito Street Musician cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dick Blasucci",
+				"role": "performer",
+				"reason": "Crédito Executive cotejado en el billing completo de Los fantasmas atacan al jefe; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

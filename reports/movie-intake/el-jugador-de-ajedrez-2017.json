@@ -1,0 +1,243 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-jugador-de-ajedrez-2017",
+	"title": "El jugador de ajedrez",
+	"year": 2017,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/438421/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 9
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/el-jugador-de-ajedrez",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt5732530/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Luis Oliveros",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/438421/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1012194,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1012194",
+					"fact": "Identidad de Luis Oliveros, oficio y filmografía cotejados con el ID exacto de El jugador de ajedrez (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/438421/cast",
+					"fact": "El billing del título exacto acredita a Luis Oliveros en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tTmrf8YqBIwr57sPnGowRWHoI8y.jpg",
+				"localPath": "/people/luis-oliveros-nm0647099.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Marc Clotet",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/438421/cast",
+			"screenRole": "Diego Padilla",
+			"tmdbPersonId": 587932,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/587932",
+					"fact": "Identidad de Marc Clotet, oficio y filmografía cotejados con el ID exacto de El jugador de ajedrez (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/438421/cast",
+					"fact": "El billing del título exacto acredita a Marc Clotet como Diego Padilla."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Premios%20Goya%202026%20-%20Marc%20Clotet%20(cropped).jpg?width=640",
+				"localPath": "/people/marc-clotet-nm2784795.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Melina Matthews",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/438421/cast",
+			"screenRole": "Marianne Latour",
+			"tmdbPersonId": 1289925,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1289925",
+					"fact": "Identidad de Melina Matthews, oficio y filmografía cotejados con el ID exacto de El jugador de ajedrez (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/438421/cast",
+					"fact": "El billing del título exacto acredita a Melina Matthews como Marianne Latour."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bPwRAyD6DrAEj3DIzTibVDdJ51M.jpg",
+				"localPath": "/people/melina-matthews-nm3172796.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alejo Sauras",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/438421/cast",
+			"screenRole": "Javier Sánchez",
+			"tmdbPersonId": 44266,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/44266",
+					"fact": "Identidad de Alejo Sauras, oficio y filmografía cotejados con el ID exacto de El jugador de ajedrez (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/438421/cast",
+					"fact": "El billing del título exacto acredita a Alejo Sauras como Javier Sánchez."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mdqxyeniyvLw7pAH1VBA0PUJPf0.jpg",
+				"localPath": "/people/alejo-sauras-nm0767027.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Maarten Dannenberg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/438421/cast",
+			"screenRole": null,
+			"tmdbPersonId": 1396599,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1396599",
+					"fact": "Identidad de Maarten Dannenberg, oficio y filmografía cotejados con el ID exacto de El jugador de ajedrez (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/438421/cast",
+					"fact": "El billing del título exacto acredita a Maarten Dannenberg en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pvivKULDeayAAWRXaWaXRw0Vcvf.jpg",
+				"localPath": "/people/maarten-dannenberg-nm4000250.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Andrés Gertrúdix",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/438421/cast",
+			"screenRole": "Pablo Mérida",
+			"tmdbPersonId": 51905,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/51905",
+					"fact": "Identidad de Andrés Gertrúdix, oficio y filmografía cotejados con el ID exacto de El jugador de ajedrez (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/438421/cast",
+					"fact": "El billing del título exacto acredita a Andrés Gertrúdix como Pablo Mérida."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qR9EyorWi9Z8WnoFcY5AskYBW4B.jpg",
+				"localPath": "/people/andres-gertrudix-nm0314980.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lionel Auguste",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/438421/cast",
+			"screenRole": "Pierre Boileau",
+			"tmdbPersonId": 1300566,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pierre Boileau cotejado en el billing completo de El jugador de ajedrez; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stefan Weinert",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/438421/cast",
+			"screenRole": "Colonel Maier",
+			"tmdbPersonId": 947231,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/947231",
+					"fact": "Identidad de Stefan Weinert, oficio y filmografía cotejados con el ID exacto de El jugador de ajedrez (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/438421/cast",
+					"fact": "El billing del título exacto acredita a Stefan Weinert como Colonel Maier."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/a3X0xp1gvefcbICWizUmZ6yR0qc.jpg",
+				"localPath": "/people/stefan-weinert-nm0918297.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Martin Angerbauer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/438421/cast",
+			"screenRole": "Soldier Kuhn",
+			"tmdbPersonId": 1595609,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1595609",
+					"fact": "Identidad de Martin Angerbauer, oficio y filmografía cotejados con el ID exacto de El jugador de ajedrez (2017)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/438421/cast",
+					"fact": "El billing del título exacto acredita a Martin Angerbauer como Soldier Kuhn."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1DZWirvVOZpzy0VYhlsgdMJRceu.jpg",
+				"localPath": "/people/martin-angerbauer-nm2567625.jpg",
+				"visuallyVerified": true
+			}
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de El jugador de ajedrez; se retuvieron 1 créditos de dirección y 7 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Lionel Auguste",
+				"role": "performer",
+				"reason": "Crédito Pierre Boileau cotejado en el billing completo de El jugador de ajedrez; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

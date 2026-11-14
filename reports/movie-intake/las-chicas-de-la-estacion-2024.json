@@ -1,0 +1,331 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "las-chicas-de-la-estacion-2024",
+	"title": "Las chicas de la estación",
+	"year": 2024,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1299040/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 14
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/las-chicas-de-la-estacion-2024",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt28227349/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Juana Macías",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 570531,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/570531",
+					"fact": "Identidad de Juana Macías, oficio y filmografía cotejados con el ID exacto de Las chicas de la estación (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1299040/cast",
+					"fact": "El billing del título exacto acredita a Juana Macías en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kl9RKDHXLN4VMutwPXCxJ8AY5NR.jpg",
+				"localPath": "/people/juana-macias-nm0016176.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Julieta Tobio",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Jara",
+			"tmdbPersonId": 4750499,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4750499",
+					"fact": "Identidad de Julieta Tobio, oficio y filmografía cotejados con el ID exacto de Las chicas de la estación (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1299040/cast",
+					"fact": "El billing del título exacto acredita a Julieta Tobio como Jara."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pvlgRyXVHWHpm5ohgohh8qSUQhq.jpg",
+				"localPath": "/people/julieta-tobio-tmdb-4750499.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Salua Hadra",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Alex",
+			"tmdbPersonId": 4750501,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4750501",
+					"fact": "Identidad de Salua Hadra, oficio y filmografía cotejados con el ID exacto de Las chicas de la estación (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1299040/cast",
+					"fact": "El billing del título exacto acredita a Salua Hadra como Alex."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/40hUBZFnhGm1ek852tH6IWCxAi9.jpg",
+				"localPath": "/people/salua-hadra-tmdb-4750501.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "María Steelman",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Miranda",
+			"tmdbPersonId": 4750500,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4750500",
+					"fact": "Identidad de María Steelman, oficio y filmografía cotejados con el ID exacto de Las chicas de la estación (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1299040/cast",
+					"fact": "El billing del título exacto acredita a María Steelman como Miranda."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1s2uOYXbPvKuJsubwiyAwCTbiW2.jpg",
+				"localPath": "/people/maria-steelman-tmdb-4750500.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Xoán Fórneas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "César",
+			"tmdbPersonId": 3200001,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3200001",
+					"fact": "Identidad de Xoán Fórneas, oficio y filmografía cotejados con el ID exacto de Las chicas de la estación (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1299040/cast",
+					"fact": "El billing del título exacto acredita a Xoán Fórneas como César."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/biPvluaNobgT5wEayYXvd69kNRt.jpg",
+				"localPath": "/people/xoan-forneas-nm9390656.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Carla Gris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Martina",
+			"tmdbPersonId": 4947251,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4947251",
+					"fact": "Identidad de Carla Gris, oficio y filmografía cotejados con el ID exacto de Las chicas de la estación (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1299040/cast",
+					"fact": "El billing del título exacto acredita a Carla Gris como Martina."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/AqZuK8wbo5UF5z46RWA8CaLhit0.jpg",
+				"localPath": "/people/carla-gris-tmdb-4947251.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Pepo Llopís",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Marcos",
+			"tmdbPersonId": 2269269,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Marcos cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Daniel Mantero",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Sergio",
+			"tmdbPersonId": 1110443,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1110443",
+					"fact": "Identidad de Daniel Mantero, oficio y filmografía cotejados con el ID exacto de Las chicas de la estación (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1299040/cast",
+					"fact": "El billing del título exacto acredita a Daniel Mantero como Sergio."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zIQmzAYUUtzP6im6pGq3Mu20nSa.jpg",
+				"localPath": "/people/daniel-mantero-nm2560305.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Saida Santana",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Alex's Mother",
+			"tmdbPersonId": 2091237,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2091237",
+					"fact": "Identidad de Saida Santana, oficio y filmografía cotejados con el ID exacto de Las chicas de la estación (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1299040/cast",
+					"fact": "El billing del título exacto acredita a Saida Santana como Alex's Mother."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/GULF0MXd6zhCXyWhUaMk7RAW12.jpg",
+				"localPath": "/people/saida-santana-tmdb-2091237.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Arantxa Aranguren",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Center Director",
+			"tmdbPersonId": 1439853,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Center Director cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Elena Gallardo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Noe",
+			"tmdbPersonId": 2949789,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2949789",
+					"fact": "Identidad de Elena Gallardo, oficio y filmografía cotejados con el ID exacto de Las chicas de la estación (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1299040/cast",
+					"fact": "El billing del título exacto acredita a Elena Gallardo como Noe."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/95ligT9ib4ozgYZCGSttxFU5sTn.jpg",
+				"localPath": "/people/elena-gallardo-tmdb-2949789.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Mane Sant",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Dylan",
+			"tmdbPersonId": 4808430,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dylan cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Elena Sithixay",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "Dunia",
+			"tmdbPersonId": 5283164,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dunia cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "La Fanny",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1299040/cast",
+			"screenRole": "China",
+			"tmdbPersonId": 5474315,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito China cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Las chicas de la estación; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Pepo Llopís",
+				"role": "performer",
+				"reason": "Crédito Marcos cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Arantxa Aranguren",
+				"role": "performer",
+				"reason": "Crédito Center Director cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mane Sant",
+				"role": "performer",
+				"reason": "Crédito Dylan cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Elena Sithixay",
+				"role": "performer",
+				"reason": "Crédito Dunia cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "La Fanny",
+				"role": "performer",
+				"reason": "Crédito China cotejado en el billing completo de Las chicas de la estación; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

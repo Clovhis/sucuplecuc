@@ -1,0 +1,675 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "todos-los-bellos-caballos-2000",
+	"title": "Todos los bellos caballos",
+	"year": 2000,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/21355/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 36
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/todos-los-caballos-bellos",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0149624/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Billy Bob Thornton",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 879,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/879",
+					"fact": "Identidad de Billy Bob Thornton, oficio y filmografía cotejados con el ID exacto de Todos los bellos caballos (2000)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/21355/cast",
+					"fact": "El billing del título exacto acredita a Billy Bob Thornton en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/uJBFml6efjg34u2jvT5ugVa1cPI.jpg",
+				"localPath": "/people/billy-bob-thornton-nm0000671.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Matt Damon",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "John Grady",
+			"tmdbPersonId": 1892,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1892",
+					"fact": "Identidad de Matt Damon, oficio y filmografía cotejados con el ID exacto de Todos los bellos caballos (2000)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/21355/cast",
+					"fact": "El billing del título exacto acredita a Matt Damon como John Grady."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MattDamon-byPhilipRomano2.jpg?width=640",
+				"localPath": "/people/matt-damon-nm0000354.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Henry Thomas",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Rawlins",
+			"tmdbPersonId": 9976,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/9976",
+					"fact": "Identidad de Henry Thomas, oficio y filmografía cotejados con el ID exacto de Todos los bellos caballos (2000)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/21355/cast",
+					"fact": "El billing del título exacto acredita a Henry Thomas como Rawlins."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tyTcpTMIAyIIy30u8N59G0PI06f.jpg",
+				"localPath": "/people/henry-thomas-nm0001794.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lucas Black",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Blevins",
+			"tmdbPersonId": 155,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/155",
+					"fact": "Identidad de Lucas Black, oficio y filmografía cotejados con el ID exacto de Todos los bellos caballos (2000)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/21355/cast",
+					"fact": "El billing del título exacto acredita a Lucas Black como Blevins."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20Black%20Get%20Low%20TIFF09.%20(cropped%202).jpg?width=640",
+				"localPath": "/people/lucas-black-nm0085407.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Penélope Cruz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Alejandra",
+			"tmdbPersonId": 955,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/955",
+					"fact": "Identidad de Penélope Cruz, oficio y filmografía cotejados con el ID exacto de Todos los bellos caballos (2000)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/21355/cast",
+					"fact": "El billing del título exacto acredita a Penélope Cruz como Alejandra."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Goyas%202024%20-%20Pen%C3%A9lope%20Cruz-2%20(cropped).jpg?width=1200",
+				"localPath": "/people/penelope-cruz-nm0004851.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rubén Blades",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Rocha",
+			"tmdbPersonId": 2049,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2049",
+					"fact": "Identidad de Rubén Blades, oficio y filmografía cotejados con el ID exacto de Todos los bellos caballos (2000)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/21355/cast",
+					"fact": "El billing del título exacto acredita a Rubén Blades como Rocha."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kOgVo3qDJ9jXgIZJRJI3I1bm6sA.jpg",
+				"localPath": "/people/ruben-blades-nm0001952.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Robert Patrick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Cole",
+			"tmdbPersonId": 418,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/418",
+					"fact": "Identidad de Robert Patrick, oficio y filmografía cotejados con el ID exacto de Todos los bellos caballos (2000)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/21355/cast",
+					"fact": "El billing del título exacto acredita a Robert Patrick como Cole."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Patrick%202026.jpg?width=640",
+				"localPath": "/people/robert-patrick-nm0001598.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Julio Oscar Mechoso",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Captain",
+			"tmdbPersonId": 17413,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17413",
+					"fact": "Identidad de Julio Oscar Mechoso, oficio y filmografía cotejados con el ID exacto de Todos los bellos caballos (2000)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/21355/cast",
+					"fact": "El billing del título exacto acredita a Julio Oscar Mechoso como Captain."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2m1vtlRlSxozMOoHeobCY2pbrPi.jpg",
+				"localPath": "/people/julio-oscar-mechoso-nm0575339.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Angelina Torres",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Luisa",
+			"tmdbPersonId": 20360,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Luisa cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "J.D. Young",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Grandfather",
+			"tmdbPersonId": 3419331,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Grandfather cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Laura Poe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Mother",
+			"tmdbPersonId": 1381496,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mother cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sam Shepard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "J.C. Franklin",
+			"tmdbPersonId": 9880,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito J.C. Franklin cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Yvette Diaz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Girl",
+			"tmdbPersonId": 1744992,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Girl cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Imelda Colindres",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Girl's Mom",
+			"tmdbPersonId": 3419332,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Girl's Mom cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Augustin Solis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Manuel",
+			"tmdbPersonId": 1471910,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Manuel cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Elizabeth Ibarra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Maria",
+			"tmdbPersonId": 3419333,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Maria cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Miriam Colon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Alfonsa",
+			"tmdbPersonId": 1163,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Alfonsa cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lonnie Rodriguez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Esteban",
+			"tmdbPersonId": 3419334,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Esteban cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Raul Malo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Singer",
+			"tmdbPersonId": 230252,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Singer cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Fredrick Lopez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Lieutenant",
+			"tmdbPersonId": 36905,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lieutenant cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ferron Lucero Jr.",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Lieutenant's Man",
+			"tmdbPersonId": 3419335,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lieutenant's Man cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Manuel Sanchez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Lieutenant's Man",
+			"tmdbPersonId": 1798149,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lieutenant's Man cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Denes Lujan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Orlando",
+			"tmdbPersonId": 3419336,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Orlando cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Edwin M. Figueroa",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Charro",
+			"tmdbPersonId": 1919557,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Charro cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Matthew E. Montoya",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Indian",
+			"tmdbPersonId": 3419339,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Indian cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Julian Prada",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Prison Singer",
+			"tmdbPersonId": 3419340,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Prison Singer cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Roberto Enrique Pineda",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Doctor",
+			"tmdbPersonId": 3419343,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Doctor cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Vincente Ramos",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Commandante",
+			"tmdbPersonId": 3419344,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Commandante cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "George R. Lopez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Clapping Man",
+			"tmdbPersonId": 3419346,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Clapping Man cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "J.D. Garfield",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Carlos",
+			"tmdbPersonId": 85954,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Carlos cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Julio Cesar Cedillo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Campesino",
+			"tmdbPersonId": 36634,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Campesino cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marc Miles",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Deputy Smith",
+			"tmdbPersonId": 1402887,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Deputy Smith cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Brian Orr",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Man at Car",
+			"tmdbPersonId": 1792151,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Man at Car cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bruce Dern",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Judge",
+			"tmdbPersonId": 6905,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Judge cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jesse Plemons",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Young Grady (uncredited)",
+			"tmdbPersonId": 88124,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Grady (uncredited) cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Daniel Lanois",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/21355/cast",
+			"screenRole": "Singer",
+			"tmdbPersonId": 72538,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Singer cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Todos los bellos caballos; se retuvieron 1 créditos de dirección y 7 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Angelina Torres",
+				"role": "performer",
+				"reason": "Crédito Luisa cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "J.D. Young",
+				"role": "performer",
+				"reason": "Crédito Grandfather cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Laura Poe",
+				"role": "performer",
+				"reason": "Crédito Mother cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sam Shepard",
+				"role": "performer",
+				"reason": "Crédito J.C. Franklin cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Yvette Diaz",
+				"role": "performer",
+				"reason": "Crédito Girl cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Imelda Colindres",
+				"role": "performer",
+				"reason": "Crédito Girl's Mom cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Augustin Solis",
+				"role": "performer",
+				"reason": "Crédito Manuel cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Elizabeth Ibarra",
+				"role": "performer",
+				"reason": "Crédito Maria cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Miriam Colon",
+				"role": "performer",
+				"reason": "Crédito Alfonsa cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lonnie Rodriguez",
+				"role": "performer",
+				"reason": "Crédito Esteban cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Raul Malo",
+				"role": "performer",
+				"reason": "Crédito Singer cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Fredrick Lopez",
+				"role": "performer",
+				"reason": "Crédito Lieutenant cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ferron Lucero Jr.",
+				"role": "performer",
+				"reason": "Crédito Lieutenant's Man cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Manuel Sanchez",
+				"role": "performer",
+				"reason": "Crédito Lieutenant's Man cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Denes Lujan",
+				"role": "performer",
+				"reason": "Crédito Orlando cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Edwin M. Figueroa",
+				"role": "performer",
+				"reason": "Crédito Charro cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Matthew E. Montoya",
+				"role": "performer",
+				"reason": "Crédito Indian cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Julian Prada",
+				"role": "performer",
+				"reason": "Crédito Prison Singer cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Roberto Enrique Pineda",
+				"role": "performer",
+				"reason": "Crédito Doctor cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Vincente Ramos",
+				"role": "performer",
+				"reason": "Crédito Commandante cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "George R. Lopez",
+				"role": "performer",
+				"reason": "Crédito Clapping Man cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "J.D. Garfield",
+				"role": "performer",
+				"reason": "Crédito Carlos cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Julio Cesar Cedillo",
+				"role": "performer",
+				"reason": "Crédito Campesino cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marc Miles",
+				"role": "performer",
+				"reason": "Crédito Deputy Smith cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Brian Orr",
+				"role": "performer",
+				"reason": "Crédito Man at Car cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bruce Dern",
+				"role": "performer",
+				"reason": "Crédito Judge cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jesse Plemons",
+				"role": "performer",
+				"reason": "Crédito Young Grady (uncredited) cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Daniel Lanois",
+				"role": "performer",
+				"reason": "Crédito Singer cotejado en el billing completo de Todos los bellos caballos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

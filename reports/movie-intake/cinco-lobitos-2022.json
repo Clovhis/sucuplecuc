@@ -1,0 +1,603 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "cinco-lobitos-2022",
+	"title": "Cinco lobitos",
+	"year": 2022,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/835504/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 31
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/cinco-lobitos",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt14755038/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Alauda Ruiz de Azúa",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 2229398,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2229398",
+					"fact": "Identidad de Alauda Ruiz de Azúa, oficio y filmografía cotejados con el ID exacto de Cinco lobitos (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/835504/cast",
+					"fact": "El billing del título exacto acredita a Alauda Ruiz de Azúa en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alauda%20Ruiz%20de%20Az%C3%BAa%20at%20Berlinale%202022%20(cropped).jpg?width=640",
+				"localPath": "/people/alauda-ruiz-de-azua-nm2088446.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Laia Costa",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Amaia",
+			"tmdbPersonId": 1425019,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1425019",
+					"fact": "Identidad de Laia Costa, oficio y filmografía cotejados con el ID exacto de Cinco lobitos (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/835504/cast",
+					"fact": "El billing del título exacto acredita a Laia Costa como Amaia."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Laia%20Costa%20at%20Berlinale%202022%20cropped.jpg?width=640",
+				"localPath": "/people/laia-costa-nm4663937.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Susi Sánchez",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Begoña",
+			"tmdbPersonId": 101401,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/101401",
+					"fact": "Identidad de Susi Sánchez, oficio y filmografía cotejados con el ID exacto de Cinco lobitos (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/835504/cast",
+					"fact": "El billing del título exacto acredita a Susi Sánchez como Begoña."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hsOZ4Hyw3Zu2GnariSg28sUixPV.jpg",
+				"localPath": "/people/susi-sanchez-nm0844845.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ramón Barea",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Koldo",
+			"tmdbPersonId": 24987,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/24987",
+					"fact": "Identidad de Ramón Barea, oficio y filmografía cotejados con el ID exacto de Cinco lobitos (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/835504/cast",
+					"fact": "El billing del título exacto acredita a Ramón Barea como Koldo."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7KJMpbljybgVMhHuNosECDrzact.jpg",
+				"localPath": "/people/ramon-barea-nm0054381.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Mikel Bustamante",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Javi",
+			"tmdbPersonId": 1489778,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1489778",
+					"fact": "Identidad de Mikel Bustamante, oficio y filmografía cotejados con el ID exacto de Cinco lobitos (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/835504/cast",
+					"fact": "El billing del título exacto acredita a Mikel Bustamante como Javi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aTzyqha9XMs2ggMvu2c579OtJ96.jpg",
+				"localPath": "/people/mikel-bustamante-nm3831867.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "José Ramón Soroiz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Iñaki",
+			"tmdbPersonId": 1381180,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1381180",
+					"fact": "Identidad de José Ramón Soroiz, oficio y filmografía cotejados con el ID exacto de Cinco lobitos (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/835504/cast",
+					"fact": "El billing del título exacto acredita a José Ramón Soroiz como Iñaki."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nYUWJ96G1uYXl5OWaZZL0fvgOoY.jpg",
+				"localPath": "/people/jose-ramon-soroiz-nm0815115.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Asier Valdestilla",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Eneko",
+			"tmdbPersonId": 3236120,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3236120",
+					"fact": "Identidad de Asier Valdestilla, oficio y filmografía cotejados con el ID exacto de Cinco lobitos (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/835504/cast",
+					"fact": "El billing del título exacto acredita a Asier Valdestilla como Eneko."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dbfMjQua95pZUU3GDSnscvwwZ3w.jpg",
+				"localPath": "/people/asier-valdestilla-nm12814003.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Justi Larrinaga",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Miren",
+			"tmdbPersonId": 3236117,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3236117",
+					"fact": "Identidad de Justi Larrinaga, oficio y filmografía cotejados con el ID exacto de Cinco lobitos (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/835504/cast",
+					"fact": "El billing del título exacto acredita a Justi Larrinaga como Miren."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/izoO9ZivO00JQsSLalasHxKp7fw.jpg",
+				"localPath": "/people/justi-larrinaga-tmdb-3236117.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Isidoro Fernández",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Antxon",
+			"tmdbPersonId": 1381179,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1381179",
+					"fact": "Identidad de Isidoro Fernández, oficio y filmografía cotejados con el ID exacto de Cinco lobitos (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/835504/cast",
+					"fact": "El billing del título exacto acredita a Isidoro Fernández como Antxon."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6XlhG4dr6Z4uuPwGVr6UnR9TeFd.jpg",
+				"localPath": "/people/isidoro-fernandez-nm0273538.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gloria Helguera",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Pescadera",
+			"tmdbPersonId": 3766887,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pescadera cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Carmen Berbaola",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Señora pescadería",
+			"tmdbPersonId": 3766888,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Señora pescadería cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lorena López",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Madre parque Madrid",
+			"tmdbPersonId": 2105358,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Madre parque Madrid cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Elena Sáenz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Enfermera recepción Madrid",
+			"tmdbPersonId": 2084748,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Enfermera recepción Madrid cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ana Isabel Martínez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Enfermera urgencias",
+			"tmdbPersonId": 3766891,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Enfermera urgencias cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Anuska Pernia Sainz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Enfermera preoperatorio",
+			"tmdbPersonId": 3766892,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Enfermera preoperatorio cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nerea Arriola",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Enfermera postoperatorio",
+			"tmdbPersonId": 3236121,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Enfermera postoperatorio cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Arantxa Matías",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Auxiliar enfermería 1",
+			"tmdbPersonId": 3766893,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Auxiliar enfermería 1 cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Leire Ucha",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Auxiliar enfermería 2",
+			"tmdbPersonId": 1265764,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Auxiliar enfermería 2 cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Amber Shana Williams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Charlotte (voice)",
+			"tmdbPersonId": 2158090,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Charlotte (voice) cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Juantxo Etxeberria",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Cura",
+			"tmdbPersonId": 3766895,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Cura cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Juana Lor Saras",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Turista",
+			"tmdbPersonId": 3236119,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Turista cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aitor Ispuzua",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Operario funeraria 1",
+			"tmdbPersonId": 3766896,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Operario funeraria 1 cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Óscar Zulueta",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Operario funeraria 2",
+			"tmdbPersonId": 3766897,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Operario funeraria 2 cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Adela de Vial",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Ione 1 mes",
+			"tmdbPersonId": 3766898,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ione 1 mes cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Óliver González",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Ione 1 mes",
+			"tmdbPersonId": 3766900,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ione 1 mes cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ángela Nieto-Márquez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Ione 4 meses",
+			"tmdbPersonId": 3766901,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ione 4 meses cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Teresa Nieto-Márquez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Ione 4 meses",
+			"tmdbPersonId": 3766902,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ione 4 meses cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ghia Morán Rojas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Ione 4 meses",
+			"tmdbPersonId": 3766905,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ione 4 meses cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mia Morán Rojas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Ione 4 meses",
+			"tmdbPersonId": 3766907,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ione 4 meses cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alaine Otero Lozano",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Ione 1 año",
+			"tmdbPersonId": 3766908,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ione 1 año cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alberto Nieto-Márquez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/835504/cast",
+			"screenRole": "Niño parque Euskadi",
+			"tmdbPersonId": 3766909,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Niño parque Euskadi cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Cinco lobitos; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Gloria Helguera",
+				"role": "performer",
+				"reason": "Crédito Pescadera cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Carmen Berbaola",
+				"role": "performer",
+				"reason": "Crédito Señora pescadería cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lorena López",
+				"role": "performer",
+				"reason": "Crédito Madre parque Madrid cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Elena Sáenz",
+				"role": "performer",
+				"reason": "Crédito Enfermera recepción Madrid cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ana Isabel Martínez",
+				"role": "performer",
+				"reason": "Crédito Enfermera urgencias cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Anuska Pernia Sainz",
+				"role": "performer",
+				"reason": "Crédito Enfermera preoperatorio cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nerea Arriola",
+				"role": "performer",
+				"reason": "Crédito Enfermera postoperatorio cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Arantxa Matías",
+				"role": "performer",
+				"reason": "Crédito Auxiliar enfermería 1 cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Leire Ucha",
+				"role": "performer",
+				"reason": "Crédito Auxiliar enfermería 2 cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Amber Shana Williams",
+				"role": "performer",
+				"reason": "Crédito Charlotte (voice) cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Juantxo Etxeberria",
+				"role": "performer",
+				"reason": "Crédito Cura cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Juana Lor Saras",
+				"role": "performer",
+				"reason": "Crédito Turista cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aitor Ispuzua",
+				"role": "performer",
+				"reason": "Crédito Operario funeraria 1 cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Óscar Zulueta",
+				"role": "performer",
+				"reason": "Crédito Operario funeraria 2 cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Adela de Vial",
+				"role": "performer",
+				"reason": "Crédito Ione 1 mes cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Óliver González",
+				"role": "performer",
+				"reason": "Crédito Ione 1 mes cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ángela Nieto-Márquez",
+				"role": "performer",
+				"reason": "Crédito Ione 4 meses cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Teresa Nieto-Márquez",
+				"role": "performer",
+				"reason": "Crédito Ione 4 meses cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ghia Morán Rojas",
+				"role": "performer",
+				"reason": "Crédito Ione 4 meses cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mia Morán Rojas",
+				"role": "performer",
+				"reason": "Crédito Ione 4 meses cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alaine Otero Lozano",
+				"role": "performer",
+				"reason": "Crédito Ione 1 año cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alberto Nieto-Márquez",
+				"role": "performer",
+				"reason": "Crédito Niño parque Euskadi cotejado en el billing completo de Cinco lobitos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,283 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "un-extrano-en-la-boda-de-mi-hermano-2022",
+	"title": "Un extraño en la boda de mi hermano",
+	"year": 2022,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1008148/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 12
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/un-extrano-en-la-boda-de-mi-hermano",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt17178096/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Richard Ramsey",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1322602,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1322602",
+					"fact": "Identidad de Richard Ramsey, oficio y filmografía cotejados con el ID exacto de Un extraño en la boda de mi hermano (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1008148/cast",
+					"fact": "El billing del título exacto acredita a Richard Ramsey en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2UmSnKRKEzlEd9tOSWRCBfJpc6h.jpg",
+				"localPath": "/people/richard-ramsey-nm4870080.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Galadriel Stineman",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Dr. April Monroe",
+			"tmdbPersonId": 134396,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/134396",
+					"fact": "Identidad de Galadriel Stineman, oficio y filmografía cotejados con el ID exacto de Un extraño en la boda de mi hermano (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1008148/cast",
+					"fact": "El billing del título exacto acredita a Galadriel Stineman como Dr. April Monroe."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6HnDYv9eiWWnivpQURlMpw8q13q.jpg",
+				"localPath": "/people/galadriel-stineman-nm3004687.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kevin Joy",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Dr. Jesse Hardin",
+			"tmdbPersonId": 1052462,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1052462",
+					"fact": "Identidad de Kevin Joy, oficio y filmografía cotejados con el ID exacto de Un extraño en la boda de mi hermano (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1008148/cast",
+					"fact": "El billing del título exacto acredita a Kevin Joy como Dr. Jesse Hardin."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/uj8lxK4YGNfAzzNU9NXdhS608QC.jpg",
+				"localPath": "/people/kevin-joy-nm3594887.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Mary McElree",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "May",
+			"tmdbPersonId": 3649016,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3649016",
+					"fact": "Identidad de Mary McElree, oficio y filmografía cotejados con el ID exacto de Un extraño en la boda de mi hermano (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1008148/cast",
+					"fact": "El billing del título exacto acredita a Mary McElree como May."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3Gnt5IuoNJ3S6FpqA3EyQUgNa9w.jpg",
+				"localPath": "/people/mary-mcelree-nm4050377.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Summer Mastain",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Naomi",
+			"tmdbPersonId": 1368281,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1368281",
+					"fact": "Identidad de Summer Mastain, oficio y filmografía cotejados con el ID exacto de Un extraño en la boda de mi hermano (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1008148/cast",
+					"fact": "El billing del título exacto acredita a Summer Mastain como Naomi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mr5wrw2eSsarFzpiqIc6e1ybIKS.jpg",
+				"localPath": "/people/summer-mastain-nm5588933.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Preston Kameka",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Zeke",
+			"tmdbPersonId": 3459610,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3459610",
+					"fact": "Identidad de Preston Kameka, oficio y filmografía cotejados con el ID exacto de Un extraño en la boda de mi hermano (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1008148/cast",
+					"fact": "El billing del título exacto acredita a Preston Kameka como Zeke."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://m.media-amazon.com/images/M/MV5BYmU0ZWNiNjktY2IzNi00MTdkLTlkYjktOGEyM2U4MTBkNTViXkEyXkFqcGc@._V1_.jpg",
+				"localPath": "/people/preston-kameka-tmdb-3459610.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Emily Joy Conly",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Sarah",
+			"tmdbPersonId": 3097817,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3097817",
+					"fact": "Identidad de Emily Joy Conly, oficio y filmografía cotejados con el ID exacto de Un extraño en la boda de mi hermano (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1008148/cast",
+					"fact": "El billing del título exacto acredita a Emily Joy Conly como Sarah."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/znZIBtXFhlJhYPxDOJaHpdSSlDF.jpg",
+				"localPath": "/people/emily-joy-conly-nm11254500.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jordon Crusoe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Rob",
+			"tmdbPersonId": 3649017,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rob cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stacey Avey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Minister",
+			"tmdbPersonId": 3649018,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Minister cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pamela Daly",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Esther",
+			"tmdbPersonId": 1781008,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Esther cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Victoria Fox",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Claire",
+			"tmdbPersonId": 1487676,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Claire cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Travis James",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1008148/cast",
+			"screenRole": "Levi Hardin",
+			"tmdbPersonId": 2069424,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Levi Hardin cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Un extraño en la boda de mi hermano; se retuvieron 1 créditos de dirección y 6 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Jordon Crusoe",
+				"role": "performer",
+				"reason": "Crédito Rob cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stacey Avey",
+				"role": "performer",
+				"reason": "Crédito Minister cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pamela Daly",
+				"role": "performer",
+				"reason": "Crédito Esther cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Victoria Fox",
+				"role": "performer",
+				"reason": "Crédito Claire cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Travis James",
+				"role": "performer",
+				"reason": "Crédito Levi Hardin cotejado en el billing completo de Un extraño en la boda de mi hermano; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

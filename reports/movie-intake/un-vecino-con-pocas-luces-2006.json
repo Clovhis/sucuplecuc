@@ -1,0 +1,939 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "un-vecino-con-pocas-luces-2006",
+	"title": "Un vecino con pocas luces",
+	"year": 2006,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/9969/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 52
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/un-vecino-con-pocas-luces",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0790604/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "John Whitesell",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 61175,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/61175",
+					"fact": "Identidad de John Whitesell, oficio y filmografía cotejados con el ID exacto de Un vecino con pocas luces (2006)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9969/cast",
+					"fact": "El billing del título exacto acredita a John Whitesell en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nChx29Nt5nXabJU0zYHsSwRL7XK.jpg",
+				"localPath": "/people/john-whitesell-nm0925870.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Danny DeVito",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Buddy Hall",
+			"tmdbPersonId": 518,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/518",
+					"fact": "Identidad de Danny DeVito, oficio y filmografía cotejados con el ID exacto de Un vecino con pocas luces (2006)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9969/cast",
+					"fact": "El billing del título exacto acredita a Danny DeVito como Buddy Hall."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Danny%20DeVito%20cropped%20and%20edited%20for%20brightness.jpg?width=640",
+				"localPath": "/people/danny-devito-nm0000362.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Matthew Broderick",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Steve Finch",
+			"tmdbPersonId": 4756,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4756",
+					"fact": "Identidad de Matthew Broderick, oficio y filmografía cotejados con el ID exacto de Un vecino con pocas luces (2006)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9969/cast",
+					"fact": "El billing del título exacto acredita a Matthew Broderick como Steve Finch."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Matthew%20Broderick%202022.jpg?width=120",
+				"localPath": "/people/matthew-broderick-nm0000111.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kristin Davis",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Kelly Finch",
+			"tmdbPersonId": 38025,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/38025",
+					"fact": "Identidad de Kristin Davis, oficio y filmografía cotejados con el ID exacto de Un vecino con pocas luces (2006)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9969/cast",
+					"fact": "El billing del título exacto acredita a Kristin Davis como Kelly Finch."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/61TjappibaZ1i8pEFlqwK2yrR2W.jpg",
+				"localPath": "/people/kristin-davis-nm0004862.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kristin Chenoweth",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Tia Hall",
+			"tmdbPersonId": 52775,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/52775",
+					"fact": "Identidad de Kristin Chenoweth, oficio y filmografía cotejados con el ID exacto de Un vecino con pocas luces (2006)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9969/cast",
+					"fact": "El billing del título exacto acredita a Kristin Chenoweth como Tia Hall."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/q3ENDu5n23FARhyij4FVRaTkSg4.jpg",
+				"localPath": "/people/kristin-chenoweth-nm0155693.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alia Shawkat",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Madison Finch",
+			"tmdbPersonId": 61178,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/61178",
+					"fact": "Identidad de Alia Shawkat, oficio y filmografía cotejados con el ID exacto de Un vecino con pocas luces (2006)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9969/cast",
+					"fact": "El billing del título exacto acredita a Alia Shawkat como Madison Finch."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kcTFBrPSQkenbPK76Iwj49c3Dku.jpg",
+				"localPath": "/people/alia-shawkat-nm0790057.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Fred Armisen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Gustave",
+			"tmdbPersonId": 61110,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/61110",
+					"fact": "Identidad de Fred Armisen, oficio y filmografía cotejados con el ID exacto de Un vecino con pocas luces (2006)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9969/cast",
+					"fact": "El billing del título exacto acredita a Fred Armisen como Gustave."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rhPN8Zx6nrtNiQN2JwPkJ3ZFJ9z.jpg",
+				"localPath": "/people/fred-armisen-nm0035488.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jorge Garcia",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Wallace",
+			"tmdbPersonId": 1215525,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1215525",
+					"fact": "Identidad de Jorge Garcia, oficio y filmografía cotejados con el ID exacto de Un vecino con pocas luces (2006)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9969/cast",
+					"fact": "El billing del título exacto acredita a Jorge Garcia como Wallace."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jorge%20Garcia%20by%20Gage%20Skidmore%202.jpg?width=640",
+				"localPath": "/people/jorge-garcia-nm0306201.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dylan Blue",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Carter Finch",
+			"tmdbPersonId": 61179,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/61179",
+					"fact": "Identidad de Dylan Blue, oficio y filmografía cotejados con el ID exacto de Un vecino con pocas luces (2006)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/9969/cast",
+					"fact": "El billing del título exacto acredita a Dylan Blue como Carter Finch."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vFrzNk01U7doNGOow881KhiVbVg.jpg",
+				"localPath": "/people/dylan-blue-nm2005662.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kelly Aldridge",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Ashley Hall",
+			"tmdbPersonId": 61180,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ashley Hall cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sabrina Aldridge",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Emily Hall",
+			"tmdbPersonId": 61181,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Emily Hall cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sean O'Bryan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Mayor Young",
+			"tmdbPersonId": 33836,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mayor Young cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gillian Vigman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Gerta",
+			"tmdbPersonId": 61182,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gerta cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ryan Devlin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Bob Murray",
+			"tmdbPersonId": 61183,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bob Murray cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "SuChin Pak",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Self",
+			"tmdbPersonId": 61184,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Self cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jackie Burroughs",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Mrs. Ryor",
+			"tmdbPersonId": 61185,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mrs. Ryor cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Garry Chalk",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Sheriff Dave",
+			"tmdbPersonId": 26089,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sheriff Dave cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nicola Peltz Beckham",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Mackenzie",
+			"tmdbPersonId": 61186,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mackenzie cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Zak Santiago",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Fireworks Guy",
+			"tmdbPersonId": 52705,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fireworks Guy cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David James Lewis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Ted",
+			"tmdbPersonId": 4095,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ted cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Daniel Bacon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Ed",
+			"tmdbPersonId": 61187,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ed cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ken Kramer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Mr. Murray",
+			"tmdbPersonId": 106950,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mr. Murray cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jill Morrison",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Gail",
+			"tmdbPersonId": 203294,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gail cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alf Humphreys",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Hardware Store Employee",
+			"tmdbPersonId": 16559,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hardware Store Employee cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Brenda Crichlow",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "News Reporter #1",
+			"tmdbPersonId": 60613,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito News Reporter #1 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jill Krop",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Reporter #2",
+			"tmdbPersonId": 1749245,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Reporter #2 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Agam Darshi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "News Producer",
+			"tmdbPersonId": 62173,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito News Producer cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Stuart",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Oblivious Dad",
+			"tmdbPersonId": 1225949,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Oblivious Dad cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Quinn Lord",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Santa Kid",
+			"tmdbPersonId": 89885,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Santa Kid cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nathaniel DeVeaux",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Main Street Passerby #1",
+			"tmdbPersonId": 20221,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Main Street Passerby #1 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Fulvio Cecere",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Town Passerby",
+			"tmdbPersonId": 65808,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Town Passerby cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eliza Norbury",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Mary in the Manger",
+			"tmdbPersonId": 87739,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mary in the Manger cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Randi Lynne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Caroler #1",
+			"tmdbPersonId": 203664,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Caroler #1 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dan Joffre",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Caroler #2",
+			"tmdbPersonId": 61264,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Caroler #2 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aurora Faulkner-Killam",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Caroler",
+			"tmdbPersonId": 2753454,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Melissa Howell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Caroler",
+			"tmdbPersonId": 2753457,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lori Johnson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Caroler",
+			"tmdbPersonId": 2753460,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Shaw",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Caroler",
+			"tmdbPersonId": 2753461,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Myles Wolfe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Caroler",
+			"tmdbPersonId": 2753462,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ty Olsson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Trucker",
+			"tmdbPersonId": 42711,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Trucker cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stephen Holmes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "UPS Guy",
+			"tmdbPersonId": 1224546,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito UPS Guy cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Andrew Hedge",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "City Employee",
+			"tmdbPersonId": 189030,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito City Employee cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cory Monteith",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Madison's Date",
+			"tmdbPersonId": 33352,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Madison's Date cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Cassidy Bot-Devire",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Little Girl (uncredited)",
+			"tmdbPersonId": 3825575,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Little Girl (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aaron Craven",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Businessman Dad (uncredited)",
+			"tmdbPersonId": 1176581,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Businessman Dad (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Blair Gorrell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Carnival Fan (uncredited)",
+			"tmdbPersonId": 2753486,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Carnival Fan (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rachel Lana Li",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Spectator (uncredited)",
+			"tmdbPersonId": 2753487,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Spectator (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lochlyn Munro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Ted (uncredited)",
+			"tmdbPersonId": 58058,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ted (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kal Penn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Amit Sayid (uncredited)",
+			"tmdbPersonId": 53493,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Amit Sayid (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Caroline Redekopp",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Mackenzie's Mother (uncredited)",
+			"tmdbPersonId": 1519253,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mackenzie's Mother (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Arden Rhine",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Woman (uncredited)",
+			"tmdbPersonId": 1460538,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Woman (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Calum Worthy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/9969/cast",
+			"screenRole": "Boy On a Bike (uncredited)",
+			"tmdbPersonId": 82626,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Boy On a Bike (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Un vecino con pocas luces; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Kelly Aldridge",
+				"role": "performer",
+				"reason": "Crédito Ashley Hall cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sabrina Aldridge",
+				"role": "performer",
+				"reason": "Crédito Emily Hall cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sean O'Bryan",
+				"role": "performer",
+				"reason": "Crédito Mayor Young cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gillian Vigman",
+				"role": "performer",
+				"reason": "Crédito Gerta cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ryan Devlin",
+				"role": "performer",
+				"reason": "Crédito Bob Murray cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "SuChin Pak",
+				"role": "performer",
+				"reason": "Crédito Self cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jackie Burroughs",
+				"role": "performer",
+				"reason": "Crédito Mrs. Ryor cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Garry Chalk",
+				"role": "performer",
+				"reason": "Crédito Sheriff Dave cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nicola Peltz Beckham",
+				"role": "performer",
+				"reason": "Crédito Mackenzie cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Zak Santiago",
+				"role": "performer",
+				"reason": "Crédito Fireworks Guy cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David James Lewis",
+				"role": "performer",
+				"reason": "Crédito Ted cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Daniel Bacon",
+				"role": "performer",
+				"reason": "Crédito Ed cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ken Kramer",
+				"role": "performer",
+				"reason": "Crédito Mr. Murray cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jill Morrison",
+				"role": "performer",
+				"reason": "Crédito Gail cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alf Humphreys",
+				"role": "performer",
+				"reason": "Crédito Hardware Store Employee cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Brenda Crichlow",
+				"role": "performer",
+				"reason": "Crédito News Reporter #1 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jill Krop",
+				"role": "performer",
+				"reason": "Crédito Reporter #2 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Agam Darshi",
+				"role": "performer",
+				"reason": "Crédito News Producer cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Stuart",
+				"role": "performer",
+				"reason": "Crédito Oblivious Dad cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Quinn Lord",
+				"role": "performer",
+				"reason": "Crédito Santa Kid cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nathaniel DeVeaux",
+				"role": "performer",
+				"reason": "Crédito Main Street Passerby #1 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Fulvio Cecere",
+				"role": "performer",
+				"reason": "Crédito Town Passerby cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eliza Norbury",
+				"role": "performer",
+				"reason": "Crédito Mary in the Manger cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Randi Lynne",
+				"role": "performer",
+				"reason": "Crédito Caroler #1 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dan Joffre",
+				"role": "performer",
+				"reason": "Crédito Caroler #2 cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aurora Faulkner-Killam",
+				"role": "performer",
+				"reason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Melissa Howell",
+				"role": "performer",
+				"reason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lori Johnson",
+				"role": "performer",
+				"reason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Shaw",
+				"role": "performer",
+				"reason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Myles Wolfe",
+				"role": "performer",
+				"reason": "Crédito Caroler cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ty Olsson",
+				"role": "performer",
+				"reason": "Crédito Trucker cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stephen Holmes",
+				"role": "performer",
+				"reason": "Crédito UPS Guy cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Andrew Hedge",
+				"role": "performer",
+				"reason": "Crédito City Employee cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cory Monteith",
+				"role": "performer",
+				"reason": "Crédito Madison's Date cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Cassidy Bot-Devire",
+				"role": "performer",
+				"reason": "Crédito Little Girl (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aaron Craven",
+				"role": "performer",
+				"reason": "Crédito Businessman Dad (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Blair Gorrell",
+				"role": "performer",
+				"reason": "Crédito Carnival Fan (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rachel Lana Li",
+				"role": "performer",
+				"reason": "Crédito Spectator (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lochlyn Munro",
+				"role": "performer",
+				"reason": "Crédito Ted (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kal Penn",
+				"role": "performer",
+				"reason": "Crédito Amit Sayid (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Caroline Redekopp",
+				"role": "performer",
+				"reason": "Crédito Mackenzie's Mother (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Arden Rhine",
+				"role": "performer",
+				"reason": "Crédito Woman (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Calum Worthy",
+				"role": "performer",
+				"reason": "Crédito Boy On a Bike (uncredited) cotejado en el billing completo de Un vecino con pocas luces; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

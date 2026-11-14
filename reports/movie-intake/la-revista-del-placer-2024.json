@@ -1,0 +1,547 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "la-revista-del-placer-2024",
+	"title": "La revista del placer",
+	"year": 2024,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1027452/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 27
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/spread",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt22206410/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Ellie Kanner",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 2454154,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2454154",
+					"fact": "Identidad de Ellie Kanner, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a Ellie Kanner en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F0%2Fpeople%2F0b874431244d2586ec6ee3e44de0ab84.jpg",
+				"localPath": "/people/ellie-kanner-nm0437802.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Elizabeth Gillies",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Ruby",
+			"tmdbPersonId": 206399,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/206399",
+					"fact": "Identidad de Elizabeth Gillies, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a Elizabeth Gillies como Ruby."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/shrmJdcmf4lnoM19cAggrCoO5a6.jpg",
+				"localPath": "/people/elizabeth-gillies-nm2566697.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Teri Polo",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Prudence",
+			"tmdbPersonId": 10399,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10399",
+					"fact": "Identidad de Teri Polo, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a Teri Polo como Prudence."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5xVk9bfMOeJxKmAGJddOhcNp2rX.jpg",
+				"localPath": "/people/teri-polo-nm0001632.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "David Allan Pearson",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Hank",
+			"tmdbPersonId": 1237672,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1237672",
+					"fact": "Identidad de David Allan Pearson, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a David Allan Pearson como Hank."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/t5hUS7j6dLOe0JPLbp3g69Wvlja.jpg",
+				"localPath": "/people/david-allan-pearson-nm0669234.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Bryan Craig",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Leslie",
+			"tmdbPersonId": 582739,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/582739",
+					"fact": "Identidad de Bryan Craig, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a Bryan Craig como Leslie."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dKueWAX46xZg4Mplg3mRDytnpMH.jpg",
+				"localPath": "/people/bryan-craig-nm1462958.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Keith Walker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Thomas",
+			"tmdbPersonId": 160165,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/160165",
+					"fact": "Identidad de Keith Walker, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a Keith Walker como Thomas."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://m.media-amazon.com/images/M/MV5BZTQ1OThjZDQtMTI0YS00Mzk5LThmMDktNDRmYTkzMDZlMzE3XkEyXkFqcGc@._V1_.jpg",
+				"localPath": "/people/keith-walker-nm2074240.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Blake Harrison",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Nelson",
+			"tmdbPersonId": 222068,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/222068",
+					"fact": "Identidad de Blake Harrison, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a Blake Harrison como Nelson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aYLIn1nwicirKMktJYbPOZ7rROy.jpg",
+				"localPath": "/people/blake-harrison-nm3002919.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Diora Baird",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Lexi",
+			"tmdbPersonId": 59263,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/59263",
+					"fact": "Identidad de Diora Baird, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a Diora Baird como Lexi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/iOVBvwBhcHIZuLZT3S9tJQ6mbTT.jpg",
+				"localPath": "/people/diora-baird-nm1401531.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Diedrich Bader",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Ron",
+			"tmdbPersonId": 5727,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5727",
+					"fact": "Identidad de Diedrich Bader, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a Diedrich Bader como Ron."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/z7CctykPTuXDfAs7pkAA7vW4b3T.jpg",
+				"localPath": "/people/diedrich-bader-5727.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Harvey Keitel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Frank Ferretti",
+			"tmdbPersonId": 1037,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1037",
+					"fact": "Identidad de Harvey Keitel, oficio y filmografía cotejados con el ID exacto de La revista del placer (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1027452/cast",
+					"fact": "El billing del título exacto acredita a Harvey Keitel como Frank Ferretti."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harvey%20Keitel%20VF%202012%20Shankbone.JPG?width=640",
+				"localPath": "/people/harvey-keitel-nm0000172.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tim Rozon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Sizemore",
+			"tmdbPersonId": 73610,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sizemore cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dia Frampton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Whitney",
+			"tmdbPersonId": 1686304,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Whitney cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jonah Platt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Orson",
+			"tmdbPersonId": 2088457,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Orson cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nhi Do",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Pearl",
+			"tmdbPersonId": 79348,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito sin personaje detallado cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante. La fuente repite este mismo ID; se consolida en una única fila."
+		},
+		{
+			"name": "Corin Clark",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Trixxy/Pornstar #2",
+			"tmdbPersonId": 4329904,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Trixxy/Pornstar #2 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kalyn Miles",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Jean",
+			"tmdbPersonId": 1874411,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jean cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Corey Woods",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Lexi",
+			"tmdbPersonId": 1705589,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lexi cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "April Telek",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Deb",
+			"tmdbPersonId": 45428,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Deb cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Faith Wright",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Jane",
+			"tmdbPersonId": 3078816,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jane cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eric Scott Woods",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Mr. Wolfe",
+			"tmdbPersonId": 154440,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mr. Wolfe cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Laura Soltis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Marcia",
+			"tmdbPersonId": 59230,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Marcia cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Natalie Moon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Co-worker #1",
+			"tmdbPersonId": 1451352,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Co-worker #1 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gigi Neil",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Woman #1",
+			"tmdbPersonId": 3732459,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Woman #1 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rhona Rees",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Woman #2",
+			"tmdbPersonId": 1530746,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Woman #2 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kristina Capati",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Woman #3",
+			"tmdbPersonId": 3263366,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Woman #3 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Haley Victoria Hunt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Pornstar #1",
+			"tmdbPersonId": 2043485,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pornstar #1 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tara Pratt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1027452/cast",
+			"screenRole": "Co-worker (uncredited)",
+			"tmdbPersonId": 1883359,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Co-worker (uncredited) cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de La revista del placer; se retuvieron 1 créditos de dirección y 9 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Tim Rozon",
+				"role": "performer",
+				"reason": "Crédito Sizemore cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dia Frampton",
+				"role": "performer",
+				"reason": "Crédito Whitney cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jonah Platt",
+				"role": "performer",
+				"reason": "Crédito Orson cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nhi Do",
+				"role": "performer",
+				"reason": "Crédito sin personaje detallado cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante. La fuente repite este mismo ID; se consolida en una única fila."
+			},
+			{
+				"name": "Corin Clark",
+				"role": "performer",
+				"reason": "Crédito Trixxy/Pornstar #2 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kalyn Miles",
+				"role": "performer",
+				"reason": "Crédito Jean cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Corey Woods",
+				"role": "performer",
+				"reason": "Crédito Lexi cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "April Telek",
+				"role": "performer",
+				"reason": "Crédito Deb cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Faith Wright",
+				"role": "performer",
+				"reason": "Crédito Jane cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eric Scott Woods",
+				"role": "performer",
+				"reason": "Crédito Mr. Wolfe cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Laura Soltis",
+				"role": "performer",
+				"reason": "Crédito Marcia cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Natalie Moon",
+				"role": "performer",
+				"reason": "Crédito Co-worker #1 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gigi Neil",
+				"role": "performer",
+				"reason": "Crédito Woman #1 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rhona Rees",
+				"role": "performer",
+				"reason": "Crédito Woman #2 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kristina Capati",
+				"role": "performer",
+				"reason": "Crédito Woman #3 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Haley Victoria Hunt",
+				"role": "performer",
+				"reason": "Crédito Pornstar #1 cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tara Pratt",
+				"role": "performer",
+				"reason": "Crédito Co-worker (uncredited) cotejado en el billing completo de La revista del placer; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

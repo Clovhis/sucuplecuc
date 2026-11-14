@@ -1,0 +1,1643 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "godzilla-1998",
+	"title": "Godzilla",
+	"year": 1998,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/929/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 96
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/godzilla",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0120685/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Roland Emmerich",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 6046,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6046",
+					"fact": "Identidad de Roland Emmerich, oficio y filmografía cotejados con el ID exacto de Godzilla (1998)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/929/cast",
+					"fact": "El billing del título exacto acredita a Roland Emmerich en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Independence%20Day-%20Resurgence%20Japan%20Premiere-%20Roland%20Emmerich%20(28502013341)%20CROPPED.jpg?width=640",
+				"localPath": "/people/roland-emmerich-nm0000386.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Matthew Broderick",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Dr. Niko Tatopoulos",
+			"tmdbPersonId": 4756,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4756",
+					"fact": "Identidad de Matthew Broderick, oficio y filmografía cotejados con el ID exacto de Godzilla (1998)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/929/cast",
+					"fact": "El billing del título exacto acredita a Matthew Broderick como Dr. Niko Tatopoulos."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Matthew%20Broderick%202022.jpg?width=120",
+				"localPath": "/people/matthew-broderick-nm0000111.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jean Reno",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Philippe Roaché",
+			"tmdbPersonId": 1003,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1003",
+					"fact": "Identidad de Jean Reno, oficio y filmografía cotejados con el ID exacto de Godzilla (1998)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/929/cast",
+					"fact": "El billing del título exacto acredita a Jean Reno como Philippe Roaché."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Reno%20Cannes%202016.jpg?width=640",
+				"localPath": "/people/jean-reno-nm0000606.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Maria Pitillo",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Audrey Timmonds",
+			"tmdbPersonId": 3208,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3208",
+					"fact": "Identidad de Maria Pitillo, oficio y filmografía cotejados con el ID exacto de Godzilla (1998)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/929/cast",
+					"fact": "El billing del título exacto acredita a Maria Pitillo como Audrey Timmonds."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/e2RqURksoCGa9fBqqMtOuY7pDk5.jpg",
+				"localPath": "/people/maria-pitillo-nm0001623.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Hank Azaria",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Victor 'Animal' Palotti",
+			"tmdbPersonId": 5587,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5587",
+					"fact": "Identidad de Hank Azaria, oficio y filmografía cotejados con el ID exacto de Godzilla (1998)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/929/cast",
+					"fact": "El billing del título exacto acredita a Hank Azaria como Victor 'Animal' Palotti."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hank%20Azaria%20(15-01-2026)%20(cropped).png?width=640",
+				"localPath": "/people/hank-azaria-nm0000279.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kevin Dunn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Colonel Hicks",
+			"tmdbPersonId": 14721,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/14721",
+					"fact": "Identidad de Kevin Dunn, oficio y filmografía cotejados con el ID exacto de Godzilla (1998)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/929/cast",
+					"fact": "El billing del título exacto acredita a Kevin Dunn como Colonel Hicks."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kevin%20Dunn%202014.jpg?width=640",
+				"localPath": "/people/kevin-dunn-nm0242656.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Michael Lerner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Mayor Ebert",
+			"tmdbPersonId": 4250,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4250",
+					"fact": "Identidad de Michael Lerner, oficio y filmografía cotejados con el ID exacto de Godzilla (1998)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/929/cast",
+					"fact": "El billing del título exacto acredita a Michael Lerner como Mayor Ebert."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/1jRm6TRS5atQrA1VQSef7GoL13g.jpg",
+				"localPath": "/people/michael-lerner-4250.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Harry Shearer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Charles Caiman",
+			"tmdbPersonId": 6008,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6008",
+					"fact": "Identidad de Harry Shearer, oficio y filmografía cotejados con el ID exacto de Godzilla (1998)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/929/cast",
+					"fact": "El billing del título exacto acredita a Harry Shearer como Charles Caiman."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7PnGZGVKJNDTUv3DkbaMEnCseT0.jpg",
+				"localPath": "/people/harry-shearer-nm0733427.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Arabella Field",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Lucy Palotti",
+			"tmdbPersonId": 14722,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/14722",
+					"fact": "Identidad de Arabella Field, oficio y filmografía cotejados con el ID exacto de Godzilla (1998)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/929/cast",
+					"fact": "El billing del título exacto acredita a Arabella Field como Lucy Palotti."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mKWXvd31RH0MNZqIiXBBHPyrtkF.jpg",
+				"localPath": "/people/arabella-field-nm0275890.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Vicki Lewis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Dr. Elsie Chapman",
+			"tmdbPersonId": 14723,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dr. Elsie Chapman cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Doug Savant",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Sergeant O'Neal",
+			"tmdbPersonId": 14737,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sergeant O'Neal cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Malcolm Danare",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Dr. Mendel Craven",
+			"tmdbPersonId": 14738,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dr. Mendel Craven cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lorry Goldman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Gene, Mayor's Aide",
+			"tmdbPersonId": 14739,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gene, Mayor's Aide cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christian Aubert",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Jean-Luc",
+			"tmdbPersonId": 14740,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jean-Luc cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Philippe Bergeron",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Jean-Claude",
+			"tmdbPersonId": 14741,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jean-Claude cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Frank Bruynbroek",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Jean-Pierre",
+			"tmdbPersonId": 14742,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jean-Pierre cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "François Giroday",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Jean-Philippe",
+			"tmdbPersonId": 538321,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jean-Philippe cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nicholas J. Giangiulio",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Ed",
+			"tmdbPersonId": 164283,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ed cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Lesser",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Murray",
+			"tmdbPersonId": 140176,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Murray cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ralph Manza",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Old Fisherman",
+			"tmdbPersonId": 151606,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Old Fisherman cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Greg Callahan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "the Governor",
+			"tmdbPersonId": 1116812,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito the Governor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chris Ellis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "General Anderson",
+			"tmdbPersonId": 8191,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito General Anderson cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nancy Cartwright",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Caiman's Secretary",
+			"tmdbPersonId": 200,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Caiman's Secretary cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Richard Gant",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Admiral Phelps",
+			"tmdbPersonId": 16662,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Admiral Phelps cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jack Moore",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Leonard",
+			"tmdbPersonId": 117564,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Leonard cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steve Giannelli",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Jules",
+			"tmdbPersonId": 1116827,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jules cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Brian Farabaugh",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Arthur",
+			"tmdbPersonId": 1116829,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Arthur cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stephen Xavier Lee",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Lt. Anderson",
+			"tmdbPersonId": 1116831,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lt. Anderson cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bodhi Elfman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Freddie",
+			"tmdbPersonId": 154883,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Freddie cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rich Grosso",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Jimmy",
+			"tmdbPersonId": 1277015,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jimmy cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lloyd Kino",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Japanese Tanker Cook",
+			"tmdbPersonId": 1116836,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Tanker Cook cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Toshi Toda",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Japanese Tanker Captain",
+			"tmdbPersonId": 156963,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Tanker Captain cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Clyde Kusatsu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Japanese Tanker Skipper",
+			"tmdbPersonId": 2249,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Tanker Skipper cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "加藤雅也",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Japanese Tanker Crew Member",
+			"tmdbPersonId": 4989,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Tanker Crew Member cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Glenn Morshower",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Kyle Terrington",
+			"tmdbPersonId": 12797,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Kyle Terrington cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lola Pashalinski",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Pharmacist",
+			"tmdbPersonId": 1116851,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pharmacist cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rob Fukuzaki",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "WIDF Co-Anchor",
+			"tmdbPersonId": 1116852,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito WIDF Co-Anchor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dale Harimoto",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "WKXI Anchor",
+			"tmdbPersonId": 1116853,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito WKXI Anchor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gary W. Cruz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "WFKK Anchor",
+			"tmdbPersonId": 1116854,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito WFKK Anchor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Derek Webster",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Utah Captain",
+			"tmdbPersonId": 157029,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Utah Captain cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stuart Fratkin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Utah Ensign",
+			"tmdbPersonId": 78415,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Utah Ensign cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Frank Cilberg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Utah Sailor",
+			"tmdbPersonId": 1116859,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Utah Sailor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jason Edward Jones",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Utah Sailor",
+			"tmdbPersonId": 1116860,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Utah Sailor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Roger McIntyre",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Utah Sailor",
+			"tmdbPersonId": 1116864,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Utah Sailor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Pressman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Anchorage Captain",
+			"tmdbPersonId": 111514,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Anchorage Captain cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Faltisco",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Anchorage Ensign",
+			"tmdbPersonId": 1116873,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Anchorage Ensign cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christopher Darius Maleki",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Anchorage Ensign",
+			"tmdbPersonId": 1116874,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Anchorage Ensign cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Scott Lusby",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Anchorage Ensign",
+			"tmdbPersonId": 1116877,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Anchorage Ensign cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ali Afshar",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Anchorage Sailor",
+			"tmdbPersonId": 294813,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Anchorage Sailor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Terence Paul Winter",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Apache Pilot",
+			"tmdbPersonId": 553985,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kirk Geiger",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Apache Pilot",
+			"tmdbPersonId": 84079,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pat Mastroianni",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Apache Pilot",
+			"tmdbPersonId": 174571,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eric Saiet",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Apache Pilot",
+			"tmdbPersonId": 1228791,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Burt Bulos",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Apache Pilot",
+			"tmdbPersonId": 15377,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Floyd",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Apache Pilot",
+			"tmdbPersonId": 182204,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Seth Peterson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Apache Pilot",
+			"tmdbPersonId": 109524,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jamison Yang",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "F-18 Pilot",
+			"tmdbPersonId": 154551,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito F-18 Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nathan Anderson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "F-18 Pilot",
+			"tmdbPersonId": 92282,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito F-18 Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mark Munafo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "F-18 Pilot",
+			"tmdbPersonId": 1116895,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito F-18 Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dwight Schmidt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "F-18 Pilot",
+			"tmdbPersonId": 1116896,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito F-18 Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dwayne Swingler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Raven Pilot #2",
+			"tmdbPersonId": 1116897,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Raven Pilot #2 cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lawton Paseka",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Officier",
+			"tmdbPersonId": 560150,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Officier cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Greg Collins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Soldier on the Bridge",
+			"tmdbPersonId": 58950,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Soldier on the Bridge cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "James Black",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Soldier",
+			"tmdbPersonId": 106911,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Soldier cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Thomas Giuseppe Giantonelli",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Soldier",
+			"tmdbPersonId": 1116901,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Soldier cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Paul Ware",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Soldier",
+			"tmdbPersonId": 1116902,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Soldier cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Montae Russell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Soldier on Plane",
+			"tmdbPersonId": 1116903,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Soldier on Plane cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christopher Carruthers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Radio Technician",
+			"tmdbPersonId": 1116904,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Radio Technician cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Daniel Pearce",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Radio Technician",
+			"tmdbPersonId": 1116905,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Radio Technician cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Mark Fite",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Radio Operator",
+			"tmdbPersonId": 122805,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Radio Operator cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Craig Castaldo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Radio Man",
+			"tmdbPersonId": 1116907,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Radio Man cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eric Paskel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Rodgers",
+			"tmdbPersonId": 179969,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rodgers cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lee Weaver",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Homeless Guy",
+			"tmdbPersonId": 1481,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Homeless Guy cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Leonard Termo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Homeless Guy",
+			"tmdbPersonId": 7140,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Homeless Guy cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joshua Taylor",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Spotter",
+			"tmdbPersonId": 87633,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Spotter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Al Sapienza",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Taxi Cab Driver",
+			"tmdbPersonId": 154917,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Taxi Cab Driver cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stoney Westmoreland",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Tunnel Guard",
+			"tmdbPersonId": 19491,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Tunnel Guard cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gary Warner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Gun Technician",
+			"tmdbPersonId": 99418,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Gun Technician cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ed Wheeler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "New York Cop",
+			"tmdbPersonId": 59162,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito New York Cop cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bill Hoag",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "New Jersey Cop",
+			"tmdbPersonId": 164177,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito New Jersey Cop cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Joseph Badalucco Jr.",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Forklift Driver",
+			"tmdbPersonId": 77092,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Forklift Driver cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jonathan Dienst",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Field Reporter",
+			"tmdbPersonId": 2525070,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Field Reporter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Benjamin Baird",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Reporters",
+			"tmdbPersonId": 1820129,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Reporters cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Madeline McFadden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Reporter",
+			"tmdbPersonId": 2525071,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Reporter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Julian M. Phillips",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Reporter",
+			"tmdbPersonId": 2525072,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Reporter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Raymond Ramos",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Reporter",
+			"tmdbPersonId": 2525073,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Reporter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gary A. Hecker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Creature Vocals (voice)",
+			"tmdbPersonId": 1077782,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Creature Vocals (voice) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Frank Welker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Creature Vocals (voice)",
+			"tmdbPersonId": 15831,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Creature Vocals (voice) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Al Leong",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Japanese Fishing Boat Crewman",
+			"tmdbPersonId": 61704,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Fishing Boat Crewman cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ed Godziszewski",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Bridge Onlooker (uncredited)",
+			"tmdbPersonId": 2676774,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Bridge Onlooker (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Steven Ho",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Japanese Fishing Boat Crewman (uncredited)",
+			"tmdbPersonId": 1216726,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Fishing Boat Crewman (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "張佐治",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Japanese Fishing Boat Crewman (uncredited)",
+			"tmdbPersonId": 16580,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Fishing Boat Crewman (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Koyama",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Japanese Fishing Boat Crewman (uncredited)",
+			"tmdbPersonId": 92495,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Fishing Boat Crewman (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Al Goto",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Japanese Fishing Boat Crewman (uncredited)",
+			"tmdbPersonId": 1537690,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Japanese Fishing Boat Crewman (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Norman Fessler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "WIDF News Worker in Elevator (uncredited)",
+			"tmdbPersonId": 1172438,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito WIDF News Worker in Elevator (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kurt Carley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/929/cast",
+			"screenRole": "Godzilla (uncredited)",
+			"tmdbPersonId": 173783,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Godzilla (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Godzilla; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Vicki Lewis",
+				"role": "performer",
+				"reason": "Crédito Dr. Elsie Chapman cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Doug Savant",
+				"role": "performer",
+				"reason": "Crédito Sergeant O'Neal cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Malcolm Danare",
+				"role": "performer",
+				"reason": "Crédito Dr. Mendel Craven cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lorry Goldman",
+				"role": "performer",
+				"reason": "Crédito Gene, Mayor's Aide cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christian Aubert",
+				"role": "performer",
+				"reason": "Crédito Jean-Luc cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Philippe Bergeron",
+				"role": "performer",
+				"reason": "Crédito Jean-Claude cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Frank Bruynbroek",
+				"role": "performer",
+				"reason": "Crédito Jean-Pierre cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "François Giroday",
+				"role": "performer",
+				"reason": "Crédito Jean-Philippe cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nicholas J. Giangiulio",
+				"role": "performer",
+				"reason": "Crédito Ed cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Lesser",
+				"role": "performer",
+				"reason": "Crédito Murray cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ralph Manza",
+				"role": "performer",
+				"reason": "Crédito Old Fisherman cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Greg Callahan",
+				"role": "performer",
+				"reason": "Crédito the Governor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Chris Ellis",
+				"role": "performer",
+				"reason": "Crédito General Anderson cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nancy Cartwright",
+				"role": "performer",
+				"reason": "Crédito Caiman's Secretary cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Richard Gant",
+				"role": "performer",
+				"reason": "Crédito Admiral Phelps cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jack Moore",
+				"role": "performer",
+				"reason": "Crédito Leonard cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steve Giannelli",
+				"role": "performer",
+				"reason": "Crédito Jules cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Brian Farabaugh",
+				"role": "performer",
+				"reason": "Crédito Arthur cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stephen Xavier Lee",
+				"role": "performer",
+				"reason": "Crédito Lt. Anderson cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bodhi Elfman",
+				"role": "performer",
+				"reason": "Crédito Freddie cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rich Grosso",
+				"role": "performer",
+				"reason": "Crédito Jimmy cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lloyd Kino",
+				"role": "performer",
+				"reason": "Crédito Japanese Tanker Cook cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Toshi Toda",
+				"role": "performer",
+				"reason": "Crédito Japanese Tanker Captain cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Clyde Kusatsu",
+				"role": "performer",
+				"reason": "Crédito Japanese Tanker Skipper cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "加藤雅也",
+				"role": "performer",
+				"reason": "Crédito Japanese Tanker Crew Member cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Glenn Morshower",
+				"role": "performer",
+				"reason": "Crédito Kyle Terrington cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lola Pashalinski",
+				"role": "performer",
+				"reason": "Crédito Pharmacist cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rob Fukuzaki",
+				"role": "performer",
+				"reason": "Crédito WIDF Co-Anchor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dale Harimoto",
+				"role": "performer",
+				"reason": "Crédito WKXI Anchor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gary W. Cruz",
+				"role": "performer",
+				"reason": "Crédito WFKK Anchor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Derek Webster",
+				"role": "performer",
+				"reason": "Crédito Utah Captain cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stuart Fratkin",
+				"role": "performer",
+				"reason": "Crédito Utah Ensign cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Frank Cilberg",
+				"role": "performer",
+				"reason": "Crédito Utah Sailor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jason Edward Jones",
+				"role": "performer",
+				"reason": "Crédito Utah Sailor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Roger McIntyre",
+				"role": "performer",
+				"reason": "Crédito Utah Sailor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Pressman",
+				"role": "performer",
+				"reason": "Crédito Anchorage Captain cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Faltisco",
+				"role": "performer",
+				"reason": "Crédito Anchorage Ensign cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christopher Darius Maleki",
+				"role": "performer",
+				"reason": "Crédito Anchorage Ensign cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Scott Lusby",
+				"role": "performer",
+				"reason": "Crédito Anchorage Ensign cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ali Afshar",
+				"role": "performer",
+				"reason": "Crédito Anchorage Sailor cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Terence Paul Winter",
+				"role": "performer",
+				"reason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kirk Geiger",
+				"role": "performer",
+				"reason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pat Mastroianni",
+				"role": "performer",
+				"reason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eric Saiet",
+				"role": "performer",
+				"reason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Burt Bulos",
+				"role": "performer",
+				"reason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Floyd",
+				"role": "performer",
+				"reason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Seth Peterson",
+				"role": "performer",
+				"reason": "Crédito Apache Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jamison Yang",
+				"role": "performer",
+				"reason": "Crédito F-18 Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nathan Anderson",
+				"role": "performer",
+				"reason": "Crédito F-18 Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mark Munafo",
+				"role": "performer",
+				"reason": "Crédito F-18 Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dwight Schmidt",
+				"role": "performer",
+				"reason": "Crédito F-18 Pilot cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dwayne Swingler",
+				"role": "performer",
+				"reason": "Crédito Raven Pilot #2 cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lawton Paseka",
+				"role": "performer",
+				"reason": "Crédito Officier cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Greg Collins",
+				"role": "performer",
+				"reason": "Crédito Soldier on the Bridge cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "James Black",
+				"role": "performer",
+				"reason": "Crédito Soldier cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Thomas Giuseppe Giantonelli",
+				"role": "performer",
+				"reason": "Crédito Soldier cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Paul Ware",
+				"role": "performer",
+				"reason": "Crédito Soldier cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Montae Russell",
+				"role": "performer",
+				"reason": "Crédito Soldier on Plane cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christopher Carruthers",
+				"role": "performer",
+				"reason": "Crédito Radio Technician cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Daniel Pearce",
+				"role": "performer",
+				"reason": "Crédito Radio Technician cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Mark Fite",
+				"role": "performer",
+				"reason": "Crédito Radio Operator cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Craig Castaldo",
+				"role": "performer",
+				"reason": "Crédito Radio Man cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eric Paskel",
+				"role": "performer",
+				"reason": "Crédito Rodgers cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lee Weaver",
+				"role": "performer",
+				"reason": "Crédito Homeless Guy cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Leonard Termo",
+				"role": "performer",
+				"reason": "Crédito Homeless Guy cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joshua Taylor",
+				"role": "performer",
+				"reason": "Crédito Spotter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Al Sapienza",
+				"role": "performer",
+				"reason": "Crédito Taxi Cab Driver cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stoney Westmoreland",
+				"role": "performer",
+				"reason": "Crédito Tunnel Guard cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gary Warner",
+				"role": "performer",
+				"reason": "Crédito Gun Technician cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ed Wheeler",
+				"role": "performer",
+				"reason": "Crédito New York Cop cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bill Hoag",
+				"role": "performer",
+				"reason": "Crédito New Jersey Cop cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Joseph Badalucco Jr.",
+				"role": "performer",
+				"reason": "Crédito Forklift Driver cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jonathan Dienst",
+				"role": "performer",
+				"reason": "Crédito Field Reporter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Benjamin Baird",
+				"role": "performer",
+				"reason": "Crédito Reporters cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Madeline McFadden",
+				"role": "performer",
+				"reason": "Crédito Reporter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Julian M. Phillips",
+				"role": "performer",
+				"reason": "Crédito Reporter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Raymond Ramos",
+				"role": "performer",
+				"reason": "Crédito Reporter cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gary A. Hecker",
+				"role": "performer",
+				"reason": "Crédito Creature Vocals (voice) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Frank Welker",
+				"role": "performer",
+				"reason": "Crédito Creature Vocals (voice) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Al Leong",
+				"role": "performer",
+				"reason": "Crédito Japanese Fishing Boat Crewman cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ed Godziszewski",
+				"role": "performer",
+				"reason": "Crédito Bridge Onlooker (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Steven Ho",
+				"role": "performer",
+				"reason": "Crédito Japanese Fishing Boat Crewman (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "張佐治",
+				"role": "performer",
+				"reason": "Crédito Japanese Fishing Boat Crewman (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Koyama",
+				"role": "performer",
+				"reason": "Crédito Japanese Fishing Boat Crewman (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Al Goto",
+				"role": "performer",
+				"reason": "Crédito Japanese Fishing Boat Crewman (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Norman Fessler",
+				"role": "performer",
+				"reason": "Crédito WIDF News Worker in Elevator (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kurt Carley",
+				"role": "performer",
+				"reason": "Crédito Godzilla (uncredited) cotejado en el billing completo de Godzilla; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

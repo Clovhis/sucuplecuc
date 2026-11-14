@@ -1,0 +1,475 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "objetos-raros-2023",
+	"title": "Objetos Raros",
+	"year": 2023,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/899328/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 23
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/rare-objects",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt15836468/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Katie Holmes",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 3897,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3897",
+					"fact": "Identidad de Katie Holmes, oficio y filmografía cotejados con el ID exacto de Objetos Raros (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/899328/cast",
+					"fact": "El billing del título exacto acredita a Katie Holmes en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Katie%20Holmes%20WHCAD%20(cropped).jpg?width=640",
+				"localPath": "/people/katie-holmes-nm0005017.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Julia Mayorga",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Benita Parla",
+			"tmdbPersonId": 2559472,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2559472",
+					"fact": "Identidad de Julia Mayorga, oficio y filmografía cotejados con el ID exacto de Objetos Raros (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/899328/cast",
+					"fact": "El billing del título exacto acredita a Julia Mayorga como Benita Parla."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ERfLdBMe7VLZAbi2iq76h9T5Xd.jpg",
+				"localPath": "/people/julia-mayorga-nm10100963.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Katie Holmes",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Diana Van der Laar",
+			"tmdbPersonId": 3897,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3897",
+					"fact": "Identidad de Katie Holmes, oficio y filmografía cotejados con el ID exacto de Objetos Raros (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/899328/cast",
+					"fact": "El billing del título exacto acredita a Katie Holmes como Diana Van der Laar."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Katie%20Holmes%20WHCAD%20(cropped).jpg?width=640",
+				"localPath": "/people/katie-holmes-nm0005017.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Derek Luke",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Ben Winshaw",
+			"tmdbPersonId": 15543,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/15543",
+					"fact": "Identidad de Derek Luke, oficio y filmografía cotejados con el ID exacto de Objetos Raros (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/899328/cast",
+					"fact": "El billing del título exacto acredita a Derek Luke como Ben Winshaw."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/29706/cache-234047-1498531147/image-w856.jpg",
+				"localPath": "/people/derek-luke-nm1035682.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alan Cumming",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Peter Kessler",
+			"tmdbPersonId": 10697,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10697",
+					"fact": "Identidad de Alan Cumming, oficio y filmografía cotejados con el ID exacto de Objetos Raros (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/899328/cast",
+					"fact": "El billing del título exacto acredita a Alan Cumming como Peter Kessler."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/axil8ufunARfqyU4ceZNh36fkVQ.jpg",
+				"localPath": "/people/alan-cumming-tmdb-10697.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Saundra Santiago",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Aymee Parla",
+			"tmdbPersonId": 171135,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/171135",
+					"fact": "Identidad de Saundra Santiago, oficio y filmografía cotejados con el ID exacto de Objetos Raros (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/899328/cast",
+					"fact": "El billing del título exacto acredita a Saundra Santiago como Aymee Parla."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9k3bRHUdr6V1iuTYjrUVT5J6HR1.jpg",
+				"localPath": "/people/saundra-santiago-nm0763639.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Candy Buckley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Linda van der Laar",
+			"tmdbPersonId": 164481,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/164481",
+					"fact": "Identidad de Candy Buckley, oficio y filmografía cotejados con el ID exacto de Objetos Raros (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/899328/cast",
+					"fact": "El billing del título exacto acredita a Candy Buckley como Linda van der Laar."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rB9cqHnKCXKBk0cjGyxunu7cVhX.jpg",
+				"localPath": "/people/candy-buckley-nm0118581.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Giancarlo Vidrio",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Anthony",
+			"tmdbPersonId": 2664394,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2664394",
+					"fact": "Identidad de Giancarlo Vidrio, oficio y filmografía cotejados con el ID exacto de Objetos Raros (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/899328/cast",
+					"fact": "El billing del título exacto acredita a Giancarlo Vidrio como Anthony."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1Cw4I08LlgUBd53rTr9s1b7Qq8S.jpg",
+				"localPath": "/people/giancarlo-vidrio-nm2845842.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "David Alexander Flinn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "James Van der Laar",
+			"tmdbPersonId": 3938260,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3938260",
+					"fact": "Identidad de David Alexander Flinn, oficio y filmografía cotejados con el ID exacto de Objetos Raros (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/899328/cast",
+					"fact": "El billing del título exacto acredita a David Alexander Flinn como James Van der Laar."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4zkZzzVFJG9Wr6WeN5I8jPMqv4y.jpg",
+				"localPath": "/people/david-alexander-flinn-tmdb-3938260.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jimi Stanton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Chris",
+			"tmdbPersonId": 1702791,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Chris cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Olivia Gilliatt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Angle",
+			"tmdbPersonId": 2025026,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Angle cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ashley Noel Jones",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Waitress (Honey Well)",
+			"tmdbPersonId": 4962318,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Waitress (Honey Well) cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rose Lane Sanfilippo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Jasmine",
+			"tmdbPersonId": 2066423,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jasmine cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Matthew Lawler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Dr. Joseph",
+			"tmdbPersonId": 118648,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dr. Joseph cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Yan Xi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Wealthy Woman",
+			"tmdbPersonId": 1546224,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Wealthy Woman cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Brian Richardson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Customer #1",
+			"tmdbPersonId": 3682943,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Customer #1 cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Barbara Singer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Older Woman",
+			"tmdbPersonId": 1637728,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Older Woman cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Heather Girardi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Nurse",
+			"tmdbPersonId": 2660538,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Nurse cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Yvette Mercedes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Woman",
+			"tmdbPersonId": 1533076,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Woman cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Purva Bedi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Customer #3",
+			"tmdbPersonId": 109024,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Customer #3 cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Coleman Lannum",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Mr. Hamilton",
+			"tmdbPersonId": 1302205,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mr. Hamilton cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Wollman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Isaac",
+			"tmdbPersonId": 3023895,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Isaac cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aerial East",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/899328/cast",
+			"screenRole": "Jazz Singer",
+			"tmdbPersonId": 3767129,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jazz Singer cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Objetos Raros; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Jimi Stanton",
+				"role": "performer",
+				"reason": "Crédito Chris cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Olivia Gilliatt",
+				"role": "performer",
+				"reason": "Crédito Angle cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ashley Noel Jones",
+				"role": "performer",
+				"reason": "Crédito Waitress (Honey Well) cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rose Lane Sanfilippo",
+				"role": "performer",
+				"reason": "Crédito Jasmine cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Matthew Lawler",
+				"role": "performer",
+				"reason": "Crédito Dr. Joseph cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Yan Xi",
+				"role": "performer",
+				"reason": "Crédito Wealthy Woman cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Brian Richardson",
+				"role": "performer",
+				"reason": "Crédito Customer #1 cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Barbara Singer",
+				"role": "performer",
+				"reason": "Crédito Older Woman cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Heather Girardi",
+				"role": "performer",
+				"reason": "Crédito Nurse cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Yvette Mercedes",
+				"role": "performer",
+				"reason": "Crédito Woman cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Purva Bedi",
+				"role": "performer",
+				"reason": "Crédito Customer #3 cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Coleman Lannum",
+				"role": "performer",
+				"reason": "Crédito Mr. Hamilton cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Wollman",
+				"role": "performer",
+				"reason": "Crédito Isaac cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aerial East",
+				"role": "performer",
+				"reason": "Crédito Jazz Singer cotejado en el billing completo de Objetos Raros; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,202 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "navidad-bajo-las-luces-2024",
+	"title": "Navidad bajo las luces",
+	"year": 2024,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1361248/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 7
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/christmas-under-the-lights",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt33253213/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Lucie Guest",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1361248/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 172428,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/172428",
+					"fact": "Identidad de Lucie Guest, oficio y filmografía cotejados con el ID exacto de Navidad bajo las luces (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1361248/cast",
+					"fact": "El billing del título exacto acredita a Lucie Guest en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wwd9GVDMo8NqDsoVYxeZHKoGrXY.jpg",
+				"localPath": "/people/lucie-guest-nm1708815.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Heather Hemmens",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1361248/cast",
+			"screenRole": "Emily",
+			"tmdbPersonId": 205982,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/205982",
+					"fact": "Identidad de Heather Hemmens, oficio y filmografía cotejados con el ID exacto de Navidad bajo las luces (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1361248/cast",
+					"fact": "El billing del título exacto acredita a Heather Hemmens como Emily."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dVwYV1oVQYeyvlEm0a6rFVYBmEO.jpg",
+				"localPath": "/people/heather-hemmens-nm1904798.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Marco Grazzini",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1361248/cast",
+			"screenRole": "Luke",
+			"tmdbPersonId": 1068259,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1068259",
+					"fact": "Identidad de Marco Grazzini, oficio y filmografía cotejados con el ID exacto de Navidad bajo las luces (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1361248/cast",
+					"fact": "El billing del título exacto acredita a Marco Grazzini como Luke."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ml42pjzKn7sjNR5FkpEn5cTjIdZ.jpg",
+				"localPath": "/people/marco-grazzini-nm2670679.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Hilary Jardine",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1361248/cast",
+			"screenRole": "Taylor",
+			"tmdbPersonId": 1456202,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1456202",
+					"fact": "Identidad de Hilary Jardine, oficio y filmografía cotejados con el ID exacto de Navidad bajo las luces (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1361248/cast",
+					"fact": "El billing del título exacto acredita a Hilary Jardine como Taylor."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qIdAaozFRTNEWt8kP4lq7frFTH3.jpg",
+				"localPath": "/people/hilary-jardine-nm3614878.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Laura Mitchell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1361248/cast",
+			"screenRole": "Aurora",
+			"tmdbPersonId": 1717338,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1717338",
+					"fact": "Identidad de Laura Mitchell, oficio y filmografía cotejados con el ID exacto de Navidad bajo las luces (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1361248/cast",
+					"fact": "El billing del título exacto acredita a Laura Mitchell como Aurora."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cw8lcwxx6DKBzoFfMIjdCBMb0NL.jpg",
+				"localPath": "/people/laura-mitchell-nm2665056.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Antonio Cayonne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1361248/cast",
+			"screenRole": "Nick",
+			"tmdbPersonId": 1558026,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1558026",
+					"fact": "Identidad de Antonio Cayonne, oficio y filmografía cotejados con el ID exacto de Navidad bajo las luces (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1361248/cast",
+					"fact": "El billing del título exacto acredita a Antonio Cayonne como Nick."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bCAxx1cNHsidOLwZys2FJEhsdrd.jpg",
+				"localPath": "/people/antonio-cayonne-nm3833531.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Eden Weiss",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1361248/cast",
+			"screenRole": "Fynne",
+			"tmdbPersonId": 5636839,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5636839",
+					"fact": "Identidad de Eden Weiss, oficio y filmografía cotejados con el ID exacto de Navidad bajo las luces (2024)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1361248/cast",
+					"fact": "El billing del título exacto acredita a Eden Weiss como Fynne."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/11OxhppBdSFxdIJfkeQsLrXRTih.jpg",
+				"localPath": "/people/eden-weiss-nm8410818.jpg",
+				"visuallyVerified": true
+			}
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Navidad bajo las luces; se retuvieron 1 créditos de dirección y 6 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": []
+	}
+}

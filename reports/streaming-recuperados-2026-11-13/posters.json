@@ -1,0 +1,483 @@
+{
+  "generatedAt": "2026-11-14T00:44:36.268Z",
+  "fallback": {
+    "path": "assets/posters/poster-fallback.webp",
+    "bytes": 31440
+  },
+  "summary": {
+    "total": 52,
+    "migrated": 52,
+    "alreadyLocal": 0,
+    "fallback": 0
+  },
+  "results": [
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\legalmente-rubia-2-2003.json",
+      "slug": "legalmente-rubia-2-2003",
+      "status": "migrated",
+      "outputPath": "assets/posters/2003/legalmente-rubia-2-2003.webp",
+      "bytes": 59414,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/4kC0UGTuJgFnlZq2ZM6OiY7nuY8.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\un-extrano-en-la-boda-de-mi-hermano-2022.json",
+      "slug": "un-extrano-en-la-boda-de-mi-hermano-2022",
+      "status": "migrated",
+      "outputPath": "assets/posters/2022/un-extrano-en-la-boda-de-mi-hermano-2022.webp",
+      "bytes": 53700,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/yhm7XQabdl9HWapOYCjrgFcz236.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\los-emigrantes-2021.json",
+      "slug": "los-emigrantes-2021",
+      "status": "migrated",
+      "outputPath": "assets/posters/2021/los-emigrantes-2021.webp",
+      "bytes": 52686,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/eELjqNXkt7u6hHUwlSqHRPPTyk6.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\desastre-inminente-2020.json",
+      "slug": "desastre-inminente-2020",
+      "status": "migrated",
+      "outputPath": "assets/posters/2020/desastre-inminente-2020.webp",
+      "bytes": 76688,
+      "quality": 80,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/ojFkOJUOc36O3SA0pZC1ccbAc2v.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\un-rio-muy-frio-2022.json",
+      "slug": "un-rio-muy-frio-2022",
+      "status": "migrated",
+      "outputPath": "assets/posters/2022/un-rio-muy-frio-2022.webp",
+      "bytes": 74734,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/5cf2aIXdSCiM40Hae0g2W8Ox98h.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\el-mercenario-2019.json",
+      "slug": "el-mercenario-2019",
+      "status": "migrated",
+      "outputPath": "assets/posters/2019/el-mercenario-2019.webp",
+      "bytes": 53878,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/9dgJiDjsRmlHk6prxXmBbFZOcLH.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\angeles-caidos-guerreros-de-paz-2024.json",
+      "slug": "angeles-caidos-guerreros-de-paz-2024",
+      "status": "migrated",
+      "outputPath": "assets/posters/2024/angeles-caidos-guerreros-de-paz-2024.webp",
+      "bytes": 81670,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/dKdKUSGQ9E0G73WPr9xIHrofpkT.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\las-munecas-del-crimen-2019.json",
+      "slug": "las-munecas-del-crimen-2019",
+      "status": "migrated",
+      "outputPath": "assets/posters/2019/las-munecas-del-crimen-2019.webp",
+      "bytes": 78128,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/jCbAcqFcBKc0zjrIAJ660WCm2zq.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\see-you-soon-2019.json",
+      "slug": "see-you-soon-2019",
+      "status": "migrated",
+      "outputPath": "assets/posters/2019/see-you-soon-2019.webp",
+      "bytes": 55816,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/6coSMG74wZ2gGFtEUZC6I6HGnD3.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\la-revista-del-placer-2024.json",
+      "slug": "la-revista-del-placer-2024",
+      "status": "migrated",
+      "outputPath": "assets/posters/2024/la-revista-del-placer-2024.webp",
+      "bytes": 59204,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/duF8oeH3AE5rBe4T4x39RZpE5ub.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\objetos-raros-2023.json",
+      "slug": "objetos-raros-2023",
+      "status": "migrated",
+      "outputPath": "assets/posters/2023/objetos-raros-2023.webp",
+      "bytes": 18424,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/jeelJSEQ1eMw259wl0whHm6OKYk.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\todos-los-bellos-caballos-2000.json",
+      "slug": "todos-los-bellos-caballos-2000",
+      "status": "migrated",
+      "outputPath": "assets/posters/2000/todos-los-bellos-caballos-2000.webp",
+      "bytes": 36982,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/6E4E7wYXw1DE2321F2hVNryLSk7.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\magal-magali-2023.json",
+      "slug": "magal-magali-2023",
+      "status": "migrated",
+      "outputPath": "assets/posters/2023/magal-magali-2023.webp",
+      "bytes": 59964,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/jQgrcxY9TOGtMLCOI80mpnKa0v2.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\el-critico-de-teatro-2023.json",
+      "slug": "el-critico-de-teatro-2023",
+      "status": "migrated",
+      "outputPath": "assets/posters/2023/el-critico-de-teatro-2023.webp",
+      "bytes": 43064,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/kVdN99IPZgQSUKVkAPWb9ZnCkhz.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\los-fantasmas-atacan-al-jefe-1988.json",
+      "slug": "los-fantasmas-atacan-al-jefe-1988",
+      "status": "migrated",
+      "outputPath": "assets/posters/1988/los-fantasmas-atacan-al-jefe-1988.webp",
+      "bytes": 32978,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/uO0znfB2ZzTXA1IS7jkrjNbpkYK.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\fantasmas-de-marte-2001.json",
+      "slug": "fantasmas-de-marte-2001",
+      "status": "migrated",
+      "outputPath": "assets/posters/2001/fantasmas-de-marte-2001.webp",
+      "bytes": 38596,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/i2zztssCIbahGES1fdfWFmDXian.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\los-voyeurs-2021.json",
+      "slug": "los-voyeurs-2021",
+      "status": "migrated",
+      "outputPath": "assets/posters/2021/los-voyeurs-2021.webp",
+      "bytes": 70572,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/8Y4XOIWhpOvSOEn8XrxbkH9yAXO.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\the-strange-ones-2017.json",
+      "slug": "the-strange-ones-2017",
+      "status": "migrated",
+      "outputPath": "assets/posters/2017/the-strange-ones-2017.webp",
+      "bytes": 30796,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/bbeS9X3xTHrziocOov750LoWmvo.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\una-feliz-navidad-escocesa-2023.json",
+      "slug": "una-feliz-navidad-escocesa-2023",
+      "status": "migrated",
+      "outputPath": "assets/posters/2023/una-feliz-navidad-escocesa-2023.webp",
+      "bytes": 58084,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/joJJfcxIO106BS4iy1kAdbgJxeQ.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\navidad-bajo-las-luces-2024.json",
+      "slug": "navidad-bajo-las-luces-2024",
+      "status": "migrated",
+      "outputPath": "assets/posters/2024/navidad-bajo-las-luces-2024.webp",
+      "bytes": 81340,
+      "quality": 80,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/cPlXjEJrqLxRU3GZyBwKgAFG8k5.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\good-ol-boy-2015.json",
+      "slug": "good-ol-boy-2015",
+      "status": "migrated",
+      "outputPath": "assets/posters/2015/good-ol-boy-2015.webp",
+      "bytes": 50850,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/ncALkAajnctju0CYKH4bFm40QJD.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\alerta-roja-2019.json",
+      "slug": "alerta-roja-2019",
+      "status": "migrated",
+      "outputPath": "assets/posters/2019/alerta-roja-2019.webp",
+      "bytes": 50960,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/gCZ0RHifBxZGedde7WPWSgjpyZt.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\starman-1984.json",
+      "slug": "starman-1984",
+      "status": "migrated",
+      "outputPath": "assets/posters/1984/starman-1984.webp",
+      "bytes": 31820,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/cgDeFWkYi6e9FT5RiQPCbQ9HlXZ.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\el-jugador-de-ajedrez-2017.json",
+      "slug": "el-jugador-de-ajedrez-2017",
+      "status": "migrated",
+      "outputPath": "assets/posters/2017/el-jugador-de-ajedrez-2017.webp",
+      "bytes": 37414,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/nc515IiIGhXfwe8R8sI4lCQXZHk.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\el-ultimo-superviviente-2021.json",
+      "slug": "el-ultimo-superviviente-2021",
+      "status": "migrated",
+      "outputPath": "assets/posters/2021/el-ultimo-superviviente-2021.webp",
+      "bytes": 68894,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/4B7liCxNCZIZGONmAMkCnxVlZQV.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\ace-el-mejor-amigo-de-la-familia-2008.json",
+      "slug": "ace-el-mejor-amigo-de-la-familia-2008",
+      "status": "migrated",
+      "outputPath": "assets/posters/2008/ace-el-mejor-amigo-de-la-familia-2008.webp",
+      "bytes": 68600,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/maWhGQkqwT0cuPLsCmhJpuyoGht.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\tommaso-2019.json",
+      "slug": "tommaso-2019",
+      "status": "migrated",
+      "outputPath": "assets/posters/2019/tommaso-2019.webp",
+      "bytes": 20384,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/qLRp3j8KVlk2LI0pw9M1OFUJzKQ.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\matilda-1996.json",
+      "slug": "matilda-1996",
+      "status": "migrated",
+      "outputPath": "assets/posters/1996/matilda-1996.webp",
+      "bytes": 59192,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/wYoDpWInsBEVSmWStnRH06ddoyk.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\los-cazafantasmas-2-1989.json",
+      "slug": "los-cazafantasmas-2-1989",
+      "status": "migrated",
+      "outputPath": "assets/posters/1989/los-cazafantasmas-2-1989.webp",
+      "bytes": 65166,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/iUZPi31KDP0n5ycpycEsvl51BdV.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\juego-de-asesinos-2021.json",
+      "slug": "juego-de-asesinos-2021",
+      "status": "migrated",
+      "outputPath": "assets/posters/2021/juego-de-asesinos-2021.webp",
+      "bytes": 62132,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/9LEWWWEhS7SZXFDuH1YYhs0VFct.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\godzilla-1998.json",
+      "slug": "godzilla-1998",
+      "status": "migrated",
+      "outputPath": "assets/posters/1998/godzilla-1998.webp",
+      "bytes": 72286,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/xJVl1I95StraYAwaNbBkVoWE2qA.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\underworld-el-despertar-2012.json",
+      "slug": "underworld-el-despertar-2012",
+      "status": "migrated",
+      "outputPath": "assets/posters/2012/underworld-el-despertar-2012.webp",
+      "bytes": 60332,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/jN0uuc8U6M3sTg9zEaliJV60Stf.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\las-reinas-de-los-cupones-2021.json",
+      "slug": "las-reinas-de-los-cupones-2021",
+      "status": "migrated",
+      "outputPath": "assets/posters/2021/las-reinas-de-los-cupones-2021.webp",
+      "bytes": 67370,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/p5Uz76EOwj9rAsdGxYL8IZGPV2B.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\cazafantasmas-2016.json",
+      "slug": "cazafantasmas-2016",
+      "status": "migrated",
+      "outputPath": "assets/posters/2016/cazafantasmas-2016.webp",
+      "bytes": 71724,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/wJmWliwXIgZOCCVOcGRBhce7xPS.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\cinco-lobitos-2022.json",
+      "slug": "cinco-lobitos-2022",
+      "status": "migrated",
+      "outputPath": "assets/posters/2022/cinco-lobitos-2022.webp",
+      "bytes": 45762,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/2VJcaYzD1gdNPpb4DaXDgmQ9VmK.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\mujeres-en-el-balcon-2024.json",
+      "slug": "mujeres-en-el-balcon-2024",
+      "status": "migrated",
+      "outputPath": "assets/posters/2024/mujeres-en-el-balcon-2024.webp",
+      "bytes": 66784,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/rEgAdJtf8S8JgUG2NJoWiRvpTz.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\las-chicas-de-la-estacion-2024.json",
+      "slug": "las-chicas-de-la-estacion-2024",
+      "status": "migrated",
+      "outputPath": "assets/posters/2024/las-chicas-de-la-estacion-2024.webp",
+      "bytes": 34272,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/59VcBk0uPVmwxubyip1tzc8C2Fu.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\venganza-in-the-blood-2014.json",
+      "slug": "venganza-in-the-blood-2014",
+      "status": "migrated",
+      "outputPath": "assets/posters/2014/venganza-in-the-blood-2014.webp",
+      "bytes": 44706,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/zLqmFJWiXnkhKFmx1dbsARwNWgu.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\magic-trip-ken-kesey-s-search-for-a-kool-place-2011.json",
+      "slug": "magic-trip-ken-kesey-s-search-for-a-kool-place-2011",
+      "status": "migrated",
+      "outputPath": "assets/posters/2011/magic-trip-ken-kesey-s-search-for-a-kool-place-2011.webp",
+      "bytes": 77108,
+      "quality": 76,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/pvF4f9fooOQQV4KcoAN9BlWqIG2.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\caliente-2016.json",
+      "slug": "caliente-2016",
+      "status": "migrated",
+      "outputPath": "assets/posters/2016/caliente-2016.webp",
+      "bytes": 69354,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/vHYrXhnS0rkmw2l9NAVrycepQVF.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\jack-diane-2012.json",
+      "slug": "jack-diane-2012",
+      "status": "migrated",
+      "outputPath": "assets/posters/2012/jack-diane-2012.webp",
+      "bytes": 62460,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/yz7Fck16GLYTL0CK6EfDYIqrhEl.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\el-evangelio-segun-andre-leon-talley-2017.json",
+      "slug": "el-evangelio-segun-andre-leon-talley-2017",
+      "status": "migrated",
+      "outputPath": "assets/posters/2017/el-evangelio-segun-andre-leon-talley-2017.webp",
+      "bytes": 60724,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/d0rDkNZ7gtwgI3jhwH57qDw7XH4.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\lara-croft-tomb-raider-2001.json",
+      "slug": "lara-croft-tomb-raider-2001",
+      "status": "migrated",
+      "outputPath": "assets/posters/2001/lara-croft-tomb-raider-2001.webp",
+      "bytes": 58390,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/sJpl1EfHGZhbKtZ3fWTlwrpM1tH.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\medium-2024.json",
+      "slug": "medium-2024",
+      "status": "migrated",
+      "outputPath": "assets/posters/2024/medium-2024.webp",
+      "bytes": 14820,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/3Z9c1tbUhP0QruRjczPHnbx3U2D.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\casi-300-2008.json",
+      "slug": "casi-300-2008",
+      "status": "migrated",
+      "outputPath": "assets/posters/2008/casi-300-2008.webp",
+      "bytes": 68606,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/DWQOjAPvM8Kk1Qp3Xq0zae0Z6w.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\un-vecino-con-pocas-luces-2006.json",
+      "slug": "un-vecino-con-pocas-luces-2006",
+      "status": "migrated",
+      "outputPath": "assets/posters/2006/un-vecino-con-pocas-luces-2006.webp",
+      "bytes": 76184,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/smJDzhYGhl6j9OrucsB7IkMNy82.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\el-expreso-polar-2004.json",
+      "slug": "el-expreso-polar-2004",
+      "status": "migrated",
+      "outputPath": "assets/posters/2004/el-expreso-polar-2004.webp",
+      "bytes": 60302,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/eOoCzH0MqeGr2taUZO4SwG416PF.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\torque-rodando-al-limite-2004.json",
+      "slug": "torque-rodando-al-limite-2004",
+      "status": "migrated",
+      "outputPath": "assets/posters/2004/torque-rodando-al-limite-2004.webp",
+      "bytes": 63602,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/pY35tW8BMAjZewl87OxjXK8ui02.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\el-precio-del-manana-2011.json",
+      "slug": "el-precio-del-manana-2011",
+      "status": "migrated",
+      "outputPath": "assets/posters/2011/el-precio-del-manana-2011.webp",
+      "bytes": 34258,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/3Mwj2sIONQckOZP3YwsUXF7U5I4.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\muerte-en-la-nieve-2023.json",
+      "slug": "muerte-en-la-nieve-2023",
+      "status": "migrated",
+      "outputPath": "assets/posters/2023/muerte-en-la-nieve-2023.webp",
+      "bytes": 50562,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/nvaCnkl8RilLhVAQXPFei0tqkqW.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\instinto-maternal-2024.json",
+      "slug": "instinto-maternal-2024",
+      "status": "migrated",
+      "outputPath": "assets/posters/2024/instinto-maternal-2024.webp",
+      "bytes": 31932,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/6EtPToJlGpjyuIxkIoztnBXYFgJ.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\alerta-maxima-2-1995.json",
+      "slug": "alerta-maxima-2-1995",
+      "status": "migrated",
+      "outputPath": "assets/posters/1995/alerta-maxima-2-1995.webp",
+      "bytes": 38974,
+      "quality": 84,
+      "sourceUrl": "https://image.tmdb.org/t/p/original/gElwFCQTbSK5hdK0PVyia547nst.jpg"
+    }
+  ]
+}

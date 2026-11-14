@@ -1,0 +1,603 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "un-rio-muy-frio-2022",
+	"title": "Un Rio Muy Frio",
+	"year": 2022,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/811061/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 30
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/un-rio-muy-frio",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt2184390/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Paul Shoulberg",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 1423811,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1423811",
+					"fact": "Identidad de Paul Shoulberg, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Paul Shoulberg en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fa%2Fpeople%2Faa8d17e064887286f8cc3601a2335ee5.jpg",
+				"localPath": "/people/paul-shoulberg-nm2749225.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Bethany Joy Lenz",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Erica Shaw",
+			"tmdbPersonId": 1118081,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1118081",
+					"fact": "Identidad de Bethany Joy Lenz, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Bethany Joy Lenz como Erica Shaw."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wdzam5aHZyWwPSbxQz8iL9wIpR7.jpg",
+				"localPath": "/people/bethany-joy-lenz-nm0502342.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Katie Sarife",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Kellyn Cage",
+			"tmdbPersonId": 1411601,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1411601",
+					"fact": "Identidad de Katie Sarife, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Katie Sarife como Kellyn Cage."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oQLQZ58uvGgpdtCUpOcoiF5zYJW.jpg",
+				"localPath": "/people/katie-sarife-nm4396442.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Andrew J. West",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Josiah Bradford",
+			"tmdbPersonId": 211598,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/211598",
+					"fact": "Identidad de Andrew J. West, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Andrew J. West como Josiah Bradford."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9cgJAb7Frqn9kBR3p73zASfPNBb.jpg",
+				"localPath": "/people/andrew-j-west-nm2366201.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Michael J. Rogers",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Campbell Bradford",
+			"tmdbPersonId": 134708,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/134708",
+					"fact": "Identidad de Michael J. Rogers, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Michael J. Rogers como Campbell Bradford."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/w54Lpwm3BCsgOXebF8jafKNgAzi.jpg",
+				"localPath": "/people/michael-j-rogers-nm1558628.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kevin Cahoon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Dylan",
+			"tmdbPersonId": 28007,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/28007",
+					"fact": "Identidad de Kevin Cahoon, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Kevin Cahoon como Dylan."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mm6PLo8LRbSavWoCexM1XZB85I8.jpg",
+				"localPath": "/people/kevin-cahoon-nm0128731.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kingston Vernes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Lucas",
+			"tmdbPersonId": 2154582,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2154582",
+					"fact": "Identidad de Kingston Vernes, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Kingston Vernes como Lucas."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qpg3CSJiWHQIndt4Ja2eH4TtBGj.jpg",
+				"localPath": "/people/kingston-vernes-nm9811146.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alysia Reiner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Alyssa Bradford-Cohen",
+			"tmdbPersonId": 109740,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/109740",
+					"fact": "Identidad de Alysia Reiner, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Alysia Reiner como Alyssa Bradford-Cohen."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eHtaKC4HSI2cz4kZF2pAYhPN74U.jpg",
+				"localPath": "/people/alysia-reiner-nm1130496.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Deanna Dunagan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Anne McKinney",
+			"tmdbPersonId": 204271,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/204271",
+					"fact": "Identidad de Deanna Dunagan, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Deanna Dunagan como Anne McKinney."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cFjGlCpT8xA4HziBdohU42ddPoC.jpg",
+				"localPath": "/people/deanna-dunagan-nm0241759.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ruth Kaufman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Grace Harrelson",
+			"tmdbPersonId": 2045786,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2045786",
+					"fact": "Identidad de Ruth Kaufman, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Ruth Kaufman como Grace Harrelson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/nRylkwTWlOo2bl8AATvZXgBsftF.jpg",
+				"localPath": "/people/ruth-kaufman-nm2882492.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Bill Simmons",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Handsome Man",
+			"tmdbPersonId": 1251402,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1251402",
+					"fact": "Identidad de Bill Simmons, oficio y filmografía cotejados con el ID exacto de Un Rio Muy Frio (2022)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/811061/cast",
+					"fact": "El billing del título exacto acredita a Bill Simmons como Handsome Man."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kQa3OQBpYo77BS3kKH3UL5QG2w0.jpg",
+				"localPath": "/people/bill-simmons-nm1270185.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "David Myers Gregory",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Mr. Bradford",
+			"tmdbPersonId": 2688330,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mr. Bradford cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Aaron Roman Weiner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Hotel Owner",
+			"tmdbPersonId": 1971683,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Hotel Owner cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Storm",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Piano Player",
+			"tmdbPersonId": 6496592,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Piano Player cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Rupert Spraul",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Lonnie Wilkes",
+			"tmdbPersonId": 2651638,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lonnie Wilkes cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Daniel Burke",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Lonnie's Family",
+			"tmdbPersonId": 6496602,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lonnie's Family cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Stephanie Sample",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Lonnie's Family",
+			"tmdbPersonId": 6496605,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lonnie's Family cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Clemetine Shoulberg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Lonnie's Family",
+			"tmdbPersonId": 6496610,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lonnie's Family cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lucas Bentley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Sheriff",
+			"tmdbPersonId": 1605668,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sheriff cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lacey Grant",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Pool Mom",
+			"tmdbPersonId": 6496633,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pool Mom cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Eleanor Cook",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Pool Kid",
+			"tmdbPersonId": 6496635,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pool Kid cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Zane Winckelbach",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Pool Kid",
+			"tmdbPersonId": 6496637,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pool Kid cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Newsom",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "FBI Agent",
+			"tmdbPersonId": 1826026,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito FBI Agent cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sam Butler",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Jazz Ensemble",
+			"tmdbPersonId": 6496642,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kyle Cantrell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Jazz Ensemble",
+			"tmdbPersonId": 6496643,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tim Hansen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Jazz Ensemble",
+			"tmdbPersonId": 6496644,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Isabella Isherwood",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Jazz Ensemble",
+			"tmdbPersonId": 6496646,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Carter Pearson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Jazz Ensemble",
+			"tmdbPersonId": 6496647,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Henrick Zhang",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Jazz Ensemble",
+			"tmdbPersonId": 6496648,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Robert Armstrong",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/811061/cast",
+			"screenRole": "Festive Guest",
+			"tmdbPersonId": 3003152,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Festive Guest cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Un Rio Muy Frio; se retuvieron 1 créditos de dirección y 10 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "David Myers Gregory",
+				"role": "performer",
+				"reason": "Crédito Mr. Bradford cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Aaron Roman Weiner",
+				"role": "performer",
+				"reason": "Crédito Hotel Owner cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Storm",
+				"role": "performer",
+				"reason": "Crédito Piano Player cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rupert Spraul",
+				"role": "performer",
+				"reason": "Crédito Lonnie Wilkes cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Daniel Burke",
+				"role": "performer",
+				"reason": "Crédito Lonnie's Family cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Stephanie Sample",
+				"role": "performer",
+				"reason": "Crédito Lonnie's Family cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Clemetine Shoulberg",
+				"role": "performer",
+				"reason": "Crédito Lonnie's Family cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lucas Bentley",
+				"role": "performer",
+				"reason": "Crédito Sheriff cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lacey Grant",
+				"role": "performer",
+				"reason": "Crédito Pool Mom cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Eleanor Cook",
+				"role": "performer",
+				"reason": "Crédito Pool Kid cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Zane Winckelbach",
+				"role": "performer",
+				"reason": "Crédito Pool Kid cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Newsom",
+				"role": "performer",
+				"reason": "Crédito FBI Agent cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sam Butler",
+				"role": "performer",
+				"reason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kyle Cantrell",
+				"role": "performer",
+				"reason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tim Hansen",
+				"role": "performer",
+				"reason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Isabella Isherwood",
+				"role": "performer",
+				"reason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Carter Pearson",
+				"role": "performer",
+				"reason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Henrick Zhang",
+				"role": "performer",
+				"reason": "Crédito Jazz Ensemble cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Robert Armstrong",
+				"role": "performer",
+				"reason": "Crédito Festive Guest cotejado en el billing completo de Un Rio Muy Frio; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

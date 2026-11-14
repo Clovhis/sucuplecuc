@@ -1,0 +1,363 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "magal-magali-2023",
+	"title": "Magal & Magali",
+	"year": 2023,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/782718/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 16
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/meu-sangue-ferve-por-voce",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt9125246/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Paulo Machline",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 931997,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/931997",
+					"fact": "Identidad de Paulo Machline, oficio y filmografía cotejados con el ID exacto de Magal & Magali (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/782718/cast",
+					"fact": "El billing del título exacto acredita a Paulo Machline en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/68339/cache-527412-1585267766/image-w856.jpg",
+				"localPath": "/people/paulo-machline-nm0003884.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Filipe Bragança",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Sidney Magal",
+			"tmdbPersonId": 1717347,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1717347",
+					"fact": "Identidad de Filipe Bragança, oficio y filmografía cotejados con el ID exacto de Magal & Magali (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/782718/cast",
+					"fact": "El billing del título exacto acredita a Filipe Bragança como Sidney Magal."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/grD3FVjyyqnioMzY1VTGjuYh05G.jpg",
+				"localPath": "/people/filipe-braganca-nm8465358.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Giovana Cordeiro",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Magali",
+			"tmdbPersonId": 1909989,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1909989",
+					"fact": "Identidad de Giovana Cordeiro, oficio y filmografía cotejados con el ID exacto de Magal & Magali (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/782718/cast",
+					"fact": "El billing del título exacto acredita a Giovana Cordeiro como Magali."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/e9um5JEJvyGxtOmjIEqXdrdgWYj.jpg",
+				"localPath": "/people/giovana-cordeiro-nm8692469.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Caco Ciocler",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Jean Pierre",
+			"tmdbPersonId": 142319,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/142319",
+					"fact": "Identidad de Caco Ciocler, oficio y filmografía cotejados con el ID exacto de Magal & Magali (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/782718/cast",
+					"fact": "El billing del título exacto acredita a Caco Ciocler como Jean Pierre."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/h27WDnvLtdVdRQxgIrQR38e7BdN.jpg",
+				"localPath": "/people/caco-ciocler-nm0162535.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Emanuelle Araújo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Graça",
+			"tmdbPersonId": 979018,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/979018",
+					"fact": "Identidad de Emanuelle Araújo, oficio y filmografía cotejados con el ID exacto de Magal & Magali (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/782718/cast",
+					"fact": "El billing del título exacto acredita a Emanuelle Araújo como Graça."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zDZAJalGztJZYYO91YdJX326IOY.jpg",
+				"localPath": "/people/emanuelle-araujo-nm2277270.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sidney Santiago",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Renan / Sandra Pink",
+			"tmdbPersonId": 121456,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/121456",
+					"fact": "Identidad de Sidney Santiago, oficio y filmografía cotejados con el ID exacto de Magal & Magali (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/782718/cast",
+					"fact": "El billing del título exacto acredita a Sidney Santiago como Renan / Sandra Pink."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ei5Lqhr8vQFnKQZOncsvug6fIuA.jpg",
+				"localPath": "/people/sidney-santiago-nm1655304.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sol Menezzes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Ana Maria",
+			"tmdbPersonId": 2922090,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2922090",
+					"fact": "Identidad de Sol Menezzes, oficio y filmografía cotejados con el ID exacto de Magal & Magali (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/782718/cast",
+					"fact": "El billing del título exacto acredita a Sol Menezzes como Ana Maria."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yTTpDjQFv4rNsMoTYPoPOsOCeX1.jpg",
+				"localPath": "/people/sol-menezzes-nm9134509.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Pablo Morais",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Claudinho",
+			"tmdbPersonId": 2218159,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2218159",
+					"fact": "Identidad de Pablo Morais, oficio y filmografía cotejados con el ID exacto de Magal & Magali (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/782718/cast",
+					"fact": "El billing del título exacto acredita a Pablo Morais como Claudinho."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dfTZofi5qj5cAHwrFDGU5mWybhv.jpg",
+				"localPath": "/people/pablo-morais-nm5134860.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tânia Toko",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Lurdes",
+			"tmdbPersonId": 2200050,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lurdes cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Che Moais",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": null,
+			"tmdbPersonId": 1434226,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito sin personaje detallado cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gustavo Novaes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Dudu Camarote",
+			"tmdbPersonId": 1632543,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dudu Camarote cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Julia Konrad",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Tereza",
+			"tmdbPersonId": 2043095,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2043095",
+					"fact": "Identidad de Julia Konrad, oficio y filmografía cotejados con el ID exacto de Magal & Magali (2023)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/782718/cast",
+					"fact": "El billing del título exacto acredita a Julia Konrad como Tereza."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4L9a0Ix7wwZ4l9R2D2qH97kcEcK.jpg",
+				"localPath": "/people/julia-konrad-nm5298897.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rael Barja",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": null,
+			"tmdbPersonId": 2284493,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito sin personaje detallado cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sidney Magal",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Sidney Magal",
+			"tmdbPersonId": 1132185,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sidney Magal cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Magali West",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Magali West",
+			"tmdbPersonId": 4212471,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Magali West cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ben Kurtain",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/782718/cast",
+			"screenRole": "Guarda",
+			"tmdbPersonId": 4749791,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Guarda cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Magal & Magali; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Tânia Toko",
+				"role": "performer",
+				"reason": "Crédito Lurdes cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Che Moais",
+				"role": "performer",
+				"reason": "Crédito sin personaje detallado cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gustavo Novaes",
+				"role": "performer",
+				"reason": "Crédito Dudu Camarote cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Rael Barja",
+				"role": "performer",
+				"reason": "Crédito sin personaje detallado cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sidney Magal",
+				"role": "performer",
+				"reason": "Crédito Sidney Magal cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Magali West",
+				"role": "performer",
+				"reason": "Crédito Magali West cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ben Kurtain",
+				"role": "performer",
+				"reason": "Crédito Guarda cotejado en el billing completo de Magal & Magali; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

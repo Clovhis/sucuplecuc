@@ -1,0 +1,507 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-ultimo-superviviente-2021",
+	"title": "El último superviviente",
+	"year": 2021,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/860623/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 25
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/last-man-down",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt12335692/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Fansu Njie",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 3076703,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3076703",
+					"fact": "Identidad de Fansu Njie, oficio y filmografía cotejados con el ID exacto de El último superviviente (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/860623/cast",
+					"fact": "El billing del título exacto acredita a Fansu Njie en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bNvUgUW5g4nVOvBWFtYZKXTM7xj.jpg",
+				"localPath": "/people/fansu-njie-tmdb-3076703.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Daniel Stisen",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "John Wood",
+			"tmdbPersonId": 1481440,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1481440",
+					"fact": "Identidad de Daniel Stisen, oficio y filmografía cotejados con el ID exacto de El último superviviente (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/860623/cast",
+					"fact": "El billing del título exacto acredita a Daniel Stisen como John Wood."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jhyIFfBnM5nLhHdpFiGIW6qk9x5.jpg",
+				"localPath": "/people/daniel-stisen-nm4571421.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Olga Kent",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Maria Johnson",
+			"tmdbPersonId": 1273684,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1273684",
+					"fact": "Identidad de Olga Kent, oficio y filmografía cotejados con el ID exacto de El último superviviente (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/860623/cast",
+					"fact": "El billing del título exacto acredita a Olga Kent como Maria Johnson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/66cTjnO606hAygeCZWOuwFM6jaE.jpg",
+				"localPath": "/people/olga-kent-nm4976824.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Daniel Nehme",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Commander Stone",
+			"tmdbPersonId": 3195120,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3195120",
+					"fact": "Identidad de Daniel Nehme, oficio y filmografía cotejados con el ID exacto de El último superviviente (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/860623/cast",
+					"fact": "El billing del título exacto acredita a Daniel Nehme como Commander Stone."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yoNTSC2vdMBiiE498n17QHf8zax.jpg",
+				"localPath": "/people/daniel-nehme-nm2929043.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Stanislav Yanevski",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Dr. Feltspat",
+			"tmdbPersonId": 11290,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11290",
+					"fact": "Identidad de Stanislav Yanevski, oficio y filmografía cotejados con el ID exacto de El último superviviente (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/860623/cast",
+					"fact": "El billing del título exacto acredita a Stanislav Yanevski como Dr. Feltspat."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8vbMJ7qu9DLJcAyvA7G13hYNOFT.jpg",
+				"localPath": "/people/stanislav-yanevski-nm1648506.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Madeleine Vall",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Granite",
+			"tmdbPersonId": 1767342,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1767342",
+					"fact": "Identidad de Madeleine Vall, oficio y filmografía cotejados con el ID exacto de El último superviviente (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/860623/cast",
+					"fact": "El billing del título exacto acredita a Madeleine Vall como Granite."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jACXQG2xHuFeIoxgGGhUbbrZNl1.jpg",
+				"localPath": "/people/madeleine-vall-nm7902568.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Natassia Malthe",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Zahara",
+			"tmdbPersonId": 21430,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/21430",
+					"fact": "Identidad de Natassia Malthe, oficio y filmografía cotejados con el ID exacto de El último superviviente (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/860623/cast",
+					"fact": "El billing del título exacto acredita a Natassia Malthe como Zahara."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qnc226IJfaE2cplj2pMSS6g9e3B.jpg",
+				"localPath": "/people/natassia-malthe-nm0853573.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Stephanie Siadatan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Emilia",
+			"tmdbPersonId": 3008301,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3008301",
+					"fact": "Identidad de Stephanie Siadatan, oficio y filmografía cotejados con el ID exacto de El último superviviente (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/860623/cast",
+					"fact": "El billing del título exacto acredita a Stephanie Siadatan como Emilia."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hjM3ql5bmXoKrVcwfxTaEQrTCVZ.jpg",
+				"localPath": "/people/stephanie-siadatan-tmdb-3008301.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Michael Billington",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Mason",
+			"tmdbPersonId": 1735656,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1735656",
+					"fact": "Identidad de Michael Billington, oficio y filmografía cotejados con el ID exacto de El último superviviente (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/860623/cast",
+					"fact": "El billing del título exacto acredita a Michael Billington como Mason."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/r85tBNKXgidQ8K3V83JGP83mTpG.jpg",
+				"localPath": "/people/michael-billington-nm2249472.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Veera Seppälä",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Pietra",
+			"tmdbPersonId": 2502385,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pietra cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Follin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Adam",
+			"tmdbPersonId": 224369,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Adam cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kamil Lemieszewski",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Jorge",
+			"tmdbPersonId": 1654736,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jorge cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sam Hardy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Paul",
+			"tmdbPersonId": 1936497,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Paul cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Pasi Antero Remsu",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Antti",
+			"tmdbPersonId": 2490412,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Antti cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Martin Kjellström",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "The Tank",
+			"tmdbPersonId": 3410706,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito The Tank cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christian René Wold",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Mercenary K",
+			"tmdbPersonId": 2298695,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary K cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Magne Osnes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Fox Whitewood",
+			"tmdbPersonId": 2628046,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Fox Whitewood cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marcus Alexander Bakkenberg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Mercenary Dennis",
+			"tmdbPersonId": 2502392,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary Dennis cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Bekim Brahimi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Frank",
+			"tmdbPersonId": 3410703,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Frank cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Smith Kabashi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Balkan",
+			"tmdbPersonId": 2374831,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Balkan cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kenneth Wolf Andersen Haugen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Mercenary Henry",
+			"tmdbPersonId": 2491934,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary Henry cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Anja Maria Svenkerud",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Mercenary Saga",
+			"tmdbPersonId": 1386176,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary Saga cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Kim Valhalla Johansen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Assassin",
+			"tmdbPersonId": 3410708,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Assassin cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Lan Flamerzi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Mercenary Roc",
+			"tmdbPersonId": 3410704,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary Roc cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chris M. Allport",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/860623/cast",
+			"screenRole": "Mercenary Dwayne (voice)",
+			"tmdbPersonId": 1534856,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Mercenary Dwayne (voice) cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de El último superviviente; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Veera Seppälä",
+				"role": "performer",
+				"reason": "Crédito Pietra cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Follin",
+				"role": "performer",
+				"reason": "Crédito Adam cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kamil Lemieszewski",
+				"role": "performer",
+				"reason": "Crédito Jorge cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sam Hardy",
+				"role": "performer",
+				"reason": "Crédito Paul cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Pasi Antero Remsu",
+				"role": "performer",
+				"reason": "Crédito Antti cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Martin Kjellström",
+				"role": "performer",
+				"reason": "Crédito The Tank cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christian René Wold",
+				"role": "performer",
+				"reason": "Crédito Mercenary K cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Magne Osnes",
+				"role": "performer",
+				"reason": "Crédito Fox Whitewood cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marcus Alexander Bakkenberg",
+				"role": "performer",
+				"reason": "Crédito Mercenary Dennis cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Bekim Brahimi",
+				"role": "performer",
+				"reason": "Crédito Frank cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Smith Kabashi",
+				"role": "performer",
+				"reason": "Crédito Balkan cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kenneth Wolf Andersen Haugen",
+				"role": "performer",
+				"reason": "Crédito Mercenary Henry cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Anja Maria Svenkerud",
+				"role": "performer",
+				"reason": "Crédito Mercenary Saga cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Kim Valhalla Johansen",
+				"role": "performer",
+				"reason": "Crédito Assassin cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Lan Flamerzi",
+				"role": "performer",
+				"reason": "Crédito Mercenary Roc cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Chris M. Allport",
+				"role": "performer",
+				"reason": "Crédito Mercenary Dwayne (voice) cotejado en el billing completo de El último superviviente; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,659 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "casi-300-2008",
+	"title": "Casi 300",
+	"year": 2008,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/7278/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 34
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/casi-300",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt1073498/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Jason Friedberg",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 35694,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/35694",
+					"fact": "Identidad de Jason Friedberg, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Jason Friedberg en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8ezGNR28kmkbBc4jYE1vNgSF70t.jpg",
+				"localPath": "/people/jason-friedberg-nm0294997.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Aaron Seltzer",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 35734,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/35734",
+					"fact": "Identidad de Aaron Seltzer, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Aaron Seltzer en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/q0NRPeY0cvmRZcolotLx39kv0El.jpg",
+				"localPath": "/people/aaron-seltzer-nm0783536.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Travis Van Winkle",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Sonio",
+			"tmdbPersonId": 74290,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/74290",
+					"fact": "Identidad de Travis Van Winkle, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Travis Van Winkle como Sonio."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/o4WW1KYWKF2oVxUc22fYeDr6ZhZ.jpg",
+				"localPath": "/people/travis-van-winkle-nm1670886.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sean Maguire",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Leonidas",
+			"tmdbPersonId": 52262,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/52262",
+					"fact": "Identidad de Sean Maguire, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Sean Maguire como Leonidas."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lAp0mPeHNh0ATpCjTLyUGcMITWx.jpg",
+				"localPath": "/people/sean-maguire-nm0536630.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Carmen Electra",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Queen Margo",
+			"tmdbPersonId": 28639,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/28639",
+					"fact": "Identidad de Carmen Electra, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Carmen Electra como Queen Margo."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lBCUm1gGNTFI3OIjPx8maaEDXUQ.jpg",
+				"localPath": "/people/carmen-electra-nm0001182.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ken Davitian",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Xerxes",
+			"tmdbPersonId": 6734,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6734",
+					"fact": "Identidad de Ken Davitian, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Ken Davitian como Xerxes."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/odykKQKSJDDJ5O5Drq1RVNaTbqM.jpg",
+				"localPath": "/people/ken-davitian-nm0205772.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kevin Sorbo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Hauptmann",
+			"tmdbPersonId": 51965,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/51965",
+					"fact": "Identidad de Kevin Sorbo, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Kevin Sorbo como Hauptmann."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/a6rDi3tkNJwaVoP7VGbdGelwtYw.jpg",
+				"localPath": "/people/kevin-sorbo-nm0001757.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Diedrich Bader",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Traitoro",
+			"tmdbPersonId": 5727,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5727",
+					"fact": "Identidad de Diedrich Bader, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Diedrich Bader como Traitoro."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/z7CctykPTuXDfAs7pkAA7vW4b3T.jpg",
+				"localPath": "/people/diedrich-bader-5727.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Method Man",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Persian Emissary",
+			"tmdbPersonId": 5384,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5384",
+					"fact": "Identidad de Method Man, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Method Man como Persian Emissary."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Method%20Man%20at%20Shattuck%20Down%20Low.jpg?width=640",
+				"localPath": "/people/method-man-nm0541218.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ike Barinholtz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Dane Cook Look-a-Like / Bond Villain / Prophet",
+			"tmdbPersonId": 198150,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/198150",
+					"fact": "Identidad de Ike Barinholtz, oficio y filmografía cotejados con el ID exacto de Casi 300 (2008)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/7278/cast",
+					"fact": "El billing del título exacto acredita a Ike Barinholtz como Dane Cook Look-a-Like / Bond Villain / Prophet."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pxK1HXsQFfh3zT1KA3t6lEKMiZK.jpg",
+				"localPath": "/people/ike-barinholtz-nm0054697.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lauren Walsh",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Pretty Girl",
+			"tmdbPersonId": 78263,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Pretty Girl cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tiffany Haddish",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Urban Girl",
+			"tmdbPersonId": 1230868,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Urban Girl cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jareb Dauplaise",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Dilio",
+			"tmdbPersonId": 205267,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Dilio cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Phil Morris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Messenger",
+			"tmdbPersonId": 56853,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Messenger cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jim Piddock",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Loyalist / Simon Cowell Look-A-Like",
+			"tmdbPersonId": 120560,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Loyalist / Simon Cowell Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nicole Parker",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Paula Abdul Look-A-Like / Britney Spears Look-A-Like / Ellen DeGeneres Look-A-Like / Hunchback Paris Hilton",
+			"tmdbPersonId": 211662,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Paula Abdul Look-A-Like / Britney Spears Look-A-Like / Ellen DeGeneres Look-A-Like / Hunchback Paris Hilton cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Crista Flanagan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Spartan Woman / Ugly Betty Look-A-Like",
+			"tmdbPersonId": 58957,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Spartan Woman / Ugly Betty Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Hunter Clary",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Leo, Jr.",
+			"tmdbPersonId": 205263,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Leo, Jr. cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Emily Wilson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Lindsay Lohan Look-A-Like",
+			"tmdbPersonId": 1183675,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Lindsay Lohan Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "John Di Domenico",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Donald Trump Look-A-Like",
+			"tmdbPersonId": 1114054,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Donald Trump Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Belinda Waymouth",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Twiggy Look-A-Like",
+			"tmdbPersonId": 1635985,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Twiggy Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jesse Lewis IV",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Ms. Jay Look-A-Like",
+			"tmdbPersonId": 1750429,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ms. Jay Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Zachary Dylan Smith",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "10-Year-Old Leonidas",
+			"tmdbPersonId": 1215030,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito 10-Year-Old Leonidas cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Ryan Fraley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Brad Pitt Look-A-Like",
+			"tmdbPersonId": 1319795,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Brad Pitt Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tiffany Claus",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Angelina Jolie Look-A-Like",
+			"tmdbPersonId": 2479210,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Angelina Jolie Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nick Steele",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "K-Fed Look-A-Like",
+			"tmdbPersonId": 181685,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito K-Fed Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jim Nieb",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "President Bush Look-A-Like",
+			"tmdbPersonId": 1278393,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito President Bush Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Dean Cochran",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Rocky Balboa / Rambo",
+			"tmdbPersonId": 105686,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Rocky Balboa / Rambo cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nate Haden",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Ryan Seacrest Look-A-Like",
+			"tmdbPersonId": 1233143,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Ryan Seacrest Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tony Yalda",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Sanjaya Look-A-Like",
+			"tmdbPersonId": 205954,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Sanjaya Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jessica Heap",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Spartan Woman's Friend (uncredited)",
+			"tmdbPersonId": 450660,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Spartan Woman's Friend (uncredited) cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tim Connolly",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Spartan Soldier (uncredited)",
+			"tmdbPersonId": 1089920,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Spartan Soldier (uncredited) cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robin Atkin Downes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Narrator (uncredited)",
+			"tmdbPersonId": 130081,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Narrator (uncredited) cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Martin Klebba",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/7278/cast",
+			"screenRole": "Happy Feet (uncredited)",
+			"tmdbPersonId": 4030,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Happy Feet (uncredited) cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Casi 300; se retuvieron 2 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Lauren Walsh",
+				"role": "performer",
+				"reason": "Crédito Pretty Girl cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tiffany Haddish",
+				"role": "performer",
+				"reason": "Crédito Urban Girl cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jareb Dauplaise",
+				"role": "performer",
+				"reason": "Crédito Dilio cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Phil Morris",
+				"role": "performer",
+				"reason": "Crédito Messenger cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jim Piddock",
+				"role": "performer",
+				"reason": "Crédito Loyalist / Simon Cowell Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nicole Parker",
+				"role": "performer",
+				"reason": "Crédito Paula Abdul Look-A-Like / Britney Spears Look-A-Like / Ellen DeGeneres Look-A-Like / Hunchback Paris Hilton cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Crista Flanagan",
+				"role": "performer",
+				"reason": "Crédito Spartan Woman / Ugly Betty Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Hunter Clary",
+				"role": "performer",
+				"reason": "Crédito Leo, Jr. cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Emily Wilson",
+				"role": "performer",
+				"reason": "Crédito Lindsay Lohan Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "John Di Domenico",
+				"role": "performer",
+				"reason": "Crédito Donald Trump Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Belinda Waymouth",
+				"role": "performer",
+				"reason": "Crédito Twiggy Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jesse Lewis IV",
+				"role": "performer",
+				"reason": "Crédito Ms. Jay Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Zachary Dylan Smith",
+				"role": "performer",
+				"reason": "Crédito 10-Year-Old Leonidas cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Ryan Fraley",
+				"role": "performer",
+				"reason": "Crédito Brad Pitt Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tiffany Claus",
+				"role": "performer",
+				"reason": "Crédito Angelina Jolie Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nick Steele",
+				"role": "performer",
+				"reason": "Crédito K-Fed Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jim Nieb",
+				"role": "performer",
+				"reason": "Crédito President Bush Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Dean Cochran",
+				"role": "performer",
+				"reason": "Crédito Rocky Balboa / Rambo cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nate Haden",
+				"role": "performer",
+				"reason": "Crédito Ryan Seacrest Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tony Yalda",
+				"role": "performer",
+				"reason": "Crédito Sanjaya Look-A-Like cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jessica Heap",
+				"role": "performer",
+				"reason": "Crédito Spartan Woman's Friend (uncredited) cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tim Connolly",
+				"role": "performer",
+				"reason": "Crédito Spartan Soldier (uncredited) cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robin Atkin Downes",
+				"role": "performer",
+				"reason": "Crédito Narrator (uncredited) cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Martin Klebba",
+				"role": "performer",
+				"reason": "Crédito Happy Feet (uncredited) cotejado en el billing completo de Casi 300; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,411 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-mercenario-2019",
+	"title": "El Mercenario",
+	"year": 2019,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/660521/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 19
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/el-mercenario",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt8408218/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Jesse V. Johnson",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 77295,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/77295",
+					"fact": "Identidad de Jesse V. Johnson, oficio y filmografía cotejados con el ID exacto de El Mercenario (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/660521/cast",
+					"fact": "El billing del título exacto acredita a Jesse V. Johnson en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/tXjWQ5sCLGSaL0YnwWFvF3O3XzQ.jpg",
+				"localPath": "/people/jesse-v-johnson-nm0425364.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dominique Vandenberg",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Maxx",
+			"tmdbPersonId": 84311,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/84311",
+					"fact": "Identidad de Dominique Vandenberg, oficio y filmografía cotejados con el ID exacto de El Mercenario (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/660521/cast",
+					"fact": "El billing del título exacto acredita a Dominique Vandenberg como Maxx."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jFcmt3Apx5QxRPvkrJRzJaHACAy.jpg",
+				"localPath": "/people/dominique-vandenberg-nm0888664.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Louis Mandylor",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "LeClerc",
+			"tmdbPersonId": 54649,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/54649",
+					"fact": "Identidad de Louis Mandylor, oficio y filmografía cotejados con el ID exacto de El Mercenario (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/660521/cast",
+					"fact": "El billing del título exacto acredita a Louis Mandylor como LeClerc."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/skvNBR83wxjbFj6XuLxWAhCZTmh.jpg",
+				"localPath": "/people/louis-mandylor-nm0541909.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Carmen Argenziano",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Father Elias",
+			"tmdbPersonId": 28413,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/28413",
+					"fact": "Identidad de Carmen Argenziano, oficio y filmografía cotejados con el ID exacto de El Mercenario (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/660521/cast",
+					"fact": "El billing del título exacto acredita a Carmen Argenziano como Father Elias."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aiHWJmsVn7iWuohSg6lzF23XYVr.jpg",
+				"localPath": "/people/carmen-argenziano-nm0034492.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Manny Alva",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Father Thiago",
+			"tmdbPersonId": 2498547,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2498547",
+					"fact": "Identidad de Manny Alva, oficio y filmografía cotejados con el ID exacto de El Mercenario (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/660521/cast",
+					"fact": "El billing del título exacto acredita a Manny Alva como Father Thiago."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/663353/cache-556585-1592183601/image-w856.jpg",
+				"localPath": "/people/manny-alva-nm4083341.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Brad Ashten",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Rodriguez",
+			"tmdbPersonId": 204075,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/204075",
+					"fact": "Identidad de Brad Ashten, oficio y filmografía cotejados con el ID exacto de El Mercenario (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/660521/cast",
+					"fact": "El billing del título exacto acredita a Brad Ashten como Rodriguez."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/otGu4u7x7Q0B9mViN7P3GSOV9OD.jpg",
+				"localPath": "/people/brad-ashten-nm2060194.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Robb Zbacnik",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Notch",
+			"tmdbPersonId": 2498550,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2498550",
+					"fact": "Identidad de Robb Zbacnik, oficio y filmografía cotejados con el ID exacto de El Mercenario (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/660521/cast",
+					"fact": "El billing del título exacto acredita a Robb Zbacnik como Notch."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5bCIR6vo08cSEgviUJmho51lHpi.jpg",
+				"localPath": "/people/robb-zbacnik-nm1234994.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jeremiah B. McQueen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Hammaford",
+			"tmdbPersonId": 2431330,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2431330",
+					"fact": "Identidad de Jeremiah B. McQueen, oficio y filmografía cotejados con el ID exacto de El Mercenario (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/660521/cast",
+					"fact": "El billing del título exacto acredita a Jeremiah B. McQueen como Hammaford."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://images.mubicdn.net/images/cast_member/663357/cache-557005-1592293128/image-w856.jpg",
+				"localPath": "/people/jeremiah-b-mcqueen-tmdb-2431330.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Geordie Robinson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Wilson",
+			"tmdbPersonId": 1723928,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1723928",
+					"fact": "Identidad de Geordie Robinson, oficio y filmografía cotejados con el ID exacto de El Mercenario (2019)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/660521/cast",
+					"fact": "El billing del título exacto acredita a Geordie Robinson como Wilson."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mDVmHmCB728KZLCrGMqkdZ2vQ5h.jpg",
+				"localPath": "/people/geordie-robinson-nm3994870.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alina Andrei",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Magpie",
+			"tmdbPersonId": 1513185,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Magpie cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Luke LaFontaine",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Tex",
+			"tmdbPersonId": 225626,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Tex cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Robert Dill",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Vincent",
+			"tmdbPersonId": 1737693,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Vincent cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marilyn Sanabria",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Esther",
+			"tmdbPersonId": 2267074,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Esther cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nihan Gur",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Anna",
+			"tmdbPersonId": 1537527,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Anna cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Katherine Castillo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Young Woman",
+			"tmdbPersonId": 1627782,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Woman cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Sal Perales",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Thug Leader",
+			"tmdbPersonId": 2503854,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Thug Leader cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Oscar Leiva",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Thug Driver",
+			"tmdbPersonId": 2503855,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Thug Driver cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Gene Freeman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Jaber",
+			"tmdbPersonId": 2191507,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Jaber cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Essam Ferris",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/660521/cast",
+			"screenRole": "Abdulaziz",
+			"tmdbPersonId": 2025822,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Abdulaziz cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de El Mercenario; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Alina Andrei",
+				"role": "performer",
+				"reason": "Crédito Magpie cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Luke LaFontaine",
+				"role": "performer",
+				"reason": "Crédito Tex cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Robert Dill",
+				"role": "performer",
+				"reason": "Crédito Vincent cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marilyn Sanabria",
+				"role": "performer",
+				"reason": "Crédito Esther cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nihan Gur",
+				"role": "performer",
+				"reason": "Crédito Anna cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Katherine Castillo",
+				"role": "performer",
+				"reason": "Crédito Young Woman cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Sal Perales",
+				"role": "performer",
+				"reason": "Crédito Thug Leader cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Oscar Leiva",
+				"role": "performer",
+				"reason": "Crédito Thug Driver cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Gene Freeman",
+				"role": "performer",
+				"reason": "Crédito Jaber cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Essam Ferris",
+				"role": "performer",
+				"reason": "Crédito Abdulaziz cotejado en el billing completo de El Mercenario; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}

@@ -1,0 +1,587 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "juego-de-asesinos-2021",
+	"title": "Juego de asesinos",
+	"year": 2021,
+	"reviewedOn": "2026-11-13",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/738652/cast",
+			"kind": "TMDB full cast and crew, exact ID API",
+			"checkedOn": "2026-11-13",
+			"fullCredits": true,
+			"relevantCreditCount": 30
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/copshop",
+			"kind": "JustWatch Argentina identity and legal offer cross-check",
+			"checkedOn": "2026-11-13"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt5748448/fullcredits/",
+			"kind": "IMDb exact identity and principal billing cross-check; full-credits reference link (full billing verified separately in TMDB)",
+			"checkedOn": "2026-11-13"
+		}
+	],
+	"credits": [
+		{
+			"name": "Joe Carnahan",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Director",
+			"tmdbPersonId": 40223,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/40223",
+					"fact": "Identidad de Joe Carnahan, oficio y filmografía cotejados con el ID exacto de Juego de asesinos (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/738652/cast",
+					"fact": "El billing del título exacto acredita a Joe Carnahan en dirección."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Joe%20Carnahan%20(4920110734)%20(cropped).jpg?width=1200",
+				"localPath": "/people/joe-carnahan-nm0138620.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gerard Butler",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Bob Viddick",
+			"tmdbPersonId": 17276,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17276",
+					"fact": "Identidad de Gerard Butler, oficio y filmografía cotejados con el ID exacto de Juego de asesinos (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/738652/cast",
+					"fact": "El billing del título exacto acredita a Gerard Butler como Bob Viddick."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/i54XoxYieuff2w6MwyfwVUBvmR0.jpg",
+				"localPath": "/people/gerard-butler-nm0124930.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Frank Grillo",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Teddy Murretto",
+			"tmdbPersonId": 81685,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/81685",
+					"fact": "Identidad de Frank Grillo, oficio y filmografía cotejados con el ID exacto de Juego de asesinos (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/738652/cast",
+					"fact": "El billing del título exacto acredita a Frank Grillo como Teddy Murretto."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Grillo%20by%20Gage%20Skidmore%202.jpg?width=640",
+				"localPath": "/people/frank-grillo-nm0342029.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alexis Louder",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Valerie Young",
+			"tmdbPersonId": 2273501,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2273501",
+					"fact": "Identidad de Alexis Louder, oficio y filmografía cotejados con el ID exacto de Juego de asesinos (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/738652/cast",
+					"fact": "El billing del título exacto acredita a Alexis Louder como Valerie Young."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fCLuN1yyzMYPIuw7WndyYQ02cfv.jpg",
+				"localPath": "/people/alexis-louder-nm6951875.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Toby Huss",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Anthony Lamb",
+			"tmdbPersonId": 18271,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/18271",
+					"fact": "Identidad de Toby Huss, oficio y filmografía cotejados con el ID exacto de Juego de asesinos (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/738652/cast",
+					"fact": "El billing del título exacto acredita a Toby Huss como Anthony Lamb."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dUqygHlDDnOBZLnE51MPJHkHWvQ.jpg",
+				"localPath": "/people/toby-huss-nm0403947.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Chad L. Coleman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Sgt. Duane Mitchell",
+			"tmdbPersonId": 124645,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/124645",
+					"fact": "Identidad de Chad L. Coleman, oficio y filmografía cotejados con el ID exacto de Juego de asesinos (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/738652/cast",
+					"fact": "El billing del título exacto acredita a Chad L. Coleman como Sgt. Duane Mitchell."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lXcBz0qt4L767WqkTxl96RFTZvz.jpg",
+				"localPath": "/people/chad-l-coleman-nm0170968.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ryan O'Nan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Officer Huber",
+			"tmdbPersonId": 142192,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/142192",
+					"fact": "Identidad de Ryan O'Nan, oficio y filmografía cotejados con el ID exacto de Juego de asesinos (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/738652/cast",
+					"fact": "El billing del título exacto acredita a Ryan O'Nan como Officer Huber."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xssj1D7mG2bJnkREk8o4JymDDB8.jpg",
+				"localPath": "/people/ryan-o-nan-nm1645352.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jose Pablo Cantillo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Officer Peña",
+			"tmdbPersonId": 20191,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/20191",
+					"fact": "Identidad de Jose Pablo Cantillo, oficio y filmografía cotejados con el ID exacto de Juego de asesinos (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/738652/cast",
+					"fact": "El billing del título exacto acredita a Jose Pablo Cantillo como Officer Peña."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qtNesvN1bAQ779gJBt3LYDsm8f7.jpg",
+				"localPath": "/people/jose-pablo-cantillo-nm1504678.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Kaiwi Lyman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Officer Barnes",
+			"tmdbPersonId": 968742,
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/968742",
+					"fact": "Identidad de Kaiwi Lyman, oficio y filmografía cotejados con el ID exacto de Juego de asesinos (2021)."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/738652/cast",
+					"fact": "El billing del título exacto acredita a Kaiwi Lyman como Officer Barnes."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pDS0ohlQpGsReCcOIAuZfmjiytY.jpg",
+				"localPath": "/people/kaiwi-lyman-nm1839980.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Robert Walker Branchaud",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Officer Kimball",
+			"tmdbPersonId": 1579625,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Officer Kimball cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Tracey Bonner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Detective Deena Schier",
+			"tmdbPersonId": 1549537,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Detective Deena Schier cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Christopher Michael Holley",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Officer Ruby",
+			"tmdbPersonId": 52855,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Officer Ruby cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marshall Cook",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Brad",
+			"tmdbPersonId": 654199,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Brad cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Keith Jardine",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Trooper",
+			"tmdbPersonId": 78890,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Trooper cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Chris Kleckner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Larry the Cop",
+			"tmdbPersonId": 3227252,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Larry the Cop cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Karyn Greer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Newscaster",
+			"tmdbPersonId": 3240886,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Newscaster cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Vanita Kalra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Young Prosecuter",
+			"tmdbPersonId": 3074512,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Young Prosecuter cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "David Vaughn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "E.M.T. #1",
+			"tmdbPersonId": 1193134,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito E.M.T. #1 cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "J.R. Adduci",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "E.M.T. #2",
+			"tmdbPersonId": 1763912,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito E.M.T. #2 cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Alex Rush",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "E.M.T. #3",
+			"tmdbPersonId": 1238377,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito E.M.T. #3 cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Greg Fitzpatrick",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "E.M.T. Driver",
+			"tmdbPersonId": 1347144,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito E.M.T. Driver cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Danielle Goz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Crowdgoer",
+			"tmdbPersonId": 3110141,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Crowdgoer cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Jayson Merrill",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Crooked Cop",
+			"tmdbPersonId": 2258527,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Crooked Cop cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Scott Putman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Crooked Cop",
+			"tmdbPersonId": 76467,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Crooked Cop cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nathan Reed",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "State Trooper",
+			"tmdbPersonId": 3240888,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito State Trooper cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Nicole Shatz",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "State Trooper",
+			"tmdbPersonId": 3240891,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito State Trooper cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Armida Lopez",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Shocked Bridesmaid",
+			"tmdbPersonId": 2504079,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Shocked Bridesmaid cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Megan Schmidt",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Drunk Casino Patron",
+			"tmdbPersonId": 2547596,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Drunk Casino Patron cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Diann Malcolm",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Drunk Casino Patron",
+			"tmdbPersonId": 3240892,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Drunk Casino Patron cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		},
+		{
+			"name": "Marco Morales",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/738652/cast",
+			"screenRole": "Trooper Partner",
+			"tmdbPersonId": 1893964,
+			"omissionCategory": "out-of-scope",
+			"omissionReason": "Crédito Trooper Partner cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+		}
+	],
+	"coverageReview": {
+		"status": "reviewed",
+		"rationale": "Se cotejó el billing completo de Juego de asesinos; se retuvieron 1 créditos de dirección y 8 intérpretes, con personajes e identidades verificadas. Las omisiones se enumeran por nombre y rol sin adjudicar tiempos de pantalla.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Robert Walker Branchaud",
+				"role": "performer",
+				"reason": "Crédito Officer Kimball cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Tracey Bonner",
+				"role": "performer",
+				"reason": "Crédito Detective Deena Schier cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Christopher Michael Holley",
+				"role": "performer",
+				"reason": "Crédito Officer Ruby cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marshall Cook",
+				"role": "performer",
+				"reason": "Crédito Brad cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Keith Jardine",
+				"role": "performer",
+				"reason": "Crédito Trooper cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Chris Kleckner",
+				"role": "performer",
+				"reason": "Crédito Larry the Cop cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Karyn Greer",
+				"role": "performer",
+				"reason": "Crédito Newscaster cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Vanita Kalra",
+				"role": "performer",
+				"reason": "Crédito Young Prosecuter cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "David Vaughn",
+				"role": "performer",
+				"reason": "Crédito E.M.T. #1 cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "J.R. Adduci",
+				"role": "performer",
+				"reason": "Crédito E.M.T. #2 cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Alex Rush",
+				"role": "performer",
+				"reason": "Crédito E.M.T. #3 cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Greg Fitzpatrick",
+				"role": "performer",
+				"reason": "Crédito E.M.T. Driver cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Danielle Goz",
+				"role": "performer",
+				"reason": "Crédito Crowdgoer cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Jayson Merrill",
+				"role": "performer",
+				"reason": "Crédito Crooked Cop cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Scott Putman",
+				"role": "performer",
+				"reason": "Crédito Crooked Cop cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nathan Reed",
+				"role": "performer",
+				"reason": "Crédito State Trooper cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Nicole Shatz",
+				"role": "performer",
+				"reason": "Crédito State Trooper cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Armida Lopez",
+				"role": "performer",
+				"reason": "Crédito Shocked Bridesmaid cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Megan Schmidt",
+				"role": "performer",
+				"reason": "Crédito Drunk Casino Patron cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Diann Malcolm",
+				"role": "performer",
+				"reason": "Crédito Drunk Casino Patron cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			},
+			{
+				"name": "Marco Morales",
+				"role": "performer",
+				"reason": "Crédito Trooper Partner cotejado en el billing completo de Juego de asesinos; no se incorpora al núcleo principal seleccionado de esta ficha. No se presume duración en pantalla ni condición de figurante."
+			}
+		]
+	}
+}
