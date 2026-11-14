@@ -26,5 +26,16 @@ Buffer Free admite la API y carruseles automáticos profesionales; cuenta compro
 
 No cambió UI ni JavaScript del navegador: validación visual de JPEGs y pruebas del pipeline Node, sin suite Playwright adicional para estas placas.
 
+## Integración real y próximas publicaciones
+
+- **14/11/2026, 19:15 ART:** KATSEYE: Wild Hearts, formato protagonista, una imagen. Buffer `6af8537e918fe79d2e79d5ec`, confirmado por `get_post` como `scheduled`, `schedulingType: automatic`, `shareMode: customScheduled`, `dueAt: 2026-11-14T22:15:00.000Z`, sin error. [Run real completo](https://github.com/Clovhis/sucuplecuc/actions/runs/43594766469). Reserva/medios públicos en `c16434a9`, recibo durable en `e55ab274` de la rama operativa. Se descargó e inspeccionó la imagen generada por Linux; Buffer reconoce 1080×1350 y el alt correcto.
+- **15/11/2026, 19:15 ART:** “5 de animación para tu lista”, portada + Los rescatadores en Cangurolandia, Intensa-Mente, Lluvia de hamburguesas, Yellow Submarine y Enredados. Buffer `6af8549ac5b364e062edcec2`, confirmado por `get_post` como `scheduled`, `schedulingType: automatic`, `shareMode: customScheduled`, `dueAt: 2026-11-15T22:15:00.000Z`, sin error ni notificación móvil. [Run real completo](https://github.com/Clovhis/sucuplecuc/actions/runs/43595168095). Medios en `e04626f8`, recibo en `d0281c22`. Las seis URLs públicas se descargaron, compararon por SHA-256 e inspeccionaron visualmente; Buffer reconoce 1080×1350 y alt en todas. Prueba real de compatibilidad de carrusel con el plan actual.
+
+![Carrusel real programado para el 15 de noviembre](scheduled-carousel.png)
+
+Estado final comprobado en Buffer: **dos pendientes**, ambas automáticas, una por fecha, sin errores ni borradores adicionales. `BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED=true`; workflow activo. No hace falta intervención de Leo para activar el canal. El siguiente cron encuentra mañana ya programado y conserva su mismo ID, sin crear otra publicación; los cron posteriores preparan el día siguiente.
+
+La programación es futura y real: no se usó `shareNow`, no hubo publicaciones ficticias y no se recuperó ningún envío vencido. `scheduled` no se informa como publicado. Las publicaciones manuales históricas se conservaron.
+
 Fuentes: [API/Free](https://support.buffer.com/en-us/articles/what-is-buffers-api-GtIYIQilz5), [Instagram y carruseles automáticos](https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p). El detalle operativo y la recuperación están en [buffer-instagram-automation.md](../../../docs/buffer-instagram-automation.md).
 
