@@ -33,6 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
+      SOCIAL_LIBRARY_BACKEND: supabase
       BUFFER_ORGANIZATION_ID: ${{ vars.BUFFER_ORGANIZATION_ID }}
       BUFFER_INSTAGRAM_CHANNEL_ID: ${{ vars.BUFFER_INSTAGRAM_CHANNEL_ID }}
       INSTAGRAM_EDITION: ${{ github.event_name == 'schedule' && 'tomorrow' || inputs.edition || 'tomorrow' }}
@@ -55,7 +56,7 @@ jobs:
       - name: Verify Instagram publisher
         run: npm run test:buffer:instagram
 
-      - name: Offline preview
+      - name: Preview from approved Supabase library
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'dry-run' }}
         run: npm run buffer:instagram
 
@@ -110,6 +111,13 @@ jobs:
             git commit -m 'chore: record Instagram Buffer receipt [skip ci]'
             git push origin HEAD:cineposta-instagram-state
           fi
+
+      - name: Record library usage from persisted history
+        if: ${{ always() && steps.reservation.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          SOCIAL_LIBRARY_USAGE_KEY: ${{ secrets.SOCIAL_LIBRARY_USAGE_KEY }}
+        run: node scripts/sync-social-library-usage.mjs
 
       - name: Keep preview and recovery evidence
         if: always()

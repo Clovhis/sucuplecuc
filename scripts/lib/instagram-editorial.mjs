@@ -62,7 +62,9 @@ export function editionCaption(edition) {
   const intro=multi?edition.title+'.':`${edition.movies[0].title}: la mirada de CinePosta.`;
   const credits=editionCredits(edition);
   const ending=multi?'¿Cuál va primero? Guardá la selección y compartila.':'¿Qué te dejó esta película? Leé la reseña en cineposta.com.ar.';
-  const links=edition.movies.map((m,i)=>`${movieUrl(m.slug)}${i===0?`?utm_source=instagram&utm_medium=social&utm_campaign=diaria_${edition.format}`:''}`);
+  // Instagram captions render URLs as plain text. Keep canonical references for
+  // identification/deduplication without exposing long, unusable tracking queries.
+  const links=edition.movies.map(m=>movieUrl(m.slug));
   const details=edition.movies.map((m,i)=>`${multi?`${i+1}. `:''}${m.title} (${m.year}) · ${scoreLabel(m)}${!multi?'\n'+editorialExcerpt(m):''}`);
   let result=[intro,...details,ending,...links,credits,'#CinePosta #QueVer #Cine'].join('\n\n');
   if([...result].length>2200)result=[intro,...details,ending,...edition.movies.map(m=>movieUrl(m.slug)),credits,'#CinePosta'].join('\n\n');
@@ -132,7 +134,10 @@ export async function renderEdition(edition,directory,{root=ROOT}={}) {
           await add(`${movie.cinepostaScore}`,78,744,150,100,96,'#111315');
           await add('/ 10',165,852,80,35,28,'#111315');
         }
-        await add(`Foto: ${art.credit}`,54,1242,972,42,24,p.muted,false);
+        // Full attribution is always in the caption and immutable media receipt.
+        // Commons sometimes includes an entire license URL in the author field.
+        const byline=`Foto: ${art.credit}`;
+        await add([...byline].length>70?'Crédito de la fotografía y licencia en el texto':byline,54,1242,972,42,24,p.muted,false);
       }
     }
     rect(54,1297,972,1,'#777777');

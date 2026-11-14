@@ -1,0 +1,102 @@
+{
+  "retrievedAt": "2026-11-14T14:48:40.369Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3ASamuelLJackson.jpg",
+  "page": {
+    "pageid": 122786820,
+    "ns": 6,
+    "title": "File:SamuelLJackson.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 12422136,
+        "width": 4000,
+        "height": 6000,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/SamuelLJackson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:SamuelLJackson.jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=122786820",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2022-09-08 04:57:28",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "SamuelLJackson",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Self-published work|Samuel L. Jackson in 2022|Males with shining bald heads",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Samuel L Jackson at a press event for The Piano Lesson in 2022",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2022-09-07 10:22:22",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:PhilipRomanoPhoto\" class=\"mw-redirect\" title=\"User:PhilipRomanoPhoto\">Philip Romano</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1257952061,
+        "parentid": 1250377918
+      }
+    ]
+  },
+  "originalSha256": "12b27741207cec07716ab25e7ae4ddbffb6b2a6b24e2dfc0453d103f32027247"
+}

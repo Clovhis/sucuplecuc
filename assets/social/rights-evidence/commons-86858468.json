@@ -1,0 +1,102 @@
+{
+  "retrievedAt": "2026-11-14T14:48:33.916Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3AJoaquin+Phoenix+in+2018.jpg",
+  "page": {
+    "pageid": 86858468,
+    "ns": 6,
+    "title": "File:Joaquin Phoenix in 2018.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 1595214,
+        "width": 1303,
+        "height": 1627,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Joaquin_Phoenix_in_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Joaquin_Phoenix_in_2018.jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=86858468",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2021-09-17 22:15:30",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Joaquin Phoenix in 2018",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Extracted images|Uploaded with LrMediaWiki|Supported by Wikimedia Deutschland 2018|2018 Berlin Film Festival/Photo Project|Press conferences of the 2018 Berlin Film Festival|2018 portrait photographs of men|Items with ticket accreditation|Photographs by Harald Krichel|Portrait photographs of bearded men|Joaquin Phoenix in 2018",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Actor <a href=\"https://en.wikipedia.org/wiki/Joaquin_Phoenix\" class=\"extiw\" title=\"en:Joaquin Phoenix\">Joaquin Phoenix</a> at the <a href=\"https://en.wikipedia.org/wiki/68th_Berlin_International_Film_Festival\" class=\"extiw\" title=\"en:68th Berlin International Film Festival\">68th Berlin International Film Festival</a> 2018",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2018-02-20",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Harald_Krichel\" title=\"User:Harald Krichel\">Harald Krichel</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 3.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 3.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-3.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1299667270,
+        "parentid": 1299667097
+      }
+    ]
+  },
+  "originalSha256": "4bde558bb0f4a52ef0686ef57e284109e226ec426c8b48e8b00ad10637622c72"
+}

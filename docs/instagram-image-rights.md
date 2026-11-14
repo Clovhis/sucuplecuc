@@ -4,7 +4,7 @@ Desde el 14/11/2026 el generador diario exige una imagen real autorizada **en to
 
 ## Registro reutilizable
 
-`assets/social/instagram-rights.json` v2 contiene 16 fotografías aprobadas con evidencia por archivo en `assets/social/rights-evidence/`. Los originales convertidos a WebP están bajo `public/assets/social/photos/`. Algunas fuentes se localizaron desde `people.json`; se descargó mayor resolución cuando la copia local era demasiado pequeña. El resto de los retratos y pósters **no** se habilita automáticamente.
+`assets/social/instagram-rights.json` v2 contiene 28 fotografías aprobadas con evidencia por archivo en `assets/social/rights-evidence/`. Las 16 fotografías iniciales conservan su respaldo WebP en `public/assets/social/photos/`; las 12 nuevas existen sólo en Storage. Algunas fuentes se localizaron desde `people.json`; se descargó mayor resolución cuando la copia local era demasiado pequeña. El resto de los retratos y pósters **no** se habilita automáticamente.
 
 Cada entrada conserva identidad del sujeto, título del archivo, fuente y URL original, revisión de la página de licencia, autor/crédito, licencia/URL, fecha de foto, restricciones, hashes del archivo y de la evidencia, fecha de verificación y permiso para Instagram orgánico y alojamiento público. El job diario reutiliza esta evidencia: no hace una nueva investigación ni llama a TMDB cada día.
 
@@ -50,3 +50,7 @@ En `pendingSources` quedaron el paquete oficial de KATSEYE y los pósters de las
 Consultar también [social-press-kits.md](social-press-kits.md). Un portal accesible, una foto acreditada, una descarga o que otro medio la use no bastan. Las fotografías con licencia comprobada permiten que el canal funcione mientras esos permisos siguen pendientes.
 
 Fuentes: [TMDB FAQ](https://developer.themoviedb.org/docs/faq), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), [CC BY-SA 2.0, código legal](https://creativecommons.org/licenses/by-sa/2.0/legalcode.en), [Commons: reutilización](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia), [fotografía KATSEYE](https://commons.wikimedia.org/wiki/File:Katseye_at_Wango_Tango_2025.jpg), [prensa Disney+](https://press.disneyplus.com/news/katseye-wild-hearts-on-disneyplus-hulu).
+
+## Biblioteca central Supabase
+
+El generador diario consulta la biblioteca aprobada de Supabase; sus fallos detienen la selección y no activan una copia obsoleta ni gráficos abstractos. Las URLs finales de Buffer continúan fijadas a commits de GitHub. Ver [arquitectura, administración, pruebas y límites gratuitos](social-image-library.md).

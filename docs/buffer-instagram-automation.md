@@ -16,7 +16,9 @@ El 14/11 se comprobaron workflow activo, `BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED=t
 
 JPEG sRGB 1080×1350, menos de 8 MB. Tipografía local Noto Sans SIL OFL, mínimo 24 px para créditos. La composición respeta permisos de recorte/superposición. Los retratos y conciertos llevan nombre y año de archivo; no se hacen pasar por fotogramas. Los captions conservan créditos, títulos de las fotos, fuente, licencia/enlace y cambios. Las adaptaciones SA se distribuyen bajo CC BY-SA 4.0.
 
-El registro v2 `assets/social/instagram-rights.json` tiene 16 fotografías aprobadas que habilitan 145 películas elegibles en el catálogo del 14/11/2026. Cada permiso conserva fuente, evidencia archivada/hash, identidad, licencia, territorio, embargo/vencimiento y alcance para publicación orgánica/alojamiento público. **El conjunto inicial contiene personas/eventos; los pósters y escenas de estudios siguen pendientes de permiso.** No se atribuye a TMDB una licencia que no posee.
+Instagram/Buffer no convierten las URLs del caption en links clicables. Las próximas ediciones conservan referencias canónicas para identificar las películas y evitar duplicados, sin parámetros UTM visibles. No prometer clic directo desde el caption; orientar al enlace del perfil sólo cuando esté comprobado que está configurado. El formato final no cambia los posts existentes.
+
+El registro v2 `assets/social/instagram-rights.json` conserva 28 fotografías aprobadas; la biblioteca operativa se consulta en Supabase. Cada permiso conserva fuente, evidencia archivada/hash, identidad, licencia, territorio, embargo/vencimiento y alcance para publicación orgánica/alojamiento público. **El conjunto inicial contiene personas/eventos; los pósters y escenas de estudios siguen pendientes de permiso.** No se atribuye a TMDB una licencia que no posee.
 
 El selector excluye películas sin material autorizado, reserva todos los integrantes y prioriza fotografías menos usadas. Penaliza formatos/temas/categorías recientes, sin rotación por día de semana. No reinicia el historial; si se agota el conjunto, falla sin publicar un gráfico genérico. No cambia películas, scores ni ediciones de la home. No afirma disponibilidad a partir de plataformas viejas.
 
@@ -50,7 +52,7 @@ gh workflow run publish-buffer-instagram.yml -f mode=publish -f edition=today
 gh workflow run publish-buffer-instagram.yml -f mode=publish -f edition=tomorrow
 ```
 
-`dry-run` es offline, sin secretos ni cambios de historial. `check` consulta Buffer con el secret real, sin crear posts. `publish` es real: `edition=today` permite sembrar hoy y `tomorrow` preparar la edición normal. No usarlo para posts ficticios. Si faltan menos de cinco minutos, no reprograma al día siguiente.
+`dry-run` no consulta Buffer ni cambia historial; consulta Supabase con su clave pública y descarga fotografías aprobadas. `check` consulta Buffer con el secret real, sin crear posts. `publish` es real: `edition=today` permite sembrar hoy y `tomorrow` preparar la edición normal. No usarlo para posts ficticios. Si faltan menos de cinco minutos, no reprograma al día siguiente.
 
 La galería reproducible está en `.tmp/instagram-design/`: cinco formatos, carrusel completo y `manifest.json` con captions/hashes. Generarla no llama a Buffer. Los generadores manuales `social:media` y `social:reel` siguen disponibles; su capacidad de componer un póster no acredita derechos para publicarlo.
 
@@ -61,3 +63,7 @@ Buffer Free comprobado el 14/11/2026: 3 canales, 10 programados **por canal**, A
 Reels/Stories existentes quedan para piezas especiales. La edición diaria usa imagen/carrusel para publicación automática sin móvil, música comercial, stickers ni funciones pagas. No agrega servicios, dependencias ni APIs de IA. Runner Linux estándar del repositorio público.
 
 Fuentes oficiales revalidadas el 14/11/2026: [API incluida en Free](https://support.buffer.com/en-us/articles/what-is-buffers-api-GtIYIQilz5), [publicación automática y carruseles](https://support.buffer.com/articles/scheduling-instagram-posts-reels-stories-and-notifications-3XA98S9Q5p), [medios públicos](https://developers.buffer.com/guides/hosting-media.html), [InstagramMetadata](https://developers.buffer.com/types/InstagramPostMetadataInput.html).
+
+## Biblioteca central Supabase
+
+El generador diario consulta la biblioteca aprobada de Supabase; sus fallos detienen la selección y no activan una copia obsoleta ni gráficos abstractos. Las URLs finales de Buffer continúan fijadas a commits de GitHub. Ver [arquitectura, administración, pruebas y límites gratuitos](social-image-library.md).

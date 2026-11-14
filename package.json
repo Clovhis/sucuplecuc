@@ -82,7 +82,7 @@
     "gsc:inspect": "node ./scripts/gsc.mjs inspect",
     "gsc:inspect-sitemap": "node ./scripts/gsc.mjs inspect-sitemap",
     "buffer:instagram": "node --experimental-strip-types scripts/publish-buffer-instagram.mjs",
-    "test:buffer:instagram": "node --experimental-strip-types --test scripts/publish-buffer-instagram.test.mjs scripts/instagram-editorial.test.mjs",
+    "test:buffer:instagram": "node --experimental-strip-types --test scripts/publish-buffer-instagram.test.mjs scripts/instagram-editorial.test.mjs scripts/social-library.test.mjs",
     "social:instagram:preview": "node --experimental-strip-types scripts/preview-instagram-editorial.mjs",
     "social:images:discover": "node --experimental-strip-types scripts/discover-instagram-images.mjs",
     "social:images:import": "node --experimental-strip-types scripts/import-instagram-commons.mjs",

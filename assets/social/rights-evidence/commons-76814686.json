@@ -1,0 +1,102 @@
+{
+  "retrievedAt": "2026-11-14T14:48:27.487Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3AChristian+Bale-7837.jpg",
+  "page": {
+    "pageid": 76814686,
+    "ns": 6,
+    "title": "File:Christian Bale-7837.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 3567076,
+        "width": 2615,
+        "height": 3922,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Christian_Bale-7837.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Christian_Bale-7837.jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=76814686",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2019-02-24 11:45:01",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Christian Bale-7837",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Supported by Wikimedia Deutschland|Uploaded with LrMediaWiki|2019 Berlin Film Festival/Photo Project|Photo calls of the 2019 Berlin Film Festival|Supported by Wikimedia Deutschland 2019|Items with ticket accreditation|Photographs by Harald Krichel|Christian Bale in 2019",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Actor <a href=\"https://en.wikipedia.org/wiki/Christian_Bale\" class=\"extiw\" title=\"en:Christian Bale\">Christian Bale</a> at the <a href=\"https://en.wikipedia.org/wiki/Berlinale\" class=\"extiw\" title=\"en:Berlinale\">Berlinale</a> 2019",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2019-02-11",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "Harald Krichel",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1265969387,
+        "parentid": 1238707473
+      }
+    ]
+  },
+  "originalSha256": "0bf22ac8e4b1f8934eb8a2a34a381ecc899062176c25ad289b34c75bdb7cfbe9"
+}

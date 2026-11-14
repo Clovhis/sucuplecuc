@@ -1,6 +1,7 @@
 import {readFile} from 'node:fs/promises';
 import path from 'node:path';
 import {ROOT,digest,argentinaDate,loadMovies} from './social-media.mjs';
+import {remoteLibrary,libraryBytes} from './social-library.mjs';
 
 export function assertImageGrant(asset,today=argentinaDate()) {
   const permission=asset.permission;
@@ -18,6 +19,7 @@ export function assertImageGrant(asset,today=argentinaDate()) {
 }
 
 export async function imageRegistry(root=ROOT,today=argentinaDate()) {
+  if(root===ROOT && process.env.SOCIAL_LIBRARY_BACKEND!=='local'){const assets=await remoteLibrary(today);return assets.filter(a=>assertImageGrant(a,today));}
   const ledger=JSON.parse(await readFile(path.join(root,'assets/social/instagram-rights.json'),'utf8'));
   if(ledger.version!==2 || !Array.isArray(ledger.assets))throw Error('Se requiere el registro de imágenes v2. No hay alternativa gráfica.');
   const assets=[];
@@ -45,7 +47,7 @@ export async function visualMovies(root=ROOT,{movies,today=argentinaDate(),histo
 
 export async function imageBytes(asset,root=ROOT) {
   if(!assertImageGrant(asset))throw Error('Permiso vencido, pendiente o restringido.');
-  const bytes=await readFile(path.join(root,'public',asset.path));
+  const bytes=asset.storage?await libraryBytes(asset):await readFile(path.join(root,'public',asset.path));
   if(digest(bytes)!==asset.sha256)throw Error(`El arte cambió desde la autorización: ${asset.id}`);
   return bytes;
 }

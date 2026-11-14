@@ -1,0 +1,102 @@
+{
+  "retrievedAt": "2026-11-14T14:48:18.427Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3AClint+Eastwood+at+2010+New+York+Film+Festival.jpg",
+  "page": {
+    "pageid": 61273784,
+    "ns": 6,
+    "title": "File:Clint Eastwood at 2010 New York Film Festival.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 330816,
+        "width": 781,
+        "height": 1064,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Clint_Eastwood_at_2010_New_York_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Clint_Eastwood_at_2010_New_York_Film_Festival.jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=61273784",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2022-04-07 18:09:31",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Clint Eastwood at 2010 New York Film Festival",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "New York Film Festival|Extracted images|Clint Eastwood in 2010",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Matt Damon, Clint Eastwood y Bryce Dallas Howard en el Festival de Cine de Nueva York 2010.",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2009-12-02 01:55:18",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/zaffi/13522488685/in/set-72157627446505460\">Flickr</a>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/zaffi/\">Raffi Asdourian</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY 2.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 2.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/2.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-2.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1278535923,
+        "parentid": 1278535789
+      }
+    ]
+  },
+  "originalSha256": "329dcdbfc7ec56d262c53733ba8304e4a6e25f494d6ffd695a907467ccaac909"
+}

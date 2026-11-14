@@ -42,6 +42,7 @@ test('captions preserve real scores, avoid platform assertions and expose every 
   const plan=planEdition(pool,{posts:[]},new Set(),'2026-11-14',{format:'carousel'});
   const text=editionCaption(plan);
   assert.equal(remoteSlugs([{text}]).size,5);
+  assert.ok(!text.includes('utm_'));
   assert.ok([...text].length<=2200);
   assert.ok(text.includes('8 · Excelente'));
   assert.ok(!text.includes('Netflix'));

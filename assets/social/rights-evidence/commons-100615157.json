@@ -1,0 +1,102 @@
+{
+  "retrievedAt": "2026-11-14T14:48:36.645Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3AJodie+Foster+in+Baltimore+%28cropped%29.jpg",
+  "page": {
+    "pageid": 100615157,
+    "ns": 6,
+    "title": "File:Jodie Foster in Baltimore (cropped).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 214402,
+        "width": 806,
+        "height": 1075,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Jodie_Foster_in_Baltimore_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Jodie_Foster_in_Baltimore_(cropped).jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=100615157",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2021-03-01 05:53:02",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Jodie Foster in Baltimore (cropped)",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Extracted images|Photographs by John Mathew Smith|Jodie Foster in 1995|Taken with Noritsu koki EZ Controller",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Jodie Foster \" Baltimore the city that reads \"",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2019-11-20 10:36",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/kingkongphoto/49095614687/\">Jodie Foster \" Baltimore the city that reads \"</a>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/36277035@N06\">John Mathew Smith &amp; www.celebrity-photos.com</a> from Laurel  Maryland, USA",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 2.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 2.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-2.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1091904920,
+        "parentid": 1078781911
+      }
+    ]
+  },
+  "originalSha256": "a4e8943faa8bb5d1bbe5a6a2543fcc91d5c5d08c1a8a10966a33f4aa8fa26344"
+}
