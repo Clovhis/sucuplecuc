@@ -10,26 +10,19 @@ El [run 43540537062](https://github.com/Clovhis/sucuplecuc/actions/runs/43540537
 
 El 14/11 se comprobaron workflow activo, `BUFFER_INSTAGRAM_AUTOPUBLISH_ENABLED=true`, organización **My organization** `6a9d88d88ecb84720dd91cc1`, canal profesional `@cineposta.ar` `6af6465a62b70b94b0105899`, conectado, desbloqueado, cola habilitada y `defaultToReminders=false`. El [check con el secret real de Actions](https://github.com/Clovhis/sucuplecuc/actions/runs/43593537937) pasó con dos posts históricos y cero pendientes. OAuth MCP y secret de Actions se comprobaron por separado; no se rotó ninguna clave.
 
-## Sistema editorial
+## Sistema editorial y fotografías
 
-`scripts/lib/instagram-editorial.mjs` combina cuatro familias y cuatro paletas: carbón/coral, papel/tinta roja, azul/lima y ciruela/durazno. Incluye ilustración a todo el ancho, número protagonista y tarjetas numeradas. La ilustración geométrica se genera localmente, sin IA ni costos; no pretende ser un fotograma.
+`scripts/lib/instagram-editorial.mjs` combina **carrusel de cinco, protagonista, score, doble función y ranking**. Todas las placas, incluidas portadas y scores, exigen imágenes reales autorizadas. Se eliminó la alternativa abstracta. Marca, datos y Score CinePosta acompañan las fotografías; los afiches se muestran completos. El ranking ordena la selección por los scores existentes, sin inventar valoraciones.
 
-- **Deslizá para descubrir:** portada + cinco películas relacionadas por género, director o recorrido histórico.
-- **En primer plano:** una película, ilustración grande, título y mirada concreta de su reseña.
-- **Score CinePosta:** número de la ficha, escala /10 y etiqueta canónica. Requiere score ≥8 para este formato.
-- **Doble función:** portada + dos películas del mismo género. No inventa un ranking.
+JPEG sRGB 1080×1350, menos de 8 MB. Tipografía local Noto Sans SIL OFL, mínimo 24 px para créditos. La composición respeta permisos de recorte/superposición. Los retratos y conciertos llevan nombre y año de archivo; no se hacen pasar por fotogramas. Los captions conservan créditos, títulos de las fotos, fuente, licencia/enlace y cambios. Las adaptaciones SA se distribuyen bajo CC BY-SA 4.0.
 
-Los formatos compiten según candidatos e historial, sin rotación por día de semana. Penaliza categorías/temas recientes, evita repetir formato consecutivo cuando hay alternativas y cambia paleta. Cada integrante de un carrusel se reserva individualmente; nunca reinicia el historial para reciclar títulos. Recomendaciones con score ≥6, fecha no futura y reseña completa. No modifica el catálogo.
+El registro v2 `assets/social/instagram-rights.json` tiene 16 fotografías aprobadas que habilitan 145 películas elegibles en el catálogo del 14/11/2026. Cada permiso conserva fuente, evidencia archivada/hash, identidad, licencia, territorio, embargo/vencimiento y alcance para publicación orgánica/alojamiento público. **El conjunto inicial contiene personas/eventos; los pósters y escenas de estudios siguen pendientes de permiso.** No se atribuye a TMDB una licencia que no posee.
 
-Captions con títulos, años, opinión existente, scores, invitación a conversar/guardar, hasta tres hashtags y URL con UTM **para cada integrante**, para deduplicación remota completa. Si cinco reseñas exceden 2200 caracteres, usa títulos/scores en caption y deja la oración completa en cada placa: no recorta frases. No afirma disponibilidad, plataformas o estrenos a partir de datos almacenados, ni promete enlace en bio sin verificarlo.
+El selector excluye películas sin material autorizado, reserva todos los integrantes y prioriza fotografías menos usadas. Penaliza formatos/temas/categorías recientes, sin rotación por día de semana. No reinicia el historial; si se agota el conjunto, falla sin publicar un gráfico genérico. No cambia películas, scores ni ediciones de la home. No afirma disponibilidad a partir de plataformas viejas.
 
-## Derechos y calidad
+`npm run social:instagram:preview` genera los cinco formatos. `npm run social:images:discover -- slug` localiza pósters/backdrops/retratos mediante la integración TMDB existente, siempre pendientes de derechos. `social:images:import` es una herramienta editorial de incorporación explícita, nunca una tarea del cron. El job diario no investiga licencias ni depende de una PC encendida.
 
-JPEG sRGB **1080×1350**, ratio 4:5, menos de 8 MB. Noto Sans local y licencia SIL OFL en `assets/social/`. Texto que no baja de 28 px; si no entra se descarta ese candidato. No renderiza todo el catálogo en el build.
-
-Un póster del catálogo no acredita permiso de adaptación para Instagram. Por defecto se publica **gráfica original de CinePosta**, con texto/datos propios, sin fotogramas, logos de películas ni música ajena. Es una alternativa publicable permanente, no una maqueta pendiente.
-
-`assets/social/instagram-rights.json` permite incorporar fotografías con permiso documentado: `slug`, `path` bajo `public/assets/`, `sha256`, `sourceUrl`, `evidenceUrl`, `credit`, `license`, `socialAdaptationAllowed: true`. Permisos incompletos o hashes cambiados impiden usar esa imagen. La lista actual está vacía. No se heredan permisos de posts anteriores.
+Reglas, comandos, restricciones y permisos de prensa pendientes: [instagram-image-rights.md](instagram-image-rights.md).
 
 ## Estado, publicación y recuperación
 
@@ -59,7 +52,7 @@ gh workflow run publish-buffer-instagram.yml -f mode=publish -f edition=tomorrow
 
 `dry-run` es offline, sin secretos ni cambios de historial. `check` consulta Buffer con el secret real, sin crear posts. `publish` es real: `edition=today` permite sembrar hoy y `tomorrow` preparar la edición normal. No usarlo para posts ficticios. Si faltan menos de cinco minutos, no reprograma al día siguiente.
 
-La galería reproducible está en `.tmp/instagram-design/`: cuatro formatos, carrusel completo y `manifest.json` con captions/hashes. Generarla no llama a Buffer. Los generadores manuales `social:media` y `social:reel` siguen disponibles; su capacidad de componer un póster no acredita derechos para publicarlo.
+La galería reproducible está en `.tmp/instagram-design/`: cinco formatos, carrusel completo y `manifest.json` con captions/hashes. Generarla no llama a Buffer. Los generadores manuales `social:media` y `social:reel` siguen disponibles; su capacidad de componer un póster no acredita derechos para publicarlo.
 
 ## Compatibilidad y costos
 

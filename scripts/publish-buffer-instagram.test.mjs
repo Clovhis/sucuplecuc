@@ -13,7 +13,7 @@ const channel = {id,name:'cineposta.ar',service:'instagram',type:'business',meta
 const now = new Date('2026-11-12T20:00:00Z');
 const movie = {slug:'una-pelicula-2020',title:'Una película',year:2020,category:'Terror',poster:'assets/posters/2020/una-pelicula-2020.webp',cinepostaScore:8,review:'Una casa vacía se vuelve una trampa y cada ruido cambia lo que creemos saber. El suspenso funciona con muy poco.'};
 const emptyHistory = () => ({version:1,posts:[]});
-const entry = () => ({date:'2026-11-12',slug:movie.slug,category:movie.category,state:'reserved',attemptId:'42:1',channelId:id,dueAt:dailySlot(now),mediaPath:'media/2026-11-12-una-pelicula-2020.jpg',mediaSha256:'abc',text:instagramCaption(movie),alt:'Una película, placa CinePosta.'});
+const entry = () => ({date:'2026-11-12',slug:movie.slug,category:movie.category,state:'reserved',attemptId:'42:1',channelId:id,dueAt:dailySlot(now),mediaPath:'media/2026-11-12-una-pelicula-2020.jpg',mediaSha256:'abc',media:[{mediaPath:'media/2026-11-12-una-pelicula-2020.jpg',sha256:'abc',rights:{type:'licensed-photography'}}],text:instagramCaption(movie),alt:'Una película, placa CinePosta.'});
 
 async function fixture(t) {
 	const root = await mkdtemp(path.join(tmpdir(),'cineposta-instagram-'));
@@ -122,6 +122,10 @@ test('real local card generation produces safe JPEG feed/story dimensions and a 
 	await mkdir(path.join(root,'public/brand'),{recursive:true});
 	await writeFile(path.join(root,'src/data/movies',`${movie.slug}.json`),JSON.stringify(movie));
 	await sharp({create:{width:400,height:600,channels:3,background:'#773344'}}).webp().toFile(path.join(root,'public',movie.poster));
+  await mkdir(path.join(root,'assets/social'),{recursive:true});
+  const bytes=await readFile(path.join(root,'public',movie.poster));
+  const art={id:'fixture-photo',status:'approved',kind:'still',subject:movie.title,slugs:[movie.slug],title:'Test photograph fixture',path:movie.poster,sha256:digest(bytes),credit:'Test author',license:'Test permission',licenseUrl:'https://example.test/license',sourceUrl:'https://example.test/source',evidenceUrl:'https://example.test/permission',permission:{basis:'press-permission',rightsHolder:'Test author',grantSummary:'Test-only permission for fixture media',organicInstagram:true,publicHosting:true,territories:['worldwide'],crop:true}};
+  await writeFile(path.join(root,'assets/social/instagram-rights.json'),JSON.stringify({version:2,assets:[art]}));
 	await sharp({create:{width:300,height:60,channels:4,background:'#eeeeee'}}).png().toFile(path.join(root,'public/brand/cineposta-logo-full.png'));
 	const api=fakeBuffer();
 	const result=await prepareInstagram({stateDir,root,key:'test',organizationId:org,channelId:id,attemptId:'42:1',now,request:api.request});

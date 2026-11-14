@@ -1,0 +1,107 @@
+{
+  "retrievedAt": "2026-11-14T13:32:47.648Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3ANataliePortman.jpg",
+  "page": {
+    "pageid": 182399810,
+    "ns": 6,
+    "title": "File:NataliePortman.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 8205525,
+        "width": 2995,
+        "height": 4492,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/NataliePortman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:NataliePortman.jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=182399810",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2026-01-25 07:55:37",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "NataliePortman",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Personality rights warning|Self-published work|Information field template with formatting|Natalie Portman in 2026|WikiPortraits at 2026 Sundance Film Festival|Uploaded via Campaign:wikiportraits-sundance-2026|The Gallerist|People at the 2026 Sundance Film Festival|WikiPortraits of actors|Photographs by Colleen Sturtevant",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Natalie Portman at the 2026 Sundance Film Festival",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2026-01-24 23:50:47",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Colleen_Sturtevant\" title=\"User:Colleen Sturtevant\">Colleen Sturtevant</a>",
+            "source": "commons-desc-page"
+          },
+          "Attribution": {
+            "value": "Colleen Sturtevant / WikiPortraits",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseShortName": {
+            "value": "CC BY 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "personality",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1274877126,
+        "parentid": 1241478544
+      }
+    ]
+  },
+  "originalSha256": "6194bfb80fc4f36a743834988756f2ef28e9c75a0259876ce1b29d121d567992"
+}

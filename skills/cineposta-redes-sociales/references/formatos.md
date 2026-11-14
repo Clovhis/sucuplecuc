@@ -1,6 +1,8 @@
 # Medios para redes
 
-Para la edición diaria adaptativa usá `npm run social:instagram:preview` y `scripts/lib/instagram-editorial.mjs`: protagonista, score, portada + cinco películas y doble función, sin repetir integrantes. Gráfica original; sólo incorpora arte con permiso en `assets/social/instagram-rights.json`. Galería: `.tmp/instagram-design/`. El generador manual de abajo sigue disponible: su capacidad de componer un póster no acredita derechos para publicarlo.
+Para la edición diaria usá `npm run social:instagram:preview`: protagonista, score, portada + cinco películas, doble función y ranking. **Cada página requiere imagen real con permiso registrado en v2**, sin alternativa abstracta. Pósters completos; fotografías con recorte/superposición sólo si se permite. Los retratos se identifican como archivo. El generador manual de abajo sigue disponible, pero componer un póster no acredita derechos para publicarlo. Ver `docs/instagram-image-rights.md`.
+
+Al editar Instagram, la integración comprobada de Buffer rechazó un payload de sólo texto (400: falta imagen/tipo). Leer primero el post, conservar assets, `metadata.instagram.type`, `shouldShareToFeed`, `schedulingType` y hora, y enviar el payload completo al **mismo ID**. Un 400 no autoriza crear otro post. Ante timeout consultar ese mismo ID. No confundir un cambio del generador con una actualización de los assets ya programados.
 
 El generador de placas del repositorio compone arte real del catálogo, logo y texto editorial. No genera imágenes por IA ni inventa fotogramas. Es una opción sencilla. Para un estreno con montaje, movimiento y sonido usá el flujo de [prensa](prensa.md) y `npm run social:reel`; no limites por defecto Instagram a una placa quieta exportada como vídeo. Ejecutá los generadores desde la raíz del repositorio; para textos originales de agentes podés adaptar la pieza manteniendo datos canónicos y revisarla antes de enviar.
 

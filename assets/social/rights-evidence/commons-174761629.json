@@ -1,0 +1,107 @@
+{
+  "retrievedAt": "2026-11-14T13:32:50.703Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3AKeanu+Reeves+at+TIFF+2025+02+%28Cropped%29.jpg",
+  "page": {
+    "pageid": 174761629,
+    "ns": 6,
+    "title": "File:Keanu Reeves at TIFF 2025 02 (Cropped).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 2611494,
+        "width": 2259,
+        "height": 3010,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Keanu_Reeves_at_TIFF_2025_02_%28Cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Keanu_Reeves_at_TIFF_2025_02_(Cropped).jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=174761629",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2025-09-15 19:38:22",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Keanu Reeves at TIFF 2025 02 (Cropped)",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Personality rights warning|Extracted images|Information field template with formatting|Men at work in Canada|Keanu Reeves in 2025|Men at work in the 2020s|WikiPortraits at 2025 Toronto International Film Festival|Good Fortune (film)|WikiPortraits photos by Gabriel Hutchinson",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Keanu Reeves at the 2025 Toronto International Film Festival",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2025-09-06, 20:58:29",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Gabriel_Hutchinson\" title=\"User:Gabriel Hutchinson\">Gabriel Hutchinson</a>",
+            "source": "commons-desc-page"
+          },
+          "Attribution": {
+            "value": "Gabriel Hutchinson / WikiPortraits",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "personality",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1288086096,
+        "parentid": 1284695876
+      }
+    ]
+  },
+  "originalSha256": "6dcba6afbfc0162dd53b8718c546904f5be9f30e164b4c894389d7b6b9616df9"
+}

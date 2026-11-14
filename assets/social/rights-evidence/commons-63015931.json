@@ -1,0 +1,102 @@
+{
+  "retrievedAt": "2026-11-14T13:26:57.567Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3AAmy+Poehler+%288894155873%29+%28cropped%29.jpg",
+  "page": {
+    "pageid": 63015931,
+    "ns": 6,
+    "title": "File:Amy Poehler (8894155873) (cropped).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 223503,
+        "width": 847,
+        "height": 1060,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Amy_Poehler_%288894155873%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Amy_Poehler_(8894155873)_(cropped).jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=63015931",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2021-04-10 15:37:11",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Amy Poehler (8894155873) (cropped)",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Personality rights warning|Extracted images|Amy Poehler in 2013|2013 Peabody Awards",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "<p>PHOTO CREDIT: ANDERS KRUSBERG / PEABODY AWARDS\n72nd Annual Peabody Awards Luncheon\nWaldorf-Astoria Hotel\n</p>\nMay 20, 2013",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2013-05-20 11:57",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/peabodyawards/8894155873/\">Judd Apatow and Amy Poehler</a>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/79383703@N08\">Peabody Awards</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY 2.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 2.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/2.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "personality",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-2.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 903350723,
+        "parentid": 877844290
+      }
+    ]
+  },
+  "originalSha256": "d808d5aad01b862452eb74a33485499bd2c2aa618283fc4911cda05393187e4f"
+}

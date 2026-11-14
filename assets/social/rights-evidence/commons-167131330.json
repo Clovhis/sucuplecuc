@@ -1,0 +1,102 @@
+{
+  "retrievedAt": "2026-11-14T13:23:19.889Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3AKatseye+at+Wango+Tango+2025.jpg",
+  "page": {
+    "pageid": 167131330,
+    "ns": 6,
+    "title": "File:Katseye at Wango Tango 2025.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 1554491,
+        "width": 2404,
+        "height": 1987,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Katseye_at_Wango_Tango_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Katseye_at_Wango_Tango_2025.jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=167131330",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2025-06-08 17:23:36",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Katseye at Wango Tango 2025",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Self-published work|Images with extracted images|Katseye in 2025",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "The girl group Katseye on-stage for Wango Tango May 2025 in Huntington Beach, California.",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2025-05-10",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Warmtoned\" title=\"User:Warmtoned\">Warmtoned</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1143299082,
+        "parentid": 1063060639
+      }
+    ]
+  },
+  "originalSha256": "42b82d94e99281275bab6fa3b3035de2f0872a862b1d95ea6265b5aa4e1b2a2d"
+}

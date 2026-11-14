@@ -1,0 +1,102 @@
+{
+  "retrievedAt": "2026-11-14T13:27:35.539Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3AMandy+Moore+at+SXSW+2018+%2825904503147%29+%28cropped%29.jpg",
+  "page": {
+    "pageid": 75338701,
+    "ns": 6,
+    "title": "File:Mandy Moore at SXSW 2018 (25904503147) (cropped).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 690148,
+        "width": 1084,
+        "height": 1435,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mandy_Moore_at_SXSW_2018_%2825904503147%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Mandy_Moore_at_SXSW_2018_(25904503147)_(cropped).jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=75338701",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2018-12-26 20:15:58",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Mandy Moore at SXSW 2018 (25904503147) (cropped)",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Extracted images|Mandy Moore in 2018|South by Southwest 2018",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Mandy Moore at SXSW 2018",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "03-12-2018 02:22",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://flickr.com/photos/relevantwriter/25904503147/\">Mandy Moore on the red-carpet at SXSW 2018</a>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://flickr.com/people/52309209@N02\">Daniel Benavides</a> from Austin, TX",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY 2.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 2.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/2.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-2.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1272033569,
+        "parentid": 1029125127
+      }
+    ]
+  },
+  "originalSha256": "c559aaa0cdcfd19efe0574c3bc933d6bde80ec66646f6a1157a0dc1ab4c9754b"
+}

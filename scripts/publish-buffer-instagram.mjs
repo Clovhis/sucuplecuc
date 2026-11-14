@@ -1,8 +1,9 @@
 import { readFile, writeFile, mkdir, rename } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { ROOT, argentinaDate, digest, loadMovies } from './lib/social-media.mjs';
+import { ROOT, argentinaDate, digest } from './lib/social-media.mjs';
 import { nextDate, planEdition, editionCaption, renderEdition, slugsOf } from './lib/instagram-editorial.mjs';
+import {visualMovies} from './lib/instagram-images.mjs';
 
 export const STATE_BRANCH = 'cineposta-instagram-state';
 export const HISTORY_FILE = 'history.json';
@@ -128,15 +129,15 @@ export async function prepareInstagram({stateDir,key,organizationId,channelId,at
 	}
 	if (dailyGuard(posts,today).length) return {mode:'skipped',reason:'Instagram ya tiene una publicación para hoy.'};
 	if (pending >= 10) return {mode:'skipped',reason:'Cola de Instagram llena (10). X conserva su propia cuota.'};
-	const movies = await loadMovies(root);
+	const movies = await visualMovies(root,{history,today});
 	const excluded = remoteSlugs(posts);
 	// A render or rights-ledger error excludes the candidate; never substitute unlicensed art.
 	for (let candidate = 0; candidate < 20; candidate++) {
 		const plan=planEdition(movies,history,excluded,today);
-		let cards;
-		try { cards=await renderEdition(plan,path.join(stateDir,'media'),{root}); } catch(error) {plan.slugs.forEach(slug=>excluded.add(slug));console.error(`Se omite ${plan.slugs.join(', ')}: ${error.message}`);continue;}
+		let cards,text;
+		try { text=editionCaption(plan);cards=await renderEdition(plan,path.join(stateDir,'media'),{root}); } catch(error) {plan.slugs.forEach(slug=>excluded.add(slug));console.error(`Se omite ${plan.slugs.join(', ')}: ${error.message}`);continue;}
 		const movie=plan.movies[0];
-		const record = {date:today,slug:movie.slug,slugs:plan.slugs,category:plan.category,format:plan.format,theme:plan.theme,palette:plan.palette,state:'reserved',attemptId,dueAt,channelId,media:cards.map(({path:_path,...card})=>card),text:editionCaption(plan),createdAt:now.toISOString()};
+		const record = {date:today,slug:movie.slug,slugs:plan.slugs,category:plan.category,format:plan.format,theme:plan.theme,palette:plan.palette,state:'reserved',attemptId,dueAt,channelId,media:cards.map(({path:_path,...card})=>card),text,createdAt:now.toISOString()};
 		history.posts.push(record);
 		await saveHistory(stateDir,history);
 		return {mode:'prepared',slugs:plan.slugs,format:plan.format,dueAt,images:cards.length};
@@ -161,6 +162,7 @@ export async function publishInstagram({stateDir,key,organizationId,channelId,at
 	if (entry.state !== 'reserved' || entry.attemptId !== attemptId || entry.attemptedAt || entry.channelId !== channelId) throw new Error('La reserva no pertenece a este intento o su envío es ambiguo. Revisar antes de reintentar.');
 	if (new Date(entry.dueAt).getTime()-now.getTime() < 5*60000) return {mode:'skipped',reason:'La franja quedó demasiado cerca o ya pasó.'};
 	if (dailyGuard(posts,today).length || pending >= 10) return {mode:'skipped',reason:'La franja o la cola ya está ocupada.'};
+	if(!entry.media?.length || entry.media.some(card=>card.rights?.type!=='licensed-photography'))throw new Error('La reserva no tiene fotografías autorizadas. No se publica una reserva antigua de gráficos abstractos.');
 	const media=entry.media || [{mediaPath:entry.mediaPath,sha256:entry.mediaSha256,alt:entry.alt}];
 	const imageUrls=[];
 	for(const card of media) {
@@ -198,7 +200,7 @@ async function main() {
 	else if(modes[0] === '--publish') result = await publishInstagram(options);
 	else {
 		// Offline preview: no Buffer request, secret access or operational history writes.
-		const plan=planEdition(await loadMovies(),{posts:[]},new Set(),editionDate(new Date(),options.edition));
+		const plan=planEdition(await visualMovies(),{posts:[]},new Set(),editionDate(new Date(),options.edition));
 		const cards=await renderEdition(plan,options.stateDir);
 		result = {mode:'dry-run',slugs:plan.slugs,format:plan.format,dueAt:new Date(`${plan.date}T19:15:00-03:00`).toISOString(),text:editionCaption(plan),cards};
 	}

@@ -1,0 +1,107 @@
+{
+  "retrievedAt": "2026-11-14T13:33:07.624Z",
+  "queryUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids&titles=File%3AGuillermo+del+Toro+at+the+2026+Sundance+Film+Festival+01+%28cropped%29.jpg",
+  "page": {
+    "pageid": 182989232,
+    "ns": 6,
+    "title": "File:Guillermo del Toro at the 2026 Sundance Film Festival 01 (cropped).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 13149510,
+        "width": 3438,
+        "height": 4586,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Guillermo_del_Toro_at_the_2026_Sundance_Film_Festival_01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Guillermo_del_Toro_at_the_2026_Sundance_Film_Festival_01_(cropped).jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=182989232",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2026-02-03 04:35:52",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Guillermo del Toro at the 2026 Sundance Film Festival 01 (cropped)",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "AfroCROWD|Personality rights warning|Self-published work|Extracted images|Information field template with formatting|Guillermo del Toro in 2026|WikiPortraits at 2026 Sundance Film Festival|Uploaded via Campaign:wikiportraits-sundance-2026|People at the 2026 Sundance Film Festival|WikiPortraits of writers|WikiPortraits of filmmakers",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Guillermo del Toro, Director, at the 2026 <a href=\"https://en.wikipedia.org/wiki/2026_Sundance_Film_Festival\" class=\"extiw\" title=\"en:2026 Sundance Film Festival\">2026 Sundance Film Festival</a> for the movie <i>Cronos</i>.",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2026-01-27 23:07:13",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:TheSingingPhotographer\" title=\"User:TheSingingPhotographer\">Gabriel Brooks</a>",
+            "source": "commons-desc-page"
+          },
+          "Attribution": {
+            "value": "Gabriel Brooks / WikiPortraits",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseShortName": {
+            "value": "CC BY 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "personality",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        }
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1286948416,
+        "parentid": 1274875673
+      }
+    ]
+  },
+  "originalSha256": "49f86be7c2a02970b97fe26e0ba5e77e1133188443dd10fadec6ef4dd06d76ae"
+}
