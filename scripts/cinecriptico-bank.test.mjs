@@ -15,3 +15,13 @@ test('Calendar requires all 413 dates and distinct original reviewed entries',()
  assert.equal(report.required,413);assert.equal(report.missing.length,412);assert.equal(report.valid,false);
  assert.ok(report.errors.some(e=>e.includes('editorial review missing')));
 });
+test('Hints cannot disclose the normalized answer and a literal is not wordplay',()=>{
+ const entry={day:'2026-11-14',answer:'SINTÉTICO',letters:9,clue:'Una construcción creada sólo para este control.',hints:['Una primera ayuda suficientemente larga.','La respuesta es SINTETICO, sin la tilde.','Una tercera ayuda suficientemente larga.'],difficulty:8,proof:{op:'literal',text:'SINTETICO'}};
+ const report=auditBank([entry]);
+ assert.ok(report.errors.some(e=>e.includes('solution appears literally in a hint')));
+ assert.ok(report.errors.some(e=>e.includes('actual operation')));
+ entry.hints[1]='Revisá una transformación de letras antes de continuar.';
+ entry.proof={op:'reverse',input:{op:'literal',text:'OCITETNIS'}};
+ const fixed=auditBank([entry]);
+ assert.ok(!fixed.errors.some(e=>e.includes('hint')||e.includes('actual operation')||e.includes('proof')));
+});

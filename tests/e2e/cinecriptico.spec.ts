@@ -6,7 +6,7 @@ test.beforeEach(async({page,baseURL})=>{
  if(url.protocol!=='http:'||!['127.0.0.1','localhost'].includes(url.hostname))return;
  await page.route(url.href,async route=>{const response=await route.fetch();await route.fulfill({response,body:(await response.text()).replace('; upgrade-insecure-requests','')});});
 });
-async function game(page:Page,{midnight=false,noProfile=false,movieSlug='vertigo-1958' as string|null,corruptPending=null as string|null,expiredSession=false}={}) {
+async function game(page:Page,{midnight=false,noProfile=false,movieSlug='vertigo-1958' as string|null,corruptPending=null as string|null,expiredSession=false,letters=7,longCopy=false}={}) {
  if(midnight)await page.clock.install({time:new Date('2026-11-15T02:59:59Z')});
  await page.addInitScript(({id,corruptPending,expiredSession})=>{
   const enc=(v:object)=>btoa(JSON.stringify(v)).replaceAll('+','-').replaceAll('/','_').replaceAll('=','');
@@ -18,7 +18,7 @@ async function game(page:Page,{midnight=false,noProfile=false,movieSlug='vertigo
  let current:any=null,readCount=0,day='2026-11-14',failNext=false,failDashboard=false,dropResponse=false;
  let hold:Promise<void>|null=null,releaseHold=()=>{};const calls:any[]=[];
  let dashboardHold:Promise<void>|null=null,releaseDashboard=()=>{};
- const state=(owner=id)=>({day,available:true,serverNow:'2026-11-15T02:59:59Z',nextAt:midnight&&day==='2026-11-14'?'2026-11-15T03:00:00Z':'2026-11-16T03:00:00Z',clue:'Una pista de prueba, construida sólo para comprobar la interfaz.',letters:7,difficulty:8,game:owner===id?current:null,
+ const state=(owner=id)=>({day,available:true,serverNow:'2026-11-15T02:59:59Z',nextAt:midnight&&day==='2026-11-14'?'2026-11-15T03:00:00Z':'2026-11-16T03:00:00Z',clue:'Una pista de prueba, construida sólo para comprobar la interfaz.'.repeat(longCopy?4:1),letters,difficulty:8,game:owner===id?current:null,
   ...(owner===id&&current&&current.phase!=='playing'?{reveal:{answer:'FICCION',explanation:'Esta explicación usa una respuesta sintética; nunca forma parte del banco real de soluciones.',reference:'Referencia sintética para pruebas.',referenceUrl:'https://example.org/test',movieSlug}}:{})});
  await page.route('**/auth/v1/signup',async route=>{
   calls.push({fn:'signup'});const uid='22222222-2222-4222-8222-222222222222';
@@ -45,7 +45,7 @@ async function game(page:Page,{midnight=false,noProfile=false,movieSlug='vertigo
   if(failNext){failNext=false;return route.abort('failed');}
   if(hold){const wait=hold;hold=null;await wait;}
   if(p.p_action==='start'&&!current)current={id,phase:'playing',revision:0,mistakes:0,hintsUsed:0,score:0,hints:[],guesses:[]};
-  if(p.p_action==='hint'){current.hintsUsed++;current.hints.push('Ayuda progresiva de prueba.');current.revision++;}
+  if(p.p_action==='hint'){current.hintsUsed++;current.hints.push('Ayuda progresiva de prueba. '.repeat(longCopy?16:1));current.revision++;}
   if(p.p_action==='guess'){current.guesses.push(p.p_guess);current.revision++;if(p.p_guess.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toUpperCase()==='FICCION'){current.phase='solved';current.score=1000-180*current.hintsUsed-100*current.mistakes;}else current.mistakes++;}
   if(p.p_action==='giveup'){current.phase='given_up';current.revision++;}
   if(dropResponse){dropResponse=false;return route.abort('failed');}
@@ -60,6 +60,22 @@ async function loseSession(page:Page) {
  await page.evaluate(()=>{localStorage.removeItem('cineposta-trivia-auth-v1');const channel=new BroadcastChannel('cineposta-trivia-auth-v1');channel.postMessage({event:'SIGNED_OUT',session:null});channel.close();});
  await expect(page.locator('[data-status]')).toContainText('Se perdió o cambió tu sesión');
 }
+
+test('longest calendar word and expanded hints fit narrow and desktop layouts',async({page})=>{
+ await game(page,{letters:12,longCopy:true});await page.locator('[data-start]').click();
+ await page.locator('#cryptic-word').fill('CONSTRUCCION');
+ await expect(page.locator('[data-cells] span')).toHaveCount(12);
+ await page.locator('[data-hint]').click();await expect(page.locator('[data-progress]')).toContainText('1/3');
+ for(const width of [320,390,768,1440]){
+  await page.setViewportSize({width,height:950});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  const rects=await page.locator('[data-cells] span').evaluateAll(nodes=>nodes.map(node=>{const r=node.getBoundingClientRect();return{x:r.x,y:r.y,right:r.right,bottom:r.bottom};}));
+  for(const cell of rects){expect(cell.x).toBeGreaterThanOrEqual(0);expect(cell.right).toBeLessThanOrEqual(width);}
+  for(let i=0;i<rects.length;i++)for(let j=i+1;j<rects.length;j++){
+   const a=rects[i],b=rects[j];expect(a.right<=b.x||b.right<=a.x||a.bottom<=b.y||b.bottom<=a.y).toBe(true);
+  }
+ }
+});
 test('shared session, game-scoped player, keyboard, hints, results and persistence',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
  const mock=await game(page);

@@ -31,12 +31,14 @@ export function auditBank(bank,{start='2026-11-14',end='2027-12-31',complete=fal
   const key=word(p.clue??'').replace(/[^A-Z]/g,'');if(clues.has(key))fail('repeated clue');clues.add(key);
   if(new RegExp(`(^|[^A-Z])${word(p.answer)}([^A-Z]|$)`).test(word(p.clue??'')))fail('solution appears literally in clue');
   if(!Array.isArray(p.hints)||p.hints.length!==3||new Set(p.hints).size!==3||p.hints.some(h=>typeof h!=='string'||h.length<15))fail('three distinct progressive hints required');
+  if(Array.isArray(p.hints)&&p.hints.some(h=>typeof h==='string'&&new RegExp(`(^|[^A-Z])${word(p.answer??'')}([^A-Z]|$)`).test(word(h))))fail('solution appears literally in a hint');
   if(![8,9].includes(p.difficulty))fail('target difficulty must be 8 or 9');
   if(!p.explanation||p.explanation.length<100)fail('explanation too short');
   if(!p.reference||!/^https:\/\//.test(p.reference_url??''))fail('missing cinematic reference');
   if(!p.reviewed_at||!p.review?.fair||!p.review?.unique||!p.review?.cinematic||!p.review?.rationale)fail('editorial review missing');
   if(p.movie_slug) {const path=resolve('src/data/movies',p.movie_slug+'.json');if(!/^[a-z0-9-]+$/.test(p.movie_slug)||!existsSync(path))fail('catalog link does not exist');}
   try{if(evaluate(p.proof)!==word(p.answer))fail('proof does not construct solution');}catch{fail('broken mechanical proof');}
+  if(p.proof?.op==='literal')fail('wordplay proof requires an actual operation');
  }
  const missing=[];for(let n=Date.parse(start);n<=Date.parse(end);n+=86400000){const date=new Date(n).toISOString().slice(0,10);if(!days.has(date))missing.push(date);}
  if(complete&&missing.length)errors.push(`Incomplete calendar: ${missing.length} dates missing`);

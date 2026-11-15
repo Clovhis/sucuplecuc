@@ -2,6 +2,8 @@
 
 Fecha de trabajo: 14/11/2026 (Argentina). Publicación a `main` autorizada después de las pruebas en DEV. Este reporte registra el alcance y las verificaciones locales; no certifica el final del deploy de Pages.
 
+Actualización del 15/11/2026: la cobertura parcial documentada abajo es histórica. Se completó y verificó el calendario de 413 fechas; ver [reporte de ampliación](cinecriptico-calendar-2026-11-15.md).
+
 ## Alcance
 
 Juego diario integrado a Home, hub y sitemap; ilustración original con gafas 3D de CinePosta y manos corregidas; versión horizontal para tarjetas. Tipografía, botones y colores alineados con los otros juegos. La explicación enlaza sólo la ficha interna; compartir tiene controles separados y no revela la palabra.
