@@ -36,6 +36,7 @@ function setup(root:HTMLElement) {
   node('solved').textContent='—';node('stats-empty').hidden=false;
   node('dashboard-status').hidden=true;
   node('orb-label').textContent='¿Qué ves?';node('orb-note').textContent='Tu palabra toma forma acá';cells('');
+  renderClue();
  }
  function loseSession() {
   identityRevision++;ready=false;lostIdentity=true;forgetVisiblePlayer();busy=false;refreshing=false;
@@ -64,15 +65,21 @@ function setup(root:HTMLElement) {
  }
  function cells(value:string) {
   const letters=Array.from(normalized(value));
-  node('cells').replaceChildren(...Array.from({length:state?.letters??3},(_,i)=>{const s=document.createElement('span');s.textContent=letters[i]??'·';return s;}));
+  node('cells').replaceChildren(...Array.from({length:state?.game?(state.letters??3):3},(_,i)=>{const s=document.createElement('span');s.textContent=letters[i]??'·';return s;}));
+ }
+ function renderClue() {
+  const unlocked=Boolean(state?.available&&state.game);
+  node('clue').closest('.cryptic-clue')?.classList.toggle('is-locked',!unlocked);
+  node('clue-label').textContent=unlocked?'La pista de hoy':'El misterio de hoy';
+  node('clue').textContent=unlocked?(state?.clue??'Recuperando la pista de tu partida…'):'La pista espera del otro lado.';
+  node('length').textContent=unlocked?`${state?.letters} letras · dificultad ${state?.difficulty}/10 · una sola palabra`:state?.available===false?'Volvé más tarde. Tu historial está a salvo.':player?'Entrá al ritual para revelar el acertijo y comenzar tu partida.':'Elegí tu nick y entrá al ritual para revelar el acertijo.';
  }
  function apply(next:State,sent=performance.now()) {
   const previous=state, dayChanged=Boolean(previous&&previous.day!==next.day);
   state=next;
   deadline=performance.now()+Math.max(0,Date.parse(next.nextAt)-Date.parse(next.serverNow)-(performance.now()-sent)/2);
   node('date').textContent=new Intl.DateTimeFormat('es-AR',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(`${next.day}T12:00:00Z`));
-  node('clue').textContent=next.clue??'El oráculo todavía no tiene un acertijo para hoy.';
-  node('length').textContent=next.available?`${next.letters} letras · dificultad ${next.difficulty}/10 · una sola palabra`:'Volvé más tarde. Tu historial está a salvo.';
+  renderClue();
   const g=next.game, ended=Boolean(g&&g.phase!=='playing');
   node('start').hidden=Boolean(g)||!next.available;
   node('answer-form').hidden=!g||ended;

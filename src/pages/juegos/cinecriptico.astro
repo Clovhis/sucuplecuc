@@ -21,7 +21,7 @@ const countries = TRIVIA_COUNTRY_CODES.map(code => ({ code, label: regionNames.o
   <noscript>Activá JavaScript para jugar. La solución se comprueba de forma segura en el servidor.</noscript>
   <div class="cryptic-layout">
    <section class="cryptic-chamber" aria-label="Acertijo diario">
-    <div class="cryptic-clue"><p class="cryptic-kicker">La pista de hoy</p><h2 data-clue>El misterio está por aparecer.</h2><p data-length>Una sola palabra · seis intentos · tres ayudas</p></div>
+    <div class="cryptic-clue is-locked"><p class="cryptic-kicker" data-clue-label>El misterio de hoy</p><h2 data-clue>La pista espera del otro lado.</h2><p data-length>Elegí tu nick y entrá al ritual para revelar el acertijo.</p></div>
     <div class="cryptic-orb" data-orb>
      <img src={`${base}assets/games/cinecriptico-oracle.webp?v=3d-hands-v2`} width="1024" height="1024" alt="" fetchpriority="high" />
      <div class="cryptic-vision"><span class="cryptic-kicker" data-orb-label>¿Qué ves?</span><div class="cryptic-cells" data-cells aria-hidden="true"><span>·</span><span>·</span><span>·</span></div><span class="cryptic-orb-note" data-orb-note>Tu palabra toma forma acá</span></div>

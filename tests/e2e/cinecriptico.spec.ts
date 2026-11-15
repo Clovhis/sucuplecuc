@@ -6,7 +6,7 @@ test.beforeEach(async({page,baseURL})=>{
  if(url.protocol!=='http:'||!['127.0.0.1','localhost'].includes(url.hostname))return;
  await page.route(url.href,async route=>{const response=await route.fetch();await route.fulfill({response,body:(await response.text()).replace('; upgrade-insecure-requests','')});});
 });
-async function game(page:Page,{midnight=false,noProfile=false,movieSlug='vertigo-1958' as string|null,corruptPending=null as string|null,expiredSession=false,letters=7,longCopy=false}={}) {
+async function game(page:Page,{midnight=false,noProfile=false,movieSlug='vertigo-1958' as string|null,corruptPending=null as string|null,expiredSession=false,letters=7,longCopy=false,leakyLobby=false}={}) {
  if(midnight)await page.clock.install({time:new Date('2026-11-15T02:59:59Z')});
  await page.addInitScript(({id,corruptPending,expiredSession})=>{
   const enc=(v:object)=>btoa(JSON.stringify(v)).replaceAll('+','-').replaceAll('/','_').replaceAll('=','');
@@ -18,7 +18,8 @@ async function game(page:Page,{midnight=false,noProfile=false,movieSlug='vertigo
  let current:any=null,readCount=0,day='2026-11-14',failNext=false,failDashboard=false,dropResponse=false;
  let hold:Promise<void>|null=null,releaseHold=()=>{};const calls:any[]=[];
  let dashboardHold:Promise<void>|null=null,releaseDashboard=()=>{};
- const state=(owner=id)=>({day,available:true,serverNow:'2026-11-15T02:59:59Z',nextAt:midnight&&day==='2026-11-14'?'2026-11-15T03:00:00Z':'2026-11-16T03:00:00Z',clue:'Una pista de prueba, construida sólo para comprobar la interfaz.'.repeat(longCopy?4:1),letters,difficulty:8,game:owner===id?current:null,
+ const state=(owner=id)=>({day,available:true,serverNow:'2026-11-15T02:59:59Z',nextAt:midnight&&day==='2026-11-14'?'2026-11-15T03:00:00Z':'2026-11-16T03:00:00Z',game:owner===id?current:null,
+  ...(leakyLobby||(owner===id&&current)?{clue:'Una pista de prueba, construida sólo para comprobar la interfaz.'.repeat(longCopy?4:1),letters,difficulty:8}:{}),
   ...(owner===id&&current&&current.phase!=='playing'?{reveal:{answer:'FICCION',explanation:'Esta explicación usa una respuesta sintética; nunca forma parte del banco real de soluciones.',reference:'Referencia sintética para pruebas.',referenceUrl:'https://example.org/test',movieSlug}}:{})});
  await page.route('**/auth/v1/signup',async route=>{
   calls.push({fn:'signup'});const uid='22222222-2222-4222-8222-222222222222';
@@ -32,6 +33,7 @@ async function game(page:Page,{midnight=false,noProfile=false,movieSlug='vertigo
  await page.route('**/rest/v1/rpc/*',async route=>{
   const fn=route.request().url().split('/').pop(),p=route.request().postDataJSON();calls.push({fn,...p});
   const token=route.request().headers().authorization?.split(' ')[1]??'';
+  if(!token.split('.')[1])return route.fulfill({status:401,json:{code:'PGRST301',message:'authentication required'}});
   const owner=JSON.parse(Buffer.from(token.split('.')[1],'base64url').toString()).sub;
   if(fn==='get_cinecriptico_player')return route.fulfill({json:noProfile||owner!==id?null:{id,name:'MismaButaca',country:'AR',age:30}});
   if(fn==='claim_cinecriptico_player')return route.fulfill({json:{id,name:p.p_name,country:p.p_country,age:p.p_age}});
@@ -60,6 +62,21 @@ async function loseSession(page:Page) {
  await page.evaluate(()=>{localStorage.removeItem('cineposta-trivia-auth-v1');const channel=new BroadcastChannel('cineposta-trivia-auth-v1');channel.postMessage({event:'SIGNED_OUT',session:null});channel.close();});
  await expect(page.locator('[data-status]')).toContainText('Se perdió o cambió tu sesión');
 }
+
+test('lobby and nickname form conceal the clue until the server starts the game',async({page})=>{
+ const mock=await game(page,{noProfile:true,leakyLobby:true});
+ await expect(page.locator('[data-clue]')).toHaveText('La pista espera del otro lado.');
+ await expect(page.locator('[data-length]')).not.toContainText('letras');
+ await expect(page.locator('[data-cells] span')).toHaveCount(3);
+ await page.locator('[data-start]').click();
+ await expect(page.locator('[data-profile]')).toBeVisible();
+ await expect(page.locator('body')).not.toContainText('Una pista de prueba');
+ expect(mock.calls.filter(c=>c.p_action==='start')).toHaveLength(0);
+ await page.getByLabel('Nickname',{exact:true}).fill('ButacaNueva');await page.getByLabel('Edad',{exact:true}).fill('30');
+ await page.getByRole('button',{name:'Reservar nick y jugar'}).click();
+ await expect(page.locator('[data-clue]')).toContainText('Una pista de prueba');
+ await loseSession(page);await expect(page.locator('body')).not.toContainText('Una pista de prueba');
+});
 
 test('longest calendar word and expanded hints fit narrow and desktop layouts',async({page})=>{
  await game(page,{letters:12,longCopy:true});await page.locator('[data-start]').click();

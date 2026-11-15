@@ -67,6 +67,8 @@ begin
   'available',found);
  if p.day is null then return result; end if;
  select * into g from cinecriptico_private.games where owner_id=p_uid and day=d;
+ -- Reading the lobby must not reveal any puzzle content before the authoritative start.
+ if g.id is null then return result||jsonb_build_object('game',null); end if;
  result:=result||jsonb_build_object('clue',p.clue,'letters',p.letters,'difficulty',p.difficulty,
   'game',case when g.id is null then null else jsonb_build_object('id',g.id,'phase',g.phase,
    'revision',g.revision,'mistakes',g.mistakes,'hintsUsed',g.hints_used,'score',g.score,

@@ -21,7 +21,7 @@ test('CineCríptico: ownership, private answers, authoritative score, replay, li
   await db.exec(readFileSync(new URL('../supabase/sql/trivia_sessions.sql',import.meta.url),'utf8'));
   const baseSQL=readFileSync(new URL('../supabase/sql/cinecriptico.sql',import.meta.url),'utf8');
   // Recreate the pre-upgrade function so the boundary migration must actually patch it.
-  await db.exec(baseSQL.replace(/\r?\n d:=cinecriptico_private\.day_at\(clock_timestamp\(\)\);\r?\n if p_day is distinct from d then return cinecriptico_private\.state\(uid\); end if;/,''));
+  await db.exec(baseSQL.replace(/\r?\n d:=cinecriptico_private\.day_at\(clock_timestamp\(\)\);\r?\n if p_day is distinct from d then return cinecriptico_private\.state\(uid\); end if;/,'').replace(" if g.id is null then return result||jsonb_build_object('game',null); end if;",''));
   today=(await db.query("select cinecriptico_private.day_at(clock_timestamp())::text as day")).rows[0].day;
   await db.query(`insert into public.trivia_players(owner_id,nickname,country_code,age) values($1,'ButacaUno','AR',30),($2,'Clovhis','AR',31),($3,'ButacaLegada','AR',32)`,[a,b,legacy]);
   await db.exec(`insert into cinecriptico_private.puzzles(day,clue,answer,letters,hints,explanation,reference,reference_url,difficulty,proof,reviewed_at)
@@ -31,14 +31,19 @@ test('CineCríptico: ownership, private answers, authoritative score, replay, li
   const legacyGame=(await db.query('select row_to_json(g) as game from cinecriptico_private.games g where owner_id=$1',[legacy])).rows[0].game;
   await db.exec(readFileSync(new URL('../supabase/sql/cinecriptico_players.sql',import.meta.url),'utf8'));
   await db.exec(readFileSync(new URL('../supabase/sql/cinecriptico_day_boundary.sql',import.meta.url),'utf8'));
+  const gateSQL=readFileSync(new URL('../supabase/sql/cinecriptico_start_gate.sql',import.meta.url),'utf8');
+  await db.exec(gateSQL);await db.exec(gateSQL);
   assert.deepEqual((await db.query('select row_to_json(g) as game from cinecriptico_private.games g where owner_id=$1',[legacy])).rows[0].game,legacyGame);
   await user(legacy);
   assert.equal((await db.query('select public.get_cinecriptico_player() as p')).rows[0].p.name,'ButacaLegada');
   // Existing trivia reservation belongs to B. Another identity A can reserve it in Cryptic.
   await user(a);
+  const lobby=await call();assert.equal(lobby.available,true);assert.equal(lobby.game,null);
+  for(const field of ['clue','letters','difficulty','reveal'])assert.equal(lobby[field],undefined);
   assert.equal((await db.query('select public.get_cinecriptico_player() as p')).rows[0].p,null);
   const profile=(await db.query("select public.claim_cinecriptico_player('Clovhis','AR',30) as p")).rows[0].p;
   assert.equal(profile.name,'Clovhis');
+  assert.equal((await call()).clue,undefined); // A nickname alone does not start the puzzle.
   assert.equal((await db.query('select public.get_trivia_player() as p')).rows[0].p.name,'ButacaUno');
   assert.equal((await db.query("select public.claim_cinecriptico_player('Clovhis','AR',30) as p")).rows[0].p.id,profile.id);
   await assert.rejects(db.query("select public.claim_cinecriptico_player('OtroApodo','AR',30)"),/nickname belongs/);

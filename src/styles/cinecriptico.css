@@ -1,4 +1,5 @@
 .cryptic-edition { background:#0b0e12; }
+.cryptic-clue.is-locked h2 { color:var(--cp-accent); }
 .cryptic-edition::before,.cryptic-edition::after { display:none; }
 .cryptic-ranking li.cryptic-ranking-empty { display:block;line-height:1.7; }
 .cryptic-connection-actions { display:flex;flex-wrap:wrap;gap:.75rem; }
