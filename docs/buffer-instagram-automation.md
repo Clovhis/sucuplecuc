@@ -18,7 +18,7 @@ JPEG sRGB 1080×1350, menos de 8 MB. Tipografía local Noto Sans SIL OFL, mínim
 
 Instagram/Buffer no convierten las URLs del caption en links clicables. Las próximas ediciones conservan referencias canónicas para identificar las películas y evitar duplicados, sin parámetros UTM visibles. Caption y placa indican «enlace del perfil»: el 14/11 Leo mostró `cineposta.com.ar` configurado en el campo Sitio web de `@cineposta.ar`. No prometer clic directo desde el caption. El formato final no cambia los posts existentes.
 
-El registro v2 `assets/social/instagram-rights.json` conserva 28 fotografías aprobadas; la biblioteca operativa se consulta en Supabase. Cada permiso conserva fuente, evidencia archivada/hash, identidad, licencia, territorio, embargo/vencimiento y alcance para publicación orgánica/alojamiento público. **El conjunto inicial contiene personas/eventos; los pósters y escenas de estudios siguen pendientes de permiso.** No se atribuye a TMDB una licencia que no posee.
+El registro v2 `assets/social/instagram-rights.json` conserva 163 fotografías aprobadas; la biblioteca operativa se consulta en Supabase. Cada permiso conserva fuente, evidencia archivada/hash, identidad, licencia, territorio, embargo/vencimiento y alcance para publicación orgánica/alojamiento público. **El conjunto inicial contiene personas/eventos; los pósters y escenas de estudios siguen pendientes de permiso.** No se atribuye a TMDB una licencia que no posee.
 
 El selector excluye películas sin material autorizado, reserva todos los integrantes y prioriza fotografías menos usadas. Penaliza formatos/temas/categorías recientes, sin rotación por día de semana. No reinicia el historial; si se agota el conjunto, falla sin publicar un gráfico genérico. No cambia películas, scores ni ediciones de la home. No afirma disponibilidad a partir de plataformas viejas.
 
@@ -67,3 +67,7 @@ Fuentes oficiales revalidadas el 14/11/2026: [API incluida en Free](https://supp
 ## Biblioteca central Supabase
 
 El generador diario consulta la biblioteca aprobada de Supabase; sus fallos detienen la selección y no activan una copia obsoleta ni gráficos abstractos. Las URLs finales de Buffer continúan fijadas a commits de GitHub. Ver [arquitectura, administración, pruebas y límites gratuitos](social-image-library.md).
+
+## Ampliación editorial — 15/11/2026
+
+Biblioteca vigente: **163 imágenes**, incluidas **40 escenas/stills de 16 películas**, 122 retratos y una foto de evento. Se agregaron 135 archivos: 55 procedentes de paquetes oficiales de prensa y 80 fotografías internacionales con licencias verificadas. Los nuevos binarios están sólo en Supabase. Los permisos por fuente/paquete se registran en `social_media_grants` y `assets/social/source-grants.json`; no se solicita una autorización individual redundante cuando la fuente ya respalda el uso. Ver [adquisición editorial, alcances y mantenimiento](social-editorial-acquisition.md) y [reporte de cobertura](../reports/social/editorial-library-2026-11-15.json). Las referencias al conjunto inicial describen el historial, no el límite actual.

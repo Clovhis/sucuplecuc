@@ -4,7 +4,7 @@ Desde el 14/11/2026 el generador diario exige una imagen real autorizada **en to
 
 ## Registro reutilizable
 
-`assets/social/instagram-rights.json` v2 contiene 28 fotografías aprobadas con evidencia por archivo en `assets/social/rights-evidence/`. Las 16 fotografías iniciales conservan su respaldo WebP en `public/assets/social/photos/`; las 12 nuevas existen sólo en Storage. Algunas fuentes se localizaron desde `people.json`; se descargó mayor resolución cuando la copia local era demasiado pequeña. El resto de los retratos y pósters **no** se habilita automáticamente.
+`assets/social/instagram-rights.json` v2 contiene 163 fotografías aprobadas con evidencia por archivo en `assets/social/rights-evidence/`. Las 16 fotografías iniciales conservan su respaldo WebP en `public/assets/social/photos/`; las 12 nuevas existen sólo en Storage. Algunas fuentes se localizaron desde `people.json`; se descargó mayor resolución cuando la copia local era demasiado pequeña. El resto de los retratos y pósters **no** se habilita automáticamente.
 
 Cada entrada conserva identidad del sujeto, título del archivo, fuente y URL original, revisión de la página de licencia, autor/crédito, licencia/URL, fecha de foto, restricciones, hashes del archivo y de la evidencia, fecha de verificación y permiso para Instagram orgánico y alojamiento público. El job diario reutiliza esta evidencia: no hace una nueva investigación ni llama a TMDB cada día.
 
@@ -54,3 +54,7 @@ Fuentes: [TMDB FAQ](https://developer.themoviedb.org/docs/faq), [CC BY 4.0](http
 ## Biblioteca central Supabase
 
 El generador diario consulta la biblioteca aprobada de Supabase; sus fallos detienen la selección y no activan una copia obsoleta ni gráficos abstractos. Las URLs finales de Buffer continúan fijadas a commits de GitHub. Ver [arquitectura, administración, pruebas y límites gratuitos](social-image-library.md).
+
+## Ampliación editorial — 15/11/2026
+
+Biblioteca vigente: **163 imágenes**, incluidas **40 escenas/stills de 16 películas**, 122 retratos y una foto de evento. Se agregaron 135 archivos: 55 procedentes de paquetes oficiales de prensa y 80 fotografías internacionales con licencias verificadas. Los nuevos binarios están sólo en Supabase. Los permisos por fuente/paquete se registran en `social_media_grants` y `assets/social/source-grants.json`; no se solicita una autorización individual redundante cuando la fuente ya respalda el uso. Ver [adquisición editorial, alcances y mantenimiento](social-editorial-acquisition.md) y [reporte de cobertura](../reports/social/editorial-library-2026-11-15.json). Las referencias al conjunto inicial describen el historial, no el límite actual.

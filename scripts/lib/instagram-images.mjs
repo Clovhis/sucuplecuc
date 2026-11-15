@@ -6,6 +6,7 @@ import {remoteLibrary,libraryBytes} from './social-library.mjs';
 export function assertImageGrant(asset,today=argentinaDate()) {
   const permission=asset.permission;
   if(asset.status!=='approved')return false;
+  if(asset.reviewRegion==='AR'&&(asset.argentinaReview?.status!=='approved'||!/^https:\/\//.test(asset.argentinaReview.evidenceUrl||'')||!asset.argentinaReview.summary))return false;
   if(!asset.id || !['portrait','event-photo','poster','still','backdrop'].includes(asset.kind) || !asset.subject || !asset.credit || !asset.title || !/^https:\/\//u.test(asset.sourceUrl||'') || !/^https:\/\//u.test(asset.evidenceUrl||'') || !/^https:\/\//u.test(asset.licenseUrl||'') || !asset.license || !/^[a-f0-9]{64}$/u.test(asset.sha256||'') || !/^(?:assets\/social\/photos|assets\/posters|people)\/[a-zA-Z0-9/_-]+\.(webp|jpg|png)$/u.test(asset.path||''))throw Error(`Registro de imagen incompleto: ${asset.id}`);
   if(!permission || permission.organicInstagram!==true || permission.publicHosting!==true || !permission.territories?.some(t=>['worldwide','AR'].includes(t)))return false;
   if(!['open-license','press-permission'].includes(permission.basis))throw Error('Falta una base de autorización admitida.');
@@ -35,14 +36,21 @@ export async function imageRegistry(root=ROOT,today=argentinaDate()) {
 }
 
 export function appliesToMovie(asset,movie) {
+  if(asset.grantId)return asset.slugs?.includes(movie.slug)===true;
   return asset.slugs?.includes(movie.slug) || (asset.kind==='portrait' && [...(movie.mainCast||[]),movie.director].includes(asset.person));
 }
 
 export async function visualMovies(root=ROOT,{movies,today=argentinaDate(),history={posts:[]}}={}) {
   const assets=await imageRegistry(root,today);
+  return moviesWithArt(assets,movies||await loadMovies(root),history,today);
+}
+
+export function moviesWithArt(assets,movies,history,today) {
   // Reuse rights, but avoid the same photograph on consecutive days when alternatives exist.
+  const uses=history.posts.slice(-60).flatMap(p=>p.media?.flatMap(m=>m.rights?.assetIds||[])||[]);
   const recent=new Set(history.posts.slice(-14).flatMap(p=>p.media?.flatMap(m=>m.rights?.assetIds||[])||[]));
-  return (movies||await loadMovies(root)).map(movie=>({...movie,socialArt:assets.filter(a=>appliesToMovie(a,movie)).sort((a,b)=>Number(recent.has(a.id))-Number(recent.has(b.id)) || Number(a.kind==='portrait')-Number(b.kind==='portrait') || a.id.localeCompare(b.id))}));
+  const rank=a=>['still','backdrop'].includes(a.kind)?0:a.kind==='portrait'?1:2;
+  return movies.map(movie=>({...movie,socialArt:assets.filter(a=>appliesToMovie(a,movie)&&assertImageGrant(a,today)).sort((a,b)=>rank(a)-rank(b)||Number(recent.has(a.id))-Number(recent.has(b.id))||uses.filter(x=>x===a.id).length-uses.filter(x=>x===b.id).length||digest(today+':'+a.id).localeCompare(digest(today+':'+b.id)))}));
 }
 
 export async function imageBytes(asset,root=ROOT) {
@@ -53,6 +61,7 @@ export async function imageBytes(asset,root=ROOT) {
 }
 
 export function photoCaption(asset) {
+  if(asset.editorialContext?.festival)return `${asset.kind==='portrait'?asset.person+' · ':''}Selección Sundance ${asset.editorialContext.year}`;
   return asset.kind==='portrait' ? `${asset.person} · archivo ${asset.photoDate?.match(/\d{4}/)?.[0]||''}`.trim() : asset.kind==='event-photo' ? `${asset.subject} · archivo ${asset.photoDate?.match(/\d{4}/)?.[0]||''}`.trim() : asset.kind==='poster'?'Afiche original':'Fotografía de la película';
 }
 
@@ -60,5 +69,5 @@ export function editionCredits(edition) {
   const assets=[...new Map(edition.movies.map(m=>{if(!m.socialArt?.length)throw Error(`Sin imagen autorizada: ${m.slug}`);return[m.socialArt[0].id,m.socialArt[0]];})).values()];
   const licenses=[...new Map(assets.map(a=>[a.license,a.licenseUrl])).entries()];
   const lines=assets.map(a=>`${a.subject}: ${a.credit} · «${a.title}». ${a.sourceUrl}`);
-  return `Fotos de archivo${assets.some(a=>['poster','still','backdrop'].includes(a.kind))?' y material cinematográfico':''}:\n${lines.join('\n')}\n${licenses.map(([name,url])=>`${name}: ${url}`).join('\n')}\nRecorte y composición: CinePosta. ${assets.some(a=>a.license.includes('-SA'))?'Placas adaptadas: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/':'Gráfica propia; fotos bajo sus licencias indicadas.'}`;
+  return `Fotografías y material cinematográfico:\n${lines.join('\n')}\n${licenses.map(([name,url])=>`${name}: ${url}`).join('\n')}\nComposición: CinePosta. ${assets.some(a=>a.license.includes('-SA'))?'Fotos CC BY-SA adaptadas: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. El material de prensa conserva sus condiciones.':'Fotos bajo sus licencias y permisos indicados.'}`;
 }

@@ -23,7 +23,8 @@ export function planEdition(movies, history, externalSlugs, date, {format:forced
   const recent = history.posts.slice(-4);
   const recentImages=new Set(history.posts.slice(-14).flatMap(p=>p.media?.flatMap(m=>m.rights?.assetIds||[])||[]));
   const pool = movies.filter(m => eligibleMovie(m,date) && m.socialArt?.length && !used.has(m.slug));
-  pool.sort((a,b) => Number(recentImages.has(a.socialArt[0].id))-Number(recentImages.has(b.socialArt[0].id)) || Number(recent.some(p=>p.category===a.category))-Number(recent.some(p=>p.category===b.category)) || seed(`${date}:${a.slug}`)-seed(`${date}:${b.slug}`));
+  const cinematic=m=>['still','backdrop'].includes(m.socialArt[0].kind);
+  pool.sort((a,b) => Number(cinematic(b))-Number(cinematic(a)) || Number(recentImages.has(a.socialArt[0].id))-Number(recentImages.has(b.socialArt[0].id)) || Number(recent.some(p=>p.category===a.category))-Number(recent.some(p=>p.category===b.category)) || seed(`${date}:${a.slug}`)-seed(`${date}:${b.slug}`));
   if (!pool.length) throw Error('No quedan películas inéditas con imágenes autorizadas. No se publica una placa genérica ni se reinicia el historial.');
   const distinct=group=>{const ids=new Set();return group.flatMap(m=>{const art=m.socialArt.find(a=>!ids.has(a.id));if(!art)return[];ids.add(art.id);return[{...m,socialArt:[art,...m.socialArt.filter(a=>a.id!==art.id)]}];});};
   const themes = [];
@@ -38,7 +39,8 @@ export function planEdition(movies, history, externalSlugs, date, {format:forced
     const group=distinct(pool.filter(m=>m.director===director));
     if(group.length>=5) themes.push({key:`director:${director}`,title:`5 películas de ${director}`,movies:group.slice(0,5),category:group[0].category});
   }
-  themes.sort((a,b)=>Number(recent.some(p=>p.theme===a.key))-Number(recent.some(p=>p.theme===b.key)) || seed(`${date}:${a.key}`)-seed(`${date}:${b.key}`));
+  const cinemaCount=theme=>theme.movies.filter(cinematic).length;
+  themes.sort((a,b)=>cinemaCount(b)-cinemaCount(a)||Number(recent.some(p=>p.theme===a.key))-Number(recent.some(p=>p.theme===b.key)) || seed(`${date}:${a.key}`)-seed(`${date}:${b.key}`));
   const options=[{format:'protagonist',movies:[pool[0]],title:pool[0].title,key:'spotlight',category:pool[0].category}];
   const scored=pool.find(m=>m.cinepostaScore>=8);
   if(scored) options.push({format:'score',movies:[scored],title:scored.title,key:'score',category:scored.category});
@@ -59,13 +61,14 @@ export function planEdition(movies, history, externalSlugs, date, {format:forced
 
 export function editionCaption(edition) {
   const multi=edition.movies.length>1;
-  const intro=multi?edition.title+'.':`${edition.movies[0].title}: la mirada de CinePosta.`;
+  const festivalOnly=edition.movies.every(m=>m.socialArt[0].editorialContext?.festival==='Sundance');
+  const intro=multi?edition.title+'.':`${festivalOnly?'De Sundance a CinePosta: ':''}${edition.movies[0].title}${festivalOnly?'.':': la mirada de CinePosta.'}`;
   const credits=editionCredits(edition);
   const ending=multi?'¿Cuál va primero? Guardá la selección y compartila. Reseñas completas en el enlace del perfil.':'¿Qué te dejó esta película? Reseña completa en el enlace del perfil.';
   // Instagram captions render URLs as plain text. Keep canonical references for
   // identification/deduplication without exposing long, unusable tracking queries.
   const links=edition.movies.map(m=>movieUrl(m.slug));
-  const details=edition.movies.map((m,i)=>`${multi?`${i+1}. `:''}${m.title} (${m.year}) · ${scoreLabel(m)}${!multi?'\n'+editorialExcerpt(m):''}`);
+  const details=edition.movies.map((m,i)=>`${multi?`${i+1}. `:''}${m.title} (${m.year}) · ${scoreLabel(m)}${m.socialArt[0].editorialContext?.festival?` · Selección Sundance ${m.socialArt[0].editorialContext.year}`:''}${!multi?'\n'+editorialExcerpt(m):''}`);
   let result=[intro,...details,ending,...links,credits,'#CinePosta #QueVer #Cine'].join('\n\n');
   if([...result].length>2200)result=[intro,...details,ending,...edition.movies.map(m=>movieUrl(m.slug)),credits,'#CinePosta'].join('\n\n');
   if([...result].length>2200)throw Error('La atribución completa no entra en Instagram: reducir la selección, nunca quitar créditos.');
@@ -106,14 +109,22 @@ export async function renderEdition(edition,directory,{root=ROOT}={}) {
     let used;
     if(!movie) {
       used=arts;
-      if(arts.length===2) {
+      const filmFrames=arts.every(a=>['still','backdrop'].includes(a.kind));
+      if(filmFrames&&arts.length===2){
+        for(const [i,a]of arts.entries())await photo(a,0,150+i*390,1080,386);
+      } else if(filmFrames){
+        // A full-width lead frame, then a filmstrip. Wide stills stay intact
+        // instead of disappearing inside portrait-shaped collage cells.
+        await photo(arts[0],0,150,1080,560);
+        for(const [i,a]of arts.slice(1).entries())await photo(a,i*270,714,266,240);
+      } else if(arts.length===2) {
         for(const [i,a] of arts.entries())await photo(a,i*540,150,536,810);
       } else {
         for(const [i,a] of arts.entries())await photo(a,i<2?i*540:(i-2)*360,i<2?150:555,i<2?536:356,401);
       }
       await add(edition.format==='double'?'DOBLE FUNCIÓN':edition.format==='ranking'?'SEGÚN EL SCORE CINEPOSTA':'DESLIZÁ PARA DESCUBRIR',54,986,972,50,28,p.accent);
       await add(edition.title,54,1050,972,170,66);
-      await add('Fotografías de archivo · créditos en el texto',54,1234,972,42,26,p.muted,false);
+      await add(arts.some(a=>['portrait','event-photo'].includes(a.kind))?'Fotografías de archivo y de prensa · créditos en el texto':'Escenas y fotografías de prensa · créditos en el texto',54,1234,972,42,26,p.muted,false);
     } else {
       const art=arts[multi?index-1:0];used=[art];
       if(art.kind==='poster') {
@@ -127,7 +138,9 @@ export async function renderEdition(edition,directory,{root=ROOT}={}) {
         await photo(art,0,150,1080,770,art.kind==='event-photo'?'contain':'cover');
         rect(0,920,1080,50,p.bg);
         await add(photoCaption(art),54,931,972,40,26,p.muted,false);
-        await add(`${edition.format==='ranking'?`${index}. `:''}${movie.title}`,54,1002,972,155,68);
+        const separateScore=edition.format==='score'&&art.permission.overlay!==true;
+        await add(`${edition.format==='ranking'?`${index}. `:''}${movie.title}`,54,1002,separateScore?720:972,155,68);
+        if(separateScore){await add(`${movie.cinepostaScore}`,820,994,210,120,108,p.accent);await add('/ 10',910,1120,110,36,28,p.muted);}
         await add(`${movie.year}${movie.runtimeMinutes?`  /  ${movie.runtimeMinutes} MIN`:''}   ·   ${scoreLabel(movie)}`,54,1180,972,58,30,p.accent);
         if(edition.format==='score' && art.permission.overlay===true) {
           rect(54,729,200,168,p.accent);
@@ -147,7 +160,7 @@ export async function renderEdition(edition,directory,{root=ROOT}={}) {
     await sharp({create:{width:1080,height:1350,channels:3,background:p.bg}}).composite(layers).toColourspace('srgb').jpeg({quality:94,mozjpeg:true}).toFile(output);
     const bytes=await readFile(output);if(bytes.length>8*1024*1024)throw Error('Placa superior a 8 MB.');
     const license=used.some(a=>a.license.includes('-SA'))?'CC BY-SA 4.0':null;
-    cards.push({path:output,mediaPath:`media/${filename}`,sha256:digest(bytes),width:1080,height:1350,alt:movie?`${movie.title} (${movie.year}). ${scoreLabel(movie)}. ${photoCaption(used[0])}.`:`${edition.title}. Fotografías de archivo: ${used.map(a=>a.subject).join(', ')}.`,rights:{type:'licensed-photography',assetIds:used.map(a=>a.id),assets:used.map(({bytes:_bytes,...a})=>a),adaptationLicense:license,changes:'Recorte, redimensionado y composición editorial. Los retratos y conciertos son imágenes de archivo.'}});
+    cards.push({path:output,mediaPath:`media/${filename}`,sha256:digest(bytes),width:1080,height:1350,alt:movie?`${movie.title} (${movie.year}). ${scoreLabel(movie)}. ${photoCaption(used[0])}.`:`${edition.title}. Fotografías: ${used.map(a=>a.subject).join(', ')}.`,rights:{type:'licensed-photography',assetIds:used.map(a=>a.id),assets:used.map(({bytes:_bytes,...a})=>a),adaptationLicense:license,adaptationLicenseScope:license?'Únicamente las fotografías CC BY-SA adaptadas; excluye material de prensa.':null,changes:used.some(a=>a.permission.crop===true)?'Recorte permitido, redimensionado y composición editorial.':'Imágenes completas, reducción técnica y composición editorial fuera de la fotografía.'}});
   }
   return cards;
 }

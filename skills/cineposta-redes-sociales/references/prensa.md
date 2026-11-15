@@ -11,3 +11,7 @@ Con permiso pendiente, avanzar con investigación, guion y maqueta local identif
 Para una pieza dinámica, `npm run social:reel -- --project proyecto.json --out .tmp/carpeta-nueva` crea un montaje vertical con fotos en movimiento, entrada de títulos, cortes y audio original sin samples. El proyecto registra las fuentes y el recibo conserva hashes. Por defecto es una maqueta local; `--release` exige evidencia por asset y no publica nada. No marcar `cleared` sólo para pasar el gate. Los Reels de clips reales pueden montarse con FFmpeg cuando el paquete permita edición; no convertir fotos animadas en una afirmación de que hay escenas de vídeo del film.
 
 La versión diaria de Instagram sigue siendo el feed automatizado existente hasta un pedido explícito de cambiarla. Una pieza especial no autoriza cambiar cron, historial, clave ni automatización de X.
+
+## Política práctica y biblioteca vigente
+
+Usar `docs/social-editorial-acquisition.md`. Una autorización por fuente/paquete se revisa y registra una vez; por fotografía se conservan identidad, crédito, procedencia y hash, sin repetir la investigación de las mismas condiciones. Los kits oficiales ofrecidos a prensa pueden evaluarse como distribución editorial dirigida al medio, conservando esa base distinta de una carta individual o licencia abierta. Si hay restricciones expresas incompatibles, no incorporar. El material argentino requiere revisión adicional. Priorizar escenas; proteger los medios e IDs ya programados en Buffer. No modificar X.

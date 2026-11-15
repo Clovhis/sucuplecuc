@@ -5,6 +5,7 @@ import sharp from 'sharp';
 import {ROOT,digest,loadMovies} from './lib/social-media.mjs';
 import {assertImageGrant} from './lib/instagram-images.mjs';
 import {remoteLibrary,libraryBytes} from './lib/social-library.mjs';
+import {resolveSourceGrant} from './lib/social-grants.mjs';
 
 const config=JSON.parse(await readFile(path.join(ROOT,'assets/social/supabase-library.json'),'utf8'));
 const upload=process.argv.includes('--import');
@@ -26,6 +27,8 @@ if(upload){
  for(const asset of candidates){
   if(!assertImageGrant(asset)||asset.kind==='poster')continue;
   if(asset.slugs?.some(slug=>!slugs.has(slug))||(asset.person&&!people[asset.person]))throw Error('Referencia de película/persona inexistente: '+asset.id);
+  if(asset.person&&/Argentin/i.test(people[asset.person]?.nationalityPrimary||'')&&asset.reviewRegion!=='AR')throw Error('Falta revisión argentina explícita.');
+  if(asset.grantId){const grants=await(await request('/rest/v1/social_media_grants?select=id,status,metadata,evidence_raw,evidence_sha256&id=eq.'+asset.grantId)).json();if(!resolveSourceGrant(asset,grants[0],new Intl.DateTimeFormat('en-CA',{timeZone:'America/Argentina/Buenos_Aires'}).format(new Date())))throw Error('Permiso de fuente vencido.');}
   // Never replace an existing approved object; duplicates are immutable.
   const existing=await (await request('/rest/v1/social_media_assets?select=id,sha256&sha256=eq.'+asset.sha256)).json();
   if(existing.length){console.log(`${asset.id}: hash ya registrado`);continue;}
@@ -48,7 +51,7 @@ if(upload){
   const objects=await(await request('/storage/v1/object/list/'+config.bucket,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prefix:folder,search:name,limit:100})})).json();
   const object=objects.find(o=>o.name===name);
   if(!object?.id)throw Error('Falta referencia Storage. No aprobar metadata.');
-  const row={id:asset.id,bucket_id:config.bucket,object_id:object.id,object_path,sha256:asset.sha256,status:'approved',kind:asset.kind,width:asset.width,height:asset.height,bytes:bytes.length,expires_on:asset.permission.expiresAt||null,embargo_until:asset.embargoUntil||null,metadata:asset,evidence_raw,evidence:JSON.parse(evidence_raw)};
+  const row={id:asset.id,bucket_id:config.bucket,object_id:object.id,object_path,sha256:asset.sha256,status:'approved',kind:asset.kind,width:asset.width,height:asset.height,bytes:bytes.length,grant_id:asset.grantId||null,expires_on:asset.permission.expiresAt||null,embargo_until:asset.embargoUntil||null,metadata:asset,evidence_raw,evidence:JSON.parse(evidence_raw)};
   await request('/rest/v1/social_media_assets',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(row)});
   console.log(`${asset.id}: registrado y aprobado con evidencia`);
  }

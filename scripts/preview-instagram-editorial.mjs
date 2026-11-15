@@ -14,7 +14,9 @@ for(const format of FORMATS) {
   const plan=planEdition(movies,history,new Set(),argentinaDate(),{format});
   const cards=await renderEdition(plan,path.join(out,format));
   manifest.push({format,slugs:plan.slugs,title:plan.title,palette:plan.palette,cards,text:editionCaption(plan)});
-  history.posts.push({...plan,slug:plan.slugs[0]});
+  // Alternative format examples, not a simulated publishing queue: keep visual
+  // variety without exhausting cinematic films before the last example.
+  history.posts.push({format:plan.format,palette:plan.palette,theme:plan.theme,category:plan.category,slugs:[]});
 }
 await writeFile(path.join(out,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');
 const thumbs=await Promise.all(manifest.map(async edition=>({input:await sharp(edition.cards[0].path).resize(324,405).toBuffer(),left:manifest.indexOf(edition)*324,top:0})));

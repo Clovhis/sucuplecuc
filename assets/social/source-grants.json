@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "grants": [
+    {
+      "id": "sundance-official-press",
+      "status": "approved",
+      "issuer": "Sundance Institute",
+      "sourceUrl": "https://www.sundance.org/about/press/",
+      "evidencePath": "assets/social/source-evidence/sundance-press-2026-11-15.json",
+      "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+      "verifiedAt": "2026-11-15",
+      "license": "Permiso editorial de prensa Sundance",
+      "sourcePrefixes": [
+        "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/",
+        "https://www.dropbox.com/scl/fo/2rglki4i1b5csv4ysdzo4/"
+      ],
+      "context": {
+        "festival": "Sundance",
+        "years": [
+          2024,
+          2025
+        ]
+      },
+      "permission": {
+        "basis": "press-permission",
+        "territories": [
+          "worldwide"
+        ],
+        "organicInstagram": true,
+        "publicHosting": true,
+        "crop": false,
+        "overlay": false,
+        "expiresAt": null,
+        "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+        "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR."
+      },
+      "evidenceType": "express-editorial-terms"
+    },
+    {
+      "id": "charades-aftersun-press",
+      "status": "approved",
+      "issuer": "Charades — press kit oficial de Aftersun",
+      "sourceUrl": "https://charades.eu/storage/documents/recbzP6j1z2vf05ot.pdf",
+      "evidencePath": "assets/social/source-evidence/charades-aftersun-press-2026-11-15.json",
+      "evidenceSha256": "11f5adbff7c221c70b714f6b2cbaebef82c607ffc0742b4b7b075f6badec0c24",
+      "verifiedAt": "2026-11-15",
+      "license": "Material de prensa oficial Aftersun",
+      "evidenceType": "official-press-distribution",
+      "sourcePrefixes": [
+        "https://charades.eu/storage/documents/recbzP6j1z2vf05ot.pdf"
+      ],
+      "slugs": [
+        "aftersun-2022"
+      ],
+      "permission": {
+        "basis": "press-permission",
+        "territories": [
+          "worldwide"
+        ],
+        "organicInstagram": true,
+        "publicHosting": true,
+        "crop": false,
+        "overlay": false,
+        "expiresAt": null,
+        "rightsHolder": "Charades — press kit oficial de Aftersun",
+        "grantSummary": "Distribución oficial de fotografías como material de prensa para crítica/cobertura de Aftersun. Evaluación editorial de la invitación de prensa, no una autorización individual recibida ni licencia abierta. Sólo cobertura editorial orgánica de la obra, crédito Sarah Makharine, fotos completas sin recorte ni texto encima. Sin uso publicitario, reventa ni licencia de exhibición de la película."
+      }
+    },
+    {
+      "id": "independenta-substance-press",
+      "status": "approved",
+      "issuer": "Independența Film — press kit oficial The Substance",
+      "sourceUrl": "https://www.independentafilm.ro/project/the-substance/",
+      "evidencePath": "assets/social/source-evidence/independenta-substance-press-2026-11-15.json",
+      "evidenceSha256": "2bde7cd767dcb44e971f17ed897f5a7a96d0e3f2f72231806ec14fc075b1426f",
+      "verifiedAt": "2026-11-15",
+      "license": "Material de prensa oficial The Substance",
+      "evidenceType": "official-press-distribution",
+      "sourcePrefixes": [
+        "https://www.dropbox.com/scl/fo/dvfn6n2myt1dvljne2rd7/"
+      ],
+      "slugs": [
+        "the-substance-2024"
+      ],
+      "permission": {
+        "basis": "press-permission",
+        "territories": [
+          "worldwide"
+        ],
+        "organicInstagram": true,
+        "publicHosting": true,
+        "crop": false,
+        "overlay": false,
+        "expiresAt": null,
+        "rightsHolder": "Independența Film — press kit oficial The Substance",
+        "grantSummary": "Material proporcionado públicamente por el distribuidor como paquete de prensa de The Substance. Evaluación editorial de esa distribución, no licencia abierta ni autorización individual recibida. Sólo crítica/cobertura de esta película, imágenes completas, crédito suministrado, sin publicidad paga, mercancía ni reventa. No inferir disponibilidad o fecha argentina de datos rumanos."
+      }
+    }
+  ]
+}

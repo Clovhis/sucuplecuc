@@ -1,0 +1,41 @@
+// Expanded into an ignored temporary deployment file by stage-social-library-batch.
+declare const Deno: {env:{get(name:string):string|undefined};serve(handler:(request:Request)=>Promise<Response>):void};
+const allowed:Record<string,string>=__ALLOWLIST__;
+const hex=(bytes:ArrayBuffer)=>[...new Uint8Array(bytes)].map(b=>b.toString(16).padStart(2,'0')).join('');
+const hash=async(value:Uint8Array)=>hex(await crypto.subtle.digest('SHA-256',value));
+const encode=(value:string)=>new TextEncoder().encode(value);
+Deno.serve(async(request:Request)=>{
+ if(Date.now()>__EXPIRES__)return new Response('Import expired',{status:410});
+ if(request.method!=='POST'||await hash(encode(request.headers.get('x-import-key')||''))!=='__KEY_HASH__')return new Response('Unauthorized',{status:401});
+ try{
+  const form=await request.formData(),raw=form.get('record'),photo=form.get('photo');
+  if(typeof raw!=='string'||raw.length>150000||!(photo instanceof File)||photo.size>2097152)return new Response('Invalid input',{status:400});
+  const row=JSON.parse(raw);
+  if(!allowed[row.id]||await hash(encode(raw))!==allowed[row.id])return new Response('Not allowlisted',{status:403});
+  const bytes=new Uint8Array(await photo.arrayBuffer());
+  if(bytes.length!==row.bytes||await hash(bytes)!==row.sha256)return new Response('Image mismatch',{status:400});
+  const base=Deno.env.get('SUPABASE_URL')!,secret=Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+  const headers={apikey:secret,Authorization:`Bearer ${secret}`};
+  const existing=await fetch(base+'/rest/v1/social_media_assets?id=eq.'+row.id+'&select=id,sha256',{headers});
+  if(!existing.ok)throw Error('Cannot check identity');
+  const entries=await existing.json();
+  if(entries.length)return Response.json({id:row.id,state:entries[0].sha256===row.sha256?'existing':'conflict'},{status:entries[0].sha256===row.sha256?200:409});
+  const objectRoute=base+'/storage/v1/object/cineposta-social/'+row.object_path;
+  const upload=await fetch(objectRoute,{method:'POST',headers:{...headers,'Content-Type':'image/webp','cache-control':'max-age=86400'},body:bytes});
+  let objectId;
+  if(upload.ok)objectId=(await upload.json()).Id;
+  else if(upload.status===400||upload.status===409){
+   const found=await fetch(objectRoute,{headers});if(!found.ok||await hash(new Uint8Array(await found.arrayBuffer()))!==row.sha256)throw Error('Storage conflict');
+  }else throw Error('Storage unavailable '+upload.status);
+  if(!objectId){
+   const slash=row.object_path.lastIndexOf('/'),folder=row.object_path.slice(0,slash),name=row.object_path.slice(slash+1);
+   const response=await fetch(base+'/storage/v1/object/list/cineposta-social',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({prefix:folder,search:name,limit:100})});
+   if(!response.ok)throw Error('Cannot resolve object');objectId=(await response.json()).find((o:{name:string})=>o.name===name)?.id;
+  }
+  if(!objectId)throw Error('Missing Storage reference');
+  row.object_id=objectId;
+  const insert=await fetch(base+'/rest/v1/social_media_assets',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify(row)});
+  if(!insert.ok)throw Error('Metadata rejected '+insert.status+' '+await insert.text());
+  return Response.json({id:row.id,state:'imported'});
+ }catch(error){console.error(String(error));return new Response('Import failed; inspect server logs and audit orphans before retrying',{status:502});}
+});

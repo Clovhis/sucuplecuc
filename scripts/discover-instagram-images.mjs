@@ -13,8 +13,10 @@ const api=async endpoint=>{
 };
 const normalize=s=>s.normalize('NFD').replace(/\p{M}/gu,'').toLowerCase().replace(/[^a-z0-9]/g,'');
 const recorded=[...new Set((movie.castCharacters||[]).map(c=>c.tmdbMovieId).filter(Boolean))];
+const explicit=process.argv.find(a=>a.startsWith('--tmdb-id='))?.slice(10);
 let id;
-if(recorded.length===1)id=recorded[0];
+if(explicit!==undefined){if(!/^[1-9]\d*$/.test(explicit))throw Error('ID TMDB inválido.');id=Number(explicit);}
+else if(recorded.length===1)id=recorded[0];
 else {
  const found=await api('/search/movie?query='+encodeURIComponent(movie.originalTitle||movie.title)+'&year='+movie.year);
  const matches=found.results.filter(m=>Number(m.release_date?.slice(0,4))===movie.year && [movie.originalTitle,movie.title].filter(Boolean).some(t=>[m.original_title,m.title].some(n=>normalize(n)===normalize(t))));
@@ -23,6 +25,7 @@ else {
 const detail=await api(`/movie/${id}?append_to_response=images,credits`);
 if(Number(detail.release_date?.slice(0,4))!==movie.year)throw Error('Año TMDB distinto del catálogo.');
 if(![movie.originalTitle,movie.title].filter(Boolean).some(t=>[detail.original_title,detail.title].some(n=>n&&normalize(n)===normalize(t))))throw Error('Título TMDB distinto del catálogo.');
+if(explicit!==undefined&&!detail.credits.crew.some(p=>p.job==='Director'&&movie.director.split(',').some(name=>normalize(name)===normalize(p.name))))throw Error('Dirección TMDB distinta del catálogo.');
 const candidates=['posters','backdrops'].flatMap(kind=>(detail.images[kind]||[]).slice(0,12).map(a=>({kind:kind==='posters'?'poster':'backdrop',url:'https://image.tmdb.org/t/p/original'+a.file_path,width:a.width,height:a.height,language:a.iso_639_1,status:'pending',permission:'TMDB no es titular de las imágenes. Se requiere licencia del titular o permiso del paquete de prensa.'})));
 const cast=detail.credits.cast.slice(0,10).filter(p=>p.profile_path).map(p=>({id:p.id,name:p.name,url:'https://image.tmdb.org/t/p/original'+p.profile_path,status:'pending'}));
 const result={slug,title:detail.title,year:movie.year,tmdbId:id,candidates,cast,rightsReference:'https://developer.themoviedb.org/docs/faq',note:'Sólo localización. No descarga imágenes, no cambia catálogo ni registro de permisos y no publica.'};

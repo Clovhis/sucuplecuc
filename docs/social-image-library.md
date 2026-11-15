@@ -2,6 +2,14 @@
 
 Proyecto Supabase `bftcrexcwktyiqsermni`; sólo Instagram integrado. Los pósters, personas del sitio, ratings, trivia, autenticación y automatización de X no cambian.
 
+## Estado vigente — 15/11/2026
+
+**163 fotos / 43.789.076 bytes (41,76 MiB)**, 163 hashes distintos, cero huérfanos. Se incorporaron 135 imágenes a las 28 anteriores: 40 stills cinematográficos y 15 retratos de dirección desde paquetes de prensa, más 80 retratos internacionales con licencias verificadas. Hay tres permisos reutilizables y dieciséis paquetes con evidencia. La sección de resultados del 14/11 se conserva como historial de la migración inicial.
+
+La biblioteca permite simular 60 ediciones sin repetir películas: 168 títulos, 103 fotos, los cinco formatos. **Las escenas abarcan actualmente 16 películas**; con la exclusión histórica permanente no equivalen a 60 publicaciones distintas hechas exclusivamente con stills: la simulación contiene siete ediciones con escenas y el resto utiliza también retratos. Es capacidad editorial con variedad de formatos, no una promesa de sesenta estrenos ni de sesenta películas con escenas.
+
+Ver [política práctica de prensa y operación de cargas](social-editorial-acquisition.md) y [reporte completo](../reports/social/editorial-library-2026-11-15.json).
+
 ## Arquitectura y derechos
 
 `social_media_assets` es la fuente operativa de fotografías aprobadas. `metadata` conserva identidad, películas/persona, fuente, autor, licencia, permisos, fecha de verificación, territorio, embargo/vencimiento, dimensiones y hashes. `evidence` permite consultar la evidencia; `evidence_raw` conserva sus bytes exactos para verificar `evidenceSha256`. El registro Git `assets/social/instagram-rights.json` y los snapshots de evidencia conservan la procedencia revisable, pero el cron consulta Supabase, sin investigar permisos cada día.
@@ -69,4 +77,4 @@ Para restringir un asset, cambiar `status` a `restricted` administrativamente: d
 
 Plan Free verificado: 500 MB de DB, 1 GB Storage, 5 GB egress y 5 GB cached egress; pausa tras una semana de inactividad. Se usan servicios existentes, sin dependencias nuevas ni APIs pagas. Las fotos son ~1,4% del GB de Storage. Estimación conservadora de 6 fotos ×2 MiB ×31 días: ≤372 MiB/mes para una ejecución diaria, más pruebas/auditorías y el resto del proyecto. Es una estimación, **no el consumo facturado**: el MCP conectado no expone el contador de egress del período; revisarlo en Usage del Dashboard. El bucket privado y las cuotas compartidas del proyecto no deben confundirse con almacenamiento ilimitado. Los medios finales para Buffer se sirven desde GitHub y no generan descargas públicas adicionales del bucket.
 
-Fuentes oficiales consultadas: [Storage y acceso](https://supabase.com/docs/guides/storage/security/access-control), [buckets públicos/privados](https://supabase.com/docs/guides/storage/buckets/fundamentals), [límites Free](https://supabase.com/pricing). Receta del esquema en `supabase/sql/social_media_assets.sql`; cuatro migraciones aplicadas por MCP. La receta no se reejecuta sobre un proyecto ya migrado.
+Fuentes oficiales consultadas: [Storage y acceso](https://supabase.com/docs/guides/storage/security/access-control), [buckets públicos/privados](https://supabase.com/docs/guides/storage/buckets/fundamentals), [límites Free](https://supabase.com/pricing). Receta del esquema en `supabase/sql/social_media_assets.sql`; cuatro migraciones iniciales y dos de permisos reutilizables aplicadas por MCP. La receta no se reejecuta sobre un proyecto ya migrado.

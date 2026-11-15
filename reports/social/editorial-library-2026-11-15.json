@@ -1,0 +1,1035 @@
+{
+  "verifiedAt": "2026-11-15",
+  "assets": 163,
+  "stills": 40,
+  "portraits": 122,
+  "events": 1,
+  "newAssets": 135,
+  "storageBytes": 43789076,
+  "grants": 3,
+  "pressPhotos": 55,
+  "eligibleFilms": 754,
+  "filmsWithStills": [
+    {
+      "slug": "a-real-pain-2024",
+      "title": "A Real Pain",
+      "year": 2024,
+      "stills": 1,
+      "category": "Comedia"
+    },
+    {
+      "slug": "aftersun-2022",
+      "title": "Aftersun",
+      "year": 2022,
+      "stills": 2,
+      "category": "Drama"
+    },
+    {
+      "slug": "babadook-2014",
+      "title": "Babadook",
+      "year": 2014,
+      "stills": 3,
+      "category": "Terror"
+    },
+    {
+      "slug": "esa-cosa-con-alas-2025",
+      "title": "Esa cosa con alas",
+      "year": 2025,
+      "stills": 1,
+      "category": "Drama"
+    },
+    {
+      "slug": "frida-2024",
+      "title": "Frida",
+      "year": 2024,
+      "stills": 6,
+      "category": "Documental"
+    },
+    {
+      "slug": "hit-man-2024",
+      "title": "Hit Man",
+      "year": 2024,
+      "stills": 1,
+      "category": "Comedia"
+    },
+    {
+      "slug": "i-saw-the-tv-glow-2024",
+      "title": "I Saw the TV Glow",
+      "year": 2024,
+      "stills": 1,
+      "category": "Drama"
+    },
+    {
+      "slug": "incognito-2025",
+      "title": "Incógnito",
+      "year": 2025,
+      "stills": 3,
+      "category": "Drama"
+    },
+    {
+      "slug": "love-lies-bleeding-2024",
+      "title": "Love Lies Bleeding",
+      "year": 2024,
+      "stills": 1,
+      "category": "Thriller"
+    },
+    {
+      "slug": "mas-alla-del-muro-2025",
+      "title": "Más allá del muro",
+      "year": 2025,
+      "stills": 3,
+      "category": "Drama"
+    },
+    {
+      "slug": "napoleon-dynamite-2004",
+      "title": "Napoleon Dynamite",
+      "year": 2004,
+      "stills": 3,
+      "category": "Comedia"
+    },
+    {
+      "slug": "opus-2025",
+      "title": "Opus",
+      "year": 2025,
+      "stills": 1,
+      "category": "Thriller"
+    },
+    {
+      "slug": "super-man-the-christopher-reeve-story-2024",
+      "title": "Super/Man: La Historia De Christopher Reeve",
+      "year": 2024,
+      "stills": 8,
+      "category": "Documental"
+    },
+    {
+      "slug": "the-substance-2024",
+      "title": "La sustancia",
+      "year": 2024,
+      "stills": 4,
+      "category": "Terror"
+    },
+    {
+      "slug": "together-juntos-hasta-la-muerte-2025",
+      "title": "Together: Juntos Hasta La Muerte",
+      "year": 2025,
+      "stills": 1,
+      "category": "Terror"
+    },
+    {
+      "slug": "un-toque-de-otro-mundo-2025",
+      "title": "Un Toque de Otro Mundo",
+      "year": 2025,
+      "stills": 1,
+      "category": "Ciencia ficcion"
+    }
+  ],
+  "simulation": [
+    {
+      "date": "2026-11-16",
+      "format": "double",
+      "slugs": [
+        "the-substance-2024",
+        "babadook-2014"
+      ],
+      "assetIds": [
+        "independenta-substance-press-the-substance-2024-c84d0e7ae0",
+        "sundance-2024-babadook-2014-ab3a7cde6e"
+      ],
+      "cinematic": 2
+    },
+    {
+      "date": "2026-11-17",
+      "format": "score",
+      "slugs": [
+        "love-lies-bleeding-2024"
+      ],
+      "assetIds": [
+        "sundance-2024-love-lies-bleeding-2024-d7415b5012"
+      ],
+      "cinematic": 1
+    },
+    {
+      "date": "2026-11-18",
+      "format": "ranking",
+      "slugs": [
+        "esa-cosa-con-alas-2025",
+        "aftersun-2022",
+        "i-saw-the-tv-glow-2024",
+        "incognito-2025",
+        "mas-alla-del-muro-2025"
+      ],
+      "assetIds": [
+        "sundance-2025-esa-cosa-con-alas-2025-a66016a6e2",
+        "charades-aftersun-press-aftersun-2022-ae6f67efff",
+        "sundance-2024-i-saw-the-tv-glow-2024-9eef8d6e10",
+        "sundance-2025-incognito-2025-a1fc9b9ff9",
+        "sundance-2025-mas-alla-del-muro-2025-bb68c2bdd6"
+      ],
+      "cinematic": 5
+    },
+    {
+      "date": "2026-11-19",
+      "format": "protagonist",
+      "slugs": [
+        "a-real-pain-2024"
+      ],
+      "assetIds": [
+        "sundance-2024-a-real-pain-2024-725bc89499"
+      ],
+      "cinematic": 1
+    },
+    {
+      "date": "2026-11-20",
+      "format": "carousel",
+      "slugs": [
+        "super-man-the-christopher-reeve-story-2024",
+        "frida-2024",
+        "the-irishman-2019",
+        "avedon-2026",
+        "george-harrison-living-in-the-material-world-2011"
+      ],
+      "assetIds": [
+        "sundance-2024-super-man-the-christopher-reeve-story-2024-8b29747c36",
+        "sundance-2024-frida-2024-d4de306ee5",
+        "commons-139806737",
+        "commons-157445540",
+        "commons-74133742"
+      ],
+      "cinematic": 2
+    },
+    {
+      "date": "2026-11-21",
+      "format": "double",
+      "slugs": [
+        "hit-man-2024",
+        "rebobine-por-favor-2008"
+      ],
+      "assetIds": [
+        "sundance-2024-hit-man-2024-a82e12bcd7",
+        "commons-70337683"
+      ],
+      "cinematic": 1
+    },
+    {
+      "date": "2026-11-22",
+      "format": "score",
+      "slugs": [
+        "together-juntos-hasta-la-muerte-2025"
+      ],
+      "assetIds": [
+        "sundance-2025-together-juntos-hasta-la-muerte-2025-214607a670"
+      ],
+      "cinematic": 1
+    },
+    {
+      "date": "2026-11-23",
+      "format": "ranking",
+      "slugs": [
+        "los-puentes-de-madison-1995",
+        "gran-torino-2008",
+        "rio-mistico-2003",
+        "invictus-2009",
+        "la-mula-2018"
+      ],
+      "assetIds": [
+        "commons-188480445",
+        "commons-61273784",
+        "commons-129085337",
+        "commons-195791540",
+        "commons-187782327"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-11-24",
+      "format": "protagonist",
+      "slugs": [
+        "jfk-caso-abierto-1991"
+      ],
+      "assetIds": [
+        "commons-32352010"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-11-25",
+      "format": "carousel",
+      "slugs": [
+        "everything-everywhere-all-at-once-2022",
+        "star-wars-episode-vi-return-of-the-jedi-1983",
+        "una-mirada-en-la-oscuridad-2006",
+        "blade-runner-1982",
+        "close-encounters-of-the-third-kind-1977"
+      ],
+      "assetIds": [
+        "commons-174845404",
+        "commons-187896483",
+        "commons-174761629",
+        "commons-176122003",
+        "commons-176794268"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-11-26",
+      "format": "double",
+      "slugs": [
+        "como-ser-john-malkovich-1999",
+        "maverick-1994"
+      ],
+      "assetIds": [
+        "commons-146053442",
+        "commons-100615157"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-11-27",
+      "format": "score",
+      "slugs": [
+        "spider-man-2002"
+      ],
+      "assetIds": [
+        "commons-165600244"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-11-28",
+      "format": "ranking",
+      "slugs": [
+        "oppenheimer-2023",
+        "la-odisea-2026",
+        "interstellar-2014",
+        "the-dark-knight-2008",
+        "the-prestige-2006"
+      ],
+      "assetIds": [
+        "commons-34506210",
+        "commons-195791574",
+        "commons-159848392",
+        "commons-76814686",
+        "commons-176541081"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-11-29",
+      "format": "protagonist",
+      "slugs": [
+        "bolt-un-perro-fuera-de-serie-2008"
+      ],
+      "assetIds": [
+        "commons-144775291"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-11-30",
+      "format": "carousel",
+      "slugs": [
+        "shutter-island-2010",
+        "street-scenes-1970-1970",
+        "mean-streets-1973",
+        "gangs-of-new-york-2002",
+        "the-age-of-innocence-1993"
+      ],
+      "assetIds": [
+        "commons-66587999",
+        "commons-19129941",
+        "commons-139806737",
+        "commons-181649372",
+        "commons-177706828"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-01",
+      "format": "double",
+      "slugs": [
+        "leo-2023",
+        "hotel-transylvania-2-2015"
+      ],
+      "assetIds": [
+        "commons-180875404",
+        "commons-24586924"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-02",
+      "format": "score",
+      "slugs": [
+        "el-final-de-la-calle-oak-2026"
+      ],
+      "assetIds": [
+        "commons-175829841"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-03",
+      "format": "ranking",
+      "slugs": [
+        "el-fugitivo-1993",
+        "no-time-to-die-2021",
+        "jungle-cruise-2021",
+        "jungla-de-cristal-la-venganza-1995",
+        "el-demoledor-1993"
+      ],
+      "assetIds": [
+        "commons-66476878",
+        "commons-174665049",
+        "commons-191243719",
+        "commons-71131203",
+        "commons-174955953"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-04",
+      "format": "protagonist",
+      "slugs": [
+        "cafe-society-2016"
+      ],
+      "assetIds": [
+        "commons-174987380"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-05",
+      "format": "carousel",
+      "slugs": [
+        "lego-batman-la-pelicula-2017",
+        "shrek-felices-para-siempre-2010",
+        "frankenweenie-2012",
+        "unidos-2020",
+        "sinbad-la-leyenda-de-los-siete-mares-2003"
+      ],
+      "assetIds": [
+        "commons-24723045",
+        "commons-116895314",
+        "commons-151958850",
+        "commons-70484703",
+        "commons-81371623"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-06",
+      "format": "double",
+      "slugs": [
+        "the-bfg-2016",
+        "edward-scissorhands-1990"
+      ],
+      "assetIds": [
+        "commons-80001432",
+        "commons-151958117"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-07",
+      "format": "score",
+      "slugs": [
+        "wolfs-2024"
+      ],
+      "assetIds": [
+        "commons-176793583"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-08",
+      "format": "ranking",
+      "slugs": [
+        "sunshine-2007",
+        "star-wars-episode-ii-attack-of-the-clones-2002",
+        "hijos-de-los-hombres-2006",
+        "dias-extranos-1995",
+        "oblivion-2013"
+      ],
+      "assetIds": [
+        "commons-175180273",
+        "commons-182399810",
+        "commons-156924804",
+        "commons-73983279",
+        "commons-186060107"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-09",
+      "format": "protagonist",
+      "slugs": [
+        "atraccion-peligrosa-2010"
+      ],
+      "assetIds": [
+        "commons-200213827"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-10",
+      "format": "carousel",
+      "slugs": [
+        "imparable-2010",
+        "enemigo-publico-1998",
+        "el-ansia-1983",
+        "dias-de-trueno-1990",
+        "asalto-al-tren-pelham-123-2009"
+      ],
+      "assetIds": [
+        "commons-165750669",
+        "commons-61287660",
+        "commons-186712529",
+        "commons-152034448",
+        "commons-58433426"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-11",
+      "format": "double",
+      "slugs": [
+        "jim-henson-idea-man-2024",
+        "music-by-john-williams-2024"
+      ],
+      "assetIds": [
+        "commons-157445540",
+        "commons-176794268"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-12",
+      "format": "score",
+      "slugs": [
+        "match-point-2005"
+      ],
+      "assetIds": [
+        "commons-166164955"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-13",
+      "format": "ranking",
+      "slugs": [
+        "halloween-1978",
+        "hannibal-2001",
+        "hereditary-2018",
+        "cronos-1993",
+        "mama-2013"
+      ],
+      "assetIds": [
+        "commons-174845404",
+        "commons-182216384",
+        "commons-182501027",
+        "commons-182989232",
+        "commons-159848392"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-14",
+      "format": "protagonist",
+      "slugs": [
+        "fargo-secuestro-voluntario-1996"
+      ],
+      "assetIds": [
+        "commons-40832704"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-15",
+      "format": "carousel",
+      "slugs": [
+        "el-gigante-de-hierro-1999",
+        "the-incredibles-2004",
+        "los-increibles-2-2018",
+        "ratatouille-2007",
+        "mission-impossible-ghost-protocol-2011"
+      ],
+      "assetIds": [
+        "commons-18498251",
+        "commons-122786820",
+        "commons-41683614",
+        "commons-3733689",
+        "commons-186060107"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-16",
+      "format": "double",
+      "slugs": [
+        "solo-mio-2026",
+        "bailamos-2004"
+      ],
+      "assetIds": [
+        "commons-24586924",
+        "commons-186712529"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-17",
+      "format": "score",
+      "slugs": [
+        "another-woman-1988"
+      ],
+      "assetIds": [
+        "commons-70337683"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-18",
+      "format": "ranking",
+      "slugs": [
+        "batman-1989",
+        "hechizo-de-amor-la-magia-continua-2026",
+        "una-serie-de-eventos-desafortunados-2004",
+        "charlie-and-the-chocolate-factory-2005",
+        "the-bride-2026"
+      ],
+      "assetIds": [
+        "commons-58339122",
+        "commons-174955953",
+        "commons-150500057",
+        "commons-157090229",
+        "commons-76814686"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-19",
+      "format": "protagonist",
+      "slugs": [
+        "hombres-de-negro-1997"
+      ],
+      "assetIds": [
+        "commons-66476878"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-20",
+      "format": "carousel",
+      "slugs": [
+        "from-dusk-till-dawn-1996",
+        "sleepy-hollow-1999",
+        "el-abogado-del-diablo-1997",
+        "hope-el-primer-impacto-2026",
+        "dracula-de-bram-stoker-1992"
+      ],
+      "assetIds": [
+        "commons-41601340",
+        "commons-151958850",
+        "commons-174761629",
+        "commons-199296405",
+        "commons-32352010"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-21",
+      "format": "double",
+      "slugs": [
+        "vicio-propio-2014",
+        "los-angeles-al-desnudo-1997"
+      ],
+      "assetIds": [
+        "commons-86858468",
+        "commons-175744745"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-22",
+      "format": "score",
+      "slugs": [
+        "spinal-tap-ii-el-final-continua-2025"
+      ],
+      "assetIds": [
+        "commons-48520892"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-23",
+      "format": "ranking",
+      "slugs": [
+        "matrix-reloaded-2003",
+        "the-matrix-1999",
+        "aniquilacion-2018",
+        "luna-2009",
+        "los-juegos-del-hambre-sinsajo-parte-2-2015"
+      ],
+      "assetIds": [
+        "commons-187782327",
+        "commons-174761629",
+        "commons-182399810",
+        "commons-76181853",
+        "commons-178839618"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-24",
+      "format": "protagonist",
+      "slugs": [
+        "el-botin-the-rip-2026"
+      ],
+      "assetIds": [
+        "commons-200213827"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-25",
+      "format": "carousel",
+      "slugs": [
+        "cassandra-s-dream-2007",
+        "sweet-and-lowdown-1999",
+        "manhattan-1979",
+        "melinda-and-melinda-2004",
+        "vicky-cristina-barcelona-2008"
+      ],
+      "assetIds": [
+        "commons-175829841",
+        "commons-129085337",
+        "commons-188480445",
+        "commons-156924804",
+        "commons-155077481"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-26",
+      "format": "double",
+      "slugs": [
+        "harry-potter-and-the-half-blood-prince-2009",
+        "calabozos-dragones-honor-entre-ladrones-2023"
+      ],
+      "assetIds": [
+        "commons-184269315",
+        "commons-17009818"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-27",
+      "format": "score",
+      "slugs": [
+        "captain-america-the-winter-soldier-2014"
+      ],
+      "assetIds": [
+        "commons-166164955"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-28",
+      "format": "ranking",
+      "slugs": [
+        "minions-monstruos-2026",
+        "mundo-extrano-2022",
+        "el-gato-con-sombrero-2026",
+        "kung-fu-panda-3-2016",
+        "la-era-de-hielo-2-2006"
+      ],
+      "assetIds": [
+        "commons-177306757",
+        "commons-81414998",
+        "commons-80001432",
+        "commons-151358638",
+        "commons-147990269"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-29",
+      "format": "protagonist",
+      "slugs": [
+        "star-wars-episode-v-the-empire-strikes-back-1980"
+      ],
+      "assetIds": [
+        "commons-187896483"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-30",
+      "format": "carousel",
+      "slugs": [
+        "always-1989",
+        "atrapame-si-puedes-2002",
+        "west-side-story-2021",
+        "munich-2005",
+        "schindler-s-list-1993"
+      ],
+      "assetIds": [
+        "commons-41683614",
+        "commons-76553610",
+        "commons-176794268",
+        "commons-174665049",
+        "commons-73983279"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2026-12-31",
+      "format": "double",
+      "slugs": [
+        "los-miserables-2012",
+        "la-la-land-2016"
+      ],
+      "assetIds": [
+        "commons-176541081",
+        "commons-165600244"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-01",
+      "format": "score",
+      "slugs": [
+        "el-graduado-1967"
+      ],
+      "assetIds": [
+        "commons-187775072"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-02",
+      "format": "ranking",
+      "slugs": [
+        "taxi-driver-1976",
+        "the-departed-2006",
+        "the-last-temptation-of-christ-1988",
+        "italianamerican-1974",
+        "the-color-of-money-1986"
+      ],
+      "assetIds": [
+        "commons-100615157",
+        "commons-195791540",
+        "commons-19129941",
+        "commons-139806737",
+        "commons-58433426"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-03",
+      "format": "protagonist",
+      "slugs": [
+        "mi-villano-favorito-2-2013"
+      ],
+      "assetIds": [
+        "commons-174987380"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-04",
+      "format": "carousel",
+      "slugs": [
+        "el-ultimo-mohicano-1992",
+        "free-guy-2021",
+        "sin-tregua-2012",
+        "transformers-one-2024",
+        "peligro-inminente-1994"
+      ],
+      "assetIds": [
+        "commons-177706828",
+        "commons-70554183",
+        "commons-81414998",
+        "commons-166164955",
+        "commons-187896483"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-05",
+      "format": "double",
+      "slugs": [
+        "casi-famosos-2000",
+        "el-club-de-los-poetas-muertos-1989"
+      ],
+      "assetIds": [
+        "commons-40832704",
+        "commons-177296029"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-06",
+      "format": "score",
+      "slugs": [
+        "spy-game-juego-de-espias-2001"
+      ],
+      "assetIds": [
+        "commons-81371623"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-07",
+      "format": "ranking",
+      "slugs": [
+        "la-chica-del-dragon-tatuado-2011",
+        "se7en-1995",
+        "the-killer-2023",
+        "zodiaco-2007",
+        "la-habitacion-del-panico-2002"
+      ],
+      "assetIds": [
+        "commons-139117606",
+        "commons-81371623",
+        "commons-199296405",
+        "commons-34506210",
+        "commons-100615157"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-08",
+      "format": "protagonist",
+      "slugs": [
+        "uncut-gems-2019"
+      ],
+      "assetIds": [
+        "commons-180875404"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-09",
+      "format": "carousel",
+      "slugs": [
+        "pequena-miss-sunshine-2006",
+        "a-midsummer-night-s-sex-comedy-1982",
+        "tonto-y-retonto-1994",
+        "la-guerra-de-los-rose-1989",
+        "algo-pasa-con-mary-1998"
+      ],
+      "assetIds": [
+        "commons-182501027",
+        "commons-70337683",
+        "commons-150500057",
+        "commons-50628181",
+        "commons-181649372"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-10",
+      "format": "double",
+      "slugs": [
+        "flushed-away-lo-que-el-agua-se-llevo-2006",
+        "el-gato-con-botas-el-ultimo-deseo-2022"
+      ],
+      "assetIds": [
+        "commons-182057483",
+        "commons-116895314"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-11",
+      "format": "score",
+      "slugs": [
+        "thor-2011"
+      ],
+      "assetIds": [
+        "commons-182399810"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-12",
+      "format": "ranking",
+      "slugs": [
+        "carry-on-2024",
+        "jack-reacher-bajo-la-mira-2012",
+        "el-tren-de-las-3-10-2007",
+        "the-fast-and-the-furious-2001",
+        "batman-begins-2005"
+      ],
+      "assetIds": [
+        "commons-40794457",
+        "commons-186060107",
+        "commons-175744745",
+        "commons-17009818",
+        "commons-76814686"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-13",
+      "format": "protagonist",
+      "slugs": [
+        "el-bueno-el-feo-y-el-malo-1966"
+      ],
+      "assetIds": [
+        "commons-61273784"
+      ],
+      "cinematic": 0
+    },
+    {
+      "date": "2027-01-14",
+      "format": "carousel",
+      "slugs": [
+        "los-idus-de-marzo-2011",
+        "heartland-2026",
+        "pulp-fiction-1994",
+        "el-coleccionista-de-huesos-1999",
+        "nunca-estaras-a-salvo-2017"
+      ],
+      "assetIds": [
+        "commons-176793583",
+        "commons-159848392",
+        "commons-122786820",
+        "commons-165750669",
+        "commons-86858468"
+      ],
+      "cinematic": 0
+    }
+  ],
+  "preservedBufferPosts": [
+    "6af8537e918fe79d2e79d5ec",
+    "6af8549ac5b364e062edcec2"
+  ],
+  "stateBranchSha": "a15c2834cc950a723e8c1f9d870ee48df9ff6e92",
+  "storageOrphans": 0,
+  "validations": {
+    "instagramTests": 36,
+    "xRegression": "passed",
+    "allAssetDownloadsAndDecoding": "163/163",
+    "metadataAndEvidenceExactMatch": "163/163",
+    "sourceRevocation": "metadata excluded and Storage blocked; restored approved",
+    "anonymousGrantWrites": "401",
+    "bootstrap": "disabled, HTTP 410",
+    "existingBufferMediaUrls": "unchanged",
+    "databaseBytes": 68144275
+  },
+  "tmdbDiscovery": [
+    {
+      "slug": "the-substance-2024",
+      "tmdbId": 933260,
+      "candidates": 24,
+      "publicationRights": "not supplied by TMDB"
+    },
+    {
+      "slug": "aftersun-2022",
+      "tmdbId": 965150,
+      "candidates": 24,
+      "publicationRights": "not supplied by TMDB"
+    }
+  ]
+}

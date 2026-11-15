@@ -1,2 +1,4 @@
 # Preserve the exact SHA-256 of archived image-license evidence on Windows and Linux.
 assets/social/rights-evidence/*.json text eol=lf
+assets/social/press-packages/*.json text eol=lf
+assets/social/source-evidence/*.json text eol=lf
