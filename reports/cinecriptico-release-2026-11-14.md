@@ -24,6 +24,7 @@ Backend privado en Supabase, fecha argentina del servidor, una partida por dueñ
 ## Verificación final
 
 - `npm run check`: cero errores y advertencias; tres hints preexistentes en scripts ajenos a este cambio.
+- Instalación limpia `npm ci`: aprobada. Validación del lockfile con npm 10.9.4 y destino Linux (`npm ci --dry-run --os=linux --cpu=x64 --libc=glibc`): aprobada.
 - `npm run build`: 8.916 páginas generadas con Astro 7.4.12.
 - `npm run test:cinecriptico`: tres casos aprobados, incluyendo PostgreSQL embebido con roles reales, migración que conserva partidas, privacidad, nicks por juego, replay, rate limit, score, intentos, ayudas, derrota, rachas y límites exactos de medianoche/año en Argentina.
 - `npm run test:trivia`: 13 casos aprobados y auditoría del banco de trivia sin fallos.
@@ -43,3 +44,7 @@ DEV y producción no comparten almacenamiento de sesión. Un nick creado en DEV 
 El SDK compartido de Supabase puede emitir avisos de contención de Web Locks en Firefox; las pruebas funcionales de autenticación y persistencia pasan y ese aviso específico queda anotado. No se ocultan otros errores.
 
 El endpoint MCP de advisors devolvió un error interno en esta revisión; los permisos y metadatos del esquema propio se verificaron directamente mediante SQL. No se declara al proyecto completo libre de avisos de configuración. La inspección anterior del proyecto contenía advertencias ajenas a este juego, que no se modificaron.
+
+## Corrección de instalación en CI
+
+El [primer run de Pages](https://github.com/Clovhis/sucuplecuc/actions/runs/43662132928) falló en `npm ci`, antes del build: el lockfile producido con npm 11 en Windows omitía las entradas de `@emnapi/core` y `@emnapi/runtime` 2.0.0-beta.2 usadas por el fallback WASI de Rolldown. Se regeneró en una carpeta aislada con npm 10, conservando todas las versiones ya fijadas y agregando esas dos entradas. Luego pasaron la validación de instalación para Linux y una instalación limpia real en el checkout. No cambió el código del juego ni las versiones de sus dependencias activas con esta reparación.
