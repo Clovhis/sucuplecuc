@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "test:cinecriptico": "node --test scripts/cinecriptico-security.test.mjs scripts/cinecriptico-bank.test.mjs",
     "test:daily-editorial": "node --test --test-concurrency=1 scripts/daily-editorial.test.mjs scripts/editorial-quality.test.mjs scripts/editorial-social.test.mjs scripts/editorial-diversity.test.mjs scripts/daily-editorial-lifecycle.test.mjs scripts/editorial-validation.test.mjs scripts/editorial-review-tools.test.mjs scripts/preview-e2e.test.mjs scripts/validated-build-catalog.test.mjs scripts/publish-buffer-editorial-x.test.mjs",
     "validate:editorial-reviews": "node scripts/validate-editorial-reviews.mjs",
     "test:weekly-release": "node --test scripts/weekly-release-policy.test.mjs scripts/weekly-deployment-supervisor.test.mjs scripts/weekly-release-cli.test.mjs",
@@ -92,7 +93,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.101.1",
-    "astro": "^7.1.6",
+    "astro": "^7.4.12",
     "googleapis": "^171.4.0",
     "minisearch": "^7.2.0"
   },

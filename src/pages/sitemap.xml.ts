@@ -45,6 +45,7 @@ export const GET: APIRoute = async () => {
 		{ pathname: '/juegos/' },
 		{ pathname: '/juegos/simulador-carrera-actor/' },
 		{ pathname: '/juegos/trivia/' },
+  { pathname: '/juegos/cinecriptico/' },
 		{ pathname: QUE_MIRO_HOY_PATH },
 		{ pathname: PEOPLE_PATH },
 		{ pathname: ABOUT_PATH },

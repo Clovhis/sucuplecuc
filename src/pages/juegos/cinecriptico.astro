@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeBrandLink from '../../components/HomeBrandLink.astro';
+import { TRIVIA_COUNTRY_CODES } from '../../lib/trivia-player';
+import '../../styles/cinecriptico.css';
+const base = import.meta.env.BASE_URL;
+const regionNames = new Intl.DisplayNames(['es'], { type: 'region' });
+const countries = TRIVIA_COUNTRY_CODES.map(code => ({ code, label: regionNames.of(code) ?? code }))
+ .sort((a,b) => a.code==='AR' ? -1 : b.code==='AR' ? 1 : a.label.localeCompare(b.label,'es'));
+---
+<BaseLayout title="CineCríptico | Cine Posta" description="Una pista, una palabra y un secreto de cine. Resolvé el acertijo críptico diario de CinePosta." bodyClass="cryptic-edition">
+ <main id="main-content" class="cryptic" data-cryptic data-base={base}>
+  <header class="cryptic-top"><HomeBrandLink /><a href={`${base}juegos/`}>← Juegos de cine</a></header>
+  <div class="cryptic-heading"><p class="cryptic-kicker">El ritual diario / Cine Posta</p><h1>Cine<span>Críptico</span></h1><p>El cine esconde una palabra.<br />La pista te dice cómo encontrarla.</p></div>
+  <div class="cryptic-daily"><span data-date>Consultando al oráculo…</span><span>Próximo en <b data-clock>--:--:--</b> <small>ART</small></span></div>
+  <p class="cryptic-status" data-status role="status" aria-live="polite">Conectando con tu sesión…</p>
+  <div class="cryptic-connection-actions">
+   <button type="button" data-reconnect hidden>Reconectar y recuperar partida</button>
+   <button type="button" data-new-session hidden>Continuar con una sesión nueva</button>
+  </div>
+  <noscript>Activá JavaScript para jugar. La solución se comprueba de forma segura en el servidor.</noscript>
+  <div class="cryptic-layout">
+   <section class="cryptic-chamber" aria-label="Acertijo diario">
+    <div class="cryptic-clue"><p class="cryptic-kicker">La pista de hoy</p><h2 data-clue>El misterio está por aparecer.</h2><p data-length>Una sola palabra · seis intentos · tres ayudas</p></div>
+    <div class="cryptic-orb" data-orb>
+     <img src={`${base}assets/games/cinecriptico-oracle.webp?v=3d-hands-v2`} width="1024" height="1024" alt="" fetchpriority="high" />
+     <div class="cryptic-vision"><span class="cryptic-kicker" data-orb-label>¿Qué ves?</span><div class="cryptic-cells" data-cells aria-hidden="true"><span>·</span><span>·</span><span>·</span></div><span class="cryptic-orb-note" data-orb-note>Tu palabra toma forma acá</span></div>
+    </div>
+    <div class="cryptic-controls">
+     <p data-identity class="cryptic-muted"></p>
+     <button type="button" data-start disabled>Entrar al ritual →</button>
+     <form data-profile hidden class="cryptic-profile">
+      <h3>Tu lugar en el ranking</h3><p>Elegí tu nick para CineCríptico. Podés usar el mismo que en otros juegos: cada juego reserva sus propios nombres. Conservamos tu sesión en este navegador; si borrás sus datos, perdés el acceso.</p>
+      <label>Nickname<input name="nickname" autocomplete="nickname" minlength="2" maxlength="24" required /></label>
+      <div class="cryptic-profile-row"><label>País<select name="country" autocomplete="country" required>{countries.map(c=><option value={c.code}>{c.label}</option>)}</select></label><label>Edad<input name="age" type="number" min="1" max="120" required inputmode="numeric" /></label></div>
+      <p>El ranking de CineCríptico muestra sólo tu nick y puntos. La trivia conserva sus reglas de perfil público.</p>
+      <button type="submit">Reservar nick y jugar</button>
+     </form>
+     <form data-answer-form hidden>
+      <label for="cryptic-word">Tu respuesta <input id="cryptic-word" name="word" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" enterkeyhint="go" maxlength="48" required aria-describedby="cryptic-word-help" /></label>
+      <p id="cryptic-word-help" class="cryptic-muted">Una palabra. Aceptamos tildes y mayúsculas. No hay límite de tiempo antes de medianoche.</p>
+      <button type="submit">Descifrar →</button>
+      <div class="cryptic-actions"><button type="button" data-hint class="cryptic-secondary">Pedir ayuda · −180</button><button type="button" data-giveup class="cryptic-text">Me rindo</button></div>
+      <div data-confirm hidden class="cryptic-confirm"><p>¿Revelar la palabra? La partida termina con cero puntos.</p><button type="button" data-confirm-giveup>Revelar y terminar</button><button type="button" data-cancel-giveup class="cryptic-text">Seguir pensando</button></div>
+     </form>
+     <div class="cryptic-progress" data-progress></div><ol class="cryptic-hints" data-hints></ol><div class="cryptic-guesses" data-guesses aria-label="Palabras probadas"></div>
+     <section class="cryptic-reveal" data-reveal hidden aria-labelledby="cryptic-reveal-title">
+      <p class="cryptic-kicker" data-result></p><h3 id="cryptic-reveal-title">Así se abre el misterio</h3>
+      <p data-explanation></p><p data-reference></p>
+      <a data-movie hidden>Ver la ficha de la película →</a>
+      <div class="cryptic-share" role="group" aria-label="Compartir resultado sin revelar la respuesta">
+       <button type="button" data-share>Compartir mi resultado ↗</button>
+       <a data-whatsapp target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+       <a data-x target="_blank" rel="noopener noreferrer">X <span aria-hidden="true">↗</span></a>
+      </div>
+     </section>
+    </div>
+   </section>
+   <aside class="cryptic-aside">
+    <p class="cryptic-muted" data-dashboard-status role="status" hidden></p>
+    <section class="cryptic-panel"><p class="cryptic-kicker">El círculo de hoy</p><p class="cryptic-solved"><strong data-solved>—</strong> personas lo han resuelto hoy</p><p class="cryptic-muted">Un jugador, un resultado. Actualización automática cada minuto.</p></section>
+    <details class="cryptic-panel" open><summary>Tu recorrido</summary><p class="cryptic-muted" data-stats-empty>Entrá con tu jugador para ver tus estadísticas.</p><dl class="cryptic-stats" data-stats></dl></details>
+    <section class="cryptic-panel"><h2>Los que descifraron</h2><div class="cryptic-tabs" role="group" aria-label="Período del ranking"><button type="button" data-ranking="daily" aria-pressed="true">Hoy</button><button type="button" data-ranking="historical" aria-pressed="false">Histórico</button></div><p class="cryptic-muted">Los empates comparten puesto. Pensar lleva su tiempo.</p><ol class="cryptic-ranking" data-ranking-list></ol></section>
+    <details class="cryptic-panel"><summary>Cómo leer una pista críptica</summary><p>Una parte orienta hacia la respuesta; otra indica cómo construirla. Una palabra puede pedirte que mezcles letras, inviertas un fragmento, escondas otro o unas piezas.</p><p>Leé dos veces: la frase cuenta una cosa y sus instrucciones pueden contar otra. Las ayudas se revelan de a una y cuestan 180 puntos. Cada error resta 100; al sexto, se abre la explicación.</p><p>Máximo: 1.000 puntos. Rendirse: cero. El reloj sólo anuncia el cambio de día a las 00:00 de Argentina. Todos reciben el mismo acertijo.</p></details>
+   </aside>
+  </div>
+  <footer class="cryptic-footer">Un misterio por día. Volvé mañana: el cine todavía tiene secretos.</footer>
+ </main>
+ <script>import '../../scripts/cinecriptico';</script>
+</BaseLayout>

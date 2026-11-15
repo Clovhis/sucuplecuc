@@ -8,6 +8,7 @@ const pageUrl = new URL('/juegos/', SITE_URL).toString();
 const games = [
 	{ name: 'Trivia de películas', path: 'juegos/trivia/' },
 	{ name: 'Simulador de carrera actoral', path: 'juegos/simulador-carrera-actor/' },
+ { name: 'CineCríptico', path: 'juegos/cinecriptico/' },
 ];
 const structuredData = [
 	{
@@ -25,7 +26,7 @@ const structuredData = [
 	},
 ];
 ---
-<BaseLayout title={`Juegos de cine | ${SITE_NAME}`} description="Jugá con Cine Posta: poné a prueba tu memoria en la trivia de películas o construí tu carrera actoral. Elegí tu próximo minijuego." structuredData={structuredData}>
+<BaseLayout title={`Juegos de cine | ${SITE_NAME}`} description="Jugá la trivia, construí tu carrera actoral o descifrá el acertijo diario de CineCríptico. Tres juegos de cine con Cine Posta." structuredData={structuredData}>
 	<main id="main-content" class="games-hub">
 		<header class="games-hub__topbar">
 			<HomeBrandLink className="games-hub__brand" />
@@ -61,11 +62,15 @@ const structuredData = [
 				</div>
 			</a>
 		</section>
+		<a class="game-entry game-entry--cryptic" href={`${base}juegos/cinecriptico/`}><div class="game-entry__visual game-entry__visual--career"><img src={`${base}assets/games/cinecriptico-oracle-card.webp`} alt="Bola de cristal violeta con manos abiertas y gafas 3D de papel" width="900" height="600" loading="lazy" /></div><div class="game-entry__body"><p class="games-hub__eyebrow">03 / El ritual diario</p><h2>CineCríptico</h2><p>Una pista críptica, una palabra de cine. Seis intentos para abrir el misterio de hoy.</p><ul><li>Un acertijo diario</li><li>Ranking compartido</li><li>Tres ayudas</li></ul><span class="game-entry__cta">Entrar al ritual →</span></div></a>
 		<p class="games-hub__outro">¿Preferís que elija otra persona? <a href={`${base}que-miro-hoy/`}>Encontrá tu próxima película <span aria-hidden="true">↗</span></a></p>
 	</main>
 </BaseLayout>
 
 <style>
+ .game-entry--cryptic { margin-top:2.5rem;max-width:560px; }
+ .game-entry--cryptic .game-entry__visual { height:auto;aspect-ratio:3 / 2; }
+ .game-entry--cryptic .game-entry__visual img { display:block;height:auto;object-fit:cover; }
 	.games-hub { --hub-ink: #f0eee8; --hub-muted: #aeb5bf; --hub-line: #343b45; --hub-accent: #e6b291; width: min(1180px, calc(100% - 2rem)); margin-inline: auto; padding-bottom: 4rem; color: var(--hub-ink); }
 	.games-hub__topbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 1.5rem; border-bottom: 1px solid var(--hub-line); }
 	:global(.games-hub__brand) { display: inline-flex; align-items: center; min-height: 44px; }

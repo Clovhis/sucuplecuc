@@ -1,0 +1,28 @@
+---
+const base=import.meta.env.BASE_URL;
+---
+<section class="home-cryptic" aria-labelledby="home-cryptic-title">
+ <a href={`${base}juegos/cinecriptico/`} class="home-cryptic__link">
+  <div class="home-cryptic__copy">
+   <p class="home-cryptic__kicker">Minijuego / Diario</p>
+   <h2 id="home-cryptic-title">El cine esconde una palabra.</h2>
+   <p>Una pista críptica. Seis intentos.<br />Descifrá el misterio de hoy en CineCríptico.</p>
+   <span class="home-cryptic__cta">Jugar a CineCríptico <span aria-hidden="true">→</span></span>
+  </div>
+  <div class="home-cryptic__visual"><img src={`${base}assets/games/cinecriptico-oracle-card.webp`} width="900" height="600" loading="lazy" decoding="async" alt="Una bola de cristal violeta entre dos manos abiertas, con gafas 3D de papel sobre su base." /></div>
+ </a>
+</section>
+<style>
+ .home-cryptic { border-top: 1px solid #343b45; padding-top: 1.5rem; }
+ .home-cryptic__link { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,450px); align-items: center; gap: 2rem; padding: 1rem 0 1.5rem; text-decoration: none; }
+ .home-cryptic__kicker { color: #e6b291; font: 500 .7rem/1.4 var(--font-sans); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 .8rem; }
+ .home-cryptic h2 { color: #f0eee8; font: 500 clamp(1.6rem,3vw,2.4rem)/1.15 var(--font-sans); letter-spacing: -.035em; margin: 0 0 .8rem; }
+ .home-cryptic__copy > p:not([class]) { color: #aeb5bf; font: .95rem/1.7 var(--font-sans); margin: 0; }
+ .home-cryptic__cta { display: inline-flex; align-items: center; gap: 1.5rem; border: 1px solid #655246; color: #e6b291; border-radius: 4px; padding: .6rem .85rem; margin-top: 1.2rem; min-height: 44px; font-size: .85rem; transition: background .2s; }
+ .home-cryptic__link:hover .home-cryptic__cta { background: #2a221d; }
+ .home-cryptic__link:focus-visible { outline: 2px solid #e6b291; outline-offset: 5px; }
+ .home-cryptic__visual { overflow: hidden; border: 1px solid #343b45; border-radius: 4px; background: #11161d; }
+ .home-cryptic img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+ @media(max-width:720px) { .home-cryptic__link { grid-template-columns: minmax(0,1fr); gap: 1.5rem; } }
+ @media(prefers-reduced-motion:reduce) { .home-cryptic__cta { transition: none; } }
+</style>

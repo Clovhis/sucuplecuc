@@ -13,6 +13,7 @@ import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import HomePrimaryCatalog from '../components/HomePrimaryCatalog.astro';
 import PostometroTeaser from '../components/PostometroTeaser.astro';
 import TriviaTeaser from '../components/TriviaTeaser.astro';
+import CinecripticoTeaser from '../components/CinecripticoTeaser.astro';
 import UpcomingReleases2027 from '../components/UpcomingReleases2027.astro';
 import WeeklyRecommendationsCarousel from '../components/WeeklyRecommendationsCarousel.astro';
 import { getCinemaNews } from '../lib/cinemaNews';
@@ -573,6 +574,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						</a>
 					</section>
 
+					<CinecripticoTeaser />
 					<UpcomingReleases2027 />
 					<section class="home-catalog__mobile-teaser fade-up" style="--item-delay: 180ms;" aria-label="Qué vemos hoy">
 						<PostometroTeaser compact={true} />

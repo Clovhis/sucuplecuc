@@ -74,6 +74,9 @@ jobs:
       - name: Probar trivia, identidades y puntajes en PostgreSQL local
         run: npm run test:trivia
 
+      - name: Probar CineCriptico, privacidad e identidades por juego
+        run: npm run test:cinecriptico
+
       - name: Audit production dependencies
         run: npm audit --omit=dev --audit-level=high
 
