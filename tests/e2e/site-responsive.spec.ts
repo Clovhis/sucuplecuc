@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 const routes = [
   '/', '/peliculas/akira-1988/', '/personas/brad-pitt/', '/personas/', '/que-miro-hoy/',
-  '/comunidad/', '/comunidad/peliculas/12-angry-men-1957/', '/editorial/',
+  '/editorial/',
   '/editorial/resident-evil-noche-cero-la-veria-99-veces/', '/juegos/simulador-carrera-actor/',
   '/como-funciona/', '/sobre-cine-posta/', '/politica-editorial/', '/fuentes-y-datos/',
   '/contacto/', '/politica-de-privacidad/', '/equipo/', '/copyright-y-uso-de-material/',
@@ -26,7 +26,7 @@ for (const path of routes) {
         fields: [...document.querySelectorAll<HTMLElement>('input:not([type="radio"]):not([type="checkbox"]):not([type="hidden"]), select, textarea')]
           .filter(element => element.getClientRects().length > 0)
           .map(element => ({ selector: element.className || element.id, size: parseFloat(getComputedStyle(element).fontSize) })),
-        stickyPanels: [...document.querySelectorAll<HTMLElement>('.community-page__rules, .postometro-results')]
+        stickyPanels: [...document.querySelectorAll<HTMLElement>('.postometro-results')]
           .filter(element => element.getClientRects().length > 0)
           .map(element => getComputedStyle(element).position),
       }));

@@ -161,7 +161,7 @@ async function validate() {
 		run('npm', ['run', 'test:poster-source-policy']);
 		run('npm', ['run', 'validate:content', '--', '--base', 'origin/main', '--astro-check']);
 		if (characterFieldsChanged) run('npm', ['run', 'test:characters']);
-		for (const file of affected) run('node', ['skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs', '--base-ref', 'origin/main', '--skip-youtube', '--verify-community-build', '--verify-reaction-build', '--verify-cinema-carousel-build', '--verify-streaming-carousel-build', '--candidate', file]);
+		for (const file of affected) run('node', ['skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs', '--base-ref', 'origin/main', '--skip-youtube', '--verify-reaction-build', '--verify-cinema-carousel-build', '--verify-streaming-carousel-build', '--candidate', file]);
 		if (characterFieldsChanged) run('npm', ['run', 'audit:character-build']);
 		const e2e = ['tests/e2e/editorial.spec.ts', 'tests/e2e/home-carousels.spec.ts'];
 		if (kind === 'cine') e2e.push('tests/e2e/cinema-release-carousel.spec.ts');

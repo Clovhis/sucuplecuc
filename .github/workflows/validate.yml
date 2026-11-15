@@ -69,7 +69,9 @@ jobs:
           npm run audit:search-titles -- --check
 
       - name: Probar migraciones de votos y tribunas en PostgreSQL local
-        run: npm run test:movie-ratings
+        run: |
+          npm run test:movie-ratings
+          npm run test:retire-community
 
       - name: Probar trivia, identidades y puntajes en PostgreSQL local
         run: npm run test:trivia

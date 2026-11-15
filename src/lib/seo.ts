@@ -27,7 +27,6 @@ export const CONTACT_PATH = '/contacto/';
 export const EDITORIAL_TEAM_PATH = '/equipo/';
 export const QUE_MIRO_HOY_PATH = '/que-miro-hoy/';
 export const PEOPLE_PATH = '/personas/';
-export { COMMUNITY_PATH } from './community';
 
 export function getMovieSeoDescription(movie: Pick<Movie, 'title' | 'year' | 'director' | 'mainCast'>): string {
 	const intro = `Reseña y sinopsis de ${movie.title} (${movie.year}).`;

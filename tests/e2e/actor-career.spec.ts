@@ -1,4 +1,5 @@
 import { expect, test, type Locator, type Page } from '@playwright/test';
+import { captureUnhandledErrors } from './runtime-errors';
 
 async function waitForTurnOrSummary(page: Page) {
 	const choices = page.locator('[data-choice-index]:not([disabled])');
@@ -62,8 +63,7 @@ test.describe('simulador de carrera cinematográfica', () => {
 
 	test('completa una carrera de directora con elecciones, suerte y resumen', async ({ page }) => {
 		test.setTimeout(90_000);
-		const pageErrors: string[] = [];
-		page.on('pageerror', (error) => pageErrors.push(error.message));
+		const pageErrors = await captureUnhandledErrors(page);
 
 		const response = await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
 		expect(response?.ok()).toBeTruthy();

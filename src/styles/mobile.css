@@ -10,11 +10,7 @@
 	.site-header__actions > a,
 	.site-footer__donate,
 	.site-footer__link,
-	.movie-share__button,
-	.movie-detail__community-link,
-	.community-page__home-link,
-	.community-page__current-link,
-	.community-movie-summary__link {
+	.movie-share__button {
 		min-height: 48px !important;
 	}
 
@@ -26,13 +22,8 @@
 		min-width: 48px !important;
 	}
 
-	.movie-share__button--x,
-	.community-comments__emoji-picker button {
+	.movie-share__button--x {
 		min-width: 48px;
-	}
-
-	.community-comments__spoiler-toggle {
-		min-height: 48px;
 	}
 
 	.site-header__actions > a {
@@ -346,8 +337,7 @@
 	.site-header__actions > a,
 	.site-footer__donate,
 	.site-footer__link,
-	.movie-share__button,
-	.movie-detail__community-link {
+	.movie-share__button {
 		min-height: 48px !important;
 	}
 

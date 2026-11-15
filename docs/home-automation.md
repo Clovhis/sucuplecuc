@@ -2,7 +2,7 @@
 
 ## Fuentes de verdad y responsabilidades
 
-CinePosta es un sitio estático Astro 7. `src/data/movies/*.json` aporta películas, `people.json` y `personProfiles.ts` aportan personas, y `src/data/editorials/*.json` aporta notas. `src/lib/movies.ts`, `people.ts`, `editorial.ts`, los medidores y el motor de recomendaciones transforman esas fuentes. Las rutas Astro generan fichas, archivo editorial, personas, catálogo paginado, trailers, Comunidad, sitemap y el índice JSON de búsqueda. Los scripts del navegador manejan filtros/paginación, carruseles, players y juegos. Supabase atiende ratings y Comunidad en el navegador; sus SQL viven en `supabase/sql/`. Las credenciales administrativas no pertenecen al repo.
+CinePosta es un sitio estático Astro 7. `src/data/movies/*.json` aporta películas, `people.json` y `personProfiles.ts` aportan personas, y `src/data/editorials/*.json` aporta notas. `src/lib/movies.ts`, `people.ts`, `editorial.ts`, los medidores y el motor de recomendaciones transforman esas fuentes. Las rutas Astro generan fichas, archivo editorial, personas, catálogo paginado, trailers, sitemap y el índice JSON de búsqueda. Los scripts del navegador manejan filtros/paginación, carruseles, players y juegos. Supabase atiende ratings y juegos en el navegador; sus SQL viven en `supabase/sql/`. Las credenciales administrativas no pertenecen al repo.
 
 Las cargas con skills modifican películas, personas/assets y referencias derivadas; la validación de contenido comprueba esos datos, rutas, catálogo, originalidad y salida pública. Pósters y retratos conservan sus políticas locales. Cada reparación limita sus cambios al alcance solicitado.
 

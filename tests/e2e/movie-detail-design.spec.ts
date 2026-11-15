@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { captureUnhandledErrors } from './runtime-errors';
 import antMan from '../../src/data/movies/ant-man-2015.json' with { type: 'json' };
 
 test('movie edition has a readable layout at phone, tablet and desktop widths', async ({ page }) => {
@@ -39,8 +40,7 @@ test('movie edition has a readable layout at phone, tablet and desktop widths', 
 });
 
 test('reading links, canonical sharing and person navigation work after the redesign', async ({ page }) => {
-	const errors: string[] = [];
-	page.on('pageerror', (error) => errors.push(error.message));
+	const errors = await captureUnhandledErrors(page);
 	await page.addInitScript(() => {
 		Object.defineProperty(navigator, 'clipboard', {
 			value: {
@@ -107,7 +107,7 @@ test('rating can be submitted and restored using the existing widget contract', 
 	await expect(rating.locator('.is-active')).toHaveCount(1);
 	await page.reload();
 	await expect(rating.locator('[data-rating-status]')).toHaveText('Tu voto: 8/10');
-	await page.goto('/comunidad/peliculas/akira-1988/');
+	await page.goto('/peliculas/akira-1988/');
 	await expect(rating.locator('[data-rating-status]')).toHaveText('Tu voto: 8/10');
 	for (const value of [1, 10]) {
 		await rating.getByRole('button', { name: `${value} de 10`, exact: true }).click();

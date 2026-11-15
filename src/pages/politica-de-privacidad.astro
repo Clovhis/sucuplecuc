@@ -5,7 +5,7 @@ import { CONTACT_EMAIL, PRIVACY_PATH, SITE_LANGUAGE, SITE_NAME, SITE_URL } from 
 
 const pageTitle = `Política de Privacidad | ${SITE_NAME}`;
 const pageDescription =
-	'Política de privacidad de Cine Posta: cómo tratamos los datos técnicos y la participación en la comunidad, sin publicidad personalizada.';
+	'Política de privacidad de Cine Posta: cómo tratamos los datos técnicos, los votos y los juegos, sin publicidad personalizada.';
 const privacyUrl = new URL(PRIVACY_PATH, SITE_URL).toString();
 const structuredData = [
 	{
@@ -36,7 +36,7 @@ const structuredData = [
 			<h1 class="about-page__title">Política de Privacidad</h1>
 			<p class="about-page__lead">
 				En {SITE_NAME} preferimos explicar esto corto y claro: no mostramos anuncios ni usamos plataformas publicitarias.
-				Esta página resume qué puede ocurrir cuando navegás, participás en la comunidad o seguís un enlace externo.
+				Esta página resume qué puede ocurrir cuando navegás, votás una película, jugás o seguís un enlace externo.
 			</p>
 		</section>
 
@@ -65,12 +65,13 @@ const structuredData = [
 				</p>
 			</section>
 
+
 			<section class="privacy-page__section">
-				<h2>Comentarios de la comunidad</h2>
+				<h2>Votos y juegos</h2>
 				<p>
-					Si participás en Foro Cineposta, los mensajes se almacenan temporalmente en la infraestructura de datos que usa
-					Cine Posta para sus funciones públicas. La participación no crea perfiles visibles, aunque el navegador puede
-					recibir una identidad técnica anónima para aplicar límites de publicación.
+					Los votos y las partidas usan Supabase para guardar resultados. El navegador conserva un identificador para
+					recordar tu voto y una sesión anónima para los juegos. Los rankings pueden mostrar el apodo y los datos
+					que elegís compartir al jugar.
 				</p>
 			</section>
 
@@ -85,7 +86,7 @@ const structuredData = [
 			<section class="privacy-page__section">
 				<h2>Contacto</h2>
 				<p>
-					Si tenés una consulta sobre privacidad, comunidad o enlaces externos en {SITE_NAME}, podés escribir a
+					Si tenés una consulta sobre privacidad o enlaces externos en {SITE_NAME}, podés escribir a
 					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Privacidad`}>{CONTACT_EMAIL}</a>.
 				</p>
 			</section>

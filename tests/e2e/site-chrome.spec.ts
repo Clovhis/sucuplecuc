@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const footerPaths = ['/', '/que-miro-hoy/', '/personas/', '/comunidad/', '/editorial/',
+const footerPaths = ['/', '/que-miro-hoy/', '/personas/', '/editorial/',
   '/como-funciona/', '/sobre-cine-posta/', '/equipo/', '/politica-editorial/',
   '/fuentes-y-datos/', '/copyright-y-uso-de-material/', '/contacto/', '/politica-de-privacidad/'];
 

@@ -1,6 +1,6 @@
 # Biblioteca editorial central de CinePosta
 
-Proyecto Supabase `bftcrexcwktyiqsermni`; sólo Instagram integrado. Los pósters, personas del sitio, ratings, trivia, comunidad, autenticación y automatización de X no cambian.
+Proyecto Supabase `bftcrexcwktyiqsermni`; sólo Instagram integrado. Los pósters, personas del sitio, ratings, trivia, autenticación y automatización de X no cambian.
 
 ## Arquitectura y derechos
 

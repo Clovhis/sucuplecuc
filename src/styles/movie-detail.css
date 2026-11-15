@@ -53,7 +53,6 @@ body.movie-edition .movie-detail__review-card { gap: .8rem; }
 body.movie-edition .movie-detail__synopsis,
 body.movie-edition .movie-detail__review { font: 400 1.05rem/1.8 var(--font-sans); color: var(--ficha-ink); max-width: 68ch; }
 body.movie-edition .movie-detail__review-kicker { color: var(--ficha-accent); }
-body.movie-edition .movie-detail__community-link { justify-self: start; padding: .7rem 0; min-height: 44px; border: 0; border-radius: 0; background: none; box-shadow: none; font: 400 .85rem/1.5 var(--font-sans); color: var(--ficha-accent); }
 body.movie-edition .movie-detail__ten-second-card { gap: 1.2rem; padding-block: 1.2rem 1.5rem; border-block: 1px solid var(--ficha-line); }
 body.movie-edition .movie-detail__ten-second-head { gap: .75rem; align-items: start; }
 body.movie-edition .movie-detail__ten-second-head h2 { margin-top: .35rem; color: var(--ficha-ink); font: 500 1.6rem/1.2 var(--font-sans); letter-spacing: -.02em; }

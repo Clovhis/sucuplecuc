@@ -18,17 +18,13 @@ test('El abogado del diablo publishes its verified score, people, poster and ten
 	expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
 });
 
-test('the new movie has an indexable discussion and one search result', async ({ page, request }) => {
+test('the new movie has an indexable movie page and one search result', async ({ page, request }) => {
 	const sitemap = await (await request.get('/sitemap.xml')).text();
 	expect(sitemap).toContain(`/peliculas/${movie.slug}/`);
-	expect(sitemap).toContain(`/comunidad/peliculas/${movie.slug}/`);
+	expect(sitemap).not.toContain(`/comunidad/peliculas/${movie.slug}/`);
 	await page.goto(`/?q=${encodeURIComponent(movie.title)}`);
 	await expect(page.locator('[data-movie-search-root]')).toHaveAttribute('data-home-catalog-ready', 'true');
 	const cards = page.locator('[data-movie-search-grid] .movie-card');
 	await expect(cards).toHaveCount(1);
 	await expect(cards.locator('.movie-card__link')).toHaveAttribute('href', `/peliculas/${movie.slug}/`);
-	await page.goto(`/comunidad/peliculas/${movie.slug}/`, { waitUntil: 'load' });
-	await expect(page.getByRole('heading', { level: 1 })).toHaveText(movie.title);
-	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://www.cineposta.com.ar/comunidad/peliculas/${movie.slug}/`);
-	await expect(page.locator('[data-rating-widget] button')).toHaveCount(10);
 });

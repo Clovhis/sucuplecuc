@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { captureUnhandledErrors } from './runtime-errors';
 import { existsSync } from 'node:fs';
 import { TRIVIA_COUNTRY_CODES } from '../../src/lib/trivia-player';
 import { triviaLocalPreview } from './trivia-preview';
@@ -8,8 +9,7 @@ test.beforeEach(async ({ page, baseURL }) => { await triviaLocalPreview(page, ba
 test('ranking de Trivia: banderas locales, edad y layout adaptable', async ({ page }) => {
 	// Every nationality accepted by the form has an asset, including countries outside the simulator.
 	for (const code of TRIVIA_COUNTRY_CODES) expect(existsSync(`public/images/flags/${code.toLowerCase()}.svg`), code).toBe(true);
-	const errors: string[] = [];
-	page.on('pageerror', (error) => errors.push(error.message));
+	const errors = await captureUnhandledErrors(page);
 	await page.route('**/rest/v1/rpc/list_trivia_high_scores', (route) => route.fulfill({
 		json: [
 			{ player_name: 'Zahiron', country_code: 'AR', age: 32, score: 19888, correct_count: 17 },

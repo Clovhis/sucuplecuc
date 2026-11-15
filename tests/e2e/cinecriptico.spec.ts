@@ -132,7 +132,7 @@ test('shared session, game-scoped player, keyboard, hints, results and persisten
  // Firefox reports this SDK lock-contention exception even though auth recovers and
  // every persistence assertion above succeeds. Keep it visible as an annotation;
  // never swallow other errors or change the site's shared session implementation.
- const knownLock=/^Acquiring an exclusive Navigator LockManager lock "lock:cineposta-(?:community-anon-auth|trivia-auth-v1)" immediately failed$/;
+ const knownLock=/^Acquiring an exclusive Navigator LockManager lock "lock:cineposta-trivia-auth-v1" immediately failed$/;
  const sdkWarnings=test.info().project.name==='desktop-firefox'?errors.filter(e=>knownLock.test(e)):[];
  if(sdkWarnings.length)test.info().annotations.push({type:'supabase-sdk-warning',description:`${sdkWarnings.length} known Firefox lock-contention reports; auth/persistence passed. https://github.com/supabase/supabase-js/issues/936`});
  expect(errors.filter(e=>!sdkWarnings.includes(e))).toEqual([]);

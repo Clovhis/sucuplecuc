@@ -26,20 +26,6 @@ export const supabase = isSupabaseConfigured
 	? createSupabaseBrowserClient(supabaseUrl, supabaseAnonKey)
 	: null;
 
-// Community sessions are anonymous to visitors but persist per browser so RLS
-// can enforce ownership and publication limits. No display name or message is
-// kept in browser storage.
-export const communitySupabase = isSupabaseConfigured
-	? createClient(supabaseUrl, supabaseAnonKey, {
-			auth: {
-				autoRefreshToken: true,
-				persistSession: true,
-				detectSessionInUrl: false,
-				storageKey: 'cineposta-community-anon-auth',
-			},
-		})
-	: null;
-
 // Separate persistent identity for the trivia; never share ownership with movie votes.
 export const triviaSupabase = isSupabaseConfigured
 	? createClient(supabaseUrl, supabaseAnonKey, {

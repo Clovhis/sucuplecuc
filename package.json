@@ -29,6 +29,7 @@
     "update-upcoming-releases": "node --experimental-strip-types ./scripts/update-upcoming-releases.mjs",
     "validate:home-editions": "node --experimental-strip-types ./scripts/validate-home-editions.mjs",
     "test:movie-ratings": "node ./scripts/movie-ratings-migration.test.mjs",
+    "test:retire-community": "node --test ./scripts/retire-community.test.mjs",
     "audit:duplicates": "node ./scripts/audit-movie-duplicates.mjs",
     "test:home-automation": "node --experimental-strip-types ./scripts/cinema-news-selection.test.mjs && node ./scripts/publish-home-edition.test.mjs && node --experimental-strip-types ./scripts/home-automation.test.mjs && npm run test:weekly-recommendations && npm run test:buffer:x",
     "audit:search-titles": "node ./scripts/audit-search-titles.mjs",

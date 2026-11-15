@@ -1,62 +1,27 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import CommunityComments from '../../../components/CommunityComments.astro';
-import MovieRating from '../../../components/MovieRating.astro';
-import { getCommunityCommentsConfig, getMovieCommunityThreadId, COMMUNITY_PATH } from '../../../lib/community';
-import { getMovieCommunityPath } from '../../../lib/community';
-import { formatRuntimeMinutes, getMoviePath, getMovies, getPosterUrl } from '../../../lib/movies';
-import { getMoviePeopleGroups } from '../../../lib/people';
-import { createSimplePageStructuredData, SITE_NAME } from '../../../lib/seo';
-import type { Movie } from '../../../types/movie';
+import { getMovies, getMoviePath } from '../../../lib/movies';
+import aliases from '../../../data/movie-aliases.json';
 
 export function getStaticPaths() {
-	return getMovies().map((movie) => ({ params: { slug: movie.slug }, props: { movie } }));
+	const movies = getMovies();
+	const paths = movies.map((movie) => ({ params: { slug: movie.slug }, props: { movie } }));
+	for (const [legacy, canonical] of Object.entries(aliases)) {
+		const movie = movies.find((entry) => entry.slug === canonical);
+		if (movie) paths.push({ params: { slug: legacy }, props: { movie } });
+	}
+	return paths;
 }
 
-const { movie } = Astro.props as { movie: Movie };
-const comments = getCommunityCommentsConfig();
-const discussionPath = getMovieCommunityPath(movie.slug);
-const pageTitle = `Discusión: ${movie.title} (${movie.year}) | ${SITE_NAME}`;
-const pageDescription = `Opiniones, recomendaciones y charla sobre ${movie.title} (${movie.year}) en Foro Cineposta.`;
-const structuredData = createSimplePageStructuredData(discussionPath, pageTitle, pageDescription);
-const people = getMoviePeopleGroups(movie);
-const cast = people.cast.slice(0, 4);
-const genres = [movie.category, ...(movie.genres ?? [])].filter((genre, index, values) => genre && values.indexOf(genre) === index).slice(0, 3);
+const { movie } = Astro.props;
+const destination = getMoviePath(movie.slug);
 ---
-
-<BaseLayout title={pageTitle} description={pageDescription} image={getPosterUrl(movie.poster)} structuredData={structuredData}>
-	<main id="main-content" class="container community-page community-discussion-page">
-		<nav class="community-page__nav" aria-label="Navegación principal">
-			<a class="community-page__home-link" href={COMMUNITY_PATH}>Foro Cineposta</a>
-			<a class="community-page__home-link" href={getMoviePath(movie.slug)}>Ficha de la película</a>
-		</nav>
-		<article class="community-movie-summary fade-up" style="--item-delay: 0ms;" aria-labelledby="movie-title">
-			<a class="community-movie-summary__poster" href={getMoviePath(movie.slug)} aria-label={`Ver ficha de ${movie.title}`}>
-				<img src={getPosterUrl(movie.poster)} alt={`Póster de ${movie.title}`} loading="eager" fetchpriority="high" referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={movie.title} data-poster-search-year={movie.year} />
-			</a>
-			<div class="community-movie-summary__body">
-				<h1 id="movie-title">{movie.title}</h1>
-				<p class="community-movie-summary__facts">{movie.year}{movie.runtimeMinutes ? ` · ${formatRuntimeMinutes(movie.runtimeMinutes)}` : ''}</p>
-				{genres.length > 0 && <ul class="community-movie-summary__genres" aria-label="Géneros">{genres.map((genre) => <li>{genre}</li>)}</ul>}
-				<p class="community-movie-summary__synopsis">{movie.synopsis}</p>
-				<dl class="community-movie-summary__credits">
-					<div><dt>Dirección</dt><dd>{movie.director}</dd></div>
-					{cast.length > 0 && <div><dt>Elenco</dt><dd>{cast.map((person, index) => <>{index > 0 && ', '}{person.profilePath ? <a href={person.profilePath}>{person.creditedName}</a> : person.creditedName}</>)}</dd></div>}
-				</dl>
-				<a class="community-movie-summary__link" href={getMoviePath(movie.slug)}>Ver ficha completa</a>
-			</div>
-		</article>
-		<div class="community-page__content">
-			<section class="community-page__comments fade-up" style="--item-delay: 80ms;" aria-labelledby="conversacion">
-				<div class="community-page__section-heading"><div><h2 id="conversacion">Discusión</h2></div><p>Opiniones y recomendaciones.</p></div>
-				<CommunityComments enabled={comments.enabled} threadId={getMovieCommunityThreadId(movie.slug)} movieSlug={movie.slug} movieTitle={movie.title} turnstileSiteKey={comments.turnstileSiteKey} />
-			</section>
-			<aside class="community-page__rules fade-up" style="--item-delay: 160ms;" aria-labelledby="reglas-sala">
-				<h2 id="reglas-sala">Código de la sala</h2>
-				<ul><li>Picanteá la discusión, no a la persona del otro lado.</li><li>Si vas a soltar una bomba del final, marcala como spoiler y todos felices.</li><li>Spam, links turbios y cadenas: directo al tacho.</li><li>Podés amar u odiar una peli; tirá argumentos y no patadas.</li></ul>
-				<MovieRating movieSlug={movie.slug} />
-				<p class="community-page__privacy-note">Los mensajes son temporales y cada hilo conserva hasta 200 publicaciones.</p>
-			</aside>
-		</div>
-	</main>
-</BaseLayout>
+<!doctype html>
+<html lang="es-AR">
+	<head>
+		<meta charset="utf-8" />
+		<title>{movie.title} | CinePosta</title>
+		<link rel="canonical" href={`https://www.cineposta.com.ar${destination}`} />
+		<meta http-equiv="refresh" content={`0;url=${destination}`} />
+	</head>
+	<body><p>La película está en <a href={destination}>{movie.title} ({movie.year})</a>.</p></body>
+</html>

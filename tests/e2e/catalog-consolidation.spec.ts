@@ -29,10 +29,10 @@ for (const [legacyPath, destination, title] of [
 	});
 }
 
-test('retired movie and forum URLs point to the canonical record and stay out of the sitemap', async ({ request }) => {
+test('retired movie URLs point to the canonical record and stay out of the sitemap', async ({ request }) => {
 	const sitemap = await (await request.get('/sitemap.xml')).text();
 	for (const [oldSlug, canonical] of aliases) {
-		for (const section of ['peliculas', 'comunidad/peliculas']) {
+		for (const section of ['peliculas']) {
 			const html = await (await request.get(`/${section}/${oldSlug}/`)).text();
 			expect(html).toContain(`rel="canonical" href="https://www.cineposta.com.ar/${section}/${canonical}/"`);
 			expect(html).toContain('http-equiv="refresh"');

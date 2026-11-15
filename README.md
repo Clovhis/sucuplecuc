@@ -8,7 +8,6 @@ Catálogo y revista digital de cine para público argentino, construidos con Ast
 - perfiles de cineastas y un archivo de editoriales originales
 - Score Cine Posta del 1 al 10, además de votos del público del 1 al 10
 - Radar de Cine, recomendaciones semanales y próximos estrenos con trailers
-- Comunidad con debates, comentarios, reacciones y fichas de películas
 - medidores editoriales por taxonomía (`Lagrimómetro`, `Jajámetro`, `Cagazómetro`, `Explosiómetro`, `Sangrómetro`)
 - simulador interactivo de carrera actoral con tabla pública de puntajes
 
@@ -17,7 +16,7 @@ Catálogo y revista digital de cine para público argentino, construidos con Ast
 - Astro 7
 - TypeScript
 - CSS plano
-- Supabase para ratings, Comunidad y puntajes del simulador
+- Supabase para ratings, juegos y puntajes del simulador
 - Playwright para pruebas end-to-end en escritorio y emulación móvil
 
 ## Estructura
@@ -232,21 +231,14 @@ Ese script:
 - expone RPCs para leer y votar
 - revoca acceso directo de `anon` a la tabla base
 
-## Comunidad y MCP de Supabase
+## MCP de Supabase
 
-La comunidad usa Supabase Anonymous Auth para identificar al navegador sin pedir una cuenta. Los mensajes, respuestas, cambios de apodo, spoilers, reacciones y el listado de actividad se sirven mediante RPCs con `security definer`; el navegador no tiene acceso directo a las tablas.
+El retiro del foro y su SQL pendiente de aplicar se documentan en `docs/retiro-comunidad.md`. Supabase sigue atendiendo votos, juegos y la biblioteca de redes.
 
-Los esquemas fuente están en `supabase/sql/`:
-
-- `community_messages.sql`: instalación completa de la comunidad.
-- `community_message_reactions.sql`: migración incremental de spoilers, 👍/👎 y autor del último posteo.
-- `community_message_limit_300.sql`: baja el máximo de los mensajes a 300 caracteres.
-- `movie_ratings.sql`: instalación completa de votos; API v2 del 1 al 10 y API antigua compatible.
-- `movie_ratings_1_to_10.sql`: migración incremental para bases existentes; conserva votos viejos y los normaliza al leer, sin multiplicarlos en cada ejecución. Aplicar antes del frontend nuevo.
-- `merge_duplicate_movie_threads.sql`: reúne las tribunas de las fichas duplicadas conservando mensajes, respuestas y reacciones.
-- `actor_high_scores.sql`: ranking Arcade del top 10 del simulador de carrera actoral mediante RPCs validadas.
-
-### Conexión MCP para futuras iteraciones
+Los SQL vigentes en `supabase/sql/` incluyen `movie_ratings.sql` (instalación de votos),
+`movie_ratings_1_to_10.sql` (actualización compatible de escala), `actor_high_scores.sql`
+(simulador), y los esquemas de trivia, CineCríptico y biblioteca social. Las claves públicas
+del frontend siguen siendo necesarias para esas funciones.
 
 El proyecto de Supabase es `bftcrexcwktyiqsermni`. En Codex, el servidor MCP se configura fuera del repositorio, en `C:\Users\yosoy\.codex\config.toml`:
 

@@ -1,12 +1,10 @@
 import type { APIRoute } from 'astro';
 import { getEditorials, getEditorialPath } from '../lib/editorial';
-import { getMovieCommunityPath } from '../lib/community';
 import { getMoviePath, getMovies } from '../lib/movies';
 import { getMovieCatalogPages, getMovieCatalogPath } from '../lib/movie-catalog';
 import { getPersonPath, getPersonProfiles, isPersonProfileIndexable } from '../lib/people';
 import {
 	ABOUT_PATH,
-	COMMUNITY_PATH,
 	CONTACT_PATH,
 	COPYRIGHT_PATH,
 	EDITORIAL_POLICY_PATH,
@@ -55,11 +53,9 @@ export const GET: APIRoute = async () => {
 		{ pathname: COPYRIGHT_PATH },
 		{ pathname: CONTACT_PATH },
 		{ pathname: EDITORIAL_TEAM_PATH },
-		{ pathname: COMMUNITY_PATH },
 		{ pathname: PRIVACY_PATH },
 		...people.map((person) => ({ pathname: getPersonPath(person.slug) })),
 		...movies.map((movie) => ({ pathname: getMoviePath(movie.slug) })),
-		...movies.map((movie) => ({ pathname: getMovieCommunityPath(movie.slug) })),
 	];
 	const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries
 		.map((entry) => {

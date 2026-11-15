@@ -41,25 +41,5 @@ try {
 	await db.exec(install.replace('create extension if not exists pgcrypto;', ''));
 	assert.equal((await one("select * from public.get_movie_rating_v2('akira-1988', 'visitor-legacy-0001')")).rating, 8);
 
-	// Minimal production-shaped forum tables, including the thread identity check.
-	await db.exec(`create table public.community_threads (
-		id uuid primary key default gen_random_uuid(), thread_key text not null unique,
-		movie_slug text unique, movie_title text,
-		check (thread_key = 'cineposta-pelicula-' || movie_slug));
-		create table public.community_messages (id int primary key, thread_id uuid references public.community_threads(id) on delete cascade, parent_id int references public.community_messages(id));
-		insert into public.community_threads(thread_key, movie_slug) values
-		('cineposta-pelicula-seven-samurai-1954', 'seven-samurai-1954'),
-		('cineposta-pelicula-los-siete-samurais-1954', 'los-siete-samurais-1954'),
-		('cineposta-pelicula-paprika-detective-de-los-suenos-2006', 'paprika-detective-de-los-suenos-2006');
-		insert into public.community_messages values (1, (select id from public.community_threads where movie_slug = 'seven-samurai-1954'), null),
-		(2, (select id from public.community_threads where movie_slug = 'seven-samurai-1954'), 1),
-		(3, (select id from public.community_threads where movie_slug = 'paprika-detective-de-los-suenos-2006'), null);`);
-	const merge = await readFile(new URL('../supabase/sql/merge_duplicate_movie_threads.sql', import.meta.url), 'utf8');
-	await db.exec(merge);
-	await db.exec(merge);
-	assert.equal((await one('select count(*)::int as count from public.community_messages')).count, 3);
-	assert.equal((await one('select parent_id from public.community_messages where id = 2')).parent_id, 1);
-	assert.equal((await one('select count(*)::int as count from public.community_threads')).count, 2);
-	assert.equal((await one("select count(*)::int as count from public.community_messages m join public.community_threads t on t.id=m.thread_id where t.movie_slug='los-siete-samurais-1954'")).count, 2);
-	console.log('PostgreSQL: legacy/new votes, bounds, anon permissions, retries, alias collisions and forum preservation verified.');
+	console.log('PostgreSQL: legacy/new votes, bounds, anon permissions, retries and alias collisions verified.');
 } finally { await db.close(); }

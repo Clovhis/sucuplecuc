@@ -12,7 +12,6 @@ const icons = {
   compass: '<circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5z"/>',
   calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 14h2M14 14h2M8 17h2"/>',
   game: '<path d="M7 7h10a3 3 0 0 1 3 2l2 9a2 2 0 0 1-3 2l-4-3H9l-4 3a2 2 0 0 1-3-2l2-9a3 3 0 0 1 3-2zM8 10v5M5.5 12.5h5M16 11h.01M18 14h.01"/>',
-  chat: '<path d="M4 4h16v12H9l-5 4zM8 8h8M8 12h5"/>',
   radar: '<circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 6M8 5a8 8 0 0 0 11 11"/><circle cx="8" cy="14" r="1"/>',
 };
 const primary = [
@@ -30,7 +29,6 @@ const more = [
   { href: homeSection('proximos-estrenos'), label: 'Próximos estrenos', icon: icons.calendar },
   { href: homeSection('radar-de-cine'), label: 'Radar de cine', icon: icons.radar },
   { href: `${base}juegos/`, label: 'Juegos de cine', icon: icons.game },
-  { href: `${base}comunidad/`, label: 'Comunidad', icon: icons.chat },
 ];
 const current = (href: string) => !href.includes('#') && Astro.url.pathname.startsWith(href) ? 'true' : undefined;
 ---

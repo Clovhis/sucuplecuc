@@ -9,8 +9,6 @@ const routes = [
 	{ id: 'people', path: '/personas/' },
 	{ id: 'person', path: '/personas/al-pacino/' },
 	{ id: 'recommendation', path: '/que-miro-hoy/' },
-	{ id: 'community', path: '/comunidad/' },
-	{ id: 'discussion', path: '/comunidad/peliculas/12-angry-men-1957/' },
 	{ id: 'methodology', path: '/como-funciona/' },
 	{ id: 'about', path: '/sobre-cine-posta/' },
 	{ id: 'editorial', path: '/politica-editorial/' },

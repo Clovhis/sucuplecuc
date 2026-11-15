@@ -119,7 +119,7 @@ npm run catalog:movies
 npm run catalog:movies:check
 npm run validate:content
 npm run build
-node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate <path> --skip-youtube --verify-community-build --verify-reaction-build --verify-cinema-carousel-build --verify-streaming-carousel-build
+node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate <path> --skip-youtube --verify-reaction-build --verify-cinema-carousel-build --verify-streaming-carousel-build
 npm run validate:public-output
 npm run validate:sitemap-indexability
 git diff --check

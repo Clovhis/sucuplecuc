@@ -181,7 +181,6 @@ function parseArgs(argv) {
 		recent: false,
 		format: 'text',
 		skipYoutube: false,
-		verifyCommunityBuild: false,
 		verifyReactionBuild: false,
 		verifyCinemaCarouselBuild: false,
 		verifyStreamingCarouselBuild: false,
@@ -201,8 +200,6 @@ function parseArgs(argv) {
 			args.format = argv[++index];
 		} else if (arg === '--skip-youtube') {
 			args.skipYoutube = true;
-		} else if (arg === '--verify-community-build') {
-			args.verifyCommunityBuild = true;
 		} else if (arg === '--verify-reaction-build') {
 			args.verifyReactionBuild = true;
 		} else if (arg === '--verify-cinema-carousel-build') {
@@ -236,7 +233,6 @@ function usage() {
 			'  --all                Audit every movie JSON file under the root directory.',
 			'  --format <type>      text | json. Default: text',
 			'  --skip-youtube       Skip YouTube oEmbed checks.',
-			'  --verify-community-build  Require the built per-movie Comunidad route in dist/.',
 			'  --verify-reaction-build   Require the score-derived reaction panel in the built detail route.',
 			'  --verify-cinema-carousel-build  Require eligible current Cine entries in the homepage trailer carousel.',
 			'  --verify-streaming-carousel-build  Require eligible current streaming entries in the homepage trailer carousel.',
@@ -914,22 +910,6 @@ function validatePostCredits(movie, candidatePath, findings) {
 	}
 	if (hasField && (!Number.isInteger(movie.postCreditsScenes) || movie.postCreditsScenes < 0)) {
 		addFinding(findings, 'error', 'invalid-post-credits', candidatePath, 'postCreditsScenes must be a verified non-negative integer; null is not allowed.');
-	}
-}
-
-function validateCommunityBuildRoute(movie, candidatePath, findings) {
-	const slug = typeof movie.slug === 'string' ? movie.slug.trim() : '';
-	if (!slug) return;
-
-	const routePath = path.join('dist', 'comunidad', 'peliculas', encodeURIComponent(slug), 'index.html');
-	if (!fs.existsSync(routePath)) {
-		addFinding(
-			findings,
-			'error',
-			'missing-community-route',
-			candidatePath,
-			`Expected built Comunidad discussion route is missing: ${routePath}. Run npm run build and confirm the movie slug is valid.`,
-		);
 	}
 }
 
@@ -2022,9 +2002,6 @@ async function auditCandidates(args) {
 		});
 
 		validateMovieShape(movie, candidate, catalogText, findings, knownMovieSlugs);
-		if (args.verifyCommunityBuild) {
-			validateCommunityBuildRoute(movie, candidate, findings);
-		}
 		if (args.verifyReactionBuild) {
 			validateReactionBuildRoute(movie, candidate, findings);
 		}

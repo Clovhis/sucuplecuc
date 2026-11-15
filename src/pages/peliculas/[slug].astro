@@ -41,7 +41,6 @@ import { getCagazometroScore } from '../../lib/cagazometro';
 import { getExplosiometroScore } from '../../lib/explosiometro';
 import { getSangrometroScore } from '../../lib/sangrometro';
 import { EDITORIAL_TEAM_NAME, EDITORIAL_TEAM_PATH, METHODOLOGY_PATH, SITE_NAME, SITE_URL, createMovieStructuredData, getMovieSeoDescription } from '../../lib/seo';
-import { getMovieCommunityPath } from '../../lib/community';
 import { getMovieCountries } from '../../lib/countries';
 import type { Movie } from '../../types/movie';
 
@@ -98,6 +97,8 @@ const explosiometroScore =
 	cagazometroScore === undefined
 		? getExplosiometroScore(movie)
 		: undefined;
+const hasEditorialMeter = [sangrometroScore, lagrimometroScore, jajametroScore, cagazometroScore, explosiometroScore]
+	.some((score) => score !== undefined);
 const shouldShowPostCreditsInfo = movie.postCreditsScenes !== undefined;
 const currentDate = new Date();
 type PersonDateParts = {
@@ -363,9 +364,6 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 				Volver
 			</a>
 			<HomeBrandLink className="page-action page-action--home" label="Volver al inicio de Cine Posta" />
-			<a class="page-action" href={getMovieCommunityPath(movie.slug)}>
-				Abrir discusión
-			</a>
 		</div>
 
 		<section class="movie-detail">
@@ -481,6 +479,64 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 			<div class="movie-detail__panel">
 				<section class="movie-detail__showcase" aria-label="Reseña y datos de la película">
 					<div class="movie-detail__hero-stack">
+						{movie.synopsis && (
+							<section class="movie-detail__synopsis-card" aria-label="De qué se trata">
+								<p class="movie-detail__synopsis-kicker">De qué va</p>
+								<p class="movie-detail__synopsis">{movie.synopsis}</p>
+							</section>
+						)}
+						{movie.review && (
+							<section id="resena" class="movie-detail__review-card" aria-label="Reseña honesta">
+								<p class="movie-detail__review-kicker">La posta</p>
+								<p class="movie-detail__review">{movie.review}</p>
+							</section>
+						)}
+						{hasEditorialMeter && (
+							<div class="movie-detail__signals" aria-label="Medidores de CinePosta">
+								{sangrometroScore !== undefined && (
+									<section id="sangrometro" class="movie-detail__sangrometro-card" aria-label="Sangrómetro">
+										<div class="movie-detail__sangrometro-head">
+											<p class="movie-detail__sangrometro-title">Sangrómetro</p>
+										</div>
+										<Sangrometro score={sangrometroScore} />
+									</section>
+								)}
+								{lagrimometroScore !== undefined && (
+									<section id="lagrimometro" class="movie-detail__lagrimometro-card" aria-label="Lagrimómetro">
+										<div class="movie-detail__lagrimometro-head">
+											<p class="movie-detail__lagrimometro-title">Lagrimómetro</p>
+										</div>
+										<Lagrimometro score={lagrimometroScore} />
+									</section>
+								)}
+								{jajametroScore !== undefined && (
+									<section id="jajametro" class="movie-detail__jajametro-card" aria-label="Jajámetro">
+										<div class="movie-detail__jajametro-head">
+											<p class="movie-detail__jajametro-title">Jajámetro</p>
+										</div>
+										<Jajametro score={jajametroScore} />
+									</section>
+								)}
+								{cagazometroScore !== undefined && (
+									<section id="cagazometro" class="movie-detail__cagazometro-card" aria-label="Cagazómetro">
+										<div class="movie-detail__cagazometro-head">
+											<p class="movie-detail__cagazometro-title">Cagazómetro</p>
+										</div>
+										<Cagazometro score={cagazometroScore} />
+									</section>
+								)}
+								{explosiometroScore !== undefined && (
+									<section id="explosiometro" class="movie-detail__explosiometro-card" aria-label="Explosiómetro">
+										<div class="movie-detail__explosiometro-head">
+											<p class="movie-detail__explosiometro-title">Explosiómetro</p>
+										</div>
+										<Explosiometro score={explosiometroScore} />
+									</section>
+								)}
+							</div>
+						)}
+						<MovieEditorialLinks movieSlug={movie.slug} />
+						<MovieReaction movie={movie} />
 						{tenSecondTake && (
 							<section class="movie-detail__ten-second-card" aria-labelledby={`ten-second-${movie.slug}`}>
 								<div class="movie-detail__ten-second-head">
@@ -514,77 +570,18 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								</div>
 							</section>
 						)}
-						{movie.synopsis && (
-							<section class="movie-detail__synopsis-card" aria-label="De qué se trata">
-								<p class="movie-detail__synopsis-kicker">De qué va</p>
-								<p class="movie-detail__synopsis">{movie.synopsis}</p>
-							</section>
-						)}
-						{movie.review && (
-							<section id="resena" class="movie-detail__review-card" aria-label="Reseña honesta">
-								<p class="movie-detail__review-kicker">La posta</p>
-								<p class="movie-detail__review">{movie.review}</p>
-								<a class="movie-detail__community-link" href={getMovieCommunityPath(movie.slug)}>
-									¿La viste? Sumate a la discusión →
-								</a>
-							</section>
-						)}
-						<MovieReaction movie={movie} />
-						<MovieEditorialLinks movieSlug={movie.slug} />
 						<section class="movie-detail__reader" aria-label="Tu opinión y compartir">
 							<MovieRating movieSlug={movie.slug} />
 							<ShareButtons id={`share-${movie.slug}`} url={movieCanonicalUrl} title={pageTitle} label={movie.title} text={shareText} />
 						</section>
-						<div class="movie-detail__signals" aria-label="Medidores de CinePosta">
-							{sangrometroScore !== undefined && (
-								<section id="sangrometro" class="movie-detail__sangrometro-card" aria-label="Sangrómetro">
-									<div class="movie-detail__sangrometro-head">
-										<p class="movie-detail__sangrometro-title">Sangrómetro</p>
-									</div>
-									<Sangrometro score={sangrometroScore} />
-								</section>
-							)}
-							{lagrimometroScore !== undefined && (
-								<section id="lagrimometro" class="movie-detail__lagrimometro-card" aria-label="Lagrimómetro">
-									<div class="movie-detail__lagrimometro-head">
-										<p class="movie-detail__lagrimometro-title">Lagrimómetro</p>
-									</div>
-									<Lagrimometro score={lagrimometroScore} />
-								</section>
-							)}
-							{jajametroScore !== undefined && (
-								<section id="jajametro" class="movie-detail__jajametro-card" aria-label="Jajámetro">
-									<div class="movie-detail__jajametro-head">
-										<p class="movie-detail__jajametro-title">Jajámetro</p>
-									</div>
-									<Jajametro score={jajametroScore} />
-								</section>
-							)}
-							{cagazometroScore !== undefined && (
-								<section id="cagazometro" class="movie-detail__cagazometro-card" aria-label="Cagazómetro">
-									<div class="movie-detail__cagazometro-head">
-										<p class="movie-detail__cagazometro-title">Cagazómetro</p>
-									</div>
-									<Cagazometro score={cagazometroScore} />
-								</section>
-							)}
-							{explosiometroScore !== undefined && (
-								<section id="explosiometro" class="movie-detail__explosiometro-card" aria-label="Explosiómetro">
-									<div class="movie-detail__explosiometro-head">
-										<p class="movie-detail__explosiometro-title">Explosiómetro</p>
-									</div>
-									<Explosiometro score={explosiometroScore} />
-								</section>
-							)}
-							{shouldShowPostCreditsInfo && (
-								<section id="post-credits" class="movie-detail__post-credits-card" aria-label="Escenas post-créditos">
-									<div class="movie-detail__post-credits-head">
-										<p class="movie-detail__post-credits-title">Escenas post-créditos</p>
-									</div>
-									<PostCreditsInfo scenes={movie.postCreditsScenes!} />
-								</section>
-							)}
-						</div>
+						{shouldShowPostCreditsInfo && (
+							<section id="post-credits" class="movie-detail__post-credits-card" aria-label="Escenas post-créditos">
+								<div class="movie-detail__post-credits-head">
+									<p class="movie-detail__post-credits-title">Escenas post-créditos</p>
+								</div>
+								<PostCreditsInfo scenes={movie.postCreditsScenes!} />
+							</section>
+						)}
 					</div>
 					<aside class="movie-detail__side-stack" aria-label="Información de la película">
 						<div id="trailer" class="movie-detail__trailer">

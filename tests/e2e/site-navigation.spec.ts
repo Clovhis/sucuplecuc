@@ -14,7 +14,7 @@ test('shared section bar keeps all destinations usable from 320px to desktop', a
     await expect(sections).toHaveJSProperty('open', width > 1000);
     if (width <= 1000) await sections.locator(':scope > summary').click();
     else await more.locator('summary').click();
-    await expect(nav.getByRole('link')).toHaveCount(11);
+    await expect(nav.getByRole('link')).toHaveCount(10);
     for (const link of await nav.getByRole('link').all()) await expect(link).toBeVisible();
     const bounds = await nav.evaluate(element => ({
       overflow: document.documentElement.scrollWidth > innerWidth + 1,
