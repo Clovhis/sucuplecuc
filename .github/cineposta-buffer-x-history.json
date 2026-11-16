@@ -1108,6 +1108,28 @@
 					"Paramount Plus"
 				]
 			}
+		},
+		{
+			"slug": "heartland-2026",
+			"bufferPostId": "6afa588c06e1675856ba0597",
+			"dueAt": "2026-11-16T22:00:00.000Z",
+			"scheduledAt": "2026-11-16T01:12:45.003Z",
+			"copyStyle": {
+				"opening": 865943141,
+				"availability": 1638398832,
+				"editorial": 3568095188,
+				"verdict": 230877544,
+				"link": 694667555
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/heartland-2026",
+				"checkedAt": "2026-11-16T01:12:44.342Z",
+				"kind": "subscription",
+				"platforms": [
+					"Netflix"
+				]
+			}
 		}
 	]
 }
