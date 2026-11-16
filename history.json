@@ -130,7 +130,7 @@
       "format": "carousel",
       "theme": "genre:Animacion",
       "palette": 1,
-      "state": "scheduled",
+      "state": "sent",
       "attemptId": "43595168095:1",
       "dueAt": "2026-11-15T22:15:00.000Z",
       "channelId": "6af6465a62b70b94b0105899",
@@ -644,7 +644,7 @@
         "https://raw.githubusercontent.com/Clovhis/sucuplecuc/c1d2ea5fed198eeb17dde8f52e6dc4660b465677/media/2026-11-15-los-rescatadores-en-cangurolandia-1990-carousel-photo-6.jpg"
       ],
       "bufferPostId": "6af8549ac5b364e062edcec2",
-      "externalLink": null,
+      "externalLink": "https://www.instagram.com/p/Dfx1MBDm7fy/",
       "scheduledAt": "2026-11-14T12:31:20.516Z",
       "mediaRevisions": [
         {
@@ -731,6 +731,301 @@
       ],
       "visualVersion": "photography-v2",
       "visualUpdatedAt": "2026-11-14T13:42:56.450Z"
+    },
+    {
+      "date": "2026-11-16",
+      "slug": "the-substance-2024",
+      "slugs": [
+        "the-substance-2024",
+        "babadook-2014"
+      ],
+      "category": "Terror",
+      "format": "double",
+      "theme": "double:Terror",
+      "palette": 2,
+      "state": "reserved",
+      "attemptId": "43783579359:1",
+      "dueAt": "2026-11-16T22:15:00.000Z",
+      "channelId": "6af6465a62b70b94b0105899",
+      "media": [
+        {
+          "mediaPath": "media/2026-11-16-the-substance-2024-double-photo-1.jpg",
+          "sha256": "82cfd4e387217b779d7505cf5af1d2ba107d673963a1ec8aa7837aaead5f7795",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Doble función: terror. Fotografías: La sustancia, Babadook.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "independenta-substance-press-the-substance-2024-c84d0e7ae0",
+              "sundance-2024-babadook-2014-ab3a7cde6e"
+            ],
+            "assets": [
+              {
+                "id": "independenta-substance-press-the-substance-2024-c84d0e7ae0",
+                "kind": "still",
+                "path": "assets/social/photos/independenta-substance-press-the-substance-2024-c84d0e7ae0.webp",
+                "slugs": [
+                  "the-substance-2024"
+                ],
+                "title": "La sustancia · still 1",
+                "width": 1920,
+                "credit": "Christine Tamalet · © Universal Studios",
+                "height": 1277,
+                "sha256": "2f40668889d32d053864634c042116935688a7e36a85878a1891b9d3373d421d",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "independenta-substance-press",
+                "license": "Material de prensa oficial The Substance",
+                "subject": "La sustancia",
+                "sourceUrl": "https://www.independentafilm.ro/project/the-substance/",
+                "licenseUrl": "https://www.independentafilm.ro/project/the-substance/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/dvfn6n2myt1dvljne2rd7/ACTJ4Q8jY7k-GaPgB7TEAus/TheSubstance_Still_01.jpg?rlkey=qstsmnbljf5lap98wof3j7rie&dl=1",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Material proporcionado públicamente por el distribuidor como paquete de prensa de The Substance. Evaluación editorial de esa distribución, no licencia abierta ni autorización individual recibida. Sólo crítica/cobertura de esta película, imágenes completas, crédito suministrado, sin publicidad paga, mercancía ni reventa. No inferir disponibilidad o fecha argentina de datos rumanos.",
+                  "rightsHolder": "Independența Film — press kit oficial The Substance",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/dvfn6n2myt1dvljne2rd7/ACTJ4Q8jY7k-GaPgB7TEAus/TheSubstance_Still_01.jpg?rlkey=qstsmnbljf5lap98wof3j7rie&dl=1",
+                "originalUrl": "https://www.dropbox.com/scl/fo/dvfn6n2myt1dvljne2rd7/ACTJ4Q8jY7k-GaPgB7TEAus/TheSubstance_Still_01.jpg?rlkey=qstsmnbljf5lap98wof3j7rie&dl=1",
+                "archiveEntry": "TheSubstance_Still_01.jpg",
+                "evidencePath": "assets/social/press-packages/independenta-substance-press-the-substance-2024.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "3b2418bd69e1b0902210ededca3e4d711681ec521ddf6a6cdda02fa802e9566e",
+                "originalSha256": "43257171322583f7f295e4149d3490c19c7c8d34e592f0aba7c693a7e071e860",
+                "suppliedCaption": "Fotografía de prensa 1 de The Substance (Coralie Fargeat, 2024).",
+                "grantEvidenceSha256": "2bde7cd767dcb44e971f17ed897f5a7a96d0e3f2f72231806ec14fc075b1426f",
+                "sourceGrant": {
+                  "id": "independenta-substance-press",
+                  "issuer": "Independența Film — press kit oficial The Substance",
+                  "evidenceSha256": "2bde7cd767dcb44e971f17ed897f5a7a96d0e3f2f72231806ec14fc075b1426f"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/the-substance-2024/2f40668889d32d053864634c042116935688a7e36a85878a1891b9d3373d421d.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              },
+              {
+                "id": "sundance-2024-babadook-2014-ab3a7cde6e",
+                "kind": "still",
+                "path": "assets/social/photos/sundance-2024-babadook-2014-ab3a7cde6e.webp",
+                "slugs": [
+                  "babadook-2014"
+                ],
+                "title": "Babadook · still 2",
+                "width": 1920,
+                "credit": "Courtesy of Sundance Institute",
+                "height": 1080,
+                "sha256": "cfee56c2b2ddd1b24f5c6c9f245414113eea5f31a8bc76be1e790209c915c874",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "sundance-official-press",
+                "license": "Permiso editorial de prensa Sundance",
+                "subject": "Babadook",
+                "sourceUrl": "https://www.sundance.org/about/press/",
+                "licenseUrl": "https://www.sundance.org/about/press/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/40th%20Edition%20Celebration%20Screenings/The%20Babadook?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR.",
+                  "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/40th%20Edition%20Celebration%20Screenings/The%20Babadook?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "originalUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/40th%20Edition%20Celebration%20Screenings/The%20Babadook?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "archiveEntry": "The Babadook-Still2.jpg",
+                "evidencePath": "assets/social/press-packages/sundance-2024-babadook-2014.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "732398f48ed9c90f610e24d5064df08b3565423b150fbb3ff4985f217f088b66",
+                "originalSha256": "d611521876cb98963cae4d338a8aadc17b0d102b2dccc32268cc6f1f813a106d",
+                "suppliedCaption": "FILM STILL 2 A still from The Babadook by Jennifer Kent, an official selection of the 40th Edition Celebration Screenings Program at the 2024 Sundance Film Festival. Courtesy of Sundance Institute. ",
+                "editorialContext": {
+                  "year": 2024,
+                  "festival": "Sundance"
+                },
+                "grantEvidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+                "sourceGrant": {
+                  "id": "sundance-official-press",
+                  "issuer": "Sundance Institute",
+                  "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/babadook-2014/cfee56c2b2ddd1b24f5c6c9f245414113eea5f31a8bc76be1e790209c915c874.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Imágenes completas, reducción técnica y composición editorial fuera de la fotografía."
+          }
+        },
+        {
+          "mediaPath": "media/2026-11-16-the-substance-2024-double-photo-2.jpg",
+          "sha256": "bc8681c47f2b6d73cabe4a79d1837f05bb71a43e65664efee220d15a8dc4ce62",
+          "width": 1080,
+          "height": 1350,
+          "alt": "La sustancia (2024). 8 · Excelente. Fotografía de la película.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "independenta-substance-press-the-substance-2024-c84d0e7ae0"
+            ],
+            "assets": [
+              {
+                "id": "independenta-substance-press-the-substance-2024-c84d0e7ae0",
+                "kind": "still",
+                "path": "assets/social/photos/independenta-substance-press-the-substance-2024-c84d0e7ae0.webp",
+                "slugs": [
+                  "the-substance-2024"
+                ],
+                "title": "La sustancia · still 1",
+                "width": 1920,
+                "credit": "Christine Tamalet · © Universal Studios",
+                "height": 1277,
+                "sha256": "2f40668889d32d053864634c042116935688a7e36a85878a1891b9d3373d421d",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "independenta-substance-press",
+                "license": "Material de prensa oficial The Substance",
+                "subject": "La sustancia",
+                "sourceUrl": "https://www.independentafilm.ro/project/the-substance/",
+                "licenseUrl": "https://www.independentafilm.ro/project/the-substance/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/dvfn6n2myt1dvljne2rd7/ACTJ4Q8jY7k-GaPgB7TEAus/TheSubstance_Still_01.jpg?rlkey=qstsmnbljf5lap98wof3j7rie&dl=1",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Material proporcionado públicamente por el distribuidor como paquete de prensa de The Substance. Evaluación editorial de esa distribución, no licencia abierta ni autorización individual recibida. Sólo crítica/cobertura de esta película, imágenes completas, crédito suministrado, sin publicidad paga, mercancía ni reventa. No inferir disponibilidad o fecha argentina de datos rumanos.",
+                  "rightsHolder": "Independența Film — press kit oficial The Substance",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/dvfn6n2myt1dvljne2rd7/ACTJ4Q8jY7k-GaPgB7TEAus/TheSubstance_Still_01.jpg?rlkey=qstsmnbljf5lap98wof3j7rie&dl=1",
+                "originalUrl": "https://www.dropbox.com/scl/fo/dvfn6n2myt1dvljne2rd7/ACTJ4Q8jY7k-GaPgB7TEAus/TheSubstance_Still_01.jpg?rlkey=qstsmnbljf5lap98wof3j7rie&dl=1",
+                "archiveEntry": "TheSubstance_Still_01.jpg",
+                "evidencePath": "assets/social/press-packages/independenta-substance-press-the-substance-2024.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "3b2418bd69e1b0902210ededca3e4d711681ec521ddf6a6cdda02fa802e9566e",
+                "originalSha256": "43257171322583f7f295e4149d3490c19c7c8d34e592f0aba7c693a7e071e860",
+                "suppliedCaption": "Fotografía de prensa 1 de The Substance (Coralie Fargeat, 2024).",
+                "grantEvidenceSha256": "2bde7cd767dcb44e971f17ed897f5a7a96d0e3f2f72231806ec14fc075b1426f",
+                "sourceGrant": {
+                  "id": "independenta-substance-press",
+                  "issuer": "Independența Film — press kit oficial The Substance",
+                  "evidenceSha256": "2bde7cd767dcb44e971f17ed897f5a7a96d0e3f2f72231806ec14fc075b1426f"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/the-substance-2024/2f40668889d32d053864634c042116935688a7e36a85878a1891b9d3373d421d.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Imágenes completas, reducción técnica y composición editorial fuera de la fotografía."
+          }
+        },
+        {
+          "mediaPath": "media/2026-11-16-the-substance-2024-double-photo-3.jpg",
+          "sha256": "d739c078eeb3155f965019e1594106f3a236ccb80cde1289d89c9b8eb1f58969",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Babadook (2014). 7 · Muy buena. Selección Sundance 2024.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "sundance-2024-babadook-2014-ab3a7cde6e"
+            ],
+            "assets": [
+              {
+                "id": "sundance-2024-babadook-2014-ab3a7cde6e",
+                "kind": "still",
+                "path": "assets/social/photos/sundance-2024-babadook-2014-ab3a7cde6e.webp",
+                "slugs": [
+                  "babadook-2014"
+                ],
+                "title": "Babadook · still 2",
+                "width": 1920,
+                "credit": "Courtesy of Sundance Institute",
+                "height": 1080,
+                "sha256": "cfee56c2b2ddd1b24f5c6c9f245414113eea5f31a8bc76be1e790209c915c874",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "sundance-official-press",
+                "license": "Permiso editorial de prensa Sundance",
+                "subject": "Babadook",
+                "sourceUrl": "https://www.sundance.org/about/press/",
+                "licenseUrl": "https://www.sundance.org/about/press/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/40th%20Edition%20Celebration%20Screenings/The%20Babadook?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR.",
+                  "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/40th%20Edition%20Celebration%20Screenings/The%20Babadook?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "originalUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/40th%20Edition%20Celebration%20Screenings/The%20Babadook?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "archiveEntry": "The Babadook-Still2.jpg",
+                "evidencePath": "assets/social/press-packages/sundance-2024-babadook-2014.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "732398f48ed9c90f610e24d5064df08b3565423b150fbb3ff4985f217f088b66",
+                "originalSha256": "d611521876cb98963cae4d338a8aadc17b0d102b2dccc32268cc6f1f813a106d",
+                "suppliedCaption": "FILM STILL 2 A still from The Babadook by Jennifer Kent, an official selection of the 40th Edition Celebration Screenings Program at the 2024 Sundance Film Festival. Courtesy of Sundance Institute. ",
+                "editorialContext": {
+                  "year": 2024,
+                  "festival": "Sundance"
+                },
+                "grantEvidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+                "sourceGrant": {
+                  "id": "sundance-official-press",
+                  "issuer": "Sundance Institute",
+                  "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/babadook-2014/cfee56c2b2ddd1b24f5c6c9f245414113eea5f31a8bc76be1e790209c915c874.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Imágenes completas, reducción técnica y composición editorial fuera de la fotografía."
+          }
+        }
+      ],
+      "text": "Doble función: terror.\n\n1. La sustancia (2024) · 8 · Excelente\n\n2. Babadook (2014) · 7 · Muy buena · Selección Sundance 2024\n\n¿Cuál va primero? Guardá la selección y compartila. Reseñas completas en el enlace del perfil.\n\nhttps://www.cineposta.com.ar/peliculas/the-substance-2024/\n\nhttps://www.cineposta.com.ar/peliculas/babadook-2014/\n\nFotografías y material cinematográfico:\nLa sustancia: Christine Tamalet · © Universal Studios · «La sustancia · still 1». https://www.independentafilm.ro/project/the-substance/\nBabadook: Courtesy of Sundance Institute · «Babadook · still 2». https://www.sundance.org/about/press/\nMaterial de prensa oficial The Substance: https://www.independentafilm.ro/project/the-substance/\nPermiso editorial de prensa Sundance: https://www.sundance.org/about/press/\nComposición: CinePosta. Fotos bajo sus licencias y permisos indicados.\n\n#CinePosta #QueVer #Cine",
+      "createdAt": "2026-11-16T01:00:27.813Z"
     }
   ]
 }
