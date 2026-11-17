@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-16T12:29:22.731Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-17T12:50:24.568Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Los Juegos del Hambre: Amanecer en la Cosecha",
@@ -25,6 +25,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10647",
 		"videoUrl": "https://www.youtube.com/watch?v=KKquTgKlXJY",
 		"thumbnailUrl": "https://i.ytimg.com/vi/KKquTgKlXJY/hqdefault.jpg"
+	},
+	{
+		"title": "Recen por mí: la historia de Francisco",
+		"releaseDate": "2026-11-19",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10666-recen-por-mi-la-historia-de-francisco/",
+		"slug": "cines-argentinos-10666",
+		"videoUrl": "https://www.youtube.com/watch?v=lWSHNKlqkxE",
+		"thumbnailUrl": "https://i.ytimg.com/vi/lWSHNKlqkxE/hqdefault.jpg"
 	},
 	{
 		"title": "Hechizo: Bienvenidos a Hexe",
