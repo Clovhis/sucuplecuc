@@ -1130,6 +1130,28 @@
 					"Netflix"
 				]
 			}
+		},
+		{
+			"slug": "mas-alla-del-muro-2025",
+			"bufferPostId": "6afbd1ba3e42cd001e4e132e",
+			"dueAt": "2026-11-17T22:00:00.000Z",
+			"scheduledAt": "2026-11-17T04:02:02.389Z",
+			"copyStyle": {
+				"opening": 2556234168,
+				"availability": 943985955,
+				"editorial": 415344711,
+				"verdict": 1979030203,
+				"link": 2949094582
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/east-of-wall",
+				"checkedAt": "2026-11-17T04:02:01.935Z",
+				"kind": "subscription",
+				"platforms": [
+					"HBO Max"
+				]
+			}
 		}
 	]
 }
