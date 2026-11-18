@@ -1,0 +1,260 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "por-el-bien-de-adam-2025",
+	"title": "Por el bien de Adam",
+	"year": 2025,
+	"reviewedOn": "2026-11-17",
+	"createdOn": "2026-11-17",
+	"billingSources": [
+		{
+			"url": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"kind": "billing principal y secundario relevante",
+			"checkedOn": "2026-11-17",
+			"fullCredits": true,
+			"relevantCreditCount": 11
+		},
+		{
+			"url": "https://www.semainedelacritique.com/fr/edition/2025/film/l-interet-d-adam",
+			"kind": "contraste de reparto y dirección",
+			"checkedOn": "2026-11-17"
+		}
+	],
+	"credits": [
+		{
+			"name": "Laura Wandel",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1319437",
+					"fact": "Laura Wandel figura en dirección para L'Intérêt d'Adam"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3218491/",
+					"fact": "Perfil con filmografía e identificador nm3218491 de Laura Wandel"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wn1zsTTQEyQmMO3Fq7M6SMmk6X5.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Léa Drucker",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/19360",
+					"fact": "Léa Drucker figura como Lucy en L'Intérêt d'Adam"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0238475/",
+					"fact": "Perfil con filmografía e identificador nm0238475 de Léa Drucker"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tnDoNGkWGNJ7gk08zNBTMhAU1T4.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Anamaria Vartolomei",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1021689",
+					"fact": "Anamaria Vartolomei figura como Rebecca en L'Intérêt d'Adam"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4422007/",
+					"fact": "Perfil con filmografía e identificador nm4422007 de Anamaria Vartolomei"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jRU3453OyqirChIl2EEevhliAjq.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Jules Delsart",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4885988",
+					"fact": "Jules Delsart figura como Adam en L'Intérêt d'Adam"
+				},
+				{
+					"url": "https://www.semainedelacritique.com/fr/edition/2025/film/l-interet-d-adam",
+					"fact": "Jules Delsart figura en los créditos de L'Intérêt d'Adam"
+				}
+			],
+			"portraitException": {
+				"category": "child-privacy",
+				"reason": "El intérprete infantil tiene un papel central. La documentación promocional muestra escenas de la película y no proporciona un retrato individual para su perfil.",
+				"subjectStatus": {
+					"isMinor": true,
+					"sourceUrl": "https://www.semainedelacritique.com/fr/edition/2025/film/l-interet-d-adam",
+					"fact": "El material oficial identifica a Jules Delsart como el chico que interpreta a Adam."
+				},
+				"sourcesSearched": [
+					{
+						"url": "https://www.themoviedb.org/person/4885988",
+						"result": "La ficha del intérprete no tiene retrato individual."
+					},
+					{
+						"url": "https://www.semainedelacritique.com/fr/edition/2025/film/l-interet-d-adam",
+						"result": "La galería oficial ofrece fotogramas promocionales de la película."
+					}
+				]
+			}
+		},
+		{
+			"name": "Alex Descas",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/13609",
+					"fact": "Alex Descas figura como Naïm en L'Intérêt d'Adam"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0220976/",
+					"fact": "Perfil con filmografía e identificador nm0220976 de Alex Descas"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1FUMJTbVflnDR8vZL3J1Hv8f7tV.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Laurent Capelluto",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/228719",
+					"fact": "Laurent Capelluto figura como Daniel en L'Intérêt d'Adam"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0135084/",
+					"fact": "Perfil con filmografía e identificador nm0135084 de Laurent Capelluto"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4QzdHAvXJs7TJzjnG2WgzAArld1.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Claire Bodson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/566081",
+					"fact": "Claire Bodson figura como La Déléguée du SPJ en L'Intérêt d'Adam"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0091080/",
+					"fact": "Perfil con filmografía e identificador nm0091080 de Claire Bodson"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6f8rvYsSDwW335jfTkqWwPT88z9.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Timur Magomedgadzhiev",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1915919",
+					"fact": "Timur Magomedgadzhiev figura como Andreï en L'Intérêt d'Adam"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm6503541/",
+					"fact": "Perfil con filmografía e identificador nm6503541 de Timur Magomedgadzhiev"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/62MswT07mUY6KwgaDpRZeAzbQYk.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Charlotte De Bruyne",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1431537",
+					"fact": "Charlotte De Bruyne figura como Selma en L'Intérêt d'Adam"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4794061/",
+					"fact": "Perfil con filmografía e identificador nm4794061 de Charlotte De Bruyne"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8DyLprak8ZMTuVtMMt3K4qj0XOz.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Sonia Bekam",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "La pasante integra el personal de la sala. El recorte prioriza a quienes sostienen la negociación con la familia."
+		},
+		{
+			"name": "Adrienne D'Anna",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.cinepolis.com.ar/peliculas/por-el-bien-de-adam",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El crédito corresponde al personal de enfermería. La ficha recoge a las figuras que intervienen en el conflicto de Adam."
+		}
+	],
+	"coverageReview": {
+		"rationale": "La cámara acompaña a una enfermera de pediatría que tiene que negociar el tiempo que una mamá pasa con su hijo. Se documenta el recorte de los personajes periféricos según el peso de su participación.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Sonia Bekam",
+				"role": "performer"
+			},
+			{
+				"name": "Adrienne D'Anna",
+				"role": "performer"
+			}
+		]
+	}
+}

@@ -1,0 +1,258 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "protocolo-de-fuga-2025",
+	"title": "Protocolo de fuga",
+	"year": 2025,
+	"reviewedOn": "2026-11-17",
+	"createdOn": "2026-11-17",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1293167/cast",
+			"kind": "billing principal y secundario relevante",
+			"checkedOn": "2026-11-17",
+			"fullCredits": true,
+			"relevantCreditCount": 12
+		},
+		{
+			"url": "https://www.archstoneent.com/_files/ugd/bd6611_5a95e3098da043749caf130580c5783b.pdf",
+			"kind": "contraste de reparto y dirección",
+			"checkedOn": "2026-11-17"
+		}
+	],
+	"credits": [
+		{
+			"name": "Shane Dax Taylor",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/59502",
+					"fact": "Shane Dax Taylor figura en dirección para Exit Protocol"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1360971/",
+					"fact": "Perfil con filmografía e identificador nm1360971 de Shane Dax Taylor"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/z8pT1ioVlAvrpvfXQS4nSDCMHOz.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Scott Martin",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/136154",
+					"fact": "Scott Martin figura como Sam Hayden en Exit Protocol"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1924767/",
+					"fact": "Perfil con filmografía e identificador nm1924767 de Scott Martin"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mAjyI9ACaJxSvLaQoE9KEZY3pJ.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dolph Lundgren",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/16644",
+					"fact": "Dolph Lundgren figura como Charles Managold en Exit Protocol"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000185/",
+					"fact": "Perfil con filmografía e identificador nm0000185 de Dolph Lundgren"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dolph%20Lundgren%202018.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Michael Jai White",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/64856",
+					"fact": "Michael Jai White figura como Isaac Florentine en Exit Protocol"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0925220/",
+					"fact": "Perfil con filmografía e identificador nm0925220 de Michael Jai White"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/YPoHYuzR37wFpPpwEXZYQlhLln.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Charlotte Kirk",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1352662",
+					"fact": "Charlotte Kirk figura como Danique Kellar en Exit Protocol"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5016840/",
+					"fact": "Perfil con filmografía e identificador nm5016840 de Charlotte Kirk"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tAsWBIetFUWNYw3Z1fHQlCdWvNI.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lina Maya",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2018208",
+					"fact": "Lina Maya figura como Nona Messenger en Exit Protocol"
+				},
+				{
+					"url": "https://www.archstoneent.com/_files/ugd/bd6611_5a95e3098da043749caf130580c5783b.pdf",
+					"fact": "Lina Maya figura en los créditos de Exit Protocol"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dNJPVxYolRVzZ4ngKcQSbXh9jQv.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Stephanie Beran",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1070194",
+					"fact": "Stephanie Beran figura como Wicked Theplay en Exit Protocol"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3593492/",
+					"fact": "Perfil con filmografía e identificador nm3593492 de Stephanie Beran"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/q5OrMKyh7TuQ8NSjVowCNp2Lvpw.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "J.B. Yowell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3970295",
+					"fact": "J.B. Yowell figura como Augustus Shadrin en Exit Protocol"
+				},
+				{
+					"url": "https://www.archstoneent.com/_files/ugd/bd6611_5a95e3098da043749caf130580c5783b.pdf",
+					"fact": "J.B. Yowell figura en los créditos de Exit Protocol"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cVtR3Cjo57L5avQcDo626mgqr82.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Aaron McPherson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/583845",
+					"fact": "Aaron McPherson figura como Dax en Exit Protocol"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0574197/",
+					"fact": "Perfil con filmografía e identificador nm0574197 de Aaron McPherson"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rBeV0ZXhYc0cXC2L0vr50ZmjYyn.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Clint Glenn Hummel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Leonardo amplía la red de perseguidores. El recorte sigue a quienes condicionan la salida de Hayden y la alianza con Managold."
+		},
+		{
+			"name": "Jack Sheehan",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El piloto cumple una función puntual en el traslado, por fuera de la trama de alianzas que organiza el reparto."
+		},
+		{
+			"name": "Christian Cardona",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1293167/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Bashkim queda en el segundo anillo de contactos de Hayden, con menos peso que los socios y antagonistas de su huida."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Un sicario que busca retirarse y un antiguo blanco que se vuelve su única salida. Se documenta el recorte de los personajes periféricos según el peso de su participación.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Clint Glenn Hummel",
+				"role": "performer"
+			},
+			{
+				"name": "Jack Sheehan",
+				"role": "performer"
+			},
+			{
+				"name": "Christian Cardona",
+				"role": "performer"
+			}
+		]
+	}
+}

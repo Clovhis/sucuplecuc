@@ -254,6 +254,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "alicia-vikander": [
     "hope-el-primer-impacto-2026",
     "el-mago-de-kremlin-2026",
+    "malas-lenguas-2024",
     "el-caballero-verde-2021",
     "ex-machina-2014"
   ],
@@ -927,6 +928,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "black-bag-2025",
     "padre-madre-hermana-hermano-2025",
     "borderlands-el-destino-del-universo-esta-en-juego-2024",
+    "malas-lenguas-2024",
     "tar-2022",
     "nightmare-alley-2021",
     "how-to-train-your-dragon-the-hidden-world-2019",
@@ -988,6 +990,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "charles-dance": [
     "las-damas-primero-2026",
+    "malas-lenguas-2024",
     "underworld-el-despertar-2012",
     "alien-3-1992"
   ],

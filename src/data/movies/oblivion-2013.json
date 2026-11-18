@@ -16,7 +16,11 @@
 	"poster": "assets/posters/2013/oblivion-2013.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "tx6_JMDFfWI",
-	"releasePlatform": "HBO Max",
+	"releasePlatform": "Netflix",
+	"releasePlatforms": [
+		"Netflix",
+		"HBO Max"
+	],
 	"director": "Joseph Kosinski",
 	"mainCast": [
 		"Tom Cruise",
@@ -47,5 +51,31 @@
 	"review": "Oblivion construye una Tierra vacía de belleza calculada: torres blancas, ruinas y una banda sonora monumental. Kosinski tiene ojo para la arquitectura y Cruise sostiene la soledad de Jack, aunque el guion acomoda demasiadas revelaciones al final. Interesa más por su clima y sus imágenes que por la sorpresa de sus respuestas, y funciona mejor cuando observa a un trabajador tratando de recordar quién era antes de aceptar una misión. Sus ideas no son nuevas, pero están presentadas con oficio.",
 	"runtimeMinutes": 124,
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Tom Cruise",
+			"character": "Jack",
+			"displayCharacter": "Jack Harper",
+			"tmdbMovieId": 75612,
+			"tmdbPersonId": 500,
+			"verifiedAt": "2026-11-17"
+		},
+		{
+			"actor": "Olga Kurylenko",
+			"character": "Julia",
+			"displayCharacter": "Julia Rusakova",
+			"tmdbMovieId": 75612,
+			"tmdbPersonId": 18182,
+			"verifiedAt": "2026-11-17"
+		},
+		{
+			"actor": "Andrea Riseborough",
+			"character": "Victoria",
+			"displayCharacter": "Victoria Olsen",
+			"tmdbMovieId": 75612,
+			"tmdbPersonId": 127558,
+			"verifiedAt": "2026-11-17"
+		}
+	]
 }

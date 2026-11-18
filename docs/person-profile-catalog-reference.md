@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-14. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-18. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4725
+Total de vínculos de películas del catálogo: 4728
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -45,7 +45,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Alfonso Cuarón | `alfonso-cuaron` | /personas/alfonso-cuaron/ | Director / Guionista / Productor | 3 | 6 |
 | Alfred Hitchcock | `alfred-hitchcock` | /personas/alfred-hitchcock/ | Director | 5 | 6 |
 | Alfredo Castro | `alfredo-castro` | /personas/alfredo-castro/ | Actor | 4 | 5 |
-| Alicia Vikander | `alicia-vikander` | /personas/alicia-vikander/ | Actriz | 4 | 4 |
+| Alicia Vikander | `alicia-vikander` | /personas/alicia-vikander/ | Actriz | 5 | 4 |
 | Allison Janney | `allison-janney` | /personas/allison-janney/ | Actriz | 5 | 6 |
 | Amanda Seyfried | `amanda-seyfried` | /personas/amanda-seyfried/ | Actriz | 7 | 3 |
 | America Ferrera | `america-ferrera` | /personas/america-ferrera/ | Actriz | 2 | 7 |
@@ -137,7 +137,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Carrie-Anne Moss | `carrie-anne-moss` | /personas/carrie-anne-moss/ | Actriz | 5 | 7 |
 | Cary Grant | `cary-grant` | /personas/cary-grant/ | Actor | 3 | 4 |
 | Casey Affleck | `casey-affleck` | /personas/casey-affleck/ | Actor / Director | 8 | 6 |
-| Cate Blanchett | `cate-blanchett` | /personas/cate-blanchett/ | Actriz / Productora | 24 | 6 |
+| Cate Blanchett | `cate-blanchett` | /personas/cate-blanchett/ | Actriz / Productora | 25 | 6 |
 | Catherine Deneuve | `catherine-deneuve` | /personas/catherine-deneuve/ | Actriz | 2 | 5 |
 | Catherine Keener | `catherine-keener` | /personas/catherine-keener/ | Actriz | 4 | 6 |
 | Catherine O'Hara | `catherine-o-hara` | /personas/catherine-o-hara/ | Actriz | 5 | 7 |
@@ -145,7 +145,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Cecilia Dopazo | `cecilia-dopazo` | /personas/cecilia-dopazo/ | Actriz | 2 | 6 |
 | Cecilia Roth | `cecilia-roth` | /personas/cecilia-roth/ | Actriz | 3 | 5 |
 | César Bordón | `cesar-bordon` | /personas/cesar-bordon/ | Actor | 2 | 5 |
-| Charles Dance | `charles-dance` | /personas/charles-dance/ | Actor | 3 | 3 |
+| Charles Dance | `charles-dance` | /personas/charles-dance/ | Actor | 4 | 3 |
 | Charlie Day | `charlie-day` | /personas/charlie-day/ | Actor | 2 | 7 |
 | Charlie Sheen | `charlie-sheen` | /personas/charlie-sheen/ | Actor | 2 | 4 |
 | Charlize Theron | `charlize-theron` | /personas/charlize-theron/ | Actriz / Productora | 7 | 7 |

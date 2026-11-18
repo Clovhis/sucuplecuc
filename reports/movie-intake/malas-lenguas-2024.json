@@ -1,0 +1,321 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "malas-lenguas-2024",
+	"title": "Malas lenguas",
+	"year": 2024,
+	"reviewedOn": "2026-11-17",
+	"createdOn": "2026-11-17",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1187417/cast",
+			"kind": "billing principal y secundario relevante",
+			"checkedOn": "2026-11-17",
+			"fullCredits": true,
+			"relevantCreditCount": 15
+		},
+		{
+			"url": "https://bleeckerstreetmedia.com/rumours",
+			"kind": "contraste de reparto y dirección",
+			"checkedOn": "2026-11-17"
+		}
+	],
+	"credits": [
+		{
+			"name": "Guy Maddin",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/97579",
+					"fact": "Guy Maddin figura en dirección para Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0534665/",
+					"fact": "Perfil con filmografía e identificador nm0534665 de Guy Maddin"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hF15rfnugsLQJfa6R1AvVAX7bEu.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Galen Johnson",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1409538",
+					"fact": "Galen Johnson figura en dirección para Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5244989/",
+					"fact": "Perfil con filmografía e identificador nm5244989 de Galen Johnson"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jWSuG3A8zCXX5HtoW0CaEpskl5o.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Evan Johnson",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1409534",
+					"fact": "Evan Johnson figura en dirección para Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2829262/",
+					"fact": "Perfil con filmografía e identificador nm2829262 de Evan Johnson"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1CWcjXHZOO0ktobp7tp1pBjfw5d.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Cate Blanchett",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/112",
+					"fact": "Cate Blanchett figura como Hilda Orlmann en Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000949/",
+					"fact": "Perfil con filmografía e identificador nm0000949 de Cate Blanchett"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cate%20Blanchett%20Cannes%202018%202%20(cropped).jpg?width=640",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Roy Dupuis",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/56977",
+					"fact": "Roy Dupuis figura como Maxime Laplace en Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001163/",
+					"fact": "Perfil con filmografía e identificador nm0001163 de Roy Dupuis"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/iS6BCJzfzxxSMMyGbpQTarVeNSP.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nikki Amuka-Bird",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/109319",
+					"fact": "Nikki Amuka-Bird figura como Cardosa Dewindt en Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0025458/",
+					"fact": "Perfil con filmografía e identificador nm0025458 de Nikki Amuka-Bird"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bbZouEqBH8lhldqYmnBxR7XxhlA.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Charles Dance",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4391",
+					"fact": "Charles Dance figura como Edison Wolcott en Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001097/",
+					"fact": "Perfil con filmografía e identificador nm0001097 de Charles Dance"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Dance%202012%20(cropped).jpg?width=640",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Takehiro Hira",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1082509",
+					"fact": "Takehiro Hira figura como Tatsuro Iwasaki en Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3042346/",
+					"fact": "Perfil con filmografía e identificador nm3042346 de Takehiro Hira"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/f8UK7xqwkfpIZiECcDgc0AErkj6.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Denis Ménochet",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/81125",
+					"fact": "Denis Ménochet figura como Sylvain Broulez en Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1616970/",
+					"fact": "Perfil con filmografía e identificador nm1616970 de Denis Ménochet"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qpCPmm12kbzMKniYF6iKmKLZCjY.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rolando Ravello",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/149349",
+					"fact": "Rolando Ravello figura como Antonio Lamorle en Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0712330/",
+					"fact": "Perfil con filmografía e identificador nm0712330 de Rolando Ravello"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/gbs0o5DCN4WyyHL4y1UcXPzs5CM.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Zlatko Burić",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/31960",
+					"fact": "Zlatko Burić figura como Jonas Glob en Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0121519/",
+					"fact": "Perfil con filmografía e identificador nm0121519 de Zlatko Burić"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2b9ErKvUwblnByewNMXqBtFEIzQ.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alicia Vikander",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/227454",
+					"fact": "Alicia Vikander figura como Celestine Sproul en Rumours"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2539953/",
+					"fact": "Perfil con filmografía e identificador nm2539953 de Alicia Vikander"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alicia%20Vikander-7756%20(cropped).jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Alexa Kennedy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Su papel de asistente queda fuera del núcleo de la cumbre y de los encuentros que marcan la deriva del grupo."
+		},
+		{
+			"name": "Ralph Berkin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El antropólogo pertenece a la periferia de la aventura; los dirigentes y sus interlocutores principales concentran la acción."
+		},
+		{
+			"name": "Tomi Kosynus",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1187417/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Su crédito de transeúnte corresponde a una aparición puntual, fuera del grupo que sostiene la sátira."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Diplomáticos que siguen negociando el tono de un comunicado incluso cuando el entorno se va al demonio. Se documenta el recorte de los personajes periféricos según el peso de su participación.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Alexa Kennedy",
+				"role": "performer"
+			},
+			{
+				"name": "Ralph Berkin",
+				"role": "performer"
+			},
+			{
+				"name": "Tomi Kosynus",
+				"role": "performer"
+			}
+		]
+	}
+}

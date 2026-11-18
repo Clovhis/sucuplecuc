@@ -23,6 +23,7 @@ const structuredData = [{ '@context': 'https://schema.org', '@type': 'Article', 
         if (block.type === 'paragraph') return <p>{block.text}</p>;
         if (block.type === 'heading') return block.level === 2 ? <h2>{block.text}</h2> : <h3>{block.text}</h3>;
         if (block.type === 'bioLink') return <p class="editorial-body__bio"><a href={getPersonPath(block.slug)}>{block.label} →</a></p>;
+        if (block.type === 'movieLink') return <p class="editorial-body__movie"><a href={getMoviePath(block.slug)}>{block.label} →</a></p>;
         return <EditorialImage image={block} />;
       })}</div>
       <footer>
@@ -51,6 +52,7 @@ const structuredData = [{ '@context': 'https://schema.org', '@type': 'Article', 
   .editorial-body > h3 { margin: 1.9rem 0 .7rem; color: var(--accent-soft); font-size: 1.15rem; line-height: 1.35; }
   .editorial-body > .editorial-body__bio { margin: -.15rem 0 2.5rem; font-size: .95rem; line-height: 1.55; }
   .editorial-body__bio a { text-underline-offset: .2em; }
+  .editorial-body__movie a { text-underline-offset: .2em; }
   footer { border-top: 1px solid var(--line); padding-top: 1.5rem; margin-top: 2rem; }
   ul { display: flex; gap: .6rem; flex-wrap: wrap; list-style: none; padding: 0; }
   li { padding: .3rem .7rem; background: var(--surface); border-radius: 6px; color: var(--muted); font-size: .8rem; }

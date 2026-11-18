@@ -1,0 +1,224 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "tabu-2012",
+	"title": "Tabú",
+	"year": 2012,
+	"reviewedOn": "2026-11-17",
+	"createdOn": "2026-11-17",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/93858/cast",
+			"kind": "billing principal y secundario relevante",
+			"checkedOn": "2026-11-17",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://www.justwatch.com/ar/pelicula/tabu-2012",
+			"kind": "contraste de reparto y dirección",
+			"checkedOn": "2026-11-17"
+		}
+	],
+	"credits": [
+		{
+			"name": "Miguel Gomes",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/150512",
+					"fact": "Miguel Gomes figura en dirección para Tabu"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0326937/",
+					"fact": "Perfil con filmografía e identificador nm0326937 de Miguel Gomes"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sdmFJMH2RYHSkicWnAqr4OeGPCf.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Teresa Madruga",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/73756",
+					"fact": "Teresa Madruga figura como Pilar en Tabu"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0535166/",
+					"fact": "Perfil con filmografía e identificador nm0535166 de Teresa Madruga"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yJ10VBNn1aNavJD09tv0nGPop2R.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Laura Soveral",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/109714",
+					"fact": "Laura Soveral figura como Aurora en Tabu"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0816310/",
+					"fact": "Perfil con filmografía e identificador nm0816310 de Laura Soveral"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/k4TzQ1D1SECF8CH1cN7dUyZbOIG.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ana Moreira",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/588809",
+					"fact": "Ana Moreira figura como Young Aurora en Tabu"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0603502/",
+					"fact": "Perfil con filmografía e identificador nm0603502 de Ana Moreira"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/67dvXZrlbQeUqrqWUrpd5wXtDwc.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Henrique Espírito Santo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/999813",
+					"fact": "Henrique Espírito Santo figura como Gian Luca Ventura en Tabu"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0261239/",
+					"fact": "Perfil con filmografía e identificador nm0261239 de Henrique Espírito Santo"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fxzOdHbjlv7HoYZtUM0kLJTbYLg.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Carloto Cotta",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/544608",
+					"fact": "Carloto Cotta figura como Young Gian Luca Ventura en Tabu"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1929018/",
+					"fact": "Perfil con filmografía e identificador nm1929018 de Carloto Cotta"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dQ5NcNnZJ0mYlpwI5apyAkJrf9d.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Isabel Cardoso",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/999814",
+					"fact": "Isabel Cardoso figura como Santa en Tabu"
+				},
+				{
+					"url": "https://www.justwatch.com/ar/pelicula/tabu-2012",
+					"fact": "Isabel Cardoso figura en los créditos de Tabu"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oRw7IkuwLDBbua4Z3RR85TB3zBy.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ivo Müller",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/999815",
+					"fact": "Ivo Müller figura como Aurora's Husband en Tabu"
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4417288/",
+					"fact": "Perfil con filmografía e identificador nm4417288 de Ivo Müller"
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1D1mxAnBWjOgbA0F07EwCEanN6K.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Manuel Mesquita",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Mário pertenece al círculo secundario del tramo del recuerdo. La ficha conserva el eje de Aurora y Ventura y a quienes los rodean de cerca."
+		},
+		{
+			"name": "Telmo Churro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/93858/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El explorador aparece en el prólogo que enmarca el relato. La selección del reparto conserva a las figuras de las dos mitades de la historia."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Una vecina preocupada, un encargo tardío y un amor contado desde la distancia de quien logró sobrevivirle. Se documenta el recorte de los personajes periféricos según el peso de su participación.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Manuel Mesquita",
+				"role": "performer"
+			},
+			{
+				"name": "Telmo Churro",
+				"role": "performer"
+			}
+		]
+	}
+}

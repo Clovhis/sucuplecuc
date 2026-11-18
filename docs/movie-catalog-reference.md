@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-11-14. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-11-18. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2665
+Total de peliculas: 2669
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -500,7 +500,7 @@ Total de peliculas: 2665
 | 2025 | Nimrods: A Green Day Comedy | nimrods-a-green-day-comedy-2025 | Comedia | Otras plataformas | ATP |
 | 2025 | Noche de Paz, Noche de Muerte | noche-de-paz-noche-de-muerte-2025 | Terror | Prime Video | +16 |
 | 2025 | Novocaine | novocaine-2025 | Accion | Netflix | +16 |
-| 2025 | Nuremberg | nuremberg-2025 | Thriller | Apple TV | +13 |
+| 2025 | Nuremberg | nuremberg-2025 | Thriller | Prime Video + Apple TV | +13 |
 | 2025 | One Battle After Another | one-battle-after-another-2025 | Accion | HBO Max | +16 |
 | 2025 | Opus | opus-2025 | Thriller | HBO Max | +17 |
 | 2025 | Oscar: El regreso del mamut | oscar-el-regreso-del-mamut-2025 | Ciencia ficcion | Apple TV + Prime Video | +13 |
@@ -508,7 +508,9 @@ Total de peliculas: 2665
 | 2025 | Padre Madre Hermana Hermano | padre-madre-hermana-hermano-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Pillion | pillion-2025 | Drama | Prime Video | +18 |
 | 2025 | Playa de lobos | playa-de-lobos-2025 | Thriller | Disney Plus | +13 |
+| 2025 | Por el bien de Adam | por-el-bien-de-adam-2025 | Drama | Cine | +13 |
 | 2025 | Primavera | primavera-2025 | Drama | Prime Video | +13 |
+| 2025 | Protocolo de fuga | protocolo-de-fuga-2025 | Accion | Paramount Plus | +17 |
 | 2025 | Pruebas de amor | pruebas-de-amor-2025 | Drama | MUBI | +12 |
 | 2025 | Rebirth: Home Sweet Home | rebirth-home-sweet-home-2025 | Terror | Disney Plus + Prime Video | +15 |
 | 2025 | Rescate en el golfo | rescate-en-el-golfo-2025 | Thriller | Prime Video | +13 |
@@ -601,7 +603,7 @@ Total de peliculas: 2665
 | 2024 | Furiosa: A Mad Max Saga | furiosa-a-mad-max-saga-2024 | Accion | Netflix | +16 |
 | 2024 | Gladiator II | gladiator-ii-2024 | Accion | Netflix | +13 |
 | 2024 | Godzilla x Kong: The New Empire | godzilla-x-kong-the-new-empire-2024 | Accion | Netflix | +13 |
-| 2024 | Gru 4: Mi villano favorito | despicable-me-4-2024 | Animación | HBO Max | ATP |
+| 2024 | Gru 4: Mi villano favorito | despicable-me-4-2024 | Animación | Netflix | ATP |
 | 2024 | Haikyu!! The Dumpster Battle | haikyu-the-dumpster-battle-2024 | Anime | Crunchyroll | ATP |
 | 2024 | Harold y el lápiz mágico | harold-y-el-lapiz-magico-2024 | Animacion | Prime Video | ATP |
 | 2024 | Here (Aquí) | here-2024 | Drama | Prime Video | +13 |
@@ -633,6 +635,7 @@ Total de peliculas: 2665
 | 2024 | Los justos | los-justos-2024 | Comedia | CINE.AR | +13 |
 | 2024 | Love Lies Bleeding | love-lies-bleeding-2024 | Thriller | HBO Max | +16 |
 | 2024 | Madame Web | madame-web-2024 | Accion | Prime Video | +13 |
+| 2024 | Malas lenguas | malas-lenguas-2024 | Comedia | Prime Video | +17 |
 | 2024 | Marianela y el cadáver | marianela-y-el-cadaver-2024 | Comedia | Otras plataformas | +13 |
 | 2024 | Médium | medium-2024 | Terror | Prime Video | +13 |
 | 2024 | Megalopolis | megalopolis-2024 | Drama | Otras plataformas | +13 |
@@ -793,7 +796,7 @@ Total de peliculas: 2665
 | 2022 | Lightyear | lightyear-2022 | Animacion | Disney Plus | ATP |
 | 2022 | Los tipos malos | los-tipos-malos-2022 | Animacion | Apple TV | ATP |
 | 2022 | Minions: Nace un villano | minions-nace-un-villano-2022 | Animacion | Apple TV | ATP |
-| 2022 | Morbius | morbius-2022 | Accion | Netflix + Mercado Play | +13 |
+| 2022 | Morbius | morbius-2022 | Accion | Prime Video | +13 |
 | 2022 | Mundo extraño | mundo-extrano-2022 | Animacion | Disney Plus | ATP |
 | 2022 | Nope | nope-2022 | Terror | Otras plataformas | +17 |
 | 2022 | One Piece Film: Red | one-piece-film-red-2022 | Anime | Prime Video + Apple TV | ATP |
@@ -1298,7 +1301,7 @@ Total de peliculas: 2665
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Otras plataformas | +13 |
 | 2013 | Mi villano favorito 2 | mi-villano-favorito-2-2013 | Animacion | HBO Max + Apple TV | ATP |
 | 2013 | Monsters University | monsters-university-2013 | Animacion | Disney Plus | ATP |
-| 2013 | Oblivion | oblivion-2013 | Ciencia ficcion | HBO Max | +13 |
+| 2013 | Oblivion | oblivion-2013 | Ciencia ficcion | Netflix + HBO Max | +13 |
 | 2013 | Plan en Las Vegas | plan-en-las-vegas-2013 | Comedia | Apple TV | +13 |
 | 2013 | Posesión infernal | posesion-infernal-2013 | Terror | HBO Max | +18 |
 | 2013 | Prisioneros | prisioneros-2013 | Thriller | Otras plataformas | +17 |
@@ -1350,6 +1353,7 @@ Total de peliculas: 2665
 | 2012 | Puella Magi Madoka Magica: La película - Parte 2 | puella-magi-madoka-magica-la-pelicula-parte-2-2012 | Anime | Otras plataformas | +13 |
 | 2012 | Sin tregua | sin-tregua-2012 | Acción | Otras plataformas | +17 |
 | 2012 | Skyfall | skyfall-2012 | Accion | Netflix | +12 |
+| 2012 | Tabú | tabu-2012 | Drama | MUBI | +13 |
 | 2012 | Ted | ted-2012 | Comedia | Prime Video + Apple TV | +16 |
 | 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video | +13 |
 | 2012 | The Avengers | the-avengers-2012 | Accion | Disney Plus | +13 |

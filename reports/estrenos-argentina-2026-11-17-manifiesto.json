@@ -1,0 +1,1731 @@
+{
+  "territorio": "AR",
+  "corte": "2026-11-17",
+  "dias": [
+    "2026-11-16",
+    "2026-11-17"
+  ],
+  "fuente": "https://www.justwatch.com/ar/peliculas/nuevo",
+  "nota": "Eventos de detección sin filtro por año. Los tipos en packages corresponden al servicio consultado. El cruce de existentes usa coincidencias normalizadas de título/año. Los pendientes aún requieren investigación individual.",
+  "streaming": [
+    {
+      "id": "tm1562625",
+      "title": "Verity. La sombra de un engaño",
+      "originalTitle": "Verity",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/verity",
+      "externalIds": {
+        "imdbId": "tt32261958",
+        "tmdbId": "1283515"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [
+        "verity-la-sombra-de-un-engano-2026"
+      ],
+      "result": "ficha existente sin cambios en este lote"
+    },
+    {
+      "id": "tm78713",
+      "title": "Polar Express",
+      "originalTitle": "The Polar Express",
+      "originalReleaseYear": 2004,
+      "fullPath": "/ar/pelicula/polar-express",
+      "externalIds": {
+        "imdbId": "tt0338348",
+        "tmdbId": "5255"
+      },
+      "packages": [],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [
+        "el-expreso-polar-2004"
+      ],
+      "result": "ficha existente sin cambios en este lote"
+    },
+    {
+      "id": "tm1615816",
+      "title": "Núremberg",
+      "originalTitle": "Nuremberg",
+      "originalReleaseYear": 2025,
+      "fullPath": "/ar/pelicula/nuremberg",
+      "externalIds": {
+        "imdbId": "tt29567915",
+        "tmdbId": "1214931"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [
+        "nuremberg-2025"
+      ],
+      "result": "actualizada"
+    },
+    {
+      "id": "tm891955",
+      "title": "Asesinato en Cornouaille",
+      "originalTitle": "Meurtres en Cornouaille",
+      "originalReleaseYear": 2018,
+      "fullPath": "/ar/pelicula/asesinato-en-cornouaille",
+      "externalIds": {
+        "imdbId": "tt8382986",
+        "tmdbId": "703307"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm2986290",
+      "title": "En Ruta de Escape",
+      "originalTitle": "Drive Through Fire",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/en-ruta-de-escape",
+      "externalIds": {
+        "imdbId": "tt33512134",
+        "tmdbId": "1378742"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "pmp",
+          "offers": [
+            "FLATRATE"
+          ]
+        },
+        {
+          "date": "2026-11-16",
+          "provider": "app",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1003750",
+      "title": "Furiosa: De la saga Mad Max",
+      "originalTitle": "Furiosa: A Mad Max Saga",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/furiosa",
+      "externalIds": {
+        "imdbId": "tt12037194",
+        "tmdbId": "786892"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "auc",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [
+        "furiosa-a-mad-max-saga-2024"
+      ],
+      "result": "ficha existente sin cambios en este lote"
+    },
+    {
+      "id": "tm139376",
+      "title": "Mad Max: Furia en la carretera",
+      "originalTitle": "Mad Max: Fury Road",
+      "originalReleaseYear": 2015,
+      "fullPath": "/ar/pelicula/mad-max-furia-en-la-carretera",
+      "externalIds": {
+        "imdbId": "tt1392190",
+        "tmdbId": "76341"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "auc",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [
+        "mad-max-fury-road-2015"
+      ],
+      "result": "ficha existente sin cambios en este lote"
+    },
+    {
+      "id": "tm1331262",
+      "title": "Control Zeta",
+      "originalTitle": "Control Zeta",
+      "originalReleaseYear": 2023,
+      "fullPath": "/ar/pelicula/control-zeta",
+      "externalIds": {
+        "imdbId": "tt27619137",
+        "tmdbId": "1116598"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm57722",
+      "title": "Desayuno con diamantes",
+      "originalTitle": "Breakfast at Tiffany's",
+      "originalReleaseYear": 1961,
+      "fullPath": "/ar/pelicula/desayuno-con-diamantes",
+      "externalIds": {
+        "imdbId": "tt0054698",
+        "tmdbId": "164"
+      },
+      "packages": [],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm20963",
+      "title": "Perseguido",
+      "originalTitle": "The Running Man",
+      "originalReleaseYear": 1987,
+      "fullPath": "/ar/pelicula/perseguido",
+      "externalIds": {
+        "imdbId": "tt0093894",
+        "tmdbId": "865"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm893416",
+      "title": "Asesinatos en Aviñón",
+      "originalTitle": "Meurtres à Avignon",
+      "originalReleaseYear": 2016,
+      "fullPath": "/ar/pelicula/asesinatos-en-avinon",
+      "externalIds": {
+        "imdbId": "tt4994578",
+        "tmdbId": "1484797"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm2896092",
+      "title": "La familia Proud: Especial de navidad",
+      "originalTitle": "A Proud Family Wizmas",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/a-proud-family-wizmas",
+      "externalIds": {
+        "imdbId": "tt43596156",
+        "tmdbId": "1716604"
+      },
+      "packages": [],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1549192",
+      "title": "Navidad en el rancho",
+      "originalTitle": "Christmas on the Ranch",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/navidad-en-el-rancho",
+      "externalIds": {
+        "imdbId": "tt28197705",
+        "tmdbId": "1374847"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "nfx",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm57035",
+      "title": "Tabú",
+      "originalTitle": "Tabu",
+      "originalReleaseYear": 2012,
+      "fullPath": "/ar/pelicula/tabu-2012",
+      "externalIds": {
+        "imdbId": "tt2153963",
+        "tmdbId": "93858"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "mbi",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16",
+        "2026-11-17"
+      ],
+      "matches": [
+        "tabu-2012"
+      ],
+      "result": "alta"
+    },
+    {
+      "id": "tm3038351",
+      "title": "Darius Rucker: Me llamaban Hootie",
+      "originalTitle": "Darius Rucker: They Called Me Hootie",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/darius-rucker-me-llamaban-hootie",
+      "externalIds": {
+        "imdbId": "tt51201053",
+        "tmdbId": "1822873"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "dnp",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual",
+      "detail": "Disney+ AR vigente. JustWatch y TMDb no muestran nota, Rotten Tomatoes tiene cero valoraciones, y Watchmode no devolvió identidad inequívoca."
+    },
+    {
+      "id": "tm1406169",
+      "title": "La Reportera Navideña",
+      "originalTitle": "Reporting for Christmas",
+      "originalReleaseYear": 2023,
+      "fullPath": "/ar/pelicula/la-reportera-navidena",
+      "externalIds": {
+        "imdbId": "tt22167232",
+        "tmdbId": "1127953"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "nfx",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm417949",
+      "title": "Asesinato en la isla",
+      "originalTitle": "Killer Island",
+      "originalReleaseYear": 2018,
+      "fullPath": "/ar/pelicula/asesinato-en-la-isla",
+      "externalIds": {
+        "imdbId": "tt6557724",
+        "tmdbId": "528292"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm148052",
+      "title": "Camino hacia el éxito",
+      "originalTitle": "Reach Me",
+      "originalReleaseYear": 2014,
+      "fullPath": "/ar/pelicula/camino-hacia-el-exito",
+      "externalIds": {
+        "imdbId": "tt0959306",
+        "tmdbId": "251994"
+      },
+      "packages": [],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1296228",
+      "title": "Project Silence",
+      "originalTitle": "Talchul: Project Silence",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/project-silence",
+      "externalIds": {
+        "imdbId": "tt25808194",
+        "tmdbId": "726139"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm3017860",
+      "title": "Expedición: Salvar nuestros mares",
+      "originalTitle": "Expedition: Saving Our Seas",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/expedicion-salvar-nuestros-mares",
+      "externalIds": {
+        "imdbId": "tt49065977",
+        "tmdbId": "1826442"
+      },
+      "packages": [],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1311374",
+      "title": "PHD (Pyar Hai Drama)",
+      "originalTitle": "PHD - Pyaar Hai Drama",
+      "originalReleaseYear": 2023,
+      "fullPath": "/ar/pelicula/phd-pyar-hai-drama",
+      "externalIds": {
+        "imdbId": "tt23142536",
+        "tmdbId": "1090940"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "kbo",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1538270",
+      "title": "Sorop",
+      "originalTitle": "Sorop",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/sorop",
+      "externalIds": {
+        "imdbId": "tt33348138",
+        "tmdbId": "1322593"
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1497750",
+      "title": "Face Deep",
+      "originalTitle": "Face Deep",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/face-deep",
+      "externalIds": {
+        "imdbId": "tt32557085",
+        "tmdbId": null
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "fmz",
+          "offers": [
+            "ADS"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm3041328",
+      "title": "El Tahur y su Gallo de Oro",
+      "originalTitle": "El Tahur Y Su Gallo De Oro",
+      "originalReleaseYear": 2015,
+      "fullPath": "/ar/pelicula/el-tahur-y-su-gallo-de-oro",
+      "externalIds": {
+        "imdbId": "tt13375650",
+        "tmdbId": null
+      },
+      "packages": [
+        {
+          "date": "2026-11-16",
+          "provider": "plx",
+          "offers": [
+            "ADS"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-16"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm307535",
+      "title": "Nosferatu",
+      "originalTitle": "Nosferatu",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/nosferatu-2023",
+      "externalIds": {
+        "imdbId": "tt5040012",
+        "tmdbId": "426063"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "itu",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "nosferatu-2024"
+      ],
+      "result": "ficha existente sin cambios en este lote"
+    },
+    {
+      "id": "tm308162",
+      "title": "El jugador de ajedrez",
+      "originalTitle": "El jugador de ajedrez",
+      "originalReleaseYear": 2017,
+      "fullPath": "/ar/pelicula/el-jugador-de-ajedrez",
+      "externalIds": {
+        "imdbId": "tt5732530",
+        "tmdbId": "438421"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "el-jugador-de-ajedrez-2017"
+      ],
+      "result": "ficha existente sin cambios en este lote"
+    },
+    {
+      "id": "tm2561046",
+      "title": "Minotauro",
+      "originalTitle": "Minotaur",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/minotauro-2026",
+      "externalIds": {
+        "imdbId": "tt37118301",
+        "tmdbId": "848700"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "cmk",
+          "offers": [
+            "CINEMA"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "estreno posterior al corte",
+      "detail": "Cinemark indica estreno argentino el 19/11. Fuera del corte de estrenos vigentes al 17/11."
+    },
+    {
+      "id": "tm174079",
+      "title": "París, Texas",
+      "originalTitle": "Paris, Texas",
+      "originalReleaseYear": 1984,
+      "fullPath": "/ar/pelicula/paris-texas",
+      "externalIds": {
+        "imdbId": "tt0087884",
+        "tmdbId": "655"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "paris-texas-1984"
+      ],
+      "result": "ficha existente sin cambios en este lote"
+    },
+    {
+      "id": "tm915880",
+      "title": "Gru 4: Mi villano favorito",
+      "originalTitle": "Despicable Me 4",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/gru-4-mi-villano-favorito",
+      "externalIds": {
+        "imdbId": "tt7510222",
+        "tmdbId": "519182"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "nfx",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "despicable-me-4-2024"
+      ],
+      "result": "actualizada"
+    },
+    {
+      "id": "tm178959",
+      "title": "5-5-5",
+      "originalTitle": "5-5-5",
+      "originalReleaseYear": 2012,
+      "fullPath": "/ar/pelicula/5-5-5",
+      "externalIds": {
+        "imdbId": "tt1809214",
+        "tmdbId": "200427"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1669016",
+      "title": "La muerte de Robin Hood",
+      "originalTitle": "The Death of Robin Hood",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/la-muerte-de-robin-hood",
+      "externalIds": {
+        "imdbId": "tt32273171",
+        "tmdbId": "1284465"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "itu",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "la-muerte-de-robin-hood-2026"
+      ],
+      "result": "ficha existente sin cambios en este lote"
+    },
+    {
+      "id": "tm183480",
+      "title": "Oblivion",
+      "originalTitle": "Oblivion",
+      "originalReleaseYear": 2013,
+      "fullPath": "/ar/pelicula/oblivion",
+      "externalIds": {
+        "imdbId": "tt1483013",
+        "tmdbId": "75612"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "nfx",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "oblivion-2013"
+      ],
+      "result": "actualizada"
+    },
+    {
+      "id": "tm435125",
+      "title": "Morbius",
+      "originalTitle": "Morbius",
+      "originalReleaseYear": 2022,
+      "fullPath": "/ar/pelicula/morbius",
+      "externalIds": {
+        "imdbId": "tt5108870",
+        "tmdbId": "526896"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "morbius-2022"
+      ],
+      "result": "actualizada"
+    },
+    {
+      "id": "tm1299858",
+      "title": "J-hope in the Box",
+      "originalTitle": "j-hope IN THE BOX",
+      "originalReleaseYear": 2023,
+      "fullPath": "/ar/pelicula/j-hope-in-the-box",
+      "externalIds": {
+        "imdbId": "tt26425683",
+        "tmdbId": "1076443"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "dnp",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual",
+      "detail": "Evento Disney+ del 17 para obra de 2023. Pendiente acreditar un retrato del director y cerrar el billing documental."
+    },
+    {
+      "id": "tm1461869",
+      "title": "Lady Parts",
+      "originalTitle": "Lady Parts",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/lady-parts",
+      "externalIds": {
+        "imdbId": "tt21423506",
+        "tmdbId": "1261875"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1656422",
+      "title": "Invisible",
+      "originalTitle": "Invisible",
+      "originalReleaseYear": 2025,
+      "fullPath": "/ar/pelicula/invisible-2025",
+      "externalIds": {
+        "imdbId": "tt37517041",
+        "tmdbId": null
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1940846",
+      "title": "Mile 666",
+      "originalTitle": "Mile 666",
+      "originalReleaseYear": 2025,
+      "fullPath": "/ar/pelicula/mile-666",
+      "externalIds": {
+        "imdbId": "tt27335011",
+        "tmdbId": "1610460"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1599882",
+      "title": "Animales Peligrosos",
+      "originalTitle": "Dangerous Animals",
+      "originalReleaseYear": 2025,
+      "fullPath": "/ar/pelicula/dangerous-animals",
+      "externalIds": {
+        "imdbId": "tt32299316",
+        "tmdbId": "1285965"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "tiburon-blanco-la-bestia-del-mar-2025"
+      ],
+      "result": "ficha existente sin cambios en este lote"
+    },
+    {
+      "id": "tm160804",
+      "title": "Leyenda urbana 3: La maldición de Mary",
+      "originalTitle": "Urban Legends: Bloody Mary",
+      "originalReleaseYear": 2005,
+      "fullPath": "/ar/pelicula/leyenda-urbana-3-la-maldicion-de-mary",
+      "externalIds": {
+        "imdbId": "tt0451957",
+        "tmdbId": "10292"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "nfx",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm145867",
+      "title": "Sueños robados",
+      "originalTitle": "Sonhos Roubados",
+      "originalReleaseYear": 2009,
+      "fullPath": "/ar/pelicula/suenos-robados",
+      "externalIds": {
+        "imdbId": "tt1513914",
+        "tmdbId": "45170"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1613945",
+      "title": "El sonido de la caída",
+      "originalTitle": "In die Sonne schauen",
+      "originalReleaseYear": 2025,
+      "fullPath": "/ar/pelicula/sound-of-falling",
+      "externalIds": {
+        "imdbId": "tt28690468",
+        "tmdbId": "1221061"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "alc",
+          "offers": [
+            "CINEMA"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "estreno posterior al corte",
+      "detail": "Estreno local anunciado para el 19/11; la aparición del día 17 no se toma como estreno consumado."
+    },
+    {
+      "id": "tm1522638",
+      "title": "Un gran viaje atrevido y maravilloso",
+      "originalTitle": "A Big Bold Beautiful Journey",
+      "originalReleaseYear": 2025,
+      "fullPath": "/ar/pelicula/a-big-bold-beautiful-journey",
+      "externalIds": {
+        "imdbId": "tt13650700",
+        "tmdbId": "1241921"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "itu",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual",
+      "detail": "El evento del 17 corresponde a Apple TV Store. La suscripción a HBO Max ya estaba documentada en octubre."
+    },
+    {
+      "id": "tm1481875",
+      "title": "Malas lenguas",
+      "originalTitle": "Rumours",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/rumours",
+      "externalIds": {
+        "imdbId": "tt30841606",
+        "tmdbId": "1187417"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "provider": "itu",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "malas-lenguas-2024"
+      ],
+      "result": "alta"
+    },
+    {
+      "id": "tm822333",
+      "title": "Ojos grises",
+      "originalTitle": "Grey Eyes",
+      "originalReleaseYear": 2021,
+      "fullPath": "/ar/pelicula/grey-eyes",
+      "externalIds": {
+        "imdbId": "tt10648326",
+        "tmdbId": "816741"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1526451",
+      "title": "De escapada",
+      "originalTitle": "Get Away",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/get-away",
+      "externalIds": {
+        "imdbId": "tt10449276",
+        "tmdbId": "1201753"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "itu",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1666303",
+      "title": "La Asistente de la Morgue",
+      "originalTitle": "The Mortuary Assistant",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/the-mortuary-assistant",
+      "externalIds": {
+        "imdbId": "tt36647890",
+        "tmdbId": "1470130"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "alc",
+          "offers": [
+            "CINEMA"
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "provider": "cmk",
+          "offers": [
+            "CINEMA"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "la-asistente-de-la-morgue-2026"
+      ],
+      "result": "ficha existente sin cambios en este lote",
+      "detail": "Ficha existente. El estreno en salas es del 19/11, fuera del corte, y la tienda digital constituye una oferta separada."
+    },
+    {
+      "id": "tm1337529",
+      "title": "Te esperaré en Venus",
+      "originalTitle": "See You on Venus",
+      "originalReleaseYear": 2023,
+      "fullPath": "/ar/pelicula/see-you-on-venus",
+      "externalIds": {
+        "imdbId": "tt14960612",
+        "tmdbId": "1122932"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "nfx",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm179901",
+      "title": "Wetlands",
+      "originalTitle": "Feuchtgebiete",
+      "originalReleaseYear": 2013,
+      "fullPath": "/ar/pelicula/wetlands-2013",
+      "externalIds": {
+        "imdbId": "tt2524674",
+        "tmdbId": "208277"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "mbi",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm91512",
+      "title": "Barbie: Moda mágica en París",
+      "originalTitle": "Barbie: A Fashion Fairytale",
+      "originalReleaseYear": 2010,
+      "fullPath": "/ar/pelicula/barbie-moda-magica-en-paris",
+      "externalIds": {
+        "imdbId": "tt1725929",
+        "tmdbId": "44874"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1147574",
+      "title": "Los tres deseos de Cenicienta",
+      "originalTitle": "Tre nøtter til Askepott",
+      "originalReleaseYear": 2021,
+      "fullPath": "/ar/pelicula/three-wishes-for-cinderella",
+      "externalIds": {
+        "imdbId": "tt10147580",
+        "tmdbId": "660262"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "amz",
+          "offers": [
+            "RENT",
+            "BUY"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1510679",
+      "title": "Ordinary Things",
+      "originalTitle": "Ordinary Things",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/ordinary-things",
+      "externalIds": {
+        "imdbId": "tt28821809",
+        "tmdbId": "1354487"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm2871200",
+      "title": "Black Holes Suck",
+      "originalTitle": "Black Holes Suck",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/black-holes-suck",
+      "externalIds": {
+        "imdbId": "tt31416916",
+        "tmdbId": "1676421"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "fmz",
+          "offers": [
+            "ADS"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1433878",
+      "title": "El Roomie",
+      "originalTitle": "El Roomie",
+      "originalReleaseYear": 2024,
+      "fullPath": "/ar/pelicula/el-roomie",
+      "externalIds": {
+        "imdbId": "tt30972058",
+        "tmdbId": "1229913"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "vix",
+          "offers": [
+            "ADS",
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm79522",
+      "title": "Boy A",
+      "originalTitle": "Boy A",
+      "originalReleaseYear": 2008,
+      "fullPath": "/ar/pelicula/boy-a",
+      "externalIds": {
+        "imdbId": "tt1078188",
+        "tmdbId": "14748"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "alg",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1859464",
+      "title": "Protocolo de Fuga",
+      "originalTitle": "Exit Protocol",
+      "originalReleaseYear": 2025,
+      "fullPath": "/ar/pelicula/exit-protocol",
+      "externalIds": {
+        "imdbId": "tt32421438",
+        "tmdbId": "1293167"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "pmp",
+          "offers": [
+            "FLATRATE"
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "provider": "app",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [
+        "protocolo-de-fuga-2025"
+      ],
+      "result": "alta"
+    },
+    {
+      "id": "tm1951360",
+      "title": "Serpiente Gigante 5: Ciudad Monstruo",
+      "originalTitle": "大蛇5：怪兽都市",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/serpiente-gigante-5-ciudad-monstruo",
+      "externalIds": {
+        "imdbId": null,
+        "tmdbId": "1623740"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "plx",
+          "offers": [
+            "ADS"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm1353685",
+      "title": "Verano en rojo",
+      "originalTitle": "Verano en rojo",
+      "originalReleaseYear": 2023,
+      "fullPath": "/ar/pelicula/verano-en-rojo",
+      "externalIds": {
+        "imdbId": "tt21379326",
+        "tmdbId": "1143291"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm180092",
+      "title": "Ghost in the Shell Arise - Border 1: Ghost Pain",
+      "originalTitle": "攻殻機動隊ARISE border:1 Ghost Pain",
+      "originalReleaseYear": 2013,
+      "fullPath": "/ar/pelicula/ghost-in-the-shell-arise-border-1-ghost-pain",
+      "externalIds": {
+        "imdbId": "tt2636124",
+        "tmdbId": "196750"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "cra",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual",
+      "detail": "El evento es del canal de Crunchyroll en Prime. La ficha pública en Crunchyroll no confirma oferta de suscripción directa para este corte en Argentina."
+    },
+    {
+      "id": "tm459112",
+      "title": "Ella y Él",
+      "originalTitle": "Ela Disse, Ele Disse",
+      "originalReleaseYear": 2019,
+      "fullPath": "/ar/pelicula/she-said-he-said",
+      "externalIds": {
+        "imdbId": "tt9660006",
+        "tmdbId": "574547"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm2952605",
+      "title": "I Hate Found Footage",
+      "originalTitle": "I Hate Found Footage",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/i-hate-found-footage",
+      "externalIds": {
+        "imdbId": "tt41715721",
+        "tmdbId": "1741339"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "plx",
+          "offers": [
+            "ADS"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm208586",
+      "title": "Guerra de Sexo",
+      "originalTitle": "Женщины против мужчин",
+      "originalReleaseYear": 2015,
+      "fullPath": "/ar/pelicula/zhenshchiny-protiv-muzhchin",
+      "externalIds": {
+        "imdbId": "tt4464702",
+        "tmdbId": "338227"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "prv",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm885376",
+      "title": "Alma pura",
+      "originalTitle": "Alma pura",
+      "originalReleaseYear": 2020,
+      "fullPath": "/ar/pelicula/alma-pura",
+      "externalIds": {
+        "imdbId": "tt9666970",
+        "tmdbId": "693019"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "cin",
+          "offers": [
+            "FREE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual",
+      "detail": "Oferta comprobada en CINE.AR Play. Pendiente retrato verificable del director y conciliación de las fichas de origen."
+    },
+    {
+      "id": "tm1529422",
+      "title": "La Història Desconeguda",
+      "originalTitle": "La Història Desconeguda",
+      "originalReleaseYear": 2025,
+      "fullPath": "/ar/pelicula/la-historia-desconeguda",
+      "externalIds": {
+        "imdbId": "tt33309770",
+        "tmdbId": "1430477"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "fmz",
+          "offers": [
+            "ADS"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm3024227",
+      "title": "Mike Ward: Modest",
+      "originalTitle": "Mike Ward: Modest",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/mike-ward-modest",
+      "externalIds": {
+        "imdbId": "tt49794576",
+        "tmdbId": "1827471"
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "nfx",
+          "offers": [
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm646165",
+      "title": "Recen por mí. La historia de Francisco.",
+      "originalTitle": "La historia de Francisco",
+      "originalReleaseYear": 2009,
+      "fullPath": "/ar/pelicula/recen-por-mi-la-historia-de-francisco",
+      "externalIds": {
+        "imdbId": "tt1538327",
+        "tmdbId": null
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "cmk",
+          "offers": [
+            "CINEMA"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    },
+    {
+      "id": "tm3035428",
+      "title": "V/C/R/2",
+      "originalTitle": "V/C/R/2",
+      "originalReleaseYear": 2026,
+      "fullPath": "/ar/pelicula/v-c-r-2",
+      "externalIds": {
+        "imdbId": "tt50645225",
+        "tmdbId": null
+      },
+      "packages": [
+        {
+          "date": "2026-11-17",
+          "provider": "bsm",
+          "offers": [
+            "FREE",
+            "FLATRATE"
+          ]
+        }
+      ],
+      "unfilteredDetection": [
+        "2026-11-17"
+      ],
+      "matches": [],
+      "result": "pendiente de auditoría individual"
+    }
+  ]
+}

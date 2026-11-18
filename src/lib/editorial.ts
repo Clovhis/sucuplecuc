@@ -23,6 +23,7 @@ const bioLinkSchema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   label: z.string().trim().min(1),
 });
+const movieLinkSchema = bioLinkSchema.extend({ type: z.literal('movieLink') });
 const schema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   title: z.string().trim().min(1),
@@ -46,6 +47,7 @@ const schema = z.object({
     z.object({ type: z.literal('paragraph'), text: z.string().trim().min(1) }),
     headingSchema,
     bioLinkSchema,
+    movieLinkSchema,
     imageSchema.extend({ type: z.literal('image') }),
   ])).min(1).refine((blocks) => blocks.some((block) => block.type === 'paragraph'), 'Falta texto'),
 });
@@ -63,6 +65,9 @@ const entries: Editorial[] = Object.entries(files).map(([path, data]) => {
   for (const block of entry.content) {
     if (block.type === 'bioLink' && !personProfiles[block.slug]) {
       throw new Error(`Biografía inexistente: ${block.slug}`);
+    }
+    if (block.type === 'movieLink' && !movieSlugs.has(block.slug)) {
+      throw new Error(`Película inexistente: ${block.slug}`);
     }
   }
   slugs.add(entry.slug);
