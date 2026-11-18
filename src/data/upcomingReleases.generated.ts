@@ -8,32 +8,8 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-17T12:50:24.568Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-18T12:43:08.588Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"title": "Los Juegos del Hambre: Amanecer en la Cosecha",
-		"releaseDate": "2026-11-19",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10320-los-juegos-del-hambre-amanecer-en-la-cosecha/",
-		"slug": "cines-argentinos-10320",
-		"videoUrl": "https://www.youtube.com/watch?v=Cvre7nHRnMk",
-		"thumbnailUrl": "https://i.ytimg.com/vi/Cvre7nHRnMk/hqdefault.jpg"
-	},
-	{
-		"title": "Yo soy Rocky",
-		"releaseDate": "2026-11-19",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10647-yo-soy-rocky/",
-		"slug": "cines-argentinos-10647",
-		"videoUrl": "https://www.youtube.com/watch?v=KKquTgKlXJY",
-		"thumbnailUrl": "https://i.ytimg.com/vi/KKquTgKlXJY/hqdefault.jpg"
-	},
-	{
-		"title": "Recen por mí: la historia de Francisco",
-		"releaseDate": "2026-11-19",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10666-recen-por-mi-la-historia-de-francisco/",
-		"slug": "cines-argentinos-10666",
-		"videoUrl": "https://www.youtube.com/watch?v=lWSHNKlqkxE",
-		"thumbnailUrl": "https://i.ytimg.com/vi/lWSHNKlqkxE/hqdefault.jpg"
-	},
 	{
 		"title": "Hechizo: Bienvenidos a Hexe",
 		"releaseDate": "2026-11-26",
@@ -81,5 +57,13 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10208",
 		"videoUrl": "https://www.youtube.com/watch?v=XaSkYbItiKk",
 		"thumbnailUrl": "https://i.ytimg.com/vi/XaSkYbItiKk/hqdefault.jpg"
+	},
+	{
+		"title": "Gatto",
+		"releaseDate": "2027-03-04",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10206-gatto/",
+		"slug": "cines-argentinos-10206",
+		"videoUrl": "https://www.youtube.com/watch?v=eqz9Cl83i3E",
+		"thumbnailUrl": "https://i.ytimg.com/vi/eqz9Cl83i3E/hqdefault.jpg"
 	}
 ];
