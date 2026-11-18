@@ -1152,6 +1152,28 @@
 					"HBO Max"
 				]
 			}
+		},
+		{
+			"slug": "siendo-heumann-2026",
+			"bufferPostId": "6afd148493fa11d37d00f646",
+			"dueAt": "2026-11-18T22:00:00.000Z",
+			"scheduledAt": "2026-11-18T02:59:16.404Z",
+			"copyStyle": {
+				"opening": 3888275529,
+				"availability": 803162388,
+				"editorial": 4251433288,
+				"verdict": 242250116,
+				"link": 1684848231
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/siendo-heumann",
+				"checkedAt": "2026-11-18T02:59:15.963Z",
+				"kind": "subscription",
+				"platforms": [
+					"Apple TV"
+				]
+			}
 		}
 	]
 }
