@@ -1,0 +1,415 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "carne-2026",
+	"title": "Carne",
+	"year": 2026,
+	"reviewedOn": "2026-11-19",
+	"createdOn": "2026-11-19",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1728391/cast",
+			"kind": "reparto y equipo completos, cotejados con Watchmode",
+			"fullCredits": true,
+			"checkedOn": "2026-11-19",
+			"relevantCreditCount": 16
+		},
+		{
+			"url": "https://cinenacional.com/pelicula/carne-2026",
+			"kind": "material de producción, festival o elenco acreditado",
+			"checkedOn": "2026-11-19"
+		},
+		{
+			"url": "https://www.imdb.com/es/title/tt39166566/fullcredits/",
+			"kind": "contraste de créditos",
+			"checkedOn": "2026-11-19"
+		}
+	],
+	"credits": [
+		{
+			"name": "Tomás Marichal Urbán",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6335996",
+					"fact": "Tomás Marichal Urbán figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://www.portada.com.uy/tomas-marichal-lleva-al-cine-carne-una-produccion-uruguaya-filmada-integramente-en-maldonado-96638",
+					"fact": "Dirección en el largometraje Carne (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm13542715/",
+					"fact": "Perfil y filmografía de Tomás Marichal Urbán."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://www.portada.com.uy/wp-content/uploads/2026/08/asgr4.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Augusto Gordillo Lisboa",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2300949",
+					"fact": "Augusto Gordillo Lisboa figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://cinenacional.com/pelicula/carne-2026",
+					"fact": "Intérprete de Matías en el largometraje Carne (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/2YRNkUWtdE7aA9885NRBxgQSDE4.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Maite Lanata",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1061040",
+					"fact": "Maite Lanata figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://cinenacional.com/pelicula/carne-2026",
+					"fact": "Intérprete de Sofía en el largometraje Carne (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3627828/",
+					"fact": "Perfil y filmografía de Maite Lanata."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/aQa21YwxwgnHQhaedoILCNG6iIO.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Paula Silva",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2300951",
+					"fact": "Paula Silva figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://cinenacional.com/pelicula/carne-2026",
+					"fact": "Intérprete de Lucía en el largometraje Carne (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm8726423/",
+					"fact": "Perfil y filmografía de Paula Silva."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4NTHYeFx9iQbsnSZNLc9hzaDCEc.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Minerva Casero",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3382923",
+					"fact": "Minerva Casero figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://cinenacional.com/pelicula/carne-2026",
+					"fact": "Intérprete de Julieta en el largometraje Carne (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/v0MYbCeUjXeAFOn2JzF2hYyYI0u.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Luciano Cáceres",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/79291",
+					"fact": "Luciano Cáceres figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://cinenacional.com/pelicula/carne-2026",
+					"fact": "Intérprete de Victor en el largometraje Carne (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0194553/",
+					"fact": "Perfil y filmografía de Luciano Cáceres."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/z9s7uuEU7cS44idIPI22040ZSZH.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rafael Beltrán",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2300948",
+					"fact": "Rafael Beltrán figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://cinenacional.com/pelicula/carne-2026",
+					"fact": "Intérprete de Miguel en el largometraje Carne (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yPvjWQ9C2TN7JjjSLZdtFAJEuOd.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Néstor Guzzini",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/548835",
+					"fact": "Néstor Guzzini figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://cinenacional.com/pelicula/carne-2026",
+					"fact": "Intérprete de Sr. Presidente en el largometraje Carne (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2255680/",
+					"fact": "Perfil y filmografía de Néstor Guzzini."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sIxuUnMnHGG0Z0ohQYfF3AmI7nw.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Annasofia Facello",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3184802",
+					"fact": "Perfil vinculado al reparto de Carne."
+				},
+				{
+					"url": "https://www.imdb.com/es/title/tt39166566/fullcredits/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Dra. Becker. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Susana Groisman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1672120",
+					"fact": "Perfil vinculado al reparto de Carne."
+				},
+				{
+					"url": "https://www.imdb.com/es/title/tt39166566/fullcredits/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Marisa. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Victoria Fierro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6336012",
+					"fact": "Perfil vinculado al reparto de Carne."
+				},
+				{
+					"url": "https://www.imdb.com/es/title/tt39166566/fullcredits/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Veronica. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Nicolás Moreno",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6336013",
+					"fact": "Perfil vinculado al reparto de Carne."
+				},
+				{
+					"url": "https://www.imdb.com/es/title/tt39166566/fullcredits/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Peon. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Christian Zagia",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1669337",
+					"fact": "Perfil vinculado al reparto de Carne."
+				},
+				{
+					"url": "https://www.imdb.com/es/title/tt39166566/fullcredits/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Carnicero. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "James Thomas Snyder",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4136706",
+					"fact": "Perfil vinculado al reparto de Carne."
+				},
+				{
+					"url": "https://www.imdb.com/es/title/tt39166566/fullcredits/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Julieta Marichal",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6337355",
+					"fact": "Perfil vinculado al reparto de Carne."
+				},
+				{
+					"url": "https://www.imdb.com/es/title/tt39166566/fullcredits/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Ida Soldi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1728391/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6337362",
+					"fact": "Perfil vinculado al reparto de Carne."
+				},
+				{
+					"url": "https://www.imdb.com/es/title/tt39166566/fullcredits/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica.",
+			"omissionCategory": "lesser-role"
+		}
+	],
+	"coverageReview": {
+		"rationale": "La ficha incluye las familias de Matías y Sofía, los personajes que intervienen en la chacra y el vínculo con el poder político.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Annasofia Facello",
+				"role": "performer",
+				"reason": "Figura como Dra. Becker. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica."
+			},
+			{
+				"name": "Susana Groisman",
+				"role": "performer",
+				"reason": "Figura como Marisa. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica."
+			},
+			{
+				"name": "Victoria Fierro",
+				"role": "performer",
+				"reason": "Figura como Veronica. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica."
+			},
+			{
+				"name": "Nicolás Moreno",
+				"role": "performer",
+				"reason": "Figura como Peon. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica."
+			},
+			{
+				"name": "Christian Zagia",
+				"role": "performer",
+				"reason": "Figura como Carnicero. Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica."
+			},
+			{
+				"name": "James Thomas Snyder",
+				"role": "performer",
+				"reason": "Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica."
+			},
+			{
+				"name": "Julieta Marichal",
+				"role": "performer",
+				"reason": "Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica."
+			},
+			{
+				"name": "Ida Soldi",
+				"role": "performer",
+				"reason": "Intervención breve fuera de las dos familias y las figuras principales de la trama. Reparto completo en la ficha técnica."
+			}
+		]
+	}
+}

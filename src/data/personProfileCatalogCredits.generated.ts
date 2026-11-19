@@ -1800,6 +1800,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-faculty-1998"
   ],
   "elle-fanning": [
+    "los-juegos-del-hambre-amanecer-en-la-cosecha-2026",
     "rosebush-pruning-2026",
     "valor-sentimental-2025",
     "a-rainy-day-in-new-york-2019",
@@ -2059,6 +2060,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-godfather-1972"
   ],
   "francis-lawrence": [
+    "los-juegos-del-hambre-amanecer-en-la-cosecha-2026",
     "la-larga-marcha-2025",
     "los-juegos-del-hambre-sinsajo-parte-2-2015",
     "los-juegos-del-hambre-sinsajo-parte-1-2014",
@@ -2216,6 +2218,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "twisters-2024"
   ],
   "glenn-close": [
+    "los-juegos-del-hambre-amanecer-en-la-cosecha-2026",
     "back-in-action-2025",
     "super-man-the-christopher-reeve-story-2024",
     "air-force-one-el-avion-del-presidente-1997",
@@ -2923,6 +2926,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-social-network-2010"
   ],
   "jesse-plemons": [
+    "los-juegos-del-hambre-amanecer-en-la-cosecha-2026",
     "bugonia-2025",
     "the-power-of-the-dog-2021",
     "estoy-pensando-en-dejarlo-2020"
@@ -3613,6 +3617,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "tiempo-de-matar-1996"
   ],
   "kieran-culkin": [
+    "los-juegos-del-hambre-amanecer-en-la-cosecha-2026",
     "a-real-pain-2024",
     "scott-pilgrim-contra-el-mundo-2010"
   ],
@@ -4898,6 +4903,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "ralph-fiennes": [
     "28-years-later-the-bone-temple-2026",
+    "los-juegos-del-hambre-amanecer-en-la-cosecha-2026",
     "28-years-later-2025",
     "conclave-2024",
     "el-menu-2022",

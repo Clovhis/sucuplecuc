@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-18. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-19. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4728
+Total de vínculos de películas del catálogo: 4734
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -249,7 +249,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Edward Berger | `edward-berger` | /personas/edward-berger/ | Director | 2 | 6 |
 | Edward Norton | `edward-norton` | /personas/edward-norton/ | Actor | 9 | 6 |
 | Elijah Wood | `elijah-wood` | /personas/elijah-wood/ | Actor | 5 | 3 |
-| Elle Fanning | `elle-fanning` | /personas/elle-fanning/ | Actriz | 4 | 7 |
+| Elle Fanning | `elle-fanning` | /personas/elle-fanning/ | Actriz | 5 | 7 |
 | Ellen Burstyn | `ellen-burstyn` | /personas/ellen-burstyn/ | Actriz | 5 | 4 |
 | Emilio Disi | `emilio-disi` | /personas/emilio-disi/ | Actor / Comediante | 3 | 5 |
 | Emily Blunt | `emily-blunt` | /personas/emily-blunt/ | Actriz | 10 | 6 |
@@ -285,7 +285,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Forest Whitaker | `forest-whitaker` | /personas/forest-whitaker/ | Actor | 5 | 4 |
 | Frances McDormand | `frances-mcdormand` | /personas/frances-mcdormand/ | Actriz | 13 | 4 |
 | Francis Ford Coppola | `francis-ford-coppola` | /personas/francis-ford-coppola/ | Director / Guionista / Productor | 9 | 7 |
-| Francis Lawrence | `francis-lawrence` | /personas/francis-lawrence/ | Director / Productor | 6 | 6 |
+| Francis Lawrence | `francis-lawrence` | /personas/francis-lawrence/ | Director / Productor | 7 | 6 |
 | Frank Capra | `frank-capra` | /personas/frank-capra/ | Director / Guionista / Productor | 4 | 6 |
 | Freida Pinto | `freida-pinto` | /personas/freida-pinto/ | Actriz | 3 | 3 |
 | Gabriel Arbós | `gabriel-arbos` | /personas/gabriel-arbos/ | Director / Guionista / Productor | 1 | 6 |
@@ -304,7 +304,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Germán de Silva | `german-de-silva` | /personas/german-de-silva/ | Actor | 1 | 5 |
 | Gino Renni | `gino-renni` | /personas/gino-renni/ | Actor / Comediante | 2 | 5 |
 | Glen Powell | `glen-powell` | /personas/glen-powell/ | Actor | 3 | 6 |
-| Glenn Close | `glenn-close` | /personas/glenn-close/ | Actriz | 5 | 5 |
+| Glenn Close | `glenn-close` | /personas/glenn-close/ | Actriz | 6 | 5 |
 | Goldie Hawn | `goldie-hawn` | /personas/goldie-hawn/ | Actriz / Productora | 5 | 5 |
 | Gonzalo Calzada | `gonzalo-calzada` | /personas/gonzalo-calzada/ | Director / Guionista / Productor | 1 | 6 |
 | Gore Verbinski | `gore-verbinski` | /personas/gore-verbinski/ | Director / Productor / Guionista | 7 | 5 |
@@ -387,7 +387,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Jeremy Renner | `jeremy-renner` | /personas/jeremy-renner/ | Actor | 4 | 7 |
 | Jeremy Strong | `jeremy-strong` | /personas/jeremy-strong/ | Actor | 3 | 7 |
 | Jesse Eisenberg | `jesse-eisenberg` | /personas/jesse-eisenberg/ | Actor | 9 | 6 |
-| Jesse Plemons | `jesse-plemons` | /personas/jesse-plemons/ | Actor | 3 | 6 |
+| Jesse Plemons | `jesse-plemons` | /personas/jesse-plemons/ | Actor | 4 | 6 |
 | Jessica Alba | `jessica-alba` | /personas/jessica-alba/ | Actriz | 3 | 3 |
 | Jessica Chastain | `jessica-chastain` | /personas/jessica-chastain/ | Actriz | 10 | 6 |
 | Jessica Harper | `jessica-harper` | /personas/jessica-harper/ | Actriz | 3 | 3 |
@@ -470,7 +470,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Kevin Costner | `kevin-costner` | /personas/kevin-costner/ | Actor | 12 | 6 |
 | Kevin Hart | `kevin-hart` | /personas/kevin-hart/ | Actor / Comediante | 5 | 6 |
 | Kevin Spacey | `kevin-spacey` | /personas/kevin-spacey/ | Actor | 7 | 4 |
-| Kieran Culkin | `kieran-culkin` | /personas/kieran-culkin/ | Actor | 2 | 6 |
+| Kieran Culkin | `kieran-culkin` | /personas/kieran-culkin/ | Actor | 3 | 6 |
 | Kim Basinger | `kim-basinger` | /personas/kim-basinger/ | Actriz | 4 | 6 |
 | Kirsten Dunst | `kirsten-dunst` | /personas/kirsten-dunst/ | Actriz | 9 | 6 |
 | Kris Kristofferson | `kris-kristofferson` | /personas/kris-kristofferson/ | Actor | 5 | 6 |
@@ -650,7 +650,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Rachel Zegler | `rachel-zegler` | /personas/rachel-zegler/ | Actriz | 2 | 7 |
 | Rafael Ferro | `rafael-ferro` | /personas/rafael-ferro/ | Actor | 2 | 5 |
 | Rafael Spregelburd | `rafael-spregelburd` | /personas/rafael-spregelburd/ | Actor / Dramaturgo / Director | 1 | 5 |
-| Ralph Fiennes | `ralph-fiennes` | /personas/ralph-fiennes/ | Actor | 12 | 7 |
+| Ralph Fiennes | `ralph-fiennes` | /personas/ralph-fiennes/ | Actor | 13 | 7 |
 | Rami Malek | `rami-malek` | /personas/rami-malek/ | Actor | 4 | 7 |
 | Raúl de la Torre | `raul-de-la-torre` | /personas/raul-de-la-torre/ | Director / Guionista | 1 | 5 |
 | Raúl Perrone | `raul-perrone` | /personas/raul-perrone/ | Director / Guionista / Productor | 1 | 5 |

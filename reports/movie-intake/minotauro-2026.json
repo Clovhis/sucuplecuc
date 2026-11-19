@@ -1,0 +1,681 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "minotauro-2026",
+	"title": "Minotauro",
+	"year": 2026,
+	"reviewedOn": "2026-11-19",
+	"createdOn": "2026-11-19",
+	"billingSources": [
+		{
+			"url": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"kind": "créditos completos del largometraje, cotejados con Razor Film, TMDB y Watchmode",
+			"fullCredits": true,
+			"checkedOn": "2026-11-19",
+			"relevantCreditCount": 26
+		},
+		{
+			"url": "https://razor-film.de/en/movies/minotaurus/",
+			"kind": "material de producción, festival o elenco acreditado",
+			"checkedOn": "2026-11-19"
+		},
+		{
+			"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+			"kind": "contraste de créditos",
+			"checkedOn": "2026-11-19"
+		},
+		{
+			"url": "https://www.themoviedb.org/movie/848700/cast",
+			"kind": "ficha de contraste por actor y personaje",
+			"checkedOn": "2026-11-19"
+		}
+	],
+	"credits": [
+		{
+			"name": "Andrei Zvyagintsev",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/68519",
+					"fact": "Andrei Zvyagintsev figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://razor-film.de/en/movies/minotaurus/",
+					"fact": "Dirección en el largometraje Minotauro (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1168657/",
+					"fact": "Perfil y filmografía de Andrei Zvyagintsev."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zBvUhqznHopl4AFVqVTJDXBOSGG.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Dmitriy Mazurov",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1257335",
+					"fact": "Dmitriy Mazurov figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://razor-film.de/en/movies/minotaurus/",
+					"fact": "Intérprete de Gleb en el largometraje Minotauro (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/gDr0k68ZL6C49PHupKkwl0ScutQ.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Iris Lebedeva",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2478642",
+					"fact": "Iris Lebedeva figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://razor-film.de/en/movies/minotaurus/",
+					"fact": "Intérprete de Galina en el largometraje Minotauro (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5531598/",
+					"fact": "Perfil y filmografía de Iris Lebedeva."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wcqsv6z1pMTShG0WEcyzmSFHQNZ.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Boris Kudrin",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.imdb.com/name/nm18522373/",
+					"fact": "Boris Kudrin figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://razor-film.de/en/movies/minotaurus/",
+					"fact": "Intérprete de Seriosha en el largometraje Minotauro (2026)."
+				}
+			],
+			"portraitException": {
+				"category": "child-privacy",
+				"reason": "El actor infantil interpreta al hijo de Gleb y Galina. Las fichas públicas consultadas muestran material de la película y no ofrecen un retrato individual de uso apropiado.",
+				"subjectStatus": {
+					"isMinor": true,
+					"sourceUrl": "https://poff.ee/en/film/minotaur/",
+					"fact": "La ficha del festival presenta al hijo menor y acredita a Boris Kudrin entre los protagonistas. El rol Seriosha coincide en Razor Film e IMDb."
+				},
+				"sourcesSearched": [
+					{
+						"url": "https://www.imdb.com/name/nm18522373/",
+						"result": "El perfil profesional acredita el papel y carece de retrato individual."
+					},
+					{
+						"url": "https://razor-film.de/en/movies/minotaurus/",
+						"result": "La galería de producción es de la película y del director."
+					},
+					{
+						"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+						"result": "El festival acredita al actor y muestra imágenes promocionales de la película."
+					}
+				]
+			}
+		},
+		{
+			"name": "Varvara Shmykova",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1945204",
+					"fact": "Varvara Shmykova figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://razor-film.de/en/movies/minotaurus/",
+					"fact": "Intérprete de Natasha en el largometraje Minotauro (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5589529/",
+					"fact": "Perfil y filmografía de Varvara Shmykova."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5KhNwwWYYWc9mWnthJe1QuU5ydD.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Vladimir Friedman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/231035",
+					"fact": "Vladimir Friedman figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://razor-film.de/en/movies/minotaurus/",
+					"fact": "Intérprete de Mayor en el largometraje Minotauro (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6FlH4eFTBqZxf6M7XRqFgq72S0W.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Anastasia Mischenko",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6130494",
+					"fact": "Anastasia Mischenko figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://razor-film.de/en/movies/minotaurus/",
+					"fact": "Intérprete de Dasha en el largometraje Minotauro (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm14135013/",
+					"fact": "Perfil y filmografía de Anastasia Mischenko."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8uO0yf8Q1cmu2kCXbQCmKLb0Fe2.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Yurii Zavalnyuk",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2419493",
+					"fact": "Yurii Zavalnyuk figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://razor-film.de/en/movies/minotaurus/",
+					"fact": "Intérprete de Anton en el largometraje Minotauro (2026)."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm10782669/",
+					"fact": "Perfil y filmografía de Yurii Zavalnyuk."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pKYrMmJchOVdLQPQmRBaMtiOGcp.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Rudgy Pajany",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5814925",
+					"fact": "Rudgy Pajany figura en el perfil vinculado a los créditos de la película."
+				},
+				{
+					"url": "https://razor-film.de/en/movies/minotaurus/",
+					"fact": "Intérprete de Adrien en el largometraje Minotauro (2026)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/55Wt7ZTyxWm0gByw4h79Yoz5cr1.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Juris Žagars",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1119847",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Anatoliy Belyy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/93540",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Anton Lytvynov",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5256588",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Yan Vizinberg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1040504",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Stasya Tolstaya",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2216644",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Yulia. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Boris Shchedrin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2571010",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Artur Smolyaninov",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/101423",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Denis. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Mihails Samodahovs",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3597784",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Nikolai. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Kristina Zakharova",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5392221",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Inna. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Mikhail Safronov",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/240324",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Alexey. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Alex Sino",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6239642",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Andrei Borisovich. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Elena Bogdanovitch-Goloubeva",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6423459",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Tatiana. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Anatoli Weissman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6423463",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Kostia. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Igoris Abramovičius",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3602556",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Kirill. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Artjom Garejev",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/137630",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Pavel. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Dmitrijs Punte",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6423472",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Igor Karmanov. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Stanislav Kolodub",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.imdb.com/title/tt37118301/fullcredits/",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2370849",
+					"fact": "Perfil vinculado al reparto de Minotauro."
+				},
+				{
+					"url": "https://www.filmfesthamburg.de/en/film-info/minotaur/",
+					"fact": "Crédito del reparto cotejado con Watchmode."
+				}
+			],
+			"omissionReason": "Figura como Medvedev Police officer. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo.",
+			"omissionCategory": "lesser-role"
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se conserva a la familia de Gleb y a quienes intervienen en los dos conflictos inmediatos, el conyugal y el laboral.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Juris Žagars",
+				"role": "performer",
+				"reason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Anatoliy Belyy",
+				"role": "performer",
+				"reason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Anton Lytvynov",
+				"role": "performer",
+				"reason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Yan Vizinberg",
+				"role": "performer",
+				"reason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Stasya Tolstaya",
+				"role": "performer",
+				"reason": "Figura como Yulia. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Boris Shchedrin",
+				"role": "performer",
+				"reason": "Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Artur Smolyaninov",
+				"role": "performer",
+				"reason": "Figura como Denis. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Mihails Samodahovs",
+				"role": "performer",
+				"reason": "Figura como Nikolai. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Kristina Zakharova",
+				"role": "performer",
+				"reason": "Figura como Inna. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Mikhail Safronov",
+				"role": "performer",
+				"reason": "Figura como Alexey. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Alex Sino",
+				"role": "performer",
+				"reason": "Figura como Andrei Borisovich. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Elena Bogdanovitch-Goloubeva",
+				"role": "performer",
+				"reason": "Figura como Tatiana. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Anatoli Weissman",
+				"role": "performer",
+				"reason": "Figura como Kostia. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Igoris Abramovičius",
+				"role": "performer",
+				"reason": "Figura como Kirill. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Artjom Garejev",
+				"role": "performer",
+				"reason": "Figura como Pavel. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Mikhail Safronov",
+				"role": "performer",
+				"reason": "Figura como Liocha. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Dmitrijs Punte",
+				"role": "performer",
+				"reason": "Figura como Igor Karmanov. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			},
+			{
+				"name": "Stanislav Kolodub",
+				"role": "performer",
+				"reason": "Figura como Medvedev Police officer. Papel de reparto fuera del hogar de Gleb y del conflicto inmediato de su empresa. Se conserva la referencia al crédito técnico completo."
+			}
+		]
+	}
+}
