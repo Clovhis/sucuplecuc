@@ -1050,7 +1050,7 @@
       "format": "ranking",
       "theme": "ranking:genre:Drama",
       "palette": 3,
-      "state": "scheduled",
+      "state": "sent",
       "attemptId": "44012888832:1",
       "dueAt": "2026-11-18T22:15:00.000Z",
       "channelId": "6af6465a62b70b94b0105899",
@@ -1742,8 +1742,102 @@
         "https://raw.githubusercontent.com/Clovhis/sucuplecuc/8b65b3e950284acb5bb0de6366f53139a0c45e6f/media/2026-11-18-esa-cosa-con-alas-2025-ranking-photo-6.jpg"
       ],
       "bufferPostId": "6afbcf0b85dca6b14a1bceb4",
-      "externalLink": null,
+      "externalLink": "https://www.instagram.com/p/Df5jkxIIyoG/",
       "scheduledAt": "2026-11-17T03:50:34.446Z"
+    },
+    {
+      "date": "2026-11-19",
+      "slug": "a-real-pain-2024",
+      "slugs": [
+        "a-real-pain-2024"
+      ],
+      "category": "Comedia",
+      "format": "score",
+      "theme": "score",
+      "palette": 0,
+      "state": "reserved",
+      "attemptId": "44445060663:1",
+      "dueAt": "2026-11-19T22:15:00.000Z",
+      "channelId": "6af6465a62b70b94b0105899",
+      "media": [
+        {
+          "mediaPath": "media/2026-11-19-a-real-pain-2024-score-photo-1.jpg",
+          "sha256": "89ce13ac9faf9d890a6ffa553d5ddfee7e727d1b02c892f9ab94857aef50303f",
+          "width": 1080,
+          "height": 1350,
+          "alt": "A Real Pain (2024). 8 · Excelente. Selección Sundance 2024.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "sundance-2024-a-real-pain-2024-725bc89499"
+            ],
+            "assets": [
+              {
+                "id": "sundance-2024-a-real-pain-2024-725bc89499",
+                "kind": "still",
+                "path": "assets/social/photos/sundance-2024-a-real-pain-2024-725bc89499.webp",
+                "slugs": [
+                  "a-real-pain-2024"
+                ],
+                "title": "A Real Pain · still 1",
+                "width": 1920,
+                "credit": "Courtesy of Sundance Institute",
+                "height": 1080,
+                "sha256": "7866cd7e0a7017396231ff221fa4fdf5c8dac58ae02ff6d3f08c853668494fd1",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "sundance-official-press",
+                "license": "Permiso editorial de prensa Sundance",
+                "subject": "A Real Pain",
+                "sourceUrl": "https://www.sundance.org/about/press/",
+                "licenseUrl": "https://www.sundance.org/about/press/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/U.S.%20Dramatic%20Competition/A%20Real%20Pain?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR.",
+                  "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/U.S.%20Dramatic%20Competition/A%20Real%20Pain?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "originalUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/U.S.%20Dramatic%20Competition/A%20Real%20Pain?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "archiveEntry": "A_Real_Pain-Still1-KieranCulkin_JesseEisenberg.jpg",
+                "evidencePath": "assets/social/press-packages/sundance-2024-a-real-pain-2024.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "044083fb6179390e5efad3bcaacecd0d61d3fb28c6d62407a3836f19ae3080b9",
+                "originalSha256": "c10d1753e87e38d5fb459844f5b5fc900f6304ed0e2469a0c04e9d69909d8e90",
+                "suppliedCaption": "FILM STILL 1 Kieran Culkin and Jesse Eisenberg appear in A Real Pain by Jesse Eisenberg, an official selection of the U.S. Dramatic Competition at the 2024 Sundance Film Festival. Courtesy of Sundance Institute. ",
+                "editorialContext": {
+                  "year": 2024,
+                  "festival": "Sundance"
+                },
+                "grantEvidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+                "sourceGrant": {
+                  "id": "sundance-official-press",
+                  "issuer": "Sundance Institute",
+                  "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/a-real-pain-2024/7866cd7e0a7017396231ff221fa4fdf5c8dac58ae02ff6d3f08c853668494fd1.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Imágenes completas, reducción técnica y composición editorial fuera de la fotografía."
+          }
+        }
+      ],
+      "text": "De Sundance a CinePosta: A Real Pain.\n\nA Real Pain (2024) · 8 · Excelente · Selección Sundance 2024\nA Real Pain convierte un viaje de duelo en una pelea entre primos; Jesse Eisenberg mira con precisión y Kieran Culkin vuelve magnético cada desborde.\n\n¿Qué te dejó esta película? Reseña completa en el enlace del perfil.\n\nhttps://www.cineposta.com.ar/peliculas/a-real-pain-2024/\n\nFotografías y material cinematográfico:\nA Real Pain: Courtesy of Sundance Institute · «A Real Pain · still 1». https://www.sundance.org/about/press/\nPermiso editorial de prensa Sundance: https://www.sundance.org/about/press/\nComposición: CinePosta. Fotos bajo sus licencias y permisos indicados.\n\n#CinePosta #QueVer #Cine",
+      "createdAt": "2026-11-19T02:33:29.940Z"
     }
   ]
 }
