@@ -1174,6 +1174,28 @@
 					"Apple TV"
 				]
 			}
+		},
+		{
+			"slug": "el-deshielo-2026",
+			"bufferPostId": "6afe61d446636f319e80517d",
+			"dueAt": "2026-11-19T22:00:00.000Z",
+			"scheduledAt": "2026-11-19T02:41:25.051Z",
+			"copyStyle": {
+				"opening": 4068617059,
+				"availability": 1708940034,
+				"editorial": 3425051050,
+				"verdict": 463561530,
+				"link": 2816556229
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/el-deshielo",
+				"checkedAt": "2026-11-19T02:41:24.600Z",
+				"kind": "subscription",
+				"platforms": [
+					"MUBI"
+				]
+			}
 		}
 	]
 }
