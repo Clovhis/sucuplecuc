@@ -1755,7 +1755,7 @@
       "format": "score",
       "theme": "score",
       "palette": 0,
-      "state": "scheduled",
+      "state": "sent",
       "attemptId": "44445060663:1",
       "dueAt": "2026-11-19T22:15:00.000Z",
       "channelId": "6af6465a62b70b94b0105899",
@@ -1843,8 +1843,102 @@
         "https://raw.githubusercontent.com/Clovhis/sucuplecuc/5159cdf990648ed7295cd976af0e4a260dda46f5/media/2026-11-19-a-real-pain-2024-score-photo-1.jpg"
       ],
       "bufferPostId": "6afe5ffd749099bdc703f75e",
-      "externalLink": null,
+      "externalLink": "https://www.instagram.com/p/Df8IVUyD0V-/",
       "scheduledAt": "2026-11-19T02:33:33.302Z"
+    },
+    {
+      "date": "2026-11-20",
+      "slug": "super-man-the-christopher-reeve-story-2024",
+      "slugs": [
+        "super-man-the-christopher-reeve-story-2024"
+      ],
+      "category": "Documental",
+      "format": "protagonist",
+      "theme": "spotlight",
+      "palette": 1,
+      "state": "reserved",
+      "attemptId": "44659761605:1",
+      "dueAt": "2026-11-20T22:15:00.000Z",
+      "channelId": "6af6465a62b70b94b0105899",
+      "media": [
+        {
+          "mediaPath": "media/2026-11-20-super-man-the-christopher-reeve-story-2024-protagonist-photo-1.jpg",
+          "sha256": "de5fe3cc53352420c7b009981ecae8271e402d254d3f77e25404c6378b72fb0e",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Super/Man: La Historia De Christopher Reeve (2024). 7 · Muy buena. Selección Sundance 2024.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "sundance-2024-super-man-the-christopher-reeve-story-2024-8b29747c36"
+            ],
+            "assets": [
+              {
+                "id": "sundance-2024-super-man-the-christopher-reeve-story-2024-8b29747c36",
+                "kind": "still",
+                "path": "assets/social/photos/sundance-2024-super-man-the-christopher-reeve-story-2024-8b29747c36.webp",
+                "slugs": [
+                  "super-man-the-christopher-reeve-story-2024"
+                ],
+                "title": "Super/Man: La Historia De Christopher Reeve · still 6",
+                "width": 1920,
+                "credit": "Mirrorpix.  · Courtesy of Sundance Institute",
+                "height": 1080,
+                "sha256": "7dfa6734face2b23f8b107df2c2c29591d3c0ea7d5dbd501ead0a6ec7cfeb57c",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "sundance-official-press",
+                "license": "Permiso editorial de prensa Sundance",
+                "subject": "Super/Man: La Historia De Christopher Reeve",
+                "sourceUrl": "https://www.sundance.org/about/press/",
+                "licenseUrl": "https://www.sundance.org/about/press/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Premieres/SuperMan%3A%20The%20Christopher%20Reeve%20Story?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR.",
+                  "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Premieres/SuperMan%3A%20The%20Christopher%20Reeve%20Story?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "originalUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Premieres/SuperMan%3A%20The%20Christopher%20Reeve%20Story?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "archiveEntry": "Superman_Man_The_Christopher_Reeve_Story-Still6.jpg",
+                "evidencePath": "assets/social/press-packages/sundance-2024-super-man-the-christopher-reeve-story-2024.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "f7e8c98e1ea103e58fb78255d00ca10c97e49528449d4a1caf3b27c39a467bf6",
+                "originalSha256": "dd5364958e74dade36dc668d9ee028ecb268232d59874a30ae09e7f879e88abd",
+                "suppliedCaption": "FILM STILL 6 A still from Super/Man: The Christopher Reeve Story by Ian Bonhôte and Peter Ettedgui, an official selection of the Premieres program at the 2024 Sundance Film Festival. Courtesy of Sundance Institute | Photo by Mirrorpix. ",
+                "editorialContext": {
+                  "year": 2024,
+                  "festival": "Sundance"
+                },
+                "grantEvidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+                "sourceGrant": {
+                  "id": "sundance-official-press",
+                  "issuer": "Sundance Institute",
+                  "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/super-man-the-christopher-reeve-story-2024/7dfa6734face2b23f8b107df2c2c29591d3c0ea7d5dbd501ead0a6ec7cfeb57c.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Imágenes completas, reducción técnica y composición editorial fuera de la fotografía."
+          }
+        }
+      ],
+      "text": "De Sundance a CinePosta: Super/Man: La Historia De Christopher Reeve.\n\nSuper/Man: La Historia De Christopher Reeve (2024) · 7 · Muy buena · Selección Sundance 2024\nSuper/Man mira a Christopher Reeve más allá del traje: el accidente cambia el relato, pero no borra al actor que había construido una imagen de héroe ni al activista que eligió usarla.\n\n¿Qué te dejó esta película? Reseña completa en el enlace del perfil.\n\nhttps://www.cineposta.com.ar/peliculas/super-man-the-christopher-reeve-story-2024/\n\nFotografías y material cinematográfico:\nSuper/Man: La Historia De Christopher Reeve: Mirrorpix.  · Courtesy of Sundance Institute · «Super/Man: La Historia De Christopher Reeve · still 6». https://www.sundance.org/about/press/\nPermiso editorial de prensa Sundance: https://www.sundance.org/about/press/\nComposición: CinePosta. Fotos bajo sus licencias y permisos indicados.\n\n#CinePosta #QueVer #Cine",
+      "createdAt": "2026-11-20T02:18:56.574Z"
     }
   ]
 }
