@@ -1,0 +1,280 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "llamame-por-tu-nombre-2017",
+	"title": "Llámame por tu nombre",
+	"year": 2017,
+	"reviewedOn": "2026-11-20",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/398818/cast",
+			"kind": "Reparto completo de TMDB por ID, personajes y orden revisados",
+			"checkedOn": "2026-11-20",
+			"fullCredits": true,
+			"relevantCreditCount": 11
+		},
+		{
+			"url": "https://www.hbomax.com/ar/es/movie/fecb0795-bd1f-43c8-b89d-c83585a9cd28",
+			"kind": "Plataforma o distribuidora, identidad y créditos publicados",
+			"checkedOn": "2026-11-20"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt5726616/fullcredits/",
+			"kind": "Referencia de créditos del mismo IMDb ID",
+			"checkedOn": "2026-11-20"
+		}
+	],
+	"credits": [
+		{
+			"name": "Luca Guadagnino",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/78160",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0345174/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/A9n74Q8UvDZJkGo04KCC0oER6Qx.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/luca-guadagnino-tmdb-78160.jpg"
+			}
+		},
+		{
+			"name": "Timothée Chalamet",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Elio",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1190668",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3154303/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/c3NJxKbnKkQsttxA2XVh4pwPpIt.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/timothee-chalamet-tmdb-1190668.jpg"
+			}
+		},
+		{
+			"name": "Armie Hammer",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Oliver",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/53807",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2309517/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Armie%20Hammer%20Final%20Portrait%20Red%20Carpet%20Berlinale%202017.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/armie-hammer-nm2309517.jpg"
+			}
+		},
+		{
+			"name": "Michael Stuhlbarg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Mr. Perlman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/72873",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0836121/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Stuhlbarg%20at%20Artios.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/michael-stuhlbarg-nm0836121.jpg"
+			}
+		},
+		{
+			"name": "Amira Casar",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Annella",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/20577",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0142972/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lTvuFkDI67DA68mLEjF8Tvrza6E.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/amira-casar-tmdb-20577.jpg"
+			}
+		},
+		{
+			"name": "Esther Garrel",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Marzia",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/935096",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1081257/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/km79Neoe5tLwgbiBzq72pR7pdxY.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/esther-garrel-tmdb-935096.jpg"
+			}
+		},
+		{
+			"name": "Victoire du Bois",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Chiara",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1592949",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4973460/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/eQm8pA8ahuPZysSsqxd9oqmEBUy.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/victoire-du-bois-tmdb-1592949.jpg"
+			}
+		},
+		{
+			"name": "Vanda Capriolo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Mafalda",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1789600",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm8747928/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fg1XHgXBKnvtLzYu4V6zo49MtzU.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/vanda-capriolo-tmdb-1789600.jpg"
+			}
+		},
+		{
+			"name": "Antonio Rimoldi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Anchise",
+			"omissionReason": "El billing registra a Antonio Rimoldi como Anchise. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Elena Bucci",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Bambi",
+			"omissionReason": "El billing registra a Elena Bucci como Bambi. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Marco Sgrosso",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Nico",
+			"omissionReason": "El billing registra a Marco Sgrosso como Nico. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "André Aciman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Mounir",
+			"omissionReason": "El billing registra a André Aciman como Mounir. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Peter Spears",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/398818/cast",
+			"screenRole": "Isaac",
+			"omissionReason": "El billing registra a Peter Spears como Isaac. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se conservan dirección, protagonistas y reparto principal. Las omisiones corresponden al alcance de los papeles y a los retratos identificados en cada fila.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Antonio Rimoldi",
+				"role": "performer"
+			},
+			{
+				"name": "Elena Bucci",
+				"role": "performer"
+			},
+			{
+				"name": "Marco Sgrosso",
+				"role": "performer"
+			}
+		]
+	}
+}

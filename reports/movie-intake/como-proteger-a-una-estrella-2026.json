@@ -1,0 +1,348 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "como-proteger-a-una-estrella-2026",
+	"title": "Cómo proteger a una estrella",
+	"year": 2026,
+	"reviewedOn": "2026-11-20",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1551025/cast",
+			"kind": "Reparto completo de TMDB por ID, personajes y orden revisados",
+			"checkedOn": "2026-11-20",
+			"fullCredits": true,
+			"relevantCreditCount": 11
+		},
+		{
+			"url": "https://www.netflix.com/ar/title/81749470",
+			"kind": "Plataforma o distribuidora, identidad y créditos publicados",
+			"checkedOn": "2026-11-20"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt6611324/fullcredits/",
+			"kind": "Referencia de créditos del mismo IMDb ID",
+			"checkedOn": "2026-11-20"
+		}
+	],
+	"credits": [
+		{
+			"name": "Elizabeth Allen Rosenbaum",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1223175",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0020491/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zr1e4DoXsENXlb6SyG0I8IVceoW.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/elizabeth-allen-rosenbaum-tmdb-1223175.jpg"
+			}
+		},
+		{
+			"name": "Leighton Meester",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Hannah",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/85825",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1015262/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Leighton%20Meester%202017.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/leighton-meester-nm1015262.jpg"
+			}
+		},
+		{
+			"name": "Jared Padalecki",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Jack",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/49623",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0655585/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dTV5ImKP5uIdFShiG3VFbbjLFWo.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jared-padalecki-tmdb-49623.jpg"
+			}
+		},
+		{
+			"name": "Andie MacDowell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Connie Stapleton",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1533",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000510/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/akeheO4i3cR1HpSU8yu9HrLcsKm.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/andie-macdowell-tmdb-1533.jpg"
+			}
+		},
+		{
+			"name": "Walker Hayes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Sheriff Sanderson",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3286853",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4328634/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8kC7c8lO9grfgCP5FxLmEKCKMP6.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/walker-hayes-tmdb-3286853.jpg"
+			}
+		},
+		{
+			"name": "Noah LaLonde",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Hank Stapleton",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3664065",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm10840325/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kFN2p5zW8kbsLaEOA4usN88lq86.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/noah-lalonde-tmdb-3664065.jpg"
+			}
+		},
+		{
+			"name": "Toby Sandeman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Robbie",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3073224",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm8450713/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5ZmXTHbRlbkQDtga4Cbk447osUY.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/toby-sandeman-tmdb-3073224.jpg"
+			}
+		},
+		{
+			"name": "Phil Brooks",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Doghouse",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/565430",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1516006/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/357pyjyvFFJLkwBpTopy2KnyDRA.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/phil-brooks-tmdb-565430.jpg"
+			}
+		},
+		{
+			"name": "Ava Max",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Kennedy Monroe",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2728316",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm10242824/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ajW6BTIV8ixeevdNTJl557sVynX.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ava-max-tmdb-2728316.jpg"
+			}
+		},
+		{
+			"name": "Jake Foy",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Brody",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1287589",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm6591206/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zGdd4rmmyab9YXcsI6un06kzbJ9.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jake-foy-tmdb-1287589.jpg"
+			}
+		},
+		{
+			"name": "Siobhan Williams",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Ella Mae",
+			"omissionReason": "El billing registra a Siobhan Williams como Ella Mae. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Rachael Ancheril",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Taylor",
+			"omissionReason": "El billing registra a Rachael Ancheril como Taylor. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Giles Panton",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Jesse",
+			"omissionReason": "El billing registra a Giles Panton como Jesse. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Zoe Kosovic",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Clementine",
+			"omissionReason": "El billing registra a Zoe Kosovic como Clementine. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Greg Lawson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Glen",
+			"omissionReason": "El billing registra a Greg Lawson como Glen. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Tess Degenstein",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Deputy Nadine Turner",
+			"omissionReason": "El billing registra a Tess Degenstein como Deputy Nadine Turner. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Ryan Mah",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Avram",
+			"omissionReason": "El billing registra a Ryan Mah como Avram. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "William Kosovic",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1551025/cast",
+			"screenRole": "Young Drew",
+			"omissionReason": "El billing registra a William Kosovic como Young Drew. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se conservan dirección, protagonistas y reparto principal. Las omisiones corresponden al alcance de los papeles y a los retratos identificados en cada fila.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Siobhan Williams",
+				"role": "performer"
+			}
+		]
+	}
+}

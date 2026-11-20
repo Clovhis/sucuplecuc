@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-11-19. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-11-20. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2674
+Total de peliculas: 2679
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -67,6 +67,7 @@ Total de peliculas: 2674
 | 2026 | Colisión | colision-2026 | Thriller | Netflix | +16 |
 | 2026 | Colony: Zona Cero | colony-zona-cero-2026 | Terror | Apple TV + Prime Video | +16 |
 | 2026 | Cómo perder tu popularidad | como-perder-tu-popularidad-2026 | Comedia | Netflix + Prime Video | +13 |
+| 2026 | Cómo proteger a una estrella | como-proteger-a-una-estrella-2026 | Romance | Netflix | +13 |
 | 2026 | Cómo robar un banco | como-robar-un-banco-2026 | Accion | Cine | +18 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | CordobeCes: La película | cordobeces-la-pelicula-2026 | Comedia | Otras plataformas | ATP |
@@ -228,6 +229,7 @@ Total de peliculas: 2674
 | 2026 | Los Juegos del Hambre: Amanecer en la cosecha | los-juegos-del-hambre-amanecer-en-la-cosecha-2026 | Aventura | Cine | +13 |
 | 2026 | Lu & Pau | lu-pau-2026 | Crimen | Otras plataformas | +13 |
 | 2026 | Luchadores 2 | luchadores-2-2026 | Comedia | Netflix | +13 |
+| 2026 | Madden | madden-2026 | Drama | Prime Video | +16 |
 | 2026 | Madre siniestra | madre-siniestra-2026 | Terror | Cine | +13 |
 | 2026 | Main Vaapas Aaunga | main-vaapas-aaunga-2026 | Drama | Netflix | +13 |
 | 2026 | Making Marie Antoinette | making-marie-antoinette-2026 | Documental | MUBI | +15 |
@@ -329,7 +331,7 @@ Total de peliculas: 2674
 | 2026 | Strung | strung-2026 | Thriller | Apple TV + Flow | +18 |
 | 2026 | Su propio infierno | su-propio-infierno-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Sunrise: El último amanecer | sunrise-el-ultimo-amanecer-2026 | Romance | Prime Video | +13 |
-| 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Apple TV + Prime Video | ATP |
+| 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | HBO Max | ATP |
 | 2026 | Super Troopers 3 | super-troopers-3-2026 | Comedia | Disney Plus | +17 |
 | 2026 | Supergirl | supergirl-2026 | Accion | HBO Max + Apple TV | +13 |
 | 2026 | Susana y Elvira: Sin plan B | susana-y-elvira-sin-plan-b-2026 | Comedia romántica | Netflix | +16 |
@@ -738,6 +740,7 @@ Total de peliculas: 2674
 | 2023 | Ninja Turtles: Caos mutante | ninja-turtles-caos-mutante-2023 | Animacion | Paramount Plus | ATP |
 | 2023 | Objetos Raros | objetos-raros-2023 | Drama | Prime Video | +13 |
 | 2023 | Oppenheimer | oppenheimer-2023 | Drama | Netflix | +13 |
+| 2023 | Oso intoxicado | oso-intoxicado-2023 | Terror | HBO Max | +18 |
 | 2023 | Pibas superpoderosas | pibas-superpoderosas-2023 | Documental | CINE.AR | ATP |
 | 2023 | Piscina infinita | piscina-infinita-2023 | Ciencia ficcion | Apple TV | +18 |
 | 2023 | Pobres criaturas | poor-things-2023 | Drama | Disney Plus | +13 |
@@ -1083,6 +1086,7 @@ Total de peliculas: 2674
 | 2017 | Lady Bird | lady-bird-2017 | Drama | Otras plataformas | +17 |
 | 2017 | LEGO Batman: La película | lego-batman-la-pelicula-2017 | Animacion | HBO Max + Apple TV | ATP |
 | 2017 | Life: Vida | life-vida-2017 | Ciencia ficción | Apple TV | +17 |
+| 2017 | Llámame por tu nombre | llamame-por-tu-nombre-2017 | Romance | HBO Max | +13 |
 | 2017 | Llega de noche | llega-de-noche-2017 | Terror | Otras plataformas | +13 |
 | 2017 | Logan | logan-2017 | Accion | Disney Plus | +17 |
 | 2017 | Los archivos del Pentágono | the-post-2017 | Drama | Otras plataformas | +13 |
@@ -1459,7 +1463,7 @@ Total de peliculas: 2674
 | 2010 | Saw 3D | saw-3d-2010 | Gore | Otras plataformas | +18 |
 | 2010 | Scott Pilgrim contra el mundo | scott-pilgrim-contra-el-mundo-2010 | Accion | HBO Max | +13 |
 | 2010 | Shrek, felices para siempre | shrek-felices-para-siempre-2010 | Animacion | Prime Video + Disney Plus | ATP |
-| 2010 | Shutter Island | shutter-island-2010 | Thriller | Otras plataformas | +17 |
+| 2010 | Shutter Island | shutter-island-2010 | Thriller | Netflix | +17 |
 | 2010 | Son como niños | grown-ups-2010 | Comedia | Prime Video + Netflix | ATP |
 | 2010 | The Fighter | the-fighter-2010 | Drama | Otras plataformas | +16 |
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Otras plataformas | +12 |
@@ -2591,6 +2595,7 @@ Total de peliculas: 2674
 | 1957 | The Bridge on the River Kwai | the-bridge-on-the-river-kwai-1957 | Drama | Otras plataformas | ATP |
 | 1956 | Around the World in 80 Days | around-the-world-in-80-days-1956 | Comedia | Otras plataformas | ATP |
 | 1956 | Más corazón que odio | mas-corazon-que-odio-1956 | Western | Otras plataformas | ATP |
+| 1955 | El hombre de Laramie | el-hombre-de-laramie-1955 | Western | HBO Max | +13 |
 | 1955 | La dama y el vagabundo | la-dama-y-el-vagabundo-1955 | Animacion | Disney Plus | ATP |
 | 1955 | La noche del cazador | la-noche-del-cazador-1955 | Thriller | Apple TV | +13 |
 | 1955 | La palabra | la-palabra-1955 | Drama | Otras plataformas | +13 |

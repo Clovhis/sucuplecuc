@@ -1,0 +1,485 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "oso-intoxicado-2023",
+	"title": "Oso intoxicado",
+	"year": 2023,
+	"reviewedOn": "2026-11-20",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/804150/cast",
+			"kind": "Reparto completo de TMDB por ID, personajes y orden revisados",
+			"checkedOn": "2026-11-20",
+			"fullCredits": true,
+			"relevantCreditCount": 12
+		},
+		{
+			"url": "https://www.hbomax.com/ar/es/movie/4e65a52c-94ce-4468-824a-be629b831eb7",
+			"kind": "Plataforma o distribuidora, identidad y créditos publicados",
+			"checkedOn": "2026-11-20"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt14209916/fullcredits/",
+			"kind": "Referencia de créditos del mismo IMDb ID",
+			"checkedOn": "2026-11-20"
+		}
+	],
+	"credits": [
+		{
+			"name": "Elizabeth Banks",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/9281",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0006969/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Elizabeth%20Banks%20during%20interview%20in%202019.png?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/elizabeth-banks-nm0006969.jpg"
+			}
+		},
+		{
+			"name": "Keri Russell",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Sari",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/41292",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0005392/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Keri%20Russell%20(31481731266)%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/keri-russell-nm0005392.jpg"
+			}
+		},
+		{
+			"name": "Alden Ehrenreich",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Eddie",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/71375",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2403277/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vOLiUSDT8rubu0J2YKwBkOL0K6V.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/alden-ehrenreich-tmdb-71375.jpg"
+			}
+		},
+		{
+			"name": "O'Shea Jackson Jr.",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Daveed",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1371398",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm6578009/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/w500/kXJ02sXvnExbGNJ11piC6d6WMOc.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/o-shea-jackson-jr-tmdb-1371398.jpg"
+			}
+		},
+		{
+			"name": "Ray Liotta",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Syd",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11477",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000501/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ve9sB0o1MYTaL2SXEisVW2RMkD5.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ray-liotta-tmdb-11477.jpg"
+			}
+		},
+		{
+			"name": "Isiah Whitlock Jr.",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Bob",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17490",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0926086/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8OIhQb53rMX7VcTLZbAMeVd7tHc.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/isiah-whitlock-jr-tmdb-17490.jpg"
+			}
+		},
+		{
+			"name": "Brooklynn Prince",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Dee Dee",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1704640",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm7737419/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/k9oSIk7V8Sbgs0Dw8tX71f9YeXi.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/brooklynn-prince-1704640.jpg"
+			}
+		},
+		{
+			"name": "Christian Convery",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Henry",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1721268",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm8087548/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/tOR2tSrvHPVDltE4jBDEva3GNqY.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/christian-convery-nm8087548.jpg"
+			}
+		},
+		{
+			"name": "Margo Martindale",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Ranger Liz",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/452",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0553269/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6ANuYnZZJTuQLL4bbt8vH1qDYje.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/margo-martindale-tmdb-452.jpg"
+			}
+		},
+		{
+			"name": "Jesse Tyler Ferguson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Peter",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/204815",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0272479/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fqUrdi93CVsbid2hptbS29gteQT.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jesse-tyler-ferguson-tmdb-204815.jpg"
+			}
+		},
+		{
+			"name": "Kristofer Hivju",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Olaf",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/571418",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1970465/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kristofer%20Hivju%20(Cropped%2C%202015).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/kristofer-hivju-nm1970465.jpg"
+			}
+		},
+		{
+			"name": "Hannah Hoekstra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Elsa",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1045526",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4142492/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/e9z9VmHFguKylKj4Hlq9rjqNeEp.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/hannah-hoekstra-tmdb-1045526.jpg"
+			}
+		},
+		{
+			"name": "Ayoola Smart",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Officer Reba",
+			"omissionReason": "El billing registra a Ayoola Smart como Officer Reba. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Aaron Holliday",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Stache",
+			"omissionReason": "El billing registra a Aaron Holliday como Stache. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "J.B. Moore",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Vest",
+			"omissionReason": "El billing registra a J.B. Moore como Vest. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Leo Hanna",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Ponytail",
+			"omissionReason": "El billing registra a Leo Hanna como Ponytail. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Kahyun Kim",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Beth",
+			"omissionReason": "El billing registra a Kahyun Kim como Beth. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Scott Seiss",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Tom",
+			"omissionReason": "El billing registra a Scott Seiss como Tom. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Matthew Rhys",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Andrew Thornton",
+			"omissionReason": "El billing registra a Matthew Rhys como Andrew Thornton. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Shane Connellan",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Ray the Pediatrician",
+			"omissionReason": "El billing registra a Shane Connellan como Ray the Pediatrician. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Conor Lambert",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Trucker",
+			"omissionReason": "El billing registra a Conor Lambert como Trucker. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "George Kerslake",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Gabe",
+			"omissionReason": "El billing registra a George Kerslake como Gabe. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Allan Henry",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Bear Performer",
+			"omissionReason": "El billing registra a Allan Henry como Bear Performer. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Ian Dillon",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Hospital Cleaner (uncredited)",
+			"omissionReason": "El billing registra a Ian Dillon como Hospital Cleaner (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "David Duggan",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Cinemagoer (uncredited)",
+			"omissionReason": "El billing registra a David Duggan como Cinemagoer (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Keith Gallagher",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Police Officer (uncredited)",
+			"omissionReason": "El billing registra a Keith Gallagher como Police Officer (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Chloe Harris",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Citizen in Police Station (uncredited)",
+			"omissionReason": "El billing registra a Chloe Harris como Citizen in Police Station (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Christopher Livingstone",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Detective (uncredited)",
+			"omissionReason": "El billing registra a Christopher Livingstone como Detective (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Oisín Nolan",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Henry's Dad (uncredited)",
+			"omissionReason": "El billing registra a Oisín Nolan como Henry's Dad (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Chris Valor",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/804150/cast",
+			"screenRole": "Police Officer (uncredited)",
+			"omissionReason": "El billing registra a Chris Valor como Police Officer (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		}
+	]
+}

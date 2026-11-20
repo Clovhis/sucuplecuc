@@ -1116,6 +1116,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-longest-yard-2005"
   ],
   "christian-bale": [
+    "madden-2026",
     "the-bride-2026",
     "amsterdam-2022",
     "thor-love-and-thunder-2022",
@@ -2695,6 +2696,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "james-stewart": [
     "anatomia-de-un-asesinato-1959",
     "vertigo-1958",
+    "el-hombre-de-laramie-1955",
     "la-ventana-indiscreta-1954",
     "que-bello-es-vivir-1946",
     "historias-de-filadelfia-1940",
@@ -3793,7 +3795,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-quinto-elemento-1997"
   ],
   "luca-guadagnino": [
-    "challengers-2024"
+    "challengers-2024",
+    "llamame-por-tu-nombre-2017"
   ],
   "lucia-puenzo": [
     "pepita-la-pistolera-2026"
@@ -4551,6 +4554,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-hombre-del-tiempo-2005"
   ],
   "nicolas-cage": [
+    "madden-2026",
     "the-carpenter-s-son-2025",
     "longlegs-2024",
     "el-hombre-de-los-suenos-2023",
@@ -4929,6 +4933,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "cin3-fili4-2026"
   ],
   "ray-liotta": [
+    "oso-intoxicado-2023",
     "hubie-halloween-2020",
     "rebelion-adolescente-2009",
     "hannibal-2001",
@@ -5839,7 +5844,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "dune-part-two-2024",
     "wonka-2023",
     "dune-2021",
-    "a-rainy-day-in-new-york-2019"
+    "a-rainy-day-in-new-york-2019",
+    "llamame-por-tu-nombre-2017"
   ],
   "timothy-spall": [
     "adios-june-2025",

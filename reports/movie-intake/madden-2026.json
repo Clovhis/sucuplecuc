@@ -1,0 +1,930 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "madden-2026",
+	"title": "Madden",
+	"year": 2026,
+	"reviewedOn": "2026-11-20",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1131943/cast",
+			"kind": "Reparto completo de TMDB por ID, personajes y orden revisados",
+			"checkedOn": "2026-11-20",
+			"fullCredits": true,
+			"relevantCreditCount": 11
+		},
+		{
+			"url": "https://www.aboutamazon.com/news/entertainment/madden-movie-nicolas-cage-prime-video",
+			"kind": "Plataforma o distribuidora, identidad y créditos publicados",
+			"checkedOn": "2026-11-20"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt24818230/fullcredits/",
+			"kind": "Referencia de créditos del mismo IMDb ID",
+			"checkedOn": "2026-11-20"
+		}
+	],
+	"credits": [
+		{
+			"name": "David O. Russell",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17883",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0751102/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20O.%20Russell%20avp%202014.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/david-o-russell-nm0751102.jpg"
+			}
+		},
+		{
+			"name": "Nicolas Cage",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "John Madden",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2963",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000115/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20Cage%20Deauville%202013%202.jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/nicolas-cage-nm0000115.jpg"
+			}
+		},
+		{
+			"name": "Christian Bale",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Al Davis",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3894",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000288/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Bale-7837.jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/christian-bale-nm0000288.jpg"
+			}
+		},
+		{
+			"name": "Kathryn Hahn",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Virginia Madden",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17696",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1063517/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kathryn%20Hahn%20Agatha%20All%20Along%20Premiere%2001.png?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/kathryn-hahn-nm1063517.jpg"
+			}
+		},
+		{
+			"name": "Sienna Miller",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Carol Davis",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/23459",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1092227/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sienna%20Miller%20Berlinale%202017.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/sienna-miller-nm1092227.jpg"
+			}
+		},
+		{
+			"name": "John Mulaney",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Trip Hawkins",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/933558",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1825214/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/i3dGv3WoIONVLSlOpW4NIaT8Fs2.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/john-mulaney-tmdb-933558.jpg"
+			}
+		},
+		{
+			"name": "Snoop Dogg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Snoop Dogg",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/19767",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0004879/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rbxBK2m6fEq0oHeMoBUMVYkJEdJ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/snoop-dogg-tmdb-19767.jpg"
+			}
+		},
+		{
+			"name": "Shane Gillis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Vince McGary",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3231008",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5805772/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ijRXBDjfazwne2jxjWEaaWqPw2.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/shane-gillis-tmdb-3231008.jpg"
+			}
+		},
+		{
+			"name": "Marshawn Lynch",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Jerry Bell",
+			"omissionReason": "El billing registra a Marshawn Lynch como Jerry Bell. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Julian Edelman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Gary Kapeck",
+			"omissionReason": "El billing registra a Julian Edelman como Gary Kapeck. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Joel Murray",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Pat Summerall",
+			"omissionReason": "El billing registra a Joel Murray como Pat Summerall. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Rick Hoffman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Howard Cosell",
+			"omissionReason": "El billing registra a Rick Hoffman como Howard Cosell. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Colleen Camp",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Mrs. Simmons",
+			"omissionReason": "El billing registra a Colleen Camp como Mrs. Simmons. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Simms May",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Mike Madden",
+			"omissionReason": "El billing registra a Simms May como Mike Madden. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Luke Klein",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Joe Madden",
+			"omissionReason": "El billing registra a Luke Klein como Joe Madden. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Chad Gall",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Mike Madden (2001)",
+			"omissionReason": "El billing registra a Chad Gall como Mike Madden (2001). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Taylor Upchurch",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Joe Madden (2001)",
+			"omissionReason": "El billing registra a Taylor Upchurch como Joe Madden (2001). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Shane Donovan Lewis",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Mark Davis",
+			"omissionReason": "El billing registra a Shane Donovan Lewis como Mark Davis. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Michael Beasley",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Willie Yarborough",
+			"omissionReason": "El billing registra a Michael Beasley como Willie Yarborough. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Matt Medrano",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Tom Flores",
+			"omissionReason": "El billing registra a Matt Medrano como Tom Flores. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Tanner Price",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Ken Stabler",
+			"omissionReason": "El billing registra a Tanner Price como Ken Stabler. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Brandon Murphy",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Art Shell",
+			"omissionReason": "El billing registra a Brandon Murphy como Art Shell. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Omar Cook",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Jack Tatum",
+			"omissionReason": "El billing registra a Omar Cook como Jack Tatum. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Buck Watkins",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Fred Biletnikoff",
+			"omissionReason": "El billing registra a Buck Watkins como Fred Biletnikoff. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Matt Seybert",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Dave Casper",
+			"omissionReason": "El billing registra a Matt Seybert como Dave Casper. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Willie Bell III",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Willie Hall",
+			"omissionReason": "El billing registra a Willie Bell III como Willie Hall. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Gavin Rocker",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Gene Upshaw",
+			"omissionReason": "El billing registra a Gavin Rocker como Gene Upshaw. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Miles Burris",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Phil Villapiano",
+			"omissionReason": "El billing registra a Miles Burris como Phil Villapiano. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Watts Dantzler",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "John Matuszak",
+			"omissionReason": "El billing registra a Watts Dantzler como John Matuszak. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Jake Kelley",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Pete Banaszak",
+			"omissionReason": "El billing registra a Jake Kelley como Pete Banaszak. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Juwan Haynes",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "George Atkinson",
+			"omissionReason": "El billing registra a Juwan Haynes como George Atkinson. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Ryan White",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Willie Brown",
+			"omissionReason": "El billing registra a Ryan White como Willie Brown. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Tyrell Crawford",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Skip Thomas",
+			"omissionReason": "El billing registra a Tyrell Crawford como Skip Thomas. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Kai Brown",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Otis Sistrunk",
+			"omissionReason": "El billing registra a Kai Brown como Otis Sistrunk. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Alex Netherda",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Mark van Eeghen",
+			"omissionReason": "El billing registra a Alex Netherda como Mark van Eeghen. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Brandon Mayes",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Darryl Stingley",
+			"omissionReason": "El billing registra a Brandon Mayes como Darryl Stingley. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Ron Roggé",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Chuck Noll",
+			"omissionReason": "El billing registra a Ron Roggé como Chuck Noll. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Hayden Moore",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Terry Bradshaw",
+			"omissionReason": "El billing registra a Hayden Moore como Terry Bradshaw. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Leonardo Russell",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Lion",
+			"omissionReason": "El billing registra a Leonardo Russell como Lion. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Julian De Niro",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "JB",
+			"omissionReason": "El billing registra a Julian De Niro como JB. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Lorraine Nicholson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Isabelle",
+			"omissionReason": "El billing registra a Lorraine Nicholson como Isabelle. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Oliver Harris Blank",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Dan Dare Programmer",
+			"omissionReason": "El billing registra a Oliver Harris Blank como Dan Dare Programmer. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Josh Bolla",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Round Programmer",
+			"omissionReason": "El billing registra a Josh Bolla como Round Programmer. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Paul Kim",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Glasses Programmer",
+			"omissionReason": "El billing registra a Paul Kim como Glasses Programmer. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Casey Graf",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Chet Winnfield",
+			"omissionReason": "El billing registra a Casey Graf como Chet Winnfield. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Thomas Matthews",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "CBS Director",
+			"omissionReason": "El billing registra a Thomas Matthews como CBS Director. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Connor Price",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Bob Costas",
+			"omissionReason": "El billing registra a Connor Price como Bob Costas. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Chris Long",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Howie Long",
+			"omissionReason": "El billing registra a Chris Long como Howie Long. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "David Lengel",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Trainer Tony",
+			"omissionReason": "El billing registra a David Lengel como Trainer Tony. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Cade Tropeano",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Bully Kid",
+			"omissionReason": "El billing registra a Cade Tropeano como Bully Kid. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Marchelle Thurman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Nurse",
+			"omissionReason": "El billing registra a Marchelle Thurman como Nurse. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Frank Geraci",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Coffee Pitch Man",
+			"omissionReason": "El billing registra a Frank Geraci como Coffee Pitch Man. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Aloye Akhagbeme",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Paper Towel Guy",
+			"omissionReason": "El billing registra a Aloye Akhagbeme como Paper Towel Guy. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Eli Bildner",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Cup and Plate Guy",
+			"omissionReason": "El billing registra a Eli Bildner como Cup and Plate Guy. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Alina Brace",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Madden's Granddaughter",
+			"omissionReason": "El billing registra a Alina Brace como Madden's Granddaughter. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Parker Wierling",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Richie Zyontz",
+			"omissionReason": "El billing registra a Parker Wierling como Richie Zyontz. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Brett Newton",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Mike Frank",
+			"omissionReason": "El billing registra a Brett Newton como Mike Frank. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "David Simpson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Sandy Montag",
+			"omissionReason": "El billing registra a David Simpson como Sandy Montag. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Casey Graves",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Bob Stenner",
+			"omissionReason": "El billing registra a Casey Graves como Bob Stenner. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Noor Alfallah",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Courtney",
+			"omissionReason": "El billing registra a Noor Alfallah como Courtney. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Derrick Washington",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Neighbor",
+			"omissionReason": "El billing registra a Derrick Washington como Neighbor. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Maxx Crosby",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Neighbor",
+			"omissionReason": "El billing registra a Maxx Crosby como Neighbor. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Roxzane T. Mims",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Tastee Freez Owner",
+			"omissionReason": "El billing registra a Roxzane T. Mims como Tastee Freez Owner. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Derrick Goodman Jr.",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Tastie Freez Artie",
+			"omissionReason": "El billing registra a Derrick Goodman Jr. como Tastie Freez Artie. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Calden Perlino",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Tastee Freez Football Player",
+			"omissionReason": "El billing registra a Calden Perlino como Tastee Freez Football Player. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Lee Cleaveland",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Marching Band Kid",
+			"omissionReason": "El billing registra a Lee Cleaveland como Marching Band Kid. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Mallory Hoff",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Reporter",
+			"omissionReason": "El billing registra a Mallory Hoff como Reporter. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Mike Manning",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Reporter",
+			"omissionReason": "El billing registra a Mike Manning como Reporter. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Danielle Daoust",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Danielle Daoust como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Amber Hunter-Henley",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Amber Hunter-Henley como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Nicole DeSantis",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Nicole DeSantis como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Lauren Baggett",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Lauren Baggett como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Meghan Wieboldt",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Meghan Wieboldt como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Isabel Blackburn",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Isabel Blackburn como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Daisy Fidler",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Daisy Fidler como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Savannah Guzman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Savannah Guzman como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Katrina Salzer",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Katrina Salzer como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Emily Willis",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1131943/cast",
+			"screenRole": "Raiderette Cheerleader",
+			"omissionReason": "El billing registra a Emily Willis como Raiderette Cheerleader. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se conservan dirección, protagonistas y reparto principal. Las omisiones corresponden al alcance de los papeles y a los retratos identificados en cada fila.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Marshawn Lynch",
+				"role": "performer"
+			},
+			{
+				"name": "Julian Edelman",
+				"role": "performer"
+			},
+			{
+				"name": "Joel Murray",
+				"role": "performer"
+			}
+		]
+	}
+}

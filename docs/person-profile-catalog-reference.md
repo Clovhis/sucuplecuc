@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-19. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-20. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4734
+Total de vínculos de películas del catálogo: 4740
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -160,7 +160,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Chris Pine | `chris-pine` | /personas/chris-pine/ | Actor | 6 | 7 |
 | Chris Pratt | `chris-pratt` | /personas/chris-pratt/ | Actor | 16 | 6 |
 | Chris Rock | `chris-rock` | /personas/chris-rock/ | Actor / Comediante / Guionista | 5 | 5 |
-| Christian Bale | `christian-bale` | /personas/christian-bale/ | Actor | 19 | 5 |
+| Christian Bale | `christian-bale` | /personas/christian-bale/ | Actor | 20 | 5 |
 | Christoph Waltz | `christoph-waltz` | /personas/christoph-waltz/ | Actor | 11 | 6 |
 | Christopher Lloyd | `christopher-lloyd` | /personas/christopher-lloyd/ | Actor | 6 | 6 |
 | Christopher McQuarrie | `christopher-mcquarrie` | /personas/christopher-mcquarrie/ | Director | 5 | 6 |
@@ -358,7 +358,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | James Gunn | `james-gunn` | /personas/james-gunn/ | Director | 5 | 7 |
 | James Mangold | `james-mangold` | /personas/james-mangold/ | Director | 7 | 7 |
 | James McAvoy | `james-mcavoy` | /personas/james-mcavoy/ | Actor | 7 | 7 |
-| James Stewart | `james-stewart` | /personas/james-stewart/ | Actor | 7 | 3 |
+| James Stewart | `james-stewart` | /personas/james-stewart/ | Actor | 8 | 3 |
 | James Wan | `james-wan` | /personas/james-wan/ | Director / Productor / Guionista | 6 | 5 |
 | James Woods | `james-woods` | /personas/james-woods/ | Actor | 6 | 3 |
 | Jamie Foxx | `jamie-foxx` | /personas/jamie-foxx/ | Actor | 8 | 7 |
@@ -491,7 +491,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Liv Tyler | `liv-tyler` | /personas/liv-tyler/ | Actriz | 5 | 5 |
 | Lorena Vega | `lorena-vega` | /personas/lorena-vega/ | Actriz / Directora / Dramaturga | 1 | 5 |
 | Luc Besson | `luc-besson` | /personas/luc-besson/ | Director / Guionista / Productor | 4 | 6 |
-| Luca Guadagnino | `luca-guadagnino` | /personas/luca-guadagnino/ | Director | 1 | 6 |
+| Luca Guadagnino | `luca-guadagnino` | /personas/luca-guadagnino/ | Director | 2 | 6 |
 | Lucía Puenzo | `lucia-puenzo` | /personas/lucia-puenzo/ | Directora / Guionista / Productora | 1 | 5 |
 | Lucrecia Martel | `lucrecia-martel` | /personas/lucrecia-martel/ | Director | 3 | 6 |
 | Luis Brandoni | `luis-brandoni` | /personas/luis-brandoni/ | Actor | 6 | 7 |
@@ -597,7 +597,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Neve Campbell | `neve-campbell` | /personas/neve-campbell/ | Actriz | 6 | 7 |
 | Nicanor Loreti | `nicanor-loreti` | /personas/nicanor-loreti/ | Director / Guionista | 1 | 5 |
 | Nicholas Hoult | `nicholas-hoult` | /personas/nicholas-hoult/ | Actor | 7 | 6 |
-| Nicolas Cage | `nicolas-cage` | /personas/nicolas-cage/ | Actor | 19 | 6 |
+| Nicolas Cage | `nicolas-cage` | /personas/nicolas-cage/ | Actor | 20 | 6 |
 | Nicolás Galvagno | `nicolas-galvagno` | /personas/nicolas-galvagno/ | Director / Guionista / Actor / Productor | 1 | 5 |
 | Nicolás Onetti | `nicolas-onetti` | /personas/nicolas-onetti/ | Director / Guionista / Productor | 1 | 5 |
 | Nicole Kidman | `nicole-kidman` | /personas/nicole-kidman/ | Actriz | 16 | 3 |
@@ -654,7 +654,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Rami Malek | `rami-malek` | /personas/rami-malek/ | Actor | 4 | 7 |
 | Raúl de la Torre | `raul-de-la-torre` | /personas/raul-de-la-torre/ | Director / Guionista | 1 | 5 |
 | Raúl Perrone | `raul-perrone` | /personas/raul-perrone/ | Director / Guionista / Productor | 1 | 5 |
-| Ray Liotta | `ray-liotta` | /personas/ray-liotta/ | Actor | 4 | 6 |
+| Ray Liotta | `ray-liotta` | /personas/ray-liotta/ | Actor | 5 | 6 |
 | Rebecca Ferguson | `rebecca-ferguson` | /personas/rebecca-ferguson/ | Actriz | 6 | 7 |
 | Rebecca Hall | `rebecca-hall` | /personas/rebecca-hall/ | Actriz | 8 | 7 |
 | Reese Witherspoon | `reese-witherspoon` | /personas/reese-witherspoon/ | Actriz / Productora | 7 | 6 |
@@ -750,7 +750,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Tim Burton | `tim-burton` | /personas/tim-burton/ | Director / Productor / Guionista | 20 | 7 |
 | Tim Robbins | `tim-robbins` | /personas/tim-robbins/ | Actor | 7 | 4 |
 | Tim Roth | `tim-roth` | /personas/tim-roth/ | Actor / Director | 7 | 6 |
-| Timothée Chalamet | `timothee-chalamet` | /personas/timothee-chalamet/ | Actor | 5 | 7 |
+| Timothée Chalamet | `timothee-chalamet` | /personas/timothee-chalamet/ | Actor | 6 | 7 |
 | Timothy Spall | `timothy-spall` | /personas/timothy-spall/ | Actor | 5 | 6 |
 | Tobey Maguire | `tobey-maguire` | /personas/tobey-maguire/ | Actor / Productor | 5 | 5 |
 | Tobin Bell | `tobin-bell` | /personas/tobin-bell/ | Actor | 8 | 3 |

@@ -1,0 +1,370 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-hombre-de-laramie-1955",
+	"title": "El hombre de Laramie",
+	"year": 1955,
+	"reviewedOn": "2026-11-20",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/18264/cast",
+			"kind": "Reparto completo de TMDB por ID, personajes y orden revisados",
+			"checkedOn": "2026-11-20",
+			"fullCredits": true,
+			"relevantCreditCount": 11
+		},
+		{
+			"url": "https://www.hbomax.com/ar/es/movie/08de5699-203a-4f77-b753-e047c4bce4eb",
+			"kind": "Plataforma o distribuidora, identidad y créditos publicados",
+			"checkedOn": "2026-11-20"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0048342/fullcredits/",
+			"kind": "Referencia de créditos del mismo IMDb ID",
+			"checkedOn": "2026-11-20"
+		}
+	],
+	"credits": [
+		{
+			"name": "Anthony Mann",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/40199",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0542649/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zi0Bgi3zmzarIQB5RatAmPpwaXm.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/anthony-mann-tmdb-40199.jpg"
+			}
+		},
+		{
+			"name": "James Stewart",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Will Lockhart",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/854",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000071/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Annex%20-%20Stewart%2C%20James%20(Call%20Northside%20777)%2001.jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/james-stewart-nm0000071.jpg"
+			}
+		},
+		{
+			"name": "Arthur Kennedy",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Vic Hansbro",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11128",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0447913/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/o3BRFELyl7gVGRF0JhsGEP3Cny7.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/arthur-kennedy-tmdb-11128.jpg"
+			}
+		},
+		{
+			"name": "Donald Crisp",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Alec Waggoman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/8841",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0187981/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/MEPq09iLEwJVrxw1T97qOILhk6.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/donald-crisp-tmdb-8841.jpg"
+			}
+		},
+		{
+			"name": "Cathy O'Donnell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Barbara Waggoman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10023",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0640732/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/4FfBkBohhL26g8SSXHrHts6n57H.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/cathy-o-donnell-tmdb-10023.jpg"
+			}
+		},
+		{
+			"name": "Alex Nicol",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Dave Waggoman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/109846",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0630132/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xTgRdpSHKtdPPLrNyORqQnEu21D.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/alex-nicol-tmdb-109846.jpg"
+			}
+		},
+		{
+			"name": "Aline MacMahon",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Kate Canaday",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/74874",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0533956/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qFZBPrb53DQo0z0zKuAElvjPkT4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/aline-macmahon-tmdb-74874.jpg"
+			}
+		},
+		{
+			"name": "Wallace Ford",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Charley O'Leary",
+			"omissionReason": "La imagen local es una placa con texto. La fuente de Wikimedia es un fotograma de 316×236, por debajo de la altura requerida para un retrato.",
+			"omissionCategory": "no-safe-portrait",
+			"portraitSearches": [
+				{
+					"url": "https://www.themoviedb.org/person/35849",
+					"result": "La imagen existente es una placa con texto."
+				},
+				{
+					"url": "https://commons.wikimedia.org/wiki/File:Wallace_ford.JPG",
+					"result": "Fotograma identificado de sólo 236 px de alto."
+				}
+			]
+		},
+		{
+			"name": "Jack Elam",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Chris Boldt",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4965",
+					"fact": "El perfil con este identificador incluye la película exacta en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001181/",
+					"fact": "IMDb enlazado al perfil de la misma persona en la ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zPYth6Al1H9DeBmkU0BPIb2o5Pn.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jack-elam-tmdb-4965.jpg"
+			}
+		},
+		{
+			"name": "John War Eagle",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Frank Darrah",
+			"omissionReason": "El billing registra a John War Eagle como Frank Darrah. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "James Millican",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Tom Quigby",
+			"omissionReason": "El billing registra a James Millican como Tom Quigby. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Gregg Barton",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Fritz",
+			"omissionReason": "El billing registra a Gregg Barton como Fritz. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Boyd Stockman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Spud Oxton",
+			"omissionReason": "El billing registra a Boyd Stockman como Spud Oxton. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Frank De Kova",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Padre",
+			"omissionReason": "El billing registra a Frank De Kova como Padre. Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Beulah Archuletta",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Woman at Indian Wedding (Uncredited)",
+			"omissionReason": "El billing registra a Beulah Archuletta como Woman at Indian Wedding (Uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Jack Carry",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Mule Driver (uncredited)",
+			"omissionReason": "El billing registra a Jack Carry como Mule Driver (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Bill Catching",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Mule Driver (uncredited)",
+			"omissionReason": "El billing registra a Bill Catching como Mule Driver (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Frank Cordell",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Mule Driver (uncredited)",
+			"omissionReason": "El billing registra a Frank Cordell como Mule Driver (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Kay Koury",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Indian (uncredited)",
+			"omissionReason": "El billing registra a Kay Koury como Indian (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Frosty Royce",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Mule Driver (uncredited)",
+			"omissionReason": "El billing registra a Frosty Royce como Mule Driver (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Eddy Waller",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/18264/cast",
+			"screenRole": "Dr. Selden (uncredited)",
+			"omissionReason": "El billing registra a Eddy Waller como Dr. Selden (uncredited). Es un rol secundario o incidental fuera del reparto principal seleccionado.",
+			"omissionCategory": "incidental"
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se conservan dirección, protagonistas y reparto principal. Las omisiones corresponden al alcance de los papeles y a los retratos identificados en cada fila.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Wallace Ford",
+				"role": "performer"
+			},
+			{
+				"name": "John War Eagle",
+				"role": "performer"
+			},
+			{
+				"name": "James Millican",
+				"role": "performer"
+			}
+		]
+	}
+}
