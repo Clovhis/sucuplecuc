@@ -1856,7 +1856,7 @@
       "format": "protagonist",
       "theme": "spotlight",
       "palette": 1,
-      "state": "scheduled",
+      "state": "sent",
       "attemptId": "44659761605:1",
       "dueAt": "2026-11-20T22:15:00.000Z",
       "channelId": "6af6465a62b70b94b0105899",
@@ -1944,8 +1944,601 @@
         "https://raw.githubusercontent.com/Clovhis/sucuplecuc/1d1f61b96b63226632dc9b8e059946c678fc0f19/media/2026-11-20-super-man-the-christopher-reeve-story-2024-protagonist-photo-1.jpg"
       ],
       "bufferPostId": "6affae15738ce4635f7c08b0",
-      "externalLink": null,
+      "externalLink": "https://www.instagram.com/p/Df-tIxQCfj4/",
       "scheduledAt": "2026-11-20T02:19:01.429Z"
+    },
+    {
+      "date": "2026-11-21",
+      "slug": "hit-man-2024",
+      "slugs": [
+        "hit-man-2024",
+        "rebobine-por-favor-2008",
+        "cazafantasmas-1984",
+        "escuela-de-rock-2003",
+        "the-king-of-comedy-1982"
+      ],
+      "category": "Comedia",
+      "format": "carousel",
+      "theme": "genre:Comedia",
+      "palette": 3,
+      "state": "reserved",
+      "attemptId": "44854485620:1",
+      "dueAt": "2026-11-21T22:15:00.000Z",
+      "channelId": "6af6465a62b70b94b0105899",
+      "media": [
+        {
+          "mediaPath": "media/2026-11-21-hit-man-2024-carousel-photo-1.jpg",
+          "sha256": "ada152efd85639b5d21ba971facb2afe752fa15deae7371586549e2bc5cdc36b",
+          "width": 1080,
+          "height": 1350,
+          "alt": "5 de comedia para tu lista. Fotografías: Hit Man, Mia Farrow, Bill Murray, Jack Black, Martin Scorsese.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "sundance-2024-hit-man-2024-a82e12bcd7",
+              "commons-70337683",
+              "commons-86623843",
+              "commons-151358638",
+              "commons-139806737"
+            ],
+            "assets": [
+              {
+                "id": "sundance-2024-hit-man-2024-a82e12bcd7",
+                "kind": "still",
+                "path": "assets/social/photos/sundance-2024-hit-man-2024-a82e12bcd7.webp",
+                "slugs": [
+                  "hit-man-2024"
+                ],
+                "title": "Hit Man · still 1",
+                "width": 1920,
+                "credit": "Netflix.  · Courtesy of Sundance Institute",
+                "height": 1080,
+                "sha256": "070b92b64cc9decd23265655774367d8b45c052998b1945cb8a025c03c6977a0",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "sundance-official-press",
+                "license": "Permiso editorial de prensa Sundance",
+                "subject": "Hit Man",
+                "sourceUrl": "https://www.sundance.org/about/press/",
+                "licenseUrl": "https://www.sundance.org/about/press/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Spotlight/Hit%20Man?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR.",
+                  "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Spotlight/Hit%20Man?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "originalUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Spotlight/Hit%20Man?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "archiveEntry": "Hit_Man-Still1.jpg",
+                "evidencePath": "assets/social/press-packages/sundance-2024-hit-man-2024.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "5ef219f06a3dd3486d85f8de576cc6e9a63810cd3028feacd0a68aa66a628acf",
+                "originalSha256": "04e72aea06373bc39d581769d9a3fd8fc8b028491231d4b81289d3b58e71d922",
+                "suppliedCaption": "FILM STILL 1 Adria Arjona and Glen Powell appear in Hit Man by Richard Linklater, an official selection of the Episodic Program at the 2024 Sundance Film Festival. Courtesy of Sundance Institute | Photo courtesy of Netflix. ",
+                "editorialContext": {
+                  "year": 2024,
+                  "festival": "Sundance"
+                },
+                "grantEvidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+                "sourceGrant": {
+                  "id": "sundance-official-press",
+                  "issuer": "Sundance Institute",
+                  "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/hit-man-2024/070b92b64cc9decd23265655774367d8b45c052998b1945cb8a025c03c6977a0.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              },
+              {
+                "id": "commons-70337683",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-70337683.webp",
+                "slugs": [],
+                "title": "Pulitzer2018-mia-farrow-20180530-wp.jpg",
+                "width": 1441,
+                "credit": "Andrew Lih",
+                "height": 1920,
+                "person": "Mia Farrow",
+                "sha256": "8c8499af0309db1fdd43c6d222599628e87b24cfa74b43a6713881986dffc3b2",
+                "status": "approved",
+                "changes": "Conversión WebP calidad 84; máximo 1920 px. Uso editorial relacionado con la persona, sin aval comercial.",
+                "license": "CC BY-SA 4.0",
+                "subject": "Mia Farrow",
+                "photoDate": "30 May 2018, 14:57",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=70337683",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "description": "Mia Farrow at the 2018 Pulitzer Prizes awards ceremony",
+                "evidenceUrl": "https://commons.wikimedia.org/?curid=70337683",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Pulitzer2018-mia-farrow-20180530-wp.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-70337683.json",
+                "restrictions": "",
+                "reviewRegion": "international",
+                "evidenceSha256": "187af01f4e01a792639a7badf6435df693c7f7871c3cc9c1523290a653d38c56",
+                "originalSha256": "0c873cab0a1e0afb238cb580ba59d7e2bf1bf376645f5f8ae79a495884249a4e",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/mia-farrow/8c8499af0309db1fdd43c6d222599628e87b24cfa74b43a6713881986dffc3b2.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              },
+              {
+                "id": "commons-86623843",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-86623843.webp",
+                "slugs": [],
+                "title": "Bill Murray-8882.jpg",
+                "width": 1440,
+                "credit": "Harald Krichel",
+                "height": 1920,
+                "person": "Bill Murray",
+                "sha256": "8c165ae611417a5fb4dba283df13326c769604fb602b02e0e00b7c63ff7c822a",
+                "status": "approved",
+                "changes": "Conversión WebP calidad 84; máximo 1920 px. Uso editorial relacionado con la persona, sin aval comercial.",
+                "license": "CC BY-SA 3.0",
+                "subject": "Bill Murray",
+                "photoDate": "2018-02-24",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=86623843",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "description": "Actor Bill Murray at the 68th Berlin International Film Festival 2018",
+                "evidenceUrl": "https://commons.wikimedia.org/?curid=86623843",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Bill_Murray-8882.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-86623843.json",
+                "restrictions": "",
+                "reviewRegion": "international",
+                "evidenceSha256": "654217ece097c79269d2789f385083c861524dfea2f8ad56a84659f99e51966e",
+                "originalSha256": "61dd4aca2cc1600e9add7bf049bfcd0aad44c8e25956b544ebe692e3451c66d4",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/bill-murray/8c165ae611417a5fb4dba283df13326c769604fb602b02e0e00b7c63ff7c822a.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              },
+              {
+                "id": "commons-151358638",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-151358638.webp",
+                "slugs": [],
+                "title": "TenaciousDO2160623 (38 of 62) Jack Black.jpg",
+                "width": 894,
+                "credit": "Raph_PH",
+                "height": 1249,
+                "person": "Jack Black",
+                "sha256": "877818d1ebebd71363af579e0b8d4a1faa76b5a2db460e562830807f48d668b2",
+                "status": "approved",
+                "changes": "Conversión WebP calidad 84; máximo 1920 px. Uso editorial relacionado con la persona, sin aval comercial.",
+                "license": "CC BY 2.0",
+                "subject": "Jack Black",
+                "photoDate": "2023-06-16 21:26",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=151358638",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "description": "Jack Black of Tenacious D performing at O2 Arena in 2023",
+                "evidenceUrl": "https://commons.wikimedia.org/?curid=151358638",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/TenaciousDO2160623_%2838_of_62%29_Jack_Black.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-151358638.json",
+                "restrictions": "",
+                "reviewRegion": "international",
+                "evidenceSha256": "f114f8af8ee851f899f41a42e9d769ac898c80af1a2b98885cc3ddf43b140309",
+                "originalSha256": "d6f2ee3f744ff59fa782014ddb344dc9f322ee88caa76b051defd9e8f9d33e15",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/jack-black/877818d1ebebd71363af579e0b8d4a1faa76b5a2db460e562830807f48d668b2.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              },
+              {
+                "id": "commons-139806737",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-139806737.webp",
+                "slugs": [],
+                "title": "Martin Scorsese MFF 2023.jpg",
+                "width": 1518,
+                "credit": "Montclair Film",
+                "height": 1920,
+                "person": "Martin Scorsese",
+                "sha256": "b563d47ece0eea90cbcc3c63c3f938cb22553c082c9757820223cfb1a8a19463",
+                "status": "approved",
+                "changes": "WebP, reducción máxima 1920 px, calidad 82; composición editorial bajo licencia.",
+                "license": "CC BY 2.0",
+                "subject": "Martin Scorsese",
+                "photoDate": "2023-10-27 19:59:45",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=139806737",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-14",
+                "description": "Martin Scorsese at the 2023 Montclair Film Festival Photo by: Neil Grabowsky",
+                "evidenceUrl": "https://commons.wikimedia.org/w/index.php?oldid=1294863571",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Martin_Scorsese_MFF_2023.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-139806737.json",
+                "restrictions": "",
+                "evidenceSha256": "3f5b7eb9f021111dfec633289dfdbc24730e57483877ff148dd43968cd3535d3",
+                "originalSha256": "f7c1b244a7aec1b14525b5568890523e9948ce6036fc5e9bece00e1f82988267",
+                "catalogPortrait": "/people/martin-scorsese-nm0000217.jpg",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/commons-139806737/b563d47ece0eea90cbcc3c63c3f938cb22553c082c9757820223cfb1a8a19463.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": "CC BY-SA 4.0",
+            "adaptationLicenseScope": "Únicamente las fotografías CC BY-SA adaptadas; excluye material de prensa.",
+            "changes": "Recorte permitido, redimensionado y composición editorial."
+          }
+        },
+        {
+          "mediaPath": "media/2026-11-21-hit-man-2024-carousel-photo-2.jpg",
+          "sha256": "727b9193e2315d172947dc25acb7fc785de8d7d70948a879ff49213028e8b24f",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Hit Man (2024). 8 · Excelente. Selección Sundance 2024.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "sundance-2024-hit-man-2024-a82e12bcd7"
+            ],
+            "assets": [
+              {
+                "id": "sundance-2024-hit-man-2024-a82e12bcd7",
+                "kind": "still",
+                "path": "assets/social/photos/sundance-2024-hit-man-2024-a82e12bcd7.webp",
+                "slugs": [
+                  "hit-man-2024"
+                ],
+                "title": "Hit Man · still 1",
+                "width": 1920,
+                "credit": "Netflix.  · Courtesy of Sundance Institute",
+                "height": 1080,
+                "sha256": "070b92b64cc9decd23265655774367d8b45c052998b1945cb8a025c03c6977a0",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "sundance-official-press",
+                "license": "Permiso editorial de prensa Sundance",
+                "subject": "Hit Man",
+                "sourceUrl": "https://www.sundance.org/about/press/",
+                "licenseUrl": "https://www.sundance.org/about/press/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Spotlight/Hit%20Man?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR.",
+                  "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Spotlight/Hit%20Man?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "originalUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Spotlight/Hit%20Man?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "archiveEntry": "Hit_Man-Still1.jpg",
+                "evidencePath": "assets/social/press-packages/sundance-2024-hit-man-2024.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "5ef219f06a3dd3486d85f8de576cc6e9a63810cd3028feacd0a68aa66a628acf",
+                "originalSha256": "04e72aea06373bc39d581769d9a3fd8fc8b028491231d4b81289d3b58e71d922",
+                "suppliedCaption": "FILM STILL 1 Adria Arjona and Glen Powell appear in Hit Man by Richard Linklater, an official selection of the Episodic Program at the 2024 Sundance Film Festival. Courtesy of Sundance Institute | Photo courtesy of Netflix. ",
+                "editorialContext": {
+                  "year": 2024,
+                  "festival": "Sundance"
+                },
+                "grantEvidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+                "sourceGrant": {
+                  "id": "sundance-official-press",
+                  "issuer": "Sundance Institute",
+                  "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/hit-man-2024/070b92b64cc9decd23265655774367d8b45c052998b1945cb8a025c03c6977a0.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Imágenes completas, reducción técnica y composición editorial fuera de la fotografía."
+          }
+        },
+        {
+          "mediaPath": "media/2026-11-21-hit-man-2024-carousel-photo-3.jpg",
+          "sha256": "ec111feb1c182018294b0576df7de707983a4a8eb84735533f8bd82b36edab1e",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Rebobine, por favor (2008). 7 · Muy buena. Mia Farrow · archivo 2018.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "commons-70337683"
+            ],
+            "assets": [
+              {
+                "id": "commons-70337683",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-70337683.webp",
+                "slugs": [],
+                "title": "Pulitzer2018-mia-farrow-20180530-wp.jpg",
+                "width": 1441,
+                "credit": "Andrew Lih",
+                "height": 1920,
+                "person": "Mia Farrow",
+                "sha256": "8c8499af0309db1fdd43c6d222599628e87b24cfa74b43a6713881986dffc3b2",
+                "status": "approved",
+                "changes": "Conversión WebP calidad 84; máximo 1920 px. Uso editorial relacionado con la persona, sin aval comercial.",
+                "license": "CC BY-SA 4.0",
+                "subject": "Mia Farrow",
+                "photoDate": "30 May 2018, 14:57",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=70337683",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "description": "Mia Farrow at the 2018 Pulitzer Prizes awards ceremony",
+                "evidenceUrl": "https://commons.wikimedia.org/?curid=70337683",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Pulitzer2018-mia-farrow-20180530-wp.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-70337683.json",
+                "restrictions": "",
+                "reviewRegion": "international",
+                "evidenceSha256": "187af01f4e01a792639a7badf6435df693c7f7871c3cc9c1523290a653d38c56",
+                "originalSha256": "0c873cab0a1e0afb238cb580ba59d7e2bf1bf376645f5f8ae79a495884249a4e",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/mia-farrow/8c8499af0309db1fdd43c6d222599628e87b24cfa74b43a6713881986dffc3b2.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": "CC BY-SA 4.0",
+            "adaptationLicenseScope": "Únicamente las fotografías CC BY-SA adaptadas; excluye material de prensa.",
+            "changes": "Recorte permitido, redimensionado y composición editorial."
+          }
+        },
+        {
+          "mediaPath": "media/2026-11-21-hit-man-2024-carousel-photo-4.jpg",
+          "sha256": "cd9031979669ad3d06d2981d3388ae047f6f6a9da71872cbff68f639347b3a91",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Cazafantasmas (1984). 8 · Excelente. Bill Murray · archivo 2018.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "commons-86623843"
+            ],
+            "assets": [
+              {
+                "id": "commons-86623843",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-86623843.webp",
+                "slugs": [],
+                "title": "Bill Murray-8882.jpg",
+                "width": 1440,
+                "credit": "Harald Krichel",
+                "height": 1920,
+                "person": "Bill Murray",
+                "sha256": "8c165ae611417a5fb4dba283df13326c769604fb602b02e0e00b7c63ff7c822a",
+                "status": "approved",
+                "changes": "Conversión WebP calidad 84; máximo 1920 px. Uso editorial relacionado con la persona, sin aval comercial.",
+                "license": "CC BY-SA 3.0",
+                "subject": "Bill Murray",
+                "photoDate": "2018-02-24",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=86623843",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "description": "Actor Bill Murray at the 68th Berlin International Film Festival 2018",
+                "evidenceUrl": "https://commons.wikimedia.org/?curid=86623843",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Bill_Murray-8882.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-86623843.json",
+                "restrictions": "",
+                "reviewRegion": "international",
+                "evidenceSha256": "654217ece097c79269d2789f385083c861524dfea2f8ad56a84659f99e51966e",
+                "originalSha256": "61dd4aca2cc1600e9add7bf049bfcd0aad44c8e25956b544ebe692e3451c66d4",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/bill-murray/8c165ae611417a5fb4dba283df13326c769604fb602b02e0e00b7c63ff7c822a.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": "CC BY-SA 4.0",
+            "adaptationLicenseScope": "Únicamente las fotografías CC BY-SA adaptadas; excluye material de prensa.",
+            "changes": "Recorte permitido, redimensionado y composición editorial."
+          }
+        },
+        {
+          "mediaPath": "media/2026-11-21-hit-man-2024-carousel-photo-5.jpg",
+          "sha256": "d2b55b09d09d4f96bdd2f23a814485685ed167b8ae95b4435c7ea2cd1fa7bc01",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Escuela de rock (2003). 6 · Buena. Jack Black · archivo 2023.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "commons-151358638"
+            ],
+            "assets": [
+              {
+                "id": "commons-151358638",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-151358638.webp",
+                "slugs": [],
+                "title": "TenaciousDO2160623 (38 of 62) Jack Black.jpg",
+                "width": 894,
+                "credit": "Raph_PH",
+                "height": 1249,
+                "person": "Jack Black",
+                "sha256": "877818d1ebebd71363af579e0b8d4a1faa76b5a2db460e562830807f48d668b2",
+                "status": "approved",
+                "changes": "Conversión WebP calidad 84; máximo 1920 px. Uso editorial relacionado con la persona, sin aval comercial.",
+                "license": "CC BY 2.0",
+                "subject": "Jack Black",
+                "photoDate": "2023-06-16 21:26",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=151358638",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "description": "Jack Black of Tenacious D performing at O2 Arena in 2023",
+                "evidenceUrl": "https://commons.wikimedia.org/?curid=151358638",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/TenaciousDO2160623_%2838_of_62%29_Jack_Black.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-151358638.json",
+                "restrictions": "",
+                "reviewRegion": "international",
+                "evidenceSha256": "f114f8af8ee851f899f41a42e9d769ac898c80af1a2b98885cc3ddf43b140309",
+                "originalSha256": "d6f2ee3f744ff59fa782014ddb344dc9f322ee88caa76b051defd9e8f9d33e15",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/jack-black/877818d1ebebd71363af579e0b8d4a1faa76b5a2db460e562830807f48d668b2.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Recorte permitido, redimensionado y composición editorial."
+          }
+        },
+        {
+          "mediaPath": "media/2026-11-21-hit-man-2024-carousel-photo-6.jpg",
+          "sha256": "b0772690f803155561a982d23595e39c52c52f35fee32085179308105d438fbc",
+          "width": 1080,
+          "height": 1350,
+          "alt": "El rey de la comedia (1982). 9 · Obra maestra. Martin Scorsese · archivo 2023.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "commons-139806737"
+            ],
+            "assets": [
+              {
+                "id": "commons-139806737",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-139806737.webp",
+                "slugs": [],
+                "title": "Martin Scorsese MFF 2023.jpg",
+                "width": 1518,
+                "credit": "Montclair Film",
+                "height": 1920,
+                "person": "Martin Scorsese",
+                "sha256": "b563d47ece0eea90cbcc3c63c3f938cb22553c082c9757820223cfb1a8a19463",
+                "status": "approved",
+                "changes": "WebP, reducción máxima 1920 px, calidad 82; composición editorial bajo licencia.",
+                "license": "CC BY 2.0",
+                "subject": "Martin Scorsese",
+                "photoDate": "2023-10-27 19:59:45",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=139806737",
+                "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-14",
+                "description": "Martin Scorsese at the 2023 Montclair Film Festival Photo by: Neil Grabowsky",
+                "evidenceUrl": "https://commons.wikimedia.org/w/index.php?oldid=1294863571",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Martin_Scorsese_MFF_2023.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-139806737.json",
+                "restrictions": "",
+                "evidenceSha256": "3f5b7eb9f021111dfec633289dfdbc24730e57483877ff148dd43968cd3535d3",
+                "originalSha256": "f7c1b244a7aec1b14525b5568890523e9948ce6036fc5e9bece00e1f82988267",
+                "catalogPortrait": "/people/martin-scorsese-nm0000217.jpg",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/commons-139806737/b563d47ece0eea90cbcc3c63c3f938cb22553c082c9757820223cfb1a8a19463.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Recorte permitido, redimensionado y composición editorial."
+          }
+        }
+      ],
+      "text": "5 de comedia para tu lista.\n\n1. Hit Man (2024) · 8 · Excelente · Selección Sundance 2024\n\n2. Rebobine, por favor (2008) · 7 · Muy buena\n\n3. Cazafantasmas (1984) · 8 · Excelente\n\n4. Escuela de rock (2003) · 6 · Buena\n\n5. El rey de la comedia (1982) · 9 · Obra maestra\n\n¿Cuál va primero? Guardá la selección y compartila. Reseñas completas en el enlace del perfil.\n\nhttps://www.cineposta.com.ar/peliculas/hit-man-2024/\n\nhttps://www.cineposta.com.ar/peliculas/rebobine-por-favor-2008/\n\nhttps://www.cineposta.com.ar/peliculas/cazafantasmas-1984/\n\nhttps://www.cineposta.com.ar/peliculas/escuela-de-rock-2003/\n\nhttps://www.cineposta.com.ar/peliculas/the-king-of-comedy-1982/\n\nFotografías y material cinematográfico:\nHit Man: Netflix.  · Courtesy of Sundance Institute · «Hit Man · still 1». https://www.sundance.org/about/press/\nMia Farrow: Andrew Lih · «Pulitzer2018-mia-farrow-20180530-wp.jpg». https://commons.wikimedia.org/?curid=70337683\nBill Murray: Harald Krichel · «Bill Murray-8882.jpg». https://commons.wikimedia.org/?curid=86623843\nJack Black: Raph_PH · «TenaciousDO2160623 (38 of 62) Jack Black.jpg». https://commons.wikimedia.org/?curid=151358638\nMartin Scorsese: Montclair Film · «Martin Scorsese MFF 2023.jpg». https://commons.wikimedia.org/?curid=139806737\nPermiso editorial de prensa Sundance: https://www.sundance.org/about/press/\nCC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0\nCC BY-SA 3.0: https://creativecommons.org/licenses/by-sa/3.0\nCC BY 2.0: https://creativecommons.org/licenses/by/2.0\nComposición: CinePosta. Fotos CC BY-SA adaptadas: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. El material de prensa conserva sus condiciones.\n\n#CinePosta #QueVer #Cine",
+      "createdAt": "2026-11-21T02:12:47.401Z"
     }
   ]
 }
