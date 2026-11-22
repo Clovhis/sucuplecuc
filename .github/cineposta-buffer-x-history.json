@@ -1241,6 +1241,28 @@
 					"Netflix"
 				]
 			}
+		},
+		{
+			"slug": "madden-2026",
+			"bufferPostId": "6b0244fdc72676f5e9f48bb1",
+			"dueAt": "2026-11-22T22:00:00.000Z",
+			"scheduledAt": "2026-11-22T01:27:25.138Z",
+			"copyStyle": {
+				"opening": 1292608464,
+				"availability": 405225247,
+				"editorial": 3843391703,
+				"verdict": 430629087,
+				"link": 4055668082
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/madden",
+				"checkedAt": "2026-11-22T01:27:24.688Z",
+				"kind": "subscription",
+				"platforms": [
+					"Prime Video"
+				]
+			}
 		}
 	]
 }
