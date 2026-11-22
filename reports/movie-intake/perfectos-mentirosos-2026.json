@@ -1,0 +1,476 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "perfectos-mentirosos-2026",
+	"title": "Perfectos mentirosos",
+	"year": 2026,
+	"reviewedOn": "2026-11-22",
+	"createdOn": "2026-11-22",
+	"billingSources": [
+		{
+			"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"kind": "Material oficial con el reparto y la dirección del título de 2026",
+			"fullCredits": true,
+			"checkedOn": "2026-11-22",
+			"relevantCreditCount": 16
+		},
+		{
+			"url": "https://www.themoviedb.org/movie/1568060/cast",
+			"kind": "Créditos y personajes en TMDb consultados por ID exacto",
+			"checkedOn": "2026-11-22"
+		},
+		{
+			"url": "https://www.aboutamazon.es/noticias/entretenimiento/prime-video-presenta-nuevas-producciones-originales-y-licenciadas",
+			"kind": "Ficha institucional de contraste",
+			"checkedOn": "2026-11-22"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt18351090/fullcredits/",
+			"kind": "Consulta directa devolvió HTTP 403. Se usaron el billing oficial y los perfiles individuales.",
+			"checkedOn": "2026-11-22"
+		}
+	],
+	"credits": [
+		{
+			"name": "Jesús Colmenar",
+			"role": "director",
+			"prominence": "lead",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Director",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1608537",
+					"fact": "El registro personal 1608537 identifica a Jesús Colmenar."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Jesús Colmenar figura en el material oficial de la película como responsable de dirección."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Director."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pvfNjlwcwUFFuB9CSFgVcEGzUZt.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jesus-colmenar-nm2912775.jpg"
+			}
+		},
+		{
+			"name": "Irene Balmes",
+			"role": "performer",
+			"prominence": "lead",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Jude Derry",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4180390",
+					"fact": "El registro personal 4180390 identifica a Irene Balmes."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Irene Balmes figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Jude Derry."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cFDWfFAnx1d1muSJKS1Z4NONqjD.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/irene-balmes-nm14039772.jpg"
+			}
+		},
+		{
+			"name": "Gleb Abrosimov",
+			"role": "performer",
+			"prominence": "co-lead",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Aegan Cash",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4143084",
+					"fact": "El registro personal 4143084 identifica a Gleb Abrosimov."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Gleb Abrosimov figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Aegan Cash."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7FxcYwxyp5t5RfP0wuRXelhVcd5.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/gleb-abrosimov-nm14281764.jpg"
+			}
+		},
+		{
+			"name": "Pau Simon",
+			"role": "performer",
+			"prominence": "co-lead",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Adrik Cash",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4520353",
+					"fact": "El registro personal 4520353 identifica a Pau Simon."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Pau Simon figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Adrik Cash."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6oyosrmBUREw3Nq9cwKXlkn9pJe.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/pau-simon-nm15800819.jpg"
+			}
+		},
+		{
+			"name": "Pablo Scapigliati",
+			"role": "performer",
+			"prominence": "co-lead",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Aleixandre Cash",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2869815",
+					"fact": "El registro personal 2869815 identifica a Pablo Scapigliati."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Pablo Scapigliati figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Aleixandre Cash."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8VDS2NnHHoinvCuqi9MdEJaUwVx.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/pablo-scapigliati-nm10879839.jpg"
+			}
+		},
+		{
+			"name": "Irene Ferreiro",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Artie",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2649267",
+					"fact": "El registro personal 2649267 identifica a Irene Ferreiro."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Irene Ferreiro figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Artie."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/d7m9xzfBdRJQBLAHrVvt5y3oNo4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/irene-ferreiro-tmdb-2649267.jpg"
+			}
+		},
+		{
+			"name": "Asier Etxeandia",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Adrian Cash",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/102228",
+					"fact": "El registro personal 102228 identifica a Asier Etxeandia."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Asier Etxeandia figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Adrian Cash."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pi0zU6nfgUk7tulpgZaVtVZqHBY.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/asier-etxeandia-nm1292111.jpg"
+			}
+		},
+		{
+			"name": "Silvia Kal",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Michelle",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1274514",
+					"fact": "El registro personal 1274514 identifica a Silvia Kal."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Silvia Kal figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Michelle."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/uqVS85yR6eIJwjWmtRUOX6aDdZV.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/silvia-kal-nm5054903.jpg"
+			}
+		},
+		{
+			"name": "Jorge Motos",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Henry",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1913533",
+					"fact": "El registro personal 1913533 identifica a Jorge Motos."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Jorge Motos figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Henry."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oIxDH21Z3XPvvonIoYkmSq6wyBK.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jorge-motos-nm8194718.jpg"
+			}
+		},
+		{
+			"name": "Daniela Riveri",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Bárbara",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4369144",
+					"fact": "El registro personal 4369144 identifica a Daniela Riveri."
+				},
+				{
+					"url": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+					"fact": "Daniela Riveri figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1568060/cast",
+					"fact": "El crédito de la película Perfectos mentirosos (2026) permite cotejar el cargo o personaje Bárbara."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/z1nOsYHpGm3DQWz6JSpDpkln75M.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/daniela-riveri-tmdb-4369144.jpg"
+			}
+		},
+		{
+			"name": "Juan Torres",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Dash",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Juan Torres figura en el tramo adicional del reparto oficial de Prime, fuera del grupo que encabeza la historia de Jude y los Cash."
+		},
+		{
+			"name": "Carla Menéndez",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Kiana",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Carla Menéndez figura en el tramo adicional del reparto oficial de Prime, fuera del grupo que encabeza la historia de Jude y los Cash."
+		},
+		{
+			"name": "Grelysmar Villafañe",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Reparto adicional",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Grelysmar Villafañe figura en el tramo adicional del reparto oficial de Prime, fuera del grupo que encabeza la historia de Jude y los Cash."
+		},
+		{
+			"name": "Ismail Hsaini Ammi",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Reparto adicional",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Ismail Hsaini Ammi figura en el tramo adicional del reparto oficial de Prime, fuera del grupo que encabeza la historia de Jude y los Cash."
+		},
+		{
+			"name": "Sergi Shan",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Reparto adicional",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Sergi Shan figura en el tramo adicional del reparto oficial de Prime, fuera del grupo que encabeza la historia de Jude y los Cash."
+		},
+		{
+			"name": "Manuela Calle",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"screenRole": "Reparto adicional",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Manuela Calle figura en el tramo adicional del reparto oficial de Prime, fuera del grupo que encabeza la historia de Jude y los Cash."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se cubre el núcleo adolescente, familiar y de amistades que encabeza el billing de Prime, incluidos los tres hermanos. Los nombres restantes aparecen al final del crédito de la plataforma y no forman parte de la presentación de ese conflicto.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Juan Torres",
+				"role": "performer"
+			},
+			{
+				"name": "Carla Menéndez",
+				"role": "performer"
+			},
+			{
+				"name": "Grelysmar Villafañe",
+				"role": "performer"
+			},
+			{
+				"name": "Ismail Hsaini Ammi",
+				"role": "performer"
+			},
+			{
+				"name": "Sergi Shan",
+				"role": "performer"
+			},
+			{
+				"name": "Manuela Calle",
+				"role": "performer"
+			}
+		]
+	},
+	"evidence": {
+		"checkedOn": "2026-11-22",
+		"availability": {
+			"territory": "AR",
+			"type": "FLATRATE",
+			"provider": "Prime Video",
+			"date": "2026-11-20",
+			"sources": [
+				"https://www.justwatch.com/ar/pelicula/perfectos-mentirosos",
+				"https://www.primevideo.com/-/es_419/movie?avCurrentTerritory=AR",
+				"https://television.com.ar/noticias/streaming/prime-video-presento-sus-destacados-para-noviembre/"
+			],
+			"justWatch": [
+				{
+					"term": "Perfectos mentirosos",
+					"matches": [
+						{
+							"t": {
+								"title": "Perfectos mentirosos",
+								"originalReleaseYear": 2026,
+								"fullPath": "/ar/pelicula/perfectos-mentirosos"
+							},
+							"offers": [
+								"Amazon Prime Video FLATRATE"
+							]
+						},
+						{
+							"t": {
+								"title": "Los Mentirosos",
+								"originalReleaseYear": 2026,
+								"fullPath": "/ar/pelicula/los-mentirosos"
+							},
+							"offers": []
+						}
+					]
+				}
+			]
+		},
+		"identity": {
+			"imdbId": "tt18351090",
+			"tmdbMovieId": 1568060,
+			"country": "ES",
+			"sources": [
+				"https://www.themoviedb.org/movie/1568060",
+				"https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+				"https://www.aboutamazon.es/noticias/entretenimiento/prime-video-presenta-nuevas-producciones-originales-y-licenciadas"
+			]
+		},
+		"score": {
+			"url": "https://www.filmaffinity.com/us/film884805.html",
+			"raw": "4,6/10 audiencia",
+			"votes": 84,
+			"normalized": 5,
+			"checkedOn": "2026-11-22",
+			"method": "Normalización al entero más cercano. La evidencia y el filtro editorial no habilitan 9 o 10."
+		},
+		"genre": {
+			"category": "Thriller",
+			"sources": [
+				"https://www.aboutamazon.es/noticias/entretenimiento/prime-video-presenta-nuevas-producciones-originales-y-licenciadas",
+				"https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ"
+			],
+			"musical": "El conflicto y la caracterización se desarrollan sin números musicales narrativos."
+		},
+		"poster": {
+			"sourceUrl": "https://image.tmdb.org/t/p/original/1amYmUeoBi23kGcR2pWQclEzXk2.jpg",
+			"sourceDimensions": [
+				2000,
+				3000
+			],
+			"contentType": "image/jpeg",
+			"sourceHttpStatus": 200,
+			"visuallyVerified": true,
+			"canonicalSource": "https://www.createprimevideo.amazon/es_es/showDetails/B0HKYBJVCZ",
+			"market": "Arte en español sin fecha ni etiqueta de estreno",
+			"localPath": "assets/posters/2026/perfectos-mentirosos-2026.webp"
+		},
+		"trailer": {
+			"url": "https://www.youtube.com/watch?v=A_q84v16WkY",
+			"oEmbedStatus": 200
+		}
+	}
+}

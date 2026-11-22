@@ -1,0 +1,18 @@
+# Altas de estrenos de plataforma del 22 de noviembre de 2026
+
+El 20 de noviembre es la fecha de estreno en streaming en Argentina para las tres altas. El 22 de noviembre es la fecha de incorporación al catálogo. El chequeo de duplicados por slug, título, año y alias no encontró fichas previas de estas cuatro películas.
+
+| Película | Resultado en Argentina | Personajes y score |
+| --- | --- | --- |
+| Hermanastras | Netflix por suscripción. [JustWatch AR](https://www.justwatch.com/ar/pelicula/steps) y [Netflix AR](https://www.netflix.com/ar/title/81212809). | 9 voces verificadas. 72% del público con 50+ valoraciones, normalizado a 7. [Rotten Tomatoes](https://www.rottentomatoes.com/m/steps_2026) |
+| Perfectos mentirosos | Prime Video por suscripción. [JustWatch AR](https://www.justwatch.com/ar/pelicula/perfectos-mentirosos) y [Prime Video AR](https://www.primevideo.com/-/es_419/movie?avCurrentTerritory=AR). | 9 personajes verificados. FilmAffinity muestra 4,6/10 con 84 votos, normalizado a 5. Rotten Tomatoes carece de porcentaje de audiencia en la consulta. El 5,9/10 atribuido a IMDb en Prime no provee recuento, y la consulta directa a IMDb fue bloqueada. [FilmAffinity](https://www.filmaffinity.com/us/film884805.html) · [Rotten Tomatoes](https://www.rottentomatoes.com/m/perfect_liars) |
+| Las disculpas de Vicentina | Netflix por suscripción. JustWatch AR no devolvió el título exacto. La ficha oficial argentina y el anuncio de lanzamiento simultáneo acreditan la oferta y la fecha. [Netflix AR](https://www.netflix.com/ar/title/81724626) · [Comunicado](https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film) | 9 personajes verificados. IMDb mostró 6,8/10 con 62 votos en el resultado indexado del ID exacto, normalizado a 7. [IMDb](https://www.imdb.com/title/tt33402927/ratings/) |
+| Tres de más | Pendiente. La consulta de JustWatch AR no devuelve la película y su ruta argentina responde 404. Las rutas argentinas de HBO Max para el ID del título también responden 404. El listado de Cineteca y el comunicado de HBO Max España aportan indicios del estreno del 20 de noviembre. TMDb no informa oferta AR para el ID 1498036. | Identidad confirmada y score preliminar 5, a partir de 5,2/10 con 128 votos. [Cineteca](https://www.cineteca.com.ar/estrenos-streaming-semana-16-al-22-noviembre-2026/) · [HBO Max España](https://press-spain.max.com/post/avance-de-estrenos-de-noviembre-4) · [IMDb](https://www.imdb.com/es/title/tt37764533/) |
+
+Las ofertas de JustWatch incluidas en los reportes corresponden a resultados por título y año en Argentina. El servicio no indexa Flow. Las búsquedas complementarias no aportaron una oferta independiente para el lote.
+
+- [Hermanastras](hermanastras-2026.json) conserva la categoría Animación y el género Musical. Los números de Lilith, Cenicienta y Priscilla desarrollan sus puntos de vista. La dirección incluye a Alyce Tzue y John Ripa según Netflix. Damian Priest figura como Luis Martinez en TMDb y como Damian Priest en el reparto oficial.
+- [Perfectos mentirosos](perfectos-mentirosos-2026.json) usa Thriller por la investigación de Jude y conserva Drama y Romance como géneros secundarios. El país de producción consignado es España, respaldado por Prime Video y FilmAffinity.
+- [Las disculpas de Vicentina](las-disculpas-de-vicentina-2026.json) usa Drama. El reporte individual conserva los tres premios del Festival do Rio. La duración de la ficha es la de Netflix, que difiere de los 148 minutos informados por San Sebastián.
+
+Se redactaron sinopsis, reseñas y guías breves originales. Los reportes individuales detallan retratos, créditos omitidos y evidencia de cada película.

@@ -1,0 +1,523 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "las-disculpas-de-vicentina-2026",
+	"title": "Las disculpas de Vicentina",
+	"year": 2026,
+	"reviewedOn": "2026-11-22",
+	"createdOn": "2026-11-22",
+	"billingSources": [
+		{
+			"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"kind": "Material oficial con el reparto y la dirección del título de 2026",
+			"fullCredits": true,
+			"checkedOn": "2026-11-22",
+			"relevantCreditCount": 17
+		},
+		{
+			"url": "https://www.themoviedb.org/movie/1307474/cast",
+			"kind": "Créditos y personajes en TMDb consultados por ID exacto",
+			"checkedOn": "2026-11-22"
+		},
+		{
+			"url": "https://www.sansebastianfestival.com/2026/sections_and_films/7/746883/in",
+			"kind": "Ficha institucional de contraste",
+			"checkedOn": "2026-11-22"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt33402927/fullcredits/",
+			"kind": "Consulta directa devolvió HTTP 403. Se usaron el billing oficial y los perfiles individuales.",
+			"checkedOn": "2026-11-22"
+		}
+	],
+	"credits": [
+		{
+			"name": "Gabriel Martins",
+			"role": "director",
+			"prominence": "lead",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Director",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1300794",
+					"fact": "El registro personal 1300794 identifica a Gabriel Martins."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Gabriel Martins figura en el material oficial de la película como responsable de dirección."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Director."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6lM36lUdZvLjPapPMXJV3WYfvMs.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/gabriel-martins-nm5506211.jpg"
+			}
+		},
+		{
+			"name": "Rejane Faria",
+			"role": "performer",
+			"prominence": "lead",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Vicentina",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1380635",
+					"fact": "El registro personal 1380635 identifica a Rejane Faria."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Rejane Faria figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Vicentina."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/iie8IOxVZF6JXB416EanhE2bqkT.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/rejane-faria-tmdb-1380635.jpg"
+			}
+		},
+		{
+			"name": "Maíra Azevedo",
+			"role": "performer",
+			"prominence": "co-lead",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Joana",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2521798",
+					"fact": "El registro personal 2521798 identifica a Maíra Azevedo."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Maíra Azevedo figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Joana."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xYQfXAbP55oGag2JYAP0opVtVRX.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/maira-azevedo-nm9397695.jpg"
+			}
+		},
+		{
+			"name": "Renato Novaes",
+			"role": "performer",
+			"prominence": "co-lead",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Wesley/Bruno",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1844397",
+					"fact": "El registro personal 1844397 identifica a Renato Novaes."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Renato Novaes figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Wesley/Bruno."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/gXdCJC9QPTC60gRwR2ZRPVCCkqX.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/renato-novaes-tmdb-1844397.jpg"
+			}
+		},
+		{
+			"name": "Giovanni Venturini",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Fred",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2252913",
+					"fact": "El registro personal 2252913 identifica a Giovanni Venturini."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Giovanni Venturini figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Fred."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5a9aRC7a7J4qRlXebuT4Al1Rmax.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/giovanni-venturini-nm6249835.jpg"
+			}
+		},
+		{
+			"name": "Giovanna Heliodoro",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Gisele",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4390185",
+					"fact": "El registro personal 4390185 identifica a Giovanna Heliodoro."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Giovanna Heliodoro figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Gisele."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6dPKBDwbs0ANYI3tqwgAsClMvM4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/giovanna-heliodoro-tmdb-4390185.jpg"
+			}
+		},
+		{
+			"name": "Grace Passô",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Isabel",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1660398",
+					"fact": "El registro personal 1660398 identifica a Grace Passô."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Grace Passô figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Isabel."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xzomAlvVQor81adGhWjf94F6rP0.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/grace-passo-nm4498129.jpg"
+			}
+		},
+		{
+			"name": "Fernanda Vianna",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Marta",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1171743",
+					"fact": "El registro personal 1171743 identifica a Fernanda Vianna."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Fernanda Vianna figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Marta."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/9YxnEdbyc0gSdz140gyBKkRBK3O.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/fernanda-vianna-nm1998810.jpg"
+			}
+		},
+		{
+			"name": "Clébia Sousa",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Solange",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1016255",
+					"fact": "El registro personal 1016255 identifica a Clébia Sousa."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Clébia Sousa figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Solange."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/kv16b3s2xZFL5uCP3RwZltFaWz4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/clebia-sousa-nm5836718.jpg"
+			}
+		},
+		{
+			"name": "Fábio Leal",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Victor",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1693271",
+					"fact": "El registro personal 1693271 identifica a Fábio Leal."
+				},
+				{
+					"url": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+					"fact": "Fábio Leal figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1307474/cast",
+					"fact": "El crédito de la película Vicentina Pede Desculpas (2026) permite cotejar el cargo o personaje Victor."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/jxC38r6LxQ1ncPUkpgo1D4CNs1w.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/fabio-leal-nm8282972.jpg"
+			}
+		},
+		{
+			"name": "Marisa Revert",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Vera",
+			"decision": "omit",
+			"omissionCategory": "no-safe-portrait",
+			"omissionReason": "El comunicado de Netflix acredita a Revert como Vera. El perfil de TMDb carece de foto y el catálogo de Cineuropa confirma su trayectoria pero no ofrece un retrato individual atribuible.",
+			"portraitSearches": [
+				{
+					"url": "https://www.themoviedb.org/person/3399608",
+					"result": "Perfil con filmografía y sin foto individual disponible."
+				},
+				{
+					"url": "https://cineuropa.gal/wp-content/uploads/2026/10/cineuropa_40_catalogo.pdf",
+					"result": "El catálogo la acredita en Nosso segredo, sin un retrato individual atribuido."
+				},
+				{
+					"url": "https://www.netflix.com/ar/title/81724626",
+					"result": "La ficha oficial enumera el reparto sin retratos personales."
+				}
+			]
+		},
+		{
+			"name": "Docy Moreira",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Marluce",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Docy Moreira figura en el elenco complementario del comunicado de prensa. La ficha argentina de Netflix concentra su presentación en otro grupo de personajes."
+		},
+		{
+			"name": "Carlos Francisco",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Antônio",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Carlos Francisco figura en el elenco complementario del comunicado de prensa. La ficha argentina de Netflix concentra su presentación en otro grupo de personajes."
+		},
+		{
+			"name": "Thalma de Freitas",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Cleide",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Thalma de Freitas figura en el elenco complementario del comunicado de prensa. La ficha argentina de Netflix concentra su presentación en otro grupo de personajes."
+		},
+		{
+			"name": "Flávio Bauraqui",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Luiz",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Flávio Bauraqui figura en el elenco complementario del comunicado de prensa. La ficha argentina de Netflix concentra su presentación en otro grupo de personajes."
+		},
+		{
+			"name": "Bárbara Colen",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Amélia",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Bárbara Colen figura en el elenco complementario del comunicado de prensa. La ficha argentina de Netflix concentra su presentación en otro grupo de personajes."
+		},
+		{
+			"name": "Miguelzinho do Cavaco",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"screenRole": "Self",
+			"decision": "omit",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Miguelzinho do Cavaco figura en el elenco complementario del comunicado de prensa. La ficha argentina de Netflix concentra su presentación en otro grupo de personajes."
+		}
+	],
+	"coverageReview": {
+		"rationale": "El catálogo argentino de Netflix encabeza con Faria, Azevedo y Novaes y acredita un primer grupo de diez intérpretes. Se cubre ese grupo salvo Vera, cuya intérprete conserva su crédito en este reporte. Los demás nombres corresponden al bloque adicional del comunicado.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Marisa Revert",
+				"role": "performer"
+			},
+			{
+				"name": "Docy Moreira",
+				"role": "performer"
+			},
+			{
+				"name": "Carlos Francisco",
+				"role": "performer"
+			},
+			{
+				"name": "Thalma de Freitas",
+				"role": "performer"
+			},
+			{
+				"name": "Flávio Bauraqui",
+				"role": "performer"
+			},
+			{
+				"name": "Bárbara Colen",
+				"role": "performer"
+			},
+			{
+				"name": "Miguelzinho do Cavaco",
+				"role": "performer"
+			}
+		]
+	},
+	"evidence": {
+		"checkedOn": "2026-11-22",
+		"availability": {
+			"territory": "AR",
+			"type": "FLATRATE",
+			"provider": "Netflix",
+			"date": "2026-11-20",
+			"sources": [
+				"https://www.netflix.com/ar/title/81724626",
+				"https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+				"https://www.themoviedb.org/movie/1307474/watch?locale=AR"
+			],
+			"justWatch": [
+				{
+					"term": "Las disculpas de Vicentina",
+					"matches": []
+				},
+				{
+					"term": "Vicentina Pede Desculpas",
+					"matches": [
+						{
+							"t": {
+								"title": "Resident Evil: Noche Cero",
+								"originalReleaseYear": 2026,
+								"fullPath": "/ar/pelicula/resident-evil-2026"
+							},
+							"offers": [
+								"MovistarTV RENT",
+								"Showcase Cinemas CINEMA",
+								"Amazon Video RENT",
+								"Apple TV Store RENT",
+								"Amazon Video BUY",
+								"Apple TV Store BUY"
+							]
+						},
+						{
+							"t": {
+								"title": "Depredador dominante",
+								"originalReleaseYear": 2026,
+								"fullPath": "/ar/pelicula/apex-2026"
+							},
+							"offers": [
+								"Netflix FLATRATE"
+							]
+						}
+					]
+				}
+			]
+		},
+		"identity": {
+			"imdbId": "tt33402927",
+			"tmdbMovieId": 1307474,
+			"country": "BR",
+			"sources": [
+				"https://www.themoviedb.org/movie/1307474",
+				"https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+				"https://www.sansebastianfestival.com/2026/sections_and_films/7/746883/in"
+			]
+		},
+		"score": {
+			"url": "https://www.imdb.com/title/tt33402927/ratings/",
+			"raw": "6,8/10 audiencia (resultado indexado de IMDb)",
+			"votes": 62,
+			"normalized": 7,
+			"checkedOn": "2026-11-22",
+			"method": "Normalización al entero más cercano. La evidencia y el filtro editorial no habilitan 9 o 10."
+		},
+		"genre": {
+			"category": "Drama",
+			"sources": [
+				"https://www.sansebastianfestival.com/2026/sections_and_films/7/746883/in",
+				"https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film"
+			],
+			"musical": "El conflicto y la caracterización se desarrollan sin números musicales narrativos."
+		},
+		"poster": {
+			"sourceUrl": "https://image.tmdb.org/t/p/original/cu2zfOeIUz6dpx9x6djXe34714t.jpg",
+			"sourceDimensions": [
+				2000,
+				3000
+			],
+			"contentType": "image/jpeg",
+			"sourceHttpStatus": 200,
+			"visuallyVerified": true,
+			"canonicalSource": "https://about.netflix.com/pt_br/news/netflix-unveils-poster-and-release-date-for-on-behalf-of-my-son-gabriel-martins-new-film",
+			"market": "Arte en español sin fecha ni etiqueta de estreno",
+			"localPath": "assets/posters/2026/las-disculpas-de-vicentina-2026.webp"
+		},
+		"trailer": {
+			"url": "https://www.youtube.com/watch?v=6lYmMz0qvGA",
+			"oEmbedStatus": 200
+		},
+		"festival": {
+			"url": "https://www.festivaldorio.com.br/br/noticias/festival-do-rio-2026-anuncia-os-vencedores-do-trofeu-redentor-e-do-premio-felix-premiados-ganhadores-conquista",
+			"awards": [
+				"Mejor dirección de ficción",
+				"Mejor guion",
+				"Mejor largometraje de ficción (voto del público)"
+			]
+		}
+	}
+}

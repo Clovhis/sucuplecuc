@@ -266,6 +266,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "las-aventuras-de-peabody-y-sherman-2014"
   ],
   "amanda-seyfried": [
+    "hermanastras-2026",
     "the-housemaid-2025",
     "mank-2020",
     "el-reverendo-2017",
@@ -1394,6 +1395,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "get-out-2017"
   ],
   "daniel-radcliffe": [
+    "hermanastras-2026",
     "swiss-army-man-2016",
     "harry-potter-and-the-deathly-hallows-part-2-2011",
     "harry-potter-and-the-deathly-hallows-part-1-2010",

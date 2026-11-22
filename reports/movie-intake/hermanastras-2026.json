@@ -1,0 +1,447 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "hermanastras-2026",
+	"title": "Hermanastras",
+	"year": 2026,
+	"reviewedOn": "2026-11-22",
+	"createdOn": "2026-11-22",
+	"billingSources": [
+		{
+			"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"kind": "Material oficial con el reparto y la dirección del título de 2026",
+			"fullCredits": true,
+			"checkedOn": "2026-11-22",
+			"relevantCreditCount": 11
+		},
+		{
+			"url": "https://www.themoviedb.org/movie/1595124/cast",
+			"kind": "Créditos y personajes en TMDb consultados por ID exacto",
+			"checkedOn": "2026-11-22"
+		},
+		{
+			"url": "https://www.netflix.com/tudum/articles/steps-cast-release-date",
+			"kind": "Ficha institucional de contraste",
+			"checkedOn": "2026-11-22"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt14413964/fullcredits/",
+			"kind": "Consulta directa devolvió HTTP 403. Se usaron el billing oficial y los perfiles individuales.",
+			"checkedOn": "2026-11-22"
+		}
+	],
+	"credits": [
+		{
+			"name": "Alyce Tzue",
+			"role": "director",
+			"prominence": "lead",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Director",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1641126",
+					"fact": "El registro personal 1641126 identifica a Alyce Tzue."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Alyce Tzue figura en el material oficial de la película como responsable de dirección."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje Director."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pKqaLQdnopMqKyMB89T7qbCiiLv.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/alyce-tzue-nm6446803.jpg"
+			}
+		},
+		{
+			"name": "John Ripa",
+			"role": "director",
+			"prominence": "lead",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Director",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.imdb.com/name/nm0727960/",
+					"fact": "La filmografía de Ripa lo acredita en Raya y el último dragón y lo vincula con la animación de Disney."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "John Ripa figura en el material oficial de la película como responsable de dirección."
+				},
+				{
+					"url": "https://www.whats-on-netflix.com/news/steps-netflix-movie-streaming-directors-interview/",
+					"fact": "Entrevista con ambos directores y foto de la presentación. Se identifica a Ripa a la derecha de Alyce Tzue."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://www.whats-on-netflix.com/wp-content/uploads/2026/11/Steps-Directors-Final-Interview.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/john-ripa-nm0727960.jpg"
+			}
+		},
+		{
+			"name": "Ali Wong",
+			"role": "performer",
+			"prominence": "lead",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Lilith (voice)",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/591835",
+					"fact": "El registro personal 591835 identifica a Ali Wong."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Ali Wong figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje Lilith (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vpVDlzPIIzgwdO23MbbwvfmPtXQ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ali-wong-nm4399227.jpg"
+			}
+		},
+		{
+			"name": "Amanda Seyfried",
+			"role": "performer",
+			"prominence": "co-lead",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Cinderella (voice)",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/71070",
+					"fact": "El registro personal 71070 identifica a Amanda Seyfried."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Amanda Seyfried figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje Cinderella (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amanda%20Seyfried%20at%20Berlinale%202024%2C%20cropped.jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/amanda-seyfried-nm1086543.jpg"
+			}
+		},
+		{
+			"name": "Stephanie Hsu",
+			"role": "performer",
+			"prominence": "co-lead",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Margot (voice)",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1381186",
+					"fact": "El registro personal 1381186 identifica a Stephanie Hsu."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Stephanie Hsu figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje Margot (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephanie%20Hsu%20at%20the%202024%20Toronto%20International%20Film%20Festival%202%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/stephanie-hsu-nm3513533.jpg"
+			}
+		},
+		{
+			"name": "Nikki Glaser",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Priscilla (voice)",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/552243",
+					"fact": "El registro personal 552243 identifica a Nikki Glaser."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Nikki Glaser figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje Priscilla (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/zF2UyqN6000VpUkgXVnM9JHuAhW.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/nikki-glaser-nm3218751.jpg"
+			}
+		},
+		{
+			"name": "Daniel Radcliffe",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "The Prince (voice)",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/10980",
+					"fact": "El registro personal 10980 identifica a Daniel Radcliffe."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Daniel Radcliffe figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje The Prince (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Radcliffe%20in%20July%202015.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/daniel-radcliffe-nm0705356.jpg"
+			}
+		},
+		{
+			"name": "Young Mazino",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Gef (voice)",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2569691",
+					"fact": "El registro personal 2569691 identifica a Young Mazino."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Young Mazino figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje Gef (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/cRuVRx1DMe2hBkz5pssVqdpCtaQ.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/young-mazino-nm6180088.jpg"
+			}
+		},
+		{
+			"name": "Peter Dinklage",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Roderick (voice)",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/22970",
+					"fact": "El registro personal 22970 identifica a Peter Dinklage."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Peter Dinklage figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje Roderick (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Dinklage%20by%20Gage%20Skidmore%202.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/peter-dinklage-nm0227759.jpg"
+			}
+		},
+		{
+			"name": "Bette Midler",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Fairy Godmother (voice)",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/73931",
+					"fact": "El registro personal 73931 identifica a Bette Midler."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Bette Midler figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje Fairy Godmother (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bette%20Midler%202021%20Kennedy%20Center%20Honors%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/bette-midler-nm0000541.jpg"
+			}
+		},
+		{
+			"name": "Damian Priest",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"screenRole": "Cracktor (voice)",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1957131",
+					"fact": "El registro personal 1957131 identifica a Luis Martinez, nombre que usa TMDb para la voz de Cracktor."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+					"fact": "Damian Priest figura en el material oficial de la película como intérprete del reparto."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1595124/cast",
+					"fact": "El crédito de la película Steps (2026) permite cotejar el cargo o personaje Cracktor (voice)."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/7SFDHneUnbTVbtlN90tKPHIbrVB.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/damian-priest-tmdb-1957131.jpg"
+			}
+		}
+	],
+	"coverageReview": {
+		"rationale": "La guía oficial individualiza las nueve voces del conflicto en Alouette. El reparto ampliado de TMDb agrega voces episódicas, figuras del reino y versiones infantiles que no forman parte de ese foco.",
+		"omittedRelevantCredits": []
+	},
+	"evidence": {
+		"checkedOn": "2026-11-22",
+		"availability": {
+			"territory": "AR",
+			"type": "FLATRATE",
+			"provider": "Netflix",
+			"date": "2026-11-20",
+			"sources": [
+				"https://www.justwatch.com/ar/pelicula/steps",
+				"https://www.netflix.com/ar/title/81212809",
+				"https://about.netflix.com/en/news/netflix-previews-its-animation-slate-for-2026-and-beyond"
+			],
+			"justWatch": [
+				{
+					"term": "Hermanastras",
+					"matches": [
+						{
+							"t": {
+								"title": "Hermanastras",
+								"originalReleaseYear": 2026,
+								"fullPath": "/ar/pelicula/steps"
+							},
+							"offers": [
+								"Netflix FLATRATE"
+							]
+						}
+					]
+				},
+				{
+					"term": "Steps",
+					"matches": [
+						{
+							"t": {
+								"title": "Hermanastras",
+								"originalReleaseYear": 2026,
+								"fullPath": "/ar/pelicula/steps"
+							},
+							"offers": [
+								"Netflix FLATRATE"
+							]
+						},
+						{
+							"t": {
+								"title": "Pavana",
+								"originalReleaseYear": 2026,
+								"fullPath": "/ar/pelicula/pavane-2026"
+							},
+							"offers": [
+								"Netflix FLATRATE"
+							]
+						}
+					]
+				}
+			]
+		},
+		"identity": {
+			"imdbId": "tt14413964",
+			"tmdbMovieId": 1595124,
+			"country": "US, AU",
+			"sources": [
+				"https://www.themoviedb.org/movie/1595124",
+				"https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+				"https://www.netflix.com/tudum/articles/steps-cast-release-date"
+			]
+		},
+		"score": {
+			"url": "https://www.rottentomatoes.com/m/steps_2026",
+			"raw": "72% Popcornmeter",
+			"votes": "50+",
+			"normalized": 7,
+			"checkedOn": "2026-11-22",
+			"method": "Normalización al entero más cercano. La evidencia y el filtro editorial no habilitan 9 o 10."
+		},
+		"genre": {
+			"category": "Animacion",
+			"sources": [
+				"https://www.netflix.com/tudum/articles/steps-cast-release-date",
+				"https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella"
+			],
+			"musical": "Las canciones originales integran escenas y los puntos de vista de Cenicienta, Lilith y Priscilla."
+		},
+		"poster": {
+			"sourceUrl": "https://image.tmdb.org/t/p/original/5f69fuZBiPoa8H1AJ3UHH4AztOb.jpg",
+			"sourceDimensions": [
+				1799,
+				2700
+			],
+			"contentType": "image/jpeg",
+			"sourceHttpStatus": 200,
+			"visuallyVerified": true,
+			"canonicalSource": "https://www.netflix.com/tudum/articles/steps-cast-guide-ali-wong-amanda-seyfried-cinderella",
+			"market": "Arte en español sin fecha ni etiqueta de estreno",
+			"localPath": "assets/posters/2026/hermanastras-2026.webp"
+		},
+		"trailer": {
+			"url": "https://www.youtube.com/watch?v=PrUmaqhAN-A",
+			"oEmbedStatus": 200
+		},
+		"coDirectorPortrait": [
+			{
+				"name": "John Ripa",
+				"crop": {
+					"left": 402,
+					"top": 0,
+					"width": 335,
+					"height": 450
+				},
+				"source": "https://www.whats-on-netflix.com/news/steps-netflix-movie-streaming-directors-interview/"
+			}
+		]
+	}
+}

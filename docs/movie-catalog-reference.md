@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-11-20. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-11-22. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2679
+Total de peliculas: 2682
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -154,6 +154,7 @@ Total de peliculas: 2679
 | 2026 | Heartland | heartland-2026 | Thriller | Netflix | +16 |
 | 2026 | Heartstopper para siempre | heartstopper-para-siempre-2026 | Romance | Netflix | +16 |
 | 2026 | Hechizo de Amor: La magia continúa | hechizo-de-amor-la-magia-continua-2026 | Fantasia | Apple TV | +13 |
+| 2026 | Hermanastras | hermanastras-2026 | Animacion | Netflix | +7 |
 | 2026 | Hijo de nadie | hijo-de-nadie-2026 | Drama | Apple TV + Flow | +13 |
 | 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Prime Video | +17 |
 | 2026 | Hombres G: Los mejores años de nuestra vida | los-mejores-anos-de-nuestra-vida-2026 | Documental | Netflix | +16 |
@@ -208,6 +209,7 @@ Total de peliculas: 2679
 | 2026 | Land of Crime | land-of-crime-2026 | Thriller | HBO Max | +16 |
 | 2026 | Las cartas de la vida | las-cartas-de-la-vida-2026 | Drama | Netflix | +16 |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
+| 2026 | Las disculpas de Vicentina | las-disculpas-de-vicentina-2026 | Drama | Netflix | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
 | 2026 | Las redes sociales mataron a la estrella de cine | las-redes-sociales-mataron-a-la-estrella-de-cine-2026 | Documental | Prime Video | +13 |
 | 2026 | LEGO Friends: Heartlake el musical | lego-friends-heartlake-el-musical-2026 | Musical | Netflix | ATP |
@@ -283,6 +285,7 @@ Total de peliculas: 2679
 | 2026 | PAW Patrol: La Dino Película | paw-patrol-la-dino-pelicula-2026 | Animacion | Prime Video | ATP |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix | +16 |
 | 2026 | Pepita la pistolera | pepita-la-pistolera-2026 | Crimen | Otras plataformas | +17 |
+| 2026 | Perfectos mentirosos | perfectos-mentirosos-2026 | Thriller | Prime Video | +16 |
 | 2026 | Pinocho sin cuerdas | pinocho-sin-cuerdas-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Poldi | poldi-2026 | Documental | Netflix | +13 |
 | 2026 | Portrait of an Artist: Stephen Curry | portrait-of-an-artist-stephen-curry-2026 | Documental | Disney Plus | +13 |

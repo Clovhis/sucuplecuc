@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-20. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-22. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4740
+Total de vínculos de películas del catálogo: 4742
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -47,7 +47,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Alfredo Castro | `alfredo-castro` | /personas/alfredo-castro/ | Actor | 4 | 5 |
 | Alicia Vikander | `alicia-vikander` | /personas/alicia-vikander/ | Actriz | 5 | 4 |
 | Allison Janney | `allison-janney` | /personas/allison-janney/ | Actriz | 5 | 6 |
-| Amanda Seyfried | `amanda-seyfried` | /personas/amanda-seyfried/ | Actriz | 7 | 3 |
+| Amanda Seyfried | `amanda-seyfried` | /personas/amanda-seyfried/ | Actriz | 8 | 3 |
 | America Ferrera | `america-ferrera` | /personas/america-ferrera/ | Actriz | 2 | 7 |
 | Amy Adams | `amy-adams` | /personas/amy-adams/ | Actriz | 11 | 6 |
 | Ana de Armas | `ana-de-armas` | /personas/ana-de-armas/ | Actriz | 5 | 7 |
@@ -199,7 +199,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Daniel Day-Lewis | `daniel-day-lewis` | /personas/daniel-day-lewis/ | Actor | 11 | 3 |
 | Daniel Fanego | `daniel-fanego` | /personas/daniel-fanego/ | Actor | 1 | 6 |
 | Daniel Kaluuya | `daniel-kaluuya` | /personas/daniel-kaluuya/ | Actor | 2 | 7 |
-| Daniel Radcliffe | `daniel-radcliffe` | /personas/daniel-radcliffe/ | Actor | 9 | 7 |
+| Daniel Radcliffe | `daniel-radcliffe` | /personas/daniel-radcliffe/ | Actor | 10 | 7 |
 | Daniel Valenzuela | `daniel-valenzuela` | /personas/daniel-valenzuela/ | Actor / Guionista | 1 | 5 |
 | Danny Boyle | `danny-boyle` | /personas/danny-boyle/ | Director | 6 | 7 |
 | Danny DeVito | `danny-devito` | /personas/danny-devito/ | Actor / Director / Productor | 14 | 7 |
