@@ -1961,7 +1961,7 @@
       "format": "carousel",
       "theme": "genre:Comedia",
       "palette": 3,
-      "state": "scheduled",
+      "state": "sent",
       "attemptId": "44854485620:1",
       "dueAt": "2026-11-21T22:15:00.000Z",
       "channelId": "6af6465a62b70b94b0105899",
@@ -2549,8 +2549,283 @@
         "https://raw.githubusercontent.com/Clovhis/sucuplecuc/d847445a4ca39fc6b5464a57e5260a1fc7317d02/media/2026-11-21-hit-man-2024-carousel-photo-6.jpg"
       ],
       "bufferPostId": "6b00fe265102766245ec96ee",
-      "externalLink": null,
+      "externalLink": "https://www.instagram.com/p/DgBR9j9I6m-/",
       "scheduledAt": "2026-11-21T02:12:52.983Z"
+    },
+    {
+      "date": "2026-11-22",
+      "slug": "love-lies-bleeding-2024",
+      "slugs": [
+        "love-lies-bleeding-2024",
+        "la-habitacion-del-panico-2002"
+      ],
+      "category": "Thriller",
+      "format": "double",
+      "theme": "double:Thriller",
+      "palette": 1,
+      "state": "reserved",
+      "attemptId": "44970600351:1",
+      "dueAt": "2026-11-22T22:15:00.000Z",
+      "channelId": "6af6465a62b70b94b0105899",
+      "media": [
+        {
+          "mediaPath": "media/2026-11-22-love-lies-bleeding-2024-double-photo-1.jpg",
+          "sha256": "b02daefa1c1857994947b2a0cda2d247cfcc60bd4710a5a5ca77e7a327ff3a40",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Doble función: thriller. Fotografías: Love Lies Bleeding, Jodie Foster.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "sundance-2024-love-lies-bleeding-2024-d7415b5012",
+              "commons-100615157"
+            ],
+            "assets": [
+              {
+                "id": "sundance-2024-love-lies-bleeding-2024-d7415b5012",
+                "kind": "still",
+                "path": "assets/social/photos/sundance-2024-love-lies-bleeding-2024-d7415b5012.webp",
+                "slugs": [
+                  "love-lies-bleeding-2024"
+                ],
+                "title": "Love Lies Bleeding · still 1",
+                "width": 1920,
+                "credit": "Courtesy of Sundance Institute",
+                "height": 1080,
+                "sha256": "8de78b106dbd72d78b37b9f31aecf87fdd6bc8da26791a0527a5b9a0a998694e",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "sundance-official-press",
+                "license": "Permiso editorial de prensa Sundance",
+                "subject": "Love Lies Bleeding",
+                "sourceUrl": "https://www.sundance.org/about/press/",
+                "licenseUrl": "https://www.sundance.org/about/press/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Midnight/Love%20Lies%20Bleeding?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR.",
+                  "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Midnight/Love%20Lies%20Bleeding?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "originalUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Midnight/Love%20Lies%20Bleeding?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "archiveEntry": "Love_Lies_Bleeding-Still1_Kristen_Stewart_and_Katy_O'Brian.jpg",
+                "evidencePath": "assets/social/press-packages/sundance-2024-love-lies-bleeding-2024.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "19b0469b4c4b60f261ac3343341967f0a16561f99ce77563d72875266e0e02a5",
+                "originalSha256": "2a14d3969701211da8b9d23d37581e90830d12cccfcf1eff7fbae7aa37eb9a3f",
+                "suppliedCaption": "FILM STILL 1 Kristen Stewart and Katy O'Brian appear in Love Lies Bleeding by Rose Glass, an official selection of the Midnight program at the 2024 Sundance Film Festival. Courtesy of Sundance Institute. ",
+                "editorialContext": {
+                  "year": 2024,
+                  "festival": "Sundance"
+                },
+                "grantEvidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+                "sourceGrant": {
+                  "id": "sundance-official-press",
+                  "issuer": "Sundance Institute",
+                  "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/love-lies-bleeding-2024/8de78b106dbd72d78b37b9f31aecf87fdd6bc8da26791a0527a5b9a0a998694e.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              },
+              {
+                "id": "commons-100615157",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-100615157.webp",
+                "slugs": [],
+                "title": "Jodie Foster in Baltimore (cropped).jpg",
+                "width": 806,
+                "credit": "John Mathew Smith & www.celebrity-photos.com from Laurel Maryland, USA",
+                "height": 1075,
+                "person": "Jodie Foster",
+                "sha256": "20c50bbf4438c595aaa49bed37e6151f1b6db553608b72b78ce6e8c79ef7b3fe",
+                "status": "approved",
+                "changes": "WebP, reducción máxima 1920 px, calidad 82; composición editorial bajo licencia.",
+                "license": "CC BY-SA 2.0",
+                "subject": "Jodie Foster",
+                "photoDate": "2019-11-20 10:36",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=100615157",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-14",
+                "description": "Jodie Foster \" Baltimore the city that reads \"",
+                "evidenceUrl": "https://commons.wikimedia.org/w/index.php?oldid=1091904920",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Jodie_Foster_in_Baltimore_%28cropped%29.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-100615157.json",
+                "restrictions": "",
+                "evidenceSha256": "dadd1d7d9fa56771e17b6c0d1df2df5a8ae3e443cc56d13b0a9e7735df1db399",
+                "originalSha256": "a4e8943faa8bb5d1bbe5a6a2543fcc91d5c5d08c1a8a10966a33f4aa8fa26344",
+                "catalogPortrait": "/people/jodie-foster-nm0000149.jpg",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/commons-100615157/20c50bbf4438c595aaa49bed37e6151f1b6db553608b72b78ce6e8c79ef7b3fe.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": "CC BY-SA 4.0",
+            "adaptationLicenseScope": "Únicamente las fotografías CC BY-SA adaptadas; excluye material de prensa.",
+            "changes": "Recorte permitido, redimensionado y composición editorial."
+          }
+        },
+        {
+          "mediaPath": "media/2026-11-22-love-lies-bleeding-2024-double-photo-2.jpg",
+          "sha256": "407fcff73709746513d8747351eef1f7b0a0cb991c16074a3a45b62092f7df3b",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Love Lies Bleeding (2024). 8 · Excelente. Selección Sundance 2024.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "sundance-2024-love-lies-bleeding-2024-d7415b5012"
+            ],
+            "assets": [
+              {
+                "id": "sundance-2024-love-lies-bleeding-2024-d7415b5012",
+                "kind": "still",
+                "path": "assets/social/photos/sundance-2024-love-lies-bleeding-2024-d7415b5012.webp",
+                "slugs": [
+                  "love-lies-bleeding-2024"
+                ],
+                "title": "Love Lies Bleeding · still 1",
+                "width": 1920,
+                "credit": "Courtesy of Sundance Institute",
+                "height": 1080,
+                "sha256": "8de78b106dbd72d78b37b9f31aecf87fdd6bc8da26791a0527a5b9a0a998694e",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "sundance-official-press",
+                "license": "Permiso editorial de prensa Sundance",
+                "subject": "Love Lies Bleeding",
+                "sourceUrl": "https://www.sundance.org/about/press/",
+                "licenseUrl": "https://www.sundance.org/about/press/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Midnight/Love%20Lies%20Bleeding?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR.",
+                  "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Midnight/Love%20Lies%20Bleeding?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "originalUrl": "https://www.dropbox.com/scl/fo/hak2q0v25ih5ms0fmekue/h/Midnight/Love%20Lies%20Bleeding?rlkey=udxe86bppik0o8w2l0mo6moep&dl=0",
+                "archiveEntry": "Love_Lies_Bleeding-Still1_Kristen_Stewart_and_Katy_O'Brian.jpg",
+                "evidencePath": "assets/social/press-packages/sundance-2024-love-lies-bleeding-2024.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "19b0469b4c4b60f261ac3343341967f0a16561f99ce77563d72875266e0e02a5",
+                "originalSha256": "2a14d3969701211da8b9d23d37581e90830d12cccfcf1eff7fbae7aa37eb9a3f",
+                "suppliedCaption": "FILM STILL 1 Kristen Stewart and Katy O'Brian appear in Love Lies Bleeding by Rose Glass, an official selection of the Midnight program at the 2024 Sundance Film Festival. Courtesy of Sundance Institute. ",
+                "editorialContext": {
+                  "year": 2024,
+                  "festival": "Sundance"
+                },
+                "grantEvidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+                "sourceGrant": {
+                  "id": "sundance-official-press",
+                  "issuer": "Sundance Institute",
+                  "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/love-lies-bleeding-2024/8de78b106dbd72d78b37b9f31aecf87fdd6bc8da26791a0527a5b9a0a998694e.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Imágenes completas, reducción técnica y composición editorial fuera de la fotografía."
+          }
+        },
+        {
+          "mediaPath": "media/2026-11-22-love-lies-bleeding-2024-double-photo-3.jpg",
+          "sha256": "3af30391012449c6db8053cfd64e021ca3bd690b6d8e16974780b7596b16ac87",
+          "width": 1080,
+          "height": 1350,
+          "alt": "La habitación del pánico (2002). 7 · Muy buena. Jodie Foster · archivo 2019.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "commons-100615157"
+            ],
+            "assets": [
+              {
+                "id": "commons-100615157",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-100615157.webp",
+                "slugs": [],
+                "title": "Jodie Foster in Baltimore (cropped).jpg",
+                "width": 806,
+                "credit": "John Mathew Smith & www.celebrity-photos.com from Laurel Maryland, USA",
+                "height": 1075,
+                "person": "Jodie Foster",
+                "sha256": "20c50bbf4438c595aaa49bed37e6151f1b6db553608b72b78ce6e8c79ef7b3fe",
+                "status": "approved",
+                "changes": "WebP, reducción máxima 1920 px, calidad 82; composición editorial bajo licencia.",
+                "license": "CC BY-SA 2.0",
+                "subject": "Jodie Foster",
+                "photoDate": "2019-11-20 10:36",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=100615157",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-14",
+                "description": "Jodie Foster \" Baltimore the city that reads \"",
+                "evidenceUrl": "https://commons.wikimedia.org/w/index.php?oldid=1091904920",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Jodie_Foster_in_Baltimore_%28cropped%29.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-100615157.json",
+                "restrictions": "",
+                "evidenceSha256": "dadd1d7d9fa56771e17b6c0d1df2df5a8ae3e443cc56d13b0a9e7735df1db399",
+                "originalSha256": "a4e8943faa8bb5d1bbe5a6a2543fcc91d5c5d08c1a8a10966a33f4aa8fa26344",
+                "catalogPortrait": "/people/jodie-foster-nm0000149.jpg",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/commons-100615157/20c50bbf4438c595aaa49bed37e6151f1b6db553608b72b78ce6e8c79ef7b3fe.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": "CC BY-SA 4.0",
+            "adaptationLicenseScope": "Únicamente las fotografías CC BY-SA adaptadas; excluye material de prensa.",
+            "changes": "Recorte permitido, redimensionado y composición editorial."
+          }
+        }
+      ],
+      "text": "Doble función: thriller.\n\n1. Love Lies Bleeding (2024) · 8 · Excelente · Selección Sundance 2024\n\n2. La habitación del pánico (2002) · 7 · Muy buena\n\n¿Cuál va primero? Guardá la selección y compartila. Reseñas completas en el enlace del perfil.\n\nhttps://www.cineposta.com.ar/peliculas/love-lies-bleeding-2024/\n\nhttps://www.cineposta.com.ar/peliculas/la-habitacion-del-panico-2002/\n\nFotografías y material cinematográfico:\nLove Lies Bleeding: Courtesy of Sundance Institute · «Love Lies Bleeding · still 1». https://www.sundance.org/about/press/\nJodie Foster: John Mathew Smith & www.celebrity-photos.com from Laurel Maryland, USA · «Jodie Foster in Baltimore (cropped).jpg». https://commons.wikimedia.org/?curid=100615157\nPermiso editorial de prensa Sundance: https://www.sundance.org/about/press/\nCC BY-SA 2.0: https://creativecommons.org/licenses/by-sa/2.0\nComposición: CinePosta. Fotos CC BY-SA adaptadas: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. El material de prensa conserva sus condiciones.\n\n#CinePosta #QueVer #Cine",
+      "createdAt": "2026-11-22T01:16:33.990Z"
     }
   ]
 }
