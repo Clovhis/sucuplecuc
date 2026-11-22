@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-21T12:13:11.161Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-22T12:22:45.812Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Hechizo: Bienvenidos a Hexe",
