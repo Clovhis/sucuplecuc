@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-11-22. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-11-23. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2682
+Total de peliculas: 2683
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -308,6 +308,7 @@ Total de peliculas: 2682
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
 | 2026 | Ricos sin dinero | ricos-sin-dinero-2026 | Comedia | Netflix | +13 |
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
+| 2026 | Rivales en la nieve | rivales-en-la-nieve-2026 | Romance | Prime Video | +16 |
 | 2026 | Rosebush Pruning | rosebush-pruning-2026 | Drama | MUBI | +16 |
 | 2026 | Sakamoto Days | sakamoto-days-2026 | Accion | Prime Video | +13 |
 | 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |

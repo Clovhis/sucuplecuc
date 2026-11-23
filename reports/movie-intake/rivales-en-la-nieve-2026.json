@@ -1,0 +1,625 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "rivales-en-la-nieve-2026",
+	"title": "Rivales en la nieve",
+	"year": 2026,
+	"reviewedOn": "2026-11-23",
+	"createdOn": "2026-11-23",
+	"billingSources": [
+		{
+			"url": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"kind": "IMDb full credits, consulta indexada por ID exacto. Contraste con Prime Video, TMDb y entrevistas del elenco.",
+			"fullCredits": true,
+			"checkedOn": "2026-11-23",
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T",
+			"kind": "Material oficial argentino con el reparto destacado y la dirección.",
+			"checkedOn": "2026-11-23"
+		},
+		{
+			"url": "https://www.themoviedb.org/movie/1611767/cast",
+			"kind": "API de TMDb por ID 1611767 y enlace IMDb tt39316936; contraste del reparto principal y los IDs de persona.",
+			"checkedOn": "2026-11-23"
+		},
+		{
+			"url": "https://www.cosmopolitan.com/entertainment/movies/a74379002/clashing-through-the-snow-first-look-photos-exclusive/",
+			"kind": "Entrevista a la directora y a los protagonistas; acredita a Gage como Teddy.",
+			"checkedOn": "2026-11-23"
+		}
+	],
+	"credits": [
+		{
+			"name": "Carlson Young",
+			"role": "director",
+			"prominence": "lead",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Dirección",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/965770",
+					"fact": "Perfil de Carlson Young asociado al crédito de la película por ID de persona."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2584304/",
+					"fact": "El identificador IMDb de Carlson Young coincide con su identidad y filmografía."
+				},
+				{
+					"url": "https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T",
+					"fact": "Carlson Young dirige la película de 2026."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bIxM7fwCU90GzXlvvcdDwjjPX9o.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/carlson-young-nm2584304.jpg"
+			}
+		},
+		{
+			"name": "Christopher Briney",
+			"role": "performer",
+			"prominence": "lead",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Ryan Mitchell",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3031442",
+					"fact": "Perfil de Christopher Briney asociado al crédito de la película por ID de persona."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm10447374/",
+					"fact": "El identificador IMDb de Christopher Briney coincide con su identidad y filmografía."
+				},
+				{
+					"url": "https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T",
+					"fact": "Christopher Briney integra el elenco de esta película como Ryan Mitchell."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1M21pqg3Lf8n6gwI9l9RX1PuPjw.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/christopher-briney-nm10447374.jpg"
+			}
+		},
+		{
+			"name": "Michelle Randolph",
+			"role": "performer",
+			"prominence": "co-lead",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Hannah Hendricks",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1902690",
+					"fact": "Perfil de Michelle Randolph asociado al crédito de la película por ID de persona."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm8948296/",
+					"fact": "El identificador IMDb de Michelle Randolph coincide con su identidad y filmografía."
+				},
+				{
+					"url": "https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T",
+					"fact": "Michelle Randolph integra el elenco de esta película como Hannah Hendricks."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5W3DB2THOjE4L4Hhc68CzcQiwuK.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/michelle-randolph-nm8948296.jpg"
+			}
+		},
+		{
+			"name": "Lukas Gage",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Teddy",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1371509",
+					"fact": "Perfil de Lukas Gage asociado al crédito de la película por ID de persona."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4965072/",
+					"fact": "El identificador IMDb de Lukas Gage coincide con su identidad y filmografía."
+				},
+				{
+					"url": "https://www.cosmopolitan.com/entertainment/movies/a74379002/clashing-through-the-snow-first-look-photos-exclusive/",
+					"fact": "Lukas Gage integra el elenco de esta película como Teddy."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lukas%20Gage%20at%20Berlin%20Film%20Festival%202026%2C%20(P1230490).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/lukas-gage-nm4965072.jpg"
+			}
+		},
+		{
+			"name": "Andrew Schulz",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Walter",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1880755",
+					"fact": "Perfil de Andrew Schulz asociado al crédito de la película por ID de persona."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3683006/",
+					"fact": "El identificador IMDb de Andrew Schulz coincide con su identidad y filmografía."
+				},
+				{
+					"url": "https://www.moz.de/nachrichten/unterhaltung/filmtipp-fuer-prime-video-neue-romanze-mit-der-sommer-als-ich-schoen-wurde-star-79691329.html",
+					"fact": "Andrew Schulz integra el elenco de esta película como Walter."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/fdeYq1EraYvlYM3VmGXjIaSGoTz.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/andrew-schulz-nm3683006.jpg"
+			}
+		},
+		{
+			"name": "Julia Fox",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Bianca Hart",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2371446",
+					"fact": "Perfil de Julia Fox asociado al crédito de la película por ID de persona."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm9681752/",
+					"fact": "El identificador IMDb de Julia Fox coincide con su identidad y filmografía."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1611767/cast",
+					"fact": "Julia Fox integra el elenco de esta película como Bianca Hart."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Julia%20Fox%203.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/julia-fox-nm9681752.jpg"
+			}
+		},
+		{
+			"name": "Paris Hilton",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Paris Hilton",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/38406",
+					"fact": "Perfil de Paris Hilton asociado al crédito de la película por ID de persona."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0385296/",
+					"fact": "El identificador IMDb de Paris Hilton coincide con su identidad y filmografía."
+				},
+				{
+					"url": "https://nz.news.yahoo.com/paris-hilton-clashing-snow-christopher-233600462.html",
+					"fact": "Paris Hilton integra el elenco de esta película como Paris Hilton."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/8ywcy0guTGiL6JIPvnFtELMlwuu.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/paris-hilton-nm0385296.jpg"
+			}
+		},
+		{
+			"name": "P.J. Byrne",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Jeremy",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1211946",
+					"fact": "Perfil de P.J. Byrne asociado al crédito de la película por ID de persona."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0126260/",
+					"fact": "El identificador IMDb de P.J. Byrne coincide con su identidad y filmografía."
+				},
+				{
+					"url": "https://www.moz.de/nachrichten/unterhaltung/filmtipp-fuer-prime-video-neue-romanze-mit-der-sommer-als-ich-schoen-wurde-star-79691329.html",
+					"fact": "P.J. Byrne integra el elenco de esta película como Jeremy."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/1JVBaxRy3OxkHymD3nwBd5kVWWL.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/p-j-byrne-nm0126260.jpg"
+			}
+		},
+		{
+			"name": "Zarna Garg",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Gail",
+			"decision": "omit",
+			"omissionReason": "Gail figura como apoyo del viaje. Se priorizó el elenco del distribuidor y el jefe que dispara la disputa laboral.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Tan France",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Aidan Sullivan",
+			"decision": "omit",
+			"omissionReason": "Aidan Sullivan apoya la negociación editorial. Se priorizó el elenco destacado por el distribuidor y el jefe que inicia el conflicto.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Teddy Coluca",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Old Man",
+			"decision": "omit",
+			"omissionReason": "Figura con el papel puntual Old Man y no está en el billing destacado por Prime.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Wass Stevens",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Wass",
+			"decision": "omit",
+			"omissionReason": "Figura como Wass en el reparto ampliado y queda fuera de la selección de personajes de la disputa editorial.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Ryann Redmond",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Sarah",
+			"decision": "omit",
+			"omissionReason": "Sarah figura en los créditos ampliados como rol secundario de baja prominencia.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Dee Roscioli",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Patricia",
+			"decision": "omit",
+			"omissionReason": "Patricia pertenece a los créditos ampliados, fuera del grupo destacado en la presentación de Prime.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Nick Barrotta",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "",
+			"decision": "omit",
+			"omissionReason": "El listado ampliado incluye su nombre sin personaje identificado y Prime no lo destaca.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Moumita Khondaker",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Paris Hilton's Model Friend",
+			"decision": "omit",
+			"omissionReason": "El crédito identifica a una acompañante de Paris Hilton, un papel puntual del reparto extendido.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Preston James Hillier",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Officer Brian Giles",
+			"decision": "omit",
+			"omissionReason": "El papel puntual del oficial Brian Giles figura en el reparto ampliado.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Will Fitz",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Kimberly's brother",
+			"decision": "omit",
+			"omissionReason": "El crédito identifica al hermano de Kimberly, un papel periférico del listado amplio.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Marlon Robins",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Brody",
+			"decision": "omit",
+			"omissionReason": "Brody figura en el reparto ampliado, fuera del núcleo de la rivalidad y del grupo destacado por Prime.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Kyra Grace",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Rebecca",
+			"decision": "omit",
+			"omissionReason": "Rebecca figura en el reparto ampliado y no integra el elenco presentado por Prime.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Roy Shuler",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Ed",
+			"decision": "omit",
+			"omissionReason": "Ed figura en el reparto ampliado y no integra el elenco destacado por el distribuidor.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Monica Joelle Ortiz",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Sue",
+			"decision": "omit",
+			"omissionReason": "Sue figura en el reparto ampliado y queda fuera del núcleo editorial y romántico.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Jasmine Cho",
+			"role": "performer",
+			"prominence": "crew",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Self - Production Design (Additional Photography)",
+			"decision": "omit",
+			"omissionReason": "El crédito corresponde al diseño de producción y fotografía adicional.",
+			"omissionCategory": "crew"
+		},
+		{
+			"name": "Es Um",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Veronica",
+			"decision": "omit",
+			"omissionReason": "Veronica figura en los créditos ampliados, fuera del reparto destacado por Prime.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Betsy Helmer",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Cindy",
+			"decision": "omit",
+			"omissionReason": "Cindy figura en los créditos ampliados, fuera del reparto destacado por Prime.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Rebecca Tieman",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Kimberly",
+			"decision": "omit",
+			"omissionReason": "Kimberly figura en los créditos ampliados, fuera del reparto destacado por Prime.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Daniel Wright Jr.",
+			"role": "performer",
+			"prominence": "incidental",
+			"creditSourceUrl": "https://www.imdb.com/title/tt39316936/fullcredits/",
+			"screenRole": "Ed",
+			"decision": "omit",
+			"omissionReason": "IMDb identifica su participación como un crédito no acreditado.",
+			"omissionCategory": "incidental"
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se conservaron los seis nombres de la ficha de Prime Video y a P.J. Byrne por el papel de Jeremy, cuyo anuncio inicia el conflicto laboral. Los apoyos de Gail y Aidan quedan documentados en el reparto extendido.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Zarna Garg",
+				"role": "performer"
+			},
+			{
+				"name": "Tan France",
+				"role": "performer"
+			}
+		]
+	},
+	"evidence": {
+		"identity": {
+			"originalTitle": "Clashing Through the Snow",
+			"year": 2026,
+			"imdbId": "tt39316936",
+			"tmdbId": 1611767,
+			"watchmodeId": 11104681,
+			"sourceUrl": "https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T"
+		},
+		"availability": {
+			"checkedOn": "2026-11-23",
+			"country": "AR",
+			"provider": "Prime Video",
+			"type": "FLATRATE",
+			"launchDate": "2026-11-23",
+			"sourceUrl": "https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T",
+			"consumerUrl": "https://www.primevideo.com/-/es/detail/0TWROLY7CIQMYP2WBPM7XKZI6E?tr=ar",
+			"justWatchAr": [
+				"https://www.justwatch.com/ar/pelicula/clashing-through-the-snow",
+				"https://www.justwatch.com/ar/pelicula/rivales-en-la-nieve"
+			],
+			"justWatchResult": "Las dos rutas y la búsqueda argentina no devolvieron una oferta corroborable. La ficha oficial para Argentina indica incluido con Prime."
+		},
+		"classification": {
+			"sourceUrl": "https://www.primevideo.com/-/es/detail/0TWROLY7CIQMYP2WBPM7XKZI6E?tr=ar",
+			"countrySourceUrl": "https://www.imdb.com/es/title/tt39316936/",
+			"country": "US",
+			"runtimeMinutes": 109,
+			"audienceRating": "+16",
+			"genres": [
+				"Comedia",
+				"Romance"
+			],
+			"rationale": "El vínculo de los editores lleva el relato. El humor surge de los desvíos del viaje. Las canciones acompañan la ambientación navideña y no construyen la trama.",
+			"runtimeDecision": "Se usaron 109 minutos del reproductor oficial en español para AR. IMDb, Rotten Tomatoes y Watchmode listan 107."
+		},
+		"score": {
+			"checkedOn": "2026-11-23",
+			"sourceUrl": "https://keithlovesmovies.com/2026/11/23/clashing-through-the-snow-review/",
+			"author": "Connor Carey",
+			"type": "Crítica individual",
+			"raw": 56,
+			"scale": 100,
+			"voteCount": null,
+			"conversion": "round(56 / 10) = 6",
+			"confidenceCeiling": 8,
+			"masterpieceReview": "No aplica a una conversión de 6.",
+			"final": 6,
+			"attempts": [
+				[
+					"https://www.rottentomatoes.com/m/clashing_through_the_snow",
+					"Sin porcentaje visible de audiencia ni crítica."
+				],
+				[
+					"https://www.imdb.com/title/tt39316936/ratings/",
+					"HTTP 403 en ratings. La ficha localizada e indexada no muestra un promedio."
+				],
+				[
+					"https://www.themoviedb.org/movie/1611767",
+					"API: vote_average 0 con vote_count 1. No se corroboró un 0 publicado como calificación de audiencia."
+				],
+				[
+					"https://letterboxd.com/film/clashing-through-the-snow/",
+					"La ficha indica que sus calificaciones todavía no están disponibles."
+				],
+				[
+					"https://www.filmweb.pl/film/Wszystko%2Bprzez%2Bten%2B%C5%9Bnieg-2026-10138865",
+					"Identidad confirmada; sin valor visible."
+				],
+				[
+					"https://www.metacritic.com/movie/clashing-through-the-snow/",
+					"Sin ficha indexada ni puntuación verificable."
+				],
+				[
+					"https://api.watchmode.com/v1/title/11104681/details/",
+					"API por IMDb/TMDb correctos devolvió valores null de audiencia y crítica."
+				]
+			]
+		},
+		"editorial": {
+			"sourceUrls": [
+				"https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T",
+				"https://www.cosmopolitan.com/entertainment/movies/a74379002/clashing-through-the-snow-first-look-photos-exclusive/",
+				"https://keithlovesmovies.com/2026/11/23/clashing-through-the-snow-review/"
+			],
+			"originalCopy": true
+		},
+		"trailer": {
+			"sourceUrl": "https://www.youtube.com/watch?v=nOyT9RkGRn4",
+			"youtubeId": "nOyT9RkGRn4",
+			"oEmbedStatus": 200,
+			"channel": "Prime Video",
+			"language": "en",
+			"localizedOfficialTrailer": "https://www.youtube.com/watch?v=P29EZ_xWlIQ"
+		},
+		"poster": {
+			"sourceUrl": "https://image.tmdb.org/t/p/original/1oljTBjhbuIzd6UDRAhVpvbxxnY.jpg",
+			"httpStatus": 200,
+			"contentType": "image/jpeg",
+			"sourceDimensions": [
+				2000,
+				3000
+			],
+			"identitySourceUrl": "https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T",
+			"visuallyVerified": true,
+			"decision": "Arte vertical con título argentino Rivales en la nieve y ambos protagonistas. Versión en español coincidente con el lanzamiento local.",
+			"localPath": "assets/posters/2026/rivales-en-la-nieve-2026.webp"
+		},
+		"characterRoles": [
+			{
+				"name": "Christopher Briney",
+				"tmdbPersonId": 3031442,
+				"role": "Ryan Mitchell",
+				"sourceUrl": "https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T",
+				"tmdbMovieId": 1611767
+			},
+			{
+				"name": "Michelle Randolph",
+				"tmdbPersonId": 1902690,
+				"role": "Hannah Hendricks",
+				"sourceUrl": "https://createprimevideo.amazon/ar_ar/showDetails/B0HKZBV21T",
+				"tmdbMovieId": 1611767
+			},
+			{
+				"name": "Lukas Gage",
+				"tmdbPersonId": 1371509,
+				"role": "Teddy",
+				"sourceUrl": "https://www.cosmopolitan.com/entertainment/movies/a74379002/clashing-through-the-snow-first-look-photos-exclusive/",
+				"tmdbMovieId": 1611767
+			},
+			{
+				"name": "Andrew Schulz",
+				"tmdbPersonId": 1880755,
+				"role": "Walter",
+				"sourceUrl": "https://www.moz.de/nachrichten/unterhaltung/filmtipp-fuer-prime-video-neue-romanze-mit-der-sommer-als-ich-schoen-wurde-star-79691329.html",
+				"tmdbMovieId": 1611767
+			},
+			{
+				"name": "Julia Fox",
+				"tmdbPersonId": 2371446,
+				"role": "Bianca Hart",
+				"sourceUrl": "https://www.themoviedb.org/movie/1611767/cast",
+				"tmdbMovieId": 1611767
+			},
+			{
+				"name": "Paris Hilton",
+				"tmdbPersonId": 38406,
+				"role": "Paris Hilton",
+				"sourceUrl": "https://nz.news.yahoo.com/paris-hilton-clashing-snow-christopher-233600462.html",
+				"tmdbMovieId": 1611767
+			},
+			{
+				"name": "P.J. Byrne",
+				"tmdbPersonId": 1211946,
+				"role": "Jeremy",
+				"sourceUrl": "https://www.moz.de/nachrichten/unterhaltung/filmtipp-fuer-prime-video-neue-romanze-mit-der-sommer-als-ich-schoen-wurde-star-79691329.html",
+				"tmdbMovieId": 1611767
+			}
+		],
+		"portraits": {
+			"newPeople": [
+				"Christopher Briney",
+				"Michelle Randolph",
+				"Andrew Schulz",
+				"Paris Hilton"
+			],
+			"updatedPerson": "Carlson Young",
+			"reason": "Su foto anterior era una toma general de un panel. El nuevo archivo es un retrato individual identificado en el perfil TMDb cotejado con IMDb y Prime.",
+			"optionalPersonFields": "Para las cuatro incorporaciones, la ficha registra identidad, crédito y retrato. Los datos biográficos opcionales quedan pendientes de una fuente explícita."
+		}
+	}
+}
