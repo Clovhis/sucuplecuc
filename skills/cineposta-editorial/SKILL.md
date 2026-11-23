@@ -1,6 +1,6 @@
 ---
 name: cineposta-editorial
-description: Crear y editar editoriales, notas, especiales y columnas de opinión de CinePosta a partir de las ideas del usuario, con voz rioplatense, imágenes narrativas verificadas e integración con home, sección editorial y fichas.
+description: Crear y editar editoriales, notas, especiales y columnas de opinión de CinePosta con voz rioplatense, imágenes verificadas, videos oficiales de YouTube incrustados e integración con home, sección editorial y fichas.
 ---
 
 # CinePosta Editorial
@@ -32,6 +32,8 @@ Guardá WebP locales en `public/assets/editorial/<slug>/`, con variantes de 640 
 Antes de editar revisá `AGENTS.md`, `src/lib/editorial.ts`, `src/components/Editorial*.astro`, `src/pages/editorial/`, home y ficha. Reutilizá layout, tokens y componentes. Publicaciones: `src/data/editorials/*.json`, separadas de reseñas y Score CinePosta.
 
 Cada JSON tiene `slug`, `title`, `excerpt`, `author`, `date` (YYYY-MM-DD), `type` (`editorial`, `nota`, `especial`, `opinión`), `tags`, `featured`, `cover`, `content` y opcionalmente `movieSlug` y `spoilers`. El loader deriva `readingTime` desde los párrafos. `content` es una secuencia de `{type: "paragraph", text}` y `{type: "image", src, alt, width, height, srcSmall?, caption?, source?}`. `cover` usa el mismo objeto de imagen sin `type`. Rutas de assets relativas a public, sin barra inicial. No HTML libre. Consultá el esquema vigente para detalles.
+
+Cuando un tráiler, clip o entrevista sea parte de la noticia, incrustá el video de YouTube en `content` con `{ "type": "youtube", "videoId": "ID_DEL_VIDEO", "title": "Título descriptivo del video" }`. Verificá el canal oficial del estudio, distribuidor, festival o responsable de la publicación, la identidad del material y que YouTube permita incrustarlo. Si hay una versión oficial para Argentina o Latinoamérica que corresponde al mismo adelanto, priorizala. Ubicá el reproductor cerca del texto que lo presenta y agregá el enlace directo `https://www.youtube.com/watch?v=ID_DEL_VIDEO` a `sources` como respaldo. Si la fuente bloquea la incrustación, conservá el enlace oficial. Comprobá el reproductor en escritorio y a 320 px.
 
 Comprobá `movieSlug` contra el catálogo real: el loader y los componentes vinculan automáticamente editorial → ficha y ficha → editorial. `/editorial/` mezcla los cuatro tipos y muestra todas las publicaciones de la más reciente a la más antigua, con desempate por slug. “Desde CinePosta” muestra hasta seis publicaciones, prioriza destacados y luego recientes, y enlaza al archivo con “Todas las publicaciones”; no copies datos manualmente entre estas superficies. Título con gancho, bajada específica, tags útiles y fecha real de trabajo. No toques reseñas, score, metadata, categorías ni disponibilidad por escribir una opinión.
 

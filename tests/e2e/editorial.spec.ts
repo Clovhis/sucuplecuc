@@ -37,6 +37,24 @@ const homePublications = [...publications]
   .slice(0, 6);
 const homePublicationSlugs = new Set(homePublications.map(entry => entry.slug));
 
+test('the Doomsday note embeds the official Marvel trailer at 320 px', async ({ page }, testInfo) => {
+  const embed = 'https://www.youtube.com/embed/Wb8Tq_HD4E8';
+  await page.route(embed, route => route.fulfill({ body: '<html><body>Marvel trailer</body></html>', contentType: 'text/html' }));
+  await page.goto('/editorial/avengers-doomsday-trailer-final/');
+  const player = page.locator('article iframe');
+  await expect(player).toHaveAttribute('title', 'Tráiler final de Avengers: Doomsday · Marvel Entertainment');
+  await expect(player).toHaveAttribute('src', embed);
+  await expect(player.contentFrame().getByText('Marvel trailer')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Ver el tráiler final en el canal oficial de Marvel' })).toHaveAttribute('href', 'https://www.youtube.com/watch?v=Wb8Tq_HD4E8');
+  await player.screenshot({ ...screenshotOptions, path: testInfo.outputPath('avengers-player.png') });
+  await page.setViewportSize({ width: 320, height: 760 });
+  const box = await player.boundingBox();
+  expect(box!.x + box!.width).toBeLessThanOrEqual(320);
+  expect(box!.width / box!.height).toBeCloseTo(16 / 9, 1);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.locator('article').screenshot({ ...screenshotOptions, path: testInfo.outputPath('avengers-320.png') });
+});
+
 async function openEditorialIndex(page: Page): Promise<void> {
   const link = page.getByRole('region', { name: 'Desde CinePosta' }).getByRole('link', { name: 'Todas las publicaciones' });
   await link.scrollIntoViewIfNeeded();

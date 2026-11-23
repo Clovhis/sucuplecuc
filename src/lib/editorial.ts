@@ -24,6 +24,11 @@ const bioLinkSchema = z.object({
   label: z.string().trim().min(1),
 });
 const movieLinkSchema = bioLinkSchema.extend({ type: z.literal('movieLink') });
+const youtubeSchema = z.object({
+  type: z.literal('youtube'),
+  videoId: z.string().regex(/^[A-Za-z0-9_-]{11}$/),
+  title: z.string().trim().min(1),
+});
 const schema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   title: z.string().trim().min(1),
@@ -48,6 +53,7 @@ const schema = z.object({
     headingSchema,
     bioLinkSchema,
     movieLinkSchema,
+    youtubeSchema,
     imageSchema.extend({ type: z.literal('image') }),
   ])).min(1).refine((blocks) => blocks.some((block) => block.type === 'paragraph'), 'Falta texto'),
 });
