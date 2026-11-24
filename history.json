@@ -2850,7 +2850,7 @@
       "format": "ranking",
       "theme": "ranking:genre:Documental",
       "palette": 3,
-      "state": "scheduled",
+      "state": "sent",
       "attemptId": "45095833465:1",
       "dueAt": "2026-11-23T22:15:00.000Z",
       "channelId": "6af6465a62b70b94b0105899",
@@ -3438,8 +3438,102 @@
         "https://raw.githubusercontent.com/Clovhis/sucuplecuc/a874f861fa657b60209b67ee041700407bec8e2e/media/2026-11-23-frida-2024-ranking-photo-6.jpg"
       ],
       "bufferPostId": "6b0399b2d864a011050fab66",
-      "externalLink": null,
+      "externalLink": "https://www.instagram.com/p/DgGbkQdkbKB/",
       "scheduledAt": "2026-11-23T01:41:04.570Z"
+    },
+    {
+      "date": "2026-11-25",
+      "slug": "together-juntos-hasta-la-muerte-2025",
+      "slugs": [
+        "together-juntos-hasta-la-muerte-2025"
+      ],
+      "category": "Terror",
+      "format": "score",
+      "theme": "score",
+      "palette": 0,
+      "state": "reserved",
+      "attemptId": "45332358989:1",
+      "dueAt": "2026-11-25T22:15:00.000Z",
+      "channelId": "6af6465a62b70b94b0105899",
+      "media": [
+        {
+          "mediaPath": "media/2026-11-25-together-juntos-hasta-la-muerte-2025-score-photo-1.jpg",
+          "sha256": "814fc5c41a0dca5f945ab567efaab06c7ced8cebda4e33894bef2dd97c765187",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Together: Juntos Hasta La Muerte (2025). 8 · Excelente. Selección Sundance 2025.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "sundance-2025-together-juntos-hasta-la-muerte-2025-214607a670"
+            ],
+            "assets": [
+              {
+                "id": "sundance-2025-together-juntos-hasta-la-muerte-2025-214607a670",
+                "kind": "still",
+                "path": "assets/social/photos/sundance-2025-together-juntos-hasta-la-muerte-2025-214607a670.webp",
+                "slugs": [
+                  "together-juntos-hasta-la-muerte-2025"
+                ],
+                "title": "Together: Juntos Hasta La Muerte · still 1",
+                "width": 1920,
+                "credit": "Courtesy of Sundance Institute",
+                "height": 1080,
+                "sha256": "b5bdc10ac75e9b3c38c9538b3b8527f5b0a4daa38788260f41869edff677b58b",
+                "status": "approved",
+                "changes": "Reducción y conversión técnica a WebP sRGB. Imagen completa, sin recorte, filtros ni textos superpuestos.",
+                "grantId": "sundance-official-press",
+                "license": "Permiso editorial de prensa Sundance",
+                "subject": "Together: Juntos Hasta La Muerte",
+                "sourceUrl": "https://www.sundance.org/about/press/",
+                "licenseUrl": "https://www.sundance.org/about/press/",
+                "packageUrl": "https://www.dropbox.com/scl/fo/2rglki4i1b5csv4ysdzo4/AIZPBDyjhn0bTNGl-dEHloA/1.%20Feature%20Films%3A%20Stills%2C%20Headshots%2C%20and%20additional%20assets?rlkey=tbs09ubadissbxftry9t3idjx&dl=0",
+                "permission": {
+                  "crop": false,
+                  "basis": "press-permission",
+                  "overlay": false,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "grantSummary": "Cobertura editorial orgánica de las películas de la selección oficial de Sundance. La foto se reproduce completa y sin superposición. No publicidad paga, merchandising ni reutilización de una figura fuera de la película/programa indicado. Sin límite territorial o vencimiento expreso en estos paquetes; publicación editorial AR.",
+                  "rightsHolder": "Sundance Institute y titulares acreditados en cada paquete",
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "evidenceUrl": "https://www.dropbox.com/scl/fo/2rglki4i1b5csv4ysdzo4/AIZPBDyjhn0bTNGl-dEHloA/1.%20Feature%20Films%3A%20Stills%2C%20Headshots%2C%20and%20additional%20assets?rlkey=tbs09ubadissbxftry9t3idjx&dl=0",
+                "originalUrl": "https://www.dropbox.com/scl/fo/2rglki4i1b5csv4ysdzo4/AIZPBDyjhn0bTNGl-dEHloA/1.%20Feature%20Films%3A%20Stills%2C%20Headshots%2C%20and%20additional%20assets?rlkey=tbs09ubadissbxftry9t3idjx&dl=0",
+                "archiveEntry": "Together (Midnight)/Together-Still1.jpeg",
+                "evidencePath": "assets/social/press-packages/sundance-2025-together-juntos-hasta-la-muerte-2025.json",
+                "reviewRegion": "international",
+                "evidenceSha256": "3e84034832214d95de6b11dd29af695cc01e914cd22ea815f9dcca02317db851",
+                "originalSha256": "3e752b894f7eee1c3921723c18f20ee7510e40f7d99b9bef419c9f95a8531c0e",
+                "suppliedCaption": "FILM STILL 1 Alison Brie and Dave Franco appear in Together by Michael Shanks, an official selection of the 2025 Sundance Film Festival. Courtesy of Sundance Institute. ",
+                "editorialContext": {
+                  "year": 2025,
+                  "festival": "Sundance"
+                },
+                "grantEvidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865",
+                "sourceGrant": {
+                  "id": "sundance-official-press",
+                  "issuer": "Sundance Institute",
+                  "evidenceSha256": "311389fc01247cf53982d6fb74fc4d138d7b4f37ac6d9355f5084cd6ad4d6865"
+                },
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/movies/together-juntos-hasta-la-muerte-2025/b5bdc10ac75e9b3c38c9538b3b8527f5b0a4daa38788260f41869edff677b58b.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": null,
+            "adaptationLicenseScope": null,
+            "changes": "Imágenes completas, reducción técnica y composición editorial fuera de la fotografía."
+          }
+        }
+      ],
+      "text": "De Sundance a CinePosta: Together: Juntos Hasta La Muerte.\n\nTogether: Juntos Hasta La Muerte (2025) · 8 · Excelente · Selección Sundance 2025\nTogether: Juntos Hasta La Muerte encuentra body horror en una pareja que no sabe separarse; Michael Shanks deja que Dave Franco y Alison Brie discutan con el propio cuerpo.\n\n¿Qué te dejó esta película? Reseña completa en el enlace del perfil.\n\nhttps://www.cineposta.com.ar/peliculas/together-juntos-hasta-la-muerte-2025/\n\nFotografías y material cinematográfico:\nTogether: Juntos Hasta La Muerte: Courtesy of Sundance Institute · «Together: Juntos Hasta La Muerte · still 1». https://www.sundance.org/about/press/\nPermiso editorial de prensa Sundance: https://www.sundance.org/about/press/\nComposición: CinePosta. Fotos bajo sus licencias y permisos indicados.\n\n#CinePosta #QueVer #Cine",
+      "createdAt": "2026-11-24T05:19:18.446Z"
     }
   ]
 }
