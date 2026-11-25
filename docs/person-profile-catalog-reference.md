@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-22. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-25. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4742
+Total de vínculos de películas del catálogo: 4744
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -104,7 +104,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Bong Joon-ho | `bong-joon-ho` | /personas/bong-joon-ho/ | Director | 3 | 6 |
 | Brad Bird | `brad-bird` | /personas/brad-bird/ | Director | 5 | 5 |
 | Brad Dourif | `brad-dourif` | /personas/brad-dourif/ | Actor | 8 | 7 |
-| Brad Pitt | `brad-pitt` | /personas/brad-pitt/ | Actor / Productor | 20 | 6 |
+| Brad Pitt | `brad-pitt` | /personas/brad-pitt/ | Actor / Productor | 21 | 6 |
 | Bradley Cooper | `bradley-cooper` | /personas/bradley-cooper/ | Actor | 9 | 7 |
 | Brady Corbet | `brady-corbet` | /personas/brady-corbet/ | Director | 1 | 7 |
 | Brendan Fraser | `brendan-fraser` | /personas/brendan-fraser/ | Actor | 6 | 7 |
@@ -213,7 +213,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | David Arquette | `david-arquette` | /personas/david-arquette/ | Actor | 3 | 6 |
 | David Ayer | `david-ayer` | /personas/david-ayer/ | Director / Guionista / Productor | 5 | 6 |
 | David Cronenberg | `david-cronenberg` | /personas/david-cronenberg/ | Director / Guionista | 9 | 5 |
-| David Fincher | `david-fincher` | /personas/david-fincher/ | Director | 10 | 6 |
+| David Fincher | `david-fincher` | /personas/david-fincher/ | Director | 11 | 6 |
 | David Lynch | `david-lynch` | /personas/david-lynch/ | Director / Guionista / Productor | 6 | 5 |
 | David Yates | `david-yates` | /personas/david-yates/ | Director / Productor | 7 | 4 |
 | Debra Winger | `debra-winger` | /personas/debra-winger/ | Actriz | 5 | 6 |

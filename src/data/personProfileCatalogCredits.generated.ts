@@ -696,6 +696,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "brad-pitt": [
     "el-corazon-de-la-bestia-2026",
+    "las-nuevas-desventuras-de-cliff-booth-2026",
     "f1-the-movie-2025",
     "wolfs-2024",
     "once-upon-a-time-in-hollywood-2019",
@@ -1499,6 +1500,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-brood-1979"
   ],
   "david-fincher": [
+    "las-nuevas-desventuras-de-cliff-booth-2026",
     "the-killer-2023",
     "mank-2020",
     "la-chica-del-dragon-tatuado-2011",

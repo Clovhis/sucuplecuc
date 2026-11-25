@@ -1,0 +1,520 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "las-nuevas-desventuras-de-cliff-booth-2026",
+	"title": "Las nuevas desventuras de Cliff Booth",
+	"year": 2026,
+	"reviewedOn": "2026-11-25",
+	"createdOn": "2026-11-25",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1457866/cast",
+			"kind": "Reparto completo consultado por API. Película 1457866, IMDb tt36408401 y cruce de perfiles de persona.",
+			"checkedOn": "2026-11-25",
+			"fullCredits": true,
+			"relevantCreditCount": 20
+		},
+		{
+			"url": "https://www.imdb.com/title/tt36408401/fullcredits/?_ssoLoop=1",
+			"kind": "IMDb Full cast & crew, acceso indexado con el ID confirmado por TMDb y Letterboxd. La URL sin parámetros devolvió 403.",
+			"checkedOn": "2026-11-25"
+		},
+		{
+			"url": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+			"kind": "Netflix identifica a Fincher y a los personajes que sostienen el caso de Charlie Peters.",
+			"checkedOn": "2026-11-25"
+		},
+		{
+			"url": "https://www.netflix.com/ar/title/82054606",
+			"kind": "Ficha oficial argentina con reparto destacado y ampliado.",
+			"checkedOn": "2026-11-25"
+		},
+		{
+			"url": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/",
+			"kind": "Reparto ampliado y ficha que enlaza a los IDs de IMDb y TMDb.",
+			"checkedOn": "2026-11-25"
+		}
+	],
+	"credits": [
+		{
+			"name": "David Fincher",
+			"role": "director",
+			"prominence": "lead",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"screenRole": "Dirección",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/7467",
+					"fact": "ID de persona en el crédito de TMDb de la película 1457866."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000399/",
+					"fact": "Perfil IMDb coincidente con TMDb y la filmografía de la persona."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+					"fact": "Identifica a David Fincher como director."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/TheKillerBFILFF051023%20(8%20of%2022)%20(53255176376)%20(cropped2).jpg?width=640",
+				"localPath": "/people/david-fincher-nm0000399.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Brad Pitt",
+			"role": "performer",
+			"prominence": "lead",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"screenRole": "Cliff Booth",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/287",
+					"fact": "ID de persona en el crédito de TMDb de la película 1457866."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000093/",
+					"fact": "Perfil IMDb coincidente con TMDb y la filmografía de la persona."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+					"fact": "Identifica al intérprete en el reparto de esta película."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brad%20Pitt%202019%20by%20Glenn%20Francis.jpg?width=1200",
+				"localPath": "/people/brad-pitt-nm0000093.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Elizabeth Debicki",
+			"role": "performer",
+			"prominence": "co-lead",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"screenRole": "Karen Crosby",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1133349",
+					"fact": "ID de persona en el crédito de TMDb de la película 1457866."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4456120/",
+					"fact": "Perfil IMDb coincidente con TMDb y la filmografía de la persona."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+					"fact": "Identifica al intérprete en el reparto de esta película."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Elizabeth%20Debicki%20by%20Gage%20Skidmore.jpg?width=640",
+				"localPath": "/people/elizabeth-debicki-nm4456120.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Scott Caan",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"screenRole": "Charlie Peters",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1894",
+					"fact": "ID de persona en el crédito de TMDb de la película 1457866."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0004790/",
+					"fact": "Perfil IMDb coincidente con TMDb y la filmografía de la persona."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+					"fact": "Identifica al intérprete en el reparto de esta película."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hX5X4K7BfzOOGcxiNQ24EpPZrfC.jpg",
+				"localPath": "/people/scott-caan-nm0004790.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Yahya Abdul-Mateen II",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"screenRole": "Roderick 'Hot Rod' Harrison",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1639847",
+					"fact": "ID de persona en el crédito de TMDb de la película 1457866."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5584344/",
+					"fact": "Perfil IMDb coincidente con TMDb y la filmografía de la persona."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+					"fact": "Identifica al intérprete en el reparto de esta película."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yahya%20Abdul-Mateen%20II.jpg?width=1200",
+				"localPath": "/people/yahya-abdul-mateen-ii-nm5584344.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Carla Gugino",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"screenRole": "Toni Peters",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17832",
+					"fact": "ID de persona en el crédito de TMDb de la película 1457866."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001303/",
+					"fact": "Perfil IMDb coincidente con TMDb y la filmografía de la persona."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+					"fact": "Identifica al intérprete en el reparto de esta película."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carla%20Gugino%20(54515825760).jpg?width=640",
+				"localPath": "/people/carla-gugino-nm0001303.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Peter Weller",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"screenRole": "Gus Booth",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/27811",
+					"fact": "ID de persona en el crédito de TMDb de la película 1457866."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000693/",
+					"fact": "Perfil IMDb coincidente con TMDb y la filmografía de la persona."
+				},
+				{
+					"url": "https://www.imdb.com/title/tt36408401/fullcredits/?_ssoLoop=1",
+					"fact": "Identifica al intérprete en el reparto de esta película."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Weller%202016.jpg?width=640",
+				"localPath": "/people/peter-weller-nm0000693.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Matt Groove",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"screenRole": "Eddie Verdusco",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4946987",
+					"fact": "ID de persona en el crédito de TMDb de la película 1457866."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm10629293/",
+					"fact": "Perfil IMDb coincidente con TMDb y la filmografía de la persona."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+					"fact": "Identifica al intérprete en el reparto de esta película."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mi5j53C24Pfc338xwzZnzfQ6MQF.jpg",
+				"localPath": "/people/matt-groove-nm10629293.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "JB Tadena",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"screenRole": "Fernando Verdusco",
+			"decision": "include",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1437828",
+					"fact": "ID de persona en el crédito de TMDb de la película 1457866."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2042603/",
+					"fact": "Perfil IMDb coincidente con TMDb y la filmografía de la persona."
+				},
+				{
+					"url": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+					"fact": "Identifica al intérprete en el reparto de esta película."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lAVmnngcImft4VXYevsgpSqwtQm.jpg",
+				"localPath": "/people/jb-tadena-nm2042603.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Corey Fogelmanis",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Netflix lo incluye en el reparto ampliado. Sin personaje identificado en Netflix, TMDb e IMDb consultado, ni evidencia de peso equiparable al reparto principal.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Karren Karagulian",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Netflix lo incluye en el reparto ampliado. Sin personaje identificado ni peso comparable documentado en Netflix, IMDb o TMDb.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Holt McCallany",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Crédito de elenco ampliado en IMDb y TMDb, sin personaje identificado ni foco en el material principal de Netflix.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Timothy Olyphant",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Reaparición de James Stacy en el reparto ampliado. El material principal de Netflix centra el caso de Charlie Peters y los Verdusco.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Barry Livingston",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Crédito secundario del reparto ampliado en TMDb. Sin personaje identificado ni peso acreditado en el material principal de Netflix.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Lauren Glazier",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Crédito secundario del reparto ampliado en TMDb. Sin personaje identificado ni peso acreditado en el material principal de Netflix.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Emily Alyn Lind",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "IMDb la acredita como Actress. El papel incidental no justifica sumarlo al elenco principal.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Jim Cummings",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Crédito del reparto ampliado en TMDb sin personaje identificado ni peso acreditado en el material de Netflix.",
+			"omissionCategory": "lesser-role"
+		},
+		{
+			"name": "Quentin Tarantino",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Guionista y voz narradora según TMDb. El registro de elenco principal prioriza los papeles en pantalla que sostienen la trama.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Margot Robbie",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Reaparición de Sharon Tate en créditos ampliados de TMDb. El material promocional principal no la presenta como parte de la trama central.",
+			"omissionCategory": "incidental"
+		},
+		{
+			"name": "Hannah Christine Shetler",
+			"role": "performer",
+			"prominence": "supporting",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1457866/cast",
+			"decision": "omit",
+			"omissionReason": "Acreditada como Janet en IMDb y TMDb. Papel secundario fuera del grupo usado por Netflix para presentar la trama.",
+			"omissionCategory": "lesser-role"
+		}
+	],
+	"evidence": {
+		"date": "2026-11-25",
+		"identity": {
+			"tmdbMovieId": 1457866,
+			"imdbId": "tt36408401",
+			"titleSource": "https://www.netflix.com/ar/title/82054606",
+			"year": 2026
+		},
+		"release": {
+			"platform": "Cine",
+			"country": "AR",
+			"chain": "Showcase Cinemas",
+			"venue": "Showcase IMAX Theatre (Norcenter)",
+			"locality": "Munro, Vicente López, Provincia de Buenos Aires",
+			"showtime": "2026-11-25 19:35 ART, IMAX subtitulada",
+			"officialUrl": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6323",
+			"scheduleUrl": "https://cineya.lat/ar/pelicula/las-nuevas-desventuras-de-cliff-booth/",
+			"offerUrl": "https://www.justwatch.com/ar/pelicula/the-adventures-of-cliff-booth",
+			"futureStreaming": "Netflix Argentina anunciado para 2026-12-23, sin oferta de streaming activa durante la consulta."
+		},
+		"metadata": {
+			"source": "https://www.themoviedb.org/movie/1457866",
+			"fact": "País US, 141 minutos, productoras Netflix y Plan B Entertainment. Estreno IMAX argentino el 25/11 y clasificación +16, cotejada con la ficha de Netflix AR."
+		},
+		"classification": {
+			"source": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot",
+			"fact": "Thriller criminal de ficción en acción real, con drama de personajes y comedia negra. La intriga que deriva del encargo y el cruce con los Verdusco sostiene el carril Thriller. Música y guerra no vertebran el relato."
+		},
+		"score": {
+			"source": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/",
+			"type": "Audiencia, promedio ponderado",
+			"raw": 3.19,
+			"scale": 5,
+			"ratings": 1616,
+			"result": 6,
+			"calculation": "round(3.19 × 2) = 6. El filtro de obra maestra no cambia el resultado.",
+			"checkedOn": "2026-11-25",
+			"otherSources": [
+				{
+					"url": "https://www.rottentomatoes.com/m/the_further_mis-adventures_of_cliff_booth",
+					"fact": "Sin Popcornmeter numérico, 0 valoraciones verificadas. El Tomatometer es de crítica."
+				},
+				{
+					"url": "https://www.imdb.com/es-es/title/tt36408401/ratings/",
+					"fact": "403 al abrir ratings; las búsquedas por el ID correcto no verificaron un promedio."
+				},
+				{
+					"url": "https://www.themoviedb.org/movie/1457866",
+					"fact": "API con 0 votos y 0 de promedio, sin valoración de audiencia registrada."
+				},
+				{
+					"url": "https://www.filmweb.pl/film/Dalsze+perypetie+Cliffa+Bootha-2026-10081911",
+					"fact": "8,0 de una valoración. Se priorizó la muestra verificable y más amplia de Letterboxd."
+				},
+				{
+					"url": "https://www.metacritic.com/movie/the-further-mis-adventures-of-cliff-booth/",
+					"fact": "Acceso directo no disponible. La búsqueda no verificó un User Score numérico."
+				}
+			]
+		},
+		"poster": {
+			"source": "https://image.tmdb.org/t/p/original/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+			"identity": "https://www.themoviedb.org/movie/1457866",
+			"verification": "HTTP 200 image/jpeg, 2000 × 3000. Arte vertical con Pitt y título de esta producción. La variante en español de TMDb mide 686 × 1024 y no supera el mínimo de ancho. Se eligió el arte de estreno en inglés.",
+			"local": "assets/posters/2026/las-nuevas-desventuras-de-cliff-booth-2026.webp"
+		},
+		"trailer": {
+			"url": "https://www.youtube.com/watch?v=RjZ5olAzdhY",
+			"verified": "Netflix Latinoamérica, tráiler oficial 2. oEmbed y recurso embed HTTP 200."
+		},
+		"editorial": {
+			"reference": "https://www.latimes.com/entertainment-arts/movies/story/2026-11-24/further-mis-adventures-cliff-booth-review-brad-pitt-elizabeth-debicki-david-fincher-quentin-tarantino",
+			"fact": "Premisa y recepción cotejadas con Netflix y con una crítica firmada. Sinopsis, reseña y lectura rápida de redacción original."
+		},
+		"portraits": {
+			"added": [
+				"Scott Caan",
+				"Matt Groove",
+				"JB Tadena"
+			],
+			"updated": "Elizabeth Debicki, misma foto de Gage Skidmore en mayor resolución; la copia anterior era de 120 × 160.",
+			"optionalGaps": "Matt Groove y JB Tadena quedan sin datos biográficos opcionales que no se pudieron corroborar con precisión."
+		},
+		"characters": {
+			"count": 8,
+			"verification": "API de TMDb por IDs exactos el 25/11. Se conservó Mr. Verdusco como character en cada entrada. Tudum permite distinguir a Eddie y Fernando con displayCharacter.",
+			"source": "https://www.netflix.com/tudum/articles/the-further-mis-adventures-of-cliff-booth-photos-plot"
+		}
+	},
+	"coverageReview": {
+		"rationale": "Se mantuvo el grupo que arma, complica y sostiene el encargo de Charlie Peters, además de Gus Booth por su vínculo con Cliff. Los créditos ampliados restantes se cotejaron frente a la promoción de Netflix y el billing de TMDb e IMDb.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Corey Fogelmanis",
+				"role": "performer"
+			},
+			{
+				"name": "Karren Karagulian",
+				"role": "performer"
+			},
+			{
+				"name": "Holt McCallany",
+				"role": "performer"
+			},
+			{
+				"name": "Timothy Olyphant",
+				"role": "performer"
+			},
+			{
+				"name": "Barry Livingston",
+				"role": "performer"
+			},
+			{
+				"name": "Lauren Glazier",
+				"role": "performer"
+			},
+			{
+				"name": "Emily Alyn Lind",
+				"role": "performer"
+			},
+			{
+				"name": "Jim Cummings",
+				"role": "performer"
+			},
+			{
+				"name": "Quentin Tarantino",
+				"role": "performer"
+			},
+			{
+				"name": "Margot Robbie",
+				"role": "performer"
+			},
+			{
+				"name": "Hannah Christine Shetler",
+				"role": "performer"
+			}
+		]
+	}
+}

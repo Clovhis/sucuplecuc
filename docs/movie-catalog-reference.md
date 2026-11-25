@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-11-23. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-11-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2683
+Total de peliculas: 2684
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -210,6 +210,7 @@ Total de peliculas: 2683
 | 2026 | Las cartas de la vida | las-cartas-de-la-vida-2026 | Drama | Netflix | +16 |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
 | 2026 | Las disculpas de Vicentina | las-disculpas-de-vicentina-2026 | Drama | Netflix | +16 |
+| 2026 | Las nuevas desventuras de Cliff Booth | las-nuevas-desventuras-de-cliff-booth-2026 | Thriller | Cine | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
 | 2026 | Las redes sociales mataron a la estrella de cine | las-redes-sociales-mataron-a-la-estrella-de-cine-2026 | Documental | Prime Video | +13 |
 | 2026 | LEGO Friends: Heartlake el musical | lego-friends-heartlake-el-musical-2026 | Musical | Netflix | ATP |
