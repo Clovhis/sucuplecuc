@@ -3541,6 +3541,86 @@
       "bufferPostId": "6b051e5cdb52b449cf29e910",
       "externalLink": null,
       "scheduledAt": "2026-11-24T05:19:23.916Z"
+    },
+    {
+      "date": "2026-11-26",
+      "slug": "los-amigos-de-peter-1992",
+      "slugs": [
+        "los-amigos-de-peter-1992"
+      ],
+      "category": "Drama",
+      "format": "protagonist",
+      "theme": "spotlight",
+      "palette": 1,
+      "state": "reserved",
+      "attemptId": "45544809717:1",
+      "dueAt": "2026-11-26T22:15:00.000Z",
+      "channelId": "6af6465a62b70b94b0105899",
+      "media": [
+        {
+          "mediaPath": "media/2026-11-26-los-amigos-de-peter-1992-protagonist-photo-1.jpg",
+          "sha256": "a60292ab44b61b4f3cf8d7de1b70c718243ce5aac623b3d15afaee980c8f3fea",
+          "width": 1080,
+          "height": 1350,
+          "alt": "Los amigos de Peter (1992). 7 · Muy buena. Emma Thompson · archivo.",
+          "rights": {
+            "type": "licensed-photography",
+            "assetIds": [
+              "commons-173359230"
+            ],
+            "assets": [
+              {
+                "id": "commons-173359230",
+                "kind": "portrait",
+                "path": "assets/social/photos/commons-173359230.webp",
+                "slugs": [],
+                "title": "Emma Thompson at the 78th Locarno Film Festival photocall 01.jpg",
+                "width": 1372,
+                "credit": "Kalai Ramu",
+                "height": 1920,
+                "person": "Emma Thompson",
+                "sha256": "830abb6b4b07dfd9bbd073ad290df7301066619778a28a0b0ad235fb5675c8a1",
+                "status": "approved",
+                "changes": "Conversión WebP calidad 84; máximo 1920 px. Uso editorial relacionado con la persona, sin aval comercial.",
+                "license": "CC BY-SA 4.0",
+                "subject": "Emma Thompson",
+                "photoDate": "8.8.25",
+                "sourceUrl": "https://commons.wikimedia.org/?curid=173359230",
+                "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                "permission": {
+                  "crop": true,
+                  "basis": "open-license",
+                  "overlay": true,
+                  "expiresAt": null,
+                  "territories": [
+                    "worldwide"
+                  ],
+                  "publicHosting": true,
+                  "organicInstagram": true
+                },
+                "verifiedAt": "2026-11-15",
+                "description": "Actress Emma Thompson at the 78th Locarno Film Festival photocall for Dead of Winter",
+                "evidenceUrl": "https://commons.wikimedia.org/?curid=173359230",
+                "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Emma_Thompson_at_the_78th_Locarno_Film_Festival_photocall_01.jpg",
+                "evidencePath": "assets/social/rights-evidence/commons-173359230.json",
+                "restrictions": "personality",
+                "reviewRegion": "international",
+                "evidenceSha256": "c2c2ba15ef760561cce4fd02f4e4253b75f8f3210a9015ce637685405444b6ea",
+                "originalSha256": "3d6caee5a541b8d9c9c2afd31627ec37f9053a256af6266e9e5b6c32d8cbd299",
+                "storage": {
+                  "url": "https://bftcrexcwktyiqsermni.supabase.co/storage/v1/object/authenticated/cineposta-social/people/emma-thompson/830abb6b4b07dfd9bbd073ad290df7301066619778a28a0b0ad235fb5675c8a1.webp",
+                  "key": "sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM"
+                }
+              }
+            ],
+            "adaptationLicense": "CC BY-SA 4.0",
+            "adaptationLicenseScope": "Únicamente las fotografías CC BY-SA adaptadas; excluye material de prensa.",
+            "changes": "Recorte permitido, redimensionado y composición editorial."
+          }
+        }
+      ],
+      "text": "Los amigos de Peter: la mirada de CinePosta.\n\nLos amigos de Peter (1992) · 7 · Muy buena\nLos amigos de Peter convierte el reencuentro en cuenta pendiente: Kenneth Branagh deja que Emma Thompson y Stephen Fry rían mientras la nostalgia cobra intereses.\n\n¿Qué te dejó esta película? Reseña completa en el enlace del perfil.\n\nhttps://www.cineposta.com.ar/peliculas/los-amigos-de-peter-1992/\n\nFotografías y material cinematográfico:\nEmma Thompson: Kalai Ramu · «Emma Thompson at the 78th Locarno Film Festival photocall 01.jpg». https://commons.wikimedia.org/?curid=173359230\nCC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0\nComposición: CinePosta. Fotos CC BY-SA adaptadas: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. El material de prensa conserva sus condiciones.\n\n#CinePosta #QueVer #Cine",
+      "createdAt": "2026-11-25T04:10:24.273Z"
     }
   ]
 }
