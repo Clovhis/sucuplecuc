@@ -1330,6 +1330,28 @@
 					"Apple TV"
 				]
 			}
+		},
+		{
+			"slug": "vibe-2026",
+			"bufferPostId": "6b07aa3307071a60674feae0",
+			"dueAt": "2026-11-26T22:00:00.000Z",
+			"scheduledAt": "2026-11-26T03:40:35.913Z",
+			"copyStyle": {
+				"opening": 1275598502,
+				"availability": 1443776249,
+				"editorial": 3758641411,
+				"verdict": 2630220983,
+				"link": 1532641862
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/vibe",
+				"checkedAt": "2026-11-26T03:40:35.487Z",
+				"kind": "subscription",
+				"platforms": [
+					"Prime Video"
+				]
+			}
 		}
 	]
 }
