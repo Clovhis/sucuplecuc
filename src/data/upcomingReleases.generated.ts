@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-26T12:42:13.122Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-26T13:36:56.552Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Avengers: Doomsday",
