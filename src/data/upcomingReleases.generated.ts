@@ -8,32 +8,8 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-24T14:37:55.925Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-26T12:42:13.122Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"title": "Hechizo: Bienvenidos a Hexe",
-		"releaseDate": "2026-11-26",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10211-hechizo-bienvenidos-a-hexe/",
-		"slug": "cines-argentinos-10211",
-		"videoUrl": "https://www.youtube.com/watch?v=9NpBMpYzZaw",
-		"thumbnailUrl": "https://i.ytimg.com/vi/9NpBMpYzZaw/hqdefault.jpg"
-	},
-	{
-		"title": "La nueva Focker",
-		"releaseDate": "2026-11-26",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10652-la-nueva-focker/",
-		"slug": "cines-argentinos-10652",
-		"videoUrl": "https://www.youtube.com/watch?v=O-EGxOo3hUw",
-		"thumbnailUrl": "https://i.ytimg.com/vi/O-EGxOo3hUw/hqdefault.jpg"
-	},
-	{
-		"title": "Bichos del mar",
-		"releaseDate": "2026-11-26",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10646-bichos-del-mar/",
-		"slug": "cines-argentinos-10646",
-		"videoUrl": "https://www.youtube.com/watch?v=87zwuaPwk88",
-		"thumbnailUrl": "https://i.ytimg.com/vi/87zwuaPwk88/hqdefault.jpg"
-	},
 	{
 		"title": "Avengers: Doomsday",
 		"releaseDate": "2026-12-17",
@@ -51,6 +27,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"thumbnailUrl": "https://i.ytimg.com/vi/FHNCmFQSjkI/hqdefault.jpg"
 	},
 	{
+		"title": "Remain",
+		"releaseDate": "2027-02-04",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10601-remain/",
+		"slug": "cines-argentinos-10601",
+		"videoUrl": "https://www.youtube.com/watch?v=h969bLwxgKc",
+		"thumbnailUrl": "https://i.ytimg.com/vi/h969bLwxgKc/hqdefault.jpg"
+	},
+	{
 		"title": "La Era de Hielo: Mundo de lava",
 		"releaseDate": "2027-02-04",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10208-la-era-de-hielo-mundo-de-lava/",
@@ -65,5 +49,13 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10206",
 		"videoUrl": "https://www.youtube.com/watch?v=eqz9Cl83i3E",
 		"thumbnailUrl": "https://i.ytimg.com/vi/eqz9Cl83i3E/hqdefault.jpg"
+	},
+	{
+		"title": "Godzilla x Kong: Supernova",
+		"releaseDate": "2027-03-25",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10603-godzilla-x-kong-supernova/",
+		"slug": "cines-argentinos-10603",
+		"videoUrl": "https://www.youtube.com/watch?v=pa3nW0EYYcQ",
+		"thumbnailUrl": "https://i.ytimg.com/vi/pa3nW0EYYcQ/hqdefault.jpg"
 	}
 ];
