@@ -34,8 +34,17 @@ assert.equal(cards[0].title, 'Original');
 assert.equal(cards[0].verdictLabel, '8 · Excelente');
 assert.equal(cards[0].platform, 'Netflix', 'A content edit must not mutate the published card');
 
-const html = '<div class="subTitulo">Jueves 15 de Octubre de 2026</div><div class="estrenoDelDia"><h2 class="lblTitulo"><a href="/pelicula/123-exact-film/">Título &amp; otro</a></h2><div class="paginacion">';
-assert.deepEqual(extractArgentinaReleases(html), [{ title: 'Título & otro', releaseDate: '2026-10-15', sourceUrl: 'https://www.cinesargentinos.com.ar/pelicula/123-exact-film/', sourceId: '123' }]);
+const html = `<div class="subTitulo">Jueves 15 de Octubre de 2026</div>
+	<div class="estrenoDelDia"><h2 class="lblTitulo">
+		<a href="/pelicula/123-exact-film/">Título &amp; otro</a>
+	</h2>
+	<div class="subTitulo">Jueves 22 de Octubre de 2026</div>
+	<div class="ultimo estrenoDelDia"><h2 class="lblTitulo"><a href="/pelicula/456-other-film/">Otra película</a></h2>
+	<div class="paginacion">`;
+assert.deepEqual(extractArgentinaReleases(html), [
+	{ title: 'Título & otro', releaseDate: '2026-10-15', sourceUrl: 'https://www.cinesargentinos.com.ar/pelicula/123-exact-film/', sourceId: '123' },
+	{ title: 'Otra película', releaseDate: '2026-10-22', sourceUrl: 'https://www.cinesargentinos.com.ar/pelicula/456-other-film/', sourceId: '456' },
+]);
 assert.deepEqual(extractYoutubeIds('<a href="https://www.youtube.com/v/Z_yVJ1PHHrA?x=1">video</a><iframe src="https://youtube.com/embed/Z_yVJ1PHHrA"></iframe>'), ['Z_yVJ1PHHrA']);
 assert.deepEqual(extractYoutubeIds('<a href="https://evil.com/?youtube-id=bad">video</a>'), []);
 
@@ -46,6 +55,34 @@ try {
 		: new Response(JSON.stringify({ type: 'video', title: 'Trailer oficial', author_name: 'Distribuidor argentino' }));
 	assert.equal((await findEmbeddableTrailer(['blocked1234', 'Z_yVJ1PHHrA']))?.id, 'Z_yVJ1PHHrA', 'Skip a blocked video and test the next trailer of the same film');
 } finally { globalThis.fetch = realFetch; }
+
+const realLog = console.log;
+const previousReferenceDate = process.env.UPCOMING_RELEASES_DATE;
+const output = [];
+try {
+	process.argv.push('--dry-run');
+	process.env.UPCOMING_RELEASES_DATE = '2026-10-15';
+	console.log = (line) => output.push(JSON.parse(line));
+	globalThis.fetch = async (url) => {
+		if (new URL(url).pathname === '/proximos/todos/1/') return new Response(html);
+		assert.ok(!url.includes('/123/trailer'), 'A film opening today must be excluded before requesting its video');
+		if (new URL(url).pathname === '/pelicula/456/trailer') return new Response('<iframe src="https://youtube.com/embed/Z_yVJ1PHHrA"></iframe>');
+		return new Response(JSON.stringify({ type: 'video', title: 'Trailer oficial', author_name: 'Distribuidor' }));
+	};
+	await import('./update-upcoming-releases.mjs?short-edition');
+	assert.equal(output.at(-1).count, 1, 'A single verified future release is enough to replace a stale edition');
+	assert.equal(output.at(-1).releases[0].title, 'Otra película');
+	globalThis.fetch = async (url) => new URL(url).pathname === '/proximos/todos/1/'
+		? new Response(html)
+		: new Response('', { status: 503 });
+	await assert.rejects(import('./update-upcoming-releases.mjs?source-outage'), /0 verified Argentine trailers and 1 source errors/);
+} finally {
+	globalThis.fetch = realFetch;
+	console.log = realLog;
+	process.argv.pop();
+	if (previousReferenceDate === undefined) delete process.env.UPCOMING_RELEASES_DATE;
+	else process.env.UPCOMING_RELEASES_DATE = previousReferenceDate;
+}
 console.log('Home automation: Argentine dates and frozen editions verified.');
 
 assert.ok(!deploy.includes('Radar de Cine diario (10:00 AR)'));

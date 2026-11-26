@@ -17,7 +17,7 @@ export function extractArgentinaReleases(html) {
 	const entries = [...html.matchAll(/<div class="(?:ultimo )?estrenoDelDia"[\s\S]*?(?=<div class="(?:ultimo )?estrenoDelDia"|<div class="subTitulo"|<div class="paginacion"|$)/g)];
 	return entries.flatMap((entry) => {
 		const date = markers.filter((m) => m.index <= entry.index).at(-1)?.date;
-		const title = entry[0].match(/<h2 class="lblTitulo"><a href="([^"]+)"[^>]*>([^<]+)<\/a><\/h2>/);
+		const title = entry[0].match(/<h2 class="lblTitulo">\s*<a href="([^"]+)"[^>]*>([^<]+)<\/a>\s*<\/h2>/);
 		if (!date || !title) return [];
 		const sourceUrl = new URL(title[1], UPCOMING_SOURCE_URL);
 		const id = sourceUrl.pathname.match(/^\/pelicula\/(\d+)-[^/]+\/?$/)?.[1];
@@ -32,9 +32,9 @@ export function extractYoutubeIds(html) {
 }
 
 export async function findEmbeddableTrailer(ids) {
+	let sourceError;
 	for (const id of ids) {
 		const videoUrl = `https://www.youtube.com/watch?v=${id}`;
-		let lastError;
 		for (let attempt = 0; attempt < 2; attempt++) {
 			try {
 				const response = await fetch(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(videoUrl)}`, { redirect: 'error', signal: AbortSignal.timeout(15_000) });
@@ -43,10 +43,15 @@ export async function findEmbeddableTrailer(ids) {
 				const metadata = await response.json();
 				if (metadata.type === 'video' && metadata.title && metadata.author_name) return { id, videoUrl, title: metadata.title, channel: metadata.author_name };
 				break;
-			} catch (error) { lastError = error; }
+			} catch (error) {
+				if (attempt === 1) {
+					sourceError = error;
+					console.warn(`[trailers] ${id}: ${error.message}`);
+				}
+			}
 		}
-		if (lastError) console.warn(`[trailers] ${id}: ${lastError.message}`);
 	}
+	if (sourceError) throw sourceError;
 	return null;
 }
 

@@ -18,7 +18,7 @@ for (const card of WEEKLY_RECOMMENDATION_CARDS) {
 	await access(new URL(`../src/data/movies/${card.slug}.json`, import.meta.url));
 }
 assert.ok(Number.isFinite(Date.parse(GENERATED_UPCOMING_RELEASES_UPDATED_AT)));
-assert.ok(GENERATED_UPCOMING_RELEASES.length >= 5 && GENERATED_UPCOMING_RELEASES.length <= 16);
+assert.ok(GENERATED_UPCOMING_RELEASES.length >= 1 && GENERATED_UPCOMING_RELEASES.length <= 16);
 const generationDate = getArgentinaDateKey(new Date(GENERATED_UPCOMING_RELEASES_UPDATED_AT));
 for (const release of GENERATED_UPCOMING_RELEASES) {
 	assert.ok(dateKey(release.releaseDate) && release.releaseDate > generationDate, 'Trailers must be upcoming on the edition date');

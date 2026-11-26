@@ -18,8 +18,9 @@ test('agenda selection and next keep the autoplay player and release details in 
 	const frame = root.locator('iframe');
 	const entries = root.locator('[data-upcoming-suggestion-queue-item]:visible');
 	const count = await entries.count();
-	expect(count).toBeGreaterThan(1);
+	expect(count).toBeGreaterThan(0);
 	const data = JSON.parse(await page.locator('#upcoming-suggestion-data').textContent() ?? '[]');
+	const next = root.locator('[data-upcoming-suggestion-next]');
 
 	const assertRelease = async (index: number) => {
 		await expect(frame).toHaveCount(1);
@@ -32,19 +33,23 @@ test('agenda selection and next keep the autoplay player and release details in 
 		await expect(root.locator('[data-upcoming-suggestion-name]')).toHaveText(data[index].displayTitle);
 		await expect(root.locator('[data-upcoming-suggestion-date]')).toHaveAttribute('datetime', data[index].releaseDate);
 		await expect(root.locator('[data-upcoming-suggestion-synopsis]')).toHaveText(data[index].displaySynopsis);
-		await expect(root.locator('[data-upcoming-suggestion-count]')).toHaveText(`${index + 1} de ${count}`);
+		if (count > 1) await expect(root.locator('[data-upcoming-suggestion-count]')).toHaveText(`${index + 1} de ${count}`);
 		await expect(entries.filter({ has: page.locator('[data-upcoming-suggestion-select="' + index + '"]') })).toHaveAttribute('aria-current', 'true');
 		await expect(root.locator('[aria-current="true"]')).toHaveCount(1);
 	};
 	await assertRelease(0);
+	if (count === 1) {
+		await expect(next).toHaveCount(0);
+		return;
+	}
 	await entries.nth(count - 1).getByRole('button').click();
 	await assertRelease(count - 1);
-	await root.locator('[data-upcoming-suggestion-next]').click();
+	await next.click();
 	await assertRelease(0);
 	await entries.nth(1).getByRole('button').focus();
 	await page.keyboard.press('Enter');
 	await assertRelease(1);
-	await root.locator('[data-upcoming-suggestion-next]').click();
+	await next.click();
 	await assertRelease(2 % count);
 });
 

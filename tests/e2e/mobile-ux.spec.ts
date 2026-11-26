@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { GENERATED_UPCOMING_RELEASES } from '../../src/data/upcomingReleases.generated';
 
 async function openAdvancedFilters(page: import('@playwright/test').Page): Promise<void> {
   const advancedFilters = page.locator('[data-home-advanced-filters]');
@@ -246,12 +247,18 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
   expect(peopleCards).toBeGreaterThan(0);
   await expect(page.locator('[data-home-people-grid] .home-people-showcase__card:visible')).toHaveCount(3);
   await expect(page.locator('.upcoming-release-list__item:visible')).toHaveCount(2);
-  await expect(page.locator('.weekly-suggestion__queue-item:visible')).toHaveCount(4);
-  await expect(page.locator('[data-upcoming-suggestion-count]')).toHaveText('1 de 4');
+  const upcomingCount = Math.min(4, GENERATED_UPCOMING_RELEASES.length);
+  await expect(page.locator('.weekly-suggestion__queue-item:visible')).toHaveCount(upcomingCount);
   const upcomingNext = page.locator('[data-upcoming-suggestion-next]');
-  for (const expectedCount of ['2 de 4', '3 de 4', '4 de 4', '1 de 4']) {
-    await upcomingNext.click();
-    await expect(page.locator('[data-upcoming-suggestion-count]')).toHaveText(expectedCount);
+  const upcomingCounter = page.locator('[data-upcoming-suggestion-count]');
+  if (upcomingCount === 1) {
+    await expect(upcomingNext).toHaveCount(0);
+  } else {
+    await expect(upcomingCounter).toHaveText(`1 de ${upcomingCount}`);
+    for (let index = 1; index <= upcomingCount; index++) {
+      await upcomingNext.click();
+      await expect(upcomingCounter).toHaveText(`${(index % upcomingCount) + 1} de ${upcomingCount}`);
+    }
   }
   await expect(page.locator('.editorial-rankings')).toHaveCount(0);
   await expect(page.locator('.home-people-showcase__card--cta:visible')).toContainText('perfiles conectados');
@@ -344,8 +351,11 @@ test('desktop keeps the complete home while mobile-only reductions stay hidden',
   await page.goto('/', { waitUntil: 'load' });
   await expect(page.locator('[data-home-people-grid] .home-people-showcase__card')).toHaveCount(11);
   await expect(page.locator('.upcoming-release-list__item')).toHaveCount(3);
-  await expect(page.locator('.weekly-suggestion__queue-item')).toHaveCount(5);
-  await expect(page.locator('[data-upcoming-suggestion-count]')).toHaveText('1 de 5');
+  const upcomingCount = Math.min(5, GENERATED_UPCOMING_RELEASES.length);
+  await expect(page.locator('.weekly-suggestion__queue-item')).toHaveCount(upcomingCount);
+  const upcomingCounter = page.locator('[data-upcoming-suggestion-count]');
+  if (upcomingCount === 1) await expect(upcomingCounter).toHaveCount(0);
+  else await expect(upcomingCounter).toHaveText(`1 de ${upcomingCount}`);
   await expect(page.locator('.editorial-rankings')).toHaveCount(0);
   await expect(page.locator('.home-mobile-nav')).toBeHidden();
 });
