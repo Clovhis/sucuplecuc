@@ -1,0 +1,292 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "puedes-verlo-todo-2026",
+	"title": "Puedes verlo todo",
+	"year": 2026,
+	"reviewedOn": "2026-11-26",
+	"createdOn": "2026-11-26",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1765072/cast",
+			"kind": "Créditos completos de TMDB cotejados con Watchmode, IMDb y la distribución",
+			"fullCredits": true,
+			"checkedOn": "2026-11-26",
+			"relevantCreditCount": 13
+		},
+		{
+			"url": "https://www.imdb.com/title/tt45368240/fullcredits/",
+			"kind": "Contraste de reparto y equipo",
+			"checkedOn": "2026-11-26"
+		},
+		{
+			"url": "https://a24films.com/films/you-can-see-everything",
+			"kind": "Material oficial de la película",
+			"checkedOn": "2026-11-26"
+		}
+	],
+	"credits": [
+		{
+			"name": "Nathan Fielder",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1212667",
+					"fact": "Nathan Fielder tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2358709/",
+					"fact": "Perfil público y filmografía de Nathan Fielder."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/x0UOcjml8WnBfnb89QOh0iXM0w0.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lance Oppenheim",
+			"role": "director",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1405665",
+					"fact": "Lance Oppenheim tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4565262/",
+					"fact": "Perfil público y filmografía de Lance Oppenheim."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/h12zgCaZ24imkZlw0nry9T9mjGD.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Elizabeth Holmes",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2269143",
+					"fact": "Elizabeth Holmes tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm7266010/",
+					"fact": "Perfil público y filmografía de Elizabeth Holmes."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/s7ej8dZ7zncd4nPBrkBUbArnTJl.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nathan Fielder",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1212667",
+					"fact": "Nathan Fielder tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2358709/",
+					"fact": "Perfil público y filmografía de Nathan Fielder."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/x0UOcjml8WnBfnb89QOh0iXM0w0.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Billy Evans",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6462200",
+					"fact": "Billy Evans tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm14476965/",
+					"fact": "Perfil público y filmografía de Billy Evans."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/tLOCcMkylvIES7ZKFv6Dks6XmD.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Amanda Seyfried",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/71070",
+					"fact": "Amanda Seyfried tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1086543/",
+					"fact": "Perfil público y filmografía de Amanda Seyfried."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amanda%20Seyfried%20at%20Berlinale%202024%2C%20cropped.jpg?width=1200",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Christopher Abbott",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/984629",
+					"fact": "Christopher Abbott tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm3571592/",
+					"fact": "Perfil público y filmografía de Christopher Abbott."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bE7zzh60RXydH3p632ZZSmsTlcn.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Lance Oppenheim",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1405665",
+					"fact": "Lance Oppenheim tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm4565262/",
+					"fact": "Perfil público y filmografía de Lance Oppenheim."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/h12zgCaZ24imkZlw0nry9T9mjGD.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Christian Rasmus Holmes IV",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Aparición familiar secundaria al núcleo de Holmes, Evans y el equipo de rodaje."
+		},
+		{
+			"name": "Noel Anne Holmes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "Aparición familiar secundaria al núcleo de Holmes, Evans y el equipo de rodaje."
+		},
+		{
+			"name": "Gary Wilmes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/78404",
+					"fact": "Gary Wilmes tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1675596/",
+					"fact": "Perfil público y filmografía de Gary Wilmes."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6HdPMSnldhYWdJiH3yvWDUNDFGs.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Phillip Andre Botello",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1386927",
+					"fact": "Phillip Andre Botello tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1850901/",
+					"fact": "Perfil público y filmografía de Phillip Andre Botello."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wzLtwcPc8VGYwBqeHl9d7gMVixL.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nick Choksi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1765072/cast",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1693304",
+					"fact": "Nick Choksi tiene el crédito vinculado a Puedes verlo todo en su filmografía."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2648933/",
+					"fact": "Perfil público y filmografía de Nick Choksi."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/vL3esAIG5zAghhSkBgGIBqqNqrw.jpg",
+				"visuallyVerified": true
+			}
+		}
+	],
+	"coverageReview": {
+		"rationale": "La ficha conserva la dirección, protagonistas y secundarios con participación central respaldada por el reparto. El registro detalla los papeles de entorno revisados.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Christian Rasmus Holmes IV",
+				"role": "performer"
+			},
+			{
+				"name": "Noel Anne Holmes",
+				"role": "performer"
+			}
+		]
+	}
+}

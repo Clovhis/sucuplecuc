@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-25. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-26. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4744
+Total de vínculos de películas del catálogo: 4751
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -47,7 +47,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Alfredo Castro | `alfredo-castro` | /personas/alfredo-castro/ | Actor | 4 | 5 |
 | Alicia Vikander | `alicia-vikander` | /personas/alicia-vikander/ | Actriz | 5 | 4 |
 | Allison Janney | `allison-janney` | /personas/allison-janney/ | Actriz | 5 | 6 |
-| Amanda Seyfried | `amanda-seyfried` | /personas/amanda-seyfried/ | Actriz | 8 | 3 |
+| Amanda Seyfried | `amanda-seyfried` | /personas/amanda-seyfried/ | Actriz | 9 | 3 |
 | America Ferrera | `america-ferrera` | /personas/america-ferrera/ | Actriz | 2 | 7 |
 | Amy Adams | `amy-adams` | /personas/amy-adams/ | Actriz | 11 | 6 |
 | Ana de Armas | `ana-de-armas` | /personas/ana-de-armas/ | Actriz | 5 | 7 |
@@ -75,7 +75,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Antonio Gasalla | `antonio-gasalla` | /personas/antonio-gasalla/ | Actor / Comediante / Guionista | 1 | 5 |
 | Anya Taylor-Joy | `anya-taylor-joy` | /personas/anya-taylor-joy/ | Actriz | 9 | 6 |
 | Ariana DeBose | `ariana-debose` | /personas/ariana-debose/ | Actriz | 3 | 6 |
-| Ariana Grande | `ariana-grande` | /personas/ariana-grande/ | Actriz | 2 | 7 |
+| Ariana Grande | `ariana-grande` | /personas/ariana-grande/ | Actriz | 3 | 7 |
 | Ariel Rotter | `ariel-rotter` | /personas/ariel-rotter/ | Director / Guionista / Productor | 1 | 5 |
 | Ariel Winograd | `ariel-winograd` | /personas/ariel-winograd/ | Director / Guionista | 1 | 4 |
 | Arnold Schwarzenegger | `arnold-schwarzenegger` | /personas/arnold-schwarzenegger/ | Actor | 11 | 6 |
@@ -90,7 +90,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Beatriz Spelzini | `beatriz-spelzini` | /personas/beatriz-spelzini/ | Actriz | 1 | 5 |
 | Ben Affleck | `ben-affleck` | /personas/ben-affleck/ | Actor | 16 | 7 |
 | Ben Kingsley | `ben-kingsley` | /personas/ben-kingsley/ | Actor | 7 | 7 |
-| Ben Stiller | `ben-stiller` | /personas/ben-stiller/ | Actor / Director / Productor | 7 | 5 |
+| Ben Stiller | `ben-stiller` | /personas/ben-stiller/ | Actor / Director / Productor | 8 | 5 |
 | Benedict Cumberbatch | `benedict-cumberbatch` | /personas/benedict-cumberbatch/ | Actor | 8 | 7 |
 | Benjamín Naishtat | `benjamin-naishtat` | /personas/benjamin-naishtat/ | Director / Guionista | 2 | 4 |
 | Bill Hader | `bill-hader` | /personas/bill-hader/ | Actor / Guionista | 8 | 5 |
@@ -318,7 +318,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Gustavo Taretto | `gustavo-taretto` | /personas/gustavo-taretto/ | Director / Guionista | 1 | 5 |
 | Guy Pearce | `guy-pearce` | /personas/guy-pearce/ | Actor | 7 | 3 |
 | Gwyneth Paltrow | `gwyneth-paltrow` | /personas/gwyneth-paltrow/ | Actriz | 6 | 7 |
-| Hailee Steinfeld | `hailee-steinfeld` | /personas/hailee-steinfeld/ | Actriz | 5 | 6 |
+| Hailee Steinfeld | `hailee-steinfeld` | /personas/hailee-steinfeld/ | Actriz | 6 | 6 |
 | Haley Joel Osment | `haley-joel-osment` | /personas/haley-joel-osment/ | Actor | 2 | 3 |
 | Halle Berry | `halle-berry` | /personas/halle-berry/ | Actriz | 7 | 7 |
 | Harrison Ford | `harrison-ford` | /personas/harrison-ford/ | Actor | 28 | 7 |
@@ -398,7 +398,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Joaquín Furriel | `joaquin-furriel` | /personas/joaquin-furriel/ | Actor | 3 | 5 |
 | Joaquin Phoenix | `joaquin-phoenix` | /personas/joaquin-phoenix/ | Actor | 18 | 6 |
 | Jodie Comer | `jodie-comer` | /personas/jodie-comer/ | Actriz | 4 | 6 |
-| Jodie Foster | `jodie-foster` | /personas/jodie-foster/ | Actriz / Directora | 17 | 5 |
+| Jodie Foster | `jodie-foster` | /personas/jodie-foster/ | Actriz / Directora | 18 | 5 |
 | Joe Pesci | `joe-pesci` | /personas/joe-pesci/ | Actor / Músico | 8 | 7 |
 | Joel Coen | `joel-coen` | /personas/joel-coen/ | Director / Guionista / Productor | 11 | 5 |
 | Joel Schumacher | `joel-schumacher` | /personas/joel-schumacher/ | Director / Guionista / Productor | 8 | 5 |
@@ -608,7 +608,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Oscar Ferreiro | `oscar-ferreiro` | /personas/oscar-ferreiro/ | Actor | 1 | 5 |
 | Oscar Isaac | `oscar-isaac` | /personas/oscar-isaac/ | Actor | 7 | 6 |
 | Oscar Martínez | `oscar-martinez` | /personas/oscar-martinez/ | Actor | 5 | 6 |
-| Owen Wilson | `owen-wilson` | /personas/owen-wilson/ | Actor / Guionista | 6 | 5 |
+| Owen Wilson | `owen-wilson` | /personas/owen-wilson/ | Actor / Guionista | 7 | 5 |
 | Pablo Cedrón | `pablo-cedron` | /personas/pablo-cedron/ | Actor / Director / Guionista | 1 | 5 |
 | Pablo Echarri | `pablo-echarri` | /personas/pablo-echarri/ | Actor / Productor | 1 | 5 |
 | Pablo Giorgelli | `pablo-giorgelli` | /personas/pablo-giorgelli/ | Director / Guionista | 1 | 5 |
@@ -668,7 +668,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Ridley Scott | `ridley-scott` | /personas/ridley-scott/ | Director | 15 | 7 |
 | Rita Cortese | `rita-cortese` | /personas/rita-cortese/ | Actriz / Cantante | 1 | 5 |
 | Rob Reiner | `rob-reiner` | /personas/rob-reiner/ | Director / Actor / Productor | 9 | 5 |
-| Robert De Niro | `robert-de-niro` | /personas/robert-de-niro/ | Actor / Productor | 53 | 6 |
+| Robert De Niro | `robert-de-niro` | /personas/robert-de-niro/ | Actor / Productor | 54 | 6 |
 | Robert Downey Jr. | `robert-downey-jr` | /personas/robert-downey-jr/ | Actor | 12 | 7 |
 | Robert Duvall | `robert-duvall` | /personas/robert-duvall/ | Actor / Productor | 9 | 5 |
 | Robert Eggers | `robert-eggers` | /personas/robert-eggers/ | Director | 4 | 7 |

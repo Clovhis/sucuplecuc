@@ -267,6 +267,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "amanda-seyfried": [
     "hermanastras-2026",
+    "puedes-verlo-todo-2026",
     "the-housemaid-2025",
     "mank-2020",
     "el-reverendo-2017",
@@ -489,6 +490,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "west-side-story-2021"
   ],
   "ariana-grande": [
+    "la-nueva-focker-2026",
     "wicked-for-good-2025",
     "wicked-2024"
   ],
@@ -587,6 +589,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "ben-stiller": [
     "dink-2026",
+    "la-nueva-focker-2026",
     "happy-gilmore-2-2025",
     "the-meyerowitz-stories-2017",
     "la-increible-vida-de-walter-mitty-2013",
@@ -2323,6 +2326,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "se7en-1995"
   ],
   "hailee-steinfeld": [
+    "hechizo-bienvenidos-a-hexe-2026",
     "sinners-2025",
     "spider-man-across-the-spider-verse-2023",
     "bumblebee-2018",
@@ -3046,6 +3050,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "free-guy-2021"
   ],
   "jodie-foster": [
+    "hechizo-bienvenidos-a-hexe-2026",
     "el-mauritano-2021",
     "hotel-de-criminales-2018",
     "el-maestro-del-dinero-2016",
@@ -4650,6 +4655,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "owen-wilson": [
     "entrega-al-limite-2026",
+    "la-nueva-focker-2026",
     "cars-3-2017",
     "vicio-propio-2014",
     "cars-2-2011",
@@ -5067,6 +5073,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "this-is-spinal-tap-1984"
   ],
   "robert-de-niro": [
+    "la-nueva-focker-2026",
     "susurran-tu-nombre-2026",
     "agente-infiltrado-2025",
     "the-alto-knights-mafia-y-poder-2025",

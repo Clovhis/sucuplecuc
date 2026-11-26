@@ -1,0 +1,224 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "bichos-del-mar-2026",
+	"title": "Bichos del mar",
+	"year": 2026,
+	"reviewedOn": "2026-11-26",
+	"createdOn": "2026-11-26",
+	"billingSources": [
+		{
+			"url": "https://4palabras.com/documental-bichos-del-mar/",
+			"kind": "Entrevista a la codirectora, que enumera el elenco protagónico y la especialidad de cada integrante",
+			"fullCredits": true,
+			"relevantCreditCount": 9,
+			"checkedOn": "2026-11-26"
+		},
+		{
+			"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+			"kind": "Ficha técnica y testimonios centrales cotejados con la entrevista",
+			"checkedOn": "2026-11-26"
+		},
+		{
+			"url": "https://cinenacional.com/pelicula/bichos-del-mar",
+			"kind": "Dirección, año y crédito de Nadia Cerino",
+			"checkedOn": "2026-11-26"
+		},
+		{
+			"url": "https://schmidtocean.org/cruise/underwater-oases-of-the-mar-del-plata-canyon/",
+			"kind": "Identidades y perfiles del equipo de la expedición",
+			"checkedOn": "2026-11-26"
+		}
+	],
+	"credits": [
+		{
+			"name": "Francisco Bendomir",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://4palabras.com/documental-bichos-del-mar/",
+			"identitySources": [
+				{
+					"url": "https://cinenacional.com/persona/francisco-bendomir",
+					"fact": "Filmografía de Francisco Bendomir como parte de la dirección del documental."
+				},
+				{
+					"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+					"fact": "Francisco Bendomir integra la dirección y el guion del documental."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://img.cinenacional.com/insecure/rs:fill:1920::1/g:sm/q:78/plain/local%3A%2F%2F%2Fcinenacional%2Fpeople%2F114082%2Faca40dc4-d38b-492c-87e4-6edd8f041ee0.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Tatiana Lichtensztein",
+			"role": "director",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://4palabras.com/documental-bichos-del-mar/",
+			"identitySources": [
+				{
+					"url": "https://cinenacional.com/persona/tatiana-lichtensztein",
+					"fact": "Filmografía de Tatiana Lichtensztein como parte de la dirección del documental."
+				},
+				{
+					"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+					"fact": "Tatiana Lichtensztein integra la dirección y el guion del documental."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://img.cinenacional.com/insecure/rs:fill:1920::1/g:sm/q:78/plain/local%3A%2F%2F%2Fcinenacional%2Fpeople%2F221588%2F4128afd6-55b4-45f3-9a85-3e5eb7c21e94.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Daniel Lauretta",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://4palabras.com/documental-bichos-del-mar/",
+			"identitySources": [
+				{
+					"url": "https://schmidtocean.org/person/daniel-lauretta/",
+					"fact": "Daniel Lauretta participó en la expedición Falkor (too) del Instituto Schmidt."
+				},
+				{
+					"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+					"fact": "Daniel Lauretta integra los testimonios principales del documental."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://schmidtocean.org/wp-content/uploads/Lauretta-Daniel-scaled.jpeg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Nadia Cerino",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://4palabras.com/documental-bichos-del-mar/",
+			"identitySources": [
+				{
+					"url": "https://schmidtocean.org/person/nadia-cerino/",
+					"fact": "Nadia Cerino participó en la expedición Falkor (too) del Instituto Schmidt."
+				},
+				{
+					"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+					"fact": "Nadia Cerino integra los testimonios principales del documental."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://schmidtocean.org/wp-content/uploads/Cerino-Nadia-scaled.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Ignacio Chiesa",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://4palabras.com/documental-bichos-del-mar/",
+			"identitySources": [
+				{
+					"url": "https://schmidtocean.org/person/ignacio-chiesa/",
+					"fact": "Ignacio Chiesa participó en la expedición Falkor (too) del Instituto Schmidt."
+				},
+				{
+					"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+					"fact": "Ignacio Chiesa integra los testimonios principales del documental."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://schmidtocean.org/wp-content/uploads/Chiesa-Ignacio.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Gregorio Bigatti",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://4palabras.com/documental-bichos-del-mar/",
+			"identitySources": [
+				{
+					"url": "https://schmidtocean.org/person/gregorio-bigatti/",
+					"fact": "Gregorio Bigatti participó en la expedición Falkor (too) del Instituto Schmidt."
+				},
+				{
+					"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+					"fact": "Gregorio Bigatti integra los testimonios principales del documental."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://schmidtocean.org/wp-content/uploads/Bigatti-Gregorio.jpeg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Emiliano Ocampo",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://4palabras.com/documental-bichos-del-mar/",
+			"identitySources": [
+				{
+					"url": "https://schmidtocean.org/person/emiliano-ocampo/",
+					"fact": "Emiliano Ocampo participó en la expedición Falkor (too) del Instituto Schmidt."
+				},
+				{
+					"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+					"fact": "Emiliano Ocampo integra los testimonios principales del documental."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://schmidtocean.org/wp-content/uploads/Ocampo-Emiliano.jpeg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Diego Urteaga",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://4palabras.com/documental-bichos-del-mar/",
+			"identitySources": [
+				{
+					"url": "https://schmidtocean.org/person/diego-urteaga/",
+					"fact": "Diego Urteaga participó en la expedición Falkor (too) del Instituto Schmidt."
+				},
+				{
+					"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+					"fact": "Diego Urteaga integra los testimonios principales del documental."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://schmidtocean.org/wp-content/uploads/Urteaga-Diego-scaled.jpg",
+				"visuallyVerified": true
+			}
+		},
+		{
+			"name": "Carla de Aranzamendi",
+			"role": "performer",
+			"prominence": "participant",
+			"decision": "include",
+			"creditSourceUrl": "https://4palabras.com/documental-bichos-del-mar/",
+			"identitySources": [
+				{
+					"url": "https://schmidtocean.org/person/maria-carla-de-aranzamendi/",
+					"fact": "Carla de Aranzamendi participó en la expedición Falkor (too) del Instituto Schmidt."
+				},
+				{
+					"url": "https://www.otroscines.com/post/critica-de-bichos-del-mar-pelicula-de-francisco-bendomir-y-tatiana-lichtensztein",
+					"fact": "Carla de Aranzamendi integra los testimonios principales del documental."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://schmidtocean.org/wp-content/uploads/de-Aranzamendi-Maria-Carla.jpeg",
+				"visuallyVerified": true
+			}
+		}
+	]
+}
