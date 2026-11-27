@@ -1,0 +1,675 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "dos-rubias-de-pelo-en-pecho-2004",
+	"title": "Dos rubias de pelo en pecho",
+	"year": 2004,
+	"reviewedOn": "2026-11-27",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/12153/cast",
+			"kind": "Reparto completo de TMDB por identificador y personajes exactos",
+			"checkedOn": "2026-11-27",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://play.hbomax.com/show/230a0e20-e535-4f13-8f03-8af478908fe8",
+			"kind": "Selección de la plataforma argentina y ficha del mismo título",
+			"checkedOn": "2026-11-27"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0381707/fullcredits/",
+			"kind": "Contraste por identificador IMDb del título",
+			"checkedOn": "2026-11-27"
+		}
+	],
+	"credits": [
+		{
+			"name": "Keenen Ivory Wayans",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/35689",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0005540/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/e9XRdXolDV8RjGPHPXH6IISDTSP.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/keenen-ivory-wayans-tmdb-35689.jpg"
+			}
+		},
+		{
+			"name": "Shawn Wayans",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Kevin Copeland",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/35690",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0915465/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shawnwayans04.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/shawn-wayans-nm0915465.jpg"
+			}
+		},
+		{
+			"name": "Marlon Wayans",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Marcus Copeland",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/9562",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0005541/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marlon%20Wayans%20(2018)%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/marlon-wayans-nm0005541.jpg"
+			}
+		},
+		{
+			"name": "Frankie Faison",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Chief Elliott Gordon",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/13936",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0265670/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3717JOXK2Z8qelfyvScDGimfFBf.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/frankie-faison-tmdb-13936.jpg"
+			}
+		},
+		{
+			"name": "Terry Crews",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Latrell Spencer",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/53256",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0187719/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Terry%20Crews%20by%20Gage%20Skidmore%205.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/terry-crews-nm0187719.jpg"
+			}
+		},
+		{
+			"name": "Faune Chambers Watkins",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Gina Copeland",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/58953",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0150330/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/iP1x9TsE9RzluXQjTtY0Ujxhp9r.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/faune-chambers-watkins-tmdb-58953.jpg"
+			}
+		},
+		{
+			"name": "Rochelle Aytes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Denise Porter",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/80760",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1468674/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wn2555ynBlXnBd6jyFuW0bedcng.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/rochelle-aytes-tmdb-80760.jpg"
+			}
+		},
+		{
+			"name": "John Heard",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Warren Vandergeld",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/11512",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001334/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/JohnHeardActor2010.png?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/john-heard-nm0001334.jpg"
+			}
+		},
+		{
+			"name": "Lochlyn Munro",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Agent Jake Harper",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/58058",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0613147/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bOJ03k0oe2R6snRgzV8M4Qtoo4O.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/lochlyn-munro-tmdb-58058.jpg"
+			}
+		},
+		{
+			"name": "Busy Philipps",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Karen",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Karen. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jennifer Carpenter",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Lisa",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Lisa. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jessica Cauffiel",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Tori",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Tori. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Eddie Velez",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Agent Vincent Gomez",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Agent Vincent Gomez. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jaime King",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Heather Vandergeld",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Heather Vandergeld. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Brittany Daniel",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Megan Vandergeld",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Megan Vandergeld. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Maitland Ward",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Brittany Wilson",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Brittany Wilson. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Anne Dudek",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Tiffany Wilson",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Tiffany Wilson. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "John Reardon",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Heath",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Heath. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Steven Grayhm",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Russ (Party Boy)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Russ (Party Boy). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Drew Sidora",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Shaunice",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Shaunice. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Casey Lee",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Tony",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Tony. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Heather McDonald",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Saleswoman",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Saleswoman. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Kevin Blatch",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Aubrey",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Aubrey. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Taras Kostyuk",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Russian",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Russian. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Zoltan Barabas",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Drug Dealer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Drug Dealer. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Brad Loree",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Dealer Henchman",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Dealer Henchman. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Paul Lazenby",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Dealer Henchman",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Dealer Henchman. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "David James Lewis",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Josh",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Josh. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ben Nemtin",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Hamptons Hotel Guy",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Hamptons Hotel Guy. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Suzy Joachim",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Elaine Vandergeld",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Elaine Vandergeld. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Kerbie O'Neill",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Hamptons Girl",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Hamptons Girl. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Shannon Dagg",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Hamptons Girl",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Hamptons Girl. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jennifer Berry",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Hamptons Girl",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Hamptons Girl. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Patrick Baynham",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Hamptons Guy",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Hamptons Guy. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Kristi Angus",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Wheelchair Girl",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Wheelchair Girl. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Marshall Virtue",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Purse Snatcher",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Purse Snatcher. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "John Moore",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Arnold Spiezer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Arnold Spiezer. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Fraser Aitcheson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Stripper",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Stripper. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "James Michalopolous",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Stripper",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Stripper. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ricardo Scarabelli",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "FBI Agent",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica FBI Agent. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Liam Ranger",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Boy at Beach",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Boy at Beach. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Zack Nicholson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Boy at Beach",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Boy at Beach. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Luciana Carro",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Waitress",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Waitress. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Michael Gordin Shore",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Waiter at Hamptons Restaurant",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Waiter at Hamptons Restaurant. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Lillianne Lee",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Housekeeper",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Housekeeper. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Melissa Panton",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Karen's Backup Dancer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Karen's Backup Dancer. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Kathryn Schellenberg",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Karen's Backup Dancer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Karen's Backup Dancer. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Heather Robertson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Vandergeld Dance Team",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Vandergeld Dance Team. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Joanne Pesusich",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Vandergeld Dance Team",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Vandergeld Dance Team. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jennifer Oleksiuk",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Vandergeld Dance Team",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Vandergeld Dance Team. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "David Manske",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Fashion Critic",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Fashion Critic. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Evangeline Lilly",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/12153/cast",
+			"screenRole": "Party Guest (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Party Guest (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el orden del reparto y se conservaron dirección y roles principales. Cada omisión queda asentada junto al rol que publica el reparto completo.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Busy Philipps",
+				"role": "performer"
+			}
+		]
+	}
+}

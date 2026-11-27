@@ -1,0 +1,906 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "the-mosquito-bowl-un-partido-en-plena-guerra-2026",
+	"title": "The Mosquito Bowl: Un partido en plena guerra",
+	"year": 2026,
+	"reviewedOn": "2026-11-27",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1458300/cast",
+			"kind": "Reparto completo de TMDB por identificador y personajes exactos",
+			"checkedOn": "2026-11-27",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://www.netflix.com/ar/title/81661161",
+			"kind": "Selección de la plataforma argentina y ficha del mismo título",
+			"checkedOn": "2026-11-27"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt36413910/fullcredits/",
+			"kind": "Contraste por identificador IMDb del título",
+			"checkedOn": "2026-11-27"
+		}
+	],
+	"credits": [
+		{
+			"name": "Peter Berg",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/36602",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000916/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Berg%20by%20Gage%20Skidmore.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/peter-berg-nm0000916.jpg"
+			}
+		},
+		{
+			"name": "Nicholas Galitzine",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "John McLaughry",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1425934",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5954280/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicholas%20Galitzine%20on%20Dulce%20Osuna.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/nicholas-galitzine-nm5954280.jpg"
+			}
+		},
+		{
+			"name": "Bill Skarsgård",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Bob Bauman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/137905",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0803889/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bill%20Skarsg%C3%A5rd%20(42716999885)%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/bill-skarsgard-nm0803889.jpg"
+			}
+		},
+		{
+			"name": "Ray Nicholson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Tony Butkovich",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/60960",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2200658/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/f0MRbGIyTEJLJgHedJS8pRFhGn4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ray-nicholson-nm2200658.jpg"
+			}
+		},
+		{
+			"name": "Tom Francis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Dave Schreiner",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2882960",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm12929174/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/u2xOsPIwCUwyxuzeH5UMxLRJb0h.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/tom-francis-tmdb-2882960.jpg"
+			}
+		},
+		{
+			"name": "Brent Comer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "George Murphy",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5552596",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm16318571/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/keeByyry5lVOSxQWVByloTmTxvy.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/brent-comer-tmdb-5552596.jpg"
+			}
+		},
+		{
+			"name": "Jack Ingram",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Wilson",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1755563",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm15724215/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/34AmrSSpD10mtyZ3NUTYfC1J1Ln.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jack-ingram-tmdb-1755563.jpg"
+			}
+		},
+		{
+			"name": "Ella Newton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Jane",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1813177",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm8773157/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/qu6BQ51nvSYW5gxY6QX1bdtQlzl.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ella-newton-tmdb-1813177.jpg"
+			}
+		},
+		{
+			"name": "Peter Berg",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "General Buckner",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica General Buckner. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Dominic Bogart",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Sergeant Wilkes",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Sergeant Wilkes. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Lola Bond",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Odette",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Odette. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Stacy Clausen",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Avery",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Avery. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Billy Smith",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Father Kelly",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Father Kelly. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Steve Sammut",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Jerry Colonna",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Jerry Colonna. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Blake Erickson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Bob Hope",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bob Hope. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Claudia Ware",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Francis Langford",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Francis Langford. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Pat McAfee",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Parris Island Drill Instructor",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Parris Island Drill Instructor. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Buzz Bissinger",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Parris Island Drill Instructor #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Parris Island Drill Instructor #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Tom Wilson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Tooth Fairy",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Tooth Fairy. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Caspar Hardaker",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Marine Ernie",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Marine Ernie. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Reagan Mannix",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Marine Guard (Stukie)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Marine Guard (Stukie). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Nicholas Bakopoulos-Cooke",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Marine Guard (Tarawa)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Marine Guard (Tarawa). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jack Angwin",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Marine Guard (Guadalcanal)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Marine Guard (Guadalcanal). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ed Wightman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Tuss McLaughry",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Tuss McLaughry. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Patrick George",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Dusty's Bartender",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Dusty's Bartender. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Matt Whelan",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Marine Lieutenant (Guadalcanal)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Marine Lieutenant (Guadalcanal). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Brodie Henson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Jack (Brown Player #1)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Jack (Brown Player #1). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jack Scott",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Brown Player #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Brown Player #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Troy Larkin",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Press Reporter #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Press Reporter #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Dean Manton",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Press Reporter #3",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Press Reporter #3. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Akira Fujii",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Japanese Prisoner",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Japanese Prisoner. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Taki Abe",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Japanese Soldier",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Japanese Soldier. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Yuuki Takahashi",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Okinawan Woman (Bomb)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Okinawan Woman (Bomb). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Colt Isham",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Wisconsin Football Sub",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Wisconsin Football Sub. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jasper Lierich",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Referee #1",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Referee #1. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Josh Grossman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Referee #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Referee #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Gregory Van Dam",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Wisconsin News Crew",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Wisconsin News Crew. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "James Smith",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Spectator #1",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Spectator #1. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Clint Schneider",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Spectator #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Spectator #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Scott Mathison",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Purdue News Crew / Wisconsin Locker Room Reporter",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Purdue News Crew / Wisconsin Locker Room Reporter. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Connor Grzesiak",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Wisconsin Footbal Sub #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Wisconsin Footbal Sub #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ken Lee",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Purdue Football Player",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Purdue Football Player. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Luke Webb",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Recruit #1",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Recruit #1. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Benjamin Walton",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Recruit #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Recruit #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Leo Emanuel",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Recruit #3",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Recruit #3. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Harlan Green",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "New Recruit",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica New Recruit. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Daniel Lee Robertson III",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Marine Recruiter - Corporal",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Marine Recruiter - Corporal. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Shinnosuke Harada",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Japanese Prisoner #1",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Japanese Prisoner #1. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Genta Harada",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Japanese Prisoner #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Japanese Prisoner #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Steven Chang",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Japanese Prisoner #3",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Japanese Prisoner #3. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Daniel Goodwin",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Santa",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Santa. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Nathan Kempson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Mess Cook",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Mess Cook. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ryan Barthelson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Red Anderson",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Red Anderson. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "James D. Dever",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Drill Instructor #4",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Drill Instructor #4. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Emmett Berg",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Norm Hatch",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Norm Hatch. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Chelah Horsdal",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Mary",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Mary. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Cameron Michael Hallman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Frankie",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Frankie. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Henry Bartak",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Butkovich's Father",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Butkovich's Father. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Stellina Rusich",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Butkovich's Mother",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Butkovich's Mother. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Olga Petsa",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Butkovich's Sister",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Butkovich's Sister. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Nathan Jean",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Butkovich Brother #1",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Butkovich Brother #1. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Quinn Matthews",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Butkovich Brother #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Butkovich Brother #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Keavan Jones",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Butkovich Brother #3",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Butkovich Brother #3. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Joel Eskildsen",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Butkovich Brother #4",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Butkovich Brother #4. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Charles Tapp",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Butkovich Brother #5",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Butkovich Brother #5. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Havoc Turchyniak",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Butkovich Brother #6",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Butkovich Brother #6. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Easton VanB",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Bus Station Recruit #1",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bus Station Recruit #1. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "James Sarre",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Bus Station Recruit #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bus Station Recruit #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Benjamin Molnar",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Kid #1",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Kid #1. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Charlie Cherriere",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Kid #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Kid #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Martin McGrath",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Kid #3",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Kid #3. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Lucas Sagasky",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Bus Station Recruit #3",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bus Station Recruit #3. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Luke Kuzyk",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Active Military",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Active Military. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Kenny Low",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Hide Sniper #1",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Hide Sniper #1. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Justinius Luhur",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Hide Sniper #2",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Hide Sniper #2. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Edward Clements",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1458300/cast",
+			"screenRole": "Announcer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Announcer. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el orden del reparto y se conservaron dirección y roles principales. Cada omisión queda asentada junto al rol que publica el reparto completo.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Peter Berg",
+				"role": "performer"
+			},
+			{
+				"name": "Dominic Bogart",
+				"role": "performer"
+			}
+		]
+	}
+}

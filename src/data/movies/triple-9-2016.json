@@ -19,7 +19,7 @@
 	"poster": "assets/posters/2016/triple-9-2016.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "vOFqiwmnOYE",
-	"releasePlatform": "Netflix",
+	"releasePlatform": "HBO Max",
 	"director": "John Hillcoat",
 	"mainCast": [
 		"Casey Affleck",
@@ -29,7 +29,7 @@
 		"Woody Harrelson"
 	],
 	"productionCompany": "Worldview Entertainment, Sierra/Affinity y Anonymous Content",
-	"cinepostaScore": 5,
+	"cinepostaScore": 4,
 	"runtimeMinutes": 115,
 	"awards": {
 		"wins": []
@@ -92,5 +92,9 @@
 			"tmdbPersonId": 57755,
 			"verifiedAt": "2026-11-08"
 		}
+	],
+	"releasePlatforms": [
+		"HBO Max",
+		"Netflix"
 	]
 }

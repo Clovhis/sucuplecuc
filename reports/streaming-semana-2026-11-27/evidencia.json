@@ -1,0 +1,1552 @@
+{
+  "window": [
+    "2026-11-23",
+    "2026-11-29"
+  ],
+  "cutoff": "2026-11-27",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "discovery": [
+    {
+      "date": "2026-11-23",
+      "pages": 1,
+      "records": 23
+    },
+    {
+      "date": "2026-11-24",
+      "pages": 1,
+      "records": 58
+    },
+    {
+      "date": "2026-11-25",
+      "pages": 1,
+      "records": 39
+    },
+    {
+      "date": "2026-11-26",
+      "pages": 6,
+      "records": 518
+    },
+    {
+      "date": "2026-11-27",
+      "pages": 1,
+      "records": 24
+    },
+    {
+      "date": "2026-11-28",
+      "pages": 1,
+      "records": 0
+    },
+    {
+      "date": "2026-11-29",
+      "pages": 1,
+      "records": 0
+    }
+  ],
+  "providerQueries": [
+    [
+      "nfx",
+      [
+        [
+          "2026-11-23",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          3,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          4,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          6,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "prv",
+      [
+        [
+          "2026-11-23",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          28,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          5,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          11,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          2,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "mxx",
+      [
+        [
+          "2026-11-23",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          3,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          7,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          3,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "dnp",
+      [
+        [
+          "2026-11-23",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          3,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          2,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "pmp",
+      [
+        [
+          "2026-11-23",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "atp",
+      [
+        [
+          "2026-11-23",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "cru",
+      [
+        [
+          "2026-11-23",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "mgl",
+      [
+        [
+          "2026-11-23",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "mbi",
+      [
+        [
+          "2026-11-23",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "cin",
+      [
+        [
+          "2026-11-23",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          2,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "itu",
+      [
+        [
+          "2026-11-23",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          3,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "amz",
+      [
+        [
+          "2026-11-23",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          4,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          10,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          23,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          4,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "avp",
+      [
+        [
+          "2026-11-23",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "amu",
+      [
+        [
+          "2026-11-23",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          4,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "app",
+      [
+        [
+          "2026-11-23",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          2,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          3,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "plx",
+      [
+        [
+          "2026-11-23",
+          11,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          1,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ],
+    [
+      "vix",
+      [
+        [
+          "2026-11-23",
+          4,
+          1,
+          null
+        ],
+        [
+          "2026-11-24",
+          3,
+          1,
+          null
+        ],
+        [
+          "2026-11-25",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-26",
+          12,
+          1,
+          null
+        ],
+        [
+          "2026-11-27",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-28",
+          0,
+          1,
+          null
+        ],
+        [
+          "2026-11-29",
+          0,
+          1,
+          null
+        ]
+      ]
+    ]
+  ],
+  "summary": {
+    "alta": 7,
+    "actualizada": 17,
+    "existente": 20,
+    "pendiente": 589,
+    "excluida": 16
+  },
+  "updates": [
+    {
+      "slug": "rivales-en-la-nieve-2026",
+      "title": "Rivales en la nieve",
+      "date": "2026-11-23",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/clashing-through-the-snow",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Prime Video",
+        "providerUrl": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f938552e-f9a5-4c9c-9354-51c439c0eec6",
+        "officialAr": "https://www.primevideo.com/-/es/detail/0TWROLY7CIQMYP2WBPM7XKZI6E?tr=ar"
+      },
+      "old": {
+        "platform": "Prime Video",
+        "score": 6
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/clashing_through_the_snow#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "73%",
+        "sample": "50+ Ratings",
+        "normalized": 7,
+        "published": 7
+      },
+      "changed": true
+    },
+    {
+      "slug": "casino-royale-2006",
+      "title": "Casino Royale",
+      "date": "2026-11-24",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/casino-royale",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Prime Video",
+        "providerUrl": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.67d67132-66a8-46fb-9b4d-3ebe25602945"
+      },
+      "old": {
+        "platform": "Netflix",
+        "score": 8
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/casino_royale#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "90%",
+        "sample": "250,000+ Ratings",
+        "normalized": 9,
+        "published": 8,
+        "editorialCeiling": "8: este relevamiento no acreditó el umbral editorial para 9 o 10."
+      },
+      "changed": true
+    },
+    {
+      "slug": "no-time-to-die-2021",
+      "title": "No Time to Die",
+      "date": "2026-11-24",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/sin-tiempo-para-morir",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Prime Video",
+        "providerUrl": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.bfe2fd05-01b0-4209-b2ff-2b1db2e96e14"
+      },
+      "old": {
+        "platform": "Netflix",
+        "score": 8
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/no_time_to_die_2021#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "88%",
+        "sample": "10,000+ Verified Ratings",
+        "normalized": 9,
+        "published": 8,
+        "editorialCeiling": "8: este relevamiento no acreditó el umbral editorial para 9 o 10."
+      },
+      "changed": true
+    },
+    {
+      "slug": "quantum-of-solace-2008",
+      "title": "Quantum of Solace",
+      "date": "2026-11-24",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/quantum-of-solace",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Prime Video",
+        "providerUrl": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8b9d82d8-33c1-4e89-ba53-04f03cdc5647"
+      },
+      "old": {
+        "platform": "Netflix",
+        "score": 5
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/quantum_of_solace#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "58%",
+        "sample": "250,000+ Ratings",
+        "normalized": 6,
+        "published": 6
+      },
+      "changed": true
+    },
+    {
+      "slug": "skyfall-2012",
+      "title": "Skyfall",
+      "date": "2026-11-24",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/skyfall",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Prime Video",
+        "providerUrl": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7c573752-29f1-47e2-bb71-afd978b23dbc"
+      },
+      "old": {
+        "platform": "Netflix",
+        "score": 8
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/skyfall#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "86%",
+        "sample": "250,000+ Ratings",
+        "normalized": 9,
+        "published": 8,
+        "editorialCeiling": "8: este relevamiento no acreditó el umbral editorial para 9 o 10."
+      },
+      "changed": true
+    },
+    {
+      "slug": "goldeneye-1995",
+      "title": "Goldeneye",
+      "date": "2026-11-24",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/goldeneye",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Prime Video",
+        "providerUrl": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.fc873385-f5a7-4e37-80c8-47a357eea5a3"
+      },
+      "old": {
+        "platform": "Prime Video",
+        "platforms": [
+          "Prime Video"
+        ],
+        "score": 8
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/goldeneye#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "83%",
+        "sample": "250,000+ Ratings",
+        "normalized": 8,
+        "published": 8
+      },
+      "changed": true
+    },
+    {
+      "slug": "fuego-contra-fuego-1995",
+      "title": "Fuego contra fuego",
+      "date": "2026-11-26",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/heat",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Prime Video",
+        "providerUrl": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.faadea57-f7ab-26aa-6cda-8d880566e5b3"
+      },
+      "old": {
+        "platform": "Apple TV",
+        "score": 9
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/heat_1995#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "94%",
+        "sample": "100,000+ Ratings",
+        "normalized": 9,
+        "published": 9,
+        "editorialCeiling": "9 conservado: la película consolidó el policial de Michael Mann y su secuencia urbana de atraco se volvió una referencia perdurable.",
+        "recognition": [
+          "https://www.oscars.org/events/heat",
+          "https://www.bfi.org.uk/lists/great-action-film-every-year-1924-now"
+        ]
+      },
+      "changed": true
+    },
+    {
+      "slug": "perdona-que-te-moleste-2018",
+      "title": "Perdona que te moleste",
+      "date": "2026-11-26",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/perdona-que-te-moleste",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Prime Video",
+        "providerUrl": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8a5ed45c-cf81-4a33-b6cd-4b8a41352ca1"
+      },
+      "old": {
+        "platform": "Otras plataformas",
+        "score": 7
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/sorry_to_bother_you#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "70%",
+        "sample": "5,000+ Ratings",
+        "normalized": 7,
+        "published": 7
+      },
+      "changed": true
+    },
+    {
+      "slug": "how-to-train-your-dragon-the-hidden-world-2019",
+      "title": "How to Train Your Dragon: The Hidden World",
+      "date": "2026-11-24",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/como-entrenar-a-tu-dragon-3",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "HBO Max",
+        "providerUrl": "https://play.hbomax.com/show/8a158913-cf6c-41f9-b338-37a617819406?utm_source=universal_search"
+      },
+      "old": {
+        "platform": "Otras plataformas",
+        "score": 8
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/how_to_train_your_dragon_the_hidden_world#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "87%",
+        "sample": "50,000+ Ratings",
+        "normalized": 9,
+        "published": 8,
+        "editorialCeiling": "8: este relevamiento no acreditó el umbral editorial para 9 o 10."
+      },
+      "changed": true
+    },
+    {
+      "slug": "el-gato-con-botas-el-ultimo-deseo-2022",
+      "title": "El gato con botas: El último deseo",
+      "date": "2026-11-25",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/puss-in-boots-the-last-wish",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "HBO Max",
+        "providerUrl": "https://play.hbomax.com/show/6e498fce-86c6-4d2a-9c17-10c9b5532115?utm_source=universal_search"
+      },
+      "old": {
+        "platform": "Apple TV",
+        "score": 7
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/puss_in_boots_the_last_wish#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "94%",
+        "sample": "5,000+ Verified Ratings",
+        "normalized": 9,
+        "published": 8,
+        "editorialCeiling": "8: este relevamiento no acreditó el umbral editorial para 9 o 10."
+      },
+      "changed": true
+    },
+    {
+      "slug": "yo-soy-sam-2001",
+      "title": "Yo soy Sam",
+      "date": "2026-11-25",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/yo-soy-sam",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "HBO Max",
+        "providerUrl": "https://play.hbomax.com/show/1c270d36-eb7e-45a0-8f55-8740d2f18c97?utm_source=universal_search"
+      },
+      "old": {
+        "platform": "Apple TV",
+        "score": 5
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/i_am_sam#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "86%",
+        "sample": "250,000+ Ratings",
+        "normalized": 9,
+        "published": 8,
+        "editorialCeiling": "8: este relevamiento no acreditó el umbral editorial para 9 o 10."
+      },
+      "changed": true
+    },
+    {
+      "slug": "triple-9-2016",
+      "title": "Triple 9",
+      "date": "2026-11-25",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/triple-9",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "HBO Max",
+        "providerUrl": "https://play.hbomax.com/show/dd763738-9158-479d-bb64-55696c5745a9?utm_source=universal_search"
+      },
+      "old": {
+        "platform": "Netflix",
+        "score": 5
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/triple_9#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "41%",
+        "sample": "10,000+ Ratings",
+        "normalized": 4,
+        "published": 4
+      },
+      "changed": true
+    },
+    {
+      "slug": "tin-cup-1996",
+      "title": "Tin Cup",
+      "date": "2026-11-25",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/tin-cup",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "HBO Max",
+        "providerUrl": "https://play.hbomax.com/show/a95eac6b-4ccc-4a41-9a0a-64f68a5efc57?utm_source=universal_search"
+      },
+      "old": {
+        "platform": "Apple TV",
+        "score": 8
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/tin_cup#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "65%",
+        "sample": "25,000+ Ratings",
+        "normalized": 7,
+        "published": 7
+      },
+      "changed": true
+    },
+    {
+      "slug": "spider-man-brand-new-day-2026",
+      "title": "Spider-Man: Un Nuevo Día",
+      "date": "2026-11-27",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/untitled-spider-man-sequel",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "HBO Max",
+        "providerUrl": "https://play.hbomax.com/show/ac8145d1-80de-468c-9b74-f17672ae9f19?utm_source=universal_search"
+      },
+      "old": {
+        "platform": "Prime Video",
+        "platforms": [
+          "Prime Video"
+        ],
+        "score": 8
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/spider_man_brand_new_day#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "97%",
+        "sample": "25,000+ Verified Ratings",
+        "normalized": 10,
+        "published": 8,
+        "editorialCeiling": "8: este relevamiento no acreditó el umbral editorial para 9 o 10."
+      },
+      "changed": true
+    },
+    {
+      "slug": "papa-a-cargo-2026",
+      "title": "Papá a cargo",
+      "date": "2026-11-27",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/the-breadwinner",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "HBO Max",
+        "providerUrl": "https://play.hbomax.com/show/fb73f132-7f31-4b39-ba5a-151668d22ead?utm_source=universal_search"
+      },
+      "old": {
+        "platform": "Apple TV",
+        "platforms": [
+          "Apple TV",
+          "Flow"
+        ],
+        "score": 8
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/the_breadwinner_2026#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "85%",
+        "sample": "1,000+ Verified Ratings",
+        "normalized": 9,
+        "published": 8,
+        "editorialCeiling": "8: este relevamiento no acreditó el umbral editorial para 9 o 10."
+      },
+      "changed": true
+    },
+    {
+      "slug": "camp-rock-3-2026",
+      "title": "Camp Rock 3",
+      "date": "2026-11-27",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/camp-rock-3",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Disney Plus",
+        "providerUrl": "https://www.disneyplus.com/browse/entity-f53be3ca-7cf1-4270-8792-67c315fc8555"
+      },
+      "old": {
+        "platform": "Disney Plus",
+        "score": 5
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/camp_rock_3#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "40%",
+        "sample": "100+ Ratings",
+        "normalized": 4,
+        "published": 4
+      },
+      "changed": true
+    },
+    {
+      "slug": "novocaine-2025",
+      "title": "Novocaine",
+      "date": "2026-11-26",
+      "dateBasis": "detección en el feed AR del proveedor",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/novocaine",
+      "offer": {
+        "type": "FLATRATE",
+        "provider": "Paramount Plus",
+        "providerUrl": "https://www.paramountplus.com/movies/maximum-physical-damage-makeup-effects/_U0sl4wuJQCAZk6eBvK6vP69Ltxt2hAZ?searchReferral=&amp;utm_source=publisher"
+      },
+      "old": {
+        "platform": "Netflix",
+        "score": 8
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/novocaine_2025#audience-reviews",
+        "metric": "Popcornmeter",
+        "raw": "84%",
+        "sample": "1,000+ Verified Ratings",
+        "normalized": 8,
+        "published": 8
+      },
+      "changed": true
+    }
+  ],
+  "additions": [
+    {
+      "index": 0,
+      "slug": "the-mosquito-bowl-un-partido-en-plena-guerra-2026",
+      "title": "The Mosquito Bowl: Un partido en plena guerra",
+      "originalTitle": "The Mosquito Bowl",
+      "year": 2026,
+      "date": "2026-11-25",
+      "dateSource": "https://www.netflix.com/tudum/features/new-fall-movies-on-netflix-2026",
+      "dateBasis": "anuncio de lanzamiento y detección AR",
+      "platform": "Netflix",
+      "offer": "FLATRATE",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/the-mosquito-bowl",
+      "official": "https://www.netflix.com/ar/title/81661161",
+      "country": "US",
+      "metadata": "https://www.themoviedb.org/movie/1458300",
+      "age": "+16",
+      "poster": "https://image.tmdb.org/t/p/original/uxYs0bNTF4XzM8LThJk2x3AJ0Iv.jpg",
+      "trailer": "https://www.youtube.com/watch?v=CPFkLjHfKoc",
+      "musical": {
+        "value": false,
+        "reason": "La premisa y las escenas de adelanto corresponden a Drama, Bélica, Deportes y no se sostienen en números cantados o coreografiados."
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/the_mosquito_bowl",
+        "metric": "Popcornmeter",
+        "raw": "90% · 100+ valoraciones verificadas",
+        "normalized": 9,
+        "published": 8,
+        "checkedOn": "2026-11-27",
+        "editorialCeiling": "8. Película de 2026 con estreno reciente y sin evidencia de reconocimiento sostenido o influencia en el género."
+      },
+      "duplicateCheck": {
+        "slug": "the-mosquito-bowl-un-partido-en-plena-guerra-2026",
+        "duplicates": []
+      }
+    },
+    {
+      "index": 1,
+      "slug": "el-camino-del-pequeno-guerrero-2026",
+      "title": "El camino del pequeño guerrero",
+      "originalTitle": "Way of the Warrior Kid",
+      "year": 2026,
+      "date": "2026-11-25",
+      "dateSource": "https://www.apple.com/tv-pr/news/2026/10/apple-original-films-unveils-way-of-the-warrior-kid-trailer/",
+      "dateBasis": "anuncio de lanzamiento y detección AR",
+      "platform": "Apple TV",
+      "offer": "FLATRATE",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/el-camino-del-pequeno-guerrero",
+      "official": "https://tv.apple.com/ar/movie/el-camino-del-pequeno-guerrero/umc.cmc.21vzhs44oeejdkoxenkcdmre0",
+      "country": "US",
+      "metadata": "https://www.themoviedb.org/movie/1280115",
+      "age": "+13",
+      "poster": "https://image.tmdb.org/t/p/original/atI81xXKNVah7PJFBo3aXqQKtnG.jpg",
+      "trailer": "https://www.youtube.com/watch?v=R1ECMLrwDYQ",
+      "musical": {
+        "value": false,
+        "reason": "La premisa y las escenas de adelanto corresponden a Drama, Familia, Acción y no se sostienen en números cantados o coreografiados."
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/way_of_the_warrior_kid",
+        "metric": "Popcornmeter",
+        "raw": "84% · 100+ valoraciones",
+        "normalized": 8,
+        "published": 8,
+        "checkedOn": "2026-11-27"
+      },
+      "duplicateCheck": {
+        "slug": "el-camino-del-pequeno-guerrero-2026",
+        "duplicates": []
+      }
+    },
+    {
+      "index": 5,
+      "slug": "joe-contra-el-volcan-1990",
+      "title": "Joe contra el volcán",
+      "originalTitle": "Joe Versus the Volcano",
+      "year": 1990,
+      "date": "2026-11-25",
+      "dateSource": "https://www.justwatch.com/ar/proveedor/hbo-max/nuevo/peliculas",
+      "dateBasis": "detección en feed del proveedor AR",
+      "platform": "HBO Max",
+      "offer": "FLATRATE",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/joe-contra-el-volcan",
+      "official": "https://play.hbomax.com/show/ad25738a-89e2-42a4-ad92-fab3bcc27dd7",
+      "country": "US",
+      "metadata": "https://www.themoviedb.org/movie/2565",
+      "age": "+13",
+      "poster": "https://image.tmdb.org/t/p/original/fwjMUuDZUxedfsUpVQKQN8cYfzB.jpg",
+      "trailer": "https://www.youtube.com/watch?v=yNYFtQIMB2Q",
+      "musical": {
+        "value": false,
+        "reason": "La premisa y las escenas de adelanto corresponden a Romance, Comedia, Fantasía y no se sostienen en números cantados o coreografiados."
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/joe_versus_the_volcano",
+        "metric": "Popcornmeter",
+        "raw": "54% · 50.000+ valoraciones",
+        "normalized": 5,
+        "published": 5,
+        "checkedOn": "2026-11-27"
+      },
+      "duplicateCheck": {
+        "slug": "joe-contra-el-volcan-1990",
+        "duplicates": []
+      }
+    },
+    {
+      "index": 8,
+      "slug": "rastreado-2025",
+      "title": "Rastreado",
+      "originalTitle": "Off the Grid",
+      "year": 2025,
+      "date": "2026-11-23",
+      "dateSource": "https://www.justwatch.com/ar/proveedor/paramount-plus/nuevo/peliculas",
+      "dateBasis": "detección en feed del proveedor AR",
+      "platform": "Paramount Plus",
+      "offer": "FLATRATE",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/rastreado",
+      "official": "https://www.paramountplus.com/movies/off-the-grid/ALVE01M708J4JQEY8VBB3SM4SFT0BB",
+      "country": "IT, US",
+      "metadata": "https://www.themoviedb.org/movie/1371151",
+      "age": "+17",
+      "poster": "https://image.tmdb.org/t/p/original/mMUVnkcx2VawTBJYnnnRN8fxJpb.jpg",
+      "trailer": "https://www.youtube.com/watch?v=c3WkhVLqKaI",
+      "musical": {
+        "value": false,
+        "reason": "La premisa y las escenas de adelanto corresponden a Acción, Thriller, Crimen y no se sostienen en números cantados o coreografiados."
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/off_the_grid_2025",
+        "metric": "Popcornmeter",
+        "raw": "21% · 50+ valoraciones",
+        "normalized": 2,
+        "published": 2,
+        "checkedOn": "2026-11-27"
+      },
+      "duplicateCheck": {
+        "slug": "rastreado-2025",
+        "duplicates": []
+      }
+    },
+    {
+      "index": 9,
+      "slug": "keeper-2025",
+      "title": "Keeper",
+      "originalTitle": "Keeper",
+      "year": 2025,
+      "date": "2026-11-24",
+      "dateSource": "https://www.justwatch.com/ar/proveedor/amazon-prime-video/nuevo/peliculas",
+      "dateBasis": "detección en feed del proveedor AR",
+      "platform": "Prime Video",
+      "offer": "FLATRATE",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/keeper",
+      "official": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c5efa04b-7822-4d02-85a0-0a222e47086f",
+      "country": "CA",
+      "metadata": "https://www.themoviedb.org/movie/1288072",
+      "age": "+16",
+      "poster": "https://image.tmdb.org/t/p/original/mbGHijUc0C3fcM12l6ro6FgxIvg.jpg",
+      "trailer": "https://www.youtube.com/watch?v=cwpusY785l4",
+      "musical": {
+        "value": false,
+        "reason": "La premisa y las escenas de adelanto corresponden a Terror, Misterio, Thriller y no se sostienen en números cantados o coreografiados."
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/keeper_2025",
+        "metric": "Popcornmeter",
+        "raw": "40% · 250+ valoraciones verificadas",
+        "normalized": 4,
+        "published": 4,
+        "checkedOn": "2026-11-27"
+      },
+      "duplicateCheck": {
+        "slug": "keeper-2025",
+        "duplicates": []
+      }
+    },
+    {
+      "index": 16,
+      "slug": "queridos-vecinos-2020",
+      "title": "Queridos vecinos",
+      "originalTitle": "Favolacce",
+      "year": 2020,
+      "date": "2026-11-23",
+      "dateSource": "https://www.justwatch.com/ar/proveedor/mubi/nuevo/peliculas",
+      "dateBasis": "detección en feed del proveedor AR",
+      "platform": "MUBI",
+      "offer": "FLATRATE",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/queridos-vecinos",
+      "official": "https://mubi.com/es/ar/films/bad-tales",
+      "country": "CH, IT",
+      "metadata": "https://www.themoviedb.org/movie/614292",
+      "age": "+16",
+      "poster": "https://image.tmdb.org/t/p/original/k2NTmlJkdHhEZtKGQhQz5ovozAB.jpg",
+      "trailer": "https://www.youtube.com/watch?v=xwj3m-mEA_E",
+      "musical": {
+        "value": false,
+        "reason": "La premisa y las escenas de adelanto corresponden a Drama y no se sostienen en números cantados o coreografiados."
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/bad_tales",
+        "metric": "Popcornmeter",
+        "raw": "55% · menos de 50 valoraciones",
+        "normalized": 6,
+        "published": 6,
+        "checkedOn": "2026-11-27"
+      },
+      "duplicateCheck": {
+        "slug": "queridos-vecinos-2020",
+        "duplicates": []
+      }
+    },
+    {
+      "index": 17,
+      "slug": "dos-rubias-de-pelo-en-pecho-2004",
+      "title": "Dos rubias de pelo en pecho",
+      "originalTitle": "White Chicks",
+      "year": 2004,
+      "date": "2026-11-27",
+      "dateSource": "https://www.justwatch.com/ar/proveedor/hbo-max/nuevo/peliculas",
+      "dateBasis": "detección en feed del proveedor AR",
+      "platform": "HBO Max",
+      "offer": "FLATRATE",
+      "justwatch": "https://www.justwatch.com/ar/pelicula/dos-rubias-de-pelo-en-pecho",
+      "official": "https://play.hbomax.com/show/230a0e20-e535-4f13-8f03-8af478908fe8",
+      "country": "US",
+      "metadata": "https://www.themoviedb.org/movie/12153",
+      "age": "ATP",
+      "poster": "https://image.tmdb.org/t/p/original/aHTUpo45qy9QYIOnVITGGqLoVcA.jpg",
+      "trailer": "https://www.youtube.com/watch?v=naac-1AIYw8",
+      "musical": {
+        "value": false,
+        "reason": "La premisa y las escenas de adelanto corresponden a Comedia, Crimen y no se sostienen en números cantados o coreografiados."
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/white_chicks",
+        "metric": "Popcornmeter",
+        "raw": "55% · 250.000+ valoraciones",
+        "normalized": 6,
+        "published": 6,
+        "checkedOn": "2026-11-27"
+      },
+      "duplicateCheck": {
+        "slug": "dos-rubias-de-pelo-en-pecho-2004",
+        "duplicates": []
+      }
+    }
+  ]
+}

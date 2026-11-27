@@ -1,0 +1,465 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "joe-contra-el-volcan-1990",
+	"title": "Joe contra el volcán",
+	"year": 1990,
+	"reviewedOn": "2026-11-27",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/2565/cast",
+			"kind": "Reparto completo de TMDB por identificador y personajes exactos",
+			"checkedOn": "2026-11-27",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://play.hbomax.com/show/ad25738a-89e2-42a4-ad92-fab3bcc27dd7",
+			"kind": "Selección de la plataforma argentina y ficha del mismo título",
+			"checkedOn": "2026-11-27"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt0099892/fullcredits/",
+			"kind": "Contraste por identificador IMDb del título",
+			"checkedOn": "2026-11-27"
+		}
+	],
+	"credits": [
+		{
+			"name": "John Patrick Shanley",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/26095",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0788234/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/oUEWmrs3OlEOfsGB87ygxaiSWa.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/john-patrick-shanley-tmdb-26095.jpg"
+			}
+		},
+		{
+			"name": "Tom Hanks",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Joe Banks",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/31",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000158/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Hanks%20at%20the%20Elvis%20Premiere%202022.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/tom-hanks-nm0000158.jpg"
+			}
+		},
+		{
+			"name": "Meg Ryan",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "DeDe / Angelica / Patricia Graynamore",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5344",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000212/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Meg%20Ryan%202009%20portrait.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/meg-ryan-nm0000212.jpg"
+			}
+		},
+		{
+			"name": "Lloyd Bridges",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Samuel Harvey Graynamore",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2177",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000978/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lloyd%20Bridges%201966.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/lloyd-bridges-nm0000978.jpg"
+			}
+		},
+		{
+			"name": "Dan Hedaya",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Frank Waturi",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/6486",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0000445/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/evL3mV8hNIjZOb1XG3qtgmiTgS5.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/dan-hedaya-tmdb-6486.jpg"
+			}
+		},
+		{
+			"name": "Ossie Davis",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Marshall",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/15531",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001115/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ossie%20Davis.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/ossie-davis-nm0001115.jpg"
+			}
+		},
+		{
+			"name": "Barry McGovern",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Luggage Salesman",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/26094",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0569547/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/6Mgf9lphp7qyoYzXemB5SBKelV5.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/barry-mcgovern-tmdb-26094.jpg"
+			}
+		},
+		{
+			"name": "Robert Stack",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Dr. Ellison",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2493",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0821041/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/f1MchlCMVc4LDWEALsodZHPkbIu.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/robert-stack-tmdb-2493.jpg"
+			}
+		},
+		{
+			"name": "Amanda Plummer",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Dagmar",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/99",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001625/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wEwyajjePFVVn2wFdH1NH7z9Qn5.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/amanda-plummer-tmdb-99.jpg"
+			}
+		},
+		{
+			"name": "Lala Sloatman",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Waitress",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Waitress. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Abe Vigoda",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Chief of the Waponis",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Chief of the Waponis. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Carol Kane",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Hairdresser",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Hairdresser. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Branscombe Richmond",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Waponi",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Waponi. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jayne Haynes",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Nurse",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Nurse. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "David Burton",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Mike",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Mike. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jon Conrad Pochron",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Tony",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Tony. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jim Hudson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Fred - Guard",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Fred - Guard. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Antoni Gatti",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Italian Tailor",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Italian Tailor. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Darrell Zwerling",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Underwear Salesman",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Underwear Salesman. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jim Ryan",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Bellman",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bellman. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Karl Rumburg",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Ralph",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Ralph. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Brian Esteban",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Emo - Waponi Lookout",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Emo - Waponi Lookout. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Nathan Lane",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Baw - The Waponi Advance Man",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Baw - The Waponi Advance Man. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Wally Ruiz",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Spanish Singer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Spanish Singer. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Guillermo Guzman",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Spanish Singer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Spanish Singer. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Tommy Franco",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Spanish Singer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Spanish Singer. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Tony Salome",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Clerk",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Clerk. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Courtney Gibbs",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Saleswoman",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Saleswoman. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jennifer Stewart",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Statue of Liberty",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Statue of Liberty. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "William Ward",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "Salesman - Hammacher Schlemmer",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Salesman - Hammacher Schlemmer. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Paul Michael Thorpe",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/2565/cast",
+			"screenRole": "God Woo",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica God Woo. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el orden del reparto y se conservaron dirección y roles principales. Cada omisión queda asentada junto al rol que publica el reparto completo.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Lala Sloatman",
+				"role": "performer"
+			}
+		]
+	}
+}

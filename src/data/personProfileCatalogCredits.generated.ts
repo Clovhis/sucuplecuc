@@ -642,6 +642,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "bill-skarsgard": [
     "la-muerte-de-robin-hood-2026",
+    "the-mosquito-bowl-un-partido-en-plena-guerra-2026",
     "nosferatu-2024",
     "barbarian-2022",
     "it-2017"
@@ -1096,6 +1097,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "imparable-2010"
   ],
   "chris-pratt": [
+    "el-camino-del-pequeno-guerrero-2026",
     "mercy-2026",
     "super-mario-galaxy-2026",
     "the-electric-state-2025",
@@ -4189,6 +4191,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "colgadas-2000",
     "anastasia-1997",
     "en-honor-a-la-verdad-1996",
+    "joe-contra-el-volcan-1990",
     "cuando-harry-encontro-a-sally-1989"
   ],
   "mel-gibson": [
@@ -5943,7 +5946,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "toy-story-1995",
     "forrest-gump-1994",
     "filadelfia-1993",
-    "un-equipo-muy-especial-1992"
+    "un-equipo-muy-especial-1992",
+    "joe-contra-el-volcan-1990"
   ],
   "tom-hardy": [
     "havoc-2025",

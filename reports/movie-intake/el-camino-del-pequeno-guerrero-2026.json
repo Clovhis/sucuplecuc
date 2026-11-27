@@ -1,0 +1,493 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "el-camino-del-pequeno-guerrero-2026",
+	"title": "El camino del pequeño guerrero",
+	"year": 2026,
+	"reviewedOn": "2026-11-27",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1280115/cast",
+			"kind": "Reparto completo de TMDB por identificador y personajes exactos",
+			"checkedOn": "2026-11-27",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://tv.apple.com/ar/movie/el-camino-del-pequeno-guerrero/umc.cmc.21vzhs44oeejdkoxenkcdmre0",
+			"kind": "Selección de la plataforma argentina y ficha del mismo título",
+			"checkedOn": "2026-11-27"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt32213169/fullcredits/",
+			"kind": "Contraste por identificador IMDb del título",
+			"checkedOn": "2026-11-27"
+		}
+	],
+	"credits": [
+		{
+			"name": "Joseph McGinty Nichol",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/36425",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0629334/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				},
+				{
+					"url": "https://tv.apple.com/ar/movie/el-camino-del-pequeno-guerrero/umc.cmc.21vzhs44oeejdkoxenkcdmre0",
+					"fact": "Apple TV Argentina acredita al director con su nombre completo, Joseph McGinty Nichol. El mismo director figura como McG en el reparto técnico de TMDB y la sala de prensa de Apple."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sEcoHVCqc2IrJkxgixGHrDytsyd.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/joseph-mcginty-nichol-tmdb-36425.jpg"
+			}
+		},
+		{
+			"name": "Chris Pratt",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Jake",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/73457",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0695435/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chris%20Pratt%202018.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/chris-pratt-nm0695435.jpg"
+			}
+		},
+		{
+			"name": "Jude Hill",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Marc",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/3232669",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm11879379/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://media.themoviedb.org/t/p/w500/yAcW6qaqQVok6UpfPb1D9dPBFbK.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jude-hill-nm11879379.jpg"
+			}
+		},
+		{
+			"name": "Linda Cardellini",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Sarah",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1817",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0004802/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/bcycvynDprC1rrhBNrnBjn5uOUd.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/linda-cardellini-tmdb-1817.jpg"
+			}
+		},
+		{
+			"name": "Jocko Willink",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Coach Adam",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4137457",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm6163323/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/frJ5tcvtQCUFLD6HD49C3Y5rY8J.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/jocko-willink-tmdb-4137457.jpg"
+			}
+		},
+		{
+			"name": "Ava Torres",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Nora",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2822796",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm10746258/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/yc0M1jojP4lIbOZ4uVA7CDyJ848.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ava-torres-tmdb-2822796.jpg"
+			}
+		},
+		{
+			"name": "Levi McConaughey",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Kenny",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/4923539",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm16289583/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xx8gjuqVsMnyhXqWdyqACU1WDel.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/levi-mcconaughey-tmdb-4923539.jpg"
+			}
+		},
+		{
+			"name": "Darien Sills-Evans",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Commander Barnes",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/187637",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1036042/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/znJf3vMSu2uVdlv2de4F4NU08KH.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/darien-sills-evans-tmdb-187637.jpg"
+			}
+		},
+		{
+			"name": "Carl McDowell",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Principal Lanzetta",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1602552",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2123846/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/rQHw5oMkxmwWSqFxYyiZddVdwXv.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/carl-mcdowell-tmdb-1602552.jpg"
+			}
+		},
+		{
+			"name": "Parker Young",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Kyle",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1254635",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2875233/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wrBquz08tLT4GpG30JBOvfTVy93.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/parker-young-tmdb-1254635.jpg"
+			}
+		},
+		{
+			"name": "Arlan Ruf",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Logan",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Logan. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ellis Hobbs IV",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Finn",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Finn. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ryan Haake",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Seal Ronnie",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Seal Ronnie. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "George Shinn III",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Navy Doctor",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Navy Doctor. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jason Rogel",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Coach Barletta",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Coach Barletta. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Austin Boyce",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Naval Physical Therapist",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Naval Physical Therapist. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "John Pyper-Ferguson",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Kenny's Dad",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Kenny's Dad. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Myles Cranford",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Elderly Husband",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Elderly Husband. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Maia",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Elderly Wife",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Elderly Wife. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Lisa McRee",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Newscaster",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Newscaster. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Tony Pyle",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Nora's Dad",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Nora's Dad. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Rana Willink",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Coach Rana",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Coach Rana. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Lily Villegas",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Girl on Bus",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Girl on Bus. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Marc Chason Ner Jr.",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "MMA Kid",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica MMA Kid. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Trinity Lee Shirley",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Student",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Student. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Delon de Metz",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Levi",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Levi. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Lauren Ash",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Clothing Store Assistant",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Clothing Store Assistant. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Mia Trella",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Bus Kid",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bus Kid. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Breezy Mulan",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Bus Kid",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bus Kid. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Mabel Lowe",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Bus Kid",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bus Kid. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Fiona Lowe",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Bus Kid",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bus Kid. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Tina Alexis Allen",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Emergency Dispatcher",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Emergency Dispatcher. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Monib Abhat",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1280115/cast",
+			"screenRole": "Helicopter Pilot",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Helicopter Pilot. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		}
+	]
+}

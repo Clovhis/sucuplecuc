@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-26. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-27. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4751
+Total de vínculos de películas del catálogo: 4755
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -96,7 +96,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Bill Hader | `bill-hader` | /personas/bill-hader/ | Actor / Guionista | 8 | 5 |
 | Bill Murray | `bill-murray` | /personas/bill-murray/ | Actor | 11 | 4 |
 | Bill Nighy | `bill-nighy` | /personas/bill-nighy/ | Actor | 4 | 6 |
-| Bill Skarsgård | `bill-skarsgard` | /personas/bill-skarsgard/ | Actor | 4 | 6 |
+| Bill Skarsgård | `bill-skarsgard` | /personas/bill-skarsgard/ | Actor | 5 | 6 |
 | Billy Crudup | `billy-crudup` | /personas/billy-crudup/ | Actor | 6 | 6 |
 | Billy Crystal | `billy-crystal` | /personas/billy-crystal/ | Actor / Guionista / Director | 4 | 5 |
 | Billy Wilder | `billy-wilder` | /personas/billy-wilder/ | Director | 5 | 5 |
@@ -158,7 +158,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Chris Evans | `chris-evans` | /personas/chris-evans/ | Actor | 13 | 6 |
 | Chris Hemsworth | `chris-hemsworth` | /personas/chris-hemsworth/ | Actor | 11 | 6 |
 | Chris Pine | `chris-pine` | /personas/chris-pine/ | Actor | 6 | 7 |
-| Chris Pratt | `chris-pratt` | /personas/chris-pratt/ | Actor | 16 | 6 |
+| Chris Pratt | `chris-pratt` | /personas/chris-pratt/ | Actor | 17 | 6 |
 | Chris Rock | `chris-rock` | /personas/chris-rock/ | Actor / Comediante / Guionista | 5 | 5 |
 | Christian Bale | `christian-bale` | /personas/christian-bale/ | Actor | 20 | 5 |
 | Christoph Waltz | `christoph-waltz` | /personas/christoph-waltz/ | Actor | 11 | 6 |
@@ -547,7 +547,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Matthew McConaughey | `matthew-mcconaughey` | /personas/matthew-mcconaughey/ | Actor | 8 | 4 |
 | Mauricio Dayub | `mauricio-dayub` | /personas/mauricio-dayub/ | Actor | 1 | 7 |
 | Max von Sydow | `max-von-sydow` | /personas/max-von-sydow/ | Actor | 4 | 3 |
-| Meg Ryan | `meg-ryan` | /personas/meg-ryan/ | Actriz / Directora | 5 | 5 |
+| Meg Ryan | `meg-ryan` | /personas/meg-ryan/ | Actriz / Directora | 6 | 5 |
 | Mel Gibson | `mel-gibson` | /personas/mel-gibson/ | Actor | 12 | 7 |
 | Melina Petriella | `melina-petriella` | /personas/melina-petriella/ | Actriz / Productora | 1 | 4 |
 | Melissa Barrera | `melissa-barrera` | /personas/melissa-barrera/ | Actriz | 2 | 7 |
@@ -756,7 +756,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Tobin Bell | `tobin-bell` | /personas/tobin-bell/ | Actor | 8 | 3 |
 | Tom Berenger | `tom-berenger` | /personas/tom-berenger/ | Actor | 4 | 4 |
 | Tom Cruise | `tom-cruise` | /personas/tom-cruise/ | Actor | 25 | 7 |
-| Tom Hanks | `tom-hanks` | /personas/tom-hanks/ | Actor / Productor | 28 | 6 |
+| Tom Hanks | `tom-hanks` | /personas/tom-hanks/ | Actor / Productor | 29 | 6 |
 | Tom Hardy | `tom-hardy` | /personas/tom-hardy/ | Actor | 8 | 7 |
 | Tom Hiddleston | `tom-hiddleston` | /personas/tom-hiddleston/ | Actor | 5 | 7 |
 | Tom Holland | `tom-holland` | /personas/tom-holland/ | Actor | 8 | 7 |

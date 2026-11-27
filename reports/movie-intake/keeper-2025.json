@@ -1,0 +1,306 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "keeper-2025",
+	"title": "Keeper",
+	"year": 2025,
+	"reviewedOn": "2026-11-27",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1288072/cast",
+			"kind": "Reparto completo de TMDB por identificador y personajes exactos",
+			"checkedOn": "2026-11-27",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c5efa04b-7822-4d02-85a0-0a222e47086f",
+			"kind": "Selección de la plataforma argentina y ficha del mismo título",
+			"checkedOn": "2026-11-27"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt32332404/fullcredits/",
+			"kind": "Contraste por identificador IMDb del título",
+			"checkedOn": "2026-11-27"
+		}
+	],
+	"credits": [
+		{
+			"name": "Osgood Perkins",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/90609",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0674020/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/sshAqrQ2DV2TUsgBAr1XaYqqxkm.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/oz-perkins-tmdb-90609.jpg"
+			}
+		},
+		{
+			"name": "Tatiana Maslany",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Liz",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/61134",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1137209/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tatiana%20Maslany%20at%20IGN%20Live%202026.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/tatiana-maslany-nm1137209.jpg"
+			}
+		},
+		{
+			"name": "Rossif Sutherland",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Malcolm Westbridge",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/58014",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1160472/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3ZBXM6CqZutyWWR6vbGvLcm8HDk.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/rossif-sutherland-tmdb-58014.jpg"
+			}
+		},
+		{
+			"name": "Birkett Turton",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Darren",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/110525",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0878141/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/dsmW4TgzKUcLpWyE3hhZ8POmjS2.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/birkett-turton-tmdb-110525.jpg"
+			}
+		},
+		{
+			"name": "Eden Weiss",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Minka",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/5636839",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm8410818/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/11OxhppBdSFxdIJfkeQsLrXRTih.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/eden-weiss-nm8410818.jpg"
+			}
+		},
+		{
+			"name": "Cassandra Ebner",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Baghead",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1281629",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5071850/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/ykIe7cvJjrdBgPilC5sCsZkwXCz.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/cassandra-ebner-tmdb-1281629.jpg"
+			}
+		},
+		{
+			"name": "Tess Degenstein",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Baghead / Maggie",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1947828",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm1393440/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/lV2W5s1oR2Hp3PRQtYnOOv6wCgK.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/tess-degenstein-tmdb-1947828.jpg"
+			}
+		},
+		{
+			"name": "Erin Boyes",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Julia",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/53718",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2484639/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xvtkUVuGSK1gFpc39vIWZuXfl0O.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/erin-boyes-tmdb-53718.jpg"
+			}
+		},
+		{
+			"name": "Gina Vultaggio",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Francis",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Francis. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Claire Friesen",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Louise",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Louise. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Christin Park",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Leslie",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Leslie. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Glen Gordon",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Teen Malcolm",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Teen Malcolm. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Logan Pierce",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Teen Darren",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Teen Darren. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Dolores Drake",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Mrs. McCallum",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Mrs. McCallum. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Evelyn Burke",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Peasant Girl",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Peasant Girl. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ella Wejr",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1288072/cast",
+			"screenRole": "Peasant Girl",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Peasant Girl. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el orden del reparto y se conservaron dirección y roles principales. Cada omisión queda asentada junto al rol que publica el reparto completo.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Gina Vultaggio",
+				"role": "performer"
+			},
+			{
+				"name": "Claire Friesen",
+				"role": "performer"
+			}
+		]
+	}
+}

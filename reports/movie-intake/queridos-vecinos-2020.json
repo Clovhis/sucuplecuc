@@ -1,0 +1,368 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "queridos-vecinos-2020",
+	"title": "Queridos vecinos",
+	"year": 2020,
+	"reviewedOn": "2026-11-27",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/614292/cast",
+			"kind": "Reparto completo de TMDB por identificador y personajes exactos",
+			"checkedOn": "2026-11-27",
+			"fullCredits": true,
+			"relevantCreditCount": 11
+		},
+		{
+			"url": "https://mubi.com/es/ar/films/bad-tales",
+			"kind": "Selección de la plataforma argentina y ficha del mismo título",
+			"checkedOn": "2026-11-27"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt8526370/fullcredits/",
+			"kind": "Contraste por identificador IMDb del título",
+			"checkedOn": "2026-11-27"
+		}
+	],
+	"credits": [
+		{
+			"name": "Fabio D'Innocenzo",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1664305",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://mubi.com/es/ar/films/bad-tales",
+					"fact": "Los créditos de la distribuidora identifican a la misma persona y su participación."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3d6jE84EXyrNOlJ7fM2SpthvVG7.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/fabio-d-innocenzo-tmdb-1664305.jpg"
+			}
+		},
+		{
+			"name": "Damiano D'Innocenzo",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1664304",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://mubi.com/es/ar/films/bad-tales",
+					"fact": "Los créditos de la distribuidora identifican a la misma persona y su participación."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/chANadZnQi3rPbrBd2bS8TSKofy.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/damiano-d-innocenzo-tmdb-1664304.jpg"
+			}
+		},
+		{
+			"name": "Elio Germano",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Bruno Placido",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/59269",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0314554/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MJK%2070936%20Elio%20Germano%20(Favolacce%2C%20Berlinale%202020).jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/elio-germano-nm0314554.jpg"
+			}
+		},
+		{
+			"name": "Tommaso Di Cola",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Dennis Placido",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2494132",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm10971622/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mlk4er1UZvfRZpqOHVEAAzzJSF4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/tommaso-di-cola-tmdb-2494132.jpg"
+			}
+		},
+		{
+			"name": "Giulietta Rebeggiani",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Alessia Placido",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1686358",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm8584079/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/wzjYEK5KKYSrusqXJQxA53D6Wq4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/giulietta-rebeggiani-tmdb-1686358.jpg"
+			}
+		},
+		{
+			"name": "Gabriel Montesi",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Amelio Guerrini",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/2197426",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm7080395/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/w6b0WRfC3Z2uIn9BkUaRaaTCylx.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/gabriel-montesi-tmdb-2197426.jpg"
+			}
+		},
+		{
+			"name": "Justin Alexander Korovkin",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Geremia Guerrini",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1960351",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm9059090/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/pUF1RMxYw9xVzg83viX1OYYadeV.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/justin-alexander-korovkin-tmdb-1960351.jpg"
+			}
+		},
+		{
+			"name": "Barbara Chichiarelli",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Dalila Placido",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1901421",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm7442260/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/hTaARRojE5OQjivkQTzTx3xHSwz.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/barbara-chichiarelli-tmdb-1901421.jpg"
+			}
+		},
+		{
+			"name": "Lino Musella",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Professor Bernardini",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1871368",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm5034016/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/xZuVRh6zyh4fo5QsxERHu25l3P4.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/lino-musella-tmdb-1871368.jpg"
+			}
+		},
+		{
+			"name": "Ileana D'Ambra",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Vilma Tommasi",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Vilma Tommasi. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Max Malatesta",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Pietro Rosa",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Pietro Rosa. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Aldo Ottobrino",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Padre di Ada",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Padre di Ada. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Cristina Pellegrino",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Susanna Rosa",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Susanna Rosa. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Giulia Melillo",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Viola Rosa",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Viola Rosa. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Laura Borgioli",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Ada Tartaglia",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Ada Tartaglia. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Enrico Pittari",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Cugino di Amelio",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Cugino di Amelio. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Sara Bertelà",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Preside",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Preside. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Federico Majorana",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Fidanzato di Vilma",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Fidanzato di Vilma. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Raquel Electra",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"omissionCategory": "incidental",
+			"omissionReason": "Crédito adicional sin personaje identificado en el listado completo consultado."
+		},
+		{
+			"name": "Giulia Galiani",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Madre di Ada",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Madre di Ada. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Max Tortora",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/614292/cast",
+			"screenRole": "Narratore",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Narratore. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el orden del reparto y se conservaron dirección y roles principales. Cada omisión queda asentada junto al rol que publica el reparto completo.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Ileana D'Ambra",
+				"role": "performer"
+			},
+			{
+				"name": "Max Malatesta",
+				"role": "performer"
+			}
+		]
+	}
+}

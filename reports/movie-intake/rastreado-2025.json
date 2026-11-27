@@ -1,0 +1,378 @@
+{
+	"schemaVersion": 1,
+	"status": "reviewed",
+	"movieSlug": "rastreado-2025",
+	"title": "Rastreado",
+	"year": 2025,
+	"reviewedOn": "2026-11-27",
+	"billingSources": [
+		{
+			"url": "https://www.themoviedb.org/movie/1371151/cast",
+			"kind": "Reparto completo de TMDB por identificador y personajes exactos",
+			"checkedOn": "2026-11-27",
+			"fullCredits": true,
+			"relevantCreditCount": 10
+		},
+		{
+			"url": "https://www.paramountplus.com/movies/off-the-grid/ALVE01M708J4JQEY8VBB3SM4SFT0BB",
+			"kind": "Selección de la plataforma argentina y ficha del mismo título",
+			"checkedOn": "2026-11-27"
+		},
+		{
+			"url": "https://www.imdb.com/title/tt27424511/fullcredits/",
+			"kind": "Contraste por identificador IMDb del título",
+			"checkedOn": "2026-11-27"
+		}
+	],
+	"credits": [
+		{
+			"name": "Johnny Martin",
+			"role": "director",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Director",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/63423",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0552565/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/mtNPfGwZKGnLE4MzauUcoGM7NHn.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/johnny-martin-tmdb-63423.jpg"
+			}
+		},
+		{
+			"name": "Josh Duhamel",
+			"role": "performer",
+			"prominence": "lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Guy",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/19536",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0241049/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Josh%20Duhamel%20SXSW%202017%20(cropped).jpg?width=1200",
+				"visuallyVerified": true,
+				"localPath": "/people/josh-duhamel-nm0241049.jpg"
+			}
+		},
+		{
+			"name": "Greg Kinnear",
+			"role": "performer",
+			"prominence": "co-lead",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Ranish",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/17141",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001427/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/GregKinnearTIFFSept2012%20(cropped).jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/greg-kinnear-nm0001427.jpg"
+			}
+		},
+		{
+			"name": "María Elisa Camargo",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Josey",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1257802",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2075350/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/3rkxKz7bylodgS0ITMjlLkBPvVK.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/maria-elisa-camargo-tmdb-1257802.jpg"
+			}
+		},
+		{
+			"name": "Peter Stormare",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Belcor",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/53",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm0001780/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Stormare%202015-09-23%20001.jpg?width=640",
+				"visuallyVerified": true,
+				"localPath": "/people/peter-stormare-nm0001780.jpg"
+			}
+		},
+		{
+			"name": "Ricky Russert",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "include",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Marcus",
+			"identitySources": [
+				{
+					"url": "https://www.themoviedb.org/person/1648749",
+					"fact": "La filmografía de esta persona registra el mismo ID de película y el crédito cotejado."
+				},
+				{
+					"url": "https://www.imdb.com/name/nm2216602/",
+					"fact": "El identificador de IMDb corresponde a la misma persona en su ficha de identidad."
+				}
+			],
+			"portrait": {
+				"sourceUrl": "https://image.tmdb.org/t/p/original/5xDjMCq5qS6GwPRTbM5wvFC5Gk7.jpg",
+				"visuallyVerified": true,
+				"localPath": "/people/ricky-russert-tmdb-1648749.jpg"
+			}
+		},
+		{
+			"name": "Michael Zapesotsky",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Chase",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Chase. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Joe Bucaro III",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Chase’s Father",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Chase’s Father. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Daniel Farag",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Omar",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica Omar. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Paul Sampson",
+			"role": "performer",
+			"prominence": "supporting",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "PAU",
+			"omissionCategory": "lesser-role",
+			"omissionReason": "El reparto completo indica PAU. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Talia Asseraf",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Mia",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Mia. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Michael Papajohn",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Sheriff",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Sheriff. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "David Lipper",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Eddie",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Eddie. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Tana Ireland",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Kat",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Kat. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Isaiah LaBorde",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Armen",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Armen. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Kipp Tribble",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Tommy",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Tommy. Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Emily Brinks",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Bartender (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bartender (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Tremayne Cole",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Bar Patron (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bar Patron (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ana Golja",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Katrina (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Katrina (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Ashton Merrett",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Ar (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Ar (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Maiya Moran",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Bartender (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bartender (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Monia Lea Rafaeli",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Jade (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Jade (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Stephen Thaxton",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Bar Patron (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Bar Patron (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Jeffrey Vu",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Mercenary (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Mercenary (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		},
+		{
+			"name": "Calvin Williams",
+			"role": "performer",
+			"prominence": "incidental",
+			"decision": "omit",
+			"creditSourceUrl": "https://www.themoviedb.org/movie/1371151/cast",
+			"screenRole": "Townsperson (uncredited)",
+			"omissionCategory": "incidental",
+			"omissionReason": "El reparto completo indica Townsperson (uncredited). Papel secundario fuera del grupo que conduce la trama en esta ficha."
+		}
+	],
+	"coverageReview": {
+		"rationale": "Se revisó el orden del reparto y se conservaron dirección y roles principales. Cada omisión queda asentada junto al rol que publica el reparto completo.",
+		"omittedRelevantCredits": [
+			{
+				"name": "Michael Zapesotsky",
+				"role": "performer"
+			},
+			{
+				"name": "Joe Bucaro III",
+				"role": "performer"
+			},
+			{
+				"name": "Daniel Farag",
+				"role": "performer"
+			},
+			{
+				"name": "Paul Sampson",
+				"role": "performer"
+			}
+		]
+	}
+}
