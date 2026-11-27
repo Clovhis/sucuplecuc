@@ -1352,6 +1352,28 @@
 					"Prime Video"
 				]
 			}
+		},
+		{
+			"slug": "el-intercambio-navideno-2026",
+			"bufferPostId": "6b08fbe2e94385a8fd6e44cd",
+			"dueAt": "2026-11-27T22:00:00.000Z",
+			"scheduledAt": "2026-11-27T03:41:22.517Z",
+			"copyStyle": {
+				"opening": 3422747708,
+				"availability": 3265825035,
+				"editorial": 199474265,
+				"verdict": 550054937,
+				"link": 1868562480
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/bara-till-jul",
+				"checkedAt": "2026-11-27T03:41:21.655Z",
+				"kind": "subscription",
+				"platforms": [
+					"Netflix"
+				]
+			}
 		}
 	]
 }
