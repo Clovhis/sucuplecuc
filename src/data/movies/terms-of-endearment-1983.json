@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Shirley MacLaine",
 		"Debra Winger",
-		"Jack Nicholson"
+		"Jack Nicholson",
+		"Danny DeVito",
+		"Jeff Daniels",
+		"John Lithgow"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 8,
@@ -80,6 +83,27 @@
 			"tmdbMovieId": 11050,
 			"tmdbPersonId": 514,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny DeVito",
+			"character": "Vernon Dahlart",
+			"tmdbMovieId": 11050,
+			"tmdbPersonId": 518,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeff Daniels",
+			"character": "Flap Horton",
+			"tmdbMovieId": 11050,
+			"tmdbPersonId": 8447,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Lithgow",
+			"character": "Sam Burns",
+			"tmdbMovieId": 11050,
+			"tmdbPersonId": 12074,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

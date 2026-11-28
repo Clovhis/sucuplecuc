@@ -24,7 +24,9 @@
 	"director": "Guillermo del Toro",
 	"mainCast": [
 		"Ewan McGregor",
-		"Ron Perlman"
+		"Ron Perlman",
+		"John Turturro",
+		"Cate Blanchett"
 	],
 	"productionCompany": "Netflix Animation",
 	"cinepostaScore": 8,
@@ -67,6 +69,20 @@
 			"tmdbMovieId": 555604,
 			"tmdbPersonId": 2372,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Turturro",
+			"character": "Dottore (voice)",
+			"tmdbMovieId": 555604,
+			"tmdbPersonId": 1241,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cate Blanchett",
+			"character": "Spazzatura (voice)",
+			"tmdbMovieId": 555604,
+			"tmdbPersonId": 112,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -19,7 +19,11 @@
 	"mainCast": [
 		"Hayden Christensen",
 		"Ewan McGregor",
-		"Natalie Portman"
+		"Natalie Portman",
+		"Christopher Lee",
+		"Samuel L. Jackson",
+		"Frank Oz",
+		"Ian McDiarmid"
 	],
 	"productionCompany": "Lucasfilm",
 	"cinepostaScore": 8,
@@ -74,6 +78,34 @@
 			"tmdbMovieId": 1894,
 			"tmdbPersonId": 524,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Lee",
+			"character": "Count Dooku",
+			"tmdbMovieId": 1894,
+			"tmdbPersonId": 113,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Mace Windu",
+			"tmdbMovieId": 1894,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Frank Oz",
+			"character": "Yoda (voice)",
+			"tmdbMovieId": 1894,
+			"tmdbPersonId": 7908,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ian McDiarmid",
+			"character": "Chancellor Palpatine",
+			"tmdbMovieId": 1894,
+			"tmdbPersonId": 27762,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

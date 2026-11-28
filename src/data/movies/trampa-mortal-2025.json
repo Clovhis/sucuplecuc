@@ -25,7 +25,9 @@
 	"director": "James Kondelik",
 	"mainCast": [
 		"Marshall Williams",
-		"Alex Essoe"
+		"Alex Essoe",
+		"Richard Harmon",
+		"Randy Couture"
 	],
 	"productionCompany": "Dragon Bear Pictures",
 	"cinepostaScore": 7,
@@ -75,6 +77,20 @@
 			"tmdbMovieId": 1338972,
 			"tmdbPersonId": 210454,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Harmon",
+			"character": "Lars",
+			"tmdbMovieId": 1338972,
+			"tmdbPersonId": 144852,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Randy Couture",
+			"character": "Hunter",
+			"tmdbMovieId": 1338972,
+			"tmdbPersonId": 74748,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -49,18 +49,55 @@
 			"forFansOf": "Fans de los dramas familiares, de las actuaciones transformadoras y de las películas que modifican la forma narrativa para poner al espectador dentro de una experiencia.",
 			"notForYouIf": "Buscás alivio, explicaciones lineales o una trama con conflictos externos. El padre es un viaje de percepción y pérdida."
 		},
-	"becauseYouLiked": [
-		"el-hijo-2022",
-		"saint-omer-el-pueblo-contra-laurence-coly-2022"
-	],
-	"related": [
-		"the-fabelmans-2022",
-		"los-domingos-2025",
-		"cielo-de-octubre-1999",
-		"minari-historia-de-mi-familia-2020"
-	]
-},
+		"becauseYouLiked": [
+			"el-hijo-2022",
+			"saint-omer-el-pueblo-contra-laurence-coly-2022"
+		],
+		"related": [
+			"the-fabelmans-2022",
+			"los-domingos-2025",
+			"cielo-de-octubre-1999",
+			"minari-historia-de-mi-familia-2020"
+		]
+	},
 	"review": "Florian Zeller no explica la pérdida de memoria desde afuera: obliga a compartir la desorientación del protagonista. Los cambios de espacio, nombres y rostros convierten la puesta en una mente que intenta defenderse de sus propias grietas. Anthony Hopkins compone una actuación devastadora sin pedir lástima, y Olivia Colman sostiene el dolor de quien acompaña. La película acompaña a Anthony desde dentro de su confusión, y con eso vuelve también tangible el desgaste de quienes lo cuidan.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Anthony",
+			"tmdbMovieId": 600354,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Olivia Colman",
+			"character": "Anne",
+			"tmdbMovieId": 600354,
+			"tmdbPersonId": 39187,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mark Gatiss",
+			"character": "The Man",
+			"tmdbMovieId": 600354,
+			"tmdbPersonId": 34546,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Olivia Williams",
+			"character": "The Woman",
+			"tmdbMovieId": 600354,
+			"tmdbPersonId": 11616,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Imogen Poots",
+			"character": "Laura",
+			"tmdbMovieId": 600354,
+			"tmdbPersonId": 17606,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -24,7 +24,11 @@
 	"director": "Jorge R. Gutierrez",
 	"mainCast": [
 		"Diego Luna",
-		"Channing Tatum"
+		"Channing Tatum",
+		"Zoe Saldaña",
+		"Ron Perlman",
+		"Ice Cube",
+		"Héctor Elizondo"
 	],
 	"productionCompany": "20th Century Fox Animation",
 	"cinepostaScore": 7,
@@ -67,6 +71,34 @@
 			"tmdbMovieId": 228326,
 			"tmdbPersonId": 38673,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zoe Saldaña",
+			"character": "Maria (voice)",
+			"tmdbMovieId": 228326,
+			"tmdbPersonId": 8691,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ron Perlman",
+			"character": "Xibalba (voice)",
+			"tmdbMovieId": 228326,
+			"tmdbPersonId": 2372,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ice Cube",
+			"character": "Candle Maker (voice)",
+			"tmdbMovieId": 228326,
+			"tmdbPersonId": 9778,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Héctor Elizondo",
+			"character": "Carlos Sanchez (voice)",
+			"tmdbMovieId": 228326,
+			"tmdbPersonId": 1210,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

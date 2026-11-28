@@ -19,7 +19,11 @@
 	"mainCast": [
 		"Hayden Christensen",
 		"Ewan McGregor",
-		"Natalie Portman"
+		"Natalie Portman",
+		"Ian McDiarmid",
+		"Samuel L. Jackson",
+		"Frank Oz",
+		"Anthony Daniels"
 	],
 	"productionCompany": "Lucasfilm",
 	"cinepostaScore": 8,
@@ -74,6 +78,34 @@
 			"tmdbMovieId": 1895,
 			"tmdbPersonId": 524,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian McDiarmid",
+			"character": "Chancellor Palpatine / Darth Sidious",
+			"tmdbMovieId": 1895,
+			"tmdbPersonId": 27762,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Mace Windu",
+			"tmdbMovieId": 1895,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Frank Oz",
+			"character": "Yoda (voice)",
+			"tmdbMovieId": 1895,
+			"tmdbPersonId": 7908,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anthony Daniels",
+			"character": "C-3PO",
+			"tmdbMovieId": 1895,
+			"tmdbPersonId": 6,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

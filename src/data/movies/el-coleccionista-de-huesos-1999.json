@@ -23,7 +23,10 @@
 	"director": "Phillip Noyce",
 	"mainCast": [
 		"Denzel Washington",
-		"Angelina Jolie"
+		"Angelina Jolie",
+		"Queen Latifah",
+		"Michael Rooker",
+		"Luis Guzmán"
 	],
 	"productionCompany": "Universal Pictures",
 	"cinepostaScore": 6,
@@ -70,6 +73,27 @@
 			"tmdbMovieId": 9481,
 			"tmdbPersonId": 11701,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Queen Latifah",
+			"character": "Thelma",
+			"tmdbMovieId": 9481,
+			"tmdbPersonId": 15758,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Rooker",
+			"character": "Captain Howard Cheney",
+			"tmdbMovieId": 9481,
+			"tmdbPersonId": 12132,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Luis Guzmán",
+			"character": "Eddie Ortiz",
+			"tmdbMovieId": 9481,
+			"tmdbPersonId": 40481,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

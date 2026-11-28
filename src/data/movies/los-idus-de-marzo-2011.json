@@ -23,7 +23,11 @@
 		"Ryan Gosling",
 		"George Clooney",
 		"Philip Seymour Hoffman",
-		"Paul Giamatti"
+		"Paul Giamatti",
+		"Evan Rachel Wood",
+		"Marisa Tomei",
+		"Jeffrey Wright",
+		"Max Minghella"
 	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 7,
@@ -82,6 +86,34 @@
 			"tmdbMovieId": 10316,
 			"tmdbPersonId": 13242,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Evan Rachel Wood",
+			"character": "Molly Stearns",
+			"tmdbMovieId": 10316,
+			"tmdbPersonId": 38940,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Marisa Tomei",
+			"character": "Ida Horowicz",
+			"tmdbMovieId": 10316,
+			"tmdbPersonId": 3141,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeffrey Wright",
+			"character": "Senator Thompson",
+			"tmdbMovieId": 10316,
+			"tmdbPersonId": 2954,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Max Minghella",
+			"character": "Ben Harpen",
+			"tmdbMovieId": 10316,
+			"tmdbPersonId": 2978,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

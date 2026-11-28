@@ -12,7 +12,9 @@
 	"mainCast": [
 		"Ayo Edebiri",
 		"John Malkovich",
-		"Juliette Lewis"
+		"Juliette Lewis",
+		"Murray Bartlett",
+		"Tony Hale"
 	],
 	"productionCompany": "MACRO Media",
 	"cinepostaScore": 2,
@@ -24,7 +26,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Opus tiene un retiro de estrella pop, periodistas y culto como base prometedora; Ayo Edebiri y John Malkovich sostienen la atmósfera, pero el veneno no termina de concentrarse.",
-			"whatToExpect": "Complejo en Utah, músico desaparecido, invitados atrapados y un plan de manipulación donde la fama quiere convertirse en religión privada.",			"pace": "Arranca con diseño y misterio, pero se enfría cuando explica sus giros; el ritmo se vuelve más contemplativo que amenazante.",			"intensity": "La inquietud es psicológica y de grupo, hecha de control, admiración y peligro latente; funciona mejor cuando no revela qué busca Malkovich.",			"practicalContext": "Con 104 minutos, sirve para una noche de atmósfera rara; elegila si te interesa el concepto aunque aceptes que la tensión puede quedar corta.",			"forFansOf": "Para quienes disfrutan thrillers de culto, espacios cerrados y a Edebiri enfrentando a una figura de autoridad extravagante.",			"notForYouIf": "No es para vos si necesitás una sátira musical filosa, giros con consecuencias o un final tan incómodo como la premisa promete."
+			"whatToExpect": "Complejo en Utah, músico desaparecido, invitados atrapados y un plan de manipulación donde la fama quiere convertirse en religión privada.",
+			"pace": "Arranca con diseño y misterio, pero se enfría cuando explica sus giros; el ritmo se vuelve más contemplativo que amenazante.",
+			"intensity": "La inquietud es psicológica y de grupo, hecha de control, admiración y peligro latente; funciona mejor cuando no revela qué busca Malkovich.",
+			"practicalContext": "Con 104 minutos, sirve para una noche de atmósfera rara; elegila si te interesa el concepto aunque aceptes que la tensión puede quedar corta.",
+			"forFansOf": "Para quienes disfrutan thrillers de culto, espacios cerrados y a Edebiri enfrentando a una figura de autoridad extravagante.",
+			"notForYouIf": "No es para vos si necesitás una sátira musical filosa, giros con consecuencias o un final tan incómodo como la premisa promete."
 		},
 		"becauseYouLiked": [
 			"black-bag-2025",
@@ -41,5 +48,42 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-04",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Murray Bartlett",
+			"character": "Stan Sullivan",
+			"tmdbMovieId": 1202479,
+			"tmdbPersonId": 152416,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tony Hale",
+			"character": "Soledad Yusef",
+			"tmdbMovieId": 1202479,
+			"tmdbPersonId": 25147,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ayo Edebiri",
+			"character": "Ariel Ecton",
+			"tmdbMovieId": 1202479,
+			"tmdbPersonId": 2195140,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Malkovich",
+			"character": "Alfred Moretti",
+			"tmdbMovieId": 1202479,
+			"tmdbPersonId": 6949,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Juliette Lewis",
+			"character": "Clara Armstrong",
+			"tmdbMovieId": 1202479,
+			"tmdbPersonId": 3196,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

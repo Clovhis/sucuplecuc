@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Steve Carell",
 		"Kristen Wiig",
-		"Will Ferrell"
+		"Will Ferrell",
+		"Miranda Cosgrove",
+		"Dana Gaier Ellis",
+		"Pierre Coffin"
 	],
 	"productionCompany": "Illumination",
 	"cinepostaScore": 8,
@@ -68,6 +71,27 @@
 			"tmdbMovieId": 519182,
 			"tmdbPersonId": 23659,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miranda Cosgrove",
+			"character": "Margo (voice)",
+			"tmdbMovieId": 519182,
+			"tmdbPersonId": 17743,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dana Gaier Ellis",
+			"character": "Edith (voice)",
+			"tmdbMovieId": 519182,
+			"tmdbPersonId": 124750,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Pierre Coffin",
+			"character": "Minions (voice)",
+			"tmdbMovieId": 519182,
+			"tmdbPersonId": 124747,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -13,7 +13,11 @@
 	"mainCast": [
 		"George Clooney",
 		"Chris O'Donnell",
-		"Arnold Schwarzenegger"
+		"Arnold Schwarzenegger",
+		"Alicia Silverstone",
+		"Michael Gough",
+		"Pat Hingle",
+		"John Glover"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 5,
@@ -69,6 +73,34 @@
 			"tmdbMovieId": 415,
 			"tmdbPersonId": 1100,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alicia Silverstone",
+			"character": "Batgirl / Barbara Wilson",
+			"tmdbMovieId": 415,
+			"tmdbPersonId": 5588,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Gough",
+			"character": "Alfred Pennyworth",
+			"tmdbMovieId": 415,
+			"tmdbPersonId": 3796,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Pat Hingle",
+			"character": "Commissioner Gordon",
+			"tmdbMovieId": 415,
+			"tmdbPersonId": 3798,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Glover",
+			"character": "Dr. Jason Woodrue",
+			"tmdbMovieId": 415,
+			"tmdbPersonId": 5589,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

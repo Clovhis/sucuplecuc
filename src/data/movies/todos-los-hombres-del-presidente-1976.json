@@ -22,7 +22,10 @@
   "director": "Alan J. Pakula",
   "mainCast": [
     "Dustin Hoffman",
-    "Robert Redford"
+    "Robert Redford",
+    "Jack Warden",
+    "Hal Holbrook",
+    "Jason Robards"
   ],
   "productionCompany": "Wildwood Enterprises, Warner Bros.",
   "runtimeMinutes": 138,
@@ -64,6 +67,27 @@
       "tmdbMovieId": 891,
       "tmdbPersonId": 4135,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Jack Warden",
+      "character": "Harry Rosenfeld",
+      "tmdbMovieId": 891,
+      "tmdbPersonId": 5251,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Hal Holbrook",
+      "character": "Deep Throat",
+      "tmdbMovieId": 891,
+      "tmdbPersonId": 11066,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Jason Robards",
+      "character": "Ben Bradlee",
+      "tmdbMovieId": 891,
+      "tmdbPersonId": 4765,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Elisabeth Moss",
 		"Odessa Young",
-		"Michael Stuhlbarg"
+		"Michael Stuhlbarg",
+		"Logan Lerman",
+		"Victoria Pedretti",
+		"Robert Wuhl"
 	],
 	"productionCompany": "Neon",
 	"cinepostaScore": 7,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 547017,
 			"tmdbPersonId": 72873,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Logan Lerman",
+			"character": "Fred Nemser",
+			"tmdbMovieId": 547017,
+			"tmdbPersonId": 33235,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Victoria Pedretti",
+			"character": "Katherine",
+			"tmdbMovieId": 547017,
+			"tmdbPersonId": 2117434,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robert Wuhl",
+			"character": "Randy Fisher",
+			"tmdbMovieId": 547017,
+			"tmdbPersonId": 4040,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

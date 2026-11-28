@@ -47,5 +47,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Chris Evans",
+			"character": "Steve Rogers / Captain America",
+			"tmdbMovieId": 271110,
+			"tmdbPersonId": 16828,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robert Downey Jr.",
+			"character": "Tony Stark / Iron Man",
+			"tmdbMovieId": 271110,
+			"tmdbPersonId": 3223,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Natasha Romanoff / Black Widow",
+			"tmdbMovieId": 271110,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

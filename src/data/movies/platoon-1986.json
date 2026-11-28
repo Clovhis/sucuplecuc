@@ -13,7 +13,9 @@
 		"Charlie Sheen",
 		"Willem Dafoe",
 		"Tom Berenger",
-		"Forest Whitaker"
+		"Forest Whitaker",
+		"Kevin Dillon",
+		"Keith David"
 	],
 	"productionCompany": "Hemdale Film Corporation, Orion Pictures",
 	"cinepostaScore": 8,
@@ -99,6 +101,20 @@
 			"tmdbMovieId": 792,
 			"tmdbPersonId": 2178,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Dillon",
+			"character": "Bunny",
+			"tmdbMovieId": 792,
+			"tmdbPersonId": 6863,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Keith David",
+			"character": "King",
+			"tmdbMovieId": 792,
+			"tmdbPersonId": 65827,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

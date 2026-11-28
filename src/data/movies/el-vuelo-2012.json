@@ -57,5 +57,42 @@
 			"el-reverendo-2017"
 		]
 	},
-	"review": "Robert Zemeckis arranca con una secuencia aérea de una precisión espectacular y después se concentra en algo bastante más incómodo: un hombre capaz de hacer una proeza sin poder admitir que se está destruyendo. Denzel Washington nunca busca que Whip caiga simpático; deja que sea brillante, mezquino, gracioso y espantoso según el momento. Don Cheadle y Kelly Reilly funcionan como espejos de una negación que se vuelve cada vez más difícil de sostener. Algún alivio cómico entra con demasiada fuerza, pero el drama principal es filoso y la actuación de Washington domina cada plano."
+	"review": "Robert Zemeckis arranca con una secuencia aérea de una precisión espectacular y después se concentra en algo bastante más incómodo: un hombre capaz de hacer una proeza sin poder admitir que se está destruyendo. Denzel Washington nunca busca que Whip caiga simpático; deja que sea brillante, mezquino, gracioso y espantoso según el momento. Don Cheadle y Kelly Reilly funcionan como espejos de una negación que se vuelve cada vez más difícil de sostener. Algún alivio cómico entra con demasiada fuerza, pero el drama principal es filoso y la actuación de Washington domina cada plano.",
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "Whip Whitaker",
+			"tmdbMovieId": 87502,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Don Cheadle",
+			"character": "Hugh Lang",
+			"tmdbMovieId": 87502,
+			"tmdbPersonId": 1896,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kelly Reilly",
+			"character": "Nicole",
+			"tmdbMovieId": 87502,
+			"tmdbPersonId": 17521,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Goodman",
+			"character": "Harling Mays",
+			"tmdbMovieId": 87502,
+			"tmdbPersonId": 1230,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bruce Greenwood",
+			"character": "Charlie Anderson",
+			"tmdbMovieId": 87502,
+			"tmdbPersonId": 21089,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

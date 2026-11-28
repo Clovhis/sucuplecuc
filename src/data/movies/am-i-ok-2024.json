@@ -45,5 +45,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-02-28",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Dakota Johnson",
+			"character": "Lucy",
+			"tmdbMovieId": 641934,
+			"tmdbPersonId": 118545,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sonoya Mizuno",
+			"character": "Jane",
+			"tmdbMovieId": 641934,
+			"tmdbPersonId": 1457238,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jermaine Fowler",
+			"character": "Danny",
+			"tmdbMovieId": 641934,
+			"tmdbPersonId": 1488960,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

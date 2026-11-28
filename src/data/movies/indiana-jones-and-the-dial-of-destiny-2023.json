@@ -12,7 +12,9 @@
 	"mainCast": [
 		"Harrison Ford",
 		"Phoebe Waller-Bridge",
-		"Antonio Banderas"
+		"Antonio Banderas",
+		"Mads Mikkelsen",
+		"Boyd Holbrook"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 2,
@@ -68,6 +70,20 @@
 			"tmdbMovieId": 335977,
 			"tmdbPersonId": 3131,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mads Mikkelsen",
+			"character": "Dr. Voller",
+			"tmdbMovieId": 335977,
+			"tmdbPersonId": 1019,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Boyd Holbrook",
+			"character": "Klaber",
+			"tmdbMovieId": 335977,
+			"tmdbPersonId": 467645,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -44,18 +44,41 @@
 			"forFansOf": "Si te gustan thrillers de infiltración, policías ambiguos y el duelo Andy Lau–Tony Leung.",
 			"notForYouIf": "No es para vos si necesitás acción constante, personajes transparentes o un final cómodo."
 		},
-	"becauseYouLiked": [
-		"memories-of-murder-cronica-de-un-asesino-en-serie-2003",
-		"plata-quemada-2000"
-	],
-	"related": [
-		"hard-boiled-1992",
-		"dia-de-entrenamiento-2001",
-		"nueve-reinas-2000",
-		"jackie-brown-1997"
-	]
-},
+		"becauseYouLiked": [
+			"memories-of-murder-cronica-de-un-asesino-en-serie-2003",
+			"plata-quemada-2000"
+		],
+		"related": [
+			"hard-boiled-1992",
+			"dia-de-entrenamiento-2001",
+			"nueve-reinas-2000",
+			"jackie-brown-1997"
+		]
+	},
 	"review": "Andrew Lau y Alan Mak construyen un thriller de dobles donde la lealtad depende de quién puede sostener mejor la mentira. El montaje paralelo y la economía de la puesta hacen que cada llamada, ascensor y mirada cargue con información peligrosa. Andy Lau y Tony Leung Chiu-wai sostienen el duelo desde lados opuestos sin reducirlo a buenos contra malos. La tensión no depende de revelar quién miente, sino de mostrar cuánto de cada identidad queda atrapado en la infiltración.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Tony Leung Chiu-wai",
+			"character": "Chan Wing-yan",
+			"tmdbMovieId": 10775,
+			"tmdbPersonId": 1337,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anthony Wong Chau-Sang",
+			"character": "Superintendent Wong Chi-shing",
+			"tmdbMovieId": 10775,
+			"tmdbPersonId": 66717,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eric Tsang Chi-Wai",
+			"character": "Hon Sam",
+			"tmdbMovieId": 10775,
+			"tmdbPersonId": 26724,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

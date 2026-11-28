@@ -21,7 +21,8 @@
 	"director": "Victor Villanueva",
 	"mainCast": [
 		"Christian Bables",
-		"Elijah Canlas"
+		"Elijah Canlas",
+		"Iñigo Pascual"
 	],
 	"productionCompany": "Cornerstone Studios",
 	"cinepostaScore": 6,
@@ -49,5 +50,28 @@
 		]
 	},
 	"review": "La suplantación de identidad le permite a Drags to Riches llevar el prejuicio del padre hasta situaciones cada vez más absurdas. Christian Bables sostiene el juego de apariencias y Elijah Canlas aporta un empuje físico que ayuda a que los enredos no sean solamente conversaciones. Victor Villanueva confía en ese exceso, aunque la cantidad de subtramas termina dispersando la comedia. Hay cruces que merecerían más espacio y otros que se prolongan por encima de su gracia. Cuando la película se concentra en el engaño y en las reacciones de quienes intentan controlarlo, la dupla encuentra una energía que justifica seguirla.",
-	"runtimeMinutes": 110
+	"runtimeMinutes": 110,
+	"castCharacters": [
+		{
+			"actor": "Iñigo Pascual",
+			"character": "Troye",
+			"tmdbMovieId": 1718405,
+			"tmdbPersonId": 1431527,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Christian Bables",
+			"character": "Jonas / Jarold",
+			"tmdbMovieId": 1718405,
+			"tmdbPersonId": 1648564,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elijah Canlas",
+			"character": "Andre",
+			"tmdbMovieId": 1718405,
+			"tmdbPersonId": 1349626,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

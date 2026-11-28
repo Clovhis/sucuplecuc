@@ -23,7 +23,8 @@
 		"Ewan McGregor",
 		"Ryan Gosling",
 		"Naomi Watts",
-		"Bob Hoskins"
+		"Bob Hoskins",
+		"Kate Burton"
 	],
 	"productionCompany": "20th Century Fox",
 	"cinepostaScore": 5,
@@ -82,6 +83,13 @@
 			"tmdbMovieId": 8066,
 			"tmdbPersonId": 382,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kate Burton",
+			"character": "Mrs. Letham",
+			"tmdbMovieId": 8066,
+			"tmdbPersonId": 20879,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

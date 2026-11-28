@@ -22,7 +22,10 @@
 	"director": "Michael Showalter",
 	"mainCast": [
 		"Jessica Chastain",
-		"Andrew Garfield"
+		"Andrew Garfield",
+		"Cherry Jones",
+		"Vincent D'Onofrio",
+		"Sam Jaeger"
 	],
 	"productionCompany": "Searchlight Pictures, MWM Studios, Freckle Films",
 	"cinepostaScore": 8,
@@ -79,6 +82,27 @@
 			"tmdbMovieId": 601470,
 			"tmdbPersonId": 37625,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cherry Jones",
+			"character": "Rachel Grover",
+			"tmdbMovieId": 601470,
+			"tmdbPersonId": 1956,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Vincent D'Onofrio",
+			"character": "Jerry Falwell",
+			"tmdbMovieId": 601470,
+			"tmdbPersonId": 7132,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sam Jaeger",
+			"character": "Roe Messner",
+			"tmdbMovieId": 601470,
+			"tmdbPersonId": 65727,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

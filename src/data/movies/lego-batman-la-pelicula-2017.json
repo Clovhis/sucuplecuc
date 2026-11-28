@@ -27,7 +27,11 @@
 	"director": "Chris McKay",
 	"mainCast": [
 		"Will Arnett",
-		"Michael Cera"
+		"Michael Cera",
+		"Ralph Fiennes",
+		"Zach Galifianakis",
+		"Jenny Slate",
+		"Conan O'Brien"
 	],
 	"productionCompany": "Warner Animation Group",
 	"cinepostaScore": 7,
@@ -70,6 +74,34 @@
 			"tmdbMovieId": 324849,
 			"tmdbPersonId": 39995,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Alfred Pennyworth (voice)",
+			"tmdbMovieId": 324849,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zach Galifianakis",
+			"character": "Joker (voice)",
+			"tmdbMovieId": 324849,
+			"tmdbPersonId": 58225,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jenny Slate",
+			"character": "Harley Quinn (voice)",
+			"tmdbMovieId": 324849,
+			"tmdbPersonId": 213001,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Conan O'Brien",
+			"character": "The Riddler (voice)",
+			"tmdbMovieId": 324849,
+			"tmdbPersonId": 81200,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

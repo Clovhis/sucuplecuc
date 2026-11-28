@@ -13,7 +13,10 @@
 	"mainCast": [
 		"Christopher Reeve",
 		"Margot Kidder",
-		"Gene Hackman"
+		"Gene Hackman",
+		"Marlon Brando",
+		"Ned Beatty",
+		"Trevor Howard"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 8,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 1924,
 			"tmdbPersonId": 193,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marlon Brando",
+			"character": "Jor-El",
+			"tmdbMovieId": 1924,
+			"tmdbPersonId": 3084,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ned Beatty",
+			"character": "Otis",
+			"tmdbMovieId": 1924,
+			"tmdbPersonId": 13726,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Trevor Howard",
+			"character": "1st Elder",
+			"tmdbMovieId": 1924,
+			"tmdbPersonId": 12726,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

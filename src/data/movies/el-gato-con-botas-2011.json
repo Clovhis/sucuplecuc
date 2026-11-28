@@ -30,7 +30,9 @@
 	"mainCast": [
 		"Antonio Banderas",
 		"Salma Hayek Pinault",
-		"Zach Galifianakis"
+		"Zach Galifianakis",
+		"Billy Bob Thornton",
+		"Amy Sedaris"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -81,6 +83,20 @@
 			"tmdbMovieId": 417859,
 			"tmdbPersonId": 58225,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Bob Thornton",
+			"character": "Jack (voice)",
+			"tmdbMovieId": 417859,
+			"tmdbPersonId": 879,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Amy Sedaris",
+			"character": "Jill (voice)",
+			"tmdbMovieId": 417859,
+			"tmdbPersonId": 12110,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

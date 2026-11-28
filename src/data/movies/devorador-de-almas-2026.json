@@ -51,5 +51,21 @@
 	"catalogAddedAt": "2026-10-30",
 	"runtimeMinutes": 82,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Grace Collender",
+			"character": "Orla Ryan",
+			"tmdbMovieId": 1128204,
+			"tmdbPersonId": 3728221,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rhys Mannion",
+			"character": "Austin",
+			"tmdbMovieId": 1128204,
+			"tmdbPersonId": 3072484,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

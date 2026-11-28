@@ -27,7 +27,10 @@
 		"Harrison Ford",
 		"Anne Heche",
 		"David Schwimmer",
-		"Jacqueline Obradors"
+		"Jacqueline Obradors",
+		"Temuera Morrison",
+		"Allison Janney",
+		"Cliff Curtis"
 	],
 	"productionCompany": "Touchstone Pictures",
 	"cinepostaScore": 5,
@@ -85,6 +88,27 @@
 			"tmdbMovieId": 6068,
 			"tmdbPersonId": 49818,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Temuera Morrison",
+			"character": "Jager",
+			"tmdbMovieId": 6068,
+			"tmdbPersonId": 7242,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Allison Janney",
+			"character": "Marjorie",
+			"tmdbMovieId": 6068,
+			"tmdbPersonId": 19,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cliff Curtis",
+			"character": "Kip",
+			"tmdbMovieId": 6068,
+			"tmdbPersonId": 7248,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

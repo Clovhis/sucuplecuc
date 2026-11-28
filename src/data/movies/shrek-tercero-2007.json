@@ -32,7 +32,10 @@
 		"Mike Myers",
 		"Eddie Murphy",
 		"Cameron Diaz",
-		"Antonio Banderas"
+		"Antonio Banderas",
+		"Julie Andrews",
+		"Justin Timberlake",
+		"John Cleese"
 	],
 	"productionCompany": "DreamWorks Animation, Pacific Data Images",
 	"cinepostaScore": 5,
@@ -90,6 +93,27 @@
 			"tmdbMovieId": 810,
 			"tmdbPersonId": 3131,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Julie Andrews",
+			"character": "Queen Lillian (voice)",
+			"tmdbMovieId": 810,
+			"tmdbPersonId": 5823,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Justin Timberlake",
+			"character": "Prince Artie (voice)",
+			"tmdbMovieId": 810,
+			"tmdbPersonId": 12111,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Cleese",
+			"character": "King Harold (voice)",
+			"tmdbMovieId": 810,
+			"tmdbPersonId": 8930,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

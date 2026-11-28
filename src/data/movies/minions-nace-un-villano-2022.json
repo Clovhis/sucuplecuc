@@ -23,7 +23,11 @@
 	"director": "Kyle Balda",
 	"mainCast": [
 		"Steve Carell",
-		"Pierre Coffin"
+		"Pierre Coffin",
+		"Alan Arkin",
+		"Taraji P. Henson",
+		"Julie Andrews",
+		"Russell Brand"
 	],
 	"productionCompany": "Illumination",
 	"cinepostaScore": 7,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 438148,
 			"tmdbPersonId": 124747,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Arkin",
+			"character": "Wild Knuckles (voice)",
+			"tmdbMovieId": 438148,
+			"tmdbPersonId": 1903,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Taraji P. Henson",
+			"character": "Belle Bottom (voice)",
+			"tmdbMovieId": 438148,
+			"tmdbPersonId": 40036,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Julie Andrews",
+			"character": "Gru's Mom (voice)",
+			"tmdbMovieId": 438148,
+			"tmdbPersonId": 5823,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Russell Brand",
+			"character": "Dr. Nefario (voice)",
+			"tmdbMovieId": 438148,
+			"tmdbPersonId": 59919,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

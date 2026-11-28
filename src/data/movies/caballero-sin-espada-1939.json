@@ -21,7 +21,9 @@
   "director": "Frank Capra",
   "mainCast": [
     "James Stewart",
-    "Jean Arthur"
+    "Jean Arthur",
+    "Claude Rains",
+    "Thomas Mitchell"
   ],
   "productionCompany": "Columbia Pictures",
   "runtimeMinutes": 130,
@@ -63,6 +65,20 @@
       "tmdbMovieId": 3083,
       "tmdbPersonId": 30210,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Claude Rains",
+      "character": "Joseph Paine",
+      "tmdbMovieId": 3083,
+      "tmdbPersonId": 4113,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Thomas Mitchell",
+      "character": "Diz Moore",
+      "tmdbMovieId": 3083,
+      "tmdbPersonId": 3383,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

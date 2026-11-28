@@ -24,7 +24,11 @@
 	"mainCast": [
 		"John Travolta",
 		"Nicolas Cage",
-		"Joan Allen"
+		"Joan Allen",
+		"Alessandro Nivola",
+		"Gina Gershon",
+		"Nick Cassavetes",
+		"Harve Presnell"
 	],
 	"productionCompany": "Paramount Pictures, Touchstone Pictures, Permut Presentations",
 	"cinepostaScore": 5,
@@ -75,6 +79,34 @@
 			"tmdbMovieId": 754,
 			"tmdbPersonId": 11148,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alessandro Nivola",
+			"character": "Pollux Troy",
+			"tmdbMovieId": 754,
+			"tmdbPersonId": 4941,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gina Gershon",
+			"character": "Sasha Hassler",
+			"tmdbMovieId": 754,
+			"tmdbPersonId": 11150,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nick Cassavetes",
+			"character": "Dietrich Hassler",
+			"tmdbMovieId": 754,
+			"tmdbPersonId": 11151,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Harve Presnell",
+			"character": "Victor Lazarro",
+			"tmdbMovieId": 754,
+			"tmdbPersonId": 3907,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

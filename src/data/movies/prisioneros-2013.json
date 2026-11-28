@@ -27,7 +27,10 @@
 		"Hugh Jackman",
 		"Jake Gyllenhaal",
 		"Viola Davis",
-		"Maria Bello"
+		"Maria Bello",
+		"Terrence Howard",
+		"Melissa Leo",
+		"Paul Dano"
 	],
 	"productionCompany": "Warner Bros. Pictures",
 	"cinepostaScore": 7,
@@ -84,6 +87,27 @@
 			"tmdbMovieId": 146233,
 			"tmdbPersonId": 49,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Terrence Howard",
+			"character": "Franklin Birch",
+			"tmdbMovieId": 146233,
+			"tmdbPersonId": 18288,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Melissa Leo",
+			"character": "Holly Jones",
+			"tmdbMovieId": 146233,
+			"tmdbPersonId": 6832,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Paul Dano",
+			"character": "Alex Jones",
+			"tmdbMovieId": 146233,
+			"tmdbPersonId": 17142,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

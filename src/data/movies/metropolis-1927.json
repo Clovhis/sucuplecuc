@@ -16,7 +16,9 @@
 	"director": "Fritz Lang",
 	"mainCast": [
 		"Gustav Fröhlich",
-		"Brigitte Helm"
+		"Brigitte Helm",
+		"Alfred Abel",
+		"Rudolf Klein-Rogge"
 	],
 	"productionCompany": "Universum Film AG",
 	"cinepostaScore": 9,
@@ -67,6 +69,20 @@
 			"tmdbMovieId": 19,
 			"tmdbPersonId": 75,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alfred Abel",
+			"character": "Johann 'Joh' Fredersen",
+			"tmdbMovieId": 19,
+			"tmdbPersonId": 73,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rudolf Klein-Rogge",
+			"character": "C.A. Rotwang",
+			"tmdbMovieId": 19,
+			"tmdbPersonId": 77,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -22,7 +22,8 @@
 	"director": "Charlie Arnaiz, Alberto Ortega",
 	"mainCast": [
 		"David Summers",
-		"Rafael Gutiérrez"
+		"Rafael Gutiérrez",
+		"Daniel Mezquita"
 	],
 	"productionCompany": "Dadá Films & Entertainment, La Calabaza Amarilla, Warner Music Spain, A Contracorriente Films",
 	"cinepostaScore": 8,
@@ -49,5 +50,28 @@
 		]
 	},
 	"review": "Charlie Arnaiz y Alberto Ortega encuentran una vía más cercana cuando dejan que la convivencia de Hombres G acompañe al archivo. David Summers y Rafael Gutiérrez aparecen como parte de una relación que sobrevivió a la fama, al cansancio y a la distancia, y ese hilo le da algo más que nostalgia al repaso de los éxitos. El acceso tiene también un límite: la celebración del grupo suele imponerse a las preguntas incómodas. Sus momentos más vivos están en los gestos compartidos del presente, donde el paso de los años se puede ver sin que nadie lo explique.",
-	"runtimeMinutes": 108
+	"runtimeMinutes": 108,
+	"castCharacters": [
+		{
+			"actor": "Daniel Mezquita",
+			"character": "Self",
+			"tmdbMovieId": 1583875,
+			"tmdbPersonId": 1506933,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Summers",
+			"character": "Self",
+			"tmdbMovieId": 1583875,
+			"tmdbPersonId": 195479,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rafael Gutiérrez",
+			"character": "Self",
+			"tmdbMovieId": 1583875,
+			"tmdbPersonId": 1506934,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

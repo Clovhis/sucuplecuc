@@ -12,7 +12,11 @@
 	"mainCast": [
 		"Mel Gibson",
 		"Catherine McCormack",
-		"Sophie Marceau"
+		"Sophie Marceau",
+		"Patrick McGoohan",
+		"Angus Macfadyen",
+		"Brendan Gleeson",
+		"James Robinson"
 	],
 	"productionCompany": "Icon Productions, The Ladd Company",
 	"cinepostaScore": 8,
@@ -82,6 +86,34 @@
 			"tmdbMovieId": 197,
 			"tmdbPersonId": 1957,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick McGoohan",
+			"character": "King Edward",
+			"tmdbMovieId": 197,
+			"tmdbPersonId": 2463,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Angus Macfadyen",
+			"character": "Robert the Bruce",
+			"tmdbMovieId": 197,
+			"tmdbPersonId": 2464,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brendan Gleeson",
+			"character": "Hamish Campbell",
+			"tmdbMovieId": 197,
+			"tmdbPersonId": 2039,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Robinson",
+			"character": "Young William Wallace",
+			"tmdbMovieId": 197,
+			"tmdbPersonId": 2465,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

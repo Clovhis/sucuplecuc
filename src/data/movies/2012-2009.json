@@ -30,7 +30,10 @@
     "John Cusack",
     "Amanda Peet",
     "Chiwetel Ejiofor",
-    "Thandiwe Newton"
+    "Thandiwe Newton",
+    "Oliver Platt",
+    "Woody Harrelson",
+    "Danny Glover"
   ],
   "productionCompany": "Columbia Pictures, Centropolis Entertainment",
   "cinepostaScore": 5,
@@ -90,6 +93,27 @@
       "tmdbMovieId": 14161,
       "tmdbPersonId": 9030,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Oliver Platt",
+      "character": "Carl Anheuser",
+      "tmdbMovieId": 14161,
+      "tmdbPersonId": 17485,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Woody Harrelson",
+      "character": "Charlie Frost",
+      "tmdbMovieId": 14161,
+      "tmdbPersonId": 57755,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Danny Glover",
+      "character": "President Thomas Wilson",
+      "tmdbMovieId": 14161,
+      "tmdbPersonId": 2047,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

@@ -25,7 +25,9 @@
 		"Kevin Costner",
 		"Robert Duvall",
 		"Michael Gambon",
-		"Michael Jeter"
+		"Michael Jeter",
+		"Annette Bening",
+		"Diego Luna"
 	],
 	"productionCompany": "Tig Productions, Beacon Pictures",
 	"cinepostaScore": 8,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 2055,
 			"tmdbPersonId": 2169,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Annette Bening",
+			"character": "Sue Barlow",
+			"tmdbMovieId": 2055,
+			"tmdbPersonId": 516,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diego Luna",
+			"character": "Button",
+			"tmdbMovieId": 2055,
+			"tmdbPersonId": 8688,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

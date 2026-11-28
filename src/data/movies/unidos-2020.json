@@ -23,7 +23,10 @@
 	"director": "Dan Scanlon",
 	"mainCast": [
 		"Tom Holland",
-		"Chris Pratt"
+		"Chris Pratt",
+		"Octavia Spencer",
+		"Lena Waithe",
+		"Ali Wong"
 	],
 	"productionCompany": "Pixar Animation Studios",
 	"cinepostaScore": 7,
@@ -66,6 +69,27 @@
 			"tmdbMovieId": 508439,
 			"tmdbPersonId": 73457,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Octavia Spencer",
+			"character": "The Manticore (voice)",
+			"tmdbMovieId": 508439,
+			"tmdbPersonId": 6944,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lena Waithe",
+			"character": "Officer Spector (voice)",
+			"tmdbMovieId": 508439,
+			"tmdbPersonId": 1059572,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ali Wong",
+			"character": "Officer Gore (voice)",
+			"tmdbMovieId": 508439,
+			"tmdbPersonId": 591835,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

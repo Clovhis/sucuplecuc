@@ -13,7 +13,10 @@
 	"mainCast": [
 		"Chris Hemsworth",
 		"Natalie Portman",
-		"Tom Hiddleston"
+		"Tom Hiddleston",
+		"Stellan Skarsgård",
+		"Kat Dennings",
+		"Clark Gregg"
 	],
 	"productionCompany": "Marvel Studios",
 	"cinepostaScore": 8,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 10195,
 			"tmdbPersonId": 91606,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stellan Skarsgård",
+			"character": "Erik Selvig",
+			"tmdbMovieId": 10195,
+			"tmdbPersonId": 1640,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kat Dennings",
+			"character": "Darcy Lewis",
+			"tmdbMovieId": 10195,
+			"tmdbPersonId": 52852,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Clark Gregg",
+			"character": "Agent Coulson",
+			"tmdbMovieId": 10195,
+			"tmdbPersonId": 9048,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

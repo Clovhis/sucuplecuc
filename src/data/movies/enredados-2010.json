@@ -24,7 +24,11 @@
 	"director": "Byron Howard",
 	"mainCast": [
 		"Mandy Moore",
-		"Zachary Levi"
+		"Zachary Levi",
+		"Donna Murphy",
+		"Ron Perlman",
+		"Jeffrey Tambor",
+		"Brad Garrett"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 7,
@@ -67,6 +71,34 @@
 			"tmdbMovieId": 38757,
 			"tmdbPersonId": 69899,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Donna Murphy",
+			"character": "Mother Gothel (voice)",
+			"tmdbMovieId": 38757,
+			"tmdbPersonId": 2517,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ron Perlman",
+			"character": "Stabbington Brother (voice)",
+			"tmdbMovieId": 38757,
+			"tmdbPersonId": 2372,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeffrey Tambor",
+			"character": "Big Nose Thug (voice)",
+			"tmdbMovieId": 38757,
+			"tmdbPersonId": 4175,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brad Garrett",
+			"character": "Hook Hand Thug (voice)",
+			"tmdbMovieId": 38757,
+			"tmdbPersonId": 18,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

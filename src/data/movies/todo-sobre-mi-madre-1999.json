@@ -27,7 +27,9 @@
 	"mainCast": [
 		"Cecilia Roth",
 		"Marisa Paredes",
-		"Penélope Cruz"
+		"Penélope Cruz",
+		"Candela Peña",
+		"Fernando Fernán Gómez"
 	],
 	"productionCompany": "El Deseo, Renn Productions y France 2 Cinéma",
 	"cinepostaScore": 9,
@@ -91,6 +93,20 @@
 			"tmdbMovieId": 99,
 			"tmdbPersonId": 955,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Candela Peña",
+			"character": "Nina",
+			"tmdbMovieId": 99,
+			"tmdbPersonId": 958,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Fernando Fernán Gómez",
+			"character": "Rosa's Father",
+			"tmdbMovieId": 99,
+			"tmdbPersonId": 965,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -22,7 +22,9 @@
   "director": "Robert Altman",
   "mainCast": [
     "Ned Beatty",
-    "Karen Black"
+    "Karen Black",
+    "David Arkin",
+    "Geraldine Chaplin"
   ],
   "productionCompany": "ABC Motion Pictures",
   "runtimeMinutes": 160,
@@ -64,6 +66,20 @@
       "tmdbMovieId": 3121,
       "tmdbPersonId": 8963,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "David Arkin",
+      "character": "Norman",
+      "tmdbMovieId": 3121,
+      "tmdbPersonId": 9808,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Geraldine Chaplin",
+      "character": "Opal",
+      "tmdbMovieId": 3121,
+      "tmdbPersonId": 400,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

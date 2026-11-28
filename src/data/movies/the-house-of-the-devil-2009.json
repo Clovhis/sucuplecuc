@@ -56,5 +56,28 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jocelin Donahue",
+			"character": "Samantha",
+			"tmdbMovieId": 25983,
+			"tmdbPersonId": 78804,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom Noonan",
+			"character": "Mr. Ulman",
+			"tmdbMovieId": 25983,
+			"tmdbPersonId": 119232,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Greta Gerwig",
+			"character": "Megan",
+			"tmdbMovieId": 25983,
+			"tmdbPersonId": 45400,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

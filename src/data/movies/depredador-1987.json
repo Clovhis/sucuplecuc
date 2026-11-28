@@ -56,5 +56,35 @@
 	},
 	"review": "Dutch entra a la selva rodeado de músculos, armas y frases de macho de acción, pero John McTiernan le va sacando esas certezas de a una. La primera mitad parece una misión militar cargada de pólvora; después, el cazador invisible obliga a los personajes a pensar, esconderse y aprender del terreno. Arnold Schwarzenegger funciona mejor cuando deja de ser una máquina y se vuelve un sobreviviente embarrado, mientras Carl Weathers y Elpidia Carrillo aportan tensión al grupo. La recepción fue más tibia que su legado posterior, pero la mezcla de acción, ciencia ficción y terror sigue siendo impecable.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Arnold Schwarzenegger",
+			"character": "Major Alan 'Dutch' Schaefer",
+			"tmdbMovieId": 106,
+			"tmdbPersonId": 1100,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Carl Weathers",
+			"character": "Al Dillon",
+			"tmdbMovieId": 106,
+			"tmdbPersonId": 1101,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elpidia Carrillo",
+			"character": "Anna Gonsalves",
+			"tmdbMovieId": 106,
+			"tmdbPersonId": 1102,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jesse Ventura",
+			"character": "Blain Cooper",
+			"tmdbMovieId": 106,
+			"tmdbPersonId": 1104,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

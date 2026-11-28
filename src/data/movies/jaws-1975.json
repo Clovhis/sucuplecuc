@@ -20,7 +20,9 @@
 	"mainCast": [
 		"Roy Scheider",
 		"Robert Shaw",
-		"Richard Dreyfuss"
+		"Richard Dreyfuss",
+		"Lorraine Gary",
+		"Murray Hamilton"
 	],
 	"productionCompany": "Universal Pictures",
 	"cinepostaScore": 10,
@@ -74,6 +76,20 @@
 			"tmdbMovieId": 578,
 			"tmdbPersonId": 3037,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lorraine Gary",
+			"character": "Ellen Brody",
+			"tmdbMovieId": 578,
+			"tmdbPersonId": 8607,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Murray Hamilton",
+			"character": "Vaughn",
+			"tmdbMovieId": 578,
+			"tmdbPersonId": 8608,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

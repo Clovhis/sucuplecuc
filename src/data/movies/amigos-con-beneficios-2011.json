@@ -24,7 +24,11 @@
 	"director": "Will Gluck",
 	"mainCast": [
 		"Mila Kunis",
-		"Justin Timberlake"
+		"Justin Timberlake",
+		"Patricia Clarkson",
+		"Woody Harrelson",
+		"Bryan Greenberg",
+		"Andy Samberg"
 	],
 	"productionCompany": "Screen Gems",
 	"cinepostaScore": 7,
@@ -68,6 +72,34 @@
 			"tmdbMovieId": 50544,
 			"tmdbPersonId": 12111,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patricia Clarkson",
+			"character": "Lorna",
+			"tmdbMovieId": 50544,
+			"tmdbPersonId": 1276,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Woody Harrelson",
+			"character": "Tommy Bollinger",
+			"tmdbMovieId": 50544,
+			"tmdbPersonId": 57755,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bryan Greenberg",
+			"character": "Parker",
+			"tmdbMovieId": 50544,
+			"tmdbPersonId": 23821,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Andy Samberg",
+			"character": "Quincy",
+			"tmdbMovieId": 50544,
+			"tmdbPersonId": 62861,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

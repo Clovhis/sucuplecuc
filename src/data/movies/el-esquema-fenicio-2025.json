@@ -25,7 +25,10 @@
 	"director": "Wes Anderson",
 	"mainCast": [
 		"Benicio del Toro",
-		"Michael Cera"
+		"Michael Cera",
+		"Riz Ahmed",
+		"Tom Hanks",
+		"Mathieu Amalric"
 	],
 	"productionCompany": "American Empirical Pictures, Indian Paintbrush",
 	"cinepostaScore": 7,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 1137350,
 			"tmdbPersonId": 39995,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Riz Ahmed",
+			"character": "Prince Farouk",
+			"tmdbMovieId": 1137350,
+			"tmdbPersonId": 53240,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom Hanks",
+			"character": "Leland",
+			"tmdbMovieId": 1137350,
+			"tmdbPersonId": 31,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mathieu Amalric",
+			"character": "Marseille Bob",
+			"tmdbMovieId": 1137350,
+			"tmdbPersonId": 8789,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

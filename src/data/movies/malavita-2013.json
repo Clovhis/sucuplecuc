@@ -39,7 +39,10 @@
 			"verdict": "Luc Besson deja que De Niro y Michelle Pfeiffer jueguen a ser mafiosos de barrio en Francia; cuando la caricatura afloja, la película pierde el filo que prometía.",
 			"whatToExpect": "Protección de testigos, hábitos criminales trasladados a un pueblo francés, violencia de dibujo animado y una familia que resuelve la adaptación a su manera.",
 			"pace": "Se arma con escenas episódicas de convivencia y explosiones de venganza; tiene buenos arranques, aunque varios sketches estiran demasiado la misma idea.",
-			"intensity": "La violencia es exagerada y cómica, nunca realista; la presión familiar y el riesgo de ser descubiertos pesan menos que el gusto por el caos.",			"practicalContext": "Con 111 minutos, es una comedia criminal para ver sin demasiadas expectativas, ideal si querés un elenco veterano divirtiéndose con sus propias mañas.",			"forFansOf": "Para quienes disfrutan a De Niro en clave mafiosa, a Pfeiffer con ferocidad y las comedias negras de Besson que abrazan el exceso.",			"notForYouIf": "Puede no ser para vos si buscás sátira fina, personajes realistas o una trama criminal que avance sin detenerse en gags aislados."
+			"intensity": "La violencia es exagerada y cómica, nunca realista; la presión familiar y el riesgo de ser descubiertos pesan menos que el gusto por el caos.",
+			"practicalContext": "Con 111 minutos, es una comedia criminal para ver sin demasiadas expectativas, ideal si querés un elenco veterano divirtiéndose con sus propias mañas.",
+			"forFansOf": "Para quienes disfrutan a De Niro en clave mafiosa, a Pfeiffer con ferocidad y las comedias negras de Besson que abrazan el exceso.",
+			"notForYouIf": "Puede no ser para vos si buscás sátira fina, personajes realistas o una trama criminal que avance sin detenerse en gags aislados."
 		},
 		"becauseYouLiked": [
 			"los-otros-dos-2010",
@@ -53,5 +56,28 @@
 		]
 	},
 	"review": "Malavita juega con la fantasía de que una familia mafiosa puede esconderse si cambia de país, pero no de costumbres. De Niro aprovecha la contradicción entre el padre que intenta portarse como un vecino normal y el hombre que todavía responde a cada problema con una explosión, mientras Michelle Pfeiffer le da a la madre una ferocidad que no necesita permiso. Luc Besson filma la violencia como caricatura y la comedia como una seguidilla de golpes, con resultados desparejos: algunas escenas tienen una energía irresistible y otras parecen sketches estirados. La película no busca sutileza ni arrepentimiento, sino el placer de ver a un elenco veterano divertirse con un género que conoce de memoria. Irregular, pero entretenida cuando acelera.",
-	"runtimeMinutes": 111
+	"runtimeMinutes": 111,
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Fred Blake / Giovanni Manzoni",
+			"tmdbMovieId": 112205,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michelle Pfeiffer",
+			"character": "Maggie Blake",
+			"tmdbMovieId": 112205,
+			"tmdbPersonId": 1160,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tommy Lee Jones",
+			"character": "FBI Agent Robert Stansfield",
+			"tmdbMovieId": 112205,
+			"tmdbPersonId": 2176,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

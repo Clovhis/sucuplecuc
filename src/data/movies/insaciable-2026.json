@@ -8,17 +8,30 @@
 	"reviewPublishedAt": "2026-08-13",
 	"audienceRating": "+17",
 	"category": "Terror",
-	"genres": ["Terror", "Thriller", "Drama"],
-	"subgenres": ["Body Horror"],
+	"genres": [
+		"Terror",
+		"Thriller",
+		"Drama"
+	],
+	"subgenres": [
+		"Body Horror"
+	],
 	"country": "AU, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/insaciable-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "uIY13LD3RUY",
 	"releasePlatform": "Apple TV",
-	"releasePlatforms": ["Apple TV","Prime Video"],
+	"releasePlatforms": [
+		"Apple TV",
+		"Prime Video"
+	],
 	"director": "Natalie Erika James",
-	"mainCast": ["Danielle Macdonald", "Madeleine Madden", "Midori Francis"],
+	"mainCast": [
+		"Danielle Macdonald",
+		"Madeleine Madden",
+		"Midori Francis"
+	],
 	"productionCompany": "Diamond Films",
 	"cinepostaScore": 7,
 	"runtimeMinutes": 113,
@@ -36,17 +49,40 @@
 			"notForYouIf": "No es para vos si evitás imágenes físicas, temas de trastornos alimentarios o metáforas demasiado subrayadas."
 		},
 		"becauseYouLiked": [
-		"engendro-2026",
-		"inseparables-1988"
-	],
-	"related": [
-		"titane-2021",
-		"la-piel-que-habito-2011",
-		"scanners-1981",
-		"la-cosa-el-enigma-de-otro-mundo-1982"
-	]
-},
+			"engendro-2026",
+			"inseparables-1988"
+		],
+		"related": [
+			"titane-2021",
+			"la-piel-que-habito-2011",
+			"scanners-1981",
+			"la-cosa-el-enigma-de-otro-mundo-1982"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Insaciable convierte una obsesión cotidiana en una pesadilla corporal sin esconder su intención de incomodar. Natalie Erika James trabaja mejor cuando deja que el hambre se vuelva textura, sonido y presencia, y cuando el terror aparece pegado a la vergüenza de mirarse en el espejo. La película tiene imágenes fuertes y un trío de protagonistas que evita que el concepto quede solo en provocación. No todas sus metáforas encuentran la misma potencia, pero el malestar permanece bastante después de los créditos."
+	"review": "Insaciable convierte una obsesión cotidiana en una pesadilla corporal sin esconder su intención de incomodar. Natalie Erika James trabaja mejor cuando deja que el hambre se vuelva textura, sonido y presencia, y cuando el terror aparece pegado a la vergüenza de mirarse en el espejo. La película tiene imágenes fuertes y un trío de protagonistas que evita que el concepto quede solo en provocación. No todas sus metáforas encuentran la misma potencia, pero el malestar permanece bastante después de los créditos.",
+	"castCharacters": [
+		{
+			"actor": "Danielle Macdonald",
+			"character": "Josie",
+			"tmdbMovieId": 1363387,
+			"tmdbPersonId": 1203789,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Madeleine Madden",
+			"character": "Alanya",
+			"tmdbMovieId": 1363387,
+			"tmdbPersonId": 1109111,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Midori Francis",
+			"character": "Hana",
+			"tmdbMovieId": 1363387,
+			"tmdbPersonId": 1984116,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

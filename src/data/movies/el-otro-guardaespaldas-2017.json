@@ -25,7 +25,10 @@
 		"Ryan Reynolds",
 		"Samuel L. Jackson",
 		"Gary Oldman",
-		"Salma Hayek"
+		"Salma Hayek",
+		"Salma Hayek Pinault",
+		"Richard E. Grant",
+		"Joaquim de Almeida"
 	],
 	"productionCompany": "Millennium Media",
 	"cinepostaScore": 5,
@@ -76,6 +79,27 @@
 			"tmdbMovieId": 390043,
 			"tmdbPersonId": 64,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Salma Hayek Pinault",
+			"character": "Sonia Kincaid",
+			"tmdbMovieId": 390043,
+			"tmdbPersonId": 3136,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Richard E. Grant",
+			"character": "Seifert",
+			"tmdbMovieId": 390043,
+			"tmdbPersonId": 20766,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Joaquim de Almeida",
+			"character": "Foucher",
+			"tmdbMovieId": 390043,
+			"tmdbPersonId": 22462,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

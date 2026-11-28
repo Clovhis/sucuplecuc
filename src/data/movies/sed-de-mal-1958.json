@@ -20,7 +20,9 @@
 	"director": "Orson Welles",
 	"mainCast": [
 		"Charlton Heston",
-		"Janet Leigh"
+		"Janet Leigh",
+		"Orson Welles",
+		"Dennis Weaver"
 	],
 	"productionCompany": "Universal-International Pictures",
 	"cinepostaScore": 9,
@@ -66,6 +68,20 @@
 			"tmdbMovieId": 1480,
 			"tmdbPersonId": 7302,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Orson Welles",
+			"character": "Police Captain Hank Quinlan",
+			"tmdbMovieId": 1480,
+			"tmdbPersonId": 40,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dennis Weaver",
+			"character": "Mirador Motel Night Manager",
+			"tmdbMovieId": 1480,
+			"tmdbPersonId": 12422,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

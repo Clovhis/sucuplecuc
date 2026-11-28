@@ -27,7 +27,9 @@
 	"mainCast": [
 		"Robert De Niro",
 		"Wesley Snipes",
-		"John Leguizamo"
+		"John Leguizamo",
+		"Ellen Barkin",
+		"Benicio del Toro"
 	],
 	"productionCompany": "TriStar Pictures",
 	"cinepostaScore": 5,
@@ -56,5 +58,42 @@
 		]
 	},
 	"review": "Fanático entiende que el terror no está sólo en un admirador que cruza límites, sino en la fantasía de que una celebridad le debe algo a quien la consume. Robert De Niro lleva a Gil con una mezcla de ternura rota y amenaza creciente, mientras Wesley Snipes interpreta al ídolo como alguien que también queda atrapado en el personaje público. Tony Scott carga la imagen de reflejos, estadios y colores agresivos, una estilización que le da velocidad al thriller pero también exagera algunas decisiones. El guion subraya demasiado su tesis y el desenlace no siempre encuentra la proporción justa, aunque la incomodidad permanece porque la obsesión nunca aparece de golpe: se arma con pequeños permisos. Un thriller nervioso y áspero.",
-	"runtimeMinutes": 116
+	"runtimeMinutes": 116,
+	"castCharacters": [
+		{
+			"actor": "Ellen Barkin",
+			"character": "Jewel Stern",
+			"tmdbMovieId": 9566,
+			"tmdbPersonId": 6913,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Benicio del Toro",
+			"character": "Juan Primo",
+			"tmdbMovieId": 9566,
+			"tmdbPersonId": 1121,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "Gil Renard",
+			"tmdbMovieId": 9566,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Wesley Snipes",
+			"character": "Bobby Rayburn",
+			"tmdbMovieId": 9566,
+			"tmdbPersonId": 10814,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Leguizamo",
+			"character": "Manny",
+			"tmdbMovieId": 9566,
+			"tmdbPersonId": 5723,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

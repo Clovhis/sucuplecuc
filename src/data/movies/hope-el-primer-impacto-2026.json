@@ -53,5 +53,35 @@
 		]
 	},
 	"review": "Na Hong-jin filma la persecución como un problema físico: el monte, el cansancio y los errores de los personajes hacen que cada intento de escapar tenga un costo. Hope: El primer impacto crece a partir de esa urgencia y mezcla monstruos, humor incómodo y decisiones desesperadas sin ofrecer un héroe que acomode todo. Hwang Jung-min le da una torpeza muy humana a la autoridad policial, mientras la escala visual amenaza con desbordar el pueblo y la propia película. La expansión final pierde algo de la precisión del comienzo, pero conserva una ambición poco frecuente y una energía que se siente en el cuerpo.",
-	"runtimeMinutes": 160
+	"runtimeMinutes": 160,
+	"castCharacters": [
+		{
+			"actor": "Hwang Jung-min",
+			"character": "Go Bum-seok",
+			"tmdbMovieId": 1058424,
+			"tmdbPersonId": 68903,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zo In-sung",
+			"character": "Go Sung-ki",
+			"tmdbMovieId": 1058424,
+			"tmdbPersonId": 127564,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Fassbender",
+			"character": "Ma'veyyo",
+			"tmdbMovieId": 1058424,
+			"tmdbPersonId": 17288,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alicia Vikander",
+			"character": "J'aur",
+			"tmdbMovieId": 1058424,
+			"tmdbPersonId": 227454,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

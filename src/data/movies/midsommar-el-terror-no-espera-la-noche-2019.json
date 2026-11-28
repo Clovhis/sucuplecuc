@@ -20,7 +20,9 @@
 	"director": "Ari Aster",
 	"mainCast": [
 		"Florence Pugh",
-		"Jack Reynor"
+		"Jack Reynor",
+		"William Jackson Harper",
+		"Will Poulter"
 	],
 	"productionCompany": "B-Reel Films",
 	"cinepostaScore": 7,
@@ -71,6 +73,20 @@
 			"tmdbMovieId": 530385,
 			"tmdbPersonId": 1007683,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Jackson Harper",
+			"character": "Josh",
+			"tmdbMovieId": 530385,
+			"tmdbPersonId": 1410478,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Will Poulter",
+			"character": "Mark",
+			"tmdbMovieId": 530385,
+			"tmdbPersonId": 93491,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

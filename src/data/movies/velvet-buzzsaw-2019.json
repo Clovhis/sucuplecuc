@@ -20,7 +20,9 @@
 	"director": "Dan Gilroy",
 	"mainCast": [
 		"Rene Russo",
-		"Jake Gyllenhaal"
+		"Jake Gyllenhaal",
+		"Tom Sturridge",
+		"Toni Collette"
 	],
 	"productionCompany": "Bold Films",
 	"cinepostaScore": 5,
@@ -71,6 +73,20 @@
 			"tmdbMovieId": 463684,
 			"tmdbPersonId": 131,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Sturridge",
+			"character": "Jon Dondon",
+			"tmdbMovieId": 463684,
+			"tmdbPersonId": 90451,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Toni Collette",
+			"character": "Gretchen",
+			"tmdbMovieId": 463684,
+			"tmdbPersonId": 3051,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

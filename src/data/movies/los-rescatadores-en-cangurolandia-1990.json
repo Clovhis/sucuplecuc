@@ -23,7 +23,9 @@
 	"director": "Mike Gabriel",
 	"mainCast": [
 		"Bob Newhart",
-		"Eva Gabor"
+		"Eva Gabor",
+		"John Candy",
+		"Tristan Rogers"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 8,
@@ -51,5 +53,35 @@
 			"oliver-y-su-pandilla-1988"
 		]
 	},
-	"review": "Los rescatadores en Cangurolandia arranca con una persecución aérea extraordinaria y no pierde del todo esa velocidad cuando vuelve al terreno de los personajes. Bob Newhart y Eva Gabor mantienen la ternura de la primera película, mientras John Candy suma humor sin desarmar el peligro. La relación entre Cody y el águila le da una dimensión emotiva a la aventura, que se apoya en paisajes amplios, villanos intensos y un dibujo muy dinámico."
+	"review": "Los rescatadores en Cangurolandia arranca con una persecución aérea extraordinaria y no pierde del todo esa velocidad cuando vuelve al terreno de los personajes. Bob Newhart y Eva Gabor mantienen la ternura de la primera película, mientras John Candy suma humor sin desarmar el peligro. La relación entre Cody y el águila le da una dimensión emotiva a la aventura, que se apoya en paisajes amplios, villanos intensos y un dibujo muy dinámico.",
+	"castCharacters": [
+		{
+			"actor": "John Candy",
+			"character": "Wilbur (voice)",
+			"tmdbMovieId": 11135,
+			"tmdbPersonId": 7180,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tristan Rogers",
+			"character": "Jake (voice)",
+			"tmdbMovieId": 11135,
+			"tmdbPersonId": 94962,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bob Newhart",
+			"character": "Bernard (voice)",
+			"tmdbMovieId": 11135,
+			"tmdbPersonId": 64930,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eva Gabor",
+			"character": "Miss Bianca (voice)",
+			"tmdbMovieId": 11135,
+			"tmdbPersonId": 44714,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

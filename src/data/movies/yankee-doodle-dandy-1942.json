@@ -22,7 +22,9 @@
   "director": "Michael Curtiz",
   "mainCast": [
     "James Cagney",
-    "Joan Leslie"
+    "Joan Leslie",
+    "Walter Huston",
+    "Richard Whorf"
   ],
   "productionCompany": "Warner Bros. Pictures",
   "runtimeMinutes": 126,
@@ -64,6 +66,20 @@
       "tmdbMovieId": 3087,
       "tmdbPersonId": 30269,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Walter Huston",
+      "character": "Jerry Cohan",
+      "tmdbMovieId": 3087,
+      "tmdbPersonId": 19020,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Richard Whorf",
+      "character": "Sam Harris",
+      "tmdbMovieId": 3087,
+      "tmdbPersonId": 30270,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

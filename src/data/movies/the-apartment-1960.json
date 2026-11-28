@@ -70,5 +70,28 @@
 	"country": "US",
 	"isArgentinian": false,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jack Lemmon",
+			"character": "C.C. Baxter",
+			"tmdbMovieId": 284,
+			"tmdbPersonId": 3151,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Shirley MacLaine",
+			"character": "Fran Kubelik",
+			"tmdbMovieId": 284,
+			"tmdbPersonId": 4090,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Fred MacMurray",
+			"character": "Jeff D. Sheldrake",
+			"tmdbMovieId": 284,
+			"tmdbPersonId": 4091,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -27,7 +27,12 @@
 	"director": "Kyle Balda",
 	"mainCast": [
 		"Steve Carell",
-		"Kristen Wiig"
+		"Kristen Wiig",
+		"Trey Parker",
+		"Miranda Cosgrove",
+		"Dana Gaier Ellis",
+		"Pierre Coffin",
+		"Steve Coogan"
 	],
 	"productionCompany": "Illumination",
 	"cinepostaScore": 7,
@@ -70,6 +75,41 @@
 			"tmdbMovieId": 324852,
 			"tmdbPersonId": 41091,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Trey Parker",
+			"character": "Balthazar Bratt (voice)",
+			"tmdbMovieId": 324852,
+			"tmdbPersonId": 34517,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Miranda Cosgrove",
+			"character": "Margo (voice)",
+			"tmdbMovieId": 324852,
+			"tmdbPersonId": 17743,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dana Gaier Ellis",
+			"character": "Edith (voice)",
+			"tmdbMovieId": 324852,
+			"tmdbPersonId": 124750,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Pierre Coffin",
+			"character": "Minions / Museum Director / Additional Voice (voice)",
+			"tmdbMovieId": 324852,
+			"tmdbPersonId": 124747,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Steve Coogan",
+			"character": "Fritz / Silas Ramsbottom (voice)",
+			"tmdbMovieId": 324852,
+			"tmdbPersonId": 4581,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -53,5 +53,28 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Silverio Palacios",
+			"character": "Benito",
+			"tmdbMovieId": 1700680,
+			"tmdbPersonId": 105843,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Daniel Sosa",
+			"character": "Juan",
+			"tmdbMovieId": 1700680,
+			"tmdbPersonId": 2349377,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Fernando Cuautle",
+			"character": "Pancho",
+			"tmdbMovieId": 1700680,
+			"tmdbPersonId": 2732919,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

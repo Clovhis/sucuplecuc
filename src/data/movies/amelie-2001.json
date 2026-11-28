@@ -25,7 +25,9 @@
 		"Audrey Tautou",
 		"Mathieu Kassovitz",
 		"Rufus",
-		"Serge Merlin"
+		"Serge Merlin",
+		"Jamel Debbouze",
+		"Claire Maurier"
 	],
 	"productionCompany": "UGC, Tapioca Films",
 	"cinepostaScore": 8,
@@ -85,6 +87,20 @@
 			"tmdbMovieId": 194,
 			"tmdbPersonId": 2410,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jamel Debbouze",
+			"character": "Lucien",
+			"tmdbMovieId": 194,
+			"tmdbPersonId": 2408,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Claire Maurier",
+			"character": "Suzanne",
+			"tmdbMovieId": 194,
+			"tmdbPersonId": 1654,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -16,7 +16,12 @@
 	"mainCast": [
 		"Lily-Rose Depp",
 		"Nicholas Hoult",
-		"Bill Skarsgård"
+		"Bill Skarsgård",
+		"Aaron Taylor-Johnson",
+		"Willem Dafoe",
+		"Emma Corrin",
+		"Ralph Ineson",
+		"Simon McBurney"
 	],
 	"productionCompany": "Maiden Voyage Pictures",
 	"cinepostaScore": 8,
@@ -71,6 +76,41 @@
 			"tmdbMovieId": 426063,
 			"tmdbPersonId": 137905,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Taylor-Johnson",
+			"character": "Friedrich Harding",
+			"tmdbMovieId": 426063,
+			"tmdbPersonId": 27428,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Prof. Albin Eberhart von Franz",
+			"tmdbMovieId": 426063,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Emma Corrin",
+			"character": "Anna Harding",
+			"tmdbMovieId": 426063,
+			"tmdbPersonId": 2324569,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ralph Ineson",
+			"character": "Dr. Wilhelm Sievers",
+			"tmdbMovieId": 426063,
+			"tmdbPersonId": 202032,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Simon McBurney",
+			"character": "Herr Knock",
+			"tmdbMovieId": 426063,
+			"tmdbPersonId": 16358,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

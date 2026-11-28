@@ -33,15 +33,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Travis Barker: Más allá del miedo corre la épica rockera hacia el cuerpo y la ansiedad; Justin Krook y Michael Dwyer dejan que Travis Barker no parezca invulnerable.",
-		"whatToExpect": "Archivo, familia y entrevistas recorren el accidente de 2008, la recuperación y la decisión de volver a mirar un miedo que sigue presente.",
-		"pace": "Avanza de manera directa, alternando recuerdos de carrera con escenas íntimas que bajan la velocidad y cambian el foco.",
-		"intensity": "La presión no está en el show sino en la memoria física; sobrevivir aparece como una tarea repetida, no como un final feliz.",
-		"practicalContext": "Dura 101 minutos y funciona como documental musical de recuperación, con emoción convencional pero un acceso cercano al protagonista.",
-		"forFansOf": "Te va a gustar si seguís a Blink-182, te interesan historias de rehabilitación y querés ver al músico detrás de la imagen de resistencia.",
-		"notForYouIf": "No es para vos si buscás una investigación formalmente arriesgada, crítica de la fama o un retrato sin archivo inspirador."
-	},
+		"tenSecondTake": {
+			"verdict": "Travis Barker: Más allá del miedo corre la épica rockera hacia el cuerpo y la ansiedad; Justin Krook y Michael Dwyer dejan que Travis Barker no parezca invulnerable.",
+			"whatToExpect": "Archivo, familia y entrevistas recorren el accidente de 2008, la recuperación y la decisión de volver a mirar un miedo que sigue presente.",
+			"pace": "Avanza de manera directa, alternando recuerdos de carrera con escenas íntimas que bajan la velocidad y cambian el foco.",
+			"intensity": "La presión no está en el show sino en la memoria física; sobrevivir aparece como una tarea repetida, no como un final feliz.",
+			"practicalContext": "Dura 101 minutos y funciona como documental musical de recuperación, con emoción convencional pero un acceso cercano al protagonista.",
+			"forFansOf": "Te va a gustar si seguís a Blink-182, te interesan historias de rehabilitación y querés ver al músico detrás de la imagen de resistencia.",
+			"notForYouIf": "No es para vos si buscás una investigación formalmente arriesgada, crítica de la fama o un retrato sin archivo inspirador."
+		},
 		"becauseYouLiked": [
 			"fito-paez-el-mundo-cabe-en-una-cancion-2026",
 			"lipan-2026"
@@ -56,5 +56,42 @@
 	"review": "Travis Barker: Más allá del miedo no intenta esconder que su protagonista ya conoce el lenguaje de la épica rockera. La diferencia está en correr el foco: el documental trabaja con el cuerpo, la ansiedad y los vínculos que quedan cuando la imagen de superviviente deja de ser un titular y se vuelve una tarea diaria.\n\nJustin Krook y Michael Dwyer combinan archivo, entrevistas y escenas familiares con un ritmo directo, más emocional que formalmente arriesgado. Barker no aparece como una estatua de resistencia, sino como alguien que todavía negocia con sus recuerdos. El resultado puede ser convencional, pero tiene una honestidad concreta cuando deja que el miedo siga presente.",
 	"releasePlatform": "Disney Plus",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Travis Barker",
+			"character": "Self",
+			"tmdbMovieId": 1695225,
+			"tmdbPersonId": 204610,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kourtney Kardashian Barker",
+			"character": "Self",
+			"tmdbMovieId": 1695225,
+			"tmdbPersonId": 1220771,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mark Hoppus",
+			"character": "Self",
+			"tmdbMovieId": 1695225,
+			"tmdbPersonId": 234801,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom DeLonge",
+			"character": "Self",
+			"tmdbMovieId": 1695225,
+			"tmdbPersonId": 84546,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Landon Barker",
+			"character": "Self",
+			"tmdbMovieId": 1695225,
+			"tmdbPersonId": 2935478,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

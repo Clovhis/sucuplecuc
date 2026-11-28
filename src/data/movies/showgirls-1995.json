@@ -18,7 +18,9 @@
 	"director": "Paul Verhoeven",
 	"mainCast": [
 		"Elizabeth Berkley",
-		"Kyle MacLachlan"
+		"Kyle MacLachlan",
+		"Gina Gershon",
+		"Glenn Plummer"
 	],
 	"productionCompany": "Carolco Pictures",
 	"cinepostaScore": 5,
@@ -73,6 +75,20 @@
 			"tmdbMovieId": 10802,
 			"tmdbPersonId": 6677,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gina Gershon",
+			"character": "Cristal Connors",
+			"tmdbMovieId": 10802,
+			"tmdbPersonId": 11150,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Glenn Plummer",
+			"character": "James Smith",
+			"tmdbMovieId": 10802,
+			"tmdbPersonId": 2683,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -20,7 +20,9 @@
 	"director": "David Cronenberg",
 	"mainCast": [
 		"Jeremy Irons",
-		"Geneviève Bujold"
+		"Geneviève Bujold",
+		"Heidi von Palleske",
+		"Stephen Lack"
 	],
 	"productionCompany": "Morgan Creek Productions",
 	"cinepostaScore": 7,
@@ -71,6 +73,20 @@
 			"tmdbMovieId": 9540,
 			"tmdbPersonId": 35341,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Heidi von Palleske",
+			"character": "Cary",
+			"tmdbMovieId": 9540,
+			"tmdbPersonId": 57881,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Stephen Lack",
+			"character": "Wolleck / Anders Wolleck",
+			"tmdbMovieId": 9540,
+			"tmdbPersonId": 57880,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

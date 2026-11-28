@@ -27,7 +27,9 @@
 	"director": "Eric Darnell",
 	"mainCast": [
 		"Tom McGrath",
-		"Chris Miller"
+		"Chris Miller",
+		"John Malkovich",
+		"Benedict Cumberbatch"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -55,5 +57,35 @@
 			"lluvia-de-hamburguesas-2-2013"
 		]
 	},
-	"review": "Los pingüinos de Madagascar funciona como una misión de espías con personajes que ya traen su propio ritmo cómico. Tom McGrath, Chris Miller y sus compañeros de voz sostienen una cadena de órdenes absurdas que se entiende incluso cuando la acción se desborda. Benedict Cumberbatch disfruta el papel del rival elegante y John Malkovich aporta una amenaza exagerada. No busca profundidad, pero sabe dosificar el caos y tiene algunas persecuciones muy ingeniosas."
+	"review": "Los pingüinos de Madagascar funciona como una misión de espías con personajes que ya traen su propio ritmo cómico. Tom McGrath, Chris Miller y sus compañeros de voz sostienen una cadena de órdenes absurdas que se entiende incluso cuando la acción se desborda. Benedict Cumberbatch disfruta el papel del rival elegante y John Malkovich aporta una amenaza exagerada. No busca profundidad, pero sabe dosificar el caos y tiene algunas persecuciones muy ingeniosas.",
+	"castCharacters": [
+		{
+			"actor": "John Malkovich",
+			"character": "Dave (voice)",
+			"tmdbMovieId": 270946,
+			"tmdbPersonId": 6949,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Benedict Cumberbatch",
+			"character": "Classified (voice)",
+			"tmdbMovieId": 270946,
+			"tmdbPersonId": 71580,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom McGrath",
+			"character": "Skipper (voice)",
+			"tmdbMovieId": 270946,
+			"tmdbPersonId": 18864,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chris Miller",
+			"character": "Kowalski (voice)",
+			"tmdbMovieId": 270946,
+			"tmdbPersonId": 12098,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

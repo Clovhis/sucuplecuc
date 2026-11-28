@@ -27,7 +27,9 @@
 	"mainCast": [
 		"H.E.R.",
 		"Liza Soberano",
-		"Dave Franco"
+		"Dave Franco",
+		"Jenny Slate",
+		"Dolly de Leon"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"awards": {
@@ -57,5 +59,42 @@
 	"review": "La película convierte el último verano de dos amigas en una aventura fantástica donde la memoria tiene un costo concreto. Jo y Raissa se mueven por un mundo de criaturas y referencias filipinas que le da una identidad propia al viaje, mientras la amistad sostiene la parte más emotiva. El diseño visual tiene momentos expansivos y la animación elige colores intensos sin perder el hilo de las protagonistas. Algunas pruebas se resuelven con rapidez, pero el relato encuentra energía cuando deja que las dos aprendan a cambiar juntas.",
 	"runtimeMinutes": 109,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Jenny Slate",
+			"character": "Batiba (voice)",
+			"tmdbMovieId": 1465063,
+			"tmdbPersonId": 213001,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dolly de Leon",
+			"character": "Lola (voice)",
+			"tmdbMovieId": 1465063,
+			"tmdbPersonId": 1513304,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "H.E.R.",
+			"character": "Jo (voice)",
+			"tmdbMovieId": 1465063,
+			"tmdbPersonId": 2320763,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Liza Soberano",
+			"character": "Raissa (voice)",
+			"tmdbMovieId": 1465063,
+			"tmdbPersonId": 1268847,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dave Franco",
+			"character": "Raww (voice)",
+			"tmdbMovieId": 1465063,
+			"tmdbPersonId": 54697,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -22,7 +22,9 @@
 	"director": "Matt Bettinelli-Olpin, Tyler Gillett",
 	"mainCast": [
 		"Samara Weaving",
-		"Adam Brody"
+		"Adam Brody",
+		"Mark O'Brien",
+		"Andie MacDowell"
 	],
 	"productionCompany": "Mythology Entertainment, Fox Searchlight Pictures, Vinson Films",
 	"cinepostaScore": 8,
@@ -51,5 +53,35 @@
 	},
 	"review": "Boda sangrienta encuentra una regla sencilla y la convierte en motor: una novia debe sobrevivir a una tradición familiar cuyo protocolo es tan absurdo como letal. Samara Weaving lleva la película con una mezcla precisa de agotamiento, miedo y humor seco; Adam Brody y los demás invitados alimentan la extravagancia sin quitarle foco. Matt Bettinelli-Olpin y Tyler Gillett sostienen una noche de ritmo firme, alternando persecución, gore y sátira de clase. El disparate funciona porque la puesta nunca pierde de vista la desesperación de Grace, aunque la crítica social queda más sugerida que desarrollada.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 95
+	"runtimeMinutes": 95,
+	"castCharacters": [
+		{
+			"actor": "Mark O'Brien",
+			"character": "Alex",
+			"tmdbMovieId": 567609,
+			"tmdbPersonId": 225411,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Andie MacDowell",
+			"character": "Becky",
+			"tmdbMovieId": 567609,
+			"tmdbPersonId": 1533,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Samara Weaving",
+			"character": "Grace",
+			"tmdbMovieId": 567609,
+			"tmdbPersonId": 1372369,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Adam Brody",
+			"character": "Daniel",
+			"tmdbMovieId": 567609,
+			"tmdbPersonId": 11702,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

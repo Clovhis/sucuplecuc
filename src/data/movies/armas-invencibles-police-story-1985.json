@@ -45,17 +45,33 @@
 			"notForYouIf": "Necesitás efectos digitales, violencia oscura o un héroe que no se caiga antes de ganar."
 		},
 		"becauseYouLiked": [
-		"hard-boiled-1992",
-		"jungla-de-cristal-1988"
-	],
-	"related": [
-		"limite-48-horas-1982",
-		"the-fast-and-the-furious-2001",
-		"ong-bak-el-guerrero-muay-thai-2003",
-		"fast-five-2011"
-	]
-},
+			"hard-boiled-1992",
+			"jungla-de-cristal-1988"
+		],
+		"related": [
+			"limite-48-horas-1982",
+			"the-fast-and-the-furious-2001",
+			"ong-bak-el-guerrero-muay-thai-2003",
+			"fast-five-2011"
+		]
+	},
 	"review": "Jackie Chan mezcla policial, comedia y acrobacia hasta convertir el cuerpo del protagonista en el motor de la narración. Las escenas de acción usan espacios reales y objetos cotidianos, con una precisión que vuelve peligroso cada chiste. Chan combina vulnerabilidad y dominio técnico, y la película conserva una alegría física muy difícil de copiar. Chan mezcla humor y peligro con una entrega física que hace que hasta el gag más limpio parezca capaz de salir mal.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jackie Chan",
+			"character": "Sergeant Chan Ka Kui",
+			"tmdbMovieId": 9056,
+			"tmdbPersonId": 18897,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Tung Biu",
+			"character": "Inspector \"Uncle\" Bill Chou",
+			"tmdbMovieId": 9056,
+			"tmdbPersonId": 44922,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

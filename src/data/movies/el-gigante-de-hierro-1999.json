@@ -16,7 +16,11 @@
 	"director": "Brad Bird",
 	"mainCast": [
 		"Jennifer Aniston",
-		"Harry Connick Jr."
+		"Harry Connick Jr.",
+		"James Gammon",
+		"Cloris Leachman",
+		"Christopher McDonald",
+		"John Mahoney"
 	],
 	"productionCompany": "Warner Bros. Feature Animation",
 	"cinepostaScore": 9,
@@ -67,6 +71,34 @@
 			"tmdbMovieId": 10386,
 			"tmdbPersonId": 18688,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Gammon",
+			"character": "Foreman Marv Loach / Floyd Turbeaux (voice)",
+			"tmdbMovieId": 10386,
+			"tmdbPersonId": 16433,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cloris Leachman",
+			"character": "Mrs. Lynley Tensedge (voice)",
+			"tmdbMovieId": 10386,
+			"tmdbPersonId": 9599,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Christopher McDonald",
+			"character": "Kent Mansley (voice)",
+			"tmdbMovieId": 10386,
+			"tmdbPersonId": 4443,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Mahoney",
+			"character": "General Rogard (voice)",
+			"tmdbMovieId": 10386,
+			"tmdbPersonId": 4251,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

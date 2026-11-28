@@ -56,5 +56,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Béatrice Dalle",
+			"character": "The Woman",
+			"tmdbMovieId": 13312,
+			"tmdbPersonId": 4813,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alysson Paradis",
+			"character": "Sarah Scarangelo",
+			"tmdbMovieId": 13312,
+			"tmdbPersonId": 56288,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nathalie Roussel",
+			"character": "Louise Scarangelo",
+			"tmdbMovieId": 13312,
+			"tmdbPersonId": 73714,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "François-Régis Marchasson",
+			"character": "Jean-Pierre Montalban",
+			"tmdbMovieId": 13312,
+			"tmdbPersonId": 81047,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

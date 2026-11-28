@@ -13,7 +13,10 @@
 	"mainCast": [
 		"Hugh Jackman",
 		"James McAvoy",
-		"Michael Fassbender"
+		"Michael Fassbender",
+		"Ian McKellen",
+		"Jennifer Lawrence",
+		"Nicholas Hoult"
 	],
 	"productionCompany": "20th Century Fox",
 	"cinepostaScore": 7,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 127585,
 			"tmdbPersonId": 17288,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian McKellen",
+			"character": "Magneto",
+			"tmdbMovieId": 127585,
+			"tmdbPersonId": 1327,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jennifer Lawrence",
+			"character": "Raven / Mystique",
+			"tmdbMovieId": 127585,
+			"tmdbPersonId": 72129,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nicholas Hoult",
+			"character": "Hank / Beast",
+			"tmdbMovieId": 127585,
+			"tmdbPersonId": 3292,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

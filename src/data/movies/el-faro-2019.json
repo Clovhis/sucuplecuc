@@ -56,5 +56,28 @@
 	},
 	"review": "Dos fareros, una isla y un temporal bastan para que Robert Eggers convierta la convivencia en una guerra de mitologías. Robert Pattinson está lleno de resentimiento y Willem Dafoe habla como si cada frase viniera de una obra maldita; juntos sostienen un duelo de actuaciones que puede ser ridículo y aterrador en la misma respiración. El blanco y negro, el formato casi cuadrado y el sonido del mar hacen que el encierro se sienta físico. No busca explicar cada símbolo, y ahí está parte de su fuerza: es una experiencia áspera, hipnótica y bastante incómoda que recompensa dejarse llevar.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Robert Pattinson",
+			"character": "Thomas Howard",
+			"tmdbMovieId": 503919,
+			"tmdbPersonId": 11288,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Thomas Wake",
+			"tmdbMovieId": 503919,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Valeriia Karaman",
+			"character": "Mermaid",
+			"tmdbMovieId": 503919,
+			"tmdbPersonId": 2309944,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

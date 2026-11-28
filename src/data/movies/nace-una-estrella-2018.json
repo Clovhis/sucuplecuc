@@ -24,7 +24,11 @@
 	"mainCast": [
 		"Bradley Cooper",
 		"Lady Gaga",
-		"Sam Elliott"
+		"Sam Elliott",
+		"Andrew Dice Clay",
+		"Rafi Gavron",
+		"Anthony Ramos",
+		"Alec Baldwin"
 	],
 	"productionCompany": "Warner Bros. Pictures, Metro-Goldwyn-Mayer, Live Nation Productions",
 	"cinepostaScore": 8,
@@ -86,6 +90,34 @@
 			"tmdbMovieId": 332562,
 			"tmdbPersonId": 16431,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andrew Dice Clay",
+			"character": "Lorenzo Campana",
+			"tmdbMovieId": 332562,
+			"tmdbPersonId": 57906,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rafi Gavron",
+			"character": "Rez Gavron",
+			"tmdbMovieId": 332562,
+			"tmdbPersonId": 21660,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anthony Ramos",
+			"character": "Ramon",
+			"tmdbMovieId": 332562,
+			"tmdbPersonId": 1560244,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alec Baldwin",
+			"character": "Alec Baldwin",
+			"tmdbMovieId": 332562,
+			"tmdbPersonId": 7447,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

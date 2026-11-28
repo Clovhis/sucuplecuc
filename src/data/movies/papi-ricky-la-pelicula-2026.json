@@ -52,5 +52,28 @@
 		]
 	},
 	"review": "El cambio de escala más interesante es doméstico: Alicia ya puede decidir con quién casarse, pero Ricky y Catrala siguen actuando como si tuvieran la última palabra. Jorge Zabaleta y María Elena Swett sostienen esa alianza incómoda, hecha de cariño, control y una memoria de pareja que vuelve en cada discusión. Belén Soto queda en el medio sin perder el lugar que mueve la historia. La comedia apuesta a reconocer los vínculos antes que a reinventarlos, y parte del efecto depende del afecto por esos personajes. Sebastián Schindel encuentra una continuación cálida, con el riesgo de que la nostalgia le dé demasiada razón a los adultos.",
-	"runtimeMinutes": 99
+	"runtimeMinutes": 99,
+	"castCharacters": [
+		{
+			"actor": "Belén Soto",
+			"character": "Alicia Montes",
+			"tmdbMovieId": 1752312,
+			"tmdbPersonId": 1965666,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jorge Zabaleta",
+			"character": "Ricardo “Ricky” Montes",
+			"tmdbMovieId": 1752312,
+			"tmdbPersonId": 1965665,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "María Elena Swett",
+			"character": "Catalina “Catrala” Rivera",
+			"tmdbMovieId": 1752312,
+			"tmdbPersonId": 118371,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

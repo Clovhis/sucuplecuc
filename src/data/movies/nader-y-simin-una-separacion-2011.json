@@ -54,5 +54,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "FR",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Leila Hatami",
+			"character": "Simin",
+			"tmdbMovieId": 60243,
+			"tmdbPersonId": 240240,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Payman Maadi",
+			"character": "Nader",
+			"tmdbMovieId": 60243,
+			"tmdbPersonId": 559566,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

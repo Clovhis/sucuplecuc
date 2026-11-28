@@ -23,7 +23,9 @@
 	"mainCast": [
 		"Margaret Qualley",
 		"Aaron Pierre",
-		"Patrick Schwarzenegger"
+		"Patrick Schwarzenegger",
+		"Catherine Keener",
+		"Corey Johnson"
 	],
 	"productionCompany": "Open Invite Entertainment, Amazon MGM Studios",
 	"cinepostaScore": 6,
@@ -50,5 +52,42 @@
 		]
 	},
 	"review": "Rachel Morrison organiza El amor de tu vida alrededor de alguien que tiene que volver a elegir cuando el futuro que imaginaba deja de estar disponible. Margaret Qualley sostiene esa transición con una mezcla de impulso y desorientación que le da cuerpo al melodrama. El guion encuentra imágenes de movimiento más convincentes que algunas de sus frases sobre empezar de nuevo. La historia tiende a resolver con comodidad ciertos desvíos emocionales, pero conserva interés cuando acompaña a Maya sin apurarla a convertir una pérdida en aprendizaje.",
-	"runtimeMinutes": 109
+	"runtimeMinutes": 109,
+	"castCharacters": [
+		{
+			"actor": "Catherine Keener",
+			"character": "Ruth",
+			"tmdbMovieId": 1381078,
+			"tmdbPersonId": 2229,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Corey Johnson",
+			"character": "Kerry",
+			"tmdbMovieId": 1381078,
+			"tmdbPersonId": 17199,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Margaret Qualley",
+			"character": "Maya",
+			"tmdbMovieId": 1381078,
+			"tmdbPersonId": 1392137,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Aaron Pierre",
+			"character": "Felix",
+			"tmdbMovieId": 1381078,
+			"tmdbPersonId": 1763709,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Patrick Schwarzenegger",
+			"character": "Jason",
+			"tmdbMovieId": 1381078,
+			"tmdbPersonId": 1053422,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

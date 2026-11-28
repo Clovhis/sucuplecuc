@@ -23,7 +23,10 @@
 	"director": "John Lasseter",
 	"mainCast": [
 		"Owen Wilson",
-		"Michael Caine"
+		"Michael Caine",
+		"Emily Mortimer",
+		"Suzy Eddie Izzard",
+		"John Turturro"
 	],
 	"productionCompany": "Pixar Animation Studios",
 	"cinepostaScore": 7,
@@ -66,6 +69,27 @@
 			"tmdbMovieId": 49013,
 			"tmdbPersonId": 3895,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Mortimer",
+			"character": "Holley Shiftwell (voice)",
+			"tmdbMovieId": 49013,
+			"tmdbPersonId": 1246,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Suzy Eddie Izzard",
+			"character": "Sir Miles Axlerod (voice)",
+			"tmdbMovieId": 49013,
+			"tmdbPersonId": 1926,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Turturro",
+			"character": "Francesco Bernoulli (voice)",
+			"tmdbMovieId": 49013,
+			"tmdbPersonId": 1241,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

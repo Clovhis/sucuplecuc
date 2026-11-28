@@ -13,7 +13,10 @@
 	"mainCast": [
 		"Ioan Gruffudd",
 		"Jessica Alba",
-		"Chris Evans"
+		"Chris Evans",
+		"Hamish Linklater",
+		"Kerry Washington",
+		"Laurie Holden"
 	],
 	"productionCompany": "20th Century Fox",
 	"cinepostaScore": 3,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 9738,
 			"tmdbPersonId": 16828,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Hamish Linklater",
+			"character": "Leonard",
+			"tmdbMovieId": 9738,
+			"tmdbPersonId": 184581,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kerry Washington",
+			"character": "Alicia Masters",
+			"tmdbMovieId": 9738,
+			"tmdbPersonId": 11703,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Laurie Holden",
+			"character": "Debbie McIlvane",
+			"tmdbMovieId": 9738,
+			"tmdbPersonId": 8332,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

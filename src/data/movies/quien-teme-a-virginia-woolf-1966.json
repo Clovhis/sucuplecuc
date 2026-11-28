@@ -23,7 +23,9 @@
   "director": "Mike Nichols",
   "mainCast": [
     "Elizabeth Taylor",
-    "Richard Burton"
+    "Richard Burton",
+    "George Segal",
+    "Sandy Dennis"
   ],
   "productionCompany": "Warner Bros.-Seven Arts",
   "runtimeMinutes": 131,
@@ -65,6 +67,20 @@
       "tmdbMovieId": 396,
       "tmdbPersonId": 5341,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "George Segal",
+      "character": "Nick",
+      "tmdbMovieId": 396,
+      "tmdbPersonId": 18364,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Sandy Dennis",
+      "character": "Honey",
+      "tmdbMovieId": 396,
+      "tmdbPersonId": 18365,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

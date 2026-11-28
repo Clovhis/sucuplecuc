@@ -20,7 +20,9 @@
 	"director": "Eskil Vogt",
 	"mainCast": [
 		"Rakel Lenora Fløttum",
-		"Alva Brynsmo Ramstad"
+		"Alva Brynsmo Ramstad",
+		"Sam Ashraf",
+		"Ellen Dorrit Petersen"
 	],
 	"productionCompany": "Mer Film",
 	"cinepostaScore": 7,
@@ -56,5 +58,35 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "DK",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sam Ashraf",
+			"character": "Ben",
+			"tmdbMovieId": 660942,
+			"tmdbPersonId": 2946556,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ellen Dorrit Petersen",
+			"character": "Ida and Anna's Mother",
+			"tmdbMovieId": 660942,
+			"tmdbPersonId": 79331,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rakel Lenora Fløttum",
+			"character": "Ida",
+			"tmdbMovieId": 660942,
+			"tmdbPersonId": 2946554,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alva Brynsmo Ramstad",
+			"character": "Anna",
+			"tmdbMovieId": 660942,
+			"tmdbPersonId": 2946555,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

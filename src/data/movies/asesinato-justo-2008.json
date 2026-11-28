@@ -46,7 +46,10 @@
 	"mainCast": [
 		"Robert De Niro",
 		"Al Pacino",
-		"Carla Gugino"
+		"Carla Gugino",
+		"John Leguizamo",
+		"Donnie Wahlberg",
+		"Brian Dennehy"
 	],
 	"productionCompany": "Millennium Films",
 	"cinepostaScore": 5,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 13389,
 			"tmdbPersonId": 17832,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Leguizamo",
+			"character": "Det. Simon Perez",
+			"tmdbMovieId": 13389,
+			"tmdbPersonId": 5723,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Donnie Wahlberg",
+			"character": "Det. Ted Riley",
+			"tmdbMovieId": 13389,
+			"tmdbPersonId": 2680,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brian Dennehy",
+			"character": "Hingis",
+			"tmdbMovieId": 13389,
+			"tmdbPersonId": 6197,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -25,7 +25,9 @@
 		"Will Smith",
 		"Bill Pullman",
 		"Jeff Goldblum",
-		"Mary McDonnell"
+		"Mary McDonnell",
+		"Robert Loggia",
+		"Randy Quaid"
 	],
 	"productionCompany": "Centropolis Entertainment, 20th Century Fox",
 	"cinepostaScore": 8,
@@ -94,6 +96,20 @@
 			"tmdbMovieId": 602,
 			"tmdbPersonId": 1581,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Loggia",
+			"character": "General William Grey",
+			"tmdbMovieId": 602,
+			"tmdbPersonId": 1162,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Randy Quaid",
+			"character": "Russell Casse",
+			"tmdbMovieId": 602,
+			"tmdbPersonId": 1811,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

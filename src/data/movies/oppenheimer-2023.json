@@ -13,7 +13,11 @@
 		"Cillian Murphy",
 		"Emily Blunt",
 		"Matt Damon",
-		"Robert Downey Jr."
+		"Robert Downey Jr.",
+		"Florence Pugh",
+		"Josh Hartnett",
+		"Casey Affleck",
+		"Rami Malek"
 	],
 	"productionCompany": "Universal Pictures",
 	"cinepostaScore": 8,
@@ -125,6 +129,34 @@
 			"tmdbMovieId": 872585,
 			"tmdbPersonId": 3223,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Florence Pugh",
+			"character": "Jean Tatlock",
+			"tmdbMovieId": 872585,
+			"tmdbPersonId": 1373737,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Josh Hartnett",
+			"character": "Ernest Lawrence",
+			"tmdbMovieId": 872585,
+			"tmdbPersonId": 2299,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Casey Affleck",
+			"character": "Boris Pash",
+			"tmdbMovieId": 872585,
+			"tmdbPersonId": 1893,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rami Malek",
+			"character": "David Hill",
+			"tmdbMovieId": 872585,
+			"tmdbPersonId": 17838,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -26,7 +26,9 @@
 	"director": "Mikhail Vaynberg",
 	"mainCast": [
 		"Veronika Zhuravleva",
-		"Daniel Vegas"
+		"Daniel Vegas",
+		"Ivan Trushin",
+		"Maksim Saprykin"
 	],
 	"productionCompany": "All Media Company, Yellow, Black & White",
 	"cinepostaScore": 5,
@@ -68,6 +70,20 @@
 			"tmdbMovieId": 1523145,
 			"tmdbPersonId": 5598110,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ivan Trushin",
+			"character": "Лэйм",
+			"tmdbMovieId": 1523145,
+			"tmdbPersonId": 4508505,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maksim Saprykin",
+			"character": "Леха",
+			"tmdbMovieId": 1523145,
+			"tmdbPersonId": 2007622,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

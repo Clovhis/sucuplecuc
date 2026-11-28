@@ -22,7 +22,9 @@
 	"director": "Hayley Kiyoko",
 	"mainCast": [
 		"Myra Molloy",
-		"Maya da Costa"
+		"Maya da Costa",
+		"Zach Braff",
+		"Levon Hawke"
 	],
 	"productionCompany": "Marc Platt Productions, Buzzfeed Studios",
 	"cinepostaScore": 8,
@@ -52,5 +54,35 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 95,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Zach Braff",
+			"character": "Curtis",
+			"tmdbMovieId": 1397485,
+			"tmdbPersonId": 5367,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Levon Hawke",
+			"character": "Trenton",
+			"tmdbMovieId": 1397485,
+			"tmdbPersonId": 3560034,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Myra Molloy",
+			"character": "Sonya",
+			"tmdbMovieId": 1397485,
+			"tmdbPersonId": 1937077,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maya da Costa",
+			"character": "Coley",
+			"tmdbMovieId": 1397485,
+			"tmdbPersonId": 4658358,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

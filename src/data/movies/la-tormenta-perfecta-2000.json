@@ -28,7 +28,10 @@
 	"mainCast": [
 		"George Clooney",
 		"Mark Wahlberg",
-		"John C. Reilly"
+		"John C. Reilly",
+		"Diane Lane",
+		"Mary Elizabeth Mastrantonio",
+		"John Hawkes"
 	],
 	"productionCompany": "Warner Bros. Pictures",
 	"cinepostaScore": 5,
@@ -79,6 +82,27 @@
 			"tmdbMovieId": 2133,
 			"tmdbPersonId": 4764,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Diane Lane",
+			"character": "Christina \"Chris\" Cotter",
+			"tmdbMovieId": 2133,
+			"tmdbPersonId": 2882,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mary Elizabeth Mastrantonio",
+			"character": "Linda Greenlaw",
+			"tmdbMovieId": 2133,
+			"tmdbPersonId": 1161,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Hawkes",
+			"character": "Mike \"Bugsy\" Moran",
+			"tmdbMovieId": 2133,
+			"tmdbPersonId": 16861,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

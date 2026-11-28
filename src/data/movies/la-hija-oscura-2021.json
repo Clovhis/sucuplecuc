@@ -26,7 +26,10 @@
 	"mainCast": [
 		"Olivia Colman",
 		"Jessie Buckley",
-		"Dakota Johnson"
+		"Dakota Johnson",
+		"Paul Mescal",
+		"Peter Sarsgaard",
+		"Jack Farthing"
 	],
 	"productionCompany": "Endeavor Content, Pie Films, Samuel Marshall Films",
 	"cinepostaScore": 6,
@@ -80,6 +83,27 @@
 			"tmdbMovieId": 554230,
 			"tmdbPersonId": 118545,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Mescal",
+			"character": "Will",
+			"tmdbMovieId": 554230,
+			"tmdbPersonId": 2326151,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Sarsgaard",
+			"character": "Professor Hardy",
+			"tmdbMovieId": 554230,
+			"tmdbPersonId": 133,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jack Farthing",
+			"character": "Joe",
+			"tmdbMovieId": 554230,
+			"tmdbPersonId": 1287084,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

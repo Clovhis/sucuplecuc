@@ -19,7 +19,8 @@
 	"mainCast": [
 		"Mark Hamill",
 		"Harrison Ford",
-		"Carrie Fisher"
+		"Carrie Fisher",
+		"Anthony Daniels"
 	],
 	"productionCompany": "Lucasfilm Ltd.",
 	"cinepostaScore": 9,
@@ -81,6 +82,13 @@
 			"tmdbMovieId": 11,
 			"tmdbPersonId": 4,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Daniels",
+			"character": "C-3PO",
+			"tmdbMovieId": 11,
+			"tmdbPersonId": 6,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

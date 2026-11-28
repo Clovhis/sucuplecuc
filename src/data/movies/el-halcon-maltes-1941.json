@@ -19,7 +19,9 @@
 	"director": "John Huston",
 	"mainCast": [
 		"Humphrey Bogart",
-		"Mary Astor"
+		"Mary Astor",
+		"Gladys George",
+		"Peter Lorre"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 8,
@@ -74,6 +76,20 @@
 			"tmdbMovieId": 963,
 			"tmdbPersonId": 13992,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Gladys George",
+			"character": "Iva Archer",
+			"tmdbMovieId": 963,
+			"tmdbPersonId": 14450,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Lorre",
+			"character": "Joel Cairo",
+			"tmdbMovieId": 963,
+			"tmdbPersonId": 2094,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -23,7 +23,8 @@
 	"director": "Eric Radomski",
 	"mainCast": [
 		"Kevin Conroy",
-		"Dana Delany"
+		"Dana Delany",
+		"Hart Bochner"
 	],
 	"productionCompany": "Warner Bros. Animation",
 	"cinepostaScore": 8,
@@ -51,5 +52,28 @@
 			"wallace-y-gromit-la-batalla-de-los-vegetales-2005"
 		]
 	},
-	"review": "Batman: La máscara del fantasma entiende al héroe como una persona marcada por una promesa que nunca terminó de cumplir. Kevin Conroy y Dana Delany sostienen el presente y el recuerdo con una gravedad poco habitual en una película derivada, mientras la dirección de Bruce Timm aprovecha sombras, arquitectura y siluetas. El misterio tiene buenos giros, pero su fuerza está en el costo de la venganza y en la decisión de volver a elegir qué Batman ser."
+	"review": "Batman: La máscara del fantasma entiende al héroe como una persona marcada por una promesa que nunca terminó de cumplir. Kevin Conroy y Dana Delany sostienen el presente y el recuerdo con una gravedad poco habitual en una película derivada, mientras la dirección de Bruce Timm aprovecha sombras, arquitectura y siluetas. El misterio tiene buenos giros, pero su fuerza está en el costo de la venganza y en la decisión de volver a elegir qué Batman ser.",
+	"castCharacters": [
+		{
+			"actor": "Hart Bochner",
+			"character": "Arthur Reeves (voice)",
+			"tmdbMovieId": 14919,
+			"tmdbPersonId": 7678,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kevin Conroy",
+			"character": "Batman (voice)",
+			"tmdbMovieId": 14919,
+			"tmdbPersonId": 34947,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dana Delany",
+			"character": "Andrea Beaumont (voice)",
+			"tmdbMovieId": 14919,
+			"tmdbPersonId": 65002,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

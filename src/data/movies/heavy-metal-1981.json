@@ -22,7 +22,9 @@
 	"director": "John Bruno",
 	"mainCast": [
 		"John Candy",
-		"Harold Ramis"
+		"Harold Ramis",
+		"Rodger Bumpass",
+		"Eugene Levy"
 	],
 	"productionCompany": "Producción internacional",
 	"cinepostaScore": 8,
@@ -65,6 +67,20 @@
 			"tmdbMovieId": 11827,
 			"tmdbPersonId": 1524,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rodger Bumpass",
+			"character": "Hanover Fiste / Dr. Anrak (voice)",
+			"tmdbMovieId": 11827,
+			"tmdbPersonId": 70615,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eugene Levy",
+			"character": "Sternn / Male Reporter / Edsel (voice)",
+			"tmdbMovieId": 11827,
+			"tmdbPersonId": 26510,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

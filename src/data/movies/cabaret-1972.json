@@ -22,7 +22,9 @@
   "director": "Bob Fosse",
   "mainCast": [
     "Liza Minnelli",
-    "Michael York"
+    "Michael York",
+    "Joel Grey",
+    "Marisa Berenson"
   ],
   "productionCompany": "ABC Pictures, Allied Artists",
   "runtimeMinutes": 124,
@@ -64,6 +66,20 @@
       "tmdbMovieId": 10784,
       "tmdbPersonId": 13919,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Joel Grey",
+      "character": "Master of Ceremonies",
+      "tmdbMovieId": 10784,
+      "tmdbPersonId": 6748,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Marisa Berenson",
+      "character": "Natalia Landauer",
+      "tmdbMovieId": 10784,
+      "tmdbPersonId": 31071,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

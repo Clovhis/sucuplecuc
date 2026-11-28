@@ -24,7 +24,10 @@
   "director": "George Lucas",
   "mainCast": [
     "Richard Dreyfuss",
-    "Ron Howard"
+    "Ron Howard",
+    "Paul Le Mat",
+    "Charles Martin Smith",
+    "Cindy Williams"
   ],
   "productionCompany": "Lucasfilm, The Coppola Company, Universal Pictures",
   "runtimeMinutes": 110,
@@ -66,6 +69,27 @@
       "tmdbMovieId": 838,
       "tmdbPersonId": 6159,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Paul Le Mat",
+      "character": "John Milner",
+      "tmdbMovieId": 838,
+      "tmdbPersonId": 12406,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Charles Martin Smith",
+      "character": "Terry 'The Toad' Fields",
+      "tmdbMovieId": 838,
+      "tmdbPersonId": 1270,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Cindy Williams",
+      "character": "Laurie Henderson",
+      "tmdbMovieId": 838,
+      "tmdbPersonId": 8434,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

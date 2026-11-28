@@ -8,43 +8,82 @@
   "reviewPublishedAt": "2026-08-30",
   "audienceRating": "+18",
   "category": "Terror",
-  "genres": ["Terror", "Accion", "Drama", "Thriller"],
-  "subgenres": ["Gore"],
+  "genres": [
+    "Terror",
+    "Accion",
+    "Drama",
+    "Thriller"
+  ],
+  "subgenres": [
+    "Gore"
+  ],
   "country": "FR, BE",
   "isArgentinian": false,
   "poster": "assets/posters/2017/venganza-nunca-subestimes-a-una-mujer-2017.webp",
   "screenshots": [],
   "trailerYoutubeId": "MCI1I824ba4",
   "releasePlatform": "Prime Video",
-  "releasePlatforms": ["Prime Video", "Otras plataformas"],
+  "releasePlatforms": [
+    "Prime Video",
+    "Otras plataformas"
+  ],
   "director": "Coralie Fargeat",
-  "mainCast": ["Matilda Lutz", "Kevin Janssens"],
+  "mainCast": [
+    "Matilda Lutz",
+    "Kevin Janssens",
+    "Vincent Colombe"
+  ],
   "productionCompany": "Logical Pictures, M.E.S. Productions, Monkey Pack Films",
   "cinepostaScore": 7,
   "runtimeMinutes": 108,
-  "awards": {"wins": []},
-	"editorial": {
-		"tenSecondTake": {
-			"verdict": "Venganza: Nunca subestimes a una mujer convierte el exceso en una forma de recuperar el control; Coralie Fargeat filma a Matilda Lutz atravesando un infierno de color y cuerpo.",
-			"whatToExpect": "Desierto, agresión, supervivencia y una cacería que cambia de dirección cuando la víctima deja de aceptar el lugar que le asignaron.",
-			"pace": "Primero observa y después acelera, acumulando golpes físicos hasta convertir la revancha en una marcha casi ritual.",
-			"intensity": "Muy alta, gráfica y frontal; la película no amortigua el dolor ni la transformación de su protagonista.",
-			"practicalContext": "Sus 108 minutos exigen estómago para el gore y disposición a una puesta estilizada; no es una noche de terror liviano.",
-			"forFansOf": "Cine de revancha, terror corporal y películas que usan la violencia de género como motor de una supervivencia visualmente extrema.",
-			"notForYouIf": "Necesitás realismo sobrio, violencia fuera de campo o un arco de redención que no pase por el exceso."
-		},
-	"becauseYouLiked": [
-		"the-descent-2005",
-		"saw-x-2023"
-	],
-	"related": [
-		"martires-2008",
-		"saw-2004",
-		"mandy-2018",
-		"la-matanza-de-texas-1974"
-	]
-},
+  "awards": {
+    "wins": []
+  },
+  "editorial": {
+    "tenSecondTake": {
+      "verdict": "Venganza: Nunca subestimes a una mujer convierte el exceso en una forma de recuperar el control; Coralie Fargeat filma a Matilda Lutz atravesando un infierno de color y cuerpo.",
+      "whatToExpect": "Desierto, agresión, supervivencia y una cacería que cambia de dirección cuando la víctima deja de aceptar el lugar que le asignaron.",
+      "pace": "Primero observa y después acelera, acumulando golpes físicos hasta convertir la revancha en una marcha casi ritual.",
+      "intensity": "Muy alta, gráfica y frontal; la película no amortigua el dolor ni la transformación de su protagonista.",
+      "practicalContext": "Sus 108 minutos exigen estómago para el gore y disposición a una puesta estilizada; no es una noche de terror liviano.",
+      "forFansOf": "Cine de revancha, terror corporal y películas que usan la violencia de género como motor de una supervivencia visualmente extrema.",
+      "notForYouIf": "Necesitás realismo sobrio, violencia fuera de campo o un arco de redención que no pase por el exceso."
+    },
+    "becauseYouLiked": [
+      "the-descent-2005",
+      "saw-x-2023"
+    ],
+    "related": [
+      "martires-2008",
+      "saw-2004",
+      "mandy-2018",
+      "la-matanza-de-texas-1974"
+    ]
+  },
   "review": "Venganza: Nunca subestimes a una mujer convierte el desierto en un infierno de colores saturados, cuerpos heridos y una pregunta muy concreta sobre quién tiene derecho a sobrevivir. Matilda Lutz atraviesa una transformación física exigente y Coralie Fargeat filma la violencia con una frontalidad que incomoda, pero también con una puesta visual llena de decisiones. El género de revancha aparece sin pedir permiso y usa el exceso como una forma de recuperar agencia.",
   "isPremiere": true,
-  "premiereLabel": "ESTRENO"
+  "premiereLabel": "ESTRENO",
+  "castCharacters": [
+    {
+      "actor": "Vincent Colombe",
+      "character": "Stan",
+      "tmdbMovieId": 467938,
+      "tmdbPersonId": 1607019,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Matilda Lutz",
+      "character": "Jen",
+      "tmdbMovieId": 467938,
+      "tmdbPersonId": 1464589,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Kevin Janssens",
+      "character": "Richard",
+      "tmdbMovieId": 467938,
+      "tmdbPersonId": 220990,
+      "verifiedAt": "2026-11-27"
+    }
+  ]
 }

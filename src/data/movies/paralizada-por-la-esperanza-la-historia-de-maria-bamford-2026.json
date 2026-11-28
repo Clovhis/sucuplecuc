@@ -22,7 +22,11 @@
 	"director": "Judd Apatow, Neil Berkeley",
 	"mainCast": [
 		"Maria Bamford",
-		"Patton Oswalt"
+		"Patton Oswalt",
+		"Judd Apatow",
+		"Conan O'Brien",
+		"Zach Galifianakis",
+		"Sarah Silverman"
 	],
 	"productionCompany": "Apatow Productions",
 	"cinepostaScore": 8,
@@ -50,5 +54,49 @@
 		]
 	},
 	"review": "Bamford tiene una manera de partir la voz en personajes que vuelve extraño hasta el comentario más cotidiano. Apatow y Berkeley encuentran ahí una entrada al oficio: el escenario permite escuchar cómo se arma una mirada, además de reconocer los episodios de una vida. Las intervenciones de colegas como Patton Oswalt ayudan a ubicar esa singularidad sin quitarle el centro a ella. El recorrido sobre salud mental exige otra escucha, porque el chiste convive con experiencias que no se resuelven al bajar del escenario. La admiración de los directores se nota, pero el retrato conserva una artista concreta, con una forma de trabajar que merece atención por sí misma.",
-	"runtimeMinutes": 116
+	"runtimeMinutes": 116,
+	"castCharacters": [
+		{
+			"actor": "Judd Apatow",
+			"character": "Self",
+			"tmdbMovieId": 1596294,
+			"tmdbPersonId": 41039,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Conan O'Brien",
+			"character": "Self",
+			"tmdbMovieId": 1596294,
+			"tmdbPersonId": 81200,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zach Galifianakis",
+			"character": "Self",
+			"tmdbMovieId": 1596294,
+			"tmdbPersonId": 58225,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sarah Silverman",
+			"character": "Self",
+			"tmdbMovieId": 1596294,
+			"tmdbPersonId": 7404,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maria Bamford",
+			"character": "Self",
+			"tmdbMovieId": 1596294,
+			"tmdbPersonId": 60278,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Patton Oswalt",
+			"character": "Self",
+			"tmdbMovieId": 1596294,
+			"tmdbPersonId": 10872,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -23,7 +23,10 @@
 	"director": "M. Night Shyamalan",
 	"mainCast": [
 		"Mel Gibson",
-		"Joaquin Phoenix"
+		"Joaquin Phoenix",
+		"Abigail Breslin",
+		"Cherry Jones",
+		"M. Night Shyamalan"
 	],
 	"productionCompany": "Touchstone Pictures, Blinding Edge Pictures",
 	"cinepostaScore": 7,
@@ -71,6 +74,27 @@
 			"tmdbMovieId": 2675,
 			"tmdbPersonId": 73421,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Abigail Breslin",
+			"character": "Bo Hess",
+			"tmdbMovieId": 2675,
+			"tmdbPersonId": 17140,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cherry Jones",
+			"character": "Officer Paski",
+			"tmdbMovieId": 2675,
+			"tmdbPersonId": 1956,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "M. Night Shyamalan",
+			"character": "Ray Reddy",
+			"tmdbMovieId": 2675,
+			"tmdbPersonId": 11614,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

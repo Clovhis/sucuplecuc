@@ -27,7 +27,10 @@
 	"mainCast": [
 		"Kyle Chandler",
 		"Diane Lane",
-		"Zoey Deutch"
+		"Zoey Deutch",
+		"Dylan O'Brien",
+		"Mckenna Grace",
+		"Daryl McCormack"
 	],
 	"productionCompany": "Lionsgate",
 	"cinepostaScore": 5,
@@ -56,5 +59,49 @@
 			"la-gran-apuesta-2015"
 		]
 	},
-	"review": "Aniversario encuentra su mejor material en la mesa familiar, donde una discusión política deja de ser abstracta y se vuelve una amenaza íntima. Diane Lane y Kyle Chandler administran con precisión el desgaste de una pareja que ya no comparte el mismo mapa moral, mientras Zoey Deutch encarna la incomodidad de una generación que no acepta heredar el miedo. Jan Komasa filma con pulso elegante, aunque el guion a veces anuncia demasiado sus conclusiones y pierde sutileza en los momentos más tensos."
+	"review": "Aniversario encuentra su mejor material en la mesa familiar, donde una discusión política deja de ser abstracta y se vuelve una amenaza íntima. Diane Lane y Kyle Chandler administran con precisión el desgaste de una pareja que ya no comparte el mismo mapa moral, mientras Zoey Deutch encarna la incomodidad de una generación que no acepta heredar el miedo. Jan Komasa filma con pulso elegante, aunque el guion a veces anuncia demasiado sus conclusiones y pierde sutileza en los momentos más tensos.",
+	"castCharacters": [
+		{
+			"actor": "Dylan O'Brien",
+			"character": "Josh Taylor",
+			"tmdbMovieId": 1126336,
+			"tmdbPersonId": 527393,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mckenna Grace",
+			"character": "Birdie Taylor",
+			"tmdbMovieId": 1126336,
+			"tmdbPersonId": 1172108,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Daryl McCormack",
+			"character": "Rob Thompson",
+			"tmdbMovieId": 1126336,
+			"tmdbPersonId": 1829245,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kyle Chandler",
+			"character": "Paul Taylor",
+			"tmdbMovieId": 1126336,
+			"tmdbPersonId": 3497,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diane Lane",
+			"character": "Ellen Taylor",
+			"tmdbMovieId": 1126336,
+			"tmdbPersonId": 2882,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zoey Deutch",
+			"character": "Cynthia Taylor",
+			"tmdbMovieId": 1126336,
+			"tmdbPersonId": 1059597,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -12,7 +12,11 @@
 	"mainCast": [
 		"Sigourney Weaver",
 		"Winona Ryder",
-		"Ron Perlman"
+		"Ron Perlman",
+		"Dominique Pinon",
+		"Gary Dourdan",
+		"Michael Wincott",
+		"Dan Hedaya"
 	],
 	"productionCompany": "Brandywine Productions, 20th Century Fox",
 	"cinepostaScore": 4,
@@ -68,6 +72,34 @@
 			"tmdbMovieId": 8078,
 			"tmdbPersonId": 2372,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dominique Pinon",
+			"character": "Vriess",
+			"tmdbMovieId": 8078,
+			"tmdbPersonId": 2413,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gary Dourdan",
+			"character": "Christie",
+			"tmdbMovieId": 8078,
+			"tmdbPersonId": 40276,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Wincott",
+			"character": "Elgyn",
+			"tmdbMovieId": 8078,
+			"tmdbPersonId": 7486,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dan Hedaya",
+			"character": "General Perez",
+			"tmdbMovieId": 8078,
+			"tmdbPersonId": 6486,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

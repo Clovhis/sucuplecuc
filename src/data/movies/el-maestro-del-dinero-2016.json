@@ -25,7 +25,9 @@
 		"George Clooney",
 		"Julia Roberts",
 		"Jack O'Connell",
-		"Dominic West"
+		"Dominic West",
+		"Giancarlo Esposito",
+		"Christopher Denham"
 	],
 	"productionCompany": "TriStar Pictures",
 	"cinepostaScore": 5,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 303858,
 			"tmdbPersonId": 17287,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Giancarlo Esposito",
+			"character": "Captain Powell",
+			"tmdbMovieId": 303858,
+			"tmdbPersonId": 4808,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Christopher Denham",
+			"character": "Ron Sprecher",
+			"tmdbMovieId": 303858,
+			"tmdbPersonId": 61510,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

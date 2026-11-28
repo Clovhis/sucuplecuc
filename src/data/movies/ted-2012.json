@@ -26,7 +26,9 @@
 	"mainCast": [
 		"Mark Wahlberg",
 		"Mila Kunis",
-		"Seth MacFarlane"
+		"Seth MacFarlane",
+		"Joel McHale",
+		"Giovanni Ribisi"
 	],
 	"productionCompany": "Universal Pictures, MRC, Fuzzy Door Productions",
 	"cinepostaScore": 7,
@@ -77,6 +79,20 @@
 			"tmdbMovieId": 72105,
 			"tmdbPersonId": 52139,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joel McHale",
+			"character": "Rex",
+			"tmdbMovieId": 72105,
+			"tmdbPersonId": 74949,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Giovanni Ribisi",
+			"character": "Donny",
+			"tmdbMovieId": 72105,
+			"tmdbPersonId": 1771,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

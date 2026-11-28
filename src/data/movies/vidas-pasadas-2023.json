@@ -45,18 +45,41 @@
 			"forFansOf": "Romances de migración, dramas de lo no vivido y películas que hacen del idioma y la distancia parte del vínculo.",
 			"notForYouIf": "Necesitás declaraciones grandes, triángulos con antagonistas o una decisión final que cierre todas las posibilidades."
 		},
-	"becauseYouLiked": [
-		"loco-y-estupido-amor-2011",
-		"medianeras-2011"
-	],
-	"related": [
-		"mensajes-de-voz-para-isabelle-2026",
-		"mujer-bonita-1990",
-		"the-apartment-1960",
-		"me-has-robado-el-corazon-2025"
-	]
-},
+		"becauseYouLiked": [
+			"loco-y-estupido-amor-2011",
+			"medianeras-2011"
+		],
+		"related": [
+			"mensajes-de-voz-para-isabelle-2026",
+			"mujer-bonita-1990",
+			"the-apartment-1960",
+			"me-has-robado-el-corazon-2025"
+		]
+	},
 	"review": "Celine Song cuenta el amor posible y el amor elegido sin convertirlos en una competencia. Las elipsis, los idiomas y los espacios entre los cuerpos hacen visible una historia que también está hecha de lo que no ocurre. Greta Lee, Teo Yoo y John Magaro trabajan la madurez con una delicadeza que no necesita grandes declaraciones. El encuentro en Nueva York no resuelve una vida alternativa; permite que Nora reconozca lo que eligió y lo que dejó atrás.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Greta Lee",
+			"character": "Nora",
+			"tmdbMovieId": 666277,
+			"tmdbPersonId": 1260481,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Teo Yoo",
+			"character": "Hae Sung",
+			"tmdbMovieId": 666277,
+			"tmdbPersonId": 1387126,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Magaro",
+			"character": "Arthur",
+			"tmdbMovieId": 666277,
+			"tmdbPersonId": 37154,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -24,7 +24,10 @@
 	"director": "Jonathan Goldstein, John Francis Daley",
 	"mainCast": [
 		"Chris Pine",
-		"Michelle Rodriguez"
+		"Michelle Rodriguez",
+		"Justice Smith",
+		"Sophia Lillis",
+		"Regé-Jean Page"
 	],
 	"productionCompany": "Hasbro Studios, Paramount Pictures, Entertainment One, Allspark Pictures",
 	"cinepostaScore": 8,
@@ -32,8 +35,15 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["the-lord-of-the-rings-the-fellowship-of-the-ring-2001", "jumanji-1995"],
-		"related": ["the-dark-crystal-1982", "miss-peregrines-home-for-peculiar-children-2016", "how-to-train-your-dragon-2010"],
+		"becauseYouLiked": [
+			"the-lord-of-the-rings-the-fellowship-of-the-ring-2001",
+			"jumanji-1995"
+		],
+		"related": [
+			"the-dark-crystal-1982",
+			"miss-peregrines-home-for-peculiar-children-2016",
+			"how-to-train-your-dragon-2010"
+		],
 		"tenSecondTake": {
 			"verdict": "Chris Pine y Michelle Rodriguez convierten una búsqueda fantástica en aventura de equipo, con roces y soluciones improvisadas.",
 			"whatToExpect": "Ladrones, magia, un equipo disparejo y una misión que cambia de plan a cada obstáculo.",
@@ -46,5 +56,42 @@
 	},
 	"review": "La película entiende el placer de una partida: personajes que improvisan, planes que se rompen y un equipo que se arma en el camino. Pine y Rodriguez tienen una química ágil, mientras el humor le da movimiento a una fantasía de criaturas y efectos prácticos. El guion prioriza la aventura antes que la sorpresa; si no buscás complejidad en el mundo, ofrece un viaje con buen ritmo y afecto por su material.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 134
+	"runtimeMinutes": 134,
+	"castCharacters": [
+		{
+			"actor": "Justice Smith",
+			"character": "Simon",
+			"tmdbMovieId": 493529,
+			"tmdbPersonId": 1029934,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sophia Lillis",
+			"character": "Doric",
+			"tmdbMovieId": 493529,
+			"tmdbPersonId": 1481238,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Regé-Jean Page",
+			"character": "Xenk",
+			"tmdbMovieId": 493529,
+			"tmdbPersonId": 1628687,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chris Pine",
+			"character": "Edgin",
+			"tmdbMovieId": 493529,
+			"tmdbPersonId": 62064,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michelle Rodriguez",
+			"character": "Holga",
+			"tmdbMovieId": 493529,
+			"tmdbPersonId": 17647,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

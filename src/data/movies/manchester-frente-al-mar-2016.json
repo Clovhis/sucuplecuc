@@ -22,7 +22,10 @@
 	"mainCast": [
 		"Casey Affleck",
 		"Michelle Williams",
-		"Kyle Chandler"
+		"Kyle Chandler",
+		"Lucas Hedges",
+		"Gretchen Mol",
+		"Matthew Broderick"
 	],
 	"productionCompany": "Pearl Street Films, K Period Media",
 	"cinepostaScore": 8,
@@ -89,6 +92,27 @@
 			"tmdbMovieId": 334541,
 			"tmdbPersonId": 3497,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lucas Hedges",
+			"character": "Patrick Chandler",
+			"tmdbMovieId": 334541,
+			"tmdbPersonId": 1105079,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gretchen Mol",
+			"character": "Elise Henderson",
+			"tmdbMovieId": 334541,
+			"tmdbPersonId": 15370,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Matthew Broderick",
+			"character": "Jeffrey Garner",
+			"tmdbMovieId": 334541,
+			"tmdbPersonId": 4756,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

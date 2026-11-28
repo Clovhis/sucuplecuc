@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Cate Blanchett",
 		"Michael Fassbender",
-		"Marisa Abela"
+		"Marisa Abela",
+		"Regé-Jean Page",
+		"Naomie Harris",
+		"Gustaf Skarsgård"
 	],
 	"productionCompany": "Casey Silver Productions",
 	"cinepostaScore": 8,
@@ -68,6 +71,27 @@
 			"tmdbMovieId": 1233575,
 			"tmdbPersonId": 2673762,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Regé-Jean Page",
+			"character": "Col James Stokes",
+			"tmdbMovieId": 1233575,
+			"tmdbPersonId": 1628687,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Naomie Harris",
+			"character": "Dr Zoe Vaughn",
+			"tmdbMovieId": 1233575,
+			"tmdbPersonId": 2038,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gustaf Skarsgård",
+			"character": "Philip Meacham",
+			"tmdbMovieId": 1233575,
+			"tmdbPersonId": 63764,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

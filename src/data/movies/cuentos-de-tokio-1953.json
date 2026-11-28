@@ -42,18 +42,55 @@
 			"forFansOf": "El cine de Ozu, las historias intergeneracionales y las películas que encuentran conflicto en una visita.",
 			"notForYouIf": "Buscás ritmo rápido, personajes que digan todo o una familia que resuelva sus diferencias a los gritos."
 		},
-	"becauseYouLiked": [
-		"los-siete-samurais-1954",
-		"on-the-waterfront-1954"
-	],
-	"related": [
-		"all-about-eve-1950",
-		"rashomon-1950",
-		"el-mal-no-existe-2023",
-		"marty-1955"
-	]
-},
+		"becauseYouLiked": [
+			"los-siete-samurais-1954",
+			"on-the-waterfront-1954"
+		],
+		"related": [
+			"all-about-eve-1950",
+			"rashomon-1950",
+			"el-mal-no-existe-2023",
+			"marty-1955"
+		]
+	},
 	"review": "Yasujirō Ozu convierte una visita familiar en una observación precisa sobre el tiempo, la deuda y la distancia entre generaciones. La cámara baja, los cortes de objetos vacíos y los diálogos contenidos producen una emoción que llega sin manipulación. Chishū Ryū y Chieko Higashiyama hacen del cansancio y la cortesía una forma silenciosa de amor. La despedida entre padres e hijos llega sin reproches grandes; por eso el gesto amable de Noriko termina doliendo tanto.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Chishū Ryū",
+			"character": "Shukichi Hirayama",
+			"tmdbMovieId": 18148,
+			"tmdbPersonId": 33135,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chieko Higashiyama",
+			"character": "Tomi Hirayama",
+			"tmdbMovieId": 18148,
+			"tmdbPersonId": 134307,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Setsuko Hara",
+			"character": "Noriko Hirayama",
+			"tmdbMovieId": 18148,
+			"tmdbPersonId": 95504,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Haruko Sugimura",
+			"character": "Shige Kaneko",
+			"tmdbMovieId": 18148,
+			"tmdbPersonId": 131013,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "So Yamamura",
+			"character": "Koichi Hirayama",
+			"tmdbMovieId": 18148,
+			"tmdbPersonId": 68411,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

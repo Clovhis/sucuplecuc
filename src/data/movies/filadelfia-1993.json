@@ -25,7 +25,8 @@
 		"Tom Hanks",
 		"Denzel Washington",
 		"Mary Steenburgen",
-		"Antonio Banderas"
+		"Antonio Banderas",
+		"Jason Robards"
 	],
 	"productionCompany": "TriStar Pictures",
 	"cinepostaScore": 8,
@@ -82,6 +83,13 @@
 			"tmdbMovieId": 9800,
 			"tmdbPersonId": 3131,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Robards",
+			"character": "Charles Wheeler",
+			"tmdbMovieId": 9800,
+			"tmdbPersonId": 4765,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

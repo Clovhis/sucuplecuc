@@ -44,18 +44,55 @@
 			"forFansOf": "Si te gustan anime de familia elegida, humor cotidiano y aventuras de dragones con ternura inesperada.",
 			"notForYouIf": "No es para vos si buscás una fantasía autónoma, una épica solemne o personajes presentados desde cero."
 		},
-	"becauseYouLiked": [
-		"the-boy-and-the-heron-2023",
-		"the-tale-of-the-princess-kaguya-2013"
-	],
-	"related": [
-		"wolf-children-2012",
-		"spirited-away-2001",
-		"my-neighbor-totoro-1988",
-		"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025"
-	]
-},
+		"becauseYouLiked": [
+			"the-boy-and-the-heron-2023",
+			"the-tale-of-the-princess-kaguya-2013"
+		],
+		"related": [
+			"wolf-children-2012",
+			"spirited-away-2001",
+			"my-neighbor-totoro-1988",
+			"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Kobayashi-san Chi no Maid Dragon: Samishigariya no Ryuu escala el universo de la serie sin perder del todo lo que la volvía querible: el caos doméstico, la ternura rara y ese humor que convive con criaturas capaces de destruir medio mundo. Cuando la película se concentra en Kanna y en la tensión entre familia elegida y familia impuesta, pega bastante más de lo que parece.\n\nEl costado más espectacular a veces empuja la historia hacia una épica algo estándar, pero Kyoto Animation sostiene todo con una animación finísima y un buen sentido del ritmo emocional. ESTA BUENA para quienes ya vienen adentro de Dragon Maid y lo bastante sólida como para justificar el salto al largometraje."
+	"review": "Kobayashi-san Chi no Maid Dragon: Samishigariya no Ryuu escala el universo de la serie sin perder del todo lo que la volvía querible: el caos doméstico, la ternura rara y ese humor que convive con criaturas capaces de destruir medio mundo. Cuando la película se concentra en Kanna y en la tensión entre familia elegida y familia impuesta, pega bastante más de lo que parece.\n\nEl costado más espectacular a veces empuja la historia hacia una épica algo estándar, pero Kyoto Animation sostiene todo con una animación finísima y un buen sentido del ritmo emocional. ESTA BUENA para quienes ya vienen adentro de Dragon Maid y lo bastante sólida como para justificar el salto al largometraje.",
+	"castCharacters": [
+		{
+			"actor": "Mutsumi Tamura",
+			"character": "Kobayashi (voice)",
+			"tmdbMovieId": 1359607,
+			"tmdbPersonId": 1253972,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Yuuki Kuwahara",
+			"character": "Tohru (voice)",
+			"tmdbMovieId": 1359607,
+			"tmdbPersonId": 1763402,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maria Naganawa",
+			"character": "Kanna (voice)",
+			"tmdbMovieId": 1359607,
+			"tmdbPersonId": 1564652,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Yuichi Nakamura",
+			"character": "Makoto Takiya (voice)",
+			"tmdbMovieId": 1359607,
+			"tmdbPersonId": 1221114,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Shiori Sugiura",
+			"character": "Ilulu (voice)",
+			"tmdbMovieId": 1359607,
+			"tmdbPersonId": 2024495,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

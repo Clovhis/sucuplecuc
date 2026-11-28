@@ -54,5 +54,42 @@
 			"small-time-crooks-2000"
 		]
 	},
-	"review": "Los Coen convierten una cadena de malas decisiones en una comedia negra de precisión casi matemática. Brad Pitt encuentra una de sus criaturas más queribles en el entrenador que cree estar jugando a ser espía, mientras McDormand, Malkovich y Clooney orbitan el desastre con deseos igual de mezquinos. El humor nace del contraste entre la gravedad con que cada personaje se toma a sí mismo y lo ridículo de sus planes. Tiene un elenco extraordinario, un ritmo seco y una crueldad divertida que no necesita explicar el chiste."
+	"review": "Los Coen convierten una cadena de malas decisiones en una comedia negra de precisión casi matemática. Brad Pitt encuentra una de sus criaturas más queribles en el entrenador que cree estar jugando a ser espía, mientras McDormand, Malkovich y Clooney orbitan el desastre con deseos igual de mezquinos. El humor nace del contraste entre la gravedad con que cada personaje se toma a sí mismo y lo ridículo de sus planes. Tiene un elenco extraordinario, un ritmo seco y una crueldad divertida que no necesita explicar el chiste.",
+	"castCharacters": [
+		{
+			"actor": "George Clooney",
+			"character": "Harry Pfarrer",
+			"tmdbMovieId": 4944,
+			"tmdbPersonId": 1461,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Chad Feldheimer",
+			"tmdbMovieId": 4944,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Frances McDormand",
+			"character": "Linda Litzke",
+			"tmdbMovieId": 4944,
+			"tmdbPersonId": 3910,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Malkovich",
+			"character": "Osborne Cox",
+			"tmdbMovieId": 4944,
+			"tmdbPersonId": 6949,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Richard Jenkins",
+			"character": "Ted",
+			"tmdbMovieId": 4944,
+			"tmdbPersonId": 28633,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

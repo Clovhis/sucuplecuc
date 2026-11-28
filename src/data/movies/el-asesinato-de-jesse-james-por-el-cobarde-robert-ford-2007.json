@@ -16,7 +16,12 @@
 	"director": "Andrew Dominik",
 	"mainCast": [
 		"Brad Pitt",
-		"Casey Affleck"
+		"Casey Affleck",
+		"Sam Rockwell",
+		"Jeremy Renner",
+		"Garret Dillahunt",
+		"Sam Shepard",
+		"Mary-Louise Parker"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 7,
@@ -71,6 +76,41 @@
 			"tmdbMovieId": 4512,
 			"tmdbPersonId": 1893,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Rockwell",
+			"character": "Charley Ford",
+			"tmdbMovieId": 4512,
+			"tmdbPersonId": 6807,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeremy Renner",
+			"character": "Wood Hite",
+			"tmdbMovieId": 4512,
+			"tmdbPersonId": 17604,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Garret Dillahunt",
+			"character": "Ed Miller",
+			"tmdbMovieId": 4512,
+			"tmdbPersonId": 39520,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sam Shepard",
+			"character": "Frank James",
+			"tmdbMovieId": 4512,
+			"tmdbPersonId": 9880,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mary-Louise Parker",
+			"character": "Zee James",
+			"tmdbMovieId": 4512,
+			"tmdbPersonId": 18248,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

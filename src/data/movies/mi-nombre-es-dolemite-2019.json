@@ -23,7 +23,11 @@
 	"director": "Craig Brewer",
 	"mainCast": [
 		"Eddie Murphy",
-		"Wesley Snipes"
+		"Wesley Snipes",
+		"Keegan-Michael Key",
+		"Craig Robinson",
+		"Kodi Smit-McPhee",
+		"Snoop Dogg"
 	],
 	"productionCompany": "Davis Entertainment",
 	"cinepostaScore": 8,
@@ -67,6 +71,34 @@
 			"tmdbMovieId": 528888,
 			"tmdbPersonId": 10814,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keegan-Michael Key",
+			"character": "Jerry Jones",
+			"tmdbMovieId": 528888,
+			"tmdbPersonId": 298410,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Craig Robinson",
+			"character": "Ben Taylor",
+			"tmdbMovieId": 528888,
+			"tmdbPersonId": 64342,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kodi Smit-McPhee",
+			"character": "Nick von Sternberg",
+			"tmdbMovieId": 528888,
+			"tmdbPersonId": 113505,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Snoop Dogg",
+			"character": "Roj",
+			"tmdbMovieId": 528888,
+			"tmdbPersonId": 19767,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

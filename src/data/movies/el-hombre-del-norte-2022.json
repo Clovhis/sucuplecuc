@@ -19,7 +19,11 @@
 	"director": "Robert Eggers",
 	"mainCast": [
 		"Alexander Skarsgård",
-		"Nicole Kidman"
+		"Nicole Kidman",
+		"Claes Bang",
+		"Ethan Hawke",
+		"Anya Taylor-Joy",
+		"Willem Dafoe"
 	],
 	"productionCompany": "Regency Enterprises",
 	"cinepostaScore": 7,
@@ -74,6 +78,34 @@
 			"tmdbMovieId": 639933,
 			"tmdbPersonId": 2227,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claes Bang",
+			"character": "Fjölnir the Brotherless",
+			"tmdbMovieId": 639933,
+			"tmdbPersonId": 150802,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ethan Hawke",
+			"character": "King Aurvandil War-Raven",
+			"tmdbMovieId": 639933,
+			"tmdbPersonId": 569,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anya Taylor-Joy",
+			"character": "Olga of the Birch Forest",
+			"tmdbMovieId": 639933,
+			"tmdbPersonId": 1397778,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Heimir the Fool",
+			"tmdbMovieId": 639933,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

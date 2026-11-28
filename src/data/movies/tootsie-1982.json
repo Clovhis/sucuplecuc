@@ -26,7 +26,9 @@
 		"Dustin Hoffman",
 		"Jessica Lange",
 		"Teri Garr",
-		"Charles Durning"
+		"Charles Durning",
+		"Bill Murray",
+		"Sydney Pollack"
 	],
 	"productionCompany": "Columbia Pictures, Mirage Enterprises, Punch Productions",
 	"cinepostaScore": 8,
@@ -91,6 +93,20 @@
 			"tmdbMovieId": 9576,
 			"tmdbPersonId": 1466,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Murray",
+			"character": "Jeff Slater",
+			"tmdbMovieId": 9576,
+			"tmdbPersonId": 1532,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sydney Pollack",
+			"character": "George Fields",
+			"tmdbMovieId": 9576,
+			"tmdbPersonId": 2226,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

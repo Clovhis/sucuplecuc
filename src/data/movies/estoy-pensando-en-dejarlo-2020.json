@@ -19,7 +19,9 @@
 	"director": "Charlie Kaufman",
 	"mainCast": [
 		"Jesse Plemons",
-		"Jessie Buckley"
+		"Jessie Buckley",
+		"Toni Collette",
+		"David Thewlis"
 	],
 	"productionCompany": "Likely Story",
 	"cinepostaScore": 7,
@@ -70,6 +72,20 @@
 			"tmdbMovieId": 500840,
 			"tmdbPersonId": 1498158,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Toni Collette",
+			"character": "Mother",
+			"tmdbMovieId": 500840,
+			"tmdbPersonId": 3051,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Thewlis",
+			"character": "Father",
+			"tmdbMovieId": 500840,
+			"tmdbPersonId": 11207,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

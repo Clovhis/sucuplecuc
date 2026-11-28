@@ -23,7 +23,9 @@
   "director": "Michael Powell, Emeric Pressburger",
   "mainCast": [
     "Kim Hunter",
-    "Roger Livesey"
+    "Roger Livesey",
+    "David Niven",
+    "Marius Goring"
   ],
   "productionCompany": "The Archers",
   "cinepostaScore": 9,
@@ -50,5 +52,35 @@
     }
   },
   "review": "Powell y Pressburger construyen el romance desde una comunicación improbable y después lo llevan a un juicio donde los sentimientos adquieren dimensiones públicas. David Niven sostiene la historia con humor y una vulnerabilidad que evita que la fantasía se vuelva solemne; Kim Hunter le da a June una voluntad propia dentro de la disputa. El salto entre el mundo en color y el espacio monocromo ordena visualmente el conflicto, pero no resuelve su pregunta central: cuánto pueden decidir el amor y la razón cuando el tiempo se acaba.",
-  "runtimeMinutes": 104
+  "runtimeMinutes": 104,
+  "castCharacters": [
+    {
+      "actor": "David Niven",
+      "character": "Peter Carter",
+      "tmdbMovieId": 28162,
+      "tmdbPersonId": 14261,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Marius Goring",
+      "character": "Conductor 71",
+      "tmdbMovieId": 28162,
+      "tmdbPersonId": 38037,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Kim Hunter",
+      "character": "June",
+      "tmdbMovieId": 28162,
+      "tmdbPersonId": 10539,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Roger Livesey",
+      "character": "Doctor Reeves",
+      "tmdbMovieId": 28162,
+      "tmdbPersonId": 83907,
+      "verifiedAt": "2026-11-27"
+    }
+  ]
 }

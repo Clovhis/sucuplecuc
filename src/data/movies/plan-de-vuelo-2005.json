@@ -24,7 +24,9 @@
 	"mainCast": [
 		"Jodie Foster",
 		"Peter Sarsgaard",
-		"Erika Christensen"
+		"Erika Christensen",
+		"Greta Scacchi",
+		"Sean Bean"
 	],
 	"productionCompany": "Touchstone Pictures",
 	"cinepostaScore": 5,
@@ -74,6 +76,20 @@
 			"tmdbMovieId": 9315,
 			"tmdbPersonId": 21711,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Greta Scacchi",
+			"character": "Therapist",
+			"tmdbMovieId": 9315,
+			"tmdbPersonId": 21245,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sean Bean",
+			"character": "Captain Rich",
+			"tmdbMovieId": 9315,
+			"tmdbPersonId": 48,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

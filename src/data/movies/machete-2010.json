@@ -46,17 +46,54 @@
 			"notForYouIf": "No es para vos si la sangre caricaturesca, el machismo de historieta o los diálogos pasados de rosca te sacan de la película."
 		},
 		"becauseYouLiked": [
-		"planet-terror-2007",
-		"fast-and-furious-6-2013"
-	],
-	"related": [
-		"the-fast-and-the-furious-2001",
-		"the-fate-of-the-furious-2017",
-		"bullitt-1968",
-		"fast-five-2011"
-	]
-},
+			"planet-terror-2007",
+			"fast-and-furious-6-2013"
+		],
+		"related": [
+			"the-fast-and-the-furious-2001",
+			"the-fate-of-the-furious-2017",
+			"bullitt-1968",
+			"fast-five-2011"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": "",
-	"review": "Machete tiene la violencia de un afiche pegado torcido en una pared de estacion: exagerada, sucia y orgullosa de serlo. Danny Trejo sostiene todo con una presencia que no necesita sutileza, mientras Rodriguez usa el disparate para mezclar venganza, frontera y explotacion con bastante picardia. No es la mas prolija del lote, pero cuando abraza su costado berreta con conviccion encuentra una personalidad que muchas peliculas mas correctas ni huelen."
+	"review": "Machete tiene la violencia de un afiche pegado torcido en una pared de estacion: exagerada, sucia y orgullosa de serlo. Danny Trejo sostiene todo con una presencia que no necesita sutileza, mientras Rodriguez usa el disparate para mezclar venganza, frontera y explotacion con bastante picardia. No es la mas prolija del lote, pero cuando abraza su costado berreta con conviccion encuentra una personalidad que muchas peliculas mas correctas ni huelen.",
+	"castCharacters": [
+		{
+			"actor": "Danny Trejo",
+			"character": "Machete",
+			"tmdbMovieId": 23631,
+			"tmdbPersonId": 11160,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jessica Alba",
+			"character": "Sartana Rivera",
+			"tmdbMovieId": 23631,
+			"tmdbPersonId": 56731,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "Senator John McLaughlin",
+			"tmdbMovieId": 23631,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michelle Rodriguez",
+			"character": "Luz",
+			"tmdbMovieId": 23631,
+			"tmdbPersonId": 17647,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Steven Seagal",
+			"character": "Rogelio Torrez",
+			"tmdbMovieId": 23631,
+			"tmdbPersonId": 23880,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

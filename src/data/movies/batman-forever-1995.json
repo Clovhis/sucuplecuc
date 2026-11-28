@@ -13,7 +13,12 @@
 	"mainCast": [
 		"Val Kilmer",
 		"Tommy Lee Jones",
-		"Jim Carrey"
+		"Jim Carrey",
+		"Nicole Kidman",
+		"Chris O'Donnell",
+		"Michael Gough",
+		"Pat Hingle",
+		"Drew Barrymore"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 5,
@@ -69,6 +74,41 @@
 			"tmdbMovieId": 414,
 			"tmdbPersonId": 206,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicole Kidman",
+			"character": "Dr. Chase Meridian",
+			"tmdbMovieId": 414,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chris O'Donnell",
+			"character": "Robin / Dick Grayson",
+			"tmdbMovieId": 414,
+			"tmdbPersonId": 5577,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Gough",
+			"character": "Alfred Pennyworth",
+			"tmdbMovieId": 414,
+			"tmdbPersonId": 3796,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Pat Hingle",
+			"character": "Commissioner Gordon",
+			"tmdbMovieId": 414,
+			"tmdbPersonId": 3798,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Drew Barrymore",
+			"character": "Sugar",
+			"tmdbMovieId": 414,
+			"tmdbPersonId": 69597,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -20,7 +20,8 @@
 	"director": "Park Chan-wook",
 	"mainCast": [
 		"Kim Min-hee",
-		"Kim Tae-ri"
+		"Kim Tae-ri",
+		"Ha Jung-woo"
 	],
 	"productionCompany": "Moho Film",
 	"cinepostaScore": 9,
@@ -56,5 +57,28 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "KR",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ha Jung-woo",
+			"character": "Count Fujiwara",
+			"tmdbMovieId": 290098,
+			"tmdbPersonId": 75913,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kim Min-hee",
+			"character": "Lady Hideko",
+			"tmdbMovieId": 290098,
+			"tmdbPersonId": 123664,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kim Tae-ri",
+			"character": "Nam Sook-hee / Tamako",
+			"tmdbMovieId": 290098,
+			"tmdbPersonId": 1537768,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

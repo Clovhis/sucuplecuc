@@ -23,7 +23,9 @@
 	"mainCast": [
 		"Melissa Barrera",
 		"Jenna Ortega",
-		"Jasmin Savoy Brown"
+		"Jasmin Savoy Brown",
+		"Mason Gooding",
+		"Dermot Mulroney"
 	],
 	"productionCompany": "Spyglass Media Group",
 	"cinepostaScore": 8,
@@ -55,5 +57,42 @@
 	"review": "Scream VI aprovecha Nueva York para sacar a Ghostface de la casa suburbana y darle estaciones, departamentos y multitudes donde esconderse. La dirección de Bettinelli-Olpin y Gillett acelera las persecuciones y arma un par de set pieces muy efectivas, especialmente cuando el grupo queda expuesto en espacios públicos. Las nuevas protagonistas ya tienen química, aunque el guion vuelve a blindar demasiado a personajes importantes y la resolución se enreda. Es más brutal y dinámica que la anterior, incluso si su comentario meta ya no tiene la misma frescura.",
 	"synopsis": "Sam y Tara Carpenter intentan empezar de nuevo en Nueva York junto a sus amigos, lejos de Woodsboro. La calma dura poco: un nuevo Ghostface conoce cada detalle de los asesinatos anteriores y convierte la ciudad en el escenario de una cacería mucho más personal.",
 	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Mason Gooding",
+			"character": "Chad Meeks-Martin",
+			"tmdbMovieId": 934433,
+			"tmdbPersonId": 2174509,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dermot Mulroney",
+			"character": "Detective Bailey",
+			"tmdbMovieId": 934433,
+			"tmdbPersonId": 20212,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Melissa Barrera",
+			"character": "Sam Carpenter",
+			"tmdbMovieId": 934433,
+			"tmdbPersonId": 1373659,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jenna Ortega",
+			"character": "Tara Carpenter",
+			"tmdbMovieId": 934433,
+			"tmdbPersonId": 974169,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jasmin Savoy Brown",
+			"character": "Mindy Meeks-Martin",
+			"tmdbMovieId": 934433,
+			"tmdbPersonId": 1508653,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -23,7 +23,12 @@
 	"mainCast": [
 		"Eddie Redmayne",
 		"Sacha Baron Cohen",
-		"Jeremy Strong"
+		"Jeremy Strong",
+		"Mark Rylance",
+		"Joseph Gordon-Levitt",
+		"Frank Langella",
+		"John Carroll Lynch",
+		"Yahya Abdul-Mateen II"
 	],
 	"productionCompany": "Cross Creek Pictures, DreamWorks Pictures, Netflix",
 	"cinepostaScore": 8,
@@ -77,6 +82,41 @@
 			"tmdbMovieId": 556984,
 			"tmdbPersonId": 239271,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Rylance",
+			"character": "William Kunstler",
+			"tmdbMovieId": 556984,
+			"tmdbPersonId": 40900,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Joseph Gordon-Levitt",
+			"character": "Richard Schultz",
+			"tmdbMovieId": 556984,
+			"tmdbPersonId": 24045,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Frank Langella",
+			"character": "Judge Julius Hoffman",
+			"tmdbMovieId": 556984,
+			"tmdbPersonId": 8924,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Carroll Lynch",
+			"character": "David Dellinger",
+			"tmdbMovieId": 556984,
+			"tmdbPersonId": 3911,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Yahya Abdul-Mateen II",
+			"character": "Bobby Seale",
+			"tmdbMovieId": 556984,
+			"tmdbPersonId": 1639847,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -50,5 +50,21 @@
 		]
 	},
 	"review": "Paul Becker trabaja la idea de construir como una forma de encontrar un lugar entre otros. El salto de Daisy a Heartlake permite que la escenografía, el color y las coreografías expresen lo que en la escuela le cuesta decir. Jada Langley lleva el recorrido, acompañada por un elenco que incluye a Meesha Garbett, y las canciones mantienen unido el descubrimiento de la ciudad con la necesidad de ayudarla. El mensaje sobre la amistad es directo y el mundo tiene una evidente función de marca, pero la puesta le da movimiento propio a esa invitación a jugar.",
-	"runtimeMinutes": 50
+	"runtimeMinutes": 50,
+	"castCharacters": [
+		{
+			"actor": "Jada Langley",
+			"character": "Daisy",
+			"tmdbMovieId": 1512493,
+			"tmdbPersonId": 5797172,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Meesha Garbett",
+			"character": "Nova",
+			"tmdbMovieId": 1512493,
+			"tmdbPersonId": 2441421,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

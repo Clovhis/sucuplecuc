@@ -55,5 +55,42 @@
 	},
 	"review": "El hijo observa una crisis familiar sin convertirla en un misterio que pueda resolverse con una charla. Florian Zeller filma los espacios domésticos como lugares que cambian de forma según el estado emocional de Nicholas, y deja que el desconcierto del padre contagie al espectador. Hugh Jackman sostiene una desesperación que nunca se vuelve heroica; Anthony Hopkins, en un papel breve pero incisivo, encarna una herencia afectiva difícil de cortar. La película es frontal y por momentos subraya sus efectos, pero su actuación adolescente y su honestidad emocional dejan una marca incómoda.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Hugh Jackman",
+			"character": "Peter",
+			"tmdbMovieId": 806368,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zen McGrath",
+			"character": "Nicholas",
+			"tmdbMovieId": 806368,
+			"tmdbPersonId": 1286655,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Vanessa Kirby",
+			"character": "Beth",
+			"tmdbMovieId": 806368,
+			"tmdbPersonId": 556356,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Kate",
+			"tmdbMovieId": 806368,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anthony Hopkins",
+			"character": "Anthony",
+			"tmdbMovieId": 806368,
+			"tmdbPersonId": 4173,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

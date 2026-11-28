@@ -12,7 +12,11 @@
 	"mainCast": [
 		"Daniel Craig",
 		"Eva Green",
-		"Mads Mikkelsen"
+		"Mads Mikkelsen",
+		"Judi Dench",
+		"Jeffrey Wright",
+		"Giancarlo Giannini",
+		"Simon Abkarian"
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer Pictures, Columbia Pictures, Eon Productions",
 	"cinepostaScore": 8,
@@ -68,6 +72,34 @@
 			"tmdbMovieId": 36557,
 			"tmdbPersonId": 1019,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judi Dench",
+			"character": "M",
+			"tmdbMovieId": 36557,
+			"tmdbPersonId": 5309,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeffrey Wright",
+			"character": "Felix Leiter",
+			"tmdbMovieId": 36557,
+			"tmdbPersonId": 2954,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Giancarlo Giannini",
+			"character": "Mathis",
+			"tmdbMovieId": 36557,
+			"tmdbPersonId": 3753,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Simon Abkarian",
+			"character": "Alex Dimitrios",
+			"tmdbMovieId": 36557,
+			"tmdbPersonId": 10917,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

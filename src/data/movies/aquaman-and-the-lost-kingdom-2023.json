@@ -17,7 +17,11 @@
 	"mainCast": [
 		"Jason Momoa",
 		"Patrick Wilson",
-		"Yahya Abdul-Mateen II"
+		"Yahya Abdul-Mateen II",
+		"Amber Heard",
+		"Nicole Kidman",
+		"Dolph Lundgren",
+		"Temuera Morrison"
 	],
 	"productionCompany": "Warner Bros. Pictures",
 	"cinepostaScore": 5,
@@ -72,6 +76,34 @@
 			"tmdbMovieId": 572802,
 			"tmdbPersonId": 1639847,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amber Heard",
+			"character": "Mera",
+			"tmdbMovieId": 572802,
+			"tmdbPersonId": 55085,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nicole Kidman",
+			"character": "Atlanna",
+			"tmdbMovieId": 572802,
+			"tmdbPersonId": 2227,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dolph Lundgren",
+			"character": "King Nereus",
+			"tmdbMovieId": 572802,
+			"tmdbPersonId": 16644,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Temuera Morrison",
+			"character": "Tom",
+			"tmdbMovieId": 572802,
+			"tmdbPersonId": 7242,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

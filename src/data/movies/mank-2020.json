@@ -24,7 +24,9 @@
 	"mainCast": [
 		"Gary Oldman",
 		"Amanda Seyfried",
-		"Lily Collins"
+		"Lily Collins",
+		"Arliss Howard",
+		"Sam Troughton"
 	],
 	"productionCompany": "Netflix, TSG Entertainment, Gary Sanchez Productions",
 	"cinepostaScore": 6,
@@ -85,6 +87,20 @@
 			"tmdbMovieId": 614560,
 			"tmdbPersonId": 112561,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Arliss Howard",
+			"character": "Louis B. Mayer",
+			"tmdbMovieId": 614560,
+			"tmdbPersonId": 3229,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sam Troughton",
+			"character": "John Houseman",
+			"tmdbMovieId": 614560,
+			"tmdbPersonId": 5421,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

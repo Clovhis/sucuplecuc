@@ -19,7 +19,10 @@
 	"mainCast": [
 		"Daniel Radcliffe",
 		"Emma Watson",
-		"Rupert Grint"
+		"Rupert Grint",
+		"Alan Rickman",
+		"Ralph Fiennes",
+		"Bill Nighy"
 	],
 	"productionCompany": "Heyday Films, Warner Bros. Entertainment",
 	"cinepostaScore": 7,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 12444,
 			"tmdbPersonId": 10989,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alan Rickman",
+			"character": "Severus Snape",
+			"tmdbMovieId": 12444,
+			"tmdbPersonId": 4566,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Lord Voldemort",
+			"tmdbMovieId": 12444,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Nighy",
+			"character": "Rufus Scrimgeour",
+			"tmdbMovieId": 12444,
+			"tmdbPersonId": 2440,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

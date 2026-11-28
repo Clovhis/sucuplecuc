@@ -23,7 +23,8 @@
 	"mainCast": [
 		"Ellen Wong",
 		"Kathleen Munroe",
-		"Kenneth Welsh"
+		"Kenneth Welsh",
+		"Art Hindle"
 	],
 	"productionCompany": "Cave Painting Pictures",
 	"cinepostaScore": 5,
@@ -56,5 +57,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Art Hindle",
+			"character": "Mitchell",
+			"tmdbMovieId": 378018,
+			"tmdbPersonId": 41256,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ellen Wong",
+			"character": "Kim",
+			"tmdbMovieId": 378018,
+			"tmdbPersonId": 88902,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kathleen Munroe",
+			"character": "Allison",
+			"tmdbMovieId": 378018,
+			"tmdbPersonId": 168610,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kenneth Welsh",
+			"character": "Dr. Richard Powell",
+			"tmdbMovieId": 378018,
+			"tmdbPersonId": 6074,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

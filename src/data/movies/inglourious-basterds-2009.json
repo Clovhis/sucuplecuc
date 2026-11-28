@@ -17,7 +17,11 @@
 	"mainCast": [
 		"Brad Pitt",
 		"Christoph Waltz",
-		"Mélanie Laurent"
+		"Mélanie Laurent",
+		"Eli Roth",
+		"Michael Fassbender",
+		"Diane Kruger",
+		"Daniel Brühl"
 	],
 	"productionCompany": "A Band Apart, The Weinstein Company, Universal Pictures y Zehnte Babelsberg Film",
 	"cinepostaScore": 8,
@@ -80,6 +84,34 @@
 			"tmdbMovieId": 16869,
 			"tmdbPersonId": 19119,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eli Roth",
+			"character": "SGT. Donny Donowitz",
+			"tmdbMovieId": 16869,
+			"tmdbPersonId": 16847,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Fassbender",
+			"character": "LT. Archie Hicox",
+			"tmdbMovieId": 16869,
+			"tmdbPersonId": 17288,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diane Kruger",
+			"character": "Bridget von Hammersmark",
+			"tmdbMovieId": 16869,
+			"tmdbPersonId": 9824,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Daniel Brühl",
+			"character": "Fredrick Zoller",
+			"tmdbMovieId": 16869,
+			"tmdbPersonId": 3872,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

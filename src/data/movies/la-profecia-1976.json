@@ -22,7 +22,9 @@
 	"director": "Richard Donner",
 	"mainCast": [
 		"Gregory Peck",
-		"Lee Remick"
+		"Lee Remick",
+		"David Warner",
+		"Billie Whitelaw"
 	],
 	"productionCompany": "20th Century Fox",
 	"cinepostaScore": 8,
@@ -73,6 +75,20 @@
 			"tmdbMovieId": 794,
 			"tmdbPersonId": 855,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Warner",
+			"character": "Jennings",
+			"tmdbMovieId": 794,
+			"tmdbPersonId": 2076,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Billie Whitelaw",
+			"character": "Mrs. Baylock",
+			"tmdbMovieId": 794,
+			"tmdbPersonId": 8226,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

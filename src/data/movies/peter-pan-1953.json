@@ -24,7 +24,8 @@
 	"director": "Wilfred Jackson",
 	"mainCast": [
 		"Bobby Driscoll",
-		"Kathryn Beaumont"
+		"Kathryn Beaumont",
+		"Hans Conried"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 8,
@@ -52,5 +53,28 @@
 			"a-goofy-movie-1995"
 		]
 	},
-	"review": "Peter Pan tiene una energía aventurera que todavía se siente en el vuelo sobre Londres y en el caos de la isla. Bobby Driscoll y Kathryn Beaumont le dan un centro cálido a una fantasía poblada de personajes enormes, mientras Hans Conried convierte a Garfio en una amenaza tan teatral como divertida. Hay elementos de época que hoy piden una mirada crítica, pero la puesta, el color y el sentido de maravilla siguen funcionando con una fuerza difícil de discutir."
+	"review": "Peter Pan tiene una energía aventurera que todavía se siente en el vuelo sobre Londres y en el caos de la isla. Bobby Driscoll y Kathryn Beaumont le dan un centro cálido a una fantasía poblada de personajes enormes, mientras Hans Conried convierte a Garfio en una amenaza tan teatral como divertida. Hay elementos de época que hoy piden una mirada crítica, pero la puesta, el color y el sentido de maravilla siguen funcionando con una fuerza difícil de discutir.",
+	"castCharacters": [
+		{
+			"actor": "Hans Conried",
+			"character": "Captain Hook / Mr. Darling (voice)",
+			"tmdbMovieId": 10693,
+			"tmdbPersonId": 16421,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bobby Driscoll",
+			"character": "Peter Pan (voice)",
+			"tmdbMovieId": 10693,
+			"tmdbPersonId": 50997,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kathryn Beaumont",
+			"character": "Wendy Darling (voice)",
+			"tmdbMovieId": 10693,
+			"tmdbPersonId": 67228,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

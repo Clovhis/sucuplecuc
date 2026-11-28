@@ -25,7 +25,8 @@
 		"Will Ferrell",
 		"James Caan",
 		"Zooey Deschanel",
-		"Mary Steenburgen"
+		"Mary Steenburgen",
+		"Bob Newhart"
 	],
 	"productionCompany": "New Line Cinema, Guy Walks Into a Bar Productions",
 	"cinepostaScore": 8,
@@ -88,6 +89,13 @@
 			"tmdbMovieId": 10719,
 			"tmdbPersonId": 2453,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bob Newhart",
+			"character": "Papa Elf",
+			"tmdbMovieId": 10719,
+			"tmdbPersonId": 64930,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -24,7 +24,10 @@
 	"mainCast": [
 		"Dave Franco",
 		"O'Shea Jackson Jr.",
-		"Mason Thames"
+		"Mason Thames",
+		"Peter Dinklage",
+		"Nicholas Braun",
+		"Macon Blair"
 	],
 	"productionCompany": "Bonneville Pictures, Rough House Pictures",
 	"cinepostaScore": 6,
@@ -56,5 +59,49 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Peter Dinklage",
+			"character": "Karl 'Koko' Sandoz",
+			"tmdbMovieId": 445466,
+			"tmdbPersonId": 22970,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nicholas Braun",
+			"character": "Joe Thom Pell Aka Pricka Bush Da Werewoof",
+			"tmdbMovieId": 445466,
+			"tmdbPersonId": 85139,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Macon Blair",
+			"character": "D.D, His Buddy",
+			"tmdbMovieId": 445466,
+			"tmdbPersonId": 209513,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dave Franco",
+			"character": "Mark",
+			"tmdbMovieId": 445466,
+			"tmdbPersonId": 54697,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "O'Shea Jackson Jr.",
+			"character": "Davis",
+			"tmdbMovieId": 445466,
+			"tmdbPersonId": 1371398,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mason Thames",
+			"character": "Sheridan",
+			"tmdbMovieId": 445466,
+			"tmdbPersonId": 2803710,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

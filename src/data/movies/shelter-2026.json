@@ -19,7 +19,8 @@
 	"mainCast": [
 		"Jason Statham",
 		"Naomi Ackie",
-		"Bill Nighy"
+		"Bill Nighy",
+		"Harriet Walter"
 	],
 	"productionCompany": "Punch Palace Productions, Cinemachine y Stampede Ventures",
 	"cinepostaScore": 8,
@@ -55,5 +56,35 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Harriet Walter",
+			"character": "Prime Minister Fordham",
+			"tmdbMovieId": 1290821,
+			"tmdbPersonId": 17477,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jason Statham",
+			"character": "Mason",
+			"tmdbMovieId": 1290821,
+			"tmdbPersonId": 976,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Naomi Ackie",
+			"character": "Roberta",
+			"tmdbMovieId": 1290821,
+			"tmdbPersonId": 1537686,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Nighy",
+			"character": "Manafort",
+			"tmdbMovieId": 1290821,
+			"tmdbPersonId": 2440,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

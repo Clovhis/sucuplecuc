@@ -35,20 +35,48 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Bong Joon-ho transforma una investigación de asesinatos en un retrato de frustración institucional; Song Kang-ho y Kim Sang-kyung hacen que cada método incompleto tenga un costo humano.",
-			"whatToExpect": "Campos mojados, policías enfrentados, humor oscuro y una serie de crímenes que expone la falta de pruebas, recursos y certezas.",			"pace": "Se mueve entre torpeza, procedimientos y pausas de lluvia; la investigación avanza de manera irregular porque el fracaso también forma parte del método.",			"intensity": "La tensión es persistente y moralmente incómoda, con violencia sugerida y una sensación de que el paisaje guarda algo que nadie puede nombrar.",			"practicalContext": "Sus 131 minutos rinden mejor con atención al tono cambiante; elegila para una noche de policial serio que no promete un cierre cómodo.",			"forFansOf": "Para quienes disfrutan thrillers de investigación con humor negro, ambigüedad y el cruce de actuaciones de Song Kang-ho y Kim Sang-kyung.",			"notForYouIf": "Puede frustrarte si esperás detectives infalibles, pruebas definitivas o una resolución que transforme la violencia en un misterio prolijamente cerrado."
+			"whatToExpect": "Campos mojados, policías enfrentados, humor oscuro y una serie de crímenes que expone la falta de pruebas, recursos y certezas.",
+			"pace": "Se mueve entre torpeza, procedimientos y pausas de lluvia; la investigación avanza de manera irregular porque el fracaso también forma parte del método.",
+			"intensity": "La tensión es persistente y moralmente incómoda, con violencia sugerida y una sensación de que el paisaje guarda algo que nadie puede nombrar.",
+			"practicalContext": "Sus 131 minutos rinden mejor con atención al tono cambiante; elegila para una noche de policial serio que no promete un cierre cómodo.",
+			"forFansOf": "Para quienes disfrutan thrillers de investigación con humor negro, ambigüedad y el cruce de actuaciones de Song Kang-ho y Kim Sang-kyung.",
+			"notForYouIf": "Puede frustrarte si esperás detectives infalibles, pruebas definitivas o una resolución que transforme la violencia en un misterio prolijamente cerrado."
 		},
 		"becauseYouLiked": [
-		"juego-sucio-infernal-affairs-2002",
-		"plata-quemada-2000"
-	],
-	"related": [
-		"dia-de-entrenamiento-2001",
-		"nueve-reinas-2000",
-		"plan-oculto-2006",
-		"jackie-brown-1997"
-	]
-},
+			"juego-sucio-infernal-affairs-2002",
+			"plata-quemada-2000"
+		],
+		"related": [
+			"dia-de-entrenamiento-2001",
+			"nueve-reinas-2000",
+			"plan-oculto-2006",
+			"jackie-brown-1997"
+		]
+	},
 	"review": "Bong Joon-ho mezcla humor oscuro, frustración y terror para mostrar cómo una investigación también expone la violencia de sus propios procedimientos. La lluvia, los campos y los cambios de tono hacen que el paisaje sea cómplice de una incertidumbre persistente. Song Kang-ho y Kim Sang-kyung sostienen un contrapunto entre intuición bruta y obsesión racional que nunca se resuelve fácil. La investigación queda marcada por las limitaciones de su época, y el último gesto de Park transforma la frustración en memoria.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Song Kang-ho",
+			"character": "Detective Park Doo-man",
+			"tmdbMovieId": 11423,
+			"tmdbPersonId": 20738,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kim Sang-kyung",
+			"character": "Detective Seo Tae-yoon",
+			"tmdbMovieId": 11423,
+			"tmdbPersonId": 69378,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Byun Hee-bong",
+			"character": "Sergeant Koo Hee-bong",
+			"tmdbMovieId": 11423,
+			"tmdbPersonId": 116180,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -20,7 +20,9 @@
 	"director": "Anthony C. Ferrante",
 	"mainCast": [
 		"Ian Ziering",
-		"Tara Reid"
+		"Tara Reid",
+		"John Heard",
+		"Cassie Scerbo"
 	],
 	"productionCompany": "The Asylum",
 	"cinepostaScore": 5,
@@ -56,5 +58,35 @@
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "John Heard",
+			"character": "George",
+			"tmdbMovieId": 205321,
+			"tmdbPersonId": 11512,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cassie Scerbo",
+			"character": "Nova Clarke",
+			"tmdbMovieId": 205321,
+			"tmdbPersonId": 78031,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ian Ziering",
+			"character": "Finley \"Fin\" Shepard",
+			"tmdbMovieId": 205321,
+			"tmdbPersonId": 19146,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tara Reid",
+			"character": "April Wexler",
+			"tmdbMovieId": 205321,
+			"tmdbPersonId": 1234,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -20,7 +20,9 @@
 	"director": "Blake Edwards",
 	"mainCast": [
 		"Peter Sellers",
-		"David Niven"
+		"David Niven",
+		"Claudia Cardinale",
+		"Capucine"
 	],
 	"productionCompany": "The Mirisch Company, United Artists",
 	"cinepostaScore": 7,
@@ -66,6 +68,20 @@
 			"tmdbMovieId": 936,
 			"tmdbPersonId": 14261,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claudia Cardinale",
+			"character": "The Princess Dala",
+			"tmdbMovieId": 936,
+			"tmdbPersonId": 4959,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Capucine",
+			"character": "Simone Clouseau",
+			"tmdbMovieId": 936,
+			"tmdbPersonId": 14262,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

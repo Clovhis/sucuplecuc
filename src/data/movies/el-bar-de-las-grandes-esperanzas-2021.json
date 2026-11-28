@@ -24,7 +24,10 @@
 	"director": "George Clooney",
 	"mainCast": [
 		"Ben Affleck",
-		"Tye Sheridan"
+		"Tye Sheridan",
+		"Christopher Lloyd",
+		"Rhenzy Feliz",
+		"Briana Middleton"
 	],
 	"productionCompany": "Amazon Studios, Big Indie Pictures, Smokehouse Pictures",
 	"cinepostaScore": 7,
@@ -68,6 +71,27 @@
 			"tmdbMovieId": 727293,
 			"tmdbPersonId": 1034681,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Lloyd",
+			"character": "Grandpa Maguire",
+			"tmdbMovieId": 727293,
+			"tmdbPersonId": 1062,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rhenzy Feliz",
+			"character": "Wesley",
+			"tmdbMovieId": 727293,
+			"tmdbPersonId": 1761634,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Briana Middleton",
+			"character": "Sidney",
+			"tmdbMovieId": 727293,
+			"tmdbPersonId": 2996176,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

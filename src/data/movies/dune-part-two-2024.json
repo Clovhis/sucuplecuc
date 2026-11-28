@@ -12,7 +12,11 @@
 	"mainCast": [
 		"Timothée Chalamet",
 		"Zendaya",
-		"Rebecca Ferguson"
+		"Rebecca Ferguson",
+		"Javier Bardem",
+		"Josh Brolin",
+		"Florence Pugh",
+		"Dave Bautista"
 	],
 	"productionCompany": "Legendary Pictures",
 	"cinepostaScore": 7,
@@ -81,6 +85,34 @@
 			"tmdbMovieId": 693134,
 			"tmdbPersonId": 933238,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Javier Bardem",
+			"character": "Stilgar",
+			"tmdbMovieId": 693134,
+			"tmdbPersonId": 3810,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Josh Brolin",
+			"character": "Gurney Halleck",
+			"tmdbMovieId": 693134,
+			"tmdbPersonId": 16851,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Florence Pugh",
+			"character": "Princess Irulan",
+			"tmdbMovieId": 693134,
+			"tmdbPersonId": 1373737,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dave Bautista",
+			"character": "Beast Rabban",
+			"tmdbMovieId": 693134,
+			"tmdbPersonId": 543530,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

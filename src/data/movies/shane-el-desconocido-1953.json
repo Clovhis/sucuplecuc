@@ -21,7 +21,9 @@
   "director": "George Stevens",
   "mainCast": [
     "Alan Ladd",
-    "Jean Arthur"
+    "Jean Arthur",
+    "Jack Palance",
+    "Ben Johnson"
   ],
   "productionCompany": "Paramount Pictures",
   "runtimeMinutes": 118,
@@ -63,6 +65,20 @@
       "tmdbMovieId": 3110,
       "tmdbPersonId": 30210,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Jack Palance",
+      "character": "Jack Wilson",
+      "tmdbMovieId": 3110,
+      "tmdbPersonId": 3785,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Ben Johnson",
+      "character": "Chris Calloway",
+      "tmdbMovieId": 3110,
+      "tmdbPersonId": 8258,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

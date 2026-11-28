@@ -22,7 +22,9 @@
   "director": "Alan J. Pakula",
   "mainCast": [
     "Meryl Streep",
-    "Kevin Kline"
+    "Kevin Kline",
+    "Peter MacNicol",
+    "Josh Mostel"
   ],
   "productionCompany": "ITC Entertainment",
   "runtimeMinutes": 151,
@@ -64,6 +66,20 @@
       "tmdbMovieId": 15764,
       "tmdbPersonId": 8945,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Peter MacNicol",
+      "character": "Stingo",
+      "tmdbMovieId": 15764,
+      "tmdbPersonId": 12688,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Josh Mostel",
+      "character": "Morris Fink",
+      "tmdbMovieId": 15764,
+      "tmdbPersonId": 33489,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

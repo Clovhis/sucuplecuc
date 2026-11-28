@@ -24,7 +24,11 @@
 	"director": "Tony Scott",
 	"mainCast": [
 		"Will Smith",
-		"Gene Hackman"
+		"Gene Hackman",
+		"Jon Voight",
+		"Regina King",
+		"Loren Dean",
+		"Jason Lee"
 	],
 	"productionCompany": "Touchstone Pictures, Jerry Bruckheimer Films",
 	"cinepostaScore": 8,
@@ -71,6 +75,34 @@
 			"tmdbMovieId": 9798,
 			"tmdbPersonId": 193,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Voight",
+			"character": "Reynolds",
+			"tmdbMovieId": 9798,
+			"tmdbPersonId": 10127,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Regina King",
+			"character": "Carla Dean",
+			"tmdbMovieId": 9798,
+			"tmdbPersonId": 9788,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Loren Dean",
+			"character": "Hicks",
+			"tmdbMovieId": 9798,
+			"tmdbPersonId": 11628,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jason Lee",
+			"character": "Daniel Zavitz",
+			"tmdbMovieId": 9798,
+			"tmdbPersonId": 11662,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

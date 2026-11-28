@@ -58,5 +58,42 @@
 	},
 	"review": "Guardianes de la noche: La fortaleza infinita convierte el tramo final del manga en una experiencia de escala enorme. Haruo Sotozaki filma la fortaleza como un espacio que no deja respirar, y cada caída, espada o silencio tiene una precisión visual que justifica verla en pantalla grande, aunque ahora llegue al catálogo argentino.\n\nLa película no se preocupa demasiado por quienes vienen de afuera: carga recuerdos, nombres y heridas como si fueran parte del equipaje obligatorio. Para quienes ya están adentro, esa concentración emocional funciona y los duelos tienen un peso tremendo; para el resto puede sentirse como entrar a mitad de una conversación. Es espectacular, intensa y melodramática en la proporción exacta que la saga viene prometiendo.",
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Natsuki Hanae",
+			"character": "Tanjiro Kamado (voice)",
+			"tmdbMovieId": 1311031,
+			"tmdbPersonId": 1256603,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Takahiro Sakurai",
+			"character": "Giyu Tomioka (voice)",
+			"tmdbMovieId": 1311031,
+			"tmdbPersonId": 9705,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Akira Ishida",
+			"character": "Akaza (voice)",
+			"tmdbMovieId": 1311031,
+			"tmdbPersonId": 81244,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hiro Shimono",
+			"character": "Zenitsu Agatsuma (voice)",
+			"tmdbMovieId": 1311031,
+			"tmdbPersonId": 119145,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Yoshimasa Hosoya",
+			"character": "Kaigaku (voice)",
+			"tmdbMovieId": 1311031,
+			"tmdbPersonId": 1253008,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -28,7 +28,11 @@
 	"director": "Walt Dohrn",
 	"mainCast": [
 		"Anna Kendrick",
-		"Justin Timberlake"
+		"Justin Timberlake",
+		"Ron Funches",
+		"Rachel Bloom",
+		"James Corden",
+		"Sam Rockwell"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -71,6 +75,34 @@
 			"tmdbMovieId": 446893,
 			"tmdbPersonId": 12111,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ron Funches",
+			"character": "Cooper (voice)",
+			"tmdbMovieId": 446893,
+			"tmdbPersonId": 1260038,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rachel Bloom",
+			"character": "Barb (voice)",
+			"tmdbMovieId": 446893,
+			"tmdbPersonId": 1453801,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Corden",
+			"character": "Biggie (voice)",
+			"tmdbMovieId": 446893,
+			"tmdbPersonId": 55466,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sam Rockwell",
+			"character": "Hickory (voice)",
+			"tmdbMovieId": 446893,
+			"tmdbPersonId": 6807,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

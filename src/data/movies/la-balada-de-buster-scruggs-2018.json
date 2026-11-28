@@ -24,7 +24,8 @@
 	"mainCast": [
 		"Tim Blake Nelson",
 		"James Franco",
-		"Liam Neeson"
+		"Liam Neeson",
+		"Clancy Brown"
 	],
 	"productionCompany": "Annapurna Pictures, Mike Zoss Productions, Netflix",
 	"cinepostaScore": 8,
@@ -56,5 +57,35 @@
 	"releasePlatforms": [
 		"Netflix"
 	],
-	"runtimeMinutes": 132
+	"runtimeMinutes": 132,
+	"castCharacters": [
+		{
+			"actor": "Clancy Brown",
+			"character": "Curly Joe (segment \"The Ballad of Buster Scruggs\")",
+			"tmdbMovieId": 537996,
+			"tmdbPersonId": 6574,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tim Blake Nelson",
+			"character": "Buster Scruggs (segment \"The Ballad of Buster Scruggs\")",
+			"tmdbMovieId": 537996,
+			"tmdbPersonId": 1462,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Franco",
+			"character": "Cowboy (segment \"Near Algodones\")",
+			"tmdbMovieId": 537996,
+			"tmdbPersonId": 17051,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Liam Neeson",
+			"character": "Impresario (segment \"Meal Ticket\")",
+			"tmdbMovieId": 537996,
+			"tmdbPersonId": 3896,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

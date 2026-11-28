@@ -55,5 +55,42 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Your Fault: London sabe qué busca su público: miradas largas, romances imposibles y discusiones que parecen siempre a un paso de explotar. Asha Banks y Matthew Broome tienen suficiente presencia para sostener ese ida y vuelta, y la escala más grande de la secuela le da un aire más cuidado que a la primera entrega.\n\nEl problema es que el guion repite varios conflictos con poca sorpresa y confía demasiado en que la intensidad sentimental alcance por sí sola. Cuando se concentra en la incomodidad de que Noah y Nick tomen caminos distintos, encuentra algo de tensión; cuando vuelve al melodrama automático, se aplana. Para seguidores de la saga cumple, pero cuesta verla como mucho más que un consumo rápido y prolijo."
+	"review": "Your Fault: London sabe qué busca su público: miradas largas, romances imposibles y discusiones que parecen siempre a un paso de explotar. Asha Banks y Matthew Broome tienen suficiente presencia para sostener ese ida y vuelta, y la escala más grande de la secuela le da un aire más cuidado que a la primera entrega.\n\nEl problema es que el guion repite varios conflictos con poca sorpresa y confía demasiado en que la intensidad sentimental alcance por sí sola. Cuando se concentra en la incomodidad de que Noah y Nick tomen caminos distintos, encuentra algo de tensión; cuando vuelve al melodrama automático, se aplana. Para seguidores de la saga cumple, pero cuesta verla como mucho más que un consumo rápido y prolijo.",
+	"castCharacters": [
+		{
+			"actor": "Asha Banks",
+			"character": "Noah",
+			"tmdbMovieId": 1477317,
+			"tmdbPersonId": 3499290,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Matthew Broome",
+			"character": "Nick",
+			"tmdbMovieId": 1477317,
+			"tmdbPersonId": 3912097,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eve Macklin",
+			"character": "Ella",
+			"tmdbMovieId": 1477317,
+			"tmdbPersonId": 1092908,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ray Fearon",
+			"character": "William",
+			"tmdbMovieId": 1477317,
+			"tmdbPersonId": 56650,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sam Buchanan",
+			"character": "Ronnie",
+			"tmdbMovieId": 1477317,
+			"tmdbPersonId": 2812431,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

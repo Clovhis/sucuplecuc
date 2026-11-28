@@ -24,7 +24,9 @@
 	"director": "Henry Selick",
 	"mainCast": [
 		"Chris Sarandon",
-		"Catherine O'Hara"
+		"Catherine O'Hara",
+		"Danny Elfman",
+		"Paul Reubens"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 8,
@@ -67,6 +69,20 @@
 			"tmdbMovieId": 9479,
 			"tmdbPersonId": 11514,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Elfman",
+			"character": "Jack Skellington (singing) / Barrel / Clown with the Tear away Face (voice)",
+			"tmdbMovieId": 9479,
+			"tmdbPersonId": 531,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Paul Reubens",
+			"character": "Lock (voice)",
+			"tmdbMovieId": 9479,
+			"tmdbPersonId": 5129,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

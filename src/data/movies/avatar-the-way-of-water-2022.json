@@ -18,7 +18,10 @@
 	"mainCast": [
 		"Sam Worthington",
 		"Zoe Saldaña",
-		"Sigourney Weaver"
+		"Sigourney Weaver",
+		"Stephen Lang",
+		"Kate Winslet",
+		"Cliff Curtis"
 	],
 	"productionCompany": "20th Century Studios",
 	"cinepostaScore": 7,
@@ -81,6 +84,27 @@
 			"tmdbMovieId": 76600,
 			"tmdbPersonId": 10205,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Lang",
+			"character": "Colonel Miles Quaritch",
+			"tmdbMovieId": 76600,
+			"tmdbPersonId": 32747,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kate Winslet",
+			"character": "Ronal",
+			"tmdbMovieId": 76600,
+			"tmdbPersonId": 204,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cliff Curtis",
+			"character": "Tonowari",
+			"tmdbMovieId": 76600,
+			"tmdbPersonId": 7248,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

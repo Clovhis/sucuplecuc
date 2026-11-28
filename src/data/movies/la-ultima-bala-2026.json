@@ -22,7 +22,9 @@
 	"director": "James Nunn",
 	"mainCast": [
 		"Scott Adkins",
-		"Dolph Lundgren"
+		"Dolph Lundgren",
+		"Steven Cree",
+		"Ray Fearon"
 	],
 	"productionCompany": "Signature Entertainment",
 	"cinepostaScore": 5,
@@ -50,5 +52,35 @@
 		]
 	},
 	"review": "La última bala tiene una razón concreta para seguir a Jake Harris: Scott Adkins puede convertir una pelea en una escena que se entiende por los cuerpos y las distancias. James Nunn aprovecha esa capacidad cuando el protagonista tiene que resolver obstáculos inmediatos, sin detenerse a explicar el tablero completo. La amenaza militar y los antiguos vínculos aportan presión, aunque también cargan la trama de explicaciones que frenan el avance. Las mejores partes llegan cuando Harris deja de escuchar instrucciones y empieza a moverse. Como continuación de acción directa, cumple a ratos y acusa el desgaste de la fórmula.",
-	"runtimeMinutes": 98
+	"runtimeMinutes": 98,
+	"castCharacters": [
+		{
+			"actor": "Steven Cree",
+			"character": "Elliot Carter",
+			"tmdbMovieId": 1607127,
+			"tmdbPersonId": 1102427,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ray Fearon",
+			"character": "Robinson",
+			"tmdbMovieId": 1607127,
+			"tmdbPersonId": 56650,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Scott Adkins",
+			"character": "Jake Harris",
+			"tmdbMovieId": 1607127,
+			"tmdbPersonId": 78110,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dolph Lundgren",
+			"character": "Admiral Mulholland",
+			"tmdbMovieId": 1607127,
+			"tmdbPersonId": 16644,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

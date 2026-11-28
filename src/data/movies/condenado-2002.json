@@ -46,7 +46,10 @@
 	"mainCast": [
 		"Robert De Niro",
 		"Frances McDormand",
-		"James Franco"
+		"James Franco",
+		"William Forsythe",
+		"Anson Mount",
+		"John Doman"
 	],
 	"productionCompany": "Warner Bros. Pictures",
 	"cinepostaScore": 5,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 13536,
 			"tmdbPersonId": 17051,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William Forsythe",
+			"character": "Spyder",
+			"tmdbMovieId": 13536,
+			"tmdbPersonId": 4520,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anson Mount",
+			"character": "Dave Simon",
+			"tmdbMovieId": 13536,
+			"tmdbPersonId": 56675,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Doman",
+			"character": "Henderson",
+			"tmdbMovieId": 13536,
+			"tmdbPersonId": 4735,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

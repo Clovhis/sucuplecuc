@@ -23,7 +23,8 @@
 	"mainCast": [
 		"Lili Reinhart",
 		"Alexandra Shipp",
-		"Victoria Pedretti"
+		"Victoria Pedretti",
+		"Gabrielle Union"
 	],
 	"productionCompany": "MXN Entertainment, Lollipop Woods, Quadrant Motion Pictures",
 	"cinepostaScore": 7,
@@ -54,5 +55,35 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Gabrielle Union",
+			"character": "Sharon",
+			"tmdbMovieId": 1450527,
+			"tmdbPersonId": 17773,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lili Reinhart",
+			"character": "Apple",
+			"tmdbMovieId": 1450527,
+			"tmdbPersonId": 1136940,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alexandra Shipp",
+			"character": "Fig",
+			"tmdbMovieId": 1450527,
+			"tmdbPersonId": 1253199,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Victoria Pedretti",
+			"character": "Cherry",
+			"tmdbMovieId": 1450527,
+			"tmdbPersonId": 2117434,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

@@ -25,7 +25,9 @@
 	"mainCast": [
 		"Luke Wilson",
 		"Kate Hudson",
-		"Sophie Marceau"
+		"Sophie Marceau",
+		"Rob Reiner",
+		"Cloris Leachman"
 	],
 	"productionCompany": "Castle Rock Entertainment",
 	"cinepostaScore": 5,
@@ -76,6 +78,20 @@
 			"tmdbMovieId": 17813,
 			"tmdbPersonId": 1957,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rob Reiner",
+			"character": "Wirschafter / Marty Van Buren",
+			"tmdbMovieId": 17813,
+			"tmdbPersonId": 3026,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cloris Leachman",
+			"character": "Grandmother",
+			"tmdbMovieId": 17813,
+			"tmdbPersonId": 9599,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

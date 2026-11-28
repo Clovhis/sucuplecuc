@@ -25,7 +25,8 @@
 	"director": "Erica Rivinoja, Alessandro Carloni",
 	"mainCast": [
 		"Bill Hader",
-		"Xochitl Gomez"
+		"Xochitl Gomez",
+		"America Ferrera"
 	],
 	"productionCompany": "Warner Bros. Pictures Animation, Dr. Seuss Enterprises",
 	"cinepostaScore": 7,
@@ -53,5 +54,28 @@
 	},
 	"review": "La idea de levantarle el ánimo a dos hermanos funciona como permiso para que el mundo se desarme: el Gato resuelve problemas creando otros más grandes. Erica Rivinoja y Alessandro Carloni trasladan ese impulso a una animación que permite cambiar de escala y de reglas con facilidad. Bill Hader aporta una voz apropiada para un personaje que necesita resultar simpático incluso cuando se pasa de rosca. El riesgo de tanta ocurrencia es que la mudanza y la tristeza de los chicos queden reducidas a excusa. La aventura encuentra su razón de ser cuando el desorden acompaña esa dificultad concreta de sentirse en casa en un lugar desconocido.",
 	"catalogAddedAt": "2026-11-05",
-	"runtimeMinutes": 114
+	"runtimeMinutes": 114,
+	"castCharacters": [
+		{
+			"actor": "America Ferrera",
+			"character": "Mom (Carmen) (voice)",
+			"tmdbMovieId": 1117898,
+			"tmdbPersonId": 59174,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Hader",
+			"character": "The Cat in the Hat (voice)",
+			"tmdbMovieId": 1117898,
+			"tmdbPersonId": 19278,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Xochitl Gomez",
+			"character": "Gabby (voice)",
+			"tmdbMovieId": 1117898,
+			"tmdbPersonId": 1912381,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

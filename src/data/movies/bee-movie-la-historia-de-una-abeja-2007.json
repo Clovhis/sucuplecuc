@@ -27,7 +27,11 @@
 	"director": "Steve Hickner",
 	"mainCast": [
 		"Renée Zellweger",
-		"Matthew Broderick"
+		"Matthew Broderick",
+		"Jerry Seinfeld",
+		"John Goodman",
+		"Chris Rock",
+		"Kathy Bates"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -70,6 +74,34 @@
 			"tmdbMovieId": 5559,
 			"tmdbPersonId": 4756,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jerry Seinfeld",
+			"character": "Barry B. Benson (voice)",
+			"tmdbMovieId": 5559,
+			"tmdbPersonId": 16377,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Goodman",
+			"character": "Layton T. Montgomery (voice)",
+			"tmdbMovieId": 5559,
+			"tmdbPersonId": 1230,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chris Rock",
+			"character": "Mooseblood (voice)",
+			"tmdbMovieId": 5559,
+			"tmdbPersonId": 2632,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kathy Bates",
+			"character": "Janet Benson (voice)",
+			"tmdbMovieId": 5559,
+			"tmdbPersonId": 8534,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

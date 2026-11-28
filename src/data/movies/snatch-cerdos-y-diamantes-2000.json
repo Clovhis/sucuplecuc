@@ -19,7 +19,11 @@
 	"director": "Guy Ritchie",
 	"mainCast": [
 		"Jason Statham",
-		"Alan Ford"
+		"Alan Ford",
+		"Stephen Graham",
+		"Brad Pitt",
+		"Dennis Farina",
+		"Benicio del Toro"
 	],
 	"productionCompany": "SKA Films",
 	"cinepostaScore": 7,
@@ -74,6 +78,34 @@
 			"tmdbMovieId": 107,
 			"tmdbPersonId": 1116,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Graham",
+			"character": "Tommy",
+			"tmdbMovieId": 107,
+			"tmdbPersonId": 1115,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brad Pitt",
+			"character": "Mickey O'Neil",
+			"tmdbMovieId": 107,
+			"tmdbPersonId": 287,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dennis Farina",
+			"character": "Avi",
+			"tmdbMovieId": 107,
+			"tmdbPersonId": 1117,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Benicio del Toro",
+			"character": "Franky Four Fingers",
+			"tmdbMovieId": 107,
+			"tmdbPersonId": 1121,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

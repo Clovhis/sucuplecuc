@@ -13,7 +13,10 @@
 	"mainCast": [
 		"Andrew Garfield",
 		"Emma Stone",
-		"Jamie Foxx"
+		"Jamie Foxx",
+		"Dane DeHaan",
+		"Paul Giamatti",
+		"Sally Field"
 	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 5,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 102382,
 			"tmdbPersonId": 134,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dane DeHaan",
+			"character": "Green Goblin / Harry Osborn",
+			"tmdbMovieId": 102382,
+			"tmdbPersonId": 122889,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Paul Giamatti",
+			"character": "Aleksei Sytsevich",
+			"tmdbMovieId": 102382,
+			"tmdbPersonId": 13242,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sally Field",
+			"character": "Aunt May",
+			"tmdbMovieId": 102382,
+			"tmdbPersonId": 35,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

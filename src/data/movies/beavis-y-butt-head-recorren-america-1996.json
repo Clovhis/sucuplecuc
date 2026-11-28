@@ -26,7 +26,11 @@
 	"director": "Mike Judge",
 	"mainCast": [
 		"Mike Judge",
-		"Bruce Willis"
+		"Bruce Willis",
+		"Demi Moore",
+		"Cloris Leachman",
+		"Robert Stack",
+		"Eric Bogosian"
 	],
 	"productionCompany": "Producción internacional",
 	"cinepostaScore": 8,
@@ -69,6 +73,34 @@
 			"tmdbMovieId": 3179,
 			"tmdbPersonId": 62,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Demi Moore",
+			"character": "Dallas (voice)",
+			"tmdbMovieId": 3179,
+			"tmdbPersonId": 3416,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cloris Leachman",
+			"character": "Old Woman On Plane and Bus (voice)",
+			"tmdbMovieId": 3179,
+			"tmdbPersonId": 9599,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robert Stack",
+			"character": "Agent Flemming (voice)",
+			"tmdbMovieId": 3179,
+			"tmdbPersonId": 2493,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eric Bogosian",
+			"character": "Ranger at Old Faithful / Press Secretary / Lieutenant at Strategic Air Command (voice)",
+			"tmdbMovieId": 3179,
+			"tmdbPersonId": 10866,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

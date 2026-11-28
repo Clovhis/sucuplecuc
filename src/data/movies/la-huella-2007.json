@@ -25,7 +25,9 @@
 	"director": "Kenneth Branagh",
 	"mainCast": [
 		"Michael Caine",
-		"Jude Law"
+		"Jude Law",
+		"Harold Pinter",
+		"Kenneth Branagh"
 	],
 	"productionCompany": "Sony Pictures Classics",
 	"cinepostaScore": 5,
@@ -69,6 +71,20 @@
 			"tmdbMovieId": 4520,
 			"tmdbPersonId": 9642,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harold Pinter",
+			"character": "Man on T.V.",
+			"tmdbMovieId": 4520,
+			"tmdbPersonId": 26157,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kenneth Branagh",
+			"character": "Other Man on T.V.",
+			"tmdbMovieId": 4520,
+			"tmdbPersonId": 11181,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

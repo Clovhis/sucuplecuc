@@ -23,7 +23,9 @@
 	"director": "Paweł Pawlikowski",
 	"mainCast": [
 		"Hanns Zischler",
-		"Sandra Hüller"
+		"Sandra Hüller",
+		"August Diehl",
+		"Anna Madeley"
 	],
 	"productionCompany": "Opus Film, MUBI, The Apartment Pictures, Our Films, One Two Films",
 	"cinepostaScore": 7,
@@ -51,5 +53,35 @@
 	},
 	"review": "Un escritor regresa convertido en monumento y su hija tiene que lidiar con el hombre que queda debajo. Esa distancia le da a Tierra de mi padre una tensión más interesante que la de una biografía solemne. Paweł Pawlikowski concentra el viaje en encuadres austeros y conversaciones donde los gestos de Hanns Zischler y Sandra Hüller hacen visible el desacuerdo. La Alemania dividida aparece también en las contradicciones de quienes reciben a Mann. La contención puede volver distante algún tramo, pero evita ofrecer una reconciliación cómoda: volver al país no alcanza para sentirse de nuevo en casa.",
 	"catalogAddedAt": "2026-10-29",
-	"runtimeMinutes": 82
+	"runtimeMinutes": 82,
+	"castCharacters": [
+		{
+			"actor": "August Diehl",
+			"character": "Klaus Mann",
+			"tmdbMovieId": 1437696,
+			"tmdbPersonId": 6091,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anna Madeley",
+			"character": "Betty Knox",
+			"tmdbMovieId": 1437696,
+			"tmdbPersonId": 72857,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hanns Zischler",
+			"character": "Thomas Mann",
+			"tmdbMovieId": 1437696,
+			"tmdbPersonId": 169,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sandra Hüller",
+			"character": "Erika Mann",
+			"tmdbMovieId": 1437696,
+			"tmdbPersonId": 7152,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

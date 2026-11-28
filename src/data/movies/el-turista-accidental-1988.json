@@ -24,7 +24,9 @@
 	"mainCast": [
 		"William Hurt",
 		"Kathleen Turner",
-		"Geena Davis"
+		"Geena Davis",
+		"David Ogden Stiers",
+		"Bill Pullman"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 7,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 31052,
 			"tmdbPersonId": 16935,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Ogden Stiers",
+			"character": "Porter Leary",
+			"tmdbMovieId": 31052,
+			"tmdbPersonId": 28010,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Pullman",
+			"character": "Julian Hedge",
+			"tmdbMovieId": 31052,
+			"tmdbPersonId": 8984,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

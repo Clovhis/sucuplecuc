@@ -56,5 +56,21 @@
 	"releasePlatforms": [
 		"Paramount Plus",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Athena Strates",
+			"character": "Kyle",
+			"tmdbMovieId": 1407861,
+			"tmdbPersonId": 1977981,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elisha Applebaum",
+			"character": "Malika",
+			"tmdbMovieId": 1407861,
+			"tmdbPersonId": 1577369,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

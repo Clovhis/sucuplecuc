@@ -21,7 +21,8 @@
 	"director": "Dan Reed",
 	"mainCast": [
 		"James Safechuck",
-		"Wade Robson"
+		"Wade Robson",
+		"Dan Reed"
 	],
 	"productionCompany": "Amos Pictures",
 	"cinepostaScore": 1,
@@ -55,5 +56,28 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Dan Reed",
+			"character": "Self",
+			"tmdbMovieId": 1437701,
+			"tmdbPersonId": 74626,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Safechuck",
+			"character": "Self",
+			"tmdbMovieId": 1437701,
+			"tmdbPersonId": 2255271,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Wade Robson",
+			"character": "Self",
+			"tmdbMovieId": 1437701,
+			"tmdbPersonId": 1229941,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

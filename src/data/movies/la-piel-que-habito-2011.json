@@ -20,7 +20,9 @@
 	"director": "Pedro Almodóvar",
 	"mainCast": [
 		"Antonio Banderas",
-		"Elena Anaya"
+		"Elena Anaya",
+		"Marisa Paredes",
+		"Jan Cornet"
 	],
 	"productionCompany": "El Deseo",
 	"cinepostaScore": 7,
@@ -71,6 +73,20 @@
 			"tmdbMovieId": 63311,
 			"tmdbPersonId": 3623,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Marisa Paredes",
+			"character": "Marilia",
+			"tmdbMovieId": 63311,
+			"tmdbPersonId": 954,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jan Cornet",
+			"character": "Vicente",
+			"tmdbMovieId": 63311,
+			"tmdbPersonId": 440879,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

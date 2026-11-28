@@ -27,7 +27,13 @@
 	"director": "Joel Crawford",
 	"mainCast": [
 		"Nicolas Cage",
-		"Emma Stone"
+		"Emma Stone",
+		"Ryan Reynolds",
+		"Catherine Keener",
+		"Cloris Leachman",
+		"Clark Duke",
+		"Leslie Mann",
+		"Peter Dinklage"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -70,6 +76,48 @@
 			"tmdbMovieId": 529203,
 			"tmdbPersonId": 54693,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ryan Reynolds",
+			"character": "Guy (voice)",
+			"tmdbMovieId": 529203,
+			"tmdbPersonId": 10859,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Catherine Keener",
+			"character": "Ugga (voice)",
+			"tmdbMovieId": 529203,
+			"tmdbPersonId": 2229,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cloris Leachman",
+			"character": "Gran (voice)",
+			"tmdbMovieId": 529203,
+			"tmdbPersonId": 9599,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Clark Duke",
+			"character": "Thunk (voice)",
+			"tmdbMovieId": 529203,
+			"tmdbPersonId": 54729,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Leslie Mann",
+			"character": "Hope Betterman (voice)",
+			"tmdbMovieId": 529203,
+			"tmdbPersonId": 41087,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Dinklage",
+			"character": "Phil Betterman (voice)",
+			"tmdbMovieId": 529203,
+			"tmdbPersonId": 22970,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

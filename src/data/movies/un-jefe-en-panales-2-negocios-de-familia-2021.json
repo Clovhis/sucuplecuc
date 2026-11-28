@@ -27,7 +27,11 @@
 	"director": "Tom McGrath",
 	"mainCast": [
 		"James Marsden",
-		"Alec Baldwin"
+		"Alec Baldwin",
+		"Amy Sedaris",
+		"Ariana Greenblatt",
+		"Jeff Goldblum",
+		"Eva Longoria"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -70,6 +74,34 @@
 			"tmdbMovieId": 459151,
 			"tmdbPersonId": 7447,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amy Sedaris",
+			"character": "Tina (voice)",
+			"tmdbMovieId": 459151,
+			"tmdbPersonId": 12110,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ariana Greenblatt",
+			"character": "Tabitha (voice)",
+			"tmdbMovieId": 459151,
+			"tmdbPersonId": 1767250,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeff Goldblum",
+			"character": "Dr. Armstrong (voice)",
+			"tmdbMovieId": 459151,
+			"tmdbPersonId": 4785,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eva Longoria",
+			"character": "Carol (voice)",
+			"tmdbMovieId": 459151,
+			"tmdbPersonId": 52605,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

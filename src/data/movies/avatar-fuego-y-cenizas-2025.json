@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Sam Worthington",
 		"Zoe Saldaña",
-		"Sigourney Weaver"
+		"Sigourney Weaver",
+		"Stephen Lang",
+		"Kate Winslet",
+		"Cliff Curtis"
 	],
 	"productionCompany": "Lightstorm Entertainment",
 	"cinepostaScore": 6,
@@ -75,6 +78,27 @@
 			"tmdbMovieId": 83533,
 			"tmdbPersonId": 10205,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Lang",
+			"character": "Quaritch",
+			"tmdbMovieId": 83533,
+			"tmdbPersonId": 32747,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kate Winslet",
+			"character": "Ronal",
+			"tmdbMovieId": 83533,
+			"tmdbPersonId": 204,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cliff Curtis",
+			"character": "Tonowari",
+			"tmdbMovieId": 83533,
+			"tmdbPersonId": 7248,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

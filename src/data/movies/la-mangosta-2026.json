@@ -22,7 +22,9 @@
 	"director": "Mark Vanselow",
 	"mainCast": [
 		"Liam Neeson",
-		"Marisa Tomei"
+		"Marisa Tomei",
+		"Ving Rhames",
+		"Marcus Thomas"
 	],
 	"productionCompany": "Code Entertainment, Mongoose Productions, Solution Entertainment Group",
 	"cinepostaScore": 6,
@@ -67,6 +69,20 @@
 			"tmdbMovieId": 1294189,
 			"tmdbPersonId": 3141,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ving Rhames",
+			"character": "Tanker",
+			"tmdbMovieId": 1294189,
+			"tmdbPersonId": 10182,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Marcus Thomas",
+			"character": "Munch",
+			"tmdbMovieId": 1294189,
+			"tmdbPersonId": 55174,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

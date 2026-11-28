@@ -23,7 +23,9 @@
 	"director": "Cathryn Michon",
 	"mainCast": [
 		"Dennis Quaid",
-		"Milo Ventimiglia"
+		"Milo Ventimiglia",
+		"Thomas Haden Church",
+		"Mary Steenburgen"
 	],
 	"productionCompany": "Netflix, Fezziwig Studios",
 	"cinepostaScore": 8,
@@ -53,5 +55,35 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 99,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Thomas Haden Church",
+			"character": "Winstead (voice)",
+			"tmdbMovieId": 1570488,
+			"tmdbPersonId": 19159,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mary Steenburgen",
+			"character": "Claire",
+			"tmdbMovieId": 1570488,
+			"tmdbPersonId": 2453,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dennis Quaid",
+			"character": "Sander",
+			"tmdbMovieId": 1570488,
+			"tmdbPersonId": 6065,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Milo Ventimiglia",
+			"character": "Hunter",
+			"tmdbMovieId": 1570488,
+			"tmdbPersonId": 16501,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

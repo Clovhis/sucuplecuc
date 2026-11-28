@@ -23,7 +23,8 @@
 	"director": "Michael Dudok de Wit",
 	"mainCast": [
 		"Tom Hudson",
-		"Barbara Beretta"
+		"Barbara Beretta",
+		"Emmanuel Garijo"
 	],
 	"productionCompany": "Producción internacional",
 	"cinepostaScore": 7,
@@ -51,5 +52,28 @@
 			"buscando-a-dory-2016"
 		]
 	},
-	"review": "La tortuga roja cuenta una vida entera casi sin palabras y deja que el mar, el viento y los cambios de estación hagan avanzar el relato. Tom Hudson y Baptiste Goy trabajan desde la presencia más que desde el diálogo, y Michael Dudok de Wit dibuja la soledad con una sencillez muy precisa. La película puede sentirse enigmática si se busca una explicación cerrada, pero su ritmo, sus fondos y su mirada sobre el tiempo producen una emoción serena."
+	"review": "La tortuga roja cuenta una vida entera casi sin palabras y deja que el mar, el viento y los cambios de estación hagan avanzar el relato. Tom Hudson y Baptiste Goy trabajan desde la presencia más que desde el diálogo, y Michael Dudok de Wit dibuja la soledad con una sencillez muy precisa. La película puede sentirse enigmática si se busca una explicación cerrada, pero su ritmo, sus fondos y su mirada sobre el tiempo producen una emoción serena.",
+	"castCharacters": [
+		{
+			"actor": "Emmanuel Garijo",
+			"character": "The Father (voice)",
+			"tmdbMovieId": 337703,
+			"tmdbPersonId": 1497778,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom Hudson",
+			"character": "The Son as a Young Adult (voice)",
+			"tmdbMovieId": 337703,
+			"tmdbPersonId": 1327993,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Barbara Beretta",
+			"character": "The Mother (voice)",
+			"tmdbMovieId": 337703,
+			"tmdbPersonId": 1515111,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

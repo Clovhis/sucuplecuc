@@ -13,7 +13,11 @@
 	"mainCast": [
 		"Christian Bale",
 		"Gary Oldman",
-		"Tom Hardy"
+		"Tom Hardy",
+		"Joseph Gordon-Levitt",
+		"Anne Hathaway",
+		"Morgan Freeman",
+		"Michael Caine"
 	],
 	"productionCompany": "DC Comics",
 	"cinepostaScore": 7,
@@ -69,6 +73,34 @@
 			"tmdbMovieId": 49026,
 			"tmdbPersonId": 2524,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joseph Gordon-Levitt",
+			"character": "Blake",
+			"tmdbMovieId": 49026,
+			"tmdbPersonId": 24045,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anne Hathaway",
+			"character": "Selina",
+			"tmdbMovieId": 49026,
+			"tmdbPersonId": 1813,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Morgan Freeman",
+			"character": "Fox",
+			"tmdbMovieId": 49026,
+			"tmdbPersonId": 192,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Caine",
+			"character": "Alfred",
+			"tmdbMovieId": 49026,
+			"tmdbPersonId": 3895,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

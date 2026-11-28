@@ -23,7 +23,9 @@
 	"mainCast": [
 		"Eddie Murphy",
 		"Richard Pryor",
-		"Danny Glover"
+		"Danny Glover",
+		"Danny Aiello",
+		"Michael Lerner"
 	],
 	"productionCompany": "Eddie Murphy Productions, Paramount Pictures",
 	"cinepostaScore": 5,
@@ -67,6 +69,20 @@
 			"tmdbMovieId": 9085,
 			"tmdbPersonId": 9309,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny Aiello",
+			"character": "Phil Cantone",
+			"tmdbMovieId": 9085,
+			"tmdbPersonId": 1004,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Lerner",
+			"character": "Bugsy Calhoune",
+			"tmdbMovieId": 9085,
+			"tmdbPersonId": 4250,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

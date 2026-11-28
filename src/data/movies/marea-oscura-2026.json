@@ -22,7 +22,8 @@
 	"director": "Klaas de Jong",
 	"mainCast": [
 		"Vajèn van den Bosch",
-		"Juvat Westendorp"
+		"Juvat Westendorp",
+		"Mingus Dagelet"
 	],
 	"productionCompany": "Farmhouse Film",
 	"cinepostaScore": 5,
@@ -52,5 +53,28 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 111,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Mingus Dagelet",
+			"character": "Stefan",
+			"tmdbMovieId": 1662858,
+			"tmdbPersonId": 934400,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Vajèn van den Bosch",
+			"character": "Lynn",
+			"tmdbMovieId": 1662858,
+			"tmdbPersonId": 1473130,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Juvat Westendorp",
+			"character": "Kevin",
+			"tmdbMovieId": 1662858,
+			"tmdbPersonId": 1258939,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

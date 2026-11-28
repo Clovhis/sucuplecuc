@@ -22,7 +22,10 @@
 	"mainCast": [
 		"Jamie Lee Curtis",
 		"Josh Hartnett",
-		"Adam Arkin"
+		"Adam Arkin",
+		"Michelle Williams",
+		"Adam Hann-Byrd",
+		"Janet Leigh"
 	],
 	"productionCompany": "Spyglass Media Group, Dimension Films, Gaumont",
 	"cinepostaScore": 5,
@@ -76,6 +79,27 @@
 			"tmdbMovieId": 11675,
 			"tmdbPersonId": 55257,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michelle Williams",
+			"character": "Molly",
+			"tmdbMovieId": 11675,
+			"tmdbPersonId": 1812,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Adam Hann-Byrd",
+			"character": "Charlie",
+			"tmdbMovieId": 11675,
+			"tmdbPersonId": 46530,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Janet Leigh",
+			"character": "Norma",
+			"tmdbMovieId": 11675,
+			"tmdbPersonId": 7302,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

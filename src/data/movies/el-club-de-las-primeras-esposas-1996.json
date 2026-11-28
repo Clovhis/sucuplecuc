@@ -24,7 +24,10 @@
 		"Diane Keaton",
 		"Goldie Hawn",
 		"Bette Midler",
-		"Maggie Smith"
+		"Maggie Smith",
+		"Sarah Jessica Parker",
+		"Dan Hedaya",
+		"Stockard Channing"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 8,
@@ -82,6 +85,27 @@
 			"tmdbMovieId": 2925,
 			"tmdbPersonId": 10978,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sarah Jessica Parker",
+			"character": "Shelly Stewart",
+			"tmdbMovieId": 2925,
+			"tmdbPersonId": 520,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dan Hedaya",
+			"character": "Morton Cushman",
+			"tmdbMovieId": 2925,
+			"tmdbPersonId": 6486,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Stockard Channing",
+			"character": "Cynthia Swann Griffin",
+			"tmdbMovieId": 2925,
+			"tmdbPersonId": 8893,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

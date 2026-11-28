@@ -27,7 +27,9 @@
 	"mainCast": [
 		"Keanu Reeves",
 		"Al Pacino",
-		"Charlize Theron"
+		"Charlize Theron",
+		"Jeffrey Jones",
+		"Craig T. Nelson"
 	],
 	"productionCompany": "Warner Bros., Regency Enterprises, Kopelson Entertainment",
 	"cinepostaScore": 8,
@@ -78,6 +80,20 @@
 			"tmdbMovieId": 1813,
 			"tmdbPersonId": 6885,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeffrey Jones",
+			"character": "Eddie Barzoon",
+			"tmdbMovieId": 1813,
+			"tmdbPersonId": 4004,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Craig T. Nelson",
+			"character": "Alexander Cullen",
+			"tmdbMovieId": 1813,
+			"tmdbPersonId": 8977,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -13,7 +13,11 @@
 	"mainCast": [
 		"Chris Hemsworth",
 		"Natalie Portman",
-		"Christian Bale"
+		"Christian Bale",
+		"Tessa Thompson",
+		"Taika Waititi",
+		"Russell Crowe",
+		"Idris Elba"
 	],
 	"productionCompany": "Marvel Studios",
 	"cinepostaScore": 2,
@@ -68,6 +72,34 @@
 			"tmdbMovieId": 616037,
 			"tmdbPersonId": 3894,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tessa Thompson",
+			"character": "King Valkyrie",
+			"tmdbMovieId": 616037,
+			"tmdbPersonId": 62561,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Taika Waititi",
+			"character": "Korg / Old Kronan God (voice)",
+			"tmdbMovieId": 616037,
+			"tmdbPersonId": 55934,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Russell Crowe",
+			"character": "Zeus",
+			"tmdbMovieId": 616037,
+			"tmdbPersonId": 934,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Idris Elba",
+			"character": "Heimdall",
+			"tmdbMovieId": 616037,
+			"tmdbPersonId": 17605,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

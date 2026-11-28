@@ -23,7 +23,9 @@
 		"Ryan Gosling",
 		"Kirsten Dunst",
 		"Philip Baker Hall",
-		"Nick Offerman"
+		"Nick Offerman",
+		"Frank Langella",
+		"Diane Venora"
 	],
 	"productionCompany": "Magnolia Pictures",
 	"cinepostaScore": 5,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 46503,
 			"tmdbPersonId": 17039,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Frank Langella",
+			"character": "Sanford Marks",
+			"tmdbMovieId": 46503,
+			"tmdbPersonId": 8924,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diane Venora",
+			"character": "Janice Rizzo",
+			"tmdbMovieId": 46503,
+			"tmdbPersonId": 6200,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -41,21 +41,58 @@
 			"forFansOf": "Para quienes disfrutan a Miyazaki, la imaginación de la infancia y aventuras donde el paisaje tiene tanta personalidad como Noriko Hidaka y Chika Sakamoto.",
 			"notForYouIf": "Puede parecerte demasiado leve si necesitás villanos, persecuciones o una resolución explícita para cada preocupación de las chicas."
 		},
-	"becauseYouLiked": [
-		"nausicaa-of-the-valley-of-the-wind-1984",
-		"the-boy-and-the-heron-2023"
-	],
-	"related": [
-		"spirited-away-2001",
-		"castle-in-the-sky-1986",
-		"princess-mononoke-1997",
-		"howls-moving-castle-2004"
-	]
-},
+		"becauseYouLiked": [
+			"nausicaa-of-the-valley-of-the-wind-1984",
+			"the-boy-and-the-heron-2023"
+		],
+		"related": [
+			"spirited-away-2001",
+			"castle-in-the-sky-1986",
+			"princess-mononoke-1997",
+			"howls-moving-castle-2004"
+		]
+	},
 	"review": "Hayao Miyazaki sigue a dos hermanas que se mudan al campo mientras su madre está internada, y encuentra aventura en árboles, lluvia y criaturas que nadie más parece ver. Las niñas se mueven con una naturalidad poco común y Totoro funciona como presencia de juego, no como mascota diseñada para el chiste. La dirección vuelve enorme lo cotidiano sin levantar la voz, con un ritmo calmo que confía en la observación. Quien espere una trama de conflicto constante puede sentirla leve. Vale porque conserva el asombro infantil sin simplificar la tristeza que la rodea.",
 	"synopsis": "Dos hermanas se mudan con su padre a una casa de campo mientras su madre se recupera en un hospital. Allí descubren criaturas mágicas del bosque, entre ellas Totoro, cuya presencia las acompaña mientras atraviesan la incertidumbre y la imaginación de la infancia.",
 	"audienceRating": "ATP",
 	"isPremiere": true,
 	"premiereLabel": "REESTRENO",
-	"reviewPublishedAt": "2026-08-20"
+	"reviewPublishedAt": "2026-08-20",
+	"castCharacters": [
+		{
+			"actor": "Noriko Hidaka",
+			"character": "Satsuki Kusakabe (voice)",
+			"tmdbMovieId": 8392,
+			"tmdbPersonId": 55662,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hitoshi Takagi",
+			"character": "Totoro (voice)",
+			"tmdbMovieId": 8392,
+			"tmdbPersonId": 55663,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chika Sakamoto",
+			"character": "Mei Kusakabe (voice)",
+			"tmdbMovieId": 8392,
+			"tmdbPersonId": 55664,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Shigesato Itoi",
+			"character": "Tatsuo Kusakabe (voice)",
+			"tmdbMovieId": 8392,
+			"tmdbPersonId": 55665,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sumi Shimamoto",
+			"character": "Yasuko Kusakabe (voice)",
+			"tmdbMovieId": 8392,
+			"tmdbPersonId": 613,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

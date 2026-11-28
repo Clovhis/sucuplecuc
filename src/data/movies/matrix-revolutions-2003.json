@@ -52,5 +52,28 @@
 	"synopsis": "Sigue a Neo y sus aliados mientras luchan para poner fin permanentemente a la guerra entre la humanidad y las máquinas mientras se oponen al pícaro Agente Smith.",
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Keanu Reeves",
+			"character": "Neo",
+			"tmdbMovieId": 605,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Laurence Fishburne",
+			"character": "Morpheus",
+			"tmdbMovieId": 605,
+			"tmdbPersonId": 2975,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Carrie-Anne Moss",
+			"character": "Trinity",
+			"tmdbMovieId": 605,
+			"tmdbPersonId": 530,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

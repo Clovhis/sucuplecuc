@@ -27,7 +27,11 @@
 	"director": "Mike Rianda",
 	"mainCast": [
 		"Abbi Jacobson",
-		"Maya Rudolph"
+		"Maya Rudolph",
+		"Danny McBride",
+		"Mike Rianda",
+		"Olivia Colman",
+		"Fred Armisen"
 	],
 	"productionCompany": "Sony Pictures Animation",
 	"cinepostaScore": 7,
@@ -70,6 +74,34 @@
 			"tmdbMovieId": 501929,
 			"tmdbPersonId": 52792,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Danny McBride",
+			"character": "Rick (voice)",
+			"tmdbMovieId": 501929,
+			"tmdbPersonId": 62862,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mike Rianda",
+			"character": "Aaron / Furbies / Talking Dog / Wifi Enthusiast (voice)",
+			"tmdbMovieId": 501929,
+			"tmdbPersonId": 1647289,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Olivia Colman",
+			"character": "PAL (voice)",
+			"tmdbMovieId": 501929,
+			"tmdbPersonId": 39187,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Fred Armisen",
+			"character": "Deborahbot 5000 (voice)",
+			"tmdbMovieId": 501929,
+			"tmdbPersonId": 61110,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

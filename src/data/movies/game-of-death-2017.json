@@ -22,7 +22,8 @@
 	"director": "Sébastien Landry y Laurence Morais-Lagacé",
 	"mainCast": [
 		"Sam Earle",
-		"Victoria Diamond"
+		"Victoria Diamond",
+		"Emelia Hellman"
 	],
 	"productionCompany": "Black Fawn Films",
 	"cinepostaScore": 5,
@@ -51,5 +52,28 @@
 			"el-club-2015"
 		]
 	},
-	"review": "La idea de Game of Death es más potente que su ejecución, pero el dúo de directores sabe acelerar cuando la película se mete de lleno en el mecanismo del juego. El gore aparece como castigo y como chiste negro, con Sam Earle y Victoria Diamond sosteniendo una energía de grupo bastante creíble. No hay demasiada profundidad detrás de la premisa, aunque el tono desprolijo le calza bien a este terror de sobremesa que quiere incomodar y entretener a la vez."
+	"review": "La idea de Game of Death es más potente que su ejecución, pero el dúo de directores sabe acelerar cuando la película se mete de lleno en el mecanismo del juego. El gore aparece como castigo y como chiste negro, con Sam Earle y Victoria Diamond sosteniendo una energía de grupo bastante creíble. No hay demasiada profundidad detrás de la premisa, aunque el tono desprolijo le calza bien a este terror de sobremesa que quiere incomodar y entretener a la vez.",
+	"castCharacters": [
+		{
+			"actor": "Emelia Hellman",
+			"character": "Ashley",
+			"tmdbMovieId": 438982,
+			"tmdbPersonId": 1749654,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sam Earle",
+			"character": "Tom",
+			"tmdbMovieId": 438982,
+			"tmdbPersonId": 1228367,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Victoria Diamond",
+			"character": "Beth",
+			"tmdbMovieId": 438982,
+			"tmdbPersonId": 1557143,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

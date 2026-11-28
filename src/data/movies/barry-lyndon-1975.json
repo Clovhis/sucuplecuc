@@ -16,7 +16,10 @@
 	"director": "Stanley Kubrick",
 	"mainCast": [
 		"Ryan O'Neal",
-		"Marisa Berenson"
+		"Marisa Berenson",
+		"Patrick Magee",
+		"Hardy Krüger",
+		"Steven Berkoff"
 	],
 	"productionCompany": "Hawk Films",
 	"cinepostaScore": 10,
@@ -67,6 +70,27 @@
 			"tmdbMovieId": 3175,
 			"tmdbPersonId": 31071,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Patrick Magee",
+			"character": "The Chevalier",
+			"tmdbMovieId": 3175,
+			"tmdbPersonId": 2264,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hardy Krüger",
+			"character": "Captain Potzdorf",
+			"tmdbMovieId": 3175,
+			"tmdbPersonId": 37777,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Steven Berkoff",
+			"character": "Lord Ludd",
+			"tmdbMovieId": 3175,
+			"tmdbPersonId": 782,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

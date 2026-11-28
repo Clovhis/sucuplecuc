@@ -22,7 +22,8 @@
 	"director": "Sergej Moya",
 	"mainCast": [
 		"Lisa-Marie Koroll",
-		"Amin Baahmed"
+		"Amin Baahmed",
+		"Gustav Schmidt"
 	],
 	"productionCompany": "Bavaria Fiction",
 	"cinepostaScore": 6,
@@ -52,5 +53,28 @@
 	"catalogAddedAt": "2026-10-30",
 	"runtimeMinutes": 102,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Gustav Schmidt",
+			"character": "Ruben Laroch",
+			"tmdbMovieId": 1596275,
+			"tmdbPersonId": 1947797,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lisa-Marie Koroll",
+			"character": "Sarah Jenkins",
+			"tmdbMovieId": 1596275,
+			"tmdbPersonId": 1283954,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Amin Baahmed",
+			"character": "Dante Annunziata",
+			"tmdbMovieId": 1596275,
+			"tmdbPersonId": 4580908,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

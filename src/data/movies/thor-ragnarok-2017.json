@@ -13,7 +13,12 @@
 	"mainCast": [
 		"Chris Hemsworth",
 		"Tom Hiddleston",
-		"Cate Blanchett"
+		"Cate Blanchett",
+		"Mark Ruffalo",
+		"Idris Elba",
+		"Jeff Goldblum",
+		"Tessa Thompson",
+		"Karl Urban"
 	],
 	"productionCompany": "Marvel Studios",
 	"cinepostaScore": 7,
@@ -69,6 +74,41 @@
 			"tmdbMovieId": 284053,
 			"tmdbPersonId": 112,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mark Ruffalo",
+			"character": "Bruce Banner / Hulk",
+			"tmdbMovieId": 284053,
+			"tmdbPersonId": 103,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Idris Elba",
+			"character": "Heimdall",
+			"tmdbMovieId": 284053,
+			"tmdbPersonId": 17605,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeff Goldblum",
+			"character": "Grandmaster",
+			"tmdbMovieId": 284053,
+			"tmdbPersonId": 4785,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tessa Thompson",
+			"character": "Valkyrie",
+			"tmdbMovieId": 284053,
+			"tmdbPersonId": 62561,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Karl Urban",
+			"character": "Skurge",
+			"tmdbMovieId": 284053,
+			"tmdbPersonId": 1372,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

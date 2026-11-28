@@ -26,7 +26,10 @@
 		"Maggie Smith",
 		"Michael Gambon",
 		"Helen Mirren",
-		"Emily Watson"
+		"Emily Watson",
+		"Kristin Scott Thomas",
+		"Charles Dance",
+		"Tom Hollander"
 	],
 	"productionCompany": "USA Films, Capitol Films y Sandcastle 5",
 	"cinepostaScore": 8,
@@ -90,6 +93,27 @@
 			"tmdbMovieId": 5279,
 			"tmdbPersonId": 1639,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kristin Scott Thomas",
+			"character": "Sylvia McCordle",
+			"tmdbMovieId": 5279,
+			"tmdbPersonId": 5470,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Charles Dance",
+			"character": "Raymond Stockbridge",
+			"tmdbMovieId": 5279,
+			"tmdbPersonId": 4391,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom Hollander",
+			"character": "Anthony Meredith",
+			"tmdbMovieId": 5279,
+			"tmdbPersonId": 2441,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

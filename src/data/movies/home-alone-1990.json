@@ -19,7 +19,9 @@
 	"mainCast": [
 		"Macaulay Culkin",
 		"Joe Pesci",
-		"Daniel Stern"
+		"Daniel Stern",
+		"John Heard",
+		"Catherine O'Hara"
 	],
 	"productionCompany": "Great Oaks Productions, 20th Century Studios",
 	"cinepostaScore": 8,
@@ -73,6 +75,20 @@
 			"tmdbMovieId": 771,
 			"tmdbPersonId": 11511,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Heard",
+			"character": "Peter",
+			"tmdbMovieId": 771,
+			"tmdbPersonId": 11512,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Catherine O'Hara",
+			"character": "Kate",
+			"tmdbMovieId": 771,
+			"tmdbPersonId": 11514,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

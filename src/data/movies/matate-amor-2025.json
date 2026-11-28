@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Jennifer Lawrence",
 		"Robert Pattinson",
-		"Sissy Spacek"
+		"Sissy Spacek",
+		"LaKeith Stanfield",
+		"Nick Nolte",
+		"Clare Coulter"
 	],
 	"productionCompany": "Excellent Cadaver, Black Label Media, Sikelia Productions",
 	"cinepostaScore": 5,
@@ -75,6 +78,27 @@
 			"tmdbMovieId": 1033148,
 			"tmdbPersonId": 5606,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "LaKeith Stanfield",
+			"character": "Karl",
+			"tmdbMovieId": 1033148,
+			"tmdbPersonId": 1200864,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nick Nolte",
+			"character": "Harry",
+			"tmdbMovieId": 1033148,
+			"tmdbPersonId": 1733,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Clare Coulter",
+			"character": "Courtney",
+			"tmdbMovieId": 1033148,
+			"tmdbPersonId": 1025076,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

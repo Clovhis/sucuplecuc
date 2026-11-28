@@ -50,5 +50,28 @@
     }
   },
   "review": "Cooper y Schoedsack convierten el rodaje dentro de una película en una aventura de escala imposible. El movimiento cuadro a cuadro de Kong, los decorados en miniatura y su mezcla con actores sostienen una criatura que parece ocupar el espacio; esa apuesta técnica también vuelve incómoda la relación entre espectáculo y cautiverio. Fay Wray organiza el corazón del relato sin reducirlo al grito, y Robert Armstrong carga con la ambición del showman. Algunas transiciones dejan ver su época, pero el mundo visual todavía tiene imaginación propia.",
-  "runtimeMinutes": 100
+  "runtimeMinutes": 100,
+  "castCharacters": [
+    {
+      "actor": "Fay Wray",
+      "character": "Ann Darrow",
+      "tmdbMovieId": 244,
+      "tmdbPersonId": 3242,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Robert Armstrong",
+      "character": "Carl Denham",
+      "tmdbMovieId": 244,
+      "tmdbPersonId": 3243,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Bruce Cabot",
+      "character": "Jack Driscoll",
+      "tmdbMovieId": 244,
+      "tmdbPersonId": 3244,
+      "verifiedAt": "2026-11-27"
+    }
+  ]
 }

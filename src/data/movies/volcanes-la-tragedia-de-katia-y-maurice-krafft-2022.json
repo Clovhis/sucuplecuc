@@ -16,7 +16,9 @@
 	"director": "Sara Dosa",
 	"mainCast": [
 		"Katia Krafft",
-		"Maurice Krafft"
+		"Maurice Krafft",
+		"Guillaume Tremblay",
+		"Miranda July"
 	],
 	"productionCompany": "Sandbox Films",
 	"cinepostaScore": 7,
@@ -52,5 +54,35 @@
 	"premiereLabel": "",
 	"releasePlatform": "Disney Plus",
 	"country": "CA",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Guillaume Tremblay",
+			"character": "Maurice Krafft (voice)",
+			"tmdbMovieId": 913823,
+			"tmdbPersonId": 1290672,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Miranda July",
+			"character": "Self - Narrator (voice)",
+			"tmdbMovieId": 913823,
+			"tmdbPersonId": 16860,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Katia Krafft",
+			"character": "Self (archive footage)",
+			"tmdbMovieId": 913823,
+			"tmdbPersonId": 1701875,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maurice Krafft",
+			"character": "Self (archive footage)",
+			"tmdbMovieId": 913823,
+			"tmdbPersonId": 1701876,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

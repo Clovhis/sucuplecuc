@@ -26,7 +26,9 @@
 		"Christian Bale",
 		"Justin Theroux",
 		"Josh Lucas",
-		"Willem Dafoe"
+		"Willem Dafoe",
+		"Chloë Sevigny",
+		"Reese Witherspoon"
 	],
 	"productionCompany": "Lions Gate Films, Edward R. Pressman Film",
 	"cinepostaScore": 8,
@@ -86,6 +88,20 @@
 			"tmdbMovieId": 1359,
 			"tmdbPersonId": 5293,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chloë Sevigny",
+			"character": "Jean",
+			"tmdbMovieId": 1359,
+			"tmdbPersonId": 2838,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Reese Witherspoon",
+			"character": "Evelyn Williams",
+			"tmdbMovieId": 1359,
+			"tmdbPersonId": 368,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

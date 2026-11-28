@@ -46,17 +46,54 @@
 			"notForYouIf": "Necesitás una misión lineal, una amenaza con forma fija o un final que traduzca cada símbolo."
 		},
 		"becauseYouLiked": [
-		"ex-machina-2014",
-		"piscina-infinita-2023"
-	],
-	"related": [
-		"titane-2021",
-		"arrival-2016",
-		"coherencia-2013",
-		"brazil-la-pelicula-1985"
-	]
-},
+			"ex-machina-2014",
+			"piscina-infinita-2023"
+		],
+		"related": [
+			"titane-2021",
+			"arrival-2016",
+			"coherencia-2013",
+			"brazil-la-pelicula-1985"
+		]
+	},
 	"review": "Alex Garland combina expedición, duelo y mutación para preguntar si cambiar también puede ser una forma de desaparecer. El diseño de la zona mezcla flores, animales y reflejos en una belleza que nunca deja de resultar amenazante. Natalie Portman y el elenco coral sostienen una ciencia ficción adulta, más interesada en la transformación que en la explicación. El equipo no vuelve igual de la zona, y la película deja que la transformación resulte tan fascinante como difícil de explicar.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Natalie Portman",
+			"character": "Lena",
+			"tmdbMovieId": 300668,
+			"tmdbPersonId": 524,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jennifer Jason Leigh",
+			"character": "Dr Ventress",
+			"tmdbMovieId": 300668,
+			"tmdbPersonId": 10431,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gina Rodriguez",
+			"character": "Anya Thorensen",
+			"tmdbMovieId": 300668,
+			"tmdbPersonId": 180486,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tessa Thompson",
+			"character": "Josie Radek",
+			"tmdbMovieId": 300668,
+			"tmdbPersonId": 62561,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tuva Novotny",
+			"character": "Cass Sheppard",
+			"tmdbMovieId": 300668,
+			"tmdbPersonId": 67737,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

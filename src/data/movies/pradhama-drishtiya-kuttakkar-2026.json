@@ -23,7 +23,9 @@
 	"director": "Shahad Nilambur",
 	"mainCast": [
 		"Parvathy Thiruvothu",
-		"Mathew Thomas"
+		"Mathew Thomas",
+		"Vijayaraghavan",
+		"Azees Nedumangad"
 	],
 	"productionCompany": "11 Icons Film Productions",
 	"cinepostaScore": 8,
@@ -50,5 +52,35 @@
 		]
 	},
 	"review": "Shahad Nilambur encuentra una buena puerta de entrada al policial en Aleena: alguien que llega a la fuerza por una pérdida y debe aprender a leer sus reglas sobre la marcha. Parvathy Thiruvothu le da espesor a esa mezcla de vulnerabilidad y atención, mientras Mathew Thomas ayuda a mantener el caso cerca de las personas que lo padecen. Las maniobras del guion acumulan tensión y también algunas soluciones discutibles. Lo más atractivo está en ese juego de versiones y lealtades, donde averiguar qué pasó nunca alcanza para decidir en quién confiar.",
-	"runtimeMinutes": 161
+	"runtimeMinutes": 161,
+	"castCharacters": [
+		{
+			"actor": "Vijayaraghavan",
+			"character": "Harris Meeran",
+			"tmdbMovieId": 1544847,
+			"tmdbPersonId": 584765,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Azees Nedumangad",
+			"character": "SI Xavier",
+			"tmdbMovieId": 1544847,
+			"tmdbPersonId": 1627904,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Parvathy Thiruvothu",
+			"character": "Aleena Abraham",
+			"tmdbMovieId": 1544847,
+			"tmdbPersonId": 1053894,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mathew Thomas",
+			"character": "Sreenath Ayyappan",
+			"tmdbMovieId": 1544847,
+			"tmdbPersonId": 2236875,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

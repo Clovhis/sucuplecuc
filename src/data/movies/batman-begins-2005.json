@@ -18,7 +18,12 @@
 	"mainCast": [
 		"Christian Bale",
 		"Michael Caine",
-		"Liam Neeson"
+		"Liam Neeson",
+		"Katie Holmes",
+		"Gary Oldman",
+		"Cillian Murphy",
+		"Tom Wilkinson",
+		"Rutger Hauer"
 	],
 	"productionCompany": "DC Comics",
 	"cinepostaScore": 7,
@@ -74,6 +79,41 @@
 			"tmdbMovieId": 272,
 			"tmdbPersonId": 3896,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katie Holmes",
+			"character": "Rachel Dawes",
+			"tmdbMovieId": 272,
+			"tmdbPersonId": 3897,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gary Oldman",
+			"character": "Jim Gordon",
+			"tmdbMovieId": 272,
+			"tmdbPersonId": 64,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cillian Murphy",
+			"character": "Dr. Jonathan Crane",
+			"tmdbMovieId": 272,
+			"tmdbPersonId": 2037,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom Wilkinson",
+			"character": "Carmine Falcone",
+			"tmdbMovieId": 272,
+			"tmdbPersonId": 207,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rutger Hauer",
+			"character": "Earle",
+			"tmdbMovieId": 272,
+			"tmdbPersonId": 585,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

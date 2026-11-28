@@ -15,7 +15,9 @@
 	"mainCast": [
 		"Paul Newman",
 		"Robert Redford",
-		"Robert Shaw"
+		"Robert Shaw",
+		"Charles Durning",
+		"Harold Gould"
 	],
 	"productionCompany": "Universal Pictures, The Zanuck/Brown Company",
 	"cinepostaScore": 8,
@@ -84,6 +86,20 @@
 			"tmdbMovieId": 9277,
 			"tmdbPersonId": 8606,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles Durning",
+			"character": "Lt. Wm. Snyder",
+			"tmdbMovieId": 9277,
+			"tmdbPersonId": 1466,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Harold Gould",
+			"character": "Kid Twist",
+			"tmdbMovieId": 9277,
+			"tmdbPersonId": 14833,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

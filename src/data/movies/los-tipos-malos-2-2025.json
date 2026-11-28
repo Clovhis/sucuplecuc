@@ -23,7 +23,10 @@
 	"director": "Pierre Perifel",
 	"mainCast": [
 		"Sam Rockwell",
-		"Marc Maron"
+		"Marc Maron",
+		"Craig Robinson",
+		"Anthony Ramos",
+		"Natasha Lyonne"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -66,6 +69,27 @@
 			"tmdbMovieId": 1175942,
 			"tmdbPersonId": 1231717,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Craig Robinson",
+			"character": "Shark (voice)",
+			"tmdbMovieId": 1175942,
+			"tmdbPersonId": 64342,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anthony Ramos",
+			"character": "Piranha (voice)",
+			"tmdbMovieId": 1175942,
+			"tmdbPersonId": 1560244,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Natasha Lyonne",
+			"character": "Doom aka Susan (voice)",
+			"tmdbMovieId": 1175942,
+			"tmdbPersonId": 10871,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -23,7 +23,8 @@
 	"mainCast": [
 		"Anne Hathaway",
 		"Dakota Johnson",
-		"Josh Hartnett"
+		"Josh Hartnett",
+		"Ismael Cruz Cordova"
 	],
 	"productionCompany": "Eat the Cat, Semi-Formal Productions, Shiny Penny, Somewhere Pictures, Heartbones Entertainment",
 	"cinepostaScore": 6,
@@ -50,5 +51,35 @@
 		}
 	},
 	"review": "La casa de los Crawford tiene una ocupante de más incluso cuando nadie parece moverse: el texto que Lowen encontró. Verity organiza su suspenso alrededor de la lectura, porque cada página modifica lo que la protagonista cree saber sobre la pareja que la hospeda. Hathaway y Johnson aportan dos presencias muy distintas a ese duelo entre intimidad y sospecha. El problema aparece cuando la necesidad de sacudir al público empuja las revelaciones por encima de la credibilidad. Queda un thriller de pulsión melodramática, más interesado en contaminar el deseo con desconfianza que en armar una investigación prolija.",
-	"runtimeMinutes": 114
+	"runtimeMinutes": 114,
+	"castCharacters": [
+		{
+			"actor": "Ismael Cruz Cordova",
+			"character": "Corey",
+			"tmdbMovieId": 1283515,
+			"tmdbPersonId": 1100144,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anne Hathaway",
+			"character": "Verity Crawford",
+			"tmdbMovieId": 1283515,
+			"tmdbPersonId": 1813,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dakota Johnson",
+			"character": "Lowen Ashleigh",
+			"tmdbMovieId": 1283515,
+			"tmdbPersonId": 118545,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Josh Hartnett",
+			"character": "Jeremy Crawford",
+			"tmdbMovieId": 1283515,
+			"tmdbPersonId": 2299,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

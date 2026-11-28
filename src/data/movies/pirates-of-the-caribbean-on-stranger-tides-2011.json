@@ -18,7 +18,9 @@
 	"mainCast": [
 		"Johnny Depp",
 		"Penélope Cruz",
-		"Geoffrey Rush"
+		"Geoffrey Rush",
+		"Sam Claflin",
+		"Stephen Graham"
 	],
 	"productionCompany": "Walt Disney Pictures, Jerry Bruckheimer Films",
 	"cinepostaScore": 3,
@@ -73,6 +75,20 @@
 			"tmdbMovieId": 1865,
 			"tmdbPersonId": 118,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Claflin",
+			"character": "Philip",
+			"tmdbMovieId": 1865,
+			"tmdbPersonId": 237455,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Stephen Graham",
+			"character": "Scrum",
+			"tmdbMovieId": 1865,
+			"tmdbPersonId": 1115,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -22,7 +22,10 @@
 	"mainCast": [
 		"Martin Mull",
 		"Steve Martin",
-		"Tom Waits"
+		"Tom Waits",
+		"Bob Saget",
+		"Fred Willard",
+		"Seth MacFarlane"
 	],
 	"productionCompany": "Netflix",
 	"cinepostaScore": 8,
@@ -50,5 +53,49 @@
 		]
 	},
 	"review": "La pregunta del título tiene sentido porque el reconocimiento televisivo no alcanza para explicar todo lo que Martin Mull hacía. El documental reúne voces cercanas y se vuelve más particular cuando deja entrar sus pinturas: ahí el humor también aparece en la manera de mirar personas, casas y costumbres. Los recuerdos de colegas ayudan a ubicar ese cruce entre disciplinas. Por momentos, la acumulación de elogios aplana las diferencias que podrían complicar el retrato. El material artístico permite salir de ese tono de homenaje, aunque la película no siempre se queda el tiempo suficiente frente a las obras.",
-	"runtimeMinutes": 94
+	"runtimeMinutes": 94,
+	"castCharacters": [
+		{
+			"actor": "Bob Saget",
+			"character": "Self",
+			"tmdbMovieId": 1756138,
+			"tmdbPersonId": 72450,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Fred Willard",
+			"character": "Self",
+			"tmdbMovieId": 1756138,
+			"tmdbPersonId": 20753,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Seth MacFarlane",
+			"character": "Self",
+			"tmdbMovieId": 1756138,
+			"tmdbPersonId": 52139,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Martin Mull",
+			"character": "Self",
+			"tmdbMovieId": 1756138,
+			"tmdbPersonId": 80742,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Steve Martin",
+			"character": "Self",
+			"tmdbMovieId": 1756138,
+			"tmdbPersonId": 67773,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom Waits",
+			"character": "Self",
+			"tmdbMovieId": 1756138,
+			"tmdbPersonId": 2887,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

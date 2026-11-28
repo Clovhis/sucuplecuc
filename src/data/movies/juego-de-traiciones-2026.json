@@ -22,7 +22,11 @@
 	"director": "Martin Campbell",
 	"mainCast": [
 		"Samuel L. Jackson",
-		"Eva Green"
+		"Eva Green",
+		"Eoin Macken",
+		"Jason Fernández",
+		"Paulo Rivera",
+		"Nicole Ansari-Cox"
 	],
 	"productionCompany": "Mendips Film, Atelier11, Head Gear Films, Vacancy Films, Safe Place Films, Metrol Technology, Gemstone Films",
 	"cinepostaScore": 4,
@@ -67,6 +71,34 @@
 			"tmdbMovieId": 1480574,
 			"tmdbPersonId": 10912,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Eoin Macken",
+			"character": "Dani",
+			"tmdbMovieId": 1480574,
+			"tmdbPersonId": 111801,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jason Fernández",
+			"character": "Chad",
+			"tmdbMovieId": 1480574,
+			"tmdbPersonId": 2773674,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Paulo Rivera",
+			"character": "Dr.Castro",
+			"tmdbMovieId": 1480574,
+			"tmdbPersonId": 1361889,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nicole Ansari-Cox",
+			"character": "Sister Rachel",
+			"tmdbMovieId": 1480574,
+			"tmdbPersonId": 204755,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

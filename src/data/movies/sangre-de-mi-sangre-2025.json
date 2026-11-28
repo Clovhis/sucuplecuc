@@ -22,7 +22,9 @@
 	"director": "Barry Jay",
 	"mainCast": [
 		"Dylan Flashner",
-		"Ariel Winter"
+		"Ariel Winter",
+		"Mayim Bialik",
+		"Dermot Mulroney"
 	],
 	"productionCompany": "Code 3 Films, Green Light Pictures",
 	"cinepostaScore": 4,
@@ -52,5 +54,35 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 89,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Mayim Bialik",
+			"character": "Anabelle Weiss",
+			"tmdbMovieId": 1400514,
+			"tmdbPersonId": 167640,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dermot Mulroney",
+			"character": "Gabe",
+			"tmdbMovieId": 1400514,
+			"tmdbPersonId": 20212,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dylan Flashner",
+			"character": "Eli",
+			"tmdbMovieId": 1400514,
+			"tmdbPersonId": 2743359,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ariel Winter",
+			"character": "Hayley",
+			"tmdbMovieId": 1400514,
+			"tmdbPersonId": 42160,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

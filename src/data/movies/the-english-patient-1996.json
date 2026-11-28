@@ -16,7 +16,9 @@
 	"mainCast": [
 		"Ralph Fiennes",
 		"Juliette Binoche",
-		"Willem Dafoe"
+		"Willem Dafoe",
+		"Kristin Scott Thomas",
+		"Colin Firth"
 	],
 	"productionCompany": "Tiger Moth Productions",
 	"cinepostaScore": 8,
@@ -86,6 +88,20 @@
 			"tmdbMovieId": 409,
 			"tmdbPersonId": 5293,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kristin Scott Thomas",
+			"character": "Katharine Clifton",
+			"tmdbMovieId": 409,
+			"tmdbPersonId": 5470,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Colin Firth",
+			"character": "Geoffrey Clifton",
+			"tmdbMovieId": 409,
+			"tmdbPersonId": 5472,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -27,7 +27,12 @@
 	"director": "Gore Verbinski",
 	"mainCast": [
 		"Johnny Depp",
-		"Isla Fisher"
+		"Isla Fisher",
+		"Ned Beatty",
+		"Bill Nighy",
+		"Abigail Breslin",
+		"Alfred Molina",
+		"Harry Dean Stanton"
 	],
 	"productionCompany": "Paramount Animation",
 	"cinepostaScore": 7,
@@ -70,6 +75,41 @@
 			"tmdbMovieId": 44896,
 			"tmdbPersonId": 52848,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ned Beatty",
+			"character": "Mayor (voice)",
+			"tmdbMovieId": 44896,
+			"tmdbPersonId": 13726,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Nighy",
+			"character": "Rattlesnake Jake (voice)",
+			"tmdbMovieId": 44896,
+			"tmdbPersonId": 2440,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Abigail Breslin",
+			"character": "Priscilla (voice)",
+			"tmdbMovieId": 44896,
+			"tmdbPersonId": 17140,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alfred Molina",
+			"character": "Roadkill (voice)",
+			"tmdbMovieId": 44896,
+			"tmdbPersonId": 658,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Harry Dean Stanton",
+			"character": "Balthazar (voice)",
+			"tmdbMovieId": 44896,
+			"tmdbPersonId": 5048,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

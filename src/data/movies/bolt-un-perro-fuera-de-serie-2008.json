@@ -23,7 +23,9 @@
 	"director": "Chris Williams",
 	"mainCast": [
 		"John Travolta",
-		"Malcolm McDowell"
+		"Malcolm McDowell",
+		"Miley Cyrus",
+		"Diedrich Bader"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 7,
@@ -66,6 +68,20 @@
 			"tmdbMovieId": 13053,
 			"tmdbPersonId": 56890,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miley Cyrus",
+			"character": "Penny (voice)",
+			"tmdbMovieId": 13053,
+			"tmdbPersonId": 76594,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diedrich Bader",
+			"character": "Veteran Cat (voice)",
+			"tmdbMovieId": 13053,
+			"tmdbPersonId": 5727,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

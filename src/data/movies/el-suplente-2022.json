@@ -15,7 +15,11 @@
 	"director": "Diego Lerman",
 	"mainCast": [
 		"Juan Minujín",
-		"Bárbara Lennie"
+		"Bárbara Lennie",
+		"Alfredo Castro",
+		"Rita Cortese",
+		"María Merlino",
+		"Agustín Rittano"
 	],
 	"productionCompany": "Campo Cine / Gramercy Park Media",
 	"cinepostaScore": 7,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 886755,
 			"tmdbPersonId": 724188,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alfredo Castro",
+			"character": "El Chileno",
+			"tmdbMovieId": 886755,
+			"tmdbPersonId": 225011,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rita Cortese",
+			"character": "Amalia",
+			"tmdbMovieId": 886755,
+			"tmdbPersonId": 99113,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "María Merlino",
+			"character": "Clara",
+			"tmdbMovieId": 886755,
+			"tmdbPersonId": 1493052,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Agustín Rittano",
+			"character": "El Perro Olmos",
+			"tmdbMovieId": 886755,
+			"tmdbPersonId": 2114683,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

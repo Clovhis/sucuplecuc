@@ -55,5 +55,42 @@
 	},
 	"review": "Después de hora sigue a Paul, un oficinista que sale una noche al Soho por una cita y queda atrapado en una cadena de accidentes, malentendidos y gente cada vez más extraña. Martin Scorsese filma Manhattan como una pesadilla cómica: cámara nerviosa, cortes rápidos y una sensación de que cada salida abre otra trampa. Griffin Dunne sostiene el desconcierto sin perder humanidad, y el elenco secundario convierte cada cruce en un remate. Es corta, feroz y muy graciosa; vale incluso si conocés a Scorsese sólo por sus dramas criminales.",
 	"runtimeMinutes": 97,
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Griffin Dunne",
+			"character": "Paul Hackett",
+			"tmdbMovieId": 10843,
+			"tmdbPersonId": 2171,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rosanna Arquette",
+			"character": "Marcy",
+			"tmdbMovieId": 10843,
+			"tmdbPersonId": 2165,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Verna Bloom",
+			"character": "June",
+			"tmdbMovieId": 10843,
+			"tmdbPersonId": 55192,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tommy Chong",
+			"character": "Pepe",
+			"tmdbMovieId": 10843,
+			"tmdbPersonId": 63208,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Linda Fiorentino",
+			"character": "Kiki",
+			"tmdbMovieId": 10843,
+			"tmdbPersonId": 9625,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

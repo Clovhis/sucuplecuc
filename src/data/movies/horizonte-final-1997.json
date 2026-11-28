@@ -28,7 +28,9 @@
 		"Laurence Fishburne",
 		"Sam Neill",
 		"Kathleen Quinlan",
-		"Joely Richardson"
+		"Joely Richardson",
+		"Richard T. Jones",
+		"Jason Isaacs"
 	],
 	"productionCompany": "Gordon Company",
 	"cinepostaScore": 5,
@@ -90,6 +92,20 @@
 			"tmdbMovieId": 8413,
 			"tmdbPersonId": 20810,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard T. Jones",
+			"character": "Cooper",
+			"tmdbMovieId": 8413,
+			"tmdbPersonId": 55755,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jason Isaacs",
+			"character": "D.J.",
+			"tmdbMovieId": 8413,
+			"tmdbPersonId": 11355,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

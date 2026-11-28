@@ -20,7 +20,9 @@
 	"director": "Joseph Sargent",
 	"mainCast": [
 		"Walter Matthau",
-		"Robert Shaw"
+		"Robert Shaw",
+		"Héctor Elizondo",
+		"James Broderick"
 	],
 	"productionCompany": "Palomar Pictures, United Artists",
 	"cinepostaScore": 8,
@@ -66,6 +68,20 @@
 			"tmdbMovieId": 8333,
 			"tmdbPersonId": 8606,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Héctor Elizondo",
+			"character": "Grey",
+			"tmdbMovieId": 8333,
+			"tmdbPersonId": 1210,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Broderick",
+			"character": "Denny Doyle",
+			"tmdbMovieId": 8333,
+			"tmdbPersonId": 14542,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

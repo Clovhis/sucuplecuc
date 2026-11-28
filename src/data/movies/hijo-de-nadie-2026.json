@@ -53,5 +53,28 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Flow"
+	],
+	"castCharacters": [
+		{
+			"actor": "Romain Duris",
+			"character": "Thomas",
+			"tmdbMovieId": 1309406,
+			"tmdbPersonId": 17497,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cristiana Capotondi",
+			"character": "Matilda",
+			"tmdbMovieId": 1309406,
+			"tmdbPersonId": 78533,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Vithaya Pansringarm",
+			"character": "Chaan",
+			"tmdbMovieId": 1309406,
+			"tmdbPersonId": 1102621,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

@@ -21,7 +21,9 @@
   "director": "Dennis Hopper",
   "mainCast": [
     "Peter Fonda",
-    "Jack Nicholson"
+    "Jack Nicholson",
+    "Dennis Hopper",
+    "Phil Spector"
   ],
   "productionCompany": "Raybert Productions, Pando Company, Columbia Pictures",
   "runtimeMinutes": 95,
@@ -63,6 +65,20 @@
       "tmdbMovieId": 624,
       "tmdbPersonId": 514,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Dennis Hopper",
+      "character": "Billy",
+      "tmdbMovieId": 624,
+      "tmdbPersonId": 2778,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Phil Spector",
+      "character": "Connection",
+      "tmdbMovieId": 624,
+      "tmdbPersonId": 8961,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

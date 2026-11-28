@@ -21,7 +21,8 @@
 	"director": "Sacha Baron Cohen",
 	"mainCast": [
 		"Sacha Baron Cohen",
-		"Morgana Robinson"
+		"Morgana Robinson",
+		"Tiffany Haddish"
 	],
 	"productionCompany": "Four by Two Films",
 	"cinepostaScore": 5,
@@ -51,5 +52,28 @@
 	"catalogAddedAt": "2026-10-30",
 	"runtimeMinutes": 89,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Tiffany Haddish",
+			"character": "Lab Technician",
+			"tmdbMovieId": 1727734,
+			"tmdbPersonId": 1230868,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sacha Baron Cohen",
+			"character": "Ali G / Nira Cain-N'Degeocello / Erran Morad",
+			"tmdbMovieId": 1727734,
+			"tmdbPersonId": 6730,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Morgana Robinson",
+			"character": "Julie",
+			"tmdbMovieId": 1727734,
+			"tmdbPersonId": 1370805,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

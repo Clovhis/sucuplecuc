@@ -27,7 +27,10 @@
 	"director": "Peter Ramsey",
 	"mainCast": [
 		"Chris Pine",
-		"Alec Baldwin"
+		"Alec Baldwin",
+		"Jude Law",
+		"Isla Fisher",
+		"Hugh Jackman"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -70,6 +73,27 @@
 			"tmdbMovieId": 81188,
 			"tmdbPersonId": 7447,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jude Law",
+			"character": "Pitch (voice)",
+			"tmdbMovieId": 81188,
+			"tmdbPersonId": 9642,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Isla Fisher",
+			"character": "Tooth (voice)",
+			"tmdbMovieId": 81188,
+			"tmdbPersonId": 52848,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hugh Jackman",
+			"character": "Bunny (voice)",
+			"tmdbMovieId": 81188,
+			"tmdbPersonId": 6968,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

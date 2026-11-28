@@ -16,7 +16,9 @@
 	"mainCast": [
 		"Tom Hanks",
 		"Robin Wright",
-		"Gary Sinise"
+		"Gary Sinise",
+		"Sally Field",
+		"Mykelti Williamson"
 	],
 	"productionCompany": "The Tisch Company",
 	"cinepostaScore": 8,
@@ -85,6 +87,20 @@
 			"tmdbMovieId": 13,
 			"tmdbPersonId": 33,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sally Field",
+			"character": "Mrs. Gump",
+			"tmdbMovieId": 13,
+			"tmdbPersonId": 35,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mykelti Williamson",
+			"character": "Bubba Blue",
+			"tmdbMovieId": 13,
+			"tmdbPersonId": 34,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

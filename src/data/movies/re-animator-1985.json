@@ -56,5 +56,28 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jeffrey Combs",
+			"character": "Herbert West",
+			"tmdbMovieId": 1694,
+			"tmdbPersonId": 27993,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Barbara Crampton",
+			"character": "Megan Halsey",
+			"tmdbMovieId": 1694,
+			"tmdbPersonId": 27995,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bruce Abbott",
+			"character": "Dan Cain",
+			"tmdbMovieId": 1694,
+			"tmdbPersonId": 27994,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

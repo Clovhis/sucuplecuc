@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Ryan Gosling",
 		"Harrison Ford",
-		"Ana de Armas"
+		"Ana de Armas",
+		"Dave Bautista",
+		"Robin Wright",
+		"Jared Leto"
 	],
 	"productionCompany": "Alcon Entertainment, Columbia Pictures, Scott Free Productions",
 	"cinepostaScore": 8,
@@ -80,6 +83,27 @@
 			"tmdbMovieId": 335984,
 			"tmdbPersonId": 224513,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dave Bautista",
+			"character": "Sapper Morton",
+			"tmdbMovieId": 335984,
+			"tmdbPersonId": 543530,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robin Wright",
+			"character": "Lieutenant Joshi",
+			"tmdbMovieId": 335984,
+			"tmdbPersonId": 32,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jared Leto",
+			"character": "Niander Wallace",
+			"tmdbMovieId": 335984,
+			"tmdbPersonId": 7499,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

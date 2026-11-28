@@ -23,7 +23,10 @@
 	"director": "Brian Duffield",
 	"mainCast": [
 		"Austin Abrams",
-		"Josh Brolin"
+		"Josh Brolin",
+		"Elisabeth Shue",
+		"John Ortiz",
+		"Jane Levy"
 	],
 	"productionCompany": "Imagine Entertainment, 3 Arts Entertainment",
 	"cinepostaScore": 7,
@@ -66,6 +69,27 @@
 			"tmdbMovieId": 1255833,
 			"tmdbPersonId": 16851,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elisabeth Shue",
+			"character": "Zara Gardiner",
+			"tmdbMovieId": 1255833,
+			"tmdbPersonId": 1951,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Ortiz",
+			"character": "Hewey",
+			"tmdbMovieId": 1255833,
+			"tmdbPersonId": 40543,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jane Levy",
+			"character": "Eva Gardiner",
+			"tmdbMovieId": 1255833,
+			"tmdbPersonId": 530618,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

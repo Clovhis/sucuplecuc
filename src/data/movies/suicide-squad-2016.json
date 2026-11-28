@@ -13,7 +13,11 @@
 	"mainCast": [
 		"Will Smith",
 		"Jared Leto",
-		"Margot Robbie"
+		"Margot Robbie",
+		"Joel Kinnaman",
+		"Viola Davis",
+		"Jai Courtney",
+		"Jay Hernandez"
 	],
 	"productionCompany": "DC Studios",
 	"cinepostaScore": 3,
@@ -76,6 +80,34 @@
 			"tmdbMovieId": 297761,
 			"tmdbPersonId": 234352,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joel Kinnaman",
+			"character": "Rick Flag",
+			"tmdbMovieId": 297761,
+			"tmdbPersonId": 92404,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Viola Davis",
+			"character": "Amanda Waller",
+			"tmdbMovieId": 297761,
+			"tmdbPersonId": 19492,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jai Courtney",
+			"character": "Boomerang",
+			"tmdbMovieId": 297761,
+			"tmdbPersonId": 224181,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jay Hernandez",
+			"character": "Diablo",
+			"tmdbMovieId": 297761,
+			"tmdbPersonId": 19487,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

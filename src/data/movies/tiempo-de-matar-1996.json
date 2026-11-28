@@ -25,7 +25,10 @@
 		"Matthew McConaughey",
 		"Sandra Bullock",
 		"Samuel L. Jackson",
-		"Kevin Spacey"
+		"Kevin Spacey",
+		"Ashley Judd",
+		"Donald Sutherland",
+		"Oliver Platt"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 7,
@@ -83,6 +86,27 @@
 			"tmdbMovieId": 1645,
 			"tmdbPersonId": 1979,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ashley Judd",
+			"character": "Carla Brigance",
+			"tmdbMovieId": 1645,
+			"tmdbPersonId": 15852,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Donald Sutherland",
+			"character": "Lucien Wilbanks",
+			"tmdbMovieId": 1645,
+			"tmdbPersonId": 55636,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Oliver Platt",
+			"character": "Harry Rex Vonner",
+			"tmdbMovieId": 1645,
+			"tmdbPersonId": 17485,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

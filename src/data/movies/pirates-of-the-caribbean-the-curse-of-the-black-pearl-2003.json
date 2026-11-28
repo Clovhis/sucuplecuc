@@ -18,7 +18,9 @@
 	"mainCast": [
 		"Johnny Depp",
 		"Orlando Bloom",
-		"Keira Knightley"
+		"Keira Knightley",
+		"Geoffrey Rush",
+		"Jonathan Pryce"
 	],
 	"productionCompany": "Jerry Bruckheimer Films, Walt Disney Pictures",
 	"cinepostaScore": 8,
@@ -73,6 +75,20 @@
 			"tmdbMovieId": 22,
 			"tmdbPersonId": 116,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geoffrey Rush",
+			"character": "Barbossa",
+			"tmdbMovieId": 22,
+			"tmdbPersonId": 118,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jonathan Pryce",
+			"character": "Governor Weatherby Swann",
+			"tmdbMovieId": 22,
+			"tmdbPersonId": 378,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -15,7 +15,11 @@
 	"director": "Paul Thomas Anderson",
 	"mainCast": [
 		"Joaquin Phoenix",
-		"Philip Seymour Hoffman"
+		"Philip Seymour Hoffman",
+		"Amy Adams",
+		"Rami Malek",
+		"Laura Dern",
+		"Jesse Plemons"
 	],
 	"productionCompany": "Annapurna Pictures",
 	"cinepostaScore": 7,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 68722,
 			"tmdbPersonId": 1233,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amy Adams",
+			"character": "Peggy Dodd",
+			"tmdbMovieId": 68722,
+			"tmdbPersonId": 9273,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rami Malek",
+			"character": "Clark",
+			"tmdbMovieId": 68722,
+			"tmdbPersonId": 17838,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Helen Sullivan",
+			"tmdbMovieId": 68722,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jesse Plemons",
+			"character": "Val Dodd",
+			"tmdbMovieId": 68722,
+			"tmdbPersonId": 88124,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -17,7 +17,9 @@
 	"mainCast": [
 		"Pam Grier",
 		"Samuel L. Jackson",
-		"Robert De Niro"
+		"Robert De Niro",
+		"Michael Keaton",
+		"Robert Forster"
 	],
 	"productionCompany": "A Band Apart y Miramax",
 	"cinepostaScore": 9,
@@ -73,6 +75,20 @@
 			"tmdbMovieId": 184,
 			"tmdbPersonId": 380,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Keaton",
+			"character": "Ray Nicolette",
+			"tmdbMovieId": 184,
+			"tmdbPersonId": 2232,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robert Forster",
+			"character": "Max Cherry",
+			"tmdbMovieId": 184,
+			"tmdbPersonId": 5694,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

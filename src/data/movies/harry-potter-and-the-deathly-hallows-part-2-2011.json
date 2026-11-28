@@ -19,7 +19,10 @@
 	"mainCast": [
 		"Daniel Radcliffe",
 		"Emma Watson",
-		"Rupert Grint"
+		"Rupert Grint",
+		"Ralph Fiennes",
+		"Alan Rickman",
+		"Michael Gambon"
 	],
 	"productionCompany": "Heyday Films, Warner Bros. Entertainment",
 	"cinepostaScore": 8,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 12445,
 			"tmdbPersonId": 10989,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Lord Voldemort",
+			"tmdbMovieId": 12445,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alan Rickman",
+			"character": "Severus Snape",
+			"tmdbMovieId": 12445,
+			"tmdbPersonId": 4566,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Gambon",
+			"character": "Albus Dumbledore",
+			"tmdbMovieId": 12445,
+			"tmdbPersonId": 5658,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

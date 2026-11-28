@@ -24,7 +24,9 @@
 	"mainCast": [
 		"Eddie Murphy",
 		"Nick Nolte",
-		"James Remar"
+		"James Remar",
+		"Annette O'Toole",
+		"David Patrick Kelly"
 	],
 	"productionCompany": "Lawrence Gordon Productions, Paramount Pictures",
 	"cinepostaScore": 8,
@@ -75,6 +77,20 @@
 			"tmdbMovieId": 150,
 			"tmdbPersonId": 1736,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Annette O'Toole",
+			"character": "Elaine",
+			"tmdbMovieId": 150,
+			"tmdbPersonId": 1734,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Patrick Kelly",
+			"character": "Luther",
+			"tmdbMovieId": 150,
+			"tmdbPersonId": 1737,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

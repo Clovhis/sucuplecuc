@@ -19,7 +19,8 @@
 	"mainCast": [
 		"Liam Neeson",
 		"Ewan McGregor",
-		"Natalie Portman"
+		"Natalie Portman",
+		"Ian McDiarmid"
 	],
 	"productionCompany": "Lucasfilm",
 	"cinepostaScore": 5,
@@ -74,6 +75,13 @@
 			"tmdbMovieId": 1893,
 			"tmdbPersonId": 524,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian McDiarmid",
+			"character": "Senator Palpatine",
+			"tmdbMovieId": 1893,
+			"tmdbPersonId": 27762,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

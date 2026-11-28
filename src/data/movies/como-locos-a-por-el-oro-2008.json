@@ -24,7 +24,10 @@
 	"mainCast": [
 		"Matthew McConaughey",
 		"Kate Hudson",
-		"Donald Sutherland"
+		"Donald Sutherland",
+		"Ewen Bremner",
+		"Ray Winstone",
+		"Kevin Hart"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 5,
@@ -75,6 +78,27 @@
 			"tmdbMovieId": 8676,
 			"tmdbPersonId": 55636,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ewen Bremner",
+			"character": "Alfonz",
+			"tmdbMovieId": 8676,
+			"tmdbPersonId": 1125,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ray Winstone",
+			"character": "Moe Fitch",
+			"tmdbMovieId": 8676,
+			"tmdbPersonId": 5538,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kevin Hart",
+			"character": "Bigg Bunny",
+			"tmdbMovieId": 8676,
+			"tmdbPersonId": 55638,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

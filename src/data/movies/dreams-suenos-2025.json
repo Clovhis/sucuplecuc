@@ -23,7 +23,8 @@
 	"director": "Michel Franco",
 	"mainCast": [
 		"Jessica Chastain",
-		"Isaac Hernández"
+		"Isaac Hernández",
+		"Rupert Friend"
 	],
 	"productionCompany": "Freckle Films",
 	"cinepostaScore": 3,
@@ -53,5 +54,28 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 98,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Rupert Friend",
+			"character": "Jake McCarthy",
+			"tmdbMovieId": 1134463,
+			"tmdbPersonId": 36669,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jessica Chastain",
+			"character": "Jennifer McCarthy",
+			"tmdbMovieId": 1134463,
+			"tmdbPersonId": 83002,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Isaac Hernández",
+			"character": "Fernando Rodríguez",
+			"tmdbMovieId": 1134463,
+			"tmdbPersonId": 2630093,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

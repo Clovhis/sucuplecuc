@@ -40,18 +40,41 @@
 			"notForYouIf": "Buscás romance liviano, una redención instantánea o una historia de acoso que castigue sin matices."
 		},
 		"becauseYouLiked": [
-		"your-name-2016",
-		"the-girl-who-leapt-through-time-2006"
-	],
-	"related": [
-		"millennium-actress-2001",
-		"la-princesa-kaguya-del-cosmos-2026",
-		"howls-moving-castle-2004",
-		"the-tale-of-the-princess-kaguya-2013"
-	]
-},
+			"your-name-2016",
+			"the-girl-who-leapt-through-time-2006"
+		],
+		"related": [
+			"millennium-actress-2001",
+			"la-princesa-kaguya-del-cosmos-2026",
+			"howls-moving-castle-2004",
+			"the-tale-of-the-princess-kaguya-2013"
+		]
+	},
 	"review": "A Silent Voice sigue a Shoya, un chico que años después de acosar a una compañera sorda intenta pedirle perdón y reparar el daño que dejó en ambos. Naoko Yamada trata el acoso, la discapacidad y la culpa con sensibilidad, sin convertir a los personajes en ejemplos perfectos ni sermonear cada situación. La animación observa manos, miradas y silencios con una delicadeza que hace muy presente lo que no se dice. A veces acumula conflictos de más, pero el vínculo entre Shoya y Shoko sostiene un drama honesto y profundamente empático.",
 	"synopsis": "Años después de hostigar a Shoko, una compañera sorda, Shoya carga con el rechazo que él mismo provocó. Cuando intenta pedirle perdón, ambos deben aprender a vincularse entre culpas, silencios y amistades difíciles.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Miyu Irino",
+			"character": "Shouya Ishida (voice)",
+			"tmdbMovieId": 378064,
+			"tmdbPersonId": 19588,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Saori Hayami",
+			"character": "Shouko Nishimiya (voice)",
+			"tmdbMovieId": 378064,
+			"tmdbPersonId": 221773,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Aoi Yūki",
+			"character": "Yuzuru Nishimiya (voice)",
+			"tmdbMovieId": 378064,
+			"tmdbPersonId": 936275,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -20,7 +20,10 @@
 		"Daniel Radcliffe",
 		"Emma Watson",
 		"Rupert Grint",
-		"Alan Rickman"
+		"Alan Rickman",
+		"Richard Harris",
+		"Robbie Coltrane",
+		"Maggie Smith"
 	],
 	"productionCompany": "Warner Bros. Pictures, Heyday Films, 1492 Pictures",
 	"cinepostaScore": 7,
@@ -84,6 +87,27 @@
 			"tmdbMovieId": 671,
 			"tmdbPersonId": 4566,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Richard Harris",
+			"character": "Albus Dumbledore",
+			"tmdbMovieId": 671,
+			"tmdbPersonId": 194,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robbie Coltrane",
+			"character": "Hagrid",
+			"tmdbMovieId": 671,
+			"tmdbPersonId": 1923,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maggie Smith",
+			"character": "Professor McGonagall",
+			"tmdbMovieId": 671,
+			"tmdbPersonId": 10978,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

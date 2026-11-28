@@ -50,5 +50,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
 	"country": "BE",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Kris Hitchen",
+			"character": "Ricky",
+			"tmdbMovieId": 522369,
+			"tmdbPersonId": 2188560,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Debbie Honeywood",
+			"character": "Abby",
+			"tmdbMovieId": 522369,
+			"tmdbPersonId": 2188561,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

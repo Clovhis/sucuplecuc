@@ -27,7 +27,9 @@
 	"mainCast": [
 		"William Shatner",
 		"DeForest Kelley",
-		"James Doohan"
+		"James Doohan",
+		"George Takei",
+		"Christopher Lloyd"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 7,
@@ -78,6 +80,20 @@
 			"tmdbMovieId": 157,
 			"tmdbPersonId": 1751,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Takei",
+			"character": "Cmdr. Hikaru Sulu",
+			"tmdbMovieId": 157,
+			"tmdbPersonId": 1752,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Christopher Lloyd",
+			"character": "Cmdr. Kruge",
+			"tmdbMovieId": 157,
+			"tmdbPersonId": 1062,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

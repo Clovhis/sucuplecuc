@@ -19,7 +19,9 @@
 	"director": "George Sluizer",
 	"mainCast": [
 		"Bernard-Pierre Donnadieu",
-		"Gene Bervoets"
+		"Gene Bervoets",
+		"Johanna ter Steege",
+		"Pierre Forget"
 	],
 	"productionCompany": "Argos Films",
 	"cinepostaScore": 7,
@@ -70,6 +72,20 @@
 			"tmdbMovieId": 8740,
 			"tmdbPersonId": 1913732,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Johanna ter Steege",
+			"character": "Saskia Wagter",
+			"tmdbMovieId": 8740,
+			"tmdbPersonId": 55851,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Pierre Forget",
+			"character": "Farmer Laurent",
+			"tmdbMovieId": 8740,
+			"tmdbPersonId": 51948,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

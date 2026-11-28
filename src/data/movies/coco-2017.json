@@ -46,19 +46,42 @@
 			"forFansOf": "Pixar, las historias de memoria y las películas donde la música sirve para reparar una prohibición heredada.",
 			"notForYouIf": "Querés una aventura sin lágrimas, un misterio menos sentimental o una película que no explique su tema con canciones."
 		},
-	"becauseYouLiked": [
-		"hoppers-2026",
-		"lego-batman-la-pelicula-2017"
-	],
-	"related": [
-		"mi-villano-favorito-3-2017",
-		"un-jefe-en-panales-2017",
-		"intensa-mente-2015",
-		"la-gran-aventura-lego-2-2019"
-	]
-},
+		"becauseYouLiked": [
+			"hoppers-2026",
+			"lego-batman-la-pelicula-2017"
+		],
+		"related": [
+			"mi-villano-favorito-3-2017",
+			"un-jefe-en-panales-2017",
+			"intensa-mente-2015",
+			"la-gran-aventura-lego-2-2019"
+		]
+	},
 	"review": "Coco sigue a Miguel, un chico que sueña con tocar música aunque su familia la prohíbe, y lo lleva al mundo de los muertos para entender de dónde viene ese mandato. Lee Unkrich y Adrian Molina construyen un universo colorido que no es sólo decoración: cada regla sirve al tema de la memoria y del lugar que dejan los ausentes. Anthony Gonzalez le da entusiasmo real a Miguel y las canciones entran sin frenar la historia. El final aprieta fuerte y por momentos busca la lágrima, pero se la gana. Vale por su imaginación visual y por una emoción familiar contada con mucha claridad.",
-  "synopsis": "Miguel sueña con ser músico pese a la prohibición de su familia. En el Día de Muertos llega por accidente a la Tierra de los Muertos y deberá encontrar a su antepasado antes de que termine la noche.",
+	"synopsis": "Miguel sueña con ser músico pese a la prohibición de su familia. En el Día de Muertos llega por accidente a la Tierra de los Muertos y deberá encontrar a su antepasado antes de que termine la noche.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Anthony Gonzalez",
+			"character": "Miguel Rivera (voice)",
+			"tmdbMovieId": 354912,
+			"tmdbPersonId": 1193391,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gael Garcia Bernal",
+			"character": "Héctor (voice)",
+			"tmdbMovieId": 354912,
+			"tmdbPersonId": 258,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Benjamin Bratt",
+			"character": "Ernesto de la Cruz (voice)",
+			"tmdbMovieId": 354912,
+			"tmdbPersonId": 4589,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

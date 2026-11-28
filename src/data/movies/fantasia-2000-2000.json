@@ -24,7 +24,9 @@
 	"director": "Gaëtan Brizzi",
 	"mainCast": [
 		"Itzhak Perlman",
-		"Bette Midler"
+		"Bette Midler",
+		"Steve Martin",
+		"James Earl Jones"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 7,
@@ -67,6 +69,20 @@
 			"tmdbMovieId": 49948,
 			"tmdbPersonId": 73931,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve Martin",
+			"character": "Self - Introductory Host",
+			"tmdbMovieId": 49948,
+			"tmdbPersonId": 67773,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Earl Jones",
+			"character": "Self - Host",
+			"tmdbMovieId": 49948,
+			"tmdbPersonId": 15152,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

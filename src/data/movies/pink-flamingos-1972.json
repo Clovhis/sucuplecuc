@@ -55,5 +55,28 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Divine",
+			"character": "Divine / Babs Johnson",
+			"tmdbMovieId": 692,
+			"tmdbPersonId": 10369,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mink Stole",
+			"character": "Connie Marble",
+			"tmdbMovieId": 692,
+			"tmdbPersonId": 9292,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Lochary",
+			"character": "Raymond Marble",
+			"tmdbMovieId": 692,
+			"tmdbPersonId": 10370,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

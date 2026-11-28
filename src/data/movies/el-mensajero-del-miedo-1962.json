@@ -19,7 +19,9 @@
 	"director": "John Frankenheimer",
 	"mainCast": [
 		"Frank Sinatra",
-		"Laurence Harvey"
+		"Laurence Harvey",
+		"Angela Lansbury",
+		"Janet Leigh"
 	],
 	"productionCompany": "M.C. Productions, United Artists",
 	"cinepostaScore": 8,
@@ -65,6 +67,20 @@
 			"tmdbMovieId": 982,
 			"tmdbPersonId": 14729,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Angela Lansbury",
+			"character": "Mrs. Iselin",
+			"tmdbMovieId": 982,
+			"tmdbPersonId": 14730,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Janet Leigh",
+			"character": "Eugenie Rose Chaney",
+			"tmdbMovieId": 982,
+			"tmdbPersonId": 7302,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

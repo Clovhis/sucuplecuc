@@ -24,7 +24,11 @@
 		"John Travolta",
 		"Gene Hackman",
 		"Rene Russo",
-		"Danny DeVito"
+		"Danny DeVito",
+		"Dennis Farina",
+		"Delroy Lindo",
+		"James Gandolfini",
+		"Jon Gries"
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer, Jersey Films",
 	"cinepostaScore": 5,
@@ -82,6 +86,34 @@
 			"tmdbMovieId": 8012,
 			"tmdbPersonId": 518,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dennis Farina",
+			"character": "Ray 'Bones' Barboni",
+			"tmdbMovieId": 8012,
+			"tmdbPersonId": 1117,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Delroy Lindo",
+			"character": "Bo Catlett",
+			"tmdbMovieId": 8012,
+			"tmdbPersonId": 18792,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Gandolfini",
+			"character": "Bear",
+			"tmdbMovieId": 8012,
+			"tmdbPersonId": 4691,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jon Gries",
+			"character": "Ronnie Wingate",
+			"tmdbMovieId": 8012,
+			"tmdbPersonId": 9629,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

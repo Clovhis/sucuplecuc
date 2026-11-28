@@ -19,7 +19,9 @@
 	"director": "Otto Preminger",
 	"mainCast": [
 		"James Stewart",
-		"Lee Remick"
+		"Lee Remick",
+		"Ben Gazzara",
+		"Orson Bean"
 	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 8,
@@ -65,6 +67,20 @@
 			"tmdbMovieId": 93,
 			"tmdbPersonId": 855,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ben Gazzara",
+			"character": "Lt. Frederick Manion",
+			"tmdbMovieId": 93,
+			"tmdbPersonId": 856,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Orson Bean",
+			"character": "Dr. Matthew Smith",
+			"tmdbMovieId": 93,
+			"tmdbPersonId": 863,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

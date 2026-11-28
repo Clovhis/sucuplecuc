@@ -27,7 +27,8 @@
 	"mainCast": [
 		"Sandra Bullock",
 		"Bill Pullman",
-		"Peter Gallagher"
+		"Peter Gallagher",
+		"Jack Warden"
 	],
 	"productionCompany": "Hollywood Pictures",
 	"cinepostaScore": 6,
@@ -80,6 +81,13 @@
 			"tmdbMovieId": 2064,
 			"tmdbPersonId": 8212,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Warden",
+			"character": "Saul Tuttle",
+			"tmdbMovieId": 2064,
+			"tmdbPersonId": 5251,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

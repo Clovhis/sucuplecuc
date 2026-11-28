@@ -20,7 +20,9 @@
 	"mainCast": [
 		"Craig T. Nelson",
 		"Holly Hunter",
-		"Samuel L. Jackson"
+		"Samuel L. Jackson",
+		"Sarah Vowell",
+		"Jason Lee"
 	],
 	"productionCompany": "Pixar, Walt Disney Pictures",
 	"cinepostaScore": 9,
@@ -81,6 +83,20 @@
 			"tmdbMovieId": 9806,
 			"tmdbPersonId": 2231,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sarah Vowell",
+			"character": "Violet Parr (voice)",
+			"tmdbMovieId": 9806,
+			"tmdbPersonId": 59361,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jason Lee",
+			"character": "Buddy Pine / Syndrome (voice)",
+			"tmdbMovieId": 9806,
+			"tmdbPersonId": 11662,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

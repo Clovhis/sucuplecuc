@@ -24,7 +24,9 @@
 		"Harrison Ford",
 		"Annette Bening",
 		"Bill Nunn",
-		"James Rebhorn"
+		"James Rebhorn",
+		"Rebecca Miller",
+		"Bruce Altman"
 	],
 	"productionCompany": "Paramount Pictures, Mike Nichols Productions",
 	"cinepostaScore": 5,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 11364,
 			"tmdbPersonId": 8986,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rebecca Miller",
+			"character": "Linda",
+			"tmdbMovieId": 11364,
+			"tmdbPersonId": 41670,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bruce Altman",
+			"character": "Bruce, Henry's Partner",
+			"tmdbMovieId": 11364,
+			"tmdbPersonId": 27545,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

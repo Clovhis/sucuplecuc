@@ -24,7 +24,9 @@
 		"Ben Stiller",
 		"Cameron Diaz",
 		"Matt Dillon",
-		"Chris Elliott"
+		"Chris Elliott",
+		"Lin Shaye",
+		"Jeffrey Tambor"
 	],
 	"productionCompany": "20th Century Fox, Conundrum Entertainment, Motion Picture Corporation of America",
 	"cinepostaScore": 6,
@@ -86,6 +88,20 @@
 			"tmdbMovieId": 544,
 			"tmdbPersonId": 1534,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lin Shaye",
+			"character": "Magda",
+			"tmdbMovieId": 544,
+			"tmdbPersonId": 7401,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeffrey Tambor",
+			"character": "Sully",
+			"tmdbMovieId": 544,
+			"tmdbPersonId": 4175,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

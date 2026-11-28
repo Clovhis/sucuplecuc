@@ -24,7 +24,9 @@
 		"Christian Bale",
 		"Cate Blanchett",
 		"Natalie Portman",
-		"Antonio Banderas"
+		"Antonio Banderas",
+		"Brian Dennehy",
+		"Wes Bentley"
 	],
 	"productionCompany": "Broad Green Pictures",
 	"cinepostaScore": 5,
@@ -81,6 +83,20 @@
 			"tmdbMovieId": 86835,
 			"tmdbPersonId": 3131,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brian Dennehy",
+			"character": "Joseph",
+			"tmdbMovieId": 86835,
+			"tmdbPersonId": 6197,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Wes Bentley",
+			"character": "Barry",
+			"tmdbMovieId": 86835,
+			"tmdbPersonId": 8210,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

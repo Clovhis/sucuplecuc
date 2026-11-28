@@ -27,7 +27,9 @@
 		"Harrison Ford",
 		"Julia Ormond",
 		"Greg Kinnear",
-		"Nancy Marchand"
+		"Nancy Marchand",
+		"John Wood",
+		"Lauren Holly"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 5,
@@ -85,6 +87,20 @@
 			"tmdbMovieId": 11860,
 			"tmdbPersonId": 12957,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Wood",
+			"character": "Fairchild",
+			"tmdbMovieId": 11860,
+			"tmdbPersonId": 8937,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lauren Holly",
+			"character": "Elizabeth Tyson",
+			"tmdbMovieId": 11860,
+			"tmdbPersonId": 34485,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

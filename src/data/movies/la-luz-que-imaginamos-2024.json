@@ -50,18 +50,55 @@
 			"forFansOf": "Si te interesan dramas contemporáneos, amistades femeninas y cine que observa el trabajo sin convertirlo en decorado.",
 			"notForYouIf": "No es para vos si buscás giros fuertes, una trama explicada o personajes definidos por una sola crisis."
 		},
-	"becauseYouLiked": [
-		"challengers-2024",
-		"suenos-de-oslo-2024"
-	],
-	"related": [
-		"cin3-fili4-2026",
-		"desconocidos-2023",
-		"pillion-2025",
-		"poor-things-2023"
-	]
-},
+		"becauseYouLiked": [
+			"challengers-2024",
+			"suenos-de-oslo-2024"
+		],
+		"related": [
+			"cin3-fili4-2026",
+			"desconocidos-2023",
+			"pillion-2025",
+			"poor-things-2023"
+		]
+	},
 	"review": "Payal Kapadia observa la solidaridad femenina sin romantizar el trabajo ni las restricciones que impone la vida urbana. La película pasa de la densidad de Mumbai a un paisaje costero más abierto, con una respiración visual que acompaña a sus personajes. Kani Kusruti, Divya Prabha y Chhaya Kadam construyen una comunidad hecha de gestos, cansancio y deseo. La amistad entre las mujeres sobrevive a horarios, alquileres y expectativas que la ciudad vuelve difíciles de compartir.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Kani Kusruti",
+			"character": "Prabha",
+			"tmdbMovieId": 927547,
+			"tmdbPersonId": 1399177,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Divya Prabha",
+			"character": "Anu",
+			"tmdbMovieId": 927547,
+			"tmdbPersonId": 1413835,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chhaya Kadam",
+			"character": "Parvaty",
+			"tmdbMovieId": 927547,
+			"tmdbPersonId": 1550351,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hridhu Haroon",
+			"character": "Shiaz",
+			"tmdbMovieId": 927547,
+			"tmdbPersonId": 2918872,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Azees Nedumangad",
+			"character": "Dr. Manoj",
+			"tmdbMovieId": 927547,
+			"tmdbPersonId": 1627904,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -24,7 +24,11 @@
 	"mainCast": [
 		"Tom Cruise",
 		"Penélope Cruz",
-		"Cameron Diaz"
+		"Cameron Diaz",
+		"Jason Lee",
+		"Noah Taylor",
+		"Timothy Spall",
+		"Tilda Swinton"
 	],
 	"productionCompany": "Cruise/Wagner Productions, Paramount Pictures, De Line Pictures",
 	"cinepostaScore": 6,
@@ -77,6 +81,34 @@
 			"tmdbMovieId": 1903,
 			"tmdbPersonId": 6941,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Lee",
+			"character": "Brian Shelby",
+			"tmdbMovieId": 1903,
+			"tmdbPersonId": 11662,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Noah Taylor",
+			"character": "Edmund Ventura",
+			"tmdbMovieId": 1903,
+			"tmdbPersonId": 1284,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Timothy Spall",
+			"character": "Thomas Tipp",
+			"tmdbMovieId": 1903,
+			"tmdbPersonId": 9191,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tilda Swinton",
+			"character": "Rebecca Dearborn",
+			"tmdbMovieId": 1903,
+			"tmdbPersonId": 3063,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

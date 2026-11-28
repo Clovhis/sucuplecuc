@@ -21,7 +21,8 @@
 	"mainCast": [
 		"Ron Perlman",
 		"Judith Vittet",
-		"Jean-Claude Dreyfus"
+		"Jean-Claude Dreyfus",
+		"Dominique Pinon"
 	],
 	"productionCompany": "Constellation",
 	"cinepostaScore": 7,
@@ -54,5 +55,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Dominique Pinon",
+			"character": "The Diver / The Clones",
+			"tmdbMovieId": 902,
+			"tmdbPersonId": 2413,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ron Perlman",
+			"character": "One",
+			"tmdbMovieId": 902,
+			"tmdbPersonId": 2372,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Judith Vittet",
+			"character": "Miette",
+			"tmdbMovieId": 902,
+			"tmdbPersonId": 13842,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jean-Claude Dreyfus",
+			"character": "Marcello",
+			"tmdbMovieId": 902,
+			"tmdbPersonId": 13687,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

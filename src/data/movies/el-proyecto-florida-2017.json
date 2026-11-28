@@ -42,18 +42,48 @@
 			"forFansOf": "Fans de Sean Baker, de los relatos corales y de las películas que miran la pobreza sin quitarles imaginación ni humor a sus protagonistas.",
 			"notForYouIf": "Buscás una trama de grandes giros, final cómodo o personajes adultos simplificados. El Proyecto Florida deja la realidad abierta y áspera."
 		},
-	"becauseYouLiked": [
-		"lady-bird-2017",
-		"padre-madre-hermana-hermano-2025"
-	],
-	"related": [
-		"corazon-salvaje-1990",
-		"michael-2026",
-		"the-meyerowitz-stories-2017",
-		"mas-fuerte-que-el-destino-2017"
-	]
-},
+		"becauseYouLiked": [
+			"lady-bird-2017",
+			"padre-madre-hermana-hermano-2025"
+		],
+		"related": [
+			"corazon-salvaje-1990",
+			"michael-2026",
+			"the-meyerowitz-stories-2017",
+			"mas-fuerte-que-el-destino-2017"
+		]
+	},
 	"review": "Sean Baker mira la pobreza desde la imaginación infantil sin negar las decisiones adultas que la sostienen. Los colores dulces, la cámara a la altura de los chicos y los espacios comerciales producen una belleza que nunca tapa el riesgo. Brooklynn Prince tiene una vitalidad enorme y Willem Dafoe encuentra humanidad sin convertir al encargado en salvador. La alegría de Moonee convive con una amenaza adulta que los chicos sienten antes de poder nombrarla.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Brooklynn Prince",
+			"character": "Moonee",
+			"tmdbMovieId": 394117,
+			"tmdbPersonId": 1704640,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bria Vinaite",
+			"character": "Halley",
+			"tmdbMovieId": 394117,
+			"tmdbPersonId": 1704641,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Bobby",
+			"tmdbMovieId": 394117,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Valeria Cotto",
+			"character": "Jancey",
+			"tmdbMovieId": 394117,
+			"tmdbPersonId": 1704642,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -23,7 +23,10 @@
 	"director": "Sam Fell",
 	"mainCast": [
 		"Hugh Jackman",
-		"Kate Winslet"
+		"Kate Winslet",
+		"Ian McKellen",
+		"Jean Reno",
+		"Bill Nighy"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -66,6 +69,27 @@
 			"tmdbMovieId": 11619,
 			"tmdbPersonId": 204,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ian McKellen",
+			"character": "The Toad (voice)",
+			"tmdbMovieId": 11619,
+			"tmdbPersonId": 1327,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jean Reno",
+			"character": "Le Frog (voice)",
+			"tmdbMovieId": 11619,
+			"tmdbPersonId": 1003,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Nighy",
+			"character": "Whitey (voice)",
+			"tmdbMovieId": 11619,
+			"tmdbPersonId": 2440,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

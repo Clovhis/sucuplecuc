@@ -31,7 +31,9 @@
 		"Robert De Niro",
 		"Jean Reno",
 		"Natascha McElhone",
-		"Stellan Skarsgård"
+		"Stellan Skarsgård",
+		"Jonathan Pryce",
+		"Sean Bean"
 	],
 	"productionCompany": "United Artists, FGM Entertainment",
 	"cinepostaScore": 8,
@@ -89,6 +91,20 @@
 			"tmdbMovieId": 8195,
 			"tmdbPersonId": 1640,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonathan Pryce",
+			"character": "Seamus O'Rourke",
+			"tmdbMovieId": 8195,
+			"tmdbPersonId": 378,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sean Bean",
+			"character": "Spence",
+			"tmdbMovieId": 8195,
+			"tmdbPersonId": 48,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

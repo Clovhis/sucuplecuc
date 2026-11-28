@@ -56,5 +56,42 @@
 	},
 	"review": "Loco y estúpido amor combina varias comedias románticas dentro de una sola familia y consigue que sus cambios de tono no se desarmen del todo. Steve Carell lleva la crisis de Cal con una torpeza entrañable, mientras Ryan Gosling y Emma Stone convierten sus escenas en un duelo de ritmo y química. Hay una moraleja algo prolija y un giro que pide demasiada credulidad, pero el guion entiende que madurar no consiste en aprender trucos sino en dejar de actuar para los demás.",
 	"runtimeMinutes": 118,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Steve Carell",
+			"character": "Cal",
+			"tmdbMovieId": 50646,
+			"tmdbPersonId": 4495,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ryan Gosling",
+			"character": "Jacob",
+			"tmdbMovieId": 50646,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Julianne Moore",
+			"character": "Emily",
+			"tmdbMovieId": 50646,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Emma Stone",
+			"character": "Hannah",
+			"tmdbMovieId": 50646,
+			"tmdbPersonId": 54693,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Marisa Tomei",
+			"character": "Kate",
+			"tmdbMovieId": 50646,
+			"tmdbPersonId": 3141,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

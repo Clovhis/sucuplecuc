@@ -19,7 +19,10 @@
 	"mainCast": [
 		"Tom Hanks",
 		"Matt Damon",
-		"Tom Sizemore"
+		"Tom Sizemore",
+		"Edward Burns",
+		"Adam Goldberg",
+		"Giovanni Ribisi"
 	],
 	"productionCompany": "Amblin Entertainment, Mutual Film Company, DreamWorks Pictures, Paramount Pictures",
 	"cinepostaScore": 8,
@@ -81,6 +84,27 @@
 			"tmdbMovieId": 857,
 			"tmdbPersonId": 3197,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Edward Burns",
+			"character": "Private Reiben",
+			"tmdbMovieId": 857,
+			"tmdbPersonId": 12833,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Adam Goldberg",
+			"character": "Private Mellish",
+			"tmdbMovieId": 857,
+			"tmdbPersonId": 6163,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Giovanni Ribisi",
+			"character": "T/4 Medic Wade",
+			"tmdbMovieId": 857,
+			"tmdbPersonId": 1771,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

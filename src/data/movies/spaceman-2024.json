@@ -44,7 +44,7 @@
 			"forFansOf": "Puede gustarte si te atraen dramas espaciales contemplativos, criaturas que funcionan como interlocutores y papeles dramáticos de Adam Sandler, lejos de la comedia que suele asociarse con él.",
 			"notForYouIf": "Quizás no sea para vos si necesitás peripecias, descubrimientos científicos o una criatura explicada con precisión. Su apuesta es melancólica y abstracta, incluso cuando el diseño promete una aventura mayor."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"ex-machina-2014",
 			"luna-2009"
 		],
@@ -58,5 +58,42 @@
 	"review": "El astronauta lleva a Sandler lejos de la caricatura y lo deja solo frente a una misión, un matrimonio roto y una araña gigante que habla con la voz de Paul Dano. La ciencia ficción funciona como un espacio mental donde el protagonista puede escuchar lo que venía evitando, y la puesta de Johan Renck sostiene una tristeza flotante. Es lenta y deliberadamente extraña, pero encuentra una intimidad potente en el vacío.",
 	"runtimeMinutes": 107,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Jakub Procházka",
+			"tmdbMovieId": 636706,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Paul Dano",
+			"character": "Hanuš (voice)",
+			"tmdbMovieId": 636706,
+			"tmdbPersonId": 17142,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Carey Mulligan",
+			"character": "Lenka Procházková",
+			"tmdbMovieId": 636706,
+			"tmdbPersonId": 36662,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kunal Nayyar",
+			"character": "Peter",
+			"tmdbMovieId": 636706,
+			"tmdbPersonId": 208099,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Isabella Rossellini",
+			"character": "Commissioner Tůmová",
+			"tmdbMovieId": 636706,
+			"tmdbPersonId": 6588,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

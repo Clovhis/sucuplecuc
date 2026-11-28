@@ -24,7 +24,10 @@
 		"Will Smith",
 		"Martin Lawrence",
 		"Jordi Mollà",
-		"Gabrielle Union"
+		"Gabrielle Union",
+		"Peter Stormare",
+		"Joe Pantoliano",
+		"Michael Shannon"
 	],
 	"productionCompany": "Columbia Pictures, Don Simpson/Jerry Bruckheimer Films",
 	"cinepostaScore": 6,
@@ -86,6 +89,27 @@
 			"tmdbMovieId": 8961,
 			"tmdbPersonId": 17773,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Stormare",
+			"character": "Alexei",
+			"tmdbMovieId": 8961,
+			"tmdbPersonId": 53,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Joe Pantoliano",
+			"character": "Captain Howard",
+			"tmdbMovieId": 8961,
+			"tmdbPersonId": 532,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Shannon",
+			"character": "Floyd Poteet",
+			"tmdbMovieId": 8961,
+			"tmdbPersonId": 335,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

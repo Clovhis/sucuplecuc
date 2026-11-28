@@ -25,7 +25,9 @@
 	"director": "Richard Linklater",
 	"mainCast": [
 		"Jack Black",
-		"Joan Cusack"
+		"Joan Cusack",
+		"Sarah Silverman",
+		"Miranda Cosgrove"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 6,
@@ -57,5 +59,35 @@
 	"releasePlatforms": [
 		"Paramount Plus"
 	],
-	"runtimeMinutes": 110
+	"runtimeMinutes": 110,
+	"castCharacters": [
+		{
+			"actor": "Sarah Silverman",
+			"character": "Patty Di Marco",
+			"tmdbMovieId": 1584,
+			"tmdbPersonId": 7404,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Miranda Cosgrove",
+			"character": "Summer Hathaway",
+			"tmdbMovieId": 1584,
+			"tmdbPersonId": 17743,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jack Black",
+			"character": "Dewey Finn",
+			"tmdbMovieId": 1584,
+			"tmdbPersonId": 70851,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Joan Cusack",
+			"character": "Rosalie Mullins",
+			"tmdbMovieId": 1584,
+			"tmdbPersonId": 3234,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

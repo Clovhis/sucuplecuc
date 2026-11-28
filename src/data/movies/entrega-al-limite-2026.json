@@ -23,7 +23,8 @@
 	"director": "Scott Waugh",
 	"mainCast": [
 		"Alan Ritchson",
-		"Owen Wilson"
+		"Owen Wilson",
+		"Leila George"
 	],
 	"productionCompany": "Broken Road Productions, Nickel City Pictures, 2521 Entertainment",
 	"cinepostaScore": 8,
@@ -54,5 +55,28 @@
 	"runtimeMinutes": 98,
 	"releasePlatforms": [
 		"Otras plataformas"
+	],
+	"castCharacters": [
+		{
+			"actor": "Leila George",
+			"character": "Kate Baker",
+			"tmdbMovieId": 1377237,
+			"tmdbPersonId": 1681867,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alan Ritchson",
+			"character": "Hank Malone",
+			"tmdbMovieId": 1377237,
+			"tmdbPersonId": 64295,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Owen Wilson",
+			"character": "Ben Bishop",
+			"tmdbMovieId": 1377237,
+			"tmdbPersonId": 887,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

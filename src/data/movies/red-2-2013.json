@@ -24,7 +24,9 @@
 		"Bruce Willis",
 		"Helen Mirren",
 		"John Malkovich",
-		"Mary-Louise Parker"
+		"Mary-Louise Parker",
+		"Catherine Zeta-Jones",
+		"Lee Byung-hun"
 	],
 	"productionCompany": "Summit Entertainment",
 	"cinepostaScore": 5,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 146216,
 			"tmdbPersonId": 18248,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine Zeta-Jones",
+			"character": "Katja",
+			"tmdbMovieId": 146216,
+			"tmdbPersonId": 1922,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lee Byung-hun",
+			"character": "Han Cho Bai",
+			"tmdbMovieId": 146216,
+			"tmdbPersonId": 25002,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

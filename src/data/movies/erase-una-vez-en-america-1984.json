@@ -25,7 +25,10 @@
 		"Robert De Niro",
 		"James Woods",
 		"Joe Pesci",
-		"Burt Young"
+		"Burt Young",
+		"Elizabeth McGovern",
+		"Treat Williams",
+		"Danny Aiello"
 	],
 	"productionCompany": "The Ladd Company, Embassy International Pictures",
 	"cinepostaScore": 9,
@@ -83,6 +86,27 @@
 			"tmdbMovieId": 311,
 			"tmdbPersonId": 4521,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elizabeth McGovern",
+			"character": "Deborah",
+			"tmdbMovieId": 311,
+			"tmdbPersonId": 4513,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Treat Williams",
+			"character": "Jimmy O'Donnell",
+			"tmdbMovieId": 311,
+			"tmdbPersonId": 4515,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Danny Aiello",
+			"character": "Police Chief Aiello",
+			"tmdbMovieId": 311,
+			"tmdbPersonId": 1004,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

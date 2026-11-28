@@ -25,7 +25,9 @@
 		"Harrison Ford",
 		"Josh Hartnett",
 		"Lena Olin",
-		"Bruce Greenwood"
+		"Bruce Greenwood",
+		"Keith David",
+		"Dwight Yoakam"
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer",
 	"cinepostaScore": 4,
@@ -83,6 +85,20 @@
 			"tmdbMovieId": 11375,
 			"tmdbPersonId": 21089,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Keith David",
+			"character": "Leon",
+			"tmdbMovieId": 11375,
+			"tmdbPersonId": 65827,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dwight Yoakam",
+			"character": "Leroy Wasley",
+			"tmdbMovieId": 11375,
+			"tmdbPersonId": 20309,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

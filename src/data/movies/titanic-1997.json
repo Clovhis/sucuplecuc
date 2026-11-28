@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Leonardo DiCaprio",
 		"Kate Winslet",
-		"Billy Zane"
+		"Billy Zane",
+		"Kathy Bates",
+		"Bill Paxton",
+		"Bernard Hill"
 	],
 	"productionCompany": "Paramount Pictures,, 20th Century Fox,, Lightstorm Entertainment",
 	"cinepostaScore": 8,
@@ -80,6 +83,27 @@
 			"tmdbMovieId": 597,
 			"tmdbPersonId": 1954,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kathy Bates",
+			"character": "Molly Brown",
+			"tmdbMovieId": 597,
+			"tmdbPersonId": 8534,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Paxton",
+			"character": "Brock Lovett",
+			"tmdbMovieId": 597,
+			"tmdbPersonId": 2053,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bernard Hill",
+			"character": "Captain Smith",
+			"tmdbMovieId": 597,
+			"tmdbPersonId": 1369,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

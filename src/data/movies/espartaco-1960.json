@@ -27,7 +27,10 @@
   "director": "Stanley Kubrick",
   "mainCast": [
     "Kirk Douglas",
-    "Laurence Olivier"
+    "Laurence Olivier",
+    "Jean Simmons",
+    "John Gavin",
+    "Tony Curtis"
   ],
   "productionCompany": "Bryna Productions, Universal-International",
   "runtimeMinutes": 197,
@@ -69,6 +72,27 @@
       "tmdbMovieId": 967,
       "tmdbPersonId": 3359,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Jean Simmons",
+      "character": "Varinia",
+      "tmdbMovieId": 967,
+      "tmdbPersonId": 14500,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "John Gavin",
+      "character": "Julius Caesar",
+      "tmdbMovieId": 967,
+      "tmdbPersonId": 7304,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Tony Curtis",
+      "character": "Antoninus",
+      "tmdbMovieId": 967,
+      "tmdbPersonId": 3150,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

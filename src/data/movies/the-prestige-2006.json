@@ -13,7 +13,9 @@
 		"Hugh Jackman",
 		"Christian Bale",
 		"Michael Caine",
-		"Rebecca Hall"
+		"Rebecca Hall",
+		"Scarlett Johansson",
+		"David Bowie"
 	],
 	"productionCompany": "Touchstone Pictures, Warner Bros. Pictures",
 	"cinepostaScore": 7,
@@ -85,6 +87,20 @@
 			"tmdbMovieId": 1124,
 			"tmdbPersonId": 15556,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Olivia Wenscombe",
+			"tmdbMovieId": 1124,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Bowie",
+			"character": "Tesla",
+			"tmdbMovieId": 1124,
+			"tmdbPersonId": 7487,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

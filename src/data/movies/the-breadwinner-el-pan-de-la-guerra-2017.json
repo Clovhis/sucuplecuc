@@ -45,18 +45,55 @@
 			"forFansOf": "Puede resonarte si disfrutás animación con compromiso político, relatos de niñas que resisten y películas que usan un cuento dentro del cuento para hacer visible una realidad.",
 			"notForYouIf": "Quizás no sea para vos si buscás una aventura liviana o una resolución sin dolor. La belleza de la animación convive con una violencia que la historia no puede ocultar."
 		},
-	"becauseYouLiked": [
-		"persepolis-2007",
-		"watership-down-1978"
-	],
-	"related": [
-		"la-cancion-del-mar-2014",
-		"the-wild-robot-2024",
-		"los-simpson-la-pelicula-2007",
-		"tarzan-1999"
-	]
-},
+		"becauseYouLiked": [
+			"persepolis-2007",
+			"watership-down-1978"
+		],
+		"related": [
+			"la-cancion-del-mar-2014",
+			"the-wild-robot-2024",
+			"los-simpson-la-pelicula-2007",
+			"tarzan-1999"
+		]
+	},
 	"review": "Nora Twomey cuenta la supervivencia de Parvana sin quitarle la imaginación que le permite soportar una realidad opresiva. La animación alterna la dureza del presente con un relato fantástico de colores intensos y función claramente política. El resultado es conmovedor sin ser ingenuo: la aventura sirve para mostrar una injusticia concreta. Las historias que Parvana inventa también son un acto de cuidado: le dan a su hermana una forma de ánimo cuando la vida diaria las deja sin opciones.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Saara Chaudry",
+			"character": "Parvana (voice)",
+			"tmdbMovieId": 435129,
+			"tmdbPersonId": 1739118,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Soma Bhatia",
+			"character": "Shauzia (voice)",
+			"tmdbMovieId": 435129,
+			"tmdbPersonId": 1363133,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Noorin Gulamgaus",
+			"character": "Idrees / Sulayman (voice)",
+			"tmdbMovieId": 435129,
+			"tmdbPersonId": 1739120,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Laara Sadiq",
+			"character": "Fattema / Old Woman (voice)",
+			"tmdbMovieId": 435129,
+			"tmdbPersonId": 59245,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ali Badshah",
+			"character": "Nurullah / Talib Security Man (voice)",
+			"tmdbMovieId": 435129,
+			"tmdbPersonId": 1739122,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

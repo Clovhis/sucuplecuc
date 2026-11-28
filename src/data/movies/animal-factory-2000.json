@@ -23,7 +23,9 @@
 	"mainCast": [
 		"Willem Dafoe",
 		"Edward Furlong",
-		"Danny Trejo"
+		"Danny Trejo",
+		"Mickey Rourke",
+		"John Heard"
 	],
 	"productionCompany": "Animal Factory LLC",
 	"cinepostaScore": 7,
@@ -74,6 +76,20 @@
 			"tmdbMovieId": 9791,
 			"tmdbPersonId": 11160,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mickey Rourke",
+			"character": "Jan the Actress",
+			"tmdbMovieId": 9791,
+			"tmdbPersonId": 2295,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Heard",
+			"character": "James Decker",
+			"tmdbMovieId": 9791,
+			"tmdbPersonId": 11512,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

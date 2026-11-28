@@ -23,7 +23,11 @@
 	"director": "Mark Dindal",
 	"mainCast": [
 		"Zach Braff",
-		"Garry Marshall"
+		"Garry Marshall",
+		"Joan Cusack",
+		"Steve Zahn",
+		"Amy Sedaris",
+		"Fred Willard"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 7,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 9982,
 			"tmdbPersonId": 1201,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joan Cusack",
+			"character": "Abby Mallard (voice)",
+			"tmdbMovieId": 9982,
+			"tmdbPersonId": 3234,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Steve Zahn",
+			"character": "Runt of the Litter (voice)",
+			"tmdbMovieId": 9982,
+			"tmdbPersonId": 18324,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Amy Sedaris",
+			"character": "Foxy Loxy (voice)",
+			"tmdbMovieId": 9982,
+			"tmdbPersonId": 12110,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Fred Willard",
+			"character": "Melvin - Alien Dad (voice)",
+			"tmdbMovieId": 9982,
+			"tmdbPersonId": 20753,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

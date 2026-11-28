@@ -19,7 +19,10 @@
 	"mainCast": [
 		"Daniel Radcliffe",
 		"Rupert Grint",
-		"Emma Watson"
+		"Emma Watson",
+		"Jim Broadbent",
+		"Michael Gambon",
+		"Alan Rickman"
 	],
 	"productionCompany": "Warner Bros. Entertainment, Heyday Films",
 	"cinepostaScore": 8,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 767,
 			"tmdbPersonId": 10990,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jim Broadbent",
+			"character": "Horace Slughorn",
+			"tmdbMovieId": 767,
+			"tmdbPersonId": 388,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Gambon",
+			"character": "Albus Dumbledore",
+			"tmdbMovieId": 767,
+			"tmdbPersonId": 5658,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alan Rickman",
+			"character": "Severus Snape",
+			"tmdbMovieId": 767,
+			"tmdbPersonId": 4566,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

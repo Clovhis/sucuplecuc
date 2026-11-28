@@ -25,7 +25,9 @@
 	"director": "Éric Toledano, Olivier Nakache",
 	"mainCast": [
 		"François Cluzet",
-		"Omar Sy"
+		"Omar Sy",
+		"Anne Le Ny",
+		"Audrey Fleurot"
 	],
 	"productionCompany": "Gaumont, Quad, TF1 Films Production, Ten Films y Chaocorp",
 	"cinepostaScore": 8,
@@ -53,5 +55,35 @@
 	},
 	"review": "Éric Toledano y Olivier Nakache hacen avanzar la película con la energía que se produce entre cuerpos y códigos sociales muy distintos. François Cluzet vuelve expresiva una actuación limitada por la inmovilidad, y Omar Sy le pone a Driss una picardía que no pide permiso para entrar en cada escena. Esa química, más que el sentimentalismo, hace funcionar la comedia; cuando el conflicto de clase y el cuidado quedan demasiado suavizados, se nota la apuesta por una salida amable. Aun con ese límite, la dupla encuentra ritmo y carácter sin empujar al espectador hacia la lástima.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 112
+	"runtimeMinutes": 112,
+	"castCharacters": [
+		{
+			"actor": "Anne Le Ny",
+			"character": "Yvonne",
+			"tmdbMovieId": 77338,
+			"tmdbPersonId": 19370,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Audrey Fleurot",
+			"character": "Magalie",
+			"tmdbMovieId": 77338,
+			"tmdbPersonId": 219708,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "François Cluzet",
+			"character": "Philippe",
+			"tmdbMovieId": 77338,
+			"tmdbPersonId": 33161,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Omar Sy",
+			"character": "Driss",
+			"tmdbMovieId": 77338,
+			"tmdbPersonId": 78423,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

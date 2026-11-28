@@ -19,7 +19,9 @@
 	"director": "Stuart Rosenberg",
 	"mainCast": [
 		"James Brolin",
-		"Margot Kidder"
+		"Margot Kidder",
+		"Don Stroud",
+		"Murray Hamilton"
 	],
 	"productionCompany": "American International Pictures",
 	"cinepostaScore": 5,
@@ -65,6 +67,20 @@
 			"tmdbMovieId": 11449,
 			"tmdbPersonId": 20011,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Don Stroud",
+			"character": "Father Richard Bolen",
+			"tmdbMovieId": 11449,
+			"tmdbPersonId": 69494,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Murray Hamilton",
+			"character": "Father Ryan",
+			"tmdbMovieId": 11449,
+			"tmdbPersonId": 8608,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -23,7 +23,11 @@
 		"Robert Redford",
 		"Meryl Streep",
 		"Tom Cruise",
-		"Andrew Garfield"
+		"Andrew Garfield",
+		"Michael Peña",
+		"Derek Luke",
+		"Peter Berg",
+		"Kevin Dunn"
 	],
 	"productionCompany": "United Artists",
 	"cinepostaScore": 5,
@@ -87,6 +91,34 @@
 			"tmdbMovieId": 4515,
 			"tmdbPersonId": 37625,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Peña",
+			"character": "Ernest Rodriguez",
+			"tmdbMovieId": 4515,
+			"tmdbPersonId": 454,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Derek Luke",
+			"character": "Arian Finch",
+			"tmdbMovieId": 4515,
+			"tmdbPersonId": 15543,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Berg",
+			"character": "Wirey Pink",
+			"tmdbMovieId": 4515,
+			"tmdbPersonId": 36602,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kevin Dunn",
+			"character": "ANX Editor",
+			"tmdbMovieId": 4515,
+			"tmdbPersonId": 14721,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

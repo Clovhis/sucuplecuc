@@ -22,7 +22,8 @@
 	"director": "Chris Nahon",
 	"mainCast": [
 		"Amy Johnston",
-		"Kathy Wu"
+		"Kathy Wu",
+		"Muriel Hofmann"
 	],
 	"productionCompany": "Crave Films",
 	"cinepostaScore": 5,
@@ -51,5 +52,28 @@
 			"top-gun-maverick-2022"
 		]
 	},
-	"review": "Lady Bloodfight existe para poner el cuerpo en primer plano y Amy Johnston acepta ese desafío con una presencia física notable. Chris Nahon organiza los combates con claridad y deja que cada rival tenga una forma distinta de moverse, aunque el guion transita un camino de superación bastante conocido. Muriel Hofmann y Kathy Wu aportan intensidad al entrenamiento y a las peleas, que son el verdadero motivo para quedarse. Cuando la película explica menos y golpea mejor, encuentra su ritmo."
+	"review": "Lady Bloodfight existe para poner el cuerpo en primer plano y Amy Johnston acepta ese desafío con una presencia física notable. Chris Nahon organiza los combates con claridad y deja que cada rival tenga una forma distinta de moverse, aunque el guion transita un camino de superación bastante conocido. Muriel Hofmann y Kathy Wu aportan intensidad al entrenamiento y a las peleas, que son el verdadero motivo para quedarse. Cuando la película explica menos y golpea mejor, encuentra su ritmo.",
+	"castCharacters": [
+		{
+			"actor": "Muriel Hofmann",
+			"character": "Shu",
+			"tmdbMovieId": 289269,
+			"tmdbPersonId": 1527561,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Amy Johnston",
+			"character": "Jane",
+			"tmdbMovieId": 289269,
+			"tmdbPersonId": 1168704,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kathy Wu",
+			"character": "Wai",
+			"tmdbMovieId": 289269,
+			"tmdbPersonId": 1527562,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

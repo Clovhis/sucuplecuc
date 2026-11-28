@@ -24,7 +24,9 @@
 		"Al Pacino",
 		"Cameron Diaz",
 		"Dennis Quaid",
-		"Jamie Foxx"
+		"Jamie Foxx",
+		"James Woods",
+		"Matthew Modine"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 5,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 9563,
 			"tmdbPersonId": 134,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Woods",
+			"character": "Dr. Harvey Mandrake",
+			"tmdbMovieId": 9563,
+			"tmdbPersonId": 4512,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Matthew Modine",
+			"character": "Dr. Ollie Powers",
+			"tmdbMovieId": 9563,
+			"tmdbPersonId": 8654,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

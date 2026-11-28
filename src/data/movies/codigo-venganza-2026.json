@@ -22,7 +22,8 @@
 	"director": "Jean-François Richet",
 	"mainCast": [
 		"Jason Statham",
-		"Annabelle Wallis"
+		"Annabelle Wallis",
+		"Roland Møller"
 	],
 	"productionCompany": "MadRiver Pictures, Punch Palace Productions",
 	"cinepostaScore": 8,
@@ -51,5 +52,28 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Jean-François Richet encierra a Jason Statham en un carguero y entiende que el metal, los pasillos angostos y una persecución sin salida son su mejor argumento. Statham hace lo suyo con eficacia seca, y Annabelle Wallis aprovecha los pocos momentos en que la trama le permite pesar en el conflicto. Código: Venganza no se complica con misterios muy sofisticados ni quiere reinventar al héroe acusado, pero mantiene la maquinaria en movimiento y administra bien sus golpes. Es una misión conocida, contada con suficiente tensión para no sentirse automática."
+	"review": "Jean-François Richet encierra a Jason Statham en un carguero y entiende que el metal, los pasillos angostos y una persecución sin salida son su mejor argumento. Statham hace lo suyo con eficacia seca, y Annabelle Wallis aprovecha los pocos momentos en que la trama le permite pesar en el conflicto. Código: Venganza no se complica con misterios muy sofisticados ni quiere reinventar al héroe acusado, pero mantiene la maquinaria en movimiento y administra bien sus golpes. Es una misión conocida, contada con suficiente tensión para no sentirse automática.",
+	"castCharacters": [
+		{
+			"actor": "Roland Møller",
+			"character": "Captain Marko Madsen",
+			"tmdbMovieId": 1288445,
+			"tmdbPersonId": 141876,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jason Statham",
+			"character": "Cole Reed",
+			"tmdbMovieId": 1288445,
+			"tmdbPersonId": 976,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Annabelle Wallis",
+			"character": "Angie Ellis",
+			"tmdbMovieId": 1288445,
+			"tmdbPersonId": 82809,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

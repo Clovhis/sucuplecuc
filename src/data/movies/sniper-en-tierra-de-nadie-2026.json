@@ -23,7 +23,8 @@
 	"mainCast": [
 		"Chad Michael Collins",
 		"Ryan Robbins",
-		"Manuel Rodriguez-Saenz"
+		"Manuel Rodriguez-Saenz",
+		"Tom Berenger"
 	],
 	"productionCompany": "Blue Ice Africa, Blue Ice Pictures, Destination Films",
 	"cinepostaScore": 4,
@@ -54,5 +55,35 @@
 	"releasePlatforms": [
 		"HBO Max",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Tom Berenger",
+			"character": "Thomas Beckett",
+			"tmdbMovieId": 1641319,
+			"tmdbPersonId": 13022,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chad Michael Collins",
+			"character": "Brandon Beckett",
+			"tmdbMovieId": 1641319,
+			"tmdbPersonId": 228371,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ryan Robbins",
+			"character": "Zero",
+			"tmdbMovieId": 1641319,
+			"tmdbPersonId": 77164,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Manuel Rodriguez-Saenz",
+			"character": "Nova",
+			"tmdbMovieId": 1641319,
+			"tmdbPersonId": 1994213,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

@@ -55,5 +55,21 @@
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Robert Mitchum",
+			"character": "Preacher Harry Powell",
+			"tmdbMovieId": 3112,
+			"tmdbPersonId": 10158,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Shelley Winters",
+			"character": "Willa Harper",
+			"tmdbMovieId": 3112,
+			"tmdbPersonId": 7632,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

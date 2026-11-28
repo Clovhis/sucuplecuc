@@ -22,7 +22,8 @@
 	"director": "Yuichi Fukuda",
 	"mainCast": [
 		"Ren Meguro",
-		"Fumiya Takahashi"
+		"Fumiya Takahashi",
+		"Aya Ueto"
 	],
 	"productionCompany": "Toho",
 	"cinepostaScore": 6,
@@ -52,5 +53,28 @@
 	"catalogAddedAt": "2026-10-30",
 	"runtimeMinutes": 128,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Aya Ueto",
+			"character": "Aoi Sakamoto",
+			"tmdbMovieId": 1548708,
+			"tmdbPersonId": 46363,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ren Meguro",
+			"character": "Taro Sakamoto",
+			"tmdbMovieId": 1548708,
+			"tmdbPersonId": 3190917,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Fumiya Takahashi",
+			"character": "Shin Asakura",
+			"tmdbMovieId": 1548708,
+			"tmdbPersonId": 2389740,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

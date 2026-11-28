@@ -23,7 +23,9 @@
 	"director": "Tony Scott",
 	"mainCast": [
 		"Robert Redford",
-		"Brad Pitt"
+		"Brad Pitt",
+		"Catherine McCormack",
+		"Stephen Dillane"
 	],
 	"productionCompany": "Universal Pictures, Beacon Pictures, Kalima Productions",
 	"cinepostaScore": 8,
@@ -70,6 +72,20 @@
 			"tmdbMovieId": 1535,
 			"tmdbPersonId": 287,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine McCormack",
+			"character": "Elizabeth Hadley",
+			"tmdbMovieId": 1535,
+			"tmdbPersonId": 2462,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Stephen Dillane",
+			"character": "Charles Harker",
+			"tmdbMovieId": 1535,
+			"tmdbPersonId": 8435,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

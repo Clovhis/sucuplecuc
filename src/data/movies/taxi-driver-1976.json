@@ -38,19 +38,42 @@
 			"forFansOf": "Puede fascinarte si te atraen dramas urbanos, narradores perturbadores y películas de Martin Scorsese donde la ciudad, la culpa y la violencia forman una misma corriente nocturna.",
 			"notForYouIf": "Quizás no sea para vos si buscás una redención clara, un protagonista empático o violencia tratada como aventura. La película mira de frente una fantasía peligrosa y no la limpia."
 		},
-	"becauseYouLiked": [
-		"cape-fear-1991",
-		"the-departed-2006"
-	],
-	"related": [
-		"la-habitacion-del-panico-2002",
-		"la-extrana-que-hay-en-ti-2007",
-		"se7en-1995",
-		"shutter-island-2010"
-	]
-},
-  "review": "Scorsese encierra al espectador en la mirada de Travis Bickle, un veterano que recorre una Nueva York nocturna y convierte su soledad en resentimiento. La dirección hace que la ciudad parezca una pesadilla húmeda, entre neón, basura y taxis que nunca descansan. Robert De Niro no busca simpatía: deja ver el vacío y la violencia que crecen detrás de cada frase torpe. El ritmo es deliberado, pero esa incomodidad es el punto. Sigue siendo un retrato feroz de una mente quebrada.",
+		"becauseYouLiked": [
+			"cape-fear-1991",
+			"the-departed-2006"
+		],
+		"related": [
+			"la-habitacion-del-panico-2002",
+			"la-extrana-que-hay-en-ti-2007",
+			"se7en-1995",
+			"shutter-island-2010"
+		]
+	},
+	"review": "Scorsese encierra al espectador en la mirada de Travis Bickle, un veterano que recorre una Nueva York nocturna y convierte su soledad en resentimiento. La dirección hace que la ciudad parezca una pesadilla húmeda, entre neón, basura y taxis que nunca descansan. Robert De Niro no busca simpatía: deja ver el vacío y la violencia que crecen detrás de cada frase torpe. El ritmo es deliberado, pero esa incomodidad es el punto. Sigue siendo un retrato feroz de una mente quebrada.",
 	"synopsis": "Travis Bickle, un veterano de guerra solitario que trabaja de noche como taxista en Nueva York, se obsesiona con la violencia y la decadencia que lo rodean. Su aislamiento lo empuja a una peligrosa idea de redencion.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-13"
+	"reviewPublishedAt": "2026-03-13",
+	"castCharacters": [
+		{
+			"actor": "Robert De Niro",
+			"character": "Travis Bickle",
+			"tmdbMovieId": 103,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jodie Foster",
+			"character": "Iris",
+			"tmdbMovieId": 103,
+			"tmdbPersonId": 1038,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cybill Shepherd",
+			"character": "Betsy",
+			"tmdbMovieId": 103,
+			"tmdbPersonId": 1036,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -23,7 +23,12 @@
 	"director": "Francis Lawrence",
 	"mainCast": [
 		"Jennifer Lawrence",
-		"Josh Hutcherson"
+		"Josh Hutcherson",
+		"Liam Hemsworth",
+		"Woody Harrelson",
+		"Elizabeth Banks",
+		"Philip Seymour Hoffman",
+		"Jeffrey Wright"
 	],
 	"productionCompany": "Lionsgate, Color Force",
 	"cinepostaScore": 7,
@@ -66,6 +71,41 @@
 			"tmdbMovieId": 131631,
 			"tmdbPersonId": 27972,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liam Hemsworth",
+			"character": "Gale Hawthorne",
+			"tmdbMovieId": 131631,
+			"tmdbPersonId": 96066,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Woody Harrelson",
+			"character": "Haymitch Abernathy",
+			"tmdbMovieId": 131631,
+			"tmdbPersonId": 57755,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elizabeth Banks",
+			"character": "Effie Trinket",
+			"tmdbMovieId": 131631,
+			"tmdbPersonId": 9281,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Philip Seymour Hoffman",
+			"character": "Plutarch Heavensbee",
+			"tmdbMovieId": 131631,
+			"tmdbPersonId": 1233,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeffrey Wright",
+			"character": "Beetee Latier",
+			"tmdbMovieId": 131631,
+			"tmdbPersonId": 2954,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

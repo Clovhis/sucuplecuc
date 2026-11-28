@@ -23,7 +23,8 @@
 	"director": "Sylvain Chomet",
 	"mainCast": [
 		"Jean-Claude Donda",
-		"Eilidh Rankin"
+		"Eilidh Rankin",
+		"Didier Gustin"
 	],
 	"productionCompany": "Producción internacional",
 	"cinepostaScore": 7,
@@ -51,5 +52,28 @@
 			"toy-story-3-2010"
 		]
 	},
-	"review": "El ilusionista observa la desaparición de un mundo de escenarios pequeños, artistas ambulantes y espectadores que ya miran hacia otra parte. Jean-Claude Donda y Eilidh Rankin construyen un vínculo delicado, casi siempre expresado por gestos, regalos y silencios, mientras Sylvain Chomet anima la tristeza sin cargarla de sentimentalismo. El relato avanza despacio y puede parecer distante, pero sus fondos, su música y su respeto por los personajes dejan una melancolía muy hermosa."
+	"review": "El ilusionista observa la desaparición de un mundo de escenarios pequeños, artistas ambulantes y espectadores que ya miran hacia otra parte. Jean-Claude Donda y Eilidh Rankin construyen un vínculo delicado, casi siempre expresado por gestos, regalos y silencios, mientras Sylvain Chomet anima la tristeza sin cargarla de sentimentalismo. El relato avanza despacio y puede parecer distante, pero sus fondos, su música y su respeto por los personajes dejan una melancolía muy hermosa.",
+	"castCharacters": [
+		{
+			"actor": "Didier Gustin",
+			"character": "Songs (voice)",
+			"tmdbMovieId": 41201,
+			"tmdbPersonId": 934961,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jean-Claude Donda",
+			"character": "Tatischeff / French Cinema Manager (voice)",
+			"tmdbMovieId": 41201,
+			"tmdbPersonId": 58419,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eilidh Rankin",
+			"character": "Alice (voice)",
+			"tmdbMovieId": 41201,
+			"tmdbPersonId": 2607141,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

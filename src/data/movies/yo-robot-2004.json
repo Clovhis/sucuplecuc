@@ -25,7 +25,9 @@
 	"mainCast": [
 		"Will Smith",
 		"Bridget Moynahan",
-		"Bruce Greenwood"
+		"Bruce Greenwood",
+		"James Cromwell",
+		"Chi McBride"
 	],
 	"productionCompany": "Laurence Mark Productions, 20th Century Fox, Overbrook Entertainment, Davis Entertainment",
 	"cinepostaScore": 7,
@@ -75,6 +77,20 @@
 			"tmdbMovieId": 2048,
 			"tmdbPersonId": 21089,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Cromwell",
+			"character": "Dr. Alfred Lanning",
+			"tmdbMovieId": 2048,
+			"tmdbPersonId": 2505,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chi McBride",
+			"character": "Lt. John Bergin",
+			"tmdbMovieId": 2048,
+			"tmdbPersonId": 8687,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

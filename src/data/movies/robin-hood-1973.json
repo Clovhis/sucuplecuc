@@ -24,7 +24,8 @@
 	"director": "Wolfgang Reitherman",
 	"mainCast": [
 		"Brian Bedford",
-		"Phil Harris"
+		"Phil Harris",
+		"Andy Devine"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 8,
@@ -52,5 +53,28 @@
 			"taron-y-el-caldero-magico-1985"
 		]
 	},
-	"review": "Robin Hood tiene el encanto de una producción que sabe que una canción, un buen secundario y una persecución pueden sostener una película entera. Brian Bedford le presta elegancia al zorro protagonista y Phil Harris hace del fraile Tuck una presencia imposible de ignorar. La animación recicla algunos movimientos de otras obras, pero la química entre los personajes, el humor del narrador y la música le dan un corazón propio."
+	"review": "Robin Hood tiene el encanto de una producción que sabe que una canción, un buen secundario y una persecución pueden sostener una película entera. Brian Bedford le presta elegancia al zorro protagonista y Phil Harris hace del fraile Tuck una presencia imposible de ignorar. La animación recicla algunos movimientos de otras obras, pero la química entre los personajes, el humor del narrador y la música le dan un corazón propio.",
+	"castCharacters": [
+		{
+			"actor": "Andy Devine",
+			"character": "Friar Tuck - A Badger (voice)",
+			"tmdbMovieId": 11886,
+			"tmdbPersonId": 14966,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brian Bedford",
+			"character": "Robin Hood - A Fox (voice)",
+			"tmdbMovieId": 11886,
+			"tmdbPersonId": 70843,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Phil Harris",
+			"character": "Little John - A Bear (voice)",
+			"tmdbMovieId": 11886,
+			"tmdbPersonId": 57329,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

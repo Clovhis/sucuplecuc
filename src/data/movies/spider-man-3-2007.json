@@ -13,7 +13,9 @@
 	"mainCast": [
 		"Tobey Maguire",
 		"Kirsten Dunst",
-		"James Franco"
+		"James Franco",
+		"Thomas Haden Church",
+		"J. K. Simmons"
 	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 8,
@@ -69,6 +71,20 @@
 			"tmdbMovieId": 559,
 			"tmdbPersonId": 17051,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Thomas Haden Church",
+			"character": "Sandman / Flint Marko",
+			"tmdbMovieId": 559,
+			"tmdbPersonId": 19159,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "J. K. Simmons",
+			"character": "J. Jonah Jameson",
+			"tmdbMovieId": 559,
+			"tmdbPersonId": 18999,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

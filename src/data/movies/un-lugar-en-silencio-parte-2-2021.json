@@ -23,7 +23,11 @@
 	"director": "John Krasinski",
 	"mainCast": [
 		"Emily Blunt",
-		"Cillian Murphy"
+		"Cillian Murphy",
+		"John Krasinski",
+		"Noah Jupe",
+		"Djimon Hounsou",
+		"Scoot McNairy"
 	],
 	"productionCompany": "Platinum Dunes, Sunday Night Productions",
 	"cinepostaScore": 8,
@@ -71,6 +75,34 @@
 			"tmdbMovieId": 520763,
 			"tmdbPersonId": 2037,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Krasinski",
+			"character": "Lee Abbott",
+			"tmdbMovieId": 520763,
+			"tmdbPersonId": 17697,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Noah Jupe",
+			"character": "Marcus Abbott",
+			"tmdbMovieId": 520763,
+			"tmdbPersonId": 1590759,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Djimon Hounsou",
+			"character": "Man on Island",
+			"tmdbMovieId": 520763,
+			"tmdbPersonId": 938,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Scoot McNairy",
+			"character": "Marina Man",
+			"tmdbMovieId": 520763,
+			"tmdbPersonId": 59233,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

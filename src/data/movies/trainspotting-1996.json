@@ -23,7 +23,9 @@
 	"mainCast": [
 		"Ewan McGregor",
 		"Ewen Bremner",
-		"Jonny Lee Miller"
+		"Jonny Lee Miller",
+		"Kelly Macdonald",
+		"Peter Mullan"
 	],
 	"productionCompany": "Channel Four Films, PolyGram Filmed Entertainment",
 	"cinepostaScore": 8,
@@ -76,6 +78,20 @@
 			"tmdbMovieId": 627,
 			"tmdbPersonId": 9012,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kelly Macdonald",
+			"character": "Diane",
+			"tmdbMovieId": 627,
+			"tmdbPersonId": 9015,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Mullan",
+			"character": "Swanney",
+			"tmdbMovieId": 627,
+			"tmdbPersonId": 3064,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

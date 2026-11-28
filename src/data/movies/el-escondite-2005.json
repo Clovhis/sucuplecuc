@@ -49,7 +49,10 @@
 	"mainCast": [
 		"Robert De Niro",
 		"Dakota Fanning",
-		"Famke Janssen"
+		"Famke Janssen",
+		"Elisabeth Shue",
+		"Dylan Baker",
+		"Melissa Leo"
 	],
 	"productionCompany": "20th Century Fox",
 	"cinepostaScore": 5,
@@ -77,6 +80,27 @@
 			"tmdbMovieId": 11096,
 			"tmdbPersonId": 10696,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elisabeth Shue",
+			"character": "Elizabeth",
+			"tmdbMovieId": 11096,
+			"tmdbPersonId": 1951,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dylan Baker",
+			"character": "Sheriff Hafferty",
+			"tmdbMovieId": 11096,
+			"tmdbPersonId": 19152,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Melissa Leo",
+			"character": "Laura",
+			"tmdbMovieId": 11096,
+			"tmdbPersonId": 6832,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

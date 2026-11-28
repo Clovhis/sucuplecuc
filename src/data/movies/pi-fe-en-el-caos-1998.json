@@ -22,7 +22,8 @@
 	"mainCast": [
 		"Sean Gullette",
 		"Mark Margolis",
-		"Ben Shenkman"
+		"Ben Shenkman",
+		"Ajay Naidu"
 	],
 	"productionCompany": "Protozoa Pictures",
 	"cinepostaScore": 7,
@@ -55,5 +56,35 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Ajay Naidu",
+			"character": "Farroukh",
+			"tmdbMovieId": 473,
+			"tmdbPersonId": 1982,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sean Gullette",
+			"character": "Maximillian Cohen",
+			"tmdbMovieId": 473,
+			"tmdbPersonId": 6432,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mark Margolis",
+			"character": "Sol Robeson",
+			"tmdbMovieId": 473,
+			"tmdbPersonId": 1173,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ben Shenkman",
+			"character": "Lenny Meyer",
+			"tmdbMovieId": 473,
+			"tmdbPersonId": 6437,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

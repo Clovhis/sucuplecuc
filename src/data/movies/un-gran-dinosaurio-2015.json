@@ -27,7 +27,11 @@
 	"director": "Peter Sohn",
 	"mainCast": [
 		"Frances McDormand",
-		"Jeffrey Wright"
+		"Jeffrey Wright",
+		"Steve Zahn",
+		"Sam Elliott",
+		"Anna Paquin",
+		"John Ratzenberger"
 	],
 	"productionCompany": "Pixar Animation Studios",
 	"cinepostaScore": 7,
@@ -70,6 +74,34 @@
 			"tmdbMovieId": 105864,
 			"tmdbPersonId": 2954,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve Zahn",
+			"character": "Thunderclap (voice)",
+			"tmdbMovieId": 105864,
+			"tmdbPersonId": 18324,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sam Elliott",
+			"character": "Butch (voice)",
+			"tmdbMovieId": 105864,
+			"tmdbPersonId": 16431,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anna Paquin",
+			"character": "Ramsey (voice)",
+			"tmdbMovieId": 105864,
+			"tmdbPersonId": 10690,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Ratzenberger",
+			"character": "Earl (voice)",
+			"tmdbMovieId": 105864,
+			"tmdbPersonId": 7907,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

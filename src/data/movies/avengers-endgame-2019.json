@@ -13,7 +13,12 @@
 	"mainCast": [
 		"Robert Downey Jr.",
 		"Chris Evans",
-		"Mark Ruffalo"
+		"Mark Ruffalo",
+		"Chris Hemsworth",
+		"Scarlett Johansson",
+		"Jeremy Renner",
+		"Josh Brolin",
+		"Don Cheadle"
 	],
 	"productionCompany": "Marvel Studios",
 	"cinepostaScore": 8,
@@ -69,6 +74,41 @@
 			"tmdbMovieId": 299534,
 			"tmdbPersonId": 103,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chris Hemsworth",
+			"character": "Thor",
+			"tmdbMovieId": 299534,
+			"tmdbPersonId": 74568,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Natasha Romanoff / Black Widow",
+			"tmdbMovieId": 299534,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeremy Renner",
+			"character": "Clint Barton / Hawkeye",
+			"tmdbMovieId": 299534,
+			"tmdbPersonId": 17604,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Josh Brolin",
+			"character": "Thanos",
+			"tmdbMovieId": 299534,
+			"tmdbPersonId": 16851,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Don Cheadle",
+			"character": "James Rhodes / War Machine",
+			"tmdbMovieId": 299534,
+			"tmdbPersonId": 1896,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -38,15 +38,15 @@
 	},
 	"runtimeMinutes": 85,
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Tierra de osos cuenta el duelo desde un cambio de piel; Robert Walker y Aaron Blaise encuentran en la voz de Joaquin Phoenix una torpeza querible.",
-		"whatToExpect": "Kenai se transforma en oso después de una tragedia y debe viajar con Koda mientras intenta entender a quien antes despreciaba.",
-		"pace": "Avanza por paisajes, canciones y encuentros cómicos, con el vínculo entre los dos osos marcando cuándo la aventura se vuelve íntima.",
-		"intensity": "La pérdida familiar le da peso a una historia amable; el peligro aparece, pero la película siempre vuelve a la idea de cuidar.",
-		"practicalContext": "Dura 85 minutos y funciona como animación familiar de tarde, con una moraleja clara y suficiente humor para los más chicos.",
-		"forFansOf": "Te va a gustar si disfrutás aventuras de Disney, hermanos improbables y relatos que usan la fantasía para hablar de empatía.",
-		"notForYouIf": "No es para vos si buscás una animación más irreverente, conflictos imprevisibles o una historia que no marque su enseñanza."
-	},
+		"tenSecondTake": {
+			"verdict": "Tierra de osos cuenta el duelo desde un cambio de piel; Robert Walker y Aaron Blaise encuentran en la voz de Joaquin Phoenix una torpeza querible.",
+			"whatToExpect": "Kenai se transforma en oso después de una tragedia y debe viajar con Koda mientras intenta entender a quien antes despreciaba.",
+			"pace": "Avanza por paisajes, canciones y encuentros cómicos, con el vínculo entre los dos osos marcando cuándo la aventura se vuelve íntima.",
+			"intensity": "La pérdida familiar le da peso a una historia amable; el peligro aparece, pero la película siempre vuelve a la idea de cuidar.",
+			"practicalContext": "Dura 85 minutos y funciona como animación familiar de tarde, con una moraleja clara y suficiente humor para los más chicos.",
+			"forFansOf": "Te va a gustar si disfrutás aventuras de Disney, hermanos improbables y relatos que usan la fantasía para hablar de empatía.",
+			"notForYouIf": "No es para vos si buscás una animación más irreverente, conflictos imprevisibles o una historia que no marque su enseñanza."
+		},
 		"becauseYouLiked": [
 			"el-gato-con-botas-2011",
 			"minions-monstruos-2026"
@@ -58,5 +58,42 @@
 			"lego-star-wars-the-mandalorian-2026"
 		]
 	},
-	"review": "Tierra de osos trabaja una idea clásica de Disney —aprender a ponerse en el lugar del otro— con un cambio de perspectiva sencillo y bastante eficaz. La relación entre Kenai y Koda sostiene la película, sobre todo cuando el humor de los alces afloja una historia que también habla de duelo y culpa. La animación tiene fondos preciosos y una escala naturalista que le da identidad, aunque el conflicto avanza por caminos previsibles. Es una aventura amable, musical y algo subestimada, más fuerte en el vínculo entre los personajes que en su moraleja."
+	"review": "Tierra de osos trabaja una idea clásica de Disney —aprender a ponerse en el lugar del otro— con un cambio de perspectiva sencillo y bastante eficaz. La relación entre Kenai y Koda sostiene la película, sobre todo cuando el humor de los alces afloja una historia que también habla de duelo y culpa. La animación tiene fondos preciosos y una escala naturalista que le da identidad, aunque el conflicto avanza por caminos previsibles. Es una aventura amable, musical y algo subestimada, más fuerte en el vínculo entre los personajes que en su moraleja.",
+	"castCharacters": [
+		{
+			"actor": "Joaquin Phoenix",
+			"character": "Kenai (voice)",
+			"tmdbMovieId": 10009,
+			"tmdbPersonId": 73421,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeremy Suarez",
+			"character": "Koda (voice)",
+			"tmdbMovieId": 10009,
+			"tmdbPersonId": 61959,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jason Raize",
+			"character": "Denahi (voice)",
+			"tmdbMovieId": 10009,
+			"tmdbPersonId": 61960,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rick Moranis",
+			"character": "Rutt (voice)",
+			"tmdbMovieId": 10009,
+			"tmdbPersonId": 8872,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dave Thomas",
+			"character": "Tuke (voice)",
+			"tmdbMovieId": 10009,
+			"tmdbPersonId": 61961,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -19,7 +19,10 @@
 	"director": "John Hillcoat",
 	"mainCast": [
 		"Guy Pearce",
-		"Ray Winstone"
+		"Ray Winstone",
+		"Emily Watson",
+		"David Wenham",
+		"Noah Taylor"
 	],
 	"productionCompany": "UK Film Council",
 	"cinepostaScore": 7,
@@ -70,6 +73,27 @@
 			"tmdbMovieId": 16608,
 			"tmdbPersonId": 5538,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emily Watson",
+			"character": "Martha Stanley",
+			"tmdbMovieId": 16608,
+			"tmdbPersonId": 1639,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Wenham",
+			"character": "Eden Fletcher",
+			"tmdbMovieId": 16608,
+			"tmdbPersonId": 1371,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Noah Taylor",
+			"character": "Brian O'Leary",
+			"tmdbMovieId": 16608,
+			"tmdbPersonId": 1284,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -20,7 +20,8 @@
   "director": "Leo McCarey",
   "mainCast": [
     "Groucho Marx",
-    "Chico Marx"
+    "Chico Marx",
+    "Harpo Marx"
   ],
   "productionCompany": "Paramount Pictures",
   "runtimeMinutes": 69,
@@ -62,6 +63,13 @@
       "tmdbMovieId": 3063,
       "tmdbPersonId": 10799,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Harpo Marx",
+      "character": "Pinky",
+      "tmdbMovieId": 3063,
+      "tmdbPersonId": 10800,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

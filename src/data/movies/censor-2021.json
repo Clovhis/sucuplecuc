@@ -20,7 +20,10 @@
 	"director": "Prano Bailey-Bond",
 	"mainCast": [
 		"Niamh Algar",
-		"Michael Smiley"
+		"Michael Smiley",
+		"Nicholas Burns",
+		"Vincent Franklin",
+		"Sophia La Porta"
 	],
 	"productionCompany": "Stigma Films",
 	"cinepostaScore": 7,
@@ -71,6 +74,27 @@
 			"tmdbMovieId": 663866,
 			"tmdbPersonId": 17078,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicholas Burns",
+			"character": "Sanderson",
+			"tmdbMovieId": 663866,
+			"tmdbPersonId": 110076,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Vincent Franklin",
+			"character": "Fraser",
+			"tmdbMovieId": 663866,
+			"tmdbPersonId": 43024,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sophia La Porta",
+			"character": "Alice Lee",
+			"tmdbMovieId": 663866,
+			"tmdbPersonId": 1653751,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

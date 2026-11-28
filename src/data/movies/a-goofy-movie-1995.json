@@ -24,7 +24,10 @@
 	"director": "Kevin Lima",
 	"mainCast": [
 		"Bill Farmer",
-		"Jason Marsden"
+		"Jason Marsden",
+		"Aaron Lohr",
+		"Jim Cummings",
+		"Kevin Lima"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 8,
@@ -67,6 +70,27 @@
 			"tmdbMovieId": 15789,
 			"tmdbPersonId": 61983,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Lohr",
+			"character": "Max Goof (singing voice)",
+			"tmdbMovieId": 15789,
+			"tmdbPersonId": 148655,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jim Cummings",
+			"character": "Pete (voice)",
+			"tmdbMovieId": 15789,
+			"tmdbPersonId": 12077,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kevin Lima",
+			"character": "Lester (voice)",
+			"tmdbMovieId": 15789,
+			"tmdbPersonId": 15775,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

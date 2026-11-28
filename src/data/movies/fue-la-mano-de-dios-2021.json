@@ -18,7 +18,9 @@
 	"director": "Paolo Sorrentino",
 	"mainCast": [
 		"Filippo Scotti",
-		"Toni Servillo"
+		"Toni Servillo",
+		"Teresa Saponangelo",
+		"Marlon Joubert"
 	],
 	"productionCompany": "Fremantle Company",
 	"cinepostaScore": 7,
@@ -54,5 +56,35 @@
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
 	"country": "IT",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Teresa Saponangelo",
+			"character": "Maria Schisa",
+			"tmdbMovieId": 722778,
+			"tmdbPersonId": 116532,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Marlon Joubert",
+			"character": "Marchino Schisa",
+			"tmdbMovieId": 722778,
+			"tmdbPersonId": 2672369,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Filippo Scotti",
+			"character": "Fabietto Schisa",
+			"tmdbMovieId": 722778,
+			"tmdbPersonId": 2431166,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Toni Servillo",
+			"character": "Saverio Schisa",
+			"tmdbMovieId": 722778,
+			"tmdbPersonId": 72782,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

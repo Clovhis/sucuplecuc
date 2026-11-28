@@ -12,7 +12,9 @@
 	"mainCast": [
 		"Harrison Ford",
 		"Karen Allen",
-		"Paul Freeman"
+		"Paul Freeman",
+		"John Rhys-Davies",
+		"Denholm Elliott"
 	],
 	"productionCompany": "Lucasfilm Ltd.",
 	"cinepostaScore": 8,
@@ -74,6 +76,20 @@
 			"tmdbMovieId": 85,
 			"tmdbPersonId": 652,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Rhys-Davies",
+			"character": "Sallah",
+			"tmdbMovieId": 85,
+			"tmdbPersonId": 655,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Denholm Elliott",
+			"character": "Dr. Marcus Brody",
+			"tmdbMovieId": 85,
+			"tmdbPersonId": 656,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

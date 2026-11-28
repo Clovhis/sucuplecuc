@@ -23,7 +23,12 @@
 	"director": "Chris Wedge",
 	"mainCast": [
 		"John Leguizamo",
-		"Goran Višnjić"
+		"Goran Višnjić",
+		"Ray Romano",
+		"Denis Leary",
+		"Jack Black",
+		"Cedric the Entertainer",
+		"Diedrich Bader"
 	],
 	"productionCompany": "Blue Sky Studios",
 	"cinepostaScore": 7,
@@ -66,6 +71,41 @@
 			"tmdbMovieId": 425,
 			"tmdbPersonId": 5725,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ray Romano",
+			"character": "Manfred 'Manny' (voice)",
+			"tmdbMovieId": 425,
+			"tmdbPersonId": 15757,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Denis Leary",
+			"character": "Diego (voice)",
+			"tmdbMovieId": 425,
+			"tmdbPersonId": 5724,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jack Black",
+			"character": "Zeke (voice)",
+			"tmdbMovieId": 425,
+			"tmdbPersonId": 70851,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cedric the Entertainer",
+			"character": "Rhino (voice)",
+			"tmdbMovieId": 425,
+			"tmdbPersonId": 5726,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diedrich Bader",
+			"character": "Saber-Toothed Tiger (voice)",
+			"tmdbMovieId": 425,
+			"tmdbPersonId": 5727,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -23,7 +23,11 @@
 	"director": "Trevor Kirschner",
 	"mainCast": [
 		"Kira Kosarin",
-		"Jack Griffo"
+		"Jack Griffo",
+		"Rosa Blasi",
+		"Chris Tallman",
+		"Diego Velazquez",
+		"Addison Riecke"
 	],
 	"productionCompany": "Nickelodeon",
 	"cinepostaScore": 4,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 1506560,
 			"tmdbPersonId": 1277364,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rosa Blasi",
+			"character": "Barb Thunderman",
+			"tmdbMovieId": 1506560,
+			"tmdbPersonId": 20389,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chris Tallman",
+			"character": "Hank Thunderman",
+			"tmdbMovieId": 1506560,
+			"tmdbPersonId": 159275,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diego Velazquez",
+			"character": "Billy Thunderman",
+			"tmdbMovieId": 1506560,
+			"tmdbPersonId": 1567479,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Addison Riecke",
+			"character": "Nora Thunderman",
+			"tmdbMovieId": 1506560,
+			"tmdbPersonId": 1666059,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

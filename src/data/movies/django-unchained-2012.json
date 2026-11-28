@@ -17,7 +17,11 @@
 	"mainCast": [
 		"Jamie Foxx",
 		"Christoph Waltz",
-		"Leonardo DiCaprio"
+		"Leonardo DiCaprio",
+		"Kerry Washington",
+		"Samuel L. Jackson",
+		"Walton Goggins",
+		"James Remar"
 	],
 	"productionCompany": "A Band Apart, The Weinstein Company y Columbia Pictures",
 	"cinepostaScore": 7,
@@ -86,6 +90,34 @@
 			"tmdbMovieId": 68718,
 			"tmdbPersonId": 6193,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kerry Washington",
+			"character": "Broomhilda von Shaft",
+			"tmdbMovieId": 68718,
+			"tmdbPersonId": 11703,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Stephen",
+			"tmdbMovieId": 68718,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Walton Goggins",
+			"character": "Billy Crash",
+			"tmdbMovieId": 68718,
+			"tmdbPersonId": 27740,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Remar",
+			"character": "Butch Pooch / Ace Speck",
+			"tmdbMovieId": 68718,
+			"tmdbPersonId": 1736,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

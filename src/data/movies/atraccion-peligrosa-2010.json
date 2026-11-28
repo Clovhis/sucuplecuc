@@ -25,7 +25,9 @@
 	"mainCast": [
 		"Ben Affleck",
 		"Rebecca Hall",
-		"Jeremy Renner"
+		"Jeremy Renner",
+		"Jon Hamm",
+		"Pete Postlethwaite"
 	],
 	"productionCompany": "GK Films, Thunder Road Films, Warner Bros. Pictures",
 	"cinepostaScore": 8,
@@ -79,6 +81,20 @@
 			"tmdbMovieId": 23168,
 			"tmdbPersonId": 17604,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Hamm",
+			"character": "FBI S.A. Adam Frawley",
+			"tmdbMovieId": 23168,
+			"tmdbPersonId": 65717,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Pete Postlethwaite",
+			"character": "Fergus \"Fergie\" Colm",
+			"tmdbMovieId": 23168,
+			"tmdbPersonId": 4935,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

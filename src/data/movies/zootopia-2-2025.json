@@ -46,5 +46,28 @@
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Ginnifer Goodwin",
+			"character": "Judy Hopps (voice)",
+			"tmdbMovieId": 1084242,
+			"tmdbPersonId": 417,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jason Bateman",
+			"character": "Nick Wilde (voice)",
+			"tmdbMovieId": 1084242,
+			"tmdbPersonId": 23532,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ke Huy Quan",
+			"character": "Gary De'Snake (voice)",
+			"tmdbMovieId": 1084242,
+			"tmdbPersonId": 690,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

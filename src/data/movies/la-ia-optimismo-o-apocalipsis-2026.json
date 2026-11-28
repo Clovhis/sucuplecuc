@@ -21,7 +21,8 @@
 	"director": "Charlie Tyrell, Daniel Roher",
 	"mainCast": [
 		"Daniel Roher",
-		"Sam Altman"
+		"Sam Altman",
+		"Dario Amodei"
 	],
 	"productionCompany": "Fishbowl Films, Cottage M",
 	"cinepostaScore": 8,
@@ -51,5 +52,28 @@
 	"catalogAddedAt": "2026-11-06",
 	"runtimeMinutes": 104,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Dario Amodei",
+			"character": "Self",
+			"tmdbMovieId": 1596335,
+			"tmdbPersonId": 6101019,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Daniel Roher",
+			"character": "Self",
+			"tmdbMovieId": 1596335,
+			"tmdbPersonId": 1932822,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sam Altman",
+			"character": "Self",
+			"tmdbMovieId": 1596335,
+			"tmdbPersonId": 4940638,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

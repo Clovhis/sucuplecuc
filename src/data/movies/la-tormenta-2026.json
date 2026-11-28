@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Gustaf Skarsgård",
 		"Aliette Opheim",
-		"Filip Berg"
+		"Filip Berg",
+		"Josephine Bornebusch",
+		"Jonas Karlsson",
+		"Henrik Dorsin"
 	],
 	"productionCompany": "Warner Bros. International Television Production Sweden",
 	"cinepostaScore": 5,
@@ -50,5 +53,49 @@
 		]
 	},
 	"review": "En La tormenta, el mal tiempo cumple un trabajo sencillo y eficaz: impedir que alguien abandone una conversación incómoda. Josephine Bornebusch encierra a sus personajes con el lujo que habían elegido para festejar y lo vuelve parte de su ridículo. El elenco sostiene el contraste entre los buenos modales y las pequeñas agresiones. Hay revelaciones que llegan con demasiado cálculo y discusiones que repiten un punto ya entendido. La comedia resulta más filosa cuando muestra cómo se castiga una amistad sin que nadie admita todavía que empezó la pelea.",
-	"runtimeMinutes": 101
+	"runtimeMinutes": 101,
+	"castCharacters": [
+		{
+			"actor": "Josephine Bornebusch",
+			"character": "Kina",
+			"tmdbMovieId": 1623256,
+			"tmdbPersonId": 116612,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jonas Karlsson",
+			"character": "Jacob",
+			"tmdbMovieId": 1623256,
+			"tmdbPersonId": 47068,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Henrik Dorsin",
+			"character": "Stefan",
+			"tmdbMovieId": 1623256,
+			"tmdbPersonId": 225636,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gustaf Skarsgård",
+			"character": "Filip",
+			"tmdbMovieId": 1623256,
+			"tmdbPersonId": 63764,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Aliette Opheim",
+			"character": "Caroline",
+			"tmdbMovieId": 1623256,
+			"tmdbPersonId": 570784,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Filip Berg",
+			"character": "Ossi",
+			"tmdbMovieId": 1623256,
+			"tmdbPersonId": 986805,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

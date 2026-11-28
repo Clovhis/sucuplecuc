@@ -43,18 +43,41 @@
 			"forFansOf": "Puede entusiasmarte si te gustan documentales de fútbol, archivos de Mundiales y testimonios de campeones que revisan su propia leyenda con algo más que la foto del trofeo.",
 			"notForYouIf": "Quizás no sea para vos si buscás una investigación crítica sobre el Brasil de 1994, estadísticas detalladas o una forma documental más arriesgada. Su corazón está en la nostalgia y el vestuario."
 		},
-	"becauseYouLiked": [
-		"chris-y-martina-el-set-decisivo-2026",
-		"secretos-del-deporte-el-testimonio-de-vince-young-2026"
-	],
-	"related": [
-		"el-partido-2026",
-		"the-barkley-marathons-the-race-that-eats-its-young-2014",
-		"hoop-dreams-1994",
-		"el-escandalo-de-trustor-desde-dentro-2026"
-	]
-},
+		"becauseYouLiked": [
+			"chris-y-martina-el-set-decisivo-2026",
+			"secretos-del-deporte-el-testimonio-de-vince-young-2026"
+		],
+		"related": [
+			"el-partido-2026",
+			"the-barkley-marathons-the-race-that-eats-its-young-2014",
+			"hoop-dreams-1994",
+			"el-escandalo-de-trustor-desde-dentro-2026"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Tetracampeones: Brasil volvió a creer tiene un gancho buenísimo y lo aprovecha: ver ese Mundial desde adentro, con material filmado por los propios jugadores, le da una cercanía que no aparece todos los días en este tipo de documentales. No se queda solo con la final ni con la épica obvia, también deja entrar la presión, la convivencia y el peso de representar a una selección que llegaba obligada a ganar.\n\nLuis Ara no reinventa demasiado la forma y por momentos se apoya bastante en la nostalgia, pero las entrevistas actuales y ese archivo privado le dan espesor de sobra. Para cualquiera que tenga un mínimo interés en el fútbol noventoso, entra muy bien."
+	"review": "Tetracampeones: Brasil volvió a creer tiene un gancho buenísimo y lo aprovecha: ver ese Mundial desde adentro, con material filmado por los propios jugadores, le da una cercanía que no aparece todos los días en este tipo de documentales. No se queda solo con la final ni con la épica obvia, también deja entrar la presión, la convivencia y el peso de representar a una selección que llegaba obligada a ganar.\n\nLuis Ara no reinventa demasiado la forma y por momentos se apoya bastante en la nostalgia, pero las entrevistas actuales y ese archivo privado le dan espesor de sobra. Para cualquiera que tenga un mínimo interés en el fútbol noventoso, entra muy bien.",
+	"castCharacters": [
+		{
+			"actor": "Romário",
+			"character": "Self",
+			"tmdbMovieId": 1667493,
+			"tmdbPersonId": 1564890,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dunga",
+			"character": "Self",
+			"tmdbMovieId": 1667493,
+			"tmdbPersonId": 2720099,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gilmar Rinaldi",
+			"character": "Self",
+			"tmdbMovieId": 1667493,
+			"tmdbPersonId": 5071282,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

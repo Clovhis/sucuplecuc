@@ -22,7 +22,8 @@
 	"director": "Eric Quizon",
 	"mainCast": [
 		"Sue Ramirez",
-		"Rico Blanco"
+		"Rico Blanco",
+		"Alice Dixson"
 	],
 	"productionCompany": "Regal Entertainment",
 	"cinepostaScore": 3,
@@ -50,5 +51,28 @@
 		]
 	},
 	"review": "La autonomía de Sandy debería darle a Project Baby una protagonista difícil de encasillar. Sue Ramirez transmite esa decisión, pero el relato insiste en llevar cada desacuerdo hacia las estaciones conocidas de la comedia romántica. Eric Quizon se apoya en las conversaciones con el grupo de amigos y en un registro visual cercano a la televisión, que deja poco espacio para que la incomodidad del acuerdo respire. Rico Blanco tiene presencia, aunque la relación necesita una construcción más convincente que el simple choque entre el contrato y lo que sienten. La película abre preguntas sobre la maternidad que después trata como obstáculos para reunir a la pareja.",
-	"runtimeMinutes": 110
+	"runtimeMinutes": 110,
+	"castCharacters": [
+		{
+			"actor": "Alice Dixson",
+			"character": "Millie",
+			"tmdbMovieId": 1705390,
+			"tmdbPersonId": 1233919,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sue Ramirez",
+			"character": "Sandy",
+			"tmdbMovieId": 1705390,
+			"tmdbPersonId": 1496083,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rico Blanco",
+			"character": "Migo",
+			"tmdbMovieId": 1705390,
+			"tmdbPersonId": 1374319,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

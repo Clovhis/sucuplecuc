@@ -18,7 +18,9 @@
 	"mainCast": [
 		"Johnny Depp",
 		"Orlando Bloom",
-		"Keira Knightley"
+		"Keira Knightley",
+		"Bill Nighy",
+		"Jonathan Pryce"
 	],
 	"productionCompany": "Jerry Bruckheimer Films, Walt Disney Pictures, Jerry Bruckheimer",
 	"cinepostaScore": 5,
@@ -80,6 +82,20 @@
 			"tmdbMovieId": 58,
 			"tmdbPersonId": 116,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Nighy",
+			"character": "Davy Jones",
+			"tmdbMovieId": 58,
+			"tmdbPersonId": 2440,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jonathan Pryce",
+			"character": "Governor Weatherby Swann",
+			"tmdbMovieId": 58,
+			"tmdbPersonId": 378,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

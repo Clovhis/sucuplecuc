@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Amy Adams",
 		"Jake Gyllenhaal",
-		"Michael Shannon"
+		"Michael Shannon",
+		"Aaron Taylor-Johnson",
+		"Isla Fisher",
+		"Armie Hammer"
 	],
 	"productionCompany": "Fade to Black, Focus Features",
 	"cinepostaScore": 7,
@@ -77,6 +80,27 @@
 			"tmdbMovieId": 340666,
 			"tmdbPersonId": 335,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Aaron Taylor-Johnson",
+			"character": "Ray Marcus",
+			"tmdbMovieId": 340666,
+			"tmdbPersonId": 27428,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Isla Fisher",
+			"character": "Laura Hastings",
+			"tmdbMovieId": 340666,
+			"tmdbPersonId": 52848,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Armie Hammer",
+			"character": "Hutton Morrow",
+			"tmdbMovieId": 340666,
+			"tmdbPersonId": 53807,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

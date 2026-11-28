@@ -55,5 +55,42 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Simon Pegg",
+			"character": "Gary King",
+			"tmdbMovieId": 107985,
+			"tmdbPersonId": 11108,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nick Frost",
+			"character": "Andrew Knightley",
+			"tmdbMovieId": 107985,
+			"tmdbPersonId": 11109,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Paddy Considine",
+			"character": "Steven Prince",
+			"tmdbMovieId": 107985,
+			"tmdbPersonId": 14887,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Martin Freeman",
+			"character": "Oliver Chamberlain",
+			"tmdbMovieId": 107985,
+			"tmdbPersonId": 7060,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eddie Marsan",
+			"character": "Peter Page",
+			"tmdbMovieId": 107985,
+			"tmdbPersonId": 1665,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

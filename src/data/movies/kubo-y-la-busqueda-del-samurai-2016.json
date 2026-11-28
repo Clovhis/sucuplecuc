@@ -23,7 +23,11 @@
 	"director": "Travis Knight",
 	"mainCast": [
 		"Art Parkinson",
-		"Charlize Theron"
+		"Charlize Theron",
+		"Matthew McConaughey",
+		"Ralph Fiennes",
+		"Rooney Mara",
+		"George Takei"
 	],
 	"productionCompany": "LAIKA",
 	"cinepostaScore": 8,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 313297,
 			"tmdbPersonId": 6885,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Matthew McConaughey",
+			"character": "Beetle / Hanzo (voice)",
+			"tmdbMovieId": 313297,
+			"tmdbPersonId": 10297,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Moon King (voice)",
+			"tmdbMovieId": 313297,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rooney Mara",
+			"character": "The Sisters (voice)",
+			"tmdbMovieId": 313297,
+			"tmdbPersonId": 108916,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "George Takei",
+			"character": "Hosato (voice)",
+			"tmdbMovieId": 313297,
+			"tmdbPersonId": 1752,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -23,7 +23,11 @@
 	"director": "Chris Butler",
 	"mainCast": [
 		"Anna Kendrick",
-		"Casey Affleck"
+		"Casey Affleck",
+		"Kodi Smit-McPhee",
+		"Christopher Mintz-Plasse",
+		"Leslie Mann",
+		"Elaine Stritch"
 	],
 	"productionCompany": "LAIKA",
 	"cinepostaScore": 7,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 77174,
 			"tmdbPersonId": 1893,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kodi Smit-McPhee",
+			"character": "Norman Babcock (voice)",
+			"tmdbMovieId": 77174,
+			"tmdbPersonId": 113505,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Christopher Mintz-Plasse",
+			"character": "Alvin (voice)",
+			"tmdbMovieId": 77174,
+			"tmdbPersonId": 54691,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Leslie Mann",
+			"character": "Sandra Babcock (voice)",
+			"tmdbMovieId": 77174,
+			"tmdbPersonId": 41087,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elaine Stritch",
+			"character": "Grandma Babcock (voice)",
+			"tmdbMovieId": 77174,
+			"tmdbPersonId": 36802,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

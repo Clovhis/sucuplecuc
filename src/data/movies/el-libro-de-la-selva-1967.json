@@ -24,7 +24,10 @@
 	"director": "Wolfgang Reitherman",
 	"mainCast": [
 		"Bruce Reitherman",
-		"Phil Harris"
+		"Phil Harris",
+		"Sebastian Cabot",
+		"Sterling Holloway",
+		"J. Pat O'Malley"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 8,
@@ -52,5 +55,42 @@
 			"la-dama-y-el-vagabundo-1955"
 		]
 	},
-	"review": "El libro de la selva se mueve con una soltura musical que vuelve encantador cada desvío del viaje de Mowgli. Bruce Reitherman, Phil Harris y Sebastian Cabot arman un trío vocal de gran presencia, y la banda sonora entiende cuándo dejar que una canción sea simplemente un momento de alegría. La amenaza de Shere Khan aporta tensión sin romper el tono juguetón; el resultado es una despedida cálida, rítmica y muy segura de su encanto."
+	"review": "El libro de la selva se mueve con una soltura musical que vuelve encantador cada desvío del viaje de Mowgli. Bruce Reitherman, Phil Harris y Sebastian Cabot arman un trío vocal de gran presencia, y la banda sonora entiende cuándo dejar que una canción sea simplemente un momento de alegría. La amenaza de Shere Khan aporta tensión sin romper el tono juguetón; el resultado es una despedida cálida, rítmica y muy segura de su encanto.",
+	"castCharacters": [
+		{
+			"actor": "Sebastian Cabot",
+			"character": "Bagheera the Panther (voice)",
+			"tmdbMovieId": 9325,
+			"tmdbPersonId": 21877,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sterling Holloway",
+			"character": "Kaa the Snake (voice)",
+			"tmdbMovieId": 9325,
+			"tmdbPersonId": 34759,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "J. Pat O'Malley",
+			"character": "Col. Hathi the Elephant / Buzzie (voice)",
+			"tmdbMovieId": 9325,
+			"tmdbPersonId": 22602,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bruce Reitherman",
+			"character": "Mowgli the Man Cub (voice)",
+			"tmdbMovieId": 9325,
+			"tmdbPersonId": 57331,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Phil Harris",
+			"character": "Baloo the Bear (voice)",
+			"tmdbMovieId": 9325,
+			"tmdbPersonId": 57329,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

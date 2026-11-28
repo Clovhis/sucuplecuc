@@ -19,7 +19,9 @@
 	"mainCast": [
 		"Mark Hamill",
 		"Harrison Ford",
-		"Carrie Fisher"
+		"Carrie Fisher",
+		"Anthony Daniels",
+		"Ian McDiarmid"
 	],
 	"productionCompany": "Lucasfilm",
 	"cinepostaScore": 8,
@@ -81,6 +83,20 @@
 			"tmdbMovieId": 1892,
 			"tmdbPersonId": 4,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Anthony Daniels",
+			"character": "C-3PO",
+			"tmdbMovieId": 1892,
+			"tmdbPersonId": 6,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ian McDiarmid",
+			"character": "The Emperor",
+			"tmdbMovieId": 1892,
+			"tmdbPersonId": 27762,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -23,7 +23,9 @@
 	"director": "Joe Carnahan",
 	"mainCast": [
 		"Zachary Levi",
-		"Josh Duhamel"
+		"Josh Duhamel",
+		"Quentin Plair",
+		"JoBeth Williams"
 	],
 	"productionCompany": "Highland Film Group",
 	"cinepostaScore": 7,
@@ -68,6 +70,20 @@
 			"tmdbMovieId": 339849,
 			"tmdbPersonId": 19536,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Quentin Plair",
+			"character": "Marquis Cooper",
+			"tmdbMovieId": 339849,
+			"tmdbPersonId": 1532422,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "JoBeth Williams",
+			"character": "Marcia",
+			"tmdbMovieId": 339849,
+			"tmdbPersonId": 10080,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

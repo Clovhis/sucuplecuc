@@ -23,7 +23,11 @@
 	"director": "Sarah Smith",
 	"mainCast": [
 		"James McAvoy",
-		"Hugh Laurie"
+		"Hugh Laurie",
+		"Bill Nighy",
+		"Jim Broadbent",
+		"Imelda Staunton",
+		"Laura Linney"
 	],
 	"productionCompany": "Aardman Animations",
 	"cinepostaScore": 7,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 51052,
 			"tmdbPersonId": 41419,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bill Nighy",
+			"character": "Grandsanta (voice)",
+			"tmdbMovieId": 51052,
+			"tmdbPersonId": 2440,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jim Broadbent",
+			"character": "Santa (voice)",
+			"tmdbMovieId": 51052,
+			"tmdbPersonId": 388,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Imelda Staunton",
+			"character": "Mrs Santa (voice)",
+			"tmdbMovieId": 51052,
+			"tmdbPersonId": 11356,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Laura Linney",
+			"character": "North Pole Computer (voice)",
+			"tmdbMovieId": 51052,
+			"tmdbPersonId": 350,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

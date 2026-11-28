@@ -27,7 +27,11 @@
 	"director": "Pierre Coffin",
 	"mainCast": [
 		"Steve Carell",
-		"Kristen Wiig"
+		"Kristen Wiig",
+		"Miranda Cosgrove",
+		"Dana Gaier Ellis",
+		"Elsie Fisher",
+		"Russell Brand"
 	],
 	"productionCompany": "Illumination",
 	"cinepostaScore": 7,
@@ -70,6 +74,34 @@
 			"tmdbMovieId": 93456,
 			"tmdbPersonId": 41091,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Miranda Cosgrove",
+			"character": "Margo (voice)",
+			"tmdbMovieId": 93456,
+			"tmdbPersonId": 17743,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dana Gaier Ellis",
+			"character": "Edith (voice)",
+			"tmdbMovieId": 93456,
+			"tmdbPersonId": 124750,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elsie Fisher",
+			"character": "Agnes (voice)",
+			"tmdbMovieId": 93456,
+			"tmdbPersonId": 122851,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Russell Brand",
+			"character": "Dr. Nefario (voice)",
+			"tmdbMovieId": 93456,
+			"tmdbPersonId": 59919,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

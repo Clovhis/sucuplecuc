@@ -12,7 +12,11 @@
 	"mainCast": [
 		"Bradley Cooper",
 		"Cate Blanchett",
-		"Toni Collette"
+		"Toni Collette",
+		"Willem Dafoe",
+		"Rooney Mara",
+		"Ron Perlman",
+		"Mary Steenburgen"
 	],
 	"productionCompany": "Searchlight Pictures",
 	"cinepostaScore": 7,
@@ -68,6 +72,34 @@
 			"tmdbMovieId": 597208,
 			"tmdbPersonId": 3051,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Clem Hoatley",
+			"tmdbMovieId": 597208,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rooney Mara",
+			"character": "Molly Cahill",
+			"tmdbMovieId": 597208,
+			"tmdbPersonId": 108916,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ron Perlman",
+			"character": "Bruno",
+			"tmdbMovieId": 597208,
+			"tmdbPersonId": 2372,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mary Steenburgen",
+			"character": "Mrs. Kimball",
+			"tmdbMovieId": 597208,
+			"tmdbPersonId": 2453,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

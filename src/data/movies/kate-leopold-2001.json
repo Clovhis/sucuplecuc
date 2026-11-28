@@ -26,7 +26,10 @@
 	"mainCast": [
 		"Meg Ryan",
 		"Hugh Jackman",
-		"Liev Schreiber"
+		"Liev Schreiber",
+		"Breckin Meyer",
+		"Natasha Lyonne",
+		"Bradley Whitford"
 	],
 	"productionCompany": "Miramax, Konrad Pictures",
 	"cinepostaScore": 5,
@@ -79,6 +82,27 @@
 			"tmdbMovieId": 11232,
 			"tmdbPersonId": 23626,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Breckin Meyer",
+			"character": "Charlie McKay",
+			"tmdbMovieId": 11232,
+			"tmdbPersonId": 33654,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Natasha Lyonne",
+			"character": "Darci",
+			"tmdbMovieId": 11232,
+			"tmdbPersonId": 10871,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bradley Whitford",
+			"character": "J.J. Camden",
+			"tmdbMovieId": 11232,
+			"tmdbPersonId": 11367,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -24,7 +24,11 @@
 	"director": "Jules Bass",
 	"mainCast": [
 		"Mia Farrow",
-		"Alan Arkin"
+		"Alan Arkin",
+		"Jeff Bridges",
+		"Christopher Lee",
+		"Angela Lansbury",
+		"Keenan Wynn"
 	],
 	"productionCompany": "Producción internacional",
 	"cinepostaScore": 8,
@@ -67,6 +71,34 @@
 			"tmdbMovieId": 10150,
 			"tmdbPersonId": 1903,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeff Bridges",
+			"character": "Prince Lir (voice)",
+			"tmdbMovieId": 10150,
+			"tmdbPersonId": 1229,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Christopher Lee",
+			"character": "King Haggard (voice)",
+			"tmdbMovieId": 10150,
+			"tmdbPersonId": 113,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Angela Lansbury",
+			"character": "Mommy Fortuna (voice)",
+			"tmdbMovieId": 10150,
+			"tmdbPersonId": 14730,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Keenan Wynn",
+			"character": "Captain Cully / Harpy (voice)",
+			"tmdbMovieId": 10150,
+			"tmdbPersonId": 4966,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -26,7 +26,10 @@
 	"director": "John Lasseter",
 	"mainCast": [
 		"Owen Wilson",
-		"Paul Newman"
+		"Paul Newman",
+		"Bonnie Hunt",
+		"Cheech Marin",
+		"Tony Shalhoub"
 	],
 	"productionCompany": "Pixar Animation Studios",
 	"cinepostaScore": 7,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 920,
 			"tmdbPersonId": 3636,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bonnie Hunt",
+			"character": "Sally Carrera (voice)",
+			"tmdbMovieId": 920,
+			"tmdbPersonId": 5149,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cheech Marin",
+			"character": "Ramone (voice)",
+			"tmdbMovieId": 920,
+			"tmdbPersonId": 11159,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tony Shalhoub",
+			"character": "Luigi (voice)",
+			"tmdbMovieId": 920,
+			"tmdbPersonId": 4252,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

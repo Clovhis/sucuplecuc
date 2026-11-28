@@ -22,7 +22,13 @@
 	"director": "Rob Reiner",
 	"mainCast": [
 		"Tom Cruise",
-		"Demi Moore"
+		"Demi Moore",
+		"Jack Nicholson",
+		"Kevin Bacon",
+		"Kevin Pollak",
+		"James Marshall",
+		"J.T. Walsh",
+		"Kiefer Sutherland"
 	],
 	"productionCompany": "Castle Rock Entertainment",
 	"cinepostaScore": 8,
@@ -69,6 +75,48 @@
 			"tmdbMovieId": 881,
 			"tmdbPersonId": 3416,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Nicholson",
+			"character": "Col. Nathan R. Jessep",
+			"tmdbMovieId": 881,
+			"tmdbPersonId": 514,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kevin Bacon",
+			"character": "Capt. Jack Ross",
+			"tmdbMovieId": 881,
+			"tmdbPersonId": 4724,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kevin Pollak",
+			"character": "Lt. Sam Weinberg",
+			"tmdbMovieId": 881,
+			"tmdbPersonId": 7166,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Marshall",
+			"character": "Pfc. Louden Downey",
+			"tmdbMovieId": 881,
+			"tmdbPersonId": 6717,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "J.T. Walsh",
+			"character": "Lt. Col. Matthew Markinson",
+			"tmdbMovieId": 881,
+			"tmdbPersonId": 22131,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kiefer Sutherland",
+			"character": "Lt. Jonathan Kendrick",
+			"tmdbMovieId": 881,
+			"tmdbPersonId": 2628,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

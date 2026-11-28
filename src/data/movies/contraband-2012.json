@@ -28,7 +28,12 @@
 	"mainCast": [
 		"Mark Wahlberg",
 		"Kate Beckinsale",
-		"Ben Foster"
+		"Ben Foster",
+		"Giovanni Ribisi",
+		"Lukas Haas",
+		"Caleb Landry Jones",
+		"Diego Luna",
+		"J. K. Simmons"
 	],
 	"productionCompany": "Blueeyes Productions, Relativity Media, Universal Pictures, Working Title Films",
 	"cinepostaScore": 6,
@@ -79,6 +84,41 @@
 			"tmdbMovieId": 77866,
 			"tmdbPersonId": 11107,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Giovanni Ribisi",
+			"character": "Tim Briggs",
+			"tmdbMovieId": 77866,
+			"tmdbPersonId": 1771,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lukas Haas",
+			"character": "Danny Raymer",
+			"tmdbMovieId": 77866,
+			"tmdbPersonId": 526,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Caleb Landry Jones",
+			"character": "Andy",
+			"tmdbMovieId": 77866,
+			"tmdbPersonId": 572541,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diego Luna",
+			"character": "Gonzalo",
+			"tmdbMovieId": 77866,
+			"tmdbPersonId": 8688,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "J. K. Simmons",
+			"character": "Captain Camp",
+			"tmdbMovieId": 77866,
+			"tmdbPersonId": 18999,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -27,7 +27,11 @@
 	"director": "Tom McGrath",
 	"mainCast": [
 		"Will Ferrell",
-		"Brad Pitt"
+		"Brad Pitt",
+		"Jonah Hill",
+		"David Cross",
+		"Ben Stiller",
+		"Justin Theroux"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -70,6 +74,34 @@
 			"tmdbMovieId": 38055,
 			"tmdbPersonId": 287,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jonah Hill",
+			"character": "Tighten (voice)",
+			"tmdbMovieId": 38055,
+			"tmdbPersonId": 21007,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Cross",
+			"character": "Minion (voice)",
+			"tmdbMovieId": 38055,
+			"tmdbPersonId": 212,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ben Stiller",
+			"character": "Bernard (voice)",
+			"tmdbMovieId": 38055,
+			"tmdbPersonId": 7399,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Justin Theroux",
+			"character": "Megaminds's Father (voice)",
+			"tmdbMovieId": 38055,
+			"tmdbPersonId": 15009,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

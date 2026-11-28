@@ -27,7 +27,12 @@
 	"director": "Karey Kirkpatrick",
 	"mainCast": [
 		"Bruce Willis",
-		"Steve Carell"
+		"Steve Carell",
+		"Wanda Sykes",
+		"William Shatner",
+		"Nick Nolte",
+		"Thomas Haden Church",
+		"Allison Janney"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -70,6 +75,41 @@
 			"tmdbMovieId": 7518,
 			"tmdbPersonId": 4495,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wanda Sykes",
+			"character": "Stella (voice)",
+			"tmdbMovieId": 7518,
+			"tmdbPersonId": 27102,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "William Shatner",
+			"character": "Ozzie (voice)",
+			"tmdbMovieId": 7518,
+			"tmdbPersonId": 1748,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nick Nolte",
+			"character": "Vincent (voice)",
+			"tmdbMovieId": 7518,
+			"tmdbPersonId": 1733,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Thomas Haden Church",
+			"character": "Dwayne (voice)",
+			"tmdbMovieId": 7518,
+			"tmdbPersonId": 19159,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Allison Janney",
+			"character": "Gladys (voice)",
+			"tmdbMovieId": 7518,
+			"tmdbPersonId": 19,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

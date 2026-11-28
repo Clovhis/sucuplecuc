@@ -13,7 +13,9 @@
 	"mainCast": [
 		"Chris Hemsworth",
 		"Natalie Portman",
-		"Tom Hiddleston"
+		"Tom Hiddleston",
+		"Christopher Eccleston",
+		"Zachary Levi"
 	],
 	"productionCompany": "Marvel Studios",
 	"cinepostaScore": 7,
@@ -69,6 +71,20 @@
 			"tmdbMovieId": 76338,
 			"tmdbPersonId": 91606,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Christopher Eccleston",
+			"character": "Malekith",
+			"tmdbMovieId": 76338,
+			"tmdbPersonId": 2040,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zachary Levi",
+			"character": "Fandral",
+			"tmdbMovieId": 76338,
+			"tmdbPersonId": 69899,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

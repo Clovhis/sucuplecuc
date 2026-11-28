@@ -27,7 +27,12 @@
 	"director": "Jared Stern",
 	"mainCast": [
 		"Dwayne Johnson",
-		"Kevin Hart"
+		"Kevin Hart",
+		"John Krasinski",
+		"Keanu Reeves",
+		"Kate McKinnon",
+		"Natasha Lyonne",
+		"Diego Luna"
 	],
 	"productionCompany": "Warner Bros. Animation",
 	"cinepostaScore": 7,
@@ -70,6 +75,41 @@
 			"tmdbMovieId": 539681,
 			"tmdbPersonId": 55638,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Krasinski",
+			"character": "Clark Kent / Superman (voice)",
+			"tmdbMovieId": 539681,
+			"tmdbPersonId": 17697,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Keanu Reeves",
+			"character": "Bruce Wayne / Batman (voice)",
+			"tmdbMovieId": 539681,
+			"tmdbPersonId": 6384,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kate McKinnon",
+			"character": "Lulu (voice)",
+			"tmdbMovieId": 539681,
+			"tmdbPersonId": 1240487,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Natasha Lyonne",
+			"character": "Merton (voice)",
+			"tmdbMovieId": 539681,
+			"tmdbPersonId": 10871,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diego Luna",
+			"character": "Chip (voice)",
+			"tmdbMovieId": 539681,
+			"tmdbPersonId": 8688,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

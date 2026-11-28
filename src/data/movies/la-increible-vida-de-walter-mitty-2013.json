@@ -24,7 +24,12 @@
 	"director": "Ben Stiller",
 	"mainCast": [
 		"Ben Stiller",
-		"Kristen Wiig"
+		"Kristen Wiig",
+		"Sean Penn",
+		"Shirley MacLaine",
+		"Adam Scott",
+		"Kathryn Hahn",
+		"Patton Oswalt"
 	],
 	"productionCompany": "Red Hour Productions, Samuel Goldwyn Films",
 	"cinepostaScore": 7,
@@ -68,6 +73,41 @@
 			"tmdbMovieId": 116745,
 			"tmdbPersonId": 41091,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sean Penn",
+			"character": "Sean O'Connell",
+			"tmdbMovieId": 116745,
+			"tmdbPersonId": 2228,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Shirley MacLaine",
+			"character": "Edna Mitty",
+			"tmdbMovieId": 116745,
+			"tmdbPersonId": 4090,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Adam Scott",
+			"character": "Ted Hendricks",
+			"tmdbMovieId": 116745,
+			"tmdbPersonId": 36801,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kathryn Hahn",
+			"character": "Odessa Mitty",
+			"tmdbMovieId": 116745,
+			"tmdbPersonId": 17696,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Patton Oswalt",
+			"character": "Todd Maher",
+			"tmdbMovieId": 116745,
+			"tmdbPersonId": 10872,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

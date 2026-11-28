@@ -27,7 +27,9 @@
 	"director": "Yarrow Cheney",
 	"mainCast": [
 		"Benedict Cumberbatch",
-		"Angela Lansbury"
+		"Angela Lansbury",
+		"Rashida Jones",
+		"Kenan Thompson"
 	],
 	"productionCompany": "Illumination",
 	"cinepostaScore": 7,
@@ -70,6 +72,20 @@
 			"tmdbMovieId": 360920,
 			"tmdbPersonId": 14730,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rashida Jones",
+			"character": "Donna Who (voice)",
+			"tmdbMovieId": 360920,
+			"tmdbPersonId": 80591,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kenan Thompson",
+			"character": "Bricklebaum (voice)",
+			"tmdbMovieId": 360920,
+			"tmdbPersonId": 77330,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -13,7 +13,9 @@
 	"mainCast": [
 		"Nicolas Cage",
 		"Eva Mendes",
-		"Wes Bentley"
+		"Wes Bentley",
+		"Sam Elliott",
+		"Peter Fonda"
 	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 3,
@@ -69,6 +71,20 @@
 			"tmdbMovieId": 1250,
 			"tmdbPersonId": 8210,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Elliott",
+			"character": "Carter Slade / Phantom Rider",
+			"tmdbMovieId": 1250,
+			"tmdbPersonId": 16431,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Fonda",
+			"character": "Mephistopheles / Mephisto",
+			"tmdbMovieId": 1250,
+			"tmdbPersonId": 8949,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

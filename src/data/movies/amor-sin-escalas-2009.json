@@ -27,7 +27,10 @@
 		"George Clooney",
 		"Vera Farmiga",
 		"Anna Kendrick",
-		"Jason Bateman"
+		"Jason Bateman",
+		"Sam Elliott",
+		"Melanie Lynskey",
+		"J. K. Simmons"
 	],
 	"productionCompany": "DreamWorks Pictures",
 	"cinepostaScore": 8,
@@ -84,6 +87,27 @@
 			"tmdbMovieId": 22947,
 			"tmdbPersonId": 23532,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sam Elliott",
+			"character": "Maynard Finch",
+			"tmdbMovieId": 22947,
+			"tmdbPersonId": 16431,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Melanie Lynskey",
+			"character": "Julie Bingham",
+			"tmdbMovieId": 22947,
+			"tmdbPersonId": 15091,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "J. K. Simmons",
+			"character": "Bob",
+			"tmdbMovieId": 22947,
+			"tmdbPersonId": 18999,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

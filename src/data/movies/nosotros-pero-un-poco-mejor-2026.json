@@ -52,5 +52,21 @@
 	"catalogAddedAt": "2026-10-30",
 	"runtimeMinutes": 107,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Elio Germano",
+			"character": "Simone",
+			"tmdbMovieId": 1541477,
+			"tmdbPersonId": 59269,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maria Chiara Giannetta",
+			"character": "Lucia",
+			"tmdbMovieId": 1541477,
+			"tmdbPersonId": 2086629,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

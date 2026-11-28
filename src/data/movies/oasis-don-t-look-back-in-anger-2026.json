@@ -22,7 +22,8 @@
 	"director": "Dylan Southern, Will Lovelace",
 	"mainCast": [
 		"Liam Gallagher",
-		"Noel Gallagher"
+		"Noel Gallagher",
+		"Paul Arthurs"
 	],
 	"productionCompany": "Magna Studios, Sony Music Vision",
 	"cinepostaScore": 8,
@@ -51,5 +52,28 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Dylan Southern y Will Lovelace encuentran la escala justa para el regreso de Oasis: no convierten cada discusión en una pieza de folklore ni la gira en un anuncio gigante. Las imágenes de ensayo y escenario dejan espacio para mirar cómo Liam y Noel vuelven a compartir una canción sin que el documental les escriba sentimientos encima. La película tiene la potencia inevitable de ese repertorio y algunos pasajes demasiado respetuosos con su propio acontecimiento, pero cuando afloja el protocolo aparece algo más raro y valioso: dos hermanos aprendiendo a habitar la misma historia."
+	"review": "Dylan Southern y Will Lovelace encuentran la escala justa para el regreso de Oasis: no convierten cada discusión en una pieza de folklore ni la gira en un anuncio gigante. Las imágenes de ensayo y escenario dejan espacio para mirar cómo Liam y Noel vuelven a compartir una canción sin que el documental les escriba sentimientos encima. La película tiene la potencia inevitable de ese repertorio y algunos pasajes demasiado respetuosos con su propio acontecimiento, pero cuando afloja el protocolo aparece algo más raro y valioso: dos hermanos aprendiendo a habitar la misma historia.",
+	"castCharacters": [
+		{
+			"actor": "Paul Arthurs",
+			"character": "Self",
+			"tmdbMovieId": 1447853,
+			"tmdbPersonId": 82992,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Liam Gallagher",
+			"character": "Self",
+			"tmdbMovieId": 1447853,
+			"tmdbPersonId": 82990,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Noel Gallagher",
+			"character": "Self",
+			"tmdbMovieId": 1447853,
+			"tmdbPersonId": 143210,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

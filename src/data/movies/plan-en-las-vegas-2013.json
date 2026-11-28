@@ -47,7 +47,9 @@
 		"Robert De Niro",
 		"Morgan Freeman",
 		"Michael Douglas",
-		"Mary Steenburgen"
+		"Mary Steenburgen",
+		"Kevin Kline",
+		"Roger Bart"
 	],
 	"productionCompany": "CBS Films",
 	"cinepostaScore": 5,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 137093,
 			"tmdbPersonId": 2453,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Kevin Kline",
+			"character": "Sam",
+			"tmdbMovieId": 137093,
+			"tmdbPersonId": 8945,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Roger Bart",
+			"character": "Maurice",
+			"tmdbMovieId": 137093,
+			"tmdbPersonId": 45566,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -23,7 +23,9 @@
 	"mainCast": [
 		"Carey Mulligan",
 		"Ralph Fiennes",
-		"Lily James"
+		"Lily James",
+		"Ben Chaplin",
+		"Ken Stott"
 	],
 	"productionCompany": "Clerkenwell Films, Magnolia Mae Films, Netflix",
 	"cinepostaScore": 8,
@@ -55,5 +57,42 @@
 	"releasePlatforms": [
 		"Netflix"
 	],
-	"runtimeMinutes": 112
+	"runtimeMinutes": 112,
+	"castCharacters": [
+		{
+			"actor": "Ben Chaplin",
+			"character": "Stuart Piggott",
+			"tmdbMovieId": 532865,
+			"tmdbPersonId": 21343,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ken Stott",
+			"character": "Charles Phillips",
+			"tmdbMovieId": 532865,
+			"tmdbPersonId": 25136,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Carey Mulligan",
+			"character": "Edith Pretty",
+			"tmdbMovieId": 532865,
+			"tmdbPersonId": 36662,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Basil Brown",
+			"tmdbMovieId": 532865,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lily James",
+			"character": "Peggy Piggott",
+			"tmdbMovieId": 532865,
+			"tmdbPersonId": 1016168,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -19,7 +19,9 @@
 	"director": "Mike Nichols",
 	"mainCast": [
 		"Dustin Hoffman",
-		"Anne Bancroft"
+		"Anne Bancroft",
+		"Katharine Ross",
+		"Murray Hamilton"
 	],
 	"productionCompany": "Lawrence Turman Productions",
 	"cinepostaScore": 9,
@@ -77,6 +79,20 @@
 			"tmdbMovieId": 37247,
 			"tmdbPersonId": 10774,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Katharine Ross",
+			"character": "Elaine Robinson",
+			"tmdbMovieId": 37247,
+			"tmdbPersonId": 9594,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Murray Hamilton",
+			"character": "Mr. Robinson",
+			"tmdbMovieId": 37247,
+			"tmdbPersonId": 8608,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

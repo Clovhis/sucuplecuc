@@ -23,7 +23,12 @@
 	"director": "Ron Clements",
 	"mainCast": [
 		"Joseph Gordon-Levitt",
-		"Brian Murray"
+		"Brian Murray",
+		"Emma Thompson",
+		"David Hyde Pierce",
+		"Martin Short",
+		"Michael Wincott",
+		"Laurie Metcalf"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 7,
@@ -66,6 +71,41 @@
 			"tmdbMovieId": 9016,
 			"tmdbPersonId": 56618,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Emma Thompson",
+			"character": "Captain Amelia (voice)",
+			"tmdbMovieId": 9016,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Hyde Pierce",
+			"character": "Doctor Doppler (voice)",
+			"tmdbMovieId": 9016,
+			"tmdbPersonId": 11076,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Martin Short",
+			"character": "B.E.N. (voice)",
+			"tmdbMovieId": 9016,
+			"tmdbPersonId": 519,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Wincott",
+			"character": "Scroop (voice)",
+			"tmdbMovieId": 9016,
+			"tmdbPersonId": 7486,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Laurie Metcalf",
+			"character": "Sarah (voice)",
+			"tmdbMovieId": 9016,
+			"tmdbPersonId": 12133,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

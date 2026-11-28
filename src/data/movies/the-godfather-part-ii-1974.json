@@ -16,7 +16,8 @@
 	"mainCast": [
 		"Al Pacino",
 		"Robert Duvall",
-		"Diane Keaton"
+		"Diane Keaton",
+		"Robert De Niro"
 	],
 	"productionCompany": "Paramount Pictures, The Coppola Company",
 	"cinepostaScore": 10,
@@ -86,6 +87,13 @@
 			"tmdbMovieId": 240,
 			"tmdbPersonId": 3092,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "Vito Corleone",
+			"tmdbMovieId": 240,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

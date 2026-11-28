@@ -13,7 +13,11 @@
 	"mainCast": [
 		"James McAvoy",
 		"Michael Fassbender",
-		"Jennifer Lawrence"
+		"Jennifer Lawrence",
+		"Nicholas Hoult",
+		"Oscar Isaac",
+		"Rose Byrne",
+		"Josh Helman"
 	],
 	"productionCompany": "Marvel Entertainment",
 	"cinepostaScore": 4,
@@ -69,6 +73,34 @@
 			"tmdbMovieId": 246655,
 			"tmdbPersonId": 72129,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nicholas Hoult",
+			"character": "Hank McCoy / Beast",
+			"tmdbMovieId": 246655,
+			"tmdbPersonId": 3292,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Oscar Isaac",
+			"character": "En Sabah Nur / Apocalypse",
+			"tmdbMovieId": 246655,
+			"tmdbPersonId": 25072,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rose Byrne",
+			"character": "Moira MacTaggert",
+			"tmdbMovieId": 246655,
+			"tmdbPersonId": 9827,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Josh Helman",
+			"character": "Col. William Stryker",
+			"tmdbMovieId": 246655,
+			"tmdbPersonId": 1056053,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

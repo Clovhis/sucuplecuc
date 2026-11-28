@@ -22,7 +22,9 @@
 	"director": "James Frawley",
 	"mainCast": [
 		"Jim Henson",
-		"Frank Oz"
+		"Frank Oz",
+		"Jerry Nelson",
+		"Charles Durning"
 	],
 	"productionCompany": "ITC Entertainment",
 	"cinepostaScore": 8,
@@ -66,6 +68,20 @@
 			"tmdbMovieId": 11176,
 			"tmdbPersonId": 7908,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jerry Nelson",
+			"character": "Floyd Pepper / Robin the Frog / Crazy Harry / Lew Zealand / Camilla / Dr. Bunsen Honeydew (assistant) (voice)",
+			"tmdbMovieId": 11176,
+			"tmdbPersonId": 68455,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Charles Durning",
+			"character": "Doc Hopper",
+			"tmdbMovieId": 11176,
+			"tmdbPersonId": 1466,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

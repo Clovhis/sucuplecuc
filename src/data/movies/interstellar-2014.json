@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Matthew McConaughey",
 		"Anne Hathaway",
-		"Jessica Chastain"
+		"Jessica Chastain",
+		"Michael Caine",
+		"Casey Affleck",
+		"Wes Bentley"
 	],
 	"productionCompany": "Paramount Pictures, Warner Bros. Pictures, Syncopy",
 	"cinepostaScore": 8,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 157336,
 			"tmdbPersonId": 83002,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Michael Caine",
+			"character": "Professor Brand",
+			"tmdbMovieId": 157336,
+			"tmdbPersonId": 3895,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Casey Affleck",
+			"character": "Tom",
+			"tmdbMovieId": 157336,
+			"tmdbPersonId": 1893,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Wes Bentley",
+			"character": "Doyle",
+			"tmdbMovieId": 157336,
+			"tmdbPersonId": 8210,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

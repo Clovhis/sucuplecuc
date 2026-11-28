@@ -22,7 +22,10 @@
 		"Will Smith",
 		"Stockard Channing",
 		"Donald Sutherland",
-		"Ian McKellen"
+		"Ian McKellen",
+		"Mary Beth Hurt",
+		"Bruce Davison",
+		"Anthony Michael Hall"
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer, MGM/UA",
 	"cinepostaScore": 8,
@@ -84,6 +87,27 @@
 			"tmdbMovieId": 23210,
 			"tmdbPersonId": 1327,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mary Beth Hurt",
+			"character": "Kitty",
+			"tmdbMovieId": 23210,
+			"tmdbPersonId": 54782,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bruce Davison",
+			"character": "Larkin",
+			"tmdbMovieId": 23210,
+			"tmdbPersonId": 52374,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anthony Michael Hall",
+			"character": "Trent",
+			"tmdbMovieId": 23210,
+			"tmdbPersonId": 1904,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

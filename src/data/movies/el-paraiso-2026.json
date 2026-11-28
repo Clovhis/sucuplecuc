@@ -52,5 +52,28 @@
 		]
 	},
 	"review": "Srikanth Odela apuesta a que el cuerpo de Nani concentre una bronca colectiva: el héroe aparece como emblema de una comunidad a la que le niegan hasta el derecho a existir. Esa escala pide imágenes que se graben en la memoria, y el diseño del personaje tiene fuerza. El problema es cuánto depende todo de redoblar la violencia y la grandilocuencia. Con casi tres horas, la acumulación termina gastando el impacto y deja menos espacio para que esa comunidad tenga voces propias. El trasfondo de discriminación le da una apuesta política concreta, pero el culto al salvador se come buena parte de esa complejidad.",
-	"runtimeMinutes": 174
+	"runtimeMinutes": 174,
+	"castCharacters": [
+		{
+			"actor": "Nani",
+			"character": "Jadal",
+			"tmdbMovieId": 1376856,
+			"tmdbPersonId": 225387,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mohan Babu",
+			"character": "Shikanja Maalik",
+			"tmdbMovieId": 1376856,
+			"tmdbPersonId": 585268,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sonali Kulkarni",
+			"character": "Sammakka",
+			"tmdbMovieId": 1376856,
+			"tmdbPersonId": 78920,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

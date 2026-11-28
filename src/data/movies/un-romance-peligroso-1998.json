@@ -27,7 +27,10 @@
 		"George Clooney",
 		"Jennifer Lopez",
 		"Ving Rhames",
-		"Don Cheadle"
+		"Don Cheadle",
+		"Steve Zahn",
+		"Dennis Farina",
+		"Catherine Keener"
 	],
 	"productionCompany": "Universal Pictures",
 	"cinepostaScore": 8,
@@ -85,6 +88,27 @@
 			"tmdbMovieId": 1389,
 			"tmdbPersonId": 1896,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve Zahn",
+			"character": "Glenn Michaels",
+			"tmdbMovieId": 1389,
+			"tmdbPersonId": 18324,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dennis Farina",
+			"character": "Marshall Sisco",
+			"tmdbMovieId": 1389,
+			"tmdbPersonId": 1117,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Catherine Keener",
+			"character": "Adele Delisi",
+			"tmdbMovieId": 1389,
+			"tmdbPersonId": 2229,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

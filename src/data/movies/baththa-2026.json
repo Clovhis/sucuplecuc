@@ -52,5 +52,21 @@
 	"catalogAddedAt": "2026-10-30",
 	"runtimeMinutes": 157,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Vijay Sethupathi",
+			"character": "Bathvachalam 'Baththa'",
+			"tmdbMovieId": 1515692,
+			"tmdbPersonId": 1123766,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lijomol Jose",
+			"character": "Kannima",
+			"tmdbMovieId": 1515692,
+			"tmdbPersonId": 1620961,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

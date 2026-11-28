@@ -28,7 +28,11 @@
 	"director": "Garth Jennings",
 	"mainCast": [
 		"Matthew McConaughey",
-		"Reese Witherspoon"
+		"Reese Witherspoon",
+		"Seth MacFarlane",
+		"Scarlett Johansson",
+		"John C. Reilly",
+		"Jennifer Saunders"
 	],
 	"productionCompany": "Illumination",
 	"cinepostaScore": 7,
@@ -56,5 +60,49 @@
 			"trolls-2016"
 		]
 	},
-	"review": "Un concurso de canto reúne a animales con problemas personales que buscan una oportunidad para subir al escenario. Matthew McConaughey sostiene el optimismo de Buster, y Taron Egerton, Scarlett Johansson y Reese Witherspoon hacen que las canciones tengan personalidad más allá del hit conocido. La trama sigue rutas previsibles, pero el montaje de los ensayos y la energía del escenario generan una recompensa honesta. Funciona mejor cuando escucha a sus perdedores."
+	"review": "Un concurso de canto reúne a animales con problemas personales que buscan una oportunidad para subir al escenario. Matthew McConaughey sostiene el optimismo de Buster, y Taron Egerton, Scarlett Johansson y Reese Witherspoon hacen que las canciones tengan personalidad más allá del hit conocido. La trama sigue rutas previsibles, pero el montaje de los ensayos y la energía del escenario generan una recompensa honesta. Funciona mejor cuando escucha a sus perdedores.",
+	"castCharacters": [
+		{
+			"actor": "Seth MacFarlane",
+			"character": "Mike (voice)",
+			"tmdbMovieId": 335797,
+			"tmdbPersonId": 52139,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Ash (voice)",
+			"tmdbMovieId": 335797,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John C. Reilly",
+			"character": "Eddie (voice)",
+			"tmdbMovieId": 335797,
+			"tmdbPersonId": 4764,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jennifer Saunders",
+			"character": "Nana (voice)",
+			"tmdbMovieId": 335797,
+			"tmdbPersonId": 12094,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Matthew McConaughey",
+			"character": "Buster Moon (voice)",
+			"tmdbMovieId": 335797,
+			"tmdbPersonId": 10297,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Reese Witherspoon",
+			"character": "Rosita (voice)",
+			"tmdbMovieId": 335797,
+			"tmdbPersonId": 368,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

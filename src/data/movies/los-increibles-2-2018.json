@@ -23,7 +23,11 @@
 	"director": "Brad Bird",
 	"mainCast": [
 		"Craig T. Nelson",
-		"Holly Hunter"
+		"Holly Hunter",
+		"Sarah Vowell",
+		"Catherine Keener",
+		"Bob Odenkirk",
+		"Samuel L. Jackson"
 	],
 	"productionCompany": "Pixar Animation Studios",
 	"cinepostaScore": 7,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 260513,
 			"tmdbPersonId": 18686,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sarah Vowell",
+			"character": "Violet Parr (voice)",
+			"tmdbMovieId": 260513,
+			"tmdbPersonId": 59361,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Catherine Keener",
+			"character": "Evelyn Deavor (voice)",
+			"tmdbMovieId": 260513,
+			"tmdbPersonId": 2229,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bob Odenkirk",
+			"character": "Winston Deavor (voice)",
+			"tmdbMovieId": 260513,
+			"tmdbPersonId": 59410,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Lucius Best / Frozone (voice)",
+			"tmdbMovieId": 260513,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

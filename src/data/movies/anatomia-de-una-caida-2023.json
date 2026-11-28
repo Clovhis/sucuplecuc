@@ -19,7 +19,10 @@
 	"director": "Justine Triet",
 	"mainCast": [
 		"Sandra Hüller",
-		"Swann Arlaud"
+		"Swann Arlaud",
+		"Milo Machado-Graner",
+		"Antoine Reinartz",
+		"Samuel Theis"
 	],
 	"productionCompany": "Les Films de Losanges",
 	"cinepostaScore": 8,
@@ -81,6 +84,27 @@
 			"tmdbMovieId": 915935,
 			"tmdbPersonId": 145120,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Milo Machado-Graner",
+			"character": "Daniel",
+			"tmdbMovieId": 915935,
+			"tmdbPersonId": 3302971,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Antoine Reinartz",
+			"character": "Advocate General",
+			"tmdbMovieId": 915935,
+			"tmdbPersonId": 1795152,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Samuel Theis",
+			"character": "Samuel Maleski",
+			"tmdbMovieId": 915935,
+			"tmdbPersonId": 1312061,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

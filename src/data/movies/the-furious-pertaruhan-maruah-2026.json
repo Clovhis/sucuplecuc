@@ -52,5 +52,28 @@
 	},
 	"review": "El ring ofrece una manera bastante directa de medir fuerzas; demostrar que uno merece un apellido es más complicado. Heng Aik Siong junta esas dos presiones en una historia de hermanos que pelean con otros y con la imagen que tienen de sí mismos. Zul Ariffin aporta presencia física, mientras Sky Iskandar e Ikmal Amry sostienen un conflicto que quiere darle a cada golpe una deuda familiar.\n\nLa película se apoya en convenciones conocidas del drama de boxeo: orgullo herido, preparación y una oportunidad de reparación. Esa familiaridad le permite ir al choque, pero también hace que varias emociones lleguen explicadas de antemano. Los combates tienen más fuerza cuando prolongan la rivalidad entre los hermanos que cuando funcionan como una prueba obligatoria de superación. El honor pesa sobre los cuerpos; el argumento no siempre consigue darle la misma complejidad a lo que pasa fuera del ring.",
 	"runtimeMinutes": 106,
-	"isPremiere": true
+	"isPremiere": true,
+	"castCharacters": [
+		{
+			"actor": "Zul Ariffin",
+			"character": "Firdaus",
+			"tmdbMovieId": 1510055,
+			"tmdbPersonId": 1279687,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sky Iskandar",
+			"character": "Hakim",
+			"tmdbMovieId": 1510055,
+			"tmdbPersonId": 3395459,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ikmal Amry",
+			"character": "Danial",
+			"tmdbMovieId": 1510055,
+			"tmdbPersonId": 2140589,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

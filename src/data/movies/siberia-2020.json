@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Willem Dafoe",
 		"Dounia Sichov",
-		"Simon McBurney"
+		"Simon McBurney",
+		"Cristina Chiriac",
+		"Daniel Giménez Cacho",
+		"Anna Ferrara"
 	],
 	"productionCompany": "Useable Film",
 	"cinepostaScore": 5,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 446574,
 			"tmdbPersonId": 16358,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cristina Chiriac",
+			"character": "Russian Woman",
+			"tmdbMovieId": 446574,
+			"tmdbPersonId": 2313632,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Daniel Giménez Cacho",
+			"character": "Doctor",
+			"tmdbMovieId": 446574,
+			"tmdbPersonId": 1603,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anna Ferrara",
+			"character": "Clint's Son",
+			"tmdbMovieId": 446574,
+			"tmdbPersonId": 2313633,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

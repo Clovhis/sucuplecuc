@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Maika Monroe",
 		"Tyriq Withers",
-		"Rudy Pankow"
+		"Rudy Pankow",
+		"Bradley Whitford",
+		"Nicholas Duvernay",
+		"Jennifer Robertson"
 	],
 	"productionCompany": "Heartbones Entertainment, Little Engine Productions",
 	"cinepostaScore": 8,
@@ -54,5 +57,49 @@
 	"releasePlatforms": [
 		"HBO Max",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Bradley Whitford",
+			"character": "Patrick Landry",
+			"tmdbMovieId": 1367642,
+			"tmdbPersonId": 11367,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nicholas Duvernay",
+			"character": "Roman",
+			"tmdbMovieId": 1367642,
+			"tmdbPersonId": 3533641,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jennifer Robertson",
+			"character": "Ruth",
+			"tmdbMovieId": 1367642,
+			"tmdbPersonId": 87571,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maika Monroe",
+			"character": "Kenna Rowan",
+			"tmdbMovieId": 1367642,
+			"tmdbPersonId": 1094091,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tyriq Withers",
+			"character": "Ledger Ward",
+			"tmdbMovieId": 1367642,
+			"tmdbPersonId": 3052321,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rudy Pankow",
+			"character": "Scotty Landry",
+			"tmdbMovieId": 1367642,
+			"tmdbPersonId": 1974046,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

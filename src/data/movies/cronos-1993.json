@@ -23,7 +23,9 @@
 	"director": "Guillermo del Toro",
 	"mainCast": [
 		"Federico Luppi",
-		"Ron Perlman"
+		"Ron Perlman",
+		"Claudio Brook",
+		"Daniel Giménez Cacho"
 	],
 	"productionCompany": "Prime Films, Producciones Iguana",
 	"cinepostaScore": 7,
@@ -74,6 +76,20 @@
 			"tmdbMovieId": 11655,
 			"tmdbPersonId": 2372,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Claudio Brook",
+			"character": "De la Guardia",
+			"tmdbMovieId": 11655,
+			"tmdbPersonId": 39008,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Daniel Giménez Cacho",
+			"character": "Tito",
+			"tmdbMovieId": 11655,
+			"tmdbPersonId": 1603,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

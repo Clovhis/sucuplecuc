@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-27",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "David Corenswet",
+			"character": "Superman",
+			"tmdbMovieId": 1061474,
+			"tmdbPersonId": 1785590,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rachel Brosnahan",
+			"character": "Lois Lane",
+			"tmdbMovieId": 1061474,
+			"tmdbPersonId": 993774,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nicholas Hoult",
+			"character": "Lex Luthor",
+			"tmdbMovieId": 1061474,
+			"tmdbPersonId": 3292,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

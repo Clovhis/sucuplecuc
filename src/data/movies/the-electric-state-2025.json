@@ -46,5 +46,28 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-02-28",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Millie Bobby Brown",
+			"character": "Michelle",
+			"tmdbMovieId": 777443,
+			"tmdbPersonId": 1356210,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chris Pratt",
+			"character": "Keats",
+			"tmdbMovieId": 777443,
+			"tmdbPersonId": 73457,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ke Huy Quan",
+			"character": "Dr. Amherst / P.C (voice)",
+			"tmdbMovieId": 777443,
+			"tmdbPersonId": 690,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

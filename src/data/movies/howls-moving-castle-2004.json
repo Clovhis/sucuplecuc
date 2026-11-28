@@ -22,7 +22,9 @@
 	"mainCast": [
 		"Chieko Baishō",
 		"Takuya Kimura",
-		"Akihiro Miwa"
+		"Akihiro Miwa",
+		"Ryūnosuke Kamiki",
+		"Akio Otsuka"
 	],
 	"productionCompany": "Studio Ghibli",
 	"cinepostaScore": 7,
@@ -41,18 +43,55 @@
 			"notForYouIf": "No es para vos si necesitás una trama política clara, romance lineal o explicaciones cerradas."
 		},
 		"becauseYouLiked": [
-		"spirited-away-2001",
-		"princess-mononoke-1997"
-	],
-	"related": [
-		"nausicaa-of-the-valley-of-the-wind-1984",
-		"the-boy-and-the-heron-2023",
-		"my-neighbor-totoro-1988",
-		"your-name-2016"
-	]
-},
+			"spirited-away-2001",
+			"princess-mononoke-1997"
+		],
+		"related": [
+			"nausicaa-of-the-valley-of-the-wind-1984",
+			"the-boy-and-the-heron-2023",
+			"my-neighbor-totoro-1988",
+			"your-name-2016"
+		]
+	},
 	"review": "Howl's Moving Castle sigue a Sophie, transformada en anciana por una bruja, cuando encuentra refugio en el castillo ambulante de un mago incapaz de decidir qué hacer con su poder. Hayao Miyazaki mezcla romance, guerra y criaturas con una imaginación desbordada, y la animación hace que cada habitación y cada paseo tenga vida propia. El vínculo entre Sophie y Howl tiene ternura, aunque la trama política se vuelve confusa cerca del final. El ritmo se deja llevar más por el asombro que por la lógica. Vale por su belleza y por un mundo donde incluso el caos parece cuidadosamente soñado.",
 	"synopsis": "Sophie, una joven sombrerera, es convertida en anciana por la Bruja del Páramo y busca romper el hechizo. Su camino la lleva al castillo ambulante del mago Howl, donde queda atrapada entre magia, guerra y un extraño vínculo con él.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Ryūnosuke Kamiki",
+			"character": "Markl (voice)",
+			"tmdbMovieId": 4935,
+			"tmdbPersonId": 225730,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Akio Otsuka",
+			"character": "King of Ingary (voice)",
+			"tmdbMovieId": 4935,
+			"tmdbPersonId": 40451,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chieko Baishō",
+			"character": "Sophie (voice)",
+			"tmdbMovieId": 4935,
+			"tmdbPersonId": 533325,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Takuya Kimura",
+			"character": "Howl (voice)",
+			"tmdbMovieId": 4935,
+			"tmdbPersonId": 12670,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Akihiro Miwa",
+			"character": "Witch of the Waste (voice)",
+			"tmdbMovieId": 4935,
+			"tmdbPersonId": 20338,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

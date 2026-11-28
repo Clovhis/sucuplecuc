@@ -21,7 +21,9 @@
 	"director": "Christine Jeffs",
 	"mainCast": [
 		"Elizabeth Banks",
-		"Simon McBurney"
+		"Simon McBurney",
+		"Acacia O'Connor",
+		"Rena Owen"
 	],
 	"productionCompany": "See-Saw Films",
 	"cinepostaScore": 5,
@@ -50,5 +52,35 @@
 			"siberia-2020"
 		]
 	},
-	"review": "Frágil se sostiene en la sensación de que sus personajes hablan desde lugares distintos aunque compartan la misma habitación. Acacia O'Connor trabaja la vulnerabilidad sin volverla pasividad, y Elizabeth Banks y Simon McBurney aportan dos formas opuestas de ejercer influencia. Christine Jeffs filma con una calma que deja espacio para los silencios y los gestos mínimos, aunque el guion no siempre desarrolla todas sus tensiones. Es un drama delicado, más fuerte en la observación que en los giros."
+	"review": "Frágil se sostiene en la sensación de que sus personajes hablan desde lugares distintos aunque compartan la misma habitación. Acacia O'Connor trabaja la vulnerabilidad sin volverla pasividad, y Elizabeth Banks y Simon McBurney aportan dos formas opuestas de ejercer influencia. Christine Jeffs filma con una calma que deja espacio para los silencios y los gestos mínimos, aunque el guion no siempre desarrolla todas sus tensiones. Es un drama delicado, más fuerte en la observación que en los giros.",
+	"castCharacters": [
+		{
+			"actor": "Acacia O'Connor",
+			"character": "Lisa",
+			"tmdbMovieId": 1078959,
+			"tmdbPersonId": 2083496,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rena Owen",
+			"character": "Tessa",
+			"tmdbMovieId": 1078959,
+			"tmdbPersonId": 7241,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elizabeth Banks",
+			"character": "Liz Taylor",
+			"tmdbMovieId": 1078959,
+			"tmdbPersonId": 9281,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Simon McBurney",
+			"character": "Andrew McGrath",
+			"tmdbMovieId": 1078959,
+			"tmdbPersonId": 16358,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

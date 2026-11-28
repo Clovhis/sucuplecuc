@@ -27,7 +27,11 @@
 	"director": "Kris Pearn",
 	"mainCast": [
 		"Bill Hader",
-		"Anna Faris"
+		"Anna Faris",
+		"James Caan",
+		"Will Forte",
+		"Andy Samberg",
+		"Terry Crews"
 	],
 	"productionCompany": "Sony Pictures Animation",
 	"cinepostaScore": 7,
@@ -70,6 +74,34 @@
 			"tmdbMovieId": 109451,
 			"tmdbPersonId": 1772,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Caan",
+			"character": "Tim Lockwood (voice)",
+			"tmdbMovieId": 109451,
+			"tmdbPersonId": 3085,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Will Forte",
+			"character": "Chester V (voice)",
+			"tmdbMovieId": 109451,
+			"tmdbPersonId": 62831,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Andy Samberg",
+			"character": "Brent McHale (voice)",
+			"tmdbMovieId": 109451,
+			"tmdbPersonId": 62861,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Terry Crews",
+			"character": "Earl Devereaux (voice)",
+			"tmdbMovieId": 109451,
+			"tmdbPersonId": 53256,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -13,7 +13,8 @@
 	"mainCast": [
 		"Nicolas Cage",
 		"Ciarán Hinds",
-		"Violante Placido"
+		"Violante Placido",
+		"Idris Elba"
 	],
 	"productionCompany": "Marvel Entertainment",
 	"cinepostaScore": 2,
@@ -46,5 +47,35 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Idris Elba",
+			"character": "Moreau",
+			"tmdbMovieId": 71676,
+			"tmdbPersonId": 17605,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nicolas Cage",
+			"character": "Johnny Blaze / Ghost Rider",
+			"tmdbMovieId": 71676,
+			"tmdbPersonId": 2963,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ciarán Hinds",
+			"character": "Roarke",
+			"tmdbMovieId": 71676,
+			"tmdbPersonId": 8785,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Violante Placido",
+			"character": "Nadya",
+			"tmdbMovieId": 71676,
+			"tmdbPersonId": 44649,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -54,5 +54,28 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "John Michael Finley",
+			"character": "Bart",
+			"tmdbMovieId": 1405769,
+			"tmdbPersonId": 1869887,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Milo Ventimiglia",
+			"character": "Tim",
+			"tmdbMovieId": 1405769,
+			"tmdbPersonId": 16501,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sophie Skelton",
+			"character": "Shannon",
+			"tmdbMovieId": 1405769,
+			"tmdbPersonId": 1623273,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

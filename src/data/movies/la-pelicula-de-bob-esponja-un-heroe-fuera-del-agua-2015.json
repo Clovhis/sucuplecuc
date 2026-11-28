@@ -27,7 +27,10 @@
 	"director": "Paul Tibbitt",
 	"mainCast": [
 		"Bill Fagerbakke",
-		"Clancy Brown"
+		"Clancy Brown",
+		"Tom Kenny",
+		"Rodger Bumpass",
+		"Antonio Banderas"
 	],
 	"productionCompany": "Paramount Animation",
 	"cinepostaScore": 7,
@@ -70,6 +73,27 @@
 			"tmdbMovieId": 228165,
 			"tmdbPersonId": 6574,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Kenny",
+			"character": "SpongeBob / Gary / Agreeable Mob Member / Waffle (voice)",
+			"tmdbMovieId": 228165,
+			"tmdbPersonId": 78798,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rodger Bumpass",
+			"character": "Doctor / Squidward / Angry Mob Member #2 / Doughnut / Squidasaurus Rex (voice)",
+			"tmdbMovieId": 228165,
+			"tmdbPersonId": 70615,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Antonio Banderas",
+			"character": "Burger Beard",
+			"tmdbMovieId": 228165,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

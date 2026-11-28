@@ -57,5 +57,42 @@
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "La nueva Moana tiene a Catherine Laga'aia con presencia y a Dwayne Johnson volviendo a disfrutar muchísimo de Maui; cuando los dos comparten pantalla, la travesía conserva corazón y empuje. También mantiene las canciones y el impulso aventurero que hicieron querible a la animada. El problema es que Thomas Kail filma casi todo con una obediencia que la deja demasiado pegada al molde conocido. Hay paisajes digitales vistosos, pero rara vez se sienten más vivos que los dibujos que vino a reemplazar. No es un naufragio familiar, aunque le cuesta justificar por qué había que hacer este mismo viaje otra vez."
+	"review": "La nueva Moana tiene a Catherine Laga'aia con presencia y a Dwayne Johnson volviendo a disfrutar muchísimo de Maui; cuando los dos comparten pantalla, la travesía conserva corazón y empuje. También mantiene las canciones y el impulso aventurero que hicieron querible a la animada. El problema es que Thomas Kail filma casi todo con una obediencia que la deja demasiado pegada al molde conocido. Hay paisajes digitales vistosos, pero rara vez se sienten más vivos que los dibujos que vino a reemplazar. No es un naufragio familiar, aunque le cuesta justificar por qué había que hacer este mismo viaje otra vez.",
+	"castCharacters": [
+		{
+			"actor": "Catherine Laga'aia",
+			"character": "Moana",
+			"tmdbMovieId": 1108427,
+			"tmdbPersonId": 4247263,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dwayne Johnson",
+			"character": "Maui",
+			"tmdbMovieId": 1108427,
+			"tmdbPersonId": 18918,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rena Owen",
+			"character": "Gramma Tala",
+			"tmdbMovieId": 1108427,
+			"tmdbPersonId": 7241,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Tui",
+			"character": "Chief Tui",
+			"tmdbMovieId": 1108427,
+			"tmdbPersonId": 205406,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Frankie Adams",
+			"character": "Sina",
+			"tmdbMovieId": 1108427,
+			"tmdbPersonId": 1753341,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

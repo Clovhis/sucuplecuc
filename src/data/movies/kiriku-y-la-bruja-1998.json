@@ -23,7 +23,8 @@
 	"director": "Michel Ocelot",
 	"mainCast": [
 		"Doudou Gueye Thiaw",
-		"Maimouna N'Diaye"
+		"Maimouna N'Diaye",
+		"Awa Sène Sarr"
 	],
 	"productionCompany": "Producción internacional",
 	"cinepostaScore": 8,
@@ -51,5 +52,28 @@
 			"mulan-1998"
 		]
 	},
-	"review": "Kirikú y la bruja cuenta una fábula africana con un héroe pequeño, rápido y dispuesto a preguntar lo que los adultos prefieren callar. Doudou Gueye Thiaw y Maimouna N’Diaye sostienen el viaje de Kirikú y Karabá, mientras Michel Ocelot simplifica las formas para destacar el color, el movimiento y la composición. La película tiene una estructura repetitiva, pero su defensa de la curiosidad y su mirada sobre el dolor detrás de la violencia siguen siendo valiosas."
+	"review": "Kirikú y la bruja cuenta una fábula africana con un héroe pequeño, rápido y dispuesto a preguntar lo que los adultos prefieren callar. Doudou Gueye Thiaw y Maimouna N’Diaye sostienen el viaje de Kirikú y Karabá, mientras Michel Ocelot simplifica las formas para destacar el color, el movimiento y la composición. La película tiene una estructura repetitiva, pero su defensa de la curiosidad y su mirada sobre el dolor detrás de la violencia siguen siendo valiosas.",
+	"castCharacters": [
+		{
+			"actor": "Awa Sène Sarr",
+			"character": "Karaba (voice)",
+			"tmdbMovieId": 21348,
+			"tmdbPersonId": 87424,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Doudou Gueye Thiaw",
+			"character": "Kirikou enfant (voice)",
+			"tmdbMovieId": 21348,
+			"tmdbPersonId": 87421,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maimouna N'Diaye",
+			"character": "La Mère (voice)",
+			"tmdbMovieId": 21348,
+			"tmdbPersonId": 87422,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

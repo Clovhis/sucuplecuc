@@ -28,7 +28,9 @@
 		"Robert De Niro",
 		"Sean Penn",
 		"Demi Moore",
-		"Ray McAnally"
+		"Ray McAnally",
+		"Bruno Kirby",
+		"Wallace Shawn"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 5,
@@ -86,6 +88,20 @@
 			"tmdbMovieId": 5971,
 			"tmdbPersonId": 40008,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bruno Kirby",
+			"character": "Deputy",
+			"tmdbMovieId": 5971,
+			"tmdbPersonId": 9257,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Wallace Shawn",
+			"character": "Translator",
+			"tmdbMovieId": 5971,
+			"tmdbPersonId": 12900,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -20,7 +20,9 @@
 	"director": "Hanna Bergholm",
 	"mainCast": [
 		"Siiri Solalinna",
-		"Sophia Heikkilä"
+		"Sophia Heikkilä",
+		"Jani Volanen",
+		"Reino Nordin"
 	],
 	"productionCompany": "Film4",
 	"cinepostaScore": 7,
@@ -71,6 +73,20 @@
 			"tmdbMovieId": 517302,
 			"tmdbPersonId": 2294255,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jani Volanen",
+			"character": "Father",
+			"tmdbMovieId": 517302,
+			"tmdbPersonId": 88856,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Reino Nordin",
+			"character": "Tero",
+			"tmdbMovieId": 517302,
+			"tmdbPersonId": 148370,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

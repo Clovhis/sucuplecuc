@@ -24,7 +24,11 @@
 	"mainCast": [
 		"Daniel Craig",
 		"Rooney Mara",
-		"Christopher Plummer"
+		"Christopher Plummer",
+		"Stellan Skarsgård",
+		"Robin Wright",
+		"Steven Berkoff",
+		"Joely Richardson"
 	],
 	"productionCompany": "Columbia Pictures, Metro-Goldwyn-Mayer, Scott Rudin Productions",
 	"cinepostaScore": 8,
@@ -85,6 +89,34 @@
 			"tmdbMovieId": 65754,
 			"tmdbPersonId": 290,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stellan Skarsgård",
+			"character": "Martin Vanger",
+			"tmdbMovieId": 65754,
+			"tmdbPersonId": 1640,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robin Wright",
+			"character": "Erika Berger",
+			"tmdbMovieId": 65754,
+			"tmdbPersonId": 32,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Steven Berkoff",
+			"character": "Dirch Frode",
+			"tmdbMovieId": 65754,
+			"tmdbPersonId": 782,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Joely Richardson",
+			"character": "Anita Vanger",
+			"tmdbMovieId": 65754,
+			"tmdbPersonId": 20810,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -13,7 +13,11 @@
 	"mainCast": [
 		"Ben Affleck",
 		"Matt Damon",
-		"Teyana Taylor"
+		"Teyana Taylor",
+		"Steven Yeun",
+		"Sasha Calle",
+		"Kyle Chandler",
+		"Scott Adkins"
 	],
 	"productionCompany": "Artists Equity",
 	"cinepostaScore": 8,
@@ -69,6 +73,34 @@
 			"tmdbMovieId": 1306368,
 			"tmdbPersonId": 964679,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steven Yeun",
+			"character": "Detective Mike Ro",
+			"tmdbMovieId": 1306368,
+			"tmdbPersonId": 215055,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sasha Calle",
+			"character": "Desiree 'Desi' Lopez Molina",
+			"tmdbMovieId": 1306368,
+			"tmdbPersonId": 2542319,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kyle Chandler",
+			"character": "DEA Agent Mateo 'Matty' Nix",
+			"tmdbMovieId": 1306368,
+			"tmdbPersonId": 3497,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Scott Adkins",
+			"character": "FBI Agent Del Byrne",
+			"tmdbMovieId": 1306368,
+			"tmdbPersonId": 78110,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

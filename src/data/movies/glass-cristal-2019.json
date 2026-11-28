@@ -55,5 +55,42 @@
 		]
 	},
 	"review": "Glass cierra la trilogía de M. Night Shyamalan como una conversación dramática que de pronto se acuerda de que también es película de superhéroes. James McAvoy vuelve a cambiar de registro con una energía impresionante, Bruce Willis aporta gravedad y Samuel L. Jackson convierte cada silencio de Elijah en una pieza de ajedrez. El problema es que la película subraya sus ideas hasta quitarles aire y el clímax divide más de lo que conmueve. Aun así, su apuesta por el diálogo y la identidad resulta bastante más singular que su recepción inicial.",
-	"runtimeMinutes": 129
+	"runtimeMinutes": 129,
+	"castCharacters": [
+		{
+			"actor": "James McAvoy",
+			"character": "Patricia / Dennis / Hedwig / The Beast / Barry / Heinrich / Jade / Ian / Mary Reynolds / Norma / Jalin / Kat / B.T. / Kevin Wendell Crumb / Mr. Pritchard / Felida / Luke / Goddard / Samuel / Polly",
+			"tmdbMovieId": 450465,
+			"tmdbPersonId": 5530,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bruce Willis",
+			"character": "David Dunn / The Overseer",
+			"tmdbMovieId": 450465,
+			"tmdbPersonId": 62,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Elijah Price / Mr. Glass",
+			"tmdbMovieId": 450465,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anya Taylor-Joy",
+			"character": "Casey Cooke",
+			"tmdbMovieId": 450465,
+			"tmdbPersonId": 1397778,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sarah Paulson",
+			"character": "Dr. Ellie Staple",
+			"tmdbMovieId": 450465,
+			"tmdbPersonId": 34490,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

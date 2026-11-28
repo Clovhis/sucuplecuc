@@ -41,19 +41,56 @@
 			"forFansOf": "Fans del fútbol argentino, de los documentales de archivo y de las historias donde una jugada termina cargando el peso simbólico de un país.",
 			"notForYouIf": "Buscás una transmisión del partido, análisis táctico puro o épica sin contradicciones. El partido está más interesado en la memoria que en el resultado."
 		},
-	"becauseYouLiked": [
-		"la-tierra-explota-2026",
-		"fito-paez-el-mundo-cabe-en-una-cancion-2026"
-	],
-	"related": [
-		"lipan-2026",
-		"yiya-murano-muerte-a-la-hora-del-te-2026",
-		"chris-y-martina-el-set-decisivo-2026",
-		"secretos-del-deporte-el-testimonio-de-vince-young-2026"
-	]
-},
+		"becauseYouLiked": [
+			"la-tierra-explota-2026",
+			"fito-paez-el-mundo-cabe-en-una-cancion-2026"
+		],
+		"related": [
+			"lipan-2026",
+			"yiya-murano-muerte-a-la-hora-del-te-2026",
+			"chris-y-martina-el-set-decisivo-2026",
+			"secretos-del-deporte-el-testimonio-de-vince-young-2026"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
 	"review": "El partido no se conforma con volver a pasar los goles de Maradona para que todos se emocionen otra vez. Lo interesante es cómo usa ese 2 a 1 como puerta de entrada a algo mucho más espeso: Malvinas, orgullo, bronca, propaganda y la manera en que un partido terminó cargando el peso simbólico de un país entero.\n\nJuan Cabral y Santiago Franco arman el documental con buen oído para el archivo y para el testimonio, sin apurarse a bajar una sola lectura heroica. Hay emoción, claro, pero también contradicción y espacio para escuchar del otro lado. Eso le da más cuerpo que el homenaje automático y la vuelve una película bastante más rica de lo que promete su título.",
-	"reviewPublishedAt": "2026-05-21"
+	"reviewPublishedAt": "2026-05-21",
+	"castCharacters": [
+		{
+			"actor": "Gary Lineker",
+			"character": "Self",
+			"tmdbMovieId": 1666712,
+			"tmdbPersonId": 1220503,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Barnes",
+			"character": "Self",
+			"tmdbMovieId": 1666712,
+			"tmdbPersonId": 1705269,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jorge Burruchaga",
+			"character": "Self",
+			"tmdbMovieId": 1666712,
+			"tmdbPersonId": 2173801,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jorge Valdano",
+			"character": "Self",
+			"tmdbMovieId": 1666712,
+			"tmdbPersonId": 1211596,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Shilton",
+			"character": "Self",
+			"tmdbMovieId": 1666712,
+			"tmdbPersonId": 1234015,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -24,7 +24,10 @@
 	"mainCast": [
 		"Yahya Abdul-Mateen II",
 		"Mark Wahlberg",
-		"Nicole Beharie"
+		"Nicole Beharie",
+		"Josh Lucas",
+		"Giancarlo Esposito",
+		"Ethan Embry"
 	],
 	"productionCompany": "Hammerstone Studios",
 	"cinepostaScore": 8,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 1380417,
 			"tmdbPersonId": 87243,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Josh Lucas",
+			"character": "Special Agent Everett Rhodes",
+			"tmdbMovieId": 1380417,
+			"tmdbPersonId": 6164,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Giancarlo Esposito",
+			"character": "Vernon Dahmer",
+			"tmdbMovieId": 1380417,
+			"tmdbPersonId": 4808,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ethan Embry",
+			"character": "Sam Bowers",
+			"tmdbMovieId": 1380417,
+			"tmdbPersonId": 58019,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

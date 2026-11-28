@@ -54,5 +54,28 @@
 	"synopsis": "En Derry, un grupo de chicos marginados descubre que sus miedos toman forma en Pennywise, una presencia que acecha desde las alcantarillas. Para frenar sus ataques, deberán unir fuerzas y enfrentar secretos personales que el pueblo prefiere no mirar.",
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-14",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Jaeden Martell",
+			"character": "Bill Denbrough",
+			"tmdbMovieId": 346364,
+			"tmdbPersonId": 1274508,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sophia Lillis",
+			"character": "Beverly Marsh",
+			"tmdbMovieId": 346364,
+			"tmdbPersonId": 1481238,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Skarsgård",
+			"character": "Pennywise",
+			"tmdbMovieId": 346364,
+			"tmdbPersonId": 137905,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

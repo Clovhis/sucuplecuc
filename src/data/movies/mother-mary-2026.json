@@ -25,7 +25,8 @@
 	"mainCast": [
 		"Anne Hathaway",
 		"Michaela Coel",
-		"Hunter Schafer"
+		"Hunter Schafer",
+		"FKA twigs"
 	],
 	"productionCompany": "A24, Topic Studios, Augenschein Filmproduktion, Homebird Productions",
 	"cinepostaScore": 6,
@@ -53,5 +54,35 @@
 		]
 	},
 	"review": "Un vestido puede ser una armadura, una deuda o la prueba de cuánto de una artista pertenece a otra persona. David Lowery trabaja sobre esa incomodidad y pone a Anne Hathaway frente a Michaela Coel, con la intimidad convertida en una pulseada por el control de la imagen. La textura de las telas y la presencia física tienen más interés que cualquier explicación del negocio pop. A veces el misterio se espesa hasta volver distante un vínculo que necesitaba mayor cercanía. Queda una película de símbolos intensos y una relación atrapante, aunque el peso de cada gesto le quite aire a lo que las dos tienen para decirse.",
-	"runtimeMinutes": 111
+	"runtimeMinutes": 111,
+	"castCharacters": [
+		{
+			"actor": "FKA twigs",
+			"character": "Imogen",
+			"tmdbMovieId": 1102883,
+			"tmdbPersonId": 1503200,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anne Hathaway",
+			"character": "Mother Mary",
+			"tmdbMovieId": 1102883,
+			"tmdbPersonId": 1813,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michaela Coel",
+			"character": "Sam Anselm",
+			"tmdbMovieId": 1102883,
+			"tmdbPersonId": 1368012,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hunter Schafer",
+			"character": "Hilda Offer",
+			"tmdbMovieId": 1102883,
+			"tmdbPersonId": 2340180,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

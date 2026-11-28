@@ -13,7 +13,10 @@
 	"mainCast": [
 		"Anthony Mackie",
 		"Harrison Ford",
-		"Danny Ramirez"
+		"Danny Ramirez",
+		"Tim Blake Nelson",
+		"Giancarlo Esposito",
+		"Liv Tyler"
 	],
 	"productionCompany": "Marvel Studios",
 	"cinepostaScore": 3,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 822119,
 			"tmdbPersonId": 1773397,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Blake Nelson",
+			"character": "Samuel Sterns",
+			"tmdbMovieId": 822119,
+			"tmdbPersonId": 1462,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Giancarlo Esposito",
+			"character": "Sidewinder",
+			"tmdbMovieId": 822119,
+			"tmdbPersonId": 4808,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Liv Tyler",
+			"character": "Betty Ross",
+			"tmdbMovieId": 822119,
+			"tmdbPersonId": 882,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -19,7 +19,10 @@
 	"director": "Henry Selick",
 	"mainCast": [
 		"Dakota Fanning",
-		"Teri Hatcher"
+		"Teri Hatcher",
+		"Jennifer Saunders",
+		"Dawn French",
+		"Keith David"
 	],
 	"productionCompany": "Laika",
 	"cinepostaScore": 7,
@@ -58,5 +61,42 @@
 	"isArgentinian": false,
 	"releasePlatforms": [
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Jennifer Saunders",
+			"character": "Miss April Spink / Other Spink (voice)",
+			"tmdbMovieId": 14836,
+			"tmdbPersonId": 12094,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dawn French",
+			"character": "Miss Miriam Forcible / Other Forcible (voice)",
+			"tmdbMovieId": 14836,
+			"tmdbPersonId": 5539,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Keith David",
+			"character": "The Cat (voice)",
+			"tmdbMovieId": 14836,
+			"tmdbPersonId": 65827,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dakota Fanning",
+			"character": "Coraline Jones (voice)",
+			"tmdbMovieId": 14836,
+			"tmdbPersonId": 501,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Teri Hatcher",
+			"character": "Mel Jones / Other Mother (voice)",
+			"tmdbMovieId": 14836,
+			"tmdbPersonId": 10742,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

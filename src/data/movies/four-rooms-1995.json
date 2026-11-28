@@ -38,18 +38,55 @@
 			"forFansOf": "Fans de Tim Roth, de las antologías desparejas y del humor noventoso que cruza hoteles, celebridades y directores con ganas de hacer lío.",
 			"notForYouIf": "Necesitás una trama pareja, un protagonista con control o una comedia de remate constante. Four Rooms disfruta tanto del tropiezo como del chiste."
 		},
-	"becauseYouLiked": [
-		"loco-y-estupido-amor-2011",
-		"mighty-aphrodite-1995"
-	],
-	"related": [
-		"todo-por-un-sueno-1995",
-		"dependientes-1994",
-		"competencia-oficial-2021",
-		"this-is-spinal-tap-1984"
-	]
-},
+		"becauseYouLiked": [
+			"loco-y-estupido-amor-2011",
+			"mighty-aphrodite-1995"
+		],
+		"related": [
+			"todo-por-un-sueno-1995",
+			"dependientes-1994",
+			"competencia-oficial-2021",
+			"this-is-spinal-tap-1984"
+		]
+	},
 	"review": "Four Rooms es un rejunte de episodios que nunca termina de volverse parejo, pero tiene un caos noventoso bastante simpático. Tim Roth la rema toda la noche y el segmento de Robert Rodriguez es, lejos, el que mejor entiende el chiste y el descontrol. La parte de Tarantino tiene una idea buenísima, aunque llega bastante más inflada de lo que rinde. Si entrás sabiendo que es una bolsa de aciertos y tropiezos, zafa por rareza y por elenco.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Tim Roth",
+			"character": "Ted the Bellhop",
+			"tmdbMovieId": 5,
+			"tmdbPersonId": 3129,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jennifer Beals",
+			"character": "Angela",
+			"tmdbMovieId": 5,
+			"tmdbPersonId": 3130,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Antonio Banderas",
+			"character": "Man",
+			"tmdbMovieId": 5,
+			"tmdbPersonId": 3131,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Madonna",
+			"character": "Elspeth",
+			"tmdbMovieId": 5,
+			"tmdbPersonId": 3125,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Marisa Tomei",
+			"character": "Margaret",
+			"tmdbMovieId": 5,
+			"tmdbPersonId": 3141,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

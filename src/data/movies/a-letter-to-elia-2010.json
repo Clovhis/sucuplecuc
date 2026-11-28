@@ -50,5 +50,28 @@
 		]
 	},
 	"review": "Una carta a Elia es el homenaje de Martin Scorsese y Kent Jones a Elia Kazan, recorriendo sus películas, su teatro y la marca que dejó en quienes aprendieron a filmar mirando su obra. La dirección mezcla fragmentos, voz en off y recuerdos personales sin ponerse académica: Kazan aparece como artista, maestro y figura incómoda. Scorsese habla desde una admiración concreta, conectando escenas con su propia formación en Nueva York. Es un documental corto, pero muy vivo y afectuoso, ideal para quien quiera entender por qué esas películas todavía generan discusión y emoción.",
-	"reviewPublishedAt": "2026-04-30"
+	"reviewPublishedAt": "2026-04-30",
+	"castCharacters": [
+		{
+			"actor": "Elia Kazan",
+			"character": "Self (archive footage)",
+			"tmdbMovieId": 65673,
+			"tmdbPersonId": 2746,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Martin Scorsese",
+			"character": "Self - Narrator",
+			"tmdbMovieId": 65673,
+			"tmdbPersonId": 1032,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elias Koteas",
+			"character": "Elia Kazan (Voice)",
+			"tmdbMovieId": 65673,
+			"tmdbPersonId": 13550,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

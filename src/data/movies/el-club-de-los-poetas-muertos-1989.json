@@ -24,7 +24,9 @@
 	"director": "Peter Weir",
 	"mainCast": [
 		"Robin Williams",
-		"Ethan Hawke"
+		"Ethan Hawke",
+		"Robert Sean Leonard",
+		"Josh Charles"
 	],
 	"productionCompany": "Touchstone Pictures, Silver Screen Partners IV",
 	"cinepostaScore": 8,
@@ -79,6 +81,20 @@
 			"tmdbMovieId": 207,
 			"tmdbPersonId": 569,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Sean Leonard",
+			"character": "Neil Perry",
+			"tmdbMovieId": 207,
+			"tmdbPersonId": 2692,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Josh Charles",
+			"character": "Knox Overstreet",
+			"tmdbMovieId": 207,
+			"tmdbPersonId": 2694,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

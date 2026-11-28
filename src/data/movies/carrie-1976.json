@@ -22,7 +22,10 @@
 	"director": "Brian De Palma",
 	"mainCast": [
 		"Sissy Spacek",
-		"Piper Laurie"
+		"Piper Laurie",
+		"John Travolta",
+		"Nancy Allen",
+		"Betty Buckley"
 	],
 	"productionCompany": "United Artists",
 	"cinepostaScore": 8,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 7340,
 			"tmdbPersonId": 6721,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Travolta",
+			"character": "Billy Nolan",
+			"tmdbMovieId": 7340,
+			"tmdbPersonId": 8891,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nancy Allen",
+			"character": "Chris Hargenson",
+			"tmdbMovieId": 7340,
+			"tmdbPersonId": 44038,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Betty Buckley",
+			"character": "Miss Collins",
+			"tmdbMovieId": 7340,
+			"tmdbPersonId": 52462,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

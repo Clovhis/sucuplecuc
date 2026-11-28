@@ -54,5 +54,35 @@
 	},
 	"review": "Un secuestro equivocado, una alfombra arruinada y un tipo que no quiere dejar de tomar su trago alcanzan para que los hermanos Coen armen una de las comedias criminales más queribles del cine. Jeff Bridges encuentra en el Nota una forma de apatía casi filosófica; John Goodman, en cambio, entra a cada escena como si estuviera por declarar una guerra. El argumento se desarma a propósito y, aun así, cada desvío tiene gracia, ritmo o una imagen imposible de olvidar. La crítica tardó en abrazarla, pero su humor lateral y sus personajes rarísimos envejecieron de maravilla.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Jeff Bridges",
+			"character": "The Dude",
+			"tmdbMovieId": 115,
+			"tmdbPersonId": 1229,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Goodman",
+			"character": "Walter Sobchak",
+			"tmdbMovieId": 115,
+			"tmdbPersonId": 1230,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Julianne Moore",
+			"character": "Maude Lebowski",
+			"tmdbMovieId": 115,
+			"tmdbPersonId": 1231,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Steve Buscemi",
+			"character": "Donny",
+			"tmdbMovieId": 115,
+			"tmdbPersonId": 884,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

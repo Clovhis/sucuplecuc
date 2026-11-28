@@ -54,5 +54,28 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Steve Harris",
+			"character": "Self",
+			"tmdbMovieId": 1642859,
+			"tmdbPersonId": 84096,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bruce Dickinson",
+			"character": "Self",
+			"tmdbMovieId": 1642859,
+			"tmdbPersonId": 77328,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nicko McBrain",
+			"character": "Self",
+			"tmdbMovieId": 1642859,
+			"tmdbPersonId": 84094,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

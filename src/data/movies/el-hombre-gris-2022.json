@@ -52,5 +52,35 @@
 	},
 	"review": "El hombre gris es una superproducción de acción que confía en el movimiento, la química del elenco y una colección de ciudades para no quedarse quieta. Los hermanos Russo le dan a Ryan Gosling un héroe lacónico y a Chris Evans un villano juguetón, mientras Ana de Armas roba varias escenas con precisión física. La historia de espías es intercambiable y el espectáculo se estira, pero las persecuciones tienen claridad y el tono de aventura funciona como entretenimiento directo.",
 	"runtimeMinutes": 128,
-	"reviewPublishedAt": "2026-08-24"
+	"reviewPublishedAt": "2026-08-24",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Six",
+			"tmdbMovieId": 725201,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chris Evans",
+			"character": "Lloyd Hansen",
+			"tmdbMovieId": 725201,
+			"tmdbPersonId": 16828,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ana de Armas",
+			"character": "Dani Miranda",
+			"tmdbMovieId": 725201,
+			"tmdbPersonId": 224513,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jessica Henwick",
+			"character": "Suzanne Brewer",
+			"tmdbMovieId": 725201,
+			"tmdbPersonId": 1202689,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

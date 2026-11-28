@@ -25,7 +25,9 @@
 	"mainCast": [
 		"Sylvester Stallone",
 		"Wesley Snipes",
-		"Sandra Bullock"
+		"Sandra Bullock",
+		"Nigel Hawthorne",
+		"Denis Leary"
 	],
 	"productionCompany": "Warner Bros.",
 	"cinepostaScore": 7,
@@ -75,6 +77,20 @@
 			"tmdbMovieId": 9739,
 			"tmdbPersonId": 18277,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Nigel Hawthorne",
+			"character": "Dr. Raymond Cocteau",
+			"tmdbMovieId": 9739,
+			"tmdbPersonId": 15788,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Denis Leary",
+			"character": "Edgar Friendly",
+			"tmdbMovieId": 9739,
+			"tmdbPersonId": 5724,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

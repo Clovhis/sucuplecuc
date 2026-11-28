@@ -23,7 +23,12 @@
 	"director": "Gary Ross",
 	"mainCast": [
 		"Jennifer Lawrence",
-		"Josh Hutcherson"
+		"Josh Hutcherson",
+		"Liam Hemsworth",
+		"Woody Harrelson",
+		"Elizabeth Banks",
+		"Stanley Tucci",
+		"Donald Sutherland"
 	],
 	"productionCompany": "Lionsgate, Color Force",
 	"cinepostaScore": 8,
@@ -66,6 +71,41 @@
 			"tmdbMovieId": 70160,
 			"tmdbPersonId": 27972,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Liam Hemsworth",
+			"character": "Gale Hawthorne",
+			"tmdbMovieId": 70160,
+			"tmdbPersonId": 96066,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Woody Harrelson",
+			"character": "Haymitch Abernathy",
+			"tmdbMovieId": 70160,
+			"tmdbPersonId": 57755,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elizabeth Banks",
+			"character": "Effie Trinket",
+			"tmdbMovieId": 70160,
+			"tmdbPersonId": 9281,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Stanley Tucci",
+			"character": "Caesar Flickerman",
+			"tmdbMovieId": 70160,
+			"tmdbPersonId": 2283,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Donald Sutherland",
+			"character": "President Coriolanus Snow",
+			"tmdbMovieId": 70160,
+			"tmdbPersonId": 55636,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

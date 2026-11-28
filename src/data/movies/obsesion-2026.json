@@ -61,5 +61,35 @@
 	"reviewPublishedAt": "2026-05-20",
 	"releasePlatforms": [
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Michael Johnston",
+			"character": "Bear",
+			"tmdbMovieId": 1339713,
+			"tmdbPersonId": 1561370,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Inde Navarrette",
+			"character": "Nikki",
+			"tmdbMovieId": 1339713,
+			"tmdbPersonId": 2638587,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cooper Tomlinson",
+			"character": "Ian",
+			"tmdbMovieId": 1339713,
+			"tmdbPersonId": 2823609,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Andy Richter",
+			"character": "Carter",
+			"tmdbMovieId": 1339713,
+			"tmdbPersonId": 28637,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

@@ -51,7 +51,9 @@
 	"mainCast": [
 		"Robert De Niro",
 		"Edward Burns",
-		"Kelsey Grammer"
+		"Kelsey Grammer",
+		"Oleg Taktarov",
+		"Vera Farmiga"
 	],
 	"productionCompany": "New Line Cinema",
 	"cinepostaScore": 5,
@@ -79,6 +81,20 @@
 			"tmdbMovieId": 2749,
 			"tmdbPersonId": 7090,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Oleg Taktarov",
+			"character": "Oleg Razgul",
+			"tmdbMovieId": 2749,
+			"tmdbPersonId": 77351,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Vera Farmiga",
+			"character": "Daphne Handlova",
+			"tmdbMovieId": 2749,
+			"tmdbPersonId": 21657,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

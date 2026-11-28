@@ -59,5 +59,42 @@
 	"review": "Diamantes en bruto convierte la ansiedad en una experiencia física. La cámara de los Safdie se mete en la joyería, los teléfonos no paran y Sandler interpreta a Howard como un hombre que confunde el riesgo con la posibilidad de seguir vivo. La actuación no busca limpiar al personaje: lo vuelve seductor, mentiroso, desesperante y profundamente humano. Cada apuesta parece una salida y una condena al mismo tiempo, con un montaje que no deja respirar.",
 	"runtimeMinutes": 136,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Howard Ratner",
+			"tmdbMovieId": 473033,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "LaKeith Stanfield",
+			"character": "Demany",
+			"tmdbMovieId": 473033,
+			"tmdbPersonId": 1200864,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Julia Fox",
+			"character": "Julia De Flore",
+			"tmdbMovieId": 473033,
+			"tmdbPersonId": 2371446,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kevin Garnett",
+			"character": "Kevin Garnett",
+			"tmdbMovieId": 473033,
+			"tmdbPersonId": 1177652,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Idina Menzel",
+			"character": "Dinah Ratner",
+			"tmdbMovieId": 473033,
+			"tmdbPersonId": 19394,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -20,7 +20,10 @@
 	"mainCast": [
 		"Sam Worthington",
 		"Zoe Saldaña",
-		"Stephen Lang"
+		"Stephen Lang",
+		"Sigourney Weaver",
+		"Michelle Rodriguez",
+		"Giovanni Ribisi"
 	],
 	"productionCompany": "20th Century Studios, Lightstorm Entertainment",
 	"cinepostaScore": 8,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 19995,
 			"tmdbPersonId": 32747,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Sigourney Weaver",
+			"character": "Dr. Grace Augustine",
+			"tmdbMovieId": 19995,
+			"tmdbPersonId": 10205,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michelle Rodriguez",
+			"character": "Trudy Chacon",
+			"tmdbMovieId": 19995,
+			"tmdbPersonId": 17647,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Giovanni Ribisi",
+			"character": "Parker Selfridge",
+			"tmdbMovieId": 19995,
+			"tmdbPersonId": 1771,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

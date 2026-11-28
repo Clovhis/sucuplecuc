@@ -23,7 +23,9 @@
 	"director": "Brenda Chapman",
 	"mainCast": [
 		"Kelly Macdonald",
-		"Emma Thompson"
+		"Emma Thompson",
+		"Robbie Coltrane",
+		"Craig Ferguson"
 	],
 	"productionCompany": "Pixar Animation Studios",
 	"cinepostaScore": 7,
@@ -51,5 +53,35 @@
 			"lluvia-de-hamburguesas-2009"
 		]
 	},
-	"review": "Valiente usa los paisajes escoceses, el pelo indomable de Mérida y el arco como extensiones de una protagonista que quiere decidir por sí misma. Kelly Macdonald y Emma Thompson sostienen una relación madre-hija con enojo real y ternura trabajada, mientras los trillizos aportan un caos muy medido. El conflicto mágico se resuelve de manera algo rápida, pero la película acierta al hacer que la aventura más importante sea aprender a escucharse."
+	"review": "Valiente usa los paisajes escoceses, el pelo indomable de Mérida y el arco como extensiones de una protagonista que quiere decidir por sí misma. Kelly Macdonald y Emma Thompson sostienen una relación madre-hija con enojo real y ternura trabajada, mientras los trillizos aportan un caos muy medido. El conflicto mágico se resuelve de manera algo rápida, pero la película acierta al hacer que la aventura más importante sea aprender a escucharse.",
+	"castCharacters": [
+		{
+			"actor": "Robbie Coltrane",
+			"character": "Lord Dingwall (voice)",
+			"tmdbMovieId": 62177,
+			"tmdbPersonId": 1923,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Craig Ferguson",
+			"character": "Lord Macintosh (voice)",
+			"tmdbMovieId": 62177,
+			"tmdbPersonId": 24264,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kelly Macdonald",
+			"character": "Merida (voice)",
+			"tmdbMovieId": 62177,
+			"tmdbPersonId": 9015,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Emma Thompson",
+			"character": "Elinor (voice)",
+			"tmdbMovieId": 62177,
+			"tmdbPersonId": 7056,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

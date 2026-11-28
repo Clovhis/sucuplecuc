@@ -23,7 +23,8 @@
 	"director": "John Lounsbery",
 	"mainCast": [
 		"Bob Newhart",
-		"Eva Gabor"
+		"Eva Gabor",
+		"Geraldine Page"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 8,
@@ -51,5 +52,28 @@
 			"el-libro-de-la-selva-1967"
 		]
 	},
-	"review": "Los rescatadores devuelve a Disney una aventura con un tono más oscuro y una escala muy humana. Bob Newhart y Eva Gabor forman una dupla tímida pero querible, y Geraldine Page convierte a Madame Medusa en una villana de nervio imprevisible. El pantano, el ascensor improvisado y la misión de Penny construyen una tensión distinta a la de los cuentos de princesas. Es una película de rescate clásica, con melancolía y oficio."
+	"review": "Los rescatadores devuelve a Disney una aventura con un tono más oscuro y una escala muy humana. Bob Newhart y Eva Gabor forman una dupla tímida pero querible, y Geraldine Page convierte a Madame Medusa en una villana de nervio imprevisible. El pantano, el ascensor improvisado y la misión de Penny construyen una tensión distinta a la de los cuentos de princesas. Es una película de rescate clásica, con melancolía y oficio.",
+	"castCharacters": [
+		{
+			"actor": "Geraldine Page",
+			"character": "Madame Medusa (voice)",
+			"tmdbMovieId": 11319,
+			"tmdbPersonId": 41283,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bob Newhart",
+			"character": "Bernard (voice)",
+			"tmdbMovieId": 11319,
+			"tmdbPersonId": 64930,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eva Gabor",
+			"character": "Miss Bianca (voice)",
+			"tmdbMovieId": 11319,
+			"tmdbPersonId": 44714,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

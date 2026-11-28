@@ -12,7 +12,9 @@
 	"mainCast": [
 		"Theo James",
 		"Tatiana Maslany",
-		"Christian Convery"
+		"Christian Convery",
+		"Adam Scott",
+		"Rohan Campbell"
 	],
 	"productionCompany": "Atomic Monster",
 	"cinepostaScore": 5,
@@ -68,6 +70,20 @@
 			"tmdbMovieId": 1124620,
 			"tmdbPersonId": 1721268,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Adam Scott",
+			"character": "Captain Petey Shelborn",
+			"tmdbMovieId": 1124620,
+			"tmdbPersonId": 36801,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rohan Campbell",
+			"character": "Thrasher / Ricky",
+			"tmdbMovieId": 1124620,
+			"tmdbPersonId": 1196041,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

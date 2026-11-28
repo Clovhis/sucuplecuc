@@ -23,7 +23,8 @@
 	"director": "Alexander Kiesl",
 	"mainCast": [
 		"William Moseley",
-		"Michele Morrone"
+		"Michele Morrone",
+		"Urassaya Sperbund"
 	],
 	"productionCompany": "Altit Media Group, Film Frame Productions",
 	"cinepostaScore": 2,
@@ -57,5 +58,28 @@
 	"releasePlatforms": [
 		"Disney Plus",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Urassaya Sperbund",
+			"character": "Prang",
+			"tmdbMovieId": 1353117,
+			"tmdbPersonId": 1259367,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "William Moseley",
+			"character": "Jake",
+			"tmdbMovieId": 1353117,
+			"tmdbPersonId": 5528,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michele Morrone",
+			"character": "Mek",
+			"tmdbMovieId": 1353117,
+			"tmdbPersonId": 2349355,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

@@ -50,5 +50,28 @@
 		}
 	},
 	"review": "Basta imaginar el peso del cuerpo colgando de un punto de apoyo para entender qué busca Vértigo 2. Los hermanos Spierig vuelven a una amenaza física concreta: altura, cansancio y una salida que siempre parece demasiado lejos. Slater y Thomas tienen que sostener esa presión mientras el grupo calcula cuánto arriesgar en el siguiente movimiento. La película depende bastante de que aceptemos decisiones poco razonables para mantener a todos atrapados, y la novedad del encierro se desgasta. Cuando se concentra en una maniobra y sus consecuencias, en cambio, el suspenso recupera algo elemental: mirar hacia abajo y desear que nadie suelte la mano.",
-	"runtimeMinutes": 100
+	"runtimeMinutes": 100,
+	"castCharacters": [
+		{
+			"actor": "Harriet Slater",
+			"character": "Jax Hunter",
+			"tmdbMovieId": 1101412,
+			"tmdbPersonId": 2480853,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Arsema Thomas",
+			"character": "Luce",
+			"tmdbMovieId": 1101412,
+			"tmdbPersonId": 3486664,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom Brittney",
+			"character": "Jon Platt",
+			"tmdbMovieId": 1101412,
+			"tmdbPersonId": 1626604,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

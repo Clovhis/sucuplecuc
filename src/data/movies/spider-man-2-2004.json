@@ -13,7 +13,10 @@
 	"mainCast": [
 		"Tobey Maguire",
 		"Kirsten Dunst",
-		"James Franco"
+		"James Franco",
+		"Alfred Molina",
+		"J. K. Simmons",
+		"Donna Murphy"
 	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 8,
@@ -76,6 +79,27 @@
 			"tmdbMovieId": 558,
 			"tmdbPersonId": 17051,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alfred Molina",
+			"character": "Doc Ock / Otto Octavius",
+			"tmdbMovieId": 558,
+			"tmdbPersonId": 658,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "J. K. Simmons",
+			"character": "J. Jonah Jameson",
+			"tmdbMovieId": 558,
+			"tmdbPersonId": 18999,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Donna Murphy",
+			"character": "Rosalie Octavius",
+			"tmdbMovieId": 558,
+			"tmdbPersonId": 2517,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

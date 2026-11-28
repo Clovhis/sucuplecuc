@@ -20,7 +20,9 @@
 	"director": "Karyn Kusama",
 	"mainCast": [
 		"Megan Fox",
-		"Amanda Seyfried"
+		"Amanda Seyfried",
+		"Johnny Simmons",
+		"Adam Brody"
 	],
 	"productionCompany": "Fox Atomic",
 	"cinepostaScore": 7,
@@ -75,6 +77,20 @@
 			"tmdbMovieId": 19994,
 			"tmdbPersonId": 71070,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Johnny Simmons",
+			"character": "Chip",
+			"tmdbMovieId": 19994,
+			"tmdbPersonId": 27104,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Adam Brody",
+			"character": "Nikolai",
+			"tmdbMovieId": 19994,
+			"tmdbPersonId": 11702,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -22,7 +22,8 @@
 	"mainCast": [
 		"Lorne Michaels",
 		"Steve Higgins",
-		"Michael Che"
+		"Michael Che",
+		"Timothée Chalamet"
 	],
 	"productionCompany": "Tremolo Productions",
 	"cinepostaScore": 8,
@@ -53,5 +54,35 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Timothée Chalamet",
+			"character": "Self",
+			"tmdbMovieId": 1634949,
+			"tmdbPersonId": 1190668,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lorne Michaels",
+			"character": "Self",
+			"tmdbMovieId": 1634949,
+			"tmdbPersonId": 56158,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Steve Higgins",
+			"character": "Self",
+			"tmdbMovieId": 1634949,
+			"tmdbPersonId": 1215931,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Che",
+			"character": "Self",
+			"tmdbMovieId": 1634949,
+			"tmdbPersonId": 1395347,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

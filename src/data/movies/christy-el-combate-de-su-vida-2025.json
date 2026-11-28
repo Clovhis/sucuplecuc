@@ -56,5 +56,42 @@
 	"premiereLabel": "",
 	"reviewPublishedAt": "2026-07-18",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sydney Sweeney",
+			"character": "Christy Martin",
+			"tmdbMovieId": 1287322,
+			"tmdbPersonId": 115440,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ben Foster",
+			"character": "Jim V. Martin",
+			"tmdbMovieId": 1287322,
+			"tmdbPersonId": 11107,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Merritt Wever",
+			"character": "Joyce Salters",
+			"tmdbMovieId": 1287322,
+			"tmdbPersonId": 28044,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Katy O'Brian",
+			"character": "Lisa Holewyne",
+			"tmdbMovieId": 1287322,
+			"tmdbPersonId": 2252989,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ethan Embry",
+			"character": "John Salters",
+			"tmdbMovieId": 1287322,
+			"tmdbPersonId": 58019,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -24,7 +24,10 @@
 		"Jennifer Aniston",
 		"Joan Cusack",
 		"Catherine Keener",
-		"Frances McDormand"
+		"Frances McDormand",
+		"Jason Isaacs",
+		"Scott Caan",
+		"Simon McBurney"
 	],
 	"productionCompany": "This Is That Productions",
 	"cinepostaScore": 5,
@@ -81,6 +84,27 @@
 			"tmdbMovieId": 8998,
 			"tmdbPersonId": 3910,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Isaacs",
+			"character": "David",
+			"tmdbMovieId": 8998,
+			"tmdbPersonId": 11355,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Scott Caan",
+			"character": "Mike",
+			"tmdbMovieId": 8998,
+			"tmdbPersonId": 1894,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Simon McBurney",
+			"character": "Aaron",
+			"tmdbMovieId": 8998,
+			"tmdbPersonId": 16358,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

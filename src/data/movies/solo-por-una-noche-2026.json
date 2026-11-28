@@ -8,8 +8,13 @@
 	"reviewPublishedAt": "2026-08-27",
 	"audienceRating": "+13",
 	"category": "Comedia romántica",
-	"genres": ["Comedia romántica", "Romance"],
-	"subgenres": ["RomCom"],
+	"genres": [
+		"Comedia romántica",
+		"Romance"
+	],
+	"subgenres": [
+		"RomCom"
+	],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/solo-por-una-noche-2026.webp",
@@ -17,7 +22,13 @@
 	"trailerYoutubeId": "ygrBwB6JGWQ",
 	"releasePlatform": "Otras plataformas",
 	"director": "Will Gluck",
-	"mainCast": ["Monica Barbaro", "Callum Turner", "Maya Hawke", "Julia Fox"],
+	"mainCast": [
+		"Monica Barbaro",
+		"Callum Turner",
+		"Maya Hawke",
+		"Julia Fox",
+		"Molly Ringwald"
+	],
 	"productionCompany": "Universal Pictures, Olive Bridge Entertainment",
 	"cinepostaScore": 5,
 	"runtimeMinutes": 103,
@@ -34,18 +45,55 @@
 			"forFansOf": "Puede funcionar si te gustan las comedias románticas de una noche, las parejas que se pierden y se vuelven a encontrar y las ciudades filmadas como motores de conversación.",
 			"notForYouIf": "Quizás no sea para vos si te cansan los malos entendidos encadenados, necesitás una estructura más limpia o preferís que una cita se construya con intimidad antes que con velocidad."
 		},
-	"becauseYouLiked": [
-		"solo-mio-2026",
-		"me-has-robado-el-corazon-2025"
-	],
-	"related": [
-		"palm-springs-2020",
-		"loco-y-estupido-amor-2011",
-		"medianeras-2011",
-		"amelie-2001"
-	]
-},
+		"becauseYouLiked": [
+			"solo-mio-2026",
+			"me-has-robado-el-corazon-2025"
+		],
+		"related": [
+			"palm-springs-2020",
+			"loco-y-estupido-amor-2011",
+			"medianeras-2011",
+			"amelie-2001"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Sólo por una noche tiene una premisa simpática y una ciudad que sabe jugar como tercer personaje, pero le cuesta ordenar todo lo que quiere hacer en una sola salida. Monica Barbaro y Callum Turner tienen química y sostienen los momentos más naturales, sobre todo cuando la comedia baja el volumen y aparece la incomodidad de dos personas que buscan algo distinto. El problema está en una sucesión de desvíos que repite la misma separación. Cuando finalmente se concentra en ellos, la película encuentra un tono más honesto y bastante más disfrutable."
+	"review": "Sólo por una noche tiene una premisa simpática y una ciudad que sabe jugar como tercer personaje, pero le cuesta ordenar todo lo que quiere hacer en una sola salida. Monica Barbaro y Callum Turner tienen química y sostienen los momentos más naturales, sobre todo cuando la comedia baja el volumen y aparece la incomodidad de dos personas que buscan algo distinto. El problema está en una sucesión de desvíos que repite la misma separación. Cuando finalmente se concentra en ellos, la película encuentra un tono más honesto y bastante más disfrutable.",
+	"castCharacters": [
+		{
+			"actor": "Molly Ringwald",
+			"character": "Linda",
+			"tmdbMovieId": 1433367,
+			"tmdbPersonId": 21625,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Monica Barbaro",
+			"character": "Allie",
+			"tmdbMovieId": 1433367,
+			"tmdbPersonId": 1525043,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Callum Turner",
+			"character": "Owen",
+			"tmdbMovieId": 1433367,
+			"tmdbPersonId": 1371041,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maya Hawke",
+			"character": "Malika",
+			"tmdbMovieId": 1433367,
+			"tmdbPersonId": 1903874,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Julia Fox",
+			"character": "Skye",
+			"tmdbMovieId": 1433367,
+			"tmdbPersonId": 2371446,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

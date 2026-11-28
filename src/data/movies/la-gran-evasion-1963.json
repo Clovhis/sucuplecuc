@@ -17,7 +17,9 @@
 	"director": "John Sturges",
 	"mainCast": [
 		"Steve McQueen",
-		"James Garner"
+		"James Garner",
+		"James Donald",
+		"Charles Bronson"
 	],
 	"productionCompany": "The Mirisch Company",
 	"cinepostaScore": 7,
@@ -68,6 +70,20 @@
 			"tmdbMovieId": 5925,
 			"tmdbPersonId": 16896,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "James Donald",
+			"character": "Ramsey 'The SBO'",
+			"tmdbMovieId": 5925,
+			"tmdbPersonId": 12250,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Charles Bronson",
+			"character": "Danny 'Tunnel King'",
+			"tmdbMovieId": 5925,
+			"tmdbPersonId": 4960,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

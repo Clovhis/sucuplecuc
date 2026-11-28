@@ -46,7 +46,9 @@
 	"mainCast": [
 		"Robert De Niro",
 		"Morgan Freeman",
-		"Tommy Lee Jones"
+		"Tommy Lee Jones",
+		"Zach Braff",
+		"Patrick Muldoon"
 	],
 	"productionCompany": "Cloudburst Entertainment",
 	"cinepostaScore": 5,
@@ -74,6 +76,20 @@
 			"tmdbMovieId": 650783,
 			"tmdbPersonId": 2176,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Zach Braff",
+			"character": "Walter Creason",
+			"tmdbMovieId": 650783,
+			"tmdbPersonId": 5367,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Patrick Muldoon",
+			"character": "Frank Pierce",
+			"tmdbMovieId": 650783,
+			"tmdbPersonId": 41687,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

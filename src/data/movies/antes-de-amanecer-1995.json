@@ -15,7 +15,9 @@
 	"director": "Richard Linklater",
 	"mainCast": [
 		"Ethan Hawke",
-		"Julie Delpy"
+		"Julie Delpy",
+		"Andrea Eckert",
+		"Hanno Pöschl"
 	],
 	"productionCompany": "Castle Rock Entertainment",
 	"cinepostaScore": 7,
@@ -66,6 +68,20 @@
 			"tmdbMovieId": 76,
 			"tmdbPersonId": 1146,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Andrea Eckert",
+			"character": "Wife on Train",
+			"tmdbMovieId": 76,
+			"tmdbPersonId": 571,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hanno Pöschl",
+			"character": "Husband on Train",
+			"tmdbMovieId": 76,
+			"tmdbPersonId": 572,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

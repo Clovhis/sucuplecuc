@@ -22,7 +22,9 @@
   "mainCast": [
     "Brigitte Bardot",
     "Michel Piccoli",
-    "Jack Palance"
+    "Jack Palance",
+    "Fritz Lang",
+    "Jean-Luc Godard"
   ],
   "productionCompany": "Rome-Paris Films, Les Films Concordia, Compagnia Cinematografica Champion",
   "cinepostaScore": 7,
@@ -71,6 +73,20 @@
       "tmdbMovieId": 266,
       "tmdbPersonId": 3785,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Fritz Lang",
+      "character": "Fritz Lang",
+      "tmdbMovieId": 266,
+      "tmdbPersonId": 68,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Jean-Luc Godard",
+      "character": "Lang's Assistant Director",
+      "tmdbMovieId": 266,
+      "tmdbPersonId": 3776,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

@@ -26,7 +26,10 @@
 	"director": "Casey Affleck",
 	"mainCast": [
 		"Joaquin Phoenix",
-		"Casey Affleck"
+		"Casey Affleck",
+		"Jack Nicholson",
+		"Billy Crystal",
+		"Danny Glover"
 	],
 	"productionCompany": "They Are Going to Kill Us Productions, Magnolia Pictures",
 	"cinepostaScore": 5,
@@ -70,6 +73,27 @@
 			"tmdbMovieId": 43939,
 			"tmdbPersonId": 1893,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jack Nicholson",
+			"character": "Jack Nicholson",
+			"tmdbMovieId": 43939,
+			"tmdbPersonId": 514,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Billy Crystal",
+			"character": "Billy Crystal",
+			"tmdbMovieId": 43939,
+			"tmdbPersonId": 7904,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Danny Glover",
+			"character": "Danny Glover",
+			"tmdbMovieId": 43939,
+			"tmdbPersonId": 2047,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -19,7 +19,10 @@
 	"director": "Brian De Palma",
 	"mainCast": [
 		"John Travolta",
-		"Nancy Allen"
+		"Nancy Allen",
+		"John Lithgow",
+		"Dennis Franz",
+		"Peter Boyden"
 	],
 	"productionCompany": "Gerard Films",
 	"cinepostaScore": 7,
@@ -70,6 +73,27 @@
 			"tmdbMovieId": 11644,
 			"tmdbPersonId": 44038,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Lithgow",
+			"character": "Burke",
+			"tmdbMovieId": 11644,
+			"tmdbPersonId": 12074,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dennis Franz",
+			"character": "Manny Karp",
+			"tmdbMovieId": 11644,
+			"tmdbPersonId": 11901,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Boyden",
+			"character": "Sam",
+			"tmdbMovieId": 11644,
+			"tmdbPersonId": 73513,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

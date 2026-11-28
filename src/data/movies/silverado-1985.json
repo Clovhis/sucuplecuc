@@ -25,7 +25,11 @@
 		"Kevin Kline",
 		"Scott Glenn",
 		"Danny Glover",
-		"Kevin Costner"
+		"Kevin Costner",
+		"Brian Dennehy",
+		"Rosanna Arquette",
+		"John Cleese",
+		"Linda Hunt"
 	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 8,
@@ -82,6 +86,34 @@
 			"tmdbMovieId": 11509,
 			"tmdbPersonId": 1269,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brian Dennehy",
+			"character": "Cobb",
+			"tmdbMovieId": 11509,
+			"tmdbPersonId": 6197,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rosanna Arquette",
+			"character": "Hannah",
+			"tmdbMovieId": 11509,
+			"tmdbPersonId": 2165,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Cleese",
+			"character": "Sheriff John T. Langston",
+			"tmdbMovieId": 11509,
+			"tmdbPersonId": 8930,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Linda Hunt",
+			"character": "Stella",
+			"tmdbMovieId": 11509,
+			"tmdbPersonId": 12516,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -22,7 +22,12 @@
 	"mainCast": [
 		"Angelina Jolie",
 		"Anyier Anei",
-		"Ella Rumpf"
+		"Ella Rumpf",
+		"Louis Garrel",
+		"Vincent Lindon",
+		"Garance Marillier",
+		"Grégoire Colin",
+		"Aurore Clément"
 	],
 	"productionCompany": "CG Cinéma",
 	"cinepostaScore": 5,
@@ -73,6 +78,41 @@
 			"tmdbMovieId": 1390382,
 			"tmdbPersonId": 1438688,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Louis Garrel",
+			"character": "Anton",
+			"tmdbMovieId": 1390382,
+			"tmdbPersonId": 16269,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Vincent Lindon",
+			"character": "Dr. Laurent Hansen",
+			"tmdbMovieId": 1390382,
+			"tmdbPersonId": 5443,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Garance Marillier",
+			"character": "Christine",
+			"tmdbMovieId": 1390382,
+			"tmdbPersonId": 1144473,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Grégoire Colin",
+			"character": "Le directeur d'image",
+			"tmdbMovieId": 1390382,
+			"tmdbPersonId": 136170,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Aurore Clément",
+			"character": "Anne",
+			"tmdbMovieId": 1390382,
+			"tmdbPersonId": 9893,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

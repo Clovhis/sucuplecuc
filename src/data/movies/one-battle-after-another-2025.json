@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Leonardo DiCaprio",
 		"Sean Penn",
-		"Regina Hall"
+		"Regina Hall",
+		"Benicio del Toro",
+		"Teyana Taylor",
+		"Wood Harris"
 	],
 	"productionCompany": "Ghoulardi Film Company",
 	"cinepostaScore": 8,
@@ -105,6 +108,27 @@
 			"tmdbMovieId": 1054867,
 			"tmdbPersonId": 35705,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Benicio del Toro",
+			"character": "Sensei Sergio St. Carlos",
+			"tmdbMovieId": 1054867,
+			"tmdbPersonId": 1121,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Teyana Taylor",
+			"character": "Perfidia",
+			"tmdbMovieId": 1054867,
+			"tmdbPersonId": 964679,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Wood Harris",
+			"character": "Laredo",
+			"tmdbMovieId": 1054867,
+			"tmdbPersonId": 65829,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

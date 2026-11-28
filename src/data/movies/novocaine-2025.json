@@ -12,7 +12,9 @@
 	"mainCast": [
 		"Jack Quaid",
 		"Amber Midthunder",
-		"Ray Nicholson"
+		"Ray Nicholson",
+		"Betty Gabriel",
+		"Jacob Batalon"
 	],
 	"productionCompany": "Safehouse Pictures",
 	"cinepostaScore": 8,
@@ -46,5 +48,42 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-03-04",
 	"country": "CA, US, ZA",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Betty Gabriel",
+			"character": "Mincy",
+			"tmdbMovieId": 1195506,
+			"tmdbPersonId": 1660452,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jacob Batalon",
+			"character": "Roscoe",
+			"tmdbMovieId": 1195506,
+			"tmdbPersonId": 1649152,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jack Quaid",
+			"character": "Nate",
+			"tmdbMovieId": 1195506,
+			"tmdbPersonId": 1030513,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Amber Midthunder",
+			"character": "Sherry",
+			"tmdbMovieId": 1195506,
+			"tmdbPersonId": 1654001,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ray Nicholson",
+			"character": "Simon",
+			"tmdbMovieId": 1195506,
+			"tmdbPersonId": 60960,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

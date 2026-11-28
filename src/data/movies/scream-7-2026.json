@@ -22,7 +22,10 @@
 	"mainCast": [
 		"Neve Campbell",
 		"Courteney Cox",
-		"Isabel May"
+		"Isabel May",
+		"Jasmin Savoy Brown",
+		"Mason Gooding",
+		"Joel McHale"
 	],
 	"productionCompany": "Spyglass Media Group",
 	"cinepostaScore": 8,
@@ -80,6 +83,27 @@
 			"tmdbMovieId": 1159559,
 			"tmdbPersonId": 1972974,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jasmin Savoy Brown",
+			"character": "Mindy Meeks-Martin",
+			"tmdbMovieId": 1159559,
+			"tmdbPersonId": 1508653,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mason Gooding",
+			"character": "Chad Meeks-Martin",
+			"tmdbMovieId": 1159559,
+			"tmdbPersonId": 2174509,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Joel McHale",
+			"character": "Mark Evans",
+			"tmdbMovieId": 1159559,
+			"tmdbPersonId": 74949,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

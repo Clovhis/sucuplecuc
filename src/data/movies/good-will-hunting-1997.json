@@ -18,7 +18,11 @@
 	"mainCast": [
 		"Matt Damon",
 		"Robin Williams",
-		"Ben Affleck"
+		"Ben Affleck",
+		"Stellan Skarsgård",
+		"Minnie Driver",
+		"Casey Affleck",
+		"Cole Hauser"
 	],
 	"productionCompany": "A Band Apart, Miramax",
 	"cinepostaScore": 7,
@@ -79,6 +83,34 @@
 			"tmdbMovieId": 489,
 			"tmdbPersonId": 880,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stellan Skarsgård",
+			"character": "Gerald Lambeau",
+			"tmdbMovieId": 489,
+			"tmdbPersonId": 1640,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Minnie Driver",
+			"character": "Skylar",
+			"tmdbMovieId": 489,
+			"tmdbPersonId": 6613,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Casey Affleck",
+			"character": "Morgan O'Mally",
+			"tmdbMovieId": 489,
+			"tmdbPersonId": 1893,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cole Hauser",
+			"character": "Billy McBride",
+			"tmdbMovieId": 489,
+			"tmdbPersonId": 6614,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

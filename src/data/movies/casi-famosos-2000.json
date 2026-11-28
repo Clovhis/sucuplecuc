@@ -24,7 +24,10 @@
 	"mainCast": [
 		"Billy Crudup",
 		"Frances McDormand",
-		"Kate Hudson"
+		"Kate Hudson",
+		"Jason Lee",
+		"Zooey Deschanel",
+		"Anna Paquin"
 	],
 	"productionCompany": "DreamWorks Pictures, Columbia Pictures",
 	"cinepostaScore": 7,
@@ -84,6 +87,27 @@
 			"tmdbMovieId": 786,
 			"tmdbPersonId": 11661,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jason Lee",
+			"character": "Jeff Bebe",
+			"tmdbMovieId": 786,
+			"tmdbPersonId": 11662,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zooey Deschanel",
+			"character": "Anita Miller",
+			"tmdbMovieId": 786,
+			"tmdbPersonId": 11664,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anna Paquin",
+			"character": "Polexia Aphrodisia",
+			"tmdbMovieId": 786,
+			"tmdbPersonId": 10690,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

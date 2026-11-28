@@ -25,7 +25,11 @@
 	"director": "James Mangold",
 	"mainCast": [
 		"Matt Damon",
-		"Christian Bale"
+		"Christian Bale",
+		"Jon Bernthal",
+		"Josh Lucas",
+		"Noah Jupe",
+		"Tracy Letts"
 	],
 	"productionCompany": "20th Century Fox, Chernin Entertainment",
 	"cinepostaScore": 8,
@@ -82,6 +86,34 @@
 			"tmdbMovieId": 359724,
 			"tmdbPersonId": 3894,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Bernthal",
+			"character": "Lee Iacocca",
+			"tmdbMovieId": 359724,
+			"tmdbPersonId": 19498,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Josh Lucas",
+			"character": "Leo Beebe",
+			"tmdbMovieId": 359724,
+			"tmdbPersonId": 6164,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Noah Jupe",
+			"character": "Peter Miles",
+			"tmdbMovieId": 359724,
+			"tmdbPersonId": 1590759,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tracy Letts",
+			"character": "Henry Ford II",
+			"tmdbMovieId": 359724,
+			"tmdbPersonId": 72638,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

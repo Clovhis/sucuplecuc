@@ -46,5 +46,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-11",
 	"country": "GB, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Noomi Rapace",
+			"character": "Elizabeth Shaw",
+			"tmdbMovieId": 70981,
+			"tmdbPersonId": 87722,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Fassbender",
+			"character": "David",
+			"tmdbMovieId": 70981,
+			"tmdbPersonId": 17288,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Charlize Theron",
+			"character": "Meredith Vickers",
+			"tmdbMovieId": 70981,
+			"tmdbPersonId": 6885,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -21,7 +21,8 @@
 	"director": "Christin Freitag",
 	"mainCast": [
 		"Michael Schumacher",
-		"Corinna Schumacher"
+		"Corinna Schumacher",
+		"Flavio Briatore"
 	],
 	"productionCompany": "LEONINE Studios",
 	"cinepostaScore": 7,
@@ -49,5 +50,28 @@
 		]
 	},
 	"review": "Concentrarse en 1994 le da al documental un límite útil: en vez de recorrer todos los títulos de Schumacher, puede quedarse con un campeonato donde cada resultado carga algo más que puntos. El archivo de las carreras permite seguir la competencia y las entrevistas acercan la presión que recibía el piloto fuera del auto. Christin Freitag deja que el año conserve su costado doloroso, especialmente cuando el deporte pierde cualquier apariencia de invulnerabilidad. La mirada cercana a la familia condiciona algunas preguntas, pero el recorte logra transmitir cuánto puede cambiar una carrera y una vida en una sola temporada.",
-	"runtimeMinutes": 105
+	"runtimeMinutes": 105,
+	"castCharacters": [
+		{
+			"actor": "Flavio Briatore",
+			"character": "Self",
+			"tmdbMovieId": 1752355,
+			"tmdbPersonId": 90142,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Schumacher",
+			"character": "Self (archive footage)",
+			"tmdbMovieId": 1752355,
+			"tmdbPersonId": 216299,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Corinna Schumacher",
+			"character": "Self",
+			"tmdbMovieId": 1752355,
+			"tmdbPersonId": 3179450,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

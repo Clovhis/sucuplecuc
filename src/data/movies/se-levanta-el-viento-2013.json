@@ -27,7 +27,9 @@
 	"director": "Hayao Miyazaki",
 	"mainCast": [
 		"Hideaki Anno",
-		"Hidetoshi Nishijima"
+		"Hidetoshi Nishijima",
+		"Jun Kunimura",
+		"Mirai Shida"
 	],
 	"productionCompany": "Studio Ghibli",
 	"cinepostaScore": 8,
@@ -70,6 +72,20 @@
 			"tmdbMovieId": 149870,
 			"tmdbPersonId": 13250,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jun Kunimura",
+			"character": "Hattori (voice)",
+			"tmdbMovieId": 149870,
+			"tmdbPersonId": 2541,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mirai Shida",
+			"character": "Kayo Horikoshi (voice)",
+			"tmdbMovieId": 149870,
+			"tmdbPersonId": 227611,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

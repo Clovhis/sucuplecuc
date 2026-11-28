@@ -23,7 +23,10 @@
 	"director": "Don Hall",
 	"mainCast": [
 		"Jake Gyllenhaal",
-		"Dennis Quaid"
+		"Dennis Quaid",
+		"Jaboukie Young-White",
+		"Gabrielle Union",
+		"Lucy Liu"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 7,
@@ -33,7 +36,12 @@
 	"editorial": {
 		"tenSecondTake": {
 			"verdict": "Mundo extraño usa una expedición familiar para hablar de padres, hijos y cuidado ambiental; Jake Gyllenhaal y Dennis Quaid sostienen el choque aunque las capas compiten.",
-			"whatToExpect": "Un mundo subterráneo bioluminiscente, una familia de exploradores, plantas vitales y una discusión generacional sobre qué significa proteger el futuro.",			"pace": "Avanza como aventura de descubrimiento, con criaturas y obstáculos visuales; las discusiones familiares ralentizan un poco el impulso, pero ordenan el viaje.",			"intensity": "El peligro es colorido y apto para familia; la tensión más fuerte viene de la pelea entre legado, tecnología y cuidado del entorno.",			"practicalContext": "La ficha no consigna duración; funciona para una tarde familiar si tenés ganas de animación de exploración con una moraleja ecológica directa.",			"forFansOf": "Para quienes disfrutan mundos animados raros, aventuras de familia y el cruce de voces de Gyllenhaal con Quaid.",			"notForYouIf": "No es para vos si esperás una fantasía más misteriosa, una trama sin moralejas o una película que no separe tanto sus conflictos por generaciones."
+			"whatToExpect": "Un mundo subterráneo bioluminiscente, una familia de exploradores, plantas vitales y una discusión generacional sobre qué significa proteger el futuro.",
+			"pace": "Avanza como aventura de descubrimiento, con criaturas y obstáculos visuales; las discusiones familiares ralentizan un poco el impulso, pero ordenan el viaje.",
+			"intensity": "El peligro es colorido y apto para familia; la tensión más fuerte viene de la pelea entre legado, tecnología y cuidado del entorno.",
+			"practicalContext": "La ficha no consigna duración; funciona para una tarde familiar si tenés ganas de animación de exploración con una moraleja ecológica directa.",
+			"forFansOf": "Para quienes disfrutan mundos animados raros, aventuras de familia y el cruce de voces de Gyllenhaal con Quaid.",
+			"notForYouIf": "No es para vos si esperás una fantasía más misteriosa, una trama sin moralejas o una película que no separe tanto sus conflictos por generaciones."
 		},
 		"becauseYouLiked": [
 			"red-2022",
@@ -46,5 +54,42 @@
 			"la-vida-secreta-de-tus-mascotas-2-2019"
 		]
 	},
-	"review": "Mundo extraño apuesta por una aventura familiar de exploración y suma un conflicto entre generaciones que le da algo más que color al viaje. Jake Gyllenhaal, Dennis Quaid y Jaboukie Young-White encuentran diferencias concretas entre padre, hijo y nieto, mientras el paisaje se transforma en una criatura viva. El relato no siempre ordena sus capas ecológicas y familiares, pero su imaginación de cómic, sus colores bioluminiscentes y su defensa del cuidado dejan una impresión valiosa."
+	"review": "Mundo extraño apuesta por una aventura familiar de exploración y suma un conflicto entre generaciones que le da algo más que color al viaje. Jake Gyllenhaal, Dennis Quaid y Jaboukie Young-White encuentran diferencias concretas entre padre, hijo y nieto, mientras el paisaje se transforma en una criatura viva. El relato no siempre ordena sus capas ecológicas y familiares, pero su imaginación de cómic, sus colores bioluminiscentes y su defensa del cuidado dejan una impresión valiosa.",
+	"castCharacters": [
+		{
+			"actor": "Jaboukie Young-White",
+			"character": "Ethan Clade (voice)",
+			"tmdbMovieId": 877269,
+			"tmdbPersonId": 1998733,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gabrielle Union",
+			"character": "Meridian Clade (voice)",
+			"tmdbMovieId": 877269,
+			"tmdbPersonId": 17773,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lucy Liu",
+			"character": "Callisto Mal (voice)",
+			"tmdbMovieId": 877269,
+			"tmdbPersonId": 140,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jake Gyllenhaal",
+			"character": "Searcher Clade (voice)",
+			"tmdbMovieId": 877269,
+			"tmdbPersonId": 131,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dennis Quaid",
+			"character": "Jaeger Clade (voice)",
+			"tmdbMovieId": 877269,
+			"tmdbPersonId": 6065,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

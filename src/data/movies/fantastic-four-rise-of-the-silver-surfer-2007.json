@@ -13,7 +13,10 @@
 	"mainCast": [
 		"Ioan Gruffudd",
 		"Jessica Alba",
-		"Chris Evans"
+		"Chris Evans",
+		"Laurence Fishburne",
+		"Doug Jones",
+		"Kerry Washington"
 	],
 	"productionCompany": "20th Century Fox",
 	"cinepostaScore": 2,
@@ -69,6 +72,27 @@
 			"tmdbMovieId": 1979,
 			"tmdbPersonId": 16828,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laurence Fishburne",
+			"character": "Silver Surfer (voice)",
+			"tmdbMovieId": 1979,
+			"tmdbPersonId": 2975,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Doug Jones",
+			"character": "Silver Surfer",
+			"tmdbMovieId": 1979,
+			"tmdbPersonId": 17005,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kerry Washington",
+			"character": "Alicia Masters",
+			"tmdbMovieId": 1979,
+			"tmdbPersonId": 11703,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -53,5 +53,28 @@
 		]
 	},
 	"review": "Masterplan tiene una buena excusa para cruzar un robo imposible con una familia recién descubierta, pero Thomas Vincent le saca poco jugo a las dos cosas. Stanley Tucci pone la estampa del ladrón experimentado; ni él ni la fricción entre Simona Tabasco y Victor Belmondo alcanzan para darle gracia al equipo. Los gadgets parecen de juguete, los efectos dejan ver demasiado las costuras y los giros se anuncian antes de llegar. La música acompaña sin darle personalidad a la aventura. Puede pasar como una comedia liviana, pero le falta ingenio para el golpe y química para la familia: queda a mitad de camino.",
-	"runtimeMinutes": 109
+	"runtimeMinutes": 109,
+	"castCharacters": [
+		{
+			"actor": "Stanley Tucci",
+			"character": "Roger",
+			"tmdbMovieId": 1561726,
+			"tmdbPersonId": 2283,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Simona Tabasco",
+			"character": "Chiara",
+			"tmdbMovieId": 1561726,
+			"tmdbPersonId": 1355967,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Victor Belmondo",
+			"character": "Jay",
+			"tmdbMovieId": 1561726,
+			"tmdbPersonId": 1894422,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

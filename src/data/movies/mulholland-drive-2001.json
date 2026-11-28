@@ -19,7 +19,12 @@
 	"director": "David Lynch",
 	"mainCast": [
 		"Naomi Watts",
-		"Laura Harring"
+		"Laura Harring",
+		"Justin Theroux",
+		"Ann Miller",
+		"Mark Pellegrino",
+		"Robert Forster",
+		"Dan Hedaya"
 	],
 	"productionCompany": "Asymmetrical Productions",
 	"cinepostaScore": 10,
@@ -77,6 +82,41 @@
 			"tmdbMovieId": 1018,
 			"tmdbPersonId": 15007,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Justin Theroux",
+			"character": "Adam",
+			"tmdbMovieId": 1018,
+			"tmdbPersonId": 15009,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ann Miller",
+			"character": "Coco",
+			"tmdbMovieId": 1018,
+			"tmdbPersonId": 15008,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mark Pellegrino",
+			"character": "Joe",
+			"tmdbMovieId": 1018,
+			"tmdbPersonId": 1236,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robert Forster",
+			"character": "Detective McKnight",
+			"tmdbMovieId": 1018,
+			"tmdbPersonId": 5694,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dan Hedaya",
+			"character": "Vincenzo Castigliane",
+			"tmdbMovieId": 1018,
+			"tmdbPersonId": 6486,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

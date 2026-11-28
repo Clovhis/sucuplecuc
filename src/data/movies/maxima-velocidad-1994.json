@@ -25,7 +25,9 @@
 		"Keanu Reeves",
 		"Sandra Bullock",
 		"Dennis Hopper",
-		"Jeff Daniels"
+		"Jeff Daniels",
+		"Joe Morton",
+		"Glenn Plummer"
 	],
 	"productionCompany": "20th Century Fox",
 	"cinepostaScore": 8,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 1637,
 			"tmdbPersonId": 8447,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Morton",
+			"character": "Capt. McMahon",
+			"tmdbMovieId": 1637,
+			"tmdbPersonId": 3977,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Glenn Plummer",
+			"character": "Jaguar Owner",
+			"tmdbMovieId": 1637,
+			"tmdbPersonId": 2683,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Pierce Brosnan",
 		"Sean Bean",
-		"Famke Janssen"
+		"Famke Janssen",
+		"Joe Don Baker",
+		"Judi Dench",
+		"Robbie Coltrane"
 	],
 	"productionCompany": "EON Productions, Danjaq",
 	"cinepostaScore": 8,
@@ -75,6 +78,27 @@
 			"tmdbMovieId": 710,
 			"tmdbPersonId": 10696,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Don Baker",
+			"character": "Jack Wade",
+			"tmdbMovieId": 710,
+			"tmdbPersonId": 10671,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Judi Dench",
+			"character": "M",
+			"tmdbMovieId": 710,
+			"tmdbPersonId": 5309,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robbie Coltrane",
+			"character": "Valentin Zukovsky",
+			"tmdbMovieId": 710,
+			"tmdbPersonId": 1923,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

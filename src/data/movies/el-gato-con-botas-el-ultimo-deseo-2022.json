@@ -23,7 +23,12 @@
 	"director": "Joel Crawford",
 	"mainCast": [
 		"Antonio Banderas",
-		"Salma Hayek Pinault"
+		"Salma Hayek Pinault",
+		"Wagner Moura",
+		"Florence Pugh",
+		"Olivia Colman",
+		"Ray Winstone",
+		"Samson Kayo"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 8,
@@ -66,6 +71,41 @@
 			"tmdbMovieId": 315162,
 			"tmdbPersonId": 3136,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Wagner Moura",
+			"character": "Wolf (voice)",
+			"tmdbMovieId": 315162,
+			"tmdbPersonId": 52583,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Florence Pugh",
+			"character": "Goldilocks (voice)",
+			"tmdbMovieId": 315162,
+			"tmdbPersonId": 1373737,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Olivia Colman",
+			"character": "Mama Bear (voice)",
+			"tmdbMovieId": 315162,
+			"tmdbPersonId": 39187,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ray Winstone",
+			"character": "Papa Bear (voice)",
+			"tmdbMovieId": 315162,
+			"tmdbPersonId": 5538,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Samson Kayo",
+			"character": "Baby Bear (voice)",
+			"tmdbMovieId": 315162,
+			"tmdbPersonId": 1346535,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

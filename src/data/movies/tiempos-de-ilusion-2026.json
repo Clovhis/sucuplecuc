@@ -22,7 +22,8 @@
 	"director": "Olivier Nakache, Éric Toledano",
 	"mainCast": [
 		"Louis Garrel",
-		"Camille Cottin"
+		"Camille Cottin",
+		"Pierre Lottin"
 	],
 	"productionCompany": "ADNP, Ten Cinéma, Gaumont, TF1 Films Production",
 	"cinepostaScore": 7,
@@ -53,5 +54,28 @@
 	"runtimeMinutes": 119,
 	"releasePlatforms": [
 		"Otras plataformas"
+	],
+	"castCharacters": [
+		{
+			"actor": "Pierre Lottin",
+			"character": "Étienne Berger",
+			"tmdbMovieId": 1404684,
+			"tmdbPersonId": 544685,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Louis Garrel",
+			"character": "Yves Dayan",
+			"tmdbMovieId": 1404684,
+			"tmdbPersonId": 16269,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Camille Cottin",
+			"character": "Sandrine Dayan",
+			"tmdbMovieId": 1404684,
+			"tmdbPersonId": 1348474,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

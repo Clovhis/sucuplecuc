@@ -23,7 +23,8 @@
 	"director": "Steve Martino",
 	"mainCast": [
 		"Noah Schnapp",
-		"Bill Melendez"
+		"Bill Melendez",
+		"Marleik 'Mar Mar' Walker"
 	],
 	"productionCompany": "Blue Sky Studios",
 	"cinepostaScore": 7,
@@ -51,5 +52,28 @@
 			"la-era-de-hielo-choque-de-mundos-2016"
 		]
 	},
-	"review": "Snoopy y Charlie Brown: Peanuts, la película actualiza el trazo de Schulz con volumen digital sin perder su fragilidad. Noah Schnapp y Bill Melendez mantienen la timidez de Charlie Brown y la expresividad silenciosa de Snoopy, mientras Marleik Walker aporta calidez a la historia de amistad. El relato es pequeño y reiterativo a propósito; su fuerza está en observar la vergüenza, la fantasía y el deseo de hacer algo bien sin burlarse de quien falla."
+	"review": "Snoopy y Charlie Brown: Peanuts, la película actualiza el trazo de Schulz con volumen digital sin perder su fragilidad. Noah Schnapp y Bill Melendez mantienen la timidez de Charlie Brown y la expresividad silenciosa de Snoopy, mientras Marleik Walker aporta calidez a la historia de amistad. El relato es pequeño y reiterativo a propósito; su fuerza está en observar la vergüenza, la fantasía y el deseo de hacer algo bien sin burlarse de quien falla.",
+	"castCharacters": [
+		{
+			"actor": "Marleik 'Mar Mar' Walker",
+			"character": "Franklin Armstrong (voice)",
+			"tmdbMovieId": 227973,
+			"tmdbPersonId": 1393184,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Noah Schnapp",
+			"character": "Charlie Brown (voice)",
+			"tmdbMovieId": 227973,
+			"tmdbPersonId": 1393177,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bill Melendez",
+			"character": "Snoopy / Woodstock (voice) (archive sound)",
+			"tmdbMovieId": 227973,
+			"tmdbPersonId": 94011,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

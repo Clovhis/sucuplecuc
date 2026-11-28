@@ -49,5 +49,28 @@
 		]
 	},
 	"review": "El archivo de Norm Macdonald contiene un problema para cualquier biógrafo: su voz podía convertir un dato verdadero en una broma y una invención en algo íntimo. Judd Apatow usa esa inestabilidad como guía, con un montaje que se aparta de la entrevista retrospectiva tradicional. El recurso produce hallazgos y también zonas donde el retrato se pierde detrás del personaje que Norm construyó. El material cómico mantiene su fuerza. La forma elegida, en cambio, no siempre consigue que ese conjunto de fragmentos diga algo más que lo que cada aparición ya ofrecía por separado.",
-	"runtimeMinutes": 126
+	"runtimeMinutes": 126,
+	"castCharacters": [
+		{
+			"actor": "Norm Macdonald",
+			"character": "Self (archive footage)",
+			"tmdbMovieId": 1620918,
+			"tmdbPersonId": 77075,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Adam Sandler",
+			"character": "Self (archive footage)",
+			"tmdbMovieId": 1620918,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Letterman",
+			"character": "Self (archive footage)",
+			"tmdbMovieId": 1620918,
+			"tmdbPersonId": 136487,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

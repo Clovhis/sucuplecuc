@@ -23,7 +23,11 @@
 	"director": "Dan Scanlon",
 	"mainCast": [
 		"Billy Crystal",
-		"John Goodman"
+		"John Goodman",
+		"Steve Buscemi",
+		"Helen Mirren",
+		"Peter Sohn",
+		"Dave Foley"
 	],
 	"productionCompany": "Pixar Animation Studios",
 	"cinepostaScore": 7,
@@ -66,6 +70,34 @@
 			"tmdbMovieId": 62211,
 			"tmdbPersonId": 1230,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Steve Buscemi",
+			"character": "Randy (voice)",
+			"tmdbMovieId": 62211,
+			"tmdbPersonId": 884,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Helen Mirren",
+			"character": "Dean Hardscrabble (voice)",
+			"tmdbMovieId": 62211,
+			"tmdbPersonId": 15735,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Sohn",
+			"character": "Squishy (voice)",
+			"tmdbMovieId": 62211,
+			"tmdbPersonId": 21198,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dave Foley",
+			"character": "Terry (voice)",
+			"tmdbMovieId": 62211,
+			"tmdbPersonId": 21290,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

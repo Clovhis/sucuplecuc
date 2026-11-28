@@ -24,7 +24,9 @@
 		"George Clooney",
 		"Meryl Streep",
 		"Jason Schwartzman",
-		"Bill Murray"
+		"Bill Murray",
+		"Willem Dafoe",
+		"Michael Gambon"
 	],
 	"productionCompany": "20th Century Fox, Regency Enterprises e Indian Paintbrush",
 	"cinepostaScore": 8,
@@ -85,6 +87,20 @@
 			"tmdbMovieId": 10315,
 			"tmdbPersonId": 1532,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Willem Dafoe",
+			"character": "Rat (voice)",
+			"tmdbMovieId": 10315,
+			"tmdbPersonId": 5293,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Gambon",
+			"character": "Franklin Bean (voice)",
+			"tmdbMovieId": 10315,
+			"tmdbPersonId": 5658,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

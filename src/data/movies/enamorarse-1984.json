@@ -27,7 +27,11 @@
 	"mainCast": [
 		"Robert De Niro",
 		"Meryl Streep",
-		"Harvey Keitel"
+		"Harvey Keitel",
+		"George Martin",
+		"David Clennon",
+		"Dianne Wiest",
+		"Victor Argo"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 5,
@@ -78,6 +82,34 @@
 			"tmdbMovieId": 52744,
 			"tmdbPersonId": 1037,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "George Martin",
+			"character": "John Trainer",
+			"tmdbMovieId": 52744,
+			"tmdbPersonId": 2701,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "David Clennon",
+			"character": "Brian Gilmore",
+			"tmdbMovieId": 52744,
+			"tmdbPersonId": 15412,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dianne Wiest",
+			"character": "Isabelle",
+			"tmdbMovieId": 52744,
+			"tmdbPersonId": 1902,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Victor Argo",
+			"character": "Victor Rawlins",
+			"tmdbMovieId": 52744,
+			"tmdbPersonId": 2561,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

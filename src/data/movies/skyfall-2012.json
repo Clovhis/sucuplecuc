@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Daniel Craig",
 		"Javier Bardem",
-		"Judi Dench"
+		"Judi Dench",
+		"Ralph Fiennes",
+		"Naomie Harris",
+		"Ben Whishaw"
 	],
 	"productionCompany": "Eon Productions, Metro-Goldwyn-Mayer, Columbia Pictures",
 	"cinepostaScore": 8,
@@ -75,6 +78,27 @@
 			"tmdbMovieId": 37724,
 			"tmdbPersonId": 5309,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Gareth Mallory",
+			"tmdbMovieId": 37724,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Naomie Harris",
+			"character": "Eve",
+			"tmdbMovieId": 37724,
+			"tmdbPersonId": 2038,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ben Whishaw",
+			"character": "Q",
+			"tmdbMovieId": 37724,
+			"tmdbPersonId": 17064,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

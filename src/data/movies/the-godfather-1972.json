@@ -12,7 +12,9 @@
 	"mainCast": [
 		"Marlon Brando",
 		"Al Pacino",
-		"James Caan"
+		"James Caan",
+		"Robert Duvall",
+		"Diane Keaton"
 	],
 	"productionCompany": "Paramount Pictures, Alfran Productions",
 	"cinepostaScore": 10,
@@ -80,6 +82,20 @@
 			"tmdbMovieId": 238,
 			"tmdbPersonId": 3085,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Robert Duvall",
+			"character": "Tom Hagen",
+			"tmdbMovieId": 238,
+			"tmdbPersonId": 3087,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diane Keaton",
+			"character": "Kay Adams",
+			"tmdbMovieId": 238,
+			"tmdbPersonId": 3092,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

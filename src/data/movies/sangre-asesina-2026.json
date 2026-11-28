@@ -44,17 +44,40 @@
 			"notForYouIf": "Quizás no sea para vos si necesitás diálogos naturalistas, villanos complejos o un relato de género que baje la intensidad melodramática."
 		},
 		"becauseYouLiked": [
-		"el-fuego-de-la-venganza-2004",
-		"furious-7-2015"
-	],
-	"related": [
-		"una-noche-para-sobrevivir-2015",
-		"fast-five-2011",
-		"zona-de-riesgo-2025",
-		"kill-bill-vol-1-2003"
-	]
-},
+			"el-fuego-de-la-venganza-2004",
+			"furious-7-2015"
+		],
+		"related": [
+			"una-noche-para-sobrevivir-2015",
+			"fast-five-2011",
+			"zona-de-riesgo-2025",
+			"kill-bill-vol-1-2003"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Sangre asesina no se hace la fina: mezcla romance, sicarios, venganza familiar y una excusa de sangre rara para encadenar persecuciones y tiroteos. La recepcion la marco como una pelicula mas efectiva en el movimiento que en los personajes, y se nota.\n\nCuando acelera, tiene oficio fisico y una energia tailandesa que la saca del thriller generico. Cuando frena para explicar heridas y lealtades, cae en melodrama bastante grueso. Zafa si entras buscando accion directa, drama pasado de rosca y cero sutileza."
+	"review": "Sangre asesina no se hace la fina: mezcla romance, sicarios, venganza familiar y una excusa de sangre rara para encadenar persecuciones y tiroteos. La recepcion la marco como una pelicula mas efectiva en el movimiento que en los personajes, y se nota.\n\nCuando acelera, tiene oficio fisico y una energia tailandesa que la saca del thriller generico. Cuando frena para explicar heridas y lealtades, cae en melodrama bastante grueso. Zafa si entras buscando accion directa, drama pasado de rosca y cero sutileza.",
+	"castCharacters": [
+		{
+			"actor": "Pimchanok Luevisadpaibul",
+			"character": "Lhan",
+			"tmdbMovieId": 1630423,
+			"tmdbPersonId": 127449,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Thanapob Leeratanakachorn",
+			"character": "Pran",
+			"tmdbMovieId": 1630423,
+			"tmdbPersonId": 1536085,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sivakorn Adulsuttikul",
+			"character": "M",
+			"tmdbMovieId": 1630423,
+			"tmdbPersonId": 2247748,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

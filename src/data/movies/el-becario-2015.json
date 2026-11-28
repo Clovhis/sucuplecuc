@@ -27,7 +27,9 @@
 	"mainCast": [
 		"Robert De Niro",
 		"Anne Hathaway",
-		"Rene Russo"
+		"Rene Russo",
+		"Andrew Rannells",
+		"Adam Devine"
 	],
 	"productionCompany": "Warner Bros. Pictures",
 	"cinepostaScore": 8,
@@ -56,5 +58,42 @@
 		]
 	},
 	"review": "El becario podría haberse quedado en la moraleja de que la experiencia siempre vence a la juventud, pero Nancy Meyers encuentra algo más amable: dos personas de generaciones distintas que se enseñan mutuamente a mirar el trabajo y la vida. Robert De Niro interpreta a Ben con una cortesía firme, sin volverlo un santo ni un abuelo de postal, y Anne Hathaway le da a Jules una energía de líder que también sabe agotarse. La película suaviza conflictos importantes y resuelve algunas tensiones con demasiada comodidad, pero su encanto está en los detalles cotidianos y en una relación que no necesita convertirse en romance para ser profunda. Una comedia cálida, bien actuada y perfecta para bajar un cambio.",
-	"runtimeMinutes": 121
+	"runtimeMinutes": 121,
+	"castCharacters": [
+		{
+			"actor": "Andrew Rannells",
+			"character": "Cameron",
+			"tmdbMovieId": 257211,
+			"tmdbPersonId": 990369,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Adam Devine",
+			"character": "Jason",
+			"tmdbMovieId": 257211,
+			"tmdbPersonId": 212604,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robert De Niro",
+			"character": "Ben Whitaker",
+			"tmdbMovieId": 257211,
+			"tmdbPersonId": 380,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anne Hathaway",
+			"character": "Jules Ostin",
+			"tmdbMovieId": 257211,
+			"tmdbPersonId": 1813,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rene Russo",
+			"character": "Fiona Farwell",
+			"tmdbMovieId": 257211,
+			"tmdbPersonId": 14343,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

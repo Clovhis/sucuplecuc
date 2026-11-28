@@ -23,7 +23,10 @@
 	"director": "Gregg Araki",
 	"mainCast": [
 		"Olivia Wilde",
-		"Cooper Hoffman"
+		"Cooper Hoffman",
+		"Mason Gooding",
+		"Johnny Knoxville",
+		"Charli XCX"
 	],
 	"productionCompany": "Black Bear",
 	"cinepostaScore": 6,
@@ -66,6 +69,27 @@
 			"tmdbMovieId": 1288059,
 			"tmdbPersonId": 2764542,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Mason Gooding",
+			"character": "Zap",
+			"tmdbMovieId": 1288059,
+			"tmdbPersonId": 2174509,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Johnny Knoxville",
+			"character": "Detective Zem",
+			"tmdbMovieId": 1288059,
+			"tmdbPersonId": 9656,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Charli XCX",
+			"character": "Minerva",
+			"tmdbMovieId": 1288059,
+			"tmdbPersonId": 1529997,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

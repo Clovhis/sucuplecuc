@@ -16,7 +16,11 @@
 	"director": "Sean Durkin",
 	"mainCast": [
 		"Zac Efron",
-		"Jeremy Allen White"
+		"Jeremy Allen White",
+		"Harris Dickinson",
+		"Holt McCallany",
+		"Maura Tierney",
+		"Lily James"
 	],
 	"productionCompany": "A24",
 	"cinepostaScore": 7,
@@ -67,6 +71,34 @@
 			"tmdbMovieId": 850165,
 			"tmdbPersonId": 206905,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Harris Dickinson",
+			"character": "David Von Erich",
+			"tmdbMovieId": 850165,
+			"tmdbPersonId": 1716493,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Holt McCallany",
+			"character": "Fritz Von Erich",
+			"tmdbMovieId": 850165,
+			"tmdbPersonId": 7497,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maura Tierney",
+			"character": "Doris Von Erich",
+			"tmdbMovieId": 850165,
+			"tmdbPersonId": 16307,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lily James",
+			"character": "Pam",
+			"tmdbMovieId": 850165,
+			"tmdbPersonId": 1016168,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

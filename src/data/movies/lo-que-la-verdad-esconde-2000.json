@@ -28,7 +28,10 @@
 		"Harrison Ford",
 		"Michelle Pfeiffer",
 		"Diana Scarwid",
-		"James Remar"
+		"James Remar",
+		"Joe Morton",
+		"Miranda Otto",
+		"Wendy Crewson"
 	],
 	"productionCompany": "DreamWorks Pictures",
 	"cinepostaScore": 7,
@@ -86,6 +89,27 @@
 			"tmdbMovieId": 2655,
 			"tmdbPersonId": 1736,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joe Morton",
+			"character": "Dr. Drayton",
+			"tmdbMovieId": 2655,
+			"tmdbPersonId": 3977,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Miranda Otto",
+			"character": "Mary Feur",
+			"tmdbMovieId": 2655,
+			"tmdbPersonId": 502,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Wendy Crewson",
+			"character": "Elena",
+			"tmdbMovieId": 2655,
+			"tmdbPersonId": 19957,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

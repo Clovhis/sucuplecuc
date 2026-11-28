@@ -64,5 +64,37 @@
 	"reviewPublishedAt": "2026-03-16",
 	"country": "US",
 	"isArgentinian": false,
-	"genres": ["Musical"]
+	"genres": [
+		"Musical"
+	],
+	"castCharacters": [
+		{
+			"actor": "Arden Cho",
+			"character": "Rumi (voice)",
+			"tmdbMovieId": 803796,
+			"tmdbPersonId": 144279,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ahn Hyo-seop",
+			"character": "Jinu (voice)",
+			"tmdbMovieId": 803796,
+			"tmdbPersonId": 1571598,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "May Hong",
+			"character": "Mira (voice)",
+			"tmdbMovieId": 803796,
+			"tmdbPersonId": 1948606,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ji-young Yoo",
+			"character": "Zoey (voice)",
+			"tmdbMovieId": 803796,
+			"tmdbPersonId": 2983147,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

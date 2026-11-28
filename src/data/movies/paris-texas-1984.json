@@ -18,7 +18,9 @@
 	"director": "Wim Wenders",
 	"mainCast": [
 		"Harry Dean Stanton",
-		"Nastassja Kinski"
+		"Nastassja Kinski",
+		"Dean Stockwell",
+		"Aurore Clément"
 	],
 	"productionCompany": "Road Movies Filmproduktion",
 	"cinepostaScore": 8,
@@ -76,6 +78,20 @@
 			"tmdbMovieId": 655,
 			"tmdbPersonId": 2630,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dean Stockwell",
+			"character": "Walt",
+			"tmdbMovieId": 655,
+			"tmdbPersonId": 923,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Aurore Clément",
+			"character": "Anne",
+			"tmdbMovieId": 655,
+			"tmdbPersonId": 9893,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

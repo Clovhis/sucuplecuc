@@ -22,7 +22,8 @@
 	"director": "Malcolm D. Lee",
 	"mainCast": [
 		"Chloe Bailey",
-		"Lynn Whitfield"
+		"Lynn Whitfield",
+		"Lucien Laviscount"
 	],
 	"productionCompany": "Blumhouse Productions, Shaken Not Stirred",
 	"cinepostaScore": 4,
@@ -56,5 +57,28 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Flow"
+	],
+	"castCharacters": [
+		{
+			"actor": "Lucien Laviscount",
+			"character": "Marcus Walker",
+			"tmdbMovieId": 880067,
+			"tmdbPersonId": 233096,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chloe Bailey",
+			"character": "Laila Calloway",
+			"tmdbMovieId": 880067,
+			"tmdbPersonId": 86800,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lynn Whitfield",
+			"character": "Audra Jelani",
+			"tmdbMovieId": 880067,
+			"tmdbPersonId": 16217,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

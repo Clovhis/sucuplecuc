@@ -23,7 +23,11 @@
 	"director": "John McTiernan",
 	"mainCast": [
 		"Sean Connery",
-		"Alec Baldwin"
+		"Alec Baldwin",
+		"Scott Glenn",
+		"Sam Neill",
+		"James Earl Jones",
+		"Joss Ackland"
 	],
 	"productionCompany": "Paramount Pictures, Mace Neufeld Productions",
 	"cinepostaScore": 8,
@@ -77,6 +81,34 @@
 			"tmdbMovieId": 1669,
 			"tmdbPersonId": 7447,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scott Glenn",
+			"character": "CDR Bart Mancuso (USS Dallas)",
+			"tmdbMovieId": 1669,
+			"tmdbPersonId": 349,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sam Neill",
+			"character": "Capt. 2nd Vasily Borodin",
+			"tmdbMovieId": 1669,
+			"tmdbPersonId": 4783,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Earl Jones",
+			"character": "Vice ADM James Greer",
+			"tmdbMovieId": 1669,
+			"tmdbPersonId": 15152,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Joss Ackland",
+			"character": "Ambassador Andrei Lysenko",
+			"tmdbMovieId": 1669,
+			"tmdbPersonId": 14324,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

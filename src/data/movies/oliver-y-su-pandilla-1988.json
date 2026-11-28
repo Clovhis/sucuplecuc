@@ -24,7 +24,9 @@
 	"director": "George Scribner",
 	"mainCast": [
 		"Billy Joel",
-		"Cheech Marin"
+		"Cheech Marin",
+		"Joey Lawrence",
+		"Bette Midler"
 	],
 	"productionCompany": "Walt Disney Animation Studios",
 	"cinepostaScore": 8,
@@ -67,6 +69,20 @@
 			"tmdbMovieId": 12233,
 			"tmdbPersonId": 11159,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Joey Lawrence",
+			"character": "Oliver (voice)",
+			"tmdbMovieId": 12233,
+			"tmdbPersonId": 51750,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bette Midler",
+			"character": "Georgette (voice)",
+			"tmdbMovieId": 12233,
+			"tmdbPersonId": 73931,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

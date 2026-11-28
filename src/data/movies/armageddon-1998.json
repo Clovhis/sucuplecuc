@@ -24,7 +24,10 @@
 	"mainCast": [
 		"Bruce Willis",
 		"Ben Affleck",
-		"Liv Tyler"
+		"Liv Tyler",
+		"Billy Bob Thornton",
+		"Steve Buscemi",
+		"Owen Wilson"
 	],
 	"productionCompany": "Touchstone Pictures, Jerry Bruckheimer Films",
 	"cinepostaScore": 7,
@@ -79,6 +82,27 @@
 			"tmdbMovieId": 95,
 			"tmdbPersonId": 882,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Billy Bob Thornton",
+			"character": "Dan Truman",
+			"tmdbMovieId": 95,
+			"tmdbPersonId": 879,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Steve Buscemi",
+			"character": "Rockhound",
+			"tmdbMovieId": 95,
+			"tmdbPersonId": 884,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Owen Wilson",
+			"character": "Oscar",
+			"tmdbMovieId": 95,
+			"tmdbPersonId": 887,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -20,7 +20,11 @@
 	"mainCast": [
 		"Patton Oswalt",
 		"Ian Holm",
-		"Lou Romano"
+		"Lou Romano",
+		"Brian Dennehy",
+		"Peter Sohn",
+		"Peter O'Toole",
+		"Brad Garrett"
 	],
 	"productionCompany": "Walt Disney Pictures, Pixar",
 	"cinepostaScore": 9,
@@ -81,6 +85,34 @@
 			"tmdbMovieId": 2062,
 			"tmdbPersonId": 7962,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Brian Dennehy",
+			"character": "Django (voice)",
+			"tmdbMovieId": 2062,
+			"tmdbPersonId": 6197,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Sohn",
+			"character": "Emile (voice)",
+			"tmdbMovieId": 2062,
+			"tmdbPersonId": 21198,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter O'Toole",
+			"character": "Anton Ego (voice)",
+			"tmdbMovieId": 2062,
+			"tmdbPersonId": 11390,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brad Garrett",
+			"character": "Gusteau (voice)",
+			"tmdbMovieId": 2062,
+			"tmdbPersonId": 18,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

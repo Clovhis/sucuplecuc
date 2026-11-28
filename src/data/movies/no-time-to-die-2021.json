@@ -12,7 +12,10 @@
 	"mainCast": [
 		"Daniel Craig",
 		"Ana de Armas",
-		"Rami Malek"
+		"Rami Malek",
+		"Ralph Fiennes",
+		"Ben Whishaw",
+		"Naomie Harris"
 	],
 	"productionCompany": "Eon Productions",
 	"cinepostaScore": 8,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 370172,
 			"tmdbPersonId": 17838,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "M",
+			"tmdbMovieId": 370172,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ben Whishaw",
+			"character": "Q",
+			"tmdbMovieId": 370172,
+			"tmdbPersonId": 17064,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Naomie Harris",
+			"character": "Moneypenny",
+			"tmdbMovieId": 370172,
+			"tmdbPersonId": 2038,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

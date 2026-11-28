@@ -24,7 +24,9 @@
 	"mainCast": [
 		"Benedict Cumberbatch",
 		"Keira Knightley",
-		"Matthew Goode"
+		"Matthew Goode",
+		"Charles Dance",
+		"Mark Strong"
 	],
 	"productionCompany": "Black Bear Pictures, Bristol Automotive",
 	"cinepostaScore": 8,
@@ -85,6 +87,20 @@
 			"tmdbMovieId": 205596,
 			"tmdbPersonId": 1247,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles Dance",
+			"character": "Commander Denniston",
+			"tmdbMovieId": 205596,
+			"tmdbPersonId": 4391,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mark Strong",
+			"character": "Stewart Menzies",
+			"tmdbMovieId": 205596,
+			"tmdbPersonId": 2983,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Sigourney Weaver",
 		"Holly Hunter",
-		"Dermot Mulroney"
+		"Dermot Mulroney",
+		"William McNamara",
+		"Harry Connick Jr.",
+		"J.E. Freeman"
 	],
 	"productionCompany": "Regency Enterprises",
 	"cinepostaScore": 7,
@@ -74,6 +77,27 @@
 			"tmdbMovieId": 1710,
 			"tmdbPersonId": 20212,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "William McNamara",
+			"character": "Peter Foley",
+			"tmdbMovieId": 1710,
+			"tmdbPersonId": 18687,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Harry Connick Jr.",
+			"character": "Daryll Lee Cullum",
+			"tmdbMovieId": 1710,
+			"tmdbPersonId": 18688,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "J.E. Freeman",
+			"character": "Lt. Quinn",
+			"tmdbMovieId": 1710,
+			"tmdbPersonId": 5169,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

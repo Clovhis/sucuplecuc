@@ -25,7 +25,10 @@
 		"Christian Bale",
 		"Amy Adams",
 		"Bradley Cooper",
-		"Jennifer Lawrence"
+		"Jennifer Lawrence",
+		"Jeremy Renner",
+		"Louis C.K.",
+		"Michael Peña"
 	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 7,
@@ -82,6 +85,27 @@
 			"tmdbMovieId": 168672,
 			"tmdbPersonId": 72129,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jeremy Renner",
+			"character": "Mayor Carmine Polito",
+			"tmdbMovieId": 168672,
+			"tmdbPersonId": 17604,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Louis C.K.",
+			"character": "Stoddard Thorsen",
+			"tmdbMovieId": 168672,
+			"tmdbPersonId": 52849,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Peña",
+			"character": "Paco Hernandez / Sheik Abdullah",
+			"tmdbMovieId": 168672,
+			"tmdbPersonId": 454,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

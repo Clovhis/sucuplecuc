@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-08-13",
 	"audienceRating": "ATP",
 	"category": "Comedia",
-	"genres": ["Comedia", "Crimen"],
+	"genres": [
+		"Comedia",
+		"Crimen"
+	],
 	"subgenres": [],
 	"country": "AR",
 	"isArgentinian": true,
 	"poster": "assets/posters/2026/canelones-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "4hdHQAYPajI",
-  "releasePlatform": "Flow",
+	"releasePlatform": "Flow",
 	"director": "Ana Laura Gussoni y Christian Basilis",
-	"mainCast": ["Agustín Aristarán", "Darío Barassi", "Verónica Llinás", "César Bordón"],
+	"mainCast": [
+		"Agustín Aristarán",
+		"Darío Barassi",
+		"Verónica Llinás",
+		"César Bordón",
+		"Beatriz Spelzini"
+	],
 	"productionCompany": "Digicine",
 	"cinepostaScore": 6,
 	"runtimeMinutes": 91,
@@ -34,18 +43,55 @@
 			"forFansOf": "El policial de pueblo, el humor negro nacional y los relatos donde los afectos complican el crimen.",
 			"notForYouIf": "Buscás una comedia amable, una trama criminal prolija o personajes que reaccionen de manera previsible."
 		},
-	"becauseYouLiked": [
-		"los-justos-2024",
-		"tiempo-de-valientes-2005"
-	],
-	"related": [
-		"parque-lezama-2026",
-		"el-robo-del-siglo-2020",
-		"la-odisea-de-los-giles-2019",
-		"la-casaca-de-dios-2026"
-	]
-},
+		"becauseYouLiked": [
+			"los-justos-2024",
+			"tiempo-de-valientes-2005"
+		],
+		"related": [
+			"parque-lezama-2026",
+			"el-robo-del-siglo-2020",
+			"la-odisea-de-los-giles-2019",
+			"la-casaca-de-dios-2026"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Canelones toma un caso de secuestro y lo empuja hacia un policial de humor negrísimo, con una noche que se va cerrando como una trampa. El elenco entiende que la película necesita incomodidad antes que simpatía: cada gesto cotidiano puede esconder una deuda vieja. La puesta sostiene el pulso y deja que el absurdo conviva con una violencia seca, aunque el relato a veces subraya sus golpes. Tiene nervio, identidad y una energía bien argentina; cuando se anima a ser áspera, encuentra su mejor versión."
+	"review": "Canelones toma un caso de secuestro y lo empuja hacia un policial de humor negrísimo, con una noche que se va cerrando como una trampa. El elenco entiende que la película necesita incomodidad antes que simpatía: cada gesto cotidiano puede esconder una deuda vieja. La puesta sostiene el pulso y deja que el absurdo conviva con una violencia seca, aunque el relato a veces subraya sus golpes. Tiene nervio, identidad y una energía bien argentina; cuando se anima a ser áspera, encuentra su mejor versión.",
+	"castCharacters": [
+		{
+			"actor": "Beatriz Spelzini",
+			"character": "Olinda",
+			"tmdbMovieId": 1743296,
+			"tmdbPersonId": 557733,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Agustín Aristarán",
+			"character": "Chiri",
+			"tmdbMovieId": 1743296,
+			"tmdbPersonId": 2276345,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Darío Barassi",
+			"character": "Hernán",
+			"tmdbMovieId": 1743296,
+			"tmdbPersonId": 1728860,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Verónica Llinás",
+			"character": "Chichita",
+			"tmdbMovieId": 1743296,
+			"tmdbPersonId": 66959,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "César Bordón",
+			"character": "Daniel",
+			"tmdbMovieId": 1743296,
+			"tmdbPersonId": 116362,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

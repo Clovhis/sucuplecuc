@@ -23,7 +23,10 @@
 	"director": "Anthony Stacchi",
 	"mainCast": [
 		"Ben Kingsley",
-		"Isaac Hempstead Wright"
+		"Isaac Hempstead Wright",
+		"Elle Fanning",
+		"Toni Collette",
+		"Nick Frost"
 	],
 	"productionCompany": "LAIKA",
 	"cinepostaScore": 7,
@@ -66,6 +69,27 @@
 			"tmdbMovieId": 170687,
 			"tmdbPersonId": 239020,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Elle Fanning",
+			"character": "Winnie Portley-Rind (voice)",
+			"tmdbMovieId": 170687,
+			"tmdbPersonId": 18050,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Toni Collette",
+			"character": "Lady Cynthia Portley-Rind (voice)",
+			"tmdbMovieId": 170687,
+			"tmdbPersonId": 3051,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nick Frost",
+			"character": "Mr. Trout (voice)",
+			"tmdbMovieId": 170687,
+			"tmdbPersonId": 11109,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

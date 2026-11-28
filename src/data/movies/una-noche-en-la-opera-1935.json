@@ -21,7 +21,9 @@
   "director": "Sam Wood",
   "mainCast": [
     "Groucho Marx",
-    "Chico Marx"
+    "Chico Marx",
+    "Harpo Marx",
+    "Kitty Carlisle"
   ],
   "productionCompany": "Metro-Goldwyn-Mayer",
   "runtimeMinutes": 91,
@@ -63,6 +65,20 @@
       "tmdbMovieId": 37719,
       "tmdbPersonId": 10799,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Harpo Marx",
+      "character": "Tomasso",
+      "tmdbMovieId": 37719,
+      "tmdbPersonId": 10800,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Kitty Carlisle",
+      "character": "Rosa",
+      "tmdbMovieId": 37719,
+      "tmdbPersonId": 121019,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

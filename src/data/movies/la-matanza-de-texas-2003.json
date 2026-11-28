@@ -25,7 +25,9 @@
   "director": "Marcus Nispel",
   "mainCast": [
     "Jessica Biel",
-    "Jonathan Tucker"
+    "Jonathan Tucker",
+    "Andrew Bryniarski",
+    "R. Lee Ermey"
   ],
   "productionCompany": "New Line Cinema, Platinum Dunes",
   "cinepostaScore": 5,
@@ -71,6 +73,20 @@
       "tmdbMovieId": 9373,
       "tmdbPersonId": 17243,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Andrew Bryniarski",
+      "character": "Thomas Hewitt (Leatherface)",
+      "tmdbMovieId": 9373,
+      "tmdbPersonId": 52366,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "R. Lee Ermey",
+      "character": "Sheriff Hoyt",
+      "tmdbMovieId": 9373,
+      "tmdbPersonId": 8655,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

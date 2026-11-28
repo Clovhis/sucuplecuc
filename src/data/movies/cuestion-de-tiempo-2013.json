@@ -15,7 +15,9 @@
 		"Ciencia ficcion",
 		"Fantasia"
 	],
-	"subgenres": ["RomCom"],
+	"subgenres": [
+		"RomCom"
+	],
 	"country": "GB, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2013/cuestion-de-tiempo-2013.webp",
@@ -25,7 +27,10 @@
 	"director": "Richard Curtis",
 	"mainCast": [
 		"Rachel McAdams",
-		"Domhnall Gleeson"
+		"Domhnall Gleeson",
+		"Bill Nighy",
+		"Tom Hollander",
+		"Margot Robbie"
 	],
 	"productionCompany": "Working Title Films",
 	"cinepostaScore": 8,
@@ -33,8 +38,15 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["love-actually-2003", "palm-springs-2020"],
-		"related": ["50-first-dates-2004", "click-2006", "la-la-land-2016"],
+		"becauseYouLiked": [
+			"love-actually-2003",
+			"palm-springs-2020"
+		],
+		"related": [
+			"50-first-dates-2004",
+			"click-2006",
+			"la-la-land-2016"
+		],
 		"tenSecondTake": {
 			"verdict": "Rachel McAdams y Domhnall Gleeson vuelven el viaje temporal una pregunta por los afectos cotidianos, no un poder para dominar.",
 			"whatToExpect": "Una regla de viajes temporales, un romance y el lugar que ocupa el padre de Tim en su aprendizaje.",
@@ -47,5 +59,42 @@
 	},
 	"review": "Curtis cruza comedia romántica y fantasía doméstica, usando los viajes temporales para mirar tanto el enamoramiento como los vínculos familiares. Gleeson aporta torpeza amable y McAdams equilibra la pareja; Bill Nighy le da al relato su centro más cálido. La premisa promete más enredos de los que ofrece y el tono sentimental puede empalagar, pero la película encuentra una idea sencilla en el deseo de volver a vivir lo ordinario.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 123
+	"runtimeMinutes": 123,
+	"castCharacters": [
+		{
+			"actor": "Bill Nighy",
+			"character": "Dad",
+			"tmdbMovieId": 122906,
+			"tmdbPersonId": 2440,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom Hollander",
+			"character": "Harry",
+			"tmdbMovieId": 122906,
+			"tmdbPersonId": 2441,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Margot Robbie",
+			"character": "Charlotte",
+			"tmdbMovieId": 122906,
+			"tmdbPersonId": 234352,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rachel McAdams",
+			"character": "Mary",
+			"tmdbMovieId": 122906,
+			"tmdbPersonId": 53714,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Domhnall Gleeson",
+			"character": "Tim Lake",
+			"tmdbMovieId": 122906,
+			"tmdbPersonId": 93210,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

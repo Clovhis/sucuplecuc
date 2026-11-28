@@ -13,7 +13,12 @@
 	"mainCast": [
 		"Chris Evans",
 		"Scarlett Johansson",
-		"Sebastian Stan"
+		"Sebastian Stan",
+		"Samuel L. Jackson",
+		"Robert Redford",
+		"Anthony Mackie",
+		"Cobie Smulders",
+		"Frank Grillo"
 	],
 	"productionCompany": "Marvel Studios",
 	"cinepostaScore": 8,
@@ -69,6 +74,41 @@
 			"tmdbMovieId": 100402,
 			"tmdbPersonId": 60898,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Samuel L. Jackson",
+			"character": "Nick Fury",
+			"tmdbMovieId": 100402,
+			"tmdbPersonId": 2231,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robert Redford",
+			"character": "Alexander Pierce",
+			"tmdbMovieId": 100402,
+			"tmdbPersonId": 4135,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anthony Mackie",
+			"character": "Sam Wilson / Falcon",
+			"tmdbMovieId": 100402,
+			"tmdbPersonId": 53650,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cobie Smulders",
+			"character": "Maria Hill",
+			"tmdbMovieId": 100402,
+			"tmdbPersonId": 71189,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Frank Grillo",
+			"character": "Brock Rumlow",
+			"tmdbMovieId": 100402,
+			"tmdbPersonId": 81685,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -43,18 +43,48 @@
 			"forFansOf": "Fans de Gus Van Sant, del cine observacional y de las películas que cuentan una tragedia desde fragmentos y silencios, sin explicarla por completo.",
 			"notForYouIf": "Buscás contexto cerrado, héroes o una trama que te diga qué pensar. Elephant deja el vacío y la responsabilidad flotando."
 		},
-	"becauseYouLiked": [
-		"la-negociacion-2025",
-		"el-cliente-1994"
-	],
-	"related": [
-		"el-juego-de-hollywood-1992",
-		"muerte-entre-las-flores-1990",
-		"amores-perros-2000",
-		"un-mundo-perfecto-1993"
-	]
-},
+		"becauseYouLiked": [
+			"la-negociacion-2025",
+			"el-cliente-1994"
+		],
+		"related": [
+			"el-juego-de-hollywood-1992",
+			"muerte-entre-las-flores-1990",
+			"amores-perros-2000",
+			"un-mundo-perfecto-1993"
+		]
+	},
 	"review": "Gus Van Sant evita explicar a sus jóvenes y observa cómo una institución puede volver invisibles los signos de una catástrofe. Los recorridos repetidos y los puntos de vista que se cruzan construyen una tensión sin música manipuladora. El elenco no profesional sostiene una naturalidad inquietante, y la película deja el vacío como parte de su respuesta. Al evitar explicaciones retrospectivas, Van Sant se concentra en el tiempo previo y en la normalidad que no supo interrumpir la violencia.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Alex Frost",
+			"character": "Alex",
+			"tmdbMovieId": 1807,
+			"tmdbPersonId": 19195,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Eric Deulen",
+			"character": "Eric",
+			"tmdbMovieId": 1807,
+			"tmdbPersonId": 19196,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Robinson",
+			"character": "John McFarland",
+			"tmdbMovieId": 1807,
+			"tmdbPersonId": 19197,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elias McConnell",
+			"character": "Elias",
+			"tmdbMovieId": 1807,
+			"tmdbPersonId": 19198,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -12,7 +12,11 @@
 	"mainCast": [
 		"Daniel Craig",
 		"Olga Kurylenko",
-		"Mathieu Amalric"
+		"Mathieu Amalric",
+		"Judi Dench",
+		"Giancarlo Giannini",
+		"Gemma Arterton",
+		"Jeffrey Wright"
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer Pictures, Columbia Pictures, Eon Productions",
 	"cinepostaScore": 6,
@@ -68,6 +72,34 @@
 			"tmdbMovieId": 10764,
 			"tmdbPersonId": 8789,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Judi Dench",
+			"character": "M",
+			"tmdbMovieId": 10764,
+			"tmdbPersonId": 5309,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Giancarlo Giannini",
+			"character": "Mathis",
+			"tmdbMovieId": 10764,
+			"tmdbPersonId": 3753,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gemma Arterton",
+			"character": "Strawberry Fields",
+			"tmdbMovieId": 10764,
+			"tmdbPersonId": 59620,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeffrey Wright",
+			"character": "Felix Leiter",
+			"tmdbMovieId": 10764,
+			"tmdbPersonId": 2954,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

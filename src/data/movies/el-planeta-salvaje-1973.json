@@ -50,18 +50,48 @@
 			"forFansOf": "Fans de René Laloux, de la ciencia ficción política y de las animaciones que parecen ilustraciones en movimiento con una lectura social fuerte.",
 			"notForYouIf": "Buscás humor familiar, acción continua o una narración transparente. El planeta salvaje quiere que te pierdas un poco."
 		},
-	"becauseYouLiked": [
-		"el-gigante-de-hierro-1999",
-		"wall-e-2008"
-	],
-	"related": [
-		"heavy-metal-1981",
-		"lego-star-wars-the-mandalorian-2026",
-		"una-mirada-en-la-oscuridad-2006",
-		"sleeper-1973"
-	]
-},
+		"becauseYouLiked": [
+			"el-gigante-de-hierro-1999",
+			"wall-e-2008"
+		],
+		"related": [
+			"heavy-metal-1981",
+			"lego-star-wars-the-mandalorian-2026",
+			"una-mirada-en-la-oscuridad-2006",
+			"sleeper-1973"
+		]
+	},
 	"review": "René Laloux usa la animación para imaginar una sociedad de dominación donde la alteridad cambia de tamaño según quién mire. Las criaturas, los paisajes y el diseño de Roland Topor producen una extrañeza política que no se parece a ninguna fábula infantil. Su ritmo hipnótico y sus imágenes mutantes hacen que una película breve siga creciendo en la cabeza mucho después. La inversión de escala transforma una fábula extraña en una pregunta concreta sobre quién tiene derecho a definir a los demás.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Gérard Hernandez",
+			"character": "Master Taj (voice)",
+			"tmdbMovieId": 16306,
+			"tmdbPersonId": 131380,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jean Valmont",
+			"character": "Adult Terr / Narrator (voice)",
+			"tmdbMovieId": 16306,
+			"tmdbPersonId": 38115,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jennifer Drake",
+			"character": "Tiwa (voice)",
+			"tmdbMovieId": 16306,
+			"tmdbPersonId": 131376,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Yves Barsacq",
+			"character": "Om (voice)",
+			"tmdbMovieId": 16306,
+			"tmdbPersonId": 39334,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -57,5 +57,21 @@
 	"subgenres": [
 		"Psicológico"
 	],
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"castCharacters": [
+		{
+			"actor": "Megumi Hayashibara",
+			"character": "Paprika / Atsuko Chiba (voice)",
+			"tmdbMovieId": 4977,
+			"tmdbPersonId": 40325,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tōru Furuya",
+			"character": "Kosaku Tokita (voice)",
+			"tmdbMovieId": 4977,
+			"tmdbPersonId": 40327,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

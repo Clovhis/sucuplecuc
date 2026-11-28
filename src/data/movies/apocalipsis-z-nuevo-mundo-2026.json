@@ -22,7 +22,8 @@
 	"director": "Carles Torrens",
 	"mainCast": [
 		"Carlos Alcaide",
-		"Mario Mayo"
+		"Mario Mayo",
+		"José María Yazpik"
 	],
 	"productionCompany": "Nostromo Pictures, Amazon Prime Video",
 	"cinepostaScore": 7,
@@ -52,5 +53,28 @@
 	"catalogAddedAt": "2026-10-30",
 	"runtimeMinutes": 98,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "José María Yazpik",
+			"character": "Pritchenko",
+			"tmdbMovieId": 1507696,
+			"tmdbPersonId": 72128,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Carlos Alcaide",
+			"character": "Roberto",
+			"tmdbMovieId": 1507696,
+			"tmdbPersonId": 2556046,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mario Mayo",
+			"character": "Comandante De Luna",
+			"tmdbMovieId": 1507696,
+			"tmdbPersonId": 2013170,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

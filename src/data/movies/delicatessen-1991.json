@@ -23,7 +23,8 @@
 		"Dominique Pinon",
 		"Marie-Laure Dougnac",
 		"Jean-Claude Dreyfus",
-		"Karin Viard"
+		"Karin Viard",
+		"Rufus"
 	],
 	"productionCompany": "Constellation",
 	"cinepostaScore": 7,
@@ -56,5 +57,42 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Rufus",
+			"character": "Robert Kube",
+			"tmdbMovieId": 892,
+			"tmdbPersonId": 2407,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dominique Pinon",
+			"character": "Louison",
+			"tmdbMovieId": 892,
+			"tmdbPersonId": 2413,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Marie-Laure Dougnac",
+			"character": "Julie Clapet",
+			"tmdbMovieId": 892,
+			"tmdbPersonId": 13686,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jean-Claude Dreyfus",
+			"character": "Clapet",
+			"tmdbMovieId": 892,
+			"tmdbPersonId": 13687,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Karin Viard",
+			"character": "Mademoiselle Plusse",
+			"tmdbMovieId": 892,
+			"tmdbPersonId": 13688,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -58,5 +58,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-08",
 	"country": "DE, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Don Cheadle",
+			"character": "Det. Graham Waters",
+			"tmdbMovieId": 1640,
+			"tmdbPersonId": 1896,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sandra Bullock",
+			"character": "Jean Cabot",
+			"tmdbMovieId": 1640,
+			"tmdbPersonId": 18277,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brendan Fraser",
+			"character": "Rick Cabot",
+			"tmdbMovieId": 1640,
+			"tmdbPersonId": 18269,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

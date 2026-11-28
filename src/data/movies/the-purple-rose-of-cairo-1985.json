@@ -22,7 +22,9 @@
 	"mainCast": [
 		"Mia Farrow",
 		"Jeff Daniels",
-		"Danny Aiello"
+		"Danny Aiello",
+		"Dianne Wiest",
+		"Zoe Caldwell"
 	],
 	"productionCompany": "Orion Pictures",
 	"cinepostaScore": 8,
@@ -74,6 +76,20 @@
 			"tmdbMovieId": 10849,
 			"tmdbPersonId": 1004,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dianne Wiest",
+			"character": "Emma",
+			"tmdbMovieId": 10849,
+			"tmdbPersonId": 1902,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zoe Caldwell",
+			"character": "The Countess",
+			"tmdbMovieId": 10849,
+			"tmdbPersonId": 937681,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

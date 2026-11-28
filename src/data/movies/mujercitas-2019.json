@@ -24,7 +24,11 @@
 	"mainCast": [
 		"Saoirse Ronan",
 		"Emma Watson",
-		"Florence Pugh"
+		"Florence Pugh",
+		"Laura Dern",
+		"Timothée Chalamet",
+		"Tracy Letts",
+		"Bob Odenkirk"
 	],
 	"productionCompany": "Columbia Pictures, Regency Enterprises, Pascal Pictures",
 	"cinepostaScore": 8,
@@ -85,6 +89,34 @@
 			"tmdbMovieId": 331482,
 			"tmdbPersonId": 1373737,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Laura Dern",
+			"character": "Marmee March",
+			"tmdbMovieId": 331482,
+			"tmdbPersonId": 4784,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Timothée Chalamet",
+			"character": "Laurie",
+			"tmdbMovieId": 331482,
+			"tmdbPersonId": 1190668,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tracy Letts",
+			"character": "Mr. Dashwood",
+			"tmdbMovieId": 331482,
+			"tmdbPersonId": 72638,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bob Odenkirk",
+			"character": "Father March",
+			"tmdbMovieId": 331482,
+			"tmdbPersonId": 59410,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

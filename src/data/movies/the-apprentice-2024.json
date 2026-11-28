@@ -50,5 +50,28 @@
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-05",
 	"country": "CA, DK, IE, US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Sebastian Stan",
+			"character": "Donald Trump",
+			"tmdbMovieId": 1182047,
+			"tmdbPersonId": 60898,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jeremy Strong",
+			"character": "Roy Cohn",
+			"tmdbMovieId": 1182047,
+			"tmdbPersonId": 239271,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Martin Donovan",
+			"character": "Fred Trump",
+			"tmdbMovieId": 1182047,
+			"tmdbPersonId": 42993,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -62,5 +62,49 @@
 	],
 	"runtimeMinutes": 105,
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Adam Sandler",
+			"character": "Brenner",
+			"tmdbMovieId": 257344,
+			"tmdbPersonId": 19292,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kevin James",
+			"character": "Cooper",
+			"tmdbMovieId": 257344,
+			"tmdbPersonId": 32895,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michelle Monaghan",
+			"character": "Violet",
+			"tmdbMovieId": 257344,
+			"tmdbPersonId": 11705,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Peter Dinklage",
+			"character": "Eddie",
+			"tmdbMovieId": 257344,
+			"tmdbPersonId": 22970,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Josh Gad",
+			"character": "Ludlow",
+			"tmdbMovieId": 257344,
+			"tmdbPersonId": 54415,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sunny Sandler",
+			"character": "Sweet Scout Girl",
+			"tmdbMovieId": 257344,
+			"tmdbPersonId": 1271681,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

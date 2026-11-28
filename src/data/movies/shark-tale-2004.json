@@ -27,7 +27,10 @@
 	"director": "Rob Letterman",
 	"mainCast": [
 		"Will Smith",
-		"Robert De Niro"
+		"Robert De Niro",
+		"Renée Zellweger",
+		"Jack Black",
+		"Angelina Jolie"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -70,6 +73,27 @@
 			"tmdbMovieId": 10555,
 			"tmdbPersonId": 380,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Renée Zellweger",
+			"character": "Angie (voice)",
+			"tmdbMovieId": 10555,
+			"tmdbPersonId": 9137,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jack Black",
+			"character": "Lenny (voice)",
+			"tmdbMovieId": 10555,
+			"tmdbPersonId": 70851,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Angelina Jolie",
+			"character": "Lola (voice)",
+			"tmdbMovieId": 10555,
+			"tmdbPersonId": 11701,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

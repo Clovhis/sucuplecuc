@@ -23,7 +23,9 @@
   "mainCast": [
     "Gary Cooper",
     "Grace Kelly",
-    "Katy Jurado"
+    "Katy Jurado",
+    "Thomas Mitchell",
+    "Lloyd Bridges"
   ],
   "productionCompany": "Stanley Kramer Productions",
   "cinepostaScore": 9,
@@ -72,6 +74,20 @@
       "tmdbMovieId": 288,
       "tmdbPersonId": 4069,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Thomas Mitchell",
+      "character": "Mayor Jonas Henderson",
+      "tmdbMovieId": 288,
+      "tmdbPersonId": 3383,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Lloyd Bridges",
+      "character": "Deputy Marshal Harvey Pell",
+      "tmdbMovieId": 288,
+      "tmdbPersonId": 2177,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

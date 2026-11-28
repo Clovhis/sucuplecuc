@@ -27,7 +27,11 @@
 		"Jake Gyllenhaal",
 		"Mark Ruffalo",
 		"Robert Downey Jr.",
-		"Anthony Edwards"
+		"Anthony Edwards",
+		"Chloë Sevigny",
+		"Elias Koteas",
+		"John Carroll Lynch",
+		"Brian Cox"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 7,
@@ -84,6 +88,34 @@
 			"tmdbMovieId": 1949,
 			"tmdbPersonId": 11085,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Chloë Sevigny",
+			"character": "Melanie",
+			"tmdbMovieId": 1949,
+			"tmdbPersonId": 2838,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elias Koteas",
+			"character": "Jack Mulanax",
+			"tmdbMovieId": 1949,
+			"tmdbPersonId": 13550,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Carroll Lynch",
+			"character": "Arthur Leigh Allen",
+			"tmdbMovieId": 1949,
+			"tmdbPersonId": 3911,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brian Cox",
+			"character": "Melvin Belli",
+			"tmdbMovieId": 1949,
+			"tmdbPersonId": 1248,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

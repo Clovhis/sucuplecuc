@@ -60,5 +60,28 @@
 		]
 	},
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"castCharacters": [
+		{
+			"actor": "Nanako Matsushima",
+			"character": "Reiko Asakawa",
+			"tmdbMovieId": 2671,
+			"tmdbPersonId": 27776,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Miki Nakatani",
+			"character": "Mai Takano",
+			"tmdbMovieId": 2671,
+			"tmdbPersonId": 27778,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hiroyuki Sanada",
+			"character": "Ryuji Takayama",
+			"tmdbMovieId": 2671,
+			"tmdbPersonId": 9195,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

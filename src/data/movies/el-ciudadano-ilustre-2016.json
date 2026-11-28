@@ -36,18 +36,41 @@
 			"forFansOf": "Fans de las sátiras de pueblo, de las comedias con veneno y de los protagonistas que no pueden decidir si son víctimas o responsables de su propia imagen.",
 			"notForYouIf": "Buscás personajes queribles, una moraleja limpia o humor sin crueldad. El ciudadano ilustre disfruta dejarte con un gusto amargo."
 		},
-	"becauseYouLiked": [
-		"competencia-oficial-2021",
-		"el-cuento-de-las-comadrejas-2019"
-	],
-	"related": [
-		"mi-obra-maestra-2018",
-		"la-odisea-de-los-giles-2019",
-		"las-buenas-intenciones-2019",
-		"un-cuento-chino-2011"
-	]
-},
+		"becauseYouLiked": [
+			"competencia-oficial-2021",
+			"el-cuento-de-las-comadrejas-2019"
+		],
+		"related": [
+			"mi-obra-maestra-2018",
+			"la-odisea-de-los-giles-2019",
+			"las-buenas-intenciones-2019",
+			"un-cuento-chino-2011"
+		]
+	},
 	"synopsis": "Después de décadas viviendo en Europa, el escritor Nobel Daniel Mantovani acepta volver a Salas, el pueblo argentino que inspiró buena parte de su obra. El recibimiento triunfal se va enrareciendo cuando sus recuerdos literarios chocan con el orgullo, las heridas y las expectativas de sus antiguos vecinos.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-07"
+	"reviewPublishedAt": "2026-03-07",
+	"castCharacters": [
+		{
+			"actor": "Oscar Martínez",
+			"character": "Daniel Mantovani",
+			"tmdbMovieId": 408537,
+			"tmdbPersonId": 1457004,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dady Brieva",
+			"character": "Antonio",
+			"tmdbMovieId": 408537,
+			"tmdbPersonId": 1659287,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Andrea Frigerio",
+			"character": "Irene",
+			"tmdbMovieId": 408537,
+			"tmdbPersonId": 1659288,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

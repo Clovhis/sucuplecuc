@@ -24,7 +24,10 @@
 		"Abigail Breslin",
 		"Toni Collette",
 		"Greg Kinnear",
-		"Alan Arkin"
+		"Alan Arkin",
+		"Steve Carell",
+		"Paul Dano",
+		"Beth Grant"
 	],
 	"productionCompany": "Big Beach Films, Bona Fide Productions",
 	"cinepostaScore": 8,
@@ -69,5 +72,56 @@
 	"releasePlatforms": [
 		"Disney Plus"
 	],
-	"runtimeMinutes": 98
+	"runtimeMinutes": 98,
+	"castCharacters": [
+		{
+			"actor": "Steve Carell",
+			"character": "Frank Ginsberg",
+			"tmdbMovieId": 773,
+			"tmdbPersonId": 4495,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Paul Dano",
+			"character": "Dwayne Hoover",
+			"tmdbMovieId": 773,
+			"tmdbPersonId": 17142,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Beth Grant",
+			"character": "Nancy Jenkins",
+			"tmdbMovieId": 773,
+			"tmdbPersonId": 5151,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Abigail Breslin",
+			"character": "Olive Hoover",
+			"tmdbMovieId": 773,
+			"tmdbPersonId": 17140,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Toni Collette",
+			"character": "Sheryl Hoover",
+			"tmdbMovieId": 773,
+			"tmdbPersonId": 3051,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Greg Kinnear",
+			"character": "Richard Hoover",
+			"tmdbMovieId": 773,
+			"tmdbPersonId": 17141,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alan Arkin",
+			"character": "Edwin Hoover",
+			"tmdbMovieId": 773,
+			"tmdbPersonId": 1903,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

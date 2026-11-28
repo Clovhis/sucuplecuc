@@ -28,7 +28,10 @@
 	"director": "Garth Jennings",
 	"mainCast": [
 		"Matthew McConaughey",
-		"Reese Witherspoon"
+		"Reese Witherspoon",
+		"Scarlett Johansson",
+		"Bobby Cannavale",
+		"Nick Kroll"
 	],
 	"productionCompany": "Illumination",
 	"cinepostaScore": 7,
@@ -71,6 +74,27 @@
 			"tmdbMovieId": 438695,
 			"tmdbPersonId": 368,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Scarlett Johansson",
+			"character": "Ash (voice)",
+			"tmdbMovieId": 438695,
+			"tmdbPersonId": 1245,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bobby Cannavale",
+			"character": "Mr. Crystal (voice)",
+			"tmdbMovieId": 438695,
+			"tmdbPersonId": 21127,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nick Kroll",
+			"character": "Gunter (voice)",
+			"tmdbMovieId": 438695,
+			"tmdbPersonId": 208519,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

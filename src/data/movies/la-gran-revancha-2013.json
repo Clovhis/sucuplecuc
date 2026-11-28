@@ -28,7 +28,9 @@
 		"Robert De Niro",
 		"Sylvester Stallone",
 		"Kim Basinger",
-		"Alan Arkin"
+		"Alan Arkin",
+		"Jon Bernthal",
+		"Kevin Hart"
 	],
 	"productionCompany": "Warner Bros. Pictures, Gerber Pictures",
 	"cinepostaScore": 5,
@@ -86,6 +88,20 @@
 			"tmdbMovieId": 64807,
 			"tmdbPersonId": 1903,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Bernthal",
+			"character": "B.J. Rose",
+			"tmdbMovieId": 64807,
+			"tmdbPersonId": 19498,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kevin Hart",
+			"character": "Dante Slate, Jr.",
+			"tmdbMovieId": 64807,
+			"tmdbPersonId": 55638,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

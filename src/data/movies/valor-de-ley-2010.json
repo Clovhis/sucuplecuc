@@ -58,5 +58,35 @@
 		]
 	},
 	"review": "Los hermanos Coen filman este western como una historia de carácter, no como una carrera hacia el duelo final. Hailee Steinfeld sostiene a Mattie con una inteligencia seca y una voluntad que no necesita discursos, mientras Jeff Bridges convierte a Rooster Cogburn en un hombre brutal, borracho y sorprendentemente protector. Los paisajes tienen una belleza fría y el humor aparece en lugares incómodos, sin pinchar la tensión. La película avanza con paciencia, pero cada conversación va construyendo una relación que termina pesando más que la venganza.",
-	"runtimeMinutes": 110
+	"runtimeMinutes": 110,
+	"castCharacters": [
+		{
+			"actor": "Jeff Bridges",
+			"character": "Rooster Cogburn",
+			"tmdbMovieId": 44264,
+			"tmdbPersonId": 1229,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hailee Steinfeld",
+			"character": "Mattie Ross",
+			"tmdbMovieId": 44264,
+			"tmdbPersonId": 130640,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Matt Damon",
+			"character": "LaBoeuf",
+			"tmdbMovieId": 44264,
+			"tmdbPersonId": 1892,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Josh Brolin",
+			"character": "Tom Chaney",
+			"tmdbMovieId": 44264,
+			"tmdbPersonId": 16851,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

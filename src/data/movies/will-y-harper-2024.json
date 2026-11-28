@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Will Ferrell",
 		"Harper Steele",
-		"Kristen Wiig"
+		"Kristen Wiig",
+		"Tim Meadows",
+		"Lorne Michaels",
+		"Will Forte"
 	],
 	"productionCompany": "Wayfarer Studios",
 	"cinepostaScore": 8,
@@ -75,6 +78,27 @@
 			"tmdbMovieId": 1214506,
 			"tmdbPersonId": 41091,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tim Meadows",
+			"character": "Self",
+			"tmdbMovieId": 1214506,
+			"tmdbPersonId": 51857,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lorne Michaels",
+			"character": "Self",
+			"tmdbMovieId": 1214506,
+			"tmdbPersonId": 56158,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Will Forte",
+			"character": "Self",
+			"tmdbMovieId": 1214506,
+			"tmdbPersonId": 62831,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

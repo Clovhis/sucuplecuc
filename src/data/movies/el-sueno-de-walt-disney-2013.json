@@ -23,7 +23,10 @@
 	"director": "John Lee Hancock",
 	"mainCast": [
 		"Emma Thompson",
-		"Tom Hanks"
+		"Tom Hanks",
+		"Paul Giamatti",
+		"Jason Schwartzman",
+		"Bradley Whitford"
 	],
 	"productionCompany": "Walt Disney Pictures",
 	"cinepostaScore": 8,
@@ -67,6 +70,27 @@
 			"tmdbMovieId": 140823,
 			"tmdbPersonId": 31,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Paul Giamatti",
+			"character": "Ralph",
+			"tmdbMovieId": 140823,
+			"tmdbPersonId": 13242,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jason Schwartzman",
+			"character": "Richard Sherman",
+			"tmdbMovieId": 140823,
+			"tmdbPersonId": 17881,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Bradley Whitford",
+			"character": "Don DaGradi",
+			"tmdbMovieId": 140823,
+			"tmdbPersonId": 11367,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

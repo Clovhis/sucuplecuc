@@ -20,7 +20,11 @@
 	"director": "Robert Aldrich",
 	"mainCast": [
 		"Lee Marvin",
-		"Ernest Borgnine"
+		"Ernest Borgnine",
+		"Charles Bronson",
+		"John Cassavetes",
+		"Richard Jaeckel",
+		"George Kennedy"
 	],
 	"productionCompany": "Seven Arts Productions, Metro-Goldwyn-Mayer",
 	"cinepostaScore": 8,
@@ -73,6 +77,34 @@
 			"tmdbMovieId": 1654,
 			"tmdbPersonId": 7502,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Charles Bronson",
+			"character": "Joseph Wladislaw",
+			"tmdbMovieId": 1654,
+			"tmdbPersonId": 4960,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Cassavetes",
+			"character": "Victor Franko",
+			"tmdbMovieId": 1654,
+			"tmdbPersonId": 11147,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Richard Jaeckel",
+			"character": "Sergeant Bowren",
+			"tmdbMovieId": 1654,
+			"tmdbPersonId": 58423,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "George Kennedy",
+			"character": "Major Max Armbruster",
+			"tmdbMovieId": 1654,
+			"tmdbPersonId": 12950,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

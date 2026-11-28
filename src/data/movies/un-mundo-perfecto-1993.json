@@ -26,7 +26,9 @@
 	"mainCast": [
 		"Kevin Costner",
 		"Clint Eastwood",
-		"Laura Dern"
+		"Laura Dern",
+		"Bradley Whitford",
+		"Leo Burmester"
 	],
 	"productionCompany": "Malpaso Productions, Warner Bros. Pictures",
 	"cinepostaScore": 8,
@@ -76,6 +78,20 @@
 			"tmdbMovieId": 9559,
 			"tmdbPersonId": 4784,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Bradley Whitford",
+			"character": "Bobby Lee",
+			"tmdbMovieId": 9559,
+			"tmdbPersonId": 11367,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Leo Burmester",
+			"character": "Tom Adler",
+			"tmdbMovieId": 9559,
+			"tmdbPersonId": 30151,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

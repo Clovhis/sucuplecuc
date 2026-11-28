@@ -22,7 +22,9 @@
 	"director": "David Lipper",
 	"mainCast": [
 		"Josh Duhamel",
-		"Dylan Sprouse"
+		"Dylan Sprouse",
+		"David Lipper",
+		"Elena Sanchez"
 	],
 	"productionCompany": "Latigo Films",
 	"cinepostaScore": 5,
@@ -71,6 +73,20 @@
 			"tmdbMovieId": 1409853,
 			"tmdbPersonId": 95686,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "David Lipper",
+			"character": "Mayor Richards",
+			"tmdbMovieId": 1409853,
+			"tmdbPersonId": 110018,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Elena Sanchez",
+			"character": "Keyes",
+			"tmdbMovieId": 1409853,
+			"tmdbPersonId": 1165616,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -28,7 +28,9 @@
 	"director": "Bibo Bergeron",
 	"mainCast": [
 		"Kenneth Branagh",
-		"Kevin Kline"
+		"Kevin Kline",
+		"Jim Cummings",
+		"Tobin Bell"
 	],
 	"productionCompany": "DreamWorks Animation",
 	"cinepostaScore": 7,
@@ -71,6 +73,20 @@
 			"tmdbMovieId": 10501,
 			"tmdbPersonId": 8945,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jim Cummings",
+			"character": "Cortes (voice)",
+			"tmdbMovieId": 10501,
+			"tmdbPersonId": 12077,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tobin Bell",
+			"character": "Zaragoza (voice)",
+			"tmdbMovieId": 10501,
+			"tmdbPersonId": 2144,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

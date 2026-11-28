@@ -20,7 +20,10 @@
 	"director": "Brandon Cronenberg",
 	"mainCast": [
 		"Alexander Skarsgård",
-		"Mia Goth"
+		"Mia Goth",
+		"Cleopatra Coleman",
+		"Jalil Lespert",
+		"Adam Boncz"
 	],
 	"productionCompany": "Film Forge Productions",
 	"cinepostaScore": 7,
@@ -71,6 +74,27 @@
 			"tmdbMovieId": 667216,
 			"tmdbPersonId": 1137824,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Cleopatra Coleman",
+			"character": "Em Foster",
+			"tmdbMovieId": 667216,
+			"tmdbPersonId": 217055,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jalil Lespert",
+			"character": "Alban Bauer",
+			"tmdbMovieId": 667216,
+			"tmdbPersonId": 72327,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Adam Boncz",
+			"character": "Ketch",
+			"tmdbMovieId": 667216,
+			"tmdbPersonId": 1116027,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

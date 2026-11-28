@@ -25,7 +25,11 @@
 		"Bill Murray",
 		"Dan Aykroyd",
 		"Sigourney Weaver",
-		"Harold Ramis"
+		"Harold Ramis",
+		"Rick Moranis",
+		"Ernie Hudson",
+		"Annie Potts",
+		"William Atherton"
 	],
 	"productionCompany": "Columbia Pictures, Black Rhino Productions",
 	"cinepostaScore": 8,
@@ -85,6 +89,34 @@
 			"tmdbMovieId": 620,
 			"tmdbPersonId": 1524,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rick Moranis",
+			"character": "Louis Tully",
+			"tmdbMovieId": 620,
+			"tmdbPersonId": 8872,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ernie Hudson",
+			"character": "Winston Zeddemore",
+			"tmdbMovieId": 620,
+			"tmdbPersonId": 8874,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Annie Potts",
+			"character": "Janine Melnitz",
+			"tmdbMovieId": 620,
+			"tmdbPersonId": 8873,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "William Atherton",
+			"character": "Walter Peck",
+			"tmdbMovieId": 620,
+			"tmdbPersonId": 7676,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

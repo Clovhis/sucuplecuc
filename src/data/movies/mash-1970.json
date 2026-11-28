@@ -22,7 +22,10 @@
   "director": "Robert Altman",
   "mainCast": [
     "Donald Sutherland",
-    "Tom Skerritt"
+    "Tom Skerritt",
+    "Elliott Gould",
+    "Robert Duvall",
+    "David Arkin"
   ],
   "productionCompany": "20th Century-Fox",
   "runtimeMinutes": 116,
@@ -64,6 +67,27 @@
       "tmdbMovieId": 651,
       "tmdbPersonId": 4139,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Elliott Gould",
+      "character": "Trapper John McIntyre",
+      "tmdbMovieId": 651,
+      "tmdbPersonId": 827,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Robert Duvall",
+      "character": "Maj. Frank Burns",
+      "tmdbMovieId": 651,
+      "tmdbPersonId": 3087,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "David Arkin",
+      "character": "St. Major Wade Vollmer",
+      "tmdbMovieId": 651,
+      "tmdbPersonId": 9808,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

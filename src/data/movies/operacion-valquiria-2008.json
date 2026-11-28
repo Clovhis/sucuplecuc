@@ -21,7 +21,9 @@
 	"mainCast": [
 		"Tom Cruise",
 		"Kenneth Branagh",
-		"Bill Nighy"
+		"Bill Nighy",
+		"Tom Wilkinson",
+		"Thomas Kretschmann"
 	],
 	"productionCompany": "United Artists, Studio Babelsberg, Lakeshore Entertainment",
 	"cinepostaScore": 6,
@@ -74,6 +76,20 @@
 			"tmdbMovieId": 2253,
 			"tmdbPersonId": 2440,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Tom Wilkinson",
+			"character": "Friedrich Fromm",
+			"tmdbMovieId": 2253,
+			"tmdbPersonId": 207,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Thomas Kretschmann",
+			"character": "Otto Ernst Remer",
+			"tmdbMovieId": 2253,
+			"tmdbPersonId": 3491,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

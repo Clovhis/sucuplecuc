@@ -18,7 +18,11 @@
 	"director": "Thomas Vinterberg",
 	"mainCast": [
 		"Mads Mikkelsen",
-		"Thomas Bo Larsen"
+		"Thomas Bo Larsen",
+		"Lasse Fogelstrøm",
+		"Susse Wold",
+		"Anne Louise Hassing",
+		"Lars Ranthe"
 	],
 	"productionCompany": "Zentropa Entertainments",
 	"cinepostaScore": 7,
@@ -69,6 +73,34 @@
 			"tmdbMovieId": 103663,
 			"tmdbPersonId": 4457,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Lasse Fogelstrøm",
+			"character": "Marcus",
+			"tmdbMovieId": 103663,
+			"tmdbPersonId": 1188827,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Susse Wold",
+			"character": "Grethe",
+			"tmdbMovieId": 103663,
+			"tmdbPersonId": 47156,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anne Louise Hassing",
+			"character": "Agnes",
+			"tmdbMovieId": 103663,
+			"tmdbPersonId": 6122,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lars Ranthe",
+			"character": "Bruun",
+			"tmdbMovieId": 103663,
+			"tmdbPersonId": 588175,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

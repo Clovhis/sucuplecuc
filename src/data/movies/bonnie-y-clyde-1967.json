@@ -26,7 +26,9 @@
   "director": "Arthur Penn",
   "mainCast": [
     "Warren Beatty",
-    "Faye Dunaway"
+    "Faye Dunaway",
+    "Michael J. Pollard",
+    "Gene Hackman"
   ],
   "productionCompany": "Warner Bros.-Seven Arts",
   "runtimeMinutes": 111,
@@ -68,6 +70,20 @@
       "tmdbMovieId": 475,
       "tmdbPersonId": 6450,
       "verifiedAt": "2026-11-08"
+    },
+    {
+      "actor": "Michael J. Pollard",
+      "character": "C. W. Moss",
+      "tmdbMovieId": 475,
+      "tmdbPersonId": 6451,
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "actor": "Gene Hackman",
+      "character": "Buck Barrow",
+      "tmdbMovieId": 475,
+      "tmdbPersonId": 193,
+      "verifiedAt": "2026-11-27"
     }
   ]
 }

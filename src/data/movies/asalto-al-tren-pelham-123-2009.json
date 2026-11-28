@@ -58,5 +58,42 @@
 			"plan-oculto-2006"
 		]
 	},
-	"review": "El gran hallazgo del remake es poner a Denzel Washington y John Travolta a cruzarse casi sin compartir espacio. Walter Garber tiene la voz de un empleado común atrapado en una situación absurda, y Travolta convierte a Ryder en un villano pasado de rosca que a ratos divierte más de lo que amenaza. Tony Scott corta, acelera y satura la pantalla como si el subte fuera una consola en llamas; no todo ese ruido suma, pero el reloj corre con eficacia. Es una versión menos filosa que la original, aun así entrega un duelo verbal entretenido y compacto."
+	"review": "El gran hallazgo del remake es poner a Denzel Washington y John Travolta a cruzarse casi sin compartir espacio. Walter Garber tiene la voz de un empleado común atrapado en una situación absurda, y Travolta convierte a Ryder en un villano pasado de rosca que a ratos divierte más de lo que amenaza. Tony Scott corta, acelera y satura la pantalla como si el subte fuera una consola en llamas; no todo ese ruido suma, pero el reloj corre con eficacia. Es una versión menos filosa que la original, aun así entrega un duelo verbal entretenido y compacto.",
+	"castCharacters": [
+		{
+			"actor": "Denzel Washington",
+			"character": "Walter Garber",
+			"tmdbMovieId": 18487,
+			"tmdbPersonId": 5292,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Travolta",
+			"character": "Ryder",
+			"tmdbMovieId": 18487,
+			"tmdbPersonId": 8891,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John Turturro",
+			"character": "Lt. Camonetti",
+			"tmdbMovieId": 18487,
+			"tmdbPersonId": 1241,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Luis Guzmán",
+			"character": "Phil Ramos",
+			"tmdbMovieId": 18487,
+			"tmdbPersonId": 40481,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "James Gandolfini",
+			"character": "Mayor",
+			"tmdbMovieId": 18487,
+			"tmdbPersonId": 4691,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

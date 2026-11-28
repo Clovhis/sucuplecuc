@@ -21,7 +21,8 @@
 	"director": "Marvin-Lee Beukes",
 	"mainCast": [
 		"Danny Ross",
-		"Monique Rockman"
+		"Monique Rockman",
+		"Robyn Rossouw"
 	],
 	"productionCompany": "Marvin-Lee Beukes Films",
 	"cinepostaScore": 5,
@@ -32,15 +33,15 @@
 		"wins": []
 	},
 	"editorial": {
-	"tenSecondTake": {
-		"verdict": "Tickets apuesta por la intimidad de una conversación; Marvin-Lee Beukes acompaña a Danny Ross con una puesta sobria que gana cuando no subraya.",
-		"whatToExpect": "Una entrada de cine abre charlas sobre oportunidades, vínculos y decisiones que llegan tarde para personajes que todavía quieren avanzar.",
-		"pace": "Se mueve despacio, deja que los silencios completen las frases y prefiere la observación cotidiana a los giros.",
-		"intensity": "La presión es afectiva: lo que no se dijo vuelve en cada encuentro y obliga a medir cuánto queda por reparar.",
-		"practicalContext": "Dura 90 minutos y pide disposición para un drama independiente conversado, más interesado en el vínculo que en la acción.",
-		"forFansOf": "Te va a gustar si disfrutás películas pequeñas, diálogos contenidos y relatos donde una decisión mínima cambia la relación.",
-		"notForYouIf": "No es para vos si buscás grandes conflictos, montaje veloz o una historia que traduzca cada emoción en un discurso."
-	},
+		"tenSecondTake": {
+			"verdict": "Tickets apuesta por la intimidad de una conversación; Marvin-Lee Beukes acompaña a Danny Ross con una puesta sobria que gana cuando no subraya.",
+			"whatToExpect": "Una entrada de cine abre charlas sobre oportunidades, vínculos y decisiones que llegan tarde para personajes que todavía quieren avanzar.",
+			"pace": "Se mueve despacio, deja que los silencios completen las frases y prefiere la observación cotidiana a los giros.",
+			"intensity": "La presión es afectiva: lo que no se dijo vuelve en cada encuentro y obliga a medir cuánto queda por reparar.",
+			"practicalContext": "Dura 90 minutos y pide disposición para un drama independiente conversado, más interesado en el vínculo que en la acción.",
+			"forFansOf": "Te va a gustar si disfrutás películas pequeñas, diálogos contenidos y relatos donde una decisión mínima cambia la relación.",
+			"notForYouIf": "No es para vos si buscás grandes conflictos, montaje veloz o una historia que traduzca cada emoción en un discurso."
+		},
 		"becauseYouLiked": [
 			"las-corrientes-2025"
 		],
@@ -50,5 +51,28 @@
 			"siberia-2020"
 		]
 	},
-	"review": "Tickets tiene la escala de una película independiente que apuesta por la conversación y el vínculo antes que por el golpe de efecto. Danny Ross y Robyn Rossouw encuentran una intimidad convincente en los silencios, aunque el relato a veces subraya demasiado lo que sus personajes ya dejaron claro. Marvin-Lee Beukes mantiene una puesta sobria y cercana, con una sensibilidad que se sostiene mejor en los momentos cotidianos que en los giros dramáticos."
+	"review": "Tickets tiene la escala de una película independiente que apuesta por la conversación y el vínculo antes que por el golpe de efecto. Danny Ross y Robyn Rossouw encuentran una intimidad convincente en los silencios, aunque el relato a veces subraya demasiado lo que sus personajes ya dejaron claro. Marvin-Lee Beukes mantiene una puesta sobria y cercana, con una sensibilidad que se sostiene mejor en los momentos cotidianos que en los giros dramáticos.",
+	"castCharacters": [
+		{
+			"actor": "Robyn Rossouw",
+			"character": "Crystal",
+			"tmdbMovieId": 1098938,
+			"tmdbPersonId": 3780186,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Danny Ross",
+			"character": "Grant",
+			"tmdbMovieId": 1098938,
+			"tmdbPersonId": 2424009,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Monique Rockman",
+			"character": "Phyllis",
+			"tmdbMovieId": 1098938,
+			"tmdbPersonId": 1970488,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

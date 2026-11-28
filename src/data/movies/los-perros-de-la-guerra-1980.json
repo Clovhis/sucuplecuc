@@ -54,5 +54,35 @@
 		]
 	},
 	"review": "El mercenario de Christopher Walken avanza por África con una frialdad que de a poco se resquebraja. La película entiende la aventura bélica como un negocio sucio: hay armas, selva y operaciones clandestinas, pero también una mirada incómoda sobre quién paga las guerras y quién se beneficia con ellas. Su ritmo de thriller setentoso puede sentirse áspero y algunas decisiones ideológicas quedan subrayadas, aunque la presencia de Walken y la tensión de la misión sostienen una película de culto con nervio propio.",
-	"runtimeMinutes": 102
+	"runtimeMinutes": 102,
+	"castCharacters": [
+		{
+			"actor": "Christopher Walken",
+			"character": "Jamie Shannon",
+			"tmdbMovieId": 20681,
+			"tmdbPersonId": 4690,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tom Berenger",
+			"character": "Drew",
+			"tmdbMovieId": 20681,
+			"tmdbPersonId": 13022,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "JoBeth Williams",
+			"character": "Jessie",
+			"tmdbMovieId": 20681,
+			"tmdbPersonId": 10080,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Paul Freeman",
+			"character": "Derek",
+			"tmdbMovieId": 20681,
+			"tmdbPersonId": 652,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

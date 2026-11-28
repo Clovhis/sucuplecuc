@@ -41,19 +41,56 @@
 			"notForYouIf": "Quizás no sea para vos si preferís misterio abstracto, gravedad constante o una aventura espacial que no explique tanto sus problemas."
 		},
 		"becauseYouLiked": [
-		"buena-suerte-diviertete-no-mueras-2026",
-		"el-final-de-la-calle-oak-2026"
-	],
-	"related": [
-		"resistencia-2023",
-		"avatar-2009",
-		"avatar-the-way-of-water-2022",
-		"ready-player-one-2018"
-	]
-},
+			"buena-suerte-diviertete-no-mueras-2026",
+			"el-final-de-la-calle-oak-2026"
+		],
+		"related": [
+			"resistencia-2023",
+			"avatar-2009",
+			"avatar-the-way-of-water-2022",
+			"ready-player-one-2018"
+		]
+	},
 	"synopsis": "Ryland Grace se despierta solo en una nave espacial, a años luz de la Tierra, sin recordar quién es ni cómo llegó ahí. Mientras recupera la memoria, descubre que integra una misión desesperada para frenar una amenaza que está apagando el Sol.",
 	"audienceRating": "+13",
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Proyecto Salvación depende menos de sorprender con la premisa que de saber manejar la escala, el humor y la sensación de aventura. Desde ahí ordena un problema concreto y avanza con bastante claridad.\n\nPhil Lord y Christopher Miller la levantan sobre todo cuando cada set piece tiene algo de identidad y no parece pura ilustración de presupuesto. Donde más se resiente es cuando se pone más aparatosa que divertida.\n\nTiene empuje, una idea clara de espectáculo y suficiente personalidad como para no sentirse intercambio genérico. Rinde más por energía que por sutileza, y eso acá no siempre es un problema."
+	"review": "Proyecto Salvación depende menos de sorprender con la premisa que de saber manejar la escala, el humor y la sensación de aventura. Desde ahí ordena un problema concreto y avanza con bastante claridad.\n\nPhil Lord y Christopher Miller la levantan sobre todo cuando cada set piece tiene algo de identidad y no parece pura ilustración de presupuesto. Donde más se resiente es cuando se pone más aparatosa que divertida.\n\nTiene empuje, una idea clara de espectáculo y suficiente personalidad como para no sentirse intercambio genérico. Rinde más por energía que por sutileza, y eso acá no siempre es un problema.",
+	"castCharacters": [
+		{
+			"actor": "Ryan Gosling",
+			"character": "Ryland Grace",
+			"tmdbMovieId": 687163,
+			"tmdbPersonId": 30614,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sandra Hüller",
+			"character": "Eva Stratt",
+			"tmdbMovieId": 687163,
+			"tmdbPersonId": 7152,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ken Leung",
+			"character": "Yao",
+			"tmdbMovieId": 687163,
+			"tmdbPersonId": 2131,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Milana Vayntrub",
+			"character": "Olesya Ilyukhina",
+			"tmdbMovieId": 687163,
+			"tmdbPersonId": 1454946,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lionel Boyce",
+			"character": "Carl",
+			"tmdbMovieId": 687163,
+			"tmdbPersonId": 2320708,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

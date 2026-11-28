@@ -19,7 +19,9 @@
 	"director": "Robert Rossen",
 	"mainCast": [
 		"Paul Newman",
-		"Jackie Gleason"
+		"Jackie Gleason",
+		"Piper Laurie",
+		"Murray Hamilton"
 	],
 	"productionCompany": "Rossen Films, 20th Century Fox",
 	"cinepostaScore": 8,
@@ -78,6 +80,20 @@
 			"tmdbMovieId": 990,
 			"tmdbPersonId": 14882,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Piper Laurie",
+			"character": "Sarah Packard",
+			"tmdbMovieId": 990,
+			"tmdbPersonId": 6721,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Murray Hamilton",
+			"character": "Findley",
+			"tmdbMovieId": 990,
+			"tmdbPersonId": 8608,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

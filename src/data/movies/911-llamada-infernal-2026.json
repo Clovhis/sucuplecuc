@@ -22,7 +22,11 @@
 	"director": "Brandon Christensen",
 	"mainCast": [
 		"Jaime M. Callica",
-		"Sean Rogerson"
+		"Sean Rogerson",
+		"Catherine Lough Haggquist",
+		"Angel Prater",
+		"Keegan Connor Tracy",
+		"Chris Casson"
 	],
 	"productionCompany": "Superchill",
 	"cinepostaScore": 4,
@@ -67,6 +71,34 @@
 			"tmdbMovieId": 1510745,
 			"tmdbPersonId": 169747,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Catherine Lough Haggquist",
+			"character": "Ally Jackson",
+			"tmdbMovieId": 1510745,
+			"tmdbPersonId": 77622,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Angel Prater",
+			"character": "Esposito",
+			"tmdbMovieId": 1510745,
+			"tmdbPersonId": 3536923,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Keegan Connor Tracy",
+			"character": "The Mother",
+			"tmdbMovieId": 1510745,
+			"tmdbPersonId": 42710,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chris Casson",
+			"character": "The Father",
+			"tmdbMovieId": 1510745,
+			"tmdbPersonId": 1836169,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

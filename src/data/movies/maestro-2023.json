@@ -24,7 +24,8 @@
 		"tenSecondTake": {
 			"verdict": "Maestro gana cuando deja de venerar a Leonard Bernstein y mira el costo íntimo de su vida con Felicia Montealegre; Carey Mulligan encuentra ahí la herida más profunda.",
 			"whatToExpect": "Un biopic romántico de cambios de formato, ensayos, escenarios y discusiones domésticas, más interesado en la pareja que en enumerar una carrera musical.",
-			"pace": "Salta entre épocas y momentos de intensidad artística; avanza con elegancia, aunque algunos saltos dejan emociones apenas esbozadas.",			"intensity": "La presión es afectiva y pública: el talento, el ego y la exposición de Bernstein tironean un matrimonio que no puede vivir sólo de admiración.",
+			"pace": "Salta entre épocas y momentos de intensidad artística; avanza con elegancia, aunque algunos saltos dejan emociones apenas esbozadas.",
+			"intensity": "La presión es afectiva y pública: el talento, el ego y la exposición de Bernstein tironean un matrimonio que no puede vivir sólo de admiración.",
 			"practicalContext": "No tiene duración informada en la ficha; mirala con tiempo para seguir sus elipsis y no como una biografía rápida de grandes éxitos.",
 			"forFansOf": "Para quienes disfrutan biopics de músicos centrados en vínculos, actuaciones transformistas y puestas que usan la forma para entrar en la memoria.",
 			"notForYouIf": "Puede dejarte frío si esperás un retrato crítico completo de Bernstein o una película musical con más interpretación y menos intimidad sugerida."
@@ -44,5 +45,28 @@
 	"audienceRating": "+16",
 	"reviewPublishedAt": "2026-02-28",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Bradley Cooper",
+			"character": "Leonard Bernstein",
+			"tmdbMovieId": 523607,
+			"tmdbPersonId": 51329,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Carey Mulligan",
+			"character": "Felicia Montealegre",
+			"tmdbMovieId": 523607,
+			"tmdbPersonId": 36662,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Matt Bomer",
+			"character": "David Oppenheim",
+			"tmdbMovieId": 523607,
+			"tmdbPersonId": 66743,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

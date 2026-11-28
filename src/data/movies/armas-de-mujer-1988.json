@@ -25,7 +25,9 @@
 		"Melanie Griffith",
 		"Harrison Ford",
 		"Sigourney Weaver",
-		"Joan Cusack"
+		"Joan Cusack",
+		"Alec Baldwin",
+		"Oliver Platt"
 	],
 	"productionCompany": "Twentieth Century Fox Film Corporation",
 	"cinepostaScore": 7,
@@ -82,6 +84,20 @@
 			"tmdbMovieId": 3525,
 			"tmdbPersonId": 3234,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Alec Baldwin",
+			"character": "Mick Dugan",
+			"tmdbMovieId": 3525,
+			"tmdbPersonId": 7447,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Oliver Platt",
+			"character": "Lutz",
+			"tmdbMovieId": 3525,
+			"tmdbPersonId": 17485,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

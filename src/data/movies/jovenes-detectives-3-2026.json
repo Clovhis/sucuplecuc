@@ -55,5 +55,28 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Julius Weckauf",
+			"character": "Justus Jonas",
+			"tmdbMovieId": 1219542,
+			"tmdbPersonId": 1956224,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Nevio Wendt",
+			"character": "Peter Shaw",
+			"tmdbMovieId": 1219542,
+			"tmdbPersonId": 3360208,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Levi Brandl",
+			"character": "Bob Andrews",
+			"tmdbMovieId": 1219542,
+			"tmdbPersonId": 3772731,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

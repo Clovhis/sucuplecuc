@@ -28,7 +28,9 @@
 	"director": "Chris Renaud",
 	"mainCast": [
 		"Danny DeVito",
-		"Zac Efron"
+		"Zac Efron",
+		"Rob Riggle",
+		"Jenny Slate"
 	],
 	"productionCompany": "Illumination",
 	"cinepostaScore": 7,
@@ -71,6 +73,20 @@
 			"tmdbMovieId": 73723,
 			"tmdbPersonId": 29222,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Rob Riggle",
+			"character": "Mr. Aloysius O'Hare (voice)",
+			"tmdbMovieId": 73723,
+			"tmdbPersonId": 71403,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jenny Slate",
+			"character": "Mrs. Wiggins (voice)",
+			"tmdbMovieId": 73723,
+			"tmdbPersonId": 213001,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

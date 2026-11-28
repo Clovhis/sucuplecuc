@@ -56,5 +56,28 @@
 	"releasePlatforms": [
 		"HBO Max",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Alexander Skarsgård",
+			"character": "Johannes",
+			"tmdbMovieId": 1422562,
+			"tmdbPersonId": 28846,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rosanna Arquette",
+			"character": "Tammy",
+			"tmdbMovieId": 1422562,
+			"tmdbPersonId": 2165,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hailey Benton Gates",
+			"character": "Celeste",
+			"tmdbMovieId": 1422562,
+			"tmdbPersonId": 1599899,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

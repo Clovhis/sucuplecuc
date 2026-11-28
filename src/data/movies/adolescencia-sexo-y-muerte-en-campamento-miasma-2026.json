@@ -23,7 +23,9 @@
 	"director": "Jane Schoenbrun",
 	"mainCast": [
 		"Hannah Einbinder",
-		"Gillian Anderson"
+		"Gillian Anderson",
+		"Amanda Fix",
+		"Sarah Sherman"
 	],
 	"productionCompany": "Maco Cine",
 	"cinepostaScore": 8,
@@ -73,6 +75,20 @@
 			"tmdbMovieId": 1240889,
 			"tmdbPersonId": 12214,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Amanda Fix",
+			"character": "Young Billy",
+			"tmdbMovieId": 1240889,
+			"tmdbPersonId": 3054663,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Sarah Sherman",
+			"character": "Kris' Agent",
+			"tmdbMovieId": 1240889,
+			"tmdbPersonId": 2198504,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

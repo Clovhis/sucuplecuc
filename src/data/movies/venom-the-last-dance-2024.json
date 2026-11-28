@@ -13,7 +13,9 @@
 	"mainCast": [
 		"Tom Hardy",
 		"Chiwetel Ejiofor",
-		"Juno Temple"
+		"Juno Temple",
+		"Stephen Graham",
+		"Alanna Ubach"
 	],
 	"productionCompany": "Columbia Pictures",
 	"cinepostaScore": 3,
@@ -69,6 +71,20 @@
 			"tmdbMovieId": 912649,
 			"tmdbPersonId": 36594,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Stephen Graham",
+			"character": "Detective Mulligan",
+			"tmdbMovieId": 912649,
+			"tmdbPersonId": 1115,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Alanna Ubach",
+			"character": "Nova",
+			"tmdbMovieId": 912649,
+			"tmdbPersonId": 10402,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

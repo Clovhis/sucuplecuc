@@ -55,5 +55,42 @@
 	},
 	"audienceRating": "ATP",
 	"review": "Super Mario Galaxy lleva a Mario y a sus aliados a planetas diminutos y mundos cósmicos cuando una nueva amenaza pone en riesgo el Reino Champiñón. La dirección entiende que la gracia está en cambiar de escala y gravedad todo el tiempo, y la animación aprovecha bien esa imaginación sin perder el humor físico de los personajes. Chris Pratt y el resto del elenco cumplen con energía, aunque los guiños a los juegos por momentos pesan más que la historia. El ritmo es veloz y familiar. Vale por una aventura colorida que amplía el universo sin limitarse a repetir la primera película.",
-	"reviewPublishedAt": "2026-04-04"
+	"reviewPublishedAt": "2026-04-04",
+	"castCharacters": [
+		{
+			"actor": "Chris Pratt",
+			"character": "Mario (voice)",
+			"tmdbMovieId": 1226863,
+			"tmdbPersonId": 73457,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Anya Taylor-Joy",
+			"character": "Princess Peach (voice)",
+			"tmdbMovieId": 1226863,
+			"tmdbPersonId": 1397778,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Charlie Day",
+			"character": "Luigi (voice)",
+			"tmdbMovieId": 1226863,
+			"tmdbPersonId": 95101,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jack Black",
+			"character": "Bowser (voice)",
+			"tmdbMovieId": 1226863,
+			"tmdbPersonId": 70851,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Keegan-Michael Key",
+			"character": "Toad (voice)",
+			"tmdbMovieId": 1226863,
+			"tmdbPersonId": 298410,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

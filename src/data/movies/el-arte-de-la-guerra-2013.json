@@ -57,5 +57,28 @@
 		]
 	},
 	"review": "Wong Kar-wai le da a las peleas la cadencia de un recuerdo: la lluvia, la madera partida y la ropa que pesa definen cada duelo tanto como los golpes. Tony Leung encarna a Ip Man con una calma que se resquebraja sin volverse grandilocuente; Zhang Ziyi responde con una dignidad más orgullosa y herida. La historia salta entre escuelas, épocas y versiones de una leyenda, así que el mapa biográfico puede sentirse incompleto, pero el desorden también hace visible un país al borde de cambiar para siempre. Cuando el relato se detiene en una mirada o un desafío, la película encuentra su pulso.",
-	"catalogAddedAt": "2026-11-06"
+	"catalogAddedAt": "2026-11-06",
+	"castCharacters": [
+		{
+			"actor": "Tony Leung Chiu-wai",
+			"character": "Ip Man",
+			"tmdbMovieId": 44865,
+			"tmdbPersonId": 1337,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zhang Ziyi",
+			"character": "Gong Er",
+			"tmdbMovieId": 44865,
+			"tmdbPersonId": 1339,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chang Chen",
+			"character": "Razor",
+			"tmdbMovieId": 44865,
+			"tmdbPersonId": 1622,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -33,7 +33,11 @@
 		"tenSecondTake": {
 			"verdict": "Junji Shimizu condensa la primera aventura cinematográfica de One Piece en una isla, un tesoro y un villano; Mayumi Tanaka conserva el espíritu de Luffy aunque la escala sea pequeña.",
 			"whatToExpect": "Tobio, Woonan, tesoro, Eldoraggo y la tripulación resolviendo una amenaza en formato de aventura corta y elástica.",
-			"pace": "Va directo al conflicto y no se demora en mitología; el relato tiene ritmo de episodio extendido más que de gran película.",			"intensity": "La tensión es aventurera y liviana, con peleas y peligro de dibujo; importa más la energía del grupo que la amenaza de Eldoraggo.",			"practicalContext": "Con 57 minutos, es una curiosidad breve para fans de Luffy; funciona como postal temprana, no como puerta de entrada completa al universo.",			"forFansOf": "Para seguidores de One Piece que quieran rastrear los primeros pasos de la tripulación en cine y disfrutar una aventura compacta.",			"notForYouIf": "No es para vos si buscás desarrollo, gran animación de batalla o una historia que presente el universo sin suponer conocimiento previo."
+			"pace": "Va directo al conflicto y no se demora en mitología; el relato tiene ritmo de episodio extendido más que de gran película.",
+			"intensity": "La tensión es aventurera y liviana, con peleas y peligro de dibujo; importa más la energía del grupo que la amenaza de Eldoraggo.",
+			"practicalContext": "Con 57 minutos, es una curiosidad breve para fans de Luffy; funciona como postal temprana, no como puerta de entrada completa al universo.",
+			"forFansOf": "Para seguidores de One Piece que quieran rastrear los primeros pasos de la tripulación en cine y disfrutar una aventura compacta.",
+			"notForYouIf": "No es para vos si buscás desarrollo, gran animación de batalla o una historia que presente el universo sin suponer conocimiento previo."
 		},
 		"becauseYouLiked": [
 			"puella-magi-madoka-magica-la-pelicula-parte-1-2012"
@@ -47,5 +51,21 @@
 	"runtimeMinutes": 57,
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Esta primera película de One Piece llega con la energía comprimida de una aventura de feria: una isla, un tesoro, un villano con un poder llamativo y la tripulación resolviendo todo a los gritos. Junji Shimizu todavía no tiene la escala que la saga encontraría después, pero el diseño de personajes conserva ese gusto por el movimiento elástico y el remate absurdo. Dura poco, entra fácil y funciona mejor como postal temprana para quienes ya quieren a Luffy que como puerta de entrada definitiva al universo."
+	"review": "Esta primera película de One Piece llega con la energía comprimida de una aventura de feria: una isla, un tesoro, un villano con un poder llamativo y la tripulación resolviendo todo a los gritos. Junji Shimizu todavía no tiene la escala que la saga encontraría después, pero el diseño de personajes conserva ese gusto por el movimiento elástico y el remate absurdo. Dura poco, entra fácil y funciona mejor como postal temprana para quienes ya quieren a Luffy que como puerta de entrada definitiva al universo.",
+	"castCharacters": [
+		{
+			"actor": "Mayumi Tanaka",
+			"character": "Monkey D. Luffy (voice)",
+			"tmdbMovieId": 19576,
+			"tmdbPersonId": 65510,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Akemi Okamura",
+			"character": "Nami (voice)",
+			"tmdbMovieId": 19576,
+			"tmdbPersonId": 90133,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

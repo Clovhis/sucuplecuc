@@ -24,7 +24,10 @@
 	"mainCast": [
 		"Russell Crowe",
 		"Christian Bale",
-		"Ben Foster"
+		"Ben Foster",
+		"Peter Fonda",
+		"Gretchen Mol",
+		"Dallas Roberts"
 	],
 	"productionCompany": "Lionsgate",
 	"cinepostaScore": 7,
@@ -75,6 +78,27 @@
 			"tmdbMovieId": 5176,
 			"tmdbPersonId": 11107,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Peter Fonda",
+			"character": "Byron McElroy",
+			"tmdbMovieId": 5176,
+			"tmdbPersonId": 8949,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gretchen Mol",
+			"character": "Alice Evans",
+			"tmdbMovieId": 5176,
+			"tmdbPersonId": 15370,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dallas Roberts",
+			"character": "Grayson Butterfield",
+			"tmdbMovieId": 5176,
+			"tmdbPersonId": 424,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

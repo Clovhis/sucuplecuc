@@ -18,7 +18,9 @@
 	"director": "Ruben Östlund",
 	"mainCast": [
 		"Claes Bang",
-		"Elisabeth Moss"
+		"Elisabeth Moss",
+		"Dominic West",
+		"Terry Notary"
 	],
 	"productionCompany": "Plattform Produktion",
 	"cinepostaScore": 5,
@@ -69,6 +71,20 @@
 			"tmdbMovieId": 401246,
 			"tmdbPersonId": 32798,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Dominic West",
+			"character": "Julian",
+			"tmdbMovieId": 401246,
+			"tmdbPersonId": 17287,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Terry Notary",
+			"character": "Oleg",
+			"tmdbMovieId": 401246,
+			"tmdbPersonId": 236696,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

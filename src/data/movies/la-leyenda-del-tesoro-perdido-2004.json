@@ -23,7 +23,10 @@
 	"mainCast": [
 		"Nicolas Cage",
 		"Diane Kruger",
-		"Sean Bean"
+		"Sean Bean",
+		"Jon Voight",
+		"Harvey Keitel",
+		"Christopher Plummer"
 	],
 	"productionCompany": "Walt Disney Pictures, Jerry Bruckheimer Films",
 	"cinepostaScore": 8,
@@ -79,6 +82,27 @@
 			"tmdbMovieId": 2059,
 			"tmdbPersonId": 48,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jon Voight",
+			"character": "Patrick Gates",
+			"tmdbMovieId": 2059,
+			"tmdbPersonId": 10127,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Harvey Keitel",
+			"character": "Sadusky",
+			"tmdbMovieId": 2059,
+			"tmdbPersonId": 1037,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Christopher Plummer",
+			"character": "John Adams Gates",
+			"tmdbMovieId": 2059,
+			"tmdbPersonId": 290,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

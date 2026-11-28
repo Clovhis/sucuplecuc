@@ -25,7 +25,13 @@
 	"director": "Marc Webb",
 	"mainCast": [
 		"Joseph Gordon-Levitt",
-		"Zooey Deschanel"
+		"Zooey Deschanel",
+		"Geoffrey Arend",
+		"Chloë Grace Moretz",
+		"Matthew Gray Gubler",
+		"Clark Gregg",
+		"Patricia Belcher",
+		"Rachel Boston"
 	],
 	"productionCompany": "Watermark",
 	"cinepostaScore": 8,
@@ -69,6 +75,48 @@
 			"tmdbMovieId": 19913,
 			"tmdbPersonId": 11664,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Geoffrey Arend",
+			"character": "McKenzie",
+			"tmdbMovieId": 19913,
+			"tmdbPersonId": 5375,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Chloë Grace Moretz",
+			"character": "Rachel",
+			"tmdbMovieId": 19913,
+			"tmdbPersonId": 56734,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Matthew Gray Gubler",
+			"character": "Paul",
+			"tmdbMovieId": 19913,
+			"tmdbPersonId": 5661,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Clark Gregg",
+			"character": "Vance",
+			"tmdbMovieId": 19913,
+			"tmdbPersonId": 9048,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Patricia Belcher",
+			"character": "Millie",
+			"tmdbMovieId": 19913,
+			"tmdbPersonId": 56358,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Rachel Boston",
+			"character": "Alison",
+			"tmdbMovieId": 19913,
+			"tmdbPersonId": 96624,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

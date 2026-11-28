@@ -26,7 +26,10 @@
 	"mainCast": [
 		"Jake Gyllenhaal",
 		"Drew Barrymore",
-		"Beth Grant"
+		"Beth Grant",
+		"Jena Malone",
+		"Maggie Gyllenhaal",
+		"Mary McDonnell"
 	],
 	"productionCompany": "Pandora Cinema, Flower Films",
 	"cinepostaScore": 8,
@@ -79,6 +82,27 @@
 			"tmdbMovieId": 141,
 			"tmdbPersonId": 5151,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Jena Malone",
+			"character": "Gretchen Ross",
+			"tmdbMovieId": 141,
+			"tmdbPersonId": 20089,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Maggie Gyllenhaal",
+			"character": "Elizabeth Darko",
+			"tmdbMovieId": 141,
+			"tmdbPersonId": 1579,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Mary McDonnell",
+			"character": "Rose Darko",
+			"tmdbMovieId": 141,
+			"tmdbPersonId": 1581,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

@@ -54,5 +54,28 @@
 	"releasePlatforms": [
 		"Prime Video",
 		"Apple TV"
+	],
+	"castCharacters": [
+		{
+			"actor": "Madison Davenport",
+			"character": "Sistine",
+			"tmdbMovieId": 1382832,
+			"tmdbPersonId": 52869,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tracey Bonner",
+			"character": "Dionne",
+			"tmdbMovieId": 1382832,
+			"tmdbPersonId": 1549537,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Joaquim de Almeida",
+			"character": "Walker",
+			"tmdbMovieId": 1382832,
+			"tmdbPersonId": 22462,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

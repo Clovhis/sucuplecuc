@@ -26,7 +26,8 @@
 	"mainCast": [
 		"Himesh Patel",
 		"Lily James",
-		"Ed Sheeran"
+		"Ed Sheeran",
+		"Vincent Franklin"
 	],
 	"productionCompany": "Working Title Films, Perfect World Pictures",
 	"cinepostaScore": 8,
@@ -58,5 +59,35 @@
 	"releasePlatforms": [
 		"Prime Video"
 	],
-	"runtimeMinutes": 116
+	"runtimeMinutes": 116,
+	"castCharacters": [
+		{
+			"actor": "Vincent Franklin",
+			"character": "Brian",
+			"tmdbMovieId": 515195,
+			"tmdbPersonId": 43024,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Himesh Patel",
+			"character": "Jack Malik",
+			"tmdbMovieId": 515195,
+			"tmdbPersonId": 1227717,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Lily James",
+			"character": "Ellie Appleton",
+			"tmdbMovieId": 515195,
+			"tmdbPersonId": 1016168,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ed Sheeran",
+			"character": "Ed Sheeran",
+			"tmdbMovieId": 515195,
+			"tmdbPersonId": 998387,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

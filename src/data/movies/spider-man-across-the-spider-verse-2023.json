@@ -30,7 +30,7 @@
 			"forFansOf": "Puede ser tu próxima obsesión si te gustan los cómics, la animación que cambia de técnica según el personaje y las aventuras de superhéroes donde la identidad pesa más que salvar el día.",
 			"notForYouIf": "Quizás no sea para vos si necesitás un cierre inmediato, una estética uniforme o una trama de superhéroes que explique cada universo antes de lanzarte al siguiente salto."
 		},
-	"becauseYouLiked": [
+		"becauseYouLiked": [
 			"the-super-mario-bros-movie-2023",
 			"vivo-2021"
 		],
@@ -45,5 +45,28 @@
 	"reviewPublishedAt": "2026-02-27",
 	"synopsis": "Miles Morales vuelve a cruzar dimensiones y se reúne con Gwen Stacy. Al conocer una sociedad de Spider-People encargada de proteger el multiverso, entra en conflicto con sus reglas y con el futuro de las personas que más quiere.",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"castCharacters": [
+		{
+			"actor": "Shameik Moore",
+			"character": "Miles Morales (voice)",
+			"tmdbMovieId": 569094,
+			"tmdbPersonId": 587506,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Hailee Steinfeld",
+			"character": "Gwen Stacy (voice)",
+			"tmdbMovieId": 569094,
+			"tmdbPersonId": 130640,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Brian Tyree Henry",
+			"character": "Jeff Morales (voice)",
+			"tmdbMovieId": 569094,
+			"tmdbPersonId": 226366,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

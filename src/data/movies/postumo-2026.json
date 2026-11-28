@@ -56,5 +56,21 @@
 	"releasePlatforms": [
 		"Apple TV",
 		"Prime Video"
+	],
+	"castCharacters": [
+		{
+			"actor": "Adrián Ladrón",
+			"character": "Luis",
+			"tmdbMovieId": 1324099,
+			"tmdbPersonId": 1309488,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Diana Sedano",
+			"character": "Dolores",
+			"tmdbMovieId": 1324099,
+			"tmdbPersonId": 1290821,
+			"verifiedAt": "2026-11-27"
+		}
 	]
 }

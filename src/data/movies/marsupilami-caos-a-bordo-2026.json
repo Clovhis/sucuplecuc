@@ -24,7 +24,8 @@
 	"mainCast": [
 		"Philippe Lacheau",
 		"Jamel Debbouze",
-		"Tarek Boudali"
+		"Tarek Boudali",
+		"Jean Reno"
 	],
 	"productionCompany": "Pathé Films, BAF Prod, TF1 Films Production, Artémis Productions",
 	"cinepostaScore": 6,
@@ -51,5 +52,35 @@
 		]
 	},
 	"review": "Philippe Lacheau se acomoda al Marsupilami convirtiendo su llegada en una máquina de desorden para el grupo. El animal aporta movimiento, pero buena parte de la gracia depende de cómo Jamel Debbouze y Tarek Boudali reaccionan ante un encargo que les queda enorme. La comedia física tiene más puntería que los pasajes que intentan hacer avanzar la aventura a los empujones. El personaje de historieta termina compartiendo la película con los hábitos de la banda de Lacheau: hay energía y algunos cruces efectivos, junto con bastante chiste que necesita que le sigan la corriente.",
-	"runtimeMinutes": 99
+	"runtimeMinutes": 99,
+	"castCharacters": [
+		{
+			"actor": "Jean Reno",
+			"character": "Jeffrey Malone",
+			"tmdbMovieId": 1145899,
+			"tmdbPersonId": 1003,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Philippe Lacheau",
+			"character": "David Ticoule",
+			"tmdbMovieId": 1145899,
+			"tmdbPersonId": 1186076,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Jamel Debbouze",
+			"character": "Pablito Camaron",
+			"tmdbMovieId": 1145899,
+			"tmdbPersonId": 2408,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tarek Boudali",
+			"character": "Ricky Salsa",
+			"tmdbMovieId": 1145899,
+			"tmdbPersonId": 1186075,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

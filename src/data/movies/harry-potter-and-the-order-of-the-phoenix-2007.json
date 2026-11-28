@@ -19,7 +19,11 @@
 	"mainCast": [
 		"Daniel Radcliffe",
 		"Rupert Grint",
-		"Emma Watson"
+		"Emma Watson",
+		"Imelda Staunton",
+		"Robbie Coltrane",
+		"Gary Oldman",
+		"Ralph Fiennes"
 	],
 	"productionCompany": "Heyday Films, Warner Bros. Entertainment",
 	"cinepostaScore": 8,
@@ -74,6 +78,34 @@
 			"tmdbMovieId": 675,
 			"tmdbPersonId": 10990,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Imelda Staunton",
+			"character": "Dolores Umbridge",
+			"tmdbMovieId": 675,
+			"tmdbPersonId": 11356,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Robbie Coltrane",
+			"character": "Rubeus Hagrid",
+			"tmdbMovieId": 675,
+			"tmdbPersonId": 1923,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Gary Oldman",
+			"character": "Sirius Black",
+			"tmdbMovieId": 675,
+			"tmdbPersonId": 64,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ralph Fiennes",
+			"character": "Lord Voldemort",
+			"tmdbMovieId": 675,
+			"tmdbPersonId": 5469,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

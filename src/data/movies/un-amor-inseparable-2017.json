@@ -25,7 +25,9 @@
 	"director": "Michael Showalter",
 	"mainCast": [
 		"Kumail Nanjiani",
-		"Zoe Kazan"
+		"Zoe Kazan",
+		"Holly Hunter",
+		"Ray Romano"
 	],
 	"productionCompany": "Apatow Productions, Barry Mendel Productions, FilmNation Entertainment, Story Ink",
 	"cinepostaScore": 8,
@@ -54,5 +56,35 @@
 	},
 	"review": "El eje más interesante aparece cuando la relación deja de ser un ida y vuelta entre dos personas y se abre a los padres de Emily, que también están aprendiendo a convivir con la incertidumbre. Kumail Nanjiani y Zoe Kazan aportan una química relajada, mientras Holly Hunter y Ray Romano hacen que el humor familiar no se convierta en caricatura. La combinación de comedia, romance y drama encuentra un tono propio y evita resolver cada diferencia con una frase perfecta. En algunos pasajes la duración estira una premisa sencilla, pero los vínculos sostienen el recorrido.",
 	"catalogAddedAt": "2026-11-06",
-	"runtimeMinutes": 119
+	"runtimeMinutes": 119,
+	"castCharacters": [
+		{
+			"actor": "Holly Hunter",
+			"character": "Beth Gardner",
+			"tmdbMovieId": 416477,
+			"tmdbPersonId": 18686,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Ray Romano",
+			"character": "Terry Gardner",
+			"tmdbMovieId": 416477,
+			"tmdbPersonId": 15757,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Kumail Nanjiani",
+			"character": "Kumail Nanjiani",
+			"tmdbMovieId": 416477,
+			"tmdbPersonId": 466505,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Zoe Kazan",
+			"character": "Emily Gardner",
+			"tmdbMovieId": 416477,
+			"tmdbPersonId": 35028,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

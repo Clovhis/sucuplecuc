@@ -43,18 +43,41 @@
 			"forFansOf": "Fans de la animación escandinava, de los héroes pequeños y de las películas familiares que combinan humor físico con una despedida afectuosa.",
 			"notForYouIf": "Buscás una animación espectacular, humor más adulto o una historia independiente sin contexto. El pequeño ninja: El origen juega con el cariño de la saga."
 		},
-	"becauseYouLiked": [
-		"lego-star-wars-the-mandalorian-2026",
-		"ninja-turtles-caos-mutante-2023"
-	],
-	"related": [
-		"toy-story-2-1999",
-		"toy-story-1995",
-		"goat-2026",
-		"minions-monstruos-2026"
-	]
-},
+		"becauseYouLiked": [
+			"lego-star-wars-the-mandalorian-2026",
+			"ninja-turtles-caos-mutante-2023"
+		],
+		"related": [
+			"toy-story-2-1999",
+			"toy-story-1995",
+			"goat-2026",
+			"minions-monstruos-2026"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "La tercera aventura del ninja de tela conserva ese cruce raro entre pelicula familiar y humor que no trata a los chicos como distraidos. La animacion es directa, pero las escenas de accion tienen inventiva y la dupla central sigue funcionando.\n\nEl viaje al origen del personaje le da un cierre afectuoso a la trilogia sin ponerse solemne. No hace falta que el universo sea enorme cuando el ritmo, los remates y la amistad sostienen tan bien la funcion."
+	"review": "La tercera aventura del ninja de tela conserva ese cruce raro entre pelicula familiar y humor que no trata a los chicos como distraidos. La animacion es directa, pero las escenas de accion tienen inventiva y la dupla central sigue funcionando.\n\nEl viaje al origen del personaje le da un cierre afectuoso a la trilogia sin ponerse solemne. No hace falta que el universo sea enorme cuando el ritmo, los remates y la amistad sostienen tan bien la funcion.",
+	"castCharacters": [
+		{
+			"actor": "Anders Matthesen",
+			"character": "Ternet Ninja (voice)",
+			"tmdbMovieId": 1215638,
+			"tmdbPersonId": 66843,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Louis Næss-Schmidt",
+			"character": "Aske (voice)",
+			"tmdbMovieId": 1215638,
+			"tmdbPersonId": 2950667,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Emma Sehested Høeg",
+			"character": "Jessica (voice)",
+			"tmdbMovieId": 1215638,
+			"tmdbPersonId": 89962,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -21,7 +21,11 @@
 	"mainCast": [
 		"Tom Cruise",
 		"Robert Duvall",
-		"Nicole Kidman"
+		"Nicole Kidman",
+		"Randy Quaid",
+		"Cary Elwes",
+		"Michael Rooker",
+		"John C. Reilly"
 	],
 	"productionCompany": "Paramount Pictures",
 	"cinepostaScore": 6,
@@ -74,6 +78,34 @@
 			"tmdbMovieId": 2119,
 			"tmdbPersonId": 2227,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "Randy Quaid",
+			"character": "Tim Dalander",
+			"tmdbMovieId": 2119,
+			"tmdbPersonId": 1811,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Cary Elwes",
+			"character": "Russ Wheeler",
+			"tmdbMovieId": 2119,
+			"tmdbPersonId": 2130,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Michael Rooker",
+			"character": "Rowdy Burns",
+			"tmdbMovieId": 2119,
+			"tmdbPersonId": 12132,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "John C. Reilly",
+			"character": "Buck Bretherton",
+			"tmdbMovieId": 2119,
+			"tmdbPersonId": 4764,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }

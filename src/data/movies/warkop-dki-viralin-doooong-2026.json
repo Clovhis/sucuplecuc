@@ -22,7 +22,8 @@
 	"director": "Herwin Novianto",
 	"mainCast": [
 		"Vino G. Bastian",
-		"Tora Sudiro"
+		"Tora Sudiro",
+		"Deddy Mahendra Desta"
 	],
 	"productionCompany": "Falcon Pictures",
 	"cinepostaScore": 7,
@@ -52,5 +53,28 @@
 	"catalogAddedAt": "2026-10-30",
 	"runtimeMinutes": 120,
 	"isPremiere": true,
-	"premiereLabel": "ESTRENO"
+	"premiereLabel": "ESTRENO",
+	"castCharacters": [
+		{
+			"actor": "Deddy Mahendra Desta",
+			"character": "Dono",
+			"tmdbMovieId": 1574961,
+			"tmdbPersonId": 1202412,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Vino G. Bastian",
+			"character": "Kasino",
+			"tmdbMovieId": 1574961,
+			"tmdbPersonId": 88787,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Tora Sudiro",
+			"character": "Indro",
+			"tmdbMovieId": 1574961,
+			"tmdbPersonId": 935316,
+			"verifiedAt": "2026-11-27"
+		}
+	]
 }

@@ -23,7 +23,9 @@
 	"director": "Stephen Sommers",
 	"mainCast": [
 		"Brendan Fraser",
-		"Rachel Weisz"
+		"Rachel Weisz",
+		"John Hannah",
+		"Dwayne Johnson"
 	],
 	"productionCompany": "Universal Pictures",
 	"cinepostaScore": 6,
@@ -71,6 +73,20 @@
 			"tmdbMovieId": 1734,
 			"tmdbPersonId": 3293,
 			"verifiedAt": "2026-11-08"
+		},
+		{
+			"actor": "John Hannah",
+			"character": "Jonathan Carnahan",
+			"tmdbMovieId": 1734,
+			"tmdbPersonId": 10727,
+			"verifiedAt": "2026-11-27"
+		},
+		{
+			"actor": "Dwayne Johnson",
+			"character": "Mathayus / The Scorpion King",
+			"tmdbMovieId": 1734,
+			"tmdbPersonId": 18918,
+			"verifiedAt": "2026-11-27"
 		}
 	]
 }
