@@ -1374,6 +1374,28 @@
 					"Netflix"
 				]
 			}
+		},
+		{
+			"slug": "el-camino-del-pequeno-guerrero-2026",
+			"bufferPostId": "6b0a492d70e80ae8f1cb1ba0",
+			"dueAt": "2026-11-28T22:00:00.000Z",
+			"scheduledAt": "2026-11-28T03:23:25.323Z",
+			"copyStyle": {
+				"opening": 1807712605,
+				"availability": 1057161208,
+				"editorial": 3850769644,
+				"verdict": 334626000,
+				"link": 1519260427
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/el-camino-del-pequeno-guerrero",
+				"checkedAt": "2026-11-28T03:23:24.268Z",
+				"kind": "subscription",
+				"platforms": [
+					"Apple TV"
+				]
+			}
 		}
 	]
 }
