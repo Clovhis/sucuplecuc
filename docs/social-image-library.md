@@ -1,52 +1,39 @@
 # Biblioteca editorial central de CinePosta
 
-Proyecto Supabase `bftcrexcwktyiqsermni`; sólo Instagram integrado. Los pósters, personas del sitio, ratings, trivia, autenticación y automatización de X no cambian.
+Proyecto Supabase `bftcrexcwktyiqsermni` para la biblioteca editorial.
 
 ## Estado vigente — 15/11/2026
 
 **163 fotos / 43.789.076 bytes (41,76 MiB)**, 163 hashes distintos, cero huérfanos. Se incorporaron 135 imágenes a las 28 anteriores: 40 stills cinematográficos y 15 retratos de dirección desde paquetes de prensa, más 80 retratos internacionales con licencias verificadas. Hay tres permisos reutilizables y dieciséis paquetes con evidencia. La sección de resultados del 14/11 se conserva como historial de la migración inicial.
 
-La biblioteca permite simular 60 ediciones sin repetir películas: 168 títulos, 103 fotos, los cinco formatos. **Las escenas abarcan actualmente 16 películas**; con la exclusión histórica permanente no equivalen a 60 publicaciones distintas hechas exclusivamente con stills: la simulación contiene siete ediciones con escenas y el resto utiliza también retratos. Es capacidad editorial con variedad de formatos, no una promesa de sesenta estrenos ni de sesenta películas con escenas.
+La simulación histórica cubrió 60 ediciones sin repetir películas: 168 títulos, 103 fotos, los cinco formatos. **Las escenas abarcan actualmente 16 películas**; con la exclusión histórica permanente no equivalen a 60 publicaciones distintas hechas exclusivamente con stills: la simulación contiene siete ediciones con escenas y el resto utiliza también retratos. Es capacidad editorial con variedad de formatos, no una promesa de sesenta estrenos ni de sesenta películas con escenas.
 
 Ver [política práctica de prensa y operación de cargas](social-editorial-acquisition.md) y [reporte completo](../reports/social/editorial-library-2026-11-15.json).
 
 ## Arquitectura y derechos
 
-`social_media_assets` es la fuente operativa de fotografías aprobadas. `metadata` conserva identidad, películas/persona, fuente, autor, licencia, permisos, fecha de verificación, territorio, embargo/vencimiento, dimensiones y hashes. `evidence` permite consultar la evidencia; `evidence_raw` conserva sus bytes exactos para verificar `evidenceSha256`. El registro Git `assets/social/instagram-rights.json` y los snapshots de evidencia conservan la procedencia revisable, pero el cron consulta Supabase, sin investigar permisos cada día.
+`social_media_assets` es la fuente operativa de fotografías aprobadas. `metadata` conserva identidad, películas/persona, fuente, autor, licencia, permisos, fecha de verificación, territorio, embargo/vencimiento, dimensiones y hashes. `evidence` permite consultar la evidencia; `evidence_raw` conserva sus bytes exactos para verificar `evidenceSha256`. El registro Git `assets/social/instagram-rights.json` y los snapshots de evidencia conservan la procedencia revisable.
 
 El bucket **privado** `cineposta-social` almacena WebP ≤2 MiB en `movies/<asset-id>/<sha256>.webp`, `people/...` o `events/...`. La ruta por hash es estable e inmutable. No se usa un bucket público: los buckets públicos omiten el control de lectura RLS. Lectura sin sesión de usuario mediante la clave *publishable* y el endpoint `/storage/v1/object/authenticated/...`; RLS habilita únicamente registros aprobados, territorio AR/worldwide y vigencia válida. Es acceso público con clave pública, no una service-role key. Las URLs de esta biblioteca necesitan ese encabezado: **no se envían directamente a Buffer**.
 
 Los grants SQL no permiten escrituras de `anon`/`authenticated`. Los administradores importan mediante Storage API; nunca se insertan filas de `storage.objects` manualmente. La metadata exige FK a un objeto real, hash/ruta/ID únicos, dimensiones válidas y coherencia con la evidencia registrada. La validación administrativa decodifica con Sharp y comprueba referencias de películas/personas contra el catálogo local. Los objetos deben cargarse antes de aprobar su metadata: durante ese intervalo no se pueden leer públicamente. Un fallo de registro deja un huérfano inaccesible para revisión administrativa, nunca una foto automáticamente aprobada.
 
-## Generación diaria y recuperación
+## Historial de Instagram
 
-`instagram-images.mjs` usa Supabase por defecto; `SOCIAL_LIBRARY_BACKEND=supabase` queda explícito en Actions. El modo `local` es sólo una herramienta de revisión del respaldo histórico de 16 fotos; no es recuperación automática y no incluye las 12 fotos nuevas que existen exclusivamente en Storage.
-
-1. Leer metadata aprobada y validar el hash de su evidencia y permiso.
-2. Seleccionar películas inéditas; priorizar stills/backdrops sobre retratos y evitar fotografías recientes cuando existen alternativas.
-3. Descargar WebP, verificar SHA-256 y cachear por hash en `.tmp/social-library-cache/`. La caché sólo evita descargas de bytes; no sustituye la consulta actual de permisos.
-4. Renderizar JPEG 1080×1350, preservar créditos completos y permisos de adaptación.
-5. Reservar historial y medios finales en `cineposta-instagram-state`, verificar sus URLs públicas fijadas a SHA, programar Buffer y persistir recibo. Este protocolo no cambió.
-
-Si falla Supabase, no se elige material de metadata obsoleta: el job falla antes de reservar. Una descarga corrupta falla sin enviarse a Buffer. No hay fallback abstracto, reinicio de historial ni reintento automático de mutaciones ambiguas. Los JPEG ya aceptados por Buffer siguen disponibles en GitHub aunque Supabase falle. No borrar ni sustituir esos archivos ni sus commits históricos durante una migración.
-
-`social_media_asset_usage` registra usos por asset/canal/post, compatible con X futuro sin integrarlo ahora. La Edge Function `cineposta-social-usage` lee exclusivamente la URL fija del historial público de Instagram y hace upsert idempotente de recibos `scheduled`/`sent`. Se autentica con una capacidad dedicada, `SOCIAL_LIBRARY_USAGE_KEY`, secret de Actions; sólo su hash figura en el código. La service-role key permanece dentro del entorno de Supabase. El body HTTP no puede elegir assets, canal ni URL. El paso corre después de persistir el recibo y tolera fallos: el historial continúa siendo autoridad para no duplicar. Reejecutar `node scripts/sync-social-library-usage.mjs` con ese secret reconcilia sin crear posts. Al rotar esta capacidad, actualizar secret y hash de la función conjuntamente. La función de bootstrap de migración quedó deshabilitada (410).
+El flujo diario se retiró el 27/11/2026. La rama `cineposta-instagram-state` conserva JPEG y recibos históricos. `social_media_asset_usage` conserva los registros de uso ya sincronizados. La biblioteca permanece disponible para la selección editorial manual.
 
 ## Administración y mantenimiento
 
 ```powershell
 # Auditoría de lectura: descarga/hash/decodificación/permisos de todos los aprobados
 node scripts/manage-social-library.mjs
-# Simulación de tres días desde el historial real, sin mutaciones ni Buffer key
-node scripts/simulate-instagram-library.mjs
-npm run social:instagram:preview
-npm run test:buffer:instagram
+npm run test:social:library
 # Importar sólo después de revisión visual y legal explícita; clave administrativa
 # mediante gestor seguro/entorno de operador. Nunca guardarla en .env versionado.
 node scripts/manage-social-library.mjs --import --id=commons-ID
 ```
 
-`SOCIAL_LIBRARY_ADMIN_KEY` es una credencial administrativa de operador, **no necesaria en Actions diario**. El importador existente de Commons prepara imágenes/evidencia localmente; detenerse ante 429 y revisar identidad, derechos y restricciones antes de aprobar. Optimizar nuevas fotos con Sharp a máximo 1920 px, WebP calidad 82 y ≤2 MiB. Conservar los hashes del original y del resultado, evidencia, crédito y cambios. No reoptimizar un objeto ya publicado bajo el mismo hash. Ante un hash ya registrado, reutilizarlo sin segunda copia. Los afiches se excluyen de esta importación a Storage.
+`SOCIAL_LIBRARY_ADMIN_KEY` es una credencial administrativa de operador. El importador existente de Commons prepara imágenes/evidencia localmente; detenerse ante 429 y revisar identidad, derechos y restricciones antes de aprobar. Optimizar nuevas fotos con Sharp a máximo 1920 px, WebP calidad 82 y ≤2 MiB. Conservar los hashes del original y del resultado, evidencia, crédito y cambios. No reoptimizar un objeto ya publicado bajo el mismo hash. Ante un hash ya registrado, reutilizarlo sin segunda copia. Los afiches se excluyen de esta importación a Storage.
 
 Revisión periódica administrativa mediante MCP/SQL (no elimina nada):
 

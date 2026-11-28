@@ -1,6 +1,6 @@
 ---
 name: cineposta-redes-sociales
-description: Publicar, programar y preparar borradores de películas y notas de CinePosta en X e Instagram mediante Buffer MCP; crear placas, carruseles, Stories y Reels con el catálogo, consultar cola y estados y evitar duplicados.
+description: Gestionar publicaciones de X y preparar o publicar manualmente contenido de Instagram mediante Buffer MCP; crear placas, carruseles, Stories y Reels con el catálogo, consultar cola y estados y evitar duplicados.
 ---
 
 # Redes sociales de CinePosta
@@ -9,8 +9,8 @@ Usá el MCP oficial `https://mcp.buffer.com/mcp` para las operaciones de los age
 
 ## Resolver el pedido y conectar
 
-- «En redes» / «X e Instagram» significa las dos cuentas. Si el usuario nombra una, operá sólo esa. «Publicá» autoriza publicar ese contenido ahora; «programá» necesita fecha/hora concreta, en Argentina; «prepará» / «borrador» no autoriza enviar. Si falta un dato esencial, avanzá con las piezas y pedí sólo ese dato.
-- Descubrí las herramientas Buffer disponibles. Con `get_account`, `list_channels` y `get_channel`, verificá organización, servicio, handle, conexión, bloqueo y capacidad automática. Reutilizá IDs y respuestas de la misma tarea; no publiques por nombre aproximado. Si hay varias organizaciones, elegí la que contiene las cuentas verificadas de CinePosta.
+- «En redes» / «X e Instagram» significa las dos cuentas. Si el usuario nombra una, operá sólo esa. «Publicá» autoriza publicar ese contenido ahora; «programá» necesita fecha/hora concreta, en Argentina; «prepará» / «borrador» no autoriza enviar. Instagram sólo admite borradores y publicaciones inmediatas con autorización explícita. No programes publicaciones de Instagram, no agregues posts a su cola y no la reanudes. Si falta un dato esencial, avanzá con las piezas y pedí sólo ese dato.
+- Descubrí las herramientas Buffer disponibles. Con `get_account`, `list_channels` y `get_channel`, verificá organización, servicio, handle, conexión, bloqueo y capacidad automática. Para Instagram, consultá también si la cola está pausada. Reutilizá IDs y respuestas de la misma tarea; no publiques por nombre aproximado. Si hay varias organizaciones, elegí la que contiene las cuentas verificadas de CinePosta.
 - Si falta Buffer o devuelve 401, leé [references/buffer.md](references/buffer.md). Usá OAuth oficial; no extraigas tokens de sesiones ni leas secretos de Codex. Un chat existente puede necesitar reconexión o una sesión nueva para cargar las herramientas.
 - Consultá con `list_posts` las publicaciones del canal y todos los estados, paginando lo necesario, antes de escribir. Buscá URL canónica/slug, campañas UTM, texto y contenido de carruseles. Incluí borradores, errores y envíos en curso. Si ya existe, informá el ID/estado y retomá ese mismo post cuando esté autorizado; no crees otro para sortear un error. Las dos plataformas tienen recibos independientes: si una falla, reintentá sólo esa.
 
@@ -30,24 +30,22 @@ Leé [references/formatos.md](references/formatos.md) para placas, carruseles, S
 Con las piezas listas y dentro de la autorización del pedido:
 
 1. Confirmá que la URL de destino y los assets públicos existan y correspondan al contenido. Para programar, los archivos deben permanecer accesibles hasta el envío. Nunca mandes rutas locales ni URLs temporales como assets.
-2. Respetá el esquema **actual** de `create_post`/`edit_post`. Una operación por canal. Para Instagram enviá `metadata.instagram.type` (`post`, `story` o `reel`) y `shouldShareToFeed`; `reel` requiere vídeo. Usá `automatic` sólo si el canal/formato lo permite; `notification` requiere que el usuario quiera terminar a mano. Un recordatorio no cumple un pedido de automatización.
-3. Inmediato: `mode: shareNow`. Fecha concreta: `customScheduled` y `dueAt` ISO con zona (`-03:00`), siempre futuro, anclado al día actual de Argentina. Borrador: `saveToDraft: true`. No uses `addToQueue` para reemplazar una hora exacta.
+2. Respetá el esquema **actual** de `create_post`/`edit_post`. Una operación por canal. Para Instagram enviá `metadata.instagram.type` (`post`, `story` o `reel`) y `shouldShareToFeed`; `reel` requiere vídeo. Para un envío inmediato autorizado, elegí `automatic` si el canal/formato lo permite; `notification` requiere que el usuario quiera terminar a mano. Un recordatorio no cumple un pedido de automatización.
+3. Inmediato: `mode: shareNow`. Para X con fecha concreta, usá `customScheduled` y `dueAt` ISO con zona (`-03:00`), siempre futuro, anclado al día actual de Argentina. Borrador: `saveToDraft: true`. No uses `addToQueue` para reemplazar una hora exacta.
 4. Guardá el ID y estado devueltos antes de cualquier otra acción. Un timeout de creación puede haber creado el post: buscá ese contenido antes de reintentar; si sigue ambiguo, detené el envío. No elimines ni reprogrames contenido ajeno al pedido.
 5. Para inmediato, comprobá con `get_post` sólo si la respuesta todavía no demuestra `sent`. Informá publicación pendiente si sigue `scheduled`/`sending`; «publicado» requiere `sent`, con enlace externo si Buffer lo devuelve. Para programación o borrador, el recibo devuelto basta para afirmar que quedó guardado en ese estado.
 
-Reportá por red: contenido, tipo, hora AR si corresponde, ID Buffer, estado y enlace externo disponible. No confundas una placa local, un borrador, un post programado y un envío real.
+Reportá por red: contenido, tipo, hora AR si corresponde, ID Buffer, estado y enlace externo disponible. Distinguí entre una placa local, un borrador, un post programado en X y un envío real.
 
 ## Automatización y costos
 
-La automatización diaria de X es ajena a esta skill: no cambies sus scripts, horarios, historial, variables ni secretos para un pedido social. Instagram tiene `.github/workflows/publish-buffer-instagram.yml`, 19:15 AR, historial y medios en la rama `cineposta-instagram-state`. Consultá `docs/buffer-instagram-automation.md` sólo si el pedido afecta su operación; publicar manualmente no autoriza cambiar la agenda ni activar un job.
-
-Instagram diario prepara **mañana** a las 18:15 AR y conserva 19:15 AR de publicación. Usa imágenes reales obligatorias en carrusel, protagonista, score, doble función y ranking (`scripts/lib/instagram-editorial.mjs`). Sin imagen autorizada, elige otra película; no publica gráficos abstractos. El registro v2 `assets/social/instagram-rights.json` y `docs/instagram-image-rights.md` conservan permisos, fuentes, créditos, hashes, territorio y vencimientos. TMDB sólo localiza; no concede derechos del estudio. Los retratos se rotulan como archivo. `npm run social:instagram:preview` genera ejemplos. Para reparar posts programados, editar sus mismos IDs con URLs inmutables y todos los campos de Instagram requeridos; conservar versiones previas en `mediaRevisions` del historial y guardar el recibo. No reprogramar atrasos.
+La automatización diaria de X se opera por separado. Instagram queda reservado para publicaciones manuales e inmediatas. La rama `cineposta-instagram-state` conserva medios y recibos históricos.
 
 Buffer Free: verificá límites vivos con `get_account`; la cuenta comprobada admite 3 canales y 10 programados **por canal**. No contrates planes, regeneres la clave compartida con X ni uses funciones pagas (por ejemplo primer comentario). Reels sin música o con audio de derechos comprobados; stickers, enlaces y música que requieran terminación móvil se ofrecen como opción manual, sin prometer publicación automática.
 
 ### Biblioteca editorial central
 
-Instagram consulta Supabase `bftcrexcwktyiqsermni`, bucket privado `cineposta-social`, tabla `social_media_assets`. Ver `docs/social-image-library.md`. Clave publishable para lecturas RLS; ningún secret administrativo en el generador. No pasar URLs privadas directamente a Buffer: conservar JPEG públicos inmutables en la rama de estado. Consultar permisos actuales antes de usar caché por hash; si Supabase falla, detener sin fallback abstracto ni metadata obsoleta. Posters permanecen en GitHub. Revisar autor/licencia/identidad y evidencia antes de incorporar material; TMDB no autoriza. `node scripts/manage-social-library.mjs` audita y `node scripts/simulate-instagram-library.mjs` simula tres días sin publicar. La función de uso sólo reconcilia el historial existente; nunca crea posts. No modificar posts programados durante migraciones de biblioteca. No integrar X sin pedido posterior.
+Consultá `docs/social-image-library.md` para verificar derechos, permisos y créditos de las fotografías antes de preparar una pieza. Supabase conserva el material aprobado y su evidencia. Buffer requiere URLs públicas e inmutables para los medios.
 
 ### Adquisición editorial por fuente o paquete
 

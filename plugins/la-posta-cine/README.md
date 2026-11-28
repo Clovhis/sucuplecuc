@@ -17,7 +17,7 @@ Este directorio no es parte del build de Astro ni de la salida pública. La fuen
 
 Los MCP de GitHub y Buffer sólo declaran sus endpoints oficiales. La autenticación la gestiona el cliente que instala el plugin; Buffer usa OAuth. No se guardan tokens, claves ni archivos `.env` aquí. Los MCP personales de Notion, Azure, Supabase, Discord, Zammad y el runtime local no se incluyen.
 
-`cineposta-redes-sociales` gestiona X e Instagram con Buffer MCP y las fuentes del catálogo. Incluye preparación de placas, carruseles, Stories y Reels, programación, borradores y estados. No modifica la automatización diaria de X. La nueva automatización de Instagram se documenta en `docs/buffer-instagram-automation.md` del repositorio.
+`cineposta-redes-sociales` gestiona X e Instagram con Buffer MCP y las fuentes del catálogo. Incluye preparación de placas, carruseles, Stories y Reels, programación, borradores y estados. No modifica la automatización diaria de X. Instagram queda reservado para publicaciones manuales e inmediatas.
 
 Las skills de películas comparten el contrato editorial vigente: `cinepostaScore` es la única fuente de verdad para títulos valorados, siempre como entero de 1 a 10, y la etiqueta canónica se deriva. No se persisten `verdict`, `verdictLabel`, `absoluteCinema` ni etiquetas personalizadas, y no se inventa un score para una película todavía no rankeada.
 

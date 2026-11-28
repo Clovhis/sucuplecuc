@@ -6,7 +6,7 @@ Si existía `bearer_token_env_var = "BUFFER_API_KEY"` y esa clave da 401, agrega
 
 Preflight real de lectura: `get_account` → canales de la organización → detalles del canal → posts de ese canal. La conexión está probada cuando esas llamadas responden; no hace falta publicar una prueba. Los nombres de herramientas pueden llevar prefijo del cliente.
 
-Snapshot de identificación, **revalidar en vivo**: organización `6a9d88d88ecb84720dd91cc1`; X `6a9d89a6cd8b9c702c191cd9`; Instagram `6af6465a62b70b94b0105899`. Instagram debe ser `business` en el esquema de Buffer (cuenta profesional), `isDisconnected=false`, `isLocked=false`, `isQueuePaused=false`, `metadata.defaultToReminders=false`. Un perfil personal sólo admite recordatorio y no sirve para el job automático.
+Snapshot de identificación, **revalidar en vivo**: organización `6a9d88d88ecb84720dd91cc1`; X `6a9d89a6cd8b9c702c191cd9`; Instagram `6af6465a62b70b94b0105899`. Instagram debe ser `business` en el esquema de Buffer (cuenta profesional), `isDisconnected=false`, `isLocked=false`, `metadata.defaultToReminders=false`. Instagram se publica por pedido explícito e inmediato. La cola debe permanecer pausada.
 
 `list_posts`: `organizationId`, `channelIds`, `status`, `first` hasta 100, `after` con cursor (nunca un ID). Leé `pageInfo` hasta cubrir la búsqueda. Los límites vivos y `Retry-After` mandan; no hagas polling continuo ni consultes métricas si sólo necesitás cola/estados.
 

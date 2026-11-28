@@ -1,6 +1,6 @@
 # Medios para redes
 
-Para la edición diaria usá `npm run social:instagram:preview`: protagonista, score, portada + cinco películas, doble función y ranking. **Cada página requiere imagen real con permiso registrado en v2**, sin alternativa abstracta. Pósters completos; fotografías con recorte/superposición sólo si se permite. Los retratos se identifican como archivo. El generador manual de abajo sigue disponible, pero componer un póster no acredita derechos para publicarlo. Ver `docs/instagram-image-rights.md`.
+Usá imágenes con permiso de publicación vigente y verificá si la licencia permite recorte o superposición. Identificá los retratos de archivo y conservá los créditos. Ver `docs/instagram-image-rights.md`.
 
 Al editar Instagram, la integración comprobada de Buffer rechazó un payload de sólo texto (400: falta imagen/tipo). Leer primero el post, conservar assets, `metadata.instagram.type`, `shouldShareToFeed`, `schedulingType` y hora, y enviar el payload completo al **mismo ID**. Un 400 no autoriza crear otro post. Ante timeout consultar ese mismo ID. No confundir un cambio del generador con una actualización de los assets ya programados.
 

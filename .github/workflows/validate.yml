@@ -52,9 +52,9 @@ jobs:
       - name: Probar automatizaciones y ediciones del home
         run: npm run test:home-automation
 
-      - name: Probar publicador independiente de Instagram
+      - name: Probar biblioteca de imagenes y generador de Reels
         run: |
-          npm run test:buffer:instagram
+          npm run test:social:library
           npm run test:social:reel
 
       - name: Probar controles de publicación editorial diaria
