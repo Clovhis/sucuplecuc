@@ -8,8 +8,40 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-27T13:32:27.132Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-28T12:45:32.898Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
+	{
+		"title": "¡Behemoth! Una vida. En piezas",
+		"releaseDate": "2026-12-03",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10676--behemoth-una-vida-en-piezas/",
+		"slug": "cines-argentinos-10676",
+		"videoUrl": "https://www.youtube.com/watch?v=p0dTx_S9PCs",
+		"thumbnailUrl": "https://i.ytimg.com/vi/p0dTx_S9PCs/hqdefault.jpg"
+	},
+	{
+		"title": "Spider-Man: Un Nuevo Día (Versión Extendida)",
+		"releaseDate": "2026-12-03",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10675-spider-man-un-nuevo-dia-version-extendida-/",
+		"slug": "cines-argentinos-10675",
+		"videoUrl": "https://www.youtube.com/watch?v=TpPwT331bik",
+		"thumbnailUrl": "https://i.ytimg.com/vi/TpPwT331bik/hqdefault.jpg"
+	},
+	{
+		"title": "La Psicópata",
+		"releaseDate": "2026-12-03",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10677-la-psicopata/",
+		"slug": "cines-argentinos-10677",
+		"videoUrl": "https://www.youtube.com/watch?v=DwlyKbkkuuM",
+		"thumbnailUrl": "https://i.ytimg.com/vi/DwlyKbkkuuM/hqdefault.jpg"
+	},
+	{
+		"title": "One Piece: Doble aventura",
+		"releaseDate": "2026-12-03",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10674-one-piece-doble-aventura/",
+		"slug": "cines-argentinos-10674",
+		"videoUrl": "https://www.youtube.com/watch?v=hP4kQFVFzeg",
+		"thumbnailUrl": "https://i.ytimg.com/vi/hP4kQFVFzeg/hqdefault.jpg"
+	},
 	{
 		"title": "Avengers: Doomsday",
 		"releaseDate": "2026-12-17",
